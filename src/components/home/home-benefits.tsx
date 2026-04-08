@@ -1,4 +1,8 @@
+"use client"
+
 import Link from "next/link"
+
+import { useAuthUser } from "@/hooks/useAuthUser"
 
 const benefits = [
   {
@@ -34,6 +38,8 @@ const benefits = [
 ]
 
 export function HomeBenefits() {
+  const { isLoading, isSignedIn } = useAuthUser()
+
   return (
     <section className="border-t border-black/5 bg-[#f7f4ef]">
       <div className="mx-auto max-w-7xl px-6 py-24 md:px-10 md:py-28">
@@ -78,12 +84,28 @@ export function HomeBenefits() {
             Explore product
           </Link>
 
-          <Link
-            href="/app"
-            className="rounded-full border border-black/10 px-6 py-3 text-sm font-medium text-[#1f1f1c] transition hover:bg-white/60"
-          >
-            Explore app
-          </Link>
+          {isLoading ? (
+            <Link
+              href="/app"
+              className="rounded-full border border-black/10 px-6 py-3 text-sm font-medium text-[#1f1f1c] transition hover:bg-white/60"
+            >
+              Explore app
+            </Link>
+          ) : isSignedIn ? (
+            <Link
+              href="/continue"
+              className="rounded-full border border-black/10 px-6 py-3 text-sm font-medium text-[#1f1f1c] transition hover:bg-white/60"
+            >
+              Continue
+            </Link>
+          ) : (
+            <Link
+              href="/app"
+              className="rounded-full border border-black/10 px-6 py-3 text-sm font-medium text-[#1f1f1c] transition hover:bg-white/60"
+            >
+              Explore app
+            </Link>
+          )}
         </div>
       </div>
     </section>

@@ -1,4 +1,8 @@
+"use client"
+
 import Link from "next/link"
+
+import { useAuthUser } from "@/hooks/useAuthUser"
 
 const features = [
   {
@@ -19,6 +23,8 @@ const features = [
 ]
 
 export function HomeAppDeviceEcosystem() {
+  const { isLoading, isSignedIn } = useAuthUser()
+
   return (
     <section className="border-t border-black/5 bg-[#f7f4ef]">
       <div className="mx-auto grid max-w-7xl gap-14 px-6 py-24 md:px-10 md:py-28 lg:grid-cols-[0.95fr_1.05fr] lg:items-center">
@@ -100,12 +106,28 @@ export function HomeAppDeviceEcosystem() {
           </div>
 
           <div className="mt-10 flex flex-wrap gap-4">
-            <Link
-              href="/app"
-              className="rounded-full bg-[#1f1f1c] px-6 py-3 text-sm font-medium text-white transition hover:opacity-90"
-            >
-              Explore app
-            </Link>
+            {isLoading ? (
+              <Link
+                href="/app"
+                className="rounded-full bg-[#1f1f1c] px-6 py-3 text-sm font-medium text-white transition hover:opacity-90"
+              >
+                Explore app
+              </Link>
+            ) : isSignedIn ? (
+              <Link
+                href="/continue"
+                className="rounded-full bg-[#1f1f1c] px-6 py-3 text-sm font-medium text-white transition hover:opacity-90"
+              >
+                Continue
+              </Link>
+            ) : (
+              <Link
+                href="/app"
+                className="rounded-full bg-[#1f1f1c] px-6 py-3 text-sm font-medium text-white transition hover:opacity-90"
+              >
+                Explore app
+              </Link>
+            )}
 
             <Link
               href="/how-it-works"

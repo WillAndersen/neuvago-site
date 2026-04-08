@@ -1,6 +1,12 @@
+"use client"
+
 import Link from "next/link"
 
+import { useAuthUser } from "@/hooks/useAuthUser"
+
 export function HomeFinalCta() {
+  const { isLoading, isSignedIn } = useAuthUser()
+
   return (
     <section className="border-t border-black/5 bg-[#f7f4ef]">
       <div className="mx-auto max-w-7xl px-6 py-24 md:px-10 md:py-32">
@@ -21,26 +27,76 @@ export function HomeFinalCta() {
             </p>
 
             <div className="mt-10 flex flex-wrap gap-4">
-              <Link
-                href="/product"
-                className="rounded-full bg-[#1f1f1c] px-6 py-3 text-sm font-medium text-white transition hover:opacity-90"
-              >
-                Explore product
-              </Link>
+              {isLoading ? (
+                <>
+                  <Link
+                    href="/product"
+                    className="rounded-full bg-[#1f1f1c] px-6 py-3 text-sm font-medium text-white transition hover:opacity-90"
+                  >
+                    Explore product
+                  </Link>
 
-              <Link
-                href="/how-it-works"
-                className="rounded-full border border-black/10 bg-white/50 px-6 py-3 text-sm font-medium text-[#1f1f1c] transition hover:bg-white/75"
-              >
-                Learn how it works
-              </Link>
+                  <Link
+                    href="/how-it-works"
+                    className="rounded-full border border-black/10 bg-white/50 px-6 py-3 text-sm font-medium text-[#1f1f1c] transition hover:bg-white/75"
+                  >
+                    Learn how it works
+                  </Link>
 
-              <Link
-                href="/research"
-                className="rounded-full border border-black/10 bg-transparent px-6 py-3 text-sm font-medium text-[#1f1f1c] transition hover:bg-white/40"
-              >
-                Explore research
-              </Link>
+                  <Link
+                    href="/research"
+                    className="rounded-full border border-black/10 bg-transparent px-6 py-3 text-sm font-medium text-[#1f1f1c] transition hover:bg-white/40"
+                  >
+                    Explore research
+                  </Link>
+                </>
+              ) : isSignedIn ? (
+                <>
+                  <Link
+                    href="/continue"
+                    className="rounded-full bg-[#1f1f1c] px-6 py-3 text-sm font-medium text-white transition hover:opacity-90"
+                  >
+                    Continue
+                  </Link>
+
+                  <Link
+                    href="/open-app"
+                    className="rounded-full border border-black/10 bg-white/50 px-6 py-3 text-sm font-medium text-[#1f1f1c] transition hover:bg-white/75"
+                  >
+                    Open app
+                  </Link>
+
+                  <Link
+                    href="/research"
+                    className="rounded-full border border-black/10 bg-transparent px-6 py-3 text-sm font-medium text-[#1f1f1c] transition hover:bg-white/40"
+                  >
+                    Explore research
+                  </Link>
+                </>
+              ) : (
+                <>
+                  <Link
+                    href="/get-started"
+                    className="rounded-full bg-[#1f1f1c] px-6 py-3 text-sm font-medium text-white transition hover:opacity-90"
+                  >
+                    Get started
+                  </Link>
+
+                  <Link
+                    href="/app"
+                    className="rounded-full border border-black/10 bg-white/50 px-6 py-3 text-sm font-medium text-[#1f1f1c] transition hover:bg-white/75"
+                  >
+                    Explore app
+                  </Link>
+
+                  <Link
+                    href="/research"
+                    className="rounded-full border border-black/10 bg-transparent px-6 py-3 text-sm font-medium text-[#1f1f1c] transition hover:bg-white/40"
+                  >
+                    Explore research
+                  </Link>
+                </>
+              )}
             </div>
           </div>
         </div>

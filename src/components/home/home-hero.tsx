@@ -1,6 +1,12 @@
+"use client"
+
 import Link from "next/link"
 
+import { useAuthUser } from "@/hooks/useAuthUser"
+
 export function HomeHero() {
+  const { isLoading, isSignedIn } = useAuthUser()
+
   return (
     <section className="relative overflow-hidden">
       <div className="mx-auto grid min-h-[88vh] max-w-7xl items-center gap-16 px-6 py-20 md:px-10 lg:grid-cols-[1.1fr_0.9fr] lg:py-28">
@@ -20,19 +26,55 @@ export function HomeHero() {
           </p>
 
           <div className="mt-10 flex flex-wrap gap-4">
-            <Link
-              href="/product"
-              className="rounded-full bg-[#1f1f1c] px-6 py-3 text-sm font-medium text-white transition hover:opacity-90"
-            >
-              Explore product
-            </Link>
+            {isLoading ? (
+              <>
+                <Link
+                  href="/product"
+                  className="rounded-full bg-[#1f1f1c] px-6 py-3 text-sm font-medium text-white transition hover:opacity-90"
+                >
+                  Explore product
+                </Link>
 
-            <Link
-              href="/how-it-works"
-              className="rounded-full border border-[#d8d1c7] bg-transparent px-6 py-3 text-sm font-medium text-[#1f1f1c] transition hover:bg-white/70"
-            >
-              How it works
-            </Link>
+                <Link
+                  href="/how-it-works"
+                  className="rounded-full border border-[#d8d1c7] bg-transparent px-6 py-3 text-sm font-medium text-[#1f1f1c] transition hover:bg-white/70"
+                >
+                  How it works
+                </Link>
+              </>
+            ) : isSignedIn ? (
+              <>
+                <Link
+                  href="/continue"
+                  className="rounded-full bg-[#1f1f1c] px-6 py-3 text-sm font-medium text-white transition hover:opacity-90"
+                >
+                  Continue
+                </Link>
+
+                <Link
+                  href="/open-app"
+                  className="rounded-full border border-[#d8d1c7] bg-transparent px-6 py-3 text-sm font-medium text-[#1f1f1c] transition hover:bg-white/70"
+                >
+                  Open app
+                </Link>
+              </>
+            ) : (
+              <>
+                <Link
+                  href="/get-started"
+                  className="rounded-full bg-[#1f1f1c] px-6 py-3 text-sm font-medium text-white transition hover:opacity-90"
+                >
+                  Get started
+                </Link>
+
+                <Link
+                  href="/how-it-works"
+                  className="rounded-full border border-[#d8d1c7] bg-transparent px-6 py-3 text-sm font-medium text-[#1f1f1c] transition hover:bg-white/70"
+                >
+                  How it works
+                </Link>
+              </>
+            )}
           </div>
 
           <div className="mt-10 flex flex-wrap gap-x-8 gap-y-3 text-sm text-[#6b665e]">

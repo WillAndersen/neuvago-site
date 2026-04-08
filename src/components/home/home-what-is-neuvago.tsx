@@ -1,4 +1,8 @@
+"use client"
+
 import Link from "next/link"
+
+import { useAuthUser } from "@/hooks/useAuthUser"
 
 const items = [
   {
@@ -28,6 +32,8 @@ const items = [
 ]
 
 export function HomeWhatIsNeuvago() {
+  const { isLoading, isSignedIn } = useAuthUser()
+
   return (
     <section className="border-t border-black/5 bg-[#f7f4ef]">
       <div className="mx-auto max-w-7xl px-6 py-24 md:px-10 md:py-28">
@@ -48,31 +54,41 @@ export function HomeWhatIsNeuvago() {
         </div>
 
         <div className="mt-14 grid gap-6 md:grid-cols-3">
-          {items.map((item) => (
-            <article
-              key={item.title}
-              className="rounded-[2rem] border border-black/5 bg-white/55 p-8 shadow-[0_12px_40px_rgba(31,31,28,0.04)]"
-            >
-              <p className="text-sm uppercase tracking-[0.16em] text-[#8a847b]">
-                {item.eyebrow}
-              </p>
+          {items.map((item) => {
+            const isAppCard = item.eyebrow === "App"
+            const href =
+              isAppCard && !isLoading && isSignedIn ? "/continue" : item.href
+            const linkLabel =
+              isAppCard && !isLoading && isSignedIn
+                ? "Continue"
+                : item.linkLabel
 
-              <h3 className="mt-4 text-2xl font-medium leading-tight text-[#1f1f1c]">
-                {item.title}
-              </h3>
-
-              <p className="mt-4 text-sm leading-7 text-[#5f5a52] md:text-base">
-                {item.description}
-              </p>
-
-              <Link
-                href={item.href}
-                className="mt-8 inline-flex text-sm font-medium text-[#1f1f1c] transition hover:opacity-70"
+            return (
+              <article
+                key={item.title}
+                className="rounded-[2rem] border border-black/5 bg-white/55 p-8 shadow-[0_12px_40px_rgba(31,31,28,0.04)]"
               >
-                {item.linkLabel}
-              </Link>
-            </article>
-          ))}
+                <p className="text-sm uppercase tracking-[0.16em] text-[#8a847b]">
+                  {item.eyebrow}
+                </p>
+
+                <h3 className="mt-4 text-2xl font-medium leading-tight text-[#1f1f1c]">
+                  {item.title}
+                </h3>
+
+                <p className="mt-4 text-sm leading-7 text-[#5f5a52] md:text-base">
+                  {item.description}
+                </p>
+
+                <Link
+                  href={href}
+                  className="mt-8 inline-flex text-sm font-medium text-[#1f1f1c] transition hover:opacity-70"
+                >
+                  {linkLabel}
+                </Link>
+              </article>
+            )
+          })}
         </div>
       </div>
     </section>

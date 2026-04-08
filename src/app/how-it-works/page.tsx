@@ -1,135 +1,120 @@
 import Link from "next/link"
 
 export const metadata = {
-  title:
-    "How Neuvago Works | Device, App and Nervous System Support",
+  title: "How Neuvago Works | A Calmer Rhythm for Stress, Sleep and Recovery",
   description:
-    "Learn how Neuvago works as a connected system of device, app, guided sessions, and calmer daily support for stress, sleep, recovery, and nervous system regulation.",
+    "Learn how Neuvago combines device support, guided app experiences, check-ins, and calmer daily routines to support stress, sleep, recovery, and nervous system regulation.",
 }
 
 const steps = [
   {
+    number: "01",
     title: "Start with how you feel",
     description:
-      "Neuvago begins with the user’s real experience — stress, tiredness, poor sleep, overload, or the need for a calmer reset in the moment.",
+      "Neuvago begins with awareness. Instead of guessing, the experience is designed to start from what your body and mind seem to need right now.",
   },
   {
-    title: "Use guided support",
+    number: "02",
+    title: "Use calm, guided support",
     description:
-      "The app provides guided sessions, check-ins, and structure that help users create calmer routines and more repeatable daily support.",
+      "Guided sessions and supportive routines help create steadier transitions around stress, recovery, winding down, and calmer daily rhythm.",
   },
   {
-    title: "Add the device if wanted",
+    number: "03",
+    title: "Build continuity over time",
     description:
-      "For people who want a broader experience, the device can become an additional layer inside the same calmer Neuvago system.",
-  },
-  {
-    title: "Build steadier rhythm over time",
-    description:
-      "The goal is not intensity. It is a calmer, more supportive rhythm around stress, rest, sleep, recovery, and return.",
+      "As people return to the experience, check-ins, progress, and routine help make support feel more personal, more relevant, and easier to sustain.",
   },
 ]
 
-const systemParts = [
+const layers = [
   {
-    title: "Device",
+    eyebrow: "Device",
+    title: "A calm physical layer",
     description:
-      "A premium physical product designed to feel simple, calm, and easy to return to in daily life.",
-    href: "/product",
-    linkLabel: "Explore device",
+      "The device gives the Neuvago system a tangible, repeatable physical point of return.",
   },
   {
-    title: "App",
+    eyebrow: "App",
+    title: "A guided personal layer",
     description:
-      "A standalone guided experience with sessions, check-ins, progress, and calmer support — with or without the device.",
-    href: "/app",
-    linkLabel: "Explore app",
+      "The app helps turn use into a more continuous practice through sessions, check-ins, and progress.",
   },
   {
-    title: "Learning",
+    eyebrow: "Learning",
+    title: "A wider understanding layer",
     description:
-      "A connected knowledge layer around vagus nerve topics, regulation, stress, sleep, recovery, and emotional load.",
-    href: "/learn",
-    linkLabel: "Explore learning",
-  },
-  {
-    title: "Research",
-    description:
-      "An evidence-informed layer that strengthens the broader authority structure behind the Neuvago system.",
-    href: "/research",
-    linkLabel: "Explore research",
+      "The learning and research ecosystem helps people better understand stress, regulation, recovery, and how the system fits together.",
   },
 ]
 
-const useMoments = [
+const useCases = [
   {
-    title: "Stressful days",
+    title: "Stress feels high",
     description:
-      "For moments when the body feels overloaded, activated, or like it needs a calmer reset.",
+      "Neuvago can support calmer resets and steadier transitions when stress feels elevated or difficult to come down from.",
   },
   {
-    title: "Evening transitions",
+    title: "You want to wind down",
     description:
-      "For unwinding after the day and creating a softer bridge into rest or sleep.",
+      "The experience can help create a softer transition into the evening or other slower parts of the day.",
   },
   {
-    title: "Recovery routines",
+    title: "You feel depleted",
     description:
-      "For building more supportive rhythms around restoration, steadiness, and daily capacity.",
+      "A gentler rhythm can help support recovery-oriented moments when energy is low and the system feels overloaded.",
   },
   {
-    title: "Ongoing nervous system support",
+    title: "You want more consistency",
     description:
-      "For people who want something they can come back to regularly rather than only using during peak stress.",
+      "The broader goal is not intensity, but repeatability — support that feels easier to come back to over time.",
   },
 ]
 
 const principles = [
   {
-    title: "Simple enough to return to",
+    title: "Simple enough to use in real life",
     description:
-      "A support system only helps if it feels realistic enough to use more than once.",
+      "Neuvago should feel practical and approachable, not overly technical or demanding.",
   },
   {
-    title: "Calm, not clinical",
+    title: "Calm on the surface, deeper over time",
     description:
-      "The Neuvago experience is designed to feel warm, premium, and supportive rather than technical or intimidating.",
+      "The experience can begin simply while becoming more personal and more meaningful with regular use.",
   },
   {
-    title: "Built for continuity",
+    title: "Useful with or without the device",
     description:
-      "The system is meant to support real life through repetition, rhythm, and calmer habits over time.",
+      "The app should already feel valuable on its own, while the device can deepen the broader system for people who want it.",
   },
 ]
 
 export default function HowItWorksPage() {
   return (
     <main className="bg-[#f7f4ef] text-[#1f1f1c]">
-      <section className="border-b border-black/5">
-        <div className="mx-auto grid min-h-[80vh] max-w-7xl items-center gap-16 px-6 py-20 md:px-10 lg:grid-cols-[1.05fr_0.95fr] lg:py-28">
+      <section className="border-b border-black/5 bg-[#f7f4ef]">
+        <div className="mx-auto grid min-h-[78vh] max-w-7xl items-center gap-16 px-6 py-20 md:px-10 lg:grid-cols-[1.05fr_0.95fr] lg:py-28">
           <div className="max-w-3xl">
             <p className="mb-5 text-sm uppercase tracking-[0.18em] text-[#7a756c]">
               How it works
             </p>
 
             <h1 className="text-4xl font-medium leading-[1.05] tracking-[-0.03em] md:text-6xl lg:text-7xl">
-              How Neuvago works as a calmer system for stress, sleep, recovery, and daily support
+              A calmer system designed to feel easier to return to over time
             </h1>
 
             <p className="mt-6 max-w-2xl text-base leading-8 text-[#5f5a52] md:text-lg">
-              Neuvago is designed as a connected system rather than a single
-              isolated product. The device, app, guided sessions, check-ins,
-              learning, and research layers work together to support calmer
-              daily routines and a steadier relationship with stress, rest,
-              sleep, and recovery.
+              Neuvago is designed to help people move toward steadier states
+              through a connected experience of device support, guided app use,
+              check-ins, and calmer daily rhythm.
             </p>
 
             <div className="mt-10 flex flex-wrap gap-4">
               <Link
-                href="/product"
+                href="/get-started"
                 className="rounded-full bg-[#1f1f1c] px-6 py-3 text-sm font-medium text-white transition hover:opacity-90"
               >
-                Explore device
+                Get started
               </Link>
 
               <Link
@@ -138,6 +123,19 @@ export default function HowItWorksPage() {
               >
                 Explore app
               </Link>
+
+              <Link
+                href="/product"
+                className="rounded-full border border-[#d8d1c7] bg-transparent px-6 py-3 text-sm font-medium text-[#1f1f1c] transition hover:bg-white/70"
+              >
+                Explore device
+              </Link>
+            </div>
+
+            <div className="mt-10 flex flex-wrap gap-x-8 gap-y-3 text-sm text-[#6b665e]">
+              <span>Guided daily support</span>
+              <span>Device + app system</span>
+              <span>Calmer routines over time</span>
             </div>
           </div>
 
@@ -146,46 +144,33 @@ export default function HowItWorksPage() {
 
             <div className="rounded-[2rem] border border-black/5 bg-white/50 p-4 shadow-[0_20px_80px_rgba(31,31,28,0.08)] backdrop-blur">
               <div className="rounded-[1.75rem] bg-[#efe8de] p-6 md:p-8">
-                <div className="aspect-[4/5] rounded-[1.5rem] border border-black/5 bg-gradient-to-b from-[#f9f6f1] to-[#e7dfd4] p-6">
-                  <div className="flex h-full flex-col justify-between rounded-[1.25rem] border border-white/60 bg-white/40 p-6">
-                    <div>
+                <div className="rounded-[1.5rem] border border-black/5 bg-gradient-to-b from-[#f9f6f1] to-[#e7dfd4] p-6">
+                  <div className="space-y-4 rounded-[1.25rem] border border-white/60 bg-white/40 p-6">
+                    <div className="rounded-2xl bg-white/70 p-4">
                       <p className="text-xs uppercase tracking-[0.16em] text-[#8a847b]">
-                        Connected system
+                        Step 1
                       </p>
-                      <h2 className="mt-3 text-2xl font-medium text-[#1f1f1c]">
-                        Device, app, daily support, and deeper understanding working together
-                      </h2>
+                      <p className="mt-2 text-sm font-medium text-[#1f1f1c]">
+                        Notice how you feel
+                      </p>
                     </div>
 
-                    <div className="space-y-4">
-                      <div className="rounded-2xl bg-white/70 p-4">
-                        <p className="text-sm font-medium text-[#1f1f1c]">
-                          App
-                        </p>
-                        <p className="mt-1 text-sm leading-6 text-[#5f5a52]">
-                          Guided sessions and structure
-                        </p>
-                      </div>
+                    <div className="rounded-2xl bg-white/70 p-4">
+                      <p className="text-xs uppercase tracking-[0.16em] text-[#8a847b]">
+                        Step 2
+                      </p>
+                      <p className="mt-2 text-sm font-medium text-[#1f1f1c]">
+                        Follow calm guided support
+                      </p>
+                    </div>
 
-                      <div className="grid grid-cols-2 gap-4">
-                        <div className="rounded-2xl bg-white/70 p-4">
-                          <p className="text-sm font-medium text-[#1f1f1c]">
-                            Device
-                          </p>
-                          <p className="mt-1 text-sm leading-6 text-[#5f5a52]">
-                            Premium physical support
-                          </p>
-                        </div>
-
-                        <div className="rounded-2xl bg-white/70 p-4">
-                          <p className="text-sm font-medium text-[#1f1f1c]">
-                            Learning
-                          </p>
-                          <p className="mt-1 text-sm leading-6 text-[#5f5a52]">
-                            Broader understanding
-                          </p>
-                        </div>
-                      </div>
+                    <div className="rounded-2xl bg-white/70 p-4">
+                      <p className="text-xs uppercase tracking-[0.16em] text-[#8a847b]">
+                        Step 3
+                      </p>
+                      <p className="mt-2 text-sm font-medium text-[#1f1f1c]">
+                        Build steadier continuity over time
+                      </p>
                     </div>
                   </div>
                 </div>
@@ -199,29 +184,33 @@ export default function HowItWorksPage() {
         <div className="mx-auto max-w-7xl px-6 py-24 md:px-10 md:py-28">
           <div className="max-w-3xl">
             <p className="text-sm uppercase tracking-[0.18em] text-[#7a756c]">
-              The core flow
+              The basic flow
             </p>
 
             <h2 className="mt-4 text-3xl font-medium leading-tight tracking-[-0.03em] md:text-5xl">
-              A simple system built to support daily life rather than overwhelm it
+              The experience is designed to feel clear before it ever feels complex
             </h2>
 
             <p className="mt-6 max-w-2xl text-base leading-8 text-[#5f5a52] md:text-lg">
-              The Neuvago system works best when it feels clear, repeatable, and
-              easy to return to. The goal is not more intensity — it is calmer,
-              steadier support over time.
+              Neuvago should feel understandable at a high level from the start,
+              even if the system becomes more personal and more supportive over time.
             </p>
           </div>
 
-          <div className="mt-14 grid gap-6 md:grid-cols-2 xl:grid-cols-4">
+          <div className="mt-14 grid gap-6 lg:grid-cols-3">
             {steps.map((step) => (
               <article
-                key={step.title}
+                key={step.number}
                 className="rounded-[2rem] border border-black/5 bg-white/60 p-8 shadow-[0_12px_40px_rgba(31,31,28,0.04)]"
               >
-                <h3 className="text-2xl font-medium leading-tight text-[#1f1f1c]">
+                <p className="text-sm uppercase tracking-[0.18em] text-[#8a847b]">
+                  {step.number}
+                </p>
+
+                <h3 className="mt-5 text-2xl font-medium leading-tight text-[#1f1f1c]">
                   {step.title}
                 </h3>
+
                 <p className="mt-4 text-sm leading-7 text-[#5f5a52] md:text-base">
                   {step.description}
                 </p>
@@ -235,77 +224,62 @@ export default function HowItWorksPage() {
         <div className="mx-auto grid max-w-7xl gap-14 px-6 py-24 md:px-10 md:py-28 lg:grid-cols-[0.95fr_1.05fr] lg:items-center">
           <div className="rounded-[2rem] border border-black/5 bg-white/60 p-8 shadow-[0_12px_40px_rgba(31,31,28,0.04)] md:p-10">
             <p className="text-sm uppercase tracking-[0.16em] text-[#8a847b]">
-              System parts
+              System layers
             </p>
 
             <div className="mt-8 space-y-5">
-              {systemParts.map((item) => (
+              {layers.map((item) => (
                 <article
                   key={item.title}
                   className="rounded-2xl border border-black/5 bg-[#f8f5f0] p-5"
                 >
-                  <h3 className="text-lg font-medium text-[#1f1f1c]">
+                  <p className="text-xs uppercase tracking-[0.16em] text-[#8a847b]">
+                    {item.eyebrow}
+                  </p>
+                  <h3 className="mt-3 text-lg font-medium text-[#1f1f1c]">
                     {item.title}
                   </h3>
                   <p className="mt-2 text-sm leading-7 text-[#5f5a52] md:text-base">
                     {item.description}
                   </p>
-                  <Link
-                    href={item.href}
-                    className="mt-4 inline-flex text-sm font-medium text-[#1f1f1c] transition hover:opacity-70"
-                  >
-                    {item.linkLabel}
-                  </Link>
                 </article>
               ))}
-            </div>
-
-            <div className="mt-8 rounded-2xl bg-[#e9e1d6] p-5">
-              <p className="text-sm font-medium text-[#1f1f1c]">
-                Stronger together
-              </p>
-              <p className="mt-2 text-sm leading-7 text-[#5f5a52]">
-                Each layer can stand on its own, but together they create a
-                broader and more supportive user journey.
-              </p>
             </div>
           </div>
 
           <div>
             <p className="text-sm uppercase tracking-[0.18em] text-[#7a756c]">
-              One system, multiple entry points
+              Device + app + understanding
             </p>
 
             <h2 className="mt-4 max-w-3xl text-3xl font-medium leading-tight tracking-[-0.03em] md:text-5xl">
-              People can begin with the app, the device, a learning page, or a condition page — and still enter the same broader Neuvago experience
+              Neuvago works best when the parts reinforce each other
             </h2>
 
             <p className="mt-6 max-w-2xl text-base leading-8 text-[#5f5a52] md:text-lg">
-              Not everyone starts in the same place. Some begin with stress
-              relief and guided sessions. Some begin with the device. Others
-              begin by reading about sleep, recovery, the vagus nerve, or the
-              nervous system.
+              The goal is not one isolated product interaction. It is to create
+              a broader system where hardware, app guidance, and learning
+              reinforce each other and make the experience feel more coherent.
             </p>
 
             <p className="mt-6 max-w-2xl text-base leading-8 text-[#5f5a52]">
-              The purpose of the system is to make all of those entry points
-              feel coherent. Instead of disconnected pieces, the experience
-              should feel like one calm, well-structured path.
+              That is what helps the experience become more meaningful over
+              time: people understand more, notice more, and use the system more consistently.
             </p>
 
             <div className="mt-10 flex flex-wrap gap-4">
               <Link
-                href="/learn"
+                href="/app"
                 className="rounded-full bg-[#1f1f1c] px-6 py-3 text-sm font-medium text-white transition hover:opacity-90"
               >
-                Explore learning
+                Explore app
               </Link>
 
               <Link
-                href="/conditions"
+                href="/research"
                 className="rounded-full border border-black/10 px-6 py-3 text-sm font-medium text-[#1f1f1c] transition hover:bg-white/60"
               >
-                Explore conditions
+                Explore research
               </Link>
             </div>
           </div>
@@ -316,22 +290,21 @@ export default function HowItWorksPage() {
         <div className="mx-auto max-w-7xl px-6 py-24 md:px-10 md:py-28">
           <div className="max-w-3xl">
             <p className="text-sm uppercase tracking-[0.18em] text-[#7a756c]">
-              Where it helps most
+              Common moments
             </p>
 
             <h2 className="mt-4 text-3xl font-medium leading-tight tracking-[-0.03em] md:text-5xl">
-              A calmer system designed for real moments in real life
+              The system is meant to fit the moments when people actually want support
             </h2>
 
             <p className="mt-6 max-w-2xl text-base leading-8 text-[#5f5a52] md:text-lg">
-              The Neuvago system is designed to fit into ordinary life rather
-              than sit outside it. These are some of the moments where it can
-              feel most relevant.
+              Neuvago should feel relevant not only in theory, but in the kinds
+              of moments when people actually want calmer, steadier support.
             </p>
           </div>
 
           <div className="mt-14 grid gap-6 md:grid-cols-2 xl:grid-cols-4">
-            {useMoments.map((item) => (
+            {useCases.map((item) => (
               <article
                 key={item.title}
                 className="rounded-[2rem] border border-black/5 bg-white/60 p-8 shadow-[0_12px_40px_rgba(31,31,28,0.04)]"
@@ -339,6 +312,7 @@ export default function HowItWorksPage() {
                 <h3 className="text-2xl font-medium leading-tight text-[#1f1f1c]">
                   {item.title}
                 </h3>
+
                 <p className="mt-4 text-sm leading-7 text-[#5f5a52] md:text-base">
                   {item.description}
                 </p>
@@ -356,18 +330,13 @@ export default function HowItWorksPage() {
             </p>
 
             <h2 className="mt-4 max-w-3xl text-3xl font-medium leading-tight tracking-[-0.03em] md:text-5xl">
-              The system only works if it feels calm, usable, and realistic to return to
+              The experience should feel supportive before it feels advanced
             </h2>
 
             <p className="mt-6 max-w-2xl text-base leading-8 text-[#5f5a52] md:text-lg">
-              Neuvago is not designed to feel clinical, intense, or demanding.
-              It is designed to feel warm, premium, clear, and easy to live with.
-            </p>
-
-            <p className="mt-6 max-w-2xl text-base leading-8 text-[#5f5a52]">
-              That matters because daily support only becomes meaningful when it
-              feels realistic enough to become part of everyday life rather than
-              something people abandon after a short burst of motivation.
+              Neuvago should not feel like a noisy optimization tool or a layer
+              of unnecessary health complexity. The system is meant to feel calm,
+              usable, and realistic in everyday life.
             </p>
 
             <div className="mt-10 flex flex-wrap gap-4">
@@ -375,48 +344,33 @@ export default function HowItWorksPage() {
                 href="/product"
                 className="rounded-full bg-[#1f1f1c] px-6 py-3 text-sm font-medium text-white transition hover:opacity-90"
               >
-                Explore device
+                Explore product
               </Link>
 
               <Link
-                href="/app"
+                href="/learn"
                 className="rounded-full border border-black/10 px-6 py-3 text-sm font-medium text-[#1f1f1c] transition hover:bg-white/60"
               >
-                Explore app
+                Explore learning
               </Link>
             </div>
           </div>
 
-          <div className="rounded-[2rem] border border-black/5 bg-white/60 p-8 shadow-[0_12px_40px_rgba(31,31,28,0.04)] md:p-10">
-            <p className="text-sm uppercase tracking-[0.16em] text-[#8a847b]">
-              Core principles
-            </p>
+          <div className="space-y-5">
+            {principles.map((item) => (
+              <article
+                key={item.title}
+                className="rounded-[2rem] border border-black/5 bg-white/60 p-8 shadow-[0_12px_40px_rgba(31,31,28,0.04)]"
+              >
+                <h3 className="text-2xl font-medium leading-tight text-[#1f1f1c]">
+                  {item.title}
+                </h3>
 
-            <div className="mt-8 space-y-5">
-              {principles.map((item) => (
-                <article
-                  key={item.title}
-                  className="rounded-2xl border border-black/5 bg-[#f8f5f0] p-5"
-                >
-                  <h3 className="text-lg font-medium text-[#1f1f1c]">
-                    {item.title}
-                  </h3>
-                  <p className="mt-2 text-sm leading-7 text-[#5f5a52] md:text-base">
-                    {item.description}
-                  </p>
-                </article>
-              ))}
-            </div>
-
-            <div className="mt-8 rounded-2xl bg-[#e9e1d6] p-5">
-              <p className="text-sm font-medium text-[#1f1f1c]">
-                Calm systems create better continuity
-              </p>
-              <p className="mt-2 text-sm leading-7 text-[#5f5a52]">
-                When support feels simple and approachable, it is much easier to
-                return to consistently over time.
-              </p>
-            </div>
+                <p className="mt-4 text-sm leading-7 text-[#5f5a52] md:text-base">
+                  {item.description}
+                </p>
+              </article>
+            ))}
           </div>
         </div>
       </section>
@@ -426,26 +380,25 @@ export default function HowItWorksPage() {
           <div className="rounded-[2.5rem] border border-black/5 bg-gradient-to-br from-[#efe7dc] to-[#e5dbcf] px-8 py-14 shadow-[0_20px_80px_rgba(31,31,28,0.06)] md:px-12 md:py-16">
             <div className="max-w-3xl">
               <p className="text-sm uppercase tracking-[0.18em] text-[#7a756c]">
-                Start anywhere, then go deeper
+                Begin in the way that feels most useful
               </p>
 
               <h2 className="mt-4 text-3xl font-medium leading-tight tracking-[-0.03em] md:text-5xl">
-                One calmer system connecting device, app, learning, and research
+                Start with the product, the app, or the wider understanding behind the system
               </h2>
 
               <p className="mt-6 max-w-2xl text-base leading-8 text-[#5f5a52] md:text-lg">
-                Neuvago works best as a connected experience. Whether someone
-                begins with the device, the app, a condition page, or the
-                broader learning hub, the goal is the same: clearer support for
-                stress, sleep, recovery, and steadier daily life.
+                Some people begin by learning. Others begin with guided support.
+                Others begin with the product itself. Neuvago is designed to
+                make those different starting points feel coherent.
               </p>
 
               <div className="mt-10 flex flex-wrap gap-4">
                 <Link
-                  href="/product"
+                  href="/get-started"
                   className="rounded-full bg-[#1f1f1c] px-6 py-3 text-sm font-medium text-white transition hover:opacity-90"
                 >
-                  Explore device
+                  Get started
                 </Link>
 
                 <Link
@@ -456,10 +409,10 @@ export default function HowItWorksPage() {
                 </Link>
 
                 <Link
-                  href="/learn"
+                  href="/research"
                   className="rounded-full border border-black/10 bg-transparent px-6 py-3 text-sm font-medium text-[#1f1f1c] transition hover:bg-white/40"
                 >
-                  Explore learning
+                  Explore research
                 </Link>
               </div>
             </div>

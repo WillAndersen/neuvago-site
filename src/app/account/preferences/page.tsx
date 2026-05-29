@@ -19,7 +19,7 @@ type PreferencesRow = {
 
 export default function AccountPreferencesPage() {
   const router = useRouter()
-  const { isLoading, isSignedIn, user, profile } = useAccountProfile()
+  const { isLoading, isSignedIn, user, profile, needsOnboarding } = useAccountProfile()
 
   const [isHydratingPrefs, setIsHydratingPrefs] = useState(true)
   const [isSaving, setIsSaving] = useState(false)
@@ -40,11 +40,11 @@ export default function AccountPreferencesPage() {
       return
     }
 
-    if (isSignedIn && !profile?.primaryGoal) {
+    if (needsOnboarding) {
       router.replace("/onboarding")
       return
     }
-  }, [isLoading, isSignedIn, profile?.primaryGoal, router])
+  }, [isLoading, isSignedIn, needsOnboarding, router])
 
   useEffect(() => {
     let isMounted = true

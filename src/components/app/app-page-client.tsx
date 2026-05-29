@@ -84,24 +84,6 @@ const systemLayers = [
   },
 ]
 
-const whyItMatters = [
-  {
-    title: "Less friction, more continuity",
-    description:
-      "A calmer product is easier to come back to than something that feels demanding or overbuilt.",
-  },
-  {
-    title: "Support that reflects real life",
-    description:
-      "The app is meant to fit how people actually feel across stress, recovery, and the need for softer transitions.",
-  },
-  {
-    title: "A stronger system over time",
-    description:
-      "The app becomes even more valuable when it connects naturally to the device and wider Neuvago experience.",
-  },
-]
-
 export function AppPageClient() {
   const { isLoading, isSignedIn } = useAuthUser()
 

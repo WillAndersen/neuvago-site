@@ -1,0 +1,52 @@
+"use server";
+
+import { revalidatePath } from "next/cache";
+import { supabaseAdmin } from "@/lib/supabase/admin";
+import { PAGE_SLUGS } from "@/lib/content/page-slugs";
+import { supportPageContent as supportPageContentFallback } from "@/content/support";
+
+type DeepWiden<T> =
+  T extends string ? string
+  : T extends number ? number
+  : T extends boolean ? boolean
+  : T extends readonly (infer U)[] ? DeepWiden<U>[]
+  : T extends object ? { -readonly [K in keyof T]: DeepWiden<T[K]> }
+  : T;
+
+type SupportContent = DeepWiden<typeof supportPageContentFallback>;
+
+type SaveSupportResult =
+  | { ok: true }
+  | { ok: false; error: string };
+
+export async function saveSupportContent(
+  content: SupportContent
+): Promise<SaveSupportResult> {
+  try {
+    const { error } = await supabaseAdmin
+      .from("page_content")
+      .upsert(
+        {
+          page_slug: PAGE_SLUGS.support,
+          content_json: content,
+          updated_at: new Date().toISOString(),
+        },
+        {
+          onConflict: "page_slug",
+        }
+      );
+
+    if (error) {
+      console.error("Failed to save support content:", error.message);
+      return { ok: false, error: error.message };
+    }
+
+    revalidatePath("/support");
+    revalidatePath("/admin/pages/support");
+
+    return { ok: true };
+  } catch (error) {
+    console.error("Unexpected error while saving support content:", error);
+    return { ok: false, error: "Unexpected error while saving support content." };
+  }
+}

@@ -1,10 +1,28 @@
 import Link from "next/link"
+import { JsonLd } from "@/components/seo/json-ld"
+import { buildAuthorityPageStructuredData } from "@/lib/seo/structured-data"
 
 export const metadata = {
   title:
     "How to Calm Your Nervous System in Real Life | Stress, Sleep and Recovery | Neuvago",
   description:
     "Learn how to calm your nervous system in everyday life by understanding what keeps the body activated, what actually helps, and how calming connects to stress, sleep, and recovery.",
+  alternates: {
+    canonical: "/learn/how-to-calm-your-nervous-system",
+  },
+  openGraph: {
+    title: "How to Calm Your Nervous System in Real Life | Stress, Sleep and Recovery | Neuvago",
+    description: "Learn how to calm your nervous system in everyday life by understanding what keeps the body activated, what actually helps, and how calming connects to stress, sleep, and recovery.",
+    url: "/learn/how-to-calm-your-nervous-system",
+    siteName: "Neuvago",
+    locale: "en_US",
+    type: "article",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "How to Calm Your Nervous System in Real Life | Stress, Sleep and Recovery | Neuvago",
+    description: "Learn how to calm your nervous system in everyday life by understanding what keeps the body activated, what actually helps, and how calming connects to stress, sleep, and recovery.",
+  },
 }
 
 const keyPoints = [
@@ -152,8 +170,21 @@ const clarifications = [
 ]
 
 export default function HowToCalmYourNervousSystemPage() {
+  const structuredData = buildAuthorityPageStructuredData({
+    title: "How to Calm Your Nervous System in Real Life | Stress, Sleep and Recovery | Neuvago",
+    description: "Learn how to calm your nervous system in everyday life by understanding what keeps the body activated, what actually helps, and how calming connects to stress, sleep, and recovery.",
+    path: "/learn/how-to-calm-your-nervous-system",
+    articleSection: "Learn",
+    breadcrumbs: [
+      { name: "Home", path: "/" },
+      { name: "Learn", path: "/learn" },
+      { name: "How to Calm Your Nervous System in Real Life", path: "/learn/how-to-calm-your-nervous-system" },
+    ],
+  });
+
   return (
     <main className="bg-[#f7f4ef] text-[#1f1f1c]">
+      <JsonLd data={structuredData} idPrefix="learn-how-to-calm-your-nervous-system" />
       <section className="border-b border-black/5">
         <div className="mx-auto grid min-h-[80vh] max-w-7xl items-center gap-16 px-6 py-20 md:px-10 lg:grid-cols-[1.05fr_0.95fr] lg:py-28">
           <div className="max-w-3xl">

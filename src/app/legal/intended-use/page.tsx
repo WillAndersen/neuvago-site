@@ -1,10 +1,28 @@
 import Link from "next/link"
+import { JsonLd } from "@/components/seo/json-ld"
+import { buildPageWithBreadcrumbStructuredData } from "@/lib/seo/structured-data"
 
 export const metadata = {
   title:
     "Intended Use | Neuvago",
   description:
     "Read the intended use of Neuvago, including how the device is designed as a general wellness product for relaxation, stress support, and nervous system awareness.",
+  alternates: {
+    canonical: "/legal/intended-use",
+  },
+  openGraph: {
+    title: "Intended Use | Neuvago",
+    description: "Read the intended use of Neuvago, including how the device is designed as a general wellness product for relaxation, stress support, and nervous system awareness.",
+    url: "/legal/intended-use",
+    siteName: "Neuvago",
+    locale: "en_US",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Intended Use | Neuvago",
+    description: "Read the intended use of Neuvago, including how the device is designed as a general wellness product for relaxation, stress support, and nervous system awareness.",
+  },
 }
 
 const keyPoints = [
@@ -124,8 +142,20 @@ const relatedPages = [
 ]
 
 export default function IntendedUsePage() {
+  const structuredData = buildPageWithBreadcrumbStructuredData({
+    title: "Intended Use | Neuvago",
+    description: "Read the intended use of Neuvago, including how the device is designed as a general wellness product for relaxation, stress support, and nervous system awareness.",
+    path: "/legal/intended-use",
+    breadcrumbs: [
+      { name: "Home", path: "/" },
+      { name: "Legal", path: "/legal" },
+      { name: "Intended Use", path: "/legal/intended-use" },
+    ],
+  });
+
   return (
     <main className="bg-[#f7f4ef] text-[#1f1f1c]">
+      <JsonLd data={structuredData} idPrefix="legal-intended-use" />
       <section className="border-b border-black/5">
         <div className="mx-auto grid min-h-[70vh] max-w-7xl items-center gap-16 px-6 py-20 md:px-10 lg:grid-cols-[1.05fr_0.95fr] lg:py-24">
           <div className="max-w-3xl">

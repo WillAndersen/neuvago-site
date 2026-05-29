@@ -1,46 +1,73 @@
-import Link from "next/link"
+import type { Metadata } from "next";
+import Link from "next/link";
+import { JsonLd } from "@/components/seo/json-ld"
+import { buildPageWithBreadcrumbStructuredData } from "@/lib/seo/structured-data"
 
-export const metadata = {
-  title:
-    "Research on the Vagus Nerve, Stress, Sleep and Nervous System Regulation | Neuvago",
+export const metadata: Metadata = {
+  title: "Research Hub | Vagus Nerve, Safety, Stress and Recovery | Neuvago",
   description:
-    "Explore the Neuvago research hub with evidence-informed pathways around the vagus nerve, stress, sleep, recovery, emotional regulation, and nervous system regulation.",
-}
+    "Browse Neuvago research topics and study summaries on vagus nerve stimulation, safety and tolerability, heart rate variability, stress, sleep, recovery, and nervous system regulation.",
+  alternates: {
+    canonical: "/research",
+  },
+  openGraph: {
+    title: "Research Hub | Vagus Nerve, Safety, Stress and Recovery | Neuvago",
+    description:
+      "Browse Neuvago research topics and study summaries on vagus nerve stimulation, safety and tolerability, heart rate variability, stress, sleep, recovery, and nervous system regulation.",
+    url: "/research",
+    siteName: "Neuvago",
+    locale: "en_US",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Research Hub | Vagus Nerve, Safety, Stress and Recovery | Neuvago",
+    description:
+      "Browse Neuvago research topics and study summaries on vagus nerve stimulation, safety and tolerability, heart rate variability, stress, sleep, recovery, and nervous system regulation.",
+  },
+};
 
 const researchFoundations = [
   {
-    title: "Vagus nerve",
+    title: "Vagus nerve stimulation",
     description:
-      "Foundational research pathways around the vagus nerve, why it matters, and how it connects to broader conversations about stress, regulation, and recovery.",
-    href: "/learn/vagus-nerve",
-    linkLabel: "Start with vagus nerve",
+      "A core research topic on non-invasive vagus nerve stimulation, mechanisms, and why it matters within the broader evidence base.",
+    href: "/research/topics/vagus-nerve-stimulation",
+    linkLabel: "Explore topic",
   },
   {
-    title: "Nervous system regulation",
+    title: "Safety and tolerability",
     description:
-      "A central research pathway for understanding how the body shifts between activation, settling, recovery, and return.",
-    href: "/learn/nervous-system-regulation",
-    linkLabel: "Understand regulation",
+      "A trust-focused research topic on reported adverse events, tolerability, contraindication awareness, and responsible interpretation of non-invasive VNS evidence.",
+    href: "/research/topics/safety-and-tolerability",
+    linkLabel: "Explore safety topic",
   },
   {
-    title: "Recovery and restoration",
+    title: "Heart rate variability",
     description:
-      "A broader evidence pathway around recovery, capacity, resilience, and why rest is not always the same as deeper restoration.",
-    href: "/learn/recovery-and-regulation",
-    linkLabel: "Explore recovery",
+      "A research topic on HRV, autonomic flexibility, recovery, and why heart rate variability appears so often in regulation conversations.",
+    href: "/research/topics/heart-rate-variability",
+    linkLabel: "Explore topic",
   },
-]
+  {
+    title: "Gut–brain axis",
+    description:
+      "A broader research topic on how neural, immune, and signaling pathways connect body systems, including vagal pathways.",
+    href: "/research/topics/gut-brain-axis",
+    linkLabel: "Explore topic",
+  },
+];
 
 const researchThemes = [
   {
     title: "Stress and overload",
     description:
-      "Research pathways that help explain prolonged activation, overwhelm, physiological stress responses, and why the body may stay “on” longer than expected.",
+      "Evidence pathways around prolonged activation, physiological stress responses, overwhelm, and why the body can stay “on” longer than expected.",
   },
   {
     title: "Sleep and unwinding",
     description:
-      "A calmer evidence layer around evenings, downshifting, restoration, and what shapes whether sleep feels reachable and restorative.",
+      "Research themes around evenings, downshifting, restoration, and what shapes whether sleep feels reachable and restorative.",
   },
   {
     title: "Emotional regulation",
@@ -52,30 +79,30 @@ const researchThemes = [
     description:
       "Themes connected to vagal tone, recovery quality, adaptability, and how supported the system feels across time and context.",
   },
-]
+];
 
 const libraryStructure = [
   {
-    title: "Core research",
+    title: "Core topics",
     description:
-      "Foundational concepts and key themes that support the larger Neuvago worldview and anchor the site’s most important learning clusters.",
+      "Anchor pages for the major themes behind the research layer, giving the broader Neuvago evidence system clearer structure.",
   },
   {
-    title: "Topic research",
+    title: "Topic pages",
     description:
-      "Focused evidence pathways around major themes like stress, sleep, vagus nerve, regulation, recovery, emotional load, and calmer states.",
+      "Focused topic pages around areas like vagus nerve stimulation, heart rate variability, inflammation, and the gut–brain axis.",
   },
   {
-    title: "Scientific studies library",
+    title: "Study summaries",
     description:
-      "A growing library of individual study summaries designed to make published research easier to browse, understand, and place in context.",
+      "Published papers organized into a format that makes methods, findings, limitations, and context easier to browse.",
   },
   {
-    title: "References and evidence layers",
+    title: "References and context",
     description:
-      "A growing structure for studies, source groupings, and evidence-informed reading that strengthens authority over time.",
+      "Supporting evidence layers that help readers place individual studies inside a broader scientific and conceptual picture.",
   },
-]
+];
 
 const featuredStudies = [
   {
@@ -120,53 +147,65 @@ const featuredStudies = [
       "A major review explaining how neural, hormonal, and immune pathways connect the gut and brain, including vagal signaling.",
     href: "/research/studies/mayer-2011-gut-brain-axis",
   },
-]
+];
 
 const researchPathways = [
   {
-    title: "From research into Learn",
+    title: "Use Research to deepen Learn",
     description:
-      "The research layer should help explain why the ideas in Learn exist, giving more depth and authority to the site’s educational pages.",
+      "Move from evidence summaries into clearer educational explainers when you want the bigger picture behind the topics you are reading about.",
     href: "/learn",
     linkLabel: "Go to learning hub",
   },
   {
-    title: "From research into Conditions",
+    title: "Use Research to support Conditions",
     description:
-      "The research layer should also support the site’s condition pages, helping users move from symptom-level understanding into broader context.",
+      "Move from evidence into symptom and lived-experience pathways when the question starts with stress, sleep, anxiety, or burnout.",
     href: "/conditions",
     linkLabel: "Browse conditions",
   },
   {
-    title: "From research into the broader system",
+    title: "Use Research to strengthen the broader system",
     description:
-      "Over time, Research should help position Neuvago as a serious authority brand by connecting product, app, learning, and evidence without overclaiming.",
+      "Research adds depth and trust to Product, App, and How it works without turning the site into a claim-heavy medical experience.",
     href: "/how-it-works",
     linkLabel: "See how it connects",
   },
-]
+];
 
 const principles = [
   {
     title: "Evidence-informed, not overclaimed",
     description:
-      "The research layer should build trust through careful interpretation, not through dramatic claims or overstated promises.",
+      "The research layer builds trust through careful interpretation, not through dramatic claims or overstated promises.",
   },
   {
     title: "Clarity over jargon",
     description:
-      "The purpose is to make important topics easier to understand without flattening them into hype or making them inaccessible.",
+      "The goal is to make important topics easier to understand without flattening them into hype or making them inaccessible.",
   },
   {
     title: "Useful in everyday life",
     description:
-      "Research is most valuable here when it helps people better understand what they feel and how stress, calm, sleep, recovery, and support fit together.",
+      "Research is most valuable here when it helps people better understand stress, calm, sleep, recovery, and how those themes fit together.",
   },
-]
+];
 
 export default function ResearchPage() {
+    const structuredData = buildPageWithBreadcrumbStructuredData({
+    title: "Research Hub | Vagus Nerve, Safety, Stress and Recovery | Neuvago",
+    description: "Browse Neuvago research topics and study summaries on vagus nerve stimulation, safety and tolerability, heart rate variability, stress, sleep, recovery, and nervous system regulation.",
+    path: "/research",
+    breadcrumbs: [
+      { name: "Home", path: "/" },
+      { name: "Research", path: "/research" },
+    ],
+  });
+
+
   return (
     <main className="bg-[#f7f4ef] text-[#1f1f1c]">
+      <JsonLd data={structuredData} idPrefix="research" />
       <section className="border-b border-black/5">
         <div className="mx-auto grid min-h-[80vh] max-w-7xl items-center gap-16 px-6 py-20 md:px-10 lg:grid-cols-[1.05fr_0.95fr] lg:py-28">
           <div className="max-w-3xl">
@@ -175,30 +214,29 @@ export default function ResearchPage() {
             </p>
 
             <h1 className="text-4xl font-medium leading-[1.05] tracking-[-0.03em] md:text-6xl lg:text-7xl">
-              An evidence-informed research hub for the vagus nerve, stress, sleep, recovery, and nervous system regulation
+              A clearer research hub for the vagus nerve, stress, sleep, recovery, and nervous system regulation
             </h1>
 
             <p className="mt-6 max-w-2xl text-base leading-8 text-[#5f5a52] md:text-lg">
-              The Neuvago research hub is designed to support deeper
-              understanding of the ideas behind the site. It connects the vagus
-              nerve, nervous system regulation, stress, sleep, recovery,
-              emotional regulation, and calmer daily support through a more
-              structured evidence layer.
+              The Neuvago research hub organizes topic pages, study summaries,
+              and evidence-informed pathways around vagus nerve stimulation,
+              safety and tolerability, heart rate variability, stress, sleep, recovery, emotional
+              regulation, and broader nervous system regulation.
             </p>
 
             <div className="mt-10 flex flex-wrap gap-4">
               <Link
-                href="/learn"
+                href="/research/studies"
                 className="rounded-full bg-[#1f1f1c] px-6 py-3 text-sm font-medium text-white transition hover:opacity-90"
               >
-                Go to learning hub
+                Browse studies library
               </Link>
 
               <Link
-                href="/conditions"
+                href="/research/topics"
                 className="rounded-full border border-[#d8d1c7] bg-transparent px-6 py-3 text-sm font-medium text-[#1f1f1c] transition hover:bg-white/70"
               >
-                Browse conditions
+                Explore research topics
               </Link>
             </div>
           </div>
@@ -215,17 +253,17 @@ export default function ResearchPage() {
                         Evidence layer
                       </p>
                       <h2 className="mt-3 text-2xl font-medium text-[#1f1f1c]">
-                        A structured research foundation behind the broader Neuvago knowledge universe
+                        A research layer organized around topics, studies, and evidence pathways
                       </h2>
                     </div>
 
                     <div className="space-y-4">
                       <div className="rounded-2xl bg-white/70 p-4">
                         <p className="text-sm font-medium text-[#1f1f1c]">
-                          Foundations
+                          Research topics
                         </p>
                         <p className="mt-1 text-sm leading-6 text-[#5f5a52]">
-                          Vagus nerve, regulation, recovery
+                          Major themes and concepts
                         </p>
                       </div>
 
@@ -235,7 +273,7 @@ export default function ResearchPage() {
                             Studies
                           </p>
                           <p className="mt-1 text-sm leading-6 text-[#5f5a52]">
-                            Individual published papers
+                            Published papers and summaries
                           </p>
                         </div>
 
@@ -244,7 +282,7 @@ export default function ResearchPage() {
                             Pathways
                           </p>
                           <p className="mt-1 text-sm leading-6 text-[#5f5a52]">
-                            Learn, conditions, authority
+                            Learn, conditions, and system context
                           </p>
                         </div>
                       </div>
@@ -261,20 +299,21 @@ export default function ResearchPage() {
         <div className="mx-auto max-w-7xl px-6 py-24 md:px-10 md:py-28">
           <div className="max-w-3xl">
             <p className="text-sm uppercase tracking-[0.18em] text-[#7a756c]">
-              Core research foundations
+              Core research topics
             </p>
 
             <h2 className="mt-4 text-3xl font-medium leading-tight tracking-[-0.03em] md:text-5xl">
-              The strongest research pathways support the site’s most important learning clusters
+              Start with the topics that anchor the research layer
             </h2>
 
             <p className="mt-6 max-w-2xl text-base leading-8 text-[#5f5a52] md:text-lg">
-              These are the major foundations the research layer should support
-              most clearly. Together, they anchor the broader Neuvago authority structure.
+              These topic pages are the clearest entry points into the evidence
+              side of Neuvago. Safety and tolerability now sits beside VNS and
+              HRV as a priority trust topic for the category.
             </p>
           </div>
 
-          <div className="mt-14 grid gap-6 lg:grid-cols-3">
+          <div className="mt-14 grid gap-6 md:grid-cols-2 xl:grid-cols-4">
             {researchFoundations.map((item) => (
               <article
                 key={item.title}
@@ -306,13 +345,13 @@ export default function ResearchPage() {
             </p>
 
             <h2 className="mt-4 max-w-3xl text-3xl font-medium leading-tight tracking-[-0.03em] md:text-5xl">
-              Organize the research layer around the themes people actually care about
+              The research themes people most often care about
             </h2>
 
             <p className="mt-6 max-w-2xl text-base leading-8 text-[#5f5a52] md:text-lg">
-              The research hub should not feel abstract. It should mirror the
-              real questions people bring into the site around stress, sleep,
-              recovery, emotional load, and nervous system flexibility.
+              The research hub is organized around the real questions people
+              bring into the site around stress, sleep, recovery, emotional
+              load, and nervous system flexibility.
             </p>
           </div>
 
@@ -339,26 +378,26 @@ export default function ResearchPage() {
           <div className="flex flex-col gap-6 md:flex-row md:items-end md:justify-between">
             <div className="max-w-3xl">
               <p className="text-sm uppercase tracking-[0.18em] text-[#7a756c]">
-                Research library structure
+                Research structure
               </p>
 
               <h2 className="mt-4 text-3xl font-medium leading-tight tracking-[-0.03em] md:text-5xl">
-                Build the research hub as a growing authority layer, not just a generic library
+                A clearer evidence structure, not just a generic library
               </h2>
 
               <p className="mt-6 max-w-2xl text-base leading-8 text-[#5f5a52] md:text-lg">
-                Over time, the research layer should grow into a clearly
-                organized system with strong foundations, topic pathways,
-                individual studies, and deeper evidence groupings.
+                The research hub is organized around research topics, study
+                summaries, and supporting evidence pathways that make the
+                library easier to browse and understand.
               </p>
             </div>
 
             <div>
               <Link
-                href="/learn"
+                href="/research/topics"
                 className="inline-flex rounded-full border border-black/10 px-6 py-3 text-sm font-medium text-[#1f1f1c] transition hover:bg-white/60"
               >
-                Go to learning hub
+                Explore research topics
               </Link>
             </div>
           </div>
@@ -390,14 +429,13 @@ export default function ResearchPage() {
               </p>
 
               <h2 className="mt-4 text-3xl font-medium leading-tight tracking-[-0.03em] md:text-5xl">
-                A growing library of published studies on the vagus nerve, autonomic regulation, and related research themes
+                Published studies worth starting with
               </h2>
 
               <p className="mt-6 max-w-2xl text-base leading-8 text-[#5f5a52] md:text-lg">
-                In addition to broader research overviews, Neuvago is building a
-                structured studies library that summarizes individual published
-                papers. This helps readers move from big-picture concepts into
-                specific studies, methods, findings, limitations, and references. 
+                The studies library brings together individual papers in a
+                format that makes methods, findings, limitations, and context
+                easier to browse than raw references alone.
               </p>
             </div>
 
@@ -445,10 +483,10 @@ export default function ResearchPage() {
             </Link>
 
             <Link
-              href="/learn/vagus-nerve"
+              href="/research/topics"
               className="rounded-full border border-black/10 px-6 py-3 text-sm font-medium text-[#1f1f1c] transition hover:bg-white/60"
             >
-              Start with vagus nerve
+              Explore research topics
             </Link>
           </div>
         </div>
@@ -482,7 +520,7 @@ export default function ResearchPage() {
                 Research should build trust, not confusion
               </p>
               <p className="mt-2 text-sm leading-7 text-[#5f5a52]">
-                The purpose is to support clarity, seriousness, and better understanding over time.
+                The purpose is to support clarity, seriousness, and better understanding.
               </p>
             </div>
           </div>
@@ -493,20 +531,20 @@ export default function ResearchPage() {
             </p>
 
             <h2 className="mt-4 max-w-3xl text-3xl font-medium leading-tight tracking-[-0.03em] md:text-5xl">
-              Research is one of the key layers that turns Neuvago from a product site into an authority site
+              Research is the evidence layer behind the broader Neuvago system
             </h2>
 
             <p className="mt-6 max-w-2xl text-base leading-8 text-[#5f5a52] md:text-lg">
-              The role of the research layer is not only to collect references.
-              It is to give deeper structure and trust to the ideas expressed
-              throughout Learn, Conditions, Product, App, and the broader
-              knowledge universe.
+              The role of research is not only to collect references. It adds
+              deeper structure and trust to the ideas expressed throughout
+              Learn, Conditions, Product, App, and the broader knowledge
+              universe.
             </p>
 
             <p className="mt-6 max-w-2xl text-base leading-8 text-[#5f5a52]">
-              That means the research hub should increasingly feel like a
-              serious evidence-informed layer beneath the rest of the site, not
-              a detached section with no real relationship to the user journey.
+              In practice, the research hub functions as a serious
+              evidence-informed layer beneath the rest of the site, not a
+              detached section with no real relationship to the user journey.
             </p>
 
             <div className="mt-10 flex flex-wrap gap-4">
@@ -536,8 +574,13 @@ export default function ResearchPage() {
             </p>
 
             <h2 className="mt-4 text-3xl font-medium leading-tight tracking-[-0.03em] md:text-5xl">
-              Use research as a supporting layer for learning, conditions, and the broader Neuvago system
+              Where to go next from Research
             </h2>
+
+            <p className="mt-6 max-w-2xl text-base leading-8 text-[#5f5a52] md:text-lg">
+              Use the evidence layer as a bridge into learning, conditions, and
+              the broader Neuvago system.
+            </p>
           </div>
 
           <div className="mt-14 grid gap-6 md:grid-cols-3">
@@ -569,18 +612,17 @@ export default function ResearchPage() {
           <div className="rounded-[2.5rem] border border-black/5 bg-gradient-to-br from-[#efe7dc] to-[#e5dbcf] px-8 py-14 shadow-[0_20px_80px_rgba(31,31,28,0.06)] md:px-12 md:py-16">
             <div className="max-w-3xl">
               <p className="text-sm uppercase tracking-[0.18em] text-[#7a756c]">
-                Explore the evidence layer, then go deeper
+                Explore the evidence layer, then keep moving
               </p>
 
               <h2 className="mt-4 text-3xl font-medium leading-tight tracking-[-0.03em] md:text-5xl">
-                A research hub designed to strengthen learning, conditions, and the larger Neuvago authority system
+                Browse studies, explore research topics, or continue into Learn
               </h2>
 
               <p className="mt-6 max-w-2xl text-base leading-8 text-[#5f5a52] md:text-lg">
-                The Neuvago research hub is built to support stronger authority
-                over time — not by overclaiming, but by organizing the deeper
-                themes behind stress, sleep, recovery, vagus nerve topics,
-                emotional load, nervous system regulation, and individual published studies more clearly.
+                The research hub is designed to give the broader Neuvago system
+                more depth and clarity by organizing studies, evidence themes,
+                and topic pages in a way that is easier to navigate.
               </p>
 
               <div className="mt-10 flex flex-wrap gap-4">
@@ -592,17 +634,17 @@ export default function ResearchPage() {
                 </Link>
 
                 <Link
-                  href="/learn"
+                  href="/research/topics"
                   className="rounded-full border border-black/10 bg-white/50 px-6 py-3 text-sm font-medium text-[#1f1f1c] transition hover:bg-white/75"
                 >
-                  Go to learning hub
+                  Explore research topics
                 </Link>
 
                 <Link
-                  href="/conditions"
+                  href="/learn"
                   className="rounded-full border border-black/10 bg-transparent px-6 py-3 text-sm font-medium text-[#1f1f1c] transition hover:bg-white/40"
                 >
-                  Browse conditions
+                  Go to learning hub
                 </Link>
               </div>
             </div>
@@ -610,5 +652,5 @@ export default function ResearchPage() {
         </div>
       </section>
     </main>
-  )
+  );
 }

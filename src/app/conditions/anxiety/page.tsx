@@ -1,10 +1,28 @@
 import Link from "next/link"
+import { JsonLd } from "@/components/seo/json-ld"
+import { buildAuthorityPageStructuredData } from "@/lib/seo/structured-data"
 
 export const metadata = {
   title:
     "Anxiety and the Nervous System | Unease, Alertness and Overwhelm | Neuvago",
   description:
     "Learn how anxiety connects to the nervous system, including alertness, overwhelm, reactivity, poor sleep, and why the body can feel watchful or hard to settle.",
+  alternates: {
+    canonical: "/conditions/anxiety",
+  },
+  openGraph: {
+    title: "Anxiety and the Nervous System | Unease, Alertness and Overwhelm | Neuvago",
+    description: "Learn how anxiety connects to the nervous system, including alertness, overwhelm, reactivity, poor sleep, and why the body can feel watchful or hard to settle.",
+    url: "/conditions/anxiety",
+    siteName: "Neuvago",
+    locale: "en_US",
+    type: "article",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Anxiety and the Nervous System | Unease, Alertness and Overwhelm | Neuvago",
+    description: "Learn how anxiety connects to the nervous system, including alertness, overwhelm, reactivity, poor sleep, and why the body can feel watchful or hard to settle.",
+  },
 }
 
 const anxietyPillars = [
@@ -79,58 +97,22 @@ const connectedTopics = [
   },
 ]
 
-const searchReasons = [
-  {
-    title: "They feel watchful or on edge",
-    description:
-      "Many people search for anxiety because the body feels tense, alert, uneasy, or difficult to relax even when there is no obvious immediate reason.",
-    href: "/learn/signs-of-a-dysregulated-nervous-system",
-    linkLabel: "Explore signs of dysregulation",
-  },
-  {
-    title: "They cannot come back down",
-    description:
-      "Often the real question is not only why anxiety shows up, but why it lingers in the body and feels hard to recover from.",
-    href: "/learn/why-your-body-feels-stuck-in-stress",
-    linkLabel: "Explore stuck stress",
-  },
-  {
-    title: "They want to understand the body’s response",
-    description:
-      "Usually, people are looking for language that explains why anxiety feels so physical, so persistent, and so connected to sleep, energy, and overwhelm.",
-    href: "/learn/nervous-system-regulation",
-    linkLabel: "Explore regulation",
-  },
-  {
-    title: "They want a broader explanation",
-    description:
-      "The search often opens into a larger question about nervous system state, emotional load, recovery, and how the body returns after activation.",
-    href: "/learn/recovery-and-regulation",
-    linkLabel: "Explore recovery",
-  },
-]
-
-const clarifications = [
-  {
-    title: "Anxiety does not always look dramatic",
-    description:
-      "It can be loud and obvious, but it can also appear as quiet unease, internal tension, constant mental activity, or the sense that the system never fully settles.",
-  },
-  {
-    title: "Anxiety is not only about thoughts",
-    description:
-      "Thinking patterns matter, but anxiety also shows up through body state, activation, poor sleep, reduced recovery, and how difficult it feels to come back down.",
-  },
-  {
-    title: "The broader pattern usually matters most",
-    description:
-      "Anxiety often becomes clearest when viewed across nervous system state, sleep, stress load, emotional capacity, and what keeps repeating over time.",
-  },
-]
-
 export default function AnxietyPage() {
+  const structuredData = buildAuthorityPageStructuredData({
+    title: "Anxiety and the Nervous System | Unease, Alertness and Overwhelm | Neuvago",
+    description: "Learn how anxiety connects to the nervous system, including alertness, overwhelm, reactivity, poor sleep, and why the body can feel watchful or hard to settle.",
+    path: "/conditions/anxiety",
+    articleSection: "Conditions",
+    breadcrumbs: [
+      { name: "Home", path: "/" },
+      { name: "Conditions", path: "/conditions" },
+      { name: "Anxiety and the Nervous System", path: "/conditions/anxiety" },
+    ],
+  });
+
   return (
     <main className="bg-[#f7f4ef] text-[#1f1f1c]">
+      <JsonLd data={structuredData} idPrefix="conditions-anxiety" />
       <section className="border-b border-black/5">
         <div className="mx-auto grid min-h-[80vh] max-w-7xl items-center gap-16 px-6 py-20 md:px-10 lg:grid-cols-[1.05fr_0.95fr] lg:py-28">
           <div className="max-w-3xl">

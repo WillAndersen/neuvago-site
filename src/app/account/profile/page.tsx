@@ -20,7 +20,7 @@ type GoalValue = (typeof GOALS)[number]["value"]
 
 export default function AccountProfilePage() {
   const router = useRouter()
-  const { isLoading, isSignedIn, user, profile } = useAccountProfile()
+  const { isLoading, isSignedIn, user, profile, refreshProfile } = useAccountProfile()
 
   const [isSaving, setIsSaving] = useState(false)
   const [firstName, setFirstName] = useState("")
@@ -80,6 +80,7 @@ export default function AccountProfilePage() {
 
       if (error) throw error
 
+      await refreshProfile()
       setSuccessText("Your profile has been updated.")
       router.refresh()
     } catch (err) {

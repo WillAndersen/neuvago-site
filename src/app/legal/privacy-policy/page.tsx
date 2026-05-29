@@ -1,10 +1,28 @@
 import Link from "next/link"
+import { JsonLd } from "@/components/seo/json-ld"
+import { buildPageWithBreadcrumbStructuredData } from "@/lib/seo/structured-data"
 
 export const metadata = {
   title:
     "Privacy Policy | Neuvago",
   description:
     "Read the Neuvago Privacy Policy, including what personal data we collect, how we use it, cookies, analytics, third-party services, data retention, and your rights.",
+  alternates: {
+    canonical: "/legal/privacy-policy",
+  },
+  openGraph: {
+    title: "Privacy Policy | Neuvago",
+    description: "Read the Neuvago Privacy Policy, including what personal data we collect, how we use it, cookies, analytics, third-party services, data retention, and your rights.",
+    url: "/legal/privacy-policy",
+    siteName: "Neuvago",
+    locale: "en_US",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Privacy Policy | Neuvago",
+    description: "Read the Neuvago Privacy Policy, including what personal data we collect, how we use it, cookies, analytics, third-party services, data retention, and your rights.",
+  },
 }
 
 const keyPoints = [
@@ -184,8 +202,20 @@ const relatedPages = [
 ]
 
 export default function PrivacyPolicyPage() {
+  const structuredData = buildPageWithBreadcrumbStructuredData({
+    title: "Privacy Policy | Neuvago",
+    description: "Read the Neuvago Privacy Policy, including what personal data we collect, how we use it, cookies, analytics, third-party services, data retention, and your rights.",
+    path: "/legal/privacy-policy",
+    breadcrumbs: [
+      { name: "Home", path: "/" },
+      { name: "Legal", path: "/legal" },
+      { name: "Privacy Policy", path: "/legal/privacy-policy" },
+    ],
+  });
+
   return (
     <main className="bg-[#f7f4ef] text-[#1f1f1c]">
+      <JsonLd data={structuredData} idPrefix="legal-privacy-policy" />
       <section className="border-b border-black/5">
         <div className="mx-auto grid min-h-[70vh] max-w-7xl items-center gap-16 px-6 py-20 md:px-10 lg:grid-cols-[1.05fr_0.95fr] lg:py-24">
           <div className="max-w-3xl">

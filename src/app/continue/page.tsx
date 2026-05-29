@@ -1,60 +1,66 @@
 "use client"
 
 import { useRouter } from "next/navigation"
-import { useEffect } from "react"
+import { useEffect, useState } from "react"
 
+import { useAccountProfile } from "@/hooks/useAccountProfile"
 import { supabase } from "@/lib/supabase/client"
+
+type StartSurface = "account" | "open_app"
 
 export default function ContinuePage() {
   const router = useRouter()
+  const account = useAccountProfile()
+
+  const [isLoadingPreference, setIsLoadingPreference] = useState(true)
+  const [errorText, setErrorText] = useState<string | null>(null)
 
   useEffect(() => {
     let isMounted = true
 
     async function resolveDestination() {
+      if (account.isLoading) return
+
+      if (!account.isSignedIn || !account.user) {
+        router.replace("/login")
+        return
+      }
+
+      if (account.needsOnboarding) {
+        router.replace("/onboarding")
+        return
+      }
+
       try {
-        const {
-          data: { user },
-          error: userError,
-        } = await supabase.auth.getUser()
-
-        if (!isMounted) return
-
-        if (userError || !user) {
-          router.replace("/login")
-          return
-        }
-
-        const { data: profileRow, error: profileError } = await supabase
-          .from("profiles")
-          .select("primary_goal")
-          .eq("id", user.id)
-          .maybeSingle()
-
-        if (!isMounted) return
-
-        if (profileError || !profileRow?.primary_goal) {
-          router.replace("/onboarding")
-          return
-        }
-
-        const { data: preferencesRow } = await supabase
+        const { data, error } = await supabase
           .from("account_preferences")
           .select("preferred_start_surface")
-          .eq("user_id", user.id)
+          .eq("user_id", account.user.id)
           .maybeSingle()
 
         if (!isMounted) return
+        if (error) throw error
 
-        if (preferencesRow?.preferred_start_surface === "open_app") {
+        const preferredStartSurface: StartSurface =
+          data?.preferred_start_surface === "open_app" ? "open_app" : "account"
+
+        if (preferredStartSurface === "open_app") {
           router.replace("/open-app")
           return
         }
 
-        router.replace("/account")
-      } catch {
+        router.replace("/account/today")
+      } catch (err) {
         if (!isMounted) return
-        router.replace("/account")
+
+        setErrorText(
+          err instanceof Error
+            ? err.message
+            : "Could not resolve your preferred start surface."
+        )
+        router.replace("/account/today")
+      } finally {
+        if (isMounted) setIsLoadingPreference(false)
       }
     }
 
@@ -63,7 +69,7 @@ export default function ContinuePage() {
     return () => {
       isMounted = false
     }
-  }, [router])
+  }, [account.isLoading, account.isSignedIn, account.needsOnboarding, account.user, router])
 
   return (
     <main className="min-h-screen bg-[#f7f4ef] text-[#1f1f1c]">
@@ -79,8 +85,19 @@ export default function ContinuePage() {
             </h1>
 
             <p className="mt-6 max-w-xl text-lg leading-8 text-[#5f5a52] sm:text-xl">
-              Neuvago is checking your account and preferred starting point.
+              Neuvago is checking your account, profile state, and preferred
+              start surface.
             </p>
+
+            {errorText ? (
+              <p className="mt-6 text-sm leading-7 text-red-700">{errorText}</p>
+            ) : null}
+
+            {!account.isLoading && isLoadingPreference ? (
+              <p className="mt-6 text-sm leading-7 text-[#7a756c]">
+                Almost there.
+              </p>
+            ) : null}
           </div>
         </div>
       </section>

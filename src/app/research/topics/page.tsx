@@ -1,10 +1,28 @@
 import Link from "next/link"
+import { JsonLd } from "@/components/seo/json-ld"
+import { buildPageWithBreadcrumbStructuredData } from "@/lib/seo/structured-data"
 
 export const metadata = {
   title:
-    "Topic Research | Vagus Nerve, HRV, Inflammation, Stress and Nervous System Research | Neuvago",
+    "Topic Research | Vagus Nerve, Safety, HRV, Stress and Nervous System Research | Neuvago",
   description:
-    "Explore topic research in the Neuvago Research Library, including vagus nerve stimulation, heart rate variability, inflammation, gut–brain axis, stress physiology, and autonomic regulation.",
+    "Explore topic research in the Neuvago Research Library, including vagus nerve stimulation, safety and tolerability, heart rate variability, inflammation, gut–brain axis, stress physiology, and autonomic regulation.",
+  alternates: {
+    canonical: "/research/topics",
+  },
+  openGraph: {
+    title: "Topic Research | Vagus Nerve, Safety, HRV, Stress and Nervous System Research | Neuvago",
+    description: "Explore topic research in the Neuvago Research Library, including vagus nerve stimulation, safety and tolerability, heart rate variability, inflammation, gut–brain axis, stress physiology, and autonomic regulation.",
+    url: "/research/topics",
+    siteName: "Neuvago",
+    locale: "en_US",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Topic Research | Vagus Nerve, Safety, HRV, Stress and Nervous System Research | Neuvago",
+    description: "Explore topic research in the Neuvago Research Library, including vagus nerve stimulation, safety and tolerability, heart rate variability, inflammation, gut–brain axis, stress physiology, and autonomic regulation.",
+  },
 }
 
 const topicCategories = [
@@ -13,6 +31,14 @@ const topicCategories = [
     description:
       "Research on implanted and non-invasive vagus nerve stimulation, including auricular stimulation, neuromodulation, and brain–body pathways.",
     href: "/research/topics/vagus-nerve-stimulation",
+    linkLabel: "Browse topic",
+    status: "Priority topic",
+  },
+  {
+    title: "Safety and tolerability",
+    description:
+      "Research on reported adverse events, tolerability, stimulation comfort, contraindication awareness, and responsible interpretation of non-invasive VNS evidence.",
+    href: "/research/topics/safety-and-tolerability",
     linkLabel: "Browse topic",
     status: "Priority topic",
   },
@@ -37,14 +63,14 @@ const topicCategories = [
     description:
       "Research on communication between the digestive system, nervous system, microbiome, immune signaling, and vagal pathways.",
     href: "/research/topics/gut-brain-axis",
-    linkLabel: "Planned topic",
-    status: "Planned",
+    linkLabel: "Browse topic",
+    status: "Priority topic",
   },
   {
     title: "Stress physiology",
     description:
       "Research on stress responses, autonomic load, physiological activation, and how the nervous system responds to challenge.",
-    href: "/research/topics/stress",
+    href: null,
     linkLabel: "Planned topic",
     status: "Planned",
   },
@@ -52,7 +78,7 @@ const topicCategories = [
     title: "Sleep and recovery",
     description:
       "Research on recovery physiology, downshifting, autonomic balance, rest-related processes, and sleep-linked regulation.",
-    href: "/research/topics/sleep",
+    href: null,
     linkLabel: "Planned topic",
     status: "Planned",
   },
@@ -60,7 +86,7 @@ const topicCategories = [
     title: "Anxiety and emotional regulation",
     description:
       "Research on emotional processing, autonomic flexibility, vagal pathways, anxiety-related physiology, and regulation capacity.",
-    href: "/research/topics/anxiety",
+    href: null,
     linkLabel: "Planned topic",
     status: "Planned",
   },
@@ -68,7 +94,7 @@ const topicCategories = [
     title: "Autonomic nervous system regulation",
     description:
       "Research on sympathetic and parasympathetic balance, autonomic flexibility, vagal regulation, and state-shifting physiology.",
-    href: "/research/topics/autonomic-regulation",
+    href: null,
     linkLabel: "Planned topic",
     status: "Planned",
   },
@@ -117,8 +143,20 @@ const whyTopicsMatter = [
 ]
 
 export default function ResearchTopicsPage() {
+  const structuredData = buildPageWithBreadcrumbStructuredData({
+    title: "Topic Research | Vagus Nerve, Safety, HRV, Stress and Nervous System Research | Neuvago",
+    description: "Explore topic research in the Neuvago Research Library, including vagus nerve stimulation, safety and tolerability, heart rate variability, inflammation, gut–brain axis, stress physiology, and autonomic regulation.",
+    path: "/research/topics",
+    breadcrumbs: [
+      { name: "Home", path: "/" },
+      { name: "Research", path: "/research" },
+      { name: "Topic Research", path: "/research/topics" },
+    ],
+  });
+
   return (
     <main className="bg-[#f7f4ef] text-[#1f1f1c]">
+      <JsonLd data={structuredData} idPrefix="research-topics" />
       <section className="border-b border-black/5 bg-[#f7f4ef]">
         <div className="mx-auto max-w-7xl px-6 py-20 md:px-10 md:py-24">
           <div className="max-w-4xl">
@@ -133,7 +171,7 @@ export default function ResearchTopicsPage() {
             <p className="mt-6 max-w-3xl text-base leading-8 text-[#5f5a52] md:text-lg">
               Topic Research organizes the Neuvago Research Library by major
               scientific themes. Instead of starting with individual papers,
-              readers can begin with a research area such as vagus nerve stimulation,
+              readers can begin with a research area such as vagus nerve stimulation, safety and tolerability,
               heart rate variability, inflammation, gut–brain communication, or
               autonomic regulation, and then move into the relevant studies.
             </p>
@@ -243,12 +281,18 @@ export default function ResearchTopicsPage() {
                   {item.description}
                 </p>
 
-                <Link
-                  href={item.href}
-                  className="mt-7 inline-flex text-sm font-medium text-[#1f1f1c] underline-offset-4 transition hover:underline"
-                >
-                  {item.linkLabel}
-                </Link>
+                {item.href ? (
+                  <Link
+                    href={item.href}
+                    className="mt-7 inline-flex text-sm font-medium text-[#1f1f1c] underline-offset-4 transition hover:underline"
+                  >
+                    {item.linkLabel}
+                  </Link>
+                ) : (
+                  <span className="mt-7 inline-flex text-sm font-medium text-[#8a847b]">
+                    {item.linkLabel}
+                  </span>
+                )}
               </article>
             ))}
           </div>

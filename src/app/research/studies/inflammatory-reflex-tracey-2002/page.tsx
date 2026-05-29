@@ -1,10 +1,28 @@
 import Link from "next/link"
+import { JsonLd } from "@/components/seo/json-ld"
+import { buildAuthorityPageStructuredData } from "@/lib/seo/structured-data"
 
 export const metadata = {
   title:
     "The Inflammatory Reflex: Neural Regulation of the Immune System (Tracey, 2002) | Neuvago Research Library",
   description:
     "Read a structured summary of Tracey (2002), the landmark paper that introduced the inflammatory reflex and helped establish the role of vagal pathways in neuroimmune communication.",
+  alternates: {
+    canonical: "/research/studies/inflammatory-reflex-tracey-2002",
+  },
+  openGraph: {
+    title: "The Inflammatory Reflex: Neural Regulation of the Immune System (Tracey, 2002) | Neuvago Research Library",
+    description: "Read a structured summary of Tracey (2002), the landmark paper that introduced the inflammatory reflex and helped establish the role of vagal pathways in neuroimmune communication.",
+    url: "/research/studies/inflammatory-reflex-tracey-2002",
+    siteName: "Neuvago",
+    locale: "en_US",
+    type: "article",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "The Inflammatory Reflex: Neural Regulation of the Immune System (Tracey, 2002) | Neuvago Research Library",
+    description: "Read a structured summary of Tracey (2002), the landmark paper that introduced the inflammatory reflex and helped establish the role of vagal pathways in neuroimmune communication.",
+  },
 }
 
 const studyDetails = [
@@ -134,8 +152,22 @@ const relatedLinks = [
 ]
 
 export default function InflammatoryReflexTracey2002Page() {
+  const structuredData = buildAuthorityPageStructuredData({
+    title: "The Inflammatory Reflex: Neural Regulation of the Immune System (Tracey, 2002) | Neuvago Research Library",
+    description: "Read a structured summary of Tracey (2002), the landmark paper that introduced the inflammatory reflex and helped establish the role of vagal pathways in neuroimmune communication.",
+    path: "/research/studies/inflammatory-reflex-tracey-2002",
+    articleSection: "Scientific studies",
+    breadcrumbs: [
+      { name: "Home", path: "/" },
+      { name: "Research", path: "/research" },
+      { name: "Scientific Studies", path: "/research/studies" },
+      { name: "The Inflammatory Reflex: Neural Regulation of the Immune System (Tracey, 2002)", path: "/research/studies/inflammatory-reflex-tracey-2002" },
+    ],
+  });
+
   return (
     <main className="bg-[#f7f4ef] text-[#1f1f1c]">
+      <JsonLd data={structuredData} idPrefix="research-studies-inflammatory-reflex-tracey-2002" />
       <section className="border-b border-black/5 bg-[#f7f4ef]">
         <div className="mx-auto max-w-7xl px-6 py-20 md:px-10 md:py-24">
           <div className="max-w-4xl">

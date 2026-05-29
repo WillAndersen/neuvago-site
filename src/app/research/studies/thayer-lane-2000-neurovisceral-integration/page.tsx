@@ -1,10 +1,28 @@
 import Link from "next/link"
+import { JsonLd } from "@/components/seo/json-ld"
+import { buildAuthorityPageStructuredData } from "@/lib/seo/structured-data"
 
 export const metadata = {
   title:
     "A Model of Neurovisceral Integration in Emotion Regulation (Thayer & Lane, 2000) | Neuvago Research Library",
   description:
     "Read a structured summary of Thayer & Lane (2000), the influential paper that linked emotional regulation, autonomic flexibility, HRV, and vagal regulation in the neurovisceral integration model.",
+  alternates: {
+    canonical: "/research/studies/thayer-lane-2000-neurovisceral-integration",
+  },
+  openGraph: {
+    title: "A Model of Neurovisceral Integration in Emotion Regulation (Thayer & Lane, 2000) | Neuvago Research Library",
+    description: "Read a structured summary of Thayer & Lane (2000), the influential paper that linked emotional regulation, autonomic flexibility, HRV, and vagal regulation in the neurovisceral integration model.",
+    url: "/research/studies/thayer-lane-2000-neurovisceral-integration",
+    siteName: "Neuvago",
+    locale: "en_US",
+    type: "article",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "A Model of Neurovisceral Integration in Emotion Regulation (Thayer & Lane, 2000) | Neuvago Research Library",
+    description: "Read a structured summary of Thayer & Lane (2000), the influential paper that linked emotional regulation, autonomic flexibility, HRV, and vagal regulation in the neurovisceral integration model.",
+  },
 }
 
 const studyDetails = [
@@ -131,8 +149,22 @@ const relatedLinks = [
 ]
 
 export default function ThayerLane2000NeurovisceralIntegrationPage() {
+  const structuredData = buildAuthorityPageStructuredData({
+    title: "A Model of Neurovisceral Integration in Emotion Regulation (Thayer & Lane, 2000) | Neuvago Research Library",
+    description: "Read a structured summary of Thayer & Lane (2000), the influential paper that linked emotional regulation, autonomic flexibility, HRV, and vagal regulation in the neurovisceral integration model.",
+    path: "/research/studies/thayer-lane-2000-neurovisceral-integration",
+    articleSection: "Scientific studies",
+    breadcrumbs: [
+      { name: "Home", path: "/" },
+      { name: "Research", path: "/research" },
+      { name: "Scientific Studies", path: "/research/studies" },
+      { name: "A Model of Neurovisceral Integration in Emotion Regulation (Thayer & Lane, 2000)", path: "/research/studies/thayer-lane-2000-neurovisceral-integration" },
+    ],
+  });
+
   return (
     <main className="bg-[#f7f4ef] text-[#1f1f1c]">
+      <JsonLd data={structuredData} idPrefix="research-studies-thayer-lane-2000-neurovisceral-integration" />
       <section className="border-b border-black/5 bg-[#f7f4ef]">
         <div className="mx-auto max-w-7xl px-6 py-20 md:px-10 md:py-24">
           <div className="max-w-4xl">

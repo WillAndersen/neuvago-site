@@ -1,0 +1,9 @@
+export { AboutHero } from "./AboutHero";
+export { AboutWhyItExists } from "./AboutWhyItExists";
+export { AboutApproach } from "./AboutApproach";
+export { AboutConnectedSystem } from "./AboutConnectedSystem";
+export { AboutCalmDesign } from "./AboutCalmDesign";
+export { AboutBuiltForEverydayLife } from "./AboutBuiltForEverydayLife";
+export { AboutKnowledgeUniverse } from "./AboutKnowledgeUniverse";
+export { AboutFaq } from "./AboutFaq";
+export { AboutFinalCta } from "./AboutFinalCta";

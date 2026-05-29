@@ -1,10 +1,28 @@
 import Link from "next/link"
+import { JsonLd } from "@/components/seo/json-ld"
+import { buildPageWithBreadcrumbStructuredData } from "@/lib/seo/structured-data"
 
 export const metadata = {
   title:
     "CE Compliance | Neuvago",
   description:
     "Read how CE compliance fits into Neuvago product safety and consumer electronics requirements, including electrical safety, EMC, battery safety, and product conformity in Europe.",
+  alternates: {
+    canonical: "/legal/ce-compliance",
+  },
+  openGraph: {
+    title: "CE Compliance | Neuvago",
+    description: "Read how CE compliance fits into Neuvago product safety and consumer electronics requirements, including electrical safety, EMC, battery safety, and product conformity in Europe.",
+    url: "/legal/ce-compliance",
+    siteName: "Neuvago",
+    locale: "en_US",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "CE Compliance | Neuvago",
+    description: "Read how CE compliance fits into Neuvago product safety and consumer electronics requirements, including electrical safety, EMC, battery safety, and product conformity in Europe.",
+  },
 }
 
 const keyPoints = [
@@ -131,8 +149,20 @@ const relatedPages = [
 ]
 
 export default function CECompliancePage() {
+  const structuredData = buildPageWithBreadcrumbStructuredData({
+    title: "CE Compliance | Neuvago",
+    description: "Read how CE compliance fits into Neuvago product safety and consumer electronics requirements, including electrical safety, EMC, battery safety, and product conformity in Europe.",
+    path: "/legal/ce-compliance",
+    breadcrumbs: [
+      { name: "Home", path: "/" },
+      { name: "Legal", path: "/legal" },
+      { name: "CE Compliance", path: "/legal/ce-compliance" },
+    ],
+  });
+
   return (
     <main className="bg-[#f7f4ef] text-[#1f1f1c]">
+      <JsonLd data={structuredData} idPrefix="legal-ce-compliance" />
       <section className="border-b border-black/5">
         <div className="mx-auto grid min-h-[70vh] max-w-7xl items-center gap-16 px-6 py-20 md:px-10 lg:grid-cols-[1.05fr_0.95fr] lg:py-24">
           <div className="max-w-3xl">

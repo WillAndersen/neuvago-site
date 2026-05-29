@@ -1,10 +1,28 @@
 import Link from "next/link"
+import { JsonLd } from "@/components/seo/json-ld"
+import { buildAuthorityPageStructuredData } from "@/lib/seo/structured-data"
 
 export const metadata = {
   title:
     "Common Signs of a Dysregulated Nervous System | Stress, Sleep and Recovery | Neuvago",
   description:
     "Learn the common signs of a dysregulated nervous system, how they show up in everyday life, and how they connect to stress, sleep, recovery, anxiety, and shutdown.",
+  alternates: {
+    canonical: "/learn/signs-of-a-dysregulated-nervous-system",
+  },
+  openGraph: {
+    title: "Common Signs of a Dysregulated Nervous System | Stress, Sleep and Recovery | Neuvago",
+    description: "Learn the common signs of a dysregulated nervous system, how they show up in everyday life, and how they connect to stress, sleep, recovery, anxiety, and shutdown.",
+    url: "/learn/signs-of-a-dysregulated-nervous-system",
+    siteName: "Neuvago",
+    locale: "en_US",
+    type: "article",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Common Signs of a Dysregulated Nervous System | Stress, Sleep and Recovery | Neuvago",
+    description: "Learn the common signs of a dysregulated nervous system, how they show up in everyday life, and how they connect to stress, sleep, recovery, anxiety, and shutdown.",
+  },
 }
 
 const keyPoints = [
@@ -130,27 +148,22 @@ const connectedTopics = [
   },
 ]
 
-const clarifications = [
-  {
-    title: "These signs do not always mean one single cause",
-    description:
-      "The pattern can reflect a broader regulation issue, but one symptom alone does not always point to one simple explanation.",
-  },
-  {
-    title: "These signs do not mean the body is broken",
-    description:
-      "Often, they make more sense as a system working hard under stress, overload, poor sleep, or thin recovery rather than a system that has permanently failed.",
-  },
-  {
-    title: "The broader pattern usually matters more than one moment",
-    description:
-      "These signs become most useful when noticed across time. What keeps repeating, clustering, or shaping daily life often matters more than one isolated experience.",
-  },
-]
-
 export default function SignsOfADysregulatedNervousSystemPage() {
+  const structuredData = buildAuthorityPageStructuredData({
+    title: "Common Signs of a Dysregulated Nervous System | Stress, Sleep and Recovery | Neuvago",
+    description: "Learn the common signs of a dysregulated nervous system, how they show up in everyday life, and how they connect to stress, sleep, recovery, anxiety, and shutdown.",
+    path: "/learn/signs-of-a-dysregulated-nervous-system",
+    articleSection: "Learn",
+    breadcrumbs: [
+      { name: "Home", path: "/" },
+      { name: "Learn", path: "/learn" },
+      { name: "Common Signs of a Dysregulated Nervous System", path: "/learn/signs-of-a-dysregulated-nervous-system" },
+    ],
+  });
+
   return (
     <main className="bg-[#f7f4ef] text-[#1f1f1c]">
+      <JsonLd data={structuredData} idPrefix="learn-signs-of-a-dysregulated-nervous-system" />
       <section className="border-b border-black/5">
         <div className="mx-auto grid min-h-[80vh] max-w-7xl items-center gap-16 px-6 py-20 md:px-10 lg:grid-cols-[1.05fr_0.95fr] lg:py-28">
           <div className="max-w-3xl">

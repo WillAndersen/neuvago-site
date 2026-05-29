@@ -1,10 +1,28 @@
 import Link from "next/link"
+import { JsonLd } from "@/components/seo/json-ld"
+import { buildAuthorityPageStructuredData } from "@/lib/seo/structured-data"
 
 export const metadata = {
   title:
     "Vagus Nerve Stimulation Attenuates the Systemic Inflammatory Response (Borovikova et al., 2000) | Neuvago Research Library",
   description:
     "Read a structured summary of Borovikova et al. (2000), the landmark Nature study showing that vagus nerve stimulation reduced inflammatory cytokine release in an experimental model.",
+  alternates: {
+    canonical: "/research/studies/borovikova-2000-vagus-nerve-inflammation",
+  },
+  openGraph: {
+    title: "Vagus Nerve Stimulation Attenuates the Systemic Inflammatory Response (Borovikova et al., 2000) | Neuvago Research Library",
+    description: "Read a structured summary of Borovikova et al. (2000), the landmark Nature study showing that vagus nerve stimulation reduced inflammatory cytokine release in an experimental model.",
+    url: "/research/studies/borovikova-2000-vagus-nerve-inflammation",
+    siteName: "Neuvago",
+    locale: "en_US",
+    type: "article",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Vagus Nerve Stimulation Attenuates the Systemic Inflammatory Response (Borovikova et al., 2000) | Neuvago Research Library",
+    description: "Read a structured summary of Borovikova et al. (2000), the landmark Nature study showing that vagus nerve stimulation reduced inflammatory cytokine release in an experimental model.",
+  },
 }
 
 const studyDetails = [
@@ -139,8 +157,22 @@ const relatedLinks = [
 ]
 
 export default function Borovikova2000VagusNerveInflammationPage() {
+  const structuredData = buildAuthorityPageStructuredData({
+    title: "Vagus Nerve Stimulation Attenuates the Systemic Inflammatory Response (Borovikova et al., 2000) | Neuvago Research Library",
+    description: "Read a structured summary of Borovikova et al. (2000), the landmark Nature study showing that vagus nerve stimulation reduced inflammatory cytokine release in an experimental model.",
+    path: "/research/studies/borovikova-2000-vagus-nerve-inflammation",
+    articleSection: "Scientific studies",
+    breadcrumbs: [
+      { name: "Home", path: "/" },
+      { name: "Research", path: "/research" },
+      { name: "Scientific Studies", path: "/research/studies" },
+      { name: "Vagus Nerve Stimulation Attenuates the Systemic Inflammatory Response (Borovikova et al., 2000)", path: "/research/studies/borovikova-2000-vagus-nerve-inflammation" },
+    ],
+  });
+
   return (
     <main className="bg-[#f7f4ef] text-[#1f1f1c]">
+      <JsonLd data={structuredData} idPrefix="research-studies-borovikova-2000-vagus-nerve-inflammation" />
       <section className="border-b border-black/5">
         <div className="mx-auto grid min-h-[80vh] max-w-7xl items-center gap-16 px-6 py-20 md:px-10 lg:grid-cols-[1.05fr_0.95fr] lg:py-28">
           <div className="max-w-3xl">

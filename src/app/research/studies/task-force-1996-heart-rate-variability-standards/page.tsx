@@ -1,10 +1,28 @@
 import Link from "next/link"
+import { JsonLd } from "@/components/seo/json-ld"
+import { buildAuthorityPageStructuredData } from "@/lib/seo/structured-data"
 
 export const metadata = {
   title:
     "Heart Rate Variability: Standards of Measurement, Physiological Interpretation, and Clinical Use (Task Force, 1996) | Neuvago Research Library",
   description:
     "Read a structured summary of the 1996 Task Force report on heart rate variability, the landmark reference that standardized HRV measurement and interpretation in autonomic research.",
+  alternates: {
+    canonical: "/research/studies/task-force-1996-heart-rate-variability-standards",
+  },
+  openGraph: {
+    title: "Heart Rate Variability: Standards of Measurement, Physiological Interpretation, and Clinical Use (Task Force, 1996) | Neuvago Research Library",
+    description: "Read a structured summary of the 1996 Task Force report on heart rate variability, the landmark reference that standardized HRV measurement and interpretation in autonomic research.",
+    url: "/research/studies/task-force-1996-heart-rate-variability-standards",
+    siteName: "Neuvago",
+    locale: "en_US",
+    type: "article",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Heart Rate Variability: Standards of Measurement, Physiological Interpretation, and Clinical Use (Task Force, 1996) | Neuvago Research Library",
+    description: "Read a structured summary of the 1996 Task Force report on heart rate variability, the landmark reference that standardized HRV measurement and interpretation in autonomic research.",
+  },
 }
 
 const studyDetails = [
@@ -137,8 +155,22 @@ const relatedLinks = [
 ]
 
 export default function TaskForce1996HeartRateVariabilityStandardsPage() {
+  const structuredData = buildAuthorityPageStructuredData({
+    title: "Heart Rate Variability: Standards of Measurement, Physiological Interpretation, and Clinical Use (Task Force, 1996) | Neuvago Research Library",
+    description: "Read a structured summary of the 1996 Task Force report on heart rate variability, the landmark reference that standardized HRV measurement and interpretation in autonomic research.",
+    path: "/research/studies/task-force-1996-heart-rate-variability-standards",
+    articleSection: "Scientific studies",
+    breadcrumbs: [
+      { name: "Home", path: "/" },
+      { name: "Research", path: "/research" },
+      { name: "Scientific Studies", path: "/research/studies" },
+      { name: "Heart Rate Variability: Standards of Measurement, Physiological Interpretation, and Clinical Use (Task Force, 1996)", path: "/research/studies/task-force-1996-heart-rate-variability-standards" },
+    ],
+  });
+
   return (
     <main className="bg-[#f7f4ef] text-[#1f1f1c]">
+      <JsonLd data={structuredData} idPrefix="research-studies-task-force-1996-heart-rate-variability-standards" />
       <section className="border-b border-black/5 bg-[#f7f4ef]">
         <div className="mx-auto max-w-7xl px-6 py-20 md:px-10 md:py-24">
           <div className="max-w-4xl">

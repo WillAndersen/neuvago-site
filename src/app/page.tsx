@@ -1,34 +1,112 @@
-import { HomeAppDeviceEcosystem } from "@/components/home/home-app-device-ecosystem"
-import { HomeBenefits } from "@/components/home/home-benefits"
-import { HomeConditionsOverview } from "@/components/home/home-conditions-overview"
-import { HomeFeaturedLearning } from "@/components/home/home-featured-learning"
-import { HomeFinalCta } from "@/components/home/home-final-cta"
-import { HomeHero } from "@/components/home/home-hero"
-import { HomeHowItWorks } from "@/components/home/home-how-it-works"
-import { HomeTrustResearch } from "@/components/home/home-trust-research"
-import { HomeWhatIsNeuvago } from "@/components/home/home-what-is-neuvago"
-import { HomeWhyRegulationMatters } from "@/components/home/home-why-regulation-matters"
+import type { Metadata } from "next";
+import { getHomepageContent } from "@/lib/content/get-homepage-content";
+import {
+  HomeHero,
+  HomeProofStrip,
+  HomeWhatIsNeuvago,
+  HomeWhyPeopleComeToNeuvago,
+  HomeAppDeviceEcosystem,
+  HomeHowItWorks,
+  HomeWhyNeuvago,
+  HomeTrustResearch,
+  HomeFeaturedLearning,
+  HomeConditionsOverview,
+  HomeFinalCta,
+} from "@/components/home";
+import {
+  buildOrganizationStructuredData,
+  buildWebPageStructuredData,
+  buildWebSiteStructuredData,
+} from "@/lib/seo/structured-data";
 
-export const metadata = {
-  title:
-    "Neuvago | Vagus Nerve Stimulation, Nervous System Regulation, Stress, Sleep and Recovery",
+export const metadata: Metadata = {
+  title: "Neuvago | Calm support for stress, sleep, and recovery",
   description:
-    "Discover Neuvago, a calmer approach to vagus nerve stimulation and nervous system support. Explore stress, sleep, recovery, emotional regulation, and the body’s return to steadier states.",
-}
+    "Neuvago combines a non-invasive device, guided app experience, and research-informed learning to support stress, sleep, recovery, and everyday nervous system regulation.",
+  alternates: {
+    canonical: "/",
+  },
+  openGraph: {
+    title: "Neuvago | Calm support for stress, sleep, and recovery",
+    description:
+      "Neuvago combines a non-invasive device, guided app experience, and research-informed learning to support stress, sleep, recovery, and everyday nervous system regulation.",
+    url: "/",
+    siteName: "Neuvago",
+    locale: "en_US",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Neuvago | Calm support for stress, sleep, and recovery",
+    description:
+      "Neuvago combines a non-invasive device, guided app experience, and research-informed learning to support stress, sleep, recovery, and everyday nervous system regulation.",
+  },
+};
 
-export default function HomePage() {
+export default async function HomePage() {
+  const content = await getHomepageContent();
+
+  const structuredData = [
+    buildOrganizationStructuredData(),
+    buildWebSiteStructuredData(),
+    buildWebPageStructuredData({
+      title: content.hero.title,
+      description: content.hero.description,
+      path: "/",
+    }),
+  ];
+
   return (
     <main className="bg-[#f7f4ef] text-[#1f1f1c]">
-      <HomeHero />
-      <HomeWhatIsNeuvago />
-      <HomeWhyRegulationMatters />
-      <HomeAppDeviceEcosystem />
-      <HomeHowItWorks />
-      <HomeBenefits />
-      <HomeTrustResearch />
-      <HomeFeaturedLearning />
-      <HomeConditionsOverview />
-      <HomeFinalCta />
+      {structuredData.map((item, index) => (
+        <script
+          key={`home-ld-${index}`}
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(item) }}
+        />
+      ))}
+
+      {content.hero.visible ? <HomeHero content={content.hero} /> : null}
+
+      {content.proofStrip.visible ? (
+        <HomeProofStrip content={content.proofStrip} />
+      ) : null}
+
+      {content.whatIsNeuvago.visible ? (
+        <HomeWhatIsNeuvago content={content.whatIsNeuvago} />
+      ) : null}
+
+      {content.whyPeopleComeToNeuvago.visible ? (
+        <HomeWhyPeopleComeToNeuvago content={content.whyPeopleComeToNeuvago} />
+      ) : null}
+
+      {content.appDeviceEcosystem.visible ? (
+        <HomeAppDeviceEcosystem content={content.appDeviceEcosystem} />
+      ) : null}
+
+      {content.whyNeuvago.visible ? (
+        <HomeWhyNeuvago content={content.whyNeuvago} />
+      ) : null}
+
+      {content.howItWorks.visible ? (
+        <HomeHowItWorks content={content.howItWorks} />
+      ) : null}
+
+      {content.trustResearch.visible ? (
+        <HomeTrustResearch content={content.trustResearch} />
+      ) : null}
+
+      {content.featuredLearning.visible ? (
+        <HomeFeaturedLearning content={content.featuredLearning} />
+      ) : null}
+
+      {content.conditionsOverview.visible ? (
+        <HomeConditionsOverview content={content.conditionsOverview} />
+      ) : null}
+
+      {content.finalCta.visible ? (
+        <HomeFinalCta content={content.finalCta} />
+      ) : null}
     </main>
-  )
+  );
 }

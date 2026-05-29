@@ -1,10 +1,28 @@
 import Link from "next/link"
+import { JsonLd } from "@/components/seo/json-ld"
+import { buildAuthorityPageStructuredData } from "@/lib/seo/structured-data"
 
 export const metadata = {
   title:
     "Burnout, Recovery and the Nervous System | Exhaustion, Capacity and Restoration | Neuvago",
   description:
     "Learn how burnout connects to the nervous system, including exhaustion, lower capacity, thin recovery, poor sleep, and why restoration can feel harder after prolonged stress.",
+  alternates: {
+    canonical: "/conditions/burnout",
+  },
+  openGraph: {
+    title: "Burnout, Recovery and the Nervous System | Exhaustion, Capacity and Restoration | Neuvago",
+    description: "Learn how burnout connects to the nervous system, including exhaustion, lower capacity, thin recovery, poor sleep, and why restoration can feel harder after prolonged stress.",
+    url: "/conditions/burnout",
+    siteName: "Neuvago",
+    locale: "en_US",
+    type: "article",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Burnout, Recovery and the Nervous System | Exhaustion, Capacity and Restoration | Neuvago",
+    description: "Learn how burnout connects to the nervous system, including exhaustion, lower capacity, thin recovery, poor sleep, and why restoration can feel harder after prolonged stress.",
+  },
 }
 
 const burnoutPillars = [
@@ -79,58 +97,22 @@ const connectedTopics = [
   },
 ]
 
-const searchReasons = [
-  {
-    title: "They feel exhausted but not restored",
-    description:
-      "Many people search for burnout because the core experience is not only tiredness, but the sense that rest no longer rebuilds them in the same way.",
-    href: "/learn/recovery-and-regulation",
-    linkLabel: "Explore recovery",
-  },
-  {
-    title: "They feel like they have less room than before",
-    description:
-      "Often the deeper question is why ordinary work, stress, decisions, social demands, or emotions now feel harder to carry than they used to.",
-    href: "/learn/signs-of-a-dysregulated-nervous-system",
-    linkLabel: "Explore signs of dysregulation",
-  },
-  {
-    title: "They are trying to understand prolonged depletion",
-    description:
-      "Usually, people want language for why the system feels worn down, slower to recover, emotionally thinner, or less resilient over time.",
-    href: "/learn/emotional-regulation-and-the-nervous-system",
-    linkLabel: "Explore emotional regulation",
-  },
-  {
-    title: "They want a broader explanation",
-    description:
-      "The search often opens into a larger question about stress load, recovery, sleep, resilience, and what the nervous system has been carrying for too long.",
-    href: "/learn/nervous-system-regulation",
-    linkLabel: "Explore regulation",
-  },
-]
-
-const clarifications = [
-  {
-    title: "Burnout is not only about being busy",
-    description:
-      "It often becomes more accurate to think about burnout as a longer-term stress-and-recovery pattern rather than a simple consequence of having too much on the calendar.",
-  },
-  {
-    title: "Burnout is not only about motivation",
-    description:
-      "It may affect energy, capacity, sleep, emotional range, resilience, and how the body responds to ordinary life, not just willingness or mindset.",
-  },
-  {
-    title: "The broader pattern usually matters most",
-    description:
-      "Burnout makes most sense when viewed across exhaustion, sleep, nervous system state, emotional capacity, and how well the system restores over time.",
-  },
-]
-
 export default function BurnoutPage() {
+  const structuredData = buildAuthorityPageStructuredData({
+    title: "Burnout, Recovery and the Nervous System | Exhaustion, Capacity and Restoration | Neuvago",
+    description: "Learn how burnout connects to the nervous system, including exhaustion, lower capacity, thin recovery, poor sleep, and why restoration can feel harder after prolonged stress.",
+    path: "/conditions/burnout",
+    articleSection: "Conditions",
+    breadcrumbs: [
+      { name: "Home", path: "/" },
+      { name: "Conditions", path: "/conditions" },
+      { name: "Burnout, Recovery and the Nervous System", path: "/conditions/burnout" },
+    ],
+  });
+
   return (
     <main className="bg-[#f7f4ef] text-[#1f1f1c]">
+      <JsonLd data={structuredData} idPrefix="conditions-burnout" />
       <section className="border-b border-black/5">
         <div className="mx-auto grid min-h-[80vh] max-w-7xl items-center gap-16 px-6 py-20 md:px-10 lg:grid-cols-[1.05fr_0.95fr] lg:py-28">
           <div className="max-w-3xl">

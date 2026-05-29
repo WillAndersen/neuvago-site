@@ -1,10 +1,28 @@
 import Link from "next/link"
+import { JsonLd } from "@/components/seo/json-ld"
+import { buildAuthorityPageStructuredData } from "@/lib/seo/structured-data"
 
 export const metadata = {
   title:
     "What Is Vagal Tone? Resilience, Recovery and Nervous System Flexibility | Neuvago",
   description:
     "Learn what vagal tone means, how it relates to resilience, recovery, return after stress, and why the term matters in everyday nervous system conversations.",
+  alternates: {
+    canonical: "/learn/vagal-tone",
+  },
+  openGraph: {
+    title: "What Is Vagal Tone? Resilience, Recovery and Nervous System Flexibility | Neuvago",
+    description: "Learn what vagal tone means, how it relates to resilience, recovery, return after stress, and why the term matters in everyday nervous system conversations.",
+    url: "/learn/vagal-tone",
+    siteName: "Neuvago",
+    locale: "en_US",
+    type: "article",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "What Is Vagal Tone? Resilience, Recovery and Nervous System Flexibility | Neuvago",
+    description: "Learn what vagal tone means, how it relates to resilience, recovery, return after stress, and why the term matters in everyday nervous system conversations.",
+  },
 }
 
 const keyPoints = [
@@ -133,27 +151,22 @@ const connectedTopics = [
   },
 ]
 
-const clarifications = [
-  {
-    title: "It does not explain everything by itself",
-    description:
-      "Vagal tone can be a useful concept, but it still makes the most sense as one part of a broader picture involving stress load, sleep, recovery, and nervous system state.",
-  },
-  {
-    title: "It is not a final verdict about the body",
-    description:
-      "The term works best when understood as dynamic rather than fixed. It is usually more helpful as a lens into changing patterns than as a permanent label.",
-  },
-  {
-    title: "It is most useful in real-life context",
-    description:
-      "The strongest use of the concept is often to make daily experience easier to understand: resilience, return after stress, recovery quality, and how supported the system feels over time.",
-  },
-]
-
 export default function VagalTonePage() {
+  const structuredData = buildAuthorityPageStructuredData({
+    title: "What Is Vagal Tone? Resilience, Recovery and Nervous System Flexibility | Neuvago",
+    description: "Learn what vagal tone means, how it relates to resilience, recovery, return after stress, and why the term matters in everyday nervous system conversations.",
+    path: "/learn/vagal-tone",
+    articleSection: "Learn",
+    breadcrumbs: [
+      { name: "Home", path: "/" },
+      { name: "Learn", path: "/learn" },
+      { name: "What Is Vagal Tone? Resilience, Recovery and Nervous System Flexibility", path: "/learn/vagal-tone" },
+    ],
+  });
+
   return (
     <main className="bg-[#f7f4ef] text-[#1f1f1c]">
+      <JsonLd data={structuredData} idPrefix="learn-vagal-tone" />
       <section className="border-b border-black/5">
         <div className="mx-auto grid min-h-[80vh] max-w-7xl items-center gap-16 px-6 py-20 md:px-10 lg:grid-cols-[1.05fr_0.95fr] lg:py-28">
           <div className="max-w-3xl">

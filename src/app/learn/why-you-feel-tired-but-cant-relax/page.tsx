@@ -1,10 +1,28 @@
 import Link from "next/link"
+import { JsonLd } from "@/components/seo/json-ld"
+import { buildAuthorityPageStructuredData } from "@/lib/seo/structured-data"
 
 export const metadata = {
   title:
     "Why You Feel Tired but Can’t Relax | Wired but Tired, Sleep and Stress | Neuvago",
   description:
     "Learn why you can feel tired but unable to relax, and how this wired-but-tired pattern connects to stress, sleep, recovery, and nervous system regulation.",
+  alternates: {
+    canonical: "/learn/why-you-feel-tired-but-cant-relax",
+  },
+  openGraph: {
+    title: "Why You Feel Tired but Can’t Relax | Wired but Tired, Sleep and Stress | Neuvago",
+    description: "Learn why you can feel tired but unable to relax, and how this wired-but-tired pattern connects to stress, sleep, recovery, and nervous system regulation.",
+    url: "/learn/why-you-feel-tired-but-cant-relax",
+    siteName: "Neuvago",
+    locale: "en_US",
+    type: "article",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Why You Feel Tired but Can’t Relax | Wired but Tired, Sleep and Stress | Neuvago",
+    description: "Learn why you can feel tired but unable to relax, and how this wired-but-tired pattern connects to stress, sleep, recovery, and nervous system regulation.",
+  },
 }
 
 const commonExperiences = [
@@ -136,8 +154,21 @@ const clarifications = [
 ]
 
 export default function WhyYouFeelTiredButCantRelaxPage() {
+  const structuredData = buildAuthorityPageStructuredData({
+    title: "Why You Feel Tired but Can’t Relax | Wired but Tired, Sleep and Stress | Neuvago",
+    description: "Learn why you can feel tired but unable to relax, and how this wired-but-tired pattern connects to stress, sleep, recovery, and nervous system regulation.",
+    path: "/learn/why-you-feel-tired-but-cant-relax",
+    articleSection: "Learn",
+    breadcrumbs: [
+      { name: "Home", path: "/" },
+      { name: "Learn", path: "/learn" },
+      { name: "Why You Feel Tired but Can’t Relax", path: "/learn/why-you-feel-tired-but-cant-relax" },
+    ],
+  });
+
   return (
     <main className="bg-[#f7f4ef] text-[#1f1f1c]">
+      <JsonLd data={structuredData} idPrefix="learn-why-you-feel-tired-but-cant-relax" />
       <section className="flex min-h-[80vh] items-center border-b border-black/5">
         <div className="mx-auto grid w-full max-w-7xl gap-10 px-6 py-24 md:px-10 lg:grid-cols-[1.05fr_0.95fr] lg:px-12 lg:py-32">
           <div className="flex max-w-3xl flex-col justify-center">

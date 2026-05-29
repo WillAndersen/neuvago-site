@@ -1,10 +1,28 @@
 import Link from "next/link"
+import { JsonLd } from "@/components/seo/json-ld"
+import { buildAuthorityPageStructuredData } from "@/lib/seo/structured-data"
 
 export const metadata = {
   title:
     "Vagus Nerve Stimulation Research | Implanted and Non-Invasive VNS | Neuvago",
   description:
     "Explore vagus nerve stimulation research in the Neuvago Research Library, including implanted VNS, auricular stimulation, neuromodulation, and brain–body regulation research.",
+  alternates: {
+    canonical: "/research/topics/vagus-nerve-stimulation",
+  },
+  openGraph: {
+    title: "Vagus Nerve Stimulation Research | Implanted and Non-Invasive VNS | Neuvago",
+    description: "Explore vagus nerve stimulation research in the Neuvago Research Library, including implanted VNS, auricular stimulation, neuromodulation, and brain–body regulation research.",
+    url: "/research/topics/vagus-nerve-stimulation",
+    siteName: "Neuvago",
+    locale: "en_US",
+    type: "article",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Vagus Nerve Stimulation Research | Implanted and Non-Invasive VNS | Neuvago",
+    description: "Explore vagus nerve stimulation research in the Neuvago Research Library, including implanted VNS, auricular stimulation, neuromodulation, and brain–body regulation research.",
+  },
 }
 
 const topicOverview = [
@@ -73,6 +91,27 @@ const foundationalStudies = [
 ]
 
 const connectedResearch = [
+  {
+    title: "Vagus nerve stimulation explainer",
+    description:
+      "A plain-language Learn page explaining implanted VNS, non-invasive VNS, auricular approaches, and how a wellness-oriented vagus nerve stimulator should be understood.",
+    href: "/learn/vagus-nerve-stimulation",
+    linkLabel: "Read the VNS explainer",
+  },
+  {
+    title: "Non-invasive VNS explainer",
+    description:
+      "A practical Learn page explaining nVNS, external stimulation, device differences, and how guided wellness systems should be evaluated.",
+    href: "/learn/non-invasive-vagus-nerve-stimulation",
+    linkLabel: "Read non-invasive VNS guide",
+  },
+  {
+    title: "Safety and tolerability research",
+    description:
+      "A trust-focused research topic on non-invasive VNS safety, adverse events, tolerability, protocol differences, and responsible product boundaries.",
+    href: "/research/topics/safety-and-tolerability",
+    linkLabel: "Explore safety topic",
+  },
   {
     title: "Vagus nerve",
     description:
@@ -151,8 +190,22 @@ function StudyCard({
 }
 
 export default function VagusNerveStimulationResearchPage() {
+  const structuredData = buildAuthorityPageStructuredData({
+    title: "Vagus Nerve Stimulation Research | Implanted and Non-Invasive VNS | Neuvago",
+    description: "Explore vagus nerve stimulation research in the Neuvago Research Library, including implanted VNS, auricular stimulation, neuromodulation, and brain–body regulation research.",
+    path: "/research/topics/vagus-nerve-stimulation",
+    articleSection: "Research topics",
+    breadcrumbs: [
+      { name: "Home", path: "/" },
+      { name: "Research", path: "/research" },
+      { name: "Topic Research", path: "/research/topics" },
+      { name: "Vagus Nerve Stimulation Research", path: "/research/topics/vagus-nerve-stimulation" },
+    ],
+  });
+
   return (
     <main className="bg-[#f7f4ef] text-[#1f1f1c]">
+      <JsonLd data={structuredData} idPrefix="research-topics-vagus-nerve-stimulation" />
       <section className="border-b border-black/5 bg-[#f7f4ef]">
         <div className="mx-auto max-w-7xl px-6 py-20 md:px-10 md:py-24">
           <div className="max-w-4xl">
@@ -173,16 +226,17 @@ export default function VagusNerveStimulationResearchPage() {
 
             <div className="mt-8 flex flex-wrap gap-x-8 gap-y-3 text-sm text-[#6b665e]">
               <span>Current topic: 2 study summaries</span>
+              <span>Connected Learn pillar added</span>
               <span>Implanted + non-invasive stimulation</span>
               <span>Built to grow over time</span>
             </div>
 
             <div className="mt-10 flex flex-wrap gap-4">
               <Link
-                href="/research/topics"
-                className="rounded-full border border-black/10 bg-white/60 px-6 py-3 text-sm font-medium text-[#1f1f1c] transition hover:bg-white"
+                href="/learn/vagus-nerve-stimulation"
+                className="rounded-full bg-[#1f1f1c] px-6 py-3 text-sm font-medium text-white transition hover:opacity-90"
               >
-                Back to topic research
+                Read the VNS explainer
               </Link>
 
               <Link
@@ -316,8 +370,8 @@ export default function VagusNerveStimulationResearchPage() {
             <p className="mt-6 max-w-2xl text-base leading-8 text-[#5f5a52]">
               Over time, this topic page can expand to include more studies,
               clearer internal categorization, and stronger links into adjacent
-              research themes such as stress physiology, HRV, autonomic regulation,
-              and emotional processing.
+              research themes such as safety and tolerability, stress physiology,
+              HRV, autonomic regulation, and emotional processing.
             </p>
           </div>
 

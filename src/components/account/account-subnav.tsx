@@ -4,12 +4,12 @@ import Link from "next/link"
 import { usePathname } from "next/navigation"
 
 const items = [
-  { label: "Account home", href: "/account" },
-  { label: "Activity", href: "/account/activity" },
+  { label: "Today", href: "/account/today" },
+  { label: "Sessions", href: "/account/sessions" },
+  { label: "Library", href: "/account/library" },
+  { label: "Progress", href: "/account/progress" },
   { label: "Profile", href: "/account/profile" },
-  { label: "Preferences", href: "/account/preferences" },
   { label: "Security", href: "/account/security" },
-  { label: "Open app", href: "/open-app" },
 ]
 
 export function AccountSubnav() {
@@ -20,7 +20,8 @@ export function AccountSubnav() {
       <div className="mx-auto max-w-6xl px-6 py-4 sm:px-8 lg:px-12">
         <div className="flex flex-wrap gap-3">
           {items.map((item) => {
-            const isActive = pathname === item.href
+            const isActive =
+              pathname === item.href || pathname.startsWith(`${item.href}/`)
 
             return (
               <Link

@@ -1,10 +1,28 @@
 import Link from "next/link"
+import { JsonLd } from "@/components/seo/json-ld"
+import { buildAuthorityPageStructuredData } from "@/lib/seo/structured-data"
 
 export const metadata = {
   title:
     "Emotional Regulation and the Nervous System | Reactivity, Overwhelm and Recovery | Neuvago",
   description:
     "Learn how emotional regulation connects to the nervous system, including overwhelm, reactivity, shutdown, emotional recovery, and how the body carries emotion in everyday life.",
+  alternates: {
+    canonical: "/learn/emotional-regulation-and-the-nervous-system",
+  },
+  openGraph: {
+    title: "Emotional Regulation and the Nervous System | Reactivity, Overwhelm and Recovery | Neuvago",
+    description: "Learn how emotional regulation connects to the nervous system, including overwhelm, reactivity, shutdown, emotional recovery, and how the body carries emotion in everyday life.",
+    url: "/learn/emotional-regulation-and-the-nervous-system",
+    siteName: "Neuvago",
+    locale: "en_US",
+    type: "article",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Emotional Regulation and the Nervous System | Reactivity, Overwhelm and Recovery | Neuvago",
+    description: "Learn how emotional regulation connects to the nervous system, including overwhelm, reactivity, shutdown, emotional recovery, and how the body carries emotion in everyday life.",
+  },
 }
 
 const keyPoints = [
@@ -133,27 +151,22 @@ const connectedTopics = [
   },
 ]
 
-const clarifications = [
-  {
-    title: "It does not mean never feeling strongly",
-    description:
-      "Emotional regulation support is usually not about removing intensity from life. It is more often about helping someone carry intensity without getting overwhelmed, shut down, or stuck for as long.",
-  },
-  {
-    title: "It does not mean perfect emotional control",
-    description:
-      "Useful support is often less about mastering every feeling and more about becoming more flexible, recoverable, and steady when emotions move through the system.",
-  },
-  {
-    title: "It works best when it supports real life",
-    description:
-      "The strongest support often improves recovery, sleep, nervous system settling, stress load, and everyday capacity rather than aiming for constant emotional smoothness.",
-  },
-]
-
 export default function EmotionalRegulationAndTheNervousSystemPage() {
+  const structuredData = buildAuthorityPageStructuredData({
+    title: "Emotional Regulation and the Nervous System | Reactivity, Overwhelm and Recovery | Neuvago",
+    description: "Learn how emotional regulation connects to the nervous system, including overwhelm, reactivity, shutdown, emotional recovery, and how the body carries emotion in everyday life.",
+    path: "/learn/emotional-regulation-and-the-nervous-system",
+    articleSection: "Learn",
+    breadcrumbs: [
+      { name: "Home", path: "/" },
+      { name: "Learn", path: "/learn" },
+      { name: "Emotional Regulation and the Nervous System", path: "/learn/emotional-regulation-and-the-nervous-system" },
+    ],
+  });
+
   return (
     <main className="bg-[#f7f4ef] text-[#1f1f1c]">
+      <JsonLd data={structuredData} idPrefix="learn-emotional-regulation-and-the-nervous-system" />
       <section className="border-b border-black/5">
         <div className="mx-auto grid min-h-[80vh] max-w-7xl items-center gap-16 px-6 py-20 md:px-10 lg:grid-cols-[1.05fr_0.95fr] lg:py-28">
           <div className="max-w-3xl">

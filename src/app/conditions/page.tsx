@@ -1,11 +1,31 @@
-import Link from "next/link"
+import type { Metadata } from "next";
+import Link from "next/link";
+import { JsonLd } from "@/components/seo/json-ld"
+import { buildPageWithBreadcrumbStructuredData } from "@/lib/seo/structured-data"
 
-export const metadata = {
-  title:
-    "Conditions: Stress, Sleep, Anxiety and Burnout | Neuvago",
+export const metadata: Metadata = {
+  title: "Conditions | Stress, Sleep, Anxiety and Burnout | Neuvago",
   description:
-    "Explore Neuvago condition pages on stress, sleep, anxiety, burnout, overwhelm, recovery, and the broader nervous system patterns that shape everyday life.",
-}
+    "Explore Neuvago condition pages on stress, sleep, anxiety, burnout, overload, recovery, and the nervous system patterns that shape everyday life.",
+  alternates: {
+    canonical: "/conditions",
+  },
+  openGraph: {
+    title: "Conditions | Stress, Sleep, Anxiety and Burnout | Neuvago",
+    description:
+      "Explore Neuvago condition pages on stress, sleep, anxiety, burnout, overload, recovery, and the nervous system patterns that shape everyday life.",
+    url: "/conditions",
+    siteName: "Neuvago",
+    locale: "en_US",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Conditions | Stress, Sleep, Anxiety and Burnout | Neuvago",
+    description:
+      "Explore Neuvago condition pages on stress, sleep, anxiety, burnout, overload, recovery, and the nervous system patterns that shape everyday life.",
+  },
+};
 
 const featuredConditions = [
   {
@@ -36,25 +56,25 @@ const featuredConditions = [
     href: "/conditions/burnout",
     linkLabel: "Understand burnout",
   },
-]
+];
 
-const learningBridges = [
+const conditionGuides = [
   {
-    title: "Conditions are often the entry point",
+    title: "Start with the pattern that feels closest",
     description:
-      "Many people begin with what they feel — not with theory. That is why these pages are designed to meet symptom-level questions first.",
+      "You do not need to begin with theory. Start with the condition, symptom pattern, or lived experience that feels most familiar right now.",
   },
   {
-    title: "The strongest condition pages lead somewhere deeper",
+    title: "Then move into broader understanding",
     description:
-      "Stress, sleep, anxiety, and burnout usually make more sense when connected back to regulation, recovery, calmer states, and broader nervous system understanding.",
+      "Once the condition page helps name the pattern, Learn can help explain the nervous system, recovery, regulation, and the bigger picture behind it.",
   },
   {
-    title: "This creates a stronger authority structure",
+    title: "Use Research when you want the evidence layer",
     description:
-      "Instead of isolated symptom pages, the goal is a connected system where Conditions, Learn, and Research strengthen one another.",
+      "Research adds more scientific depth and context without forcing every visitor to begin there first.",
   },
-]
+];
 
 const relatedExperiences = [
   {
@@ -85,35 +105,47 @@ const relatedExperiences = [
     href: "/learn/emotional-regulation-and-the-nervous-system",
     linkLabel: "Explore emotional load",
   },
-]
+];
 
 const pathwayCards = [
   {
-    title: "Start with the condition you feel most directly",
+    title: "Start with the condition itself",
     description:
-      "If the main question is about stress, sleep, anxiety, or burnout, begin there and then follow the links into the broader Learn cluster.",
+      "If the main question is about stress, sleep, anxiety, or burnout, begin there and then follow the links into broader learning.",
     href: "/conditions/stress",
     linkLabel: "Start with conditions",
   },
   {
-    title: "Start with a practical support page",
+    title: "Start with practical support",
     description:
       "If the question is less about naming the issue and more about what might actually help, move from Conditions into the practical Learn pages.",
     href: "/learn/how-to-calm-your-nervous-system",
     linkLabel: "Start with support",
   },
   {
-    title: "Start with broader nervous system learning",
+    title: "Start with the bigger framework",
     description:
-      "If the condition pages feel familiar but incomplete, go upward into the larger framework pages on regulation, vagus nerve, and recovery.",
+      "If the condition pages feel familiar but incomplete, move up into the larger framework pages on regulation, the vagus nerve, and recovery.",
     href: "/learn",
     linkLabel: "Go to learning hub",
   },
-]
+];
 
 export default function ConditionsPage() {
+    const structuredData = buildPageWithBreadcrumbStructuredData({
+    title: "Conditions | Stress, Sleep, Anxiety and Burnout | Neuvago",
+    description: "Explore Neuvago condition pages on stress, sleep, anxiety, burnout, overload, recovery, and the nervous system patterns that shape everyday life.",
+    path: "/conditions",
+    breadcrumbs: [
+      { name: "Home", path: "/" },
+      { name: "Conditions", path: "/conditions" },
+    ],
+  });
+
+
   return (
     <main className="bg-[#f7f4ef] text-[#1f1f1c]">
+      <JsonLd data={structuredData} idPrefix="conditions" />
       <section className="border-b border-black/5">
         <div className="mx-auto grid min-h-[80vh] max-w-7xl items-center gap-16 px-6 py-20 md:px-10 lg:grid-cols-[1.05fr_0.95fr] lg:py-28">
           <div className="max-w-3xl">
@@ -122,30 +154,30 @@ export default function ConditionsPage() {
             </p>
 
             <h1 className="text-4xl font-medium leading-[1.05] tracking-[-0.03em] md:text-6xl lg:text-7xl">
-              Explore the challenges people are often trying to better understand
+              Start with what feels closest to what you’re experiencing
             </h1>
 
             <p className="mt-6 max-w-2xl text-base leading-8 text-[#5f5a52] md:text-lg">
-              Many people begin with what they are feeling: stress, poor sleep,
-              anxiety, overload, or the sense that recovery feels harder than it
-              should. This hub is designed to organize those pathways more
-              clearly, while connecting them to deeper learning around nervous
-              system regulation, vagus nerve topics, and calmer daily support.
+              Many people do not begin with theory. They begin with stress,
+              poor sleep, anxiety, overload, burnout, or the sense that
+              recovery feels harder than it should. This hub is designed to
+              organize those entry points clearly and connect them to broader
+              learning around regulation, recovery, and the nervous system.
             </p>
 
             <div className="mt-10 flex flex-wrap gap-4">
               <Link
-                href="/learn"
+                href="/conditions/stress"
                 className="rounded-full bg-[#1f1f1c] px-6 py-3 text-sm font-medium text-white transition hover:opacity-90"
               >
-                Go to learning hub
+                Explore stress
               </Link>
 
               <Link
-                href="/research"
+                href="/learn"
                 className="rounded-full border border-[#d8d1c7] bg-transparent px-6 py-3 text-sm font-medium text-[#1f1f1c] transition hover:bg-white/70"
               >
-                View research hub
+                Go to learning hub
               </Link>
             </div>
           </div>
@@ -162,7 +194,7 @@ export default function ConditionsPage() {
                         Conditions hub
                       </p>
                       <h2 className="mt-3 text-2xl font-medium text-[#1f1f1c]">
-                        A clearer way into stress, sleep, anxiety, burnout, and related patterns
+                        A calmer starting point for stress, sleep, anxiety, burnout, and related patterns
                       </h2>
                     </div>
 
@@ -191,7 +223,7 @@ export default function ConditionsPage() {
                             Research
                           </p>
                           <p className="mt-1 text-sm leading-6 text-[#5f5a52]">
-                            Explore the broader evidence layer
+                            Add evidence and context
                           </p>
                         </div>
                       </div>
@@ -212,13 +244,14 @@ export default function ConditionsPage() {
             </p>
 
             <h2 className="mt-4 text-3xl font-medium leading-tight tracking-[-0.03em] md:text-5xl">
-              Start with the condition pages people are most likely to search first
+              Start with the conditions people are most likely to search first
             </h2>
 
             <p className="mt-6 max-w-2xl text-base leading-8 text-[#5f5a52] md:text-lg">
-              These are the main entry pages for the symptom and lived-experience
-              side of the Neuvago site. Each one is designed to connect back to
-              broader learning around regulation, recovery, and the nervous system.
+              These are the clearest entry pages for the symptom and
+              lived-experience side of the Neuvago site. Each one is designed
+              to connect back to broader learning around regulation, recovery,
+              and the nervous system.
             </p>
           </div>
 
@@ -268,11 +301,11 @@ export default function ConditionsPage() {
         <div className="mx-auto grid max-w-7xl gap-14 px-6 py-24 md:px-10 md:py-28 lg:grid-cols-[0.95fr_1.05fr] lg:items-center">
           <div className="rounded-[2rem] border border-black/5 bg-white/60 p-8 shadow-[0_12px_40px_rgba(31,31,28,0.04)] md:p-10">
             <p className="text-sm uppercase tracking-[0.16em] text-[#8a847b]">
-              How this hub fits the larger site
+              How to use this hub
             </p>
 
             <div className="mt-8 space-y-5">
-              {learningBridges.map((item) => (
+              {conditionGuides.map((item) => (
                 <article
                   key={item.title}
                   className="rounded-2xl border border-black/5 bg-[#f8f5f0] p-5"
@@ -289,11 +322,11 @@ export default function ConditionsPage() {
 
             <div className="mt-8 rounded-2xl bg-[#e9e1d6] p-5">
               <p className="text-sm font-medium text-[#1f1f1c]">
-                Conditions pages should lead somewhere deeper
+                Conditions are often the most natural place to begin
               </p>
               <p className="mt-2 text-sm leading-7 text-[#5f5a52]">
-                The strongest structure is one where symptom-level pages connect
-                naturally into broader learning and stronger understanding.
+                They help people move from what they feel now into broader
+                understanding around regulation, recovery, and calmer support.
               </p>
             </div>
           </div>
@@ -304,20 +337,20 @@ export default function ConditionsPage() {
             </p>
 
             <h2 className="mt-4 max-w-3xl text-3xl font-medium leading-tight tracking-[-0.03em] md:text-5xl">
-              Conditions are one of the clearest ways into the larger Neuvago learning system
+              Conditions give people a clearer entry into the larger Neuvago learning system
             </h2>
 
             <p className="mt-6 max-w-2xl text-base leading-8 text-[#5f5a52] md:text-lg">
-              Many people begin with a condition, not with theory. That is why
+              Many people begin with a condition, not a concept. That is why
               this hub matters so much. It helps people move from what they are
-              feeling now into broader understanding around regulation, recovery,
-              vagus nerve topics, and calmer daily support.
+              feeling now into broader understanding around regulation,
+              recovery, vagus nerve topics, and calmer daily support.
             </p>
 
             <p className="mt-6 max-w-2xl text-base leading-8 text-[#5f5a52]">
-              This also makes the site stronger structurally. Instead of symptom
-              pages existing on their own, they become part of a more coherent
-              learning and authority system.
+              Instead of leaving symptom pages on their own, the goal is to let
+              them connect naturally into Learn, Research, and the broader
+              product and app system.
             </p>
 
             <div className="mt-10 flex flex-wrap gap-4">
@@ -352,8 +385,9 @@ export default function ConditionsPage() {
               </h2>
 
               <p className="mt-6 max-w-2xl text-base leading-8 text-[#5f5a52] md:text-lg">
-                These pages are useful when someone does not begin with a formal
-                condition, but with a recognizable lived pattern or specific experience.
+                These pages are useful when someone does not begin with a
+                formal condition, but with a recognizable pattern or specific
+                experience.
               </p>
             </div>
 
@@ -434,7 +468,7 @@ export default function ConditionsPage() {
           <div className="rounded-[2.5rem] border border-black/5 bg-gradient-to-br from-[#efe7dc] to-[#e5dbcf] px-8 py-14 shadow-[0_20px_80px_rgba(31,31,28,0.06)] md:px-12 md:py-16">
             <div className="max-w-3xl">
               <p className="text-sm uppercase tracking-[0.18em] text-[#7a756c]">
-                Start with what you feel, then go deeper
+                Start with what you feel, then keep going
               </p>
 
               <h2 className="mt-4 text-3xl font-medium leading-tight tracking-[-0.03em] md:text-5xl">
@@ -444,8 +478,8 @@ export default function ConditionsPage() {
               <p className="mt-6 max-w-2xl text-base leading-8 text-[#5f5a52] md:text-lg">
                 The Neuvago conditions hub is built to help people move from
                 what they are experiencing into broader understanding around
-                stress, sleep, anxiety, burnout, recovery, nervous system regulation,
-                and the wider body-based patterns that shape daily life.
+                stress, sleep, anxiety, burnout, recovery, nervous system
+                regulation, and the wider patterns that shape daily life.
               </p>
 
               <div className="mt-10 flex flex-wrap gap-4">
@@ -475,5 +509,5 @@ export default function ConditionsPage() {
         </div>
       </section>
     </main>
-  )
+  );
 }

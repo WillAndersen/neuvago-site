@@ -1,10 +1,28 @@
 import Link from "next/link"
+import { JsonLd } from "@/components/seo/json-ld"
+import { buildPageWithBreadcrumbStructuredData } from "@/lib/seo/structured-data"
 
 export const metadata = {
   title:
     "Trust & Safety | Neuvago",
   description:
     "Read how Neuvago approaches trust, safety, responsible wellness use, product design, and transparent communication for a general wellness device.",
+  alternates: {
+    canonical: "/legal/trust-safety",
+  },
+  openGraph: {
+    title: "Trust & Safety | Neuvago",
+    description: "Read how Neuvago approaches trust, safety, responsible wellness use, product design, and transparent communication for a general wellness device.",
+    url: "/legal/trust-safety",
+    siteName: "Neuvago",
+    locale: "en_US",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Trust & Safety | Neuvago",
+    description: "Read how Neuvago approaches trust, safety, responsible wellness use, product design, and transparent communication for a general wellness device.",
+  },
 }
 
 const keyPoints = [
@@ -130,8 +148,20 @@ const relatedPages = [
 ]
 
 export default function TrustSafetyPage() {
+  const structuredData = buildPageWithBreadcrumbStructuredData({
+    title: "Trust & Safety | Neuvago",
+    description: "Read how Neuvago approaches trust, safety, responsible wellness use, product design, and transparent communication for a general wellness device.",
+    path: "/legal/trust-safety",
+    breadcrumbs: [
+      { name: "Home", path: "/" },
+      { name: "Legal", path: "/legal" },
+      { name: "Trust & Safety", path: "/legal/trust-safety" },
+    ],
+  });
+
   return (
     <main className="bg-[#f7f4ef] text-[#1f1f1c]">
+      <JsonLd data={structuredData} idPrefix="legal-trust-safety" />
       <section className="border-b border-black/5">
         <div className="mx-auto grid min-h-[70vh] max-w-7xl items-center gap-16 px-6 py-20 md:px-10 lg:grid-cols-[1.05fr_0.95fr] lg:py-24">
           <div className="max-w-3xl">

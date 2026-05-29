@@ -1,10 +1,28 @@
 import Link from "next/link"
+import { JsonLd } from "@/components/seo/json-ld"
+import { buildAuthorityPageStructuredData } from "@/lib/seo/structured-data"
 
 export const metadata = {
   title:
     "What Is the Parasympathetic Nervous System? Calm, Rest and Restoration | Neuvago",
   description:
     "Learn what the parasympathetic nervous system is, how it relates to calm, unwinding, digestion, sleep, and why it matters for recovery and nervous system restoration.",
+  alternates: {
+    canonical: "/learn/parasympathetic-nervous-system",
+  },
+  openGraph: {
+    title: "What Is the Parasympathetic Nervous System? Calm, Rest and Restoration | Neuvago",
+    description: "Learn what the parasympathetic nervous system is, how it relates to calm, unwinding, digestion, sleep, and why it matters for recovery and nervous system restoration.",
+    url: "/learn/parasympathetic-nervous-system",
+    siteName: "Neuvago",
+    locale: "en_US",
+    type: "article",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "What Is the Parasympathetic Nervous System? Calm, Rest and Restoration | Neuvago",
+    description: "Learn what the parasympathetic nervous system is, how it relates to calm, unwinding, digestion, sleep, and why it matters for recovery and nervous system restoration.",
+  },
 }
 
 const keyPoints = [
@@ -133,27 +151,22 @@ const connectedTopics = [
   },
 ]
 
-const clarifications = [
-  {
-    title: "It does not mean being calm all the time",
-    description:
-      "The body still needs activation, effort, responsiveness, and energy. The point is not permanent calm, but a healthier ability to return from activation.",
-  },
-  {
-    title: "It does not mean shutting down",
-    description:
-      "Parasympathetic support is about restoration and steadiness, not about becoming flat, passive, disconnected, or absent from life.",
-  },
-  {
-    title: "It works best as a practical state concept",
-    description:
-      "The idea becomes most useful when it helps explain unwinding, digestion, sleep, restoration, and calmer daily rhythm in real life.",
-  },
-]
-
 export default function ParasympatheticNervousSystemPage() {
+  const structuredData = buildAuthorityPageStructuredData({
+    title: "What Is the Parasympathetic Nervous System? Calm, Rest and Restoration | Neuvago",
+    description: "Learn what the parasympathetic nervous system is, how it relates to calm, unwinding, digestion, sleep, and why it matters for recovery and nervous system restoration.",
+    path: "/learn/parasympathetic-nervous-system",
+    articleSection: "Learn",
+    breadcrumbs: [
+      { name: "Home", path: "/" },
+      { name: "Learn", path: "/learn" },
+      { name: "What Is the Parasympathetic Nervous System? Calm, Rest and Restoration", path: "/learn/parasympathetic-nervous-system" },
+    ],
+  });
+
   return (
     <main className="bg-[#f7f4ef] text-[#1f1f1c]">
+      <JsonLd data={structuredData} idPrefix="learn-parasympathetic-nervous-system" />
       <section className="border-b border-black/5">
         <div className="mx-auto grid min-h-[80vh] max-w-7xl items-center gap-16 px-6 py-20 md:px-10 lg:grid-cols-[1.05fr_0.95fr] lg:py-28">
           <div className="max-w-3xl">

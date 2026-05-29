@@ -1,10 +1,28 @@
 import Link from "next/link"
+import { JsonLd } from "@/components/seo/json-ld"
+import { buildAuthorityPageStructuredData } from "@/lib/seo/structured-data"
 
 export const metadata = {
   title:
     "Gut Feelings: The Emerging Biology of Gut–Brain Communication (Mayer, 2011) | Neuvago Research Library",
   description:
     "Read a structured summary of Mayer (2011), the influential review that helped establish the gut–brain axis as a central framework in modern brain–body communication research.",
+  alternates: {
+    canonical: "/research/studies/mayer-2011-gut-brain-axis",
+  },
+  openGraph: {
+    title: "Gut Feelings: The Emerging Biology of Gut–Brain Communication (Mayer, 2011) | Neuvago Research Library",
+    description: "Read a structured summary of Mayer (2011), the influential review that helped establish the gut–brain axis as a central framework in modern brain–body communication research.",
+    url: "/research/studies/mayer-2011-gut-brain-axis",
+    siteName: "Neuvago",
+    locale: "en_US",
+    type: "article",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Gut Feelings: The Emerging Biology of Gut–Brain Communication (Mayer, 2011) | Neuvago Research Library",
+    description: "Read a structured summary of Mayer (2011), the influential review that helped establish the gut–brain axis as a central framework in modern brain–body communication research.",
+  },
 }
 
 const studyDetails = [
@@ -139,8 +157,22 @@ const relatedLinks = [
 ]
 
 export default function Mayer2011GutBrainAxisPage() {
+  const structuredData = buildAuthorityPageStructuredData({
+    title: "Gut Feelings: The Emerging Biology of Gut–Brain Communication (Mayer, 2011) | Neuvago Research Library",
+    description: "Read a structured summary of Mayer (2011), the influential review that helped establish the gut–brain axis as a central framework in modern brain–body communication research.",
+    path: "/research/studies/mayer-2011-gut-brain-axis",
+    articleSection: "Scientific studies",
+    breadcrumbs: [
+      { name: "Home", path: "/" },
+      { name: "Research", path: "/research" },
+      { name: "Scientific Studies", path: "/research/studies" },
+      { name: "Gut Feelings: The Emerging Biology of Gut–Brain Communication (Mayer, 2011)", path: "/research/studies/mayer-2011-gut-brain-axis" },
+    ],
+  });
+
   return (
     <main className="bg-[#f7f4ef] text-[#1f1f1c]">
+      <JsonLd data={structuredData} idPrefix="research-studies-mayer-2011-gut-brain-axis" />
       <section className="border-b border-black/5 bg-[#f7f4ef]">
         <div className="mx-auto max-w-7xl px-6 py-20 md:px-10 md:py-24">
           <div className="max-w-4xl">

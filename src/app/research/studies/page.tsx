@@ -1,10 +1,28 @@
 import Link from "next/link"
+import { JsonLd } from "@/components/seo/json-ld"
+import { buildPageWithBreadcrumbStructuredData } from "@/lib/seo/structured-data"
 
 export const metadata = {
   title:
     "Scientific Studies Library | Vagus Nerve, HRV, Stress and Nervous System Research | Neuvago",
   description:
     "Browse the Neuvago Scientific Studies Library with individual research summaries on the vagus nerve, nervous system regulation, HRV, inflammation, stress, and non-invasive vagus nerve stimulation.",
+  alternates: {
+    canonical: "/research/studies",
+  },
+  openGraph: {
+    title: "Scientific Studies Library | Vagus Nerve, HRV, Stress and Nervous System Research | Neuvago",
+    description: "Browse the Neuvago Scientific Studies Library with individual research summaries on the vagus nerve, nervous system regulation, HRV, inflammation, stress, and non-invasive vagus nerve stimulation.",
+    url: "/research/studies",
+    siteName: "Neuvago",
+    locale: "en_US",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Scientific Studies Library | Vagus Nerve, HRV, Stress and Nervous System Research | Neuvago",
+    description: "Browse the Neuvago Scientific Studies Library with individual research summaries on the vagus nerve, nervous system regulation, HRV, inflammation, stress, and non-invasive vagus nerve stimulation.",
+  },
 }
 
 const categories = [
@@ -283,8 +301,20 @@ function StudyCard({
 }
 
 export default function ResearchStudiesPage() {
+  const structuredData = buildPageWithBreadcrumbStructuredData({
+    title: "Scientific Studies Library | Vagus Nerve, HRV, Stress and Nervous System Research | Neuvago",
+    description: "Browse the Neuvago Scientific Studies Library with individual research summaries on the vagus nerve, nervous system regulation, HRV, inflammation, stress, and non-invasive vagus nerve stimulation.",
+    path: "/research/studies",
+    breadcrumbs: [
+      { name: "Home", path: "/" },
+      { name: "Research", path: "/research" },
+      { name: "Scientific Studies", path: "/research/studies" },
+    ],
+  });
+
   return (
     <main className="bg-[#f7f4ef] text-[#1f1f1c]">
+      <JsonLd data={structuredData} idPrefix="research-studies" />
       <section className="border-b border-black/5 bg-[#f7f4ef]">
         <div className="mx-auto max-w-7xl px-6 py-20 md:px-10 md:py-24">
           <div className="max-w-4xl">

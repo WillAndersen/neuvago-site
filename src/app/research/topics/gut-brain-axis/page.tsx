@@ -1,10 +1,28 @@
 import Link from "next/link"
+import { JsonLd } from "@/components/seo/json-ld"
+import { buildAuthorityPageStructuredData } from "@/lib/seo/structured-data"
 
 export const metadata = {
   title:
     "Gut–Brain Axis Research | Vagal Signaling, Microbiome and Brain–Body Communication | Neuvago",
   description:
     "Explore gut–brain axis research in the Neuvago Research Library, including vagal signaling, microbiome communication, digestive regulation, inflammation, and broader brain–body pathways.",
+  alternates: {
+    canonical: "/research/topics/gut-brain-axis",
+  },
+  openGraph: {
+    title: "Gut–Brain Axis Research | Vagal Signaling, Microbiome and Brain–Body Communication | Neuvago",
+    description: "Explore gut–brain axis research in the Neuvago Research Library, including vagal signaling, microbiome communication, digestive regulation, inflammation, and broader brain–body pathways.",
+    url: "/research/topics/gut-brain-axis",
+    siteName: "Neuvago",
+    locale: "en_US",
+    type: "article",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Gut–Brain Axis Research | Vagal Signaling, Microbiome and Brain–Body Communication | Neuvago",
+    description: "Explore gut–brain axis research in the Neuvago Research Library, including vagal signaling, microbiome communication, digestive regulation, inflammation, and broader brain–body pathways.",
+  },
 }
 
 const topicOverview = [
@@ -140,8 +158,22 @@ function StudyCard({
 }
 
 export default function GutBrainAxisResearchPage() {
+  const structuredData = buildAuthorityPageStructuredData({
+    title: "Gut–Brain Axis Research | Vagal Signaling, Microbiome and Brain–Body Communication | Neuvago",
+    description: "Explore gut–brain axis research in the Neuvago Research Library, including vagal signaling, microbiome communication, digestive regulation, inflammation, and broader brain–body pathways.",
+    path: "/research/topics/gut-brain-axis",
+    articleSection: "Research topics",
+    breadcrumbs: [
+      { name: "Home", path: "/" },
+      { name: "Research", path: "/research" },
+      { name: "Topic Research", path: "/research/topics" },
+      { name: "Gut–Brain Axis Research", path: "/research/topics/gut-brain-axis" },
+    ],
+  });
+
   return (
     <main className="bg-[#f7f4ef] text-[#1f1f1c]">
+      <JsonLd data={structuredData} idPrefix="research-topics-gut-brain-axis" />
       <section className="border-b border-black/5 bg-[#f7f4ef]">
         <div className="mx-auto max-w-7xl px-6 py-20 md:px-10 md:py-24">
           <div className="max-w-4xl">

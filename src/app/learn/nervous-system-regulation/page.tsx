@@ -1,10 +1,33 @@
-import Link from "next/link"
+import type { Metadata } from "next";
+import Link from "next/link";
+import { JsonLd } from "@/components/seo/json-ld"
+import { buildAuthorityPageStructuredData } from "@/lib/seo/structured-data"
 
-export const metadata = {
+export const metadata: Metadata = {
   title:
-    "What Is Nervous System Regulation? Stress, Sleep, Recovery and Daily Life | Neuvago",
+    "Nervous System Regulation | Stress, Sleep, Recovery and Daily Life | Neuvago",
   description:
     "Learn what nervous system regulation means in everyday life, how it relates to stress, sleep, recovery, and why the body can feel more or less able to settle and return.",
+  alternates: {
+    canonical: "/learn/nervous-system-regulation",
+  },
+  openGraph: {
+    title:
+      "Nervous System Regulation | Stress, Sleep, Recovery and Daily Life | Neuvago",
+    description:
+      "Learn what nervous system regulation means in everyday life, how it relates to stress, sleep, recovery, and why the body can feel more or less able to settle and return.",
+    url: "/learn/nervous-system-regulation",
+    siteName: "Neuvago",
+    locale: "en_US",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title:
+      "Nervous System Regulation | Stress, Sleep, Recovery and Daily Life | Neuvago",
+    description:
+      "Learn what nervous system regulation means in everyday life, how it relates to stress, sleep, recovery, and why the body can feel more or less able to settle and return.",
+  },
 }
 
 const keyPoints = [
@@ -122,8 +145,22 @@ const clarifications = [
 ]
 
 export default function NervousSystemRegulationPage() {
+    const structuredData = buildAuthorityPageStructuredData({
+    title: "Nervous System Regulation | Stress, Sleep, Recovery and Daily Life | Neuvago",
+    description: "Learn what nervous system regulation means in everyday life, how it relates to stress, sleep, recovery, and why the body can feel more or less able to settle and return.",
+    path: "/learn/nervous-system-regulation",
+    articleSection: "Learn",
+    breadcrumbs: [
+      { name: "Home", path: "/" },
+      { name: "Learn", path: "/learn" },
+      { name: "Nervous System Regulation", path: "/learn/nervous-system-regulation" },
+    ],
+  });
+
+
   return (
     <main className="bg-[#f7f4ef] text-[#1f1f1c]">
+      <JsonLd data={structuredData} idPrefix="learn-nervous-system-regulation" />
       <section className="border-b border-black/5">
         <div className="mx-auto grid min-h-[80vh] max-w-7xl items-center gap-16 px-6 py-20 md:px-10 lg:grid-cols-[1.05fr_0.95fr] lg:py-28">
           <div className="max-w-3xl">
@@ -132,31 +169,31 @@ export default function NervousSystemRegulationPage() {
             </p>
 
             <h1 className="text-4xl font-medium leading-[1.05] tracking-[-0.03em] md:text-6xl lg:text-7xl">
-              What does nervous system regulation actually mean?
+              Nervous system regulation is about how the body shifts, settles, and returns
             </h1>
 
             <p className="mt-6 max-w-2xl text-base leading-8 text-[#5f5a52] md:text-lg">
-              Nervous system regulation is a practical way to understand how the
-              body moves between stress, settling, recovery, and steadier daily
-              balance. It matters because many people are not only asking what
-              stress is. They are trying to understand why the body sometimes
-              feels flexible and recoverable, and other times tense,
-              overstimulated, wired, or hard to bring back down.
+              Nervous system regulation is a practical way to understand
+              how the body moves between stress, settling, recovery, and
+              steadier daily balance. It matters because many people are trying
+              to understand why the body sometimes feels flexible and
+              recoverable, and other times tense, overstimulated, wired, or
+              hard to bring back down.
             </p>
 
             <div className="mt-10 flex flex-wrap gap-4">
               <Link
-                href="/learn/vagus-nerve"
+                href="/conditions/stress"
                 className="rounded-full bg-[#1f1f1c] px-6 py-3 text-sm font-medium text-white transition hover:opacity-90"
               >
-                Explore vagus nerve
+                Explore stress
               </Link>
 
               <Link
-                href="/learn/recovery-and-regulation"
+                href="/learn/what-nervous-system-regulation-feels-like"
                 className="rounded-full border border-[#d8d1c7] bg-transparent px-6 py-3 text-sm font-medium text-[#1f1f1c] transition hover:bg-white/70"
               >
-                Explore recovery
+                See what regulation feels like
               </Link>
             </div>
           </div>
@@ -386,7 +423,7 @@ export default function NervousSystemRegulationPage() {
 
             <h2 className="mt-4 max-w-3xl text-3xl font-medium leading-tight tracking-[-0.03em] md:text-5xl">
               Nervous system regulation matters because it gives one practical
-              framework for many experiences that otherwise feel disconnected
+              framework for experiences that otherwise feel disconnected
             </h2>
 
             <p className="mt-6 max-w-2xl text-base leading-8 text-[#5f5a52] md:text-lg">

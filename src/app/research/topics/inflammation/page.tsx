@@ -1,10 +1,28 @@
 import Link from "next/link"
+import { JsonLd } from "@/components/seo/json-ld"
+import { buildAuthorityPageStructuredData } from "@/lib/seo/structured-data"
 
 export const metadata = {
   title:
     "Inflammation Research | Neuroimmune Signaling, Inflammatory Reflex and Vagal Pathways | Neuvago",
   description:
     "Explore inflammation research in the Neuvago Research Library, including neuroimmune signaling, the inflammatory reflex, cytokine regulation, and vagus-related immune communication.",
+  alternates: {
+    canonical: "/research/topics/inflammation",
+  },
+  openGraph: {
+    title: "Inflammation Research | Neuroimmune Signaling, Inflammatory Reflex and Vagal Pathways | Neuvago",
+    description: "Explore inflammation research in the Neuvago Research Library, including neuroimmune signaling, the inflammatory reflex, cytokine regulation, and vagus-related immune communication.",
+    url: "/research/topics/inflammation",
+    siteName: "Neuvago",
+    locale: "en_US",
+    type: "article",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Inflammation Research | Neuroimmune Signaling, Inflammatory Reflex and Vagal Pathways | Neuvago",
+    description: "Explore inflammation research in the Neuvago Research Library, including neuroimmune signaling, the inflammatory reflex, cytokine regulation, and vagus-related immune communication.",
+  },
 }
 
 const topicOverview = [
@@ -161,8 +179,22 @@ function StudyCard({
 }
 
 export default function InflammationResearchPage() {
+  const structuredData = buildAuthorityPageStructuredData({
+    title: "Inflammation Research | Neuroimmune Signaling, Inflammatory Reflex and Vagal Pathways | Neuvago",
+    description: "Explore inflammation research in the Neuvago Research Library, including neuroimmune signaling, the inflammatory reflex, cytokine regulation, and vagus-related immune communication.",
+    path: "/research/topics/inflammation",
+    articleSection: "Research topics",
+    breadcrumbs: [
+      { name: "Home", path: "/" },
+      { name: "Research", path: "/research" },
+      { name: "Topic Research", path: "/research/topics" },
+      { name: "Inflammation Research", path: "/research/topics/inflammation" },
+    ],
+  });
+
   return (
     <main className="bg-[#f7f4ef] text-[#1f1f1c]">
+      <JsonLd data={structuredData} idPrefix="research-topics-inflammation" />
       <section className="border-b border-black/5 bg-[#f7f4ef]">
         <div className="mx-auto max-w-7xl px-6 py-20 md:px-10 md:py-24">
           <div className="max-w-4xl">

@@ -1,10 +1,28 @@
 import Link from "next/link"
+import { JsonLd } from "@/components/seo/json-ld"
+import { buildAuthorityPageStructuredData } from "@/lib/seo/structured-data"
 
 export const metadata = {
   title:
     "Why Your Body Feels Stuck in Stress | Lingering Activation, Sleep and Recovery | Neuvago",
   description:
     "Learn why the body can feel stuck in stress even after the stressful thing is over, and how lingering activation connects to sleep, recovery, anxiety, and nervous system regulation.",
+  alternates: {
+    canonical: "/learn/why-your-body-feels-stuck-in-stress",
+  },
+  openGraph: {
+    title: "Why Your Body Feels Stuck in Stress | Lingering Activation, Sleep and Recovery | Neuvago",
+    description: "Learn why the body can feel stuck in stress even after the stressful thing is over, and how lingering activation connects to sleep, recovery, anxiety, and nervous system regulation.",
+    url: "/learn/why-your-body-feels-stuck-in-stress",
+    siteName: "Neuvago",
+    locale: "en_US",
+    type: "article",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Why Your Body Feels Stuck in Stress | Lingering Activation, Sleep and Recovery | Neuvago",
+    description: "Learn why the body can feel stuck in stress even after the stressful thing is over, and how lingering activation connects to sleep, recovery, anxiety, and nervous system regulation.",
+  },
 }
 
 const keyPoints = [
@@ -133,27 +151,22 @@ const connectedTopics = [
   },
 ]
 
-const clarifications = [
-  {
-    title: "It does not mean the body is broken",
-    description:
-      "A body that feels stuck in stress is often a body still carrying load, not a body that has permanently lost the ability to calm down.",
-  },
-  {
-    title: "It does not mean the stress was imaginary",
-    description:
-      "Even when the outside situation changes, the nervous system may still need more time, recovery, and support before it fully registers that the pressure is over.",
-  },
-  {
-    title: "It usually makes most sense as a pattern",
-    description:
-      "The experience often becomes clearer when viewed across stress load, sleep, recovery, stimulation, and daily rhythm rather than as one isolated symptom.",
-  },
-]
-
 export default function WhyYourBodyFeelsStuckInStressPage() {
+  const structuredData = buildAuthorityPageStructuredData({
+    title: "Why Your Body Feels Stuck in Stress | Lingering Activation, Sleep and Recovery | Neuvago",
+    description: "Learn why the body can feel stuck in stress even after the stressful thing is over, and how lingering activation connects to sleep, recovery, anxiety, and nervous system regulation.",
+    path: "/learn/why-your-body-feels-stuck-in-stress",
+    articleSection: "Learn",
+    breadcrumbs: [
+      { name: "Home", path: "/" },
+      { name: "Learn", path: "/learn" },
+      { name: "Why Your Body Feels Stuck in Stress", path: "/learn/why-your-body-feels-stuck-in-stress" },
+    ],
+  });
+
   return (
     <main className="bg-[#f7f4ef] text-[#1f1f1c]">
+      <JsonLd data={structuredData} idPrefix="learn-why-your-body-feels-stuck-in-stress" />
       <section className="border-b border-black/5">
         <div className="mx-auto grid min-h-[80vh] max-w-7xl items-center gap-16 px-6 py-20 md:px-10 lg:grid-cols-[1.05fr_0.95fr] lg:py-28">
           <div className="max-w-3xl">

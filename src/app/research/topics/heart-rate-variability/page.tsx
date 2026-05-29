@@ -1,10 +1,28 @@
 import Link from "next/link"
+import { JsonLd } from "@/components/seo/json-ld"
+import { buildAuthorityPageStructuredData } from "@/lib/seo/structured-data"
 
 export const metadata = {
   title:
     "Heart Rate Variability Research | HRV, Vagal Regulation and Autonomic Flexibility | Neuvago",
   description:
     "Explore heart rate variability research in the Neuvago Research Library, including HRV methodology, autonomic flexibility, vagal regulation, emotional regulation, and stress physiology.",
+  alternates: {
+    canonical: "/research/topics/heart-rate-variability",
+  },
+  openGraph: {
+    title: "Heart Rate Variability Research | HRV, Vagal Regulation and Autonomic Flexibility | Neuvago",
+    description: "Explore heart rate variability research in the Neuvago Research Library, including HRV methodology, autonomic flexibility, vagal regulation, emotional regulation, and stress physiology.",
+    url: "/research/topics/heart-rate-variability",
+    siteName: "Neuvago",
+    locale: "en_US",
+    type: "article",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Heart Rate Variability Research | HRV, Vagal Regulation and Autonomic Flexibility | Neuvago",
+    description: "Explore heart rate variability research in the Neuvago Research Library, including HRV methodology, autonomic flexibility, vagal regulation, emotional regulation, and stress physiology.",
+  },
 }
 
 const topicOverview = [
@@ -152,8 +170,22 @@ function StudyCard({
 }
 
 export default function HeartRateVariabilityResearchPage() {
+  const structuredData = buildAuthorityPageStructuredData({
+    title: "Heart Rate Variability Research | HRV, Vagal Regulation and Autonomic Flexibility | Neuvago",
+    description: "Explore heart rate variability research in the Neuvago Research Library, including HRV methodology, autonomic flexibility, vagal regulation, emotional regulation, and stress physiology.",
+    path: "/research/topics/heart-rate-variability",
+    articleSection: "Research topics",
+    breadcrumbs: [
+      { name: "Home", path: "/" },
+      { name: "Research", path: "/research" },
+      { name: "Topic Research", path: "/research/topics" },
+      { name: "Heart Rate Variability Research", path: "/research/topics/heart-rate-variability" },
+    ],
+  });
+
   return (
     <main className="bg-[#f7f4ef] text-[#1f1f1c]">
+      <JsonLd data={structuredData} idPrefix="research-topics-heart-rate-variability" />
       <section className="border-b border-black/5 bg-[#f7f4ef]">
         <div className="mx-auto max-w-7xl px-6 py-20 md:px-10 md:py-24">
           <div className="max-w-4xl">

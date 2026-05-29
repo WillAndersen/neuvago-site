@@ -1,10 +1,28 @@
 import Link from "next/link"
+import { JsonLd } from "@/components/seo/json-ld"
+import { buildAuthorityPageStructuredData } from "@/lib/seo/structured-data"
 
 export const metadata = {
   title:
     "Recovery and Regulation | Stress, Sleep, Capacity and Restoration | Neuvago",
   description:
     "Learn how recovery and nervous system regulation connect to stress, sleep, capacity, resilience, and why rest is not always the same as real restoration.",
+  alternates: {
+    canonical: "/learn/recovery-and-regulation",
+  },
+  openGraph: {
+    title: "Recovery and Regulation | Stress, Sleep, Capacity and Restoration | Neuvago",
+    description: "Learn how recovery and nervous system regulation connect to stress, sleep, capacity, resilience, and why rest is not always the same as real restoration.",
+    url: "/learn/recovery-and-regulation",
+    siteName: "Neuvago",
+    locale: "en_US",
+    type: "article",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Recovery and Regulation | Stress, Sleep, Capacity and Restoration | Neuvago",
+    description: "Learn how recovery and nervous system regulation connect to stress, sleep, capacity, resilience, and why rest is not always the same as real restoration.",
+  },
 }
 
 const keyPoints = [
@@ -133,27 +151,22 @@ const connectedTopics = [
   },
 ]
 
-const clarifications = [
-  {
-    title: "It does not only mean taking more breaks",
-    description:
-      "Breaks matter, but recovery support is usually about whether the body and mind actually restore during and after those pauses.",
-  },
-  {
-    title: "It does not mean instant restoration",
-    description:
-      "Recovery often rebuilds more gradually. It usually depends on stress load, sleep, rhythm, regulation, and how long the system has been under strain.",
-  },
-  {
-    title: "It often works best as a whole-pattern concept",
-    description:
-      "Recovery becomes most useful when understood across sleep, stress, nervous system settling, daily routines, and how much life the body is still carrying.",
-  },
-]
-
 export default function RecoveryAndRegulationPage() {
+  const structuredData = buildAuthorityPageStructuredData({
+    title: "Recovery and Regulation | Stress, Sleep, Capacity and Restoration | Neuvago",
+    description: "Learn how recovery and nervous system regulation connect to stress, sleep, capacity, resilience, and why rest is not always the same as real restoration.",
+    path: "/learn/recovery-and-regulation",
+    articleSection: "Learn",
+    breadcrumbs: [
+      { name: "Home", path: "/" },
+      { name: "Learn", path: "/learn" },
+      { name: "Recovery and Regulation", path: "/learn/recovery-and-regulation" },
+    ],
+  });
+
   return (
     <main className="bg-[#f7f4ef] text-[#1f1f1c]">
+      <JsonLd data={structuredData} idPrefix="learn-recovery-and-regulation" />
       <section className="border-b border-black/5">
         <div className="mx-auto grid min-h-[80vh] max-w-7xl items-center gap-16 px-6 py-20 md:px-10 lg:grid-cols-[1.05fr_0.95fr] lg:py-28">
           <div className="max-w-3xl">

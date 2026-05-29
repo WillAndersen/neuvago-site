@@ -1,10 +1,28 @@
 import Link from "next/link"
+import { JsonLd } from "@/components/seo/json-ld"
+import { buildAuthorityPageStructuredData } from "@/lib/seo/structured-data"
 
 export const metadata = {
   title:
     "What Nervous System Regulation Feels Like in Everyday Life | Neuvago",
   description:
     "Learn what nervous system regulation can feel like in everyday life, including less urgency, more room, better recovery, easier transitions, and stronger steadiness over time.",
+  alternates: {
+    canonical: "/learn/what-nervous-system-regulation-feels-like",
+  },
+  openGraph: {
+    title: "What Nervous System Regulation Feels Like in Everyday Life | Neuvago",
+    description: "Learn what nervous system regulation can feel like in everyday life, including less urgency, more room, better recovery, easier transitions, and stronger steadiness over time.",
+    url: "/learn/what-nervous-system-regulation-feels-like",
+    siteName: "Neuvago",
+    locale: "en_US",
+    type: "article",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "What Nervous System Regulation Feels Like in Everyday Life | Neuvago",
+    description: "Learn what nervous system regulation can feel like in everyday life, including less urgency, more room, better recovery, easier transitions, and stronger steadiness over time.",
+  },
 }
 
 const keyPoints = [
@@ -120,27 +138,22 @@ const connectedTopics = [
   },
 ]
 
-const clarifications = [
-  {
-    title: "It does not mean constant calm",
-    description:
-      "Regulation usually does not remove stress, emotion, or challenge. More often, it changes how overwhelming, sticky, or destabilizing those states feel.",
-  },
-  {
-    title: "It does not mean feeling less",
-    description:
-      "The system can still feel deeply. The difference is often that feeling becomes more workable, less consuming, and easier to recover from.",
-  },
-  {
-    title: "It often feels like flexibility",
-    description:
-      "One of the clearest signs is usually not stillness itself, but the body’s growing ability to adapt, return, and carry ordinary life with more steadiness.",
-  },
-]
-
 export default function WhatNervousSystemRegulationFeelsLikePage() {
+  const structuredData = buildAuthorityPageStructuredData({
+    title: "What Nervous System Regulation Feels Like in Everyday Life | Neuvago",
+    description: "Learn what nervous system regulation can feel like in everyday life, including less urgency, more room, better recovery, easier transitions, and stronger steadiness over time.",
+    path: "/learn/what-nervous-system-regulation-feels-like",
+    articleSection: "Learn",
+    breadcrumbs: [
+      { name: "Home", path: "/" },
+      { name: "Learn", path: "/learn" },
+      { name: "What Nervous System Regulation Feels Like in Everyday Life", path: "/learn/what-nervous-system-regulation-feels-like" },
+    ],
+  });
+
   return (
     <main className="bg-[#f7f4ef] text-[#1f1f1c]">
+      <JsonLd data={structuredData} idPrefix="learn-what-nervous-system-regulation-feels-like" />
       <section className="border-b border-black/5">
         <div className="mx-auto grid min-h-[80vh] max-w-7xl items-center gap-16 px-6 py-20 md:px-10 lg:grid-cols-[1.05fr_0.95fr] lg:py-28">
           <div className="max-w-3xl">

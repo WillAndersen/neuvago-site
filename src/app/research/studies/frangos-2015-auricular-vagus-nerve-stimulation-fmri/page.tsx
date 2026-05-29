@@ -1,10 +1,28 @@
 import Link from "next/link"
+import { JsonLd } from "@/components/seo/json-ld"
+import { buildAuthorityPageStructuredData } from "@/lib/seo/structured-data"
 
 export const metadata = {
   title:
     "Non-Invasive Access to the Vagus Nerve via the Ear: fMRI Evidence (Frangos et al., 2015) | Neuvago Research Library",
   description:
     "Read a structured summary of Frangos et al. (2015), the influential fMRI study showing that auricular stimulation of the ear may influence brain regions associated with vagal pathways.",
+  alternates: {
+    canonical: "/research/studies/frangos-2015-auricular-vagus-nerve-stimulation-fmri",
+  },
+  openGraph: {
+    title: "Non-Invasive Access to the Vagus Nerve via the Ear: fMRI Evidence (Frangos et al., 2015) | Neuvago Research Library",
+    description: "Read a structured summary of Frangos et al. (2015), the influential fMRI study showing that auricular stimulation of the ear may influence brain regions associated with vagal pathways.",
+    url: "/research/studies/frangos-2015-auricular-vagus-nerve-stimulation-fmri",
+    siteName: "Neuvago",
+    locale: "en_US",
+    type: "article",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Non-Invasive Access to the Vagus Nerve via the Ear: fMRI Evidence (Frangos et al., 2015) | Neuvago Research Library",
+    description: "Read a structured summary of Frangos et al. (2015), the influential fMRI study showing that auricular stimulation of the ear may influence brain regions associated with vagal pathways.",
+  },
 }
 
 const studyDetails = [
@@ -131,8 +149,22 @@ const relatedLinks = [
 ]
 
 export default function Frangos2015AuricularVagusNerveStimulationFmriPage() {
+  const structuredData = buildAuthorityPageStructuredData({
+    title: "Non-Invasive Access to the Vagus Nerve via the Ear: fMRI Evidence (Frangos et al., 2015) | Neuvago Research Library",
+    description: "Read a structured summary of Frangos et al. (2015), the influential fMRI study showing that auricular stimulation of the ear may influence brain regions associated with vagal pathways.",
+    path: "/research/studies/frangos-2015-auricular-vagus-nerve-stimulation-fmri",
+    articleSection: "Scientific studies",
+    breadcrumbs: [
+      { name: "Home", path: "/" },
+      { name: "Research", path: "/research" },
+      { name: "Scientific Studies", path: "/research/studies" },
+      { name: "Non-Invasive Access to the Vagus Nerve via the Ear: fMRI Evidence (Frangos et al., 2015)", path: "/research/studies/frangos-2015-auricular-vagus-nerve-stimulation-fmri" },
+    ],
+  });
+
   return (
     <main className="bg-[#f7f4ef] text-[#1f1f1c]">
+      <JsonLd data={structuredData} idPrefix="research-studies-frangos-2015-auricular-vagus-nerve-stimulation-fmri" />
       <section className="border-b border-black/5 bg-[#f7f4ef]">
         <div className="mx-auto max-w-7xl px-6 py-20 md:px-10 md:py-24">
           <div className="max-w-4xl">

@@ -11,7 +11,7 @@ import { supabase } from "@/lib/supabase/client"
 
 export default function AccountSecurityPage() {
   const router = useRouter()
-  const { isLoading, isSignedIn, user, profile } = useAccountProfile()
+  const { isLoading, isSignedIn, user, profile, needsOnboarding } = useAccountProfile()
 
   const [isCheckingVerification, setIsCheckingVerification] = useState(true)
   const [isVerified, setIsVerified] = useState(false)
@@ -32,7 +32,7 @@ export default function AccountSecurityPage() {
       return
     }
 
-    if (isSignedIn && !profile?.primaryGoal) {
+    if (needsOnboarding) {
       router.replace("/onboarding")
       return
     }
@@ -59,7 +59,7 @@ export default function AccountSecurityPage() {
     return () => {
       isMounted = false
     }
-  }, [isLoading, isSignedIn, profile?.primaryGoal, router])
+  }, [isLoading, isSignedIn, needsOnboarding, router])
 
   async function handleSignOut() {
     if (isSigningOut) return

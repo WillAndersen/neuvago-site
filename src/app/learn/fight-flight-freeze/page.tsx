@@ -1,10 +1,28 @@
 import Link from "next/link"
+import { JsonLd } from "@/components/seo/json-ld"
+import { buildAuthorityPageStructuredData } from "@/lib/seo/structured-data"
 
 export const metadata = {
   title:
     "Fight, Flight, Freeze | Survival Patterns, Stress States and Shutdown | Neuvago",
   description:
     "Learn what fight, flight, and freeze mean in everyday life, how these protective states connect to stress, anxiety, shutdown, and nervous system regulation, and why the body reacts so strongly under pressure.",
+  alternates: {
+    canonical: "/learn/fight-flight-freeze",
+  },
+  openGraph: {
+    title: "Fight, Flight, Freeze | Survival Patterns, Stress States and Shutdown | Neuvago",
+    description: "Learn what fight, flight, and freeze mean in everyday life, how these protective states connect to stress, anxiety, shutdown, and nervous system regulation, and why the body reacts so strongly under pressure.",
+    url: "/learn/fight-flight-freeze",
+    siteName: "Neuvago",
+    locale: "en_US",
+    type: "article",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Fight, Flight, Freeze | Survival Patterns, Stress States and Shutdown | Neuvago",
+    description: "Learn what fight, flight, and freeze mean in everyday life, how these protective states connect to stress, anxiety, shutdown, and nervous system regulation, and why the body reacts so strongly under pressure.",
+  },
 }
 
 const keyPoints = [
@@ -133,27 +151,22 @@ const connectedTopics = [
   },
 ]
 
-const clarifications = [
-  {
-    title: "It does not mean removing all stress responses",
-    description:
-      "Fight, flight, and freeze are protective patterns. The goal is usually not to eliminate them completely, but to understand them better and help the body recover from them more cleanly.",
-  },
-  {
-    title: "It does not mean forcing calm",
-    description:
-      "Useful support is often less about suppressing reactions and more about helping the body feel safe enough to return from urgency, avoidance, or shutdown.",
-  },
-  {
-    title: "It works best when understood as a pattern model",
-    description:
-      "The model becomes most useful when it explains repeated states and reactions in real life rather than being treated like a rigid label that must fit perfectly.",
-  },
-]
-
 export default function FightFlightFreezePage() {
+  const structuredData = buildAuthorityPageStructuredData({
+    title: "Fight, Flight, Freeze | Survival Patterns, Stress States and Shutdown | Neuvago",
+    description: "Learn what fight, flight, and freeze mean in everyday life, how these protective states connect to stress, anxiety, shutdown, and nervous system regulation, and why the body reacts so strongly under pressure.",
+    path: "/learn/fight-flight-freeze",
+    articleSection: "Learn",
+    breadcrumbs: [
+      { name: "Home", path: "/" },
+      { name: "Learn", path: "/learn" },
+      { name: "Fight, Flight, Freeze", path: "/learn/fight-flight-freeze" },
+    ],
+  });
+
   return (
     <main className="bg-[#f7f4ef] text-[#1f1f1c]">
+      <JsonLd data={structuredData} idPrefix="learn-fight-flight-freeze" />
       <section className="border-b border-black/5">
         <div className="mx-auto grid min-h-[80vh] max-w-7xl items-center gap-16 px-6 py-20 md:px-10 lg:grid-cols-[1.05fr_0.95fr] lg:py-28">
           <div className="max-w-3xl">

@@ -1,10 +1,33 @@
-import Link from "next/link"
+import type { Metadata } from "next";
+import Link from "next/link";
+import { JsonLd } from "@/components/seo/json-ld"
+import { buildAuthorityPageStructuredData } from "@/lib/seo/structured-data"
 
-export const metadata = {
+export const metadata: Metadata = {
   title:
-    "What Is the Vagus Nerve? Stress, Sleep, Recovery and Nervous System Regulation | Neuvago",
+    "Vagus Nerve | Stress, Sleep, Recovery and Nervous System Regulation | Neuvago",
   description:
-    "Learn what the vagus nerve is, why it matters for stress, sleep, recovery, and nervous system regulation, and how it fits into everyday life.",
+    "Learn what the vagus nerve is, why it matters for stress, sleep, recovery, and nervous system regulation, and how it connects to everyday life.",
+  alternates: {
+    canonical: "/learn/vagus-nerve",
+  },
+  openGraph: {
+    title:
+      "Vagus Nerve | Stress, Sleep, Recovery and Nervous System Regulation | Neuvago",
+    description:
+      "Learn what the vagus nerve is, why it matters for stress, sleep, recovery, and nervous system regulation, and how it connects to everyday life.",
+    url: "/learn/vagus-nerve",
+    siteName: "Neuvago",
+    locale: "en_US",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title:
+      "Vagus Nerve | Stress, Sleep, Recovery and Nervous System Regulation | Neuvago",
+    description:
+      "Learn what the vagus nerve is, why it matters for stress, sleep, recovery, and nervous system regulation, and how it connects to everyday life.",
+  },
 }
 
 const keyPoints = [
@@ -105,6 +128,20 @@ const searchReasons = [
 
 const connectedTopics = [
   {
+    title: "Vagus nerve stimulation",
+    description:
+      "A clearer category page on implanted VNS, non-invasive VNS, ear-based approaches, and how guided wellness devices should be understood.",
+    href: "/learn/vagus-nerve-stimulation",
+    linkLabel: "Explore VNS",
+  },
+  {
+    title: "Non-invasive VNS",
+    description:
+      "A practical next step for understanding external stimulation, nVNS devices, and how a guided wellness system should be evaluated.",
+    href: "/learn/non-invasive-vagus-nerve-stimulation",
+    linkLabel: "Explore non-invasive VNS",
+  },
+  {
     title: "Nervous system regulation",
     description:
       "A broader framework for understanding how the body shifts between activation, settling, recovery, and steadier daily balance.",
@@ -134,27 +171,24 @@ const connectedTopics = [
   },
 ]
 
-const clarifications = [
-  {
-    title: "It does not explain everything by itself",
-    description:
-      "The vagus nerve is important, but it is still only one part of a broader nervous system picture that also includes stress load, sleep, recovery, and daily context.",
-  },
-  {
-    title: "It is not a magic shortcut",
-    description:
-      "The topic can easily be made to sound too simple online. In practice, steadier support usually comes from patterns, routines, recovery, and a broader understanding over time.",
-  },
-  {
-    title: "It is most useful as an entry point",
-    description:
-      "The best use of the topic is often as a gateway into calmer, clearer learning around stress, regulation, sleep, recovery, and how the body actually feels in daily life.",
-  },
-]
 
 export default function VagusNervePage() {
+    const structuredData = buildAuthorityPageStructuredData({
+    title: "Vagus Nerve | Stress, Sleep, Recovery and Nervous System Regulation | Neuvago",
+    description: "Learn what the vagus nerve is, why it matters for stress, sleep, recovery, and nervous system regulation, and how it connects to everyday life.",
+    path: "/learn/vagus-nerve",
+    articleSection: "Learn",
+    breadcrumbs: [
+      { name: "Home", path: "/" },
+      { name: "Learn", path: "/learn" },
+      { name: "Vagus Nerve", path: "/learn/vagus-nerve" },
+    ],
+  });
+
+
   return (
     <main className="bg-[#f7f4ef] text-[#1f1f1c]">
+      <JsonLd data={structuredData} idPrefix="learn-vagus-nerve" />
       <section className="border-b border-black/5">
         <div className="mx-auto grid min-h-[80vh] max-w-7xl items-center gap-16 px-6 py-20 md:px-10 lg:grid-cols-[1.05fr_0.95fr] lg:py-28">
           <div className="max-w-3xl">
@@ -163,15 +197,15 @@ export default function VagusNervePage() {
             </p>
 
             <h1 className="text-4xl font-medium leading-[1.05] tracking-[-0.03em] md:text-6xl lg:text-7xl">
-              What is the vagus nerve, and why does it matter so much in conversations about stress, sleep, and recovery?
+              The vagus nerve is one of the clearest entry points into stress, sleep, recovery, and regulation
             </h1>
 
             <p className="mt-6 max-w-2xl text-base leading-8 text-[#5f5a52] md:text-lg">
-              The vagus nerve is one of the body’s most important communication
-              pathways. It is often discussed because it sits close to many of
-              the systems people are already trying to understand when they talk
-              about stress, calm, sleep, recovery, and nervous system support in
-              everyday life.
+              The vagus nerve is one of the body’s most important
+              communication pathways. It matters because it helps connect many
+              of the same themes people are already trying to understand in real
+              life: stress, calm, sleep, recovery, and how the body settles and
+              returns.
             </p>
 
             <div className="mt-10 flex flex-wrap gap-4">
@@ -183,10 +217,10 @@ export default function VagusNervePage() {
               </Link>
 
               <Link
-                href="/research"
+                href="/conditions/stress"
                 className="rounded-full border border-[#d8d1c7] bg-transparent px-6 py-3 text-sm font-medium text-[#1f1f1c] transition hover:bg-white/70"
               >
-                Explore research
+                Explore stress
               </Link>
             </div>
           </div>
@@ -423,7 +457,7 @@ export default function VagusNervePage() {
             </p>
 
             <h2 className="mt-4 max-w-3xl text-3xl font-medium leading-tight tracking-[-0.03em] md:text-5xl">
-              This page should work as the broad entry point into the whole
+              This page works best as the broad entry point into the whole
               vagus nerve conversation
             </h2>
 
@@ -437,23 +471,23 @@ export default function VagusNervePage() {
             <p className="mt-6 max-w-2xl text-base leading-8 text-[#5f5a52]">
               That is why this page works best as a broad topic page — one that
               introduces the theme clearly, then sends people deeper into
-              regulation, vagal tone, parasympathetic states, stress, sleep, and
-              recovery.
+              regulation, vagus nerve stimulation, vagal tone, parasympathetic
+              states, stress, sleep, and recovery.
             </p>
 
             <div className="mt-10 flex flex-wrap gap-4">
               <Link
-                href="/learn/vagal-tone"
+                href="/learn/vagus-nerve-stimulation"
                 className="rounded-full bg-[#1f1f1c] px-6 py-3 text-sm font-medium text-white transition hover:opacity-90"
               >
-                Explore vagal tone
+                Explore VNS
               </Link>
 
               <Link
-                href="/learn/parasympathetic-nervous-system"
+                href="/learn/non-invasive-vagus-nerve-stimulation"
                 className="rounded-full border border-black/10 px-6 py-3 text-sm font-medium text-[#1f1f1c] transition hover:bg-white/60"
               >
-                Explore parasympathetic states
+                Non-invasive VNS
               </Link>
             </div>
           </div>
@@ -553,8 +587,8 @@ export default function VagusNervePage() {
               </p>
               <p className="mt-2 text-sm leading-7 text-[#5f5a52]">
                 The vagus nerve is most useful when connected to regulation,
-                recovery, calm-state learning, and real-life nervous system
-                experience.
+                stimulation, recovery, calm-state learning, and real-life
+                nervous system experience.
               </p>
             </div>
           </div>

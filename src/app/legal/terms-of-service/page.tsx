@@ -1,10 +1,28 @@
 import Link from "next/link"
+import { JsonLd } from "@/components/seo/json-ld"
+import { buildPageWithBreadcrumbStructuredData } from "@/lib/seo/structured-data"
 
 export const metadata = {
   title:
     "Terms of Service | Neuvago",
   description:
     "Read the Neuvago Terms of Service, including website use, product information, orders, payments, shipping, returns, intellectual property, liability, and governing terms.",
+  alternates: {
+    canonical: "/legal/terms-of-service",
+  },
+  openGraph: {
+    title: "Terms of Service | Neuvago",
+    description: "Read the Neuvago Terms of Service, including website use, product information, orders, payments, shipping, returns, intellectual property, liability, and governing terms.",
+    url: "/legal/terms-of-service",
+    siteName: "Neuvago",
+    locale: "en_US",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Terms of Service | Neuvago",
+    description: "Read the Neuvago Terms of Service, including website use, product information, orders, payments, shipping, returns, intellectual property, liability, and governing terms.",
+  },
 }
 
 const keyPoints = [
@@ -194,8 +212,20 @@ const relatedPages = [
 ]
 
 export default function TermsOfServicePage() {
+  const structuredData = buildPageWithBreadcrumbStructuredData({
+    title: "Terms of Service | Neuvago",
+    description: "Read the Neuvago Terms of Service, including website use, product information, orders, payments, shipping, returns, intellectual property, liability, and governing terms.",
+    path: "/legal/terms-of-service",
+    breadcrumbs: [
+      { name: "Home", path: "/" },
+      { name: "Legal", path: "/legal" },
+      { name: "Terms of Service", path: "/legal/terms-of-service" },
+    ],
+  });
+
   return (
     <main className="bg-[#f7f4ef] text-[#1f1f1c]">
+      <JsonLd data={structuredData} idPrefix="legal-terms-of-service" />
       <section className="border-b border-black/5">
         <div className="mx-auto grid min-h-[70vh] max-w-7xl items-center gap-16 px-6 py-20 md:px-10 lg:grid-cols-[1.05fr_0.95fr] lg:py-24">
           <div className="max-w-3xl">

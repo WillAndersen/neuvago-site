@@ -1,10 +1,28 @@
 import Link from "next/link"
+import { JsonLd } from "@/components/seo/json-ld"
+import { buildPageWithBreadcrumbStructuredData } from "@/lib/seo/structured-data"
 
 export const metadata = {
   title:
     "Regulatory Information | Neuvago",
   description:
     "Read regulatory information for Neuvago, including product classification, general wellness positioning, consumer safety standards, and responsible product communication.",
+  alternates: {
+    canonical: "/legal/regulatory",
+  },
+  openGraph: {
+    title: "Regulatory Information | Neuvago",
+    description: "Read regulatory information for Neuvago, including product classification, general wellness positioning, consumer safety standards, and responsible product communication.",
+    url: "/legal/regulatory",
+    siteName: "Neuvago",
+    locale: "en_US",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Regulatory Information | Neuvago",
+    description: "Read regulatory information for Neuvago, including product classification, general wellness positioning, consumer safety standards, and responsible product communication.",
+  },
 }
 
 const keyPoints = [
@@ -130,8 +148,20 @@ const relatedPages = [
 ]
 
 export default function RegulatoryPage() {
+  const structuredData = buildPageWithBreadcrumbStructuredData({
+    title: "Regulatory Information | Neuvago",
+    description: "Read regulatory information for Neuvago, including product classification, general wellness positioning, consumer safety standards, and responsible product communication.",
+    path: "/legal/regulatory",
+    breadcrumbs: [
+      { name: "Home", path: "/" },
+      { name: "Legal", path: "/legal" },
+      { name: "Regulatory Information", path: "/legal/regulatory" },
+    ],
+  });
+
   return (
     <main className="bg-[#f7f4ef] text-[#1f1f1c]">
+      <JsonLd data={structuredData} idPrefix="legal-regulatory" />
       <section className="border-b border-black/5">
         <div className="mx-auto grid min-h-[70vh] max-w-7xl items-center gap-16 px-6 py-20 md:px-10 lg:grid-cols-[1.05fr_0.95fr] lg:py-24">
           <div className="max-w-3xl">

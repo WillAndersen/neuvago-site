@@ -1,10 +1,32 @@
-import Link from "next/link"
+import type { Metadata } from "next";
+import Link from "next/link";
+import { JsonLd } from "@/components/seo/json-ld"
+import { buildAuthorityPageStructuredData } from "@/lib/seo/structured-data"
 
-export const metadata = {
-  title:
-    "Stress and the Nervous System | Overload, Activation and Recovery | Neuvago",
+export const metadata: Metadata = {
+  title: "Stress | Nervous System Overload, Activation and Recovery | Neuvago",
   description:
-    "Learn how stress affects the nervous system, why the body can stay activated, and how stress connects to overload, sleep, recovery, and calmer daily support.",
+    "Understand stress through activation, overload, sleep disruption, recovery, and the nervous system patterns that can keep the body feeling on.",
+  alternates: {
+    canonical: "/conditions/stress",
+  },
+  openGraph: {
+    title:
+      "Stress | Nervous System Overload, Activation and Recovery | Neuvago",
+    description:
+      "Understand stress through activation, overload, sleep disruption, recovery, and the nervous system patterns that can keep the body feeling on.",
+    url: "/conditions/stress",
+    siteName: "Neuvago",
+    locale: "en_US",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title:
+      "Stress | Nervous System Overload, Activation and Recovery | Neuvago",
+    description:
+      "Understand stress through activation, overload, sleep disruption, recovery, and the nervous system patterns that can keep the body feeling on.",
+  },
 }
 
 const stressPillars = [
@@ -79,58 +101,24 @@ const connectedTopics = [
   },
 ]
 
-const searchReasons = [
-  {
-    title: "They feel overloaded",
-    description:
-      "Many people search for stress because life feels too intense, too fast, too demanding, or too heavy to carry cleanly.",
-    href: "/learn/signs-of-a-dysregulated-nervous-system",
-    linkLabel: "Explore signs of dysregulation",
-  },
-  {
-    title: "They cannot switch off",
-    description:
-      "Often the real question is not only whether life is stressful, but why the body still does not settle even when there is time to rest.",
-    href: "/conditions/sleep",
-    linkLabel: "Explore sleep",
-  },
-  {
-    title: "They are trying to understand the body’s response",
-    description:
-      "Usually, people want language for why stress feels so physical, so persistent, and so tied to sleep, mood, and energy.",
-    href: "/learn/fight-flight-freeze",
-    linkLabel: "Explore fight, flight, freeze",
-  },
-  {
-    title: "They want a broader explanation",
-    description:
-      "The search often opens into a larger question about the nervous system, recovery, resilience, and what the body needs in order to come back down.",
-    href: "/learn/nervous-system-regulation",
-    linkLabel: "Explore regulation",
-  },
-]
-
-const clarifications = [
-  {
-    title: "Stress does not always mean visible crisis",
-    description:
-      "A person can be carrying significant stress without looking dramatic on the outside. Often, the body is holding much more than it appears to be.",
-  },
-  {
-    title: "Stress is not only about mindset",
-    description:
-      "Thoughts matter, but stress also lives in the body through activation, urgency, disrupted sleep, reduced recovery, and how hard it feels to settle.",
-  },
-  {
-    title: "The broader pattern usually matters most",
-    description:
-      "Stress becomes most useful to understand when viewed across load, recovery, sleep, nervous system state, and what keeps repeating over time.",
-  },
-]
 
 export default function StressPage() {
+    const structuredData = buildAuthorityPageStructuredData({
+    title: "Stress | Nervous System Overload, Activation and Recovery | Neuvago",
+    description: "Understand stress through activation, overload, sleep disruption, recovery, and the nervous system patterns that can keep the body feeling on.",
+    path: "/conditions/stress",
+    articleSection: "Conditions",
+    breadcrumbs: [
+      { name: "Home", path: "/" },
+      { name: "Conditions", path: "/conditions" },
+      { name: "Stress", path: "/conditions/stress" },
+    ],
+  });
+
+
   return (
     <main className="bg-[#f7f4ef] text-[#1f1f1c]">
+      <JsonLd data={structuredData} idPrefix="conditions-stress" />
       <section className="border-b border-black/5">
         <div className="mx-auto grid min-h-[80vh] max-w-7xl items-center gap-16 px-6 py-20 md:px-10 lg:grid-cols-[1.05fr_0.95fr] lg:py-28">
           <div className="max-w-3xl">
@@ -139,22 +127,22 @@ export default function StressPage() {
             </p>
 
             <h1 className="text-4xl font-medium leading-[1.05] tracking-[-0.03em] md:text-6xl lg:text-7xl">
-              Understanding stress through the nervous system
+              Stress often feels like a body that stays on
             </h1>
 
             <p className="mt-6 max-w-2xl text-base leading-8 text-[#5f5a52] md:text-lg">
-              Stress is one of the most common reasons people start looking for
-              better support, but it is rarely only about feeling busy. It often
-              shows up through activation, overload, poor sleep, reduced recovery,
-              and a body that no longer feels easy to bring back down.
+              Stress is rarely only about feeling busy. More often, it
+              shows up as activation, overload, poor sleep, reduced recovery,
+              and a body that no longer feels easy to bring back down after the
+              pressure is over.
             </p>
 
             <div className="mt-10 flex flex-wrap gap-4">
               <Link
-                href="/learn/nervous-system-regulation"
+                href="/learn/why-your-body-feels-stuck-in-stress"
                 className="rounded-full bg-[#1f1f1c] px-6 py-3 text-sm font-medium text-white transition hover:opacity-90"
               >
-                Explore regulation
+                Explore stuck stress
               </Link>
 
               <Link
@@ -223,11 +211,11 @@ export default function StressPage() {
         <div className="mx-auto grid max-w-7xl gap-14 px-6 py-24 md:px-10 md:py-28 lg:grid-cols-[1fr_0.95fr] lg:items-start">
           <div>
             <p className="text-sm uppercase tracking-[0.18em] text-[#7a756c]">
-              What stress often means
+              What stress often means in this context
             </p>
 
             <h2 className="mt-4 max-w-3xl text-3xl font-medium leading-tight tracking-[-0.03em] md:text-5xl">
-              Stress often makes the most sense when it is understood as something the whole system is carrying
+              Stress often makes the most sense when it is understood as a whole-system load, not only a mental state
             </h2>
 
             <p className="mt-6 max-w-2xl text-base leading-8 text-[#5f5a52] md:text-lg">

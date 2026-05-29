@@ -1,10 +1,28 @@
 import Link from "next/link"
+import { JsonLd } from "@/components/seo/json-ld"
+import { buildAuthorityPageStructuredData } from "@/lib/seo/structured-data"
 
 export const metadata = {
   title:
     "Vagus Nerve Stimulation for Treatment-Resistant Depression (Rush et al., 2005) | Neuvago Research Library",
   description:
     "Read a structured summary of Rush et al. (2005), the influential clinical study on implanted vagus nerve stimulation for treatment-resistant depression.",
+  alternates: {
+    canonical: "/research/studies/rush-2005-vagus-nerve-stimulation-depression",
+  },
+  openGraph: {
+    title: "Vagus Nerve Stimulation for Treatment-Resistant Depression (Rush et al., 2005) | Neuvago Research Library",
+    description: "Read a structured summary of Rush et al. (2005), the influential clinical study on implanted vagus nerve stimulation for treatment-resistant depression.",
+    url: "/research/studies/rush-2005-vagus-nerve-stimulation-depression",
+    siteName: "Neuvago",
+    locale: "en_US",
+    type: "article",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Vagus Nerve Stimulation for Treatment-Resistant Depression (Rush et al., 2005) | Neuvago Research Library",
+    description: "Read a structured summary of Rush et al. (2005), the influential clinical study on implanted vagus nerve stimulation for treatment-resistant depression.",
+  },
 }
 
 const studyDetails = [
@@ -139,8 +157,22 @@ const relatedLinks = [
 ]
 
 export default function Rush2005VagusNerveStimulationDepressionPage() {
+  const structuredData = buildAuthorityPageStructuredData({
+    title: "Vagus Nerve Stimulation for Treatment-Resistant Depression (Rush et al., 2005) | Neuvago Research Library",
+    description: "Read a structured summary of Rush et al. (2005), the influential clinical study on implanted vagus nerve stimulation for treatment-resistant depression.",
+    path: "/research/studies/rush-2005-vagus-nerve-stimulation-depression",
+    articleSection: "Scientific studies",
+    breadcrumbs: [
+      { name: "Home", path: "/" },
+      { name: "Research", path: "/research" },
+      { name: "Scientific Studies", path: "/research/studies" },
+      { name: "Vagus Nerve Stimulation for Treatment-Resistant Depression (Rush et al., 2005)", path: "/research/studies/rush-2005-vagus-nerve-stimulation-depression" },
+    ],
+  });
+
   return (
     <main className="bg-[#f7f4ef] text-[#1f1f1c]">
+      <JsonLd data={structuredData} idPrefix="research-studies-rush-2005-vagus-nerve-stimulation-depression" />
       <section className="border-b border-black/5 bg-[#f7f4ef]">
         <div className="mx-auto max-w-7xl px-6 py-20 md:px-10 md:py-24">
           <div className="max-w-4xl">

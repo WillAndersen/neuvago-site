@@ -1,10 +1,30 @@
-import Link from "next/link"
+import type { Metadata } from "next";
+import Link from "next/link";
+import { JsonLd } from "@/components/seo/json-ld"
+import { buildAuthorityPageStructuredData } from "@/lib/seo/structured-data"
 
-export const metadata = {
-  title:
-    "Sleep and the Nervous System | Rest, Unwinding and Recovery | Neuvago",
+export const metadata: Metadata = {
+  title: "Sleep | Nervous System, Unwinding and Recovery | Neuvago",
   description:
-    "Learn how sleep connects to the nervous system, evening activation, unwinding, recovery, and why rest can feel fragile when the body does not fully settle.",
+    "Understand sleep through evening activation, unwinding, recovery, and the nervous system patterns that can make rest feel fragile or incomplete.",
+  alternates: {
+    canonical: "/conditions/sleep",
+  },
+  openGraph: {
+    title: "Sleep | Nervous System, Unwinding and Recovery | Neuvago",
+    description:
+      "Understand sleep through evening activation, unwinding, recovery, and the nervous system patterns that can make rest feel fragile or incomplete.",
+    url: "/conditions/sleep",
+    siteName: "Neuvago",
+    locale: "en_US",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Sleep | Nervous System, Unwinding and Recovery | Neuvago",
+    description:
+      "Understand sleep through evening activation, unwinding, recovery, and the nervous system patterns that can make rest feel fragile or incomplete.",
+  },
 }
 
 const sleepPillars = [
@@ -79,58 +99,24 @@ const connectedTopics = [
   },
 ]
 
-const searchReasons = [
-  {
-    title: "They are tired but cannot switch off",
-    description:
-      "Many people search for sleep support because the body feels exhausted, but still does not fully settle at night.",
-    href: "/learn/why-you-feel-tired-but-cant-relax",
-    linkLabel: "Explore wired-but-tired",
-  },
-  {
-    title: "They want to understand why rest feels thin",
-    description:
-      "Often the real question is not only why sleep is harder, but why it no longer feels as deep, safe, or restorative as it used to.",
-    href: "/learn/recovery-and-regulation",
-    linkLabel: "Explore recovery",
-  },
-  {
-    title: "They feel stress in the evening",
-    description:
-      "The search often opens into a broader question about activation, nervous system state, and why the body keeps carrying the day into the night.",
-    href: "/learn/why-your-body-feels-stuck-in-stress",
-    linkLabel: "Explore stuck stress",
-  },
-  {
-    title: "They want a broader body-based explanation",
-    description:
-      "Usually, people are searching for a practical explanation of how sleep connects to stress, calming, regulation, and recovery.",
-    href: "/learn/nervous-system-regulation",
-    linkLabel: "Explore regulation",
-  },
-]
-
-const clarifications = [
-  {
-    title: "Sleep is not only a nighttime issue",
-    description:
-      "The quality of sleep is often influenced by what the system has been carrying throughout the day, not just what happens at bedtime.",
-  },
-  {
-    title: "Feeling tired does not guarantee deep rest",
-    description:
-      "A person can feel very tired and still not be fully downshifted enough for deeper restoration to happen easily.",
-  },
-  {
-    title: "The broader pattern usually matters most",
-    description:
-      "Sleep makes the most sense when viewed across stress load, calming, evening transitions, nervous system state, and recovery rather than as one isolated problem.",
-  },
-]
 
 export default function SleepPage() {
+    const structuredData = buildAuthorityPageStructuredData({
+    title: "Sleep | Nervous System, Unwinding and Recovery | Neuvago",
+    description: "Understand sleep through evening activation, unwinding, recovery, and the nervous system patterns that can make rest feel fragile or incomplete.",
+    path: "/conditions/sleep",
+    articleSection: "Conditions",
+    breadcrumbs: [
+      { name: "Home", path: "/" },
+      { name: "Conditions", path: "/conditions" },
+      { name: "Sleep", path: "/conditions/sleep" },
+    ],
+  });
+
+
   return (
     <main className="bg-[#f7f4ef] text-[#1f1f1c]">
+      <JsonLd data={structuredData} idPrefix="conditions-sleep" />
       <section className="border-b border-black/5">
         <div className="mx-auto grid min-h-[80vh] max-w-7xl items-center gap-16 px-6 py-20 md:px-10 lg:grid-cols-[1.05fr_0.95fr] lg:py-28">
           <div className="max-w-3xl">
@@ -139,29 +125,29 @@ export default function SleepPage() {
             </p>
 
             <h1 className="text-4xl font-medium leading-[1.05] tracking-[-0.03em] md:text-6xl lg:text-7xl">
-              Understanding sleep through the nervous system
+              Sleep is often about whether the body can truly unwind
             </h1>
 
             <p className="mt-6 max-w-2xl text-base leading-8 text-[#5f5a52] md:text-lg">
-              Sleep is not only about being tired. It is also about whether the
-              body can unwind, soften, and move into a more restorative state.
-              That is why sleep often becomes much easier to understand when
-              viewed through stress, evening activation, calming, and recovery.
+              Sleep is not only about tiredness. It is also about whether
+              the body can unwind, soften, and move into a more restorative
+              state. That is why sleep often becomes easier to understand
+              through stress, evening activation, calming, and recovery.
             </p>
 
             <div className="mt-10 flex flex-wrap gap-4">
               <Link
-                href="/learn/how-to-calm-your-nervous-system"
+                href="/learn/why-you-feel-tired-but-cant-relax"
                 className="rounded-full bg-[#1f1f1c] px-6 py-3 text-sm font-medium text-white transition hover:opacity-90"
               >
-                Explore calming
+                Explore wired-but-tired
               </Link>
 
               <Link
-                href="/learn/recovery-and-regulation"
+                href="/learn/how-to-calm-your-nervous-system"
                 className="rounded-full border border-[#d8d1c7] bg-transparent px-6 py-3 text-sm font-medium text-[#1f1f1c] transition hover:bg-white/70"
               >
-                Explore recovery
+                Explore calming
               </Link>
             </div>
           </div>
@@ -227,7 +213,7 @@ export default function SleepPage() {
             </p>
 
             <h2 className="mt-4 max-w-3xl text-3xl font-medium leading-tight tracking-[-0.03em] md:text-5xl">
-              Sleep often makes the most sense when it is understood as a nervous system issue as much as a tiredness issue
+              Sleep often makes the most sense when it is understood as an unwinding and recovery issue, not only a tiredness issue
             </h2>
 
             <p className="mt-6 max-w-2xl text-base leading-8 text-[#5f5a52] md:text-lg">

@@ -1,35 +1,72 @@
-import Link from "next/link"
+import type { Metadata } from "next";
+import Link from "next/link";
+import { JsonLd } from "@/components/seo/json-ld"
+import { buildPageWithBreadcrumbStructuredData } from "@/lib/seo/structured-data"
 
-export const metadata = {
+export const metadata: Metadata = {
   title:
-    "Learn About the Vagus Nerve, Nervous System Regulation, Stress and Recovery | Neuvago",
+    "Learn | Vagus Nerve Stimulation, Non-Invasive VNS and Regulation | Neuvago",
   description:
-    "Explore the Neuvago learning hub with in-depth pages on the vagus nerve, nervous system regulation, stress, sleep, recovery, emotional regulation, and calmer daily support.",
-}
+    "Explore practical explainers on vagus nerve stimulation, non-invasive VNS, the vagus nerve, nervous system regulation, stress, sleep, recovery, and everyday support.",
+  alternates: {
+    canonical: "/learn",
+  },
+  openGraph: {
+    title:
+      "Learn | Vagus Nerve Stimulation, Non-Invasive VNS and Regulation | Neuvago",
+    description:
+      "Explore practical explainers on vagus nerve stimulation, non-invasive VNS, the vagus nerve, nervous system regulation, stress, sleep, recovery, and everyday support.",
+    url: "/learn",
+    siteName: "Neuvago",
+    locale: "en_US",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title:
+      "Learn | Vagus Nerve Stimulation, Non-Invasive VNS and Regulation | Neuvago",
+    description:
+      "Explore practical explainers on vagus nerve stimulation, non-invasive VNS, the vagus nerve, nervous system regulation, stress, sleep, recovery, and everyday support.",
+  },
+};
 
 const parentPages = [
   {
-    title: "Vagus nerve",
-    description:
-      "The broad entry point into the larger conversation around stress, sleep, calm, recovery, and the body’s communication pathways.",
-    href: "/learn/vagus-nerve",
-    linkLabel: "Start with vagus nerve",
-  },
-  {
     title: "Nervous system regulation",
     description:
-      "The core framework page for understanding how the body shifts between activation, settling, recovery, and return.",
+      "The clearest starting point for understanding how the body shifts between activation, settling, recovery, and return.",
     href: "/learn/nervous-system-regulation",
-    linkLabel: "Understand regulation",
+    linkLabel: "Start with regulation",
+  },
+  {
+    title: "Vagus nerve",
+    description:
+      "A broad introduction to one of the body’s key communication pathways and why it matters for stress, sleep, calm, and recovery.",
+    href: "/learn/vagus-nerve",
+    linkLabel: "Understand the vagus nerve",
+  },
+  {
+    title: "Vagus nerve stimulation",
+    description:
+      "A category pillar explaining implanted VNS, non-invasive VNS, ear-based approaches, and how a guided wellness device fits responsibly.",
+    href: "/learn/vagus-nerve-stimulation",
+    linkLabel: "Explore VNS",
+  },
+  {
+    title: "Non-invasive VNS",
+    description:
+      "A practical category guide to nVNS, external stimulation, device differences, and how a guided wellness system should be evaluated.",
+    href: "/learn/non-invasive-vagus-nerve-stimulation",
+    linkLabel: "Explore non-invasive VNS",
   },
   {
     title: "Recovery and regulation",
     description:
-      "A broader restoration page about capacity, resilience, return, and why rest is not always the same as real recovery.",
+      "A broader explainer on restoration, capacity, resilience, and why rest is not always the same as real recovery.",
     href: "/learn/recovery-and-regulation",
     linkLabel: "Explore recovery",
   },
-]
+];
 
 const foundationPages = [
   {
@@ -53,13 +90,13 @@ const foundationPages = [
     href: "/learn/fight-flight-freeze",
     linkLabel: "Understand protective states",
   },
-]
+];
 
 const practicalPages = [
   {
     title: "How to calm your nervous system",
     description:
-      "A practical, high-intent page focused on what actually helps the body come down in real life.",
+      "A practical page focused on what actually helps the body come down in real life.",
     href: "/learn/how-to-calm-your-nervous-system",
     linkLabel: "See what helps",
   },
@@ -73,24 +110,24 @@ const practicalPages = [
   {
     title: "Why you feel tired but can’t relax",
     description:
-      "A specific wired-but-tired page connecting exhaustion, activation, evening tension, sleep, and recovery.",
+      "A practical explainer that connects exhaustion, activation, evening tension, sleep, and recovery.",
     href: "/learn/why-you-feel-tired-but-cant-relax",
     linkLabel: "Explore wired-but-tired",
   },
-]
+];
 
 const recognitionPages = [
   {
     title: "Signs of a dysregulated nervous system",
     description:
-      "A recognition page for common patterns such as overstimulation, trouble winding down, poor sleep, shutdown, and low resilience.",
+      "A recognition page for patterns like overstimulation, poor sleep, shutdown, low resilience, and trouble winding down.",
     href: "/learn/signs-of-a-dysregulated-nervous-system",
     linkLabel: "Recognize the signs",
   },
   {
     title: "What nervous system regulation feels like",
     description:
-      "A felt-experience page for recognizing progress, more steadiness, better return, and less inner urgency.",
+      "A felt-experience page for recognizing steadiness, better return, and less inner urgency.",
     href: "/learn/what-nervous-system-regulation-feels-like",
     linkLabel: "See what regulation feels like",
   },
@@ -101,18 +138,18 @@ const recognitionPages = [
     href: "/learn/emotional-regulation-and-the-nervous-system",
     linkLabel: "Explore emotional load",
   },
-]
+];
 
 const pathwayCards = [
   {
-    title: "Start with a foundation",
+    title: "Start with the foundations",
     description:
-      "Begin with the bigger concepts if you want the clearest understanding of how stress, calm, sleep, and recovery fit together.",
+      "Begin with the big concepts if you want the clearest understanding of how stress, calm, sleep, and recovery fit together.",
     href: "/learn/nervous-system-regulation",
     linkLabel: "Start with regulation",
   },
   {
-    title: "Start with what you are feeling",
+    title: "Start with something you recognize",
     description:
       "If the body feels wired, tired, overwhelmed, reactive, or difficult to settle, begin with the pages that map lived experience more directly.",
     href: "/learn/signs-of-a-dysregulated-nervous-system",
@@ -125,11 +162,23 @@ const pathwayCards = [
     href: "/learn/how-to-calm-your-nervous-system",
     linkLabel: "Start with support",
   },
-]
+];
 
 export default function LearnPage() {
+    const structuredData = buildPageWithBreadcrumbStructuredData({
+    title: "Learn | Vagus Nerve Stimulation, Non-Invasive VNS and Regulation | Neuvago",
+    description: "Explore practical explainers on vagus nerve stimulation, non-invasive VNS, the vagus nerve, nervous system regulation, stress, sleep, recovery, and everyday support.",
+    path: "/learn",
+    breadcrumbs: [
+      { name: "Home", path: "/" },
+      { name: "Learn", path: "/learn" },
+    ],
+  });
+
+
   return (
     <main className="bg-[#f7f4ef] text-[#1f1f1c]">
+      <JsonLd data={structuredData} idPrefix="learn" />
       <section className="border-b border-black/5">
         <div className="mx-auto grid min-h-[80vh] max-w-7xl items-center gap-16 px-6 py-20 md:px-10 lg:grid-cols-[1.05fr_0.95fr] lg:py-28">
           <div className="max-w-3xl">
@@ -138,30 +187,31 @@ export default function LearnPage() {
             </p>
 
             <h1 className="text-4xl font-medium leading-[1.05] tracking-[-0.03em] md:text-6xl lg:text-7xl">
-              A calmer learning hub for the vagus nerve, nervous system regulation, stress, sleep, and recovery
+              A clearer place to learn how vagus nerve stimulation, the nervous system, stress, sleep, and recovery fit together
             </h1>
 
             <p className="mt-6 max-w-2xl text-base leading-8 text-[#5f5a52] md:text-lg">
-              The Neuvago learning hub is designed to make complex topics easier
-              to understand in everyday life. It connects foundational ideas
-              like the vagus nerve and nervous system regulation with more
-              practical pages about calming, recovery, emotional load, poor
-              sleep, lingering stress, and what regulation actually feels like.
+              The Neuvago Learn hub is designed to make complex topics easier to
+              understand in everyday language. It connects foundational ideas
+              like vagus nerve stimulation, non-invasive VNS, the vagus nerve,
+              and nervous system regulation with practical explainers on
+              calming, recovery, emotional load, poor sleep, and
+              the patterns people often recognize in real life.
             </p>
 
             <div className="mt-10 flex flex-wrap gap-4">
               <Link
-                href="/learn/vagus-nerve"
+                href="/learn/vagus-nerve-stimulation"
                 className="rounded-full bg-[#1f1f1c] px-6 py-3 text-sm font-medium text-white transition hover:opacity-90"
               >
-                Start with vagus nerve
+                Start with VNS
               </Link>
 
               <Link
-                href="/conditions"
+                href="/learn/non-invasive-vagus-nerve-stimulation"
                 className="rounded-full border border-[#d8d1c7] bg-transparent px-6 py-3 text-sm font-medium text-[#1f1f1c] transition hover:bg-white/70"
               >
-                Browse conditions
+                Non-invasive VNS
               </Link>
             </div>
           </div>
@@ -178,7 +228,7 @@ export default function LearnPage() {
                         Learning system
                       </p>
                       <h2 className="mt-3 text-2xl font-medium text-[#1f1f1c]">
-                        Foundations, lived experience, and practical support in one connected hub
+                        VNS, foundations, lived patterns, and practical support in one calmer hub
                       </h2>
                     </div>
 
@@ -188,7 +238,7 @@ export default function LearnPage() {
                           Foundations
                         </p>
                         <p className="mt-1 text-sm leading-6 text-[#5f5a52]">
-                          Vagus nerve, regulation, recovery
+                          VNS, nVNS, regulation
                         </p>
                       </div>
 
@@ -228,17 +278,17 @@ export default function LearnPage() {
             </p>
 
             <h2 className="mt-4 text-3xl font-medium leading-tight tracking-[-0.03em] md:text-5xl">
-              Start with the pages that anchor the whole learning universe
+              Start with the pages that explain the bigger picture
             </h2>
 
             <p className="mt-6 max-w-2xl text-base leading-8 text-[#5f5a52] md:text-lg">
-              These are the most important parent pages in the Learn cluster.
-              Together, they explain the bigger picture behind stress, calm,
-              recovery, sleep, and nervous system support.
+              These are the strongest starting points when you want to
+              understand how stress, calm, recovery, sleep, nervous system
+              support, non-invasive VNS, and device-guided routines fit together.
             </p>
           </div>
 
-          <div className="mt-14 grid gap-6 lg:grid-cols-3">
+          <div className="mt-14 grid gap-6 md:grid-cols-2 xl:grid-cols-4">
             {parentPages.map((item) => (
               <article
                 key={item.title}
@@ -272,7 +322,7 @@ export default function LearnPage() {
             </p>
 
             <h2 className="mt-4 max-w-3xl text-3xl font-medium leading-tight tracking-[-0.03em] md:text-5xl">
-              Go deeper into the core concepts behind calmer states, resilience, and protective patterns
+              Go deeper into the concepts behind calmer states, resilience, and protective patterns
             </h2>
 
             <p className="mt-6 max-w-2xl text-base leading-8 text-[#5f5a52] md:text-lg">
@@ -318,9 +368,9 @@ export default function LearnPage() {
               </h2>
 
               <p className="mt-6 max-w-2xl text-base leading-8 text-[#5f5a52] md:text-lg">
-                These pages are built around stronger user intent. They connect
-                learning with practical support, calmer transitions, and what
-                the body may need in order to come back down.
+                These pages connect learning with practical support, calmer
+                transitions, and what the body may need in order to come back
+                down.
               </p>
             </div>
 
@@ -368,12 +418,12 @@ export default function LearnPage() {
             </p>
 
             <h2 className="mt-4 text-3xl font-medium leading-tight tracking-[-0.03em] md:text-5xl">
-              These pages help people recognize patterns, contrast states, and make sense of what daily life actually feels like
+              These pages help people recognize patterns and make sense of what daily life actually feels like
             </h2>
 
             <p className="mt-6 max-w-2xl text-base leading-8 text-[#5f5a52] md:text-lg">
-              Some readers do not begin with theory. They begin with recognition.
-              These pages are designed for that stage.
+              Not everyone begins with theory. Some people begin with
+              recognition. These pages are designed for that stage.
             </p>
           </div>
 
@@ -407,11 +457,11 @@ export default function LearnPage() {
         <div className="mx-auto max-w-7xl px-6 py-24 md:px-10 md:py-28">
           <div className="max-w-3xl">
             <p className="text-sm uppercase tracking-[0.18em] text-[#7a756c]">
-              Choose your pathway
+              Choose where to start
             </p>
 
             <h2 className="mt-4 text-3xl font-medium leading-tight tracking-[-0.03em] md:text-5xl">
-              A clearer way to start learning based on what kind of question you actually have
+              A clearer way to begin based on the kind of question you actually have
             </h2>
           </div>
 
@@ -444,18 +494,17 @@ export default function LearnPage() {
           <div className="rounded-[2.5rem] border border-black/5 bg-gradient-to-br from-[#efe7dc] to-[#e5dbcf] px-8 py-14 shadow-[0_20px_80px_rgba(31,31,28,0.06)] md:px-12 md:py-16">
             <div className="max-w-3xl">
               <p className="text-sm uppercase tracking-[0.18em] text-[#7a756c]">
-                Keep exploring the broader picture
+                Keep learning, then go deeper
               </p>
 
               <h2 className="mt-4 text-3xl font-medium leading-tight tracking-[-0.03em] md:text-5xl">
-                A learning hub designed to connect foundations, lived experience, conditions, and calmer support
+                Continue into conditions, research, or the broader Neuvago system
               </h2>
 
               <p className="mt-6 max-w-2xl text-base leading-8 text-[#5f5a52] md:text-lg">
-                The Neuvago learning hub is built to help people move from what
-                they are feeling or searching for now into broader understanding
-                around the vagus nerve, nervous system regulation, sleep,
-                recovery, emotional load, and steadier daily support.
+                The Learn hub is designed to help people move from confusion
+                into clearer understanding. From here, you can continue into
+                conditions, research, or the broader product and app system.
               </p>
 
               <div className="mt-10 flex flex-wrap gap-4">
@@ -485,5 +534,5 @@ export default function LearnPage() {
         </div>
       </section>
     </main>
-  )
+  );
 }

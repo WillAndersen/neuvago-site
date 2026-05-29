@@ -1,10 +1,28 @@
 import Link from "next/link"
+import { JsonLd } from "@/components/seo/json-ld"
+import { buildPageWithBreadcrumbStructuredData } from "@/lib/seo/structured-data"
 
 export const metadata = {
   title:
     "Medical Disclaimer | Neuvago",
   description:
     "Read the Neuvago medical disclaimer, including how our website content and products should be understood as general wellness information and not medical advice or treatment.",
+  alternates: {
+    canonical: "/legal/medical-disclaimer",
+  },
+  openGraph: {
+    title: "Medical Disclaimer | Neuvago",
+    description: "Read the Neuvago medical disclaimer, including how our website content and products should be understood as general wellness information and not medical advice or treatment.",
+    url: "/legal/medical-disclaimer",
+    siteName: "Neuvago",
+    locale: "en_US",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Medical Disclaimer | Neuvago",
+    description: "Read the Neuvago medical disclaimer, including how our website content and products should be understood as general wellness information and not medical advice or treatment.",
+  },
 }
 
 const keyPoints = [
@@ -116,8 +134,20 @@ const relatedPages = [
 ]
 
 export default function MedicalDisclaimerPage() {
+  const structuredData = buildPageWithBreadcrumbStructuredData({
+    title: "Medical Disclaimer | Neuvago",
+    description: "Read the Neuvago medical disclaimer, including how our website content and products should be understood as general wellness information and not medical advice or treatment.",
+    path: "/legal/medical-disclaimer",
+    breadcrumbs: [
+      { name: "Home", path: "/" },
+      { name: "Legal", path: "/legal" },
+      { name: "Medical Disclaimer", path: "/legal/medical-disclaimer" },
+    ],
+  });
+
   return (
     <main className="bg-[#f7f4ef] text-[#1f1f1c]">
+      <JsonLd data={structuredData} idPrefix="legal-medical-disclaimer" />
       <section className="border-b border-black/5">
         <div className="mx-auto grid min-h-[70vh] max-w-7xl items-center gap-16 px-6 py-20 md:px-10 lg:grid-cols-[1.05fr_0.95fr] lg:py-24">
           <div className="max-w-3xl">

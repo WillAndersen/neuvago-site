@@ -1,10 +1,28 @@
 import Link from "next/link"
+import { JsonLd } from "@/components/seo/json-ld"
+import { buildAuthorityPageStructuredData } from "@/lib/seo/structured-data"
 
 export const metadata = {
   title:
     "Orienting in a Defensive World: The Polyvagal Theory (Porges, 1995) | Neuvago Research Library",
   description:
     "Read a structured summary of Porges (1995), the landmark paper that introduced the polyvagal theory and helped shape research on vagal pathways, stress, safety, and emotional regulation.",
+  alternates: {
+    canonical: "/research/studies/porges-1995-polyvagal-theory",
+  },
+  openGraph: {
+    title: "Orienting in a Defensive World: The Polyvagal Theory (Porges, 1995) | Neuvago Research Library",
+    description: "Read a structured summary of Porges (1995), the landmark paper that introduced the polyvagal theory and helped shape research on vagal pathways, stress, safety, and emotional regulation.",
+    url: "/research/studies/porges-1995-polyvagal-theory",
+    siteName: "Neuvago",
+    locale: "en_US",
+    type: "article",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Orienting in a Defensive World: The Polyvagal Theory (Porges, 1995) | Neuvago Research Library",
+    description: "Read a structured summary of Porges (1995), the landmark paper that introduced the polyvagal theory and helped shape research on vagal pathways, stress, safety, and emotional regulation.",
+  },
 }
 
 const studyDetails = [
@@ -123,8 +141,22 @@ const relatedLinks = [
 ]
 
 export default function Porges1995PolyvagalTheoryPage() {
+  const structuredData = buildAuthorityPageStructuredData({
+    title: "Orienting in a Defensive World: The Polyvagal Theory (Porges, 1995) | Neuvago Research Library",
+    description: "Read a structured summary of Porges (1995), the landmark paper that introduced the polyvagal theory and helped shape research on vagal pathways, stress, safety, and emotional regulation.",
+    path: "/research/studies/porges-1995-polyvagal-theory",
+    articleSection: "Scientific studies",
+    breadcrumbs: [
+      { name: "Home", path: "/" },
+      { name: "Research", path: "/research" },
+      { name: "Scientific Studies", path: "/research/studies" },
+      { name: "Orienting in a Defensive World: The Polyvagal Theory (Porges, 1995)", path: "/research/studies/porges-1995-polyvagal-theory" },
+    ],
+  });
+
   return (
     <main className="bg-[#f7f4ef] text-[#1f1f1c]">
+      <JsonLd data={structuredData} idPrefix="research-studies-porges-1995-polyvagal-theory" />
       <section className="border-b border-black/5 bg-[#f7f4ef]">
         <div className="mx-auto max-w-7xl px-6 py-20 md:px-10 md:py-24">
           <div className="max-w-4xl">

@@ -1,0 +1,296 @@
+# Neuvago SEO Measurement Plan — P2.6
+
+_Last updated: 2026-05-31_
+
+## Purpose
+
+This plan turns the Neuvago VNS authority cluster into a measurable SEO system.
+
+The goal is not to produce more content blindly. The goal is to measure whether the existing cluster is being discovered, indexed, understood, and matched to the right search intent before deciding what to build next.
+
+## Scope
+
+This plan covers the public website and SEO authority layer:
+
+- Learn
+- Research
+- Conditions
+- Product
+- How it works
+- App as commercial/routine support
+
+It does not cover admin, CMS, logged-in web, session playback, or app feature work.
+
+## Primary goal
+
+Make Neuvago increasingly visible for the category around:
+
+- vagus nerve stimulation
+- non-invasive vagus nerve stimulation
+- vagus nerve stimulator
+- transcutaneous vagus nerve stimulation
+- auricular vagus nerve stimulation
+- tVNS / taVNS
+- VNS safety and tolerability
+- autonomic regulation
+- nervous system regulation for stress and sleep
+
+## Measurement stages
+
+### Stage 1 — Indexation readiness, days 0–14
+
+Primary questions:
+
+- Are the target URLs in the sitemap?
+- Can Google fetch them?
+- Are they indexed?
+- Are canonical URLs correct?
+- Are pages internally linked?
+- Are titles/descriptions distinct enough?
+
+Primary actions:
+
+- Submit or resubmit sitemap in Google Search Console.
+- Inspect priority URLs with URL Inspection.
+- Confirm no unexpected `noindex`, redirect, canonical, or blocked crawl issue.
+- Do not judge ranking performance yet.
+
+### Stage 2 — Early query matching, days 14–45
+
+Primary questions:
+
+- Which pages are receiving impressions?
+- Which queries are triggering each page?
+- Are the correct pages ranking for the correct intent?
+- Are pages getting impressions but no clicks?
+- Are commercial pages receiving any category-intent visibility?
+
+Primary actions:
+
+- Export Search Console page/query data every week.
+- Sort by impressions first, not clicks.
+- Identify query-page mismatches.
+- Improve titles, intros, internal links, and comparison sections before adding new pages.
+
+### Stage 3 — Optimization, days 45–90
+
+Primary questions:
+
+- Which pages are in positions 8–20 and can be lifted?
+- Which pages have impressions but weak CTR?
+- Which query families lack a strong landing page?
+- Which authority pages send meaningful next-step traffic to Product, How it works, or App?
+
+Primary actions:
+
+- Update on-page title/meta/H1 only where data supports it.
+- Add or adjust internal links based on query-page mismatch.
+- Strengthen snippets for pages with impressions but low CTR.
+- Create new content only when a real query gap is visible.
+
+### Stage 4 — Content expansion, 90+ days
+
+Primary questions:
+
+- What topics have proven demand?
+- Which pages are almost ranking?
+- Where are users searching for a page that does not yet exist?
+- Which category terms are still undercovered?
+
+Primary actions:
+
+- Build new pages based on Search Console evidence.
+- Prioritize pages that support both authority and commercial intent.
+- Avoid diagnosis-heavy conditions unless claims, evidence, and disclaimers are very clear.
+
+## Core KPIs
+
+| KPI | Why it matters | Where to check | Healthy early signal |
+|---|---|---|---|
+| Indexed target URLs | Pages must be indexed before ranking | Search Console URL Inspection / Pages | Priority pages appear as indexed |
+| Sitemap discovered URLs | Confirms Google can see the cluster | Search Console Sitemaps | Sitemap processed without errors |
+| Impressions by page | Shows whether Google is testing the content | Performance → Pages | Learn/Research pages begin getting impressions |
+| Queries by page | Shows query-page fit | Performance → Page filter → Queries | Queries match page intent |
+| CTR | Shows snippet/title fit | Performance | Improves after title/meta refinements |
+| Average position | Shows ranking opportunity | Performance | Pages in 8–20 become optimization targets |
+| Commercial path clicks | Shows authority-to-product flow | Analytics / event tracking | Authority pages send users to Product/How-it-works/App |
+| Non-brand share | Shows category authority growth | Performance queries | More impressions from non-brand VNS terms |
+
+## Priority target pages
+
+Use this as the initial VNS cluster monitoring set.
+
+| Role | URL |
+|---|---|
+| Vagus nerve foundation | `/learn/vagus-nerve` |
+| VNS pillar | `/learn/vagus-nerve-stimulation` |
+| Non-invasive VNS | `/learn/non-invasive-vagus-nerve-stimulation` |
+| Auricular VNS | `/learn/auricular-vagus-nerve-stimulation` |
+| Transcutaneous VNS | `/learn/transcutaneous-vagus-nerve-stimulation` |
+| Nervous system foundation | `/learn/nervous-system-regulation` |
+| VNS research overview | `/research/topics/vagus-nerve-stimulation` |
+| tVNS research | `/research/topics/transcutaneous-vagus-nerve-stimulation` |
+| Safety and tolerability | `/research/topics/safety-and-tolerability` |
+| Autonomic regulation | `/research/topics/autonomic-regulation` |
+| HRV research | `/research/topics/heart-rate-variability` |
+| Stress condition | `/conditions/stress` |
+| Sleep condition | `/conditions/sleep` |
+| Product commercial page | `/product` |
+| Practical explanation | `/how-it-works` |
+| App/routine support | `/app` |
+
+If a page does not exist in the current repo, skip it until that route is present and deployed.
+
+## Query buckets to monitor
+
+### Category intent
+
+- vagus nerve stimulation
+- VNS
+- non-invasive vagus nerve stimulation
+- vagus nerve stimulation device
+- vagus nerve stimulator
+
+### Method intent
+
+- transcutaneous vagus nerve stimulation
+- tVNS
+- taVNS
+- auricular vagus nerve stimulation
+- ear vagus nerve stimulation
+- auricular branch vagus nerve stimulation
+
+### Safety intent
+
+- vagus nerve stimulation side effects
+- VNS safety
+- tVNS side effects
+- non-invasive vagus nerve stimulation safety
+- vagus nerve stimulator contraindications
+
+### Evidence intent
+
+- does vagus nerve stimulation work
+- vagus nerve stimulation research
+- tVNS research
+- vagus nerve stimulation evidence
+- autonomic regulation research
+
+### Condition intent
+
+- vagus nerve stimulation for stress
+- nervous system regulation for stress
+- vagus nerve stimulation for sleep
+- HRV and nervous system regulation
+- autonomic regulation and stress
+
+### Commercial support intent
+
+- non-invasive vagus nerve stimulator
+- app guided vagus nerve stimulation
+- vagus nerve stimulation device with app
+- how to use a vagus nerve stimulator
+- ear vagus nerve stimulator
+
+## Weekly workflow
+
+1. Open Google Search Console.
+2. Set Search type to Web.
+3. Use the last 28 days and compare to the previous 28 days once enough data exists.
+4. Review Pages first.
+5. Filter to one target page.
+6. Review Queries for that page.
+7. Log the top query families in `seo-vns-cluster-query-map.csv` or the weekly review template.
+8. Decide one of four actions:
+   - no action
+   - title/meta refinement
+   - internal linking adjustment
+   - content update/new section
+   - new page candidate
+
+## Decision rules
+
+### Rule 1 — Impressions but weak CTR
+
+If a page receives impressions but CTR is weak, do not immediately create a new page.
+
+First adjust:
+
+- title
+- meta description
+- first screen clarity
+- H1/subtitle
+- comparison or answer block near the top
+
+### Rule 2 — Impressions on the wrong page
+
+If Google shows the wrong Neuvago page for a query, improve internal linking and page intent separation.
+
+Example:
+
+- Query: `tVNS safety`
+- Ranking page: `/learn/non-invasive-vagus-nerve-stimulation`
+- Preferred page: `/research/topics/safety-and-tolerability`
+
+Action:
+
+- Add contextual links from the Learn page to the Safety page.
+- Add clearer safety language to the preferred landing page.
+- Avoid duplicating safety content across all pages.
+
+### Rule 3 — Position 8–20 means optimization first
+
+If a page ranks in positions 8–20 for a high-priority query, optimize the existing page before creating a new one.
+
+Potential actions:
+
+- Add a clearer short-answer block.
+- Improve title and H1 specificity.
+- Add comparison table.
+- Add 2–3 high-quality internal links from related pages.
+- Strengthen evidence and limitations sections.
+
+### Rule 4 — Position 30+ with relevant impressions may indicate content gap
+
+If relevant queries appear but the best page ranks very low, evaluate whether the page is too broad or whether a new page is needed.
+
+Example new-page candidates later:
+
+- `/learn/vagus-nerve-stimulator`
+- `/learn/taVNS`
+- `/research/topics/auricular-vagus-nerve-stimulation`
+- `/learn/vagus-nerve-stimulation-side-effects`
+
+Do not build these until Search Console supports the need.
+
+### Rule 5 — Medical-risk topics require extra caution
+
+Do not prioritize new pages around migraine, tinnitus, depression, epilepsy, or anxiety without a dedicated claims and evidence review.
+
+If these terms appear in Search Console, route users toward balanced research/trust pages rather than aggressive condition claims.
+
+## Monthly review agenda
+
+Use this once per month.
+
+1. Which VNS pages are indexed?
+2. Which pages received the most impressions?
+3. Which queries are Google testing?
+4. Which page/query pairs are mismatched?
+5. Which pages have impressions but low CTR?
+6. Which pages are in positions 8–20?
+7. Which authority pages send traffic to product/how-it-works/app?
+8. Which new content candidate has the strongest evidence?
+9. What should be paused?
+10. What one improvement should be shipped next?
+
+## Recommended next actions after 30–45 days of data
+
+Prioritize in this order:
+
+1. Snippet/title refinements for pages with impressions but low CTR.
+2. Internal link improvements for page-query mismatches.
+3. Safety/contraindication expansions if safety terms appear.
+4. Product/how-it-works commercial-intent refinements if device/stimulator terms appear.
+5. New page only if a query family has impressions and no suitable existing landing page.
+

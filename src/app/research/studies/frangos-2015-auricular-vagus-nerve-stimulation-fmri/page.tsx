@@ -126,6 +126,13 @@ const relatedLinks = [
     linkLabel: "Explore tVNS topic",
   },
   {
+    title: "Auricular VNS explainer",
+    description:
+      "A plain-language guide to ear-based VNS, taVNS, comfort, placement language, and responsible wellness interpretation.",
+    href: "/learn/auricular-vagus-nerve-stimulation",
+    linkLabel: "Read auricular guide",
+  },
+  {
     title: "Vagus Nerve Stimulation for Treatment-Resistant Depression",
     description:
       "A landmark implanted VNS study that helps place non-invasive auricular stimulation into the broader VNS research history.",

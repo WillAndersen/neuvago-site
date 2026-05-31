@@ -302,10 +302,10 @@ export const productPageContent = {
         href: "/research/topics/safety-and-tolerability",
       },
       {
-        title: "Nervous system regulation",
+        title: "Auricular VNS",
         description:
-          "Learn more about what regulation means in everyday life.",
-        href: "/learn/nervous-system-regulation",
+          "Learn how ear-based VNS, taVNS, comfort, placement, and responsible wellness language fit together.",
+        href: "/learn/auricular-vagus-nerve-stimulation",
       },
     ] satisfies ProductLinkCard[],
     primaryCta: {

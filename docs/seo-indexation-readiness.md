@@ -10,7 +10,7 @@ Run these checks from the repo root:
 npm run lint && npm run build
 npm run seo:vns
 
-npm run build | grep -E "vagus-nerve-stimulation|non-invasive-vagus-nerve-stimulation|safety-and-tolerability|transcutaneous-vagus-nerve-stimulation|autonomic-regulation" || true
+npm run build | grep -E "vagus-nerve-stimulation|non-invasive-vagus-nerve-stimulation|auricular-vagus-nerve-stimulation|safety-and-tolerability|transcutaneous-vagus-nerve-stimulation|autonomic-regulation" || true
 
 git status --short | grep -E '\.bak|\.rej|\.orig|\.patch|\.zip' || true
 ```
@@ -29,6 +29,7 @@ Open these pages in production after deployment:
 - `/learn/vagus-nerve`
 - `/learn/vagus-nerve-stimulation`
 - `/learn/non-invasive-vagus-nerve-stimulation`
+- `/learn/auricular-vagus-nerve-stimulation`
 - `/learn/nervous-system-regulation`
 - `/research/topics/vagus-nerve-stimulation`
 - `/research/topics/transcutaneous-vagus-nerve-stimulation`
@@ -56,6 +57,7 @@ After deployment:
 2. Inspect and request indexing for the core cluster pages first:
    - `/learn/vagus-nerve-stimulation`
    - `/learn/non-invasive-vagus-nerve-stimulation`
+   - `/learn/auricular-vagus-nerve-stimulation`
    - `/research/topics/vagus-nerve-stimulation`
    - `/research/topics/transcutaneous-vagus-nerve-stimulation`
    - `/research/topics/safety-and-tolerability`
@@ -74,6 +76,7 @@ Track these as separate query groups:
 - `tVNS`
 - `taVNS`
 - `auricular vagus nerve stimulation`
+- `ear vagus nerve stimulation`
 - `vagus nerve stimulation safety`
 - `autonomic regulation`
 - `heart rate variability vagus nerve`

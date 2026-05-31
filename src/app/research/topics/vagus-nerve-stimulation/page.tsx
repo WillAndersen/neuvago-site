@@ -107,6 +107,13 @@ const connectedResearch = [
     linkLabel: "Read non-invasive VNS guide",
   },
   {
+    title: "Auricular VNS explainer",
+    description:
+      "A focused Learn page explaining ear-based VNS, taVNS, placement language, evidence context, comfort, and careful product boundaries.",
+    href: "/learn/auricular-vagus-nerve-stimulation",
+    linkLabel: "Read auricular VNS guide",
+  },
+  {
     title: "Transcutaneous VNS research",
     description:
       "A method-focused research topic on tVNS, taVNS, auricular stimulation, protocol variables, target engagement, and responsible interpretation.",

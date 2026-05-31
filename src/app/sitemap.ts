@@ -26,6 +26,7 @@ const routes: Array<{
   { path: "/learn/vagus-nerve", changeFrequency: "weekly", priority: 0.82, lastModified: SEO_LAUNCH_REVIEW_DATE },
   { path: "/learn/vagus-nerve-stimulation", changeFrequency: "weekly", priority: 0.86, lastModified: SEO_LAUNCH_REVIEW_DATE },
   { path: "/learn/non-invasive-vagus-nerve-stimulation", changeFrequency: "weekly", priority: 0.86, lastModified: SEO_LAUNCH_REVIEW_DATE },
+  { path: "/learn/auricular-vagus-nerve-stimulation", changeFrequency: "weekly", priority: 0.84, lastModified: SEO_LAUNCH_REVIEW_DATE },
   { path: "/learn/nervous-system-regulation", changeFrequency: "weekly", priority: 0.82, lastModified: SEO_LAUNCH_REVIEW_DATE },
   { path: "/learn/recovery-and-regulation", changeFrequency: "weekly", priority: 0.76 },
   { path: "/learn/parasympathetic-nervous-system", changeFrequency: "weekly", priority: 0.75 },

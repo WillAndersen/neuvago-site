@@ -185,6 +185,13 @@ const relatedLearning = [
     linkLabel: "Read the VNS overview",
   },
   {
+    title: "Auricular vagus nerve stimulation",
+    description:
+      "A plain-language guide to ear-based VNS, taVNS, placement language, comfort, evidence context, and responsible wellness boundaries.",
+    href: "/learn/auricular-vagus-nerve-stimulation",
+    linkLabel: "Explore auricular VNS",
+  },
+  {
     title: "Vagus nerve",
     description:
       "A foundation page on the vagus nerve and why it matters in conversations about regulation, stress, sleep, and recovery.",

@@ -5,17 +5,17 @@ import { buildPageWithBreadcrumbStructuredData } from "@/lib/seo/structured-data
 
 export const metadata: Metadata = {
   title:
-    "Learn | Vagus Nerve Stimulation, Non-Invasive VNS and Regulation | Neuvago",
+    "Learn | VNS, Non-Invasive VNS and Auricular VNS | Neuvago",
   description:
-    "Explore practical explainers on vagus nerve stimulation, non-invasive VNS, the vagus nerve, nervous system regulation, stress, sleep, recovery, and everyday support.",
+    "Explore practical explainers on vagus nerve stimulation, non-invasive VNS, auricular VNS, the vagus nerve, nervous system regulation, stress, sleep, and recovery.",
   alternates: {
     canonical: "/learn",
   },
   openGraph: {
     title:
-      "Learn | Vagus Nerve Stimulation, Non-Invasive VNS and Regulation | Neuvago",
+      "Learn | VNS, Non-Invasive VNS and Auricular VNS | Neuvago",
     description:
-      "Explore practical explainers on vagus nerve stimulation, non-invasive VNS, the vagus nerve, nervous system regulation, stress, sleep, recovery, and everyday support.",
+      "Explore practical explainers on vagus nerve stimulation, non-invasive VNS, auricular VNS, the vagus nerve, nervous system regulation, stress, sleep, and recovery.",
     url: "/learn",
     siteName: "Neuvago",
     locale: "en_US",
@@ -24,9 +24,9 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title:
-      "Learn | Vagus Nerve Stimulation, Non-Invasive VNS and Regulation | Neuvago",
+      "Learn | VNS, Non-Invasive VNS and Auricular VNS | Neuvago",
     description:
-      "Explore practical explainers on vagus nerve stimulation, non-invasive VNS, the vagus nerve, nervous system regulation, stress, sleep, recovery, and everyday support.",
+      "Explore practical explainers on vagus nerve stimulation, non-invasive VNS, auricular VNS, the vagus nerve, nervous system regulation, stress, sleep, and recovery.",
   },
 };
 
@@ -58,6 +58,13 @@ const parentPages = [
       "A practical category guide to nVNS, external stimulation, device differences, and how a guided wellness system should be evaluated.",
     href: "/learn/non-invasive-vagus-nerve-stimulation",
     linkLabel: "Explore non-invasive VNS",
+  },
+  {
+    title: "Auricular VNS",
+    description:
+      "A plain-language guide to ear-based vagus nerve stimulation, taVNS, placement language, research context, and responsible product boundaries.",
+    href: "/learn/auricular-vagus-nerve-stimulation",
+    linkLabel: "Explore auricular VNS",
   },
   {
     title: "Recovery and regulation",
@@ -166,8 +173,8 @@ const pathwayCards = [
 
 export default function LearnPage() {
     const structuredData = buildPageWithBreadcrumbStructuredData({
-    title: "Learn | Vagus Nerve Stimulation, Non-Invasive VNS and Regulation | Neuvago",
-    description: "Explore practical explainers on vagus nerve stimulation, non-invasive VNS, the vagus nerve, nervous system regulation, stress, sleep, recovery, and everyday support.",
+    title: "Learn | VNS, Non-Invasive VNS and Auricular VNS | Neuvago",
+    description: "Explore practical explainers on vagus nerve stimulation, non-invasive VNS, auricular VNS, the vagus nerve, nervous system regulation, stress, sleep, and recovery.",
     path: "/learn",
     breadcrumbs: [
       { name: "Home", path: "/" },
@@ -193,8 +200,8 @@ export default function LearnPage() {
             <p className="mt-6 max-w-2xl text-base leading-8 text-[#5f5a52] md:text-lg">
               The Neuvago Learn hub is designed to make complex topics easier to
               understand in everyday language. It connects foundational ideas
-              like vagus nerve stimulation, non-invasive VNS, the vagus nerve,
-              and nervous system regulation with practical explainers on
+              like vagus nerve stimulation, non-invasive VNS, auricular VNS,
+              the vagus nerve, and nervous system regulation with practical explainers on
               calming, recovery, emotional load, poor sleep, and
               the patterns people often recognize in real life.
             </p>
@@ -208,10 +215,10 @@ export default function LearnPage() {
               </Link>
 
               <Link
-                href="/learn/non-invasive-vagus-nerve-stimulation"
+                href="/learn/auricular-vagus-nerve-stimulation"
                 className="rounded-full border border-[#d8d1c7] bg-transparent px-6 py-3 text-sm font-medium text-[#1f1f1c] transition hover:bg-white/70"
               >
-                Non-invasive VNS
+                Auricular VNS
               </Link>
             </div>
           </div>
@@ -284,7 +291,7 @@ export default function LearnPage() {
             <p className="mt-6 max-w-2xl text-base leading-8 text-[#5f5a52] md:text-lg">
               These are the strongest starting points when you want to
               understand how stress, calm, recovery, sleep, nervous system
-              support, non-invasive VNS, and device-guided routines fit together.
+              support, non-invasive VNS, auricular VNS, and device-guided routines fit together.
             </p>
           </div>
 

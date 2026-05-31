@@ -210,6 +210,13 @@ const internalPathways = [
     linkLabel: "Read the guide",
   },
   {
+    title: "Auricular VNS guide",
+    description:
+      "A plain-language guide to ear-based VNS, taVNS, placement language, comfort, research context, and careful claims.",
+    href: "/learn/auricular-vagus-nerve-stimulation",
+    linkLabel: "Read auricular guide",
+  },
+  {
     title: "Auricular fMRI study",
     description:
       "Read Neuvago’s summary of a foundational paper on non-invasive stimulation of the external ear and central vagal projections.",

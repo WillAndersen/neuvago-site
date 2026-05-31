@@ -143,6 +143,13 @@ const connectedTopics = [
     linkLabel: "Explore non-invasive VNS",
   },
   {
+    title: "Auricular VNS",
+    description:
+      "A focused guide to ear-based vagus nerve stimulation, taVNS, placement language, research context, and careful claims.",
+    href: "/learn/auricular-vagus-nerve-stimulation",
+    linkLabel: "Explore auricular VNS",
+  },
+  {
     title: "Nervous system regulation",
     description:
       "A broader framework for understanding how the body shifts between activation, settling, recovery, and steadier daily balance.",

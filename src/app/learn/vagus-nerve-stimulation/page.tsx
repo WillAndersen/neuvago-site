@@ -162,6 +162,13 @@ const relatedLearning = [
     linkLabel: "Explore non-invasive VNS",
   },
   {
+    title: "Auricular vagus nerve stimulation",
+    description:
+      "A focused guide to ear-based VNS, taVNS, placement language, evidence context, and responsible wellness positioning.",
+    href: "/learn/auricular-vagus-nerve-stimulation",
+    linkLabel: "Explore auricular VNS",
+  },
+  {
     title: "Vagus nerve",
     description:
       "Start here if you want the broader foundation before focusing on stimulation devices and non-invasive VNS.",

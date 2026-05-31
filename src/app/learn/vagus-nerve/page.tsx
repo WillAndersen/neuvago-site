@@ -2,20 +2,21 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { JsonLd } from "@/components/seo/json-ld"
 import { buildAuthorityPageStructuredData } from "@/lib/seo/structured-data"
+import { authorityEditorialDates } from "@/lib/seo/editorial-dates";
 
 export const metadata: Metadata = {
   title:
-    "Vagus Nerve | Stress, Sleep, Recovery and Nervous System Regulation | Neuvago",
+    "What Is the Vagus Nerve? | Stress, Sleep and Recovery | Neuvago",
   description:
-    "Learn what the vagus nerve is, why it matters for stress, sleep, recovery, and nervous system regulation, and how it connects to everyday life.",
+    "Learn what the vagus nerve is, how it connects brain and body, and why it matters for stress, sleep, recovery, and nervous system regulation.",
   alternates: {
     canonical: "/learn/vagus-nerve",
   },
   openGraph: {
     title:
-      "Vagus Nerve | Stress, Sleep, Recovery and Nervous System Regulation | Neuvago",
+      "What Is the Vagus Nerve? | Stress, Sleep and Recovery | Neuvago",
     description:
-      "Learn what the vagus nerve is, why it matters for stress, sleep, recovery, and nervous system regulation, and how it connects to everyday life.",
+      "Learn what the vagus nerve is, how it connects brain and body, and why it matters for stress, sleep, recovery, and nervous system regulation.",
     url: "/learn/vagus-nerve",
     siteName: "Neuvago",
     locale: "en_US",
@@ -24,9 +25,9 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title:
-      "Vagus Nerve | Stress, Sleep, Recovery and Nervous System Regulation | Neuvago",
+      "What Is the Vagus Nerve? | Stress, Sleep and Recovery | Neuvago",
     description:
-      "Learn what the vagus nerve is, why it matters for stress, sleep, recovery, and nervous system regulation, and how it connects to everyday life.",
+      "Learn what the vagus nerve is, how it connects brain and body, and why it matters for stress, sleep, recovery, and nervous system regulation.",
   },
 }
 
@@ -169,15 +170,30 @@ const connectedTopics = [
     href: "/learn/recovery-and-regulation",
     linkLabel: "Explore recovery",
   },
+  {
+    title: "VNS research topic",
+    description:
+      "A research hub for implanted and non-invasive vagus nerve stimulation, foundational studies, adjacent topics, and responsible interpretation.",
+    href: "/research/topics/vagus-nerve-stimulation",
+    linkLabel: "View VNS research",
+  },
+  {
+    title: "How Neuvago works",
+    description:
+      "A practical explanation of how the Neuvago device, app guidance, session flow, and routine design fit together.",
+    href: "/how-it-works",
+    linkLabel: "See how it works",
+  },
 ]
 
 
 export default function VagusNervePage() {
     const structuredData = buildAuthorityPageStructuredData({
-    title: "Vagus Nerve | Stress, Sleep, Recovery and Nervous System Regulation | Neuvago",
-    description: "Learn what the vagus nerve is, why it matters for stress, sleep, recovery, and nervous system regulation, and how it connects to everyday life.",
+    title: "What Is the Vagus Nerve? | Stress, Sleep and Recovery | Neuvago",
+    description: "Learn what the vagus nerve is, how it connects brain and body, and why it matters for stress, sleep, recovery, and nervous system regulation.",
     path: "/learn/vagus-nerve",
     articleSection: "Learn",
+    dateModified: authorityEditorialDates.vnsClusterModified,
     breadcrumbs: [
       { name: "Home", path: "/" },
       { name: "Learn", path: "/learn" },
@@ -197,7 +213,7 @@ export default function VagusNervePage() {
             </p>
 
             <h1 className="text-4xl font-medium leading-[1.05] tracking-[-0.03em] md:text-6xl lg:text-7xl">
-              The vagus nerve is one of the clearest entry points into stress, sleep, recovery, and regulation
+              What the vagus nerve is — and why it matters for stress, sleep, and recovery
             </h1>
 
             <p className="mt-6 max-w-2xl text-base leading-8 text-[#5f5a52] md:text-lg">
@@ -675,6 +691,13 @@ export default function VagusNervePage() {
                   className="rounded-full border border-black/10 bg-transparent px-6 py-3 text-sm font-medium text-[#1f1f1c] transition hover:bg-white/40"
                 >
                   Explore stress
+                </Link>
+
+                <Link
+                  href="/learn/vagus-nerve-stimulation"
+                  className="rounded-full border border-black/10 bg-transparent px-6 py-3 text-sm font-medium text-[#1f1f1c] transition hover:bg-white/40"
+                >
+                  Understand VNS
                 </Link>
               </div>
             </div>

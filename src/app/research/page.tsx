@@ -4,16 +4,16 @@ import { JsonLd } from "@/components/seo/json-ld"
 import { buildPageWithBreadcrumbStructuredData } from "@/lib/seo/structured-data"
 
 export const metadata: Metadata = {
-  title: "Research Hub | Vagus Nerve, Safety, Stress and Recovery | Neuvago",
+  title: "Research Hub | Vagus Nerve, tVNS, Autonomic Regulation and Safety | Neuvago",
   description:
-    "Browse Neuvago research topics and study summaries on vagus nerve stimulation, safety and tolerability, heart rate variability, stress, sleep, recovery, and nervous system regulation.",
+    "Browse Neuvago research topics and study summaries on vagus nerve stimulation, transcutaneous VNS, autonomic regulation, safety and tolerability, heart rate variability, stress, sleep, recovery, and nervous system regulation.",
   alternates: {
     canonical: "/research",
   },
   openGraph: {
-    title: "Research Hub | Vagus Nerve, Safety, Stress and Recovery | Neuvago",
+    title: "Research Hub | Vagus Nerve, tVNS, Autonomic Regulation and Safety | Neuvago",
     description:
-      "Browse Neuvago research topics and study summaries on vagus nerve stimulation, safety and tolerability, heart rate variability, stress, sleep, recovery, and nervous system regulation.",
+      "Browse Neuvago research topics and study summaries on vagus nerve stimulation, transcutaneous VNS, autonomic regulation, safety and tolerability, heart rate variability, stress, sleep, recovery, and nervous system regulation.",
     url: "/research",
     siteName: "Neuvago",
     locale: "en_US",
@@ -21,9 +21,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Research Hub | Vagus Nerve, Safety, Stress and Recovery | Neuvago",
+    title: "Research Hub | Vagus Nerve, tVNS, Autonomic Regulation and Safety | Neuvago",
     description:
-      "Browse Neuvago research topics and study summaries on vagus nerve stimulation, safety and tolerability, heart rate variability, stress, sleep, recovery, and nervous system regulation.",
+      "Browse Neuvago research topics and study summaries on vagus nerve stimulation, transcutaneous VNS, autonomic regulation, safety and tolerability, heart rate variability, stress, sleep, recovery, and nervous system regulation.",
   },
 };
 
@@ -36,11 +36,25 @@ const researchFoundations = [
     linkLabel: "Explore topic",
   },
   {
+    title: "Transcutaneous VNS",
+    description:
+      "A method-focused research topic on tVNS, taVNS, stimulation sites, protocol variables, target engagement, and responsible interpretation.",
+    href: "/research/topics/transcutaneous-vagus-nerve-stimulation",
+    linkLabel: "Explore tVNS topic",
+  },
+  {
     title: "Safety and tolerability",
     description:
       "A trust-focused research topic on reported adverse events, tolerability, contraindication awareness, and responsible interpretation of non-invasive VNS evidence.",
     href: "/research/topics/safety-and-tolerability",
     linkLabel: "Explore safety topic",
+  },
+  {
+    title: "Autonomic regulation",
+    description:
+      "A connective research topic on sympathetic and parasympathetic pathways, vagal regulation, HRV, stress physiology, and state-shifting.",
+    href: "/research/topics/autonomic-regulation",
+    linkLabel: "Explore regulation topic",
   },
   {
     title: "Heart rate variability",
@@ -90,7 +104,7 @@ const libraryStructure = [
   {
     title: "Topic pages",
     description:
-      "Focused topic pages around areas like vagus nerve stimulation, heart rate variability, inflammation, and the gut–brain axis.",
+      "Focused topic pages around areas like vagus nerve stimulation, transcutaneous VNS, safety, autonomic regulation, heart rate variability, inflammation, and the gut–brain axis.",
   },
   {
     title: "Study summaries",
@@ -193,8 +207,8 @@ const principles = [
 
 export default function ResearchPage() {
     const structuredData = buildPageWithBreadcrumbStructuredData({
-    title: "Research Hub | Vagus Nerve, Safety, Stress and Recovery | Neuvago",
-    description: "Browse Neuvago research topics and study summaries on vagus nerve stimulation, safety and tolerability, heart rate variability, stress, sleep, recovery, and nervous system regulation.",
+    title: "Research Hub | Vagus Nerve, tVNS, Autonomic Regulation and Safety | Neuvago",
+    description: "Browse Neuvago research topics and study summaries on vagus nerve stimulation, transcutaneous VNS, autonomic regulation, safety and tolerability, heart rate variability, stress, sleep, recovery, and nervous system regulation.",
     path: "/research",
     breadcrumbs: [
       { name: "Home", path: "/" },
@@ -220,7 +234,7 @@ export default function ResearchPage() {
             <p className="mt-6 max-w-2xl text-base leading-8 text-[#5f5a52] md:text-lg">
               The Neuvago research hub organizes topic pages, study summaries,
               and evidence-informed pathways around vagus nerve stimulation,
-              safety and tolerability, heart rate variability, stress, sleep, recovery, emotional
+              transcutaneous VNS, safety and tolerability, heart rate variability, stress, sleep, recovery, emotional
               regulation, and broader nervous system regulation.
             </p>
 
@@ -308,8 +322,7 @@ export default function ResearchPage() {
 
             <p className="mt-6 max-w-2xl text-base leading-8 text-[#5f5a52] md:text-lg">
               These topic pages are the clearest entry points into the evidence
-              side of Neuvago. Safety and tolerability now sits beside VNS and
-              HRV as a priority trust topic for the category.
+              side of Neuvago. Transcutaneous VNS and safety now sit beside the broader VNS topic as priority trust topics for the category.
             </p>
           </div>
 

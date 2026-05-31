@@ -119,6 +119,13 @@ const sections = [
 
 const relatedLinks = [
   {
+    title: "Transcutaneous VNS research",
+    description:
+      "A method-focused topic on tVNS, taVNS, auricular stimulation, stimulation parameters, and how to interpret protocol-specific evidence.",
+    href: "/research/topics/transcutaneous-vagus-nerve-stimulation",
+    linkLabel: "Explore tVNS topic",
+  },
+  {
     title: "Vagus Nerve Stimulation for Treatment-Resistant Depression",
     description:
       "A landmark implanted VNS study that helps place non-invasive auricular stimulation into the broader VNS research history.",

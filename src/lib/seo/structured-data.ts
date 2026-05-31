@@ -153,6 +153,7 @@ export function buildArticleStructuredData({
       "@id": `${url}#webpage`,
     },
     inLanguage: SITE_LANGUAGE,
+    isAccessibleForFree: true,
     articleSection,
     author: buildPublisher(authorName),
     publisher: buildPublisher(),

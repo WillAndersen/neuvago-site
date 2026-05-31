@@ -2,20 +2,21 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { JsonLd } from "@/components/seo/json-ld"
 import { buildAuthorityPageStructuredData } from "@/lib/seo/structured-data"
+import { authorityEditorialDates } from "@/lib/seo/editorial-dates";
 
 export const metadata: Metadata = {
   title:
-    "Nervous System Regulation | Stress, Sleep, Recovery and Daily Life | Neuvago",
+    "Nervous System Regulation | Autonomic Flexibility Guide | Neuvago",
   description:
-    "Learn what nervous system regulation means in everyday life, how it relates to stress, sleep, recovery, and why the body can feel more or less able to settle and return.",
+    "Learn what nervous system regulation means, how autonomic flexibility relates to stress, sleep and recovery, and why settling can feel easy or hard.",
   alternates: {
     canonical: "/learn/nervous-system-regulation",
   },
   openGraph: {
     title:
-      "Nervous System Regulation | Stress, Sleep, Recovery and Daily Life | Neuvago",
+      "Nervous System Regulation | Autonomic Flexibility Guide | Neuvago",
     description:
-      "Learn what nervous system regulation means in everyday life, how it relates to stress, sleep, recovery, and why the body can feel more or less able to settle and return.",
+      "Learn what nervous system regulation means, how autonomic flexibility relates to stress, sleep and recovery, and why settling can feel easy or hard.",
     url: "/learn/nervous-system-regulation",
     siteName: "Neuvago",
     locale: "en_US",
@@ -24,9 +25,9 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title:
-      "Nervous System Regulation | Stress, Sleep, Recovery and Daily Life | Neuvago",
+      "Nervous System Regulation | Autonomic Flexibility Guide | Neuvago",
     description:
-      "Learn what nervous system regulation means in everyday life, how it relates to stress, sleep, recovery, and why the body can feel more or less able to settle and return.",
+      "Learn what nervous system regulation means, how autonomic flexibility relates to stress, sleep and recovery, and why settling can feel easy or hard.",
   },
 }
 
@@ -124,6 +125,13 @@ const searchReasons = [
     href: "/learn/vagus-nerve",
     linkLabel: "Explore vagus nerve",
   },
+  {
+    title: "They want the research layer",
+    description:
+      "Autonomic regulation research connects the everyday language of activation and return with HRV, vagal pathways, and nervous system flexibility.",
+    href: "/research/topics/autonomic-regulation",
+    linkLabel: "View research topic",
+  },
 ]
 
 const clarifications = [
@@ -146,10 +154,11 @@ const clarifications = [
 
 export default function NervousSystemRegulationPage() {
     const structuredData = buildAuthorityPageStructuredData({
-    title: "Nervous System Regulation | Stress, Sleep, Recovery and Daily Life | Neuvago",
-    description: "Learn what nervous system regulation means in everyday life, how it relates to stress, sleep, recovery, and why the body can feel more or less able to settle and return.",
+    title: "Nervous System Regulation | Autonomic Flexibility Guide | Neuvago",
+    description: "Learn what nervous system regulation means, how autonomic flexibility relates to stress, sleep and recovery, and why settling can feel easy or hard.",
     path: "/learn/nervous-system-regulation",
     articleSection: "Learn",
+    dateModified: authorityEditorialDates.vnsClusterModified,
     breadcrumbs: [
       { name: "Home", path: "/" },
       { name: "Learn", path: "/learn" },
@@ -169,7 +178,7 @@ export default function NervousSystemRegulationPage() {
             </p>
 
             <h1 className="text-4xl font-medium leading-[1.05] tracking-[-0.03em] md:text-6xl lg:text-7xl">
-              Nervous system regulation is about how the body shifts, settles, and returns
+              Nervous system regulation is about autonomic flexibility, settling, and return
             </h1>
 
             <p className="mt-6 max-w-2xl text-base leading-8 text-[#5f5a52] md:text-lg">
@@ -633,6 +642,20 @@ export default function NervousSystemRegulationPage() {
                   className="rounded-full border border-black/10 bg-transparent px-6 py-3 text-sm font-medium text-[#1f1f1c] transition hover:bg-white/40"
                 >
                   Explore calming
+                </Link>
+
+                <Link
+                  href="/research/topics/autonomic-regulation"
+                  className="rounded-full border border-black/10 bg-transparent px-6 py-3 text-sm font-medium text-[#1f1f1c] transition hover:bg-white/40"
+                >
+                  View regulation research
+                </Link>
+
+                <Link
+                  href="/how-it-works"
+                  className="rounded-full border border-black/10 bg-transparent px-6 py-3 text-sm font-medium text-[#1f1f1c] transition hover:bg-white/40"
+                >
+                  See how Neuvago works
                 </Link>
               </div>
             </div>

@@ -2,11 +2,12 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { JsonLd } from "@/components/seo/json-ld";
 import { buildAuthorityPageStructuredData } from "@/lib/seo/structured-data";
+import { authorityEditorialDates } from "@/lib/seo/editorial-dates";
 
 const title =
-  "Safety and Tolerability Research | Non-Invasive VNS and taVNS | Neuvago";
+  "VNS Safety and Tolerability Research | Non-Invasive VNS | Neuvago";
 const description =
-  "Explore safety and tolerability research for non-invasive vagus nerve stimulation, including tVNS, taVNS, adverse events, study boundaries, and responsible wellness positioning.";
+  "Explore VNS safety and tolerability research for non-invasive VNS, tVNS and taVNS, including adverse events, study boundaries and wellness positioning.";
 const path = "/research/topics/safety-and-tolerability";
 
 export const metadata: Metadata = {
@@ -182,6 +183,20 @@ const internalPathways = [
       "A plain-language guide to nVNS, tVNS, taVNS, external stimulation, device differences, and wellness boundaries.",
     href: "/learn/non-invasive-vagus-nerve-stimulation",
     linkLabel: "Read the guide",
+  },
+  {
+    title: "Transcutaneous VNS research",
+    description:
+      "A method-focused topic on tVNS, taVNS, stimulation sites, target engagement, and protocol variables that shape safety interpretation.",
+    href: "/research/topics/transcutaneous-vagus-nerve-stimulation",
+    linkLabel: "Explore tVNS topic",
+  },
+  {
+    title: "Autonomic regulation research",
+    description:
+      "A physiology-focused topic connecting non-invasive VNS interpretation to HRV, vagal regulation, stress responses, and flexible state-shifting.",
+    href: "/research/topics/autonomic-regulation",
+    linkLabel: "Explore regulation topic",
   },
   {
     title: "VNS research topic",
@@ -381,6 +396,8 @@ export default function SafetyAndTolerabilityResearchPage() {
     description,
     path,
     articleSection: "Research topics",
+    datePublished: authorityEditorialDates.vnsClusterPublished,
+    dateModified: authorityEditorialDates.vnsClusterModified,
     keywords: [
       "vagus nerve stimulation safety",
       "vagus nerve stimulation tolerability",
@@ -414,7 +431,7 @@ export default function SafetyAndTolerabilityResearchPage() {
             </p>
 
             <h1 className="text-4xl font-medium leading-[1.05] tracking-[-0.03em] md:text-6xl lg:text-7xl">
-              Safety and tolerability in non-invasive VNS research
+              VNS safety and tolerability research
             </h1>
 
             <p className="mt-6 max-w-2xl text-base leading-8 text-[#5f5a52] md:text-lg">

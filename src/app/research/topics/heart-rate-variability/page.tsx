@@ -1,18 +1,19 @@
 import Link from "next/link"
 import { JsonLd } from "@/components/seo/json-ld"
 import { buildAuthorityPageStructuredData } from "@/lib/seo/structured-data"
+import { authorityEditorialDates } from "@/lib/seo/editorial-dates";
 
 export const metadata = {
   title:
-    "Heart Rate Variability Research | HRV, Vagal Regulation and Autonomic Flexibility | Neuvago",
+    "HRV Research | Autonomic Regulation and Vagal Influence | Neuvago",
   description:
-    "Explore heart rate variability research in the Neuvago Research Library, including HRV methodology, autonomic flexibility, vagal regulation, emotional regulation, and stress physiology.",
+    "Explore HRV research as a window into autonomic regulation, vagal influence, measurement standards, stress physiology and interpretation limits.",
   alternates: {
     canonical: "/research/topics/heart-rate-variability",
   },
   openGraph: {
-    title: "Heart Rate Variability Research | HRV, Vagal Regulation and Autonomic Flexibility | Neuvago",
-    description: "Explore heart rate variability research in the Neuvago Research Library, including HRV methodology, autonomic flexibility, vagal regulation, emotional regulation, and stress physiology.",
+    title: "HRV Research | Autonomic Regulation and Vagal Influence | Neuvago",
+    description: "Explore HRV research as a window into autonomic regulation, vagal influence, measurement standards, stress physiology and interpretation limits.",
     url: "/research/topics/heart-rate-variability",
     siteName: "Neuvago",
     locale: "en_US",
@@ -20,8 +21,8 @@ export const metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Heart Rate Variability Research | HRV, Vagal Regulation and Autonomic Flexibility | Neuvago",
-    description: "Explore heart rate variability research in the Neuvago Research Library, including HRV methodology, autonomic flexibility, vagal regulation, emotional regulation, and stress physiology.",
+    title: "HRV Research | Autonomic Regulation and Vagal Influence | Neuvago",
+    description: "Explore HRV research as a window into autonomic regulation, vagal influence, measurement standards, stress physiology and interpretation limits.",
   },
 }
 
@@ -93,11 +94,32 @@ const foundationalStudies = [
 
 const connectedResearch = [
   {
+    title: "Autonomic regulation research",
+    description:
+      "A research topic that places HRV inside the wider physiology of sympathetic and parasympathetic regulation, vagal pathways, stress, and recovery.",
+    href: "/research/topics/autonomic-regulation",
+    linkLabel: "Explore regulation topic",
+  },
+  {
     title: "Nervous system regulation",
     description:
       "A broader learning page for understanding how the body shifts between activation, settling, recovery, and return.",
     href: "/learn/nervous-system-regulation",
     linkLabel: "Understand regulation",
+  },
+  {
+    title: "Vagus nerve stimulation research",
+    description:
+      "A related research topic for understanding how VNS and non-invasive VNS connect to vagal regulation, autonomic flexibility, and HRV-adjacent questions.",
+    href: "/research/topics/vagus-nerve-stimulation",
+    linkLabel: "Explore VNS research",
+  },
+  {
+    title: "How Neuvago works",
+    description:
+      "A practical bridge from HRV and autonomic research into the device, app guidance, session flow, and routine design.",
+    href: "/how-it-works",
+    linkLabel: "See how it works",
   },
   {
     title: "Scientific Studies Library",
@@ -171,10 +193,11 @@ function StudyCard({
 
 export default function HeartRateVariabilityResearchPage() {
   const structuredData = buildAuthorityPageStructuredData({
-    title: "Heart Rate Variability Research | HRV, Vagal Regulation and Autonomic Flexibility | Neuvago",
-    description: "Explore heart rate variability research in the Neuvago Research Library, including HRV methodology, autonomic flexibility, vagal regulation, emotional regulation, and stress physiology.",
+    title: "HRV Research | Autonomic Regulation and Vagal Influence | Neuvago",
+    description: "Explore HRV research as a window into autonomic regulation, vagal influence, measurement standards, stress physiology and interpretation limits.",
     path: "/research/topics/heart-rate-variability",
     articleSection: "Research topics",
+    dateModified: authorityEditorialDates.vnsClusterModified,
     breadcrumbs: [
       { name: "Home", path: "/" },
       { name: "Research", path: "/research" },
@@ -194,7 +217,7 @@ export default function HeartRateVariabilityResearchPage() {
             </p>
 
             <h1 className="mt-5 text-4xl font-medium leading-[1.06] tracking-[-0.035em] md:text-6xl">
-              Heart Rate Variability Research
+              HRV research: heart rate variability and autonomic regulation
             </h1>
 
             <p className="mt-6 max-w-3xl text-base leading-8 text-[#5f5a52] md:text-lg">
@@ -408,6 +431,12 @@ export default function HeartRateVariabilityResearchPage() {
                 className="inline-flex text-sm font-medium text-[#1f1f1c] underline-offset-4 transition hover:underline"
               >
                 Back to topic research
+              </Link>
+              <Link
+                href="/research/topics/autonomic-regulation"
+                className="inline-flex text-sm font-medium text-[#1f1f1c] underline-offset-4 transition hover:underline"
+              >
+                Explore autonomic regulation
               </Link>
             </div>
           </div>

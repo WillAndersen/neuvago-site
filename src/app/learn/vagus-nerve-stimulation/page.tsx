@@ -2,11 +2,12 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { JsonLd } from "@/components/seo/json-ld";
 import { buildAuthorityPageStructuredData } from "@/lib/seo/structured-data";
+import { authorityEditorialDates } from "@/lib/seo/editorial-dates";
 
 const title =
-  "Vagus Nerve Stimulation | Non-Invasive VNS, Devices and How It Works | Neuvago";
+  "Vagus Nerve Stimulation (VNS) | How It Works and Types | Neuvago";
 const description =
-  "Learn what vagus nerve stimulation is, how non-invasive VNS differs from implanted clinical VNS, and how it connects to regulation, stress, sleep, and Neuvago.";
+  "Learn what VNS is, how implanted and non-invasive approaches differ, and why method, evidence, safety, and intended use matter.";
 const path = "/learn/vagus-nerve-stimulation";
 
 export const metadata: Metadata = {
@@ -185,11 +186,25 @@ const nextPaths = [
     linkLabel: "View VNS research",
   },
   {
+    title: "Explore transcutaneous VNS",
+    description:
+      "Go deeper into tVNS, taVNS, stimulation sites, protocol variables, and why method details matter when interpreting non-invasive VNS evidence.",
+    href: "/research/topics/transcutaneous-vagus-nerve-stimulation",
+    linkLabel: "View tVNS topic",
+  },
+  {
     title: "Review safety research",
     description:
       "Understand safety, tolerability, adverse event reporting, and why evidence should be interpreted by device, protocol, and population.",
     href: "/research/topics/safety-and-tolerability",
     linkLabel: "View safety topic",
+  },
+  {
+    title: "Explore autonomic regulation",
+    description:
+      "Connect vagus nerve stimulation to sympathetic and parasympathetic state-shifting, HRV, recovery, and nervous system flexibility.",
+    href: "/research/topics/autonomic-regulation",
+    linkLabel: "View regulation topic",
   },
   {
     title: "See how Neuvago works",
@@ -261,6 +276,8 @@ export default function VagusNerveStimulationPage() {
     description,
     path,
     articleSection: "Learn",
+    datePublished: authorityEditorialDates.vnsClusterPublished,
+    dateModified: authorityEditorialDates.vnsClusterModified,
     keywords: [
       "vagus nerve stimulation",
       "non-invasive vagus nerve stimulation",
@@ -289,7 +306,7 @@ export default function VagusNerveStimulationPage() {
             </p>
 
             <h1 className="text-4xl font-medium leading-[1.05] tracking-[-0.03em] md:text-6xl lg:text-7xl">
-              Vagus nerve stimulation, explained calmly
+              Vagus nerve stimulation (VNS), explained clearly
             </h1>
 
             <p className="mt-6 max-w-2xl text-base leading-8 text-[#5f5a52] md:text-lg">

@@ -1,18 +1,19 @@
 import Link from "next/link"
 import { JsonLd } from "@/components/seo/json-ld"
 import { buildAuthorityPageStructuredData } from "@/lib/seo/structured-data"
+import { authorityEditorialDates } from "@/lib/seo/editorial-dates";
 
 export const metadata = {
   title:
-    "Vagus Nerve Stimulation Research | Implanted and Non-Invasive VNS | Neuvago",
+    "Vagus Nerve Stimulation Research | Evidence Overview | Neuvago",
   description:
-    "Explore vagus nerve stimulation research in the Neuvago Research Library, including implanted VNS, auricular stimulation, neuromodulation, and brain–body regulation research.",
+    "Explore vagus nerve stimulation research across implanted, non-invasive, auricular and transcutaneous approaches, including evidence and interpretation limits.",
   alternates: {
     canonical: "/research/topics/vagus-nerve-stimulation",
   },
   openGraph: {
-    title: "Vagus Nerve Stimulation Research | Implanted and Non-Invasive VNS | Neuvago",
-    description: "Explore vagus nerve stimulation research in the Neuvago Research Library, including implanted VNS, auricular stimulation, neuromodulation, and brain–body regulation research.",
+    title: "Vagus Nerve Stimulation Research | Evidence Overview | Neuvago",
+    description: "Explore vagus nerve stimulation research across implanted, non-invasive, auricular and transcutaneous approaches, including evidence and interpretation limits.",
     url: "/research/topics/vagus-nerve-stimulation",
     siteName: "Neuvago",
     locale: "en_US",
@@ -20,8 +21,8 @@ export const metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Vagus Nerve Stimulation Research | Implanted and Non-Invasive VNS | Neuvago",
-    description: "Explore vagus nerve stimulation research in the Neuvago Research Library, including implanted VNS, auricular stimulation, neuromodulation, and brain–body regulation research.",
+    title: "Vagus Nerve Stimulation Research | Evidence Overview | Neuvago",
+    description: "Explore vagus nerve stimulation research across implanted, non-invasive, auricular and transcutaneous approaches, including evidence and interpretation limits.",
   },
 }
 
@@ -106,6 +107,20 @@ const connectedResearch = [
     linkLabel: "Read non-invasive VNS guide",
   },
   {
+    title: "Transcutaneous VNS research",
+    description:
+      "A method-focused research topic on tVNS, taVNS, auricular stimulation, protocol variables, target engagement, and responsible interpretation.",
+    href: "/research/topics/transcutaneous-vagus-nerve-stimulation",
+    linkLabel: "Explore tVNS topic",
+  },
+  {
+    title: "Autonomic regulation research",
+    description:
+      "A bridge topic explaining sympathetic and parasympathetic physiology, HRV, vagal regulation, stress responses, and flexible state-shifting.",
+    href: "/research/topics/autonomic-regulation",
+    linkLabel: "Explore regulation topic",
+  },
+  {
     title: "Safety and tolerability research",
     description:
       "A trust-focused research topic on non-invasive VNS safety, adverse events, tolerability, protocol differences, and responsible product boundaries.",
@@ -118,6 +133,20 @@ const connectedResearch = [
       "A broader learning page on why the vagus nerve matters in conversations about regulation, stress, sleep, and internal communication pathways.",
     href: "/learn/vagus-nerve",
     linkLabel: "Explore vagus nerve",
+  },
+  {
+    title: "How Neuvago works",
+    description:
+      "A practical bridge from VNS research into device placement, guided sessions, app support, routine design, and responsible intended use.",
+    href: "/how-it-works",
+    linkLabel: "See how it works",
+  },
+  {
+    title: "Neuvago product system",
+    description:
+      "Move from research context to the non-invasive device and app system, without treating research findings as automatic product claims.",
+    href: "/product",
+    linkLabel: "Explore the product",
   },
   {
     title: "Scientific Studies Library",
@@ -191,10 +220,11 @@ function StudyCard({
 
 export default function VagusNerveStimulationResearchPage() {
   const structuredData = buildAuthorityPageStructuredData({
-    title: "Vagus Nerve Stimulation Research | Implanted and Non-Invasive VNS | Neuvago",
-    description: "Explore vagus nerve stimulation research in the Neuvago Research Library, including implanted VNS, auricular stimulation, neuromodulation, and brain–body regulation research.",
+    title: "Vagus Nerve Stimulation Research | Evidence Overview | Neuvago",
+    description: "Explore vagus nerve stimulation research across implanted, non-invasive, auricular and transcutaneous approaches, including evidence and interpretation limits.",
     path: "/research/topics/vagus-nerve-stimulation",
     articleSection: "Research topics",
+    dateModified: authorityEditorialDates.vnsClusterModified,
     breadcrumbs: [
       { name: "Home", path: "/" },
       { name: "Research", path: "/research" },
@@ -214,14 +244,14 @@ export default function VagusNerveStimulationResearchPage() {
             </p>
 
             <h1 className="mt-5 text-4xl font-medium leading-[1.06] tracking-[-0.035em] md:text-6xl">
-              Vagus Nerve Stimulation Research
+              Vagus nerve stimulation research overview
             </h1>
 
             <p className="mt-6 max-w-3xl text-base leading-8 text-[#5f5a52] md:text-lg">
               This topic page organizes research related to vagus nerve stimulation,
-              including implanted VNS, auricular stimulation, non-invasive approaches,
-              and broader neuromodulation pathways. It is designed to provide a
-              structured overview before readers move into individual studies.
+              including implanted VNS, non-invasive VNS, auricular stimulation,
+              transcutaneous approaches, and the limits of translating evidence
+              across devices, protocols, and populations.
             </p>
 
             <div className="mt-8 flex flex-wrap gap-x-8 gap-y-3 text-sm text-[#6b665e]">
@@ -430,6 +460,12 @@ export default function VagusNerveStimulationResearchPage() {
                 className="inline-flex text-sm font-medium text-[#1f1f1c] underline-offset-4 transition hover:underline"
               >
                 Back to topic research
+              </Link>
+              <Link
+                href="/how-it-works"
+                className="inline-flex text-sm font-medium text-[#1f1f1c] underline-offset-4 transition hover:underline"
+              >
+                See how Neuvago works
               </Link>
             </div>
           </div>

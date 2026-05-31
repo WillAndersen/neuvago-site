@@ -37,9 +37,9 @@ export const howItWorksPageContent = {
   hero: {
     visible: true,
     eyebrow: "How it works",
-    title: "How the Neuvago system works in practice.",
+    title: "How Neuvago’s non-invasive VNS system works in practice.",
     description:
-      "Neuvago is designed to be simple to understand in real life: begin with the non-invasive device, use the app for guidance, and return to the routine over time.",
+      "Neuvago is designed to be simple to understand in real life: begin with the external device, follow guided app sessions, and return to the routine over time.",
     primaryCta: {
       label: "Explore Neuvago",
       href: "/product",

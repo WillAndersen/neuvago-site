@@ -49,9 +49,9 @@ export const productPageContent = {
   hero: {
     visible: true,
     eyebrow: "Product",
-    title: "A non-invasive device designed for calmer daily regulation.",
+    title: "A non-invasive vagus nerve stimulator designed for calmer daily regulation.",
     description:
-      "Neuvago pairs a premium non-invasive vagus nerve stimulation device with a guided app experience designed to support calmer routines around stress, recovery, sleep, and everyday nervous system balance.",
+      "Neuvago pairs a premium non-invasive vagus nerve stimulator with a guided app experience designed to support calmer routines around stress, recovery, sleep, and everyday nervous system balance.",
     primaryCta: {
       label: "How it works",
       href: "/how-it-works",

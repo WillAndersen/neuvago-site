@@ -2,18 +2,19 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { JsonLd } from "@/components/seo/json-ld"
 import { buildAuthorityPageStructuredData } from "@/lib/seo/structured-data"
+import { authorityEditorialDates } from "@/lib/seo/editorial-dates";
 
 export const metadata: Metadata = {
-  title: "Sleep | Nervous System, Unwinding and Recovery | Neuvago",
+  title: "Sleep, Unwinding and Nervous System Regulation | Neuvago",
   description:
-    "Understand sleep through evening activation, unwinding, recovery, and the nervous system patterns that can make rest feel fragile or incomplete.",
+    "Understand sleep through nervous system state, evening activation, unwinding, HRV, recovery, and the body’s ability to shift toward rest.",
   alternates: {
     canonical: "/conditions/sleep",
   },
   openGraph: {
-    title: "Sleep | Nervous System, Unwinding and Recovery | Neuvago",
+    title: "Sleep, Unwinding and Nervous System Regulation | Neuvago",
     description:
-      "Understand sleep through evening activation, unwinding, recovery, and the nervous system patterns that can make rest feel fragile or incomplete.",
+      "Understand sleep through nervous system state, evening activation, unwinding, HRV, recovery, and the body’s ability to shift toward rest.",
     url: "/conditions/sleep",
     siteName: "Neuvago",
     locale: "en_US",
@@ -21,9 +22,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Sleep | Nervous System, Unwinding and Recovery | Neuvago",
+    title: "Sleep, Unwinding and Nervous System Regulation | Neuvago",
     description:
-      "Understand sleep through evening activation, unwinding, recovery, and the nervous system patterns that can make rest feel fragile or incomplete.",
+      "Understand sleep through nervous system state, evening activation, unwinding, HRV, recovery, and the body’s ability to shift toward rest.",
   },
 }
 
@@ -97,15 +98,37 @@ const connectedTopics = [
     href: "/learn/recovery-and-regulation",
     linkLabel: "Explore recovery",
   },
+  {
+    title: "Autonomic regulation research",
+    description:
+      "A research path for understanding sleep through autonomic flexibility, downshifting, HRV, stress load, and recovery physiology.",
+    href: "/research/topics/autonomic-regulation",
+    linkLabel: "View regulation research",
+  },
+  {
+    title: "Heart rate variability research",
+    description:
+      "A research topic that explains HRV as a measurement window into autonomic patterns, recovery, and physiological flexibility.",
+    href: "/research/topics/heart-rate-variability",
+    linkLabel: "View HRV research",
+  },
+  {
+    title: "How Neuvago works",
+    description:
+      "A practical bridge from sleep education into device placement, guided sessions, app support, and evening routine design.",
+    href: "/how-it-works",
+    linkLabel: "See how it works",
+  },
 ]
 
 
 export default function SleepPage() {
     const structuredData = buildAuthorityPageStructuredData({
-    title: "Sleep | Nervous System, Unwinding and Recovery | Neuvago",
-    description: "Understand sleep through evening activation, unwinding, recovery, and the nervous system patterns that can make rest feel fragile or incomplete.",
+    title: "Sleep, Unwinding and Nervous System Regulation | Neuvago",
+    description: "Understand sleep through nervous system state, evening activation, unwinding, HRV, recovery, and the body’s ability to shift toward rest.",
     path: "/conditions/sleep",
     articleSection: "Conditions",
+    dateModified: authorityEditorialDates.vnsClusterModified,
     breadcrumbs: [
       { name: "Home", path: "/" },
       { name: "Conditions", path: "/conditions" },
@@ -125,7 +148,7 @@ export default function SleepPage() {
             </p>
 
             <h1 className="text-4xl font-medium leading-[1.05] tracking-[-0.03em] md:text-6xl lg:text-7xl">
-              Sleep is often about whether the body can truly unwind
+              Sleep depends on whether the nervous system can unwind
             </h1>
 
             <p className="mt-6 max-w-2xl text-base leading-8 text-[#5f5a52] md:text-lg">
@@ -435,6 +458,13 @@ export default function SleepPage() {
                   className="rounded-full border border-black/10 bg-transparent px-6 py-3 text-sm font-medium text-[#1f1f1c] transition hover:bg-white/40"
                 >
                   Explore calming
+                </Link>
+
+                <Link
+                  href="/how-it-works"
+                  className="rounded-full border border-black/10 bg-transparent px-6 py-3 text-sm font-medium text-[#1f1f1c] transition hover:bg-white/40"
+                >
+                  See how Neuvago works
                 </Link>
               </div>
             </div>

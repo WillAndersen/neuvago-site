@@ -5,6 +5,13 @@ import { AppChrome } from "@/components/layout/app-chrome"
 
 import "./globals.css"
 
+const defaultOgImage = {
+  url: "/images/home/hero-device-app-master.png",
+  width: 1536,
+  height: 1024,
+  alt: "Neuvago device and guided app",
+}
+
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
@@ -41,12 +48,14 @@ export const metadata: Metadata = {
     siteName: "Neuvago",
     locale: "en_US",
     type: "website",
+    images: [defaultOgImage],
   },
   twitter: {
     card: "summary_large_image",
     title: "Neuvago | Calm support for stress, sleep, and recovery",
     description:
       "A calmer way to support stress, sleep, recovery, and nervous system regulation.",
+    images: [defaultOgImage.url],
   },
 }
 

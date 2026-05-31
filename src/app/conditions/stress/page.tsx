@@ -2,19 +2,20 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { JsonLd } from "@/components/seo/json-ld"
 import { buildAuthorityPageStructuredData } from "@/lib/seo/structured-data"
+import { authorityEditorialDates } from "@/lib/seo/editorial-dates";
 
 export const metadata: Metadata = {
-  title: "Stress | Nervous System Overload, Activation and Recovery | Neuvago",
+  title: "Stress, Overload and Nervous System Regulation | Neuvago",
   description:
-    "Understand stress through activation, overload, sleep disruption, recovery, and the nervous system patterns that can keep the body feeling on.",
+    "Understand stress as nervous system activation and overload, including recovery, sleep disruption, autonomic regulation, and practical ways the body returns.",
   alternates: {
     canonical: "/conditions/stress",
   },
   openGraph: {
     title:
-      "Stress | Nervous System Overload, Activation and Recovery | Neuvago",
+      "Stress, Overload and Nervous System Regulation | Neuvago",
     description:
-      "Understand stress through activation, overload, sleep disruption, recovery, and the nervous system patterns that can keep the body feeling on.",
+      "Understand stress as nervous system activation and overload, including recovery, sleep disruption, autonomic regulation, and practical ways the body returns.",
     url: "/conditions/stress",
     siteName: "Neuvago",
     locale: "en_US",
@@ -23,9 +24,9 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title:
-      "Stress | Nervous System Overload, Activation and Recovery | Neuvago",
+      "Stress, Overload and Nervous System Regulation | Neuvago",
     description:
-      "Understand stress through activation, overload, sleep disruption, recovery, and the nervous system patterns that can keep the body feeling on.",
+      "Understand stress as nervous system activation and overload, including recovery, sleep disruption, autonomic regulation, and practical ways the body returns.",
   },
 }
 
@@ -99,15 +100,37 @@ const connectedTopics = [
     href: "/learn/recovery-and-regulation",
     linkLabel: "Explore recovery",
   },
+  {
+    title: "Autonomic regulation research",
+    description:
+      "A research path for understanding stress through sympathetic activation, parasympathetic return, HRV, and physiological flexibility.",
+    href: "/research/topics/autonomic-regulation",
+    linkLabel: "View regulation research",
+  },
+  {
+    title: "Safety and tolerability",
+    description:
+      "A trust-focused research page that explains why non-invasive VNS should be interpreted by device, protocol, population, and intended use.",
+    href: "/research/topics/safety-and-tolerability",
+    linkLabel: "View safety research",
+  },
+  {
+    title: "How Neuvago works",
+    description:
+      "A practical bridge from stress education into device placement, guided sessions, app support, and routine design.",
+    href: "/how-it-works",
+    linkLabel: "See how it works",
+  },
 ]
 
 
 export default function StressPage() {
     const structuredData = buildAuthorityPageStructuredData({
-    title: "Stress | Nervous System Overload, Activation and Recovery | Neuvago",
-    description: "Understand stress through activation, overload, sleep disruption, recovery, and the nervous system patterns that can keep the body feeling on.",
+    title: "Stress, Overload and Nervous System Regulation | Neuvago",
+    description: "Understand stress as nervous system activation and overload, including recovery, sleep disruption, autonomic regulation, and practical ways the body returns.",
     path: "/conditions/stress",
     articleSection: "Conditions",
+    dateModified: authorityEditorialDates.vnsClusterModified,
     breadcrumbs: [
       { name: "Home", path: "/" },
       { name: "Conditions", path: "/conditions" },
@@ -127,7 +150,7 @@ export default function StressPage() {
             </p>
 
             <h1 className="text-4xl font-medium leading-[1.05] tracking-[-0.03em] md:text-6xl lg:text-7xl">
-              Stress often feels like a body that stays on
+              Stress can feel like a body that stays on
             </h1>
 
             <p className="mt-6 max-w-2xl text-base leading-8 text-[#5f5a52] md:text-lg">
@@ -438,6 +461,13 @@ export default function StressPage() {
                   className="rounded-full border border-black/10 bg-transparent px-6 py-3 text-sm font-medium text-[#1f1f1c] transition hover:bg-white/40"
                 >
                   Explore sleep
+                </Link>
+
+                <Link
+                  href="/how-it-works"
+                  className="rounded-full border border-black/10 bg-transparent px-6 py-3 text-sm font-medium text-[#1f1f1c] transition hover:bg-white/40"
+                >
+                  See how Neuvago works
                 </Link>
               </div>
             </div>

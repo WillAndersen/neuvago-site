@@ -19,17 +19,17 @@ import {
 
 export const metadata: Metadata = {
   title:
-    "Neuvago Device | Non-Invasive Vagus Nerve Stimulator | Neuvago",
+    "Neuvago | Non-Invasive Vagus Nerve Stimulator and App",
   description:
-    "Explore Neuvago, a premium non-invasive vagus nerve stimulator and guided app system designed for calmer routines around stress, sleep, recovery, and daily regulation.",
+    "Meet Neuvago: a premium non-invasive vagus nerve stimulator and app for guided, repeatable routines around stress, sleep, recovery, and daily regulation.",
   alternates: {
     canonical: "/product",
   },
   openGraph: {
     title:
-      "Neuvago Device | Non-Invasive Vagus Nerve Stimulator | Neuvago",
+      "Neuvago | Non-Invasive Vagus Nerve Stimulator and App",
     description:
-      "Explore Neuvago, a premium non-invasive vagus nerve stimulator and guided app system designed for calmer routines around stress, sleep, recovery, and daily regulation.",
+      "Meet Neuvago: a premium non-invasive vagus nerve stimulator and app for guided, repeatable routines around stress, sleep, recovery, and daily regulation.",
     url: "/product",
     siteName: "Neuvago",
     locale: "en_US",
@@ -38,9 +38,9 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title:
-      "Neuvago Device | Non-Invasive Vagus Nerve Stimulator | Neuvago",
+      "Neuvago | Non-Invasive Vagus Nerve Stimulator and App",
     description:
-      "Explore Neuvago, a premium non-invasive vagus nerve stimulator and guided app system designed for calmer routines around stress, sleep, recovery, and daily regulation.",
+      "Meet Neuvago: a premium non-invasive vagus nerve stimulator and app for guided, repeatable routines around stress, sleep, recovery, and daily regulation.",
   },
 };
 

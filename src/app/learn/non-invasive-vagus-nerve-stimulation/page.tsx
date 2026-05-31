@@ -2,11 +2,12 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { JsonLd } from "@/components/seo/json-ld";
 import { buildAuthorityPageStructuredData } from "@/lib/seo/structured-data";
+import { authorityEditorialDates } from "@/lib/seo/editorial-dates";
 
 const title =
-  "Non-Invasive Vagus Nerve Stimulation | nVNS, tVNS and Ear-Based VNS | Neuvago";
+  "Non-Invasive Vagus Nerve Stimulation | nVNS Device Guide | Neuvago";
 const description =
-  "Understand non-invasive vagus nerve stimulation, how nVNS differs from implanted VNS, what tVNS and taVNS mean, and how Neuvago fits into guided wellness routines.";
+  "Understand non-invasive VNS, including nVNS, tVNS and taVNS, how external devices differ from implanted VNS, and how guided wellness use fits in.";
 const path = "/learn/non-invasive-vagus-nerve-stimulation";
 
 export const metadata: Metadata = {
@@ -201,11 +202,25 @@ const relatedLearning = [
 
 const researchAndTrust = [
   {
+    title: "Transcutaneous VNS research",
+    description:
+      "Go deeper into tVNS, taVNS, auricular stimulation, protocol variables, target engagement, and responsible interpretation of the method layer.",
+    href: "/research/topics/transcutaneous-vagus-nerve-stimulation",
+    linkLabel: "View tVNS research",
+  },
+  {
     title: "Safety and tolerability",
     description:
       "Explore the research topic that explains adverse events, tolerability, protocol limits, and responsible product boundaries for non-invasive VNS.",
     href: "/research/topics/safety-and-tolerability",
     linkLabel: "View safety research",
+  },
+  {
+    title: "Autonomic regulation",
+    description:
+      "Understand how non-invasive VNS fits into a wider research conversation around HRV, vagal regulation, state-shifting, stress, and recovery.",
+    href: "/research/topics/autonomic-regulation",
+    linkLabel: "View regulation research",
   },
   {
     title: "VNS research topic",
@@ -308,6 +323,8 @@ export default function NonInvasiveVagusNerveStimulationPage() {
     description,
     path,
     articleSection: "Learn",
+    datePublished: authorityEditorialDates.vnsClusterPublished,
+    dateModified: authorityEditorialDates.vnsClusterModified,
     keywords: [
       "non-invasive vagus nerve stimulation",
       "non invasive vagus nerve stimulation",
@@ -342,7 +359,7 @@ export default function NonInvasiveVagusNerveStimulationPage() {
             </p>
 
             <h1 className="text-4xl font-medium leading-[1.05] tracking-[-0.03em] md:text-6xl lg:text-7xl">
-              Non-invasive vagus nerve stimulation, explained clearly
+              Non-invasive vagus nerve stimulation (nVNS), explained clearly
             </h1>
 
             <p className="mt-6 max-w-2xl text-base leading-8 text-[#5f5a52] md:text-lg">

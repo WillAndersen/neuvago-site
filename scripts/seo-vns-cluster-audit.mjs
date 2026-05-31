@@ -32,39 +32,35 @@ const requiredBuildRoutes = [
   "/research/topics/autonomic-regulation",
 ];
 
-const requiredP24Markers = [
-  {
-    file: "src/content/product.ts",
-    markers: [
-      "non-invasive vagus nerve stimulator",
-      "Clear wellness boundaries",
-      "Who should ask a clinician before use?",
-    ],
-  },
-  {
-    file: "src/content/how-it-works.ts",
-    markers: [
-      "How to use Neuvago’s non-invasive VNS system in practice.",
-      "How should I think about intensity?",
-    ],
-  },
-  {
-    file: "src/app/research/topics/safety-and-tolerability/page.tsx",
-    markers: [
-      "side effects",
-      "contraindication awareness",
-      "Who should ask a clinician first",
-      "Non-invasive is not the same as risk-free",
-    ],
-  },
-  {
-    file: "src/app/research/topics/vagus-nerve-stimulation/page.tsx",
-    markers: [
-      "Evidence boundaries",
-      "Evidence does not transfer automatically",
-    ],
-  },
-];
+const conditionBridgeRequirements = {
+  "/conditions": [
+    "Condition-to-product pathways",
+    "/conditions/stress",
+    "/conditions/sleep",
+    "/research/topics/autonomic-regulation",
+    "/research/topics/safety-and-tolerability",
+    "/how-it-works",
+    "/app",
+  ],
+  "/conditions/stress": [
+    "Condition-to-routine pathway",
+    "/research/topics/autonomic-regulation",
+    "/research/topics/safety-and-tolerability",
+    "/how-it-works",
+    "/app",
+    "/product",
+    "/legal/intended-use",
+  ],
+  "/conditions/sleep": [
+    "Evening-to-routine pathway",
+    "/research/topics/autonomic-regulation",
+    "/research/topics/heart-rate-variability",
+    "/how-it-works",
+    "/app",
+    "/product",
+    "/legal/intended-use",
+  ],
+};
 
 const errors = [];
 const warnings = [];
@@ -122,17 +118,17 @@ for (const route of requiredBuildRoutes) {
   }
 }
 
-for (const { file, markers } of requiredP24Markers) {
-  const source = readIfExists(path.join(repoRoot, file));
+for (const [route, markers] of Object.entries(conditionBridgeRequirements)) {
+  const source = readIfExists(pageFileForRoute(route));
 
   if (!source) {
-    errors.push(`${file} is missing.`);
+    errors.push(`${route} is missing and cannot be checked for condition bridge markers.`);
     continue;
   }
 
   for (const marker of markers) {
     if (!source.includes(marker)) {
-      errors.push(`${file} is missing P2.4 marker: ${marker}`);
+      errors.push(`${route} is missing condition bridge marker: ${marker}.`);
     }
   }
 }

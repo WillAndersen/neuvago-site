@@ -4,16 +4,16 @@ import { JsonLd } from "@/components/seo/json-ld"
 import { buildPageWithBreadcrumbStructuredData } from "@/lib/seo/structured-data"
 
 export const metadata: Metadata = {
-  title: "Conditions | Stress, Sleep, Anxiety and Burnout | Neuvago",
+  title: "Conditions | Stress, Sleep and Nervous System Pathways | Neuvago",
   description:
-    "Explore Neuvago condition pages on stress, sleep, anxiety, burnout, overload, recovery, and the nervous system patterns that shape everyday life.",
+    "Explore condition pathways for stress, sleep, anxiety, burnout, nervous system regulation, research context, and app-guided daily support.",
   alternates: {
     canonical: "/conditions",
   },
   openGraph: {
-    title: "Conditions | Stress, Sleep, Anxiety and Burnout | Neuvago",
+    title: "Conditions | Stress, Sleep and Nervous System Pathways | Neuvago",
     description:
-      "Explore Neuvago condition pages on stress, sleep, anxiety, burnout, overload, recovery, and the nervous system patterns that shape everyday life.",
+      "Explore condition pathways for stress, sleep, anxiety, burnout, nervous system regulation, research context, and app-guided daily support.",
     url: "/conditions",
     siteName: "Neuvago",
     locale: "en_US",
@@ -21,9 +21,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Conditions | Stress, Sleep, Anxiety and Burnout | Neuvago",
+    title: "Conditions | Stress, Sleep and Nervous System Pathways | Neuvago",
     description:
-      "Explore Neuvago condition pages on stress, sleep, anxiety, burnout, overload, recovery, and the nervous system patterns that shape everyday life.",
+      "Explore condition pathways for stress, sleep, anxiety, burnout, nervous system regulation, research context, and app-guided daily support.",
   },
 };
 
@@ -31,16 +31,16 @@ const featuredConditions = [
   {
     title: "Stress",
     description:
-      "Explore calmer learning pathways around stress, overload, activation, and why the body can stay “on” longer than expected.",
+      "Move from stress, overload, activation, and poor recovery into autonomic regulation research, safety boundaries, and practical routine support.",
     href: "/conditions/stress",
-    linkLabel: "See stress patterns",
+    linkLabel: "See stress pathway",
   },
   {
     title: "Sleep",
     description:
-      "Learn more about winding down, evening activation, lighter sleep, fragile rest, and what makes sleep support feel more realistic over time.",
+      "Move from winding down, evening activation, fragile rest, and recovery questions into HRV, autonomic regulation, and calmer evening routines.",
     href: "/conditions/sleep",
-    linkLabel: "See sleep patterns",
+    linkLabel: "See sleep pathway",
   },
   {
     title: "Anxiety",
@@ -116,25 +116,63 @@ const pathwayCards = [
     linkLabel: "Start with conditions",
   },
   {
-    title: "Start with practical support",
-    description:
-      "If the question is less about naming the issue and more about what might actually help, move from Conditions into the practical Learn pages.",
-    href: "/learn/how-to-calm-your-nervous-system",
-    linkLabel: "Start with support",
-  },
-  {
-    title: "Start with the bigger framework",
+    title: "Move into the regulation framework",
     description:
       "If the condition pages feel familiar but incomplete, move up into the larger framework pages on regulation, the vagus nerve, and recovery.",
-    href: "/learn",
-    linkLabel: "Go to learning hub",
+    href: "/learn/nervous-system-regulation",
+    linkLabel: "Explore regulation",
+  },
+  {
+    title: "Add research and safety context",
+    description:
+      "If you want the evidence layer, use Research to understand autonomic regulation, VNS, HRV, and responsible safety boundaries.",
+    href: "/research/topics/safety-and-tolerability",
+    linkLabel: "Review safety context",
+  },
+  {
+    title: "Build a guided routine",
+    description:
+      "If the goal is practical daily support, move from the condition page into Neuvago’s app-guided sessions and routine structure.",
+    href: "/app",
+    linkLabel: "Explore the app",
+  },
+];
+
+const conditionBridgeCards = [
+  {
+    title: "Stress → autonomic regulation",
+    description:
+      "Stress should lead users from activation and overload into autonomic regulation, HRV, recovery, and safety-aware VNS context.",
+    href: "/conditions/stress",
+    linkLabel: "Follow stress pathway",
+  },
+  {
+    title: "Sleep → evening routine",
+    description:
+      "Sleep should lead users from difficulty unwinding into autonomic state, HRV interpretation, app guidance, and a calmer wind-down routine.",
+    href: "/conditions/sleep",
+    linkLabel: "Follow sleep pathway",
+  },
+  {
+    title: "Research → trust layer",
+    description:
+      "Condition pages become stronger when they point to autonomic regulation, safety, tolerability, and evidence boundaries before product consideration.",
+    href: "/research/topics/autonomic-regulation",
+    linkLabel: "View regulation research",
+  },
+  {
+    title: "Routine → product support",
+    description:
+      "When the user is ready for a practical next step, the bridge should be calm: how sessions work, how the app supports continuity, and what Neuvago is not.",
+    href: "/how-it-works",
+    linkLabel: "See how it works",
   },
 ];
 
 export default function ConditionsPage() {
     const structuredData = buildPageWithBreadcrumbStructuredData({
-    title: "Conditions | Stress, Sleep, Anxiety and Burnout | Neuvago",
-    description: "Explore Neuvago condition pages on stress, sleep, anxiety, burnout, overload, recovery, and the nervous system patterns that shape everyday life.",
+    title: "Conditions | Stress, Sleep and Nervous System Pathways | Neuvago",
+    description: "Explore condition pathways for stress, sleep, anxiety, burnout, nervous system regulation, research context, and app-guided daily support.",
     path: "/conditions",
     breadcrumbs: [
       { name: "Home", path: "/" },
@@ -249,9 +287,9 @@ export default function ConditionsPage() {
 
             <p className="mt-6 max-w-2xl text-base leading-8 text-[#5f5a52] md:text-lg">
               These are the clearest entry pages for the symptom and
-              lived-experience side of the Neuvago site. Each one is designed
-              to connect back to broader learning around regulation, recovery,
-              and the nervous system.
+              lived-experience side of the Neuvago site. Stress and sleep now
+              connect more deliberately into Learn, Research, How it works,
+              app-guided routines, and safety-aware product understanding.
             </p>
           </div>
 
@@ -439,7 +477,7 @@ export default function ConditionsPage() {
             </h2>
           </div>
 
-          <div className="mt-14 grid gap-6 md:grid-cols-3">
+          <div className="mt-14 grid gap-6 md:grid-cols-2 xl:grid-cols-4">
             {pathwayCards.map((item) => (
               <article
                 key={item.title}
@@ -459,6 +497,65 @@ export default function ConditionsPage() {
                 </Link>
               </article>
             ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="border-b border-black/5 bg-[#efe8de]">
+        <div className="mx-auto max-w-7xl px-6 py-24 md:px-10 md:py-28">
+          <div className="max-w-3xl">
+            <p className="text-sm uppercase tracking-[0.18em] text-[#7a756c]">
+              Condition-to-product pathways
+            </p>
+
+            <h2 className="mt-4 text-3xl font-medium leading-tight tracking-[-0.03em] md:text-5xl">
+              The strongest condition pages move from symptoms into research, safety, routine, and only then product support
+            </h2>
+
+            <p className="mt-6 max-w-2xl text-base leading-8 text-[#5f5a52] md:text-lg">
+              Conditions are often the user’s first entry point. The goal is not
+              to push them directly to a device. The goal is to help them
+              understand the pattern, see the evidence boundary, and then choose
+              whether a guided Neuvago routine is relevant.
+            </p>
+          </div>
+
+          <div className="mt-14 grid gap-6 md:grid-cols-2 xl:grid-cols-4">
+            {conditionBridgeCards.map((item) => (
+              <article
+                key={item.title}
+                className="rounded-[2rem] border border-black/5 bg-[#f8f5f0] p-8 shadow-[0_12px_40px_rgba(31,31,28,0.04)]"
+              >
+                <h3 className="text-2xl font-medium leading-tight text-[#1f1f1c]">
+                  {item.title}
+                </h3>
+                <p className="mt-4 text-sm leading-7 text-[#5f5a52] md:text-base">
+                  {item.description}
+                </p>
+                <Link
+                  href={item.href}
+                  className="mt-8 inline-flex text-sm font-medium text-[#1f1f1c] transition hover:opacity-70"
+                >
+                  {item.linkLabel}
+                </Link>
+              </article>
+            ))}
+          </div>
+
+          <div className="mt-10 flex flex-wrap gap-4">
+            <Link
+              href="/research/topics/safety-and-tolerability"
+              className="rounded-full bg-[#1f1f1c] px-6 py-3 text-sm font-medium text-white transition hover:opacity-90"
+            >
+              Review safety context
+            </Link>
+
+            <Link
+              href="/app"
+              className="rounded-full border border-black/10 px-6 py-3 text-sm font-medium text-[#1f1f1c] transition hover:bg-white/60"
+            >
+              Explore app guidance
+            </Link>
           </div>
         </div>
       </section>
@@ -502,6 +599,13 @@ export default function ConditionsPage() {
                   className="rounded-full border border-black/10 bg-transparent px-6 py-3 text-sm font-medium text-[#1f1f1c] transition hover:bg-white/40"
                 >
                   See how it works
+                </Link>
+
+                <Link
+                  href="/app"
+                  className="rounded-full border border-black/10 bg-transparent px-6 py-3 text-sm font-medium text-[#1f1f1c] transition hover:bg-white/40"
+                >
+                  Explore the app
                 </Link>
               </div>
             </div>

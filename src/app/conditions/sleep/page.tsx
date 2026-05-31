@@ -5,16 +5,16 @@ import { buildAuthorityPageStructuredData } from "@/lib/seo/structured-data"
 import { authorityEditorialDates } from "@/lib/seo/editorial-dates";
 
 export const metadata: Metadata = {
-  title: "Sleep, Unwinding and Nervous System Regulation | Neuvago",
+  title: "Sleep Support, Evening Unwinding and Regulation | Neuvago",
   description:
-    "Understand sleep through nervous system state, evening activation, unwinding, HRV, recovery, and the body’s ability to shift toward rest.",
+    "Understand sleep through evening activation, autonomic regulation, HRV, recovery, safety boundaries, and app-guided wind-down routines.",
   alternates: {
     canonical: "/conditions/sleep",
   },
   openGraph: {
-    title: "Sleep, Unwinding and Nervous System Regulation | Neuvago",
+    title: "Sleep Support, Evening Unwinding and Regulation | Neuvago",
     description:
-      "Understand sleep through nervous system state, evening activation, unwinding, HRV, recovery, and the body’s ability to shift toward rest.",
+      "Understand sleep through evening activation, autonomic regulation, HRV, recovery, safety boundaries, and app-guided wind-down routines.",
     url: "/conditions/sleep",
     siteName: "Neuvago",
     locale: "en_US",
@@ -22,9 +22,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Sleep, Unwinding and Nervous System Regulation | Neuvago",
+    title: "Sleep Support, Evening Unwinding and Regulation | Neuvago",
     description:
-      "Understand sleep through nervous system state, evening activation, unwinding, HRV, recovery, and the body’s ability to shift toward rest.",
+      "Understand sleep through evening activation, autonomic regulation, HRV, recovery, safety boundaries, and app-guided wind-down routines.",
   },
 }
 
@@ -121,11 +121,65 @@ const connectedTopics = [
   },
 ]
 
+const sleepRoutineSteps = [
+  {
+    title: "Name the evening state",
+    description:
+      "Sleep support becomes clearer when it starts with the state of the system: evening activation, wired-but-tired fatigue, light sleep, or thin recovery.",
+  },
+  {
+    title: "Connect sleep to autonomic regulation",
+    description:
+      "The research bridge is not a promise that one tool improves sleep. It is a calmer way to understand downshifting, HRV context, recovery, and physiological flexibility.",
+  },
+  {
+    title: "Make the routine repeatable",
+    description:
+      "For Neuvago, the practical bridge is an app-guided wind-down rhythm that can be repeated consistently rather than a complicated evening protocol.",
+  },
+  {
+    title: "Keep the promise modest",
+    description:
+      "Sleep pages should stay careful: Neuvago can support a wellness routine, but it is not positioned as a treatment for insomnia or a replacement for medical care.",
+  },
+]
+
+const sleepBridgeCards = [
+  {
+    title: "Research downshifting and recovery",
+    description:
+      "Move from sleep symptoms into autonomic regulation, parasympathetic return, stress load, and physiological flexibility.",
+    href: "/research/topics/autonomic-regulation",
+    linkLabel: "View regulation research",
+  },
+  {
+    title: "Interpret HRV with care",
+    description:
+      "Use HRV as context for recovery and autonomic patterns without turning it into a simple sleep score or product guarantee.",
+    href: "/research/topics/heart-rate-variability",
+    linkLabel: "View HRV research",
+  },
+  {
+    title: "Build a guided wind-down routine",
+    description:
+      "Explore how the Neuvago app can support short, calm sessions that fit into an evening routine without pressure or over-tracking.",
+    href: "/app",
+    linkLabel: "Explore the app",
+  },
+  {
+    title: "See how sessions work",
+    description:
+      "Understand placement, comfort, app guidance, and how a non-invasive vagus nerve stimulator fits into daily use.",
+    href: "/how-it-works",
+    linkLabel: "See how it works",
+  },
+]
+
 
 export default function SleepPage() {
     const structuredData = buildAuthorityPageStructuredData({
-    title: "Sleep, Unwinding and Nervous System Regulation | Neuvago",
-    description: "Understand sleep through nervous system state, evening activation, unwinding, HRV, recovery, and the body’s ability to shift toward rest.",
+    title: "Sleep Support, Evening Unwinding and Regulation | Neuvago",
+    description: "Understand sleep through evening activation, autonomic regulation, HRV, recovery, safety boundaries, and app-guided wind-down routines.",
     path: "/conditions/sleep",
     articleSection: "Conditions",
     dateModified: authorityEditorialDates.vnsClusterModified,
@@ -148,14 +202,15 @@ export default function SleepPage() {
             </p>
 
             <h1 className="text-4xl font-medium leading-[1.05] tracking-[-0.03em] md:text-6xl lg:text-7xl">
-              Sleep depends on whether the nervous system can unwind
+              Sleep support starts with helping the nervous system unwind
             </h1>
 
             <p className="mt-6 max-w-2xl text-base leading-8 text-[#5f5a52] md:text-lg">
               Sleep is not only about tiredness. It is also about whether
               the body can unwind, soften, and move into a more restorative
               state. That is why sleep often becomes easier to understand
-              through stress, evening activation, calming, and recovery.
+              through stress, evening activation, calming, recovery, HRV
+              context, and repeatable wind-down routines.
             </p>
 
             <div className="mt-10 flex flex-wrap gap-4">
@@ -419,6 +474,100 @@ export default function SleepPage() {
         </div>
       </section>
 
+      <section className="border-b border-black/5 bg-[#efe8de]">
+        <div className="mx-auto max-w-7xl px-6 py-24 md:px-10 md:py-28">
+          <div className="max-w-3xl">
+            <p className="text-sm uppercase tracking-[0.18em] text-[#7a756c]">
+              Evening-to-routine pathway
+            </p>
+
+            <h2 className="mt-4 text-3xl font-medium leading-tight tracking-[-0.03em] md:text-5xl">
+              A stronger sleep pathway should move from tiredness into state, recovery, and a realistic wind-down routine
+            </h2>
+
+            <p className="mt-6 max-w-2xl text-base leading-8 text-[#5f5a52] md:text-lg">
+              Sleep pages are most useful when they do not stop at generic sleep
+              hygiene. A better pathway helps someone understand the evening
+              state of the nervous system, review HRV and autonomic research
+              carefully, and then decide whether a guided routine fits their
+              life.
+            </p>
+          </div>
+
+          <div className="mt-14 grid gap-6 md:grid-cols-2 xl:grid-cols-4">
+            {sleepRoutineSteps.map((item) => (
+              <article
+                key={item.title}
+                className="rounded-[2rem] border border-black/5 bg-white/60 p-8 shadow-[0_12px_40px_rgba(31,31,28,0.04)]"
+              >
+                <h3 className="text-2xl font-medium leading-tight text-[#1f1f1c]">
+                  {item.title}
+                </h3>
+                <p className="mt-4 text-sm leading-7 text-[#5f5a52] md:text-base">
+                  {item.description}
+                </p>
+              </article>
+            ))}
+          </div>
+
+          <div className="mt-14 grid gap-6 md:grid-cols-2 xl:grid-cols-4">
+            {sleepBridgeCards.map((item) => (
+              <article
+                key={item.title}
+                className="rounded-[2rem] border border-black/5 bg-[#f8f5f0] p-8 shadow-[0_12px_40px_rgba(31,31,28,0.04)]"
+              >
+                <h3 className="text-2xl font-medium leading-tight text-[#1f1f1c]">
+                  {item.title}
+                </h3>
+                <p className="mt-4 text-sm leading-7 text-[#5f5a52] md:text-base">
+                  {item.description}
+                </p>
+                <Link
+                  href={item.href}
+                  className="mt-8 inline-flex text-sm font-medium text-[#1f1f1c] transition hover:opacity-70"
+                >
+                  {item.linkLabel}
+                </Link>
+              </article>
+            ))}
+          </div>
+
+          <div className="mt-12 rounded-[2rem] border border-black/5 bg-white/60 p-8 md:p-10">
+            <p className="text-sm uppercase tracking-[0.16em] text-[#8a847b]">
+              Responsible boundary
+            </p>
+            <p className="mt-4 max-w-3xl text-base leading-8 text-[#5f5a52] md:text-lg">
+              Neuvago is positioned as a wellness support system for guided
+              routines, not as an insomnia treatment or a replacement for
+              clinical sleep care. It can support a calmer evening rhythm, but
+              it should not be treated as a sleep diagnosis tool, treatment
+              promise, or substitute for medical guidance. Persistent or severe
+              sleep problems should be discussed with a qualified clinician.
+            </p>
+            <div className="mt-6 flex flex-wrap gap-3">
+              <Link
+                href="/how-it-works"
+                className="rounded-full bg-[#1f1f1c] px-5 py-3 text-sm font-medium text-white transition hover:opacity-90"
+              >
+                See how sessions work
+              </Link>
+              <Link
+                href="/product"
+                className="rounded-full border border-black/10 px-5 py-3 text-sm font-medium text-[#1f1f1c] transition hover:bg-white/60"
+              >
+                Explore Neuvago
+              </Link>
+              <Link
+                href="/legal/intended-use"
+                className="rounded-full border border-black/10 px-5 py-3 text-sm font-medium text-[#1f1f1c] transition hover:bg-white/60"
+              >
+                Read intended use
+              </Link>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <section className="bg-[#f7f4ef]">
         <div className="mx-auto max-w-7xl px-6 py-24 md:px-10 md:py-32">
           <div className="rounded-[2.5rem] border border-black/5 bg-gradient-to-br from-[#efe7dc] to-[#e5dbcf] px-8 py-14 shadow-[0_20px_80px_rgba(31,31,28,0.06)] md:px-12 md:py-16">
@@ -465,6 +614,13 @@ export default function SleepPage() {
                   className="rounded-full border border-black/10 bg-transparent px-6 py-3 text-sm font-medium text-[#1f1f1c] transition hover:bg-white/40"
                 >
                   See how Neuvago works
+                </Link>
+
+                <Link
+                  href="/product"
+                  className="rounded-full border border-black/10 bg-transparent px-6 py-3 text-sm font-medium text-[#1f1f1c] transition hover:bg-white/40"
+                >
+                  Explore Neuvago
                 </Link>
               </div>
             </div>

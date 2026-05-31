@@ -21,7 +21,7 @@ export const metadata: Metadata = {
   title:
     "Neuvago | Non-Invasive Vagus Nerve Stimulator and App",
   description:
-    "Meet Neuvago: a premium non-invasive vagus nerve stimulator and app for guided, repeatable routines around stress, sleep, recovery, and daily regulation.",
+    "Meet Neuvago: a premium non-invasive vagus nerve stimulator and app for guided routines, clear safety boundaries, and calmer daily regulation support.",
   alternates: {
     canonical: "/product",
   },
@@ -29,7 +29,7 @@ export const metadata: Metadata = {
     title:
       "Neuvago | Non-Invasive Vagus Nerve Stimulator and App",
     description:
-      "Meet Neuvago: a premium non-invasive vagus nerve stimulator and app for guided, repeatable routines around stress, sleep, recovery, and daily regulation.",
+      "Meet Neuvago: a premium non-invasive vagus nerve stimulator and app for guided routines, clear safety boundaries, and calmer daily regulation support.",
     url: "/product",
     siteName: "Neuvago",
     locale: "en_US",
@@ -40,7 +40,7 @@ export const metadata: Metadata = {
     title:
       "Neuvago | Non-Invasive Vagus Nerve Stimulator and App",
     description:
-      "Meet Neuvago: a premium non-invasive vagus nerve stimulator and app for guided, repeatable routines around stress, sleep, recovery, and daily regulation.",
+      "Meet Neuvago: a premium non-invasive vagus nerve stimulator and app for guided routines, clear safety boundaries, and calmer daily regulation support.",
   },
 };
 

@@ -5,9 +5,9 @@ import { buildAuthorityPageStructuredData } from "@/lib/seo/structured-data";
 import { authorityEditorialDates } from "@/lib/seo/editorial-dates";
 
 const title =
-  "VNS Safety and Tolerability Research | Non-Invasive VNS | Neuvago";
+  "VNS Safety, Side Effects and Tolerability | Neuvago";
 const description =
-  "Explore VNS safety and tolerability research for non-invasive VNS, tVNS and taVNS, including adverse events, study boundaries and wellness positioning.";
+  "Explore VNS safety, side effects, tolerability, contraindication awareness and responsible wellness boundaries for non-invasive VNS, tVNS and taVNS.";
 const path = "/research/topics/safety-and-tolerability";
 
 export const metadata: Metadata = {
@@ -45,7 +45,7 @@ const quickAnswers = [
   {
     title: "Wellness positioning needs boundaries",
     description:
-      "A consumer wellness product should connect safety language to intended use, clear exclusions, gentle guidance, and a visible path to medical advice when appropriate.",
+      "A consumer wellness product should connect safety language to intended use, side effects, contraindication awareness, gentle guidance, and a visible path to medical advice when appropriate.",
   },
 ];
 
@@ -54,7 +54,7 @@ const evidenceSignals = [
     title: "tVNS safety and tolerability review",
     source: "Redgrave et al., 2018",
     description:
-      "A systematic review of human transcutaneous VNS studies reported that tVNS was generally safe and well tolerated at tested doses, while also calling for better adverse-event reporting.",
+      "A systematic review of human transcutaneous VNS studies reported generally favorable safety and tolerability at tested doses, with skin irritation, headache, and nasopharyngitis among the most common reported effects, while also calling for better adverse-event reporting.",
     href: "https://pubmed.ncbi.nlm.nih.gov/30217648/",
     linkLabel: "View PubMed record",
   },
@@ -111,12 +111,12 @@ const tolerabilityConsiderations = [
   {
     title: "Local skin sensation or irritation",
     description:
-      "External stimulation involves contact with the skin. Placement, fit, gel, pressure, and session duration can affect comfort.",
+      "External stimulation involves contact with the skin. Placement, fit, gel, pressure, and session duration can affect comfort, and mild local effects should be described plainly rather than hidden.",
   },
   {
-    title: "Headache, dizziness, or nausea",
+    title: "Headache, dizziness, nausea, or discomfort",
     description:
-      "Reviews of tVNS research discuss non-serious adverse events such as headache, dizziness, nausea, and related symptoms. User-facing instructions should make stop-use guidance clear.",
+      "Reviews of tVNS research discuss non-serious adverse events such as headache, dizziness, nausea, and related symptoms. User-facing instructions should make adjustment and stop-use guidance clear.",
   },
   {
     title: "Cardiac and implanted-device questions",
@@ -130,6 +130,29 @@ const tolerabilityConsiderations = [
   },
 ];
 
+const beforeUseBoundaries = [
+  {
+    title: "Who should ask a clinician first",
+    description:
+      "People with implanted electronic devices, heart rhythm concerns, seizure history, pregnancy-related questions, active medical treatment plans, or significant medical conditions should get qualified clinical guidance before using any stimulation product.",
+  },
+  {
+    title: "When to pause or stop",
+    description:
+      "If stimulation feels painful, unusually uncomfortable, dizzying, or concerning, the user experience should point toward pausing, lowering intensity, stopping use, and seeking appropriate guidance rather than pushing through.",
+  },
+  {
+    title: "Do not borrow another device’s indication",
+    description:
+      "A regulated nVNS device cleared for a specific medical indication does not automatically grant the same indication, use case, or claim language to another wellness product.",
+  },
+  {
+    title: "Non-invasive is not the same as risk-free",
+    description:
+      "External stimulation avoids implanted hardware, but safety still depends on device design, instructions, placement, intensity, session duration, population, and intended use.",
+  },
+];
+
 const neuvagoPositioning = [
   {
     title: "Wellness support, not treatment claims",
@@ -139,7 +162,7 @@ const neuvagoPositioning = [
   {
     title: "Guided use, not self-experimentation",
     description:
-      "The app should help frame session structure, intensity, timing, and consistency so the user is not left to improvise a protocol alone.",
+      "The app should help frame session structure, intensity, timing, comfort, and consistency so the user is not left to improvise a protocol alone.",
   },
   {
     title: "Comfort over intensity",
@@ -149,7 +172,7 @@ const neuvagoPositioning = [
   {
     title: "Visible safety boundaries",
     description:
-      "The site should keep intended use, medical disclaimers, regulatory status, and product safety information easy to find from research and product pages.",
+      "The site should keep intended use, medical disclaimers, regulatory status, side effects, and product safety information easy to find from research and product pages.",
   },
 ];
 
@@ -162,7 +185,7 @@ const responsibleQuestions = [
   {
     title: "Who was included or excluded?",
     description:
-      "Safety interpretation depends on who participated and who was excluded. This matters especially for cardiac history, implanted devices, pregnancy, and pediatric use.",
+      "Safety interpretation depends on who participated and who was excluded. This matters especially for cardiac history, implanted devices, pregnancy, neurological history, and pediatric use.",
   },
   {
     title: "What adverse events were reported?",
@@ -211,6 +234,13 @@ const internalPathways = [
       "Move from research boundaries into the practical device, app guidance, session structure, and daily use experience.",
     href: "/how-it-works",
     linkLabel: "See how it works",
+  },
+  {
+    title: "Explore the product",
+    description:
+      "See how Neuvago describes the non-invasive vagus nerve stimulator and app system without turning research context into medical claims.",
+    href: "/product",
+    linkLabel: "Explore Neuvago",
   },
   {
     title: "Medical disclaimer",
@@ -407,6 +437,9 @@ export default function SafetyAndTolerabilityResearchPage() {
       "transcutaneous vagus nerve stimulation adverse events",
       "auricular vagus nerve stimulation tolerability",
       "vagus nerve stimulator safety",
+      "vagus nerve stimulation side effects",
+      "non-invasive vagus nerve stimulation contraindications",
+      "who should not use vagus nerve stimulation",
     ],
     breadcrumbs: [
       { name: "Home", path: "/" },
@@ -427,7 +460,7 @@ export default function SafetyAndTolerabilityResearchPage() {
         <div className="mx-auto grid min-h-[80vh] max-w-7xl items-center gap-16 px-6 py-20 md:px-10 lg:grid-cols-[1.05fr_0.95fr] lg:py-28">
           <div className="max-w-3xl">
             <p className="mb-5 text-sm uppercase tracking-[0.18em] text-[#7a756c]">
-              Research / Topics / Safety and tolerability
+              Research / Topics / Safety, side effects and tolerability
             </p>
 
             <h1 className="text-4xl font-medium leading-[1.05] tracking-[-0.03em] md:text-6xl lg:text-7xl">
@@ -643,17 +676,44 @@ export default function SafetyAndTolerabilityResearchPage() {
         <div className="mx-auto max-w-7xl px-6 py-24 md:px-10 md:py-28">
           <div className="max-w-3xl">
             <p className="text-sm uppercase tracking-[0.18em] text-[#7a756c]">
-              Common tolerability considerations
+              Side effects and tolerability considerations
             </p>
 
             <h2 className="mt-4 text-3xl font-medium leading-tight tracking-[-0.03em] md:text-5xl">
-              Adverse events belong in the conversation, even when they are mild
+              Side effects and adverse events belong in the conversation, even when they are mild
               or temporary
             </h2>
           </div>
 
           <div className="mt-14 grid gap-6 md:grid-cols-2 xl:grid-cols-4">
             {tolerabilityConsiderations.map((item) => (
+              <TextCard key={item.title} {...item} />
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="border-b border-black/5 bg-[#f2eee8]">
+        <div className="mx-auto max-w-7xl px-6 py-24 md:px-10 md:py-28">
+          <div className="max-w-3xl">
+            <p className="text-sm uppercase tracking-[0.18em] text-[#7a756c]">
+              Before-use boundaries
+            </p>
+
+            <h2 className="mt-4 text-3xl font-medium leading-tight tracking-[-0.03em] md:text-5xl">
+              A good safety page answers who should pause, ask, or avoid guessing
+            </h2>
+
+            <p className="mt-6 max-w-2xl text-base leading-8 text-[#5f5a52] md:text-lg">
+              Safety communication should not rely on a vague phrase like well
+              tolerated. It should help people understand when the website is
+              not enough and when individual medical guidance is the responsible
+              next step.
+            </p>
+          </div>
+
+          <div className="mt-14 grid gap-6 md:grid-cols-2 xl:grid-cols-4">
+            {beforeUseBoundaries.map((item) => (
               <TextCard key={item.title} {...item} />
             ))}
           </div>

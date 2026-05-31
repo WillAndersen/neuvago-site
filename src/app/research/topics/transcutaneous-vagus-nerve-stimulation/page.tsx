@@ -5,7 +5,7 @@ import { buildAuthorityPageStructuredData } from "@/lib/seo/structured-data";
 import { authorityEditorialDates } from "@/lib/seo/editorial-dates";
 
 const title =
-  "Transcutaneous VNS Research | tVNS, taVNS and Methods | Neuvago";
+  "Transcutaneous VNS Research | tVNS, taVNS, Safety and Methods | Neuvago";
 const description =
   "Explore transcutaneous VNS research, including tVNS, taVNS, auricular stimulation, stimulation sites, protocol variables, safety and interpretation limits.";
 const path = "/research/topics/transcutaneous-vagus-nerve-stimulation";
@@ -138,7 +138,7 @@ const interpretationPrinciples = [
   {
     title: "Do not merge all VNS evidence into one claim",
     description:
-      "Evidence for implanted VNS, cervical nVNS, auricular taVNS, and a wellness device may be related, but it is not interchangeable.",
+      "Evidence for implanted VNS, cervical nVNS, auricular taVNS, and a wellness device may be related, but it is not interchangeable across benefits, safety, side effects, or claims.",
   },
   {
     title: "Target engagement is the central question",
@@ -153,7 +153,7 @@ const interpretationPrinciples = [
   {
     title: "Clinical findings need context",
     description:
-      "A positive trial in one condition, population, or device does not automatically support broad wellness claims or all-day consumer use.",
+      "A positive trial in one condition, population, or device does not automatically support broad wellness claims, product equivalence, or all-day consumer use.",
   },
 ];
 
@@ -166,7 +166,7 @@ const neuvagoUse = [
   {
     title: "Keep product language conservative",
     description:
-      "Neuvago can explain non-invasive stimulation, app guidance, session structure, and wellness support without borrowing clinical indications from other devices.",
+      "Neuvago can explain non-invasive stimulation, app guidance, session structure, comfort, and wellness support without borrowing clinical indications or safety assumptions from other devices.",
   },
   {
     title: "Link safety and method together",
@@ -191,7 +191,7 @@ const internalPathways = [
   {
     title: "Safety and tolerability",
     description:
-      "Understand how adverse events, study populations, contraindication awareness, and device differences shape responsible interpretation.",
+      "Understand how adverse events, side effects, study populations, contraindication awareness, and device differences shape responsible interpretation.",
     href: "/research/topics/safety-and-tolerability",
     linkLabel: "View safety topic",
   },

@@ -108,7 +108,7 @@ const whatToEvaluate = [
   {
     title: "How contact and comfort are handled",
     description:
-      "For everyday use, a device should make placement, skin contact, comfort, and session consistency easier rather than making the user guess.",
+      "For everyday use, a device should make placement, skin contact, comfort, stop-use guidance, and session consistency easier rather than making the user guess.",
   },
   {
     title: "What settings are used",
@@ -163,7 +163,7 @@ const boundaries = [
   {
     title: "Medical contexts need clinical guidance",
     description:
-      "People with implanted electronic devices, heart rhythm concerns, pregnancy-related questions, medical conditions, or active treatment plans should speak with a qualified clinician before use.",
+      "People with implanted electronic devices, heart rhythm concerns, seizure history, pregnancy-related questions, medical conditions, or active treatment plans should speak with a qualified clinician before use.",
   },
 ];
 
@@ -505,7 +505,7 @@ export default function AuricularVagusNerveStimulationPage() {
             </p>
 
             <p className="mt-6 max-w-2xl text-base leading-8 text-[#5f5a52]">
-              That does not mean every ear device, placement, sensation, or
+              That does not mean every ear device, placement, sensation, side-effect profile, or
               protocol is equivalent. A good explanation should make the method
               clear while keeping evidence, safety, intended use, and product
               claims in the right lane.

@@ -7,13 +7,13 @@ export const metadata = {
   title:
     "Vagus Nerve Stimulation Research | Evidence Overview | Neuvago",
   description:
-    "Explore vagus nerve stimulation research across implanted, non-invasive, auricular and transcutaneous approaches, including evidence and interpretation limits.",
+    "Explore vagus nerve stimulation research across implanted, non-invasive, auricular and transcutaneous approaches, including evidence, safety and interpretation limits.",
   alternates: {
     canonical: "/research/topics/vagus-nerve-stimulation",
   },
   openGraph: {
     title: "Vagus Nerve Stimulation Research | Evidence Overview | Neuvago",
-    description: "Explore vagus nerve stimulation research across implanted, non-invasive, auricular and transcutaneous approaches, including evidence and interpretation limits.",
+    description: "Explore vagus nerve stimulation research across implanted, non-invasive, auricular and transcutaneous approaches, including evidence, safety and interpretation limits.",
     url: "/research/topics/vagus-nerve-stimulation",
     siteName: "Neuvago",
     locale: "en_US",
@@ -22,7 +22,7 @@ export const metadata = {
   twitter: {
     card: "summary_large_image",
     title: "Vagus Nerve Stimulation Research | Evidence Overview | Neuvago",
-    description: "Explore vagus nerve stimulation research across implanted, non-invasive, auricular and transcutaneous approaches, including evidence and interpretation limits.",
+    description: "Explore vagus nerve stimulation research across implanted, non-invasive, auricular and transcutaneous approaches, including evidence, safety and interpretation limits.",
   },
 }
 
@@ -64,6 +64,29 @@ const researchThemes = [
     title: "Translation and interpretation",
     description:
       "A central question in the field is how findings from implanted devices, auricular stimulation, imaging, and physiology should be interpreted across different use cases and populations.",
+  },
+]
+
+const evidenceBoundaries = [
+  {
+    title: "Evidence does not transfer automatically",
+    description:
+      "A finding from implanted VNS, cervical nVNS, auricular taVNS, or one research protocol should not be treated as proof for every non-invasive vagus nerve stimulator or wellness use case.",
+  },
+  {
+    title: "Device and protocol details matter",
+    description:
+      "Placement, stimulation parameters, session length, control condition, participant group, and outcome measure shape what a VNS study can responsibly support.",
+  },
+  {
+    title: "Safety is part of the evidence question",
+    description:
+      "An evidence overview should connect potential benefits with side effects, tolerability, contraindication awareness, and product-specific intended use.",
+  },
+  {
+    title: "Neuvago should stay in a wellness lane",
+    description:
+      "The product bridge should explain app-guided sessions, comfort, routine design, and clear boundaries without borrowing medical indications from other devices.",
   },
 ]
 
@@ -235,7 +258,7 @@ function StudyCard({
 export default function VagusNerveStimulationResearchPage() {
   const structuredData = buildAuthorityPageStructuredData({
     title: "Vagus Nerve Stimulation Research | Evidence Overview | Neuvago",
-    description: "Explore vagus nerve stimulation research across implanted, non-invasive, auricular and transcutaneous approaches, including evidence and interpretation limits.",
+    description: "Explore vagus nerve stimulation research across implanted, non-invasive, auricular and transcutaneous approaches, including evidence, safety and interpretation limits.",
     path: "/research/topics/vagus-nerve-stimulation",
     articleSection: "Research topics",
     dateModified: authorityEditorialDates.vnsClusterModified,
@@ -315,7 +338,8 @@ export default function VagusNerveStimulationResearchPage() {
             <p className="mt-6 max-w-2xl text-base leading-8 text-[#5f5a52]">
               This topic page groups those research directions together so the
               literature can be understood as a broader field rather than as a
-              disconnected set of individual papers.
+              disconnected set of individual papers. It also keeps method, safety,
+              and product claims separated so the evidence is not overstated.
             </p>
           </div>
 
@@ -357,6 +381,42 @@ export default function VagusNerveStimulationResearchPage() {
 
           <div className="mt-12 grid gap-6 md:grid-cols-2 xl:grid-cols-4">
             {researchThemes.map((item) => (
+              <article
+                key={item.title}
+                className="rounded-[1.5rem] border border-black/8 bg-white/70 p-7 shadow-[0_8px_24px_rgba(31,31,28,0.03)]"
+              >
+                <h3 className="text-[1.35rem] font-medium leading-tight tracking-[-0.02em] text-[#1f1f1c]">
+                  {item.title}
+                </h3>
+                <p className="mt-4 text-sm leading-7 text-[#5f5a52] md:text-[0.96rem]">
+                  {item.description}
+                </p>
+              </article>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="border-b border-black/5 bg-[#f2eee8]">
+        <div className="mx-auto max-w-7xl px-6 py-20 md:px-10 md:py-24">
+          <div className="max-w-3xl">
+            <p className="text-sm uppercase tracking-[0.18em] text-[#7a756c]">
+              Evidence boundaries
+            </p>
+
+            <h2 className="mt-4 text-3xl font-medium leading-tight tracking-[-0.03em] md:text-5xl">
+              The strongest research page also explains what the evidence does not prove
+            </h2>
+
+            <p className="mt-6 max-w-2xl text-base leading-8 text-[#5f5a52] md:text-lg">
+              Users often ask whether VNS works. A responsible answer is not a
+              yes-or-no slogan. It explains the method studied, the population,
+              the protocol, the safety context, and the claim boundary.
+            </p>
+          </div>
+
+          <div className="mt-12 grid gap-6 md:grid-cols-2 xl:grid-cols-4">
+            {evidenceBoundaries.map((item) => (
               <article
                 key={item.title}
                 className="rounded-[1.5rem] border border-black/8 bg-white/70 p-7 shadow-[0_8px_24px_rgba(31,31,28,0.03)]"

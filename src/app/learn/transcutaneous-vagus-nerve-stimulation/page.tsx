@@ -5,7 +5,7 @@ import { buildAuthorityPageStructuredData } from "@/lib/seo/structured-data";
 import { authorityEditorialDates } from "@/lib/seo/editorial-dates";
 
 const title =
-  "Transcutaneous Vagus Nerve Stimulation | tVNS Guide | Neuvago";
+  "Transcutaneous Vagus Nerve Stimulation | tVNS and taVNS Guide | Neuvago";
 const description =
   "Learn what transcutaneous vagus nerve stimulation means, how tVNS and taVNS relate to non-invasive VNS, and how to evaluate the category responsibly.";
 const path = "/learn/transcutaneous-vagus-nerve-stimulation";
@@ -90,7 +90,7 @@ const whyItMatters = [
   {
     title: "It gives users better evaluation criteria",
     description:
-      "A user should know to ask about placement, comfort, session length, guidance, stimulation settings, safety boundaries, and intended use — not just whether something says VNS.",
+      "A user should know to ask about placement, comfort, session length, guidance, stimulation settings, safety boundaries, side effects, and intended use — not just whether something says VNS.",
   },
   {
     title: "It supports responsible product education",
@@ -108,12 +108,12 @@ const evaluationCriteria = [
   {
     title: "Which settings are used",
     description:
-      "Frequency, pulse width, intensity, waveform, session length, and duty cycle can all shape comfort, tolerability, and research interpretation.",
+      "Frequency, pulse width, intensity, waveform, session length, and duty cycle can all shape comfort, tolerability, side effects, and research interpretation.",
   },
   {
     title: "What the session is for",
     description:
-      "A clinical protocol, laboratory study, and consumer wellness routine can share vocabulary without having the same purpose, evidence, or claims.",
+      "A clinical protocol, laboratory study, and consumer wellness routine can share vocabulary without having the same purpose, evidence, safety assumptions, or claims.",
   },
   {
     title: "How safety is explained",
@@ -149,7 +149,7 @@ const neuvagoFit = [
   {
     title: "A simpler explanation for a technical category",
     description:
-      "Neuvago can make tVNS understandable without turning the product page into a dense research manual or making claims beyond the intended wellness use.",
+      "Neuvago can make tVNS understandable without turning the product page into a dense research manual, borrowing clinical indications, or making claims beyond the intended wellness use.",
   },
   {
     title: "Guidance matters as much as hardware",

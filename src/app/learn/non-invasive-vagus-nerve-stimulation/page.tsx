@@ -5,9 +5,9 @@ import { buildAuthorityPageStructuredData } from "@/lib/seo/structured-data";
 import { authorityEditorialDates } from "@/lib/seo/editorial-dates";
 
 const title =
-  "Non-Invasive Vagus Nerve Stimulation | nVNS Device Guide | Neuvago";
+  "Non-Invasive Vagus Nerve Stimulator Guide | nVNS | Neuvago";
 const description =
-  "Understand non-invasive VNS, including nVNS, tVNS and taVNS, how external devices differ from implanted VNS, and how guided wellness use fits in.";
+  "Understand non-invasive VNS, including nVNS, tVNS, taVNS, device differences, safety boundaries, and how guided wellness use fits in.";
 const path = "/learn/non-invasive-vagus-nerve-stimulation";
 
 export const metadata: Metadata = {
@@ -40,7 +40,7 @@ const quickAnswers = [
   {
     title: "The phrase covers several approaches",
     description:
-      "nVNS can include neck-based stimulation, transcutaneous VNS, and ear-based auricular approaches. Each method has its own device design, target area, settings, evidence, and intended use.",
+      "nVNS can include neck-based stimulation, transcutaneous VNS, and ear-based auricular approaches. Each method has its own device design, target area, settings, safety profile, evidence, and intended use.",
   },
   {
     title: "Wellness use needs conservative language",
@@ -103,7 +103,7 @@ const whatToEvaluate = [
   {
     title: "How sessions are guided",
     description:
-      "A useful device experience should make session length, comfort, intensity, and routine easy to understand without asking the user to interpret everything alone.",
+      "A useful device experience should make placement, session length, comfort, intensity, stop-use guidance, and routine easy to understand without asking the user to interpret everything alone.",
   },
   {
     title: "What the product claims",
@@ -111,9 +111,9 @@ const whatToEvaluate = [
       "The strongest language is precise: support, routine, regulation, recovery habits, and user education. Avoid claims that sound like diagnosis or treatment unless they are properly cleared.",
   },
   {
-    title: "What evidence is being referenced",
+    title: "What safety boundaries are visible",
     description:
-      "Evidence for implanted VNS, one non-invasive protocol, or one study population should not be casually generalized to every device or every user goal.",
+      "A credible non-invasive VNS page should make side effects, contraindication awareness, intended use, and medical-disclaimer links visible instead of hiding them in legal copy only.",
   },
 ];
 
@@ -139,7 +139,7 @@ const neuvagoFit = [
   {
     title: "External stimulation",
     description:
-      "Neuvago is positioned around non-invasive use. It is designed as an external wellness device, not as an implanted clinical system.",
+      "Neuvago is positioned around non-invasive use. It is designed as an external wellness device and app system, not as an implanted clinical system.",
   },
   {
     title: "App-guided sessions",
@@ -172,7 +172,12 @@ const boundaries = [
   {
     title: "Medical situations need medical advice",
     description:
-      "People with medical conditions, implanted electronic devices, pregnancy-related questions, heart rhythm concerns, or active treatment plans should speak with a qualified clinician before use.",
+      "People with medical conditions, implanted electronic devices, pregnancy-related questions, heart rhythm concerns, seizure history, or active treatment plans should speak with a qualified clinician before use.",
+  },
+  {
+    title: "Side effects should be named clearly",
+    description:
+      "Even when research describes tVNS or taVNS as generally well tolerated, user-facing product education should still mention local irritation, discomfort, headache, dizziness, and stop-use guidance in plain language.",
   },
 ];
 
@@ -669,7 +674,7 @@ export default function NonInvasiveVagusNerveStimulationPage() {
               concept. Someone searching for non-invasive vagus nerve
               stimulation is usually closer to the product category. They may
               already understand that stimulation exists and want to know what
-              safer, more accessible, non-surgical options look like.
+              more accessible, non-surgical options look like — and what safety boundaries should still be visible.
             </p>
 
             <p className="mt-6 max-w-2xl text-base leading-8 text-[#5f5a52]">

@@ -37,9 +37,9 @@ export const howItWorksPageContent = {
   hero: {
     visible: true,
     eyebrow: "How it works",
-    title: "How Neuvago’s non-invasive VNS system works in practice.",
+    title: "How to use Neuvago’s non-invasive VNS system in practice.",
     description:
-      "Neuvago is designed to be simple to understand in real life: begin with the external device, follow guided app sessions, and return to the routine over time.",
+      "Neuvago is designed to make a non-invasive vagus nerve stimulator easier to understand in real life: place the external device comfortably, follow guided app sessions, and return to the routine over time.",
     primaryCta: {
       label: "Explore Neuvago",
       href: "/product",
@@ -56,7 +56,7 @@ export const howItWorksPageContent = {
       src: "/images/home/hero-device-app-mobile.png",
       alt: "Neuvago device and app shown together for mobile how-it-works hero layout.",
     } satisfies HowItWorksImage,
-    proofLine: ["Device + app", "Simple routine", "Built for daily use"],
+    proofLine: ["Device + app", "Comfort-first routine", "Built for daily use"],
   } satisfies HowItWorksSectionVisibility & {
     eyebrow: string;
     title: string;
@@ -72,12 +72,12 @@ export const howItWorksPageContent = {
     visible: true,
     title: "What each part of the system does",
     description:
-      "The easiest way to understand Neuvago is to look at the job of each layer: the device starts the experience, the app guides it, and repetition makes it useful in daily life.",
+      "The easiest way to understand Neuvago is to look at the job of each layer: the non-invasive device starts the experience, the app guides it, and repetition makes it useful in daily life.",
     cards: [
       {
         title: "The device",
         description:
-          "A non-invasive physical starting point designed to feel simple to begin with.",
+          "A non-invasive vagus nerve stimulator designed to feel simple, calm, and comfortable to begin with.",
       },
       {
         title: "The app",
@@ -105,12 +105,12 @@ export const howItWorksPageContent = {
     visible: true,
     title: "How it works, step by step",
     description:
-      "In practice, the flow is straightforward: start with the device, follow the guidance in the app, and build a routine you can come back to.",
+      "In practice, the flow is straightforward: place the device comfortably, follow guidance in the app, and build a routine you can come back to without chasing intensity.",
     items: [
       {
-        title: "Place the device",
+        title: "Place the device comfortably",
         description:
-          "Begin with the device as the physical starting point for the experience.",
+          "Begin with the device as the physical starting point for the experience. Placement, contact, and comfort are part of the routine, not afterthoughts.",
         image: {
           src: "/images/home/device-cutout-front-angle.png",
           alt: "Front and angled view of the Neuvago device.",
@@ -119,7 +119,7 @@ export const howItWorksPageContent = {
       {
         title: "Follow the guidance in the app",
         description:
-          "Use the app to choose guidance that fits the moment, whether you want calm, recovery, or evening wind-down.",
+          "Use the app to choose guidance that fits the moment, while session length, rhythm, and intensity stay easy to understand.",
         image: {
           src: "/images/home/app-mockup-session.png",
           alt: "Neuvago session screen shown on a smartphone.",
@@ -128,7 +128,7 @@ export const howItWorksPageContent = {
       {
         title: "Return over time",
         description:
-          "Repeat it in ways that fit real life so the system becomes more familiar and more useful over time.",
+          "Repeat it in ways that fit real life so the system becomes more familiar, more comfortable, and easier to return to over time.",
         image: {
           src: "/images/home/app-mockup-progress.png",
           alt: "Neuvago progress screen showing continued use over time.",
@@ -150,7 +150,7 @@ export const howItWorksPageContent = {
       {
         title: "Session guidance",
         description:
-          "Choose from sessions designed for calm, recovery, regulation, or evening wind-down.",
+          "Choose from sessions designed for calm, recovery, regulation, or evening wind-down, with a structure that discourages guesswork.",
       },
       {
         title: "Clearer structure",
@@ -236,7 +236,7 @@ export const howItWorksPageContent = {
       {
         title: "Simple beats intense",
         description:
-          "A routine you can actually repeat is more useful than one that feels overly ambitious or demanding.",
+          "A comfortable routine you can actually repeat is more useful than one that feels overly ambitious, confusing, or demanding.",
       },
       {
         title: "Return builds familiarity",
@@ -246,7 +246,7 @@ export const howItWorksPageContent = {
       {
         title: "Consistency supports the experience",
         description:
-          "The value comes from realistic repetition, not from trying to force intensity or perfection.",
+          "The value comes from realistic repetition, not from trying to force intensity, sensation, or perfection.",
       },
     ] satisfies HowItWorksCard[],
     image: {
@@ -269,7 +269,7 @@ export const howItWorksPageContent = {
       {
         question: "Do I use the device together with the app?",
         answer:
-          "Yes. Neuvago is designed as a connected experience where the device creates the physical entry point and the app provides guidance and continuity.",
+          "Yes. Neuvago is designed as a connected experience where the device creates the physical entry point and the app provides guidance, session structure, and continuity.",
       },
       {
         question: "Is Neuvago meant for daily use?",
@@ -279,12 +279,17 @@ export const howItWorksPageContent = {
       {
         question: "Is it designed to feel calm rather than intense?",
         answer:
-          "Yes. The system is intentionally built around a calmer, more supportive experience rather than intensity or overstimulation.",
+          "Yes. The system is intentionally built around comfort, clarity, and a calmer supportive experience rather than intensity or overstimulation.",
       },
       {
         question: "Do I need to understand the research before using it?",
         answer:
-          "No. The research layer is there if you want to go deeper, but the experience itself is designed to feel simple and approachable.",
+          "No. The research layer is there if you want to go deeper, but the experience itself is designed to feel simple and approachable. If you have a medical condition, implanted electronic device, heart rhythm concern, or pregnancy-related question, speak with a qualified clinician before use.",
+      },
+      {
+        question: "How should I think about intensity?",
+        answer:
+          "A stronger sensation is not automatically a better session. Neuvago should be understood through comfort, guidance, and repeatability rather than pushing stimulation harder.",
       },
     ] satisfies HowItWorksFaqItem[],
   } satisfies HowItWorksSectionVisibility & {

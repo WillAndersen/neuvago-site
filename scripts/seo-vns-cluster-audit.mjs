@@ -32,6 +32,40 @@ const requiredBuildRoutes = [
   "/research/topics/autonomic-regulation",
 ];
 
+const requiredP24Markers = [
+  {
+    file: "src/content/product.ts",
+    markers: [
+      "non-invasive vagus nerve stimulator",
+      "Clear wellness boundaries",
+      "Who should ask a clinician before use?",
+    ],
+  },
+  {
+    file: "src/content/how-it-works.ts",
+    markers: [
+      "How to use Neuvago’s non-invasive VNS system in practice.",
+      "How should I think about intensity?",
+    ],
+  },
+  {
+    file: "src/app/research/topics/safety-and-tolerability/page.tsx",
+    markers: [
+      "side effects",
+      "contraindication awareness",
+      "Who should ask a clinician first",
+      "Non-invasive is not the same as risk-free",
+    ],
+  },
+  {
+    file: "src/app/research/topics/vagus-nerve-stimulation/page.tsx",
+    markers: [
+      "Evidence boundaries",
+      "Evidence does not transfer automatically",
+    ],
+  },
+];
+
 const errors = [];
 const warnings = [];
 
@@ -85,6 +119,21 @@ for (const route of clusterRoutes) {
 for (const route of requiredBuildRoutes) {
   if (!existsSync(pageFileForRoute(route))) {
     errors.push(`${route} will not appear in the Next.js route list because its page.tsx is missing.`);
+  }
+}
+
+for (const { file, markers } of requiredP24Markers) {
+  const source = readIfExists(path.join(repoRoot, file));
+
+  if (!source) {
+    errors.push(`${file} is missing.`);
+    continue;
+  }
+
+  for (const marker of markers) {
+    if (!source.includes(marker)) {
+      errors.push(`${file} is missing P2.4 marker: ${marker}`);
+    }
   }
 }
 

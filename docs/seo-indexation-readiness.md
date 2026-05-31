@@ -86,3 +86,23 @@ Track these as separate query groups:
 ## Do not overreact early
 
 Avoid rewriting titles or content in the first few weeks unless there is a technical indexing issue. Early impressions and position data can be noisy. Prioritize crawlability, clean internal links, stable canonicals, and consistent trust language before making large content changes.
+
+## P2.4 conversion and safety gap pass
+
+P2.4 is not a new-page phase. It sharpens existing pages so the VNS authority cluster supports commercial intent and trust more clearly.
+
+Manual checks after P2.4:
+
+- `/product` uses `non-invasive vagus nerve stimulator` and `vagus nerve stimulation device` language naturally without sounding clinical.
+- `/how-it-works` answers the practical intent behind `how to use a vagus nerve stimulator` through placement, comfort, app guidance, and routine structure.
+- `/research/topics/safety-and-tolerability` explicitly covers side effects, adverse events, contraindication awareness, who should ask a clinician first, and why non-invasive does not mean risk-free.
+- `/research/topics/vagus-nerve-stimulation` includes an evidence-boundaries section so research context is not translated into broad product claims.
+- The commercial bridge from research to `/how-it-works` and `/product` stays calm and does not borrow indications from other devices.
+
+P2.4 verification:
+
+```bash
+npm run lint && npm run build && npm run seo:vns
+```
+
+The audit now also checks for selected P2.4 markers in product copy, how-it-works copy, the safety topic, and the VNS research overview.

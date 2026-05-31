@@ -49,9 +49,9 @@ export const productPageContent = {
   hero: {
     visible: true,
     eyebrow: "Product",
-    title: "A non-invasive vagus nerve stimulator designed for calmer daily regulation.",
+    title: "A non-invasive vagus nerve stimulator for guided daily regulation.",
     description:
-      "Neuvago pairs a premium non-invasive vagus nerve stimulator with a guided app experience designed to support calmer routines around stress, recovery, sleep, and everyday nervous system balance.",
+      "Neuvago pairs a premium non-invasive vagus nerve stimulator with a guided app experience for calmer routines around stress, recovery, sleep, and everyday nervous system balance — with clear wellness boundaries and practical safety context.",
     primaryCta: {
       label: "How it works",
       href: "/how-it-works",
@@ -68,7 +68,7 @@ export const productPageContent = {
       src: "/images/home/hero-device-app-mobile.png",
       alt: "Neuvago device and app shown together for mobile product hero layout.",
     } satisfies ProductImage,
-    proofLine: ["Non-invasive", "Premium by design", "Built for daily use"],
+    proofLine: ["Non-invasive VNS", "App-guided sessions", "Clear wellness boundaries"],
   } satisfies ProductSectionVisibility & {
     eyebrow: string;
     title: string;
@@ -82,13 +82,13 @@ export const productPageContent = {
 
   whatIsNeuvago: {
     visible: true,
-    title: "A premium device at the center of a connected system",
+    title: "A premium vagus nerve stimulation device at the center of a connected system",
     description:
-      "At the center of Neuvago is a non-invasive device designed to feel calm, clear, and easy to live with. The app adds guidance and continuity, but the product starts with a physical experience that feels simple to begin and simple to return to.",
+      "At the center of Neuvago is a non-invasive vagus nerve stimulation device designed to feel calm, clear, and easy to live with. The app adds guidance, session structure, and continuity, while the product experience stays grounded in gentle daily wellness support rather than medical treatment claims.",
     bullets: [
-      "A non-invasive device designed for calmer daily support",
+      "A non-invasive vagus nerve stimulator designed for calmer daily support",
       "Made to feel premium, gentle, and easy to use",
-      "Connected to an app that adds guidance and continuity",
+      "Connected to an app that adds placement guidance, session rhythm, and continuity",
     ],
     image: {
       src: "/images/home/device-phone-paired-editorial.png",
@@ -104,14 +104,14 @@ export const productPageContent = {
   whyItFeelsDifferent: {
     visible: true,
     eyebrow: "Why it feels different",
-    title: "Designed to feel gentler, calmer, and easier to live with.",
+    title: "Designed to feel gentler, clearer, and easier to live with.",
     description:
-      "From form factor to flow, Neuvago is built to feel supportive rather than overwhelming. The goal is not intensity or complexity, but a calmer physical product experience that fits naturally into everyday life.",
+      "From form factor to flow, Neuvago is built to feel supportive rather than overwhelming. The goal is not intensity, self-experimentation, or complicated protocols, but a calmer device-and-app experience that fits naturally into everyday life.",
     cards: [
       {
-        title: "Gentle by design",
+        title: "Comfort before intensity",
         description:
-          "Built to feel calm and supportive rather than intense or overstimulating.",
+          "Built to feel calm and supportive rather than intense, overstimulating, or confusing to adjust.",
       },
       {
         title: "Made for real routines",
@@ -121,7 +121,7 @@ export const productPageContent = {
       {
         title: "Device and app together",
         description:
-          "A connected experience that combines physical support with guided structure.",
+          "A connected experience that combines the physical vagus nerve stimulator with guided session structure.",
       },
       {
         title: "Premium, calm experience",
@@ -129,9 +129,9 @@ export const productPageContent = {
           "Soft visual language, simple flows, and a more grounded way to engage.",
       },
       {
-        title: "Built for consistency",
+        title: "Boundaries stay visible",
         description:
-          "Designed to be something you can return to over time, not just try once.",
+          "Research context, intended use, and safety guidance stay connected so the product does not sound more clinical than it is.",
       },
     ] satisfies ProductCard[],
     detailImage: {
@@ -241,21 +241,21 @@ export const productPageContent = {
     visible: true,
     title: "A simple three-step routine",
     description:
-      "You do not need a complicated protocol to understand the product. In practice, Neuvago is designed to feel simple: start with the device, follow the guidance in the app, and return to it over time.",
+      "You do not need a complicated protocol to understand the product. In practice, Neuvago is designed to feel simple: place the device comfortably, follow the guidance in the app, and return to it over time.",
     steps: [
       {
-        title: "Place the device",
+        title: "Place the device comfortably",
         description:
-          "Begin with the device as the physical starting point for the experience.",
+          "Begin with the device as the physical starting point, with comfort and clear placement guidance treated as part of the experience.",
         image: {
           src: "/images/home/device-cutout-front-angle.png",
           alt: "Front and angled view of the Neuvago device.",
         },
       },
       {
-        title: "Start a session in the app",
+        title: "Start a guided session in the app",
         description:
-          "Use the app to choose guidance that fits the moment, whether you want calm, recovery, or evening wind-down.",
+          "Use the app to choose guidance that fits the moment, while keeping session length, rhythm, and intensity easy to understand.",
         image: {
           src: "/images/home/app-mockup-session.png",
           alt: "Neuvago session screen shown on a smartphone.",
@@ -279,9 +279,9 @@ export const productPageContent = {
 
   trustBridge: {
     visible: true,
-    title: "Grounded in research, made for everyday life",
+    title: "Research context, safety boundaries, and everyday use",
     description:
-      "Neuvago is built within a broader knowledge universe around nervous system regulation, vagus nerve stimulation, recovery, and stress physiology. You can explore the research layer if you want to go deeper.",
+      "Neuvago is built within a broader knowledge universe around nervous system regulation, non-invasive vagus nerve stimulation, safety and tolerability, recovery, and stress physiology. You can explore the research layer if you want to go deeper, while product claims stay grounded in wellness support.",
     links: [
       {
         title: "Non-invasive VNS",
@@ -304,7 +304,7 @@ export const productPageContent = {
       {
         title: "Safety and tolerability",
         description:
-          "Review the safety and tolerability research context behind responsible non-invasive VNS positioning.",
+          "Review side effects, tolerability, contraindication awareness, and the safety research context behind responsible non-invasive VNS positioning.",
         href: "/research/topics/safety-and-tolerability",
       },
       {
@@ -312,6 +312,12 @@ export const productPageContent = {
         description:
           "Learn how ear-based VNS, taVNS, comfort, placement, and responsible wellness language fit together.",
         href: "/learn/auricular-vagus-nerve-stimulation",
+      },
+      {
+        title: "Intended use",
+        description:
+          "Review the product boundaries that explain what Neuvago is designed to support — and what it is not intended to diagnose, treat, cure, or replace.",
+        href: "/legal/intended-use",
       },
     ] satisfies ProductLinkCard[],
     primaryCta: {
@@ -337,9 +343,9 @@ export const productPageContent = {
       "A few simple answers to the questions people often have when they first explore Neuvago.",
     items: [
       {
-        question: "Is Neuvago a medical device?",
+        question: "Is Neuvago a medical treatment?",
         answer:
-          "Neuvago is positioned as a wellness product designed to support calmer daily regulation and guided routines.",
+          "No. Neuvago is positioned as a wellness product designed to support calmer daily regulation and guided routines. It is not described as a treatment, diagnostic tool, cure, or replacement for professional medical care.",
       },
       {
         question: "Do I need the app?",
@@ -352,14 +358,19 @@ export const productPageContent = {
           "Yes. Neuvago is designed to feel simple, repeatable, and realistic to return to as part of everyday life.",
       },
       {
-        question: "Is this built around intensity or overstimulation?",
+        question: "Is stronger stimulation always better?",
         answer:
-          "No. The experience is intentionally designed to feel gentle, calm, and supportive rather than overwhelming.",
+          "No. The experience is intentionally designed around comfort, guidance, and consistency rather than chasing the strongest possible sensation.",
+      },
+      {
+        question: "Who should ask a clinician before use?",
+        answer:
+          "People with implanted electronic devices, heart rhythm concerns, pregnancy-related questions, medical conditions, or active treatment plans should speak with a qualified clinician before using any stimulation product.",
       },
       {
         question: "Can I explore the knowledge side before going deeper?",
         answer:
-          "Yes. You can move between the product, app, learn, conditions, and research layers depending on what you want to understand first.",
+          "Yes. You can move between the product, app, learn, conditions, research, intended-use, and safety pages depending on what you want to understand first.",
       },
     ] satisfies ProductFaqItem[],
   } satisfies ProductSectionVisibility & {

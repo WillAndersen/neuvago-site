@@ -203,6 +203,13 @@ const internalPathways = [
     linkLabel: "Explore regulation topic",
   },
   {
+    title: "Transcutaneous VNS guide",
+    description:
+      "A plain-language guide to tVNS, taVNS, stimulation through the skin, method differences, and everyday evaluation criteria.",
+    href: "/learn/transcutaneous-vagus-nerve-stimulation",
+    linkLabel: "Read tVNS guide",
+  },
+  {
     title: "Non-invasive VNS guide",
     description:
       "A plain-language guide to nVNS, tVNS, taVNS, device differences, and wellness boundaries.",

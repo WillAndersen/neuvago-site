@@ -162,6 +162,13 @@ const relatedLearning = [
     linkLabel: "Explore non-invasive VNS",
   },
   {
+    title: "Transcutaneous vagus nerve stimulation",
+    description:
+      "A focused guide to tVNS, taVNS, stimulation through the skin, method differences, and why protocol details matter.",
+    href: "/learn/transcutaneous-vagus-nerve-stimulation",
+    linkLabel: "Explore tVNS",
+  },
+  {
     title: "Auricular vagus nerve stimulation",
     description:
       "A focused guide to ear-based VNS, taVNS, placement language, evidence context, and responsible wellness positioning.",
@@ -193,7 +200,14 @@ const nextPaths = [
     linkLabel: "View VNS research",
   },
   {
-    title: "Explore transcutaneous VNS",
+    title: "Read the tVNS guide",
+    description:
+      "Learn what transcutaneous vagus nerve stimulation means in plain language before going deeper into method-focused research.",
+    href: "/learn/transcutaneous-vagus-nerve-stimulation",
+    linkLabel: "Read tVNS guide",
+  },
+  {
+    title: "Explore transcutaneous VNS research",
     description:
       "Go deeper into tVNS, taVNS, stimulation sites, protocol variables, and why method details matter when interpreting non-invasive VNS evidence.",
     href: "/research/topics/transcutaneous-vagus-nerve-stimulation",

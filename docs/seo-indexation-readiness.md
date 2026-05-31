@@ -10,7 +10,7 @@ Run these checks from the repo root:
 npm run lint && npm run build
 npm run seo:vns
 
-npm run build | grep -E "vagus-nerve-stimulation|non-invasive-vagus-nerve-stimulation|auricular-vagus-nerve-stimulation|safety-and-tolerability|transcutaneous-vagus-nerve-stimulation|autonomic-regulation" || true
+npm run build | grep -E "vagus-nerve-stimulation|non-invasive-vagus-nerve-stimulation|transcutaneous-vagus-nerve-stimulation|auricular-vagus-nerve-stimulation|safety-and-tolerability|autonomic-regulation" || true
 
 git status --short | grep -E '\.bak|\.rej|\.orig|\.patch|\.zip' || true
 ```
@@ -29,6 +29,7 @@ Open these pages in production after deployment:
 - `/learn/vagus-nerve`
 - `/learn/vagus-nerve-stimulation`
 - `/learn/non-invasive-vagus-nerve-stimulation`
+- `/learn/transcutaneous-vagus-nerve-stimulation`
 - `/learn/auricular-vagus-nerve-stimulation`
 - `/learn/nervous-system-regulation`
 - `/research/topics/vagus-nerve-stimulation`
@@ -57,6 +58,7 @@ After deployment:
 2. Inspect and request indexing for the core cluster pages first:
    - `/learn/vagus-nerve-stimulation`
    - `/learn/non-invasive-vagus-nerve-stimulation`
+   - `/learn/transcutaneous-vagus-nerve-stimulation`
    - `/learn/auricular-vagus-nerve-stimulation`
    - `/research/topics/vagus-nerve-stimulation`
    - `/research/topics/transcutaneous-vagus-nerve-stimulation`

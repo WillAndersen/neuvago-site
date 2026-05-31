@@ -7,6 +7,7 @@ const clusterRoutes = [
   "/learn/vagus-nerve",
   "/learn/vagus-nerve-stimulation",
   "/learn/non-invasive-vagus-nerve-stimulation",
+  "/learn/transcutaneous-vagus-nerve-stimulation",
   "/learn/auricular-vagus-nerve-stimulation",
   "/learn/nervous-system-regulation",
   "/research/topics/vagus-nerve-stimulation",
@@ -23,6 +24,7 @@ const clusterRoutes = [
 const requiredBuildRoutes = [
   "/learn/vagus-nerve-stimulation",
   "/learn/non-invasive-vagus-nerve-stimulation",
+  "/learn/transcutaneous-vagus-nerve-stimulation",
   "/learn/auricular-vagus-nerve-stimulation",
   "/research/topics/vagus-nerve-stimulation",
   "/research/topics/transcutaneous-vagus-nerve-stimulation",

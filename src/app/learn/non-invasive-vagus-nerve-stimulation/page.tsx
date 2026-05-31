@@ -185,6 +185,13 @@ const relatedLearning = [
     linkLabel: "Read the VNS overview",
   },
   {
+    title: "Transcutaneous vagus nerve stimulation",
+    description:
+      "A plain-language guide to tVNS, taVNS, stimulation through the skin, method differences, and responsible category interpretation.",
+    href: "/learn/transcutaneous-vagus-nerve-stimulation",
+    linkLabel: "Explore tVNS",
+  },
+  {
     title: "Auricular vagus nerve stimulation",
     description:
       "A plain-language guide to ear-based VNS, taVNS, placement language, comfort, evidence context, and responsible wellness boundaries.",

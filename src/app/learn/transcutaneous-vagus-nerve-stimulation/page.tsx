@@ -5,10 +5,10 @@ import { buildAuthorityPageStructuredData } from "@/lib/seo/structured-data";
 import { authorityEditorialDates } from "@/lib/seo/editorial-dates";
 
 const title =
-  "Auricular Vagus Nerve Stimulation | taVNS and Ear VNS | Neuvago";
+  "Transcutaneous Vagus Nerve Stimulation | tVNS Guide | Neuvago";
 const description =
-  "Learn what auricular vagus nerve stimulation is, how taVNS relates to ear-based non-invasive VNS, and how to interpret ear stimulation responsibly.";
-const path = "/learn/auricular-vagus-nerve-stimulation";
+  "Learn what transcutaneous vagus nerve stimulation means, how tVNS and taVNS relate to non-invasive VNS, and how to evaluate the category responsibly.";
+const path = "/learn/transcutaneous-vagus-nerve-stimulation";
 
 export const metadata: Metadata = {
   title,
@@ -33,191 +33,203 @@ export const metadata: Metadata = {
 
 const quickAnswers = [
   {
-    title: "Auricular VNS means ear-based stimulation",
+    title: "Transcutaneous means through the skin",
     description:
-      "Auricular vagus nerve stimulation focuses on regions of the outer ear associated with auricular vagal pathways. It is commonly discussed as taVNS: transcutaneous auricular vagus nerve stimulation.",
+      "Transcutaneous vagus nerve stimulation uses external contact rather than implanted hardware. In VNS conversations, it usually refers to non-invasive stimulation applied at the ear or neck area.",
   },
   {
-    title: "It is part of the non-invasive VNS family",
+    title: "tVNS is a method family, not one single protocol",
     description:
-      "taVNS sits inside the wider category of non-invasive VNS and transcutaneous VNS. It is different from implanted clinical VNS and should not be treated as automatically interchangeable with other device types.",
+      "The term can include auricular approaches, cervical approaches, different electrodes, different settings, and different research goals. The details matter.",
   },
   {
-    title: "Placement, comfort, and claims matter",
+    title: "taVNS is the ear-based branch",
     description:
-      "A useful ear-based VNS explanation should clarify where stimulation is applied, how sessions are guided, what the user may feel, and what the product is not claiming to diagnose or treat.",
+      "Transcutaneous auricular vagus nerve stimulation, often shortened to taVNS, is the ear-based version of tVNS and is commonly discussed in relation to auricular vagal pathways.",
   },
 ];
 
 const termCards = [
   {
-    title: "Auricular VNS",
-    label: "Ear-based VNS",
+    title: "tVNS",
+    label: "Transcutaneous VNS",
     description:
-      "A plain-language term for stimulation approaches that use parts of the outer ear as the access point for vagus nerve-related pathways.",
+      "A broad term for vagus nerve stimulation approaches delivered through the skin using external contact rather than implanted hardware.",
   },
   {
     title: "taVNS",
-    label: "Transcutaneous auricular VNS",
+    label: "Auricular tVNS",
     description:
-      "The technical abbreviation often used in research. It means stimulation through the skin at auricular, or ear-based, locations.",
+      "The ear-based form of tVNS. It is usually discussed in relation to specific outer-ear regions and the auricular branch of the vagus nerve.",
   },
   {
-    title: "ABVN",
-    label: "Auricular branch",
+    title: "nVNS",
+    label: "Non-invasive VNS",
     description:
-      "A commonly referenced anatomical pathway in ear-based VNS discussions. Consumer education should treat it carefully and avoid overstating certainty.",
+      "A wider product and research category that can include different external approaches. tVNS is one way people describe non-invasive stimulation methods.",
   },
   {
-    title: "Ear VNS device",
-    label: "User search language",
+    title: "Cervical nVNS",
+    label: "Neck-based approach",
     description:
-      "Many people search in simpler terms, such as ear vagus nerve stimulation or vagus nerve stimulation through the ear, before they know the acronym taVNS.",
+      "A non-invasive approach applied near the neck area. It should not be collapsed into ear-based taVNS or treated as identical to every tVNS method.",
   },
 ];
 
-const whyEar = [
+const whyItMatters = [
   {
-    title: "The ear is accessible without surgery",
+    title: "It helps separate method from marketing",
     description:
-      "Ear-based stimulation can be delivered externally, which makes it easier to understand as a non-invasive category than implanted clinical VNS.",
+      "People often see VNS, nVNS, tVNS, taVNS, and vagus nerve stimulator used together. A clear page helps explain which term describes the broad category and which term describes a specific method.",
   },
   {
-    title: "It gives the category a concrete location",
+    title: "It keeps evidence in the right lane",
     description:
-      "VNS can sound abstract. Auricular VNS makes the discussion more practical by connecting the method to an external placement people can understand.",
+      "A study using one stimulation site or parameter set does not automatically support every device, use case, or claim. tVNS should be read through method details.",
   },
   {
-    title: "It has a growing research vocabulary",
+    title: "It gives users better evaluation criteria",
     description:
-      "Terms like taVNS, stimulation site, intensity, pulse width, session duration, sham placement, and target engagement appear frequently in auricular VNS research.",
+      "A user should know to ask about placement, comfort, session length, guidance, stimulation settings, safety boundaries, and intended use — not just whether something says VNS.",
   },
   {
-    title: "It needs careful product language",
+    title: "It supports responsible product education",
     description:
-      "Ear-based does not mean every sensation, placement, or device has the same evidence. The method should be explained with the same boundaries as the broader VNS category.",
+      "Neuvago can explain transcutaneous VNS as category context while still keeping product language focused on wellness support, guided sessions, and daily routine design.",
   },
 ];
 
-const whatToEvaluate = [
+const evaluationCriteria = [
   {
     title: "Where stimulation is applied",
     description:
-      "Ear region matters. A responsible explanation should avoid treating every part of the ear as if it had the same relationship to vagal pathways.",
+      "Ear placement, neck placement, control placement, and electrode design change how a method should be understood. The location is not a minor detail.",
   },
   {
-    title: "How contact and comfort are handled",
+    title: "Which settings are used",
     description:
-      "For everyday use, a device should make placement, skin contact, comfort, and session consistency easier rather than making the user guess.",
+      "Frequency, pulse width, intensity, waveform, session length, and duty cycle can all shape comfort, tolerability, and research interpretation.",
   },
   {
-    title: "What settings are used",
+    title: "What the session is for",
     description:
-      "Intensity, frequency, pulse width, session length, and total exposure can all change how a study or device experience should be interpreted.",
+      "A clinical protocol, laboratory study, and consumer wellness routine can share vocabulary without having the same purpose, evidence, or claims.",
   },
   {
-    title: "What claims are made",
+    title: "How safety is explained",
     description:
-      "The safest language for a wellness product is support, guidance, comfort, routine, and regulation context — not treatment promises.",
-  },
-];
-
-const evidenceSignals = [
-  {
-    title: "Auricular access and fMRI evidence",
-    source: "Frangos et al., 2015",
-    description:
-      "A foundational fMRI paper often cited in discussions of non-invasive stimulation of external-ear regions and central vagal projections.",
-    href: "/research/studies/frangos-2015-auricular-vagus-nerve-stimulation-fmri",
-    linkLabel: "Read Neuvago summary",
-  },
-  {
-    title: "Transcutaneous VNS methods",
-    source: "Research topic",
-    description:
-      "A method-focused page explaining tVNS, taVNS, stimulation sites, protocol variables, reporting standards, and interpretation limits.",
-    href: "/research/topics/transcutaneous-vagus-nerve-stimulation",
-    linkLabel: "View tVNS topic",
-  },
-  {
-    title: "Safety and tolerability",
-    source: "Research topic",
-    description:
-      "A trust-focused page on adverse events, study populations, contraindication awareness, comfort, and responsible non-invasive VNS boundaries.",
-    href: "/research/topics/safety-and-tolerability",
-    linkLabel: "View safety topic",
+      "Responsible tVNS education should discuss tolerability, contraindication awareness, medical contexts, and why non-invasive does not mean claim-free.",
   },
 ];
 
-const boundaries = [
+const methodBoundaries = [
   {
-    title: "Ear sensation is not proof of mechanism",
+    title: "tVNS is not the same as implanted VNS",
     description:
-      "Tingling, pressure, warmth, or comfort can be part of a user experience, but sensation alone does not prove a specific vagal mechanism.",
+      "Implanted clinical VNS and transcutaneous VNS are related categories, but they differ in hardware, exposure, regulation, indications, and evidence. They should not be treated as interchangeable.",
   },
   {
-    title: "taVNS findings are protocol-specific",
+    title: "taVNS is not every form of tVNS",
     description:
-      "A study using one ear location, parameter set, sham design, or population should not be generalized to every device or every wellness goal.",
+      "Auricular VNS is a specific ear-based branch. It is useful to understand separately because placement, comfort, and research language differ from neck-based approaches.",
   },
   {
-    title: "Medical contexts need clinical guidance",
+    title: "Sensation is not proof of mechanism",
     description:
-      "People with implanted electronic devices, heart rhythm concerns, pregnancy-related questions, medical conditions, or active treatment plans should speak with a qualified clinician before use.",
+      "Tingling, pressure, warmth, or comfort can be part of the user experience, but sensation alone does not prove a specific vagal mechanism or clinical outcome.",
+  },
+  {
+    title: "Study findings are protocol-specific",
+    description:
+      "Research should be interpreted by device, site, parameter set, population, control condition, and outcome. That is especially important in broad wellness communication.",
   },
 ];
 
 const neuvagoFit = [
   {
-    title: "A calmer category explanation",
+    title: "A simpler explanation for a technical category",
     description:
-      "Neuvago can explain ear-based non-invasive VNS in a way that is practical and premium without sounding clinical or overclaiming.",
+      "Neuvago can make tVNS understandable without turning the product page into a dense research manual or making claims beyond the intended wellness use.",
   },
   {
-    title: "Guided sessions instead of guesswork",
+    title: "Guidance matters as much as hardware",
     description:
-      "The product story should connect placement, session structure, app guidance, comfort, and consistency into one clear user experience.",
+      "For everyday use, a device-and-app system should help with placement, comfort, session rhythm, and consistency rather than leaving people to interpret technical terms alone.",
   },
   {
-    title: "Wellness boundaries stay visible",
+    title: "The product bridge stays calm",
     description:
-      "Auricular VNS can support Neuvago’s authority, but it should continue to be framed as wellness support rather than disease treatment.",
+      "The right commercial bridge is practical: how sessions work, how the app guides the routine, and how Neuvago stays within clear wellness boundaries.",
   },
 ];
 
-const internalPathways = [
+const relatedLearning = [
   {
-    title: "Non-invasive VNS guide",
+    title: "Auricular vagus nerve stimulation",
     description:
-      "Step back to the broader device-category guide covering nVNS, tVNS, taVNS, external stimulation, and wellness boundaries.",
+      "Go deeper into the ear-based branch of tVNS, including taVNS, auricular placement language, comfort, and responsible claims.",
+    href: "/learn/auricular-vagus-nerve-stimulation",
+    linkLabel: "Read auricular VNS guide",
+  },
+  {
+    title: "Non-invasive vagus nerve stimulation",
+    description:
+      "Step back to the broader non-invasive VNS category, including nVNS, tVNS, taVNS, device differences, and wellness boundaries.",
     href: "/learn/non-invasive-vagus-nerve-stimulation",
     linkLabel: "Read non-invasive VNS guide",
   },
   {
     title: "Vagus nerve stimulation overview",
     description:
-      "Understand the broader VNS category, including implanted systems, non-invasive approaches, and responsible product language.",
+      "Understand the full VNS category, including implanted systems, external approaches, research context, and responsible product language.",
     href: "/learn/vagus-nerve-stimulation",
     linkLabel: "Read VNS overview",
   },
   {
-    title: "Transcutaneous VNS guide",
+    title: "Vagus nerve basics",
     description:
-      "Step back to the broader tVNS method layer, including stimulation through the skin, taVNS, nVNS, and why protocol details matter.",
-    href: "/learn/transcutaneous-vagus-nerve-stimulation",
-    linkLabel: "Read tVNS guide",
+      "Start with the anatomy and regulation foundation before moving into device categories and stimulation methods.",
+    href: "/learn/vagus-nerve",
+    linkLabel: "Understand the vagus nerve",
   },
+];
+
+const researchPathways = [
   {
     title: "Transcutaneous VNS research",
     description:
-      "Go deeper into tVNS, taVNS, protocol variables, target engagement, and how method details shape research interpretation.",
+      "Move from this plain-language guide into the research topic on tVNS, taVNS, stimulation sites, protocol variables, and reporting standards.",
     href: "/research/topics/transcutaneous-vagus-nerve-stimulation",
     linkLabel: "View tVNS research",
   },
   {
+    title: "Safety and tolerability",
+    description:
+      "Understand how adverse events, comfort, contraindication awareness, and device differences shape responsible interpretation of non-invasive VNS.",
+    href: "/research/topics/safety-and-tolerability",
+    linkLabel: "View safety topic",
+  },
+  {
+    title: "Autonomic regulation",
+    description:
+      "Connect tVNS language to the wider physiology of sympathetic and parasympathetic state-shifting, HRV, stress, and recovery.",
+    href: "/research/topics/autonomic-regulation",
+    linkLabel: "View regulation topic",
+  },
+  {
+    title: "Auricular fMRI study",
+    description:
+      "Read Neuvago’s summary of a foundational paper on non-invasive stimulation of external-ear regions and central vagal projections.",
+    href: "/research/studies/frangos-2015-auricular-vagus-nerve-stimulation-fmri",
+    linkLabel: "Read study summary",
+  },
+];
+
+const nextPaths = [
+  {
     title: "See how Neuvago works",
     description:
-      "Move from education into the practical device-and-app explanation: placement, session guidance, comfort, and daily routine design.",
+      "Move from category education into the practical device-and-app explanation: placement, guided sessions, comfort, and daily routine design.",
     href: "/how-it-works",
     linkLabel: "See how it works",
   },
@@ -228,26 +240,33 @@ const internalPathways = [
     href: "/product",
     linkLabel: "Explore Neuvago",
   },
+  {
+    title: "Review intended use",
+    description:
+      "See how Neuvago explains wellness boundaries and what the device is not intended to diagnose, treat, cure, or replace.",
+    href: "/legal/intended-use",
+    linkLabel: "Review intended use",
+  },
 ];
 
 const externalReferences = [
   {
     title:
-      "Non-invasive access to the vagus nerve central projections via electrical stimulation of the external ear",
-    source: "Frangos et al., Brain Stimulation, 2015",
-    href: "https://pubmed.ncbi.nlm.nih.gov/25573069/",
-  },
-  {
-    title:
-      "Laboratory administration of transcutaneous auricular vagus nerve stimulation: technique, targeting, and considerations",
-    source: "Badran et al., Journal of Visualized Experiments, 2019",
-    href: "https://pubmed.ncbi.nlm.nih.gov/30663712/",
+      "Critical Review of Transcutaneous Vagus Nerve Stimulation: Challenges for Translation to Clinical Practice",
+    source: "Yap et al., Frontiers in Neuroscience, 2020",
+    href: "https://pubmed.ncbi.nlm.nih.gov/32410932/",
   },
   {
     title:
       "International consensus based review and recommendations for minimum reporting standards in tVNS research",
     source: "Farmer et al., Frontiers in Human Neuroscience, 2021",
     href: "https://pubmed.ncbi.nlm.nih.gov/33854421/",
+  },
+  {
+    title:
+      "Non-invasive access to the vagus nerve central projections via electrical stimulation of the external ear",
+    source: "Frangos et al., Brain Stimulation, 2015",
+    href: "https://pubmed.ncbi.nlm.nih.gov/25573069/",
   },
   {
     title:
@@ -358,7 +377,7 @@ function ExternalReferenceCard({
   );
 }
 
-export default function AuricularVagusNerveStimulationPage() {
+export default function TranscutaneousVagusNerveStimulationPage() {
   const structuredData = buildAuthorityPageStructuredData({
     title,
     description,
@@ -367,21 +386,20 @@ export default function AuricularVagusNerveStimulationPage() {
     datePublished: authorityEditorialDates.vnsClusterPublished,
     dateModified: authorityEditorialDates.vnsClusterModified,
     keywords: [
-      "auricular vagus nerve stimulation",
+      "transcutaneous vagus nerve stimulation",
+      "tVNS",
+      "transcutaneous VNS",
       "transcutaneous auricular vagus nerve stimulation",
       "taVNS",
-      "ear vagus nerve stimulation",
-      "ear VNS",
-      "auricular branch of the vagus nerve",
       "non-invasive vagus nerve stimulation",
+      "auricular vagus nerve stimulation",
       "vagus nerve stimulator",
-      "tVNS",
       "Neuvago",
     ],
     breadcrumbs: [
       { name: "Home", path: "/" },
       { name: "Learn", path: "/learn" },
-      { name: "Auricular Vagus Nerve Stimulation", path },
+      { name: "Transcutaneous Vagus Nerve Stimulation", path },
     ],
   });
 
@@ -389,33 +407,32 @@ export default function AuricularVagusNerveStimulationPage() {
     <main className="bg-[#f7f4ef] text-[#1f1f1c]">
       <JsonLd
         data={structuredData}
-        idPrefix="learn-auricular-vagus-nerve-stimulation"
+        idPrefix="learn-transcutaneous-vagus-nerve-stimulation"
       />
 
       <section className="border-b border-black/5">
         <div className="mx-auto grid min-h-[80vh] max-w-7xl items-center gap-16 px-6 py-20 md:px-10 lg:grid-cols-[1.05fr_0.95fr] lg:py-28">
           <div className="max-w-3xl">
             <p className="mb-5 text-sm uppercase tracking-[0.18em] text-[#7a756c]">
-              Learn / Auricular VNS
+              Learn / Transcutaneous VNS
             </p>
 
             <h1 className="text-4xl font-medium leading-[1.05] tracking-[-0.03em] md:text-6xl lg:text-7xl">
-              Auricular vagus nerve stimulation, explained without the jargon
+              Transcutaneous vagus nerve stimulation, explained clearly
             </h1>
 
             <p className="mt-6 max-w-2xl text-base leading-8 text-[#5f5a52] md:text-lg">
-              Auricular vagus nerve stimulation is the ear-based part of the
-              non-invasive VNS conversation. It is often called taVNS, short for
-              transcutaneous auricular vagus nerve stimulation, and it is one of
-              the key terms people encounter when they research ear-based vagus
-              nerve stimulation.
+              Transcutaneous vagus nerve stimulation, often called tVNS, means
+              stimulation delivered through the skin rather than through an
+              implanted device. It is one of the most important terms to
+              understand when evaluating non-invasive vagus nerve stimulation.
             </p>
 
             <p className="mt-5 max-w-2xl text-base leading-8 text-[#5f5a52]">
-              This guide explains what the term means, how it relates to tVNS
-              and non-invasive VNS, what to look for in ear-based stimulation,
-              and why Neuvago keeps the language practical, calm, and
-              responsible.
+              This guide explains what tVNS means, how it relates to taVNS and
+              auricular VNS, why method details matter, and how Neuvago keeps
+              the category clear without turning research language into broad
+              medical claims.
             </p>
 
             <div className="mt-10 flex flex-wrap gap-4">
@@ -427,10 +444,10 @@ export default function AuricularVagusNerveStimulationPage() {
               </Link>
 
               <Link
-                href="/learn/non-invasive-vagus-nerve-stimulation"
+                href="/learn/auricular-vagus-nerve-stimulation"
                 className="rounded-full border border-[#d8d1c7] bg-transparent px-6 py-3 text-sm font-medium text-[#1f1f1c] transition hover:bg-white/70"
               >
-                Non-invasive VNS guide
+                Auricular VNS guide
               </Link>
             </div>
           </div>
@@ -441,40 +458,40 @@ export default function AuricularVagusNerveStimulationPage() {
                 <div className="flex h-full flex-col justify-between rounded-[1.25rem] border border-white/60 bg-white/40 p-6">
                   <div>
                     <p className="text-xs uppercase tracking-[0.16em] text-[#8a847b]">
-                      Ear-based VNS
+                      Method layer
                     </p>
                     <h2 className="mt-3 text-2xl font-medium text-[#1f1f1c]">
-                      A practical bridge between research vocabulary and the
-                      everyday device experience
+                      tVNS connects the broad VNS category with the practical
+                      details of external stimulation
                     </h2>
                   </div>
 
                   <div className="space-y-4">
                     <div className="rounded-2xl bg-white/70 p-4">
                       <p className="text-sm font-medium text-[#1f1f1c]">
-                        taVNS
+                        tVNS
                       </p>
                       <p className="mt-1 text-sm leading-6 text-[#5f5a52]">
-                        Transcutaneous auricular vagus nerve stimulation
+                        Transcutaneous vagus nerve stimulation
                       </p>
                     </div>
 
                     <div className="grid grid-cols-2 gap-4">
                       <div className="rounded-2xl bg-white/70 p-4">
                         <p className="text-sm font-medium text-[#1f1f1c]">
-                          Ear-based
+                          taVNS
                         </p>
                         <p className="mt-1 text-sm leading-6 text-[#5f5a52]">
-                          External placement
+                          Ear-based branch
                         </p>
                       </div>
 
                       <div className="rounded-2xl bg-white/70 p-4">
                         <p className="text-sm font-medium text-[#1f1f1c]">
-                          Guided
+                          nVNS
                         </p>
                         <p className="mt-1 text-sm leading-6 text-[#5f5a52]">
-                          Comfort and routine first
+                          Non-invasive family
                         </p>
                       </div>
                     </div>
@@ -494,21 +511,21 @@ export default function AuricularVagusNerveStimulationPage() {
             </p>
 
             <h2 className="mt-4 max-w-3xl text-3xl font-medium leading-tight tracking-[-0.03em] md:text-5xl">
-              Auricular VNS is the ear-based branch of non-invasive VNS
+              tVNS is a non-invasive way of describing stimulation through the skin
             </h2>
 
             <p className="mt-6 max-w-2xl text-base leading-8 text-[#5f5a52] md:text-lg">
-              The word auricular means related to the ear. In this context,
-              auricular VNS usually refers to stimulation applied to specific
-              outer-ear regions that are discussed in relation to auricular
-              vagal pathways. In research, this is commonly described as taVNS.
+              The term transcutaneous comes from trans, meaning through, and
+              cutaneous, meaning skin. In practice, tVNS is used for external
+              stimulation approaches that aim to engage vagus nerve-related
+              pathways without implanted hardware.
             </p>
 
             <p className="mt-6 max-w-2xl text-base leading-8 text-[#5f5a52]">
-              That does not mean every ear device, placement, sensation, or
-              protocol is equivalent. A good explanation should make the method
-              clear while keeping evidence, safety, intended use, and product
-              claims in the right lane.
+              That makes it a useful category term, but not a product claim by
+              itself. The responsible question is always: where is stimulation
+              applied, what protocol is used, what evidence is being referenced,
+              and what is the intended use?
             </p>
           </div>
 
@@ -528,14 +545,13 @@ export default function AuricularVagusNerveStimulationPage() {
             </p>
 
             <h2 className="mt-4 text-3xl font-medium leading-tight tracking-[-0.03em] md:text-5xl">
-              The same topic appears under several names
+              tVNS, taVNS, nVNS, and auricular VNS are related, but not identical
             </h2>
 
             <p className="mt-6 max-w-2xl text-base leading-8 text-[#5f5a52] md:text-lg">
-              Search language is not always the same as research language.
-              Someone may search for ear VNS, auricular VNS, taVNS, or
-              non-invasive vagus nerve stimulation and be trying to understand
-              the same broad category.
+              These terms are often used close together. Separating them makes
+              the category easier to understand and helps keep Neuvago’s product
+              language precise.
             </p>
           </div>
 
@@ -551,23 +567,22 @@ export default function AuricularVagusNerveStimulationPage() {
         <div className="mx-auto grid max-w-7xl gap-14 px-6 py-24 md:px-10 md:py-28 lg:grid-cols-[0.95fr_1.05fr] lg:items-start">
           <div>
             <p className="text-sm uppercase tracking-[0.18em] text-[#7a756c]">
-              Why the ear matters
+              Why it matters
             </p>
 
             <h2 className="mt-4 max-w-3xl text-3xl font-medium leading-tight tracking-[-0.03em] md:text-5xl">
-              Ear-based stimulation makes non-invasive VNS easier to understand
+              A clear tVNS guide helps users evaluate the category instead of chasing acronyms
             </h2>
 
             <p className="mt-6 max-w-2xl text-base leading-8 text-[#5f5a52] md:text-lg">
-              The ear gives the category a concrete external access point. That
-              makes auricular VNS especially important for user education,
-              because it connects a technical research term to something people
-              can visualize: placement, comfort, session guidance, and routine.
+              tVNS is useful language only when it leads to better questions.
+              It should help people understand device type, stimulation site,
+              session guidance, evidence limits, and wellness boundaries.
             </p>
           </div>
 
           <div className="grid gap-6 md:grid-cols-2">
-            {whyEar.map((item) => (
+            {whyItMatters.map((item) => (
               <TextCard key={item.title} {...item} />
             ))}
           </div>
@@ -578,23 +593,22 @@ export default function AuricularVagusNerveStimulationPage() {
         <div className="mx-auto max-w-7xl px-6 py-24 md:px-10 md:py-28">
           <div className="max-w-3xl">
             <p className="text-sm uppercase tracking-[0.18em] text-[#7a756c]">
-              What to evaluate
+              Evaluation criteria
             </p>
 
             <h2 className="mt-4 text-3xl font-medium leading-tight tracking-[-0.03em] md:text-5xl">
-              A better question than “does ear VNS work?” is “what exactly is being done?”
+              The important question is not just whether a device says tVNS
             </h2>
 
             <p className="mt-6 max-w-2xl text-base leading-8 text-[#5f5a52] md:text-lg">
-              Ear-based VNS becomes clearer when you separate placement,
-              stimulation settings, session guidance, study context, and the
-              claims being made. Those details protect trust and make the
-              product category easier to compare.
+              A better evaluation looks at the details that shape the experience
+              and the evidence: where stimulation is applied, what settings are
+              used, how sessions are guided, and what claims are made.
             </p>
           </div>
 
           <div className="mt-14 grid gap-6 md:grid-cols-2 xl:grid-cols-4">
-            {whatToEvaluate.map((item) => (
+            {evaluationCriteria.map((item) => (
               <TextCard key={item.title} {...item} />
             ))}
           </div>
@@ -602,60 +616,32 @@ export default function AuricularVagusNerveStimulationPage() {
       </section>
 
       <section className="border-b border-black/5 bg-[#f2eee8]">
-        <div className="mx-auto max-w-7xl px-6 py-24 md:px-10 md:py-28">
-          <div className="max-w-3xl">
+        <div className="mx-auto grid max-w-7xl gap-14 px-6 py-24 md:px-10 md:py-28 lg:grid-cols-[1fr_0.95fr] lg:items-start">
+          <div>
             <p className="text-sm uppercase tracking-[0.18em] text-[#7a756c]">
-              Research context
+              Boundaries
             </p>
 
-            <h2 className="mt-4 text-3xl font-medium leading-tight tracking-[-0.03em] md:text-5xl">
-              Auricular VNS belongs inside the broader tVNS evidence system
+            <h2 className="mt-4 max-w-3xl text-3xl font-medium leading-tight tracking-[-0.03em] md:text-5xl">
+              Good tVNS education should make the limits visible
             </h2>
 
             <p className="mt-6 max-w-2xl text-base leading-8 text-[#5f5a52] md:text-lg">
-              Neuvago’s role is not to turn every auricular VNS study into a
-              product promise. The stronger trust position is to explain the
-              research area, connect it to the right topic pages, and keep the
-              difference between evidence context and product claims visible.
+              Clear boundaries make the category more trustworthy. They help
+              users understand that related research does not automatically
+              translate into broad product promises.
             </p>
           </div>
 
-          <div className="mt-14 grid gap-6 md:grid-cols-3">
-            {evidenceSignals.map((item) => (
-              <LinkCard key={item.title} {...item} />
+          <div className="grid gap-6 md:grid-cols-2">
+            {methodBoundaries.map((item) => (
+              <TextCard key={item.title} {...item} />
             ))}
           </div>
         </div>
       </section>
 
       <section className="border-b border-black/5 bg-[#f7f4ef]">
-        <div className="mx-auto grid max-w-7xl gap-14 px-6 py-24 md:px-10 md:py-28 lg:grid-cols-[0.9fr_1.1fr] lg:items-start">
-          <div>
-            <p className="text-sm uppercase tracking-[0.18em] text-[#7a756c]">
-              Responsible interpretation
-            </p>
-
-            <h2 className="mt-4 max-w-3xl text-3xl font-medium leading-tight tracking-[-0.03em] md:text-5xl">
-              A calm page should make the boundaries easier to see
-            </h2>
-
-            <p className="mt-6 max-w-2xl text-base leading-8 text-[#5f5a52] md:text-lg">
-              Auricular VNS is valuable for Neuvago’s authority because it is
-              specific. But specificity should not become overconfidence. The
-              best education separates what the category means from what a
-              particular product is allowed to promise.
-            </p>
-          </div>
-
-          <div className="grid gap-6 md:grid-cols-1">
-            {boundaries.map((item) => (
-              <TextCard key={item.title} {...item} />
-            ))}
-          </div>
-        </div>
-      </section>
-
-      <section className="border-b border-black/5 bg-[#f2eee8]">
         <div className="mx-auto max-w-7xl px-6 py-24 md:px-10 md:py-28">
           <div className="max-w-3xl">
             <p className="text-sm uppercase tracking-[0.18em] text-[#7a756c]">
@@ -663,13 +649,14 @@ export default function AuricularVagusNerveStimulationPage() {
             </p>
 
             <h2 className="mt-4 text-3xl font-medium leading-tight tracking-[-0.03em] md:text-5xl">
-              For Neuvago, auricular VNS is best explained as guided, non-invasive wellness support
+              Neuvago uses tVNS language as category education, not as a shortcut to medical claims
             </h2>
 
             <p className="mt-6 max-w-2xl text-base leading-8 text-[#5f5a52] md:text-lg">
-              The commercial bridge should be calm and transparent: explain the
-              method, show how guidance works, keep comfort central, and point
-              users toward the product only after the category is clear.
+              The right role for this page is to help people understand the
+              category before they evaluate a non-invasive vagus nerve
+              stimulator. The product story should remain practical: placement,
+              guidance, comfort, routine, and responsible wellness support.
             </p>
           </div>
 
@@ -681,20 +668,51 @@ export default function AuricularVagusNerveStimulationPage() {
         </div>
       </section>
 
+      <section className="border-b border-black/5 bg-[#f2eee8]">
+        <div className="mx-auto grid max-w-7xl gap-14 px-6 py-24 md:px-10 md:py-28 lg:grid-cols-[0.95fr_1.05fr] lg:items-start">
+          <div>
+            <p className="text-sm uppercase tracking-[0.18em] text-[#7a756c]">
+              Continue learning
+            </p>
+
+            <h2 className="mt-4 max-w-3xl text-3xl font-medium leading-tight tracking-[-0.03em] md:text-5xl">
+              Connect tVNS with the broader VNS and non-invasive VNS cluster
+            </h2>
+
+            <p className="mt-6 max-w-2xl text-base leading-8 text-[#5f5a52] md:text-lg">
+              These pages help place tVNS in the full authority system without
+              overloading one page with every detail.
+            </p>
+          </div>
+
+          <div className="grid gap-6 md:grid-cols-2">
+            {relatedLearning.map((item) => (
+              <LinkCard key={item.title} {...item} />
+            ))}
+          </div>
+        </div>
+      </section>
+
       <section className="border-b border-black/5 bg-[#f7f4ef]">
         <div className="mx-auto max-w-7xl px-6 py-24 md:px-10 md:py-28">
           <div className="max-w-3xl">
             <p className="text-sm uppercase tracking-[0.18em] text-[#7a756c]">
-              Continue the pathway
+              Research and trust
             </p>
 
             <h2 className="mt-4 text-3xl font-medium leading-tight tracking-[-0.03em] md:text-5xl">
-              Move from ear-based VNS into research, safety, and the Neuvago system
+              Go deeper into the research layer when you want protocol detail
             </h2>
+
+            <p className="mt-6 max-w-2xl text-base leading-8 text-[#5f5a52] md:text-lg">
+              The Learn page gives a practical overview. The Research pages go
+              deeper into method details, safety, autonomic regulation, and key
+              study context.
+            </p>
           </div>
 
-          <div className="mt-14 grid gap-6 md:grid-cols-2 xl:grid-cols-3">
-            {internalPathways.map((item) => (
+          <div className="mt-14 grid gap-6 md:grid-cols-2 xl:grid-cols-4">
+            {researchPathways.map((item) => (
               <LinkCard key={item.title} {...item} />
             ))}
           </div>
@@ -705,21 +723,20 @@ export default function AuricularVagusNerveStimulationPage() {
         <div className="mx-auto max-w-7xl px-6 py-24 md:px-10 md:py-28">
           <div className="max-w-3xl">
             <p className="text-sm uppercase tracking-[0.18em] text-[#7a756c]">
-              Selected external references
+              Selected references
             </p>
 
             <h2 className="mt-4 text-3xl font-medium leading-tight tracking-[-0.03em] md:text-5xl">
-              Research to read with protocol details in mind
+              Research context for understanding tVNS and taVNS
             </h2>
 
             <p className="mt-6 max-w-2xl text-base leading-8 text-[#5f5a52] md:text-lg">
-              These sources help frame auricular VNS as an evolving research
-              area. They should be interpreted by method, population, control
-              condition, and stimulation parameters.
+              These sources help frame transcutaneous VNS as a research method
+              with technical variables, reporting standards, and safety context.
             </p>
           </div>
 
-          <div className="mt-14 grid gap-6 md:grid-cols-2">
+          <div className="mt-14 grid gap-6 md:grid-cols-2 xl:grid-cols-4">
             {externalReferences.map((item) => (
               <ExternalReferenceCard key={item.title} {...item} />
             ))}
@@ -732,40 +749,23 @@ export default function AuricularVagusNerveStimulationPage() {
           <div className="rounded-[2.5rem] border border-black/5 bg-gradient-to-br from-[#efe7dc] to-[#e5dbcf] px-8 py-14 shadow-[0_20px_80px_rgba(31,31,28,0.06)] md:px-12 md:py-16">
             <div className="max-w-3xl">
               <p className="text-sm uppercase tracking-[0.18em] text-[#7a756c]">
-                Practical next step
+                Next step
               </p>
 
               <h2 className="mt-4 text-3xl font-medium leading-tight tracking-[-0.03em] md:text-5xl">
-                Understand the method first, then see how the device-and-app experience works
+                From tVNS education to practical guided use
               </h2>
 
               <p className="mt-6 max-w-2xl text-base leading-8 text-[#5f5a52] md:text-lg">
-                If you are comparing ear-based vagus nerve stimulation devices,
-                the next useful step is to understand placement, session
-                guidance, comfort, and how the product explains its intended use.
+                Once the terminology is clear, the practical question is how a
+                guided non-invasive system fits into everyday life with comfort,
+                consistency, and responsible boundaries.
               </p>
 
-              <div className="mt-10 flex flex-wrap gap-4">
-                <Link
-                  href="/how-it-works"
-                  className="rounded-full bg-[#1f1f1c] px-6 py-3 text-sm font-medium text-white transition hover:opacity-90"
-                >
-                  See how it works
-                </Link>
-
-                <Link
-                  href="/product"
-                  className="rounded-full border border-black/10 bg-white/50 px-6 py-3 text-sm font-medium text-[#1f1f1c] transition hover:bg-white/75"
-                >
-                  Explore Neuvago
-                </Link>
-
-                <Link
-                  href="/legal/intended-use"
-                  className="rounded-full border border-black/10 bg-transparent px-6 py-3 text-sm font-medium text-[#1f1f1c] transition hover:bg-white/40"
-                >
-                  Review intended use
-                </Link>
+              <div className="mt-10 grid gap-6 md:grid-cols-3">
+                {nextPaths.map((item) => (
+                  <LinkCard key={item.title} {...item} />
+                ))}
               </div>
             </div>
           </div>

@@ -143,6 +143,13 @@ const connectedTopics = [
     linkLabel: "Explore non-invasive VNS",
   },
   {
+    title: "Transcutaneous VNS",
+    description:
+      "A method-focused guide to tVNS, taVNS, stimulation through the skin, and why device details matter.",
+    href: "/learn/transcutaneous-vagus-nerve-stimulation",
+    linkLabel: "Explore tVNS",
+  },
+  {
     title: "Auricular VNS",
     description:
       "A focused guide to ear-based vagus nerve stimulation, taVNS, placement language, research context, and careful claims.",

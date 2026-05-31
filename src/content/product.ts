@@ -290,6 +290,12 @@ export const productPageContent = {
         href: "/learn/non-invasive-vagus-nerve-stimulation",
       },
       {
+        title: "Transcutaneous VNS",
+        description:
+          "Learn what tVNS means, how it relates to taVNS and non-invasive VNS, and why method details matter.",
+        href: "/learn/transcutaneous-vagus-nerve-stimulation",
+      },
+      {
         title: "VNS research",
         description:
           "Explore the broader research topic around implanted, auricular, and non-invasive vagus nerve stimulation.",

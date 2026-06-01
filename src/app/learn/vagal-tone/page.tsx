@@ -4,14 +4,14 @@ import { buildAuthorityPageStructuredData } from "@/lib/seo/structured-data"
 
 export const metadata = {
   title:
-    "What Is Vagal Tone? Resilience, Recovery and Nervous System Flexibility | Neuvago",
+    "What Is Vagal Tone? | Neuvago",
   description:
     "Learn what vagal tone means, how it relates to resilience, recovery, return after stress, and why the term matters in everyday nervous system conversations.",
   alternates: {
     canonical: "/learn/vagal-tone",
   },
   openGraph: {
-    title: "What Is Vagal Tone? Resilience, Recovery and Nervous System Flexibility | Neuvago",
+    title: "What Is Vagal Tone? | Neuvago",
     description: "Learn what vagal tone means, how it relates to resilience, recovery, return after stress, and why the term matters in everyday nervous system conversations.",
     url: "/learn/vagal-tone",
     siteName: "Neuvago",
@@ -20,7 +20,7 @@ export const metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "What Is Vagal Tone? Resilience, Recovery and Nervous System Flexibility | Neuvago",
+    title: "What Is Vagal Tone? | Neuvago",
     description: "Learn what vagal tone means, how it relates to resilience, recovery, return after stress, and why the term matters in everyday nervous system conversations.",
   },
 }
@@ -153,7 +153,7 @@ const connectedTopics = [
 
 export default function VagalTonePage() {
   const structuredData = buildAuthorityPageStructuredData({
-    title: "What Is Vagal Tone? Resilience, Recovery and Nervous System Flexibility | Neuvago",
+    title: "What Is Vagal Tone? | Neuvago",
     description: "Learn what vagal tone means, how it relates to resilience, recovery, return after stress, and why the term matters in everyday nervous system conversations.",
     path: "/learn/vagal-tone",
     articleSection: "Learn",

@@ -4,14 +4,14 @@ import { buildAuthorityPageStructuredData } from "@/lib/seo/structured-data"
 
 export const metadata = {
   title:
-    "Inflammation Research | Neuroimmune Signaling, Inflammatory Reflex and Vagal Pathways | Neuvago",
+    "Inflammation Research | Vagal Pathways | Neuvago",
   description:
     "Explore inflammation research in the Neuvago Research Library, including neuroimmune signaling, the inflammatory reflex, cytokine regulation, and vagus-related immune communication.",
   alternates: {
     canonical: "/research/topics/inflammation",
   },
   openGraph: {
-    title: "Inflammation Research | Neuroimmune Signaling, Inflammatory Reflex and Vagal Pathways | Neuvago",
+    title: "Inflammation Research | Vagal Pathways | Neuvago",
     description: "Explore inflammation research in the Neuvago Research Library, including neuroimmune signaling, the inflammatory reflex, cytokine regulation, and vagus-related immune communication.",
     url: "/research/topics/inflammation",
     siteName: "Neuvago",
@@ -20,7 +20,7 @@ export const metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Inflammation Research | Neuroimmune Signaling, Inflammatory Reflex and Vagal Pathways | Neuvago",
+    title: "Inflammation Research | Vagal Pathways | Neuvago",
     description: "Explore inflammation research in the Neuvago Research Library, including neuroimmune signaling, the inflammatory reflex, cytokine regulation, and vagus-related immune communication.",
   },
 }
@@ -180,7 +180,7 @@ function StudyCard({
 
 export default function InflammationResearchPage() {
   const structuredData = buildAuthorityPageStructuredData({
-    title: "Inflammation Research | Neuroimmune Signaling, Inflammatory Reflex and Vagal Pathways | Neuvago",
+    title: "Inflammation Research | Vagal Pathways | Neuvago",
     description: "Explore inflammation research in the Neuvago Research Library, including neuroimmune signaling, the inflammatory reflex, cytokine regulation, and vagus-related immune communication.",
     path: "/research/topics/inflammation",
     articleSection: "Research topics",

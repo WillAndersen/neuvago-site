@@ -4,14 +4,14 @@ import { buildAuthorityPageStructuredData } from "@/lib/seo/structured-data"
 
 export const metadata = {
   title:
-    "Emotional Regulation and the Nervous System | Reactivity, Overwhelm and Recovery | Neuvago",
+    "Emotional Regulation and the Nervous System | Neuvago",
   description:
     "Learn how emotional regulation connects to the nervous system, including overwhelm, reactivity, shutdown, emotional recovery, and how the body carries emotion in everyday life.",
   alternates: {
     canonical: "/learn/emotional-regulation-and-the-nervous-system",
   },
   openGraph: {
-    title: "Emotional Regulation and the Nervous System | Reactivity, Overwhelm and Recovery | Neuvago",
+    title: "Emotional Regulation and the Nervous System | Neuvago",
     description: "Learn how emotional regulation connects to the nervous system, including overwhelm, reactivity, shutdown, emotional recovery, and how the body carries emotion in everyday life.",
     url: "/learn/emotional-regulation-and-the-nervous-system",
     siteName: "Neuvago",
@@ -20,7 +20,7 @@ export const metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Emotional Regulation and the Nervous System | Reactivity, Overwhelm and Recovery | Neuvago",
+    title: "Emotional Regulation and the Nervous System | Neuvago",
     description: "Learn how emotional regulation connects to the nervous system, including overwhelm, reactivity, shutdown, emotional recovery, and how the body carries emotion in everyday life.",
   },
 }
@@ -153,7 +153,7 @@ const connectedTopics = [
 
 export default function EmotionalRegulationAndTheNervousSystemPage() {
   const structuredData = buildAuthorityPageStructuredData({
-    title: "Emotional Regulation and the Nervous System | Reactivity, Overwhelm and Recovery | Neuvago",
+    title: "Emotional Regulation and the Nervous System | Neuvago",
     description: "Learn how emotional regulation connects to the nervous system, including overwhelm, reactivity, shutdown, emotional recovery, and how the body carries emotion in everyday life.",
     path: "/learn/emotional-regulation-and-the-nervous-system",
     articleSection: "Learn",

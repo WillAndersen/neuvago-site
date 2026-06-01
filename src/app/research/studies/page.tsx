@@ -4,14 +4,14 @@ import { buildPageWithBreadcrumbStructuredData } from "@/lib/seo/structured-data
 
 export const metadata = {
   title:
-    "Scientific Studies Library | Vagus Nerve, HRV, Stress and Nervous System Research | Neuvago",
+    "Scientific Studies Library | Neuvago",
   description:
     "Browse the Neuvago Scientific Studies Library with individual research summaries on the vagus nerve, nervous system regulation, HRV, inflammation, stress, and non-invasive vagus nerve stimulation.",
   alternates: {
     canonical: "/research/studies",
   },
   openGraph: {
-    title: "Scientific Studies Library | Vagus Nerve, HRV, Stress and Nervous System Research | Neuvago",
+    title: "Scientific Studies Library | Neuvago",
     description: "Browse the Neuvago Scientific Studies Library with individual research summaries on the vagus nerve, nervous system regulation, HRV, inflammation, stress, and non-invasive vagus nerve stimulation.",
     url: "/research/studies",
     siteName: "Neuvago",
@@ -20,7 +20,7 @@ export const metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Scientific Studies Library | Vagus Nerve, HRV, Stress and Nervous System Research | Neuvago",
+    title: "Scientific Studies Library | Neuvago",
     description: "Browse the Neuvago Scientific Studies Library with individual research summaries on the vagus nerve, nervous system regulation, HRV, inflammation, stress, and non-invasive vagus nerve stimulation.",
   },
 }
@@ -302,7 +302,7 @@ function StudyCard({
 
 export default function ResearchStudiesPage() {
   const structuredData = buildPageWithBreadcrumbStructuredData({
-    title: "Scientific Studies Library | Vagus Nerve, HRV, Stress and Nervous System Research | Neuvago",
+    title: "Scientific Studies Library | Neuvago",
     description: "Browse the Neuvago Scientific Studies Library with individual research summaries on the vagus nerve, nervous system regulation, HRV, inflammation, stress, and non-invasive vagus nerve stimulation.",
     path: "/research/studies",
     breadcrumbs: [

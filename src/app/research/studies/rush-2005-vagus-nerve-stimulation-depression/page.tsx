@@ -4,14 +4,14 @@ import { buildAuthorityPageStructuredData } from "@/lib/seo/structured-data"
 
 export const metadata = {
   title:
-    "Vagus Nerve Stimulation for Treatment-Resistant Depression (Rush et al., 2005) | Neuvago Research Library",
+    "Rush et al. 2005 | VNS Depression Study | Neuvago",
   description:
     "Read a structured summary of Rush et al. (2005), the influential clinical study on implanted vagus nerve stimulation for treatment-resistant depression.",
   alternates: {
     canonical: "/research/studies/rush-2005-vagus-nerve-stimulation-depression",
   },
   openGraph: {
-    title: "Vagus Nerve Stimulation for Treatment-Resistant Depression (Rush et al., 2005) | Neuvago Research Library",
+    title: "Rush et al. 2005 | VNS Depression Study | Neuvago",
     description: "Read a structured summary of Rush et al. (2005), the influential clinical study on implanted vagus nerve stimulation for treatment-resistant depression.",
     url: "/research/studies/rush-2005-vagus-nerve-stimulation-depression",
     siteName: "Neuvago",
@@ -20,7 +20,7 @@ export const metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Vagus Nerve Stimulation for Treatment-Resistant Depression (Rush et al., 2005) | Neuvago Research Library",
+    title: "Rush et al. 2005 | VNS Depression Study | Neuvago",
     description: "Read a structured summary of Rush et al. (2005), the influential clinical study on implanted vagus nerve stimulation for treatment-resistant depression.",
   },
 }
@@ -158,7 +158,7 @@ const relatedLinks = [
 
 export default function Rush2005VagusNerveStimulationDepressionPage() {
   const structuredData = buildAuthorityPageStructuredData({
-    title: "Vagus Nerve Stimulation for Treatment-Resistant Depression (Rush et al., 2005) | Neuvago Research Library",
+    title: "Rush et al. 2005 | VNS Depression Study | Neuvago",
     description: "Read a structured summary of Rush et al. (2005), the influential clinical study on implanted vagus nerve stimulation for treatment-resistant depression.",
     path: "/research/studies/rush-2005-vagus-nerve-stimulation-depression",
     articleSection: "Scientific studies",
@@ -265,7 +265,7 @@ export default function Rush2005VagusNerveStimulationDepressionPage() {
                 rel="noopener noreferrer"
                 className="mt-2 inline-flex text-sm leading-7 text-[#1f1f1c] underline-offset-4 hover:underline"
               >
-                https://doi.org/10.1016/j.biopsych.2005.07.028
+                Open DOI record
               </a>
               <div className="mt-4">
                 <a

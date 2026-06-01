@@ -5,7 +5,7 @@ import { buildAuthorityPageStructuredData } from "@/lib/seo/structured-data";
 import { authorityEditorialDates } from "@/lib/seo/editorial-dates";
 
 const title =
-  "Transcutaneous Vagus Nerve Stimulation | tVNS and taVNS Guide | Neuvago";
+  "Transcutaneous Vagus Nerve Stimulation | tVNS Guide | Neuvago";
 const description =
   "Learn what transcutaneous vagus nerve stimulation means, how tVNS and taVNS relate to non-invasive VNS, and how to evaluate the category responsibly.";
 const path = "/learn/transcutaneous-vagus-nerve-stimulation";

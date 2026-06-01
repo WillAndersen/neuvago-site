@@ -4,14 +4,14 @@ import { buildAuthorityPageStructuredData } from "@/lib/seo/structured-data"
 
 export const metadata = {
   title:
-    "Common Signs of a Dysregulated Nervous System | Stress, Sleep and Recovery | Neuvago",
+    "Signs of a Dysregulated Nervous System | Neuvago",
   description:
     "Learn the common signs of a dysregulated nervous system, how they show up in everyday life, and how they connect to stress, sleep, recovery, anxiety, and shutdown.",
   alternates: {
     canonical: "/learn/signs-of-a-dysregulated-nervous-system",
   },
   openGraph: {
-    title: "Common Signs of a Dysregulated Nervous System | Stress, Sleep and Recovery | Neuvago",
+    title: "Signs of a Dysregulated Nervous System | Neuvago",
     description: "Learn the common signs of a dysregulated nervous system, how they show up in everyday life, and how they connect to stress, sleep, recovery, anxiety, and shutdown.",
     url: "/learn/signs-of-a-dysregulated-nervous-system",
     siteName: "Neuvago",
@@ -20,7 +20,7 @@ export const metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Common Signs of a Dysregulated Nervous System | Stress, Sleep and Recovery | Neuvago",
+    title: "Signs of a Dysregulated Nervous System | Neuvago",
     description: "Learn the common signs of a dysregulated nervous system, how they show up in everyday life, and how they connect to stress, sleep, recovery, anxiety, and shutdown.",
   },
 }
@@ -150,7 +150,7 @@ const connectedTopics = [
 
 export default function SignsOfADysregulatedNervousSystemPage() {
   const structuredData = buildAuthorityPageStructuredData({
-    title: "Common Signs of a Dysregulated Nervous System | Stress, Sleep and Recovery | Neuvago",
+    title: "Signs of a Dysregulated Nervous System | Neuvago",
     description: "Learn the common signs of a dysregulated nervous system, how they show up in everyday life, and how they connect to stress, sleep, recovery, anxiety, and shutdown.",
     path: "/learn/signs-of-a-dysregulated-nervous-system",
     articleSection: "Learn",

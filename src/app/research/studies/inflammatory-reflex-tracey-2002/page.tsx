@@ -4,14 +4,14 @@ import { buildAuthorityPageStructuredData } from "@/lib/seo/structured-data"
 
 export const metadata = {
   title:
-    "The Inflammatory Reflex: Neural Regulation of the Immune System (Tracey, 2002) | Neuvago Research Library",
+    "Tracey 2002 | Inflammatory Reflex Study | Neuvago",
   description:
     "Read a structured summary of Tracey (2002), the landmark paper that introduced the inflammatory reflex and helped establish the role of vagal pathways in neuroimmune communication.",
   alternates: {
     canonical: "/research/studies/inflammatory-reflex-tracey-2002",
   },
   openGraph: {
-    title: "The Inflammatory Reflex: Neural Regulation of the Immune System (Tracey, 2002) | Neuvago Research Library",
+    title: "Tracey 2002 | Inflammatory Reflex Study | Neuvago",
     description: "Read a structured summary of Tracey (2002), the landmark paper that introduced the inflammatory reflex and helped establish the role of vagal pathways in neuroimmune communication.",
     url: "/research/studies/inflammatory-reflex-tracey-2002",
     siteName: "Neuvago",
@@ -20,7 +20,7 @@ export const metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "The Inflammatory Reflex: Neural Regulation of the Immune System (Tracey, 2002) | Neuvago Research Library",
+    title: "Tracey 2002 | Inflammatory Reflex Study | Neuvago",
     description: "Read a structured summary of Tracey (2002), the landmark paper that introduced the inflammatory reflex and helped establish the role of vagal pathways in neuroimmune communication.",
   },
 }
@@ -153,7 +153,7 @@ const relatedLinks = [
 
 export default function InflammatoryReflexTracey2002Page() {
   const structuredData = buildAuthorityPageStructuredData({
-    title: "The Inflammatory Reflex: Neural Regulation of the Immune System (Tracey, 2002) | Neuvago Research Library",
+    title: "Tracey 2002 | Inflammatory Reflex Study | Neuvago",
     description: "Read a structured summary of Tracey (2002), the landmark paper that introduced the inflammatory reflex and helped establish the role of vagal pathways in neuroimmune communication.",
     path: "/research/studies/inflammatory-reflex-tracey-2002",
     articleSection: "Scientific studies",
@@ -260,7 +260,7 @@ export default function InflammatoryReflexTracey2002Page() {
                 rel="noopener noreferrer"
                 className="mt-2 inline-flex text-sm leading-7 text-[#1f1f1c] underline-offset-4 hover:underline"
               >
-                https://doi.org/10.1038/415853a
+                Open DOI record
               </a>
               <div className="mt-4">
                 <a

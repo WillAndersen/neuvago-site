@@ -4,14 +4,14 @@ import { buildAuthorityPageStructuredData } from "@/lib/seo/structured-data"
 
 export const metadata = {
   title:
-    "The Cholinergic Anti-Inflammatory Pathway (Pavlov & Tracey, 2005) | Neuvago Research Library",
+    "Pavlov & Tracey 2005 | Cholinergic Pathway | Neuvago",
   description:
     "Read a structured summary of Pavlov & Tracey (2005), the influential review that described the cholinergic anti-inflammatory pathway and helped shape research on vagal signaling and immune regulation.",
   alternates: {
     canonical: "/research/studies/pavlov-tracey-2005-cholinergic-anti-inflammatory-pathway",
   },
   openGraph: {
-    title: "The Cholinergic Anti-Inflammatory Pathway (Pavlov & Tracey, 2005) | Neuvago Research Library",
+    title: "Pavlov & Tracey 2005 | Cholinergic Pathway | Neuvago",
     description: "Read a structured summary of Pavlov & Tracey (2005), the influential review that described the cholinergic anti-inflammatory pathway and helped shape research on vagal signaling and immune regulation.",
     url: "/research/studies/pavlov-tracey-2005-cholinergic-anti-inflammatory-pathway",
     siteName: "Neuvago",
@@ -20,7 +20,7 @@ export const metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "The Cholinergic Anti-Inflammatory Pathway (Pavlov & Tracey, 2005) | Neuvago Research Library",
+    title: "Pavlov & Tracey 2005 | Cholinergic Pathway | Neuvago",
     description: "Read a structured summary of Pavlov & Tracey (2005), the influential review that described the cholinergic anti-inflammatory pathway and helped shape research on vagal signaling and immune regulation.",
   },
 }
@@ -153,7 +153,7 @@ const relatedLinks = [
 
 export default function PavlovTracey2005CholinergicAntiInflammatoryPathwayPage() {
   const structuredData = buildAuthorityPageStructuredData({
-    title: "The Cholinergic Anti-Inflammatory Pathway (Pavlov & Tracey, 2005) | Neuvago Research Library",
+    title: "Pavlov & Tracey 2005 | Cholinergic Pathway | Neuvago",
     description: "Read a structured summary of Pavlov & Tracey (2005), the influential review that described the cholinergic anti-inflammatory pathway and helped shape research on vagal signaling and immune regulation.",
     path: "/research/studies/pavlov-tracey-2005-cholinergic-anti-inflammatory-pathway",
     articleSection: "Scientific studies",
@@ -261,7 +261,7 @@ export default function PavlovTracey2005CholinergicAntiInflammatoryPathwayPage()
                 rel="noopener noreferrer"
                 className="mt-2 inline-flex text-sm leading-7 text-[#1f1f1c] underline-offset-4 hover:underline"
               >
-                https://doi.org/10.1016/j.bbi.2005.03.015
+                Open DOI record
               </a>
               <div className="mt-4">
                 <a

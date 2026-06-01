@@ -4,14 +4,14 @@ import { buildAuthorityPageStructuredData } from "@/lib/seo/structured-data"
 
 export const metadata = {
   title:
-    "Why You Feel Tired but Can’t Relax | Wired but Tired, Sleep and Stress | Neuvago",
+    "Tired but Can’t Relax | Wired and Stressed | Neuvago",
   description:
     "Learn why you can feel tired but unable to relax, and how this wired-but-tired pattern connects to stress, sleep, recovery, and nervous system regulation.",
   alternates: {
     canonical: "/learn/why-you-feel-tired-but-cant-relax",
   },
   openGraph: {
-    title: "Why You Feel Tired but Can’t Relax | Wired but Tired, Sleep and Stress | Neuvago",
+    title: "Tired but Can’t Relax | Wired and Stressed | Neuvago",
     description: "Learn why you can feel tired but unable to relax, and how this wired-but-tired pattern connects to stress, sleep, recovery, and nervous system regulation.",
     url: "/learn/why-you-feel-tired-but-cant-relax",
     siteName: "Neuvago",
@@ -20,7 +20,7 @@ export const metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Why You Feel Tired but Can’t Relax | Wired but Tired, Sleep and Stress | Neuvago",
+    title: "Tired but Can’t Relax | Wired and Stressed | Neuvago",
     description: "Learn why you can feel tired but unable to relax, and how this wired-but-tired pattern connects to stress, sleep, recovery, and nervous system regulation.",
   },
 }
@@ -155,7 +155,7 @@ const clarifications = [
 
 export default function WhyYouFeelTiredButCantRelaxPage() {
   const structuredData = buildAuthorityPageStructuredData({
-    title: "Why You Feel Tired but Can’t Relax | Wired but Tired, Sleep and Stress | Neuvago",
+    title: "Tired but Can’t Relax | Wired and Stressed | Neuvago",
     description: "Learn why you can feel tired but unable to relax, and how this wired-but-tired pattern connects to stress, sleep, recovery, and nervous system regulation.",
     path: "/learn/why-you-feel-tired-but-cant-relax",
     articleSection: "Learn",

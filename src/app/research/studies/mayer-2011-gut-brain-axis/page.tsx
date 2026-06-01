@@ -4,14 +4,14 @@ import { buildAuthorityPageStructuredData } from "@/lib/seo/structured-data"
 
 export const metadata = {
   title:
-    "Gut Feelings: The Emerging Biology of Gut–Brain Communication (Mayer, 2011) | Neuvago Research Library",
+    "Mayer 2011 | Gut–Brain Axis Study | Neuvago",
   description:
     "Read a structured summary of Mayer (2011), the influential review that helped establish the gut–brain axis as a central framework in modern brain–body communication research.",
   alternates: {
     canonical: "/research/studies/mayer-2011-gut-brain-axis",
   },
   openGraph: {
-    title: "Gut Feelings: The Emerging Biology of Gut–Brain Communication (Mayer, 2011) | Neuvago Research Library",
+    title: "Mayer 2011 | Gut–Brain Axis Study | Neuvago",
     description: "Read a structured summary of Mayer (2011), the influential review that helped establish the gut–brain axis as a central framework in modern brain–body communication research.",
     url: "/research/studies/mayer-2011-gut-brain-axis",
     siteName: "Neuvago",
@@ -20,7 +20,7 @@ export const metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Gut Feelings: The Emerging Biology of Gut–Brain Communication (Mayer, 2011) | Neuvago Research Library",
+    title: "Mayer 2011 | Gut–Brain Axis Study | Neuvago",
     description: "Read a structured summary of Mayer (2011), the influential review that helped establish the gut–brain axis as a central framework in modern brain–body communication research.",
   },
 }
@@ -158,7 +158,7 @@ const relatedLinks = [
 
 export default function Mayer2011GutBrainAxisPage() {
   const structuredData = buildAuthorityPageStructuredData({
-    title: "Gut Feelings: The Emerging Biology of Gut–Brain Communication (Mayer, 2011) | Neuvago Research Library",
+    title: "Mayer 2011 | Gut–Brain Axis Study | Neuvago",
     description: "Read a structured summary of Mayer (2011), the influential review that helped establish the gut–brain axis as a central framework in modern brain–body communication research.",
     path: "/research/studies/mayer-2011-gut-brain-axis",
     articleSection: "Scientific studies",
@@ -266,7 +266,7 @@ export default function Mayer2011GutBrainAxisPage() {
                 rel="noopener noreferrer"
                 className="mt-2 inline-flex text-sm leading-7 text-[#1f1f1c] underline-offset-4 hover:underline"
               >
-                https://doi.org/10.1038/nrn3071
+                Open DOI record
               </a>
               <div className="mt-4">
                 <a

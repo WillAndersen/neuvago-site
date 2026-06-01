@@ -4,14 +4,14 @@ import { buildAuthorityPageStructuredData } from "@/lib/seo/structured-data"
 
 export const metadata = {
   title:
-    "Non-Invasive Access to the Vagus Nerve via the Ear: fMRI Evidence (Frangos et al., 2015) | Neuvago Research Library",
+    "Frangos et al. 2015 | Auricular VNS fMRI Study | Neuvago",
   description:
     "Read a structured summary of Frangos et al. (2015), the influential fMRI study showing that auricular stimulation of the ear may influence brain regions associated with vagal pathways.",
   alternates: {
     canonical: "/research/studies/frangos-2015-auricular-vagus-nerve-stimulation-fmri",
   },
   openGraph: {
-    title: "Non-Invasive Access to the Vagus Nerve via the Ear: fMRI Evidence (Frangos et al., 2015) | Neuvago Research Library",
+    title: "Frangos et al. 2015 | Auricular VNS fMRI Study | Neuvago",
     description: "Read a structured summary of Frangos et al. (2015), the influential fMRI study showing that auricular stimulation of the ear may influence brain regions associated with vagal pathways.",
     url: "/research/studies/frangos-2015-auricular-vagus-nerve-stimulation-fmri",
     siteName: "Neuvago",
@@ -20,7 +20,7 @@ export const metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Non-Invasive Access to the Vagus Nerve via the Ear: fMRI Evidence (Frangos et al., 2015) | Neuvago Research Library",
+    title: "Frangos et al. 2015 | Auricular VNS fMRI Study | Neuvago",
     description: "Read a structured summary of Frangos et al. (2015), the influential fMRI study showing that auricular stimulation of the ear may influence brain regions associated with vagal pathways.",
   },
 }
@@ -164,7 +164,7 @@ const relatedLinks = [
 
 export default function Frangos2015AuricularVagusNerveStimulationFmriPage() {
   const structuredData = buildAuthorityPageStructuredData({
-    title: "Non-Invasive Access to the Vagus Nerve via the Ear: fMRI Evidence (Frangos et al., 2015) | Neuvago Research Library",
+    title: "Frangos et al. 2015 | Auricular VNS fMRI Study | Neuvago",
     description: "Read a structured summary of Frangos et al. (2015), the influential fMRI study showing that auricular stimulation of the ear may influence brain regions associated with vagal pathways.",
     path: "/research/studies/frangos-2015-auricular-vagus-nerve-stimulation-fmri",
     articleSection: "Scientific studies",
@@ -271,7 +271,7 @@ export default function Frangos2015AuricularVagusNerveStimulationFmriPage() {
                 rel="noopener noreferrer"
                 className="mt-2 inline-flex text-sm leading-7 text-[#1f1f1c] underline-offset-4 hover:underline"
               >
-                https://doi.org/10.1016/j.brs.2014.11.018
+                Open DOI record
               </a>
               <div className="mt-4">
                 <a

@@ -4,14 +4,14 @@ import { buildAuthorityPageStructuredData } from "@/lib/seo/structured-data"
 
 export const metadata = {
   title:
-    "Anxiety and the Nervous System | Unease, Alertness and Overwhelm | Neuvago",
+    "Anxiety and the Nervous System | Neuvago",
   description:
     "Learn how anxiety connects to the nervous system, including alertness, overwhelm, reactivity, poor sleep, and why the body can feel watchful or hard to settle.",
   alternates: {
     canonical: "/conditions/anxiety",
   },
   openGraph: {
-    title: "Anxiety and the Nervous System | Unease, Alertness and Overwhelm | Neuvago",
+    title: "Anxiety and the Nervous System | Neuvago",
     description: "Learn how anxiety connects to the nervous system, including alertness, overwhelm, reactivity, poor sleep, and why the body can feel watchful or hard to settle.",
     url: "/conditions/anxiety",
     siteName: "Neuvago",
@@ -20,7 +20,7 @@ export const metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Anxiety and the Nervous System | Unease, Alertness and Overwhelm | Neuvago",
+    title: "Anxiety and the Nervous System | Neuvago",
     description: "Learn how anxiety connects to the nervous system, including alertness, overwhelm, reactivity, poor sleep, and why the body can feel watchful or hard to settle.",
   },
 }
@@ -99,7 +99,7 @@ const connectedTopics = [
 
 export default function AnxietyPage() {
   const structuredData = buildAuthorityPageStructuredData({
-    title: "Anxiety and the Nervous System | Unease, Alertness and Overwhelm | Neuvago",
+    title: "Anxiety and the Nervous System | Neuvago",
     description: "Learn how anxiety connects to the nervous system, including alertness, overwhelm, reactivity, poor sleep, and why the body can feel watchful or hard to settle.",
     path: "/conditions/anxiety",
     articleSection: "Conditions",

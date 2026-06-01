@@ -4,14 +4,14 @@ import { buildAuthorityPageStructuredData } from "@/lib/seo/structured-data"
 
 export const metadata = {
   title:
-    "Fight, Flight, Freeze | Survival Patterns, Stress States and Shutdown | Neuvago",
+    "Fight, Flight, Freeze | Stress States | Neuvago",
   description:
     "Learn what fight, flight, and freeze mean in everyday life, how these protective states connect to stress, anxiety, shutdown, and nervous system regulation, and why the body reacts so strongly under pressure.",
   alternates: {
     canonical: "/learn/fight-flight-freeze",
   },
   openGraph: {
-    title: "Fight, Flight, Freeze | Survival Patterns, Stress States and Shutdown | Neuvago",
+    title: "Fight, Flight, Freeze | Stress States | Neuvago",
     description: "Learn what fight, flight, and freeze mean in everyday life, how these protective states connect to stress, anxiety, shutdown, and nervous system regulation, and why the body reacts so strongly under pressure.",
     url: "/learn/fight-flight-freeze",
     siteName: "Neuvago",
@@ -20,7 +20,7 @@ export const metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Fight, Flight, Freeze | Survival Patterns, Stress States and Shutdown | Neuvago",
+    title: "Fight, Flight, Freeze | Stress States | Neuvago",
     description: "Learn what fight, flight, and freeze mean in everyday life, how these protective states connect to stress, anxiety, shutdown, and nervous system regulation, and why the body reacts so strongly under pressure.",
   },
 }
@@ -153,7 +153,7 @@ const connectedTopics = [
 
 export default function FightFlightFreezePage() {
   const structuredData = buildAuthorityPageStructuredData({
-    title: "Fight, Flight, Freeze | Survival Patterns, Stress States and Shutdown | Neuvago",
+    title: "Fight, Flight, Freeze | Stress States | Neuvago",
     description: "Learn what fight, flight, and freeze mean in everyday life, how these protective states connect to stress, anxiety, shutdown, and nervous system regulation, and why the body reacts so strongly under pressure.",
     path: "/learn/fight-flight-freeze",
     articleSection: "Learn",

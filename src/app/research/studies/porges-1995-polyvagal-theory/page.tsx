@@ -4,14 +4,14 @@ import { buildAuthorityPageStructuredData } from "@/lib/seo/structured-data"
 
 export const metadata = {
   title:
-    "Orienting in a Defensive World: The Polyvagal Theory (Porges, 1995) | Neuvago Research Library",
+    "Porges 1995 | Polyvagal Theory Study | Neuvago",
   description:
     "Read a structured summary of Porges (1995), the landmark paper that introduced the polyvagal theory and helped shape research on vagal pathways, stress, safety, and emotional regulation.",
   alternates: {
     canonical: "/research/studies/porges-1995-polyvagal-theory",
   },
   openGraph: {
-    title: "Orienting in a Defensive World: The Polyvagal Theory (Porges, 1995) | Neuvago Research Library",
+    title: "Porges 1995 | Polyvagal Theory Study | Neuvago",
     description: "Read a structured summary of Porges (1995), the landmark paper that introduced the polyvagal theory and helped shape research on vagal pathways, stress, safety, and emotional regulation.",
     url: "/research/studies/porges-1995-polyvagal-theory",
     siteName: "Neuvago",
@@ -20,7 +20,7 @@ export const metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Orienting in a Defensive World: The Polyvagal Theory (Porges, 1995) | Neuvago Research Library",
+    title: "Porges 1995 | Polyvagal Theory Study | Neuvago",
     description: "Read a structured summary of Porges (1995), the landmark paper that introduced the polyvagal theory and helped shape research on vagal pathways, stress, safety, and emotional regulation.",
   },
 }
@@ -142,7 +142,7 @@ const relatedLinks = [
 
 export default function Porges1995PolyvagalTheoryPage() {
   const structuredData = buildAuthorityPageStructuredData({
-    title: "Orienting in a Defensive World: The Polyvagal Theory (Porges, 1995) | Neuvago Research Library",
+    title: "Porges 1995 | Polyvagal Theory Study | Neuvago",
     description: "Read a structured summary of Porges (1995), the landmark paper that introduced the polyvagal theory and helped shape research on vagal pathways, stress, safety, and emotional regulation.",
     path: "/research/studies/porges-1995-polyvagal-theory",
     articleSection: "Scientific studies",
@@ -251,7 +251,7 @@ export default function Porges1995PolyvagalTheoryPage() {
                 rel="noopener noreferrer"
                 className="mt-2 inline-flex text-sm leading-7 text-[#1f1f1c] underline-offset-4 hover:underline"
               >
-                https://doi.org/10.1111/j.1469-8986.1995.tb01213.x
+                Open DOI record
               </a>
               <div className="mt-4">
                 <a

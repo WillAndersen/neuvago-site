@@ -4,14 +4,14 @@ import { buildAuthorityPageStructuredData } from "@/lib/seo/structured-data"
 
 export const metadata = {
   title:
-    "Why Your Body Feels Stuck in Stress | Lingering Activation, Sleep and Recovery | Neuvago",
+    "Stuck in Stress | Nervous System Activation | Neuvago",
   description:
     "Learn why the body can feel stuck in stress even after the stressful thing is over, and how lingering activation connects to sleep, recovery, anxiety, and nervous system regulation.",
   alternates: {
     canonical: "/learn/why-your-body-feels-stuck-in-stress",
   },
   openGraph: {
-    title: "Why Your Body Feels Stuck in Stress | Lingering Activation, Sleep and Recovery | Neuvago",
+    title: "Stuck in Stress | Nervous System Activation | Neuvago",
     description: "Learn why the body can feel stuck in stress even after the stressful thing is over, and how lingering activation connects to sleep, recovery, anxiety, and nervous system regulation.",
     url: "/learn/why-your-body-feels-stuck-in-stress",
     siteName: "Neuvago",
@@ -20,7 +20,7 @@ export const metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Why Your Body Feels Stuck in Stress | Lingering Activation, Sleep and Recovery | Neuvago",
+    title: "Stuck in Stress | Nervous System Activation | Neuvago",
     description: "Learn why the body can feel stuck in stress even after the stressful thing is over, and how lingering activation connects to sleep, recovery, anxiety, and nervous system regulation.",
   },
 }
@@ -153,7 +153,7 @@ const connectedTopics = [
 
 export default function WhyYourBodyFeelsStuckInStressPage() {
   const structuredData = buildAuthorityPageStructuredData({
-    title: "Why Your Body Feels Stuck in Stress | Lingering Activation, Sleep and Recovery | Neuvago",
+    title: "Stuck in Stress | Nervous System Activation | Neuvago",
     description: "Learn why the body can feel stuck in stress even after the stressful thing is over, and how lingering activation connects to sleep, recovery, anxiety, and nervous system regulation.",
     path: "/learn/why-your-body-feels-stuck-in-stress",
     articleSection: "Learn",

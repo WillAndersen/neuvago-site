@@ -4,14 +4,14 @@ import { buildPageWithBreadcrumbStructuredData } from "@/lib/seo/structured-data
 
 export const metadata = {
   title:
-    "Topic Research | Vagus Nerve, tVNS, Autonomic Regulation and Safety | Neuvago",
+    "Topic Research | VNS, tVNS and Safety | Neuvago",
   description:
     "Explore topic research in the Neuvago Research Library, including vagus nerve stimulation, transcutaneous VNS, autonomic regulation, safety and tolerability, heart rate variability, inflammation, gut–brain axis, stress physiology, and recovery.",
   alternates: {
     canonical: "/research/topics",
   },
   openGraph: {
-    title: "Topic Research | Vagus Nerve, tVNS, Autonomic Regulation and Safety | Neuvago",
+    title: "Topic Research | VNS, tVNS and Safety | Neuvago",
     description: "Explore topic research in the Neuvago Research Library, including vagus nerve stimulation, transcutaneous VNS, autonomic regulation, safety and tolerability, heart rate variability, inflammation, gut–brain axis, stress physiology, and recovery.",
     url: "/research/topics",
     siteName: "Neuvago",
@@ -20,7 +20,7 @@ export const metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Topic Research | Vagus Nerve, tVNS, Autonomic Regulation and Safety | Neuvago",
+    title: "Topic Research | VNS, tVNS and Safety | Neuvago",
     description: "Explore topic research in the Neuvago Research Library, including vagus nerve stimulation, transcutaneous VNS, autonomic regulation, safety and tolerability, heart rate variability, inflammation, gut–brain axis, stress physiology, and recovery.",
   },
 }
@@ -152,7 +152,7 @@ const whyTopicsMatter = [
 
 export default function ResearchTopicsPage() {
   const structuredData = buildPageWithBreadcrumbStructuredData({
-    title: "Topic Research | Vagus Nerve, tVNS, Autonomic Regulation and Safety | Neuvago",
+    title: "Topic Research | VNS, tVNS and Safety | Neuvago",
     description: "Explore topic research in the Neuvago Research Library, including vagus nerve stimulation, transcutaneous VNS, autonomic regulation, safety and tolerability, heart rate variability, inflammation, gut–brain axis, stress physiology, and recovery.",
     path: "/research/topics",
     breadcrumbs: [

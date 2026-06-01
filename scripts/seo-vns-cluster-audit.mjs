@@ -133,6 +133,28 @@ for (const [route, markers] of Object.entries(conditionBridgeRequirements)) {
   }
 }
 
+
+const productSource = readIfExists(pageFileForRoute("/product"));
+if (productSource.includes("buildProductStructuredData")) {
+  errors.push("/product still renders Product structured data; keep Product schema disabled until real offer/review data exists.");
+}
+
+const pageSources = collectFiles(path.join(repoRoot, "src/app"), "page.tsx");
+for (const filePath of pageSources) {
+  const source = readIfExists(filePath);
+  const titleMatches = source.matchAll(/title\s*[:=]\s*["`]([^"`]+)["`]/g);
+  for (const match of titleMatches) {
+    const title = match[1];
+    if (title.includes("Neuvago") && title.length > 70) {
+      errors.push(`${relative(filePath)} has a long SEO title (${title.length} chars): ${title}`);
+    }
+  }
+
+  if (/>\s*https:\/\/doi\.org\//.test(source)) {
+    errors.push(`${relative(filePath)} has a naked DOI URL as anchor text.`);
+  }
+}
+
 const artifacts = findArtifacts(repoRoot);
 if (artifacts.length > 0) {
   errors.push(`Remove generated artifacts before commit: ${artifacts.slice(0, 12).join(", ")}${artifacts.length > 12 ? " ..." : ""}`);
@@ -153,6 +175,31 @@ if (errors.length > 0) {
 }
 
 console.log(`SEO VNS cluster audit passed for ${clusterRoutes.length} routes.`);
+
+
+function collectFiles(dir, fileName, matches = []) {
+  if (!existsSync(dir)) return matches;
+
+  for (const entry of readdirSync(dir)) {
+    if (["node_modules", ".next", ".git", "out", "dist", "build"].includes(entry)) {
+      continue;
+    }
+
+    const absolute = path.join(dir, entry);
+    const stat = statSync(absolute);
+
+    if (stat.isDirectory()) {
+      collectFiles(absolute, fileName, matches);
+      continue;
+    }
+
+    if (entry === fileName) {
+      matches.push(absolute);
+    }
+  }
+
+  return matches;
+}
 
 function pageFileForRoute(route) {
   const routePath = route === "/" ? "" : route.replace(/^\//, "");

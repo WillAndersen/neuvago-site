@@ -4,14 +4,14 @@ import { JsonLd } from "@/components/seo/json-ld"
 import { buildPageWithBreadcrumbStructuredData } from "@/lib/seo/structured-data"
 
 export const metadata: Metadata = {
-  title: "Research Hub | Vagus Nerve, tVNS, Autonomic Regulation and Safety | Neuvago",
+  title: "Research Hub | VNS, tVNS and Safety | Neuvago",
   description:
     "Browse Neuvago research topics and study summaries on vagus nerve stimulation, transcutaneous VNS, autonomic regulation, safety and tolerability, heart rate variability, stress, sleep, recovery, and nervous system regulation.",
   alternates: {
     canonical: "/research",
   },
   openGraph: {
-    title: "Research Hub | Vagus Nerve, tVNS, Autonomic Regulation and Safety | Neuvago",
+    title: "Research Hub | VNS, tVNS and Safety | Neuvago",
     description:
       "Browse Neuvago research topics and study summaries on vagus nerve stimulation, transcutaneous VNS, autonomic regulation, safety and tolerability, heart rate variability, stress, sleep, recovery, and nervous system regulation.",
     url: "/research",
@@ -21,7 +21,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Research Hub | Vagus Nerve, tVNS, Autonomic Regulation and Safety | Neuvago",
+    title: "Research Hub | VNS, tVNS and Safety | Neuvago",
     description:
       "Browse Neuvago research topics and study summaries on vagus nerve stimulation, transcutaneous VNS, autonomic regulation, safety and tolerability, heart rate variability, stress, sleep, recovery, and nervous system regulation.",
   },
@@ -207,7 +207,7 @@ const principles = [
 
 export default function ResearchPage() {
     const structuredData = buildPageWithBreadcrumbStructuredData({
-    title: "Research Hub | Vagus Nerve, tVNS, Autonomic Regulation and Safety | Neuvago",
+    title: "Research Hub | VNS, tVNS and Safety | Neuvago",
     description: "Browse Neuvago research topics and study summaries on vagus nerve stimulation, transcutaneous VNS, autonomic regulation, safety and tolerability, heart rate variability, stress, sleep, recovery, and nervous system regulation.",
     path: "/research",
     breadcrumbs: [

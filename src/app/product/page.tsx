@@ -13,8 +13,7 @@ import {
 } from "@/components/product";
 import {
   buildFAQStructuredData,
-  buildProductStructuredData,
-  buildWebPageStructuredData,
+  buildPageWithBreadcrumbStructuredData,
 } from "@/lib/seo/structured-data";
 
 export const metadata: Metadata = {
@@ -47,19 +46,15 @@ export const metadata: Metadata = {
 export default async function ProductPage() {
   const content = await getProductContent();
 
-  const structuredData: Array<Record<string, unknown>> = [
-    buildWebPageStructuredData({
-      title: content.hero.title,
-      description: content.hero.description,
-      path: "/product",
-    }),
-    buildProductStructuredData({
-      name: "Neuvago",
-      description: content.whatIsNeuvago.description,
-      path: "/product",
-      image: content.hero.desktopImage.src,
-    }),
-  ];
+  const structuredData: Array<Record<string, unknown>> = buildPageWithBreadcrumbStructuredData({
+    title: content.hero.title,
+    description: content.hero.description,
+    path: "/product",
+    breadcrumbs: [
+      { name: "Home", path: "/" },
+      { name: "Product", path: "/product" },
+    ],
+  });
 
   const faqStructuredData = content.faq.visible
     ? buildFAQStructuredData(content.faq.items)

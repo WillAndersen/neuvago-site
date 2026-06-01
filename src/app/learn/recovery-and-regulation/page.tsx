@@ -4,14 +4,14 @@ import { buildAuthorityPageStructuredData } from "@/lib/seo/structured-data"
 
 export const metadata = {
   title:
-    "Recovery and Regulation | Stress, Sleep, Capacity and Restoration | Neuvago",
+    "Recovery and Regulation | Neuvago",
   description:
     "Learn how recovery and nervous system regulation connect to stress, sleep, capacity, resilience, and why rest is not always the same as real restoration.",
   alternates: {
     canonical: "/learn/recovery-and-regulation",
   },
   openGraph: {
-    title: "Recovery and Regulation | Stress, Sleep, Capacity and Restoration | Neuvago",
+    title: "Recovery and Regulation | Neuvago",
     description: "Learn how recovery and nervous system regulation connect to stress, sleep, capacity, resilience, and why rest is not always the same as real restoration.",
     url: "/learn/recovery-and-regulation",
     siteName: "Neuvago",
@@ -20,7 +20,7 @@ export const metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Recovery and Regulation | Stress, Sleep, Capacity and Restoration | Neuvago",
+    title: "Recovery and Regulation | Neuvago",
     description: "Learn how recovery and nervous system regulation connect to stress, sleep, capacity, resilience, and why rest is not always the same as real restoration.",
   },
 }
@@ -153,7 +153,7 @@ const connectedTopics = [
 
 export default function RecoveryAndRegulationPage() {
   const structuredData = buildAuthorityPageStructuredData({
-    title: "Recovery and Regulation | Stress, Sleep, Capacity and Restoration | Neuvago",
+    title: "Recovery and Regulation | Neuvago",
     description: "Learn how recovery and nervous system regulation connect to stress, sleep, capacity, resilience, and why rest is not always the same as real restoration.",
     path: "/learn/recovery-and-regulation",
     articleSection: "Learn",

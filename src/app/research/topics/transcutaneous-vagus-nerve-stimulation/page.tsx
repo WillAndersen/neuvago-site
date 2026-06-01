@@ -5,7 +5,7 @@ import { buildAuthorityPageStructuredData } from "@/lib/seo/structured-data";
 import { authorityEditorialDates } from "@/lib/seo/editorial-dates";
 
 const title =
-  "Transcutaneous VNS Research | tVNS, taVNS, Safety and Methods | Neuvago";
+  "Transcutaneous VNS Research | tVNS and taVNS | Neuvago";
 const description =
   "Explore transcutaneous VNS research, including tVNS, taVNS, auricular stimulation, stimulation sites, protocol variables, safety and interpretation limits.";
 const path = "/research/topics/transcutaneous-vagus-nerve-stimulation";

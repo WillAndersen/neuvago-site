@@ -4,14 +4,14 @@ import { buildAuthorityPageStructuredData } from "@/lib/seo/structured-data"
 
 export const metadata = {
   title:
-    "What Is the Parasympathetic Nervous System? Calm, Rest and Restoration | Neuvago",
+    "Parasympathetic Nervous System | Neuvago",
   description:
     "Learn what the parasympathetic nervous system is, how it relates to calm, unwinding, digestion, sleep, and why it matters for recovery and nervous system restoration.",
   alternates: {
     canonical: "/learn/parasympathetic-nervous-system",
   },
   openGraph: {
-    title: "What Is the Parasympathetic Nervous System? Calm, Rest and Restoration | Neuvago",
+    title: "Parasympathetic Nervous System | Neuvago",
     description: "Learn what the parasympathetic nervous system is, how it relates to calm, unwinding, digestion, sleep, and why it matters for recovery and nervous system restoration.",
     url: "/learn/parasympathetic-nervous-system",
     siteName: "Neuvago",
@@ -20,7 +20,7 @@ export const metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "What Is the Parasympathetic Nervous System? Calm, Rest and Restoration | Neuvago",
+    title: "Parasympathetic Nervous System | Neuvago",
     description: "Learn what the parasympathetic nervous system is, how it relates to calm, unwinding, digestion, sleep, and why it matters for recovery and nervous system restoration.",
   },
 }
@@ -153,7 +153,7 @@ const connectedTopics = [
 
 export default function ParasympatheticNervousSystemPage() {
   const structuredData = buildAuthorityPageStructuredData({
-    title: "What Is the Parasympathetic Nervous System? Calm, Rest and Restoration | Neuvago",
+    title: "Parasympathetic Nervous System | Neuvago",
     description: "Learn what the parasympathetic nervous system is, how it relates to calm, unwinding, digestion, sleep, and why it matters for recovery and nervous system restoration.",
     path: "/learn/parasympathetic-nervous-system",
     articleSection: "Learn",

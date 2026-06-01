@@ -4,14 +4,14 @@ import { buildAuthorityPageStructuredData } from "@/lib/seo/structured-data"
 
 export const metadata = {
   title:
-    "Gut–Brain Axis Research | Vagal Signaling, Microbiome and Brain–Body Communication | Neuvago",
+    "Gut–Brain Axis Research | Neuvago",
   description:
     "Explore gut–brain axis research in the Neuvago Research Library, including vagal signaling, microbiome communication, digestive regulation, inflammation, and broader brain–body pathways.",
   alternates: {
     canonical: "/research/topics/gut-brain-axis",
   },
   openGraph: {
-    title: "Gut–Brain Axis Research | Vagal Signaling, Microbiome and Brain–Body Communication | Neuvago",
+    title: "Gut–Brain Axis Research | Neuvago",
     description: "Explore gut–brain axis research in the Neuvago Research Library, including vagal signaling, microbiome communication, digestive regulation, inflammation, and broader brain–body pathways.",
     url: "/research/topics/gut-brain-axis",
     siteName: "Neuvago",
@@ -20,7 +20,7 @@ export const metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Gut–Brain Axis Research | Vagal Signaling, Microbiome and Brain–Body Communication | Neuvago",
+    title: "Gut–Brain Axis Research | Neuvago",
     description: "Explore gut–brain axis research in the Neuvago Research Library, including vagal signaling, microbiome communication, digestive regulation, inflammation, and broader brain–body pathways.",
   },
 }
@@ -159,7 +159,7 @@ function StudyCard({
 
 export default function GutBrainAxisResearchPage() {
   const structuredData = buildAuthorityPageStructuredData({
-    title: "Gut–Brain Axis Research | Vagal Signaling, Microbiome and Brain–Body Communication | Neuvago",
+    title: "Gut–Brain Axis Research | Neuvago",
     description: "Explore gut–brain axis research in the Neuvago Research Library, including vagal signaling, microbiome communication, digestive regulation, inflammation, and broader brain–body pathways.",
     path: "/research/topics/gut-brain-axis",
     articleSection: "Research topics",

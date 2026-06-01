@@ -4,14 +4,14 @@ import { buildAuthorityPageStructuredData } from "@/lib/seo/structured-data"
 
 export const metadata = {
   title:
-    "Burnout, Recovery and the Nervous System | Exhaustion, Capacity and Restoration | Neuvago",
+    "Burnout and Nervous System Recovery | Neuvago",
   description:
     "Learn how burnout connects to the nervous system, including exhaustion, lower capacity, thin recovery, poor sleep, and why restoration can feel harder after prolonged stress.",
   alternates: {
     canonical: "/conditions/burnout",
   },
   openGraph: {
-    title: "Burnout, Recovery and the Nervous System | Exhaustion, Capacity and Restoration | Neuvago",
+    title: "Burnout and Nervous System Recovery | Neuvago",
     description: "Learn how burnout connects to the nervous system, including exhaustion, lower capacity, thin recovery, poor sleep, and why restoration can feel harder after prolonged stress.",
     url: "/conditions/burnout",
     siteName: "Neuvago",
@@ -20,7 +20,7 @@ export const metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Burnout, Recovery and the Nervous System | Exhaustion, Capacity and Restoration | Neuvago",
+    title: "Burnout and Nervous System Recovery | Neuvago",
     description: "Learn how burnout connects to the nervous system, including exhaustion, lower capacity, thin recovery, poor sleep, and why restoration can feel harder after prolonged stress.",
   },
 }
@@ -99,7 +99,7 @@ const connectedTopics = [
 
 export default function BurnoutPage() {
   const structuredData = buildAuthorityPageStructuredData({
-    title: "Burnout, Recovery and the Nervous System | Exhaustion, Capacity and Restoration | Neuvago",
+    title: "Burnout and Nervous System Recovery | Neuvago",
     description: "Learn how burnout connects to the nervous system, including exhaustion, lower capacity, thin recovery, poor sleep, and why restoration can feel harder after prolonged stress.",
     path: "/conditions/burnout",
     articleSection: "Conditions",

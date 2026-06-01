@@ -4,14 +4,14 @@ import { buildAuthorityPageStructuredData } from "@/lib/seo/structured-data"
 
 export const metadata = {
   title:
-    "How to Calm Your Nervous System in Real Life | Stress, Sleep and Recovery | Neuvago",
+    "How to Calm Your Nervous System | Neuvago",
   description:
     "Learn how to calm your nervous system in everyday life by understanding what keeps the body activated, what actually helps, and how calming connects to stress, sleep, and recovery.",
   alternates: {
     canonical: "/learn/how-to-calm-your-nervous-system",
   },
   openGraph: {
-    title: "How to Calm Your Nervous System in Real Life | Stress, Sleep and Recovery | Neuvago",
+    title: "How to Calm Your Nervous System | Neuvago",
     description: "Learn how to calm your nervous system in everyday life by understanding what keeps the body activated, what actually helps, and how calming connects to stress, sleep, and recovery.",
     url: "/learn/how-to-calm-your-nervous-system",
     siteName: "Neuvago",
@@ -20,7 +20,7 @@ export const metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "How to Calm Your Nervous System in Real Life | Stress, Sleep and Recovery | Neuvago",
+    title: "How to Calm Your Nervous System | Neuvago",
     description: "Learn how to calm your nervous system in everyday life by understanding what keeps the body activated, what actually helps, and how calming connects to stress, sleep, and recovery.",
   },
 }
@@ -171,7 +171,7 @@ const clarifications = [
 
 export default function HowToCalmYourNervousSystemPage() {
   const structuredData = buildAuthorityPageStructuredData({
-    title: "How to Calm Your Nervous System in Real Life | Stress, Sleep and Recovery | Neuvago",
+    title: "How to Calm Your Nervous System | Neuvago",
     description: "Learn how to calm your nervous system in everyday life by understanding what keeps the body activated, what actually helps, and how calming connects to stress, sleep, and recovery.",
     path: "/learn/how-to-calm-your-nervous-system",
     articleSection: "Learn",

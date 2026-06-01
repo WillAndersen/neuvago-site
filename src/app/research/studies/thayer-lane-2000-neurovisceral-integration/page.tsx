@@ -4,14 +4,14 @@ import { buildAuthorityPageStructuredData } from "@/lib/seo/structured-data"
 
 export const metadata = {
   title:
-    "A Model of Neurovisceral Integration in Emotion Regulation (Thayer & Lane, 2000) | Neuvago Research Library",
+    "Thayer & Lane 2000 | Neurovisceral Integration | Neuvago",
   description:
     "Read a structured summary of Thayer & Lane (2000), the influential paper that linked emotional regulation, autonomic flexibility, HRV, and vagal regulation in the neurovisceral integration model.",
   alternates: {
     canonical: "/research/studies/thayer-lane-2000-neurovisceral-integration",
   },
   openGraph: {
-    title: "A Model of Neurovisceral Integration in Emotion Regulation (Thayer & Lane, 2000) | Neuvago Research Library",
+    title: "Thayer & Lane 2000 | Neurovisceral Integration | Neuvago",
     description: "Read a structured summary of Thayer & Lane (2000), the influential paper that linked emotional regulation, autonomic flexibility, HRV, and vagal regulation in the neurovisceral integration model.",
     url: "/research/studies/thayer-lane-2000-neurovisceral-integration",
     siteName: "Neuvago",
@@ -20,7 +20,7 @@ export const metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "A Model of Neurovisceral Integration in Emotion Regulation (Thayer & Lane, 2000) | Neuvago Research Library",
+    title: "Thayer & Lane 2000 | Neurovisceral Integration | Neuvago",
     description: "Read a structured summary of Thayer & Lane (2000), the influential paper that linked emotional regulation, autonomic flexibility, HRV, and vagal regulation in the neurovisceral integration model.",
   },
 }
@@ -150,7 +150,7 @@ const relatedLinks = [
 
 export default function ThayerLane2000NeurovisceralIntegrationPage() {
   const structuredData = buildAuthorityPageStructuredData({
-    title: "A Model of Neurovisceral Integration in Emotion Regulation (Thayer & Lane, 2000) | Neuvago Research Library",
+    title: "Thayer & Lane 2000 | Neurovisceral Integration | Neuvago",
     description: "Read a structured summary of Thayer & Lane (2000), the influential paper that linked emotional regulation, autonomic flexibility, HRV, and vagal regulation in the neurovisceral integration model.",
     path: "/research/studies/thayer-lane-2000-neurovisceral-integration",
     articleSection: "Scientific studies",
@@ -259,7 +259,7 @@ export default function ThayerLane2000NeurovisceralIntegrationPage() {
                 rel="noopener noreferrer"
                 className="mt-2 inline-flex text-sm leading-7 text-[#1f1f1c] underline-offset-4 hover:underline"
               >
-                https://doi.org/10.1016/S0165-0327(99)00138-4
+                Open DOI record
               </a>
               <div className="mt-4">
                 <a

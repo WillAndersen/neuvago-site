@@ -7,14 +7,19 @@ type HomeFinalCtaProps = {
 };
 
 export function HomeFinalCta({ content }: HomeFinalCtaProps) {
+  const backgroundImage = {
+    src: "/images/home/lifestyle-sofa-neuvago.png",
+    alt: "A calm real-life moment with Neuvago used as a soft final call-to-action background.",
+  } as const;
+
   return (
     <section className="bg-[#f7f4ef]">
       <div className="mx-auto max-w-7xl px-6 pb-20 pt-6 sm:px-8 lg:px-12">
         <div className="relative overflow-hidden rounded-[2rem] border border-black/5 bg-[#ece4d9] shadow-[0_28px_90px_rgba(31,31,28,0.08)]">
           <div className="absolute inset-0 opacity-16">
             <Image
-              src={content.backgroundImage.src}
-              alt={content.backgroundImage.alt}
+              src={backgroundImage.src}
+              alt={backgroundImage.alt}
               fill
               className="object-cover"
               sizes="(max-width: 768px) 92vw, (max-width: 1024px) 88vw, 1120px"

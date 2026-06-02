@@ -44,12 +44,12 @@ export const supportPageContent = {
       href: "/product",
     } satisfies SupportPageCta,
     desktopImage: {
-      src: "/images/home/device-phone-paired-editorial.png",
-      alt: "Neuvago device and app shown together in a calm support-page hero composition.",
+      src: "/images/home/app-mockup-library.png",
+      alt: "Neuvago app library screen used as a calm support and guidance visual.",
     } satisfies SupportPageImage,
     mobileImage: {
-      src: "/images/home/hero-device-app-mobile.png",
-      alt: "Neuvago device and app shown together for mobile support hero layout.",
+      src: "/images/home/app-mockup-library.png",
+      alt: "Neuvago app library screen used for mobile support-page guidance.",
     } satisfies SupportPageImage,
     proofLine: ["Clear guidance", "Practical help", "Built to reduce friction"],
   } satisfies SupportPageSectionVisibility & {
@@ -267,8 +267,8 @@ export const supportPageContent = {
       href: "/how-it-works",
     } satisfies SupportPageCta,
     backgroundImage: {
-      src: "/images/home/device-phone-paired-editorial.png",
-      alt: "Neuvago device and app shown together in a calm support-page closing composition.",
+      src: "/images/home/lifestyle-sofa-neuvago.png",
+      alt: "A calm real-life moment with Neuvago as part of a quiet routine.",
     } satisfies SupportPageImage,
   } satisfies SupportPageSectionVisibility & {
     title: string;

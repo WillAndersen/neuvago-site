@@ -6,7 +6,27 @@ type HowItWorksHeroProps = {
   content: typeof howItWorksPageContent.hero;
 };
 
+const genericHeroSources = new Set([
+  "/images/home/hero-device-app-master.png",
+  "/images/home/hero-device-app-mobile.png",
+  "/images/home/device-phone-paired-editorial.png",
+]);
+
+function getHowItWorksHeroImage(image: { src: string; alt: string }) {
+  if (!genericHeroSources.has(image.src)) {
+    return image;
+  }
+
+  return {
+    src: "/images/home/device-close-detail-material.png",
+    alt: "Close-up details of the Neuvago device used for a practical how-it-works introduction.",
+  };
+}
+
 export function HowItWorksHero({ content }: HowItWorksHeroProps) {
+  const desktopImage = getHowItWorksHeroImage(content.desktopImage);
+  const mobileImage = getHowItWorksHeroImage(content.mobileImage);
+
   return (
     <section className="border-b border-black/5 bg-[#f7f4ef]">
       <div className="mx-auto max-w-7xl px-6 py-14 sm:px-8 lg:px-12 lg:py-20">
@@ -55,10 +75,10 @@ export function HowItWorksHero({ content }: HowItWorksHeroProps) {
             <div className="relative hidden overflow-hidden rounded-[2.2rem] border border-black/5 bg-white/60 shadow-[0_28px_90px_rgba(31,31,28,0.12)] lg:block">
               <div className="relative aspect-[4/3]">
                 <Image
-                  src={content.desktopImage.src}
-                  alt={content.desktopImage.alt}
+                  src={desktopImage.src}
+                  alt={desktopImage.alt}
                   fill
-                  className="object-cover"
+                  className="object-contain"
                   sizes="(max-width: 768px) 92vw, (max-width: 1024px) 88vw, 560px"
                   loading="eager"
                   priority
@@ -69,10 +89,10 @@ export function HowItWorksHero({ content }: HowItWorksHeroProps) {
             <div className="relative overflow-hidden rounded-[2rem] border border-black/5 bg-white/60 shadow-[0_24px_80px_rgba(31,31,28,0.10)] lg:hidden">
               <div className="relative aspect-[4/5]">
                 <Image
-                  src={content.mobileImage.src}
-                  alt={content.mobileImage.alt}
+                  src={mobileImage.src}
+                  alt={mobileImage.alt}
                   fill
-                  className="object-cover"
+                  className="object-contain"
                   sizes="(max-width: 1024px) 92vw, 0px"
                   loading="eager"
                   priority

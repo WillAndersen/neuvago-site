@@ -61,12 +61,12 @@ export const productPageContent = {
       href: "/app",
     } satisfies ProductCta,
     desktopImage: {
-      src: "/images/home/hero-device-app-master.png",
-      alt: "Neuvago device and app shown together in a premium editorial composition.",
+      src: "/images/home/device-close-detail-material.png",
+      alt: "Close-up of the Neuvago device materials and controls in a premium product composition.",
     } satisfies ProductImage,
     mobileImage: {
-      src: "/images/home/hero-device-app-mobile.png",
-      alt: "Neuvago device and app shown together for mobile product hero layout.",
+      src: "/images/home/device-cutout-front-angle.png",
+      alt: "Front and angled view of the Neuvago device for mobile product hero layout.",
     } satisfies ProductImage,
     proofLine: ["Non-invasive VNS", "App-guided sessions", "Clear wellness boundaries"],
   } satisfies ProductSectionVisibility & {
@@ -91,8 +91,8 @@ export const productPageContent = {
       "Connected to an app that adds placement guidance, session rhythm, and continuity",
     ],
     image: {
-      src: "/images/home/device-phone-paired-editorial.png",
-      alt: "Neuvago device and app displayed together as one connected system.",
+      src: "/images/home/device-cutout-front-angle.png",
+      alt: "Front and angled views of the Neuvago device as the center of the product system.",
     } satisfies ProductImage,
   } satisfies ProductSectionVisibility & {
     title: string;
@@ -169,8 +169,8 @@ export const productPageContent = {
       },
     ] satisfies ProductFeatureItem[],
     image: {
-      src: "/images/home/device-phone-paired-editorial.png",
-      alt: "Neuvago device and phone shown together in a warm premium composition.",
+      src: "/images/home/app-mockup-library.png",
+      alt: "Neuvago app library screen shown as the guided layer that completes the product experience.",
     } satisfies ProductImage,
     supportingImages: [
       {
@@ -226,8 +226,8 @@ export const productPageContent = {
       alt: "A calm real-life moment with Neuvago as part of a quiet routine.",
     } satisfies ProductImage,
     secondaryImage: {
-      src: "/images/home/device-phone-paired-editorial.png",
-      alt: "Neuvago device and app shown together in a calm product lifestyle setting.",
+      src: "/images/home/device-close-detail-material.png",
+      alt: "Close-up details of the Neuvago device material and finish.",
     } satisfies ProductImage,
   } satisfies ProductSectionVisibility & {
     title: string;
@@ -393,8 +393,8 @@ export const productPageContent = {
       href: "/app",
     } satisfies ProductCta,
     backgroundImage: {
-      src: "/images/home/device-phone-paired-editorial.png",
-      alt: "Neuvago device and app shown together in a premium warm setting.",
+      src: "/images/home/device-close-detail-material.png",
+      alt: "Close-up details of the Neuvago device material and finish.",
     } satisfies ProductImage,
   } satisfies ProductSectionVisibility & {
     title: string;

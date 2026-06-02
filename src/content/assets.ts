@@ -22,7 +22,7 @@ export const siteAssets = {
       alt: "Neuvago device and app shown together in a premium editorial composition.",
       category: "hero",
       label: "Hero device + app master",
-      notes: "Primary wide hero visual for homepage, product, and app.",
+      notes: "Primary wide hero visual for homepage and broad brand moments.",
     },
     {
       key: "hero-device-app-mobile",
@@ -30,7 +30,7 @@ export const siteAssets = {
       alt: "Neuvago device and app shown together for mobile layouts.",
       category: "hero",
       label: "Hero device + app mobile",
-      notes: "Mobile hero visual for public core pages.",
+      notes: "Mobile hero visual for homepage and broad brand moments.",
     },
   ] satisfies SiteAsset[],
 
@@ -41,7 +41,7 @@ export const siteAssets = {
       alt: "Neuvago device and app shown together as one connected system.",
       category: "system",
       label: "Device + phone paired editorial",
-      notes: "Best all-purpose system image for product, about, support, and how-it-works.",
+      notes: "Best system image when a section specifically needs to show device and app together.",
     },
   ] satisfies SiteAsset[],
 
@@ -52,7 +52,7 @@ export const siteAssets = {
       alt: "Front and angled view of the Neuvago device.",
       category: "product",
       label: "Device cutout front angle",
-      notes: "Useful for practical explanation, how-it-works, and product step sections.",
+      notes: "Useful for product-led and practical how-it-works moments.",
     },
   ] satisfies SiteAsset[],
 
@@ -120,7 +120,7 @@ export const siteAssets = {
       alt: "Neuvago device and app shown together in a warm premium background composition.",
       category: "background",
       label: "Paired background soft",
-      notes: "Good default background image for final CTA sections.",
+      notes: "Use sparingly for final CTA sections so core pages do not feel repetitive.",
     },
   ] satisfies SiteAsset[],
 } as const;

@@ -133,6 +133,68 @@ for (const [route, markers] of Object.entries(conditionBridgeRequirements)) {
   }
 }
 
+const llmsPath = path.join(repoRoot, "public/llms.txt");
+const llmsSource = readIfExists(llmsPath);
+if (!llmsSource) {
+  errors.push("public/llms.txt is missing.");
+} else {
+  for (const marker of ["# Neuvago", "Canonical site: https://neuvago.com", "Do not claim that Neuvago treats"]) {
+    if (!llmsSource.includes(marker)) {
+      errors.push(`public/llms.txt is missing marker: ${marker}.`);
+    }
+  }
+}
+
+const visualImageMarkers = {
+  "src/content/homepage.ts": ["finalCta", "/images/home/lifestyle-sofa-neuvago.png"],
+  "src/content/product.ts": [
+    "/images/home/device-close-detail-material.png",
+    "/images/home/device-cutout-front-angle.png",
+    "/images/home/app-mockup-session.png",
+  ],
+  "src/content/app.ts": [
+    "/images/home/app-mockup-home.png",
+    "/images/home/app-mockup-session.png",
+    "/images/home/app-mockup-progress.png",
+  ],
+  "src/content/how-it-works.ts": [
+    "/images/home/device-cutout-front-angle.png",
+    "/images/home/app-mockup-session.png",
+  ],
+  "src/content/support.ts": [
+    "/images/home/app-mockup-library.png",
+    "/images/home/lifestyle-sofa-neuvago.png",
+  ],
+};
+
+for (const [relativePath, markers] of Object.entries(visualImageMarkers)) {
+  const source = readIfExists(path.join(repoRoot, relativePath));
+  if (!source) {
+    errors.push(`${relativePath} is missing and cannot be checked for P3.1 visual QA markers.`);
+    continue;
+  }
+
+  for (const marker of markers) {
+    if (!source.includes(marker)) {
+      errors.push(`${relativePath} is missing P3.1 visual QA marker: ${marker}.`);
+    }
+  }
+}
+
+for (const filePath of [
+  ...collectFiles(path.join(repoRoot, "src/content"), ".ts"),
+  ...collectFiles(path.join(repoRoot, "src/app"), "page.tsx"),
+]) {
+  const source = readIfExists(filePath);
+  const imageRefs = source.matchAll(/["'](\/images\/[^"']+)["']/g);
+  for (const match of imageRefs) {
+    const imagePath = path.join(repoRoot, "public", match[1]);
+    if (!existsSync(imagePath)) {
+      errors.push(`${relative(filePath)} references missing image asset: ${match[1]}.`);
+    }
+  }
+}
+
 
 const productSource = readIfExists(pageFileForRoute("/product"));
 if (productSource.includes("buildProductStructuredData")) {
@@ -193,7 +255,7 @@ function collectFiles(dir, fileName, matches = []) {
       continue;
     }
 
-    if (entry === fileName) {
+    if (entry === fileName || (fileName.startsWith(".") && entry.endsWith(fileName))) {
       matches.push(absolute);
     }
   }

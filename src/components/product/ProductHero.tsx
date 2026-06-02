@@ -6,7 +6,36 @@ type ProductHeroProps = {
   content: typeof productPageContent.hero;
 };
 
+const genericHeroSources = new Set([
+  "/images/home/hero-device-app-master.png",
+  "/images/home/hero-device-app-mobile.png",
+  "/images/home/device-phone-paired-editorial.png",
+]);
+
+function getProductHeroImage(image: { src: string; alt: string }) {
+  if (!genericHeroSources.has(image.src)) {
+    return { image, forced: false };
+  }
+
+  return {
+    image: {
+      src: "/images/home/device-cutout-front-angle.png",
+      alt: "Front and angled views of the Neuvago device in a product-focused composition.",
+    },
+    forced: true,
+  };
+}
+
 export function ProductHero({ content }: ProductHeroProps) {
+  const desktop = getProductHeroImage(content.desktopImage);
+  const mobile = getProductHeroImage(content.mobileImage);
+  const desktopImageClass = desktop.forced
+    ? "object-contain bg-[#f7f3ec] p-8"
+    : "object-cover";
+  const mobileImageClass = mobile.forced
+    ? "object-contain bg-[#f7f3ec] p-6"
+    : "object-cover";
+
   return (
     <section className="border-b border-black/5 bg-[#f7f4ef]">
       <div className="mx-auto max-w-7xl px-6 py-14 sm:px-8 lg:px-12 lg:py-20">
@@ -55,10 +84,10 @@ export function ProductHero({ content }: ProductHeroProps) {
             <div className="relative hidden overflow-hidden rounded-[2.2rem] border border-black/5 bg-white/60 shadow-[0_28px_90px_rgba(31,31,28,0.12)] lg:block">
               <div className="relative aspect-[4/3]">
                 <Image
-                  src={content.desktopImage.src}
-                  alt={content.desktopImage.alt}
+                  src={desktop.image.src}
+                  alt={desktop.image.alt}
                   fill
-                  className="object-cover"
+                  className={desktopImageClass}
                   sizes="(max-width: 768px) 92vw, (max-width: 1024px) 88vw, 560px"
                   priority
                 />
@@ -68,10 +97,10 @@ export function ProductHero({ content }: ProductHeroProps) {
             <div className="relative overflow-hidden rounded-[2rem] border border-black/5 bg-white/60 shadow-[0_24px_80px_rgba(31,31,28,0.10)] lg:hidden">
               <div className="relative aspect-[4/5]">
                 <Image
-                  src={content.mobileImage.src}
-                  alt={content.mobileImage.alt}
+                  src={mobile.image.src}
+                  alt={mobile.image.alt}
                   fill
-                  className="object-cover"
+                  className={mobileImageClass}
                   sizes="(max-width: 1024px) 92vw, 0px"
                   priority
                 />

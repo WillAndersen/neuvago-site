@@ -14,6 +14,11 @@ type ProductDeviceAppTogetherProps = {
 export function ProductDeviceAppTogether({
   content,
 }: ProductDeviceAppTogetherProps) {
+  const mainImage = {
+    src: "/images/home/app-mockup-session.png",
+    alt: "Neuvago app session screen shown as the guided layer of the product experience.",
+  } as const;
+
   return (
     <section className="bg-[#f7f4ef]">
       <div className="mx-auto max-w-7xl px-6 py-20 sm:px-8 lg:px-12">
@@ -47,10 +52,10 @@ export function ProductDeviceAppTogether({
             <div className="overflow-hidden rounded-[2rem] border border-black/5 bg-white/60 shadow-[0_24px_80px_rgba(31,31,28,0.08)]">
               <div className="relative aspect-[4/3]">
                 <Image
-                  src={content.image.src}
-                  alt={content.image.alt}
+                  src={mainImage.src}
+                  alt={mainImage.alt}
                   fill
-                  className="object-cover"
+                  className="object-contain"
                   sizes="(max-width: 768px) 92vw, (max-width: 1024px) 88vw, 560px"
                 />
               </div>

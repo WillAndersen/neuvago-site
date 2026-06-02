@@ -49,12 +49,12 @@ export const appPageContent = {
       href: "/product",
     } satisfies AppPageCta,
     desktopImage: {
-      src: "/images/home/hero-device-app-master.png",
-      alt: "Neuvago app and device shown together in a warm editorial composition.",
+      src: "/images/home/app-mockup-home.png",
+      alt: "Neuvago app home screen shown in a calm premium interface.",
     } satisfies AppPageImage,
     mobileImage: {
-      src: "/images/home/hero-device-app-mobile.png",
-      alt: "Neuvago app and device shown together for mobile app hero layout.",
+      src: "/images/home/app-mockup-session.png",
+      alt: "Neuvago app session screen shown in a calm guided-session interface.",
     } satisfies AppPageImage,
     proofLine: ["Guided", "Built for routines", "Easy to return to"],
   } satisfies AppPageSectionVisibility & {
@@ -79,8 +79,8 @@ export const appPageContent = {
       "Adds continuity so the experience feels easier to return to over time",
     ],
     image: {
-      src: "/images/home/app-mockup-home.png",
-      alt: "Neuvago app home screen shown in a calm premium layout.",
+      src: "/images/home/app-mockup-library.png",
+      alt: "Neuvago app library screen showing guided content and routine options.",
     } satisfies AppPageImage,
   } satisfies AppPageSectionVisibility & {
     title: string;
@@ -210,8 +210,8 @@ export const appPageContent = {
       alt: "A calm real-life moment with Neuvago as part of a quiet evening routine.",
     } satisfies AppPageImage,
     secondaryImage: {
-      src: "/images/home/device-phone-paired-editorial.png",
-      alt: "Neuvago device and app shown together in a calm lifestyle setting.",
+      src: "/images/home/app-mockup-library.png",
+      alt: "Neuvago app library screen showing available guided routines.",
     } satisfies AppPageImage,
   } satisfies AppPageSectionVisibility & {
     title: string;
@@ -344,8 +344,8 @@ export const appPageContent = {
       href: "/product",
     } satisfies AppPageCta,
     backgroundImage: {
-      src: "/images/home/device-phone-paired-editorial.png",
-      alt: "Neuvago device and app shown together in a premium warm composition.",
+      src: "/images/home/app-mockup-progress.png",
+      alt: "Neuvago app progress screen showing continuity over time.",
     } satisfies AppPageImage,
   } satisfies AppPageSectionVisibility & {
     title: string;

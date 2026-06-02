@@ -106,8 +106,8 @@ export const homepageContent = {
       "Designed for stress, recovery, and evening wind-down",
     ],
     image: {
-      src: "/images/home/device-phone-paired-editorial.png",
-      alt: "Neuvago device and app displayed together as one connected system.",
+      src: "/images/home/device-close-detail-material.png",
+      alt: "Close-up details of the Neuvago device material and finish.",
     } satisfies HomepageImage,
   } satisfies HomepageSectionVisibility & {
     title: string;
@@ -172,8 +172,8 @@ export const homepageContent = {
       },
     ] satisfies HomepageFeatureItem[],
     image: {
-      src: "/images/home/device-phone-paired-editorial.png",
-      alt: "Neuvago device and phone shown together in a warm premium composition.",
+      src: "/images/home/app-mockup-library.png",
+      alt: "Neuvago app library screen shown as the guided layer of the connected system.",
     } satisfies HomepageImage,
     supportingImages: [
       {
@@ -378,8 +378,8 @@ export const homepageContent = {
         description:
           "A soft editorial device and app composition in a home setting.",
         image: {
-          src: "/images/home/device-phone-paired-editorial.png",
-          alt: "Neuvago device and app shown together in a warm home setting.",
+          src: "/images/home/lifestyle-sofa-neuvago.png",
+          alt: "Neuvago shown in a calm home setting for a warmer lifestyle moment.",
         },
       },
       {
@@ -494,8 +494,8 @@ export const homepageContent = {
       href: "/continue",
     } satisfies HomepageCta,
     backgroundImage: {
-      src: "/images/home/device-phone-paired-editorial.png",
-      alt: "Neuvago device and app shown together in a premium warm setting.",
+      src: "/images/home/lifestyle-sofa-neuvago.png",
+      alt: "A calm real-life moment with Neuvago as part of a quiet daily routine.",
     } satisfies HomepageImage,
   } satisfies HomepageSectionVisibility & {
     title: string;

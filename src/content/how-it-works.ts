@@ -49,12 +49,12 @@ export const howItWorksPageContent = {
       href: "/app",
     } satisfies HowItWorksCta,
     desktopImage: {
-      src: "/images/home/device-phone-paired-editorial.png",
-      alt: "Neuvago device and app shown together in a warm explanatory composition.",
+      src: "/images/home/device-cutout-front-angle.png",
+      alt: "Front and angled view of the Neuvago device.",
     } satisfies HowItWorksImage,
     mobileImage: {
-      src: "/images/home/hero-device-app-mobile.png",
-      alt: "Neuvago device and app shown together for mobile how-it-works hero layout.",
+      src: "/images/home/app-mockup-session.png",
+      alt: "Neuvago guided session screen used for the mobile how-it-works hero layout.",
     } satisfies HowItWorksImage,
     proofLine: ["Device + app", "Comfort-first routine", "Built for daily use"],
   } satisfies HowItWorksSectionVisibility & {
@@ -91,8 +91,8 @@ export const howItWorksPageContent = {
       },
     ] satisfies HowItWorksCard[],
     image: {
-      src: "/images/home/device-phone-paired-editorial.png",
-      alt: "Neuvago device and app displayed together as one connected system.",
+      src: "/images/home/device-close-detail-material.png",
+      alt: "Close-up details of the Neuvago device material and finish.",
     } satisfies HowItWorksImage,
   } satisfies HowItWorksSectionVisibility & {
     title: string;
@@ -216,8 +216,8 @@ export const howItWorksPageContent = {
       alt: "A calm real-life moment with Neuvago as part of a quiet routine.",
     } satisfies HowItWorksImage,
     secondaryImage: {
-      src: "/images/home/device-phone-paired-editorial.png",
-      alt: "Neuvago device and app shown together in a calm lifestyle setting.",
+      src: "/images/home/app-mockup-session.png",
+      alt: "Neuvago guided session screen showing the app layer in the daily routine.",
     } satisfies HowItWorksImage,
   } satisfies HowItWorksSectionVisibility & {
     title: string;
@@ -312,8 +312,8 @@ export const howItWorksPageContent = {
       href: "/app",
     } satisfies HowItWorksCta,
     backgroundImage: {
-      src: "/images/home/device-phone-paired-editorial.png",
-      alt: "Neuvago device and app shown together in a premium warm composition.",
+      src: "/images/home/app-mockup-session.png",
+      alt: "Neuvago app session screen shown in a calm guided-session interface.",
     } satisfies HowItWorksImage,
   } satisfies HowItWorksSectionVisibility & {
     title: string;

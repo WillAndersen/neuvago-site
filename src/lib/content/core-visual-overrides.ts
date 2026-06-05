@@ -15,113 +15,206 @@ type SiteImage = {
 };
 
 const images = {
-  deviceCutout: {
-    src: "/images/home/device-cutout-front-angle.png",
-    alt: "Front and angled view of the Neuvago device.",
+  homepageHeroDesktop: {
+    src: "/images/neuvago/homepage-master-hero-desktop.webp",
+    alt: "Neuvago device and guided app arranged together in a warm premium hero composition.",
   },
-  deviceDetail: {
-    src: "/images/home/device-close-detail-material.png",
-    alt: "Close-up details of the Neuvago device material and finish.",
+  homepageHeroMobile: {
+    src: "/images/neuvago/homepage-master-hero-mobile.webp",
+    alt: "Neuvago device and guided app arranged together for the mobile homepage hero.",
   },
-  deviceAppSystem: {
-    src: "/images/home/device-phone-paired-editorial.png",
-    alt: "Neuvago device and app shown together as one connected system.",
+  productHeroDesktop: {
+    src: "/images/neuvago/product-hero-desktop.webp",
+    alt: "Close-up of the Neuvago handheld device in a warm premium product composition.",
   },
-  appHome: {
-    src: "/images/home/app-mockup-home.png",
-    alt: "Neuvago app home screen mockup.",
+  productHeroMobile: {
+    src: "/images/neuvago/product-hero-mobile.webp",
+    alt: "Close-up of the Neuvago handheld device for mobile product layouts.",
   },
-  appSession: {
-    src: "/images/home/app-mockup-session.png",
-    alt: "Neuvago app session screen mockup.",
+  appHeroDesktop: {
+    src: "/images/neuvago/app-hero-desktop.webp",
+    alt: "Neuvago app showing a calm guided session beside the handheld device.",
   },
-  appProgress: {
-    src: "/images/home/app-mockup-progress.png",
-    alt: "Neuvago app progress screen mockup.",
+  appHeroMobile: {
+    src: "/images/neuvago/app-hero-mobile.webp",
+    alt: "Neuvago app guided session screen for mobile app layouts.",
   },
-  appLibrary: {
-    src: "/images/home/app-mockup-library.png",
-    alt: "Neuvago app library screen mockup.",
+  howItWorksDesktop: {
+    src: "/images/neuvago/how-it-works-routine-desktop.webp",
+    alt: "Neuvago device, guided app, and simple routine cards explaining how the system works.",
   },
-  lifestyle: {
-    src: "/images/home/lifestyle-sofa-neuvago.png",
-    alt: "A calm real-life moment with Neuvago as part of a quiet routine.",
+  howItWorksMobile: {
+    src: "/images/neuvago/how-it-works-routine-mobile.webp",
+    alt: "Neuvago device, guided app, and routine cards for mobile how-it-works layouts.",
+  },
+  supportDesktop: {
+    src: "/images/neuvago/support-guidance-desktop.webp",
+    alt: "Neuvago app support and guidance screen beside the handheld device in a calm setting.",
+  },
+  supportMobile: {
+    src: "/images/neuvago/support-guidance-mobile.webp",
+    alt: "Neuvago support and guidance app screen for mobile support layouts.",
+  },
+  finalCtaDesktop: {
+    src: "/images/neuvago/final-cta-desktop.webp",
+    alt: "Neuvago device and guided app shown softly on the right with open space for a call to action.",
+  },
+  appFinalCta: {
+    src: "/images/neuvago/final-cta-desktop.webp",
+    alt: "Neuvago device and guided app shown softly as a calm app call-to-action background.",
+  },
+  morningReset: {
+    src: "/images/neuvago/morning-reset-desktop.webp",
+    alt: "Neuvago device and guided app arranged in a calm morning reset routine.",
+  },
+  eveningWindDown: {
+    src: "/images/neuvago/evening-wind-down-desktop.webp",
+    alt: "Neuvago device and guided app resting beside a warm evening wind-down routine.",
+  },
+  stressPause: {
+    src: "/images/neuvago/stress-daytime-pause-desktop.webp",
+    alt: "Neuvago device and guided app arranged for a calm daytime pause routine.",
   },
 } satisfies Record<string, SiteImage>;
 
 const homepageVisualOverrides = {
+  hero: {
+    desktopImage: images.homepageHeroDesktop,
+    mobileImage: images.homepageHeroMobile,
+  },
   whatIsNeuvago: {
-    image: images.deviceDetail,
+    image: images.productHeroDesktop,
   },
   appDeviceEcosystem: {
-    image: images.appLibrary,
+    image: images.appHeroDesktop,
+    supportingImages: [
+      images.appHeroDesktop,
+      images.howItWorksDesktop,
+      images.morningReset,
+      images.eveningWindDown,
+    ],
+  },
+  howItWorks: {
+    steps: [
+      {
+        title: "Place the device",
+        description:
+          "Begin with the device as the physical starting point for the experience.",
+        image: images.productHeroMobile,
+      },
+      {
+        title: "Follow guided sessions",
+        description:
+          "Use the app to choose guidance that fits the moment and makes the next step clearer.",
+        image: images.appHeroMobile,
+      },
+      {
+        title: "Return over time",
+        description:
+          "Build a repeatable routine around stress, recovery, and calmer daily regulation.",
+        image: images.howItWorksMobile,
+      },
+    ],
   },
   finalCta: {
-    backgroundImage: images.lifestyle,
+    backgroundImage: images.finalCtaDesktop,
   },
 } satisfies JsonObject;
 
 const productVisualOverrides = {
   hero: {
-    desktopImage: images.deviceDetail,
-    mobileImage: images.deviceCutout,
+    desktopImage: images.productHeroDesktop,
+    mobileImage: images.productHeroMobile,
   },
   whatIsNeuvago: {
-    image: images.deviceCutout,
+    image: images.productHeroDesktop,
   },
   deviceAppTogether: {
-    image: images.appLibrary,
+    image: images.homepageHeroDesktop,
+    supportingImages: [images.productHeroDesktop, images.appHeroDesktop],
   },
   howItFitsIntoLife: {
-    secondaryImage: images.appSession,
+    secondaryImage: images.morningReset,
   },
   finalCta: {
-    backgroundImage: images.deviceDetail,
+    backgroundImage: images.finalCtaDesktop,
   },
 } satisfies JsonObject;
 
 const appVisualOverrides = {
   hero: {
-    desktopImage: images.appHome,
-    mobileImage: images.appSession,
+    desktopImage: images.appHeroDesktop,
+    mobileImage: images.appHeroMobile,
   },
   whatItDoes: {
-    image: images.appLibrary,
+    image: images.appHeroDesktop,
+  },
+  sessionsRhythm: {
+    supportingImages: [
+      images.appHeroDesktop,
+      images.morningReset,
+      images.eveningWindDown,
+    ],
   },
   fitsIntoLife: {
-    secondaryImage: images.appLibrary,
+    secondaryImage: images.morningReset,
   },
   deviceTogether: {
-    image: images.deviceCutout,
+    image: images.productHeroDesktop,
   },
   finalCta: {
-    backgroundImage: images.appProgress,
+    backgroundImage: images.appFinalCta,
   },
 } satisfies JsonObject;
 
 const howItWorksVisualOverrides = {
   hero: {
-    desktopImage: images.deviceCutout,
-    mobileImage: images.appSession,
+    desktopImage: images.howItWorksDesktop,
+    mobileImage: images.howItWorksMobile,
   },
   systemAtAGlance: {
-    image: images.deviceDetail,
+    image: images.howItWorksDesktop,
+  },
+  steps: {
+    items: [
+      {
+        title: "Place the device comfortably",
+        description:
+          "Begin with the device as the physical starting point for the experience. Placement, contact, and comfort are part of the routine, not afterthoughts.",
+        image: images.productHeroMobile,
+      },
+      {
+        title: "Follow the guidance in the app",
+        description:
+          "Use the app to choose guidance that fits the moment, while session length, rhythm, and intensity stay easy to understand.",
+        image: images.appHeroMobile,
+      },
+      {
+        title: "Return over time",
+        description:
+          "Repeat it in ways that fit real life so the system becomes more familiar, more comfortable, and easier to return to over time.",
+        image: images.howItWorksMobile,
+      },
+    ],
+  },
+  appAdds: {
+    supportingImages: [images.appHeroDesktop, images.morningReset, images.eveningWindDown],
   },
   dailyLife: {
-    secondaryImage: images.appSession,
+    secondaryImage: images.eveningWindDown,
   },
   finalCta: {
-    backgroundImage: images.appProgress,
+    backgroundImage: images.finalCtaDesktop,
   },
 } satisfies JsonObject;
 
 const supportVisualOverrides = {
   hero: {
-    desktopImage: images.appLibrary,
-    mobileImage: images.appLibrary,
+    desktopImage: images.supportDesktop,
+    mobileImage: images.supportMobile,
   },
   finalCta: {
-    backgroundImage: images.lifestyle,
+    backgroundImage: images.finalCtaDesktop,
   },
 } satisfies JsonObject;
 

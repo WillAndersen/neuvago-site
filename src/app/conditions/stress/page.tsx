@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { AuthorityVisualSection } from "@/components/authority";
 import { JsonLd } from "@/components/seo/json-ld"
 import { buildAuthorityPageStructuredData } from "@/lib/seo/structured-data"
 import { authorityEditorialDates } from "@/lib/seo/editorial-dates";
@@ -285,6 +286,14 @@ export default function StressPage() {
           </div>
         </div>
       </section>
+
+      <AuthorityVisualSection
+        eyebrow="Everyday stress visual"
+        title="Stress support should feel like a realistic pause"
+        description="The stress pathway is strongest when it points from everyday activation toward education, research context, and a repeatable guided routine."
+        image={{ src: "/images/neuvago/stress-daytime-pause-desktop.webp", alt: "Neuvago device and guided app arranged for a calm daytime pause routine." }}
+      />
+
 
       <section className="border-b border-black/5 bg-[#f2eee8]">
         <div className="mx-auto grid max-w-7xl gap-14 px-6 py-24 md:px-10 md:py-28 lg:grid-cols-[1fr_0.95fr] lg:items-start">

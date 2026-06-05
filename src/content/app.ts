@@ -49,11 +49,11 @@ export const appPageContent = {
       href: "/product",
     } satisfies AppPageCta,
     desktopImage: {
-      src: "/images/home/app-mockup-home.png",
+      src: "/images/neuvago/app-hero-desktop.webp",
       alt: "Neuvago app home screen shown in a calm premium interface.",
     } satisfies AppPageImage,
     mobileImage: {
-      src: "/images/home/app-mockup-session.png",
+      src: "/images/neuvago/app-hero-mobile.webp",
       alt: "Neuvago app session screen shown in a calm guided-session interface.",
     } satisfies AppPageImage,
     proofLine: ["Guided", "Built for routines", "Easy to return to"],
@@ -79,7 +79,7 @@ export const appPageContent = {
       "Adds continuity so the experience feels easier to return to over time",
     ],
     image: {
-      src: "/images/home/app-mockup-library.png",
+      src: "/images/neuvago/support-guidance-desktop.webp",
       alt: "Neuvago app library screen showing guided content and routine options.",
     } satisfies AppPageImage,
   } satisfies AppPageSectionVisibility & {
@@ -119,11 +119,11 @@ export const appPageContent = {
     ] satisfies AppPageCard[],
     detailImages: [
       {
-        src: "/images/home/app-mockup-home.png",
+        src: "/images/neuvago/app-hero-desktop.webp",
         alt: "Neuvago app home screen mockup.",
       },
       {
-        src: "/images/home/app-mockup-library.png",
+        src: "/images/neuvago/support-guidance-desktop.webp",
         alt: "Neuvago app library screen mockup.",
       },
     ] satisfies AppPageImage[],
@@ -159,15 +159,15 @@ export const appPageContent = {
     ] satisfies AppPageFeatureItem[],
     supportingImages: [
       {
-        src: "/images/home/app-mockup-session.png",
+        src: "/images/neuvago/app-hero-mobile.webp",
         alt: "Neuvago app session screen mockup.",
       },
       {
-        src: "/images/home/app-mockup-home.png",
+        src: "/images/neuvago/app-hero-desktop.webp",
         alt: "Neuvago app home screen mockup.",
       },
       {
-        src: "/images/home/app-mockup-progress.png",
+        src: "/images/neuvago/final-cta-desktop.webp",
         alt: "Neuvago app progress screen mockup.",
       },
     ] satisfies AppPageImage[],
@@ -206,11 +206,11 @@ export const appPageContent = {
       },
     ] satisfies AppPageCard[],
     image: {
-      src: "/images/home/lifestyle-sofa-neuvago.png",
+      src: "/images/neuvago/evening-wind-down-desktop.webp",
       alt: "A calm real-life moment with Neuvago as part of a quiet evening routine.",
     } satisfies AppPageImage,
     secondaryImage: {
-      src: "/images/home/app-mockup-library.png",
+      src: "/images/neuvago/support-guidance-desktop.webp",
       alt: "Neuvago app library screen showing available guided routines.",
     } satisfies AppPageImage,
   } satisfies AppPageSectionVisibility & {
@@ -244,7 +244,7 @@ export const appPageContent = {
       },
     ] satisfies AppPageCard[],
     image: {
-      src: "/images/home/app-mockup-progress.png",
+      src: "/images/neuvago/final-cta-desktop.webp",
       alt: "Neuvago progress screen shown in a calm premium interface.",
     } satisfies AppPageImage,
   } satisfies AppPageSectionVisibility & {
@@ -277,7 +277,7 @@ export const appPageContent = {
       },
     ] satisfies AppPageFeatureItem[],
     image: {
-      src: "/images/home/device-phone-paired-editorial.png",
+      src: "/images/neuvago/homepage-master-hero-desktop.webp",
       alt: "Neuvago device and app shown together as one connected system.",
     } satisfies AppPageImage,
     cta: {
@@ -344,7 +344,7 @@ export const appPageContent = {
       href: "/product",
     } satisfies AppPageCta,
     backgroundImage: {
-      src: "/images/home/app-mockup-progress.png",
+      src: "/images/neuvago/final-cta-desktop.webp",
       alt: "Neuvago app progress screen showing continuity over time.",
     } satisfies AppPageImage,
   } satisfies AppPageSectionVisibility & {

@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { JsonLd } from "@/components/seo/json-ld";
+import { AuthorityVisualSection } from "@/components/authority";
 import { buildAuthorityPageStructuredData } from "@/lib/seo/structured-data";
 import { authorityEditorialDates } from "@/lib/seo/editorial-dates";
 
@@ -547,6 +548,14 @@ export default function SafetyAndTolerabilityResearchPage() {
           </div>
         </div>
       </section>
+
+      <AuthorityVisualSection
+        eyebrow="Safety visual"
+        title="Safety is clearest when the boundaries are visible"
+        description="A responsible non-invasive VNS explanation should make comfort, adverse-event awareness, contraindication questions, and intended-use boundaries easy to find."
+        image={{ src: "/images/neuvago/safety-tolerability-desktop.webp", alt: "Neuvago device beside an abstract safety and tolerability checklist card." }}
+      />
+
 
       <section className="border-b border-black/5 bg-[#f2eee8]">
         <div className="mx-auto grid max-w-7xl gap-14 px-6 py-24 md:px-10 md:py-28 lg:grid-cols-[1fr_0.95fr] lg:items-start">

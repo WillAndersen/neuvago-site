@@ -12,11 +12,6 @@ type HomeAppDeviceEcosystemProps = {
 export function HomeAppDeviceEcosystem({
   content,
 }: HomeAppDeviceEcosystemProps) {
-  const mainImage = {
-    src: "/images/home/app-mockup-library.png",
-    alt: "Neuvago app library screen shown as the guidance layer of the connected system.",
-  } as const;
-
   return (
     <section className="bg-[#f7f4ef]">
       <div className="mx-auto max-w-7xl px-6 py-20 sm:px-8 lg:px-12">
@@ -50,10 +45,10 @@ export function HomeAppDeviceEcosystem({
             <div className="overflow-hidden rounded-[2rem] border border-black/5 bg-white/60 shadow-[0_24px_80px_rgba(31,31,28,0.08)]">
               <div className="relative aspect-[4/3]">
                 <Image
-                  src={mainImage.src}
-                  alt={mainImage.alt}
+                  src={content.image.src}
+                  alt={content.image.alt}
                   fill
-                  className="object-contain bg-[#f6eee6] p-6"
+                  className="object-cover"
                   sizes="(max-width: 768px) 92vw, (max-width: 1024px) 88vw, 560px"
                 />
               </div>

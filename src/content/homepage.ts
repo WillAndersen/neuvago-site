@@ -63,11 +63,11 @@ export const homepageContent = {
       href: "/how-it-works",
     } satisfies HomepageCta,
     desktopImage: {
-      src: "/images/home/hero-device-app-master.png",
+      src: "/images/neuvago/homepage-master-hero-desktop.webp",
       alt: "Neuvago device and app shown together in a warm editorial setting.",
     } satisfies HomepageImage,
     mobileImage: {
-      src: "/images/home/hero-device-app-mobile.png",
+      src: "/images/neuvago/homepage-master-hero-mobile.webp",
       alt: "Neuvago device and app shown together for mobile hero layout.",
     } satisfies HomepageImage,
     proofLine: ["Non-invasive", "App-guided", "Built for daily use"],
@@ -106,7 +106,7 @@ export const homepageContent = {
       "Designed for stress, recovery, and evening wind-down",
     ],
     image: {
-      src: "/images/home/device-close-detail-material.png",
+      src: "/images/neuvago/product-hero-desktop.webp",
       alt: "Close-up details of the Neuvago device material and finish.",
     } satisfies HomepageImage,
   } satisfies HomepageSectionVisibility & {
@@ -172,24 +172,24 @@ export const homepageContent = {
       },
     ] satisfies HomepageFeatureItem[],
     image: {
-      src: "/images/home/app-mockup-library.png",
+      src: "/images/neuvago/support-guidance-desktop.webp",
       alt: "Neuvago app library screen shown as the guided layer of the connected system.",
     } satisfies HomepageImage,
     supportingImages: [
       {
-        src: "/images/home/app-mockup-home.png",
+        src: "/images/neuvago/app-hero-desktop.webp",
         alt: "Neuvago app home screen mockup.",
       },
       {
-        src: "/images/home/app-mockup-session.png",
+        src: "/images/neuvago/app-hero-mobile.webp",
         alt: "Neuvago app session screen mockup.",
       },
       {
-        src: "/images/home/app-mockup-progress.png",
+        src: "/images/neuvago/final-cta-desktop.webp",
         alt: "Neuvago app progress screen mockup.",
       },
       {
-        src: "/images/home/app-mockup-library.png",
+        src: "/images/neuvago/support-guidance-desktop.webp",
         alt: "Neuvago app library screen mockup.",
       },
     ] satisfies HomepageImage[],
@@ -217,7 +217,7 @@ export const homepageContent = {
         description:
           "Begin with the device as the physical starting point for the experience.",
         image: {
-          src: "/images/home/device-cutout-front-angle.png",
+          src: "/images/neuvago/product-hero-mobile.webp",
           alt: "Front and angled view of the Neuvago device.",
         },
       },
@@ -226,7 +226,7 @@ export const homepageContent = {
         description:
           "Use the app to choose guidance that fits the moment, whether you want calm, recovery, or evening wind-down.",
         image: {
-          src: "/images/home/app-mockup-session.png",
+          src: "/images/neuvago/app-hero-mobile.webp",
           alt: "Neuvago session screen shown on a smartphone.",
         },
       },
@@ -235,7 +235,7 @@ export const homepageContent = {
         description:
           "Repeat it in ways that fit real life so the system becomes easier to return to and more useful over time.",
         image: {
-          src: "/images/home/app-mockup-progress.png",
+          src: "/images/neuvago/final-cta-desktop.webp",
           alt: "Neuvago progress screen showing continued use over time.",
         },
       },
@@ -279,7 +279,7 @@ export const homepageContent = {
       },
     ] satisfies HomepageCard[],
     detailImage: {
-      src: "/images/home/device-close-detail-material.png",
+      src: "/images/neuvago/product-hero-desktop.webp",
       alt: "Close-up details of the Neuvago device material and finish.",
     } satisfies HomepageImage,
   } satisfies HomepageSectionVisibility & {
@@ -378,7 +378,7 @@ export const homepageContent = {
         description:
           "A soft editorial device and app composition in a home setting.",
         image: {
-          src: "/images/home/lifestyle-sofa-neuvago.png",
+          src: "/images/neuvago/evening-wind-down-desktop.webp",
           alt: "Neuvago shown in a calm home setting for a warmer lifestyle moment.",
         },
       },
@@ -387,7 +387,7 @@ export const homepageContent = {
         description:
           "A calm evening moment with Neuvago as part of a quiet routine.",
         image: {
-          src: "/images/home/lifestyle-sofa-neuvago.png",
+          src: "/images/neuvago/evening-wind-down-desktop.webp",
           alt: "Person resting on a sofa with the Neuvago device nearby.",
         },
       },
@@ -494,7 +494,7 @@ export const homepageContent = {
       href: "/continue",
     } satisfies HomepageCta,
     backgroundImage: {
-      src: "/images/home/lifestyle-sofa-neuvago.png",
+      src: "/images/neuvago/evening-wind-down-desktop.webp",
       alt: "A calm real-life moment with Neuvago as part of a quiet daily routine.",
     } satisfies HomepageImage,
   } satisfies HomepageSectionVisibility & {

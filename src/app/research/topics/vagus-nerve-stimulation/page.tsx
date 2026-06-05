@@ -1,5 +1,6 @@
 import Link from "next/link"
 import { JsonLd } from "@/components/seo/json-ld"
+import { AuthorityVisualSection } from "@/components/authority";
 import { buildAuthorityPageStructuredData } from "@/lib/seo/structured-data"
 import { authorityEditorialDates } from "@/lib/seo/editorial-dates";
 
@@ -316,6 +317,14 @@ export default function VagusNerveStimulationResearchPage() {
           </div>
         </div>
       </section>
+
+      <AuthorityVisualSection
+        eyebrow="Evidence overview"
+        title="A research-informed view of VNS"
+        description="The VNS research layer is most useful when it separates mechanism, method, safety, and product boundaries instead of turning studies into broad product promises."
+        image={{ src: "/images/neuvago/research-hub-evidence-desktop.webp", alt: "Neuvago device beside abstract research cards and evidence visuals." }}
+      />
+
 
       <section className="border-b border-black/5 bg-[#f2eee8]">
         <div className="mx-auto grid max-w-7xl gap-14 px-6 py-20 md:px-10 md:py-24 lg:grid-cols-[1fr_0.95fr]">

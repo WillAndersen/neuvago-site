@@ -6,9 +6,9 @@ import { AppChrome } from "@/components/layout/app-chrome"
 import "./globals.css"
 
 const defaultOgImage = {
-  url: "/images/home/hero-device-app-master.png",
-  width: 1536,
-  height: 1024,
+  url: "/images/neuvago/homepage-master-hero-desktop.webp",
+  width: 1600,
+  height: 900,
   alt: "Neuvago device and guided app",
 }
 

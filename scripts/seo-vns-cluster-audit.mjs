@@ -146,24 +146,49 @@ if (!llmsSource) {
 }
 
 const visualImageMarkers = {
-  "src/content/homepage.ts": ["finalCta", "/images/home/lifestyle-sofa-neuvago.png"],
+  "src/content/homepage.ts": [
+    "/images/neuvago/homepage-master-hero-desktop.webp",
+    "/images/neuvago/homepage-master-hero-mobile.webp",
+    "/images/neuvago/final-cta-desktop.webp",
+  ],
   "src/content/product.ts": [
-    "/images/home/device-close-detail-material.png",
-    "/images/home/device-cutout-front-angle.png",
-    "/images/home/app-mockup-session.png",
+    "/images/neuvago/product-hero-desktop.webp",
+    "/images/neuvago/product-hero-mobile.webp",
+    "/images/neuvago/final-cta-desktop.webp",
   ],
   "src/content/app.ts": [
-    "/images/home/app-mockup-home.png",
-    "/images/home/app-mockup-session.png",
-    "/images/home/app-mockup-progress.png",
+    "/images/neuvago/app-hero-desktop.webp",
+    "/images/neuvago/app-hero-mobile.webp",
+    "/images/neuvago/final-cta-desktop.webp",
   ],
   "src/content/how-it-works.ts": [
-    "/images/home/device-cutout-front-angle.png",
-    "/images/home/app-mockup-session.png",
+    "/images/neuvago/how-it-works-routine-desktop.webp",
+    "/images/neuvago/how-it-works-routine-mobile.webp",
+    "/images/neuvago/final-cta-desktop.webp",
   ],
   "src/content/support.ts": [
-    "/images/home/app-mockup-library.png",
-    "/images/home/lifestyle-sofa-neuvago.png",
+    "/images/neuvago/support-guidance-desktop.webp",
+    "/images/neuvago/support-guidance-mobile.webp",
+    "/images/neuvago/final-cta-desktop.webp",
+  ],
+  "src/lib/content/core-visual-overrides.ts": [
+    "/images/neuvago/homepage-master-hero-desktop.webp",
+    "/images/neuvago/product-hero-desktop.webp",
+    "/images/neuvago/app-hero-desktop.webp",
+    "/images/neuvago/how-it-works-routine-desktop.webp",
+    "/images/neuvago/support-guidance-desktop.webp",
+  ],
+  "src/app/research/topics/safety-and-tolerability/page.tsx": [
+    "/images/neuvago/safety-tolerability-desktop.webp",
+    "AuthorityVisualSection",
+  ],
+  "src/app/learn/auricular-vagus-nerve-stimulation/page.tsx": [
+    "/images/neuvago/auricular-vns-education-desktop.webp",
+    "AuthorityVisualSection",
+  ],
+  "src/app/learn/transcutaneous-vagus-nerve-stimulation/page.tsx": [
+    "/images/neuvago/transcutaneous-vns-education-desktop.webp",
+    "AuthorityVisualSection",
   ],
 };
 

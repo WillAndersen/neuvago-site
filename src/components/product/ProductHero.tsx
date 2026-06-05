@@ -19,10 +19,10 @@ function getProductHeroImage(image: { src: string; alt: string }) {
 
   return {
     image: {
-      src: "/images/home/device-cutout-front-angle.png",
-      alt: "Front and angled views of the Neuvago device in a product-focused composition.",
+      src: "/images/neuvago/product-hero-desktop.webp",
+      alt: "Close-up of the Neuvago handheld device in a warm premium product composition.",
     },
-    forced: true,
+    forced: false,
   };
 }
 

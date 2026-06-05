@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { AuthorityVisualSection } from "@/components/authority";
 import { JsonLd } from "@/components/seo/json-ld"
 import { buildPageWithBreadcrumbStructuredData } from "@/lib/seo/structured-data"
 
@@ -308,6 +309,14 @@ export default function ResearchPage() {
           </div>
         </div>
       </section>
+
+      <AuthorityVisualSection
+        eyebrow="Research visual"
+        title="Evidence, organized in a calmer way"
+        description="Neuvago’s research layer should feel thoughtful rather than clinical: topic pages, study summaries, and careful interpretation organized around what the evidence can and cannot say."
+        image={{ src: "/images/neuvago/research-hub-evidence-desktop.webp", alt: "Neuvago device beside abstract research cards and evidence visuals." }}
+      />
+
 
       <section className="border-b border-black/5 bg-[#f2eee8]">
         <div className="mx-auto max-w-7xl px-6 py-24 md:px-10 md:py-28">

@@ -1,5 +1,6 @@
 import Link from "next/link"
 import { JsonLd } from "@/components/seo/json-ld"
+import { AuthorityVisualSection } from "@/components/authority";
 import { buildAuthorityPageStructuredData } from "@/lib/seo/structured-data"
 import { authorityEditorialDates } from "@/lib/seo/editorial-dates";
 
@@ -251,6 +252,14 @@ export default function HeartRateVariabilityResearchPage() {
           </div>
         </div>
       </section>
+
+      <AuthorityVisualSection
+        eyebrow="HRV visual"
+        title="HRV is a window into rhythm and recovery"
+        description="Heart rate variability can help explain autonomic patterns, but it should be interpreted as context rather than a simple score or product promise."
+        image={{ src: "/images/neuvago/hrv-rhythm-desktop.webp", alt: "Neuvago device beside abstract rhythm cards for heart rate variability research." }}
+      />
+
 
       <section className="border-b border-black/5 bg-[#f2eee8]">
         <div className="mx-auto grid max-w-7xl gap-14 px-6 py-20 md:px-10 md:py-24 lg:grid-cols-[1fr_0.95fr]">

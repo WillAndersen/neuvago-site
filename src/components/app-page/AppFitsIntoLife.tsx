@@ -7,11 +7,6 @@ type AppFitsIntoLifeProps = {
 };
 
 export function AppFitsIntoLife({ content }: AppFitsIntoLifeProps) {
-  const secondaryImage = {
-    src: "/images/home/app-mockup-library.png",
-    alt: "Neuvago app library screen showing guided session options.",
-  } as const;
-
   return (
     <section className="bg-[#f2eee8]">
       <div className="mx-auto max-w-7xl px-6 py-18 sm:px-8 lg:px-12 lg:py-20">
@@ -58,10 +53,10 @@ export function AppFitsIntoLife({ content }: AppFitsIntoLifeProps) {
             <BaseCard className="overflow-hidden rounded-[2rem]">
               <div className="relative aspect-[4/3] bg-[#f7f4ef]">
                 <Image
-                  src={secondaryImage.src}
-                  alt={secondaryImage.alt}
+                  src={content.secondaryImage.src}
+                  alt={content.secondaryImage.alt}
                   fill
-                  className="object-contain bg-[#f6eee6] p-5"
+                  className="object-cover"
                   sizes="(max-width: 768px) 92vw, (max-width: 1024px) 88vw, 560px"
                 />
               </div>

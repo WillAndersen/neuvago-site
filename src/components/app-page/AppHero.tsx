@@ -19,10 +19,10 @@ function getAppHeroImage(image: { src: string; alt: string }) {
 
   return {
     image: {
-      src: "/images/home/app-mockup-session.png",
-      alt: "Neuvago app session screen shown as the primary guided app experience.",
+      src: "/images/neuvago/app-hero-desktop.webp",
+      alt: "Neuvago app showing a calm guided session beside the handheld device.",
     },
-    forced: true,
+    forced: false,
   };
 }
 

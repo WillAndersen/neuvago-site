@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { JsonLd } from "@/components/seo/json-ld";
+import { AuthorityVisualSection } from "@/components/authority";
 import { buildAuthorityPageStructuredData } from "@/lib/seo/structured-data";
 import { authorityEditorialDates } from "@/lib/seo/editorial-dates";
 
@@ -485,6 +486,14 @@ export default function AuricularVagusNerveStimulationPage() {
           </div>
         </div>
       </section>
+
+      <AuthorityVisualSection
+        eyebrow="Ear-based VNS visual"
+        title="Auricular VNS explained without a clinical scene"
+        description="Ear-based VNS can be explained visually without electrodes, wires, or body placement: an abstract education layer, a clear device, and careful language."
+        image={{ src: "/images/neuvago/auricular-vns-education-desktop.webp", alt: "Neuvago device beside an abstract ear-based auricular VNS education card." }}
+      />
+
 
       <section className="border-b border-black/5 bg-[#f2eee8]">
         <div className="mx-auto grid max-w-7xl gap-14 px-6 py-24 md:px-10 md:py-28 lg:grid-cols-[1fr_0.95fr] lg:items-start">

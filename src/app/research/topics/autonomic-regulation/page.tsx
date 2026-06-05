@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { JsonLd } from "@/components/seo/json-ld";
+import { AuthorityVisualSection } from "@/components/authority";
 import { buildAuthorityPageStructuredData } from "@/lib/seo/structured-data";
 import { authorityEditorialDates } from "@/lib/seo/editorial-dates";
 
@@ -595,6 +596,14 @@ export default function AutonomicRegulationResearchPage() {
           </div>
         </div>
       </section>
+
+      <AuthorityVisualSection
+        eyebrow="Autonomic regulation visual"
+        title="Regulation is about flexibility, not forcing calm"
+        description="The autonomic regulation layer connects sympathetic activation, parasympathetic return, HRV, stress, sleep, and recovery in a calmer, less overclaiming way."
+        image={{ src: "/images/neuvago/autonomic-regulation-desktop.webp", alt: "Neuvago device beside abstract rhythm and regulation research cards." }}
+      />
+
 
       <section className="border-b border-black/5 bg-[#f2eee8]">
         <div className="mx-auto max-w-7xl px-6 py-20 md:px-10 md:py-24">

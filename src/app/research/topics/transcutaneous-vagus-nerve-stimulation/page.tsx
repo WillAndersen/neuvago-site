@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { JsonLd } from "@/components/seo/json-ld";
+import { AuthorityVisualSection } from "@/components/authority";
 import { buildAuthorityPageStructuredData } from "@/lib/seo/structured-data";
 import { authorityEditorialDates } from "@/lib/seo/editorial-dates";
 
@@ -553,6 +554,14 @@ export default function TranscutaneousVagusNerveStimulationResearchPage() {
           </div>
         </div>
       </section>
+
+      <AuthorityVisualSection
+        eyebrow="Method visual"
+        title="tVNS is a method layer with important details"
+        description="Transcutaneous VNS is easiest to understand when device type, stimulation site, parameters, session length, and research context are kept distinct."
+        image={{ src: "/images/neuvago/transcutaneous-vns-education-desktop.webp", alt: "Neuvago device beside abstract transcutaneous VNS method cards." }}
+      />
+
 
       <section className="border-b border-black/5 bg-[#f2eee8]">
         <div className="mx-auto grid max-w-7xl gap-14 px-6 py-24 md:px-10 md:py-28 lg:grid-cols-[1fr_0.95fr] lg:items-start">

@@ -1,10 +1,8 @@
-import { allSiteAssets } from "@/content/assets";
+import { allSiteAssets, type SiteAsset } from "@/content/assets";
 
 type AdminAssetReferenceProps = {
   title?: string;
-  categories?: Array<
-    "hero" | "product" | "app" | "lifestyle" | "detail" | "system" | "background"
-  >;
+  categories?: Array<SiteAsset["category"]>;
 };
 
 export function AdminAssetReference({

@@ -19,10 +19,10 @@ function getSupportHeroImage(image: { src: string; alt: string }) {
 
   return {
     image: {
-      src: "/images/home/app-mockup-library.png",
-      alt: "Neuvago app library screen used as a calm support and guidance visual.",
+      src: "/images/neuvago/support-guidance-desktop.webp",
+      alt: "Neuvago app support and guidance screen beside the handheld device in a calm setting.",
     },
-    forced: true,
+    forced: false,
   };
 }
 

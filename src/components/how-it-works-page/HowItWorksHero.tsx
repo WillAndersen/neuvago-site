@@ -18,8 +18,8 @@ function getHowItWorksHeroImage(image: { src: string; alt: string }) {
   }
 
   return {
-    src: "/images/home/device-close-detail-material.png",
-    alt: "Close-up details of the Neuvago device used for a practical how-it-works introduction.",
+    src: "/images/neuvago/how-it-works-routine-desktop.webp",
+    alt: "Neuvago device, guided app, and simple routine cards explaining how the system works.",
   };
 }
 

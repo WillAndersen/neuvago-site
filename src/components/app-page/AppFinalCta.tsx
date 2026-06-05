@@ -1,3 +1,4 @@
+import Image from "next/image";
 import type { appPageContent } from "@/content/app";
 import { CtaButton } from "@/components/home";
 
@@ -10,9 +11,15 @@ export function AppFinalCta({ content }: AppFinalCtaProps) {
     <section className="bg-[#f7f4ef]">
       <div className="mx-auto max-w-7xl px-6 pb-20 pt-6 sm:px-8 lg:px-12">
         <div className="relative overflow-hidden rounded-[2rem] border border-black/5 bg-[#ece4d9] shadow-[0_28px_90px_rgba(31,31,28,0.08)]">
-          <div className="absolute inset-0 bg-[radial-gradient(circle_at_82%_18%,rgba(255,255,255,0.68),transparent_34%),linear-gradient(135deg,rgba(247,244,239,0.88),rgba(236,228,217,0.72))]" />
-          <div className="absolute right-8 top-8 hidden h-24 w-24 rounded-full border border-black/5 bg-white/35 lg:block" />
-          <div className="absolute bottom-8 right-24 hidden h-12 w-12 rounded-full border border-black/5 bg-white/25 lg:block" />
+          <div className="absolute inset-0 opacity-16">
+            <Image
+              src={content.backgroundImage.src}
+              alt={content.backgroundImage.alt}
+              fill
+              className="object-cover"
+              sizes="(max-width: 768px) 92vw, (max-width: 1024px) 88vw, 1120px"
+            />
+          </div>
 
           <div className="relative z-10 px-6 py-16 sm:px-10 sm:py-18 lg:max-w-3xl">
             <p className="text-sm font-medium uppercase tracking-[0.18em] text-[#7a756c]">

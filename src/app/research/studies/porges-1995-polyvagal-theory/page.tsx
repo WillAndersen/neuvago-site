@@ -1,5 +1,6 @@
 import Link from "next/link"
 import { JsonLd } from "@/components/seo/json-ld"
+import { PlainEnglishSummary } from "@/components/authority"
 import { buildAuthorityPageStructuredData } from "@/lib/seo/structured-data"
 
 export const metadata = {
@@ -140,6 +141,17 @@ const relatedLinks = [
   },
 ]
 
+const studyPlainEnglish = {
+  title: "Why this study appears in the library",
+  description:
+    "This theoretical paper influenced how many people talk about safety, defensive states and vagal regulation. It is useful context, while still debated and interpreted differently across fields.",
+  points: [
+    { title: "What it looked at", description: "A hierarchical model of autonomic responses involving vagal pathways and defensive states." },
+    { title: "Why it matters", description: "It shaped popular and scientific language around safety, shutdown and social engagement." },
+    { title: "What it does not prove", description: "It should not be treated as a complete explanation of stress, anxiety or regulation." },
+  ],
+}
+
 export default function Porges1995PolyvagalTheoryPage() {
   const structuredData = buildAuthorityPageStructuredData({
     title: "Porges 1995 | Polyvagal Theory Study | Neuvago",
@@ -165,8 +177,12 @@ export default function Porges1995PolyvagalTheoryPage() {
             </p>
 
             <h1 className="mt-5 text-4xl font-medium leading-[1.06] tracking-[-0.035em] md:text-6xl">
-              Orienting in a Defensive World: The Polyvagal Theory (Porges, 1995)
+              Porges 1995
             </h1>
+
+            <p className="mt-5 max-w-3xl text-xl leading-8 text-[#3d3a35] md:text-2xl md:leading-9">
+              Orienting in a Defensive World: The Polyvagal Theory
+            </p>
 
             <p className="mt-6 max-w-3xl text-base leading-8 text-[#5f5a52] md:text-lg">
               The polyvagal theory was introduced by Stephen W. Porges in 1995
@@ -194,6 +210,13 @@ export default function Porges1995PolyvagalTheoryPage() {
           </div>
         </div>
       </section>
+
+
+      <PlainEnglishSummary
+        title={studyPlainEnglish.title}
+        description={studyPlainEnglish.description}
+        points={studyPlainEnglish.points}
+      />
 
       <section className="border-b border-black/5 bg-[#f2eee8]">
         <div className="mx-auto grid max-w-7xl gap-14 px-6 py-20 md:px-10 md:py-24 lg:grid-cols-[1fr_0.95fr]">

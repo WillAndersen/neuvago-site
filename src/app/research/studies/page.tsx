@@ -1,5 +1,6 @@
 import Link from "next/link"
 import { JsonLd } from "@/components/seo/json-ld"
+import { PlainEnglishSummary } from "@/components/authority"
 import { buildPageWithBreadcrumbStructuredData } from "@/lib/seo/structured-data"
 
 export const metadata = {
@@ -358,6 +359,33 @@ export default function ResearchStudiesPage() {
           </div>
         </div>
       </section>
+
+
+      <PlainEnglishSummary
+        title="How to read this library"
+        description="Each study page separates the paper, the research context and the boundary. That makes the library useful for learning without turning individual findings into product claims."
+        points={[
+          {
+            title: "Start with context",
+            description:
+              "Look first at why the paper matters and which research track it belongs to.",
+          },
+          {
+            title: "Read the boundary",
+            description:
+              "Study summaries explain what a paper can support and what it cannot prove.",
+          },
+          {
+            title: "Follow the pathway",
+            description:
+              "Use related links to move from one paper into broader research topics and plain-language guides.",
+          },
+        ]}
+        primaryHref="/research/topics"
+        primaryLabel="Browse research topics"
+        secondaryHref="/learn"
+        secondaryLabel="Go to Learn"
+      />
 
       <section className="border-b border-black/5 bg-[#f2eee8]">
         <div className="mx-auto grid max-w-7xl gap-14 px-6 py-20 md:px-10 md:py-24 lg:grid-cols-[1fr_0.95fr]">

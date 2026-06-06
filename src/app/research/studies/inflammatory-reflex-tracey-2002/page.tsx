@@ -1,5 +1,6 @@
 import Link from "next/link"
 import { JsonLd } from "@/components/seo/json-ld"
+import { PlainEnglishSummary } from "@/components/authority"
 import { buildAuthorityPageStructuredData } from "@/lib/seo/structured-data"
 
 export const metadata = {
@@ -151,6 +152,17 @@ const relatedLinks = [
   },
 ]
 
+const studyPlainEnglish = {
+  title: "Why this study appears in the library",
+  description:
+    "This paper helped define the inflammatory reflex: the idea that neural circuits can participate in immune regulation. It provides background for later vagus nerve and neuroimmune research.",
+  points: [
+    { title: "What it looked at", description: "How nervous system pathways may detect and regulate inflammatory activity." },
+    { title: "Why it matters", description: "It created a framework for thinking about the vagus nerve as part of brain-body immune communication." },
+    { title: "What it does not prove", description: "It should not be read as a claim that wellness stimulation treats immune disorders." },
+  ],
+}
+
 export default function InflammatoryReflexTracey2002Page() {
   const structuredData = buildAuthorityPageStructuredData({
     title: "Tracey 2002 | Inflammatory Reflex Study | Neuvago",
@@ -176,8 +188,12 @@ export default function InflammatoryReflexTracey2002Page() {
             </p>
 
             <h1 className="mt-5 text-4xl font-medium leading-[1.06] tracking-[-0.035em] md:text-6xl">
-              The Inflammatory Reflex: Neural Regulation of the Immune System (Tracey, 2002)
+              Tracey 2002
             </h1>
+
+            <p className="mt-5 max-w-3xl text-xl leading-8 text-[#3d3a35] md:text-2xl md:leading-9">
+              The Inflammatory Reflex: Neural Regulation of the Immune System
+            </p>
 
             <p className="mt-6 max-w-3xl text-base leading-8 text-[#5f5a52] md:text-lg">
               The inflammatory reflex, introduced by Kevin J. Tracey in 2002,
@@ -204,6 +220,13 @@ export default function InflammatoryReflexTracey2002Page() {
           </div>
         </div>
       </section>
+
+
+      <PlainEnglishSummary
+        title={studyPlainEnglish.title}
+        description={studyPlainEnglish.description}
+        points={studyPlainEnglish.points}
+      />
 
       <section className="border-b border-black/5 bg-[#f2eee8]">
         <div className="mx-auto grid max-w-7xl gap-14 px-6 py-20 md:px-10 md:py-24 lg:grid-cols-[1fr_0.95fr]">

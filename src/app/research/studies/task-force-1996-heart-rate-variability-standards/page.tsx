@@ -1,5 +1,6 @@
 import Link from "next/link"
 import { JsonLd } from "@/components/seo/json-ld"
+import { PlainEnglishSummary } from "@/components/authority"
 import { buildAuthorityPageStructuredData } from "@/lib/seo/structured-data"
 
 export const metadata = {
@@ -154,6 +155,17 @@ const relatedLinks = [
   },
 ]
 
+const studyPlainEnglish = {
+  title: "Why this study appears in the library",
+  description:
+    "This consensus-style paper helped standardize how researchers measure and interpret HRV. It is foundational for understanding HRV as a window into autonomic regulation.",
+  points: [
+    { title: "What it looked at", description: "Measurement categories, interpretation principles and methodological standards for HRV." },
+    { title: "Why it matters", description: "It provides shared language for autonomic and vagal regulation research." },
+    { title: "What it does not prove", description: "HRV is an indirect marker; it should not be reduced to a simple score or product promise." },
+  ],
+}
+
 export default function TaskForce1996HeartRateVariabilityStandardsPage() {
   const structuredData = buildAuthorityPageStructuredData({
     title: "Task Force 1996 | HRV Standards Study | Neuvago",
@@ -179,8 +191,12 @@ export default function TaskForce1996HeartRateVariabilityStandardsPage() {
             </p>
 
             <h1 className="mt-5 text-4xl font-medium leading-[1.06] tracking-[-0.035em] md:text-6xl">
-              Heart Rate Variability: Standards of Measurement, Physiological Interpretation, and Clinical Use (Task Force, 1996)
+              Task Force 1996
             </h1>
+
+            <p className="mt-5 max-w-3xl text-xl leading-8 text-[#3d3a35] md:text-2xl md:leading-9">
+              Heart Rate Variability: Standards of Measurement, Physiological Interpretation, and Clinical Use
+            </p>
 
             <p className="mt-6 max-w-3xl text-base leading-8 text-[#5f5a52] md:text-lg">
               The 1996 Task Force report published in <em>Circulation</em> is the
@@ -208,6 +224,13 @@ export default function TaskForce1996HeartRateVariabilityStandardsPage() {
           </div>
         </div>
       </section>
+
+
+      <PlainEnglishSummary
+        title={studyPlainEnglish.title}
+        description={studyPlainEnglish.description}
+        points={studyPlainEnglish.points}
+      />
 
       <section className="border-b border-black/5 bg-[#f2eee8]">
         <div className="mx-auto grid max-w-7xl gap-14 px-6 py-20 md:px-10 md:py-24 lg:grid-cols-[1fr_0.95fr]">

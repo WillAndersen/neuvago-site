@@ -1,5 +1,6 @@
 import Link from "next/link"
 import { JsonLd } from "@/components/seo/json-ld"
+import { PlainEnglishSummary } from "@/components/authority"
 import { buildAuthorityPageStructuredData } from "@/lib/seo/structured-data"
 
 export const metadata = {
@@ -162,6 +163,17 @@ const relatedLinks = [
   },
 ]
 
+const studyPlainEnglish = {
+  title: "Why this study appears in the library",
+  description:
+    "This paper is one of the key early neuroimaging studies behind modern interest in auricular vagus nerve stimulation. It is useful because it connects ear-based stimulation to brain regions associated with vagal pathways.",
+  points: [
+    { title: "What it looked at", description: "Whether stimulation applied to specific ear regions could influence brain activity measured with fMRI." },
+    { title: "Why it matters", description: "It gave the taVNS field an important non-invasive pathway hypothesis to investigate further." },
+    { title: "What it does not prove", description: "It does not mean every ear-based stimulation protocol has the same effects or outcomes." },
+  ],
+}
+
 export default function Frangos2015AuricularVagusNerveStimulationFmriPage() {
   const structuredData = buildAuthorityPageStructuredData({
     title: "Frangos et al. 2015 | Auricular VNS fMRI Study | Neuvago",
@@ -187,8 +199,12 @@ export default function Frangos2015AuricularVagusNerveStimulationFmriPage() {
             </p>
 
             <h1 className="mt-5 text-4xl font-medium leading-[1.06] tracking-[-0.035em] md:text-6xl">
-              Non-Invasive Access to the Vagus Nerve via the Ear: fMRI Evidence (Frangos et al., 2015)
+              Frangos et al. 2015
             </h1>
+
+            <p className="mt-5 max-w-3xl text-xl leading-8 text-[#3d3a35] md:text-2xl md:leading-9">
+              Non-Invasive Access to the Vagus Nerve via the Ear: fMRI Evidence
+            </p>
 
             <p className="mt-6 max-w-3xl text-base leading-8 text-[#5f5a52] md:text-lg">
               The study by Frangos and colleagues, published in 2015, investigated
@@ -216,6 +232,13 @@ export default function Frangos2015AuricularVagusNerveStimulationFmriPage() {
           </div>
         </div>
       </section>
+
+
+      <PlainEnglishSummary
+        title={studyPlainEnglish.title}
+        description={studyPlainEnglish.description}
+        points={studyPlainEnglish.points}
+      />
 
       <section className="border-b border-black/5 bg-[#f2eee8]">
         <div className="mx-auto grid max-w-7xl gap-14 px-6 py-20 md:px-10 md:py-24 lg:grid-cols-[1fr_0.95fr]">

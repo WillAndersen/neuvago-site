@@ -1,5 +1,6 @@
 import Link from "next/link"
 import { JsonLd } from "@/components/seo/json-ld"
+import { PlainEnglishSummary } from "@/components/authority"
 import { buildAuthorityPageStructuredData } from "@/lib/seo/structured-data"
 
 export const metadata = {
@@ -156,6 +157,17 @@ const relatedLinks = [
   },
 ]
 
+const studyPlainEnglish = {
+  title: "Why this study appears in the library",
+  description:
+    "This experimental paper helped shape later conversations about the vagus nerve, inflammation and neuroimmune signaling. It is important context for the research field, not a direct product claim for Neuvago.",
+  points: [
+    { title: "What it looked at", description: "Whether vagus nerve signaling could influence inflammatory responses in an experimental model." },
+    { title: "Why it matters", description: "It helped establish the inflammatory reflex as a serious research area connected to vagal pathways." },
+    { title: "What it does not prove", description: "It does not show that a consumer wellness device treats inflammatory disease or replaces medical care." },
+  ],
+}
+
 export default function Borovikova2000VagusNerveInflammationPage() {
   const structuredData = buildAuthorityPageStructuredData({
     title: "Borovikova et al. 2000 | VNS and Inflammation | Neuvago",
@@ -181,8 +193,12 @@ export default function Borovikova2000VagusNerveInflammationPage() {
             </p>
 
             <h1 className="text-4xl font-medium leading-[1.05] tracking-[-0.03em] md:text-6xl lg:text-7xl">
-              Vagus Nerve Stimulation Attenuates the Systemic Inflammatory Response (Borovikova et al., 2000)
+              Borovikova et al. 2000
             </h1>
+
+            <p className="mt-5 max-w-3xl text-xl leading-8 text-[#3d3a35] md:text-2xl md:leading-9">
+              Vagus Nerve Stimulation Attenuates the Systemic Inflammatory Response
+            </p>
 
             <p className="mt-6 max-w-2xl text-base leading-8 text-[#5f5a52] md:text-lg">
               The study by Borovikova and colleagues, published in <em>Nature</em> in
@@ -256,6 +272,13 @@ export default function Borovikova2000VagusNerveInflammationPage() {
           </div>
         </div>
       </section>
+
+
+      <PlainEnglishSummary
+        title={studyPlainEnglish.title}
+        description={studyPlainEnglish.description}
+        points={studyPlainEnglish.points}
+      />
 
       <section className="border-b border-black/5 bg-[#f2eee8]">
         <div className="mx-auto grid max-w-7xl gap-14 px-6 py-24 md:px-10 md:py-28 lg:grid-cols-[1fr_0.95fr] lg:items-start">

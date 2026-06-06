@@ -1,5 +1,6 @@
 import Link from "next/link"
 import { JsonLd } from "@/components/seo/json-ld"
+import { PlainEnglishSummary } from "@/components/authority"
 import { buildAuthorityPageStructuredData } from "@/lib/seo/structured-data"
 
 export const metadata = {
@@ -156,6 +157,17 @@ const relatedLinks = [
   },
 ]
 
+const studyPlainEnglish = {
+  title: "Why this study appears in the library",
+  description:
+    "This review helped popularize a more integrated view of gut-brain communication. It matters for Neuvago because vagal signaling is one pathway in the wider brain-body conversation.",
+  points: [
+    { title: "What it looked at", description: "How neural, immune, endocrine and microbial signals connect the digestive system and brain." },
+    { title: "Why it matters", description: "It places the vagus nerve inside a broader communication system rather than a single isolated pathway." },
+    { title: "What it does not prove", description: "It does not imply that Neuvago changes the microbiome or treats digestive conditions." },
+  ],
+}
+
 export default function Mayer2011GutBrainAxisPage() {
   const structuredData = buildAuthorityPageStructuredData({
     title: "Mayer 2011 | Gut–Brain Axis Study | Neuvago",
@@ -181,8 +193,12 @@ export default function Mayer2011GutBrainAxisPage() {
             </p>
 
             <h1 className="mt-5 text-4xl font-medium leading-[1.06] tracking-[-0.035em] md:text-6xl">
-              Gut Feelings: The Emerging Biology of Gut–Brain Communication (Mayer, 2011)
+              Mayer 2011
             </h1>
+
+            <p className="mt-5 max-w-3xl text-xl leading-8 text-[#3d3a35] md:text-2xl md:leading-9">
+              Gut Feelings: The Emerging Biology of Gut–Brain Communication
+            </p>
 
             <p className="mt-6 max-w-3xl text-base leading-8 text-[#5f5a52] md:text-lg">
               The review article by Emeran A. Mayer, published in 2011, is one
@@ -209,6 +225,13 @@ export default function Mayer2011GutBrainAxisPage() {
           </div>
         </div>
       </section>
+
+
+      <PlainEnglishSummary
+        title={studyPlainEnglish.title}
+        description={studyPlainEnglish.description}
+        points={studyPlainEnglish.points}
+      />
 
       <section className="border-b border-black/5 bg-[#f2eee8]">
         <div className="mx-auto grid max-w-7xl gap-14 px-6 py-20 md:px-10 md:py-24 lg:grid-cols-[1fr_0.95fr]">

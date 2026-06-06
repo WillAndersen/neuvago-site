@@ -1,5 +1,6 @@
 import Link from "next/link"
 import { JsonLd } from "@/components/seo/json-ld"
+import { PlainEnglishSummary } from "@/components/authority"
 import { buildAuthorityPageStructuredData } from "@/lib/seo/structured-data"
 
 export const metadata = {
@@ -151,6 +152,17 @@ const relatedLinks = [
   },
 ]
 
+const studyPlainEnglish = {
+  title: "Why this study appears in the library",
+  description:
+    "This review explains one proposed mechanism by which vagal signaling may influence inflammatory processes. It is a research-context page, not a treatment claim.",
+  points: [
+    { title: "What it looked at", description: "The role of acetylcholine and vagal signaling in immune regulation models." },
+    { title: "Why it matters", description: "It helped connect the inflammatory reflex to a more specific biological pathway." },
+    { title: "What it does not prove", description: "It does not establish that non-invasive wellness routines treat inflammation or immune disease." },
+  ],
+}
+
 export default function PavlovTracey2005CholinergicAntiInflammatoryPathwayPage() {
   const structuredData = buildAuthorityPageStructuredData({
     title: "Pavlov & Tracey 2005 | Cholinergic Pathway | Neuvago",
@@ -176,8 +188,12 @@ export default function PavlovTracey2005CholinergicAntiInflammatoryPathwayPage()
             </p>
 
             <h1 className="mt-5 text-4xl font-medium leading-[1.06] tracking-[-0.035em] md:text-6xl">
-              The Cholinergic Anti-Inflammatory Pathway (Pavlov &amp; Tracey, 2005)
+              Pavlov & Tracey 2005
             </h1>
+
+            <p className="mt-5 max-w-3xl text-xl leading-8 text-[#3d3a35] md:text-2xl md:leading-9">
+              The Cholinergic Anti-Inflammatory Pathway
+            </p>
 
             <p className="mt-6 max-w-3xl text-base leading-8 text-[#5f5a52] md:text-lg">
               The paper by Valentin A. Pavlov and Kevin J. Tracey, published in
@@ -204,6 +220,13 @@ export default function PavlovTracey2005CholinergicAntiInflammatoryPathwayPage()
           </div>
         </div>
       </section>
+
+
+      <PlainEnglishSummary
+        title={studyPlainEnglish.title}
+        description={studyPlainEnglish.description}
+        points={studyPlainEnglish.points}
+      />
 
       <section className="border-b border-black/5 bg-[#f2eee8]">
         <div className="mx-auto grid max-w-7xl gap-14 px-6 py-20 md:px-10 md:py-24 lg:grid-cols-[1fr_0.95fr]">

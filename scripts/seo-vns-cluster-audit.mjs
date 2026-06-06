@@ -252,6 +252,25 @@ if (productSource.includes("buildProductStructuredData")) {
   errors.push("/product still renders Product structured data; keep Product schema disabled until real offer/review data exists.");
 }
 
+const studyPageFiles = collectFiles(path.join(repoRoot, "src/app/research/studies"), "page.tsx")
+  .filter((filePath) => !filePath.endsWith(path.join("research", "studies", "page.tsx")));
+
+for (const filePath of studyPageFiles) {
+  const source = readIfExists(filePath);
+  if (!source.includes("PlainEnglishSummary") || !source.includes("studyPlainEnglish")) {
+    errors.push(`${relative(filePath)} is missing the P4.3B plain-English study summary.`);
+  }
+
+  if (!source.includes("Open DOI record")) {
+    warnings.push(`${relative(filePath)} may be missing descriptive DOI anchor text.`);
+  }
+}
+
+const studiesHubSource = readIfExists(pageFileForRoute("/research/studies"));
+if (studiesHubSource && !studiesHubSource.includes("How to read this library")) {
+  warnings.push("/research/studies is missing the P4.3B reading guidance block.");
+}
+
 const pageSources = collectFiles(path.join(repoRoot, "src/app"), "page.tsx");
 for (const filePath of pageSources) {
   const source = readIfExists(filePath);

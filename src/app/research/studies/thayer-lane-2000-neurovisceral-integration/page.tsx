@@ -1,5 +1,6 @@
 import Link from "next/link"
 import { JsonLd } from "@/components/seo/json-ld"
+import { PlainEnglishSummary } from "@/components/authority"
 import { buildAuthorityPageStructuredData } from "@/lib/seo/structured-data"
 
 export const metadata = {
@@ -148,6 +149,17 @@ const relatedLinks = [
   },
 ]
 
+const studyPlainEnglish = {
+  title: "Why this study appears in the library",
+  description:
+    "This model connects emotion regulation, brain networks, autonomic flexibility and HRV. It helps explain why regulation is a brain-body topic rather than only a mental one.",
+  points: [
+    { title: "What it looked at", description: "How brain and autonomic systems may coordinate emotion regulation and physiological flexibility." },
+    { title: "Why it matters", description: "It helped connect HRV, vagal influence and emotional regulation in one framework." },
+    { title: "What it does not prove", description: "It does not mean a single device or session can directly control emotion or health outcomes." },
+  ],
+}
+
 export default function ThayerLane2000NeurovisceralIntegrationPage() {
   const structuredData = buildAuthorityPageStructuredData({
     title: "Thayer & Lane 2000 | Neurovisceral Integration | Neuvago",
@@ -173,8 +185,12 @@ export default function ThayerLane2000NeurovisceralIntegrationPage() {
             </p>
 
             <h1 className="mt-5 text-4xl font-medium leading-[1.06] tracking-[-0.035em] md:text-6xl">
-              A Model of Neurovisceral Integration in Emotion Regulation (Thayer & Lane, 2000)
+              Thayer & Lane 2000
             </h1>
+
+            <p className="mt-5 max-w-3xl text-xl leading-8 text-[#3d3a35] md:text-2xl md:leading-9">
+              A Model of Neurovisceral Integration in Emotion Regulation
+            </p>
 
             <p className="mt-6 max-w-3xl text-base leading-8 text-[#5f5a52] md:text-lg">
               The neurovisceral integration model proposed by Julian F. Thayer
@@ -201,6 +217,13 @@ export default function ThayerLane2000NeurovisceralIntegrationPage() {
           </div>
         </div>
       </section>
+
+
+      <PlainEnglishSummary
+        title={studyPlainEnglish.title}
+        description={studyPlainEnglish.description}
+        points={studyPlainEnglish.points}
+      />
 
       <section className="border-b border-black/5 bg-[#f2eee8]">
         <div className="mx-auto grid max-w-7xl gap-14 px-6 py-20 md:px-10 md:py-24 lg:grid-cols-[1fr_0.95fr]">

@@ -49,9 +49,9 @@ export const productPageContent = {
   hero: {
     visible: true,
     eyebrow: "Product",
-    title: "A non-invasive vagus nerve stimulator for guided daily regulation.",
+    title: "A non-invasive vagus nerve stimulator, guided by app.",
     description:
-      "Neuvago pairs a premium non-invasive vagus nerve stimulator with a guided app experience for calmer routines around stress, recovery, sleep, and everyday nervous system balance — with clear wellness boundaries and practical safety context.",
+      "Neuvago pairs a premium handheld device with guided app sessions for short, repeatable regulation routines — with clear wellness boundaries and a research-informed safety layer.",
     primaryCta: {
       label: "How it works",
       href: "/how-it-works",
@@ -82,7 +82,7 @@ export const productPageContent = {
 
   whatIsNeuvago: {
     visible: true,
-    title: "A premium vagus nerve stimulation device at the center of a connected system",
+    title: "A physical anchor for a calmer regulation system",
     description:
       "At the center of Neuvago is a non-invasive vagus nerve stimulation device designed to feel calm, clear, and easy to live with. The app adds guidance, session structure, and continuity, while the product experience stays grounded in gentle daily wellness support rather than medical treatment claims.",
     bullets: [
@@ -201,7 +201,7 @@ export const productPageContent = {
 
   howItFitsIntoLife: {
     visible: true,
-    title: "How the product fits into real life",
+    title: "Built for the moments you actually return to",
     description:
       "The value of the product is not only what it is, but how naturally it can fit into calmer daily routines — whether you want a gentler start, a pause during stress, or a more intentional evening wind-down.",
     cards: [

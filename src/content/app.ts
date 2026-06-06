@@ -37,9 +37,9 @@ export const appPageContent = {
   hero: {
     visible: true,
     eyebrow: "App",
-    title: "A guided app designed to make calmer routines easier to return to.",
+    title: "Guidance for the moments you return to.",
     description:
-      "The Neuvago app adds guidance, structure, and continuity through sessions, calmer routines, and a softer daily rhythm that feels realistic in everyday life.",
+      "The Neuvago app gives each session a beginning, a rhythm, and a gentle way to come back — without turning regulation into another performance metric.",
     primaryCta: {
       label: "How it works",
       href: "/how-it-works",
@@ -70,7 +70,7 @@ export const appPageContent = {
 
   whatItDoes: {
     visible: true,
-    title: "What the app adds",
+    title: "The app turns use into guidance",
     description:
       "The app is what turns Neuvago from a standalone device into a guided system. It adds sessions, structure, and continuity so it feels easier to begin, easier to understand, and easier to return to over time.",
     bullets: [
@@ -137,7 +137,7 @@ export const appPageContent = {
 
   sessionsRhythm: {
     visible: true,
-    title: "Guidance, sessions, and rhythm",
+    title: "Sessions with a softer rhythm",
     description:
       "The app is designed to do more than start a single session. It helps turn use into a calmer rhythm with guidance, repetition, and growing familiarity over time.",
     features: [

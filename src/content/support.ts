@@ -32,9 +32,9 @@ export const supportPageContent = {
   hero: {
     visible: true,
     eyebrow: "Support",
-    title: "Clear, calm help for exploring and using Neuvago.",
+    title: "Clear help, calmly organized.",
     description:
-      "Support should feel simple. This page helps you find the right place to start, understand the system more clearly, and move forward without unnecessary friction.",
+      "Find the right place to start, understand the Neuvago system more clearly, and move forward without adding more noise.",
     primaryCta: {
       label: "How it works",
       href: "/how-it-works",
@@ -184,7 +184,7 @@ export const supportPageContent = {
 
   philosophy: {
     visible: true,
-    title: "A calmer support philosophy",
+    title: "Support should reduce friction",
     description:
       "Support should feel like the rest of the Neuvago experience: clearer, calmer, and easier to navigate without adding more noise.",
     cards: [
@@ -205,8 +205,8 @@ export const supportPageContent = {
       },
     ] satisfies SupportPageCard[],
     image: {
-      src: "/images/neuvago/product-hero-desktop.webp",
-      alt: "Close-up of Neuvago device material and finish used as a subtle support philosophy visual.",
+      src: "/images/neuvago/support-guidance-desktop.webp",
+      alt: "Neuvago support and guidance screen beside the handheld device in a calm setting.",
     } satisfies SupportPageImage,
   } satisfies SupportPageSectionVisibility & {
     title: string;

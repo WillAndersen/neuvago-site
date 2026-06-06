@@ -1,76 +1,50 @@
 import Image from "next/image";
 import type { howItWorksPageContent } from "@/content/how-it-works";
-import { SectionHeading, ContentCard, BaseCard } from "@/components/home";
 
 type HowItWorksDailyLifeProps = {
   content: typeof howItWorksPageContent.dailyLife;
 };
 
-export function HowItWorksDailyLife({
-  content,
-}: HowItWorksDailyLifeProps) {
+const pathwayImages = [
+  { src: "/images/neuvago/morning-reset-desktop.webp", alt: "Neuvago morning reset routine with device and guided app." },
+  { src: "/images/neuvago/stress-daytime-pause-desktop.webp", alt: "Neuvago daytime pause routine with device and guided app." },
+  { src: "/images/neuvago/evening-wind-down-desktop.webp", alt: "Neuvago evening wind-down routine with device and guided app." },
+];
+
+export function HowItWorksDailyLife({ content }: HowItWorksDailyLifeProps) {
   return (
     <section className="bg-[#f2eee8]">
-      <div className="mx-auto max-w-7xl px-6 py-18 sm:px-8 lg:px-12 lg:py-20">
-        <div className="grid gap-12 lg:grid-cols-[1fr_1fr] lg:items-start lg:gap-16">
-          <div>
-            <SectionHeading
-              title={content.title}
-              description={content.description}
-            />
+      <div className="mx-auto max-w-[92rem] px-5 py-20 sm:px-8 lg:px-12 lg:py-28">
+        <div className="max-w-3xl">
+          <p className="text-[0.72rem] font-medium uppercase tracking-[0.26em] text-[#81766a]">Daily fit</p>
+          <h2 className="mt-4 text-4xl font-medium tracking-[-0.055em] text-[#1f1f1c] sm:text-5xl lg:text-6xl lg:leading-[0.95]">
+            {content.title}
+          </h2>
+          <p className="mt-6 text-base leading-8 text-[#5f5a52] sm:text-lg">{content.description}</p>
+        </div>
 
-            <div className="mt-8 space-y-4">
-              {content.cards.map((card) => (
-                <ContentCard
-                  key={card.title}
-                  title={card.title}
-                  description={card.description}
-                />
-              ))}
-            </div>
-          </div>
-
-          <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-1">
-            <BaseCard className="overflow-hidden rounded-[2rem]">
-              <div className="relative aspect-[4/3] bg-[#f7f4ef]">
-                <Image
-                  src={content.image.src}
-                  alt={content.image.alt}
-                  fill
-                  className="object-cover"
-                  sizes="(max-width: 768px) 92vw, (max-width: 1024px) 88vw, 560px"
-                />
-              </div>
-              <div className="p-6">
-                <h3 className="text-xl font-semibold text-[#1f1f1c]">
-                  Calm use in real life
-                </h3>
-                <p className="mt-3 text-sm leading-6 text-[#5f5a52]">
-                  The experience is designed to feel realistic to return to across the day.
-                </p>
-              </div>
-            </BaseCard>
-
-            <BaseCard className="overflow-hidden rounded-[2rem]">
-              <div className="relative aspect-[4/3] bg-[#f7f4ef]">
-                <Image
-                  src={content.secondaryImage.src}
-                  alt={content.secondaryImage.alt}
-                  fill
-                  className="object-cover"
-                  sizes="(max-width: 768px) 92vw, (max-width: 1024px) 88vw, 560px"
-                />
-              </div>
-              <div className="p-6">
-                <h3 className="text-xl font-semibold text-[#1f1f1c]">
-                  Device and app in context
-                </h3>
-                <p className="mt-3 text-sm leading-6 text-[#5f5a52]">
-                  One connected system designed to support calmer routines over time.
-                </p>
-              </div>
-            </BaseCard>
-          </div>
+        <div className="mt-12 grid gap-5 lg:grid-cols-3">
+          {content.cards.map((card, index) => {
+            const image = pathwayImages[index] ?? pathwayImages[0];
+            return (
+              <article key={card.title} className="overflow-hidden rounded-[2.15rem] border border-black/5 bg-white/60 shadow-[0_24px_80px_rgba(31,31,28,0.07)]">
+                <div className="relative aspect-[4/3]">
+                  <Image
+                    src={image.src}
+                    alt={image.alt}
+                    fill
+                    className="object-cover"
+                    sizes="(max-width: 1024px) 92vw, 32vw"
+                  />
+                </div>
+                <div className="p-6 sm:p-7">
+                  <p className="text-xs font-medium uppercase tracking-[0.22em] text-[#9a8f82]">0{index + 1}</p>
+                  <h3 className="mt-4 text-2xl font-medium tracking-[-0.04em] text-[#1f1f1c]">{card.title}</h3>
+                  <p className="mt-3 text-sm leading-7 text-[#5f5a52]">{card.description}</p>
+                </div>
+              </article>
+            );
+          })}
         </div>
       </div>
     </section>

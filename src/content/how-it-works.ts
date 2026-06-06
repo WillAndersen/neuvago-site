@@ -37,9 +37,9 @@ export const howItWorksPageContent = {
   hero: {
     visible: true,
     eyebrow: "How it works",
-    title: "How to use Neuvago’s non-invasive VNS system in practice.",
+    title: "Place. Start. Return.",
     description:
-      "Neuvago is designed to make a non-invasive vagus nerve stimulator easier to understand in real life: place the external device comfortably, follow guided app sessions, and return to the routine over time.",
+      "Neuvago is designed around a simple ritual: place the non-invasive device comfortably, follow a guided app session, and return to the routine over time.",
     primaryCta: {
       label: "Explore Neuvago",
       href: "/product",
@@ -70,7 +70,7 @@ export const howItWorksPageContent = {
 
   systemAtAGlance: {
     visible: true,
-    title: "What each part of the system does",
+    title: "The system has three jobs",
     description:
       "The easiest way to understand Neuvago is to look at the job of each layer: the non-invasive device starts the experience, the app guides it, and repetition makes it useful in daily life.",
     cards: [

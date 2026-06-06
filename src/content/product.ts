@@ -91,8 +91,8 @@ export const productPageContent = {
       "Connected to an app that adds placement guidance, session rhythm, and continuity",
     ],
     image: {
-      src: "/images/neuvago/product-hero-mobile.webp",
-      alt: "Front and angled views of the Neuvago device as the center of the product system.",
+      src: "/images/neuvago/how-it-works-routine-desktop.webp",
+      alt: "Neuvago device, guided app, and simple routine cards explaining the connected product system.",
     } satisfies ProductImage,
   } satisfies ProductSectionVisibility & {
     title: string;
@@ -135,7 +135,7 @@ export const productPageContent = {
       },
     ] satisfies ProductCard[],
     detailImage: {
-      src: "/images/neuvago/product-hero-desktop.webp",
+      src: "/images/neuvago/product-hero-mobile.webp",
       alt: "Close-up details of the Neuvago device material and finish.",
     } satisfies ProductImage,
   } satisfies ProductSectionVisibility & {
@@ -170,7 +170,7 @@ export const productPageContent = {
     ] satisfies ProductFeatureItem[],
     image: {
       src: "/images/neuvago/support-guidance-desktop.webp",
-      alt: "Neuvago app library screen shown as the guided layer that completes the product experience.",
+      alt: "Neuvago support and guidance screen shown as the app layer that completes the product experience.",
     } satisfies ProductImage,
     supportingImages: [
       {
@@ -182,8 +182,8 @@ export const productPageContent = {
         alt: "Neuvago app session screen mockup.",
       },
       {
-        src: "/images/neuvago/final-cta-desktop.webp",
-        alt: "Neuvago app progress screen mockup.",
+        src: "/images/neuvago/how-it-works-routine-mobile.webp",
+        alt: "Neuvago routine cards showing place device, start session, and return over time.",
       },
     ] satisfies ProductImage[],
     cta: {
@@ -222,12 +222,12 @@ export const productPageContent = {
       },
     ] satisfies ProductCard[],
     image: {
-      src: "/images/neuvago/evening-wind-down-desktop.webp",
-      alt: "A calm real-life moment with Neuvago as part of a quiet routine.",
+      src: "/images/neuvago/stress-daytime-pause-desktop.webp",
+      alt: "Neuvago device and guided app arranged for a calm daytime pause routine.",
     } satisfies ProductImage,
     secondaryImage: {
-      src: "/images/neuvago/product-hero-desktop.webp",
-      alt: "Close-up details of the Neuvago device material and finish.",
+      src: "/images/neuvago/evening-wind-down-desktop.webp",
+      alt: "Neuvago device and guided app resting beside a warm evening wind-down routine.",
     } satisfies ProductImage,
   } satisfies ProductSectionVisibility & {
     title: string;
@@ -266,8 +266,8 @@ export const productPageContent = {
         description:
           "Repeat it in ways that fit real life so the system becomes easier to return to and more useful over time.",
         image: {
-          src: "/images/neuvago/final-cta-desktop.webp",
-          alt: "Neuvago progress screen showing continued use over time.",
+          src: "/images/neuvago/how-it-works-routine-mobile.webp",
+          alt: "Neuvago device, guided app, and routine cards explaining how the system works.",
         },
       },
     ] satisfies ProductStep[],
@@ -393,8 +393,8 @@ export const productPageContent = {
       href: "/app",
     } satisfies ProductCta,
     backgroundImage: {
-      src: "/images/neuvago/product-hero-desktop.webp",
-      alt: "Close-up details of the Neuvago device material and finish.",
+      src: "/images/neuvago/final-cta-desktop.webp",
+      alt: "Neuvago device and guided app shown softly on the right with open space for a call to action.",
     } satisfies ProductImage,
   } satisfies ProductSectionVisibility & {
     title: string;

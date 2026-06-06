@@ -206,6 +206,32 @@ for (const [relativePath, markers] of Object.entries(visualImageMarkers)) {
   }
 }
 
+
+const launchBlockedImageMarkers = [
+  "/images/home/lifestyle-sofa-neuvago.png",
+];
+
+for (const filePath of [
+  ...collectFiles(path.join(repoRoot, "src/app"), "page.tsx"),
+  ...collectFiles(path.join(repoRoot, "src/components"), ".tsx"),
+  ...collectFiles(path.join(repoRoot, "src/content"), ".ts"),
+  ...collectFiles(path.join(repoRoot, "src/lib/content"), ".ts"),
+]) {
+  const source = readIfExists(filePath);
+  if (!source) continue;
+
+  for (const marker of launchBlockedImageMarkers) {
+    if (source.includes(marker)) {
+      errors.push(`${relative(filePath)} still references launch-blocked body-placement image: ${marker}.`);
+    }
+  }
+}
+
+const authorityVisualSource = readIfExists(path.join(repoRoot, "src/components/authority/AuthorityVisualSection.tsx"));
+if (authorityVisualSource && !authorityVisualSource.includes("aspect-[4/5] md:aspect-[16/9]")) {
+  warnings.push("AuthorityVisualSection does not use the P3.3 mobile-friendly aspect ratio.");
+}
+
 for (const filePath of [
   ...collectFiles(path.join(repoRoot, "src/content"), ".ts"),
   ...collectFiles(path.join(repoRoot, "src/app"), "page.tsx"),

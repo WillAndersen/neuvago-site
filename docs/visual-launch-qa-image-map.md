@@ -53,3 +53,30 @@ This document records the launch image system used for the public Neuvago websit
 - Add plain-English research summaries to reduce readability warnings without weakening scientific precision.
 - Build a second photo set for About and brand philosophy pages.
 - Replace any remaining legacy `/images/home/*` DB content in Supabase once production copy is finalized.
+
+## P3.3 visual integration cleanup
+
+P3.3 keeps the approved launch image set but tightens how it is used:
+
+- Decorative hero cards on Learn, Research, and Conditions pages are desktop-only to avoid mobile overlap.
+- Core hero sections keep their new launch images, while supporting sections use more distinct role-specific assets.
+- Product body-placement imagery is removed from launch-critical product sections.
+- Product routine steps are forced through visual overrides so DB-first content cannot reintroduce legacy `/images/home/*` device-on-body or app mockup assets.
+- Authority visual sections use a more mobile-friendly 4:3 aspect ratio below desktop width.
+
+Launch-critical image role ownership after P3.3:
+
+| Role | Primary asset |
+|---|---|
+| Homepage hero | `homepage-master-hero-desktop.webp` / `homepage-master-hero-mobile.webp` |
+| Product hero | `product-hero-desktop.webp` / `product-hero-mobile.webp` |
+| App hero | `app-hero-desktop.webp` / `app-hero-mobile.webp` |
+| How-it-works hero | `how-it-works-routine-desktop.webp` / `how-it-works-routine-mobile.webp` |
+| Product real-life section | `stress-daytime-pause-desktop.webp` + `evening-wind-down-desktop.webp` |
+| Support hero | `support-guidance-desktop.webp` / `support-guidance-mobile.webp` |
+| Research hub | `research-hub-evidence-desktop.webp` |
+| Safety | `safety-tolerability-desktop.webp` |
+| Autonomic regulation | `autonomic-regulation-desktop.webp` |
+| HRV | `hrv-rhythm-desktop.webp` |
+| Auricular VNS | `auricular-vns-education-desktop.webp` |
+| Transcutaneous VNS | `transcutaneous-vns-education-desktop.webp` |

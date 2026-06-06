@@ -5,6 +5,12 @@
  * reach production when Supabase page_content exists. These lightweight
  * overrides keep the launch-critical image role map stable without changing
  * copy or CMS structure.
+ *
+ * P3.3 note:
+ * - No body-placement legacy lifestyle image should appear on launch-critical
+ *   product sections.
+ * - Each core page should own a clearer image role so the new image bank does
+ *   not feel like the same asset repeated across the site.
  */
 
 type JsonObject = Record<string, unknown>;
@@ -59,10 +65,6 @@ const images = {
     src: "/images/neuvago/final-cta-desktop.webp",
     alt: "Neuvago device and guided app shown softly on the right with open space for a call to action.",
   },
-  appFinalCta: {
-    src: "/images/neuvago/final-cta-desktop.webp",
-    alt: "Neuvago device and guided app shown softly as a calm app call-to-action background.",
-  },
   morningReset: {
     src: "/images/neuvago/morning-reset-desktop.webp",
     alt: "Neuvago device and guided app arranged in a calm morning reset routine.",
@@ -75,6 +77,10 @@ const images = {
     src: "/images/neuvago/stress-daytime-pause-desktop.webp",
     alt: "Neuvago device and guided app arranged for a calm daytime pause routine.",
   },
+  researchEvidence: {
+    src: "/images/neuvago/research-hub-evidence-desktop.webp",
+    alt: "Neuvago device beside abstract research cards and evidence visuals.",
+  },
 } satisfies Record<string, SiteImage>;
 
 const homepageVisualOverrides = {
@@ -86,7 +92,7 @@ const homepageVisualOverrides = {
     image: images.productHeroDesktop,
   },
   appDeviceEcosystem: {
-    image: images.appHeroDesktop,
+    image: images.supportDesktop,
     supportingImages: [
       images.appHeroDesktop,
       images.howItWorksDesktop,
@@ -127,14 +133,40 @@ const productVisualOverrides = {
     mobileImage: images.productHeroMobile,
   },
   whatIsNeuvago: {
-    image: images.productHeroDesktop,
+    image: images.howItWorksDesktop,
+  },
+  whyItFeelsDifferent: {
+    detailImage: images.productHeroMobile,
   },
   deviceAppTogether: {
-    image: images.homepageHeroDesktop,
-    supportingImages: [images.productHeroDesktop, images.appHeroDesktop],
+    image: images.supportDesktop,
+    supportingImages: [images.appHeroDesktop, images.howItWorksDesktop],
   },
   howItFitsIntoLife: {
-    secondaryImage: images.morningReset,
+    image: images.stressPause,
+    secondaryImage: images.eveningWindDown,
+  },
+  howToUse: {
+    steps: [
+      {
+        title: "Place the device comfortably",
+        description:
+          "Begin with the device as the physical starting point, with comfort and clear placement guidance treated as part of the experience.",
+        image: images.productHeroMobile,
+      },
+      {
+        title: "Start a guided session in the app",
+        description:
+          "Use the app to choose guidance that fits the moment, while keeping session length, rhythm, and intensity easy to understand.",
+        image: images.appHeroMobile,
+      },
+      {
+        title: "Return to it over time",
+        description:
+          "Repeat it in ways that fit real life so the system becomes easier to return to and more useful over time.",
+        image: images.howItWorksMobile,
+      },
+    ],
   },
   finalCta: {
     backgroundImage: images.finalCtaDesktop,
@@ -151,19 +183,20 @@ const appVisualOverrides = {
   },
   sessionsRhythm: {
     supportingImages: [
-      images.appHeroDesktop,
       images.morningReset,
       images.eveningWindDown,
+      images.supportDesktop,
     ],
   },
   fitsIntoLife: {
-    secondaryImage: images.morningReset,
+    image: images.morningReset,
+    secondaryImage: images.eveningWindDown,
   },
   deviceTogether: {
     image: images.productHeroDesktop,
   },
   finalCta: {
-    backgroundImage: images.appFinalCta,
+    backgroundImage: images.finalCtaDesktop,
   },
 } satisfies JsonObject;
 
@@ -198,9 +231,10 @@ const howItWorksVisualOverrides = {
     ],
   },
   appAdds: {
-    supportingImages: [images.appHeroDesktop, images.morningReset, images.eveningWindDown],
+    supportingImages: [images.supportDesktop, images.appHeroDesktop, images.morningReset],
   },
   dailyLife: {
+    image: images.stressPause,
     secondaryImage: images.eveningWindDown,
   },
   finalCta: {

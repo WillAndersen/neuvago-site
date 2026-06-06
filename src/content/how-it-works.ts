@@ -165,16 +165,16 @@ export const howItWorksPageContent = {
     ] satisfies HowItWorksFeatureItem[],
     supportingImages: [
       {
+        src: "/images/neuvago/support-guidance-desktop.webp",
+        alt: "Neuvago app library screen mockup.",
+      },
+      {
         src: "/images/neuvago/app-hero-desktop.webp",
         alt: "Neuvago app home screen mockup.",
       },
       {
-        src: "/images/neuvago/app-hero-mobile.webp",
-        alt: "Neuvago app session screen mockup.",
-      },
-      {
-        src: "/images/neuvago/support-guidance-desktop.webp",
-        alt: "Neuvago app library screen mockup.",
+        src: "/images/neuvago/morning-reset-desktop.webp",
+        alt: "Neuvago morning reset routine with device and guided app.",
       },
     ] satisfies HowItWorksImage[],
     cta: {
@@ -212,12 +212,12 @@ export const howItWorksPageContent = {
       },
     ] satisfies HowItWorksCard[],
     image: {
-      src: "/images/neuvago/evening-wind-down-desktop.webp",
-      alt: "A calm real-life moment with Neuvago as part of a quiet routine.",
+      src: "/images/neuvago/stress-daytime-pause-desktop.webp",
+      alt: "Neuvago device and guided app arranged for a calm daytime pause routine.",
     } satisfies HowItWorksImage,
     secondaryImage: {
-      src: "/images/neuvago/app-hero-mobile.webp",
-      alt: "Neuvago guided session screen showing the app layer in the daily routine.",
+      src: "/images/neuvago/evening-wind-down-desktop.webp",
+      alt: "Neuvago device and guided app resting beside a warm evening wind-down routine.",
     } satisfies HowItWorksImage,
   } satisfies HowItWorksSectionVisibility & {
     title: string;

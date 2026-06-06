@@ -41,7 +41,7 @@ export function AuthorityVisualSection({
 
         <div className={reverse ? "lg:order-1" : ""}>
           <div className="relative overflow-hidden rounded-[2rem] border border-black/5 bg-white/60 shadow-[0_24px_80px_rgba(31,31,28,0.10)]">
-            <div className="relative aspect-[16/9]">
+            <div className="relative aspect-[4/5] md:aspect-[16/9]">
               <Image
                 src={image.src}
                 alt={image.alt}

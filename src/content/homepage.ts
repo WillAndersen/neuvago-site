@@ -494,8 +494,8 @@ export const homepageContent = {
       href: "/continue",
     } satisfies HomepageCta,
     backgroundImage: {
-      src: "/images/neuvago/evening-wind-down-desktop.webp",
-      alt: "A calm real-life moment with Neuvago as part of a quiet daily routine.",
+      src: "/images/neuvago/final-cta-desktop.webp",
+      alt: "Neuvago device and guided app shown softly on the right with open space for a call to action.",
     } satisfies HomepageImage,
   } satisfies HomepageSectionVisibility & {
     title: string;

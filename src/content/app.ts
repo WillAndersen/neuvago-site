@@ -163,12 +163,12 @@ export const appPageContent = {
         alt: "Neuvago app session screen mockup.",
       },
       {
-        src: "/images/neuvago/app-hero-desktop.webp",
-        alt: "Neuvago app home screen mockup.",
+        src: "/images/neuvago/morning-reset-desktop.webp",
+        alt: "Neuvago morning reset routine with device and guided app.",
       },
       {
-        src: "/images/neuvago/final-cta-desktop.webp",
-        alt: "Neuvago app progress screen mockup.",
+        src: "/images/neuvago/evening-wind-down-desktop.webp",
+        alt: "Neuvago evening wind-down routine with device and guided app.",
       },
     ] satisfies AppPageImage[],
     cta: {
@@ -206,12 +206,12 @@ export const appPageContent = {
       },
     ] satisfies AppPageCard[],
     image: {
-      src: "/images/neuvago/evening-wind-down-desktop.webp",
-      alt: "A calm real-life moment with Neuvago as part of a quiet evening routine.",
+      src: "/images/neuvago/morning-reset-desktop.webp",
+      alt: "Neuvago device and guided app arranged in a calm morning reset routine.",
     } satisfies AppPageImage,
     secondaryImage: {
-      src: "/images/neuvago/support-guidance-desktop.webp",
-      alt: "Neuvago app library screen showing available guided routines.",
+      src: "/images/neuvago/evening-wind-down-desktop.webp",
+      alt: "Neuvago device and guided app resting beside a warm evening wind-down routine.",
     } satisfies AppPageImage,
   } satisfies AppPageSectionVisibility & {
     title: string;

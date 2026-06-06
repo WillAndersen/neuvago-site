@@ -29,3 +29,7 @@ After deploy, check:
 2. Mobile homepage topfold: text should remain readable and the image crop should not feel cramped.
 3. LCP/performance: still image should remain acceptable before any future video work.
 4. Visual transition into the proof strip and system reveal.
+
+## Follow-up polish
+
+P4.1.2 refined the mobile headline, strengthened the warm text veil, simplified the hero glass panel, and aligned the header CTA with the “system” language.

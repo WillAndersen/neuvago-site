@@ -76,7 +76,7 @@ export function SiteHeader() {
             href="/product"
             className="inline-flex items-center justify-center rounded-full bg-[#1f1f1c] px-5 py-3 text-sm font-medium text-white transition hover:bg-[#2b2b28]"
           >
-            Explore product
+            Explore system
           </Link>
         </div>
 

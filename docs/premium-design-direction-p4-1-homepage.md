@@ -53,3 +53,22 @@ Pay special attention to:
 - repeated images
 - whether any old body-placement imagery appears
 - whether the research boundary language stays conservative
+
+## P4.1.1 full-bleed hero adjustment
+
+The homepage hero now uses a full-width cinematic image layer instead of a split text + rounded image card. The goal is to make the first screen feel more like a premium brand campaign and less like a modular template section.
+
+Implementation notes:
+
+- desktop and mobile images are rendered as full-bleed background media via `next/image`
+- copy remains on the left with a warm cream gradient overlay for readability
+- the layout remains video-ready; a future ambient video can replace the image layer while keeping the same structure
+- proof chips stay inside the hero as a soft glass panel, while the darker proof strip below remains as a distinct rhythm break
+
+QA focus after P4.1.1:
+
+- desktop topfold should feel cinematic and full-width
+- mobile topfold should stay readable without covering the product too heavily
+- the first screen should feel more like a brand campaign than a component card
+- LCP/performance should be checked again after deploy
+

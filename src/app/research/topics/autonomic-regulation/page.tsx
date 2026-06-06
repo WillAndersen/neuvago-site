@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { JsonLd } from "@/components/seo/json-ld";
-import { AuthorityVisualSection } from "@/components/authority";
+import { AuthorityVisualSection, PlainEnglishSummary, ResearchLedger } from "@/components/authority";
 import { buildAuthorityPageStructuredData } from "@/lib/seo/structured-data";
 import { authorityEditorialDates } from "@/lib/seo/editorial-dates";
 
@@ -604,6 +604,28 @@ export default function AutonomicRegulationResearchPage() {
         image={{ src: "/images/neuvago/autonomic-regulation-desktop.webp", alt: "Neuvago device beside abstract rhythm and regulation research cards." }}
       />
 
+      <PlainEnglishSummary
+        title="Autonomic regulation is the body’s ability to shift state"
+        description="This topic is about how the body mobilizes, settles, recovers, and adapts. It connects VNS, HRV, stress, sleep, breathing, and vagal pathways into one physiology layer without reducing the whole system to one score or claim."
+        points={[
+          { title: "Flexibility matters", description: "A regulated system is not always calm. It can rise for demand and return when the demand passes." },
+          { title: "HRV is a window", description: "HRV can provide useful context, but it is not a complete readout of the entire nervous system." },
+          { title: "VNS fits inside a larger system", description: "Stimulation should be interpreted alongside breathing, recovery, stress load, sleep, and measurement context." },
+        ]}
+        primaryHref="/learn/nervous-system-regulation"
+        primaryLabel="Read regulation guide"
+        secondaryHref="/research/topics/heart-rate-variability"
+        secondaryLabel="Explore HRV"
+      />
+
+      <ResearchLedger
+        title="Autonomic signals need careful interpretation"
+        items={[
+          { title: "What research suggests", description: "Autonomic markers can help researchers study activation, recovery, vagal influence, and flexible state-shifting." },
+          { title: "What it does not prove", description: "No single marker or protocol can fully describe a person’s internal state or guarantee a product outcome." },
+          { title: "Neuvago boundary", description: "Neuvago can use this framework to educate about regulation routines while staying away from diagnostic or treatment claims." },
+        ]}
+      />
 
       <section className="border-b border-black/5 bg-[#f2eee8]">
         <div className="mx-auto max-w-7xl px-6 py-20 md:px-10 md:py-24">

@@ -1,6 +1,6 @@
 import Link from "next/link"
 import { JsonLd } from "@/components/seo/json-ld"
-import { AuthorityVisualSection } from "@/components/authority";
+import { AuthorityVisualSection, PlainEnglishSummary, ResearchLedger } from "@/components/authority";
 import { buildAuthorityPageStructuredData } from "@/lib/seo/structured-data"
 import { authorityEditorialDates } from "@/lib/seo/editorial-dates";
 
@@ -260,6 +260,28 @@ export default function HeartRateVariabilityResearchPage() {
         image={{ src: "/images/neuvago/hrv-rhythm-desktop.webp", alt: "Neuvago device beside abstract rhythm cards for heart rate variability research." }}
       />
 
+      <PlainEnglishSummary
+        title="HRV is useful context, not a simple promise"
+        description="Heart rate variability can help researchers study cardiac autonomic regulation and recovery patterns. It is helpful because it is measurable, but it still needs context: breathing, timing, posture, method, stress load, and individual baseline all matter."
+        points={[
+          { title: "A window, not the whole system", description: "HRV can reflect aspects of cardiac autonomic regulation but does not measure every part of the nervous system." },
+          { title: "Context changes the signal", description: "Time of day, breathing, sleep, illness, exercise, and measurement method can influence HRV interpretation." },
+          { title: "Use it carefully", description: "HRV belongs in the research layer as context, not as a guarantee that a session or product caused a specific outcome." },
+        ]}
+        primaryHref="/research/topics/autonomic-regulation"
+        primaryLabel="Autonomic regulation"
+        secondaryHref="/learn/nervous-system-regulation"
+        secondaryLabel="Regulation guide"
+      />
+
+      <ResearchLedger
+        title="Measurement should support interpretation, not overconfidence"
+        items={[
+          { title: "What research suggests", description: "HRV can be a useful non-invasive measure in autonomic regulation, stress, recovery, and vagal influence research." },
+          { title: "What it does not prove", description: "HRV alone cannot diagnose a condition, fully describe nervous system state, or prove a product effect by itself." },
+          { title: "Neuvago boundary", description: "Neuvago can discuss HRV as educational context while avoiding score-chasing or diagnostic language." },
+        ]}
+      />
 
       <section className="border-b border-black/5 bg-[#f2eee8]">
         <div className="mx-auto grid max-w-7xl gap-14 px-6 py-20 md:px-10 md:py-24 lg:grid-cols-[1fr_0.95fr]">

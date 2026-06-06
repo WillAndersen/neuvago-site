@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { JsonLd } from "@/components/seo/json-ld";
+import { PlainEnglishSummary } from "@/components/authority";
 import { buildAuthorityPageStructuredData } from "@/lib/seo/structured-data";
 import { authorityEditorialDates } from "@/lib/seo/editorial-dates";
 
@@ -410,6 +411,20 @@ export default function VagusNerveStimulationPage() {
           </div>
         </div>
       </section>
+
+      <PlainEnglishSummary
+        title="VNS is a category with several very different approaches"
+        description="The key is to separate implanted clinical VNS, non-invasive VNS, tVNS, auricular VNS, and wellness-oriented guided routines. That distinction helps users understand the category without overreading the research."
+        points={[
+          { title: "Different methods", description: "Implanted systems, external stimulation, ear-based approaches, and consumer wellness devices should not be treated as identical." },
+          { title: "Different evidence", description: "Evidence depends on the device, protocol, population, outcome measure, and intended use being studied." },
+          { title: "Different claims", description: "Neuvago should stay in a responsible wellness lane: guided routines, education, and clear boundaries." },
+        ]}
+        primaryHref="/research/topics/vagus-nerve-stimulation"
+        primaryLabel="View VNS research"
+        secondaryHref="/how-it-works"
+        secondaryLabel="How Neuvago works"
+      />
 
       <section className="border-b border-black/5 bg-[#f2eee8]">
         <div className="mx-auto grid max-w-7xl gap-14 px-6 py-24 md:px-10 md:py-28 lg:grid-cols-[1fr_0.95fr] lg:items-start">

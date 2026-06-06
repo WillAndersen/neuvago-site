@@ -1,6 +1,6 @@
 import Link from "next/link"
 import { JsonLd } from "@/components/seo/json-ld"
-import { AuthorityVisualSection } from "@/components/authority";
+import { AuthorityVisualSection, PlainEnglishSummary, ResearchLedger } from "@/components/authority";
 import { buildAuthorityPageStructuredData } from "@/lib/seo/structured-data"
 import { authorityEditorialDates } from "@/lib/seo/editorial-dates";
 
@@ -325,6 +325,27 @@ export default function VagusNerveStimulationResearchPage() {
         image={{ src: "/images/neuvago/research-hub-evidence-desktop.webp", alt: "Neuvago device beside abstract research cards and evidence visuals." }}
       />
 
+      <PlainEnglishSummary
+        title="VNS research is a field, not a single proof point"
+        description="Vagus nerve stimulation research includes implanted clinical systems, non-invasive devices, auricular approaches, stimulation protocols, safety reporting, and autonomic markers. The useful question is not simply whether VNS works, but which method was studied and what the result can responsibly support."
+        points={[
+          { title: "Start with method", description: "Implanted VNS, tVNS, taVNS, and consumer wellness devices should not be treated as interchangeable." },
+          { title: "Read outcomes in context", description: "Study population, placement, parameters, control condition, and outcome measure all shape interpretation." },
+          { title: "Keep product language careful", description: "Research can inform Neuvago education without becoming automatic medical or treatment claims." },
+        ]}
+        primaryHref="/learn/vagus-nerve-stimulation"
+        primaryLabel="Read the explainer"
+        secondaryHref="/research/topics/safety-and-tolerability"
+        secondaryLabel="Review safety"
+      />
+
+      <ResearchLedger
+        items={[
+          { title: "What research suggests", description: "The field explores how vagal pathways may be engaged through implanted and non-invasive stimulation, and how those signals relate to brain–body regulation." },
+          { title: "What it does not prove", description: "Evidence from one VNS device, protocol, or clinical population does not prove every non-invasive vagus nerve stimulator has the same effect." },
+          { title: "Neuvago boundary", description: "Neuvago should be presented as a non-invasive, app-guided wellness system for regulation routines, not as a treatment or diagnostic tool." },
+        ]}
+      />
 
       <section className="border-b border-black/5 bg-[#f2eee8]">
         <div className="mx-auto grid max-w-7xl gap-14 px-6 py-20 md:px-10 md:py-24 lg:grid-cols-[1fr_0.95fr]">

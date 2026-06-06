@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { AuthorityVisualSection } from "@/components/authority";
+import { AuthorityVisualSection, AuthorityEditorialHero, ResearchLedger } from "@/components/authority";
 import { JsonLd } from "@/components/seo/json-ld"
 import { buildPageWithBreadcrumbStructuredData } from "@/lib/seo/structured-data"
 
@@ -221,94 +221,34 @@ export default function ResearchPage() {
   return (
     <main className="bg-[#f7f4ef] text-[#1f1f1c]">
       <JsonLd data={structuredData} idPrefix="research" />
-      <section className="border-b border-black/5">
-        <div className="mx-auto grid lg:min-h-[80vh] max-w-7xl items-center gap-16 px-6 py-20 md:px-10 lg:grid-cols-[1.05fr_0.95fr] lg:py-28">
-          <div className="max-w-3xl">
-            <p className="mb-5 text-sm uppercase tracking-[0.18em] text-[#7a756c]">
-              Research
-            </p>
-
-            <h1 className="text-4xl font-medium leading-[1.05] tracking-[-0.03em] md:text-6xl lg:text-7xl">
-              A clearer research hub for the vagus nerve, stress, sleep, recovery, and nervous system regulation
-            </h1>
-
-            <p className="mt-6 max-w-2xl text-base leading-8 text-[#5f5a52] md:text-lg">
-              The Neuvago research hub organizes topic pages, study summaries,
-              and evidence-informed pathways around vagus nerve stimulation,
-              transcutaneous VNS, safety and tolerability, heart rate variability, stress, sleep, recovery, emotional
-              regulation, and broader nervous system regulation.
-            </p>
-
-            <div className="mt-10 flex flex-wrap gap-4">
-              <Link
-                href="/research/studies"
-                className="rounded-full bg-[#1f1f1c] px-6 py-3 text-sm font-medium text-white transition hover:opacity-90"
-              >
-                Browse studies library
-              </Link>
-
-              <Link
-                href="/research/topics"
-                className="rounded-full border border-[#d8d1c7] bg-transparent px-6 py-3 text-sm font-medium text-[#1f1f1c] transition hover:bg-white/70"
-              >
-                Explore research topics
-              </Link>
-            </div>
-          </div>
-
-          <div className="relative hidden lg:block">
-            <div className="absolute inset-0 -z-10 rounded-[2rem] bg-gradient-to-br from-white/70 to-[#ebe4da] blur-2xl" />
-
-            <div className="hidden rounded-[2rem] border border-black/5 bg-white/50 p-4 shadow-[0_20px_80px_rgba(31,31,28,0.08)] backdrop-blur lg:block">
-              <div className="rounded-[1.75rem] bg-[#efe8de] p-6 md:p-8">
-                <div className="aspect-[4/5] rounded-[1.5rem] border border-black/5 bg-gradient-to-b from-[#f9f6f1] to-[#e7dfd4] p-6">
-                  <div className="flex h-full flex-col justify-between rounded-[1.25rem] border border-white/60 bg-white/40 p-6">
-                    <div>
-                      <p className="text-xs uppercase tracking-[0.16em] text-[#8a847b]">
-                        Evidence layer
-                      </p>
-                      <h2 className="mt-3 text-2xl font-medium text-[#1f1f1c]">
-                        A research layer organized around topics, studies, and evidence pathways
-                      </h2>
-                    </div>
-
-                    <div className="space-y-4">
-                      <div className="rounded-2xl bg-white/70 p-4">
-                        <p className="text-sm font-medium text-[#1f1f1c]">
-                          Research topics
-                        </p>
-                        <p className="mt-1 text-sm leading-6 text-[#5f5a52]">
-                          Major themes and concepts
-                        </p>
-                      </div>
-
-                      <div className="grid grid-cols-2 gap-4">
-                        <div className="rounded-2xl bg-white/70 p-4">
-                          <p className="text-sm font-medium text-[#1f1f1c]">
-                            Studies
-                          </p>
-                          <p className="mt-1 text-sm leading-6 text-[#5f5a52]">
-                            Published papers and summaries
-                          </p>
-                        </div>
-
-                        <div className="rounded-2xl bg-white/70 p-4">
-                          <p className="text-sm font-medium text-[#1f1f1c]">
-                            Pathways
-                          </p>
-                          <p className="mt-1 text-sm leading-6 text-[#5f5a52]">
-                            Learn, conditions, and system context
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+      <AuthorityEditorialHero
+        eyebrow="Research"
+        title="Evidence, interpreted with restraint"
+        description="The Neuvago research hub organizes VNS, tVNS, autonomic regulation, HRV, safety, and related studies into a calmer evidence layer. It is built to clarify context, not to turn every study into a product claim."
+        secondaryDescription="Use this section when you want to understand what research suggests, what it does not prove, and how Neuvago keeps product language inside responsible wellness boundaries."
+        tone="research"
+        actions={[
+          { href: "/research/topics", label: "Explore topics" },
+          { href: "/research/studies", label: "Browse studies", variant: "secondary" },
+        ]}
+        points={[
+          {
+            label: "Topics",
+            title: "Start with the theme",
+            description: "VNS, tVNS, safety, autonomic regulation, HRV, inflammation, and gut–brain-axis pages provide context before individual papers.",
+          },
+          {
+            label: "Studies",
+            title: "Read the source layer",
+            description: "Study summaries help readers understand what each paper examined and why interpretation should stay careful.",
+          },
+          {
+            label: "Boundary",
+            title: "Research is not a claim shortcut",
+            description: "Evidence can inform product education, but it should not be treated as proof for every device, protocol, or user situation.",
+          },
+        ]}
+      />
 
       <AuthorityVisualSection
         eyebrow="Research visual"
@@ -358,6 +298,26 @@ export default function ResearchPage() {
           </div>
         </div>
       </section>
+
+      <ResearchLedger
+        eyebrow="How to read this library"
+        title="Research should create trust by making limits visible"
+        description="The strongest research pages do not overclaim. They help readers separate mechanisms, study context, safety, and responsible product interpretation."
+        items={[
+          {
+            title: "What research suggests",
+            description: "Some studies explore how vagal pathways, tVNS, HRV, and autonomic markers relate to regulation, recovery, and brain–body signaling.",
+          },
+          {
+            title: "What it does not prove",
+            description: "A study on one device, protocol, population, or clinical context does not automatically prove the same outcome for every non-invasive wellness device.",
+          },
+          {
+            title: "How Neuvago uses it",
+            description: "Neuvago uses research as context for education, safety, and product boundaries — not as a shortcut into medical treatment claims.",
+          },
+        ]}
+      />
 
       <section className="border-b border-black/5 bg-[#f7f4ef]">
         <div className="mx-auto grid max-w-7xl gap-14 px-6 py-24 md:px-10 md:py-28 lg:grid-cols-[0.95fr_1.05fr] lg:items-start">

@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { AuthorityVisualSection } from "@/components/authority";
+import { AuthorityVisualSection, ConditionRoutinePathway } from "@/components/authority";
 import { JsonLd } from "@/components/seo/json-ld"
 import { buildAuthorityPageStructuredData } from "@/lib/seo/structured-data"
 import { authorityEditorialDates } from "@/lib/seo/editorial-dates";
@@ -291,6 +291,17 @@ export default function SleepPage() {
         image={{ src: "/images/neuvago/evening-wind-down-desktop.webp", alt: "Neuvago device and guided app resting beside a warm evening wind-down routine." }}
       />
 
+      <ConditionRoutinePathway
+        eyebrow="Sleep pathway"
+        title="From evening alertness to a calmer wind-down"
+        description="The sleep page should connect lived experience to an evening routine: understand why settling can be hard, add HRV and autonomic context, then make the next step practical."
+        image={{ src: "/images/neuvago/evening-wind-down-desktop.webp", alt: "Neuvago device and app arranged beside a warm evening wind-down routine." }}
+        cards={[
+          { title: "Name the pattern", description: "Recognize wired-but-tired, fragile rest, or the sense that the body has not fully downshifted.", href: "/learn/why-you-feel-tired-but-cant-relax", linkLabel: "Wired but tired" },
+          { title: "Add physiology", description: "Use HRV and autonomic regulation to understand recovery signals without reducing sleep to a single metric.", href: "/research/topics/heart-rate-variability", linkLabel: "HRV context" },
+          { title: "Create continuity", description: "Let app guidance turn evening support into a repeatable wind-down rather than a one-off intervention.", href: "/app", linkLabel: "Explore app guidance" },
+        ]}
+      />
 
       <section className="border-b border-black/5 bg-[#f2eee8]">
         <div className="mx-auto grid max-w-7xl gap-14 px-6 py-24 md:px-10 md:py-28 lg:grid-cols-[1fr_0.95fr] lg:items-start">

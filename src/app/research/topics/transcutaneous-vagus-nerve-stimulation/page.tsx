@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { JsonLd } from "@/components/seo/json-ld";
-import { AuthorityVisualSection } from "@/components/authority";
+import { AuthorityVisualSection, PlainEnglishSummary, ResearchLedger } from "@/components/authority";
 import { buildAuthorityPageStructuredData } from "@/lib/seo/structured-data";
 import { authorityEditorialDates } from "@/lib/seo/editorial-dates";
 
@@ -562,6 +562,28 @@ export default function TranscutaneousVagusNerveStimulationResearchPage() {
         image={{ src: "/images/neuvago/transcutaneous-vns-education-desktop.webp", alt: "Neuvago device beside abstract transcutaneous VNS method cards." }}
       />
 
+      <PlainEnglishSummary
+        title="tVNS is a method family, not one uniform protocol"
+        description="Transcutaneous vagus nerve stimulation describes non-invasive stimulation through the skin. In research, that can include auricular and cervical approaches, different parameters, different control conditions, and different populations."
+        points={[
+          { title: "taVNS is ear-based", description: "Auricular or taVNS studies focus on parts of the outer ear associated with vagal pathway discussions." },
+          { title: "Parameters matter", description: "Intensity, pulse width, frequency, session length, and placement change how a study should be interpreted." },
+          { title: "Method is not a claim", description: "Explaining tVNS does not mean every non-invasive VNS product can claim every research outcome." },
+        ]}
+        primaryHref="/learn/transcutaneous-vagus-nerve-stimulation"
+        primaryLabel="Read tVNS guide"
+        secondaryHref="/learn/auricular-vagus-nerve-stimulation"
+        secondaryLabel="Auricular VNS"
+      />
+
+      <ResearchLedger
+        title="Method details are the research signal"
+        items={[
+          { title: "What research suggests", description: "tVNS and taVNS research explores whether external stimulation can engage vagal-related pathways and measurable physiological responses." },
+          { title: "What it does not prove", description: "A method label does not prove equivalence across devices, placements, settings, or wellness routines." },
+          { title: "Neuvago boundary", description: "Neuvago should use tVNS context to explain the category while keeping product claims tied to intended use and guidance." },
+        ]}
+      />
 
       <section className="border-b border-black/5 bg-[#f2eee8]">
         <div className="mx-auto grid max-w-7xl gap-14 px-6 py-24 md:px-10 md:py-28 lg:grid-cols-[1fr_0.95fr] lg:items-start">

@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { JsonLd } from "@/components/seo/json-ld";
+import { PlainEnglishSummary } from "@/components/authority";
 import { buildAuthorityPageStructuredData } from "@/lib/seo/structured-data";
 import { authorityEditorialDates } from "@/lib/seo/editorial-dates";
 
@@ -468,6 +469,20 @@ export default function NonInvasiveVagusNerveStimulationPage() {
           </div>
         </div>
       </section>
+
+      <PlainEnglishSummary
+        title="Non-invasive VNS means external stimulation, but details still matter"
+        description="A non-invasive vagus nerve stimulator is not automatically equivalent to every VNS method in the literature. Placement, comfort, guidance, intended use, and claims all shape whether the product feels trustworthy."
+        points={[
+          { title: "No surgery", description: "Non-invasive approaches use external stimulation rather than implanted hardware, which changes the user experience and product category." },
+          { title: "Guidance matters", description: "App-guided sessions help make the experience more structured than asking users to guess every setting or routine." },
+          { title: "Boundaries matter", description: "A wellness product should not borrow regulated medical indications or imply treatment claims it cannot support." },
+        ]}
+        primaryHref="/product"
+        primaryLabel="Explore the system"
+        secondaryHref="/research/topics/safety-and-tolerability"
+        secondaryLabel="Review safety"
+      />
 
       <section className="border-b border-black/5 bg-[#f2eee8]">
         <div className="mx-auto grid max-w-7xl gap-14 px-6 py-24 md:px-10 md:py-28 lg:grid-cols-[1fr_0.95fr] lg:items-start">

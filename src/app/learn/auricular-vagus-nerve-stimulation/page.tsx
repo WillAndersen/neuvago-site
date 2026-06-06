@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { JsonLd } from "@/components/seo/json-ld";
-import { AuthorityVisualSection } from "@/components/authority";
+import { AuthorityVisualSection, PlainEnglishSummary } from "@/components/authority";
 import { buildAuthorityPageStructuredData } from "@/lib/seo/structured-data";
 import { authorityEditorialDates } from "@/lib/seo/editorial-dates";
 
@@ -494,6 +494,19 @@ export default function AuricularVagusNerveStimulationPage() {
         image={{ src: "/images/neuvago/auricular-vns-education-desktop.webp", alt: "Neuvago device beside an abstract ear-based auricular VNS education card." }}
       />
 
+      <PlainEnglishSummary
+        title="Auricular VNS is the ear-based part of the VNS conversation"
+        description="Ear-based VNS is often discussed as taVNS. It is a useful concept because it gives non-invasive VNS a concrete location, but it still needs careful explanation around placement, comfort, evidence, and claims."
+        points={[
+          { title: "Ear-based access", description: "Auricular VNS focuses on parts of the outer ear associated with auricular vagal pathway discussions." },
+          { title: "Not every ear location is the same", description: "Placement language should stay careful and avoid implying that every ear-based method has the same evidence." },
+          { title: "Comfort is part of trust", description: "For daily use, contact, sensation, stop-use guidance, and a clear routine matter as much as technical terminology." },
+        ]}
+        primaryHref="/research/topics/transcutaneous-vagus-nerve-stimulation"
+        primaryLabel="View tVNS research"
+        secondaryHref="/learn/non-invasive-vagus-nerve-stimulation"
+        secondaryLabel="nVNS guide"
+      />
 
       <section className="border-b border-black/5 bg-[#f2eee8]">
         <div className="mx-auto grid max-w-7xl gap-14 px-6 py-24 md:px-10 md:py-28 lg:grid-cols-[1fr_0.95fr] lg:items-start">

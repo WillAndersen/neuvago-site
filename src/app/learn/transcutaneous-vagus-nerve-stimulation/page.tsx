@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { JsonLd } from "@/components/seo/json-ld";
-import { AuthorityVisualSection } from "@/components/authority";
+import { AuthorityVisualSection, PlainEnglishSummary } from "@/components/authority";
 import { buildAuthorityPageStructuredData } from "@/lib/seo/structured-data";
 import { authorityEditorialDates } from "@/lib/seo/editorial-dates";
 
@@ -511,6 +511,19 @@ export default function TranscutaneousVagusNerveStimulationPage() {
         image={{ src: "/images/neuvago/transcutaneous-vns-education-desktop.webp", alt: "Neuvago device beside abstract transcutaneous VNS method cards." }}
       />
 
+      <PlainEnglishSummary
+        title="Transcutaneous VNS means stimulation through the skin"
+        description="tVNS is a method term. It can include ear-based taVNS and other non-invasive approaches, but the method details still shape what a study or device experience can responsibly mean."
+        points={[
+          { title: "Method first", description: "Start by asking where stimulation is applied, what parameters are used, and what outcome is being measured." },
+          { title: "Comfort and control", description: "A consumer wellness experience should be guided, comfortable, and easy to stop or adjust within intended-use boundaries." },
+          { title: "Evidence does not transfer automatically", description: "A protocol in a research study should not be treated as proof for every device or routine." },
+        ]}
+        primaryHref="/research/topics/transcutaneous-vagus-nerve-stimulation"
+        primaryLabel="View tVNS research"
+        secondaryHref="/research/topics/safety-and-tolerability"
+        secondaryLabel="Review safety"
+      />
 
       <section className="border-b border-black/5 bg-[#f2eee8]">
         <div className="mx-auto grid max-w-7xl gap-14 px-6 py-24 md:px-10 md:py-28 lg:grid-cols-[1fr_0.95fr] lg:items-start">

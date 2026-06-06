@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { JsonLd } from "@/components/seo/json-ld"
+import { AuthorityEditorialHero, ConditionRoutinePathway } from "@/components/authority";
 import { buildPageWithBreadcrumbStructuredData } from "@/lib/seo/structured-data"
 
 export const metadata: Metadata = {
@@ -184,95 +185,34 @@ export default function ConditionsPage() {
   return (
     <main className="bg-[#f7f4ef] text-[#1f1f1c]">
       <JsonLd data={structuredData} idPrefix="conditions" />
-      <section className="border-b border-black/5">
-        <div className="mx-auto grid lg:min-h-[80vh] max-w-7xl items-center gap-16 px-6 py-20 md:px-10 lg:grid-cols-[1.05fr_0.95fr] lg:py-28">
-          <div className="max-w-3xl">
-            <p className="mb-5 text-sm uppercase tracking-[0.18em] text-[#7a756c]">
-              Conditions
-            </p>
-
-            <h1 className="text-4xl font-medium leading-[1.05] tracking-[-0.03em] md:text-6xl lg:text-7xl">
-              Start with what feels closest to what you’re experiencing
-            </h1>
-
-            <p className="mt-6 max-w-2xl text-base leading-8 text-[#5f5a52] md:text-lg">
-              Many people do not begin with theory. They begin with stress,
-              poor sleep, anxiety, overload, burnout, or the sense that
-              recovery feels harder than it should. This hub is designed to
-              organize those entry points clearly and connect them to broader
-              learning around regulation, recovery, and the nervous system.
-            </p>
-
-            <div className="mt-10 flex flex-wrap gap-4">
-              <Link
-                href="/conditions/stress"
-                className="rounded-full bg-[#1f1f1c] px-6 py-3 text-sm font-medium text-white transition hover:opacity-90"
-              >
-                Explore stress
-              </Link>
-
-              <Link
-                href="/learn"
-                className="rounded-full border border-[#d8d1c7] bg-transparent px-6 py-3 text-sm font-medium text-[#1f1f1c] transition hover:bg-white/70"
-              >
-                Go to learning hub
-              </Link>
-            </div>
-          </div>
-
-          <div className="relative hidden lg:block">
-            <div className="absolute inset-0 -z-10 rounded-[2rem] bg-gradient-to-br from-white/70 to-[#ebe4da] blur-2xl" />
-
-            <div className="hidden rounded-[2rem] border border-black/5 bg-white/50 p-4 shadow-[0_20px_80px_rgba(31,31,28,0.08)] backdrop-blur lg:block">
-              <div className="rounded-[1.75rem] bg-[#efe8de] p-6 md:p-8">
-                <div className="aspect-[4/5] rounded-[1.5rem] border border-black/5 bg-gradient-to-b from-[#f9f6f1] to-[#e7dfd4] p-6">
-                  <div className="flex h-full flex-col justify-between rounded-[1.25rem] border border-white/60 bg-white/40 p-6">
-                    <div>
-                      <p className="text-xs uppercase tracking-[0.16em] text-[#8a847b]">
-                        Conditions hub
-                      </p>
-                      <h2 className="mt-3 text-2xl font-medium text-[#1f1f1c]">
-                        A calmer starting point for stress, sleep, anxiety, burnout, and related patterns
-                      </h2>
-                    </div>
-
-                    <div className="space-y-4">
-                      <div className="rounded-2xl bg-white/70 p-4">
-                        <p className="text-sm font-medium text-[#1f1f1c]">
-                          Conditions
-                        </p>
-                        <p className="mt-1 text-sm leading-6 text-[#5f5a52]">
-                          Start with what feels most familiar
-                        </p>
-                      </div>
-
-                      <div className="grid grid-cols-2 gap-4">
-                        <div className="rounded-2xl bg-white/70 p-4">
-                          <p className="text-sm font-medium text-[#1f1f1c]">
-                            Learn
-                          </p>
-                          <p className="mt-1 text-sm leading-6 text-[#5f5a52]">
-                            Go deeper into the framework
-                          </p>
-                        </div>
-
-                        <div className="rounded-2xl bg-white/70 p-4">
-                          <p className="text-sm font-medium text-[#1f1f1c]">
-                            Research
-                          </p>
-                          <p className="mt-1 text-sm leading-6 text-[#5f5a52]">
-                            Add evidence and context
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+      <AuthorityEditorialHero
+        eyebrow="Conditions"
+        title="Start with the pattern you recognize, then follow the pathway"
+        description="Many people do not begin with theory. They begin with stress, sleep, unease, overload, or a body that feels harder to settle. Conditions should act as calm entry points into learning, research, safety, and guided routine support."
+        secondaryDescription="The goal is not to push users directly to a device. It is to help them name the pattern, understand the nervous system context, and choose a practical next step when it feels relevant."
+        tone="conditions"
+        actions={[
+          { href: "/conditions/stress", label: "Explore stress" },
+          { href: "/conditions/sleep", label: "Explore sleep", variant: "secondary" },
+        ]}
+        points={[
+          {
+            label: "Human entry",
+            title: "Begin with experience",
+            description: "Stress, sleep, anxiety, and burnout pages should feel like pathways, not medical landing pages.",
+          },
+          {
+            label: "Context",
+            title: "Move into regulation",
+            description: "Each condition connects to nervous system regulation, autonomic research, HRV, and safety boundaries.",
+          },
+          {
+            label: "Routine",
+            title: "Then make it practical",
+            description: "When the reader is ready, the bridge leads to app guidance, how sessions work, and the Neuvago system.",
+          },
+        ]}
+      />
 
       <section className="border-b border-black/5 bg-[#f2eee8]">
         <div className="mx-auto max-w-7xl px-6 py-24 md:px-10 md:py-28">
@@ -334,6 +274,36 @@ export default function ConditionsPage() {
           </div>
         </div>
       </section>
+
+      <ConditionRoutinePathway
+        eyebrow="Everyday pathways"
+        title="Conditions become clearer when they are tied to real moments"
+        description="A premium conditions system should feel human and practical: a morning reset, a workday pause, an evening wind-down. Those moments connect experience to education without making medical claims."
+        image={{
+          src: "/images/neuvago/stress-daytime-pause-desktop.webp",
+          alt: "Neuvago device and app arranged for a calm daytime pause routine.",
+        }}
+        cards={[
+          {
+            title: "Workday pause",
+            description: "For activation, tension, or a system that feels like it stays on too long.",
+            href: "/conditions/stress",
+            linkLabel: "Stress pathway",
+          },
+          {
+            title: "Evening wind-down",
+            description: "For difficulty settling, fragile rest, or a body that still feels alert at night.",
+            href: "/conditions/sleep",
+            linkLabel: "Sleep pathway",
+          },
+          {
+            title: "Research boundary",
+            description: "For readers who want the evidence and safety context before considering a routine.",
+            href: "/research/topics/safety-and-tolerability",
+            linkLabel: "Safety context",
+          },
+        ]}
+      />
 
       <section className="border-b border-black/5 bg-[#f7f4ef]">
         <div className="mx-auto grid max-w-7xl gap-14 px-6 py-24 md:px-10 md:py-28 lg:grid-cols-[0.95fr_1.05fr] lg:items-center">

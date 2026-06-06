@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { JsonLd } from "@/components/seo/json-ld";
-import { AuthorityVisualSection } from "@/components/authority";
+import { AuthorityVisualSection, PlainEnglishSummary, ResearchLedger } from "@/components/authority";
 import { buildAuthorityPageStructuredData } from "@/lib/seo/structured-data";
 import { authorityEditorialDates } from "@/lib/seo/editorial-dates";
 
@@ -556,6 +556,29 @@ export default function SafetyAndTolerabilityResearchPage() {
         image={{ src: "/images/neuvago/safety-tolerability-desktop.webp", alt: "Neuvago device beside an abstract safety and tolerability checklist card." }}
       />
 
+      <PlainEnglishSummary
+        title="Safety is about context, not a single yes-or-no answer"
+        description="Non-invasive does not mean risk-free. Safety and tolerability depend on the device, stimulation site, parameters, population, contraindications, adverse-event reporting, and how clearly the product tells users when to stop or ask a clinician."
+        points={[
+          { title: "Mild effects still matter", description: "Skin sensation, discomfort, headache, dizziness, or irritation should be described as part of responsible education, not hidden in fine print." },
+          { title: "Some people need clinical guidance", description: "Implanted devices, pregnancy, heart rhythm concerns, neurological conditions, or active treatment plans should trigger clinician-first guidance." },
+          { title: "Tolerability shapes routine", description: "A daily wellness product has to feel comfortable, understandable, and easy to stop if something does not feel right." },
+        ]}
+        primaryHref="/legal/intended-use"
+        primaryLabel="Review intended use"
+        secondaryHref="/learn/non-invasive-vagus-nerve-stimulation"
+        secondaryLabel="Read nVNS guide"
+      />
+
+      <ResearchLedger
+        title="Safety trust comes from visible boundaries"
+        description="The safest brand posture is not to promise that every user or method is risk-free. It is to explain what is known, what is uncertain, and when professional guidance matters."
+        items={[
+          { title: "What research suggests", description: "Many tVNS and taVNS studies discuss tolerability and adverse-event reporting, often with mild local effects in studied contexts." },
+          { title: "What it does not prove", description: "Research does not prove universal safety for every device, setting, placement, population, or unsupervised use case." },
+          { title: "Neuvago boundary", description: "Neuvago should keep safety guidance clear, conservative, and connected to intended use rather than leaning on broad claims." },
+        ]}
+      />
 
       <section className="border-b border-black/5 bg-[#f2eee8]">
         <div className="mx-auto grid max-w-7xl gap-14 px-6 py-24 md:px-10 md:py-28 lg:grid-cols-[1fr_0.95fr] lg:items-start">

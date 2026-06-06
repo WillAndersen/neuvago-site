@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { AuthorityVisualSection } from "@/components/authority";
+import { AuthorityVisualSection, ConditionRoutinePathway } from "@/components/authority";
 import { JsonLd } from "@/components/seo/json-ld"
 import { buildAuthorityPageStructuredData } from "@/lib/seo/structured-data"
 import { authorityEditorialDates } from "@/lib/seo/editorial-dates";
@@ -294,6 +294,17 @@ export default function StressPage() {
         image={{ src: "/images/neuvago/stress-daytime-pause-desktop.webp", alt: "Neuvago device and guided app arranged for a calm daytime pause routine." }}
       />
 
+      <ConditionRoutinePathway
+        eyebrow="Stress pathway"
+        title="From activation to a repeatable pause"
+        description="The stress page should feel practical and human: recognize activation, understand the autonomic context, then move toward a short guided routine without making treatment claims."
+        image={{ src: "/images/neuvago/stress-daytime-pause-desktop.webp", alt: "Neuvago device and app arranged for a calm daytime pause routine." }}
+        cards={[
+          { title: "Recognize activation", description: "Name the pattern: tension, urgency, shallow recovery, or a body that stays on.", href: "/learn/why-your-body-feels-stuck-in-stress", linkLabel: "Understand stuck stress" },
+          { title: "Add research context", description: "Use autonomic regulation and safety pages to understand the physiology and boundaries.", href: "/research/topics/autonomic-regulation", linkLabel: "Research context" },
+          { title: "Build a guided routine", description: "Move from explanation into a calm, app-guided session structure that can be repeated.", href: "/app", linkLabel: "Explore the app" },
+        ]}
+      />
 
       <section className="border-b border-black/5 bg-[#f2eee8]">
         <div className="mx-auto grid max-w-7xl gap-14 px-6 py-24 md:px-10 md:py-28 lg:grid-cols-[1fr_0.95fr] lg:items-start">

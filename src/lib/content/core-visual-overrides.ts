@@ -1,3 +1,5 @@
+import { homepageContent } from "@/content/homepage";
+
 /**
  * Launch visual overrides for core public pages.
  *
@@ -83,49 +85,7 @@ const images = {
   },
 } satisfies Record<string, SiteImage>;
 
-const homepageVisualOverrides = {
-  hero: {
-    desktopImage: images.homepageHeroDesktop,
-    mobileImage: images.homepageHeroMobile,
-  },
-  whatIsNeuvago: {
-    image: images.productHeroDesktop,
-  },
-  appDeviceEcosystem: {
-    image: images.supportDesktop,
-    supportingImages: [
-      images.appHeroDesktop,
-      images.howItWorksDesktop,
-      images.morningReset,
-      images.eveningWindDown,
-    ],
-  },
-  howItWorks: {
-    steps: [
-      {
-        title: "Place the device",
-        description:
-          "Begin with the device as the physical starting point for the experience.",
-        image: images.productHeroMobile,
-      },
-      {
-        title: "Follow guided sessions",
-        description:
-          "Use the app to choose guidance that fits the moment and makes the next step clearer.",
-        image: images.appHeroMobile,
-      },
-      {
-        title: "Return over time",
-        description:
-          "Build a repeatable routine around stress, recovery, and calmer daily regulation.",
-        image: images.howItWorksMobile,
-      },
-    ],
-  },
-  finalCta: {
-    backgroundImage: images.finalCtaDesktop,
-  },
-} satisfies JsonObject;
+const homepageVisualOverrides = homepageContent as unknown as JsonObject;
 
 const productVisualOverrides = {
   hero: {

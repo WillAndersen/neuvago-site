@@ -47,30 +47,98 @@ export type HomepageFeatureItem = {
   description: string;
 };
 
+export type HomepageVisualPanel = {
+  eyebrow?: string;
+  title: string;
+  description: string;
+  href?: string;
+  image?: HomepageImage;
+};
+
+const homepageHeroDesktop = {
+  src: "/images/neuvago/homepage-master-hero-desktop.webp",
+  alt: "Neuvago device and guided app arranged together in a warm premium hero composition.",
+} satisfies HomepageImage;
+
+const homepageHeroMobile = {
+  src: "/images/neuvago/homepage-master-hero-mobile.webp",
+  alt: "Neuvago device and guided app arranged together for the mobile homepage hero.",
+} satisfies HomepageImage;
+
+const productHeroDesktop = {
+  src: "/images/neuvago/product-hero-desktop.webp",
+  alt: "Close-up of the Neuvago handheld device in a warm premium product composition.",
+} satisfies HomepageImage;
+
+const productHeroMobile = {
+  src: "/images/neuvago/product-hero-mobile.webp",
+  alt: "Close-up of the Neuvago handheld device for mobile product layouts.",
+} satisfies HomepageImage;
+
+const appHeroDesktop = {
+  src: "/images/neuvago/app-hero-desktop.webp",
+  alt: "Neuvago app showing a calm guided session beside the handheld device.",
+} satisfies HomepageImage;
+
+const appHeroMobile = {
+  src: "/images/neuvago/app-hero-mobile.webp",
+  alt: "Neuvago app guided session screen for mobile app layouts.",
+} satisfies HomepageImage;
+
+const howItWorksDesktop = {
+  src: "/images/neuvago/how-it-works-routine-desktop.webp",
+  alt: "Neuvago device, guided app, and simple routine cards explaining how the system works.",
+} satisfies HomepageImage;
+
+const howItWorksMobile = {
+  src: "/images/neuvago/how-it-works-routine-mobile.webp",
+  alt: "Neuvago device, guided app, and routine cards for mobile how-it-works layouts.",
+} satisfies HomepageImage;
+
+const researchEvidenceDesktop = {
+  src: "/images/neuvago/research-hub-evidence-desktop.webp",
+  alt: "Neuvago device beside abstract research cards and evidence visuals.",
+} satisfies HomepageImage;
+
+const morningResetDesktop = {
+  src: "/images/neuvago/morning-reset-desktop.webp",
+  alt: "Neuvago device and guided app arranged in a calm morning reset routine.",
+} satisfies HomepageImage;
+
+const stressPauseDesktop = {
+  src: "/images/neuvago/stress-daytime-pause-desktop.webp",
+  alt: "Neuvago device and guided app arranged for a calm daytime pause routine.",
+} satisfies HomepageImage;
+
+const eveningWindDownDesktop = {
+  src: "/images/neuvago/evening-wind-down-desktop.webp",
+  alt: "Neuvago device and guided app resting beside a warm evening wind-down routine.",
+} satisfies HomepageImage;
+
+const finalCtaDesktop = {
+  src: "/images/neuvago/final-cta-desktop.webp",
+  alt: "Neuvago device and guided app shown softly on the right with open space for a call to action.",
+} satisfies HomepageImage;
+
 export const homepageContent = {
   hero: {
     visible: true,
     eyebrow: "Neuvago",
-    title: "Calmer days start with better nervous system regulation.",
+    title: "A calmer way to return.",
     description:
-      "Neuvago combines a non-invasive vagus nerve stimulation device with a guided app experience designed to support calmer routines around stress, recovery, sleep, and everyday nervous system balance.",
+      "Neuvago combines a non-invasive vagus nerve stimulator with guided app sessions for short, repeatable nervous system regulation routines.",
     primaryCta: {
-      label: "Explore Neuvago",
+      label: "Explore the system",
       href: "/product",
     } satisfies HomepageCta,
     secondaryCta: {
       label: "How it works",
       href: "/how-it-works",
     } satisfies HomepageCta,
-    desktopImage: {
-      src: "/images/neuvago/homepage-master-hero-desktop.webp",
-      alt: "Neuvago device and app shown together in a warm editorial setting.",
-    } satisfies HomepageImage,
-    mobileImage: {
-      src: "/images/neuvago/homepage-master-hero-mobile.webp",
-      alt: "Neuvago device and app shown together for mobile hero layout.",
-    } satisfies HomepageImage,
-    proofLine: ["Non-invasive", "App-guided", "Built for daily use"],
+    desktopImage: homepageHeroDesktop,
+    mobileImage: homepageHeroMobile,
+    proofLine: ["Non-invasive", "App-guided", "Research-informed"],
+    mediaNote: "Video-ready hero slot. Uses a cinematic still until the ambient loop is ready.",
   } satisfies HomepageSectionVisibility & {
     eyebrow: string;
     title: string;
@@ -80,23 +148,251 @@ export const homepageContent = {
     desktopImage: HomepageImage;
     mobileImage: HomepageImage;
     proofLine: string[];
+    mediaNote: string;
   },
 
   proofStrip: {
     visible: true,
     items: [
-      "Science-informed",
       "Non-invasive",
       "App-guided",
-      "Designed for daily regulation",
-      "Built around calm, not intensity",
+      "Research-informed",
+      "Designed for daily routines",
     ],
   } satisfies HomepageSectionVisibility & {
     items: string[];
   },
 
-  whatIsNeuvago: {
+  systemReveal: {
     visible: true,
+    eyebrow: "The Neuvago system",
+    title: "Device, guidance, and routine — designed to work as one.",
+    description:
+      "Neuvago is not just a device or just an app. It is a quiet system built around a physical starting point, guided sessions, and a rhythm you can return to in real life.",
+    image: productHeroDesktop,
+    items: [
+      {
+        eyebrow: "Device",
+        title: "A calm physical anchor",
+        description:
+          "The handheld device gives the routine a tangible starting point — simple, considered, and easy to keep nearby.",
+        href: "/product",
+      },
+      {
+        eyebrow: "Guidance",
+        title: "Sessions that make the next step clear",
+        description:
+          "The app gives structure to the moment: choose a session, follow the rhythm, and return without guessing.",
+        href: "/app",
+      },
+      {
+        eyebrow: "Routine",
+        title: "Built for repeatability",
+        description:
+          "The value is not one intense session. It is a calmer pattern you can come back to over time.",
+        href: "/how-it-works",
+      },
+    ] satisfies HomepageVisualPanel[],
+  } satisfies HomepageSectionVisibility & {
+    eyebrow: string;
+    title: string;
+    description: string;
+    image: HomepageImage;
+    items: HomepageVisualPanel[];
+  },
+
+  ritualSequence: {
+    visible: true,
+    eyebrow: "The ritual",
+    title: "Simple enough to begin. Structured enough to return to.",
+    description:
+      "The experience is intentionally quiet: place the device, start a guided session, and let the app help turn the moment into a repeatable routine.",
+    desktopImage: howItWorksDesktop,
+    mobileImage: howItWorksMobile,
+    steps: [
+      {
+        title: "Place",
+        description:
+          "Begin with a clear physical starting point and a calm setup that does not feel clinical.",
+      },
+      {
+        title: "Start",
+        description:
+          "Choose a guided session in the app and follow a simple, contained rhythm.",
+      },
+      {
+        title: "Return",
+        description:
+          "Use the same structure again over time, so regulation feels easier to come back to.",
+      },
+    ] satisfies HomepageStep[],
+    cta: {
+      label: "See how it works",
+      href: "/how-it-works",
+    } satisfies HomepageCta,
+  } satisfies HomepageSectionVisibility & {
+    eyebrow: string;
+    title: string;
+    description: string;
+    desktopImage: HomepageImage;
+    mobileImage: HomepageImage;
+    steps: HomepageStep[];
+    cta: HomepageCta;
+  },
+
+  appGuidance: {
+    visible: true,
+    eyebrow: "Guided by the app",
+    title: "The app turns a session into something you can follow.",
+    description:
+      "Neuvago is designed to remove the uncertainty around what to do next. Sessions, pathways, and gentle progress cues help the experience feel guided rather than improvised.",
+    image: appHeroDesktop,
+    mobileImage: appHeroMobile,
+    items: [
+      {
+        title: "Session guidance",
+        description:
+          "Choose a session for the moment — reset, unwind, or return to a calmer rhythm.",
+      },
+      {
+        title: "A library that stays quiet",
+        description:
+          "Guidance is organized without turning the app into a noisy dashboard.",
+      },
+      {
+        title: "Progress without pressure",
+        description:
+          "The goal is continuity, not performance. More rhythm, less intensity.",
+      },
+    ] satisfies HomepageCard[],
+    cta: {
+      label: "Explore the app",
+      href: "/app",
+    } satisfies HomepageCta,
+  } satisfies HomepageSectionVisibility & {
+    eyebrow: string;
+    title: string;
+    description: string;
+    image: HomepageImage;
+    mobileImage: HomepageImage;
+    items: HomepageCard[];
+    cta: HomepageCta;
+  },
+
+  researchBoundary: {
+    visible: true,
+    eyebrow: "Research and boundaries",
+    title: "Research-informed, not claim-driven.",
+    description:
+      "Neuvago sits within a broader research conversation around vagus nerve stimulation, autonomic regulation, HRV, stress, and recovery. The site separates research context from product claims, and keeps intended-use boundaries visible.",
+    image: researchEvidenceDesktop,
+    points: [
+      {
+        title: "What research can help explain",
+        description:
+          "The vagus nerve and autonomic regulation are relevant frameworks for understanding stress, recovery, and downshifting.",
+      },
+      {
+        title: "What research does not prove",
+        description:
+          "Evidence from a field does not automatically become a claim about a specific wellness product or routine.",
+      },
+      {
+        title: "How Neuvago stays responsible",
+        description:
+          "Neuvago is not positioned as a medical treatment, diagnostic tool, or replacement for professional care.",
+      },
+    ] satisfies HomepageCard[],
+    primaryCta: {
+      label: "Explore research",
+      href: "/research",
+    } satisfies HomepageCta,
+    secondaryCta: {
+      label: "Review intended use",
+      href: "/legal/intended-use",
+    } satisfies HomepageCta,
+  } satisfies HomepageSectionVisibility & {
+    eyebrow: string;
+    title: string;
+    description: string;
+    image: HomepageImage;
+    points: HomepageCard[];
+    primaryCta: HomepageCta;
+    secondaryCta: HomepageCta;
+  },
+
+  everydayPathways: {
+    visible: true,
+    eyebrow: "Everyday pathways",
+    title: "Three moments where a calmer routine can begin.",
+    description:
+      "Neuvago is designed for real life: a short reset before the day, a calmer pause during stress, or a gentler wind-down at night.",
+    items: [
+      {
+        eyebrow: "Morning",
+        title: "Morning reset",
+        description:
+          "Start with a short guided routine before the day becomes noisy.",
+        href: "/app",
+        image: morningResetDesktop,
+      },
+      {
+        eyebrow: "Daytime",
+        title: "Workday pause",
+        description:
+          "Create a calmer transition when stress feels like it is staying switched on.",
+        href: "/conditions/stress",
+        image: stressPauseDesktop,
+      },
+      {
+        eyebrow: "Evening",
+        title: "Evening wind-down",
+        description:
+          "Use a softer rhythm to help the body move toward rest and recovery.",
+        href: "/conditions/sleep",
+        image: eveningWindDownDesktop,
+      },
+    ] satisfies HomepageVisualPanel[],
+  } satisfies HomepageSectionVisibility & {
+    eyebrow: string;
+    title: string;
+    description: string;
+    items: HomepageVisualPanel[];
+  },
+
+  finalCta: {
+    visible: true,
+    title: "Build a calmer regulation routine.",
+    description:
+      "Explore how Neuvago brings together a non-invasive device, guided sessions, and research-informed education into one calm daily system.",
+    primaryCta: {
+      label: "Explore Neuvago",
+      href: "/product",
+    } satisfies HomepageCta,
+    secondaryCta: {
+      label: "How it works",
+      href: "/how-it-works",
+    } satisfies HomepageCta,
+    signedInCta: {
+      label: "Continue",
+      href: "/continue",
+    } satisfies HomepageCta,
+    backgroundImage: finalCtaDesktop,
+  } satisfies HomepageSectionVisibility & {
+    title: string;
+    description: string;
+    primaryCta: HomepageCta;
+    secondaryCta: HomepageCta;
+    signedInCta: HomepageCta;
+    backgroundImage: HomepageImage;
+  },
+
+  /**
+   * Legacy homepage modules retained so older DB-backed content remains type-compatible.
+   * P4.1 homepage rendering uses the premium modules above instead of these denser grids.
+   */
+  whatIsNeuvago: {
+    visible: false,
     title: "One connected system for calmer daily regulation.",
     description:
       "Neuvago brings together a non-invasive device and a guided app experience so support feels clearer, more structured, and easier to return to over time.",
@@ -105,10 +401,7 @@ export const homepageContent = {
       "Guided sessions and routines for daily life",
       "Designed for stress, recovery, and evening wind-down",
     ],
-    image: {
-      src: "/images/neuvago/product-hero-desktop.webp",
-      alt: "Close-up details of the Neuvago device material and finish.",
-    } satisfies HomepageImage,
+    image: productHeroDesktop,
   } satisfies HomepageSectionVisibility & {
     title: string;
     description: string;
@@ -117,7 +410,7 @@ export const homepageContent = {
   },
 
   whyPeopleComeToNeuvago: {
-    visible: true,
+    visible: false,
     title: "What people come to Neuvago for",
     description:
       "People rarely start with a technical goal. They usually want to feel less stuck in stress, wind down more easily, and build a steadier rhythm they can return to.",
@@ -150,7 +443,7 @@ export const homepageContent = {
   },
 
   appDeviceEcosystem: {
-    visible: true,
+    visible: false,
     title: "Why the device and app work better together.",
     description:
       "Neuvago is designed as one connected system. The device creates a physical entry point, while the app adds guidance, structure, and continuity over time.",
@@ -171,28 +464,8 @@ export const homepageContent = {
           "The physical layer and the guided layer support each other to create a calmer, clearer, and more repeatable daily experience.",
       },
     ] satisfies HomepageFeatureItem[],
-    image: {
-      src: "/images/neuvago/support-guidance-desktop.webp",
-      alt: "Neuvago app library screen shown as the guided layer of the connected system.",
-    } satisfies HomepageImage,
-    supportingImages: [
-      {
-        src: "/images/neuvago/app-hero-desktop.webp",
-        alt: "Neuvago app home screen mockup.",
-      },
-      {
-        src: "/images/neuvago/app-hero-mobile.webp",
-        alt: "Neuvago app session screen mockup.",
-      },
-      {
-        src: "/images/neuvago/final-cta-desktop.webp",
-        alt: "Neuvago app progress screen mockup.",
-      },
-      {
-        src: "/images/neuvago/support-guidance-desktop.webp",
-        alt: "Neuvago app library screen mockup.",
-      },
-    ] satisfies HomepageImage[],
+    image: appHeroDesktop,
+    supportingImages: [appHeroDesktop, howItWorksDesktop],
     cta: {
       label: "Explore the app",
       href: "/app",
@@ -207,7 +480,7 @@ export const homepageContent = {
   },
 
   howItWorks: {
-    visible: true,
+    visible: false,
     title: "A simple way to understand how Neuvago works",
     description:
       "Think of Neuvago as a calm three-part rhythm: begin with the device, follow the guidance in the app, and return to it consistently over time.",
@@ -216,28 +489,19 @@ export const homepageContent = {
         title: "Place the device",
         description:
           "Begin with the device as the physical starting point for the experience.",
-        image: {
-          src: "/images/neuvago/product-hero-mobile.webp",
-          alt: "Front and angled view of the Neuvago device.",
-        },
+        image: productHeroMobile,
       },
       {
         title: "Start a session in the app",
         description:
           "Use the app to choose guidance that fits the moment, whether you want calm, recovery, or evening wind-down.",
-        image: {
-          src: "/images/neuvago/app-hero-mobile.webp",
-          alt: "Neuvago session screen shown on a smartphone.",
-        },
+        image: appHeroMobile,
       },
       {
         title: "Return to it over time",
         description:
           "Repeat it in ways that fit real life so the system becomes easier to return to and more useful over time.",
-        image: {
-          src: "/images/neuvago/final-cta-desktop.webp",
-          alt: "Neuvago progress screen showing continued use over time.",
-        },
+        image: howItWorksMobile,
       },
     ] satisfies HomepageStep[],
   } satisfies HomepageSectionVisibility & {
@@ -247,7 +511,7 @@ export const homepageContent = {
   },
 
   whyNeuvago: {
-    visible: true,
+    visible: false,
     title: "Why Neuvago feels different",
     description:
       "Neuvago is designed to feel gentler, calmer, and easier to live with. The aim is not intensity or complexity, but a more supportive and repeatable experience.",
@@ -278,10 +542,7 @@ export const homepageContent = {
           "Designed to be something you can return to again and again, not just try once.",
       },
     ] satisfies HomepageCard[],
-    detailImage: {
-      src: "/images/neuvago/product-hero-desktop.webp",
-      alt: "Close-up details of the Neuvago device material and finish.",
-    } satisfies HomepageImage,
+    detailImage: productHeroDesktop,
   } satisfies HomepageSectionVisibility & {
     title: string;
     description: string;
@@ -290,7 +551,7 @@ export const homepageContent = {
   },
 
   trustResearch: {
-    visible: true,
+    visible: false,
     title: "Grounded in research, made for everyday life",
     description:
       "Neuvago is built within a broader knowledge universe around nervous system regulation, vagus nerve stimulation, recovery, and stress physiology. You can explore the research layer if you want to go deeper.",
@@ -344,21 +605,9 @@ export const homepageContent = {
     quotes: [
       {
         quote:
-          "A calmer, more supportive way to reset when the day feels too activated.",
+          "A calmer, more supportive way to return when the day feels activated.",
         name: "Placeholder",
         role: "Future user perspective",
-      },
-      {
-        quote:
-          "Guided enough to feel structured, gentle enough to feel easy to return to.",
-        name: "Placeholder",
-        role: "Future user perspective",
-      },
-      {
-        quote:
-          "Built to feel grounded, premium, and realistic for everyday use.",
-        name: "Placeholder",
-        role: "Future practitioner or user perspective",
       },
     ] satisfies HomepageQuote[],
   } satisfies HomepageSectionVisibility & {
@@ -374,22 +623,9 @@ export const homepageContent = {
       "Neuvago is designed to fit into a slower, more intentional rhythm — whether you use it to reset during the day, recover after stress, or wind down in the evening.",
     images: [
       {
-        title: "Calm product lifestyle",
-        description:
-          "A soft editorial device and app composition in a home setting.",
-        image: {
-          src: "/images/neuvago/evening-wind-down-desktop.webp",
-          alt: "Neuvago shown in a calm home setting for a warmer lifestyle moment.",
-        },
-      },
-      {
-        title: "Rest and wind-down",
-        description:
-          "A calm evening moment with Neuvago as part of a quiet routine.",
-        image: {
-          src: "/images/neuvago/evening-wind-down-desktop.webp",
-          alt: "Person resting on a sofa with the Neuvago device nearby.",
-        },
+        title: "Evening wind-down",
+        description: "A quiet evening routine with Neuvago nearby.",
+        image: eveningWindDownDesktop,
       },
     ] satisfies HomepageImageCard[],
   } satisfies HomepageSectionVisibility & {
@@ -399,7 +635,7 @@ export const homepageContent = {
   },
 
   featuredLearning: {
-    visible: true,
+    visible: false,
     title: "Explore the ideas behind calmer regulation",
     description:
       "Go deeper into the language, concepts, and everyday patterns connected to stress, recovery, and nervous system balance.",
@@ -435,7 +671,7 @@ export const homepageContent = {
   },
 
   conditionsOverview: {
-    visible: true,
+    visible: false,
     title: "Explore common areas of concern",
     description:
       "Neuvago is being built within a broader knowledge universe that connects nervous system regulation to common real-life challenges.",
@@ -474,35 +710,5 @@ export const homepageContent = {
     description: string;
     items: HomepageLinkCard[];
     cta: HomepageCta;
-  },
-
-  finalCta: {
-    visible: true,
-    title: "Explore Neuvago for calmer daily regulation",
-    description:
-      "See how Neuvago brings together a calming device, guided sessions, and a more thoughtful way to support stress, recovery, and everyday balance.",
-    primaryCta: {
-      label: "Explore Neuvago",
-      href: "/product",
-    } satisfies HomepageCta,
-    secondaryCta: {
-      label: "How it works",
-      href: "/how-it-works",
-    } satisfies HomepageCta,
-    signedInCta: {
-      label: "Continue",
-      href: "/continue",
-    } satisfies HomepageCta,
-    backgroundImage: {
-      src: "/images/neuvago/final-cta-desktop.webp",
-      alt: "Neuvago device and guided app shown softly on the right with open space for a call to action.",
-    } satisfies HomepageImage,
-  } satisfies HomepageSectionVisibility & {
-    title: string;
-    description: string;
-    primaryCta: HomepageCta;
-    secondaryCta: HomepageCta;
-    signedInCta: HomepageCta;
-    backgroundImage: HomepageImage;
   },
 } as const;

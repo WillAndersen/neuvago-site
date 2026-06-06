@@ -3,14 +3,11 @@ import { getHomepageContent } from "@/lib/content/get-homepage-content";
 import {
   HomeHero,
   HomeProofStrip,
-  HomeWhatIsNeuvago,
-  HomeWhyPeopleComeToNeuvago,
-  HomeAppDeviceEcosystem,
-  HomeHowItWorks,
-  HomeWhyNeuvago,
-  HomeTrustResearch,
-  HomeFeaturedLearning,
-  HomeConditionsOverview,
+  HomeSystemReveal,
+  HomeRoutineSequence,
+  HomeAppGuidance,
+  HomeResearchBoundary,
+  HomeEverydayPathways,
   HomeFinalCta,
 } from "@/components/home";
 import {
@@ -20,16 +17,16 @@ import {
 } from "@/lib/seo/structured-data";
 
 export const metadata: Metadata = {
-  title: "Neuvago | Calm support for stress, sleep, and recovery",
+  title: "Neuvago | Non-Invasive Vagus Nerve Stimulator and App",
   description:
-    "Neuvago combines a non-invasive device, guided app experience, and research-informed learning to support stress, sleep, recovery, and everyday nervous system regulation.",
+    "Neuvago combines a non-invasive vagus nerve stimulator with guided app sessions for short, repeatable nervous system regulation routines.",
   alternates: {
     canonical: "/",
   },
   openGraph: {
-    title: "Neuvago | Calm support for stress, sleep, and recovery",
+    title: "Neuvago | Non-Invasive Vagus Nerve Stimulator and App",
     description:
-      "Neuvago combines a non-invasive device, guided app experience, and research-informed learning to support stress, sleep, recovery, and everyday nervous system regulation.",
+      "A calm, app-guided regulation system built around a non-invasive vagus nerve stimulator and short daily routines.",
     url: "/",
     siteName: "Neuvago",
     locale: "en_US",
@@ -37,9 +34,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Neuvago | Calm support for stress, sleep, and recovery",
+    title: "Neuvago | Non-Invasive Vagus Nerve Stimulator and App",
     description:
-      "Neuvago combines a non-invasive device, guided app experience, and research-informed learning to support stress, sleep, recovery, and everyday nervous system regulation.",
+      "A calm, app-guided regulation system built around a non-invasive vagus nerve stimulator and short daily routines.",
   },
 };
 
@@ -72,36 +69,24 @@ export default async function HomePage() {
         <HomeProofStrip content={content.proofStrip} />
       ) : null}
 
-      {content.whatIsNeuvago.visible ? (
-        <HomeWhatIsNeuvago content={content.whatIsNeuvago} />
+      {content.systemReveal.visible ? (
+        <HomeSystemReveal content={content.systemReveal} />
       ) : null}
 
-      {content.whyPeopleComeToNeuvago.visible ? (
-        <HomeWhyPeopleComeToNeuvago content={content.whyPeopleComeToNeuvago} />
+      {content.ritualSequence.visible ? (
+        <HomeRoutineSequence content={content.ritualSequence} />
       ) : null}
 
-      {content.appDeviceEcosystem.visible ? (
-        <HomeAppDeviceEcosystem content={content.appDeviceEcosystem} />
+      {content.appGuidance.visible ? (
+        <HomeAppGuidance content={content.appGuidance} />
       ) : null}
 
-      {content.whyNeuvago.visible ? (
-        <HomeWhyNeuvago content={content.whyNeuvago} />
+      {content.researchBoundary.visible ? (
+        <HomeResearchBoundary content={content.researchBoundary} />
       ) : null}
 
-      {content.howItWorks.visible ? (
-        <HomeHowItWorks content={content.howItWorks} />
-      ) : null}
-
-      {content.trustResearch.visible ? (
-        <HomeTrustResearch content={content.trustResearch} />
-      ) : null}
-
-      {content.featuredLearning.visible ? (
-        <HomeFeaturedLearning content={content.featuredLearning} />
-      ) : null}
-
-      {content.conditionsOverview.visible ? (
-        <HomeConditionsOverview content={content.conditionsOverview} />
+      {content.everydayPathways.visible ? (
+        <HomeEverydayPathways content={content.everydayPathways} />
       ) : null}
 
       {content.finalCta.visible ? (

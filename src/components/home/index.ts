@@ -19,3 +19,8 @@ export { HomeSocialProof } from "./HomeSocialProof";
 export { HomeFeaturedLearning } from "./HomeFeaturedLearning";
 export { HomeConditionsOverview } from "./HomeConditionsOverview";
 export { HomeFinalCta } from "./HomeFinalCta";
+export { HomeSystemReveal } from "./HomeSystemReveal";
+export { HomeRoutineSequence } from "./HomeRoutineSequence";
+export { HomeAppGuidance } from "./HomeAppGuidance";
+export { HomeResearchBoundary } from "./HomeResearchBoundary";
+export { HomeEverydayPathways } from "./HomeEverydayPathways";

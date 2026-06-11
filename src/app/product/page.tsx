@@ -18,7 +18,7 @@ import {
 
 export const metadata: Metadata = {
   title:
-    "Neuvago | Non-Invasive Vagus Nerve Stimulator and App",
+    "Neuvago Product | Non-Invasive VNS Device and App",
   description:
     "Meet Neuvago: a premium non-invasive vagus nerve stimulator and app for guided routines, clear safety boundaries, and calmer daily regulation support.",
   alternates: {
@@ -26,7 +26,7 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title:
-      "Neuvago | Non-Invasive Vagus Nerve Stimulator and App",
+      "Neuvago Product | Non-Invasive VNS Device and App",
     description:
       "Meet Neuvago: a premium non-invasive vagus nerve stimulator and app for guided routines, clear safety boundaries, and calmer daily regulation support.",
     url: "/product",
@@ -37,7 +37,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title:
-      "Neuvago | Non-Invasive Vagus Nerve Stimulator and App",
+      "Neuvago Product | Non-Invasive VNS Device and App",
     description:
       "Meet Neuvago: a premium non-invasive vagus nerve stimulator and app for guided routines, clear safety boundaries, and calmer daily regulation support.",
   },

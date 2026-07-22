@@ -28,7 +28,7 @@ export function HomeHero({ content }: HomeHeroProps) {
           alt=""
           fill
           className="hidden object-cover object-[72%_center] md:block"
-          sizes="100vw"
+          sizes="(min-width: 768px) 100vw, 0px"
           priority
         />
         <Image
@@ -36,7 +36,7 @@ export function HomeHero({ content }: HomeHeroProps) {
           alt=""
           fill
           className="object-cover object-[64%_center] md:hidden"
-          sizes="100vw"
+          sizes="(max-width: 767px) 100vw, 0px"
           priority
         />
       </div>

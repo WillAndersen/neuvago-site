@@ -385,12 +385,12 @@ export const productPageContent = {
     description:
       "Explore how the device, app, and calmer daily routine fit together — then continue into the full how-it-works experience or the guided app layer.",
     primaryCta: {
-      label: "How it works",
-      href: "/how-it-works",
+      label: "View product options",
+      href: "#buy",
     } satisfies ProductCta,
     secondaryCta: {
-      label: "Explore the app",
-      href: "/app",
+      label: "How it works",
+      href: "/how-it-works",
     } satisfies ProductCta,
     backgroundImage: {
       src: "/images/neuvago/launch/final-cta-desktop.webp",

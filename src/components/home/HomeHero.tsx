@@ -29,7 +29,8 @@ export function HomeHero({ content }: HomeHeroProps) {
           fill
           className="hidden object-cover object-[72%_center] md:block"
           sizes="(min-width: 768px) 100vw, 0px"
-          priority
+          loading="eager"
+          fetchPriority="high"
         />
         <Image
           src={content.mobileImage.src}
@@ -37,7 +38,8 @@ export function HomeHero({ content }: HomeHeroProps) {
           fill
           className="object-cover object-[64%_center] md:hidden"
           sizes="(max-width: 767px) 100vw, 0px"
-          priority
+          loading="eager"
+          fetchPriority="high"
         />
       </div>
 

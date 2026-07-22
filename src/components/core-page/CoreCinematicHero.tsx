@@ -50,7 +50,8 @@ export function CoreCinematicHero({
           className="hidden object-cover md:block"
           style={{ objectPosition: imagePosition }}
           sizes="(min-width: 768px) 100vw, 0px"
-          priority
+          loading="eager"
+          fetchPriority="high"
         />
         <Image
           src={mobileImage.src}
@@ -59,7 +60,8 @@ export function CoreCinematicHero({
           className="object-cover md:hidden"
           style={{ objectPosition: mobileImagePosition }}
           sizes="(max-width: 767px) 100vw, 0px"
-          priority
+          loading="eager"
+          fetchPriority="high"
         />
       </div>
 

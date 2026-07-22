@@ -16,6 +16,9 @@ const routes = [
   { name: "home", path: "/" },
   { name: "product", path: "/product" },
   { name: "product-buy", path: "/product#buy", selector: "#buy", viewportOnly: true },
+  { name: "no-home", path: "/no" },
+  { name: "no-product", path: "/no/produkt" },
+  { name: "no-product-buy", path: "/no/produkt#buy", selector: "#buy", viewportOnly: true },
   { name: "app", path: "/app" },
   { name: "how-it-works", path: "/how-it-works" },
 ];

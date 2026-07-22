@@ -53,12 +53,12 @@ export const productPageContent = {
     description:
       "Neuvago pairs a premium handheld device with guided app sessions for short, repeatable regulation routines — with clear wellness boundaries and a research-informed safety layer.",
     primaryCta: {
-      label: "How it works",
-      href: "/how-it-works",
+      label: "View product options",
+      href: "#buy",
     } satisfies ProductCta,
     secondaryCta: {
-      label: "Explore the app",
-      href: "/app",
+      label: "How it works",
+      href: "/how-it-works",
     } satisfies ProductCta,
     desktopImage: {
       src: "/images/neuvago/launch/product-hero-desktop.webp",

@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { getProductContent } from "@/lib/content/get-product-content";
 import {
   ProductHero,
+  ProductLaunchBuyBox,
   ProductWhatIsNeuvago,
   ProductWhyItFeelsDifferent,
   ProductDeviceAppTogether,
@@ -75,6 +76,8 @@ export default async function ProductPage() {
       ))}
 
       {content.hero.visible ? <ProductHero content={content.hero} /> : null}
+
+      <ProductLaunchBuyBox />
 
       {content.whatIsNeuvago.visible ? (
         <ProductWhatIsNeuvago content={content.whatIsNeuvago} />

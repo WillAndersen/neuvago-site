@@ -128,7 +128,7 @@ export const homepageContent = {
     description:
       "Neuvago combines a non-invasive vagus nerve stimulator with guided app sessions for short, repeatable nervous system regulation routines.",
     primaryCta: {
-      label: "Explore the system",
+      label: "View product",
       href: "/product",
     } satisfies HomepageCta,
     secondaryCta: {
@@ -366,7 +366,7 @@ export const homepageContent = {
     description:
       "Explore how Neuvago brings together a non-invasive device, guided sessions, and research-informed education into one calm daily system.",
     primaryCta: {
-      label: "Explore Neuvago",
+      label: "View product",
       href: "/product",
     } satisfies HomepageCta,
     secondaryCta: {

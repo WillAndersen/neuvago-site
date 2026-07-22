@@ -73,10 +73,10 @@ export function SiteHeader() {
           </Link>
 
           <Link
-            href="/product"
+            href="/product#buy"
             className="inline-flex items-center justify-center rounded-full bg-[#1f1f1c] px-5 py-3 text-sm font-medium text-white transition hover:bg-[#2b2b28]"
           >
-            Explore system
+            View product
           </Link>
         </div>
 
@@ -89,10 +89,10 @@ export function SiteHeader() {
           </Link>
 
           <Link
-            href="/product"
+            href="/product#buy"
             className="inline-flex items-center justify-center rounded-full bg-[#1f1f1c] px-4 py-2.5 text-sm font-medium text-white transition hover:bg-[#2b2b28]"
           >
-            Explore
+            Product
           </Link>
         </div>
       </div>

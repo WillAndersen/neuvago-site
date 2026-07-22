@@ -7,3 +7,4 @@ export { ProductHowToUse } from "./ProductHowToUse";
 export { ProductTrustBridge } from "./ProductTrustBridge";
 export { ProductFaq } from "./ProductFaq";
 export { ProductFinalCta } from "./ProductFinalCta";
+export { ProductLaunchBuyBox } from "./ProductLaunchBuyBox";

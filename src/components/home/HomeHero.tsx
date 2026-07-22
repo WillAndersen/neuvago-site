@@ -20,6 +20,11 @@ function HeroTitle({ title }: { title: string }) {
 }
 
 export function HomeHero({ content }: HomeHeroProps) {
+  const heroContent = content as typeof homepageContent.hero & {
+    panelEyebrow?: string;
+    panelText?: string;
+  };
+
   return (
     <section className="relative isolate overflow-hidden border-b border-black/5 bg-[#f7f4ef] text-[#1f1f1c]">
       <div className="absolute inset-0 -z-30">
@@ -76,11 +81,11 @@ export function HomeHero({ content }: HomeHeroProps) {
 
         <div className="hidden w-full max-w-[40rem] rounded-[1.75rem] border border-white/45 bg-[#fbf8f2]/58 p-5 shadow-[0_28px_80px_rgba(42,34,24,0.1)] backdrop-blur-md md:block lg:max-w-[42rem]">
           <p className="text-[0.7rem] font-medium uppercase tracking-[0.24em] text-[#8a7f72]">
-            Device + app + routine
+            {heroContent.panelEyebrow ?? "Device + app + routine"}
           </p>
           <p className="mt-3 text-sm leading-6 text-[#5f574f]">
-            A quiet product experience for short moments of regulation: a
-            physical anchor, guided sessions, and a rhythm you can return to.
+            {heroContent.panelText ??
+              "A quiet product experience for short moments of regulation: a physical anchor, guided sessions, and a rhythm you can return to."}
           </p>
         </div>
       </div>

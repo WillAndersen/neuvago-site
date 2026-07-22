@@ -7,6 +7,10 @@ type ProductDeviceAppTogetherProps = {
 };
 
 export function ProductDeviceAppTogether({ content }: ProductDeviceAppTogetherProps) {
+  const sectionContent = content as typeof productPageContent.deviceAppTogether & {
+    eyebrow?: string;
+  };
+
   return (
     <section className="bg-[#f7f4ef]">
       <div className="mx-auto max-w-[92rem] px-5 py-20 sm:px-8 lg:px-12 lg:py-28">
@@ -25,7 +29,7 @@ export function ProductDeviceAppTogether({ content }: ProductDeviceAppTogetherPr
 
           <div className="max-w-xl">
             <p className="text-[0.72rem] font-medium uppercase tracking-[0.26em] text-[#81766a]">
-              Device + app
+              {sectionContent.eyebrow ?? "Device + app"}
             </p>
             <h2 className="mt-4 text-4xl font-medium tracking-[-0.055em] text-[#1f1f1c] sm:text-5xl lg:text-6xl lg:leading-[0.95]">
               {content.title}

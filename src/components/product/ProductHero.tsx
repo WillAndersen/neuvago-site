@@ -7,6 +7,10 @@ type ProductHeroProps = {
 };
 
 export function ProductHero({ content }: ProductHeroProps) {
+  const heroContent = content as typeof productPageContent.hero & {
+    panelEyebrow?: string;
+    panelText?: string;
+  };
   const proofLine = content.proofLine.slice(0, 3);
 
   return (
@@ -71,10 +75,11 @@ export function ProductHero({ content }: ProductHeroProps) {
 
             <div className="hidden border-t border-black/5 bg-[#fbf8f2]/74 px-6 py-5 backdrop-blur sm:block">
               <p className="text-[0.7rem] font-medium uppercase tracking-[0.24em] text-[#8a7f72]">
-                The physical anchor
+                {heroContent.panelEyebrow ?? "The physical anchor"}
               </p>
               <p className="mt-2 max-w-[34rem] text-sm leading-6 text-[#5f574f]">
-                A tactile, non-invasive device designed to make the guided experience feel calm, grounded, and easy to return to.
+                {heroContent.panelText ??
+                  "A tactile, non-invasive device designed to make the guided experience feel calm, grounded, and easy to return to."}
               </p>
             </div>
           </div>

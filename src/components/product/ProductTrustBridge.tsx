@@ -7,13 +7,17 @@ type ProductTrustBridgeProps = {
 };
 
 export function ProductTrustBridge({ content }: ProductTrustBridgeProps) {
+  const sectionContent = content as typeof productPageContent.trustBridge & {
+    eyebrow?: string;
+  };
+
   return (
     <section className="bg-[#1f1f1c] text-[#f7f4ef]">
       <div className="mx-auto max-w-[92rem] px-5 py-20 sm:px-8 lg:px-12 lg:py-28">
         <div className="grid gap-12 lg:grid-cols-[0.82fr_1.18fr] lg:gap-16">
           <div className="max-w-xl">
             <p className="text-[0.72rem] font-medium uppercase tracking-[0.26em] text-[#b8aa99]">
-              Trust and boundaries
+              {sectionContent.eyebrow ?? "Trust and boundaries"}
             </p>
             <h2 className="mt-4 text-4xl font-medium tracking-[-0.055em] sm:text-5xl lg:text-6xl lg:leading-[0.95]">
               {content.title}

@@ -20,11 +20,15 @@ export const productPageContentNo = {
       label: "Slik fungerer det",
       href: no("/how-it-works"),
     },
+    panelEyebrow: "Det fysiske ankeret",
+    panelText:
+      "En taktil, ikke-invasiv enhet laget for at den veiledede opplevelsen skal føles rolig, jordet og enkel å vende tilbake til.",
     proofLine: ["Ikke-invasiv VNS", "App-veiledede økter", "Tydelige velværegrenser"],
   },
 
   whatIsNeuvago: {
     ...productPageContent.whatIsNeuvago,
+    eyebrow: "Systemet",
     title: "Et fysisk anker for et roligere reguleringssystem",
     description:
       "I sentrum av Neuvago står en ikke-invasiv vagusnervestimulator laget for å føles rolig, tydelig og enkel å leve med. Appen tilfører veiledning, øktstruktur og kontinuitet, mens produktopplevelsen holder seg forankret i skånsom daglig velværestøtte heller enn medisinske behandlingspåstander.",
@@ -71,6 +75,7 @@ export const productPageContentNo = {
 
   deviceAppTogether: {
     ...productPageContent.deviceAppTogether,
+    eyebrow: "Enhet + app",
     title: "Appen fullfører produktopplevelsen",
     description:
       "Enheten kan stå på egne ben som et fysisk startpunkt, men appen gjør hele systemet tydeligere og enklere å vende tilbake til gjennom økter, rutiner og kontinuitet over tid.",
@@ -98,6 +103,7 @@ export const productPageContentNo = {
 
   howItFitsIntoLife: {
     ...productPageContent.howItFitsIntoLife,
+    eyebrow: "Daglig rytme",
     title: "Bygget for øyeblikkene du faktisk vender tilbake til",
     description:
       "Verdien av produktet ligger ikke bare i hva det er, men i hvor naturlig det kan passe inn i roligere daglige rutiner — enten du ønsker en mykere start, en pause under stress eller en mer bevisst nedtrapping om kvelden.",
@@ -120,6 +126,8 @@ export const productPageContentNo = {
 
   howToUse: {
     ...productPageContent.howToUse,
+    eyebrow: "Rutinen",
+    stepLabel: "Steg",
     title: "En enkel rutine i tre steg",
     description:
       "Du trenger ingen komplisert protokoll for å forstå produktet. I praksis er Neuvago laget for å føles enkelt: plasser enheten komfortabelt, følg veiledningen i appen og vend tilbake til rutinen over tid.",
@@ -147,6 +155,7 @@ export const productPageContentNo = {
 
   trustBridge: {
     ...productPageContent.trustBridge,
+    eyebrow: "Tillit og grenser",
     title: "Forskningskontekst, sikkerhetsgrenser og daglig bruk",
     description:
       "Neuvago er bygget innenfor en bredere kunnskapsverden om regulering av nervesystemet, ikke-invasiv vagusnervestimulering, sikkerhet og tolerabilitet, restitusjon og stressfysiologi. Du kan utforske forskningslaget dersom du vil gå dypere, mens produktpåstandene holder seg forankret i velværestøtte.",
@@ -239,6 +248,7 @@ export const productPageContentNo = {
 
   finalCta: {
     ...productPageContent.finalCta,
+    eyebrow: "Gå videre",
     title: "Se hvordan hele Neuvago-systemet fungerer",
     description:
       "Utforsk hvordan enheten, appen og en roligere daglig rutine passer sammen — og gå videre til hele slik-fungerer-det-opplevelsen eller den veiledede appdelen.",

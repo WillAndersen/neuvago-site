@@ -20,6 +20,9 @@ export const homepageContentNo = {
       label: "Slik fungerer det",
       href: no("/how-it-works"),
     },
+    panelEyebrow: "Enhet + app + rutine",
+    panelText:
+      "En rolig produktopplevelse for korte reguleringsøyeblikk: et fysisk anker, veiledede økter og en rytme du kan vende tilbake til.",
     proofLine: ["Ikke-invasiv", "App-veiledet", "Forankret i forskning"],
     mediaNote:
       "Hero-felt klart for video. Bruker et rolig stillbilde frem til ambient video er klar.",
@@ -197,6 +200,7 @@ export const homepageContentNo = {
 
   finalCta: {
     ...homepageContent.finalCta,
+    eyebrow: "Begynn rolig",
     title: "Bygg en roligere reguleringsrutine.",
     description:
       "Se hvordan Neuvago kombinerer en ikke-invasiv enhet, veiledede økter og forskningsinformert kunnskap i ett rolig daglig system.",

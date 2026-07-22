@@ -6,5 +6,9 @@ type ProductFinalCtaProps = {
 };
 
 export function ProductFinalCta({ content }: ProductFinalCtaProps) {
-  return <CoreFinalCta eyebrow="Continue" {...content} />;
+  const finalCtaContent = content as typeof productPageContent.finalCta & {
+    eyebrow?: string;
+  };
+
+  return <CoreFinalCta eyebrow={finalCtaContent.eyebrow ?? "Continue"} {...content} />;
 }

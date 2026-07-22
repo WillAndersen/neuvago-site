@@ -21,12 +21,16 @@ const pathwayImages = [
 ];
 
 export function ProductHowItFitsIntoLife({ content }: ProductHowItFitsIntoLifeProps) {
+  const sectionContent = content as typeof productPageContent.howItFitsIntoLife & {
+    eyebrow?: string;
+  };
+
   return (
     <section className="bg-[#f2eee8]">
       <div className="mx-auto max-w-[92rem] px-5 py-20 sm:px-8 lg:px-12 lg:py-28">
         <div className="max-w-3xl">
           <p className="text-[0.72rem] font-medium uppercase tracking-[0.26em] text-[#81766a]">
-            Everyday rhythm
+            {sectionContent.eyebrow ?? "Everyday rhythm"}
           </p>
           <h2 className="mt-4 text-4xl font-medium tracking-[-0.055em] text-[#1f1f1c] sm:text-5xl lg:text-6xl lg:leading-[0.95]">
             {content.title}

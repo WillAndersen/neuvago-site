@@ -56,42 +56,42 @@ export type HomepageVisualPanel = {
 };
 
 const homepageHeroDesktop = {
-  src: "/images/neuvago/homepage-master-hero-desktop.webp",
+  src: "/images/neuvago/launch/no-home-hero-desktop.webp",
   alt: "Neuvago device and guided app arranged together in a warm premium hero composition.",
 } satisfies HomepageImage;
 
 const homepageHeroMobile = {
-  src: "/images/neuvago/homepage-master-hero-mobile.webp",
+  src: "/images/neuvago/launch/no-home-hero-mobile.webp",
   alt: "Neuvago device and guided app arranged together for the mobile homepage hero.",
 } satisfies HomepageImage;
 
 const productHeroDesktop = {
-  src: "/images/neuvago/product-hero-desktop.webp",
+  src: "/images/neuvago/launch/product-hero-desktop.webp",
   alt: "Close-up of the Neuvago handheld device in a warm premium product composition.",
 } satisfies HomepageImage;
 
 const productHeroMobile = {
-  src: "/images/neuvago/product-hero-mobile.webp",
+  src: "/images/neuvago/launch/product-hero-mobile.webp",
   alt: "Close-up of the Neuvago handheld device for mobile product layouts.",
 } satisfies HomepageImage;
 
 const appHeroDesktop = {
-  src: "/images/neuvago/app-hero-desktop.webp",
+  src: "/images/neuvago/launch/product-app-pairing-desktop.webp",
   alt: "Neuvago app showing a calm guided session beside the handheld device.",
 } satisfies HomepageImage;
 
 const appHeroMobile = {
-  src: "/images/neuvago/app-hero-mobile.webp",
+  src: "/images/neuvago/launch/product-app-pairing-mobile.webp",
   alt: "Neuvago app guided session screen for mobile app layouts.",
 } satisfies HomepageImage;
 
 const howItWorksDesktop = {
-  src: "/images/neuvago/how-it-works-routine-desktop.webp",
+  src: "/images/neuvago/launch/routine-evening-desktop.webp",
   alt: "Neuvago device, guided app, and simple routine cards explaining how the system works.",
 } satisfies HomepageImage;
 
 const howItWorksMobile = {
-  src: "/images/neuvago/how-it-works-routine-mobile.webp",
+  src: "/images/neuvago/launch/routine-evening-mobile.webp",
   alt: "Neuvago device, guided app, and routine cards for mobile how-it-works layouts.",
 } satisfies HomepageImage;
 
@@ -101,22 +101,22 @@ const researchEvidenceDesktop = {
 } satisfies HomepageImage;
 
 const morningResetDesktop = {
-  src: "/images/neuvago/morning-reset-desktop.webp",
+  src: "/images/neuvago/launch/product-lifestyle-card.webp",
   alt: "Neuvago device and guided app arranged in a calm morning reset routine.",
 } satisfies HomepageImage;
 
 const stressPauseDesktop = {
-  src: "/images/neuvago/stress-daytime-pause-desktop.webp",
+  src: "/images/neuvago/launch/product-detail-left-desktop.webp",
   alt: "Neuvago device and guided app arranged for a calm daytime pause routine.",
 } satisfies HomepageImage;
 
 const eveningWindDownDesktop = {
-  src: "/images/neuvago/evening-wind-down-desktop.webp",
+  src: "/images/neuvago/launch/routine-evening-desktop.webp",
   alt: "Neuvago device and guided app resting beside a warm evening wind-down routine.",
 } satisfies HomepageImage;
 
 const finalCtaDesktop = {
-  src: "/images/neuvago/final-cta-desktop.webp",
+  src: "/images/neuvago/launch/final-cta-desktop.webp",
   alt: "Neuvago device and guided app shown softly on the right with open space for a call to action.",
 } satisfies HomepageImage;
 

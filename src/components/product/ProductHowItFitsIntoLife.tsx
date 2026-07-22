@@ -7,15 +7,15 @@ type ProductHowItFitsIntoLifeProps = {
 
 const pathwayImages = [
   {
-    src: "/images/neuvago/morning-reset-desktop.webp",
+    src: "/images/neuvago/launch/product-lifestyle-card.webp",
     alt: "Neuvago morning reset routine with device and guided app.",
   },
   {
-    src: "/images/neuvago/stress-daytime-pause-desktop.webp",
+    src: "/images/neuvago/launch/product-detail-left-desktop.webp",
     alt: "Neuvago daytime pause routine with device and guided app.",
   },
   {
-    src: "/images/neuvago/evening-wind-down-desktop.webp",
+    src: "/images/neuvago/launch/routine-evening-desktop.webp",
     alt: "Neuvago evening wind-down routine with device and guided app.",
   },
 ];

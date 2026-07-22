@@ -61,11 +61,11 @@ export const productPageContent = {
       href: "/app",
     } satisfies ProductCta,
     desktopImage: {
-      src: "/images/neuvago/product-hero-desktop.webp",
+      src: "/images/neuvago/launch/product-hero-desktop.webp",
       alt: "Close-up of the Neuvago device materials and controls in a premium product composition.",
     } satisfies ProductImage,
     mobileImage: {
-      src: "/images/neuvago/product-hero-mobile.webp",
+      src: "/images/neuvago/launch/product-hero-mobile.webp",
       alt: "Front and angled view of the Neuvago device for mobile product hero layout.",
     } satisfies ProductImage,
     proofLine: ["Non-invasive VNS", "App-guided sessions", "Clear wellness boundaries"],
@@ -91,7 +91,7 @@ export const productPageContent = {
       "Connected to an app that adds placement guidance, session rhythm, and continuity",
     ],
     image: {
-      src: "/images/neuvago/how-it-works-routine-desktop.webp",
+      src: "/images/neuvago/launch/product-app-pairing-desktop.webp",
       alt: "Neuvago device, guided app, and simple routine cards explaining the connected product system.",
     } satisfies ProductImage,
   } satisfies ProductSectionVisibility & {
@@ -135,7 +135,7 @@ export const productPageContent = {
       },
     ] satisfies ProductCard[],
     detailImage: {
-      src: "/images/neuvago/product-hero-mobile.webp",
+      src: "/images/neuvago/launch/product-hero-mobile.webp",
       alt: "Close-up details of the Neuvago device material and finish.",
     } satisfies ProductImage,
   } satisfies ProductSectionVisibility & {
@@ -169,20 +169,20 @@ export const productPageContent = {
       },
     ] satisfies ProductFeatureItem[],
     image: {
-      src: "/images/neuvago/support-guidance-desktop.webp",
+      src: "/images/neuvago/launch/product-phone-app.webp",
       alt: "Neuvago support and guidance screen shown as the app layer that completes the product experience.",
     } satisfies ProductImage,
     supportingImages: [
       {
-        src: "/images/neuvago/app-hero-desktop.webp",
+        src: "/images/neuvago/launch/product-app-pairing-desktop.webp",
         alt: "Neuvago app home screen mockup.",
       },
       {
-        src: "/images/neuvago/app-hero-mobile.webp",
+        src: "/images/neuvago/launch/product-app-pairing-mobile.webp",
         alt: "Neuvago app session screen mockup.",
       },
       {
-        src: "/images/neuvago/how-it-works-routine-mobile.webp",
+        src: "/images/neuvago/launch/routine-evening-mobile.webp",
         alt: "Neuvago routine cards showing place device, start session, and return over time.",
       },
     ] satisfies ProductImage[],
@@ -222,11 +222,11 @@ export const productPageContent = {
       },
     ] satisfies ProductCard[],
     image: {
-      src: "/images/neuvago/stress-daytime-pause-desktop.webp",
+      src: "/images/neuvago/launch/product-detail-left-desktop.webp",
       alt: "Neuvago device and guided app arranged for a calm daytime pause routine.",
     } satisfies ProductImage,
     secondaryImage: {
-      src: "/images/neuvago/evening-wind-down-desktop.webp",
+      src: "/images/neuvago/launch/routine-evening-desktop.webp",
       alt: "Neuvago device and guided app resting beside a warm evening wind-down routine.",
     } satisfies ProductImage,
   } satisfies ProductSectionVisibility & {
@@ -248,7 +248,7 @@ export const productPageContent = {
         description:
           "Begin with the device as the physical starting point, with comfort and clear placement guidance treated as part of the experience.",
         image: {
-          src: "/images/neuvago/product-hero-mobile.webp",
+          src: "/images/neuvago/launch/product-hero-mobile.webp",
           alt: "Front and angled view of the Neuvago device.",
         },
       },
@@ -257,7 +257,7 @@ export const productPageContent = {
         description:
           "Use the app to choose guidance that fits the moment, while keeping session length, rhythm, and intensity easy to understand.",
         image: {
-          src: "/images/neuvago/app-hero-mobile.webp",
+          src: "/images/neuvago/launch/product-app-pairing-mobile.webp",
           alt: "Neuvago session screen shown on a smartphone.",
         },
       },
@@ -266,7 +266,7 @@ export const productPageContent = {
         description:
           "Repeat it in ways that fit real life so the system becomes easier to return to and more useful over time.",
         image: {
-          src: "/images/neuvago/how-it-works-routine-mobile.webp",
+          src: "/images/neuvago/launch/routine-evening-mobile.webp",
           alt: "Neuvago device, guided app, and routine cards explaining how the system works.",
         },
       },
@@ -393,7 +393,7 @@ export const productPageContent = {
       href: "/app",
     } satisfies ProductCta,
     backgroundImage: {
-      src: "/images/neuvago/final-cta-desktop.webp",
+      src: "/images/neuvago/launch/final-cta-desktop.webp",
       alt: "Neuvago device and guided app shown softly on the right with open space for a call to action.",
     } satisfies ProductImage,
   } satisfies ProductSectionVisibility & {

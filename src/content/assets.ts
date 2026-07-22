@@ -21,7 +21,7 @@ export const siteAssets = {
   hero: [
     {
       key: "homepage-master-hero-desktop",
-      src: "/images/neuvago/homepage-master-hero-desktop.webp",
+      src: "/images/neuvago/launch/no-home-hero-desktop.webp",
       alt: "Neuvago device and guided app arranged together in a warm premium hero composition.",
       category: "hero",
       label: "Homepage master hero desktop",
@@ -29,7 +29,7 @@ export const siteAssets = {
     },
     {
       key: "homepage-master-hero-mobile",
-      src: "/images/neuvago/homepage-master-hero-mobile.webp",
+      src: "/images/neuvago/launch/no-home-hero-mobile.webp",
       alt: "Neuvago device and guided app arranged together for the mobile homepage hero.",
       category: "hero",
       label: "Homepage master hero mobile",
@@ -40,7 +40,7 @@ export const siteAssets = {
   product: [
     {
       key: "product-hero-desktop",
-      src: "/images/neuvago/product-hero-desktop.webp",
+      src: "/images/neuvago/launch/product-hero-desktop.webp",
       alt: "Close-up of the Neuvago handheld device in a warm premium product composition.",
       category: "product",
       label: "Product hero desktop",
@@ -48,7 +48,7 @@ export const siteAssets = {
     },
     {
       key: "product-hero-mobile",
-      src: "/images/neuvago/product-hero-mobile.webp",
+      src: "/images/neuvago/launch/product-hero-mobile.webp",
       alt: "Close-up of the Neuvago handheld device for mobile product layouts.",
       category: "product",
       label: "Product hero mobile",
@@ -59,7 +59,7 @@ export const siteAssets = {
   app: [
     {
       key: "app-hero-desktop",
-      src: "/images/neuvago/app-hero-desktop.webp",
+      src: "/images/neuvago/launch/product-app-pairing-desktop.webp",
       alt: "Neuvago app showing a calm guided session beside the handheld device.",
       category: "app",
       label: "App hero desktop",
@@ -67,7 +67,7 @@ export const siteAssets = {
     },
     {
       key: "app-hero-mobile",
-      src: "/images/neuvago/app-hero-mobile.webp",
+      src: "/images/neuvago/launch/product-app-pairing-mobile.webp",
       alt: "Neuvago app guided session screen for mobile app layouts.",
       category: "app",
       label: "App hero mobile",
@@ -94,7 +94,7 @@ export const siteAssets = {
   system: [
     {
       key: "how-it-works-routine-desktop",
-      src: "/images/neuvago/how-it-works-routine-desktop.webp",
+      src: "/images/neuvago/launch/routine-evening-desktop.webp",
       alt: "Neuvago device, guided app, and simple routine cards explaining how the system works.",
       category: "system",
       label: "How it works routine desktop",
@@ -102,7 +102,7 @@ export const siteAssets = {
     },
     {
       key: "how-it-works-routine-mobile",
-      src: "/images/neuvago/how-it-works-routine-mobile.webp",
+      src: "/images/neuvago/launch/routine-evening-mobile.webp",
       alt: "Neuvago device, guided app, and routine cards for mobile how-it-works layouts.",
       category: "system",
       label: "How it works routine mobile",
@@ -129,7 +129,7 @@ export const siteAssets = {
   lifestyle: [
     {
       key: "evening-wind-down-desktop",
-      src: "/images/neuvago/evening-wind-down-desktop.webp",
+      src: "/images/neuvago/launch/routine-evening-desktop.webp",
       alt: "Neuvago device and guided app resting beside a warm evening wind-down routine.",
       category: "lifestyle",
       label: "Evening wind-down desktop",
@@ -137,7 +137,7 @@ export const siteAssets = {
     },
     {
       key: "evening-wind-down-mobile",
-      src: "/images/neuvago/evening-wind-down-mobile.webp",
+      src: "/images/neuvago/launch/routine-evening-mobile.webp",
       alt: "Neuvago evening wind-down routine with device and guided app for mobile layouts.",
       category: "lifestyle",
       label: "Evening wind-down mobile",
@@ -266,7 +266,7 @@ export const siteAssets = {
   background: [
     {
       key: "final-cta-desktop",
-      src: "/images/neuvago/final-cta-desktop.webp",
+      src: "/images/neuvago/launch/final-cta-desktop.webp",
       alt: "Neuvago device and guided app shown softly on the right with open space for a call to action.",
       category: "background",
       label: "Final CTA desktop",
@@ -274,7 +274,7 @@ export const siteAssets = {
     },
     {
       key: "final-cta-mobile",
-      src: "/images/neuvago/final-cta-mobile.webp",
+      src: "/images/neuvago/launch/final-cta-mobile.webp",
       alt: "Neuvago device and guided app in a soft final call-to-action composition for mobile layouts.",
       category: "background",
       label: "Final CTA mobile",

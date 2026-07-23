@@ -6,5 +6,9 @@ type AppFinalCtaProps = {
 };
 
 export function AppFinalCta({ content }: AppFinalCtaProps) {
-  return <CoreFinalCta eyebrow="Continue" {...content} />;
+  const finalCtaContent = content as typeof appPageContent.finalCta & {
+    eyebrow?: string;
+  };
+
+  return <CoreFinalCta {...content} eyebrow={finalCtaContent.eyebrow ?? "Continue"} />;
 }

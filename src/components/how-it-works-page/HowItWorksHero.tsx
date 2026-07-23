@@ -6,6 +6,11 @@ type HowItWorksHeroProps = {
 };
 
 export function HowItWorksHero({ content }: HowItWorksHeroProps) {
+  const heroContent = content as typeof howItWorksPageContent.hero & {
+    panelEyebrow?: string;
+    panelText?: string;
+  };
+
   return (
     <CoreCinematicHero
       eyebrow={content.eyebrow}
@@ -16,8 +21,11 @@ export function HowItWorksHero({ content }: HowItWorksHeroProps) {
       desktopImage={content.desktopImage}
       mobileImage={content.mobileImage}
       proofLine={content.proofLine}
-      panelEyebrow="Place. Start. Return."
-      panelText="Neuvago is designed around a simple ritual: a physical product, guided app sessions, and repeatable moments that fit real life."
+      panelEyebrow={heroContent.panelEyebrow ?? "Place. Start. Return."}
+      panelText={
+        heroContent.panelText ??
+        "Neuvago is designed around a simple ritual: a physical product, guided app sessions, and repeatable moments that fit real life."
+      }
       imagePosition="68% center"
       mobileImagePosition="56% center"
     />

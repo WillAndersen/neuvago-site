@@ -5,19 +5,25 @@ type AppFitsIntoLifeProps = {
   content: typeof appPageContent.fitsIntoLife;
 };
 
-const images = [
+const defaultImages = [
   { src: "/images/neuvago/morning-reset-desktop.webp", alt: "Neuvago morning reset routine with device and guided app." },
   { src: "/images/neuvago/stress-daytime-pause-desktop.webp", alt: "Neuvago daytime pause routine with device and guided app." },
   { src: "/images/neuvago/evening-wind-down-desktop.webp", alt: "Neuvago evening wind-down routine with device and guided app." },
 ];
 
 export function AppFitsIntoLife({ content }: AppFitsIntoLifeProps) {
+  const sectionContent = content as typeof appPageContent.fitsIntoLife & {
+    eyebrow?: string;
+    images?: readonly { src: string; alt: string }[];
+  };
+  const images = sectionContent.images ?? defaultImages;
+
   return (
     <section className="bg-[#f7f4ef]">
       <div className="mx-auto max-w-[92rem] px-5 py-20 sm:px-8 lg:px-12 lg:py-28">
         <div className="max-w-3xl">
           <p className="text-[0.72rem] font-medium uppercase tracking-[0.26em] text-[#81766a]">
-            In real life
+            {sectionContent.eyebrow ?? "In real life"}
           </p>
           <h2 className="mt-4 text-4xl font-medium tracking-[-0.055em] text-[#1f1f1c] sm:text-5xl lg:text-6xl lg:leading-[0.95]">
             {content.title}

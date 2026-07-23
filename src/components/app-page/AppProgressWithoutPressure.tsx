@@ -6,6 +6,10 @@ type AppProgressWithoutPressureProps = {
 };
 
 export function AppProgressWithoutPressure({ content }: AppProgressWithoutPressureProps) {
+  const sectionContent = content as typeof appPageContent.progressWithoutPressure & {
+    eyebrow?: string;
+  };
+
   return (
     <section className="bg-[#f7f4ef]">
       <div className="mx-auto max-w-[92rem] px-5 py-20 sm:px-8 lg:px-12 lg:py-28">
@@ -24,7 +28,7 @@ export function AppProgressWithoutPressure({ content }: AppProgressWithoutPressu
 
           <div>
             <p className="text-[0.72rem] font-medium uppercase tracking-[0.26em] text-[#81766a]">
-              Continuity
+              {sectionContent.eyebrow ?? "Continuity"}
             </p>
             <h2 className="mt-4 text-4xl font-medium tracking-[-0.055em] text-[#1f1f1c] sm:text-5xl lg:text-6xl lg:leading-[0.95]">
               {content.title}

@@ -6,11 +6,17 @@ type HowItWorksRepetitionProps = {
 };
 
 export function HowItWorksRepetition({ content }: HowItWorksRepetitionProps) {
+  const sectionContent = content as typeof howItWorksPageContent.repetition & {
+    eyebrow?: string;
+  };
+
   return (
     <section className="bg-[#f7f4ef]">
       <div className="mx-auto grid max-w-[92rem] gap-12 px-5 py-20 sm:px-8 lg:grid-cols-[1fr_1fr] lg:items-center lg:gap-16 lg:px-12 lg:py-28">
         <div>
-          <p className="text-[0.72rem] font-medium uppercase tracking-[0.26em] text-[#81766a]">Return over time</p>
+          <p className="text-[0.72rem] font-medium uppercase tracking-[0.26em] text-[#81766a]">
+            {sectionContent.eyebrow ?? "Return over time"}
+          </p>
           <h2 className="mt-4 text-4xl font-medium tracking-[-0.055em] text-[#1f1f1c] sm:text-5xl lg:text-6xl lg:leading-[0.95]">
             {content.title}
           </h2>

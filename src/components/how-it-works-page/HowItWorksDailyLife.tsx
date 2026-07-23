@@ -5,18 +5,26 @@ type HowItWorksDailyLifeProps = {
   content: typeof howItWorksPageContent.dailyLife;
 };
 
-const pathwayImages = [
+const defaultPathwayImages = [
   { src: "/images/neuvago/morning-reset-desktop.webp", alt: "Neuvago morning reset routine with device and guided app." },
   { src: "/images/neuvago/stress-daytime-pause-desktop.webp", alt: "Neuvago daytime pause routine with device and guided app." },
   { src: "/images/neuvago/evening-wind-down-desktop.webp", alt: "Neuvago evening wind-down routine with device and guided app." },
 ];
 
 export function HowItWorksDailyLife({ content }: HowItWorksDailyLifeProps) {
+  const sectionContent = content as typeof howItWorksPageContent.dailyLife & {
+    eyebrow?: string;
+    pathwayImages?: readonly { src: string; alt: string }[];
+  };
+  const pathwayImages = sectionContent.pathwayImages ?? defaultPathwayImages;
+
   return (
     <section className="bg-[#f2eee8]">
       <div className="mx-auto max-w-[92rem] px-5 py-20 sm:px-8 lg:px-12 lg:py-28">
         <div className="max-w-3xl">
-          <p className="text-[0.72rem] font-medium uppercase tracking-[0.26em] text-[#81766a]">Daily fit</p>
+          <p className="text-[0.72rem] font-medium uppercase tracking-[0.26em] text-[#81766a]">
+            {sectionContent.eyebrow ?? "Daily fit"}
+          </p>
           <h2 className="mt-4 text-4xl font-medium tracking-[-0.055em] text-[#1f1f1c] sm:text-5xl lg:text-6xl lg:leading-[0.95]">
             {content.title}
           </h2>

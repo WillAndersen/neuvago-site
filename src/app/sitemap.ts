@@ -13,6 +13,8 @@ const routes: Array<{
   { path: "/no", changeFrequency: "weekly", priority: 0.96, lastModified: SEO_LAUNCH_REVIEW_DATE },
   { path: "/product", changeFrequency: "weekly", priority: 0.92, lastModified: SEO_LAUNCH_REVIEW_DATE },
   { path: "/no/produkt", changeFrequency: "weekly", priority: 0.9, lastModified: SEO_LAUNCH_REVIEW_DATE },
+  { path: "/no/app", changeFrequency: "weekly", priority: 0.86, lastModified: SEO_LAUNCH_REVIEW_DATE },
+  { path: "/no/slik-fungerer-det", changeFrequency: "weekly", priority: 0.86, lastModified: SEO_LAUNCH_REVIEW_DATE },
   { path: "/app", changeFrequency: "weekly", priority: 0.85, lastModified: SEO_LAUNCH_REVIEW_DATE },
   { path: "/how-it-works", changeFrequency: "weekly", priority: 0.88, lastModified: SEO_LAUNCH_REVIEW_DATE },
   { path: "/about", changeFrequency: "monthly", priority: 0.7 },

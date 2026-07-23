@@ -6,12 +6,17 @@ type HowItWorksStepsProps = {
 };
 
 export function HowItWorksSteps({ content }: HowItWorksStepsProps) {
+  const sectionContent = content as typeof howItWorksPageContent.steps & {
+    eyebrow?: string;
+    stepLabel?: string;
+  };
+
   return (
     <section className="bg-[#f7f4ef]">
       <div className="mx-auto grid max-w-[92rem] gap-12 px-5 py-20 sm:px-8 lg:grid-cols-[0.86fr_1.14fr] lg:items-start lg:px-12 lg:py-28">
         <div className="lg:sticky lg:top-24">
           <p className="text-[0.72rem] font-medium uppercase tracking-[0.26em] text-[#81766a]">
-            The ritual
+            {sectionContent.eyebrow ?? "The ritual"}
           </p>
           <h2 className="mt-4 text-4xl font-medium tracking-[-0.055em] text-[#1f1f1c] sm:text-5xl lg:text-6xl lg:leading-[0.95]">
             {content.title}
@@ -38,7 +43,9 @@ export function HowItWorksSteps({ content }: HowItWorksStepsProps) {
                 </div>
               ) : null}
               <div className="px-1 py-2 sm:px-2">
-                <p className="text-xs font-medium uppercase tracking-[0.22em] text-[#9a8f82]">Step 0{index + 1}</p>
+                <p className="text-xs font-medium uppercase tracking-[0.22em] text-[#9a8f82]">
+                  {sectionContent.stepLabel ?? "Step"} 0{index + 1}
+                </p>
                 <h3 className="mt-4 text-2xl font-medium tracking-[-0.04em] text-[#1f1f1c]">{step.title}</h3>
                 <p className="mt-3 text-sm leading-7 text-[#5f5a52]">{step.description}</p>
               </div>

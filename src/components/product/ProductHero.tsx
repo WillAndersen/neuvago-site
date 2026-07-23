@@ -23,7 +23,7 @@ export function ProductHero({ content }: ProductHeroProps) {
             {content.eyebrow}
           </p>
 
-          <h1 className="max-w-[12.8ch] text-[clamp(3.15rem,12vw,5.55rem)] font-medium leading-[0.9] tracking-[-0.07em] text-[#1f1f1c] sm:text-[clamp(4.1rem,9vw,6.9rem)] sm:leading-[0.86] lg:text-[clamp(5.2rem,6.7vw,7.8rem)] lg:leading-[0.84] lg:tracking-[-0.085em]">
+          <h1 className="max-w-[12.8ch] text-[clamp(3.15rem,12vw,5.55rem)] font-medium leading-[0.9] tracking-[-0.07em] text-[#1f1f1c] sm:text-[clamp(4.1rem,9vw,6.9rem)] sm:leading-[0.86] lg:text-[clamp(5.2rem,6.7vw,7.8rem)] lg:leading-[0.84] lg:tracking-[-0.085em] hyphens-auto break-words">
             {content.title}
           </h1>
 

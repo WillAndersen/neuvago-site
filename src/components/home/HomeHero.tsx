@@ -57,7 +57,7 @@ export function HomeHero({ content }: HomeHeroProps) {
             {content.eyebrow}
           </p>
 
-          <h1 className="max-w-[11.5ch] text-[clamp(3.55rem,16.4vw,5.9rem)] font-medium leading-[0.9] tracking-[-0.075em] text-[#1f1f1c] drop-shadow-[0_1px_24px_rgba(247,244,239,0.7)] sm:text-[clamp(4.7rem,12vw,8rem)] sm:leading-[0.86] md:max-w-[12ch] lg:text-[clamp(6.2rem,10.5vw,10.75rem)] lg:leading-[0.84] lg:tracking-[-0.09em]">
+          <h1 className="max-w-[11.5ch] text-[clamp(3.55rem,16.4vw,5.9rem)] font-medium leading-[0.9] tracking-[-0.075em] text-[#1f1f1c] drop-shadow-[0_1px_24px_rgba(247,244,239,0.7)] sm:text-[clamp(4.7rem,12vw,8rem)] sm:leading-[0.86] md:max-w-[12ch] lg:text-[clamp(6.2rem,10.5vw,10.75rem)] lg:leading-[0.84] lg:tracking-[-0.09em] hyphens-auto break-words">
             <HeroTitle title={content.title} />
           </h1>
 

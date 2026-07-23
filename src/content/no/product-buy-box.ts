@@ -27,10 +27,10 @@ export const productLaunchBuyBoxNo = {
   description:
     "En premium ikke-invasiv vagusnervestimulator kombinert med veiledede appøkter for korte, gjentakbare reguleringsrutiner.",
   badge: "Enhet + app",
-  purchaseTitle: "Kjøpsvalg",
+  purchaseTitle: "Kjøpsalternativer",
   launchStatus: "Lansering forberedes",
   purchaseDescription:
-    "Pris, tilgjengelighet og betalingsvalg vises her så snart kjøp åpner.",
+    "Pris, tilgjengelighet og betalingsvalg vises her når salget åpner.",
   primaryCta: {
     label: "Få lanseringsoppdateringer",
     href: "/get-started",
@@ -46,8 +46,8 @@ export const productLaunchBuyBoxNo = {
     "Sikkerhet og tiltenkt bruk",
   ],
   reassuranceItems: [
-    "Ikke-invasiv velværestøtte",
+    "Ikke-invasiv støtte for velværebruk",
     "Laget for korte daglige rutiner",
-    "Tydelige sikkerhets- og påstandsgrenser",
+    "Tydelige sikkerhets- og kommunikasjonsgrenser",
   ],
 } satisfies ProductLaunchBuyBoxCopy;

@@ -88,7 +88,7 @@ const footerGroupsByLocale: Record<
       links: [
         { href: "/no/om-oss", label: "Om oss" },
         { href: "/no/support", label: "Support" },
-        { href: "/no/juridisk", label: "Juridisk / Compliance" },
+        { href: "/no/juridisk", label: "Juridisk og samsvar" },
         { href: "/no/juridisk/tillit-og-sikkerhet", label: "Tillit og sikkerhet" },
       ],
     },

@@ -173,7 +173,7 @@ export const homepageContentNo = {
     items: [
       {
         eyebrow: "Morgen",
-        title: "Morgenreset",
+        title: "Morgenrutine",
         description:
           "Start med en kort veiledet rutine før dagen blir for travel.",
         href: no("/app"),
@@ -189,7 +189,7 @@ export const homepageContentNo = {
       },
       {
         eyebrow: "Kveld",
-        title: "Kveldsnedtrapping",
+        title: "Kveldsro",
         description:
           "Bruk en mykere rytme for å hjelpe kroppen over mot hvile og restitusjon.",
         href: no("/conditions"),

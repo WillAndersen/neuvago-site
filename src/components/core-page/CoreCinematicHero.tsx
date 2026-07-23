@@ -74,7 +74,7 @@ export function CoreCinematicHero({
             {eyebrow}
           </p>
 
-          <h1 className="max-w-[12.5ch] text-[clamp(3.25rem,13.5vw,5.7rem)] font-medium leading-[0.9] tracking-[-0.07em] text-[#1f1f1c] drop-shadow-[0_1px_24px_rgba(247,244,239,0.72)] sm:text-[clamp(4.2rem,10vw,7.2rem)] sm:leading-[0.86] md:max-w-[13ch] lg:text-[clamp(5.7rem,8.2vw,9.4rem)] lg:leading-[0.84] lg:tracking-[-0.085em]">
+          <h1 className="max-w-[12.5ch] text-[clamp(3.25rem,13.5vw,5.7rem)] font-medium leading-[0.9] tracking-[-0.07em] text-[#1f1f1c] drop-shadow-[0_1px_24px_rgba(247,244,239,0.72)] sm:text-[clamp(4.2rem,10vw,7.2rem)] sm:leading-[0.86] md:max-w-[13ch] lg:text-[clamp(5.7rem,8.2vw,9.4rem)] lg:leading-[0.84] lg:tracking-[-0.085em] hyphens-auto break-words">
             {title}
           </h1>
 

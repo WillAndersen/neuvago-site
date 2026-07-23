@@ -11,7 +11,7 @@ export const productPageContentNo = {
     eyebrow: "Produkt",
     title: "En ikke-invasiv vagusnervestimulator, veiledet av appen.",
     description:
-      "Neuvago kombinerer en premium håndholdt enhet med veiledede appøkter for korte, gjentakbare reguleringsrutiner — med tydelige velværegrenser og et forskningsinformert sikkerhetslag.",
+      "Neuvago kombinerer en premium håndholdt enhet med veiledede appøkter for korte, gjentakbare reguleringsrutiner — med tydelige bruksgrenser og et forskningsinformert sikkerhetslag.",
     primaryCta: {
       label: "Se produktvalg",
       href: "#buy",
@@ -23,7 +23,7 @@ export const productPageContentNo = {
     panelEyebrow: "Det fysiske ankeret",
     panelText:
       "En taktil, ikke-invasiv enhet laget for at den veiledede opplevelsen skal føles rolig, jordet og enkel å vende tilbake til.",
-    proofLine: ["Ikke-invasiv VNS", "App-veiledede økter", "Tydelige velværegrenser"],
+    proofLine: ["Ikke-invasiv VNS", "Veiledede appøkter", "Tydelige bruksgrenser"],
   },
 
   whatIsNeuvago: {
@@ -109,7 +109,7 @@ export const productPageContentNo = {
       "Verdien av produktet ligger ikke bare i hva det er, men i hvor naturlig det kan passe inn i roligere daglige rutiner — enten du ønsker en mykere start, en pause under stress eller en mer bevisst nedtrapping om kvelden.",
     cards: [
       {
-        title: "Morgenreset",
+        title: "Morgenrutine",
         description: "Start dagen med et roligere inngangspunkt og litt mer stødighet.",
       },
       {
@@ -118,7 +118,7 @@ export const productPageContentNo = {
           "Bruk Neuvago som en stille pause når stress eller aktivering begynner å bygge seg opp.",
       },
       {
-        title: "Kveldsnedtrapping",
+        title: "Kveldsro",
         description: "Støtt en mykere overgang ut av dagen og inn i hvile.",
       },
     ],
@@ -163,7 +163,7 @@ export const productPageContentNo = {
       {
         title: "Ikke-invasiv VNS",
         description:
-          "Forstå kategorien Neuvago hører hjemme i: ekstern stimulering, veiledning og tydelige velværegrenser.",
+          "Forstå kategorien Neuvago hører hjemme i: ekstern stimulering, veiledning og tydelige bruksgrenser.",
         href: "/learn/non-invasive-vagus-nerve-stimulation",
       },
       {

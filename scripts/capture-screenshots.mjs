@@ -21,6 +21,8 @@ const routes = [
   { name: "no-product-buy", path: "/no/produkt#buy", selector: "#buy", viewportOnly: true },
   { name: "no-app", path: "/no/app" },
   { name: "no-how-it-works", path: "/no/slik-fungerer-det" },
+  { name: "no-support", path: "/no/support" },
+  { name: "no-about", path: "/no/om-oss" },
   { name: "app", path: "/app" },
   { name: "how-it-works", path: "/how-it-works" },
 ];

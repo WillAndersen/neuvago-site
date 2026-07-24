@@ -6,11 +6,15 @@ type SupportPhilosophyProps = {
 };
 
 export function SupportPhilosophy({ content }: SupportPhilosophyProps) {
+  const sectionContent = content as typeof supportPageContent.philosophy & {
+    eyebrow?: string;
+  };
+
   return (
     <section className="bg-[#1f1f1c] text-[#f7f4ef]">
       <div className="mx-auto grid max-w-[92rem] gap-12 px-5 py-20 sm:px-8 lg:grid-cols-[0.9fr_1.1fr] lg:items-center lg:gap-16 lg:px-12 lg:py-28">
         <div className="max-w-xl">
-          <p className="text-[0.72rem] font-medium uppercase tracking-[0.26em] text-[#b8aa99]">Support philosophy</p>
+          <p className="text-[0.72rem] font-medium uppercase tracking-[0.26em] text-[#b8aa99]">{sectionContent.eyebrow ?? "Support philosophy"}</p>
           <h2 className="mt-4 text-4xl font-medium tracking-[-0.055em] sm:text-5xl lg:text-6xl lg:leading-[0.95]">
             {content.title}
           </h2>

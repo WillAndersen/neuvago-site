@@ -15,6 +15,8 @@ const routes: Array<{
   { path: "/no/produkt", changeFrequency: "weekly", priority: 0.9, lastModified: SEO_LAUNCH_REVIEW_DATE },
   { path: "/no/app", changeFrequency: "weekly", priority: 0.86, lastModified: SEO_LAUNCH_REVIEW_DATE },
   { path: "/no/slik-fungerer-det", changeFrequency: "weekly", priority: 0.86, lastModified: SEO_LAUNCH_REVIEW_DATE },
+  { path: "/no/support", changeFrequency: "monthly", priority: 0.72, lastModified: SEO_LAUNCH_REVIEW_DATE },
+  { path: "/no/om-oss", changeFrequency: "monthly", priority: 0.7, lastModified: SEO_LAUNCH_REVIEW_DATE },
   { path: "/app", changeFrequency: "weekly", priority: 0.85, lastModified: SEO_LAUNCH_REVIEW_DATE },
   { path: "/how-it-works", changeFrequency: "weekly", priority: 0.88, lastModified: SEO_LAUNCH_REVIEW_DATE },
   { path: "/about", changeFrequency: "monthly", priority: 0.7 },

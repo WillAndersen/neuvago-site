@@ -6,5 +6,9 @@ type SupportFinalCtaProps = {
 };
 
 export function SupportFinalCta({ content }: SupportFinalCtaProps) {
-  return <CoreFinalCta eyebrow="Continue" {...content} />;
+  const finalCtaContent = content as typeof supportPageContent.finalCta & {
+    eyebrow?: string;
+  };
+
+  return <CoreFinalCta eyebrow={finalCtaContent.eyebrow ?? "Continue"} {...content} />;
 }

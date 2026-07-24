@@ -6,12 +6,16 @@ type SupportStartHereProps = {
 };
 
 export function SupportStartHere({ content }: SupportStartHereProps) {
+  const sectionContent = content as typeof supportPageContent.startHere & {
+    eyebrow?: string;
+  };
+
   return (
     <section className="bg-[#f2eee8]">
       <div className="mx-auto max-w-[92rem] px-5 py-18 sm:px-8 lg:px-12 lg:py-24">
         <div className="grid gap-12 lg:grid-cols-[0.82fr_1.18fr] lg:gap-16">
           <div className="max-w-xl">
-            <p className="text-[0.72rem] font-medium uppercase tracking-[0.26em] text-[#81766a]">Start here</p>
+            <p className="text-[0.72rem] font-medium uppercase tracking-[0.26em] text-[#81766a]">{sectionContent.eyebrow ?? "Start here"}</p>
             <h2 className="mt-4 text-4xl font-medium tracking-[-0.055em] text-[#1f1f1c] sm:text-5xl lg:text-6xl lg:leading-[0.95]">
               {content.title}
             </h2>

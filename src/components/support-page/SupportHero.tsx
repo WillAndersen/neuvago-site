@@ -6,6 +6,11 @@ type SupportHeroProps = {
 };
 
 export function SupportHero({ content }: SupportHeroProps) {
+  const heroContent = content as typeof supportPageContent.hero & {
+    panelEyebrow?: string;
+    panelText?: string;
+  };
+
   return (
     <CoreCinematicHero
       eyebrow={content.eyebrow}
@@ -16,8 +21,11 @@ export function SupportHero({ content }: SupportHeroProps) {
       desktopImage={content.desktopImage}
       mobileImage={content.mobileImage}
       proofLine={content.proofLine}
-      panelEyebrow="Calm orientation"
-      panelText="Support should feel like the product itself: clear, warm, practical, and easy to navigate when you need direction."
+      panelEyebrow={heroContent.panelEyebrow ?? "Calm orientation"}
+      panelText={
+        heroContent.panelText ??
+        "Support should feel like the product itself: clear, warm, practical, and easy to navigate when you need direction."
+      }
       imagePosition="68% center"
       mobileImagePosition="54% center"
     />

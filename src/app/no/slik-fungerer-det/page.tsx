@@ -16,9 +16,9 @@ import {
 } from "@/lib/seo/structured-data";
 
 export const metadata: Metadata = {
-  title: "Slik fungerer Neuvago | Enhet, app og daglig rutine",
+  title: "Slik fungerer Neuvago | Ikke-invasiv VNS og app",
   description:
-    "Se hvordan Neuvago fungerer som en ikke-invasiv VNS-enhet og appopplevelse, med veiledning for plassering, komfort, økter og daglige rutiner.",
+    "Se hvordan Neuvago fungerer som et ikke-invasivt VNS- og appsystem, med veiledning for plassering, komfort, økter og daglig rutine.",
   alternates: {
     canonical: "/no/slik-fungerer-det",
     languages: {
@@ -27,9 +27,9 @@ export const metadata: Metadata = {
     },
   },
   openGraph: {
-    title: "Slik fungerer Neuvago | Enhet, app og daglig rutine",
+    title: "Slik fungerer Neuvago | Ikke-invasiv VNS og app",
     description:
-      "Se hvordan Neuvago fungerer som en ikke-invasiv VNS-enhet og appopplevelse, med veiledning for plassering, komfort, økter og daglige rutiner.",
+      "Se hvordan Neuvago fungerer som et ikke-invasivt VNS- og appsystem, med veiledning for plassering, komfort, økter og daglig rutine.",
     url: "/no/slik-fungerer-det",
     siteName: "Neuvago",
     locale: "nb_NO",
@@ -37,9 +37,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Slik fungerer Neuvago | Enhet, app og daglig rutine",
+    title: "Slik fungerer Neuvago | Ikke-invasiv VNS og app",
     description:
-      "Se hvordan Neuvago fungerer som en ikke-invasiv VNS-enhet og appopplevelse, med veiledning for plassering, komfort, økter og daglige rutiner.",
+      "Se hvordan Neuvago fungerer som et ikke-invasivt VNS- og appsystem, med veiledning for plassering, komfort, økter og daglig rutine.",
   },
 };
 
@@ -68,7 +68,7 @@ export default function NorwayHowItWorksPage() {
     <main className="bg-[#f7f4ef] text-[#1f1f1c]">
       {structuredData.map((item, index) => (
         <script
-          key={`no-how-it-works-ld-${index}`}
+          key={"no-how-it-works-ld-" + index}
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(item) }}
         />

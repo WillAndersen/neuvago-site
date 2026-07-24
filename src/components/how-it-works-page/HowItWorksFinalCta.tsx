@@ -10,5 +10,5 @@ export function HowItWorksFinalCta({ content }: HowItWorksFinalCtaProps) {
     eyebrow?: string;
   };
 
-  return <CoreFinalCta {...content} eyebrow={finalCtaContent.eyebrow ?? "Continue"} />;
+  return <CoreFinalCta eyebrow={finalCtaContent.eyebrow ?? "Continue"} {...content} />;
 }

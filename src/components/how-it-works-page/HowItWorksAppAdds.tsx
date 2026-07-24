@@ -8,6 +8,7 @@ type HowItWorksAppAddsProps = {
 export function HowItWorksAppAdds({ content }: HowItWorksAppAddsProps) {
   const sectionContent = content as typeof howItWorksPageContent.appAdds & {
     eyebrow?: string;
+    featureLabel?: string;
   };
 
   return (
@@ -43,7 +44,9 @@ export function HowItWorksAppAdds({ content }: HowItWorksAppAddsProps) {
                     </div>
                   ) : null}
                   <div>
-                    <p className="text-xs font-medium uppercase tracking-[0.22em] text-[#b8aa99]">0{index + 1}</p>
+                    <p className="text-xs font-medium uppercase tracking-[0.22em] text-[#b8aa99]">
+                      {sectionContent.featureLabel ?? "Step"} 0{index + 1}
+                    </p>
                     <h3 className="mt-3 text-xl font-medium tracking-[-0.03em] text-white">{feature.title}</h3>
                     <p className="mt-2 text-sm leading-7 text-[#d4cabd]">{feature.description}</p>
                   </div>

@@ -20,17 +20,55 @@ export const howItWorksPageContentNo = {
       href: no("/app"),
     },
     desktopImage: {
-      ...howItWorksPageContent.hero.desktopImage,
-      alt: "Neuvago-enheten, appen og en enkel rutineforklaring vist sammen.",
+      src: "/images/neuvago/how-it-works-routine-desktop.webp",
+      alt: "Neuvago-enheten, appen og enkle rutinekort som forklarer hvordan systemet fungerer.",
     },
     mobileImage: {
-      ...howItWorksPageContent.hero.mobileImage,
+      src: "/images/neuvago/how-it-works-routine-mobile.webp",
       alt: "Neuvago-enheten, appen og rutinekort vist for mobil.",
     },
     proofLine: ["Enhet + app", "Komfort først", "Laget for daglig bruk"],
     panelEyebrow: "Plasser. Start. Vend tilbake.",
     panelText:
-      "Neuvago er bygget rundt en enkel rutine: et fysisk produkt, veiledede appøkter og gjentakbare øyeblikk som passer inn i hverdagen.",
+      "Neuvago er laget rundt en enkel rutine: et fysisk produkt, veiledede appøkter og gjentakbare øyeblikk som passer inn i hverdagen.",
+  },
+
+  steps: {
+    ...howItWorksPageContent.steps,
+    eyebrow: "Rutinen",
+    stepLabel: "Steg",
+    title: "Slik fungerer det, steg for steg",
+    description:
+      "I praksis er flyten enkel: plasser enheten komfortabelt, følg veiledningen i appen og bygg en rutine du kan vende tilbake til uten å jage intensitet.",
+    items: [
+      {
+        title: "Plasser enheten komfortabelt",
+        description:
+          "Start med enheten som det fysiske utgangspunktet for opplevelsen. Plassering, kontakt og komfort er en del av rutinen, ikke ettertanker.",
+        image: {
+          src: "/images/neuvago/launch/product-hero-mobile.webp",
+          alt: "Neuvago-enheten vist i en rolig produktkomposisjon.",
+        },
+      },
+      {
+        title: "Følg veiledningen i appen",
+        description:
+          "Bruk appen til å velge veiledning som passer øyeblikket, mens øktlengde, rytme og intensitet holdes enkle å forstå.",
+        image: {
+          src: "/images/neuvago/app-hero-mobile.webp",
+          alt: "Neuvago-appen med veiledet økt på mobil.",
+        },
+      },
+      {
+        title: "Vend tilbake over tid",
+        description:
+          "Gjenta på måter som passer hverdagen, slik at systemet blir mer kjent, mer komfortabelt og enklere å vende tilbake til over tid.",
+        image: {
+          src: "/images/neuvago/launch/routine-evening-mobile.webp",
+          alt: "Neuvago-enheten og appen som del av en rolig kveldsrutine.",
+        },
+      },
+    ],
   },
 
   systemAtAGlance: {
@@ -58,59 +96,22 @@ export const howItWorksPageContentNo = {
     ],
     image: {
       src: "/images/neuvago/launch/product-detail-left-desktop.webp",
-      alt: "Detaljbilde av Neuvago-enhetens form og finish.",
+      alt: "Nærbilde av Neuvago-enhetens materiale og finish.",
     },
-  },
-
-  steps: {
-    ...howItWorksPageContent.steps,
-    eyebrow: "Rutinen",
-    stepLabel: "Steg",
-    title: "Slik fungerer det, steg for steg",
-    description:
-      "I praksis er flyten enkel: plasser enheten komfortabelt, følg veiledningen i appen og bygg en rutine du kan vende tilbake til uten å jage intensitet.",
-    items: [
-      {
-        title: "Plasser enheten komfortabelt",
-        description:
-          "Start med enheten som det fysiske utgangspunktet for opplevelsen. Plassering, kontakt og komfort er en del av rutinen, ikke detaljer som kommer etterpå.",
-        image: {
-          src: "/images/neuvago/launch/product-hero-mobile.webp",
-          alt: "Neuvago-enheten vist i en rolig produktkomposisjon.",
-        },
-      },
-      {
-        title: "Følg veiledningen i appen",
-        description:
-          "Bruk appen til å velge veiledning som passer øyeblikket, mens øktlengde, rytme og intensitet holdes enkle å forstå.",
-        image: {
-          ...howItWorksPageContent.steps.items[1].image,
-          alt: "Neuvago-appen med en veiledet økt på mobil.",
-        },
-      },
-      {
-        title: "Vend tilbake over tid",
-        description:
-          "Gjenta på måter som passer hverdagen, slik at systemet blir mer gjenkjennelig, mer komfortabelt og enklere å vende tilbake til over tid.",
-        image: {
-          src: "/images/neuvago/launch/routine-evening-desktop.webp",
-          alt: "Neuvago-enheten og appen i en rolig kveldsrutine.",
-        },
-      },
-    ],
   },
 
   appAdds: {
     ...howItWorksPageContent.appAdds,
-    eyebrow: "Appveiledning",
+    eyebrow: "App-veiledning",
+    featureLabel: "Del",
     title: "Hva appen tilfører i praksis",
     description:
-      "Appen hjelper med å gjøre enheten til et veiledet system. Den tydeliggjør hva du skal gjøre videre, støtter rutiner og gjør opplevelsen lettere å vende tilbake til uten friksjon.",
+      "Appen hjelper enheten å bli et veiledet system. Den tydeliggjør hva du gjør videre, støtter rutiner og gjør opplevelsen lettere å vende tilbake til uten friksjon.",
     features: [
       {
         title: "Øktveiledning",
         description:
-          "Velg økter laget for ro, restitusjon, regulering eller kveldsro, med en struktur som reduserer gjetting.",
+          "Velg økter laget for ro, restitusjon, regulering eller kveldsnedtrapping, med en struktur som reduserer gjetting.",
       },
       {
         title: "Tydeligere struktur",
@@ -120,17 +121,17 @@ export const howItWorksPageContentNo = {
       {
         title: "Kontinuitet over tid",
         description:
-          "Den hjelper deg å gjøre sporadisk bruk til en stødigere daglig eller ukentlig rytme.",
+          "Den hjelper sporadisk bruk å bli en stødigere daglig eller ukentlig rytme.",
       },
     ],
     supportingImages: [
       {
-        ...howItWorksPageContent.appAdds.supportingImages[0],
-        alt: "Neuvago-appens bibliotek med veiledede økter.",
+        src: "/images/neuvago/support-guidance-desktop.webp",
+        alt: "Neuvago-appens bibliotek og veiledning.",
       },
       {
-        ...howItWorksPageContent.appAdds.supportingImages[1],
-        alt: "Neuvago-appens startskjerm.",
+        src: "/images/neuvago/app-hero-desktop.webp",
+        alt: "Neuvago-appens hovedskjerm.",
       },
       {
         src: "/images/neuvago/launch/product-app-pairing-desktop.webp",
@@ -146,9 +147,10 @@ export const howItWorksPageContentNo = {
   dailyLife: {
     ...howItWorksPageContent.dailyLife,
     eyebrow: "Passer inn i dagen",
-    title: "Hvordan det kan passe inn i dagen",
+    cardLabel: "",
+    title: "Hvordan det kan passe inn i hverdagen",
     description:
-      "Når systemet er forstått, kan det passe inn i ekte rutiner — en roligere start, en pause under stress eller en enklere kveldsro.",
+      "Når systemet er forstått, kan det passe inn i ekte rutiner — en roligere start, en pause under stress eller en enklere kveldsnedtrapping.",
     cards: [
       {
         title: "Morgenrutine",
@@ -156,7 +158,7 @@ export const howItWorksPageContentNo = {
           "En mykere start når du ønsker en roligere og mer jordet begynnelse på dagen.",
       },
       {
-        title: "Pause i løpet av dagen",
+        title: "Pause på dagen",
         description:
           "En praktisk måte å gå ut av stress og skape et stødigere øyeblikk midt på dagen.",
       },
@@ -166,34 +168,17 @@ export const howItWorksPageContentNo = {
           "En roligere overgang ut av dagen og inn i en mer bevisst rytme før hvile.",
       },
     ],
-    pathwayImages: [
-      {
-        src: "/images/neuvago/launch/product-lifestyle-card.webp",
-        alt: "Neuvago-enheten og appen i en rolig morgenrutine.",
-      },
-      {
-        src: "/images/neuvago/launch/product-detail-left-desktop.webp",
-        alt: "Neuvago-enheten i en rolig dagsrutine.",
-      },
-      {
-        src: "/images/neuvago/launch/routine-evening-desktop.webp",
-        alt: "Neuvago-enheten og appen i en varm kveldsrutine.",
-      },
+    cardImages: [
+      { src: "/images/neuvago/launch/product-lifestyle-card.webp", alt: "Neuvago-enheten i en rolig morgenrutine." },
+      { src: "/images/neuvago/launch/product-detail-left-desktop.webp", alt: "Neuvago-enheten i et rolig hverdagsmiljø." },
+      { src: "/images/neuvago/launch/routine-evening-desktop.webp", alt: "Neuvago-enheten og appen i en rolig kveldsrutine." },
     ],
-    image: {
-      ...howItWorksPageContent.dailyLife.image,
-      alt: "Neuvago-enheten og appen i en rolig dagsrutine.",
-    },
-    secondaryImage: {
-      ...howItWorksPageContent.dailyLife.secondaryImage,
-      alt: "Neuvago-enheten og appen i en kveldsrutine.",
-    },
   },
 
   repetition: {
     ...howItWorksPageContent.repetition,
     eyebrow: "Vend tilbake over tid",
-    title: "Hvorfor kontinuitet betyr mer enn intensitet",
+    title: "Hvorfor konsistens betyr mer enn intensitet",
     description:
       "Målet er ikke å gjøre mer og mer. Målet er å bygge en rutine som føles enkel nok til å gjenta, fordi gjentakelse er det som gjør systemet mer nyttig over tid.",
     cards: [
@@ -203,19 +188,19 @@ export const howItWorksPageContentNo = {
           "En komfortabel rutine du faktisk kan gjenta, er mer nyttig enn en som føles for ambisiøs, forvirrende eller krevende.",
       },
       {
-        title: "Gjentakelse bygger gjenkjennelse",
+        title: "Tilbakevending bygger gjenkjennelse",
         description:
-          "Når du kommer tilbake jevnlig, kan systemet føles enklere, tydeligere og mer naturlig over tid.",
+          "Å komme tilbake jevnlig hjelper systemet å føles enklere, tydeligere og mer naturlig over tid.",
       },
       {
-        title: "Kontinuitet støtter opplevelsen",
+        title: "Konsistens støtter opplevelsen",
         description:
           "Verdien kommer fra realistisk gjentakelse, ikke fra å presse intensitet, følelse eller perfeksjon.",
       },
     ],
     image: {
-      src: "/images/neuvago/launch/final-cta-desktop.webp",
-      alt: "Neuvago-enheten og appen i en rolig daglig rutine.",
+      src: "/images/neuvago/final-cta-desktop.webp",
+      alt: "Neuvago-appen vist i et rolig premiumgrensesnitt.",
     },
   },
 
@@ -223,12 +208,12 @@ export const howItWorksPageContentNo = {
     ...howItWorksPageContent.faq,
     title: "Praktisk avklaring",
     description:
-      "Noen enkle svar på spørsmål mange har når de først utforsker hvordan Neuvago fungerer.",
+      "Noen enkle svar på spørsmål folk ofte har når de først utforsker hvordan Neuvago fungerer.",
     items: [
       {
         question: "Bruker jeg enheten sammen med appen?",
         answer:
-          "Ja. Neuvago er laget som en sammenkoblet opplevelse der enheten gir et fysisk utgangspunkt, mens appen gir veiledning, øktstruktur og kontinuitet.",
+          "Ja. Neuvago er laget som en sammenkoblet opplevelse der enheten gir et fysisk startpunkt, mens appen gir veiledning, øktstruktur og kontinuitet.",
       },
       {
         question: "Er Neuvago ment for daglig bruk?",
@@ -238,17 +223,17 @@ export const howItWorksPageContentNo = {
       {
         question: "Er systemet laget for å føles rolig heller enn intenst?",
         answer:
-          "Ja. Systemet er bevisst bygget rundt komfort, tydelighet og en roligere støttende opplevelse, ikke intensitet eller overstimulering.",
+          "Ja. Systemet er bevisst bygget rundt komfort, tydelighet og en roligere støttende opplevelse heller enn intensitet eller overstimulering.",
       },
       {
         question: "Må jeg forstå forskningen før jeg bruker det?",
         answer:
-          "Nei. Forskningslaget finnes dersom du vil gå dypere, men selve opplevelsen er laget for å føles enkel og tilgjengelig. Har du en medisinsk tilstand, implantert elektronisk enhet, spørsmål om hjerterytme eller graviditet, bør du snakke med kvalifisert helsepersonell før bruk.",
+          "Nei. Forskningslaget finnes hvis du vil gå dypere, men selve opplevelsen er laget for å føles enkel og tilgjengelig. Har du en medisinsk tilstand, implantert elektronisk enhet, spørsmål om hjerterytme eller graviditet, bør du snakke med kvalifisert helsepersonell før bruk.",
       },
       {
         question: "Hvordan bør jeg tenke om intensitet?",
         answer:
-          "Sterkere følelse betyr ikke automatisk en bedre økt. Neuvago bør forstås gjennom komfort, veiledning og gjentakbarhet heller enn å presse stimuleringen hardere.",
+          "En sterkere følelse er ikke automatisk en bedre økt. Neuvago bør forstås gjennom komfort, veiledning og gjentakbarhet heller enn å presse stimulering hardere.",
       },
     ],
   },
@@ -268,8 +253,8 @@ export const howItWorksPageContentNo = {
       href: no("/app"),
     },
     backgroundImage: {
-      ...howItWorksPageContent.finalCta.backgroundImage,
-      alt: "Neuvago-appens øktskjerm vist i en rolig veiledet opplevelse.",
+      src: "/images/neuvago/app-hero-mobile.webp",
+      alt: "Neuvago-appen med veiledet økt i et rolig grensesnitt.",
     },
   },
 } as unknown as typeof howItWorksPageContent;

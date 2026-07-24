@@ -9,6 +9,7 @@ type AppSessionsRhythmProps = {
 export function AppSessionsRhythm({ content }: AppSessionsRhythmProps) {
   const sectionContent = content as typeof appPageContent.sessionsRhythm & {
     eyebrow?: string;
+    featureLabel?: string;
   };
 
   return (
@@ -53,7 +54,7 @@ export function AppSessionsRhythm({ content }: AppSessionsRhythmProps) {
                   ) : null}
                   <div>
                     <p className="text-xs font-medium uppercase tracking-[0.22em] text-[#b8aa99]">
-                      0{index + 1}
+                      {sectionContent.featureLabel ?? "Step"} 0{index + 1}
                     </p>
                     <h3 className="mt-3 text-xl font-medium tracking-[-0.03em] text-white">
                       {feature.title}

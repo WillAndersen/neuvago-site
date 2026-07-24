@@ -14,9 +14,11 @@ const defaultPathwayImages = [
 export function HowItWorksDailyLife({ content }: HowItWorksDailyLifeProps) {
   const sectionContent = content as typeof howItWorksPageContent.dailyLife & {
     eyebrow?: string;
-    pathwayImages?: readonly { src: string; alt: string }[];
+    cardLabel?: string;
+    cardImages?: typeof defaultPathwayImages;
   };
-  const pathwayImages = sectionContent.pathwayImages ?? defaultPathwayImages;
+
+  const pathwayImages = sectionContent.cardImages ?? defaultPathwayImages;
 
   return (
     <section className="bg-[#f2eee8]">
@@ -46,7 +48,9 @@ export function HowItWorksDailyLife({ content }: HowItWorksDailyLifeProps) {
                   />
                 </div>
                 <div className="p-6 sm:p-7">
-                  <p className="text-xs font-medium uppercase tracking-[0.22em] text-[#9a8f82]">0{index + 1}</p>
+                  <p className="text-xs font-medium uppercase tracking-[0.22em] text-[#9a8f82]">
+                    {sectionContent.cardLabel ?? ""}0{index + 1}
+                  </p>
                   <h3 className="mt-4 text-2xl font-medium tracking-[-0.04em] text-[#1f1f1c]">{card.title}</h3>
                   <p className="mt-3 text-sm leading-7 text-[#5f5a52]">{card.description}</p>
                 </div>

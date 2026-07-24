@@ -14,9 +14,11 @@ const defaultImages = [
 export function AppFitsIntoLife({ content }: AppFitsIntoLifeProps) {
   const sectionContent = content as typeof appPageContent.fitsIntoLife & {
     eyebrow?: string;
-    images?: readonly { src: string; alt: string }[];
+    cardLabel?: string;
+    cardImages?: typeof defaultImages;
   };
-  const images = sectionContent.images ?? defaultImages;
+
+  const images = sectionContent.cardImages ?? defaultImages;
 
   return (
     <section className="bg-[#f7f4ef]">
@@ -48,7 +50,9 @@ export function AppFitsIntoLife({ content }: AppFitsIntoLifeProps) {
                   />
                 </div>
                 <div className="p-6 sm:p-7">
-                  <p className="text-xs font-medium uppercase tracking-[0.22em] text-[#9a8f82]">0{index + 1}</p>
+                  <p className="text-xs font-medium uppercase tracking-[0.22em] text-[#9a8f82]">
+                    {sectionContent.cardLabel ?? ""}0{index + 1}
+                  </p>
                   <h3 className="mt-4 text-2xl font-medium tracking-[-0.04em] text-[#1f1f1c]">{card.title}</h3>
                   <p className="mt-3 text-sm leading-7 text-[#5f5a52]">{card.description}</p>
                 </div>

@@ -8,6 +8,7 @@ type AppWhatItDoesProps = {
 export function AppWhatItDoes({ content }: AppWhatItDoesProps) {
   const sectionContent = content as typeof appPageContent.whatItDoes & {
     eyebrow?: string;
+    itemLabel?: string;
   };
 
   return (
@@ -28,7 +29,7 @@ export function AppWhatItDoes({ content }: AppWhatItDoesProps) {
             {content.bullets.map((bullet, index) => (
               <div key={bullet} className="border-t border-black/10 pt-5">
                 <p className="text-xs font-medium uppercase tracking-[0.22em] text-[#9a8f82]">
-                  0{index + 1}
+                  {sectionContent.itemLabel ?? "Point"} 0{index + 1}
                 </p>
                 <p className="mt-3 text-lg font-medium leading-7 tracking-[-0.025em] text-[#292824]">
                   {bullet}

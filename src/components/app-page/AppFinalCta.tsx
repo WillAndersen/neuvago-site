@@ -10,5 +10,5 @@ export function AppFinalCta({ content }: AppFinalCtaProps) {
     eyebrow?: string;
   };
 
-  return <CoreFinalCta {...content} eyebrow={finalCtaContent.eyebrow ?? "Continue"} />;
+  return <CoreFinalCta eyebrow={finalCtaContent.eyebrow ?? "Continue"} {...content} />;
 }

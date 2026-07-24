@@ -17,9 +17,9 @@ import {
 } from "@/lib/seo/structured-data";
 
 export const metadata: Metadata = {
-  title: "Neuvago App | Veiledede økter og rolige rutiner",
+  title: "Neuvago App | Veiledede økter og daglige rutiner",
   description:
-    "Utforsk Neuvago-appen med veiledede økter, roligere rutiner og kontinuitet som gjør daglig regulering enklere å vende tilbake til.",
+    "Utforsk Neuvago-appen med veiledede økter, roligere rutiner og kontinuitet laget for å gjøre daglig regulering enklere å vende tilbake til.",
   alternates: {
     canonical: "/no/app",
     languages: {
@@ -28,9 +28,9 @@ export const metadata: Metadata = {
     },
   },
   openGraph: {
-    title: "Neuvago App | Veiledede økter og rolige rutiner",
+    title: "Neuvago App | Veiledede økter og daglige rutiner",
     description:
-      "Utforsk Neuvago-appen med veiledede økter, roligere rutiner og kontinuitet som gjør daglig regulering enklere å vende tilbake til.",
+      "Utforsk Neuvago-appen med veiledede økter, roligere rutiner og kontinuitet laget for å gjøre daglig regulering enklere å vende tilbake til.",
     url: "/no/app",
     siteName: "Neuvago",
     locale: "nb_NO",
@@ -38,9 +38,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Neuvago App | Veiledede økter og rolige rutiner",
+    title: "Neuvago App | Veiledede økter og daglige rutiner",
     description:
-      "Utforsk Neuvago-appen med veiledede økter, roligere rutiner og kontinuitet som gjør daglig regulering enklere å vende tilbake til.",
+      "Utforsk Neuvago-appen med veiledede økter, roligere rutiner og kontinuitet laget for å gjøre daglig regulering enklere å vende tilbake til.",
   },
 };
 
@@ -69,7 +69,7 @@ export default function NorwayAppPage() {
     <main className="bg-[#f7f4ef] text-[#1f1f1c]">
       {structuredData.map((item, index) => (
         <script
-          key={`no-app-ld-${index}`}
+          key={"no-app-ld-" + index}
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(item) }}
         />

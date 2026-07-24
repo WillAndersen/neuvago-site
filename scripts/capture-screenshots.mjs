@@ -27,6 +27,11 @@ const routes = [
   { name: "no-intended-use", path: "/no/juridisk/tiltenkt-bruk" },
   { name: "no-privacy", path: "/no/juridisk/personvern" },
   { name: "no-terms", path: "/no/juridisk/vilkar" },
+  { name: "no-medical-disclaimer", path: "/no/juridisk/medisinsk-ansvarsfraskrivelse" },
+  { name: "no-regulatory", path: "/no/juridisk/regulatorisk" },
+  { name: "no-trust-safety", path: "/no/juridisk/tillit-og-sikkerhet" },
+  { name: "no-ce-compliance", path: "/no/juridisk/ce-samsvar" },
+  { name: "no-fda-status", path: "/no/juridisk/fda-status" },
   { name: "app", path: "/app" },
   { name: "how-it-works", path: "/how-it-works" },
 ];

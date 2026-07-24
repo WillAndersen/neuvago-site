@@ -549,4 +549,612 @@ export const noLegalContent = {
       secondaryCta: { label: "Juridisk oversikt", href: no("/legal") },
     },
   },
+
+  medicalDisclaimer: {
+    metadata: metadata({
+      title: "Medisinsk ansvarsfraskrivelse | Neuvago Norge",
+      description:
+        "Les den norske medisinske ansvarsfraskrivelsen for Neuvago, inkludert grenser for informasjon, produktbruk og helserelaterte spørsmål.",
+      canonical: "/no/juridisk/medisinsk-ansvarsfraskrivelse",
+      english: "/legal/medical-disclaimer",
+    }),
+    structuredDataTitle: "Medisinsk ansvarsfraskrivelse | Neuvago Norge",
+    structuredDataDescription:
+      "Les den norske medisinske ansvarsfraskrivelsen for Neuvago, inkludert grenser for informasjon, produktbruk og helserelaterte spørsmål.",
+    path: "/no/juridisk/medisinsk-ansvarsfraskrivelse",
+    breadcrumbs: [
+      { name: "Forside", path: "/no" },
+      { name: "Juridisk", path: "/no/juridisk" },
+      { name: "Medisinsk ansvarsfraskrivelse", path: "/no/juridisk/medisinsk-ansvarsfraskrivelse" },
+    ],
+    eyebrow: "Juridisk / Ansvarsfraskrivelse",
+    title: "Medisinsk ansvarsfraskrivelse og tydelige bruksgrenser.",
+    description:
+      "Neuvago-informasjon er ment som generell produkt-, velvære- og utdanningsinformasjon. Den skal ikke forstås som medisinsk rådgivning, diagnose, behandling eller en erstatning for kontakt med kvalifisert helsepersonell.",
+    secondaryDescription:
+      "Denne siden bør leses sammen med tiltenkt bruk, regulatorisk informasjon og sikkerhetsinformasjon før offentlig launch.",
+    primaryCta: { label: "Les tiltenkt bruk", href: no("/legal/intended-use") },
+    secondaryCta: { label: "Regulatorisk informasjon", href: no("/legal/regulatory") },
+    trustCard: {
+      eyebrow: "Grense for informasjon",
+      title: "Informasjon, ikke medisinsk vurdering",
+      items: [
+        { title: "Ikke diagnose", description: "Neuvago-informasjon skal ikke brukes til å stille diagnose eller vurdere medisinske tilstander." },
+        { title: "Ikke behandling", description: "Produkt og innhold er ikke ment å behandle, kurere eller forebygge sykdom med mindre slik bruk er eksplisitt godkjent og dokumentert." },
+        { title: "Søk hjelp ved behov", description: "Kontakt kvalifisert helsepersonell ved symptomer, usikkerhet, medisinske spørsmål eller bekymringer." },
+      ],
+    },
+    notice: {
+      title: "Viktig før launch",
+      body:
+        "Denne teksten er en konservativ norsk launch-ramme. Endelig medisinsk ansvarsfraskrivelse må gjennomgås mot faktisk produktdokumentasjon, påstander, appfunksjoner, brukergruppe og regulatorisk strategi.",
+    },
+    keyPoints: [
+      {
+        title: "Ikke medisinsk rådgivning",
+        description:
+          "Nettside, app, supportinnhold og produktinformasjon er ikke ment som personlig medisinsk rådgivning.",
+      },
+      {
+        title: "Ingen akutte vurderinger",
+        description:
+          "Neuvago skal ikke brukes til akutte symptomer, kriser eller situasjoner som krever rask medisinsk vurdering.",
+      },
+      {
+        title: "Individuell variasjon",
+        description:
+          "Opplevelser og resultater kan variere, og forskning eller brukerhistorier er ikke garanti for individuell effekt.",
+      },
+    ],
+    sections: [
+      {
+        title: "Ikke en erstatning for helsepersonell",
+        body: [
+          "Neuvago-innhold er generelt og informativt. Det er ikke ment å erstatte vurdering, diagnose, behandling eller oppfølging fra lege, psykolog, fysioterapeut eller annet kvalifisert helsepersonell.",
+          "Dersom du har en medisinsk tilstand, bruker medisiner, har implantert elektronisk utstyr, er gravid, opplever ubehag eller er usikker på om produktet passer for deg, bør du rådføre deg med kvalifisert helsepersonell før bruk.",
+        ],
+      },
+      {
+        title: "Ikke ment for diagnose, behandling eller akutte situasjoner",
+        body: [
+          "Neuvago er ikke ment å diagnostisere, behandle, kurere, lindre eller forebygge sykdom eller medisinske tilstander med mindre slik bruk er eksplisitt godkjent, dokumentert og kommunisert gjennom riktig regulatorisk ramme.",
+          "Ved akutte symptomer, smerter, alvorlig ubehag, psykisk krise eller andre situasjoner som kan kreve rask hjelp, skal du kontakte nødetater eller kvalifisert helsepersonell. Ikke bruk Neuvago som erstatning for nødvendig hjelp.",
+        ],
+      },
+      {
+        title: "Forskning og utdanningsinnhold",
+        body: [
+          "Neuvago kan omtale forskning om vagusnerven, autonom regulering, stressfysiologi, HRV, restitusjon og ikke-invasiv stimulering. Slik informasjon gis for utdannings- og kontekstformål.",
+          "At et tema er omtalt i forskning betyr ikke at Neuvago er godkjent for samme formål, eller at en individuell bruker vil oppleve samme resultater som i en studie.",
+        ],
+      },
+      {
+        title: "Brukerens ansvar",
+        body: [
+          "Bruk produktet i tråd med instruksjoner, sikkerhetsinformasjon, appveiledning og eventuelle begrensninger som følger med produktet.",
+          "Stopp bruk ved ubehag, irritasjon, svimmelhet, smerte eller annen bekymring. Ta kontakt med support eller helsepersonell ved behov.",
+        ],
+      },
+    ],
+    relatedPages: [
+      {
+        title: "Tiltenkt bruk",
+        description: "Les hvordan Neuvago er ment å forstås og brukes.",
+        href: no("/legal/intended-use"),
+        linkLabel: "Les tiltenkt bruk",
+      },
+      {
+        title: "Regulatorisk informasjon",
+        description: "Les mer om produktposisjonering og regulatoriske grenser.",
+        href: no("/legal/regulatory"),
+        linkLabel: "Les regulatorisk informasjon",
+      },
+      {
+        title: "Tillit og sikkerhet",
+        description: "Se hvordan Neuvago organiserer sikkerhet, kommunikasjon og ansvarlig bruk.",
+        href: no("/legal/trust-safety"),
+        linkLabel: "Les tillit og sikkerhet",
+      },
+      {
+        title: "Support",
+        description: "Finn praktisk hjelp og veiledning.",
+        href: no("/support"),
+        linkLabel: "Gå til support",
+      },
+    ],
+    finalCta: {
+      eyebrow: "Neste steg",
+      title: "Les produktgrensene sammen med tiltenkt bruk",
+      description:
+        "Tiltenkt bruk, regulatorisk informasjon og sikkerhetssiden gir samlet kontekst for hvordan Neuvago bør forstås.",
+      primaryCta: { label: "Tiltenkt bruk", href: no("/legal/intended-use") },
+      secondaryCta: { label: "Tillit og sikkerhet", href: no("/legal/trust-safety") },
+    },
+  },
+
+  regulatory: {
+    metadata: metadata({
+      title: "Regulatorisk informasjon | Neuvago Norge",
+      description:
+        "Les en norsk regulatorisk oversikt for Neuvago, inkludert produktposisjonering, tiltenkt formål, påstandsgrenser og markedsforskjeller.",
+      canonical: "/no/juridisk/regulatorisk",
+      english: "/legal/regulatory",
+    }),
+    structuredDataTitle: "Regulatorisk informasjon | Neuvago Norge",
+    structuredDataDescription:
+      "Les en norsk regulatorisk oversikt for Neuvago, inkludert produktposisjonering, tiltenkt formål, påstandsgrenser og markedsforskjeller.",
+    path: "/no/juridisk/regulatorisk",
+    breadcrumbs: [
+      { name: "Forside", path: "/no" },
+      { name: "Juridisk", path: "/no/juridisk" },
+      { name: "Regulatorisk informasjon", path: "/no/juridisk/regulatorisk" },
+    ],
+    eyebrow: "Juridisk / Regulatorisk",
+    title: "Regulatorisk informasjon og ansvarlig produktposisjonering.",
+    description:
+      "Denne siden forklarer hvordan Neuvago bør forstås på et overordnet regulatorisk nivå, og hvorfor tiltenkt formål, markedsføringspåstander og produktdokumentasjon må henge sammen.",
+    secondaryDescription:
+      "Teksten er et norsk launch-utgangspunkt og må ikke tolkes som endelig regulatorisk konklusjon uten rådgivergjennomgang.",
+    primaryCta: { label: "Tiltenkt bruk", href: no("/legal/intended-use") },
+    secondaryCta: { label: "CE-samsvar", href: no("/legal/ce-compliance") },
+    trustCard: {
+      eyebrow: "Regulatorisk ramme",
+      title: "Tiltenkt formål, dokumentasjon og påstander må samsvare",
+      items: [
+        { title: "Tiltenkt formål", description: "Produktets formål må være tydelig definert og konsistent i merking, instruksjoner og markedsføring." },
+        { title: "Påstandsgrenser", description: "Kommunikasjon bør unngå medisinske påstander som ikke er dokumentert og tillatt for produktets status." },
+        { title: "Markedsforskjeller", description: "EU/EØS, USA og andre markeder kan ha ulike krav, definisjoner og prosesser." },
+      ],
+    },
+    notice: {
+      title: "Regulatorisk forbehold",
+      body:
+        "Endelig regulatorisk status avhenger av faktisk produktdesign, teknisk dokumentasjon, appfunksjoner, bruksanvisning, påstander, marked og juridisk produsent. Denne siden skal gjennomgås før launch.",
+    },
+    keyPoints: [
+      {
+        title: "Produsentens vurdering",
+        description:
+          "Kvalifisering og klassifisering må vurderes av produsenten basert på tiltenkt formål og relevante regler.",
+      },
+      {
+        title: "Claims styrer risiko",
+        description:
+          "Ordvalg rundt stress, søvn, regulering, HRV, behandling og helse kan påvirke regulatorisk vurdering.",
+      },
+      {
+        title: "Dokumentasjon først",
+        description:
+          "Markedsføring bør støtte seg på dokumentasjon, risikovurdering, instruksjoner og sikkerhetsgrenser.",
+      },
+    ],
+    sections: [
+      {
+        title: "Hva regulatorisk posisjonering betyr",
+        body: [
+          "Regulatorisk posisjonering handler om å definere hva produktet er, hva det er ment for, hvordan det virker, hvilke påstander som brukes, og hvilke regler som gjelder i markedet der produktet tilbys.",
+          "For Neuvago betyr det at produkt, app, nettside, bruksanvisning, sikkerhetsinformasjon og supportkommunikasjon bør være konsistente.",
+        ],
+      },
+      {
+        title: "Tiltenkt formål og markedsføringspåstander",
+        body: [
+          "Tiltenkt formål bør være tydelig og forsiktig formulert. Markedsføring bør ikke antyde diagnose, behandling, kurering, lindring eller forebygging av sykdom dersom produktet ikke er regulatorisk godkjent og dokumentert for slike formål.",
+          "Påstander om velvære, rutine, stressmestring, avslapning og daglig regulering bør gjennomgås slik at de ikke utilsiktet blir medisinske påstander.",
+        ],
+      },
+      {
+        title: "EU/EØS og andre markeder",
+        body: [
+          "I EU/EØS kan medisinsk utstyr være underlagt MDR, mens forbrukerelektronikk, batterier, radioutstyr, EMC, RoHS og produktsikkerhet kan være relevante avhengig av produktkonfigurasjon.",
+          "USA og andre markeder kan ha andre definisjoner og compliance-rammer. Sider som omtaler FDA-status eller CE-samsvar bør derfor være markedsspesifikke og presise.",
+        ],
+      },
+      {
+        title: "Endringer etter launch",
+        body: [
+          "Hvis produktet, appen, algoritmer, bruksanvisning, markedsføringspåstander eller målgruppe endres, bør regulatorisk vurdering og juridisk tekst oppdateres.",
+          "Det samme gjelder dersom Neuvago senere søker eller oppnår spesifikke godkjenninger, sertifiseringer eller samsvarserklæringer.",
+        ],
+      },
+    ],
+    relatedPages: [
+      {
+        title: "Tiltenkt bruk",
+        description: "Se den mest direkte beskrivelsen av hva Neuvago er ment for.",
+        href: no("/legal/intended-use"),
+        linkLabel: "Les tiltenkt bruk",
+      },
+      {
+        title: "CE-samsvar",
+        description: "Les om europeisk CE-ramme og hvorfor CE ikke er det samme som medisinsk godkjenning.",
+        href: no("/legal/ce-compliance"),
+        linkLabel: "Les CE-samsvar",
+      },
+      {
+        title: "FDA-status",
+        description: "Les hvordan FDA-status bør kommuniseres for USA-markedet.",
+        href: no("/legal/fda-status"),
+        linkLabel: "Les FDA-status",
+      },
+      {
+        title: "Medisinsk ansvarsfraskrivelse",
+        description: "Se tydelige grenser for helse- og medisinsk informasjon.",
+        href: no("/legal/medical-disclaimer"),
+        linkLabel: "Les ansvarsfraskrivelse",
+      },
+    ],
+    finalCta: {
+      eyebrow: "Neste steg",
+      title: "Knytt regulatorisk språk til tiltenkt bruk",
+      description:
+        "Tiltenkt bruk bør være referansepunktet for produktcopy, supporttekster, appveiledning og sikkerhetsinformasjon.",
+      primaryCta: { label: "Tiltenkt bruk", href: no("/legal/intended-use") },
+      secondaryCta: { label: "Tillit og sikkerhet", href: no("/legal/trust-safety") },
+    },
+  },
+
+  trustSafety: {
+    metadata: metadata({
+      title: "Tillit og sikkerhet | Neuvago Norge",
+      description:
+        "Les hvordan Neuvago organiserer sikkerhet, produktgrenser, ansvarlig kommunikasjon og tydelig veiledning for norske brukere.",
+      canonical: "/no/juridisk/tillit-og-sikkerhet",
+      english: "/legal/trust-safety",
+    }),
+    structuredDataTitle: "Tillit og sikkerhet | Neuvago Norge",
+    structuredDataDescription:
+      "Les hvordan Neuvago organiserer sikkerhet, produktgrenser, ansvarlig kommunikasjon og tydelig veiledning for norske brukere.",
+    path: "/no/juridisk/tillit-og-sikkerhet",
+    breadcrumbs: [
+      { name: "Forside", path: "/no" },
+      { name: "Juridisk", path: "/no/juridisk" },
+      { name: "Tillit og sikkerhet", path: "/no/juridisk/tillit-og-sikkerhet" },
+    ],
+    eyebrow: "Juridisk / Tillit og sikkerhet",
+    title: "Tillit bygges gjennom tydelige grenser og trygg bruk.",
+    description:
+      "Neuvago skal føles rolig og lett å forstå. Det samme gjelder sikkerhetsinformasjon, produktgrenser, support og kommunikasjon rundt hva produktet er ment for.",
+    primaryCta: { label: "Les tiltenkt bruk", href: no("/legal/intended-use") },
+    secondaryCta: { label: "Gå til support", href: no("/support") },
+    trustCard: {
+      eyebrow: "Tillitslag",
+      title: "Sikkerhet, klarhet og ansvarlig produktkommunikasjon",
+      items: [
+        { title: "Trygg bruk", description: "Brukere skal få tydelig veiledning om oppstart, normal bruk, begrensninger og når de bør stoppe." },
+        { title: "Ansvarlige claims", description: "Kommunikasjonen skal ikke overdrive effekt eller skape inntrykk av medisinsk behandling uten grunnlag." },
+        { title: "Klar support", description: "Support skal hjelpe brukere videre uten å gi personlig medisinsk rådgivning." },
+      ],
+    },
+    notice: {
+      title: "Sikkerhetsnotat",
+      body:
+        "Denne siden beskriver prinsipper for tillit og sikkerhet. Konkrete sikkerhetsinstruksjoner, kontraindikasjoner, advarsler og bruksbegrensninger må samsvare med endelig produktdokumentasjon.",
+    },
+    keyPoints: [
+      {
+        title: "Produktgrenser",
+        description:
+          "Brukere bør lett forstå hva Neuvago er ment for, og hva det ikke er ment å gjøre.",
+      },
+      {
+        title: "Sikker veiledning",
+        description:
+          "Instruksjoner for bruk, lading, oppbevaring og vedlikehold bør være enkle, praktiske og konsistente.",
+      },
+      {
+        title: "Åpenhet over tid",
+        description:
+          "Endringer i produkt, app eller påstander bør følges av oppdatert informasjon til brukere.",
+      },
+    ],
+    sections: [
+      {
+        title: "Ansvarlig design",
+        body: [
+          "Neuvago bør designes og kommuniseres slik at brukeren forstår hvordan opplevelsen starter, hva som forventes, og hvordan produktet passer inn i en rolig daglig rutine.",
+          "Sikkerhet handler ikke bare om tekniske krav, men også om hvor lett det er å forstå riktig bruk, begrensninger og når man bør la være å bruke produktet.",
+        ],
+      },
+      {
+        title: "Kommunikasjon uten overdrivelse",
+        body: [
+          "Neuvago kan bygge på forskning og utdanningsinnhold, men produktkommunikasjon må skille mellom bred vitenskapelig kontekst og spesifikke påstander om produktet.",
+          "Claims bør være nøkterne, dokumenterbare og i samsvar med tiltenkt bruk, regulatorisk vurdering og faktiske app-/produktfunksjoner.",
+        ],
+      },
+      {
+        title: "Praktisk sikkerhet i hverdagen",
+        body: [
+          "Brukere bør følge instruksjoner for lading, oppbevaring, rengjøring, materialkontakt og daglig håndtering. Produktet bør ikke brukes dersom det er skadet eller oppleves ubehagelig.",
+          "Eventuelle advarsler for implantert elektronisk utstyr, graviditet, hudirritasjon, underliggende tilstander eller sensitivitet for elektrisk stimulering må være tydelige i endelig dokumentasjon.",
+        ],
+      },
+      {
+        title: "Supportens rolle",
+        body: [
+          "Support kan hjelpe med produktforståelse, praktisk bruk, navigasjon, kjøp og tekniske spørsmål. Support bør ikke gi personlig medisinsk rådgivning.",
+          "Ved medisinske spørsmål, symptomer eller bekymringer bør brukeren henvises til kvalifisert helsepersonell.",
+        ],
+      },
+    ],
+    relatedPages: [
+      {
+        title: "Medisinsk ansvarsfraskrivelse",
+        description: "Se grensene for medisinsk informasjon og bruk.",
+        href: no("/legal/medical-disclaimer"),
+        linkLabel: "Les ansvarsfraskrivelse",
+      },
+      {
+        title: "Regulatorisk informasjon",
+        description: "Se hvordan produktposisjonering og påstander bør forstås.",
+        href: no("/legal/regulatory"),
+        linkLabel: "Les regulatorisk informasjon",
+      },
+      {
+        title: "Personvern",
+        description: "Se hvordan personopplysninger og databehandling bør forklares.",
+        href: no("/legal/privacy-policy"),
+        linkLabel: "Les personvern",
+      },
+      {
+        title: "Support",
+        description: "Finn praktisk hjelp og riktig sted å starte.",
+        href: no("/support"),
+        linkLabel: "Gå til support",
+      },
+    ],
+    finalCta: {
+      eyebrow: "Neste steg",
+      title: "Fortsett til support eller tiltenkt bruk",
+      description:
+        "Support gir praktisk hjelp, mens tiltenkt bruk gir den tydeligste rammen for hva Neuvago er laget for.",
+      primaryCta: { label: "Gå til support", href: no("/support") },
+      secondaryCta: { label: "Tiltenkt bruk", href: no("/legal/intended-use") },
+    },
+  },
+
+  ceCompliance: {
+    metadata: metadata({
+      title: "CE-samsvar | Neuvago Norge",
+      description:
+        "Les om CE-samsvar, europeisk markedsramme og hvilke forbehold som gjelder for Neuvago før endelig produktlaunch.",
+      canonical: "/no/juridisk/ce-samsvar",
+      english: "/legal/ce-compliance",
+    }),
+    structuredDataTitle: "CE-samsvar | Neuvago Norge",
+    structuredDataDescription:
+      "Les om CE-samsvar, europeisk markedsramme og hvilke forbehold som gjelder for Neuvago før endelig produktlaunch.",
+    path: "/no/juridisk/ce-samsvar",
+    breadcrumbs: [
+      { name: "Forside", path: "/no" },
+      { name: "Juridisk", path: "/no/juridisk" },
+      { name: "CE-samsvar", path: "/no/juridisk/ce-samsvar" },
+    ],
+    eyebrow: "Juridisk / CE-samsvar",
+    title: "CE-samsvar og europeisk markedsramme.",
+    description:
+      "CE-merking er en europeisk samsvarsramme for produktkategorier som omfattes av harmoniserte EU-regler. For Neuvago må relevante krav vurderes mot faktisk produktdesign, marked og tiltenkt formål.",
+    secondaryDescription:
+      "Denne siden er en forklarende launch-side, ikke en endelig EU-samsvarserklæring.",
+    primaryCta: { label: "Regulatorisk informasjon", href: no("/legal/regulatory") },
+    secondaryCta: { label: "Tillit og sikkerhet", href: no("/legal/trust-safety") },
+    trustCard: {
+      eyebrow: "Europeisk ramme",
+      title: "CE krever riktig regelverk, dokumentasjon og samsvarsvurdering",
+      items: [
+        { title: "Ikke alle produkter", description: "CE-merking gjelder bare produkter som omfattes av EU-regler som krever CE-merking." },
+        { title: "Produsentansvar", description: "Produsenten må identifisere relevante regler, dokumentere samsvar og sikre riktig merking." },
+        { title: "Flere regelverk", description: "Elektronikk, batteri, radioteknologi, EMC, RoHS, sikkerhet og eventuelt medisinsk utstyr kan være relevante avhengig av produktet." },
+      ],
+    },
+    notice: {
+      title: "CE-forbehold",
+      body:
+        "Ikke publiser formuleringer som antyder endelig CE-status, sertifisering eller medisinsk godkjenning før dette er dokumentert. Oppdater siden med faktisk samsvarserklæring, relevante direktiver/forordninger og ansvarlig økonomisk aktør før launch.",
+    },
+    keyPoints: [
+      {
+        title: "CE er samsvar, ikke kvalitetstempel",
+        description:
+          "CE-merking uttrykker produsentens samsvar med relevante EU-krav, ikke en generell anbefaling eller helsegodkjenning.",
+      },
+      {
+        title: "Gjelder relevante produktregler",
+        description:
+          "Hvilke regler som gjelder avhenger av produktets komponenter, funksjon, kommunikasjonsteknologi og tiltenkte bruk.",
+      },
+      {
+        title: "Dokumentasjon må ligge bak",
+        description:
+          "Teknisk dokumentasjon, risikovurdering, tester, bruksanvisning og samsvarserklæring bør være kontrollert før offentlig lansering.",
+      },
+    ],
+    sections: [
+      {
+        title: "Hva CE-merking betyr",
+        body: [
+          "CE-merking brukes for produkter som omfattes av harmoniserte EU-regler som krever slik merking. Produsenten angir med CE-merkingen at produktet oppfyller relevante krav for å bringes i omsetning i EU/EØS.",
+          "CE-merking er ikke det samme som at en myndighet nødvendigvis har godkjent produktet, og det er ikke et generelt kvalitetsstempel eller en medisinsk effektpåstand.",
+        ],
+      },
+      {
+        title: "Relevante områder for Neuvago",
+        body: [
+          "Avhengig av endelig produktkonfigurasjon kan områder som elektrisk sikkerhet, elektromagnetisk kompatibilitet, radioutstyr, RoHS, batterisikkerhet, produktsikkerhet, miljøkrav og medisinsk utstyr-vurdering være relevante.",
+          "Hvilke krav som gjelder må avgjøres av faktisk produktdesign, tiltenkt formål, markedsføringspåstander og hvilke markeder produktet tilbys i.",
+        ],
+      },
+      {
+        title: "Før CE-relatert språk publiseres",
+        body: [
+          "Før Neuvago omtaler CE-status offentlig, bør selskapet bekrefte relevante EU-regler, ansvarlig produsent/økonomisk aktør, teknisk dokumentasjon, samsvarserklæring og eventuell involvering av tredjepart eller meldt organ.",
+          "Dersom produktet ikke er klart for en bestemt CE-status, bør siden bruke forklarende språk og tydelige forbehold fremfor absolutte påstander.",
+        ],
+      },
+      {
+        title: "Forholdet til medisinsk utstyr",
+        body: [
+          "Dersom produktet får et medisinsk tiltenkt formål eller medisinske påstander, kan medisinsk utstyr-regelverket bli relevant. Da må kvalifisering, klassifisering, klinisk vurdering, dokumentasjon og samsvarsvurdering håndteres deretter.",
+          "Dette må vurderes separat fra generell forbrukerelektronikk og velværeposisjonering.",
+        ],
+      },
+    ],
+    relatedPages: [
+      {
+        title: "Regulatorisk informasjon",
+        description: "Se bredere regulatorisk ramme for Neuvago.",
+        href: no("/legal/regulatory"),
+        linkLabel: "Les regulatorisk informasjon",
+      },
+      {
+        title: "Tiltenkt bruk",
+        description: "Se hvordan produktets formål bør forstås.",
+        href: no("/legal/intended-use"),
+        linkLabel: "Les tiltenkt bruk",
+      },
+      {
+        title: "Tillit og sikkerhet",
+        description: "Se sikkerhets- og kommunikasjonsprinsipper.",
+        href: no("/legal/trust-safety"),
+        linkLabel: "Les tillit og sikkerhet",
+      },
+      {
+        title: "FDA-status",
+        description: "Se egen side for USA-markedet.",
+        href: no("/legal/fda-status"),
+        linkLabel: "Les FDA-status",
+      },
+    ],
+    finalCta: {
+      eyebrow: "Neste steg",
+      title: "Koble CE-språk til faktisk produktdokumentasjon",
+      description:
+        "CE-siden bør oppdateres med endelig samsvarsinformasjon før offentlig launch.",
+      primaryCta: { label: "Regulatorisk informasjon", href: no("/legal/regulatory") },
+      secondaryCta: { label: "Tillit og sikkerhet", href: no("/legal/trust-safety") },
+    },
+  },
+
+  fdaStatus: {
+    metadata: metadata({
+      title: "FDA-status | Neuvago Norge",
+      description:
+        "Les hvordan Neuvago omtaler FDA-status, USA-posisjonering og grenser mellom generell velvære og medisinske påstander.",
+      canonical: "/no/juridisk/fda-status",
+      english: "/legal/fda-status",
+    }),
+    structuredDataTitle: "FDA-status | Neuvago Norge",
+    structuredDataDescription:
+      "Les hvordan Neuvago omtaler FDA-status, USA-posisjonering og grenser mellom generell velvære og medisinske påstander.",
+    path: "/no/juridisk/fda-status",
+    breadcrumbs: [
+      { name: "Forside", path: "/no" },
+      { name: "Juridisk", path: "/no/juridisk" },
+      { name: "FDA-status", path: "/no/juridisk/fda-status" },
+    ],
+    eyebrow: "Juridisk / FDA-status",
+    title: "FDA-status og USA-posisjonering.",
+    description:
+      "FDA-status gjelder primært USA-markedet. Denne siden forklarer hvordan Neuvago bør omtale regulatorisk status i USA uten å antyde godkjenning, klarering eller medisinsk bruk som ikke er dokumentert.",
+    secondaryDescription:
+      "Med mindre annet er uttrykkelig dokumentert, bør Neuvago ikke beskrives som FDA-godkjent, FDA-klarert eller FDA-autorisert.",
+    primaryCta: { label: "Regulatorisk informasjon", href: no("/legal/regulatory") },
+    secondaryCta: { label: "Medisinsk ansvarsfraskrivelse", href: no("/legal/medical-disclaimer") },
+    trustCard: {
+      eyebrow: "USA-ramme",
+      title: "FDA-språk må være presist og dokumentert",
+      items: [
+        { title: "Ingen ubegrunnet status", description: "Ikke bruk FDA-approved, FDA-cleared eller FDA-authorized uten konkret dokumentasjon." },
+        { title: "Generell velvære", description: "Velværeposisjonering må holdes adskilt fra diagnose, behandling, kurering, lindring eller forebygging av sykdom." },
+        { title: "Markedsavhengig", description: "USA-tekst bør vurderes separat fra EU/EØS-tekst og norsk lanseringskommunikasjon." },
+      ],
+    },
+    notice: {
+      title: "FDA-forbehold",
+      body:
+        "Denne siden er en konservativ norsk forklaring av FDA-relatert språk. Den skal ikke brukes som endelig USA-compliance-tekst før produktets faktiske status, claims, appfunksjoner og lanseringsmarked er vurdert.",
+    },
+    keyPoints: [
+      {
+        title: "Ikke en norsk godkjenning",
+        description:
+          "FDA-status gjelder ikke som norsk eller europeisk godkjenning, og bør ikke blandes med CE/EØS-samsvar.",
+      },
+      {
+        title: "Unngå medisinske claims",
+        description:
+          "USA-kommunikasjon bør unngå sykdoms- og behandlingspåstander dersom produktet er posisjonert som generell velvære.",
+      },
+      {
+        title: "Dokumenter alt språk",
+        description:
+          "Alle uttrykk om FDA, general wellness, device-status eller unntak bør være basert på rådgivergjennomgang og dokumentasjon.",
+      },
+    ],
+    sections: [
+      {
+        title: "Hva FDA-status betyr",
+        body: [
+          "FDA er USAs føderale myndighet for blant annet medisinsk utstyr. Ord som approved, cleared, authorized, registered eller listed har bestemte betydninger og bør ikke brukes uten riktig grunnlag.",
+          "Dersom Neuvago ikke har en relevant FDA-godkjenning, klarering eller autorisasjon, bør nettsiden ikke antyde dette direkte eller indirekte.",
+        ],
+      },
+      {
+        title: "Generell velvære og sykdomspåstander",
+        body: [
+          "I USA finnes det regulatoriske skiller mellom lavrisiko produkter for generell velvære og produkter som har medisinske formål eller sykdomsrelaterte påstander.",
+          "Claims om sunn livsstil, generell velvære, avslapning og rutiner må ikke gli over i diagnose, behandling, kurering, lindring eller forebygging av sykdom uten riktig regulatorisk grunnlag.",
+        ],
+      },
+      {
+        title: "Forholdet til app og data",
+        body: [
+          "Hvis appen gir fysiologiske målinger, anbefalinger, risikosignaler, klinisk-lignende tolkninger eller beslutningsstøtte, kan det påvirke regulatorisk vurdering i USA.",
+          "Endelig tekst må derfor vurderes mot faktiske appfunksjoner, datakilder, brukergrensesnitt og markedsføringspåstander.",
+        ],
+      },
+      {
+        title: "Før USA-relatert launch",
+        body: [
+          "Før Neuvago lanseres i USA eller omtaler FDA-status mer konkret, bør selskapet bekrefte produktets status med kvalifisert regulatorisk rådgiver.",
+          "Denne norske siden kan beholdes som en forklaring av status, men bør oppdateres dersom Neuvago senere får en spesifikk FDA-relatert regulatorisk posisjon.",
+        ],
+      },
+    ],
+    relatedPages: [
+      {
+        title: "Regulatorisk informasjon",
+        description: "Se bredere regulatorisk kontekst for Neuvago.",
+        href: no("/legal/regulatory"),
+        linkLabel: "Les regulatorisk informasjon",
+      },
+      {
+        title: "Medisinsk ansvarsfraskrivelse",
+        description: "Se helse- og medisinske bruksgrenser.",
+        href: no("/legal/medical-disclaimer"),
+        linkLabel: "Les ansvarsfraskrivelse",
+      },
+      {
+        title: "CE-samsvar",
+        description: "Se egen side for EU/EØS og CE-rammen.",
+        href: no("/legal/ce-compliance"),
+        linkLabel: "Les CE-samsvar",
+      },
+      {
+        title: "Tiltenkt bruk",
+        description: "Se produktets overordnede bruksramme.",
+        href: no("/legal/intended-use"),
+        linkLabel: "Les tiltenkt bruk",
+      },
+    ],
+    finalCta: {
+      eyebrow: "Neste steg",
+      title: "Hold FDA-språket konservativt til status er dokumentert",
+      description:
+        "Bruk regulatorisk informasjon og medisinsk ansvarsfraskrivelse som referansepunkt for tryggere kommunikasjon.",
+      primaryCta: { label: "Regulatorisk informasjon", href: no("/legal/regulatory") },
+      secondaryCta: { label: "Medisinsk ansvarsfraskrivelse", href: no("/legal/medical-disclaimer") },
+    },
+  },
 } satisfies Record<string, LegalTemplateContent>;

@@ -1,5 +1,9 @@
-import { redirect } from "next/navigation";
+import type { Metadata } from "next";
+import { LocalizedLegalPage } from "@/components/legal/LocalizedLegalPage";
+import { noLegalContent } from "@/content/no/legal";
 
-export default function RedirectPage() {
-  redirect("/legal/trust-safety");
+export const metadata: Metadata = noLegalContent.trustSafety.metadata;
+
+export default function NorwayTrustSafetyPage() {
+  return <LocalizedLegalPage content={noLegalContent.trustSafety} />;
 }

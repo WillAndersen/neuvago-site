@@ -23,6 +23,10 @@ const routes = [
   { name: "no-how-it-works", path: "/no/slik-fungerer-det" },
   { name: "no-support", path: "/no/support" },
   { name: "no-about", path: "/no/om-oss" },
+  { name: "no-legal", path: "/no/juridisk" },
+  { name: "no-intended-use", path: "/no/juridisk/tiltenkt-bruk" },
+  { name: "no-privacy", path: "/no/juridisk/personvern" },
+  { name: "no-terms", path: "/no/juridisk/vilkar" },
   { name: "app", path: "/app" },
   { name: "how-it-works", path: "/how-it-works" },
 ];

@@ -9,7 +9,7 @@ export const productPageContentNo = {
   hero: {
     ...productPageContent.hero,
     eyebrow: "Produkt",
-    title: "En ikke-invasiv vagusnervestimulator, veiledet av appen.",
+    title: "En ikke-invasiv VNS-enhet veiledet av appen.",
     description:
       "Neuvago kombinerer en premium håndholdt enhet med veiledede appøkter for korte, gjentakbare reguleringsrutiner — med tydelige bruksgrenser og et forskningsinformert sikkerhetslag.",
     primaryCta: {

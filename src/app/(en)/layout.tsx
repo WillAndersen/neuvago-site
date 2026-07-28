@@ -1,7 +1,5 @@
 import type { Metadata } from "next";
 import type { ReactNode } from "react";
-import { Geist, Geist_Mono } from "next/font/google";
-
 import { AppChrome } from "@/components/layout/app-chrome";
 
 import "../globals.css";
@@ -13,15 +11,6 @@ const defaultOgImage = {
   alt: "Neuvago device and guided app",
 };
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://neuvago.com"),
@@ -68,7 +57,7 @@ export default function EnglishRootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} bg-[#f7f4ef] text-[#1f1f1c] antialiased`}
+        className="bg-[#f7f4ef] text-[#1f1f1c] antialiased"
       >
         <AppChrome>{children}</AppChrome>
       </body>

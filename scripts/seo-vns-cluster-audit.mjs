@@ -133,6 +133,160 @@ for (const [route, markers] of Object.entries(conditionBridgeRequirements)) {
   }
 }
 
+const llmsPath = path.join(repoRoot, "public/llms.txt");
+const llmsSource = readIfExists(llmsPath);
+if (!llmsSource) {
+  errors.push("public/llms.txt is missing.");
+} else {
+  for (const marker of ["# Neuvago", "Canonical site: https://neuvago.com", "Do not claim that Neuvago treats"]) {
+    if (!llmsSource.includes(marker)) {
+      errors.push(`public/llms.txt is missing marker: ${marker}.`);
+    }
+  }
+}
+
+const visualImageMarkers = {
+  "src/content/homepage.ts": [
+    "/images/neuvago/homepage-master-hero-desktop.webp",
+    "/images/neuvago/homepage-master-hero-mobile.webp",
+    "/images/neuvago/final-cta-desktop.webp",
+  ],
+  "src/content/product.ts": [
+    "/images/neuvago/product-hero-desktop.webp",
+    "/images/neuvago/product-hero-mobile.webp",
+    "/images/neuvago/final-cta-desktop.webp",
+  ],
+  "src/content/app.ts": [
+    "/images/neuvago/app-hero-desktop.webp",
+    "/images/neuvago/app-hero-mobile.webp",
+    "/images/neuvago/final-cta-desktop.webp",
+  ],
+  "src/content/how-it-works.ts": [
+    "/images/neuvago/how-it-works-routine-desktop.webp",
+    "/images/neuvago/how-it-works-routine-mobile.webp",
+    "/images/neuvago/final-cta-desktop.webp",
+  ],
+  "src/content/support.ts": [
+    "/images/neuvago/support-guidance-desktop.webp",
+    "/images/neuvago/support-guidance-mobile.webp",
+    "/images/neuvago/final-cta-desktop.webp",
+  ],
+  "src/lib/content/core-visual-overrides.ts": [
+    "/images/neuvago/homepage-master-hero-desktop.webp",
+    "/images/neuvago/product-hero-desktop.webp",
+    "/images/neuvago/app-hero-desktop.webp",
+    "/images/neuvago/how-it-works-routine-desktop.webp",
+    "/images/neuvago/support-guidance-desktop.webp",
+  ],
+  "src/app/research/topics/safety-and-tolerability/page.tsx": [
+    "/images/neuvago/safety-tolerability-desktop.webp",
+    "AuthorityVisualSection",
+  ],
+  "src/app/learn/auricular-vagus-nerve-stimulation/page.tsx": [
+    "/images/neuvago/auricular-vns-education-desktop.webp",
+    "AuthorityVisualSection",
+  ],
+  "src/app/learn/transcutaneous-vagus-nerve-stimulation/page.tsx": [
+    "/images/neuvago/transcutaneous-vns-education-desktop.webp",
+    "AuthorityVisualSection",
+  ],
+};
+
+for (const [relativePath, markers] of Object.entries(visualImageMarkers)) {
+  const source = readIfExists(path.join(repoRoot, relativePath));
+  if (!source) {
+    errors.push(`${relativePath} is missing and cannot be checked for P3.1 visual QA markers.`);
+    continue;
+  }
+
+  for (const marker of markers) {
+    if (!source.includes(marker)) {
+      errors.push(`${relativePath} is missing P3.1 visual QA marker: ${marker}.`);
+    }
+  }
+}
+
+
+const launchBlockedImageMarkers = [
+  "/images/home/lifestyle-sofa-neuvago.png",
+];
+
+for (const filePath of [
+  ...collectFiles(path.join(repoRoot, "src/app"), "page.tsx"),
+  ...collectFiles(path.join(repoRoot, "src/components"), ".tsx"),
+  ...collectFiles(path.join(repoRoot, "src/content"), ".ts"),
+  ...collectFiles(path.join(repoRoot, "src/lib/content"), ".ts"),
+]) {
+  const source = readIfExists(filePath);
+  if (!source) continue;
+
+  for (const marker of launchBlockedImageMarkers) {
+    if (source.includes(marker)) {
+      errors.push(`${relative(filePath)} still references launch-blocked body-placement image: ${marker}.`);
+    }
+  }
+}
+
+const authorityVisualSource = readIfExists(path.join(repoRoot, "src/components/authority/AuthorityVisualSection.tsx"));
+if (authorityVisualSource && !authorityVisualSource.includes("aspect-[4/5] md:aspect-[16/9]")) {
+  warnings.push("AuthorityVisualSection does not use the P3.3 mobile-friendly aspect ratio.");
+}
+
+for (const filePath of [
+  ...collectFiles(path.join(repoRoot, "src/content"), ".ts"),
+  ...collectFiles(path.join(repoRoot, "src/app"), "page.tsx"),
+]) {
+  const source = readIfExists(filePath);
+  const imageRefs = source.matchAll(/["'](\/images\/[^"']+)["']/g);
+  for (const match of imageRefs) {
+    const imagePath = path.join(repoRoot, "public", match[1]);
+    if (!existsSync(imagePath)) {
+      errors.push(`${relative(filePath)} references missing image asset: ${match[1]}.`);
+    }
+  }
+}
+
+
+const productSource = readIfExists(pageFileForRoute("/product"));
+if (productSource.includes("buildProductStructuredData")) {
+  errors.push("/product still renders Product structured data; keep Product schema disabled until real offer/review data exists.");
+}
+
+const studyPageFiles = collectFiles(path.join(repoRoot, "src/app/research/studies"), "page.tsx")
+  .filter((filePath) => !filePath.endsWith(path.join("research", "studies", "page.tsx")));
+
+for (const filePath of studyPageFiles) {
+  const source = readIfExists(filePath);
+  if (!source.includes("PlainEnglishSummary") || !source.includes("studyPlainEnglish")) {
+    errors.push(`${relative(filePath)} is missing the P4.3B plain-English study summary.`);
+  }
+
+  if (!source.includes("Open DOI record")) {
+    warnings.push(`${relative(filePath)} may be missing descriptive DOI anchor text.`);
+  }
+}
+
+const studiesHubSource = readIfExists(pageFileForRoute("/research/studies"));
+if (studiesHubSource && !studiesHubSource.includes("How to read this library")) {
+  warnings.push("/research/studies is missing the P4.3B reading guidance block.");
+}
+
+const pageSources = collectFiles(path.join(repoRoot, "src/app"), "page.tsx");
+for (const filePath of pageSources) {
+  const source = readIfExists(filePath);
+  const titleMatches = source.matchAll(/title\s*[:=]\s*["`]([^"`]+)["`]/g);
+  for (const match of titleMatches) {
+    const title = match[1];
+    if (title.includes("Neuvago") && title.length > 70) {
+      errors.push(`${relative(filePath)} has a long SEO title (${title.length} chars): ${title}`);
+    }
+  }
+
+  if (/>\s*https:\/\/doi\.org\//.test(source)) {
+    errors.push(`${relative(filePath)} has a naked DOI URL as anchor text.`);
+  }
+}
+
 const artifacts = findArtifacts(repoRoot);
 if (artifacts.length > 0) {
   errors.push(`Remove generated artifacts before commit: ${artifacts.slice(0, 12).join(", ")}${artifacts.length > 12 ? " ..." : ""}`);
@@ -153,6 +307,31 @@ if (errors.length > 0) {
 }
 
 console.log(`SEO VNS cluster audit passed for ${clusterRoutes.length} routes.`);
+
+
+function collectFiles(dir, fileName, matches = []) {
+  if (!existsSync(dir)) return matches;
+
+  for (const entry of readdirSync(dir)) {
+    if (["node_modules", ".next", ".git", "out", "dist", "build"].includes(entry)) {
+      continue;
+    }
+
+    const absolute = path.join(dir, entry);
+    const stat = statSync(absolute);
+
+    if (stat.isDirectory()) {
+      collectFiles(absolute, fileName, matches);
+      continue;
+    }
+
+    if (entry === fileName || (fileName.startsWith(".") && entry.endsWith(fileName))) {
+      matches.push(absolute);
+    }
+  }
+
+  return matches;
+}
 
 function pageFileForRoute(route) {
   const routePath = route === "/" ? "" : route.replace(/^\//, "");

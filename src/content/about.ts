@@ -49,11 +49,11 @@ export const aboutPageContent = {
       href: "/how-it-works",
     } satisfies AboutPageCta,
     desktopImage: {
-      src: "/images/home/hero-device-app-master.png",
+      src: "/images/neuvago/homepage-master-hero-desktop.webp",
       alt: "Neuvago device and app shown together in a calm editorial composition.",
     } satisfies AboutPageImage,
     mobileImage: {
-      src: "/images/home/hero-device-app-mobile.png",
+      src: "/images/neuvago/homepage-master-hero-mobile.webp",
       alt: "Neuvago device and app shown together for mobile about hero layout.",
     } satisfies AboutPageImage,
     proofLine: ["Calm by design", "Device + app", "Built for everyday life"],
@@ -91,7 +91,7 @@ export const aboutPageContent = {
       },
     ] satisfies AboutPageCard[],
     image: {
-      src: "/images/home/device-phone-paired-editorial.png",
+      src: "/images/neuvago/homepage-master-hero-desktop.webp",
       alt: "Neuvago device and app shown together as one connected system.",
     } satisfies AboutPageImage,
   } satisfies AboutPageSectionVisibility & {
@@ -130,7 +130,7 @@ export const aboutPageContent = {
       },
     ] satisfies AboutPageCard[],
     detailImage: {
-      src: "/images/home/device-close-detail-material.png",
+      src: "/images/neuvago/product-hero-desktop.webp",
       alt: "Close-up details of the Neuvago device material and finish.",
     } satisfies AboutPageImage,
   } satisfies AboutPageSectionVisibility & {
@@ -164,16 +164,16 @@ export const aboutPageContent = {
       },
     ] satisfies AboutPageFeatureItem[],
     image: {
-      src: "/images/home/device-phone-paired-editorial.png",
+      src: "/images/neuvago/homepage-master-hero-desktop.webp",
       alt: "Neuvago device and app shown together in a premium warm composition.",
     } satisfies AboutPageImage,
     supportingImages: [
       {
-        src: "/images/home/app-mockup-home.png",
+        src: "/images/neuvago/app-hero-desktop.webp",
         alt: "Neuvago app home screen mockup.",
       },
       {
-        src: "/images/home/app-mockup-session.png",
+        src: "/images/neuvago/app-hero-mobile.webp",
         alt: "Neuvago app session screen mockup.",
       },
     ] satisfies AboutPageImage[],
@@ -219,11 +219,11 @@ export const aboutPageContent = {
     ] satisfies AboutPageCard[],
     detailImages: [
       {
-        src: "/images/home/device-close-detail-material.png",
+        src: "/images/neuvago/product-hero-desktop.webp",
         alt: "Close-up of Neuvago device material and finish.",
       },
       {
-        src: "/images/home/app-mockup-home.png",
+        src: "/images/neuvago/app-hero-desktop.webp",
         alt: "Neuvago app home screen shown in a calm premium layout.",
       },
     ] satisfies AboutPageImage[],
@@ -257,11 +257,11 @@ export const aboutPageContent = {
       },
     ] satisfies AboutPageCard[],
     image: {
-      src: "/images/home/lifestyle-sofa-neuvago.png",
+      src: "/images/neuvago/evening-wind-down-desktop.webp",
       alt: "A calm real-life moment with Neuvago as part of a quiet routine.",
     } satisfies AboutPageImage,
     secondaryImage: {
-      src: "/images/home/device-phone-paired-editorial.png",
+      src: "/images/neuvago/homepage-master-hero-desktop.webp",
       alt: "Neuvago device and app shown together in a calm lifestyle setting.",
     } satisfies AboutPageImage,
   } satisfies AboutPageSectionVisibility & {
@@ -366,7 +366,7 @@ export const aboutPageContent = {
       href: "/app",
     } satisfies AboutPageCta,
     backgroundImage: {
-      src: "/images/home/device-phone-paired-editorial.png",
+      src: "/images/neuvago/homepage-master-hero-desktop.webp",
       alt: "Neuvago device and app shown together in a premium warm composition.",
     } satisfies AboutPageImage,
   } satisfies AboutPageSectionVisibility & {

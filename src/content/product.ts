@@ -49,24 +49,24 @@ export const productPageContent = {
   hero: {
     visible: true,
     eyebrow: "Product",
-    title: "A non-invasive vagus nerve stimulator for guided daily regulation.",
+    title: "A non-invasive vagus nerve stimulator, guided by app.",
     description:
-      "Neuvago pairs a premium non-invasive vagus nerve stimulator with a guided app experience for calmer routines around stress, recovery, sleep, and everyday nervous system balance — with clear wellness boundaries and practical safety context.",
+      "Neuvago pairs a premium handheld device with guided app sessions for short, repeatable regulation routines — with clear wellness boundaries and a research-informed safety layer.",
     primaryCta: {
+      label: "View product options",
+      href: "#buy",
+    } satisfies ProductCta,
+    secondaryCta: {
       label: "How it works",
       href: "/how-it-works",
     } satisfies ProductCta,
-    secondaryCta: {
-      label: "Explore the app",
-      href: "/app",
-    } satisfies ProductCta,
     desktopImage: {
-      src: "/images/home/hero-device-app-master.png",
-      alt: "Neuvago device and app shown together in a premium editorial composition.",
+      src: "/images/neuvago/launch/product-hero-desktop.webp",
+      alt: "Close-up of the Neuvago device materials and controls in a premium product composition.",
     } satisfies ProductImage,
     mobileImage: {
-      src: "/images/home/hero-device-app-mobile.png",
-      alt: "Neuvago device and app shown together for mobile product hero layout.",
+      src: "/images/neuvago/launch/product-hero-mobile.webp",
+      alt: "Front and angled view of the Neuvago device for mobile product hero layout.",
     } satisfies ProductImage,
     proofLine: ["Non-invasive VNS", "App-guided sessions", "Clear wellness boundaries"],
   } satisfies ProductSectionVisibility & {
@@ -82,7 +82,7 @@ export const productPageContent = {
 
   whatIsNeuvago: {
     visible: true,
-    title: "A premium vagus nerve stimulation device at the center of a connected system",
+    title: "A physical anchor for a calmer regulation system",
     description:
       "At the center of Neuvago is a non-invasive vagus nerve stimulation device designed to feel calm, clear, and easy to live with. The app adds guidance, session structure, and continuity, while the product experience stays grounded in gentle daily wellness support rather than medical treatment claims.",
     bullets: [
@@ -91,8 +91,8 @@ export const productPageContent = {
       "Connected to an app that adds placement guidance, session rhythm, and continuity",
     ],
     image: {
-      src: "/images/home/device-phone-paired-editorial.png",
-      alt: "Neuvago device and app displayed together as one connected system.",
+      src: "/images/neuvago/launch/product-app-pairing-desktop.webp",
+      alt: "Neuvago device, guided app, and simple routine cards explaining the connected product system.",
     } satisfies ProductImage,
   } satisfies ProductSectionVisibility & {
     title: string;
@@ -135,7 +135,7 @@ export const productPageContent = {
       },
     ] satisfies ProductCard[],
     detailImage: {
-      src: "/images/home/device-close-detail-material.png",
+      src: "/images/neuvago/launch/product-hero-mobile.webp",
       alt: "Close-up details of the Neuvago device material and finish.",
     } satisfies ProductImage,
   } satisfies ProductSectionVisibility & {
@@ -169,21 +169,21 @@ export const productPageContent = {
       },
     ] satisfies ProductFeatureItem[],
     image: {
-      src: "/images/home/device-phone-paired-editorial.png",
-      alt: "Neuvago device and phone shown together in a warm premium composition.",
+      src: "/images/neuvago/launch/product-phone-app.webp",
+      alt: "Neuvago support and guidance screen shown as the app layer that completes the product experience.",
     } satisfies ProductImage,
     supportingImages: [
       {
-        src: "/images/home/app-mockup-home.png",
+        src: "/images/neuvago/launch/product-app-pairing-desktop.webp",
         alt: "Neuvago app home screen mockup.",
       },
       {
-        src: "/images/home/app-mockup-session.png",
+        src: "/images/neuvago/launch/product-app-pairing-mobile.webp",
         alt: "Neuvago app session screen mockup.",
       },
       {
-        src: "/images/home/app-mockup-progress.png",
-        alt: "Neuvago app progress screen mockup.",
+        src: "/images/neuvago/launch/routine-evening-mobile.webp",
+        alt: "Neuvago routine cards showing place device, start session, and return over time.",
       },
     ] satisfies ProductImage[],
     cta: {
@@ -201,7 +201,7 @@ export const productPageContent = {
 
   howItFitsIntoLife: {
     visible: true,
-    title: "How the product fits into real life",
+    title: "Built for the moments you actually return to",
     description:
       "The value of the product is not only what it is, but how naturally it can fit into calmer daily routines — whether you want a gentler start, a pause during stress, or a more intentional evening wind-down.",
     cards: [
@@ -222,12 +222,12 @@ export const productPageContent = {
       },
     ] satisfies ProductCard[],
     image: {
-      src: "/images/home/lifestyle-sofa-neuvago.png",
-      alt: "A calm real-life moment with Neuvago as part of a quiet routine.",
+      src: "/images/neuvago/launch/product-detail-left-desktop.webp",
+      alt: "Neuvago device and guided app arranged for a calm daytime pause routine.",
     } satisfies ProductImage,
     secondaryImage: {
-      src: "/images/home/device-phone-paired-editorial.png",
-      alt: "Neuvago device and app shown together in a calm product lifestyle setting.",
+      src: "/images/neuvago/launch/routine-evening-desktop.webp",
+      alt: "Neuvago device and guided app resting beside a warm evening wind-down routine.",
     } satisfies ProductImage,
   } satisfies ProductSectionVisibility & {
     title: string;
@@ -248,7 +248,7 @@ export const productPageContent = {
         description:
           "Begin with the device as the physical starting point, with comfort and clear placement guidance treated as part of the experience.",
         image: {
-          src: "/images/home/device-cutout-front-angle.png",
+          src: "/images/neuvago/launch/product-hero-mobile.webp",
           alt: "Front and angled view of the Neuvago device.",
         },
       },
@@ -257,7 +257,7 @@ export const productPageContent = {
         description:
           "Use the app to choose guidance that fits the moment, while keeping session length, rhythm, and intensity easy to understand.",
         image: {
-          src: "/images/home/app-mockup-session.png",
+          src: "/images/neuvago/launch/product-app-pairing-mobile.webp",
           alt: "Neuvago session screen shown on a smartphone.",
         },
       },
@@ -266,8 +266,8 @@ export const productPageContent = {
         description:
           "Repeat it in ways that fit real life so the system becomes easier to return to and more useful over time.",
         image: {
-          src: "/images/home/app-mockup-progress.png",
-          alt: "Neuvago progress screen showing continued use over time.",
+          src: "/images/neuvago/launch/routine-evening-mobile.webp",
+          alt: "Neuvago device, guided app, and routine cards explaining how the system works.",
         },
       },
     ] satisfies ProductStep[],
@@ -385,16 +385,16 @@ export const productPageContent = {
     description:
       "Explore how the device, app, and calmer daily routine fit together — then continue into the full how-it-works experience or the guided app layer.",
     primaryCta: {
+      label: "View product options",
+      href: "#buy",
+    } satisfies ProductCta,
+    secondaryCta: {
       label: "How it works",
       href: "/how-it-works",
     } satisfies ProductCta,
-    secondaryCta: {
-      label: "Explore the app",
-      href: "/app",
-    } satisfies ProductCta,
     backgroundImage: {
-      src: "/images/home/device-phone-paired-editorial.png",
-      alt: "Neuvago device and app shown together in a premium warm setting.",
+      src: "/images/neuvago/launch/final-cta-desktop.webp",
+      alt: "Neuvago device and guided app shown softly on the right with open space for a call to action.",
     } satisfies ProductImage,
   } satisfies ProductSectionVisibility & {
     title: string;

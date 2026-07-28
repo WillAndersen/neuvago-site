@@ -1,45 +1,32 @@
-import Image from "next/image";
 import type { productPageContent } from "@/content/product";
-import { SectionHeading, ContentCard } from "@/components/home";
 
 type ProductWhyItFeelsDifferentProps = {
   content: typeof productPageContent.whyItFeelsDifferent;
 };
 
-export function ProductWhyItFeelsDifferent({
-  content,
-}: ProductWhyItFeelsDifferentProps) {
+export function ProductWhyItFeelsDifferent({ content }: ProductWhyItFeelsDifferentProps) {
   return (
-    <section className="bg-[#f2eee8]">
-      <div className="mx-auto grid max-w-7xl gap-12 px-6 py-18 sm:px-8 lg:grid-cols-[1.05fr_0.95fr] lg:items-start lg:gap-16 lg:px-12 lg:py-20">
-        <div>
-          <SectionHeading
-            eyebrow={content.eyebrow}
-            title={content.title}
-            description={content.description}
-          />
-
-          <div className="mt-8 grid gap-4 md:grid-cols-2">
-            {content.cards.map((card) => (
-              <ContentCard
-                key={card.title}
-                title={card.title}
-                description={card.description}
-              />
-            ))}
-          </div>
+    <section className="bg-[#1f1f1c] text-[#f7f4ef]">
+      <div className="mx-auto grid max-w-[92rem] gap-12 px-5 py-20 sm:px-8 lg:grid-cols-[0.9fr_1.1fr] lg:gap-20 lg:px-12 lg:py-28">
+        <div className="max-w-xl">
+          <p className="text-[0.72rem] font-medium uppercase tracking-[0.26em] text-[#b8aa99]">
+            {content.eyebrow}
+          </p>
+          <h2 className="mt-4 text-4xl font-medium tracking-[-0.055em] sm:text-5xl lg:text-6xl lg:leading-[0.95]">
+            {content.title}
+          </h2>
+          <p className="mt-6 text-base leading-8 text-[#d4cabd] sm:text-lg">
+            {content.description}
+          </p>
         </div>
 
-        <div className="overflow-hidden rounded-[2rem] border border-black/5 bg-white/60 shadow-[0_28px_90px_rgba(31,31,28,0.09)]">
-          <div className="relative aspect-[4/3]">
-            <Image
-              src={content.detailImage.src}
-              alt={content.detailImage.alt}
-              fill
-              className="object-cover"
-              sizes="(max-width: 768px) 92vw, (max-width: 1024px) 88vw, 560px"
-            />
-          </div>
+        <div className="grid gap-px overflow-hidden rounded-[2rem] border border-white/10 bg-white/10 md:grid-cols-2">
+          {content.cards.map((card) => (
+            <div key={card.title} className="bg-[#262520] p-6 sm:p-7">
+              <h3 className="text-xl font-medium tracking-[-0.03em] text-white">{card.title}</h3>
+              <p className="mt-3 text-sm leading-7 text-[#d4cabd]">{card.description}</p>
+            </div>
+          ))}
         </div>
       </div>
     </section>

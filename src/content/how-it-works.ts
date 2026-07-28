@@ -37,9 +37,9 @@ export const howItWorksPageContent = {
   hero: {
     visible: true,
     eyebrow: "How it works",
-    title: "How to use Neuvago’s non-invasive VNS system in practice.",
+    title: "Place. Start. Return.",
     description:
-      "Neuvago is designed to make a non-invasive vagus nerve stimulator easier to understand in real life: place the external device comfortably, follow guided app sessions, and return to the routine over time.",
+      "Neuvago is designed around a simple ritual: place the non-invasive device comfortably, follow a guided app session, and return to the routine over time.",
     primaryCta: {
       label: "Explore Neuvago",
       href: "/product",
@@ -49,12 +49,12 @@ export const howItWorksPageContent = {
       href: "/app",
     } satisfies HowItWorksCta,
     desktopImage: {
-      src: "/images/home/device-phone-paired-editorial.png",
-      alt: "Neuvago device and app shown together in a warm explanatory composition.",
+      src: "/images/neuvago/how-it-works-routine-desktop.webp",
+      alt: "Neuvago device, guided app, and simple routine cards explaining how the system works.",
     } satisfies HowItWorksImage,
     mobileImage: {
-      src: "/images/home/hero-device-app-mobile.png",
-      alt: "Neuvago device and app shown together for mobile how-it-works hero layout.",
+      src: "/images/neuvago/how-it-works-routine-mobile.webp",
+      alt: "Neuvago device, guided app, and routine cards for mobile how-it-works layouts.",
     } satisfies HowItWorksImage,
     proofLine: ["Device + app", "Comfort-first routine", "Built for daily use"],
   } satisfies HowItWorksSectionVisibility & {
@@ -70,7 +70,7 @@ export const howItWorksPageContent = {
 
   systemAtAGlance: {
     visible: true,
-    title: "What each part of the system does",
+    title: "The system has three jobs",
     description:
       "The easiest way to understand Neuvago is to look at the job of each layer: the non-invasive device starts the experience, the app guides it, and repetition makes it useful in daily life.",
     cards: [
@@ -91,8 +91,8 @@ export const howItWorksPageContent = {
       },
     ] satisfies HowItWorksCard[],
     image: {
-      src: "/images/home/device-phone-paired-editorial.png",
-      alt: "Neuvago device and app displayed together as one connected system.",
+      src: "/images/neuvago/product-hero-desktop.webp",
+      alt: "Close-up details of the Neuvago device material and finish.",
     } satisfies HowItWorksImage,
   } satisfies HowItWorksSectionVisibility & {
     title: string;
@@ -112,7 +112,7 @@ export const howItWorksPageContent = {
         description:
           "Begin with the device as the physical starting point for the experience. Placement, contact, and comfort are part of the routine, not afterthoughts.",
         image: {
-          src: "/images/home/device-cutout-front-angle.png",
+          src: "/images/neuvago/product-hero-mobile.webp",
           alt: "Front and angled view of the Neuvago device.",
         },
       },
@@ -121,7 +121,7 @@ export const howItWorksPageContent = {
         description:
           "Use the app to choose guidance that fits the moment, while session length, rhythm, and intensity stay easy to understand.",
         image: {
-          src: "/images/home/app-mockup-session.png",
+          src: "/images/neuvago/app-hero-mobile.webp",
           alt: "Neuvago session screen shown on a smartphone.",
         },
       },
@@ -130,7 +130,7 @@ export const howItWorksPageContent = {
         description:
           "Repeat it in ways that fit real life so the system becomes more familiar, more comfortable, and easier to return to over time.",
         image: {
-          src: "/images/home/app-mockup-progress.png",
+          src: "/images/neuvago/final-cta-desktop.webp",
           alt: "Neuvago progress screen showing continued use over time.",
         },
       },
@@ -165,16 +165,16 @@ export const howItWorksPageContent = {
     ] satisfies HowItWorksFeatureItem[],
     supportingImages: [
       {
-        src: "/images/home/app-mockup-home.png",
+        src: "/images/neuvago/support-guidance-desktop.webp",
+        alt: "Neuvago app library screen mockup.",
+      },
+      {
+        src: "/images/neuvago/app-hero-desktop.webp",
         alt: "Neuvago app home screen mockup.",
       },
       {
-        src: "/images/home/app-mockup-session.png",
-        alt: "Neuvago app session screen mockup.",
-      },
-      {
-        src: "/images/home/app-mockup-library.png",
-        alt: "Neuvago app library screen mockup.",
+        src: "/images/neuvago/morning-reset-desktop.webp",
+        alt: "Neuvago morning reset routine with device and guided app.",
       },
     ] satisfies HowItWorksImage[],
     cta: {
@@ -212,12 +212,12 @@ export const howItWorksPageContent = {
       },
     ] satisfies HowItWorksCard[],
     image: {
-      src: "/images/home/lifestyle-sofa-neuvago.png",
-      alt: "A calm real-life moment with Neuvago as part of a quiet routine.",
+      src: "/images/neuvago/stress-daytime-pause-desktop.webp",
+      alt: "Neuvago device and guided app arranged for a calm daytime pause routine.",
     } satisfies HowItWorksImage,
     secondaryImage: {
-      src: "/images/home/device-phone-paired-editorial.png",
-      alt: "Neuvago device and app shown together in a calm lifestyle setting.",
+      src: "/images/neuvago/evening-wind-down-desktop.webp",
+      alt: "Neuvago device and guided app resting beside a warm evening wind-down routine.",
     } satisfies HowItWorksImage,
   } satisfies HowItWorksSectionVisibility & {
     title: string;
@@ -250,7 +250,7 @@ export const howItWorksPageContent = {
       },
     ] satisfies HowItWorksCard[],
     image: {
-      src: "/images/home/app-mockup-progress.png",
+      src: "/images/neuvago/final-cta-desktop.webp",
       alt: "Neuvago progress screen shown in a calm premium interface.",
     } satisfies HowItWorksImage,
   } satisfies HowItWorksSectionVisibility & {
@@ -312,8 +312,8 @@ export const howItWorksPageContent = {
       href: "/app",
     } satisfies HowItWorksCta,
     backgroundImage: {
-      src: "/images/home/device-phone-paired-editorial.png",
-      alt: "Neuvago device and app shown together in a premium warm composition.",
+      src: "/images/neuvago/app-hero-mobile.webp",
+      alt: "Neuvago app session screen shown in a calm guided-session interface.",
     } satisfies HowItWorksImage,
   } satisfies HowItWorksSectionVisibility & {
     title: string;

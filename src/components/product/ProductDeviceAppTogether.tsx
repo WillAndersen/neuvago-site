@@ -1,65 +1,56 @@
 import Image from "next/image";
 import type { productPageContent } from "@/content/product";
-import {
-  SectionHeading,
-  ContentCard,
-  CtaButton,
-  AppScreenCard,
-} from "@/components/home";
+import { CtaButton } from "@/components/home";
 
 type ProductDeviceAppTogetherProps = {
   content: typeof productPageContent.deviceAppTogether;
 };
 
-export function ProductDeviceAppTogether({
-  content,
-}: ProductDeviceAppTogetherProps) {
+export function ProductDeviceAppTogether({ content }: ProductDeviceAppTogetherProps) {
+  const sectionContent = content as typeof productPageContent.deviceAppTogether & {
+    eyebrow?: string;
+  };
+
   return (
     <section className="bg-[#f7f4ef]">
-      <div className="mx-auto max-w-7xl px-6 py-20 sm:px-8 lg:px-12">
-        <div className="grid gap-12 lg:grid-cols-[1.05fr_0.95fr] lg:items-start lg:gap-16">
-          <div className="max-w-xl">
-            <SectionHeading
-              title={content.title}
-              description={content.description}
-            />
-
-            <div className="mt-8 space-y-4">
-              {content.features.map((feature) => (
-                <ContentCard
-                  key={feature.title}
-                  title={feature.title}
-                  description={feature.description}
-                />
-              ))}
-            </div>
-
-            <div className="mt-10">
-              <CtaButton
-                href={content.cta.href}
-                label={content.cta.label}
-                variant="secondary"
+      <div className="mx-auto max-w-[92rem] px-5 py-20 sm:px-8 lg:px-12 lg:py-28">
+        <div className="grid gap-12 lg:grid-cols-[1.05fr_0.95fr] lg:items-center lg:gap-16">
+          <div className="relative overflow-hidden rounded-[2.4rem] border border-black/5 bg-white/55 shadow-[0_30px_110px_rgba(31,31,28,0.1)]">
+            <div className="relative aspect-[4/3]">
+              <Image
+                src={content.image.src}
+                alt={content.image.alt}
+                fill
+                className="object-cover"
+                sizes="(max-width: 1024px) 92vw, 54vw"
               />
             </div>
           </div>
 
-          <div className="space-y-5">
-            <div className="overflow-hidden rounded-[2rem] border border-black/5 bg-white/60 shadow-[0_24px_80px_rgba(31,31,28,0.08)]">
-              <div className="relative aspect-[4/3]">
-                <Image
-                  src={content.image.src}
-                  alt={content.image.alt}
-                  fill
-                  className="object-cover"
-                  sizes="(max-width: 768px) 92vw, (max-width: 1024px) 88vw, 560px"
-                />
-              </div>
+          <div className="max-w-xl">
+            <p className="text-[0.72rem] font-medium uppercase tracking-[0.26em] text-[#81766a]">
+              {sectionContent.eyebrow ?? "Device + app"}
+            </p>
+            <h2 className="mt-4 text-4xl font-medium tracking-[-0.055em] text-[#1f1f1c] sm:text-5xl lg:text-6xl lg:leading-[0.95]">
+              {content.title}
+            </h2>
+            <p className="mt-6 text-base leading-8 text-[#5f5a52] sm:text-lg">
+              {content.description}
+            </p>
+
+            <div className="mt-8 space-y-5">
+              {content.features.map((feature) => (
+                <div key={feature.title} className="border-t border-black/10 pt-5">
+                  <h3 className="text-xl font-medium tracking-[-0.03em] text-[#1f1f1c]">
+                    {feature.title}
+                  </h3>
+                  <p className="mt-2 text-sm leading-7 text-[#5f5a52]">{feature.description}</p>
+                </div>
+              ))}
             </div>
 
-            <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
-              {content.supportingImages.slice(0, 2).map((image) => (
-                <AppScreenCard key={image.src} src={image.src} alt={image.alt} />
-              ))}
+            <div className="mt-9">
+              <CtaButton href={content.cta.href} label={content.cta.label} variant="secondary" />
             </div>
           </div>
         </div>

@@ -32,9 +32,9 @@ export const supportPageContent = {
   hero: {
     visible: true,
     eyebrow: "Support",
-    title: "Clear, calm help for exploring and using Neuvago.",
+    title: "Clear help, calmly organized.",
     description:
-      "Support should feel simple. This page helps you find the right place to start, understand the system more clearly, and move forward without unnecessary friction.",
+      "Find the right place to start, understand the Neuvago system more clearly, and move forward without adding more noise.",
     primaryCta: {
       label: "How it works",
       href: "/how-it-works",
@@ -44,12 +44,12 @@ export const supportPageContent = {
       href: "/product",
     } satisfies SupportPageCta,
     desktopImage: {
-      src: "/images/home/device-phone-paired-editorial.png",
-      alt: "Neuvago device and app shown together in a calm support-page hero composition.",
+      src: "/images/neuvago/support-guidance-desktop.webp",
+      alt: "Neuvago app library screen used as a calm support and guidance visual.",
     } satisfies SupportPageImage,
     mobileImage: {
-      src: "/images/home/hero-device-app-mobile.png",
-      alt: "Neuvago device and app shown together for mobile support hero layout.",
+      src: "/images/neuvago/support-guidance-mobile.webp",
+      alt: "Neuvago support and guidance app screen for mobile support layouts.",
     } satisfies SupportPageImage,
     proofLine: ["Clear guidance", "Practical help", "Built to reduce friction"],
   } satisfies SupportPageSectionVisibility & {
@@ -184,7 +184,7 @@ export const supportPageContent = {
 
   philosophy: {
     visible: true,
-    title: "A calmer support philosophy",
+    title: "Support should reduce friction",
     description:
       "Support should feel like the rest of the Neuvago experience: clearer, calmer, and easier to navigate without adding more noise.",
     cards: [
@@ -205,8 +205,8 @@ export const supportPageContent = {
       },
     ] satisfies SupportPageCard[],
     image: {
-      src: "/images/home/device-close-detail-material.png",
-      alt: "Close-up of Neuvago device material and finish used as a subtle support philosophy visual.",
+      src: "/images/neuvago/support-guidance-desktop.webp",
+      alt: "Neuvago support and guidance screen beside the handheld device in a calm setting.",
     } satisfies SupportPageImage,
   } satisfies SupportPageSectionVisibility & {
     title: string;
@@ -267,8 +267,8 @@ export const supportPageContent = {
       href: "/how-it-works",
     } satisfies SupportPageCta,
     backgroundImage: {
-      src: "/images/home/device-phone-paired-editorial.png",
-      alt: "Neuvago device and app shown together in a calm support-page closing composition.",
+      src: "/images/neuvago/final-cta-desktop.webp",
+      alt: "Neuvago device and guided app shown softly on the right with open space for a call to action.",
     } satisfies SupportPageImage,
   } satisfies SupportPageSectionVisibility & {
     title: string;

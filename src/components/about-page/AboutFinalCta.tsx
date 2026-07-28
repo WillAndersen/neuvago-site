@@ -7,6 +7,10 @@ type AboutFinalCtaProps = {
 };
 
 export function AboutFinalCta({ content }: AboutFinalCtaProps) {
+  const finalCtaContent = content as typeof aboutPageContent.finalCta & {
+    eyebrow?: string;
+  };
+
   return (
     <section className="bg-[#f7f4ef]">
       <div className="mx-auto max-w-7xl px-6 pb-20 pt-6 sm:px-8 lg:px-12">
@@ -23,7 +27,7 @@ export function AboutFinalCta({ content }: AboutFinalCtaProps) {
 
           <div className="relative z-10 px-6 py-16 sm:px-10 sm:py-18 lg:max-w-3xl">
             <p className="text-sm font-medium uppercase tracking-[0.18em] text-[#7a756c]">
-              Final step
+              {finalCtaContent.eyebrow ?? "Final step"}
             </p>
             <h2 className="mt-3 text-3xl font-semibold tracking-tight text-[#1f1f1c] sm:text-4xl">
               {content.title}

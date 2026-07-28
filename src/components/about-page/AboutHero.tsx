@@ -16,7 +16,7 @@ export function AboutHero({ content }: AboutHeroProps) {
               {content.eyebrow}
             </p>
 
-            <h1 className="max-w-[12ch] text-4xl font-semibold tracking-[-0.04em] text-[#1f1f1c] sm:text-5xl lg:text-7xl lg:leading-[0.95]">
+            <h1 className="max-w-[12ch] text-4xl font-semibold tracking-[-0.04em] text-[#1f1f1c] sm:text-5xl lg:text-7xl lg:leading-[0.95] hyphens-auto break-words">
               {content.title}
             </h1>
 
@@ -60,7 +60,8 @@ export function AboutHero({ content }: AboutHeroProps) {
                   fill
                   className="object-cover"
                   sizes="(max-width: 768px) 92vw, (max-width: 1024px) 88vw, 560px"
-                  priority
+                  loading="eager"
+                  fetchPriority="high"
                 />
               </div>
             </div>
@@ -73,7 +74,8 @@ export function AboutHero({ content }: AboutHeroProps) {
                   fill
                   className="object-cover"
                   sizes="(max-width: 1024px) 92vw, 0px"
-                  priority
+                  loading="eager"
+                  fetchPriority="high"
                 />
               </div>
             </div>

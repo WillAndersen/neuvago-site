@@ -6,11 +6,11 @@ type HomeProofStripProps = {
 
 export function HomeProofStrip({ content }: HomeProofStripProps) {
   return (
-    <section className="border-b border-black/5 bg-[#f2eee8]">
+    <section className="border-b border-black/5 bg-[#1f1f1c] text-[#f7f4ef]">
       <div className="mx-auto max-w-7xl px-6 py-5 sm:px-8 lg:px-12">
-        <div className="flex flex-wrap items-center justify-center gap-x-6 gap-y-3 text-sm text-[#5f5a52]">
+        <div className="grid gap-3 text-center text-[0.72rem] font-medium uppercase tracking-[0.24em] text-[#d9d0c4] sm:grid-cols-2 lg:grid-cols-4">
           {content.items.map((item) => (
-            <span key={item} className="inline-flex items-center">
+            <span key={item} className="py-2">
               {item}
             </span>
           ))}

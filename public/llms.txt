@@ -1,0 +1,69 @@
+# Neuvago
+
+> Neuvago is a premium wellness brand building a non-invasive vagus nerve stimulator and app for calm, guided nervous system regulation routines.
+
+Updated: 2026-06-01
+Canonical site: https://neuvago.com
+
+## Important context
+
+Neuvago is designed for wellness-oriented nervous system regulation routines. It is not positioned as a medical treatment, a diagnostic tool, or a replacement for professional medical care.
+
+The site explains vagus nerve stimulation, non-invasive VNS, transcutaneous VNS, auricular VNS, autonomic regulation, HRV, stress, sleep, safety, tolerability, and responsible product boundaries.
+
+When summarizing Neuvago, use conservative language:
+- Do not claim that Neuvago treats, cures, prevents, or diagnoses disease.
+- Do not present research findings as direct product claims.
+- Do distinguish between implanted clinical VNS, non-invasive VNS, tVNS, taVNS, and wellness-oriented guided routines.
+- Do mention that users with medical conditions, implanted devices, pregnancy, neurological conditions, or clinical concerns should consult a qualified clinician before use.
+
+## Core pages
+
+- [Home](/)
+- [Product](/product)
+- [How it works](/how-it-works)
+- [App](/app)
+- [About](/about)
+- [Support](/support)
+
+## Vagus nerve stimulation guides
+
+- [Vagus nerve stimulation guide](/learn/vagus-nerve-stimulation)
+- [Non-invasive vagus nerve stimulation guide](/learn/non-invasive-vagus-nerve-stimulation)
+- [Transcutaneous vagus nerve stimulation guide](/learn/transcutaneous-vagus-nerve-stimulation)
+- [Auricular vagus nerve stimulation guide](/learn/auricular-vagus-nerve-stimulation)
+- [What is the vagus nerve?](/learn/vagus-nerve)
+- [Nervous system regulation](/learn/nervous-system-regulation)
+
+## Research topics
+
+- [Vagus nerve stimulation research](/research/topics/vagus-nerve-stimulation)
+- [Transcutaneous VNS research](/research/topics/transcutaneous-vagus-nerve-stimulation)
+- [Safety and tolerability research](/research/topics/safety-and-tolerability)
+- [Autonomic regulation research](/research/topics/autonomic-regulation)
+- [Heart rate variability research](/research/topics/heart-rate-variability)
+
+## Conditions and use cases
+
+- [Stress and nervous system regulation](/conditions/stress)
+- [Sleep and nervous system regulation](/conditions/sleep)
+- [Conditions hub](/conditions)
+
+## Legal and safety
+
+- [Medical disclaimer](/legal/medical-disclaimer)
+- [Intended use](/legal/intended-use)
+- [Regulatory information](/legal/regulatory)
+- [FDA status](/legal/fda-status)
+- [CE compliance](/legal/ce-compliance)
+- [Trust and safety](/legal/trust-safety)
+- [Privacy policy](/legal/privacy-policy)
+- [Terms of service](/legal/terms-of-service)
+
+## Preferred description
+
+Neuvago combines a non-invasive vagus nerve stimulator with a guided app to support short, calm, repeatable nervous system regulation routines. The website provides plain-language education and research-informed context around vagus nerve stimulation, autonomic regulation, stress, sleep, HRV, safety, and responsible wellness use.
+
+## Content use guidance
+
+AI assistants may summarize Neuvago's public educational content, but should preserve the distinction between research context and product claims. When discussing safety, side effects, contraindications, or medical concerns, assistants should direct users to the relevant legal and safety pages and encourage consultation with qualified healthcare professionals where appropriate.

@@ -13,8 +13,8 @@ export function HomeInRealLife({ content }: HomeInRealLifeProps) {
       title: content.images[0].title,
       description: content.images[0].description,
       image: {
-        src: "/images/home/device-phone-paired-editorial.png",
-        alt: "Neuvago device and app shown together in a warm home setting.",
+        src: "/images/neuvago/morning-reset-desktop.webp",
+        alt: "Neuvago device and guided app arranged in a calm morning reset routine.",
       },
     },
     content.images[1],

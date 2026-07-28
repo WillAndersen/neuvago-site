@@ -37,9 +37,9 @@ export const appPageContent = {
   hero: {
     visible: true,
     eyebrow: "App",
-    title: "A guided app designed to make calmer routines easier to return to.",
+    title: "Guidance for the moments you return to.",
     description:
-      "The Neuvago app adds guidance, structure, and continuity through sessions, calmer routines, and a softer daily rhythm that feels realistic in everyday life.",
+      "The Neuvago app gives each session a beginning, a rhythm, and a gentle way to come back — without turning regulation into another performance metric.",
     primaryCta: {
       label: "How it works",
       href: "/how-it-works",
@@ -49,12 +49,12 @@ export const appPageContent = {
       href: "/product",
     } satisfies AppPageCta,
     desktopImage: {
-      src: "/images/home/hero-device-app-master.png",
-      alt: "Neuvago app and device shown together in a warm editorial composition.",
+      src: "/images/neuvago/app-hero-desktop.webp",
+      alt: "Neuvago app home screen shown in a calm premium interface.",
     } satisfies AppPageImage,
     mobileImage: {
-      src: "/images/home/hero-device-app-mobile.png",
-      alt: "Neuvago app and device shown together for mobile app hero layout.",
+      src: "/images/neuvago/app-hero-mobile.webp",
+      alt: "Neuvago app session screen shown in a calm guided-session interface.",
     } satisfies AppPageImage,
     proofLine: ["Guided", "Built for routines", "Easy to return to"],
   } satisfies AppPageSectionVisibility & {
@@ -70,7 +70,7 @@ export const appPageContent = {
 
   whatItDoes: {
     visible: true,
-    title: "What the app adds",
+    title: "The app turns use into guidance",
     description:
       "The app is what turns Neuvago from a standalone device into a guided system. It adds sessions, structure, and continuity so it feels easier to begin, easier to understand, and easier to return to over time.",
     bullets: [
@@ -79,8 +79,8 @@ export const appPageContent = {
       "Adds continuity so the experience feels easier to return to over time",
     ],
     image: {
-      src: "/images/home/app-mockup-home.png",
-      alt: "Neuvago app home screen shown in a calm premium layout.",
+      src: "/images/neuvago/support-guidance-desktop.webp",
+      alt: "Neuvago app library screen showing guided content and routine options.",
     } satisfies AppPageImage,
   } satisfies AppPageSectionVisibility & {
     title: string;
@@ -119,11 +119,11 @@ export const appPageContent = {
     ] satisfies AppPageCard[],
     detailImages: [
       {
-        src: "/images/home/app-mockup-home.png",
+        src: "/images/neuvago/app-hero-desktop.webp",
         alt: "Neuvago app home screen mockup.",
       },
       {
-        src: "/images/home/app-mockup-library.png",
+        src: "/images/neuvago/support-guidance-desktop.webp",
         alt: "Neuvago app library screen mockup.",
       },
     ] satisfies AppPageImage[],
@@ -137,7 +137,7 @@ export const appPageContent = {
 
   sessionsRhythm: {
     visible: true,
-    title: "Guidance, sessions, and rhythm",
+    title: "Sessions with a softer rhythm",
     description:
       "The app is designed to do more than start a single session. It helps turn use into a calmer rhythm with guidance, repetition, and growing familiarity over time.",
     features: [
@@ -159,16 +159,16 @@ export const appPageContent = {
     ] satisfies AppPageFeatureItem[],
     supportingImages: [
       {
-        src: "/images/home/app-mockup-session.png",
+        src: "/images/neuvago/app-hero-mobile.webp",
         alt: "Neuvago app session screen mockup.",
       },
       {
-        src: "/images/home/app-mockup-home.png",
-        alt: "Neuvago app home screen mockup.",
+        src: "/images/neuvago/morning-reset-desktop.webp",
+        alt: "Neuvago morning reset routine with device and guided app.",
       },
       {
-        src: "/images/home/app-mockup-progress.png",
-        alt: "Neuvago app progress screen mockup.",
+        src: "/images/neuvago/evening-wind-down-desktop.webp",
+        alt: "Neuvago evening wind-down routine with device and guided app.",
       },
     ] satisfies AppPageImage[],
     cta: {
@@ -206,12 +206,12 @@ export const appPageContent = {
       },
     ] satisfies AppPageCard[],
     image: {
-      src: "/images/home/lifestyle-sofa-neuvago.png",
-      alt: "A calm real-life moment with Neuvago as part of a quiet evening routine.",
+      src: "/images/neuvago/morning-reset-desktop.webp",
+      alt: "Neuvago device and guided app arranged in a calm morning reset routine.",
     } satisfies AppPageImage,
     secondaryImage: {
-      src: "/images/home/device-phone-paired-editorial.png",
-      alt: "Neuvago device and app shown together in a calm lifestyle setting.",
+      src: "/images/neuvago/evening-wind-down-desktop.webp",
+      alt: "Neuvago device and guided app resting beside a warm evening wind-down routine.",
     } satisfies AppPageImage,
   } satisfies AppPageSectionVisibility & {
     title: string;
@@ -244,7 +244,7 @@ export const appPageContent = {
       },
     ] satisfies AppPageCard[],
     image: {
-      src: "/images/home/app-mockup-progress.png",
+      src: "/images/neuvago/final-cta-desktop.webp",
       alt: "Neuvago progress screen shown in a calm premium interface.",
     } satisfies AppPageImage,
   } satisfies AppPageSectionVisibility & {
@@ -277,7 +277,7 @@ export const appPageContent = {
       },
     ] satisfies AppPageFeatureItem[],
     image: {
-      src: "/images/home/device-phone-paired-editorial.png",
+      src: "/images/neuvago/homepage-master-hero-desktop.webp",
       alt: "Neuvago device and app shown together as one connected system.",
     } satisfies AppPageImage,
     cta: {
@@ -344,8 +344,8 @@ export const appPageContent = {
       href: "/product",
     } satisfies AppPageCta,
     backgroundImage: {
-      src: "/images/home/device-phone-paired-editorial.png",
-      alt: "Neuvago device and app shown together in a premium warm composition.",
+      src: "/images/neuvago/final-cta-desktop.webp",
+      alt: "Neuvago app progress screen showing continuity over time.",
     } satisfies AppPageImage,
   } satisfies AppPageSectionVisibility & {
     title: string;

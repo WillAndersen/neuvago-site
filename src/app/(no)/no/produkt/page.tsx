@@ -27,7 +27,7 @@ export const metadata: Metadata = {
     canonical: "/no/produkt",
     languages: {
       "en-US": "/product",
-      "nb-NO": "/no/produkt",
+      "no-NO": "/no/produkt",
     },
   },
   openGraph: {
@@ -36,7 +36,7 @@ export const metadata: Metadata = {
       "Møt Neuvago: en premium ikke-invasiv vagusnervestimulator og app for veiledede rutiner, tydelige sikkerhetsgrenser og roligere daglig reguleringsstøtte.",
     url: "/no/produkt",
     siteName: "Neuvago",
-    locale: "nb_NO",
+    locale: "no_NO",
     type: "website",
   },
   twitter: {

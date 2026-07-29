@@ -32,7 +32,7 @@ function cloneContent(content: ProductContent): ProductContent {
 }
 
 function formatSavedTime(date: Date) {
-  return new Intl.DateTimeFormat("nb-NO", {
+  return new Intl.DateTimeFormat("no-NO", {
     hour: "2-digit",
     minute: "2-digit",
     second: "2-digit",

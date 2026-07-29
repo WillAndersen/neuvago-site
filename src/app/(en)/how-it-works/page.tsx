@@ -23,7 +23,7 @@ export const metadata: Metadata = {
     canonical: "/how-it-works",
     languages: {
       "en-US": "/how-it-works",
-      "nb-NO": "/no/slik-fungerer-det",
+      "no-NO": "/no/slik-fungerer-det",
       "x-default": "/how-it-works",
     },
   },

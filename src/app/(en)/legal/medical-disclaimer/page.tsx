@@ -11,7 +11,7 @@ export const metadata = {
     canonical: "/legal/medical-disclaimer",
     languages: {
       "en-US": "/legal/medical-disclaimer",
-      "nb-NO": "/no/juridisk/medisinsk-ansvarsfraskrivelse",
+      "no-NO": "/no/juridisk/medisinsk-ansvarsfraskrivelse",
       "x-default": "/legal/medical-disclaimer",
     },
   },

@@ -11,7 +11,7 @@ export const metadata = {
     canonical: "/legal/ce-compliance",
     languages: {
       "en-US": "/legal/ce-compliance",
-      "nb-NO": "/no/juridisk/ce-samsvar",
+      "no-NO": "/no/juridisk/ce-samsvar",
       "x-default": "/legal/ce-compliance",
     },
   },

@@ -23,7 +23,7 @@ export const metadata: Metadata = {
     canonical: "/no/slik-fungerer-det",
     languages: {
       "en-US": "/how-it-works",
-      "nb-NO": "/no/slik-fungerer-det",
+      "no-NO": "/no/slik-fungerer-det",
     },
   },
   openGraph: {
@@ -32,7 +32,7 @@ export const metadata: Metadata = {
       "Se hvordan Neuvago fungerer som et ikke-invasivt VNS- og appsystem, med veiledning for plassering, komfort, økter og daglig rutine.",
     url: "/no/slik-fungerer-det",
     siteName: "Neuvago",
-    locale: "nb_NO",
+    locale: "no_NO",
     type: "website",
   },
   twitter: {

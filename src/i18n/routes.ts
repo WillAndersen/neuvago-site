@@ -17,8 +17,8 @@ export const localeConfig = {
   no: {
     label: "Norge",
     pathPrefix: "/no",
-    lang: "nb-NO",
-    ogLocale: "nb_NO",
+    lang: "no-NO",
+    ogLocale: "no_NO",
     market: "NO",
     currency: "NOK",
   },

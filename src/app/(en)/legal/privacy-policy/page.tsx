@@ -11,7 +11,7 @@ export const metadata = {
     canonical: "/legal/privacy-policy",
     languages: {
       "en-US": "/legal/privacy-policy",
-      "nb-NO": "/no/juridisk/personvern",
+      "no-NO": "/no/juridisk/personvern",
       "x-default": "/legal/privacy-policy",
     },
   },

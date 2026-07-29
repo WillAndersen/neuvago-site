@@ -11,6 +11,11 @@ export const metadata: Metadata = {
     "Explore practical explainers on vagus nerve stimulation, non-invasive VNS, tVNS, auricular VNS, the vagus nerve, nervous system regulation, stress, sleep, and recovery.",
   alternates: {
     canonical: "/learn",
+    languages: {
+      "en-US": "/learn",
+      "no-NO": "/no/kunnskap",
+      "x-default": "/learn",
+    },
   },
   openGraph: {
     title:

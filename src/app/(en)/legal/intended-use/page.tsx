@@ -11,7 +11,7 @@ export const metadata = {
     canonical: "/legal/intended-use",
     languages: {
       "en-US": "/legal/intended-use",
-      "nb-NO": "/no/juridisk/tiltenkt-bruk",
+      "no-NO": "/no/juridisk/tiltenkt-bruk",
       "x-default": "/legal/intended-use",
     },
   },

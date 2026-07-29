@@ -25,7 +25,7 @@ export const metadata: Metadata = {
     canonical: "/no",
     languages: {
       "en-US": "/",
-      "nb-NO": "/no",
+      "no-NO": "/no",
     },
   },
   openGraph: {
@@ -34,7 +34,7 @@ export const metadata: Metadata = {
       "Et rolig, app-veiledet reguleringssystem bygget rundt en ikke-invasiv vagusnervestimulator og korte daglige rutiner.",
     url: "/no",
     siteName: "Neuvago",
-    locale: "nb_NO",
+    locale: "no_NO",
     type: "website",
   },
   twitter: {

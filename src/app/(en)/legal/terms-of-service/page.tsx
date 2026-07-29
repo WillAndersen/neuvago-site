@@ -11,7 +11,7 @@ export const metadata = {
     canonical: "/legal/terms-of-service",
     languages: {
       "en-US": "/legal/terms-of-service",
-      "nb-NO": "/no/juridisk/vilkar",
+      "no-NO": "/no/juridisk/vilkar",
       "x-default": "/legal/terms-of-service",
     },
   },

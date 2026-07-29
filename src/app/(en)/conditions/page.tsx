@@ -10,6 +10,11 @@ export const metadata: Metadata = {
     "Explore condition pathways for stress, sleep, anxiety, burnout, nervous system regulation, research context, and app-guided daily support.",
   alternates: {
     canonical: "/conditions",
+    languages: {
+      "en-US": "/conditions",
+      "no-NO": "/no/tilstander",
+      "x-default": "/conditions",
+    },
   },
   openGraph: {
     title: "Conditions | Stress, Sleep and Nervous System Pathways | Neuvago",

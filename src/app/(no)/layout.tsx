@@ -26,7 +26,7 @@ export const metadata: Metadata = {
       "En roligere måte å støtte daglige rutiner, restitusjon og regulering på.",
     url: "https://neuvago.com/no",
     siteName: "Neuvago",
-    locale: "nb_NO",
+    locale: "no_NO",
     type: "website",
     images: [defaultOgImage],
   },
@@ -45,7 +45,7 @@ export default function NorwegianRootLayout({
   children: ReactNode;
 }>) {
   return (
-    <html lang="nb">
+    <html lang="no">
       <body
         className="bg-[#f7f4ef] text-[#1f1f1c] antialiased"
       >

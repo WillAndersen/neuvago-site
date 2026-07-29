@@ -11,7 +11,7 @@ export const metadata = {
     canonical: "/legal/trust-safety",
     languages: {
       "en-US": "/legal/trust-safety",
-      "nb-NO": "/no/juridisk/tillit-og-sikkerhet",
+      "no-NO": "/no/juridisk/tillit-og-sikkerhet",
       "x-default": "/legal/trust-safety",
     },
   },

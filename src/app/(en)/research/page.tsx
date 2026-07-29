@@ -10,6 +10,11 @@ export const metadata: Metadata = {
     "Browse Neuvago research topics and study summaries on vagus nerve stimulation, transcutaneous VNS, autonomic regulation, safety and tolerability, heart rate variability, stress, sleep, recovery, and nervous system regulation.",
   alternates: {
     canonical: "/research",
+    languages: {
+      "en-US": "/research",
+      "no-NO": "/no/forskning",
+      "x-default": "/research",
+    },
   },
   openGraph: {
     title: "Research Hub | VNS, tVNS and Safety | Neuvago",

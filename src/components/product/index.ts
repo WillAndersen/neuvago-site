@@ -9,3 +9,4 @@ export { ProductFaq } from "./ProductFaq";
 export { ProductFinalCta } from "./ProductFinalCta";
 export { ProductLaunchBuyBox } from "./ProductLaunchBuyBox";
 export { ProductSalesAssurance } from "./ProductSalesAssurance";
+export { ProductIncludedInBox } from "./ProductIncludedInBox";

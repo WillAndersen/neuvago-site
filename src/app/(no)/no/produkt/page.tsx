@@ -5,6 +5,7 @@ import { productLaunchBuyBoxNo } from "@/content/no/product-buy-box";
 import {
   ProductHero,
   ProductLaunchBuyBox,
+  ProductIncludedInBox,
   ProductSalesAssurance,
   ProductWhatIsNeuvago,
   ProductWhyItFeelsDifferent,
@@ -82,6 +83,8 @@ export default function NorwayProductPage() {
       {content.hero.visible ? <ProductHero content={content.hero} /> : null}
 
       <ProductLaunchBuyBox copy={productLaunchBuyBoxNo} />
+
+      <ProductIncludedInBox locale="no" />
 
       <ProductSalesAssurance locale="no" />
 

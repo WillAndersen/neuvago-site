@@ -8,22 +8,22 @@ export const productPageContentNo = {
   ...productPageContent,
   hero: {
     ...productPageContent.hero,
-    eyebrow: "Produkt",
-    title: "En ikke-invasiv VNS-enhet veiledet av appen.",
+    eyebrow: "Neuvago-enhet + app",
+    title: "En roligere daglig rutine, bygget rundt enhet og app.",
     description:
-      "Neuvago kombinerer en premium håndholdt enhet med veiledede appøkter for korte, gjentakbare reguleringsrutiner — med tydelige bruksgrenser og et forskningsinformert sikkerhetslag.",
+      "Neuvago kombinerer en ikke-invasiv VNS-enhet med veiledede appøkter for korte, gjentakbare velværerutiner knyttet til stress, restitusjon, søvnforberedelse og daglig regulering.",
     primaryCta: {
-      label: "Se produktvalg",
+      label: "Se kjøpsalternativer",
       href: "#buy",
     },
     secondaryCta: {
       label: "Slik fungerer det",
       href: no("/how-it-works"),
     },
-    panelEyebrow: "Det fysiske ankeret",
+    panelEyebrow: "Produktopplevelse",
     panelText:
-      "En taktil, ikke-invasiv enhet laget for at den veiledede opplevelsen skal føles rolig, jordet og enkel å vende tilbake til.",
-    proofLine: ["Ikke-invasiv VNS", "Veiledede appøkter", "Tydelige bruksgrenser"],
+      "En taktil enhet, veiledede appøkter og en roligere rutinevei — laget for å føles tydelig før checkout åpner.",
+    proofLine: ["Enhet + app", "Veiledede økter", "Tydelige bruksgrenser"],
   },
 
   whatIsNeuvago: {

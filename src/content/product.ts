@@ -48,16 +48,16 @@ export type ProductImageCard = {
 export const productPageContent = {
   hero: {
     visible: true,
-    eyebrow: "Product",
-    title: "A non-invasive vagus nerve stimulator, guided by app.",
+    eyebrow: "Neuvago device + app",
+    title: "A calmer daily routine, built around device and app.",
     description:
-      "Neuvago pairs a premium handheld device with guided app sessions for short, repeatable regulation routines — with clear wellness boundaries and a research-informed safety layer.",
+      "Neuvago pairs a non-invasive VNS device with guided app sessions for short, repeatable wellness routines around stress, recovery, sleep preparation, and daily regulation.",
     primaryCta: {
-      label: "View product options",
+      label: "View launch options",
       href: "#buy",
     } satisfies ProductCta,
     secondaryCta: {
-      label: "How it works",
+      label: "See how it works",
       href: "/how-it-works",
     } satisfies ProductCta,
     desktopImage: {
@@ -68,7 +68,7 @@ export const productPageContent = {
       src: "/images/neuvago/launch/product-hero-mobile.webp",
       alt: "Front and angled view of the Neuvago device for mobile product hero layout.",
     } satisfies ProductImage,
-    proofLine: ["Non-invasive VNS", "App-guided sessions", "Clear wellness boundaries"],
+    proofLine: ["Device + app", "Guided sessions", "Wellness boundaries"],
   } satisfies ProductSectionVisibility & {
     eyebrow: string;
     title: string;

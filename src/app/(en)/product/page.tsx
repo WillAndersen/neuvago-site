@@ -3,6 +3,7 @@ import { getProductContent } from "@/lib/content/get-product-content";
 import {
   ProductHero,
   ProductLaunchBuyBox,
+  ProductSalesAssurance,
   ProductWhatIsNeuvago,
   ProductWhyItFeelsDifferent,
   ProductDeviceAppTogether,
@@ -83,6 +84,8 @@ export default async function ProductPage() {
       {content.hero.visible ? <ProductHero content={content.hero} /> : null}
 
       <ProductLaunchBuyBox />
+
+      <ProductSalesAssurance />
 
       {content.whatIsNeuvago.visible ? (
         <ProductWhatIsNeuvago content={content.whatIsNeuvago} />

@@ -277,7 +277,7 @@ export default function ThayerLane2000NeurovisceralIntegrationPage() {
                 DOI
               </p>
               <a
-                href="https://doi.org/10.1016/S0165-0327(99)00138-4"
+                href="https://doi.org/10.1016/S0165-0327(00)00338-4"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="mt-2 inline-flex text-sm leading-7 text-[#1f1f1c] underline-offset-4 hover:underline"

@@ -251,7 +251,7 @@ export default function Borovikova2000VagusNerveInflammationPage() {
                 DOI
               </p>
               <a
-                href="https://doi.org/10.1038/35030300"
+                href="https://doi.org/10.1038/35013070"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="mt-2 inline-flex text-sm leading-7 text-[#1f1f1c] underline-offset-4 hover:underline"

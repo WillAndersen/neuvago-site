@@ -18,9 +18,9 @@ import {
 } from "@/lib/seo/structured-data";
 
 export const metadata: Metadata = {
-  title: "Neuvago Norge | Ikke-invasiv vagusnervestimulator og app",
+  title: "Neuvago Norge | Ikke-invasiv VNS-enhet og veiledet app",
   description:
-    "Neuvago kombinerer en ikke-invasiv vagusnervestimulator med veiledede appøkter for korte, gjentakbare rutiner som støtter regulering av nervesystemet.",
+    "Neuvago kombinerer en ikke-invasiv VNS-enhet med veiledede appøkter for korte daglige velværerutiner. Se produktdetaljer og kjøpsalternativer før lansering.",
   alternates: {
     canonical: "/no",
     languages: {
@@ -29,9 +29,9 @@ export const metadata: Metadata = {
     },
   },
   openGraph: {
-    title: "Neuvago Norge | Ikke-invasiv vagusnervestimulator og app",
+    title: "Neuvago Norge | Ikke-invasiv VNS-enhet og veiledet app",
     description:
-      "Et rolig, app-veiledet reguleringssystem bygget rundt en ikke-invasiv vagusnervestimulator og korte daglige rutiner.",
+      "Et rolig, app-veiledet velværesystem bygget rundt en ikke-invasiv VNS-enhet og korte daglige rutiner.",
     url: "/no",
     siteName: "Neuvago",
     locale: "no_NO",
@@ -39,9 +39,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Neuvago Norge | Ikke-invasiv vagusnervestimulator og app",
+    title: "Neuvago Norge | Ikke-invasiv VNS-enhet og veiledet app",
     description:
-      "Et rolig, app-veiledet reguleringssystem bygget rundt en ikke-invasiv vagusnervestimulator og korte daglige rutiner.",
+      "Et rolig, app-veiledet velværesystem bygget rundt en ikke-invasiv VNS-enhet og korte daglige rutiner.",
   },
 };
 

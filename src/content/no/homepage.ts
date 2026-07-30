@@ -8,13 +8,13 @@ export const homepageContentNo = {
   ...homepageContent,
   hero: {
     ...homepageContent.hero,
-    eyebrow: "Neuvago",
-    title: "En roligere måte å vende tilbake på.",
+    eyebrow: "Neuvago-enhet + app",
+    title: "Møt Neuvago: enhet, app og en roligere daglig rutine.",
     description:
-      "Neuvago kombinerer en ikke-invasiv vagusnervestimulator med veiledede appøkter for korte, gjentakbare rutiner som støtter regulering av nervesystemet.",
+      "En ikke-invasiv VNS-enhet koblet til veiledede appøkter for korte, gjentakbare velværerutiner — med kjøpsalternativer under klargjøring.",
     primaryCta: {
-      label: "Se produktet",
-      href: no("/product"),
+      label: "Se kjøpsalternativer",
+      href: no("/product#buy"),
     },
     secondaryCta: {
       label: "Slik fungerer det",
@@ -23,27 +23,22 @@ export const homepageContentNo = {
     panelEyebrow: "Enhet + app + rutine",
     panelText:
       "En rolig produktopplevelse for korte reguleringsøyeblikk: et fysisk anker, veiledede økter og en rytme du kan vende tilbake til.",
-    proofLine: ["Ikke-invasiv", "App-veiledet", "Forankret i forskning"],
+    proofLine: ["Enhet + app", "Klargjør lansering", "Tydelige bruksgrenser"],
     mediaNote:
-      "Hero-felt klart for video. Bruker et rolig stillbilde frem til ambient video er klar.",
+      "Produktledet hero-felt klart for video. Bruker et rolig stillbilde frem til ambient video er klar.",
   },
 
   proofStrip: {
     ...homepageContent.proofStrip,
-    items: [
-      "Ikke-invasiv",
-      "App-veiledet",
-      "Forankret i forskning",
-      "Laget for daglige rutiner",
-    ],
+    items: ["Enhet + app", "Checkout klargjøres", "Veiledede økter", "Tydelige bruksgrenser"],
   },
 
   systemReveal: {
     ...homepageContent.systemReveal,
-    eyebrow: "Neuvago-systemet",
-    title: "Enhet, veiledning og rutine — laget for å fungere som ett.",
+    eyebrow: "Produktsystemet",
+    title: "Én produktopplevelse: enhet, app og rutine.",
     description:
-      "Neuvago er ikke bare en enhet eller bare en app. Det er et rolig system bygget rundt et fysisk startpunkt, veiledede økter og en rytme du kan vende tilbake til i hverdagen.",
+      "Neuvago er bygget som en komplett produktopplevelse: en taktil ikke-invasiv enhet, veiledede appøkter og en rolig rutinevei som er enkel å vende tilbake til.",
     image: {
       ...homepageContent.systemReveal.image,
       alt: "Neuvago-enheten vist i en varm og premium produktkomposisjon.",
@@ -75,10 +70,10 @@ export const homepageContentNo = {
 
   ritualSequence: {
     ...homepageContent.ritualSequence,
-    eyebrow: "Rutinen",
-    title: "Enkel nok til å begynne. Strukturert nok til å vende tilbake til.",
+    eyebrow: "Slik henger kjøp og bruk sammen",
+    title: "Et produkt du kan forstå før checkout åpner.",
     description:
-      "Opplevelsen er bevisst rolig: plasser enheten, start en veiledet økt og la appen gjøre øyeblikket til en gjentakbar rutine.",
+      "Før kjøp åpner, skal siden gjøre opplevelsen tydelig: hva enheten gjør, hvordan appen veileder deg og hvor bruksgrensene går.",
     steps: [
       {
         title: "Plasser",
@@ -97,17 +92,17 @@ export const homepageContentNo = {
       },
     ],
     cta: {
-      label: "Se hvordan det fungerer",
+      label: "Se rutinen",
       href: no("/how-it-works"),
     },
   },
 
   appGuidance: {
     ...homepageContent.appGuidance,
-    eyebrow: "Veiledet av appen",
-    title: "Appen gjør en økt til noe du kan følge.",
+    eyebrow: "Inkludert opplevelse",
+    title: "Appen er en del av produktet, ikke et tillegg.",
     description:
-      "Neuvago er laget for å fjerne usikkerheten rundt hva du skal gjøre videre. Økter, forløp og rolige fremdriftssignaler gjør opplevelsen veiledet heller enn improvisert.",
+      "Neuvago kombinerer enheten med appveiledning slik at første steg, øktflyt og gjentakbar rutine føles tydelig fra starten.",
     items: [
       {
         title: "Veiledede økter",
@@ -126,17 +121,17 @@ export const homepageContentNo = {
       },
     ],
     cta: {
-      label: "Utforsk appen",
+      label: "Utforsk appveiledning",
       href: no("/app"),
     },
   },
 
   researchBoundary: {
     ...homepageContent.researchBoundary,
-    eyebrow: "Forskning og tydelige grenser",
-    title: "Forankret i forskning, ikke drevet av påstander.",
+    eyebrow: "Tillit før kjøp",
+    title: "Tydelige påstander, synlige grenser.",
     description:
-      "Neuvago står i en bredere forskningssamtale om vagusnervestimulering, autonom regulering, HRV, stress og restitusjon. Nettstedet skiller forskningskontekst fra produktpåstander og holder tiltenkt bruk synlig.",
+      "Neuvago skal være produktledet, men ikke overdrivende. Forskningskontekst, tiltenkt bruk, sikkerhetsspråk og regulatoriske grenser skal ligge tett på kjøpsreisen.",
     points: [
       {
         title: "Hva forskning kan bidra til å forklare",
@@ -155,12 +150,12 @@ export const homepageContentNo = {
       },
     ],
     primaryCta: {
-      label: "Utforsk forskning",
-      href: no("/research"),
+      label: "Les tiltenkt bruk",
+      href: no("/legal/intended-use"),
     },
     secondaryCta: {
-      label: "Se tiltenkt bruk",
-      href: no("/legal/intended-use"),
+      label: "Utforsk forskning",
+      href: no("/research"),
     },
   },
 
@@ -201,12 +196,12 @@ export const homepageContentNo = {
   finalCta: {
     ...homepageContent.finalCta,
     eyebrow: "Begynn rolig",
-    title: "Bygg en roligere reguleringsrutine.",
+    title: "Vær klar når Neuvago åpner for kjøp.",
     description:
-      "Se hvordan Neuvago kombinerer en ikke-invasiv enhet, veiledede økter og forskningsinformert kunnskap i ett rolig daglig system.",
+      "Se produktet, forstå den veiledede appopplevelsen og gå gjennom de praktiske detaljene før checkout åpner.",
     primaryCta: {
-      label: "Se Neuvago",
-      href: no("/product"),
+      label: "Se kjøpsalternativer",
+      href: no("/product#buy"),
     },
     secondaryCta: {
       label: "Slik fungerer det",

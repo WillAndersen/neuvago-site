@@ -17,9 +17,9 @@ import {
 } from "@/lib/seo/structured-data";
 
 export const metadata: Metadata = {
-  title: "Neuvago | Non-Invasive Vagus Nerve Stimulator and App",
+  title: "Neuvago | Non-Invasive VNS Device and Guided App",
   description:
-    "Neuvago combines a non-invasive vagus nerve stimulator with guided app sessions for short, repeatable nervous system regulation routines.",
+    "Neuvago pairs a non-invasive VNS device with guided app sessions for short daily wellness routines. View product details and launch purchase options.",
   alternates: {
     canonical: "/",
     languages: {
@@ -29,9 +29,9 @@ export const metadata: Metadata = {
     },
   },
   openGraph: {
-    title: "Neuvago | Non-Invasive Vagus Nerve Stimulator and App",
+    title: "Neuvago | Non-Invasive VNS Device and Guided App",
     description:
-      "A calm, app-guided regulation system built around a non-invasive vagus nerve stimulator and short daily routines.",
+      "A calm, app-guided wellness system built around a non-invasive VNS device and short daily routines.",
     url: "/",
     siteName: "Neuvago",
     locale: "en_US",
@@ -39,9 +39,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Neuvago | Non-Invasive Vagus Nerve Stimulator and App",
+    title: "Neuvago | Non-Invasive VNS Device and Guided App",
     description:
-      "A calm, app-guided regulation system built around a non-invasive vagus nerve stimulator and short daily routines.",
+      "A calm, app-guided wellness system built around a non-invasive VNS device and short daily routines.",
   },
 };
 

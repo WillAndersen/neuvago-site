@@ -123,22 +123,22 @@ const finalCtaDesktop = {
 export const homepageContent = {
   hero: {
     visible: true,
-    eyebrow: "Neuvago",
-    title: "A calmer way to return.",
+    eyebrow: "Neuvago device + app",
+    title: "Meet Neuvago: device, app, and a calmer daily routine.",
     description:
-      "Neuvago combines a non-invasive vagus nerve stimulator with guided app sessions for short, repeatable nervous system regulation routines.",
+      "A non-invasive VNS device paired with guided app sessions for short, repeatable wellness routines — with launch purchase options being prepared now.",
     primaryCta: {
-      label: "View product",
-      href: "/product",
+      label: "View product options",
+      href: "/product#buy",
     } satisfies HomepageCta,
     secondaryCta: {
-      label: "How it works",
+      label: "See how it works",
       href: "/how-it-works",
     } satisfies HomepageCta,
     desktopImage: homepageHeroDesktop,
     mobileImage: homepageHeroMobile,
-    proofLine: ["Non-invasive", "App-guided", "Research-informed"],
-    mediaNote: "Video-ready hero slot. Uses a cinematic still until the ambient loop is ready.",
+    proofLine: ["Device + app", "Checkout preparing", "Wellness boundaries"],
+    mediaNote: "Product-led launch hero. Uses a cinematic still until the ambient loop is ready.",
   } satisfies HomepageSectionVisibility & {
     eyebrow: string;
     title: string;
@@ -153,22 +153,17 @@ export const homepageContent = {
 
   proofStrip: {
     visible: true,
-    items: [
-      "Non-invasive",
-      "App-guided",
-      "Research-informed",
-      "Designed for daily routines",
-    ],
+    items: ["Device + app", "Checkout preparing", "Guided sessions", "Clear wellness boundaries"],
   } satisfies HomepageSectionVisibility & {
     items: string[];
   },
 
   systemReveal: {
     visible: true,
-    eyebrow: "The Neuvago system",
-    title: "Device, guidance, and routine — designed to work as one.",
+    eyebrow: "The product system",
+    title: "One product experience: device, app, and routine.",
     description:
-      "Neuvago is not just a device or just an app. It is a quiet system built around a physical starting point, guided sessions, and a rhythm you can return to in real life.",
+      "Neuvago is built as a complete product experience: a tactile non-invasive device, guided app sessions, and a calm routine path designed to be easy to return to.",
     image: productHeroDesktop,
     items: [
       {
@@ -203,10 +198,10 @@ export const homepageContent = {
 
   ritualSequence: {
     visible: true,
-    eyebrow: "The ritual",
-    title: "Simple enough to begin. Structured enough to return to.",
+    eyebrow: "How buying fits into use",
+    title: "A product you can understand before checkout opens.",
     description:
-      "The experience is intentionally quiet: place the device, start a guided session, and let the app help turn the moment into a repeatable routine.",
+      "Before purchase opens, the site should make the experience clear: what the device does, how the app guides you, and where the wellness boundaries are.",
     desktopImage: howItWorksDesktop,
     mobileImage: howItWorksMobile,
     steps: [
@@ -227,7 +222,7 @@ export const homepageContent = {
       },
     ] satisfies HomepageStep[],
     cta: {
-      label: "See how it works",
+      label: "See the routine",
       href: "/how-it-works",
     } satisfies HomepageCta,
   } satisfies HomepageSectionVisibility & {
@@ -242,10 +237,10 @@ export const homepageContent = {
 
   appGuidance: {
     visible: true,
-    eyebrow: "Guided by the app",
-    title: "The app turns a session into something you can follow.",
+    eyebrow: "Included experience",
+    title: "The app is part of the product, not an add-on.",
     description:
-      "Neuvago is designed to remove the uncertainty around what to do next. Sessions, pathways, and gentle progress cues help the experience feel guided rather than improvised.",
+      "Neuvago pairs the device with app guidance so the first step, session flow, and repeat routine feel clear from the beginning.",
     image: appHeroDesktop,
     mobileImage: appHeroMobile,
     items: [
@@ -266,7 +261,7 @@ export const homepageContent = {
       },
     ] satisfies HomepageCard[],
     cta: {
-      label: "Explore the app",
+      label: "Explore app guidance",
       href: "/app",
     } satisfies HomepageCta,
   } satisfies HomepageSectionVisibility & {
@@ -281,10 +276,10 @@ export const homepageContent = {
 
   researchBoundary: {
     visible: true,
-    eyebrow: "Research and boundaries",
-    title: "Research-informed, not claim-driven.",
+    eyebrow: "Trust before purchase",
+    title: "Clear claims, visible boundaries.",
     description:
-      "Neuvago sits within a broader research conversation around vagus nerve stimulation, autonomic regulation, HRV, stress, and recovery. The site separates research context from product claims, and keeps intended-use boundaries visible.",
+      "Neuvago is product-led, but not overclaiming. Research context, intended use, safety language, and regulatory boundaries stay close to the purchase journey.",
     image: researchEvidenceDesktop,
     points: [
       {
@@ -304,12 +299,12 @@ export const homepageContent = {
       },
     ] satisfies HomepageCard[],
     primaryCta: {
-      label: "Explore research",
-      href: "/research",
-    } satisfies HomepageCta,
-    secondaryCta: {
       label: "Review intended use",
       href: "/legal/intended-use",
+    } satisfies HomepageCta,
+    secondaryCta: {
+      label: "Explore research",
+      href: "/research",
     } satisfies HomepageCta,
   } satisfies HomepageSectionVisibility & {
     eyebrow: string;
@@ -362,15 +357,15 @@ export const homepageContent = {
 
   finalCta: {
     visible: true,
-    title: "Build a calmer regulation routine.",
+    title: "Be ready when Neuvago opens for purchase.",
     description:
-      "Explore how Neuvago brings together a non-invasive device, guided sessions, and research-informed education into one calm daily system.",
+      "See the product, understand the guided app experience, and review the practical details before checkout opens.",
     primaryCta: {
-      label: "View product",
-      href: "/product",
+      label: "View product options",
+      href: "/product#buy",
     } satisfies HomepageCta,
     secondaryCta: {
-      label: "How it works",
+      label: "See how it works",
       href: "/how-it-works",
     } satisfies HomepageCta,
     signedInCta: {

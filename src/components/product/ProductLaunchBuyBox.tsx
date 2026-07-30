@@ -30,6 +30,15 @@ export type ProductLaunchBuyBoxCopy = {
   checkoutLoadingLabel: string;
   includedItems: readonly string[];
   reassuranceItems: readonly string[];
+  commerceDetails?: readonly {
+    label: string;
+    value: string;
+    note?: string;
+  }[];
+  trustLinks?: readonly {
+    label: string;
+    href: string;
+  }[];
 };
 
 const galleryImages = [
@@ -62,6 +71,42 @@ const defaultCopy = {
   launchStatus: "Preparing launch",
   purchaseDescription:
     "Price, availability, and checkout options will appear here as soon as purchasing opens.",
+  commerceDetails: [
+    {
+      label: "Launch price",
+      value: "To be announced",
+      note: "Shown here before checkout opens.",
+    },
+    {
+      label: "Availability",
+      value: "Preparing launch",
+      note: "Initial stock is being prepared.",
+    },
+    {
+      label: "Shipping",
+      value: "Calculated at checkout",
+      note: "Final shipping options will appear in Shopify Checkout.",
+    },
+    {
+      label: "Returns",
+      value: "Policy before launch",
+      note: "Return and warranty details will be finalized before sales open.",
+    },
+  ],
+  trustLinks: [
+    {
+      label: "Intended use",
+      href: "/legal/intended-use",
+    },
+    {
+      label: "Terms",
+      href: "/legal/terms-of-service",
+    },
+    {
+      label: "Privacy",
+      href: "/legal/privacy-policy",
+    },
+  ],
   primaryCta: {
     label: "Get launch updates",
     href: "/get-started",
@@ -132,6 +177,8 @@ export function ProductLaunchBuyBox({
 }) {
   const locale = copy.locale ?? "en";
   const gallery = copy.galleryImages.length ? copy.galleryImages : galleryImages;
+  const commerceDetails = copy.commerceDetails ?? [];
+  const trustLinks = copy.trustLinks ?? [];
 
   return (
     <section id="buy" className="scroll-mt-28 bg-[#f2eee8]">
@@ -226,6 +273,45 @@ export function ProductLaunchBuyBox({
             >
               {copy.secondaryCta.label}
             </Link>
+
+            {commerceDetails.length ? (
+              <div className="mt-6 grid gap-3 border-t border-black/8 pt-5">
+                {commerceDetails.map((detail) => (
+                  <div
+                    key={detail.label}
+                    className="rounded-[1.15rem] border border-black/6 bg-white/55 px-4 py-3"
+                  >
+                    <div className="flex items-start justify-between gap-4">
+                      <p className="text-xs font-medium uppercase tracking-[0.18em] text-[#8a7f72]">
+                        {detail.label}
+                      </p>
+                      <p className="text-right text-sm font-medium text-[#292824]">
+                        {detail.value}
+                      </p>
+                    </div>
+                    {detail.note ? (
+                      <p className="mt-2 text-xs leading-5 text-[#6d655d]">
+                        {detail.note}
+                      </p>
+                    ) : null}
+                  </div>
+                ))}
+              </div>
+            ) : null}
+
+            {trustLinks.length ? (
+              <div className="mt-5 flex flex-wrap gap-2">
+                {trustLinks.map((link) => (
+                  <Link
+                    key={link.href}
+                    href={link.href}
+                    className="rounded-full border border-black/8 bg-white/60 px-3.5 py-2 text-xs font-medium text-[#5f5a52] transition hover:bg-white hover:text-[#1f1f1c]"
+                  >
+                    {link.label}
+                  </Link>
+                ))}
+              </div>
+            ) : null}
           </div>
 
           <div className="mt-7 grid gap-3 sm:grid-cols-2">

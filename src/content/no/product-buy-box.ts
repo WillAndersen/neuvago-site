@@ -28,6 +28,42 @@ export const productLaunchBuyBoxNo = {
   launchStatus: "Klargjør lansering",
   purchaseDescription:
     "Pris, tilgjengelighet og betalingsvalg vises her når salget åpner.",
+  commerceDetails: [
+    {
+      label: "Lanseringspris",
+      value: "Kommer",
+      note: "Vises her før checkout åpnes.",
+    },
+    {
+      label: "Tilgjengelighet",
+      value: "Klargjør lansering",
+      note: "Første lager er under klargjøring.",
+    },
+    {
+      label: "Frakt",
+      value: "Beregnes i checkout",
+      note: "Endelige fraktvalg vises i Shopify Checkout.",
+    },
+    {
+      label: "Retur",
+      value: "Policy før lansering",
+      note: "Retur, angrerett og reklamasjon ferdigstilles før salg åpner.",
+    },
+  ],
+  trustLinks: [
+    {
+      label: "Tiltenkt bruk",
+      href: "/no/juridisk/tiltenkt-bruk",
+    },
+    {
+      label: "Vilkår",
+      href: "/no/juridisk/vilkar",
+    },
+    {
+      label: "Personvern",
+      href: "/no/juridisk/personvern",
+    },
+  ],
   primaryCta: {
     label: "Få lanseringsoppdateringer",
     href: "/get-started",

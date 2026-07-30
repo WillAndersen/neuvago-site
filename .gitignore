@@ -44,3 +44,6 @@ next-env.d.ts
 exports/
 .review-export/
 *.sha256
+
+# Keep safe environment documentation tracked
+!.env.example

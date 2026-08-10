@@ -32,7 +32,7 @@ export const productLaunchBuyBoxNo = {
     {
       label: "Lanseringspris",
       value: "Kommer",
-      note: "Vises her før checkout åpnes.",
+      note: "Vises her før kjøp åpner.",
     },
     {
       label: "Tilgjengelighet",
@@ -46,7 +46,7 @@ export const productLaunchBuyBoxNo = {
     },
     {
       label: "Retur",
-      value: "Policy før lansering",
+      value: "Avklares før lansering",
       note: "Retur, angrerett og reklamasjon ferdigstilles før salg åpner.",
     },
   ],

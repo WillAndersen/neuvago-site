@@ -29,7 +29,7 @@ const content = {
     ],
     rows: [
       {
-        label: "Checkout",
+        label: "Betaling",
         value: "Shopify checkout will handle secure payment when sales open.",
       },
       {
@@ -80,7 +80,7 @@ const content = {
     ],
     rows: [
       {
-        label: "Checkout",
+        label: "Betaling",
         value: "Betalingssiden fra Shopify håndterer sikker betaling når salget åpner.",
       },
       {
@@ -122,7 +122,7 @@ export function ProductSalesAssurance({
             {copy.eyebrow}
           </p>
 
-          <h2 className="mt-5 max-w-[11ch] text-[clamp(2.6rem,7vw,5.4rem)] font-medium leading-[0.9] tracking-[-0.075em] text-[#1f1f1c]">
+          <h2 className="mt-5 max-w-[12ch] text-balance text-[clamp(2.25rem,9.5vw,3.2rem)] font-medium leading-[0.98] tracking-[-0.035em] text-[#1f1f1c] sm:text-[clamp(2.6rem,7vw,5.4rem)] sm:leading-[0.9] sm:tracking-[-0.075em]">
             {copy.title}
           </h2>
 

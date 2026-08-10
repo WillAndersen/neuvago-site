@@ -113,7 +113,7 @@ export function ProductWhyItFeelsDifferent({
             {content.eyebrow}
           </p>
 
-          <h2 className="mt-5 max-w-[11ch] text-[clamp(2.7rem,7vw,5.6rem)] font-medium leading-[0.88] tracking-[-0.078em]">
+          <h2 className="mt-5 max-w-[12ch] text-balance text-[clamp(2.35rem,10vw,3.35rem)] font-medium leading-[0.96] tracking-[-0.035em] sm:text-[clamp(2.7rem,7vw,5.6rem)] sm:leading-[0.88] sm:tracking-[-0.078em]">
             {content.title}
           </h2>
 

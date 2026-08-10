@@ -141,18 +141,30 @@ export const productPageContentNo = {
         title: "Plasser enheten komfortabelt",
         description:
           "Start med enheten som det fysiske utgangspunktet, der komfort og tydelig plasseringsveiledning er en del av opplevelsen.",
+        image: {
+          src: "/images/neuvago/launch/how-it-works-product-hand.webp",
+          alt: "Neuvago-enheten holdes rolig før en veiledet rutine startes.",
+        },
       },
       {
         ...productPageContent.howToUse.steps[1],
         title: "Start en veiledet økt i appen",
         description:
           "Bruk appen til å velge veiledning som passer øyeblikket, samtidig som øktlengde, rytme og intensitet holdes lett å forstå.",
+        image: {
+          src: "/images/neuvago/launch/product-phone-app.webp",
+          alt: "Neuvago-enhet koblet til appen på en smarttelefon.",
+        },
       },
       {
         ...productPageContent.howToUse.steps[2],
         title: "Vend tilbake til den over tid",
         description:
           "Gjenta på måter som passer hverdagen, slik at systemet blir enklere å vende tilbake til og mer nyttig over tid.",
+        image: {
+          src: "/images/neuvago/launch/routine-evening-desktop.webp",
+          alt: "Neuvago-enhet og app i en varm kveldsrutine.",
+        },
       },
     ],
   },

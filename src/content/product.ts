@@ -257,8 +257,8 @@ export const productPageContent = {
         description:
           "Use the app to choose guidance that fits the moment, while keeping session length, rhythm, and intensity easy to understand.",
         image: {
-          src: "/images/neuvago/launch/product-app-pairing-mobile.webp",
-          alt: "Neuvago session screen shown on a smartphone.",
+          src: "/images/neuvago/launch/product-phone-app.webp",
+          alt: "Neuvago device paired with the app on a smartphone.",
         },
       },
       {
@@ -266,8 +266,8 @@ export const productPageContent = {
         description:
           "Repeat it in ways that fit real life so the system becomes easier to return to and more useful over time.",
         image: {
-          src: "/images/neuvago/launch/routine-evening-mobile.webp",
-          alt: "Neuvago device, guided app, and routine cards explaining how the system works.",
+          src: "/images/neuvago/launch/routine-evening-desktop.webp",
+          alt: "Neuvago device and guided app in a warm evening routine.",
         },
       },
     ] satisfies ProductStep[],

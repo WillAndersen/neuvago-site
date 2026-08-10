@@ -49,7 +49,7 @@ export const productPageContent = {
   hero: {
     visible: true,
     eyebrow: "Neuvago device + app",
-    title: "A calmer daily routine, built around device and app.",
+    title: "A calmer routine with device and app.",
     description:
       "Neuvago pairs a non-invasive VNS device with guided app sessions for short, repeatable wellness routines around stress, recovery, sleep preparation, and daily regulation.",
     primaryCta: {

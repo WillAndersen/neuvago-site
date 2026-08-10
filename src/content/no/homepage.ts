@@ -30,7 +30,7 @@ export const homepageContentNo = {
 
   proofStrip: {
     ...homepageContent.proofStrip,
-    items: ["Enhet + app", "Checkout klargjøres", "Veiledede økter", "Tydelige bruksgrenser"],
+    items: ["Enhet + app", "Kjøp klargjøres", "Veiledede økter", "Tydelige bruksgrenser"],
   },
 
   systemReveal: {
@@ -71,7 +71,7 @@ export const homepageContentNo = {
   ritualSequence: {
     ...homepageContent.ritualSequence,
     eyebrow: "Slik henger kjøp og bruk sammen",
-    title: "Et produkt du kan forstå før checkout åpner.",
+    title: "Et produkt du kan forstå før kjøp åpner.",
     description:
       "Før kjøp åpner, skal siden gjøre opplevelsen tydelig: hva enheten gjør, hvordan appen veileder deg og hvor bruksgrensene går.",
     steps: [
@@ -198,7 +198,7 @@ export const homepageContentNo = {
     eyebrow: "Begynn rolig",
     title: "Vær klar når Neuvago åpner for kjøp.",
     description:
-      "Se produktet, forstå den veiledede appopplevelsen og gå gjennom de praktiske detaljene før checkout åpner.",
+      "Se produktet, forstå den veiledede appopplevelsen og gå gjennom de praktiske detaljene før kjøp åpner.",
     primaryCta: {
       label: "Se kjøpsalternativer",
       href: no("/product#buy"),

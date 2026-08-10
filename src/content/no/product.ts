@@ -9,7 +9,7 @@ export const productPageContentNo = {
   hero: {
     ...productPageContent.hero,
     eyebrow: "Neuvago-enhet + app",
-    title: "En roligere daglig rutine, bygget rundt enhet og app.",
+    title: "En roligere rutine med enhet og app.",
     description:
       "Neuvago kombinerer en ikke-invasiv VNS-enhet med veiledede appøkter for korte, gjentakbare velværerutiner knyttet til stress, restitusjon, søvnforberedelse og daglig regulering.",
     primaryCta: {
@@ -22,7 +22,7 @@ export const productPageContentNo = {
     },
     panelEyebrow: "Produktopplevelse",
     panelText:
-      "En taktil enhet, veiledede appøkter og en roligere rutinevei — laget for å føles tydelig før checkout åpner.",
+      "En taktil enhet, veiledede appøkter og en roligere rutinevei — laget for å føles tydelig før kjøp åpner.",
     proofLine: ["Enhet + app", "Veiledede økter", "Tydelige bruksgrenser"],
   },
 

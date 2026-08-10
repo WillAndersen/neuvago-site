@@ -41,8 +41,8 @@ export const productLaunchBuyBoxNo = {
     },
     {
       label: "Frakt",
-      value: "Beregnes i checkout",
-      note: "Endelige fraktvalg vises i Shopify Checkout.",
+      value: "Beregnes på betalingssiden",
+      note: "Endelige fraktvalg vises på betalingssiden.",
     },
     {
       label: "Retur",
@@ -74,7 +74,7 @@ export const productLaunchBuyBoxNo = {
   },
   checkoutLabel: "Kjøp Neuvago",
   checkoutDisabledLabel: "Kjøp åpner snart",
-  checkoutLoadingLabel: "Åpner checkout…",
+  checkoutLoadingLabel: "Åpner betaling…",
   includedItems: [
     "Neuvago-enhet",
     "Veiledet appopplevelse",

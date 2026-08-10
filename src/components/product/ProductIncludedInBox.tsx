@@ -65,7 +65,7 @@ const content = {
     eyebrow: "Dette følger med Neuvago",
     title: "Hva du får når salget åpner.",
     description:
-      "Neuvago klargjøres som en komplett lanseringspakke. Endelig pakkeinnhold, merking, frakt og checkout-detaljer bekreftes før kjøp åpner.",
+      "Neuvago klargjøres som en komplett lanseringspakke. Endelig pakkeinnhold, merking, frakt og betalings- og kjøpsdetaljer bekreftes før kjøp åpner.",
     imageAlt: "Neuvago-enhet og app vist som del av den komplette lanseringspakken.",
     packageTitle: "Lanseringspakke",
     packageDescription:
@@ -84,7 +84,7 @@ const content = {
       {
         title: "Kontaktgel",
         description:
-          "Gel for riktig kontakt under bruk. Endelig merking og instruksjoner bekreftes før checkout åpner.",
+          "Gel for riktig kontakt under bruk. Endelig merking og instruksjoner bekreftes før kjøp åpner.",
       },
       {
         title: "Kom-i-gang-veiledning",
@@ -103,9 +103,9 @@ const content = {
       },
     ],
     notes: [
-      "Endelige pakkedetaljer bekreftes før checkout åpner.",
+      "Endelige pakkedetaljer bekreftes før kjøp åpner.",
       "Neuvago er posisjonert for velværebruk, ikke diagnose, behandling eller kurering.",
-      "Shopify Checkout håndterer sikker betaling når salget åpner.",
+      "Betalingssiden fra Shopify håndterer sikker betaling når salget åpner.",
     ],
     cta: {
       label: "Se kjøpsalternativer",

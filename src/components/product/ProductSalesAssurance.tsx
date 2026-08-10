@@ -57,7 +57,7 @@ const content = {
     ],
   },
   no: {
-    eyebrow: "Før checkout åpner",
+    eyebrow: "Før kjøp åpner",
     title: "Bygget for å føles tydelig før du kjøper.",
     description:
       "Neuvago klargjøres som en komplett produktopplevelse: en ikke-invasiv enhet, veiledede appøkter, tydelige sikkerhetsgrenser og en kjøpsflyt som håndteres gjennom Shopify når salget åpner.",
@@ -81,7 +81,7 @@ const content = {
     rows: [
       {
         label: "Checkout",
-        value: "Shopify Checkout håndterer sikker betaling når salget åpner.",
+        value: "Betalingssiden fra Shopify håndterer sikker betaling når salget åpner.",
       },
       {
         label: "Lanseringsstatus",

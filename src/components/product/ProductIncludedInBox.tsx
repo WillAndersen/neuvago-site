@@ -15,6 +15,23 @@ const content = {
     packageTitle: "Launch package",
     packageDescription:
       "Built around the device, guided app experience, practical setup, and clear safety information.",
+    packageDetailsTitle: "Final package details",
+    packageDetailsDescription:
+      "The final box contents, labeling, shipping setup, and support materials are confirmed before checkout opens.",
+    packageDetails: [
+      {
+        label: "Package status",
+        value: "Being finalized",
+      },
+      {
+        label: "Payment",
+        value: "Shopify Checkout",
+      },
+      {
+        label: "Availability",
+        value: "Launch stock preparing",
+      },
+    ],
     items: [
       {
         title: "Neuvago device",
@@ -65,11 +82,28 @@ const content = {
     eyebrow: "Dette følger med Neuvago",
     title: "Hva du får når salget åpner.",
     description:
-      "Neuvago klargjøres som en komplett lanseringspakke. Endelig pakkeinnhold, merking, frakt og betalings- og kjøpsdetaljer bekreftes før kjøp åpner.",
+      "Neuvago klargjøres som en komplett lanseringspakke. Endelig pakkeinnhold, merking, frakt og betalingsdetaljer bekreftes før kjøp åpner.",
     imageAlt: "Neuvago-enhet og app vist som del av den komplette lanseringspakken.",
     packageTitle: "Lanseringspakke",
     packageDescription:
       "Bygget rundt enheten, veiledet appopplevelse, praktisk oppsett og tydelig sikkerhetsinformasjon.",
+    packageDetailsTitle: "Endelige pakkedetaljer",
+    packageDetailsDescription:
+      "Endelig pakkeinnhold, merking, fraktoppsett og supportmateriell bekreftes før kjøp åpner.",
+    packageDetails: [
+      {
+        label: "Pakkestatus",
+        value: "Ferdigstilles",
+      },
+      {
+        label: "Betaling",
+        value: "Via Shopify",
+      },
+      {
+        label: "Tilgjengelighet",
+        value: "Lanseringslager klargjøres",
+      },
+    ],
     items: [
       {
         title: "Neuvago-enhet",
@@ -125,37 +159,81 @@ export function ProductIncludedInBox({
 
   return (
     <section className="bg-[#f2eee8] px-5 py-14 sm:px-8 lg:px-12 lg:py-20">
-      <div className="mx-auto grid max-w-[88rem] gap-8 lg:grid-cols-[1fr_0.92fr] lg:items-start">
-        <div className="overflow-hidden rounded-[2.1rem] border border-black/6 bg-[#fbf8f2] shadow-[0_24px_90px_rgba(31,31,28,0.08)]">
-          <div className="grid gap-0 md:grid-cols-2">
-            <div className="relative min-h-[24rem] border-b border-black/6 bg-[#efe8de] md:border-b-0 md:border-r">
-              <Image
-                src="/images/neuvago/launch/product-gallery-front.webp"
-                alt={copy.imageAlt}
-                fill
-                className="object-contain p-8"
-                sizes="(max-width: 768px) 100vw, 46vw"
-              />
+      <div className="mx-auto grid max-w-[88rem] gap-8 lg:grid-cols-[0.95fr_1.05fr] lg:items-start">
+        <div className="grid gap-5 lg:sticky lg:top-24">
+          <div className="overflow-hidden rounded-[2.1rem] border border-black/6 bg-[#fbf8f2] shadow-[0_24px_90px_rgba(31,31,28,0.08)]">
+            <div className="grid gap-0 md:grid-cols-2">
+              <div className="relative min-h-[20rem] border-b border-black/6 bg-[#ede5da] md:border-b-0 md:border-r lg:min-h-[24rem]">
+                <Image
+                  src="/images/neuvago/launch/product-gallery-front.webp"
+                  alt={copy.imageAlt}
+                  fill
+                  className="object-contain p-8"
+                  sizes="(max-width: 768px) 100vw, 26vw"
+                />
+              </div>
+
+              <div className="relative min-h-[20rem] bg-[#f7f4ef] lg:min-h-[24rem]">
+                <Image
+                  src="/images/neuvago/launch/product-phone-app.webp"
+                  alt={copy.imageAlt}
+                  fill
+                  className="object-contain p-8"
+                  sizes="(max-width: 768px) 100vw, 26vw"
+                />
+              </div>
             </div>
 
-            <div className="relative min-h-[24rem] bg-[#f7f4ef]">
-              <Image
-                src="/images/neuvago/launch/product-phone-app.webp"
-                alt={copy.imageAlt}
-                fill
-                className="object-contain p-8"
-                sizes="(max-width: 768px) 100vw, 42vw"
-              />
+            <div className="border-t border-black/6 p-6 sm:p-8">
+              <p className="text-[0.72rem] font-medium uppercase tracking-[0.28em] text-[#81766a]">
+                {copy.packageTitle}
+              </p>
+              <p className="mt-3 max-w-2xl text-base leading-7 text-[#5f5a52]">
+                {copy.packageDescription}
+              </p>
             </div>
           </div>
 
-          <div className="border-t border-black/6 p-6 sm:p-8">
-            <p className="text-[0.72rem] font-medium uppercase tracking-[0.28em] text-[#81766a]">
-              {copy.packageTitle}
-            </p>
-            <p className="mt-3 max-w-2xl text-base leading-7 text-[#5f5a52]">
-              {copy.packageDescription}
-            </p>
+          <div className="rounded-[1.75rem] border border-black/6 bg-[#fbf8f2]/92 p-5 shadow-[0_18px_70px_rgba(31,31,28,0.07)] sm:p-6">
+            <div className="flex flex-col gap-4 sm:flex-row sm:items-start sm:justify-between">
+              <div>
+                <p className="text-[0.68rem] font-medium uppercase tracking-[0.22em] text-[#8a7f72]">
+                  {copy.packageDetailsTitle}
+                </p>
+                <p className="mt-3 max-w-xl text-sm leading-7 text-[#5f5a52]">
+                  {copy.packageDetailsDescription}
+                </p>
+              </div>
+
+              <div className="hidden h-12 w-12 shrink-0 rounded-full bg-[#1f1f1c] text-white sm:grid sm:place-items-center">
+                <span className="text-xs font-medium">01</span>
+              </div>
+            </div>
+
+            <div className="mt-5 grid gap-3 sm:grid-cols-3">
+              {copy.packageDetails.map((detail) => (
+                <div
+                  key={detail.label}
+                  className="rounded-[1.15rem] border border-black/6 bg-white/58 px-4 py-3"
+                >
+                  <p className="text-[0.62rem] font-medium uppercase tracking-[0.18em] text-[#9a8f82]">
+                    {detail.label}
+                  </p>
+                  <p className="mt-2 text-sm font-medium leading-6 text-[#292824]">
+                    {detail.value}
+                  </p>
+                </div>
+              ))}
+            </div>
+
+            <div className="mt-5 space-y-3 border-t border-black/8 pt-5">
+              {copy.notes.map((note) => (
+                <p key={note} className="flex gap-3 text-sm leading-6 text-[#5f5a52]">
+                  <span className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-[#1f1f1c]" />
+                  <span>{note}</span>
+                </p>
+              ))}
+            </div>
           </div>
         </div>
 
@@ -172,7 +250,7 @@ export function ProductIncludedInBox({
             {copy.description}
           </p>
 
-          <div className="mt-8 grid gap-3">
+          <div className="mt-8 grid gap-3 sm:grid-cols-2">
             {copy.items.map((item) => (
               <article
                 key={item.title}
@@ -186,17 +264,6 @@ export function ProductIncludedInBox({
                 </p>
               </article>
             ))}
-          </div>
-
-          <div className="mt-7 rounded-[1.5rem] border border-black/6 bg-[#f2eee8]/72 p-5">
-            <div className="space-y-3">
-              {copy.notes.map((note) => (
-                <p key={note} className="flex gap-3 text-sm leading-6 text-[#5f5a52]">
-                  <span className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-[#1f1f1c]" />
-                  <span>{note}</span>
-                </p>
-              ))}
-            </div>
           </div>
 
           <div className="mt-7 flex flex-col gap-3 sm:flex-row">

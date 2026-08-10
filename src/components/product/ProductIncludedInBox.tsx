@@ -160,7 +160,7 @@ export function ProductIncludedInBox({
   return (
     <section className="bg-[#f2eee8] px-5 py-14 sm:px-8 lg:px-12 lg:py-20">
       <div className="mx-auto grid max-w-[88rem] gap-8 lg:grid-cols-[0.95fr_1.05fr] lg:items-start">
-        <div className="grid gap-5 lg:sticky lg:top-24">
+        <div className="order-2 grid gap-5 lg:sticky lg:top-24 lg:order-1">
           <div className="overflow-hidden rounded-[2.1rem] border border-black/6 bg-[#fbf8f2] shadow-[0_24px_90px_rgba(31,31,28,0.08)]">
             <div className="grid gap-0 md:grid-cols-2">
               <div className="relative min-h-[20rem] border-b border-black/6 bg-[#ede5da] md:border-b-0 md:border-r lg:min-h-[24rem]">
@@ -237,7 +237,7 @@ export function ProductIncludedInBox({
           </div>
         </div>
 
-        <div className="rounded-[2.1rem] border border-black/6 bg-[#fbf8f2]/90 p-6 shadow-[0_24px_90px_rgba(31,31,28,0.08)] sm:p-8">
+        <div className="order-1 rounded-[2.1rem] border border-black/6 bg-[#fbf8f2]/90 p-6 shadow-[0_24px_90px_rgba(31,31,28,0.08)] sm:p-8 lg:order-2">
           <p className="text-[0.72rem] font-medium uppercase tracking-[0.28em] text-[#81766a]">
             {copy.eyebrow}
           </p>

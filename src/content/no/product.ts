@@ -42,23 +42,23 @@ export const productPageContentNo = {
   whyItFeelsDifferent: {
     ...productPageContent.whyItFeelsDifferent,
     eyebrow: "Hvorfor den føles annerledes",
-    title: "Utformet for å føles skånsommere, tydeligere og enklere å leve med.",
+    title: "Laget for å føles tydelig før du kjøper.",
     description:
-      "Fra formfaktor til flyt er Neuvago bygget for å føles støttende, ikke overveldende. Målet er ikke intensitet, selveksperimentering eller kompliserte protokoller, men en roligere enhet-og-app-opplevelse som passer naturlig inn i hverdagen.",
+      "Neuvago er bygget som en sammenhengende enhet-og-app-opplevelse: rolig å starte, enkel å forstå og tydelig på hva produktet er — og hva det ikke er.",
     cards: [
       {
         title: "Komfort før intensitet",
         description:
-          "Bygget for å føles rolig og støttende heller enn intens, overstimulerende eller vanskelig å justere.",
+          "Bygget for å føles rolig og støttende, ikke intens eller vanskelig å justere.",
       },
       {
         title: "Laget for ekte rutiner",
-        description: "Utformet for å passe inn i hverdagen, ikke bare i perfekte øyeblikk.",
+        description: "Laget for å passe inn i hverdagen, ikke bare i perfekte øyeblikk.",
       },
       {
         title: "Enhet og app sammen",
         description:
-          "En sammenkoblet opplevelse som kombinerer den fysiske vagusnervestimulatoren med veiledet øktstruktur.",
+          "En sammenkoblet rutine med en taktil enhet og veiledede appøkter.",
       },
       {
         title: "Premium og rolig opplevelse",
@@ -66,11 +66,15 @@ export const productPageContentNo = {
           "Mykt visuelt språk, enkle flyter og en mer jordet måte å bruke produktet på.",
       },
       {
-        title: "Grensene er synlige",
+        title: "Tydelige velværegrenser",
         description:
-          "Forskningskontekst, tiltenkt bruk og sikkerhetsveiledning holdes tett på, slik at produktet ikke fremstår mer klinisk enn det er.",
+          "Tiltenkt bruk, sikkerhetsveiledning og velværegrenser holdes tett på produktet.",
       },
     ],
+    detailImage: {
+      src: "/images/neuvago/launch/product-lifestyle-card.webp",
+      alt: "Neuvago-enhet og app vist i en rolig hverdagsnær produktsetting.",
+    },
   },
 
   deviceAppTogether: {

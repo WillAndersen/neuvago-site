@@ -65,7 +65,7 @@ export const productPageContent = {
       alt: "Close-up of the Neuvago device materials and controls in a premium product composition.",
     } satisfies ProductImage,
     mobileImage: {
-      src: "/images/neuvago/launch/product-hero-mobile.webp",
+      src: "/images/neuvago/launch/product-lifestyle-card.webp",
       alt: "Front and angled view of the Neuvago device for mobile product hero layout.",
     } satisfies ProductImage,
     proofLine: ["Device + app", "Guided sessions", "Wellness boundaries"],
@@ -104,24 +104,24 @@ export const productPageContent = {
   whyItFeelsDifferent: {
     visible: true,
     eyebrow: "Why it feels different",
-    title: "Designed to feel gentler, clearer, and easier to live with.",
+    title: "Designed to feel clear before you buy.",
     description:
-      "From form factor to flow, Neuvago is built to feel supportive rather than overwhelming. The goal is not intensity, self-experimentation, or complicated protocols, but a calmer device-and-app experience that fits naturally into everyday life.",
+      "Neuvago is built as a connected device-and-app experience: calm to start, simple to understand, and clear about what it is — and what it is not.",
     cards: [
       {
         title: "Comfort before intensity",
         description:
-          "Built to feel calm and supportive rather than intense, overstimulating, or confusing to adjust.",
+          "Built to feel calm and supportive, not intense or hard to adjust.",
       },
       {
         title: "Made for real routines",
         description:
-          "Designed to fit daily life, not only ideal moments.",
+          "Designed for daily life, not only ideal moments.",
       },
       {
         title: "Device and app together",
         description:
-          "A connected experience that combines the physical vagus nerve stimulator with guided session structure.",
+          "A connected routine with a tactile device and guided app sessions.",
       },
       {
         title: "Premium, calm experience",
@@ -131,12 +131,12 @@ export const productPageContent = {
       {
         title: "Boundaries stay visible",
         description:
-          "Research context, intended use, and safety guidance stay connected so the product does not sound more clinical than it is.",
+          "Intended use, safety guidance, and wellness boundaries stay close to the product.",
       },
     ] satisfies ProductCard[],
     detailImage: {
-      src: "/images/neuvago/launch/product-hero-mobile.webp",
-      alt: "Close-up details of the Neuvago device material and finish.",
+      src: "/images/neuvago/launch/product-lifestyle-card.webp",
+      alt: "Neuvago device and app shown in a calm everyday product setting.",
     } satisfies ProductImage,
   } satisfies ProductSectionVisibility & {
     eyebrow: string;
@@ -248,7 +248,7 @@ export const productPageContent = {
         description:
           "Begin with the device as the physical starting point, with comfort and clear placement guidance treated as part of the experience.",
         image: {
-          src: "/images/neuvago/launch/product-hero-mobile.webp",
+          src: "/images/neuvago/launch/product-lifestyle-card.webp",
           alt: "Front and angled view of the Neuvago device.",
         },
       },

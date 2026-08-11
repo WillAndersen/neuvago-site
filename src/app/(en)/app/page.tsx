@@ -1,25 +1,26 @@
 import type { Metadata } from "next";
-import { getAppContent } from "@/lib/content/get-app-content";
+import { appV2Content } from "@/content/app-v2";
 import {
-  AppHero,
-  AppWhatItDoes,
-  AppCalmByDesign,
-  AppSessionsRhythm,
-  AppFitsIntoLife,
-  AppProgressWithoutPressure,
-  AppDeviceTogether,
-  AppFaq,
-  AppFinalCta,
-} from "@/components/app-page";
+  AppV2Hero,
+  AppV2QuickValue,
+  AppV2GuidedSessions,
+  AppV2BreathingTools,
+  AppV2Needs,
+  AppV2PersonalTools,
+  AppV2CalmByDesign,
+  AppV2Access,
+  AppV2Faq,
+  AppV2FinalCta,
+} from "@/components/app-v2";
 import {
   buildFAQStructuredData,
   buildWebPageStructuredData,
 } from "@/lib/seo/structured-data";
 
 export const metadata: Metadata = {
-  title: "Neuvago App | Guided Sessions, Routines and Daily Support",
+  title: "Neuvago App | Guided Sessions and Daily Tools",
   description:
-    "Explore the Neuvago app experience with guided sessions, calmer routines, and continuity designed to make daily regulation easier to return to.",
+    "Explore the independent Neuvago App with guided sessions, daily check-ins, personal recommendations, progress tools, and a breathing library planned for launch.",
   alternates: {
     canonical: "/app",
     languages: {
@@ -29,9 +30,9 @@ export const metadata: Metadata = {
     },
   },
   openGraph: {
-    title: "Neuvago App | Guided Sessions, Routines and Daily Support",
+    title: "Neuvago App | Guided Sessions and Daily Tools",
     description:
-      "Explore the Neuvago app experience with guided sessions, calmer routines, and continuity designed to make daily regulation easier to return to.",
+      "Explore guided sessions, daily check-ins, recommendations, progress tools, and planned breathing practices. The app works independently from the Neuvago device.",
     url: "/app",
     siteName: "Neuvago",
     locale: "en_US",
@@ -39,14 +40,14 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Neuvago App | Guided Sessions, Routines and Daily Support",
+    title: "Neuvago App | Guided Sessions and Daily Tools",
     description:
-      "Explore the Neuvago app experience with guided sessions, calmer routines, and continuity designed to make daily regulation easier to return to.",
+      "An independent app experience for guided sessions, check-ins, recommendations, and progress.",
   },
 };
 
-export default async function AppPage() {
-  const content = await getAppContent();
+export default function AppPage() {
+  const content = appV2Content;
 
   const structuredData: Array<Record<string, unknown>> = [
     buildWebPageStructuredData({
@@ -56,9 +57,7 @@ export default async function AppPage() {
     }),
   ];
 
-  const faqStructuredData = content.faq.visible
-    ? buildFAQStructuredData(content.faq.items)
-    : null;
+  const faqStructuredData = buildFAQStructuredData(content.faq.items);
 
   if (faqStructuredData) {
     structuredData.push(faqStructuredData);
@@ -68,43 +67,22 @@ export default async function AppPage() {
     <main className="bg-[#f7f4ef] text-[#1f1f1c]">
       {structuredData.map((item, index) => (
         <script
-          key={`app-ld-${index}`}
+          key={`app-v2-ld-${index}`}
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(item) }}
         />
       ))}
 
-      {content.hero.visible ? <AppHero content={content.hero} /> : null}
-
-      {content.whatItDoes.visible ? (
-        <AppWhatItDoes content={content.whatItDoes} />
-      ) : null}
-
-      {content.sessionsRhythm.visible ? (
-        <AppSessionsRhythm content={content.sessionsRhythm} />
-      ) : null}
-
-      {content.progressWithoutPressure.visible ? (
-        <AppProgressWithoutPressure content={content.progressWithoutPressure} />
-      ) : null}
-
-      {content.calmByDesign.visible ? (
-        <AppCalmByDesign content={content.calmByDesign} />
-      ) : null}
-
-      {content.fitsIntoLife.visible ? (
-        <AppFitsIntoLife content={content.fitsIntoLife} />
-      ) : null}
-
-      {content.deviceTogether.visible ? (
-        <AppDeviceTogether content={content.deviceTogether} />
-      ) : null}
-
-      {content.faq.visible ? <AppFaq content={content.faq} /> : null}
-
-      {content.finalCta.visible ? (
-        <AppFinalCta content={content.finalCta} />
-      ) : null}
+      <AppV2Hero content={content.hero} />
+      <AppV2QuickValue content={content.quickValue} />
+      <AppV2GuidedSessions content={content.guidedSessions} />
+      <AppV2BreathingTools content={content.breathingTools} />
+      <AppV2Needs content={content.needs} />
+      <AppV2PersonalTools content={content.personalTools} />
+      <AppV2CalmByDesign content={content.calmByDesign} />
+      <AppV2Access content={content.access} />
+      <AppV2Faq content={content.faq} />
+      <AppV2FinalCta content={content.finalCta} />
     </main>
   );
 }

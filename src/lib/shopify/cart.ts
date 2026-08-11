@@ -16,6 +16,16 @@ function normalizeQuantity(value: number | undefined): number {
   return Math.max(1, Math.min(10, Math.floor(value)));
 }
 
+
+function getShopifyCountry(): "NO" {
+  // Neuvago checkout is currently Norway-only.
+  return "NO";
+}
+
+function getShopifyLanguage(locale: "en" | "no"): "EN" | "NB" {
+  return locale === "no" ? "NB" : "EN";
+}
+
 export async function createNeuvagoCheckoutCart({
   quantity,
   locale = "en",
@@ -38,7 +48,12 @@ export async function createNeuvagoCheckoutCart({
   const data = await shopifyStorefrontRequest<CartCreateResponse>({
     query: CART_CREATE_MUTATION,
     variables: {
+      country: getShopifyCountry(),
+      language: getShopifyLanguage(locale),
       input: {
+        buyerIdentity: {
+          countryCode: getShopifyCountry(),
+        },
         lines: [
           {
             merchandiseId: config.neuvagoVariantId,

@@ -1,29 +1,27 @@
 import type { Metadata } from "next";
-import { getProductContent } from "@/lib/content/get-product-content";
+import { productV2Content } from "@/content/product-v2";
 import {
-  ProductHero,
-  ProductLaunchBuyBox,
-  ProductIncludedInBox,
-  ProductSalesAssurance,
-  ProductWhatIsNeuvago,
-  ProductWhyItFeelsDifferent,
-  ProductDeviceAppTogether,
-  ProductHowItFitsIntoLife,
-  ProductHowToUse,
-  ProductTrustBridge,
-  ProductFaq,
-  ProductFinalCta,
-} from "@/components/product";
+  ProductV2Hero,
+  ProductV2BuyBox,
+  ProductV2HowItWorks,
+  ProductV2Features,
+  ProductV2EverydayUse,
+  ProductV2UseSequence,
+  ProductV2Research,
+  ProductV2Included,
+  ProductV2Details,
+  ProductV2Faq,
+  ProductV2FinalCta,
+} from "@/components/product-v2";
 import {
   buildFAQStructuredData,
   buildPageWithBreadcrumbStructuredData,
 } from "@/lib/seo/structured-data";
 
 export const metadata: Metadata = {
-  title:
-    "Neuvago Product | Non-Invasive VNS Device and App",
+  title: "Neuvago | Non-Invasive Vagus Nerve Stimulator",
   description:
-    "Meet Neuvago: a premium non-invasive vagus nerve stimulator and app for guided routines, clear safety boundaries, and calmer daily regulation support.",
+    "Explore Neuvago, a non-invasive vagus nerve stimulation device with adjustable intensity, physical controls, and ear-based application. No app or Bluetooth connection is required.",
   alternates: {
     canonical: "/product",
     languages: {
@@ -33,10 +31,9 @@ export const metadata: Metadata = {
     },
   },
   openGraph: {
-    title:
-      "Neuvago Product | Non-Invasive VNS Device and App",
+    title: "Neuvago | Non-Invasive Vagus Nerve Stimulator",
     description:
-      "Meet Neuvago: a premium non-invasive vagus nerve stimulator and app for guided routines, clear safety boundaries, and calmer daily regulation support.",
+      "Explore the Neuvago device, how ear-based stimulation works, its practical features, what is included, and the purchase options being prepared for launch.",
     url: "/product",
     siteName: "Neuvago",
     locale: "en_US",
@@ -44,29 +41,27 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title:
-      "Neuvago Product | Non-Invasive VNS Device and App",
+    title: "Neuvago | Non-Invasive Vagus Nerve Stimulator",
     description:
-      "Meet Neuvago: a premium non-invasive vagus nerve stimulator and app for guided routines, clear safety boundaries, and calmer daily regulation support.",
+      "A self-contained non-invasive vagus nerve stimulation device with adjustable intensity and physical controls.",
   },
 };
 
-export default async function ProductPage() {
-  const content = await getProductContent();
+export default function ProductPage() {
+  const content = productV2Content;
 
-  const structuredData: Array<Record<string, unknown>> = buildPageWithBreadcrumbStructuredData({
-    title: content.hero.title,
-    description: content.hero.description,
-    path: "/product",
-    breadcrumbs: [
-      { name: "Home", path: "/" },
-      { name: "Product", path: "/product" },
-    ],
-  });
+  const structuredData: Array<Record<string, unknown>> =
+    buildPageWithBreadcrumbStructuredData({
+      title: content.hero.title,
+      description: content.hero.description,
+      path: "/product",
+      breadcrumbs: [
+        { name: "Home", path: "/" },
+        { name: "Product", path: "/product" },
+      ],
+    });
 
-  const faqStructuredData = content.faq.visible
-    ? buildFAQStructuredData(content.faq.items)
-    : null;
+  const faqStructuredData = buildFAQStructuredData(content.faq.items);
 
   if (faqStructuredData) {
     structuredData.push(faqStructuredData);
@@ -76,49 +71,23 @@ export default async function ProductPage() {
     <main className="bg-[#f7f4ef] text-[#1f1f1c]">
       {structuredData.map((item, index) => (
         <script
-          key={`product-ld-${index}`}
+          key={`product-v2-ld-${index}`}
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(item) }}
         />
       ))}
 
-      {content.hero.visible ? <ProductHero content={content.hero} /> : null}
-
-      <ProductLaunchBuyBox />
-
-      <ProductIncludedInBox />
-
-      <ProductSalesAssurance />
-
-      {content.whatIsNeuvago.visible ? (
-        <ProductWhatIsNeuvago content={content.whatIsNeuvago} />
-      ) : null}
-
-      {content.whyItFeelsDifferent.visible ? (
-        <ProductWhyItFeelsDifferent content={content.whyItFeelsDifferent} />
-      ) : null}
-
-      {content.howItFitsIntoLife.visible ? (
-        <ProductHowItFitsIntoLife content={content.howItFitsIntoLife} />
-      ) : null}
-
-      {content.deviceAppTogether.visible ? (
-        <ProductDeviceAppTogether content={content.deviceAppTogether} />
-      ) : null}
-
-      {content.howToUse.visible ? (
-        <ProductHowToUse content={content.howToUse} />
-      ) : null}
-
-      {content.trustBridge.visible ? (
-        <ProductTrustBridge content={content.trustBridge} />
-      ) : null}
-
-      {content.faq.visible ? <ProductFaq content={content.faq} /> : null}
-
-      {content.finalCta.visible ? (
-        <ProductFinalCta content={content.finalCta} />
-      ) : null}
+      <ProductV2Hero content={content.hero} />
+      <ProductV2BuyBox content={content.buyBox} />
+      <ProductV2HowItWorks content={content.howItWorks} />
+      <ProductV2Features content={content.features} />
+      <ProductV2EverydayUse content={content.everydayUse} />
+      <ProductV2UseSequence content={content.useSequence} />
+      <ProductV2Research content={content.research} />
+      <ProductV2Included content={content.included} />
+      <ProductV2Details content={content.productDetails} />
+      <ProductV2Faq content={content.faq} />
+      <ProductV2FinalCta content={content.finalCta} />
     </main>
   );
 }

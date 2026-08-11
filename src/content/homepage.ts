@@ -55,93 +55,115 @@ export type HomepageVisualPanel = {
   image?: HomepageImage;
 };
 
+export type HomepageFaqItem = {
+  question: string;
+  answer: string;
+};
+
 const homepageHeroDesktop = {
-  src: "/images/neuvago/launch/no-home-hero-desktop.webp",
-  alt: "Neuvago device and guided app arranged together in a warm premium hero composition.",
+  src: "/images/neuvago/product-hero-desktop.webp",
+  alt: "Close-up of the Neuvago device in a calm product setting.",
 } satisfies HomepageImage;
 
 const homepageHeroMobile = {
-  src: "/images/neuvago/launch/no-home-hero-mobile.webp",
-  alt: "Neuvago device and guided app arranged together for the mobile homepage hero.",
+  src: "/images/neuvago/launch/product-hero-mobile.webp",
+  alt: "Close-up of the Neuvago device in a warm product setting.",
 } satisfies HomepageImage;
 
 const productHeroDesktop = {
   src: "/images/neuvago/launch/product-hero-desktop.webp",
-  alt: "Close-up of the Neuvago handheld device in a warm premium product composition.",
+  alt: "Close-up of the Neuvago handheld device.",
 } satisfies HomepageImage;
 
 const productHeroMobile = {
   src: "/images/neuvago/launch/product-hero-mobile.webp",
-  alt: "Close-up of the Neuvago handheld device for mobile product layouts.",
+  alt: "Close-up of the Neuvago handheld device for mobile layouts.",
+} satisfies HomepageImage;
+
+const productDetailDesktop = {
+  src: "/images/neuvago/launch/product-detail-left-desktop.webp",
+  alt: "Detailed view of the Neuvago device and its physical controls.",
 } satisfies HomepageImage;
 
 const appHeroDesktop = {
-  src: "/images/neuvago/launch/product-app-pairing-desktop.webp",
-  alt: "Neuvago app showing a calm guided session beside the handheld device.",
+  src: "/images/neuvago/app-hero-desktop.webp",
+  alt: "Neuvago App session screen shown beside the separate Neuvago device.",
 } satisfies HomepageImage;
 
 const appHeroMobile = {
-  src: "/images/neuvago/launch/product-app-pairing-mobile.webp",
-  alt: "Neuvago app guided session screen for mobile app layouts.",
+  src: "/images/neuvago/app-hero-mobile.webp",
+  alt: "Neuvago App session screen for mobile layouts.",
 } satisfies HomepageImage;
 
 const howItWorksDesktop = {
   src: "/images/neuvago/launch/routine-evening-desktop.webp",
-  alt: "Neuvago device, guided app, and simple routine cards explaining how the system works.",
+  alt: "Neuvago device placed ready for an everyday routine.",
 } satisfies HomepageImage;
 
 const howItWorksMobile = {
   src: "/images/neuvago/launch/routine-evening-mobile.webp",
-  alt: "Neuvago device, guided app, and routine cards for mobile how-it-works layouts.",
+  alt: "Neuvago device placed ready for a routine in a home setting.",
 } satisfies HomepageImage;
 
 const researchEvidenceDesktop = {
   src: "/images/neuvago/research-hub-evidence-desktop.webp",
-  alt: "Neuvago device beside abstract research cards and evidence visuals.",
+  alt: "Neuvago device beside research notes and evidence visuals.",
 } satisfies HomepageImage;
 
-const morningResetDesktop = {
+const morningRoutineImage = {
   src: "/images/neuvago/launch/product-lifestyle-card.webp",
-  alt: "Neuvago device and guided app arranged in a calm morning reset routine.",
+  alt: "Neuvago device in a calm morning home setting.",
 } satisfies HomepageImage;
 
-const stressPauseDesktop = {
+const daytimeRoutineImage = {
   src: "/images/neuvago/launch/product-detail-left-desktop.webp",
-  alt: "Neuvago device and guided app arranged for a calm daytime pause routine.",
+  alt: "Neuvago device ready for a short daytime routine.",
 } satisfies HomepageImage;
 
-const eveningWindDownDesktop = {
+const eveningRoutineImage = {
   src: "/images/neuvago/launch/routine-evening-desktop.webp",
-  alt: "Neuvago device and guided app resting beside a warm evening wind-down routine.",
+  alt: "Neuvago device in a quiet evening home setting.",
 } satisfies HomepageImage;
 
 const finalCtaDesktop = {
-  src: "/images/neuvago/launch/final-cta-desktop.webp",
-  alt: "Neuvago device and guided app shown softly on the right with open space for a call to action.",
+  src: "/images/neuvago/product-hero-desktop.webp",
+  alt: "Close-up of the Neuvago device.",
+} satisfies HomepageImage;
+
+const finalCtaMobile = {
+  src: "/images/neuvago/product-hero-mobile.webp",
+  alt: "Close-up of the Neuvago device for mobile layouts.",
 } satisfies HomepageImage;
 
 export const homepageContent = {
   hero: {
     visible: true,
-    eyebrow: "Neuvago device + app",
-    title: "Meet Neuvago: device, app, and a calmer daily routine.",
+    eyebrow: "Neuvago",
+    title: "Designed for your nervous system.",
+    productLine: "Non-invasive vagus nerve stimulation, designed for everyday use.",
     description:
-      "A non-invasive VNS device paired with guided app sessions for short, repeatable wellness routines — with launch purchase options being prepared now.",
+      "Neuvago delivers adjustable electrical stimulation via an ear electrode positioned at the outer ear. The device works independently, with no app or Bluetooth connection required.",
     primaryCta: {
-      label: "View product options",
-      href: "/product#buy",
+      label: "Explore Neuvago",
+      href: "/product",
     } satisfies HomepageCta,
     secondaryCta: {
-      label: "See how it works",
+      label: "How it works",
       href: "/how-it-works",
     } satisfies HomepageCta,
     desktopImage: homepageHeroDesktop,
     mobileImage: homepageHeroMobile,
-    proofLine: ["Device + app", "Checkout preparing", "Wellness boundaries"],
-    mediaNote: "Product-led launch hero. Uses a cinematic still until the ambient loop is ready.",
+    proofLine: [
+      "Non-invasive stimulation",
+      "Adjustable intensity",
+      "No app required",
+    ],
+    mediaNote:
+      "Device-only launch hero using existing product photography with no phone or app shown.",
   } satisfies HomepageSectionVisibility & {
     eyebrow: string;
     title: string;
+    productLine: string;
     description: string;
     primaryCta: HomepageCta;
     secondaryCta: HomepageCta;
@@ -153,39 +175,44 @@ export const homepageContent = {
 
   proofStrip: {
     visible: true,
-    items: ["Device + app", "Checkout preparing", "Guided sessions", "Clear wellness boundaries"],
+    items: [
+      "Non-invasive stimulation",
+      "Ear-based application",
+      "Adjustable intensity",
+      "No app required",
+    ],
   } satisfies HomepageSectionVisibility & {
     items: string[];
   },
 
   systemReveal: {
     visible: true,
-    eyebrow: "The product system",
-    title: "One product experience: device, app, and routine.",
+    eyebrow: "The Neuvago device",
+    title: "Vagus nerve stimulation, made simple.",
     description:
-      "Neuvago is built as a complete product experience: a tactile non-invasive device, guided app sessions, and a calm routine path designed to be easy to return to.",
+      "Neuvago is designed around clear controls, adjustable stimulation and straightforward daily use. The device operates independently, so you can use it without a phone, Bluetooth or an app.",
     image: productHeroDesktop,
     items: [
       {
-        eyebrow: "Device",
-        title: "A calm physical anchor",
+        eyebrow: "Non-invasive",
+        title: "Stimulation applied at the ear",
         description:
-          "The handheld device gives the routine a tangible starting point — simple, considered, and easy to keep nearby.",
-        href: "/product",
-      },
-      {
-        eyebrow: "Guidance",
-        title: "Sessions that make the next step clear",
-        description:
-          "The app gives structure to the moment: choose a session, follow the rhythm, and return without guessing.",
-        href: "/app",
-      },
-      {
-        eyebrow: "Routine",
-        title: "Built for repeatability",
-        description:
-          "The value is not one intense session. It is a calmer pattern you can come back to over time.",
+          "Electrical stimulation is delivered via an ear electrode. No implant or invasive procedure is involved.",
         href: "/how-it-works",
+      },
+      {
+        eyebrow: "Adjustable",
+        title: "Control the intensity on the device",
+        description:
+          "Increase or decrease the stimulation level using the physical controls and the instructions supplied with the device.",
+        href: "/how-to-use",
+      },
+      {
+        eyebrow: "Independent",
+        title: "No app or Bluetooth required",
+        description:
+          "The device works on its own. The Neuvago App is separate and is not required to operate the device.",
+        href: "/product",
       },
     ] satisfies HomepageVisualPanel[],
   } satisfies HomepageSectionVisibility & {
@@ -196,33 +223,78 @@ export const homepageContent = {
     items: HomepageVisualPanel[];
   },
 
+  vagusNerve: {
+    visible: true,
+    eyebrow: "Why the vagus nerve matters",
+    title: "A major communication pathway between brain and body.",
+    description:
+      "The vagus nerve is part of the autonomic nervous system, which helps coordinate processes the body manages automatically. It is studied in connection with parasympathetic activity, recovery and the way the body responds to changing demands.",
+    boundary:
+      "Neuvago is a wellness device. It is not intended to diagnose, treat, cure or prevent disease.",
+    image: productDetailDesktop,
+    points: [
+      {
+        title: "Brain and body",
+        description:
+          "The vagus nerve carries signals between the brain and several areas of the body.",
+      },
+      {
+        title: "Autonomic activity",
+        description:
+          "It forms part of the system involved in automatic functions and changing physiological states.",
+      },
+      {
+        title: "A growing research field",
+        description:
+          "Vagus nerve stimulation is studied across different methods, populations and research outcomes.",
+      },
+    ] satisfies HomepageCard[],
+    primaryCta: {
+      label: "Learn about the vagus nerve",
+      href: "/learn/vagus-nerve",
+    } satisfies HomepageCta,
+    secondaryCta: {
+      label: "Explore VNS research",
+      href: "/research/topics/vagus-nerve-stimulation",
+    } satisfies HomepageCta,
+  } satisfies HomepageSectionVisibility & {
+    eyebrow: string;
+    title: string;
+    description: string;
+    boundary: string;
+    image: HomepageImage;
+    points: HomepageCard[];
+    primaryCta: HomepageCta;
+    secondaryCta: HomepageCta;
+  },
+
   ritualSequence: {
     visible: true,
-    eyebrow: "How buying fits into use",
-    title: "A product you can understand before checkout opens.",
+    eyebrow: "How the device is used",
+    title: "Three clear steps.",
     description:
-      "Before purchase opens, the site should make the experience clear: what the device does, how the app guides you, and where the wellness boundaries are.",
+      "Neuvago does not need to be paired with a phone. Follow the instructions supplied with the device and use the controls on the unit itself.",
     desktopImage: howItWorksDesktop,
     mobileImage: howItWorksMobile,
     steps: [
       {
-        title: "Place",
+        title: "Prepare",
         description:
-          "Begin with a clear physical starting point and a calm setup that does not feel clinical.",
+          "Prepare the device and position the ear electrode as shown in the instructions for use.",
       },
       {
-        title: "Start",
+        title: "Adjust",
         description:
-          "Choose a guided session in the app and follow a simple, contained rhythm.",
+          "Switch on the device and increase the intensity gradually, following the supplied guidance.",
       },
       {
-        title: "Return",
+        title: "Complete the session",
         description:
-          "Use the same structure again over time, so regulation feels easier to come back to.",
+          "Use the device for the recommended session duration, then switch it off and store it ready for next time.",
       },
     ] satisfies HomepageStep[],
     cta: {
-      label: "See the routine",
+      label: "See how Neuvago works",
       href: "/how-it-works",
     } satisfies HomepageCta,
   } satisfies HomepageSectionVisibility & {
@@ -235,76 +307,76 @@ export const homepageContent = {
     cta: HomepageCta;
   },
 
-  appGuidance: {
+  everydayPathways: {
     visible: true,
-    eyebrow: "Included experience",
-    title: "The app is part of the product, not an add-on.",
+    eyebrow: "Made for everyday routines",
+    title: "A device that can fit into real life.",
     description:
-      "Neuvago pairs the device with app guidance so the first step, session flow, and repeat routine feel clear from the beginning.",
-    image: appHeroDesktop,
-    mobileImage: appHeroMobile,
+      "Neuvago is designed for short, repeatable sessions at times that suit your day. The device remains the same. The context is yours.",
     items: [
       {
-        title: "Session guidance",
+        eyebrow: "Morning",
+        title: "A clear start",
         description:
-          "Choose a session for the moment — reset, unwind, or return to a calmer rhythm.",
+          "Use Neuvago as part of a quiet morning routine before the day gets busy.",
+        href: "/product",
+        image: morningRoutineImage,
       },
       {
-        title: "A library that stays quiet",
+        eyebrow: "Daytime",
+        title: "A deliberate pause",
         description:
-          "Guidance is organized without turning the app into a noisy dashboard.",
+          "Set aside a short, uninterrupted moment when you want to step away from the pace of the day.",
+        href: "/how-to-use",
+        image: daytimeRoutineImage,
       },
       {
-        title: "Progress without pressure",
+        eyebrow: "Evening",
+        title: "A consistent routine",
         description:
-          "The goal is continuity, not performance. More rhythm, less intensity.",
+          "Keep the device nearby and use it at a time that is easy to repeat.",
+        href: "/how-it-works",
+        image: eveningRoutineImage,
       },
-    ] satisfies HomepageCard[],
-    cta: {
-      label: "Explore app guidance",
-      href: "/app",
-    } satisfies HomepageCta,
+    ] satisfies HomepageVisualPanel[],
   } satisfies HomepageSectionVisibility & {
     eyebrow: string;
     title: string;
     description: string;
-    image: HomepageImage;
-    mobileImage: HomepageImage;
-    items: HomepageCard[];
-    cta: HomepageCta;
+    items: HomepageVisualPanel[];
   },
 
   researchBoundary: {
     visible: true,
-    eyebrow: "Trust before purchase",
-    title: "Clear claims, visible boundaries.",
+    eyebrow: "Research and responsibility",
+    title: "Grounded in a growing field of research.",
     description:
-      "Neuvago is product-led, but not overclaiming. Research context, intended use, safety language, and regulatory boundaries stay close to the purchase journey.",
+      "Research on vagus nerve stimulation helps explain the broader field. It does not automatically establish what a specific wellness device will do for an individual.",
     image: researchEvidenceDesktop,
     points: [
       {
-        title: "What research can help explain",
+        title: "VNS and tVNS",
         description:
-          "The vagus nerve and autonomic regulation are relevant frameworks for understanding stress, recovery, and downshifting.",
+          "Explore research on implanted and non-invasive approaches, including auricular stimulation.",
       },
       {
-        title: "What research does not prove",
+        title: "Autonomic regulation",
         description:
-          "Evidence from a field does not automatically become a claim about a specific wellness product or routine.",
+          "Understand how sympathetic and parasympathetic activity, HRV and recovery are studied.",
       },
       {
-        title: "How Neuvago stays responsible",
+        title: "Product boundaries",
         description:
-          "Neuvago is not positioned as a medical treatment, diagnostic tool, or replacement for professional care.",
+          "Neuvago is not presented as a medical treatment, diagnostic tool or replacement for professional care.",
       },
     ] satisfies HomepageCard[],
     primaryCta: {
-      label: "Review intended use",
-      href: "/legal/intended-use",
-    } satisfies HomepageCta,
-    secondaryCta: {
       label: "Explore research",
       href: "/research",
+    } satisfies HomepageCta,
+    secondaryCta: {
+      label: "Read intended use",
+      href: "/legal/intended-use",
     } satisfies HomepageCta,
   } satisfies HomepageSectionVisibility & {
     eyebrow: string;
@@ -316,56 +388,148 @@ export const homepageContent = {
     secondaryCta: HomepageCta;
   },
 
-  everydayPathways: {
+  appGuidance: {
     visible: true,
-    eyebrow: "Everyday pathways",
-    title: "Three moments where a calmer routine can begin.",
+    eyebrow: "A separate Neuvago product",
+    title: "More ways to support your nervous system.",
     description:
-      "Neuvago is designed for real life: a short reset before the day, a calmer pause during stress, or a gentler wind-down at night.",
+      "The Neuvago App brings together guided sessions, breathing practices and simple tools for relaxation, focus, sleep and everyday routines.",
+    independenceNote:
+      "The app works independently from the Neuvago device. It does not connect to or control the device, and it can be used with or without stimulation.",
+    image: appHeroDesktop,
+    mobileImage: appHeroMobile,
     items: [
       {
-        eyebrow: "Morning",
-        title: "Morning reset",
+        title: "Guided sessions",
         description:
-          "Start with a short guided routine before the day becomes noisy.",
-        href: "/app",
-        image: morningResetDesktop,
+          "Choose sessions organized around sleep, stress, focus and recovery.",
       },
       {
-        eyebrow: "Daytime",
-        title: "Workday pause",
+        title: "Breathing tools",
         description:
-          "Create a calmer transition when stress feels like it is staying switched on.",
-        href: "/conditions/stress",
-        image: stressPauseDesktop,
+          "Follow guided breathing practices for different needs and situations.",
       },
       {
-        eyebrow: "Evening",
-        title: "Evening wind-down",
+        title: "Use it your way",
         description:
-          "Use a softer rhythm to help the body move toward rest and recovery.",
-        href: "/conditions/sleep",
-        image: eveningWindDownDesktop,
+          "Use the app on its own or alongside a separate Neuvago device session.",
       },
-    ] satisfies HomepageVisualPanel[],
+    ] satisfies HomepageCard[],
+    cta: {
+      label: "Explore the Neuvago App",
+      href: "/app",
+    } satisfies HomepageCta,
   } satisfies HomepageSectionVisibility & {
     eyebrow: string;
     title: string;
     description: string;
-    items: HomepageVisualPanel[];
+    independenceNote: string;
+    image: HomepageImage;
+    mobileImage: HomepageImage;
+    items: HomepageCard[];
+    cta: HomepageCta;
+  },
+
+  featuredLearning: {
+    visible: true,
+    eyebrow: "Learn",
+    title: "Understand the nervous system.",
+    description:
+      "Explore clear guides to the vagus nerve, non-invasive VNS and the autonomic nervous system.",
+    items: [
+      {
+        title: "What is the vagus nerve?",
+        description:
+          "A practical introduction to an important communication pathway between brain and body.",
+        href: "/learn/vagus-nerve",
+      },
+      {
+        title: "Non-invasive vagus nerve stimulation",
+        description:
+          "Learn how surface-based approaches differ from implanted VNS.",
+        href: "/learn/non-invasive-vagus-nerve-stimulation",
+      },
+      {
+        title: "The parasympathetic nervous system",
+        description:
+          "Understand the wider autonomic context in which vagal pathways are studied.",
+        href: "/learn/parasympathetic-nervous-system",
+      },
+    ] satisfies HomepageLinkCard[],
+    cta: {
+      label: "Explore Learn",
+      href: "/learn",
+    } satisfies HomepageCta,
+  } satisfies HomepageSectionVisibility & {
+    eyebrow: string;
+    title: string;
+    description: string;
+    items: HomepageLinkCard[];
+    cta: HomepageCta;
+  },
+
+  faq: {
+    visible: true,
+    eyebrow: "Frequently asked questions",
+    title: "Clear answers before you explore the product.",
+    description:
+      "The essentials about the Neuvago device, the separate app and the boundaries of use.",
+    items: [
+      {
+        question: "What is Neuvago?",
+        answer:
+          "Neuvago is a non-invasive vagus nerve stimulation device designed for wellness use and everyday routines.",
+      },
+      {
+        question: "Does the Neuvago device need the app?",
+        answer:
+          "No. The device works independently. The Neuvago App is a separate product and is not required to operate the device.",
+      },
+      {
+        question: "Does the app connect to or control the device?",
+        answer:
+          "No. There is no Bluetooth connection or technical integration between the app and the device.",
+      },
+      {
+        question: "Where is the stimulation applied?",
+        answer:
+          "Neuvago uses an ear electrode positioned according to the instructions supplied with the device.",
+      },
+      {
+        question: "Is Neuvago a medical treatment?",
+        answer:
+          "No. Neuvago is not intended to diagnose, treat, cure or prevent disease. Review the intended use, safety information and instructions before use.",
+      },
+      {
+        question: "Where can I learn more about use and safety?",
+        answer:
+          "Visit the Product, How It Works and Intended Use pages for current information. Detailed instructions are also supplied with the device.",
+      },
+    ] satisfies HomepageFaqItem[],
+    cta: {
+      label: "Visit Support",
+      href: "/support",
+    } satisfies HomepageCta,
+  } satisfies HomepageSectionVisibility & {
+    eyebrow: string;
+    title: string;
+    description: string;
+    items: HomepageFaqItem[];
+    cta: HomepageCta;
   },
 
   finalCta: {
     visible: true,
-    title: "Be ready when Neuvago opens for purchase.",
+    eyebrow: "The Neuvago device",
+    title: "Explore Neuvago.",
     description:
-      "See the product, understand the guided app experience, and review the practical details before checkout opens.",
+      "See what is included, review how the device works and find current purchase information on the Product page.",
     primaryCta: {
-      label: "View product options",
+      label: "View the device",
       href: "/product#buy",
     } satisfies HomepageCta,
     secondaryCta: {
-      label: "See how it works",
+      label: "How it works",
       href: "/how-it-works",
     } satisfies HomepageCta,
     signedInCta: {
@@ -373,28 +537,31 @@ export const homepageContent = {
       href: "/continue",
     } satisfies HomepageCta,
     backgroundImage: finalCtaDesktop,
+    mobileImage: finalCtaMobile,
   } satisfies HomepageSectionVisibility & {
+    eyebrow: string;
     title: string;
     description: string;
     primaryCta: HomepageCta;
     secondaryCta: HomepageCta;
     signedInCta: HomepageCta;
     backgroundImage: HomepageImage;
+    mobileImage: HomepageImage;
   },
 
   /**
-   * Legacy homepage modules retained so older DB-backed content remains type-compatible.
-   * P4.1 homepage rendering uses the premium modules above instead of these denser grids.
+   * Legacy homepage modules remain type-compatible with older admin content.
+   * They are not rendered by the current English HOME page.
    */
   whatIsNeuvago: {
     visible: false,
-    title: "One connected system for calmer daily regulation.",
+    title: "A non-invasive vagus nerve stimulation device.",
     description:
-      "Neuvago brings together a non-invasive device and a guided app experience so support feels clearer, more structured, and easier to return to over time.",
+      "Neuvago is a physical wellness device with adjustable controls and ear-based application. It works independently from the separate Neuvago App.",
     bullets: [
-      "One connected device + app system",
-      "Guided sessions and routines for daily life",
-      "Designed for stress, recovery, and evening wind-down",
+      "Non-invasive ear-based stimulation",
+      "Adjustable controls on the device",
+      "No app or Bluetooth connection required",
     ],
     image: productHeroDesktop,
   } satisfies HomepageSectionVisibility & {
@@ -406,29 +573,29 @@ export const homepageContent = {
 
   whyPeopleComeToNeuvago: {
     visible: false,
-    title: "What people come to Neuvago for",
+    title: "Designed for simple everyday routines",
     description:
-      "People rarely start with a technical goal. They usually want to feel less stuck in stress, wind down more easily, and build a steadier rhythm they can return to.",
+      "Neuvago is intended to make non-invasive stimulation straightforward to understand and repeat within a wellness routine.",
     cards: [
       {
-        title: "Feel less stuck in stress",
+        title: "Clear controls",
         description:
-          "Support a gentler shift out of high activation and into a more settled state.",
+          "Physical controls make it possible to operate the device directly.",
       },
       {
-        title: "Recover more easily",
+        title: "Adjustable stimulation",
         description:
-          "Create more space to reset after demanding days and return to a steadier baseline.",
+          "Intensity can be adjusted using the controls and supplied guidance.",
       },
       {
-        title: "Wind down at night",
+        title: "Independent use",
         description:
-          "Support a calmer evening transition and a smoother path into rest.",
+          "The device does not need a phone, account, app or Bluetooth connection.",
       },
       {
-        title: "Build daily balance",
+        title: "Repeatable routine",
         description:
-          "Create a more repeatable rhythm around regulation, support, and consistency.",
+          "The format is designed to be straightforward to return to.",
       },
     ] satisfies HomepageCard[],
   } satisfies HomepageSectionVisibility & {
@@ -439,24 +606,24 @@ export const homepageContent = {
 
   appDeviceEcosystem: {
     visible: false,
-    title: "Why the device and app work better together.",
+    title: "Two separate ways to engage with Neuvago.",
     description:
-      "Neuvago is designed as one connected system. The device creates a physical entry point, while the app adds guidance, structure, and continuity over time.",
+      "The Neuvago device provides non-invasive stimulation. The Neuvago App offers guided sessions and breathing tools. They work independently and are not technically connected.",
     features: [
       {
-        title: "The device creates the entry point",
+        title: "The device",
         description:
-          "A calm physical starting point that makes the experience feel tangible, grounded, and easier to begin.",
+          "A physical, non-invasive stimulation device operated through its own controls.",
       },
       {
-        title: "The app adds guidance and continuity",
+        title: "The app",
         description:
-          "Sessions, routines, and structure make it easier to know what to do next and easier to come back over time.",
+          "A separate library of guided sessions, breathing practices and routine tools.",
       },
       {
-        title: "Together, the system feels more complete",
+        title: "Use either independently",
         description:
-          "The physical layer and the guided layer support each other to create a calmer, clearer, and more repeatable daily experience.",
+          "The app does not control the device, and the device does not require the app.",
       },
     ] satisfies HomepageFeatureItem[],
     image: appHeroDesktop,
@@ -478,24 +645,24 @@ export const homepageContent = {
     visible: false,
     title: "A simple way to understand how Neuvago works",
     description:
-      "Think of Neuvago as a calm three-part rhythm: begin with the device, follow the guidance in the app, and return to it consistently over time.",
+      "Prepare the device, position the ear electrode and adjust the stimulation using the physical controls.",
     steps: [
       {
-        title: "Place the device",
+        title: "Prepare the device",
         description:
-          "Begin with the device as the physical starting point for the experience.",
+          "Follow the supplied instructions before beginning a session.",
         image: productHeroMobile,
       },
       {
-        title: "Start a session in the app",
+        title: "Position the ear electrode",
         description:
-          "Use the app to choose guidance that fits the moment, whether you want calm, recovery, or evening wind-down.",
-        image: appHeroMobile,
+          "Place the electrode at the specified ear location shown in the instructions.",
+        image: productHeroMobile,
       },
       {
-        title: "Return to it over time",
+        title: "Adjust and complete the session",
         description:
-          "Repeat it in ways that fit real life so the system becomes easier to return to and more useful over time.",
+          "Use the device controls and follow the recommended session guidance.",
         image: howItWorksMobile,
       },
     ] satisfies HomepageStep[],
@@ -507,37 +674,37 @@ export const homepageContent = {
 
   whyNeuvago: {
     visible: false,
-    title: "Why Neuvago feels different",
+    title: "Why Neuvago is straightforward to use",
     description:
-      "Neuvago is designed to feel gentler, calmer, and easier to live with. The aim is not intensity or complexity, but a more supportive and repeatable experience.",
+      "The product is designed around a clear physical interface, adjustable stimulation and independent operation.",
     cards: [
       {
-        title: "Gentle by design",
+        title: "Non-invasive",
         description:
-          "Built to feel calm and supportive rather than intense or overwhelming.",
+          "Stimulation is applied through an ear electrode rather than implanted hardware.",
       },
       {
-        title: "Made for real routines",
+        title: "Made for everyday routines",
         description:
-          "Designed to fit naturally into daily life, not only ideal moments.",
+          "The device is designed for short sessions that can fit into daily life.",
       },
       {
-        title: "Device and app together",
+        title: "Works independently",
         description:
-          "A connected experience that combines physical support with guided structure.",
+          "No app or Bluetooth connection is required to operate the device.",
       },
       {
-        title: "Premium, calm experience",
+        title: "Clear physical controls",
         description:
-          "Soft visual language, simple flows, and a more grounded way to engage.",
+          "The device can be adjusted directly without relying on a phone.",
       },
       {
-        title: "Built for consistency",
+        title: "Built for repeat use",
         description:
-          "Designed to be something you can return to again and again, not just try once.",
+          "The format is intended to be straightforward to understand and return to.",
       },
     ] satisfies HomepageCard[],
-    detailImage: productHeroDesktop,
+    detailImage: productDetailDesktop,
   } satisfies HomepageSectionVisibility & {
     title: string;
     description: string;
@@ -547,33 +714,33 @@ export const homepageContent = {
 
   trustResearch: {
     visible: false,
-    title: "Grounded in research, made for everyday life",
+    title: "Research context with clear boundaries",
     description:
-      "Neuvago is built within a broader knowledge universe around nervous system regulation, vagus nerve stimulation, recovery, and stress physiology. You can explore the research layer if you want to go deeper.",
+      "Explore the broader literature on vagus nerve stimulation, autonomic regulation, HRV and related topics without treating every finding as a claim about Neuvago.",
     links: [
       {
         title: "Vagus nerve stimulation",
         description:
-          "Explore one of the central ideas behind Neuvago’s approach.",
+          "Explore the wider VNS research field and its different approaches.",
         href: "/research/topics/vagus-nerve-stimulation",
       },
       {
         title: "Heart rate variability",
         description:
-          "Understand why HRV is often discussed in relation to regulation and recovery.",
+          "Understand why HRV appears in research on autonomic activity.",
         href: "/research/topics/heart-rate-variability",
       },
       {
-        title: "Nervous system regulation",
+        title: "Autonomic regulation",
         description:
-          "Learn more about what regulation means in everyday life.",
-        href: "/learn/nervous-system-regulation",
+          "Read about sympathetic and parasympathetic activity.",
+        href: "/research/topics/autonomic-regulation",
       },
       {
-        title: "Stress physiology",
+        title: "Safety and tolerability",
         description:
-          "Explore how stress shows up in the body and why downregulation matters.",
-        href: "/learn/why-your-body-feels-stuck-in-stress",
+          "Review how safety and adverse events are discussed in the research.",
+        href: "/research/topics/safety-and-tolerability",
       },
     ] satisfies HomepageLinkCard[],
     primaryCta: {
@@ -594,17 +761,10 @@ export const homepageContent = {
 
   socialProof: {
     visible: false,
-    title: "Designed for calmer routines",
+    title: "User feedback will be added when available",
     description:
-      "This section can start as a soft placeholder in V1 and later be replaced with real testimonials, practitioner quotes, or early user feedback.",
-    quotes: [
-      {
-        quote:
-          "A calmer, more supportive way to return when the day feels activated.",
-        name: "Placeholder",
-        role: "Future user perspective",
-      },
-    ] satisfies HomepageQuote[],
+      "Only real, permissioned testimonials or practitioner comments should be published here.",
+    quotes: [] as HomepageQuote[],
   } satisfies HomepageSectionVisibility & {
     title: string;
     description: string;
@@ -613,14 +773,14 @@ export const homepageContent = {
 
   inRealLife: {
     visible: false,
-    title: "Neuvago in real life",
+    title: "Neuvago in everyday settings",
     description:
-      "Neuvago is designed to fit into a slower, more intentional rhythm — whether you use it to reset during the day, recover after stress, or wind down in the evening.",
+      "Product photography can show where the device may fit into a routine without suggesting a guaranteed outcome.",
     images: [
       {
-        title: "Evening wind-down",
-        description: "A quiet evening routine with Neuvago nearby.",
-        image: eveningWindDownDesktop,
+        title: "Evening routine",
+        description: "The Neuvago device placed ready for use.",
+        image: eveningRoutineImage,
       },
     ] satisfies HomepageImageCard[],
   } satisfies HomepageSectionVisibility & {
@@ -629,70 +789,34 @@ export const homepageContent = {
     images: HomepageImageCard[];
   },
 
-  featuredLearning: {
-    visible: false,
-    title: "Explore the ideas behind calmer regulation",
-    description:
-      "Go deeper into the language, concepts, and everyday patterns connected to stress, recovery, and nervous system balance.",
-    items: [
-      {
-        title: "What is the vagus nerve?",
-        description:
-          "A practical introduction to one of the body’s most important communication pathways.",
-        href: "/learn/vagus-nerve",
-      },
-      {
-        title: "How to calm your nervous system",
-        description:
-          "Simple ways to think about downregulation in daily life.",
-        href: "/learn/how-to-calm-your-nervous-system",
-      },
-      {
-        title: "Signs of a dysregulated nervous system",
-        description:
-          "Common patterns people notice when stress starts to feel stuck in the body.",
-        href: "/learn/signs-of-a-dysregulated-nervous-system",
-      },
-    ] satisfies HomepageLinkCard[],
-    cta: {
-      label: "Visit Learn",
-      href: "/learn",
-    } satisfies HomepageCta,
-  } satisfies HomepageSectionVisibility & {
-    title: string;
-    description: string;
-    items: HomepageLinkCard[];
-    cta: HomepageCta;
-  },
-
   conditionsOverview: {
     visible: false,
-    title: "Explore common areas of concern",
+    title: "Explore nervous system topics",
     description:
-      "Neuvago is being built within a broader knowledge universe that connects nervous system regulation to common real-life challenges.",
+      "Learn how Neuvago discusses stress, sleep and recovery within clear wellness boundaries.",
     items: [
       {
         title: "Stress",
         description:
-          "Explore how stress builds in the body and why regulation matters.",
+          "Explore educational context around stress and autonomic activity.",
         href: "/conditions/stress",
       },
       {
         title: "Sleep",
         description:
-          "Learn why winding down can feel difficult and how routines may help.",
+          "Read about routines, winding down and the limits of wellness language.",
         href: "/conditions/sleep",
       },
       {
         title: "Anxiety",
         description:
-          "See how regulation, safety, and nervous system patterns can overlap.",
+          "Review educational content and the distinction between wellbeing and treatment.",
         href: "/conditions/anxiety",
       },
       {
         title: "Burnout",
         description:
-          "Understand the role recovery and nervous system load can play over time.",
+          "Explore general information about load, recovery and professional support.",
         href: "/conditions/burnout",
       },
     ] satisfies HomepageLinkCard[],

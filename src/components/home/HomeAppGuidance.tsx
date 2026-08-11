@@ -8,8 +8,8 @@ type HomeAppGuidanceProps = {
 
 export function HomeAppGuidance({ content }: HomeAppGuidanceProps) {
   return (
-    <section className="bg-[#f7f4ef]">
-      <div className="mx-auto grid max-w-[90rem] gap-12 px-5 py-20 sm:px-8 lg:grid-cols-[1.08fr_0.92fr] lg:items-center lg:px-12 lg:py-28">
+    <section id="neuvago-app" className="bg-[#f7f4ef]">
+      <div className="mx-auto grid max-w-[90rem] gap-12 px-5 py-20 sm:px-8 lg:grid-cols-[1.02fr_0.98fr] lg:items-center lg:px-12 lg:py-28">
         <div className="overflow-hidden rounded-[2.5rem] border border-black/5 bg-white/55 shadow-[0_34px_100px_rgba(35,28,20,0.1)]">
           <div className="relative hidden aspect-[16/11] lg:block">
             <Image
@@ -42,7 +42,13 @@ export function HomeAppGuidance({ content }: HomeAppGuidanceProps) {
             {content.description}
           </p>
 
-          <div className="mt-10 space-y-5">
+          <div className="mt-7 rounded-[1.5rem] border border-[#c9b9a5]/50 bg-[#eee6db]/75 px-5 py-4">
+            <p className="text-sm font-medium leading-6 text-[#4f4942]">
+              {content.independenceNote}
+            </p>
+          </div>
+
+          <div className="mt-8 space-y-5">
             {content.items.map((item) => (
               <div key={item.title} className="border-t border-black/8 pt-5">
                 <h3 className="text-xl font-medium tracking-[-0.025em] text-[#1f1f1c]">
@@ -56,7 +62,11 @@ export function HomeAppGuidance({ content }: HomeAppGuidanceProps) {
           </div>
 
           <div className="mt-9">
-            <CtaButton href={content.cta.href} label={content.cta.label} variant="secondary" />
+            <CtaButton
+              href={content.cta.href}
+              label={content.cta.label}
+              variant="secondary"
+            />
           </div>
         </div>
       </div>

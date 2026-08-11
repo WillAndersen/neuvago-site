@@ -4,22 +4,26 @@ import {
   HomeHero,
   HomeProofStrip,
   HomeSystemReveal,
+  HomeVagusNerve,
   HomeRoutineSequence,
-  HomeAppGuidance,
-  HomeResearchBoundary,
   HomeEverydayPathways,
+  HomeResearchBoundary,
+  HomeAppGuidance,
+  HomeFeaturedLearning,
+  HomeFaq,
   HomeFinalCta,
 } from "@/components/home";
 import {
+  buildFAQStructuredData,
   buildOrganizationStructuredData,
   buildWebPageStructuredData,
   buildWebSiteStructuredData,
 } from "@/lib/seo/structured-data";
 
 export const metadata: Metadata = {
-  title: "Neuvago | Non-Invasive VNS Device and Guided App",
+  title: "Neuvago | Non-Invasive Vagus Nerve Stimulation",
   description:
-    "Neuvago pairs a non-invasive VNS device with guided app sessions for short daily wellness routines. View product details and launch purchase options.",
+    "Discover Neuvago, a non-invasive vagus nerve stimulation device designed for adjustable, everyday use via an ear electrode. No app or Bluetooth connection required.",
   alternates: {
     canonical: "/",
     languages: {
@@ -29,9 +33,9 @@ export const metadata: Metadata = {
     },
   },
   openGraph: {
-    title: "Neuvago | Non-Invasive VNS Device and Guided App",
+    title: "Neuvago | Non-Invasive Vagus Nerve Stimulation",
     description:
-      "A calm, app-guided wellness system built around a non-invasive VNS device and short daily routines.",
+      "A non-invasive vagus nerve stimulation device designed for clear, adjustable everyday use. The device works independently, with no app or Bluetooth connection required.",
     url: "/",
     siteName: "Neuvago",
     locale: "en_US",
@@ -39,9 +43,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Neuvago | Non-Invasive VNS Device and Guided App",
+    title: "Neuvago | Non-Invasive Vagus Nerve Stimulation",
     description:
-      "A calm, app-guided wellness system built around a non-invasive VNS device and short daily routines.",
+      "A non-invasive vagus nerve stimulation device designed for clear, adjustable everyday use.",
   },
 };
 
@@ -53,10 +57,16 @@ export default async function HomePage() {
     buildWebSiteStructuredData(),
     buildWebPageStructuredData({
       title: content.hero.title,
-      description: content.hero.description,
+      description: `${content.hero.productLine} ${content.hero.description}`,
       path: "/",
     }),
   ];
+
+  const faqStructuredData = buildFAQStructuredData(content.faq.items);
+
+  if (faqStructuredData) {
+    structuredData.push(faqStructuredData);
+  }
 
   return (
     <main className="bg-[#f7f4ef] text-[#1f1f1c]">
@@ -78,21 +88,31 @@ export default async function HomePage() {
         <HomeSystemReveal content={content.systemReveal} />
       ) : null}
 
+      {content.vagusNerve.visible ? (
+        <HomeVagusNerve content={content.vagusNerve} />
+      ) : null}
+
       {content.ritualSequence.visible ? (
         <HomeRoutineSequence content={content.ritualSequence} />
       ) : null}
 
-      {content.appGuidance.visible ? (
-        <HomeAppGuidance content={content.appGuidance} />
+      {content.everydayPathways.visible ? (
+        <HomeEverydayPathways content={content.everydayPathways} />
       ) : null}
 
       {content.researchBoundary.visible ? (
         <HomeResearchBoundary content={content.researchBoundary} />
       ) : null}
 
-      {content.everydayPathways.visible ? (
-        <HomeEverydayPathways content={content.everydayPathways} />
+      {content.appGuidance.visible ? (
+        <HomeAppGuidance content={content.appGuidance} />
       ) : null}
+
+      {content.featuredLearning.visible ? (
+        <HomeFeaturedLearning content={content.featuredLearning} />
+      ) : null}
+
+      {content.faq.visible ? <HomeFaq content={content.faq} /> : null}
 
       {content.finalCta.visible ? (
         <HomeFinalCta content={content.finalCta} />

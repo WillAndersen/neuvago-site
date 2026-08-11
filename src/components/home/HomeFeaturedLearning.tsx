@@ -9,9 +9,10 @@ type HomeFeaturedLearningProps = {
 
 export function HomeFeaturedLearning({ content }: HomeFeaturedLearningProps) {
   return (
-    <section className="bg-[#f7f4ef]">
-      <div className="mx-auto max-w-7xl px-6 py-14 sm:px-8 lg:px-12 lg:py-16">
+    <section className="bg-[#ebe3d8]">
+      <div className="mx-auto max-w-[90rem] px-5 py-20 sm:px-8 lg:px-12 lg:py-28">
         <SectionHeading
+          eyebrow={content.eyebrow}
           title={content.title}
           description={content.description}
         />

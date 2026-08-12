@@ -1,47 +1,112 @@
 "use client";
 
-import { useState, type ReactNode } from "react";
+import { useEffect, useMemo, useState, type ReactNode } from "react";
 
-type ShopifyCheckoutButtonProps = {
-  locale?: "en" | "no";
-  quantity?: number;
-  children?: ReactNode;
-  className?: string;
-  disabledLabel?: string;
-  loadingLabel?: string;
+type Locale = "en" | "no";
+
+type CheckoutStatus = {
+  ok: boolean;
+  enabled: boolean;
+  shopifyEnabled?: boolean;
+  checkoutEnabled?: boolean;
+  configured?: boolean;
 };
 
-const shopifyEnabled = process.env.NEXT_PUBLIC_SHOPIFY_ENABLED === "true";
-const checkoutEnabled = process.env.NEXT_PUBLIC_CHECKOUT_ENABLED === "true";
+type ShopifyCheckoutButtonProps = {
+  children: ReactNode;
+  locale?: Locale;
+  quantity?: number;
+  disabledLabel?: string;
+  loadingLabel?: string;
+  className?: string;
+};
 
-const defaultClassName =
-  "inline-flex items-center justify-center rounded-full bg-[#1f1f1c] px-5 py-3 text-sm font-medium text-white transition hover:bg-[#2b2b28] disabled:cursor-not-allowed disabled:opacity-55";
+function getDefaultDisabledLabel(locale: Locale) {
+  return locale === "no" ? "Kjøp åpner snart" : "Checkout opens soon";
+}
+
+function getDefaultLoadingLabel(locale: Locale) {
+  return locale === "no" ? "Åpner betaling…" : "Opening checkout…";
+}
+
+function getDefaultCheckingLabel(locale: Locale) {
+  return locale === "no" ? "Sjekker kjøp…" : "Checking checkout…";
+}
+
+function getDefaultError(locale: Locale) {
+  return locale === "no"
+    ? "Kunne ikke åpne checkout akkurat nå."
+    : "Could not open checkout right now.";
+}
 
 export function ShopifyCheckoutButton({
+  children,
   locale = "en",
   quantity = 1,
-  children,
-  className,
   disabledLabel,
   loadingLabel,
+  className,
 }: ShopifyCheckoutButtonProps) {
+  const [status, setStatus] = useState<CheckoutStatus | null>(null);
+  const [statusError, setStatusError] = useState(false);
   const [isLoading, setIsLoading] = useState(false);
-  const [errorMessage, setErrorMessage] = useState("");
+  const [error, setError] = useState<string | null>(null);
 
-  const enabled = shopifyEnabled && checkoutEnabled;
-  const label = children ?? (locale === "no" ? "Kjøp Neuvago" : "Buy Neuvago");
-  const disabledText =
-    disabledLabel ?? (locale === "no" ? "Kjøp åpner snart" : "Checkout opens soon");
-  const loadingText =
-    loadingLabel ?? (locale === "no" ? "Åpner checkout…" : "Opening checkout…");
+  useEffect(() => {
+    let cancelled = false;
 
-  async function handleClick() {
-    if (!enabled || isLoading) {
-      return;
+    async function loadStatus() {
+      try {
+        const response = await fetch("/api/shopify/status", {
+          method: "GET",
+          cache: "no-store",
+        });
+
+        const json = (await response.json()) as CheckoutStatus;
+
+        if (!cancelled) {
+          setStatus(json);
+          setStatusError(false);
+        }
+      } catch {
+        if (!cancelled) {
+          setStatus(null);
+          setStatusError(true);
+        }
+      }
     }
 
+    loadStatus();
+
+    return () => {
+      cancelled = true;
+    };
+  }, []);
+
+  const isChecking = status === null && !statusError;
+  const isEnabled = Boolean(status?.enabled);
+  const isDisabled = isChecking || !isEnabled || isLoading;
+
+  const label = useMemo(() => {
+    if (isLoading) return loadingLabel ?? getDefaultLoadingLabel(locale);
+    if (isChecking) return getDefaultCheckingLabel(locale);
+    if (!isEnabled) return disabledLabel ?? getDefaultDisabledLabel(locale);
+    return children;
+  }, [
+    children,
+    disabledLabel,
+    isChecking,
+    isEnabled,
+    isLoading,
+    loadingLabel,
+    locale,
+  ]);
+
+  async function handleClick() {
+    if (isDisabled) return;
+
     setIsLoading(true);
-    setErrorMessage("");
+    setError(null);
 
     try {
       const response = await fetch("/api/shopify/cart", {
@@ -55,42 +120,37 @@ export function ShopifyCheckoutButton({
         }),
       });
 
-      const payload = (await response.json()) as {
-        ok?: boolean;
-        checkoutUrl?: string;
-        error?: string;
-      };
+      const json = await response.json();
 
-      if (!response.ok || !payload.ok || !payload.checkoutUrl) {
-        throw new Error(payload.error ?? "Unable to start checkout.");
+      if (!response.ok || !json.ok || !json.checkoutUrl) {
+        throw new Error(json.error || getDefaultError(locale));
       }
 
-      window.location.assign(payload.checkoutUrl);
-    } catch (error) {
-      const fallback =
-        locale === "no"
-          ? "Vi klarte ikke å åpne checkout akkurat nå."
-          : "We could not open checkout right now.";
-
-      setErrorMessage(error instanceof Error ? error.message : fallback);
+      window.location.assign(json.checkoutUrl);
+    } catch (caughtError) {
+      setError(
+        caughtError instanceof Error ? caughtError.message : getDefaultError(locale),
+      );
+    } finally {
       setIsLoading(false);
     }
   }
 
   return (
-    <div>
+    <div className="grid gap-2">
       <button
         type="button"
-        className={className ?? defaultClassName}
+        className={className}
+        disabled={isDisabled}
+        aria-disabled={isDisabled}
         onClick={handleClick}
-        disabled={!enabled || isLoading}
       >
-        {!enabled ? disabledText : isLoading ? loadingText : label}
+        {label}
       </button>
 
-      {errorMessage ? (
-        <p className="mt-3 text-sm leading-6 text-[#9a3f2f]" role="alert">
-          {errorMessage}
+      {error ? (
+        <p className="text-sm leading-6 text-[#9a3f2f]" role="alert">
+          {error}
         </p>
       ) : null}
     </div>

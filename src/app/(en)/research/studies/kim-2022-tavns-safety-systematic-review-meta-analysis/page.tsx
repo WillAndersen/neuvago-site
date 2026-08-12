@@ -3,7 +3,7 @@ import { FeaturedTavnsStudyPage } from "@/components/research-v2";
 import { getFeaturedTavnsStudy } from "@/content/research-study-catalog";
 
 const study = getFeaturedTavnsStudy(
-  "frangos-2015-auricular-vagus-nerve-stimulation-fmri",
+  "kim-2022-tavns-safety-systematic-review-meta-analysis",
 );
 
 export const metadata: Metadata = {
@@ -25,6 +25,6 @@ export const metadata: Metadata = {
   },
 };
 
-export default function Frangos2015AuricularVagusNerveStimulationFmriPage() {
+export default function Kim2022TavnsSafetyPage() {
   return <FeaturedTavnsStudyPage study={study} />;
 }

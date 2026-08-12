@@ -2,6 +2,11 @@ import Link from "next/link"
 import { JsonLd } from "@/components/seo/json-ld"
 import { PlainEnglishSummary } from "@/components/authority"
 import { buildPageWithBreadcrumbStructuredData } from "@/lib/seo/structured-data"
+import {
+  featuredTavnsStudies,
+  researchStudyCatalog,
+  researchStudyGroups,
+} from "@/content/research-study-catalog";
 
 export const metadata = {
   title:
@@ -54,187 +59,33 @@ const categories = [
   },
 ]
 
-const featuredStudies = [
-  {
-    title: "Orienting in a Defensive World: The Polyvagal Theory",
-    authors: "Stephen W. Porges",
-    year: "1995",
-    journal: "Psychophysiology",
-    category: "Foundation",
-    href: "/research/studies/porges-1995-polyvagal-theory",
-    summary:
-      "A landmark theoretical framework linking vagal pathways with safety, social engagement, mobilization, and shutdown states.",
-  },
-  {
-    title:
-      "Heart Rate Variability: Standards of Measurement, Physiological Interpretation, and Clinical Use",
-    authors:
-      "Task Force of the European Society of Cardiology and NASPE",
-    year: "1996",
-    journal: "Circulation",
-    category: "HRV",
-    href: "/research/studies/task-force-1996-heart-rate-variability-standards",
-    summary:
-      "The foundational methodological reference for HRV research and one of the central papers in autonomic physiology.",
-  },
-  {
-    title: "A Model of Neurovisceral Integration in Emotion Regulation",
-    authors: "Julian F. Thayer & Richard D. Lane",
-    year: "2000",
-    journal: "Journal of Affective Disorders",
-    category: "Autonomic regulation",
-    href: "/research/studies/thayer-lane-2000-neurovisceral-integration",
-    summary:
-      "An influential model connecting emotional regulation, autonomic flexibility, HRV, and vagal regulation.",
-  },
-  {
-    title: "The Inflammatory Reflex",
-    authors: "Kevin J. Tracey",
-    year: "2002",
-    journal: "Nature",
-    category: "Neuroimmune",
-    href: "/research/studies/inflammatory-reflex-tracey-2002",
-    summary:
-      "A landmark concept describing how neural circuits, including vagal pathways, may participate in immune regulation.",
-  },
-]
+const featuredStudies = featuredTavnsStudies.map((study) => ({
+  title: study.cardHeading,
+  authors: study.authors,
+  year: study.year,
+  journal: study.journal,
+  category: study.category,
+  researchArea: study.researchArea,
+  evidenceType: study.evidenceType,
+  href: study.href,
+  summary: study.cardSummary,
+}));
 
-const groupedStudies = [
-  {
-    title: "Foundational frameworks",
-    studies: [
-      {
-        title: "Orienting in a Defensive World: The Polyvagal Theory",
-        authors: "Stephen W. Porges",
-        year: "1995",
-        journal: "Psychophysiology",
-        category: "Foundation",
-        href: "/research/studies/porges-1995-polyvagal-theory",
-        summary:
-          "A foundational theory linking vagal pathways with safety, defensive responses, and the social engagement system.",
-      },
-      {
-        title: "A Model of Neurovisceral Integration in Emotion Regulation",
-        authors: "Julian F. Thayer & Richard D. Lane",
-        year: "2000",
-        journal: "Journal of Affective Disorders",
-        category: "Autonomic regulation",
-        href: "/research/studies/thayer-lane-2000-neurovisceral-integration",
-        summary:
-          "A key theoretical model linking the brain, emotional regulation, vagal activity, and autonomic flexibility.",
-      },
-    ],
-  },
-  {
-    title: "Autonomic regulation and HRV",
-    studies: [
-      {
-        title:
-          "Heart Rate Variability: Standards of Measurement, Physiological Interpretation, and Clinical Use",
-        authors:
-          "Task Force of the European Society of Cardiology and NASPE",
-        year: "1996",
-        journal: "Circulation",
-        category: "HRV",
-        href: "/research/studies/task-force-1996-heart-rate-variability-standards",
-        summary:
-          "The foundational methodological paper behind HRV research across autonomic physiology, stress, sleep, and regulation studies.",
-      },
-    ],
-  },
-  {
-    title: "Inflammation and neuroimmune signaling",
-    studies: [
-      {
-        title:
-          "Vagus Nerve Stimulation Attenuates the Systemic Inflammatory Response",
-        authors: "L. V. Borovikova et al.",
-        year: "2000",
-        journal: "Nature",
-        category: "Neuroimmune",
-        href: "/research/studies/borovikova-2000-vagus-nerve-inflammation",
-        summary:
-          "A landmark experimental study suggesting that vagus nerve signaling may influence inflammatory cytokine release.",
-      },
-      {
-        title: "The Inflammatory Reflex",
-        authors: "Kevin J. Tracey",
-        year: "2002",
-        journal: "Nature",
-        category: "Neuroimmune",
-        href: "/research/studies/inflammatory-reflex-tracey-2002",
-        summary:
-          "A foundational concept describing how neural pathways may detect and regulate inflammatory activity through reflex-like mechanisms.",
-      },
-      {
-        title: "The Cholinergic Anti-Inflammatory Pathway",
-        authors: "Valentin A. Pavlov & Kevin J. Tracey",
-        year: "2005",
-        journal: "Brain, Behavior, and Immunity",
-        category: "Neuroimmune",
-        href: "/research/studies/pavlov-tracey-2005-cholinergic-anti-inflammatory-pathway",
-        summary:
-          "A major review describing how vagal cholinergic signaling may influence cytokine release and immune regulation.",
-      },
-    ],
-  },
-  {
-    title: "Vagus nerve stimulation",
-    studies: [
-      {
-        title:
-          "Non-Invasive Access to the Vagus Nerve via the Ear: fMRI Evidence",
-        authors: "E. Frangos, J. Ellrich, B. Komisaruk",
-        year: "2015",
-        journal: "Brain Stimulation",
-        category: "Stimulation",
-        href: "/research/studies/frangos-2015-auricular-vagus-nerve-stimulation-fmri",
-        summary:
-          "Important neuroimaging evidence supporting the idea that ear-based stimulation may influence brain regions associated with vagal pathways.",
-      },
-      {
-        title:
-          "Vagus Nerve Stimulation for Treatment-Resistant Depression",
-        authors: "A. John Rush et al.",
-        year: "2005",
-        journal: "Biological Psychiatry",
-        category: "Stimulation",
-        href: "/research/studies/rush-2005-vagus-nerve-stimulation-depression",
-        summary:
-          "A widely cited clinical study examining implanted vagus nerve stimulation in treatment-resistant depression.",
-      },
-    ],
-  },
-  {
-    title: "Gut–brain axis",
-    studies: [
-      {
-        title:
-          "Gut Feelings: The Emerging Biology of Gut–Brain Communication",
-        authors: "Emeran A. Mayer",
-        year: "2011",
-        journal: "Nature Reviews Neuroscience",
-        category: "Gut–brain",
-        href: "/research/studies/mayer-2011-gut-brain-axis",
-        summary:
-          "A major review explaining how neural, hormonal, microbial, and immune pathways connect the digestive system with the brain.",
-      },
-    ],
-  },
-]
+const groupedStudies = researchStudyGroups;
+const studyCount = researchStudyCatalog.length;
 
 const libraryLayers = [
   {
     title: "Research hub",
     description:
-      "The main research page explains the broader evidence layer and how it supports learning, topic development, and the larger Neuvago system.",
+      "The main research page explains the broader evidence layer and connects individual studies with topic-based research.",
     href: "/research",
     linkLabel: "Go to research hub",
   },
   {
     title: "Learn",
     description:
-      "The learning system translates foundational ideas such as regulation, vagal signaling, stress, sleep, and recovery into everyday language.",
+      "The learning hub translates foundational ideas such as regulation, vagal signalling, stress, sleep, and recovery into everyday language.",
     href: "/learn",
     linkLabel: "Go to learning hub",
   },
@@ -253,22 +104,33 @@ function StudyCard({
   year,
   journal,
   category,
+  researchArea,
+  evidenceType,
   href,
   summary,
+  showPublicationDetails = true,
 }: {
-  title: string
-  authors: string
-  year: string
-  journal: string
-  category: string
-  href: string
-  summary: string
+  title: string;
+  authors: string;
+  year: string;
+  journal: string;
+  category: string;
+  researchArea?: string;
+  evidenceType?: string;
+  href: string;
+  summary: string;
+  showPublicationDetails?: boolean;
 }) {
   return (
     <article className="rounded-[1.5rem] border border-black/8 bg-white/70 p-7 shadow-[0_8px_24px_rgba(31,31,28,0.03)]">
       <div className="flex flex-wrap items-center gap-2">
-        <span className="rounded-full border border-black/10 bg-[#f6f1ea] px-3 py-1 text-[0.7rem] uppercase tracking-[0.14em] text-[#6f6a61]">
-          {category}
+        {researchArea ? (
+          <span className="rounded-full border border-black/10 bg-[#f2eee8] px-3 py-1 text-[0.66rem] font-medium uppercase tracking-[0.14em] text-[#6f6a61]">
+            {researchArea}
+          </span>
+        ) : null}
+        <span className="rounded-full border border-black/10 bg-[#f6f1ea] px-3 py-1 text-[0.66rem] uppercase tracking-[0.14em] text-[#6f6a61]">
+          {evidenceType ?? category}
         </span>
         <span className="text-[0.72rem] uppercase tracking-[0.14em] text-[#8a847b]">
           {year}
@@ -279,13 +141,17 @@ function StudyCard({
         {title}
       </h3>
 
-      <p className="mt-3 text-sm leading-6 text-[#6a645d]">
-        {authors}
-      </p>
+      {showPublicationDetails ? (
+        <>
+          <p className="mt-3 text-sm leading-6 text-[#6a645d]">
+            {authors}
+          </p>
 
-      <p className="mt-1 text-sm leading-6 text-[#7b756d]">
-        {journal}
-      </p>
+          <p className="mt-1 text-sm leading-6 text-[#7b756d]">
+            {journal}
+          </p>
+        </>
+      ) : null}
 
       <p className="mt-5 text-sm leading-7 text-[#5f5a52] md:text-[0.96rem]">
         {summary}
@@ -298,7 +164,7 @@ function StudyCard({
         Read summary
       </Link>
     </article>
-  )
+  );
 }
 
 export default function ResearchStudiesPage() {
@@ -336,7 +202,7 @@ export default function ResearchStudiesPage() {
             </p>
 
             <div className="mt-8 flex flex-wrap gap-x-8 gap-y-3 text-sm text-[#6b665e]">
-              <span>Current library: 9 studies</span>
+              <span>{`Current library: ${studyCount} studies`}</span>
               <span>Grouped by research track</span>
               <span>Built to expand over time</span>
             </div>
@@ -475,17 +341,21 @@ export default function ResearchStudiesPage() {
         <div className="mx-auto max-w-7xl px-6 py-20 md:px-10 md:py-24">
           <div className="max-w-3xl">
             <p className="text-sm uppercase tracking-[0.18em] text-[#7a756c]">
-              Featured foundational studies
+              Featured taVNS Research
             </p>
 
             <h2 className="mt-4 text-3xl font-medium leading-tight tracking-[-0.03em] md:text-5xl">
-              A first set of landmark papers that shaped the broader conversation
+              Four verified studies across sleep, safety, brain pathways, and autonomic function
             </h2>
           </div>
 
           <div className="mt-12 grid gap-6 md:grid-cols-2 xl:grid-cols-4">
             {featuredStudies.map((item) => (
-              <StudyCard key={item.title} {...item} />
+              <StudyCard
+                key={item.title}
+                {...item}
+                showPublicationDetails={false}
+              />
             ))}
           </div>
         </div>
@@ -527,16 +397,16 @@ export default function ResearchStudiesPage() {
         <div className="mx-auto grid max-w-7xl gap-14 px-6 py-20 md:px-10 md:py-24 lg:grid-cols-[1fr_0.95fr]">
           <div>
             <p className="text-sm uppercase tracking-[0.18em] text-[#7a756c]">
-              How this library fits the wider system
+              How this library fits the wider research structure
             </p>
 
             <h2 className="mt-4 max-w-3xl text-3xl font-medium leading-tight tracking-[-0.03em] md:text-5xl">
-              The studies library is designed to work together with broader research and learning pathways
+              The studies library connects individual papers with broader research and learning pathways
             </h2>
 
             <p className="mt-6 max-w-2xl text-base leading-8 text-[#5f5a52] md:text-lg">
               Individual studies matter most when they can be placed in context.
-              That is why this library sits inside a broader system that includes
+              That is why this library connects with a broader structure that includes
               research overviews, learning pages, and condition-level content.
             </p>
 
@@ -549,7 +419,7 @@ export default function ResearchStudiesPage() {
 
           <div className="rounded-[1.75rem] border border-black/8 bg-white/70 p-8 shadow-[0_8px_24px_rgba(31,31,28,0.03)]">
             <p className="text-sm uppercase tracking-[0.16em] text-[#8a847b]">
-              Connected layers
+              Related layers
             </p>
 
             <div className="mt-8 space-y-5">

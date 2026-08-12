@@ -7,3 +7,4 @@ export { ResearchV2Foundations } from "./ResearchV2Foundations";
 export { ResearchV2Approach } from "./ResearchV2Approach";
 export { ResearchV2Library } from "./ResearchV2Library";
 export { ResearchV2Continue } from "./ResearchV2Continue";
+export { FeaturedTavnsStudyPage } from "./FeaturedTavnsStudyPage";

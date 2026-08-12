@@ -19,14 +19,18 @@ export function ResearchV2Closest({
               alt={content.image.alt}
               fill
               className="hidden object-cover md:block"
-              sizes="(max-width: 1024px) 92vw, 44vw"
+              sizes="(min-width: 1024px) 44vw, (min-width: 768px) 92vw, 0px"
+              loading="eager"
+              fetchPriority="high"
             />
             <Image
               src={content.mobileImage.src}
               alt={content.mobileImage.alt}
               fill
               className="object-cover md:hidden"
-              sizes="92vw"
+              sizes="(max-width: 767px) 92vw, 0px"
+              loading="eager"
+              fetchPriority="high"
             />
           </div>
         </div>

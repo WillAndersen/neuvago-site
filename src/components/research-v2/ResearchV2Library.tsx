@@ -61,10 +61,10 @@ export function ResearchV2Library({
                   Complete study list
                 </p>
                 <h3 className="mt-2 text-xl font-medium tracking-[-0.04em] text-[#1f1f1c] sm:text-2xl">
-                  View all nine study summaries
+                  View all {content.studies.length} study summaries
                 </h3>
                 <p className="mt-2 text-sm leading-6 text-[#6f675e]">
-                  Explore all nine study summaries in one place.
+                  Explore all {content.studies.length} study summaries in one place.
                 </p>
               </div>
 

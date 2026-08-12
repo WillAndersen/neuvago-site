@@ -1,3 +1,8 @@
+import {
+  featuredTavnsStudies,
+  researchStudyCatalog,
+} from "@/content/research-study-catalog";
+
 export type ResearchV2Cta = {
   label: string;
   href: string;
@@ -22,6 +27,15 @@ export type ResearchV2ExplorationCard = ResearchV2Card & {
   label: string;
   href?: string;
   linkLabel?: string;
+};
+
+export type ResearchV2FeaturedStudyCard = {
+  researchArea: string;
+  evidenceType: string;
+  heading: string;
+  summary: string;
+  year: string;
+  href: string;
 };
 
 export type ResearchV2StudyCard = {
@@ -233,38 +247,19 @@ export const researchV2Content = {
 
   featured: {
     eyebrow: "Featured taVNS Research",
-    title: "Auricular stimulation and brain pathways.",
+    title: "Four perspectives on an active research field.",
     description:
-      "Frangos et al. 2015 used fMRI to examine whether electrical stimulation at an auricular region could engage central brain pathways associated with the vagus nerve.",
-    study: {
-      label: "NEUROIMAGING",
-      title:
-        "Non-Invasive Access to the Vagus Nerve via the Ear: fMRI Evidence",
-      authors: "E. Frangos, J. Ellrich, B. Komisaruk",
-      year: "2015",
-      journal: "Brain Stimulation",
-      description:
-        "An influential fMRI study examining whether electrical stimulation of an auricular region can engage central brain pathways associated with the vagus nerve.",
-      href: "/research/studies/frangos-2015-auricular-vagus-nerve-stimulation-fmri",
-    } satisfies ResearchV2StudyCard,
-    contextCards: [
-      {
-        title: "Explore the full taVNS topic",
-        description:
-          "Read about auricular placement, protocol variables, target engagement, reporting standards, safety, and interpretation.",
-        href: "/research/topics/transcutaneous-vagus-nerve-stimulation",
-        linkLabel: "Explore taVNS research",
-      },
-      {
-        title: "Browse the complete studies library",
-        description:
-          "Move from the featured auricular study into the full library of foundational, methodological, experimental, and broader VNS papers.",
-        href: "/research/studies",
-        linkLabel: "Browse all studies",
-      },
-    ] satisfies ResearchV2LinkCard[],
+      "Explore verified taVNS research across sleep, safety and tolerability, brain pathways, and autonomic function. The evidence includes systematic reviews, meta-analyses, and human neuroimaging.",
+    studies: featuredTavnsStudies.map((study) => ({
+      researchArea: study.researchArea,
+      evidenceType: study.evidenceType,
+      heading: study.cardHeading,
+      summary: study.cardSummary,
+      year: study.year,
+      href: study.href,
+    })) satisfies ResearchV2FeaturedStudyCard[],
     boundary:
-      "This study provides important neuroimaging context for auricular stimulation. It does not establish that every ear-based protocol, device, or user will produce the same effects.",
+      "These studies describe the wider taVNS research field. They do not automatically establish clinical effects for every protocol, device, population, or the Neuvago device itself.",
   },
 
   foundations: {
@@ -386,7 +381,7 @@ export const researchV2Content = {
         label: "Research topics",
       },
       {
-        value: "9",
+        value: String(researchStudyCatalog.length),
         label: "Study summaries",
       },
       {
@@ -402,53 +397,11 @@ export const researchV2Content = {
       label: "Explore all topics",
       href: "/research/topics",
     } satisfies ResearchV2Cta,
-    studies: [
-      {
-        title: "Porges, 1995",
-        context: "Polyvagal theory",
-        href: "/research/studies/porges-1995-polyvagal-theory",
-      },
-      {
-        title: "Task Force, 1996",
-        context: "Heart rate variability standards",
-        href: "/research/studies/task-force-1996-heart-rate-variability-standards",
-      },
-      {
-        title: "Thayer & Lane, 2000",
-        context: "Neurovisceral integration",
-        href: "/research/studies/thayer-lane-2000-neurovisceral-integration",
-      },
-      {
-        title: "Borovikova et al., 2000",
-        context: "Vagus nerve and inflammation",
-        href: "/research/studies/borovikova-2000-vagus-nerve-inflammation",
-      },
-      {
-        title: "Tracey, 2002",
-        context: "The inflammatory reflex",
-        href: "/research/studies/inflammatory-reflex-tracey-2002",
-      },
-      {
-        title: "Pavlov & Tracey, 2005",
-        context: "Cholinergic anti-inflammatory pathway",
-        href: "/research/studies/pavlov-tracey-2005-cholinergic-anti-inflammatory-pathway",
-      },
-      {
-        title: "Rush et al., 2005",
-        context: "Implanted VNS and treatment-resistant depression",
-        href: "/research/studies/rush-2005-vagus-nerve-stimulation-depression",
-      },
-      {
-        title: "Mayer, 2011",
-        context: "Gut–brain communication",
-        href: "/research/studies/mayer-2011-gut-brain-axis",
-      },
-      {
-        title: "Frangos et al., 2015",
-        context: "Auricular stimulation and fMRI",
-        href: "/research/studies/frangos-2015-auricular-vagus-nerve-stimulation-fmri",
-      },
-    ] satisfies ResearchV2StudyLink[],
+    studies: researchStudyCatalog.map((study) => ({
+      title: study.libraryTitle,
+      context: study.libraryContext,
+      href: study.href,
+    })) satisfies ResearchV2StudyLink[],
     depthTitle: "Understand the evidence in more depth.",
     depthDescription:
       "Explore terminology, stimulation protocols, and the reasons findings can vary between studies.",

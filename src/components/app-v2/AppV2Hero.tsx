@@ -9,51 +9,55 @@ type AppV2HeroProps = {
 export function AppV2Hero({ content }: AppV2HeroProps) {
   return (
     <section className="relative isolate overflow-hidden border-b border-black/5 bg-[#f7f4ef]">
-      <div className="absolute inset-x-0 top-0 -z-10 h-[34rem] bg-[radial-gradient(circle_at_18%_20%,rgba(255,252,247,0.98),transparent_34%),radial-gradient(circle_at_80%_20%,rgba(238,195,145,0.25),transparent_36%)]" />
+      <div className="absolute inset-x-0 top-0 -z-10 h-[34rem] bg-[radial-gradient(circle_at_20%_18%,rgba(255,252,247,0.98),transparent_34%),radial-gradient(circle_at_82%_24%,rgba(226,193,148,0.22),transparent_34%)]" />
 
-      <div className="mx-auto grid max-w-[92rem] gap-12 px-5 py-14 sm:px-8 sm:py-16 lg:grid-cols-[0.88fr_1.12fr] lg:items-center lg:gap-14 lg:px-12 lg:py-20 xl:py-24">
-        <div className="max-w-[43rem]">
+      <div className="mx-auto grid max-w-[92rem] gap-10 px-5 py-14 sm:px-8 sm:py-16 lg:grid-cols-[0.88fr_1.12fr] lg:items-center lg:gap-14 lg:px-12 lg:py-24">
+        <div className="min-w-0 max-w-[44rem]">
           <p className="text-[0.7rem] font-medium uppercase tracking-[0.3em] text-[#7d7267]">
             {content.eyebrow}
           </p>
 
-          <h1 className="mt-5 max-w-[12ch] text-balance text-[clamp(3.1rem,12vw,5.5rem)] font-medium leading-[0.93] tracking-[-0.065em] text-[#1f1f1c] sm:text-[clamp(4rem,8vw,6.5rem)] lg:text-[clamp(5rem,6.2vw,7.25rem)] lg:leading-[0.88] lg:tracking-[-0.078em]">
+          <h1 className="mt-5 max-w-[12ch] text-balance text-[clamp(3rem,12vw,5.7rem)] font-medium leading-[0.93] tracking-[-0.066em] text-[#1f1f1c] sm:text-[clamp(4rem,8vw,6.8rem)] lg:text-[clamp(5rem,6.2vw,7.35rem)] lg:leading-[0.88] lg:tracking-[-0.08em]">
             {content.title}
           </h1>
 
-          <div className="relative mx-auto mt-7 h-[20rem] w-full max-w-[23rem] sm:h-[24rem] lg:hidden">
-            <div className="absolute left-[1%] top-0 w-[61%] rotate-[-4deg] overflow-hidden rounded-[1.55rem] border border-white/60 bg-[#f1e8de] shadow-[0_28px_85px_rgba(49,35,20,0.18)]">
+          <div className="relative mt-7 min-h-[25rem] overflow-hidden rounded-[2rem] border border-black/6 bg-[#eadfd2] shadow-[0_26px_90px_rgba(31,31,28,0.1)] lg:hidden">
+            <div className="absolute left-[7%] top-[6%] w-[58%] rotate-[-4deg] overflow-hidden rounded-[1.5rem] border border-white/60 bg-[#f1e8de] shadow-[0_24px_70px_rgba(49,35,20,0.18)]">
               <Image
-                src={content.images[0].src}
-                alt={content.images[0].alt}
+                src={content.primaryImage.src}
+                alt={content.primaryImage.alt}
                 width={1024}
                 height={1536}
-                className="h-auto w-full"
-                sizes="58vw"
+                className="block h-auto w-full max-w-full"
+                sizes="54vw"
                 loading="eager"
                 fetchPriority="high"
               />
             </div>
 
-            <div className="absolute bottom-0 right-[1%] w-[56%] rotate-[4deg] overflow-hidden rounded-[1.55rem] border border-white/60 bg-[#f1e8de] shadow-[0_28px_85px_rgba(49,35,20,0.16)]">
+            <div className="absolute bottom-[4%] right-[5%] w-[49%] rotate-[4deg] overflow-hidden rounded-[1.5rem] border border-white/60 bg-[#f1e8de] shadow-[0_24px_70px_rgba(49,35,20,0.16)]">
               <Image
-                src={content.images[1].src}
-                alt={content.images[1].alt}
+                src={content.secondaryImage.src}
+                alt={content.secondaryImage.alt}
                 width={1024}
                 height={1536}
-                className="h-auto w-full"
-                sizes="54vw"
+                className="block h-auto w-full max-w-full"
+                sizes="46vw"
                 loading="eager"
                 fetchPriority="high"
               />
             </div>
           </div>
 
-          <p className="mt-7 max-w-[39rem] text-base leading-8 text-[#514c45] sm:text-lg lg:text-xl lg:leading-9">
+          <p className="mt-7 max-w-[40rem] text-lg font-medium leading-8 tracking-[-0.018em] text-[#302d29] sm:text-xl lg:text-2xl lg:leading-9">
             {content.description}
           </p>
 
-          <div className="mt-9 flex flex-wrap gap-3">
+          <p className="mt-4 max-w-[40rem] text-base leading-8 text-[#5f5a52] sm:text-lg">
+            {content.brandConnection}
+          </p>
+
+          <div className="mt-8 flex flex-wrap gap-3">
             <CtaButton
               href={content.primaryCta.href}
               label={content.primaryCta.label}
@@ -76,37 +80,35 @@ export function AppV2Hero({ content }: AppV2HeroProps) {
               </span>
             ))}
           </div>
-
-          <p className="mt-5 max-w-xl text-xs leading-5 text-[#81786f]">
-            {content.previewNote}
-          </p>
         </div>
 
-        <div className="relative hidden min-h-[41rem] lg:block">
-          <div className="absolute left-[1%] top-[7%] w-[57%] rotate-[-4deg] overflow-hidden rounded-[2rem] border border-white/60 bg-[#f1e8de] shadow-[0_35px_110px_rgba(49,35,20,0.2)] sm:w-[52%]">
-            <Image
-              src={content.images[0].src}
-              alt={content.images[0].alt}
-              width={1024}
-              height={1536}
-              className="h-auto w-full"
-              sizes="(max-width: 1024px) 52vw, 390px"
-              loading="eager"
-              fetchPriority="high"
-            />
-          </div>
+        <div className="relative hidden min-w-0 lg:block">
+          <div className="relative min-h-[44rem] overflow-hidden rounded-[2.5rem] border border-black/6 bg-[#eadfd2] shadow-[0_34px_110px_rgba(31,31,28,0.12)]">
+            <div className="absolute left-[7%] top-[5%] w-[56%] rotate-[-4deg] overflow-hidden rounded-[1.8rem] border border-white/60 bg-[#f1e8de] shadow-[0_30px_90px_rgba(49,35,20,0.18)]">
+              <Image
+                src={content.primaryImage.src}
+                alt={content.primaryImage.alt}
+                width={1024}
+                height={1536}
+                className="block h-auto w-full max-w-full"
+                sizes="390px"
+                loading="eager"
+                fetchPriority="high"
+              />
+            </div>
 
-          <div className="absolute bottom-[1%] right-[1%] w-[54%] rotate-[4deg] overflow-hidden rounded-[2rem] border border-white/60 bg-[#f1e8de] shadow-[0_35px_110px_rgba(49,35,20,0.18)] sm:w-[49%]">
-            <Image
-              src={content.images[1].src}
-              alt={content.images[1].alt}
-              width={1024}
-              height={1536}
-              className="h-auto w-full"
-              sizes="(max-width: 1024px) 50vw, 370px"
-              loading="eager"
-              fetchPriority="high"
-            />
+            <div className="absolute bottom-[3%] right-[5%] w-[50%] rotate-[4deg] overflow-hidden rounded-[1.8rem] border border-white/60 bg-[#f1e8de] shadow-[0_30px_90px_rgba(49,35,20,0.16)]">
+              <Image
+                src={content.secondaryImage.src}
+                alt={content.secondaryImage.alt}
+                width={1024}
+                height={1536}
+                className="block h-auto w-full max-w-full"
+                sizes="350px"
+                loading="eager"
+                fetchPriority="high"
+              />
+            </div>
           </div>
         </div>
       </div>

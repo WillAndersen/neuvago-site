@@ -13,8 +13,16 @@ export type AppV2Card = {
   description: string;
 };
 
-export type AppV2LinkCard = AppV2Card & {
-  href: string;
+export type AppV2SessionCategory = AppV2Card & {
+  label: string;
+};
+
+export type AppV2BreathingExample = AppV2Card & {
+  outcome: string;
+};
+
+export type AppV2Need = AppV2Card & {
+  label: string;
 };
 
 export type AppV2FaqItem = {
@@ -22,12 +30,205 @@ export type AppV2FaqItem = {
   answer: string;
 };
 
+export type AppV2Availability = {
+  webAccess: boolean;
+  guidedSessions: boolean;
+  professionalGuidance: boolean;
+  breathingTools: boolean;
+  dailyCheckIn: boolean;
+  nervousSystemScore: boolean;
+  progress: boolean;
+  appStore: boolean;
+  googlePlay: boolean;
+};
+
+/**
+ * Public feature availability for the English APP page.
+ *
+ * Only features marked true may be presented as available.
+ * Do not replace false values with "coming soon" or prototype copy.
+ */
+const availability: AppV2Availability = {
+  webAccess: true,
+  guidedSessions: true,
+  professionalGuidance: false,
+  breathingTools: false,
+  dailyCheckIn: true,
+  nervousSystemScore: true,
+  progress: true,
+  appStore: false,
+  googlePlay: false,
+};
+
+const guidedSessionCategories: AppV2SessionCategory[] = [
+  {
+    label: "Sleep",
+    title: "Wind down and prepare for rest.",
+    description:
+      "Sessions for winding down, quieting the mind and preparing for or returning to sleep.",
+  },
+  {
+    label: "Stress",
+    title: "Settle after demanding moments.",
+    description:
+      "Sessions for slowing down, releasing tension and settling after demanding moments.",
+  },
+  {
+    label: "Focus",
+    title: "Create space for calm concentration.",
+    description:
+      "Sessions for clearing mental noise, getting into focus and maintaining attention.",
+  },
+  {
+    label: "Recovery",
+    title: "Pause, reset and make space to recover.",
+    description:
+      "Sessions for pausing, resetting and making space for recovery after periods of stress or demand.",
+  },
+];
+
+const breathingExamples: AppV2BreathingExample[] = [
+  {
+    title: "4-7-8 Breathing",
+    outcome: "Calm & Sleep",
+    description:
+      "A paced breathing practice intended for calming and evening routines.",
+  },
+  {
+    title: "Coherent Breathing",
+    outcome: "Steady Rhythm",
+    description:
+      "A balanced breathing pattern built around a slow, even rhythm.",
+  },
+  {
+    title: "Physiological Sigh",
+    outcome: "Quick Reset",
+    description:
+      "A short breathing practice designed for brief reset moments.",
+  },
+];
+
+const needs: AppV2Need[] = availability.breathingTools
+  ? [
+      {
+        label: "I feel overwhelmed",
+        title: "Find a short calming session or breathing practice.",
+        description:
+          "Start with a short option designed for a demanding moment.",
+      },
+      {
+        label: "I need to focus",
+        title:
+          "Choose a focus session or breathing practice for calm concentration.",
+        description:
+          "Move toward a clear, intentional period of attention.",
+      },
+      {
+        label: "I can’t switch off",
+        title: "Choose a session designed to quiet the mind.",
+        description:
+          "Find a calmer transition into an evening or rest routine.",
+      },
+      {
+        label: "I want to sleep",
+        title: "Explore sleep sessions and calming breathing practices.",
+        description:
+          "Choose content organised around rest and evening wind-down.",
+      },
+      {
+        label: "I need to recover",
+        title: "Choose a recovery or reset session.",
+        description:
+          "Pause after periods of stress, activity or demand.",
+      },
+    ]
+  : [
+      {
+        label: "I feel overwhelmed",
+        title: "Find a short calming session.",
+        description:
+          "Start with a short option designed for a demanding moment.",
+      },
+      {
+        label: "I need to focus",
+        title: "Choose a focus session for calm concentration.",
+        description:
+          "Move toward a clear, intentional period of attention.",
+      },
+      {
+        label: "I can’t switch off",
+        title: "Choose a session designed to quiet the mind.",
+        description:
+          "Find a calmer transition into an evening or rest routine.",
+      },
+      {
+        label: "I want to sleep",
+        title: "Explore sessions organised around sleep and wind-down.",
+        description:
+          "Choose content designed for rest and evening transitions.",
+      },
+      {
+        label: "I need to recover",
+        title: "Choose a recovery or reset session.",
+        description:
+          "Pause after periods of stress, activity or demand.",
+      },
+    ];
+
+const appFeatureSummary = availability.breathingTools
+  ? "guided sessions, breathing practices, Daily Check-In, Nervous System Score and progress tools"
+  : "guided sessions, Daily Check-In, Nervous System Score and progress tools";
+
+const faqItems: AppV2FaqItem[] = [
+  {
+    question: "What does the Neuvago App include?",
+    answer: `The Neuvago App includes ${appFeatureSummary} for sleep, stress, focus, recovery and everyday nervous system wellbeing.`,
+  },
+  {
+    question: "What are Guided Sessions?",
+    answer:
+      "Guided Sessions are structured practices created for different needs and moments, including sleep, stress, focus and recovery.",
+  },
+  ...(availability.breathingTools
+    ? [
+        {
+          question: "What are Breathing Tools?",
+          answer:
+            "Breathing Tools combine guided or visual breathing patterns with simple practices for calming, sleep, focus and brief reset moments.",
+        },
+      ]
+    : []),
+  {
+    question: "What is the Daily Check-In?",
+    answer:
+      "The Daily Check-In helps you reflect on stress, calm, energy and sleep readiness and use that reflection to navigate relevant content.",
+  },
+  {
+    question: "What is the Nervous System Score?",
+    answer:
+      "The Nervous System Score is a personal reflection indicator based on your own reported state over time. It is not a medical measurement or diagnosis.",
+  },
+  {
+    question: "Is one year of app access included with Neuvago?",
+    answer:
+      "Yes. Every Neuvago device includes one year of access to the Neuvago App.",
+  },
+  {
+    question: "Can I use the Neuvago App without a Neuvago device?",
+    answer: "Yes.",
+  },
+];
+
 export const appV2Content = {
+  availability,
+
   hero: {
     eyebrow: "Neuvago App",
     title: "Guided tools for nervous system wellbeing.",
     description:
-      "Explore guided sessions, daily check-ins, personal recommendations, and progress tools for sleep, stress, focus, and recovery. The app works independently and does not connect to or control the Neuvago device.",
+      "Guided sessions and practical tools for sleep, stress, focus, recovery and everyday nervous system wellbeing.",
+    brandConnection:
+      "Neuvago is built around a broader approach to nervous system and brain–body wellbeing. The app extends that approach with practical digital tools for different needs and moments.",
     primaryCta: {
       label: "Create account",
       href: "/signup",
@@ -36,87 +237,31 @@ export const appV2Content = {
       label: "Sign in",
       href: "/login",
     } satisfies AppV2Cta,
-    images: [
-      {
-        src: "/images/home/app-mockup-library.png",
-        alt: "Neuvago App library interface preview showing guided session categories.",
-      },
-      {
-        src: "/images/home/app-mockup-progress.png",
-        alt: "Neuvago App progress interface preview showing session history.",
-      },
-    ] satisfies AppV2Image[],
+    primaryImage: {
+      src: "/images/home/app-mockup-progress.png",
+      alt: "Neuvago App progress interface.",
+    } satisfies AppV2Image,
+    secondaryImage: {
+      src: "/images/home/app-mockup-library.png",
+      alt: "Neuvago App guided session library interface.",
+    } satisfies AppV2Image,
     proofLine: [
-      "Independent from the device",
-      "Guided and silent session modes",
-      "Daily check-ins and progress",
+      "Guided Sessions",
+      "Daily Check-In",
+      "Progress tools",
     ],
-    previewNote:
-      "Interface previews. Final screens and feature availability may change before launch.",
-  },
-
-  quickValue: {
-    eyebrow: "Inside the app",
-    title: "Choose a tool based on the moment you are in.",
-    description:
-      "Explore guided sessions, check in with how the moment feels, receive relevant recommendations, and review your activity over time.",
-    cards: [
-      {
-        title: "Guided sessions",
-        description:
-          "Browse sessions organised around sleep, stress, focus, and recovery.",
-      },
-      {
-        title: "Daily Check-In",
-        description:
-          "Reflect on stress, how calm the body feels, energy, and sleep readiness.",
-      },
-      {
-        title: "Personal recommendations",
-        description:
-          "Use your selected goal and recent check-in signals to find a relevant session category.",
-      },
-      {
-        title: "Progress",
-        description:
-          "Review completed sessions, recent activity, category patterns, and check-in context.",
-      },
-    ] satisfies AppV2Card[],
   },
 
   guidedSessions: {
     eyebrow: "Guided Sessions",
     title: "Sessions for different needs and moments.",
     description:
-      "Browse four clear session categories and choose guided or silent modes on supported sessions.",
-    categories: [
-      {
-        title: "Sleep",
-        description:
-          "Sessions for evening wind-down, quieter transitions, and preparing for rest.",
-      },
-      {
-        title: "Stress",
-        description:
-          "Sessions for slowing down and creating a calmer next step after demanding moments.",
-      },
-      {
-        title: "Focus",
-        description:
-          "Sessions for settling into focused work without adding unnecessary pressure.",
-      },
-      {
-        title: "Recovery",
-        description:
-          "Sessions for pausing, restoring a steadier rhythm, and making space after effort.",
-      },
-    ] satisfies AppV2Card[],
+      "Guided sessions created for different needs and moments, organised into four clear categories.",
     image: {
       src: "/images/home/app-mockup-library.png",
-      alt: "Neuvago App library interface preview with guided session choices.",
+      alt: "Neuvago App guided session library.",
     } satisfies AppV2Image,
-    note:
-      "Sessions are organised into four clear categories. Guided and silent options are available on supported sessions.",
+    categories: guidedSessionCategories,
     primaryCta: {
       label: "Create account",
       href: "/signup",
@@ -128,230 +273,87 @@ export const appV2Content = {
   },
 
   breathingTools: {
+    visible: availability.breathingTools,
     eyebrow: "Breathing Tools",
-    title: "Practical breathing practices for different moments.",
+    title: "Breathing practices for different needs and moments.",
     description:
-      "Breathing Tools are being prepared for launch, with visual cues and guided patterns for different needs and situations.",
-    statusLabel: "Coming to the app",
-    practices: [
-      {
-        title: "4-7-8 Breathing",
-        description:
-          "A paced pattern built around inhale, hold, and a longer exhale.",
-      },
-      {
-        title: "Coherent Breathing",
-        description:
-          "A steady breathing rhythm designed for an even, unhurried pace.",
-      },
-      {
-        title: "Physiological Sigh",
-        description:
-          "A guided pattern using two inhales followed by a longer exhale.",
-      },
-      {
-        title: "Box Breathing",
-        description:
-          "A balanced four-part rhythm with equal phases.",
-      },
-      {
-        title: "Extended Exhale",
-        description:
-          "A slower pattern that gives more time to the exhale.",
-      },
-      {
-        title: "Humming Practice",
-        description:
-          "A guided practice that combines a comfortable exhale with humming.",
-      },
-    ] satisfies AppV2Card[],
-    note:
-      "The final exercise selection, visual cues, and availability may change before release.",
+      "Selected examples from a broader library of guided and visual breathing practices.",
+    examples: breathingExamples,
+    closingLine: "Explore more breathing practices in the app.",
+    primaryCta: {
+      label: "Create account",
+      href: "/signup",
+    } satisfies AppV2Cta,
   },
 
   needs: {
     eyebrow: "Personal recommendations",
     title: "What do you need right now?",
     description:
-      "Choose what best matches the moment, and the app can suggest a relevant session category. Recommendations help you navigate content. They are not medical assessments or diagnoses.",
-    cards: [
-      {
-        title: "I feel overwhelmed",
-        description:
-          "Find a shorter calming session or a simple downshift.",
-        direction: "Stress",
-      },
-      {
-        title: "I need to focus",
-        description:
-          "Choose a focus session when your current state feels steady enough for clarity.",
-        direction: "Focus",
-      },
-      {
-        title: "I can’t switch off",
-        description:
-          "Explore a quieter transition or evening wind-down.",
-        direction: "Sleep",
-      },
-      {
-        title: "I want to sleep",
-        description:
-          "Find a sleep-supportive session for preparing for rest.",
-        direction: "Sleep",
-      },
-      {
-        title: "I need to recover",
-        description:
-          "Choose a more restorative session when energy feels lower.",
-        direction: "Recovery",
-      },
-    ],
+      "Start with the moment you are in and choose a direction that feels relevant.",
+    items: needs,
+    boundary:
+      "Recommendations help you navigate content. They are not medical assessments or diagnoses.",
   },
 
   personalTools: {
     eyebrow: "Personal tools",
     title: "Notice patterns over time.",
     description:
-      "Daily check-ins and progress views can help you reflect on how you feel and choose a relevant next step.",
+      "Use simple reflection and activity tools to notice your own patterns and return to relevant content.",
     image: {
       src: "/images/home/app-mockup-progress.png",
-      alt: "Neuvago App progress interface preview with recent session activity.",
+      alt: "Neuvago App progress and reflection interface.",
     } satisfies AppV2Image,
-    cards: [
+    items: [
       {
         title: "Daily Check-In",
         description:
-          "Record how the moment feels across stress, calm in the body, energy, and sleep readiness. Recent responses can help shape session recommendations.",
+          "Reflect on stress, calm, energy and sleep readiness.",
       },
       {
         title: "Nervous System Score",
         description:
-          "A personal app indicator intended to support reflection on your own state and patterns. It is not a medical or diagnostic measurement.",
+          "A personal reflection indicator designed to help you notice patterns in your own reported state over time. It is not a medical measurement or diagnosis.",
       },
       {
-        title: "Progress over time",
+        title: "Progress",
         description:
-          "Review recent sessions, category patterns, completion, and check-in context over time.",
-      },
-    ] satisfies AppV2Card[],
-    methodologyNote:
-      "The Nervous System Score is intended as a personal reflection tool. More information about how it is calculated and interpreted will be available before launch.",
-  },
-
-  calmByDesign: {
-    eyebrow: "Calm by design",
-    title: "Clear choices, low visual noise.",
-    description:
-      "The interface is designed to keep navigation simple, make the next step understandable, and reduce unnecessary complexity.",
-    cards: [
-      {
-        title: "Clear session categories",
-        description:
-          "Sleep, stress, focus, and recovery provide a simple starting point.",
-      },
-      {
-        title: "Recommendations with context",
-        description:
-          "The app explains why a suggested category may fit the current check-in pattern.",
-      },
-      {
-        title: "Guided or silent",
-        description:
-          "Sessions can offer guided and silent modes where those options are available.",
-      },
-      {
-        title: "Web account access",
-        description:
-          "Create an account, sign in, browse sessions, and review progress through the web experience.",
+          "Review completed sessions, activity and patterns over time.",
       },
     ] satisfies AppV2Card[],
   },
 
-  access: {
-    eyebrow: "Access",
-    title: "Use the app independently.",
-    description:
-      "A Neuvago device is not required to create an account or use the app experience. The app does not pair with, control, or receive data from the device.",
+  included: {
+    eyebrow: "Included with Neuvago",
+    title: "One year included with Neuvago.",
+    description: availability.breathingTools
+      ? "Every Neuvago device includes one year of access to the Neuvago App, giving you guided sessions, breathing practices and practical tools for sleep, stress, focus and recovery."
+      : "Every Neuvago device includes one year of access to the Neuvago App, giving you guided sessions and practical tools for sleep, stress, focus and recovery.",
     primaryCta: {
+      label: "View purchase details",
+      href: "/product#buy",
+    } satisfies AppV2Cta,
+    secondaryCta: {
       label: "Create account",
       href: "/signup",
     } satisfies AppV2Cta,
-    secondaryCta: {
-      label: "Sign in",
-      href: "/login",
-    } satisfies AppV2Cta,
-    includedTitle: "One year included with Neuvago",
-    includedDescription:
-      "Every Neuvago device includes one year of access to the Neuvago App. The app works independently, and no pairing or technical connection is required.",
-    includedNote:
-      "Activation, renewal, regional availability, and pricing after the included period will be explained before purchase.",
-    productCta: {
-      label: "Explore the Neuvago device",
-      href: "/product",
-    } satisfies AppV2Cta,
-    availabilityNote:
-      "Create an account or sign in to use the current web experience. App Store and Google Play availability will be announced separately.",
   },
 
   faq: {
     eyebrow: "FAQ",
-    title: "Practical answers about the Neuvago App.",
+    title: "Questions about the app experience.",
     description:
-      "Clear information about independent use, sessions, check-ins, breathing tools, access, and product boundaries.",
-    items: [
-      {
-        question: "Do I need a Neuvago device to use the app?",
-        answer:
-          "No. The Neuvago App works independently and does not connect to or control the Neuvago device. You can create an account and use the app experience without buying the device.",
-      },
-      {
-        question: "What does the current app experience include?",
-        answer:
-          "The app includes session categories for sleep, stress, focus, and recovery, along with daily check-ins, recommendations, session history, favourites, and progress views.",
-      },
-      {
-        question: "What are Guided Sessions?",
-        answer:
-          "Guided Sessions are structured practices created for different needs and moments, including winding down, calmer transitions, focus, and recovery. Guided and silent modes are available on supported sessions.",
-      },
-      {
-        question: "What are the Breathing Tools?",
-        answer:
-          "Breathing Tools are guided breathing practices with visual cues. They are currently being prepared for launch, and the final selection may change before release.",
-      },
-      {
-        question: "What is the Daily Check-In?",
-        answer:
-          "The Daily Check-In records self-reported signals including stress, calm in the body, energy, and sleep readiness. Recent check-ins can help shape category recommendations.",
-      },
-      {
-        question: "Is the Nervous System Score a medical measurement?",
-        answer:
-          "No. It is a personal reflection tool, not a diagnosis, biomarker, or medical measurement. More information about its calculation and interpretation will be available before launch.",
-      },
-      {
-        question: "Is one year of app access included with the device?",
-        answer:
-          "Yes. Every Neuvago device includes one year of access to the Neuvago App. Activation, renewal, regional availability, and pricing after the included period will be explained before purchase.",
-      },
-      {
-        question: "Where can I access the app today?",
-        answer:
-          "Create an account or sign in to use the current web experience. App Store and Google Play availability will be announced separately.",
-      },
-      {
-        question: "Does the app receive data from the Neuvago device?",
-        answer:
-          "No. The app is not technically connected to the device and does not receive stimulation or usage data from it.",
-      },
-    ] satisfies AppV2FaqItem[],
+      "A concise overview of the content, reflection tools and access included with Neuvago.",
+    items: faqItems,
   },
 
   finalCta: {
     eyebrow: "Neuvago App",
     title: "Find the right tool for the moment you’re in.",
-    description:
-      "Create an account to explore sessions, check-ins, recommendations, and progress tools for sleep, stress, focus, and recovery.",
+    description: availability.breathingTools
+      ? "Explore guided sessions, breathing practices and practical tools for sleep, stress, focus and recovery."
+      : "Explore guided sessions and practical tools for sleep, stress, focus and recovery.",
     primaryCta: {
       label: "Create account",
       href: "/signup",
@@ -362,7 +364,7 @@ export const appV2Content = {
     } satisfies AppV2Cta,
     image: {
       src: "/images/home/app-mockup-library.png",
-      alt: "Neuvago App library interface preview.",
+      alt: "Neuvago App session library.",
     } satisfies AppV2Image,
   },
 } as const;

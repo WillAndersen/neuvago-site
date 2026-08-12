@@ -6,38 +6,54 @@ type AppV2NeedsProps = {
 
 export function AppV2Needs({ content }: AppV2NeedsProps) {
   return (
-    <section className="bg-[#f7f4ef]">
+    <section className="bg-[#e8ded0]">
       <div className="mx-auto max-w-[92rem] px-5 py-16 sm:px-8 lg:px-12 lg:py-24">
-        <div className="max-w-3xl">
+        <div className="max-w-4xl">
           <p className="text-[0.7rem] font-medium uppercase tracking-[0.28em] text-[#81766a]">
             {content.eyebrow}
           </p>
-          <h2 className="mt-4 text-balance text-[clamp(2.5rem,9vw,3.7rem)] font-medium leading-[0.97] tracking-[-0.045em] text-[#1f1f1c] sm:text-5xl lg:text-6xl">
+          <h2 className="mt-4 text-balance text-[clamp(2.7rem,9.5vw,4.1rem)] font-medium leading-[0.96] tracking-[-0.055em] text-[#1f1f1c] sm:text-6xl lg:text-7xl">
             {content.title}
           </h2>
-          <p className="mt-6 text-base leading-8 text-[#5f5a52] sm:text-lg">
+          <p className="mt-6 max-w-3xl text-base leading-8 text-[#5f5a52] sm:text-lg">
             {content.description}
           </p>
         </div>
 
         <div className="mt-10 grid gap-4 md:grid-cols-2 xl:grid-cols-5">
-          {content.cards.map((card) => (
+          {content.items.map((item, index) => (
             <article
-              key={card.title}
-              className="flex min-h-[15rem] flex-col rounded-[1.6rem] border border-black/6 bg-[#fbf8f2] p-5 shadow-[0_16px_55px_rgba(31,31,28,0.055)]"
+              key={item.label}
+              className={`rounded-[1.7rem] border p-5 shadow-[0_18px_62px_rgba(31,31,28,0.05)] sm:p-6 ${
+                index === 0
+                  ? "border-black/10 bg-[#1f1f1c] text-white"
+                  : "border-black/6 bg-[#fbf8f2] text-[#1f1f1c]"
+              }`}
             >
-              <span className="self-start rounded-full border border-black/8 bg-[#f2eee8] px-3 py-1.5 text-[0.62rem] font-medium uppercase tracking-[0.18em] text-[#7c7165]">
-                {card.direction}
-              </span>
-              <h3 className="mt-6 text-xl font-medium tracking-[-0.04em] text-[#1f1f1c]">
-                {card.title}
+              <p
+                className={`text-[0.65rem] font-medium uppercase tracking-[0.2em] ${
+                  index === 0 ? "text-white/48" : "text-[#927f68]"
+                }`}
+              >
+                {item.label}
+              </p>
+              <h3 className="mt-4 text-xl font-medium leading-[1.08] tracking-[-0.04em]">
+                {item.title}
               </h3>
-              <p className="mt-3 text-sm leading-7 text-[#5f5a52]">
-                {card.description}
+              <p
+                className={`mt-3 text-sm leading-7 ${
+                  index === 0 ? "text-white/66" : "text-[#5f5a52]"
+                }`}
+              >
+                {item.description}
               </p>
             </article>
           ))}
         </div>
+
+        <p className="mt-7 max-w-3xl text-xs leading-6 text-[#756d64]">
+          {content.boundary}
+        </p>
       </div>
     </section>
   );

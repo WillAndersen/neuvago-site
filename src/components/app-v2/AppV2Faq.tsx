@@ -6,13 +6,13 @@ type AppV2FaqProps = {
 
 export function AppV2Faq({ content }: AppV2FaqProps) {
   return (
-    <section className="bg-[#f7f4ef]">
-      <div className="mx-auto max-w-5xl px-5 py-16 sm:px-8 lg:px-12 lg:py-24">
-        <div className="mx-auto max-w-3xl text-center">
+    <section id="faq" className="bg-[#f2eee8]">
+      <div className="mx-auto grid max-w-[92rem] gap-10 px-5 py-16 sm:px-8 lg:grid-cols-[0.72fr_1.28fr] lg:items-start lg:px-12 lg:py-24">
+        <div className="max-w-xl lg:sticky lg:top-24">
           <p className="text-[0.7rem] font-medium uppercase tracking-[0.28em] text-[#81766a]">
             {content.eyebrow}
           </p>
-          <h2 className="mt-4 text-balance text-[clamp(2.5rem,9vw,3.7rem)] font-medium leading-[0.97] tracking-[-0.045em] text-[#1f1f1c] sm:text-5xl lg:text-6xl">
+          <h2 className="mt-4 text-balance text-[clamp(2.5rem,9vw,3.8rem)] font-medium leading-[0.97] tracking-[-0.048em] text-[#1f1f1c] sm:text-5xl lg:text-6xl">
             {content.title}
           </h2>
           <p className="mt-6 text-base leading-8 text-[#5f5a52] sm:text-lg">
@@ -20,24 +20,21 @@ export function AppV2Faq({ content }: AppV2FaqProps) {
           </p>
         </div>
 
-        <div className="mt-10 space-y-3">
+        <div className="divide-y divide-black/9 border-y border-black/9">
           {content.items.map((item) => (
-            <details
-              key={item.question}
-              className="group rounded-[1.45rem] border border-black/6 bg-[#fbf8f2] px-5 py-1 shadow-[0_14px_45px_rgba(31,31,28,0.04)] open:bg-white sm:px-6"
-            >
-              <summary className="flex cursor-pointer list-none items-center justify-between gap-5 py-5 text-left">
-                <span className="text-base font-medium tracking-[-0.025em] text-[#1f1f1c] sm:text-lg">
+            <details key={item.question} className="group py-1">
+              <summary className="flex cursor-pointer list-none items-center justify-between gap-6 py-6 text-left">
+                <span className="text-xl font-medium tracking-[-0.025em] text-[#1f1f1c] sm:text-2xl">
                   {item.question}
                 </span>
                 <span
                   aria-hidden="true"
-                  className="grid h-8 w-8 shrink-0 place-items-center rounded-full border border-black/8 bg-white text-lg text-[#5f5a52] transition group-open:rotate-45"
+                  className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full border border-black/10 bg-white/60 text-xl text-[#5f5a52] transition group-open:rotate-45"
                 >
                   +
                 </span>
               </summary>
-              <p className="max-w-3xl pb-5 pr-10 text-sm leading-7 text-[#5f5a52] sm:text-base">
+              <p className="max-w-3xl pb-7 pr-12 text-sm leading-7 text-[#5f5a52] sm:text-base">
                 {item.answer}
               </p>
             </details>

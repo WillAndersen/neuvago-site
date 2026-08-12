@@ -21,6 +21,10 @@ export function ProductV2Research({ content }: ProductV2ResearchProps) {
             <p className="mt-6 text-base leading-8 text-[#d4cabd] sm:text-lg">
               {content.description}
             </p>
+            <p className="mt-5 rounded-[1.2rem] border border-white/10 bg-white/[0.05] px-4 py-3 text-xs leading-6 text-white/62">
+              {content.boundary}
+            </p>
+
             <div className="mt-9 flex flex-wrap gap-3">
               <CtaButton
                 href={content.primaryCta.href}

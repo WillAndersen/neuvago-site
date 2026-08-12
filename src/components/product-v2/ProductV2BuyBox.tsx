@@ -50,8 +50,8 @@ function GalleryImage({
 export function ProductV2BuyBox({ content }: ProductV2BuyBoxProps) {
   return (
     <section id="buy" className="scroll-mt-28 bg-[#f2eee8]">
-      <div className="mx-auto grid max-w-[88rem] gap-8 px-5 py-14 sm:px-8 lg:grid-cols-[0.94fr_0.82fr] lg:items-start lg:gap-10 lg:px-12 lg:py-20">
-        <div className="order-2 grid gap-4 lg:order-1">
+      <div className="mx-auto grid max-w-[88rem] gap-8 px-5 py-16 sm:px-8 lg:grid-cols-[0.94fr_0.82fr] lg:items-start lg:gap-10 lg:px-12 lg:py-24">
+        <div className="order-2 grid min-w-0 gap-4 lg:order-1">
           <div className="overflow-hidden rounded-[2rem] border border-black/5 bg-[#fbf8f2] shadow-[0_24px_90px_rgba(31,31,28,0.09)]">
             <GalleryImage
               src={content.gallery[0].src}
@@ -78,13 +78,13 @@ export function ProductV2BuyBox({ content }: ProductV2BuyBoxProps) {
         <aside
           id="shopify-buy-box"
           aria-labelledby="product-buy-heading"
-          className="order-1 rounded-[2.15rem] border border-black/5 bg-[#fbf8f2]/90 p-6 shadow-[0_26px_95px_rgba(31,31,28,0.1)] backdrop-blur sm:p-8 lg:sticky lg:top-24 lg:order-2"
+          className="order-1 min-w-0 rounded-[2.15rem] border border-black/5 bg-[#fbf8f2]/90 p-6 shadow-[0_26px_95px_rgba(31,31,28,0.1)] backdrop-blur sm:p-8 lg:sticky lg:top-24 lg:order-2"
         >
           <p className="text-[0.72rem] font-medium uppercase tracking-[0.28em] text-[#81766a]">
             {content.eyebrow}
           </p>
 
-          <div className="mt-5 border-b border-black/8 pb-7">
+          <div className="mt-5 border-b border-black/8 pb-6">
             <div className="flex flex-col gap-4 sm:flex-row sm:items-start sm:justify-between">
               <div>
                 <h2
@@ -96,6 +96,12 @@ export function ProductV2BuyBox({ content }: ProductV2BuyBoxProps) {
                 <p className="mt-3 max-w-md text-base leading-7 text-[#5f5a52]">
                   {content.productDescription}
                 </p>
+
+                {content.price ? (
+                  <p className="mt-5 text-3xl font-medium tracking-[-0.045em] text-[#1f1f1c]">
+                    {content.price}
+                  </p>
+                ) : null}
               </div>
 
               <div className="inline-flex shrink-0 items-center rounded-full border border-black/8 bg-white/70 px-4 py-2 text-xs font-medium uppercase tracking-[0.18em] text-[#6f675d]">
@@ -104,7 +110,7 @@ export function ProductV2BuyBox({ content }: ProductV2BuyBoxProps) {
             </div>
           </div>
 
-          <div className="mt-7 rounded-[1.7rem] border border-black/6 bg-[#f2eee8]/72 p-5">
+          <div className="mt-6 rounded-[1.55rem] border border-black/6 bg-[#f2eee8]/72 p-5">
             <div className="flex flex-col gap-2 sm:flex-row sm:items-center sm:justify-between">
               <p className="text-sm font-medium text-[#292824]">
                 {content.purchaseTitle}
@@ -163,11 +169,7 @@ export function ProductV2BuyBox({ content }: ProductV2BuyBoxProps) {
               {content.intendedUseCta.label}
             </Link>
 
-            <p className="mt-6 border-t border-black/8 pt-5 text-xs leading-5 text-[#6d655d]">
-              {content.prelaunchNote}
-            </p>
-
-            <div className="mt-5 flex flex-wrap gap-2">
+            <div className="mt-5 flex flex-wrap gap-2 border-t border-black/8 pt-5">
               {content.trustLinks.map((link) => (
                 <Link
                   key={link.href}
@@ -180,32 +182,20 @@ export function ProductV2BuyBox({ content }: ProductV2BuyBoxProps) {
             </div>
           </div>
 
-          <div className="mt-7">
+          <div className="mt-6">
             <p className="text-xs font-medium uppercase tracking-[0.2em] text-[#8a7f72]">
               Included
             </p>
-            <div className="mt-3 grid gap-3 sm:grid-cols-2">
+            <div className="mt-3 divide-y divide-black/7 border-y border-black/7">
               {content.includedItems.map((item) => (
-                <div
+                <p
                   key={item}
-                  className="rounded-[1.15rem] border border-black/6 bg-white/58 px-4 py-3 text-sm font-medium text-[#38342f]"
+                  className="py-3 text-sm font-medium text-[#38342f]"
                 >
                   {item}
-                </div>
+                </p>
               ))}
             </div>
-          </div>
-
-          <div className="mt-7 space-y-3 border-t border-black/8 pt-6">
-            {content.reassuranceItems.map((item) => (
-              <p
-                key={item}
-                className="flex gap-3 text-sm leading-6 text-[#5f5a52]"
-              >
-                <span className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-[#1f1f1c]" />
-                <span>{item}</span>
-              </p>
-            ))}
           </div>
         </aside>
       </div>

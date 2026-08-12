@@ -17,8 +17,22 @@ export type ProductV2LinkCard = ProductV2Card & {
   href: string;
 };
 
-export type ProductV2Step = ProductV2Card & {
-  image: ProductV2Image;
+export type ProductV2Benefit = ProductV2Card & {
+  label: string;
+};
+
+export type ProductV2FlowItem = ProductV2Card & {
+  label: string;
+};
+
+export type ProductV2Accordion = {
+  title: string;
+  description: string;
+  items: readonly string[];
+  links?: readonly {
+    label: string;
+    href: string;
+  }[];
 };
 
 export type ProductV2FaqItem = {
@@ -26,16 +40,29 @@ export type ProductV2FaqItem = {
   answer: string;
 };
 
+/**
+ * Central commerce state for the English Product page.
+ *
+ * Keep false until checkout, payment, price, delivery, returns and warranty
+ * have been tested and approved together.
+ */
+const purchaseOpen: boolean = false;
+const currentPrice: string | null = null;
+
+const purchaseCta: ProductV2Cta = {
+  label: purchaseOpen ? "Shop Neuvago" : "View purchase details",
+  href: "#buy",
+};
+
 export const productV2Content = {
   hero: {
     eyebrow: "Neuvago",
     title: "A non-invasive vagus nerve stimulator designed for everyday use.",
     description:
-      "Neuvago delivers adjustable electrical stimulation via an earpiece positioned at the outer ear. Adjust the intensity directly on the device. No app or Bluetooth connection is required.",
-    primaryCta: {
-      label: "View purchase details",
-      href: "#buy",
-    } satisfies ProductV2Cta,
+      "Gentle vagus nerve stimulation designed for relaxation, evening wind-down and everyday recovery routines.",
+    technologyDescription:
+      "Neuvago uses adjustable electrical stimulation at the outer ear, providing a simple, non-invasive approach to vagus nerve stimulation.",
+    primaryCta: purchaseCta,
     secondaryCta: {
       label: "How it works",
       href: "#how-it-works",
@@ -51,11 +78,206 @@ export const productV2Content = {
     proofLine: [
       "Non-invasive",
       "Adjustable intensity",
-      "Works independently",
+      "Four stimulation modes",
     ],
-    panelTitle: "The device",
-    panelText:
-      "Physical controls, an on-device display, and ear-based application in one self-contained product.",
+  },
+
+  benefits: {
+    eyebrow: "Why Neuvago",
+    title: "Designed for the way you want to feel.",
+    description:
+      "Neuvago is designed to fit into everyday wellness routines, offering a simple, repeatable practice for moments when you want to slow down.",
+    image: {
+      src: "/images/neuvago/launch/product-lifestyle-card.webp",
+      alt: "Neuvago device in a calm home setting for an everyday wellness routine.",
+    } satisfies ProductV2Image,
+    items: [
+      {
+        label: "Sleep & wind-down",
+        title: "Make space for a quieter evening.",
+        description:
+          "Designed for evening wind-down and sleep-supportive routines.",
+      },
+      {
+        label: "Stress & calm",
+        title: "Create a calmer pause.",
+        description:
+          "Fit a short routine into demanding or stressful moments.",
+      },
+      {
+        label: "Recovery",
+        title: "Build rest into the day.",
+        description:
+          "Use Neuvago within routines centred on rest and recovery.",
+      },
+      {
+        label: "Relaxation & balance",
+        title: "Find a steadier rhythm.",
+        description:
+          "Create a simple routine for slowing down and finding a calmer rhythm.",
+      },
+    ] satisfies ProductV2Benefit[],
+  },
+
+  howItWorks: {
+    eyebrow: "How it works",
+    title: "How vagus nerve stimulation works.",
+    description:
+      "Neuvago uses non-invasive electrical stimulation at the outer ear. This auricular approach is associated with pathways connected to the vagus nerve, an important part of brain–body communication and the autonomic nervous system.",
+    image: {
+      src: "/images/neuvago/auricular-vns-education-desktop.webp",
+      alt: "Neuvago device beside a clean illustration of the outer ear.",
+    } satisfies ProductV2Image,
+    flow: [
+      {
+        label: "01",
+        title: "Outer ear",
+        description:
+          "The earpiece electrode is positioned at the outer ear according to the supplied instructions.",
+      },
+      {
+        label: "02",
+        title: "Auricular pathways",
+        description:
+          "Electrical stimulation is applied through an ear-based, non-invasive contact point.",
+      },
+      {
+        label: "03",
+        title: "Vagus nerve",
+        description:
+          "Auricular vagus nerve stimulation is studied in relation to pathways associated with the vagus nerve.",
+      },
+      {
+        label: "04",
+        title: "Autonomic nervous system",
+        description:
+          "The vagus nerve forms part of the wider system involved in brain–body communication and changing physiological states.",
+      },
+    ] satisfies ProductV2FlowItem[],
+    primaryCta: {
+      label: "Explore How it Works",
+      href: "/how-it-works",
+    } satisfies ProductV2Cta,
+    secondaryCta: {
+      label: "Learn about taVNS",
+      href: "/research/topics/transcutaneous-vagus-nerve-stimulation",
+    } satisfies ProductV2Cta,
+  },
+
+  modes: {
+    eyebrow: "Four stimulation modes",
+    title: "Different modes for different moments.",
+    description:
+      "Neuvago includes four named stimulation programmes. Detailed guidance for each mode will be available before purchasing opens.",
+    items: ["Sleep", "Relax", "Meditation", "Relief"],
+    cta: purchaseCta,
+  },
+
+  features: {
+    eyebrow: "Product experience",
+    title: "The Neuvago product experience.",
+    description:
+      "The most useful product features are the ones that make each routine clear, adjustable and easy to begin.",
+    image: {
+      src: "/images/neuvago/launch/product-detail-left-desktop.webp",
+      alt: "Close product view of the Neuvago device and its physical controls.",
+    } satisfies ProductV2Image,
+    cards: [
+      {
+        title: "Adjustable intensity",
+        description:
+          "Increase or decrease the stimulation gradually to find a comfortable level in line with the supplied guidance.",
+      },
+      {
+        title: "Simple controls",
+        description:
+          "Manage the session directly using the physical controls on the device.",
+      },
+      {
+        title: "Four stimulation modes",
+        description:
+          "Choose from four named programmes designed for different routines and moments.",
+      },
+      {
+        title: "Designed for comfort",
+        description:
+          "A non-invasive, ear-based format designed for simple everyday use.",
+      },
+    ] satisfies ProductV2Card[],
+  },
+
+  useSequence: {
+    eyebrow: "Simple to use",
+    title: "Position. Choose. Adjust. Begin.",
+    description:
+      "Use Neuvago in four simple steps. Follow the supplied Quick Start Guide for complete placement, conductive gel, session duration, care and safety information.",
+    steps: [
+      {
+        title: "Position",
+        description: "Position the earpiece as shown in the instructions.",
+      },
+      {
+        title: "Choose",
+        description: "Select one of the four named stimulation modes.",
+      },
+      {
+        title: "Adjust",
+        description:
+          "Increase the intensity gradually to a comfortable level.",
+      },
+      {
+        title: "Begin",
+        description:
+          "Start the session and follow the supplied product guidance.",
+      },
+    ] satisfies ProductV2Card[],
+    cta: {
+      label: "See complete use guidance",
+      href: "/how-it-works",
+    } satisfies ProductV2Cta,
+  },
+
+  research: {
+    eyebrow: "Research",
+    title: "Scientific context for an auricular approach.",
+    description:
+      "Neuvago uses an auricular, ear-based approach to non-invasive vagus nerve stimulation. The most closely related research category is transcutaneous auricular vagus nerve stimulation, or taVNS.",
+    boundary:
+      "Research on taVNS provides scientific context for the technology category. It is not clinical evidence for the Neuvago device itself.",
+    links: [
+      {
+        title: "taVNS research",
+        description:
+          "Explore auricular stimulation, protocol variables, target engagement and interpretation.",
+        href: "/research/topics/transcutaneous-vagus-nerve-stimulation",
+      },
+      {
+        title: "Autonomic regulation",
+        description:
+          "Learn how sympathetic and parasympathetic activity are studied within autonomic regulation.",
+        href: "/research/topics/autonomic-regulation",
+      },
+      {
+        title: "Safety and tolerability",
+        description:
+          "Review adverse-event, tolerability and responsible-use context across human research.",
+        href: "/research/topics/safety-and-tolerability",
+      },
+      {
+        title: "Scientific Studies Library",
+        description:
+          "Browse the complete collection of study summaries and foundational research.",
+        href: "/research/studies",
+      },
+    ] satisfies ProductV2LinkCard[],
+    primaryCta: {
+      label: "Explore the Research",
+      href: "/research",
+    } satisfies ProductV2Cta,
+    secondaryCta: {
+      label: "Review intended use",
+      href: "/legal/intended-use",
+    } satisfies ProductV2Cta,
   },
 
   buyBox: {
@@ -73,17 +295,18 @@ export const productV2Content = {
         alt: "Close detail of the Neuvago device controls and finish.",
       },
     ] satisfies ProductV2Image[],
-    eyebrow: "Launch product",
+    eyebrow: "Purchase Neuvago",
     productName: "Neuvago",
-    productDescription:
-      "A non-invasive vagus nerve stimulation device with physical controls and adjustable intensity.",
-    badge: "Device",
-    purchaseOpen: false,
-    purchaseTitle: "Purchase information",
-    launchStatus: "Prelaunch",
-    purchaseDescription:
-      "Purchasing is not open yet. Confirmed price, availability, delivery, return, and warranty details will be published here before checkout opens.",
-    checkoutLabel: "Buy Neuvago",
+    productDescription: "Non-invasive vagus nerve stimulator.",
+    badge: "General wellness",
+    price: currentPrice,
+    purchaseOpen,
+    purchaseTitle: purchaseOpen ? "Ready to order" : "Purchase details",
+    launchStatus: purchaseOpen ? "Available" : "Prelaunch",
+    purchaseDescription: purchaseOpen
+      ? "Review the included items and continue to secure Shopify checkout."
+      : "Checkout is not yet open. Confirmed price, availability, delivery, returns and warranty information will appear here before purchasing opens.",
+    checkoutLabel: "Shop Neuvago",
     checkoutDisabledLabel: "Checkout opens soon",
     checkoutLoadingLabel: "Opening checkout…",
     prelaunchCta: {
@@ -94,25 +317,15 @@ export const productV2Content = {
       label: "Review intended use",
       href: "/legal/intended-use",
     } satisfies ProductV2Cta,
-    prelaunchNote:
-      "Return to this page for confirmed purchase information before checkout is enabled.",
     includedItems: [
       "Neuvago device",
       "Earpiece",
       "Conductive gel",
       "Charging cable",
       "Quick Start Guide",
-    ],
-    reassuranceItems: [
-      "No app, subscription, or Bluetooth connection required",
-      "Intensity is adjusted directly on the device",
-      "Safety and intended-use guidance are available before purchase",
+      "One year of Neuvago App access",
     ],
     trustLinks: [
-      {
-        label: "Intended use",
-        href: "/legal/intended-use",
-      },
       {
         label: "Terms",
         href: "/legal/terms-of-service",
@@ -124,390 +337,120 @@ export const productV2Content = {
     ],
   },
 
-  howItWorks: {
-    eyebrow: "How it works",
-    title: "Electrical stimulation, applied at the outer ear.",
-    description:
-      "The earpiece is positioned on the outer ear as described in the instructions. Neuvago then delivers adjustable electrical stimulation through the contact point. The recommended placement is intended to access auricular nerve pathways associated with the vagus nerve.",
-    secondaryDescription:
-      "The vagus nerve forms part of the autonomic nervous system, an important communication network between the brain and body. Research into vagus nerve stimulation examines how this pathway relates to autonomic and parasympathetic activity.",
-    image: {
-      src: "/images/neuvago/auricular-vns-education-desktop.webp",
-      alt: "Neuvago device beside an illustration of the outer ear.",
-    } satisfies ProductV2Image,
-    cards: [
-      {
-        title: "Position at the outer ear",
-        description:
-          "Use the earpiece at the placement described in the Quick Start Guide and user instructions.",
-      },
-      {
-        title: "Adjust on the device",
-        description:
-          "Use the physical controls to increase or decrease the stimulation gradually.",
-      },
-      {
-        title: "Understand the context",
-        description:
-          "The vagus nerve is part of the autonomic nervous system and is studied in relation to parasympathetic activity.",
-      },
-    ] satisfies ProductV2Card[],
-    primaryCta: {
-      label: "Learn how it works",
-      href: "/how-it-works",
-    } satisfies ProductV2Cta,
-    secondaryCta: {
-      label: "Review intended use",
-      href: "/legal/intended-use",
-    } satisfies ProductV2Cta,
-  },
-
-  features: {
-    eyebrow: "Product features",
-    title: "Clear controls. Adjustable use.",
-    description:
-      "The product story is simple: Neuvago is a self-contained stimulation device with direct physical controls and the practical elements needed for ear-based use.",
-    image: {
-      src: "/images/neuvago/launch/product-detail-left-desktop.webp",
-      alt: "Neuvago device shown in a close product setting.",
-    } satisfies ProductV2Image,
-    cards: [
-      {
-        title: "Simple controls",
-        description:
-          "Turn the device on and manage the session using the physical buttons.",
-      },
-      {
-        title: "Adjustable intensity",
-        description:
-          "Increase or decrease the stimulation gradually to find a comfortable level.",
-      },
-      {
-        title: "On-device display",
-        description:
-          "View the active device information on the built-in screen.",
-      },
-      {
-        title: "Rechargeable",
-        description:
-          "Charge the device using the charging cable included with the product.",
-      },
-      {
-        title: "Ear-based application",
-        description:
-          "The earpiece enables non-invasive stimulation at the outer ear.",
-      },
-      {
-        title: "Independent use",
-        description:
-          "The device does not require an app, subscription, pairing, or Bluetooth connection.",
-      },
-    ] satisfies ProductV2Card[],
-  },
-
-  everydayUse: {
-    eyebrow: "Everyday routines",
-    title: "Designed for different moments in your day.",
-    description:
-      "Neuvago can fit into a quiet pause, focused time, an evening wind-down, or time set aside for rest.",
-    cards: [
-      {
-        title: "Calm pauses",
-        description:
-          "Include a short session in a quiet pause during a busy day.",
-        image: {
-          src: "/images/neuvago/launch/product-lifestyle-card.webp",
-          alt: "Neuvago device placed beside a quiet daytime routine.",
-        },
-      },
-      {
-        title: "Focused time",
-        description:
-          "Use Neuvago during a calm, uninterrupted part of your routine.",
-        image: {
-          src: "/images/neuvago/launch/product-detail-left-desktop.webp",
-          alt: "Neuvago device ready for use during a quiet focused moment.",
-        },
-      },
-      {
-        title: "Wind-down",
-        description:
-          "Include a session in an evening routine before rest.",
-        image: {
-          src: "/images/neuvago/launch/routine-evening-desktop.webp",
-          alt: "Neuvago device in a warm evening setting.",
-        },
-      },
-      {
-        title: "Rest and recovery",
-        description:
-          "Add Neuvago to routines centred on rest and recovery time.",
-        image: {
-          src: "/images/neuvago/product-hero-desktop.webp",
-          alt: "Neuvago device in a calm setting for time set aside for rest.",
-        },
-      },
-    ] satisfies Array<ProductV2Card & { image: ProductV2Image }>,
-  },
-
-  useSequence: {
-    eyebrow: "Using Neuvago",
-    title: "Simple, repeatable use.",
-    description:
-      "Begin with three simple steps. Follow the supplied Quick Start Guide for complete placement, session use, care, and safety information.",
-    steps: [
-      {
-        title: "Prepare the contact point",
-        description:
-          "Apply the conductive gel as described in the instructions to support contact between the earpiece and skin.",
-        image: {
-          src: "/images/neuvago/launch/product-gallery-detail.webp",
-          alt: "Close detail of the Neuvago device before use.",
-        },
-      },
-      {
-        title: "Position the earpiece",
-        description:
-          "Place the earpiece on the specified area of the outer ear using the placement guidance supplied with the product.",
-        image: {
-          src: "/images/neuvago/auricular-vns-education-desktop.webp",
-          alt: "Illustration of the outer ear beside the Neuvago device.",
-        },
-      },
-      {
-        title: "Adjust the intensity",
-        description:
-          "Turn on the device and increase the intensity gradually to a comfortable level, following the instructions provided.",
-        image: {
-          src: "/images/neuvago/launch/product-gallery-front.webp",
-          alt: "Front view of the Neuvago device and its controls.",
-        },
-      },
-    ] satisfies ProductV2Step[],
-  },
-
-  research: {
-    eyebrow: "Research",
-    title: "Grounded in a growing field of research.",
-    description:
-      "Vagus nerve stimulation is studied in relation to autonomic activity, parasympathetic signalling, safety, tolerability, and several areas of health and wellbeing. Research on the wider field provides scientific context. It does not automatically establish the effects of a specific product.",
-    links: [
-      {
-        title: "Vagus nerve stimulation",
-        description:
-          "Explore the broader field of implanted, transcutaneous, and auricular vagus nerve stimulation.",
-        href: "/research/topics/vagus-nerve-stimulation",
-      },
-      {
-        title: "Autonomic regulation",
-        description:
-          "Learn how sympathetic and parasympathetic activity form part of autonomic regulation.",
-        href: "/research/topics/autonomic-regulation",
-      },
-      {
-        title: "Safety and tolerability",
-        description:
-          "Review the research context around tolerability, side effects, and contraindication awareness.",
-        href: "/research/topics/safety-and-tolerability",
-      },
-      {
-        title: "Intended use and boundaries",
-        description:
-          "See what Neuvago is intended for and what it is not intended to diagnose, treat, cure, or prevent.",
-        href: "/legal/intended-use",
-      },
-    ] satisfies ProductV2LinkCard[],
-    primaryCta: {
-      label: "Explore research",
-      href: "/research",
-    } satisfies ProductV2Cta,
-    secondaryCta: {
-      label: "Visit Learn",
-      href: "/learn",
-    } satisfies ProductV2Cta,
-  },
-
-  included: {
-    eyebrow: "Included with Neuvago",
-    title: "What is included.",
-    description:
-      "Neuvago is planned to be supplied with the device and the practical items needed to begin. Final package contents will be confirmed before purchasing opens.",
-    images: [
-      {
-        src: "/images/neuvago/launch/product-gallery-front.webp",
-        alt: "Front view of the Neuvago device.",
-      },
-      {
-        src: "/images/neuvago/launch/product-gallery-angle.webp",
-        alt: "Angled view of the Neuvago device.",
-      },
-    ] satisfies ProductV2Image[],
-    items: [
-      {
-        title: "Neuvago device",
-        description:
-          "The self-contained non-invasive stimulation device with physical controls and display.",
-      },
-      {
-        title: "Earpiece",
-        description:
-          "The ear-based contact component used in the position described in the instructions.",
-      },
-      {
-        title: "Conductive gel",
-        description:
-          "Gel intended to support reliable contact during use, applied according to the instructions.",
-      },
-      {
-        title: "Charging cable",
-        description:
-          "The cable used to recharge the Neuvago device.",
-      },
-      {
-        title: "Quick Start Guide",
-        description:
-          "Essential setup, placement, use, care, safety, and intended-use information.",
-      },
-    ] satisfies ProductV2Card[],
-    launchNote:
-      "Final package contents, price, availability, and delivery details will be confirmed before purchasing opens.",
-    primaryCta: {
-      label: "View purchase details",
-      href: "#buy",
-    } satisfies ProductV2Cta,
-    secondaryCta: {
-      label: "Review intended use",
-      href: "/legal/intended-use",
-    } satisfies ProductV2Cta,
-  },
-
   productDetails: {
     eyebrow: "Product details",
-    title: "The practical information that matters before purchase.",
+    title: "Details when you want them.",
     description:
-      "Find the essential information on independent use, charging, contact, care, and safety before purchasing.",
-    cards: [
+      "Review device features, safety information and package contents.",
+    accordions: [
       {
-        title: "Works independently",
+        title: "Device Features",
         description:
-          "No app, account, subscription, device pairing, or Bluetooth connection is required.",
+          "A concise overview of confirmed Neuvago device features.",
+        items: [
+          "Rechargeable handheld device",
+          "Physical controls and on-device display",
+          "Adjustable stimulation intensity",
+          "Four named stimulation modes",
+          "Charging cable included",
+        ],
       },
       {
-        title: "Charging",
+        title: "Safety & Suitability",
         description:
-          "The product is rechargeable and includes a charging cable.",
+          "Review the supplied safety information before use.",
+        items: [
+          "Read the instructions, contraindications and warnings supplied with the product",
+          "Use the earpiece and conductive gel only as described in the instructions",
+          "Contact a qualified healthcare professional if you are uncertain whether the device is suitable for you",
+        ],
+        links: [
+          {
+            label: "Intended use",
+            href: "/legal/intended-use",
+          },
+          {
+            label: "Safety and tolerability research",
+            href: "/research/topics/safety-and-tolerability",
+          },
+          {
+            label: "Support",
+            href: "/support",
+          },
+        ],
       },
       {
-        title: "Gel and contact",
+        title: "What’s Included",
         description:
-          "Use the conductive gel and earpiece according to the supplied instructions.",
+          "The planned package contents for Neuvago.",
+        items: [
+          "Neuvago device",
+          "Earpiece",
+          "Conductive gel",
+          "Charging cable",
+          "Quick Start Guide",
+          "One year of Neuvago App access",
+        ],
       },
-      {
-        title: "Instructions and care",
-        description:
-          "Placement, session use, cleaning, storage, and safety guidance are provided in the product documentation.",
-      },
-    ] satisfies ProductV2Card[],
-    rows: [
-      {
-        label: "App required",
-        value: "No",
-      },
-      {
-        label: "Bluetooth required",
-        value: "No",
-      },
-      {
-        label: "Intended use",
-        value: "General wellness",
-      },
-      {
-        label: "Safety guidance",
-        value: "Provided before use",
-      },
-    ],
-    safetyTitle: "Safety and suitability",
-    safetyDescription:
-      "Read the instructions, contraindications, and safety information supplied with the product before use. Contact a qualified healthcare professional if you are uncertain whether the device is suitable for you.",
-    links: [
-      {
-        label: "Intended use",
-        href: "/legal/intended-use",
-      },
-      {
-        label: "Safety and tolerability",
-        href: "/research/topics/safety-and-tolerability",
-      },
-      {
-        label: "Support",
-        href: "/support",
-      },
-    ],
+    ] satisfies ProductV2Accordion[],
   },
 
   faq: {
     eyebrow: "FAQ",
     title: "Practical answers before purchase.",
     description:
-      "The most important questions about the device, independent use, package contents, and product boundaries.",
+      "The most important questions about the device, its intended use, modes, package contents and research context.",
     items: [
       {
         question: "What is Neuvago?",
         answer:
-          "Neuvago is a non-invasive vagus nerve stimulation device designed for simple, repeatable everyday use at the outer ear.",
+          "Neuvago is a non-invasive vagus nerve stimulation device designed for general wellness and simple, repeatable everyday routines.",
       },
       {
-        question: "Do I need the app?",
+        question: "What is Neuvago designed for?",
         answer:
-          "No. The Neuvago device works independently and does not require the app. The Neuvago app is a separate collection of guided tools for nervous system wellbeing that can be used with or without the device.",
-      },
-      {
-        question: "Does the app connect to or control the device?",
-        answer:
-          "No. The app does not connect to, pair with, or control the Neuvago device.",
+          "Neuvago is designed for general wellness routines around relaxation, evening wind-down and recovery. It is not intended to diagnose, treat, cure or prevent disease.",
       },
       {
         question: "Where is stimulation applied?",
         answer:
-          "Stimulation is applied via an earpiece positioned on the outer ear according to the placement guidance supplied with the product.",
+          "Stimulation is applied through an earpiece electrode positioned at the outer ear according to the placement guidance supplied with the product.",
+      },
+      {
+        question: "What are the four stimulation modes?",
+        answer:
+          "Neuvago includes four named modes: Sleep, Relax, Meditation and Relief. Detailed guidance for each mode will be available before purchasing opens.",
       },
       {
         question: "What is included with Neuvago?",
         answer:
-          "The planned launch package includes the Neuvago device, earpiece, conductive gel, charging cable, and Quick Start Guide. Final package details will be confirmed before checkout opens.",
+          "The planned package includes the Neuvago device, earpiece, conductive gel, charging cable, Quick Start Guide and one year of Neuvago App access. Final package details will be confirmed before checkout opens.",
       },
       {
-        question: "Is stronger stimulation always better?",
+        question: "Is one year of the Neuvago App included?",
         answer:
-          "No. Increase the intensity gradually and use a comfortable level in line with the supplied instructions. The strongest sensation is not the goal.",
+          "Yes. Every Neuvago device includes one year of access to the Neuvago App. Activation, renewal, regional availability and pricing after the included period will be explained before purchase.",
+      },
+      {
+        question: "What research exists on taVNS?",
+        answer:
+          "A growing research field is exploring transcutaneous auricular vagus nerve stimulation across areas including autonomic regulation, brain pathways, safety and tolerability. External taVNS research provides scientific context and is not clinical evidence for the Neuvago device itself.",
       },
       {
         question: "What safety information should I review?",
         answer:
-          "Read the instructions, contraindications, and safety information supplied with the product before use. Contact a qualified healthcare professional if you are uncertain whether the device is suitable for you.",
-      },
-      {
-        question: "Is Neuvago a medical treatment?",
-        answer:
-          "No. Neuvago is positioned as a wellness product. It is not intended to diagnose, treat, cure, or prevent disease, and it is not a replacement for professional medical care.",
-      },
-      {
-        question: "Where can I find the complete instructions?",
-        answer:
-          "The Quick Start Guide and user documentation provide the complete placement, use, care, safety, and intended-use information. Additional support is available through the Support page.",
+          "Read the instructions, contraindications and safety information supplied with the product before use. Contact a qualified healthcare professional if you are uncertain whether the device is suitable for you.",
       },
     ] satisfies ProductV2FaqItem[],
   },
 
   finalCta: {
     eyebrow: "Neuvago",
-    title: "Explore Neuvago.",
-    description:
-      "Review what is included, how the device works, and the purchase information available before checkout opens.",
-    primaryCta: {
-      label: "View purchase details",
-      href: "#buy",
-    } satisfies ProductV2Cta,
+    title: purchaseOpen ? "Shop Neuvago." : "Explore Neuvago.",
+    description: purchaseOpen
+      ? "Review the device, what is included and continue to secure checkout."
+      : "Review what is included, how the device works and the purchase information available before checkout opens.",
+    primaryCta: purchaseCta,
     secondaryCta: {
       label: "How it works",
       href: "#how-it-works",

@@ -1,11 +1,11 @@
 export { ProductV2Hero } from "./ProductV2Hero";
-export { ProductV2BuyBox } from "./ProductV2BuyBox";
+export { ProductV2Benefits } from "./ProductV2Benefits";
 export { ProductV2HowItWorks } from "./ProductV2HowItWorks";
+export { ProductV2Modes } from "./ProductV2Modes";
 export { ProductV2Features } from "./ProductV2Features";
-export { ProductV2EverydayUse } from "./ProductV2EverydayUse";
 export { ProductV2UseSequence } from "./ProductV2UseSequence";
 export { ProductV2Research } from "./ProductV2Research";
-export { ProductV2Included } from "./ProductV2Included";
+export { ProductV2BuyBox } from "./ProductV2BuyBox";
 export { ProductV2Details } from "./ProductV2Details";
 export { ProductV2Faq } from "./ProductV2Faq";
 export { ProductV2FinalCta } from "./ProductV2FinalCta";

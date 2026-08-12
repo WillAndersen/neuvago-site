@@ -90,10 +90,6 @@ const appHeroDesktop = {
   alt: "Neuvago App session screen shown beside the separate Neuvago device.",
 } satisfies HomepageImage;
 
-const appHeroMobile = {
-  src: "/images/neuvago/app-hero-mobile.webp",
-  alt: "Neuvago App session screen for mobile layouts.",
-} satisfies HomepageImage;
 
 const howItWorksDesktop = {
   src: "/images/neuvago/launch/routine-evening-desktop.webp",
@@ -140,12 +136,13 @@ export const homepageContent = {
     visible: true,
     eyebrow: "Neuvago",
     title: "Designed for your nervous system.",
-    productLine: "Non-invasive vagus nerve stimulation, designed for everyday use.",
+    productLine:
+      "Non-invasive vagus nerve stimulation designed for calmer pauses, evening wind-down and everyday recovery routines.",
     description:
-      "Neuvago delivers adjustable electrical stimulation via an ear electrode positioned at the outer ear. The device works independently, with no app or Bluetooth connection required.",
+      "Neuvago delivers adjustable electrical stimulation via an earpiece electrode positioned at the outer ear, providing a simple, non-invasive approach to vagus nerve stimulation.",
     primaryCta: {
-      label: "Explore Neuvago",
-      href: "/product",
+      label: "View purchase details",
+      href: "/product#buy",
     } satisfies HomepageCta,
     secondaryCta: {
       label: "How it works",
@@ -156,7 +153,7 @@ export const homepageContent = {
     proofLine: [
       "Non-invasive stimulation",
       "Adjustable intensity",
-      "No app required",
+      "Four stimulation modes",
     ],
     mediaNote:
       "Device-only launch hero using existing product photography with no phone or app shown.",
@@ -177,12 +174,54 @@ export const homepageContent = {
     visible: true,
     items: [
       "Non-invasive stimulation",
-      "Ear-based application",
       "Adjustable intensity",
-      "No app required",
+      "Four stimulation modes",
+      "Designed for everyday routines",
     ],
+    cta: {
+      label: "View purchase details",
+      href: "/product#buy",
+    } satisfies HomepageCta,
   } satisfies HomepageSectionVisibility & {
     items: string[];
+    cta: HomepageCta;
+  },
+
+  benefits: {
+    visible: true,
+    eyebrow: "Why vagus nerve stimulation?",
+    title: "Built for the moments when you want to slow down.",
+    description:
+      "Neuvago is designed to fit into everyday wellness routines, offering a simple, repeatable practice for moments when you want to slow down.",
+    image: morningRoutineImage,
+    items: [
+      {
+        title: "Sleep",
+        description:
+          "Designed for evening wind-down and sleep-supportive routines.",
+      },
+      {
+        title: "Stress & Calm",
+        description:
+          "Create a calmer pause during demanding or stressful moments.",
+      },
+      {
+        title: "Recovery",
+        description:
+          "Fit Neuvago into routines centred on rest and recovery.",
+      },
+      {
+        title: "Relaxation & Balance",
+        description:
+          "Create a simple daily routine for slowing down and finding a calmer rhythm.",
+      },
+    ] satisfies HomepageCard[],
+  } satisfies HomepageSectionVisibility & {
+    eyebrow: string;
+    title: string;
+    description: string;
+    image: HomepageImage;
+    items: HomepageCard[];
   },
 
   systemReveal: {
@@ -190,28 +229,28 @@ export const homepageContent = {
     eyebrow: "The Neuvago device",
     title: "Vagus nerve stimulation, made simple.",
     description:
-      "Neuvago is designed around clear controls, adjustable stimulation and straightforward daily use. The device operates independently, so you can use it without a phone, Bluetooth or an app.",
+      "Neuvago combines clear physical controls, adjustable intensity, an on-device display and four named stimulation modes in one handheld wellness device.",
     image: productHeroDesktop,
     items: [
       {
         eyebrow: "Non-invasive",
-        title: "Stimulation applied at the ear",
+        title: "Ear-based stimulation",
         description:
-          "Electrical stimulation is delivered via an ear electrode. No implant or invasive procedure is involved.",
+          "Electrical stimulation is delivered via the earpiece electrode positioned at the outer ear. No implant or invasive procedure is involved.",
         href: "/how-it-works",
       },
       {
         eyebrow: "Adjustable",
-        title: "Control the intensity on the device",
+        title: "Control intensity directly",
         description:
-          "Increase or decrease the stimulation level using the physical controls and the instructions supplied with the device.",
+          "Increase or decrease the stimulation using the physical controls and the instructions supplied with the device.",
         href: "/how-to-use",
       },
       {
-        eyebrow: "Independent",
-        title: "No app or Bluetooth required",
+        eyebrow: "On-device",
+        title: "Clear display",
         description:
-          "The device works on its own. The Neuvago App is separate and is not required to operate the device.",
+          "Review the selected setting and device information directly on the unit.",
         href: "/product",
       },
     ] satisfies HomepageVisualPanel[],
@@ -221,6 +260,25 @@ export const homepageContent = {
     description: string;
     image: HomepageImage;
     items: HomepageVisualPanel[];
+  },
+
+  stimulationModes: {
+    visible: true,
+    eyebrow: "Four stimulation modes",
+    title: "Different modes for different moments.",
+    description:
+      "Neuvago includes four named stimulation programmes. Detailed guidance for each mode will be available before purchasing opens.",
+    modes: ["Sleep", "Relax", "Meditation", "Relief"],
+    cta: {
+      label: "View purchase details",
+      href: "/product#buy",
+    } satisfies HomepageCta,
+  } satisfies HomepageSectionVisibility & {
+    eyebrow: string;
+    title: string;
+    description: string;
+    modes: string[];
+    cta: HomepageCta;
   },
 
   vagusNerve: {
@@ -273,14 +331,14 @@ export const homepageContent = {
     eyebrow: "How the device is used",
     title: "Three clear steps.",
     description:
-      "Neuvago does not need to be paired with a phone. Follow the instructions supplied with the device and use the controls on the unit itself.",
+      "Prepare the device, position the earpiece and adjust the intensity directly on the unit. Follow the supplied instructions for complete placement, session duration and safety guidance.",
     desktopImage: howItWorksDesktop,
     mobileImage: howItWorksMobile,
     steps: [
       {
         title: "Prepare",
         description:
-          "Prepare the device and position the ear electrode as shown in the instructions for use.",
+          "Prepare the device and position the earpiece as shown in the instructions for use.",
       },
       {
         title: "Adjust",
@@ -308,7 +366,7 @@ export const homepageContent = {
   },
 
   everydayPathways: {
-    visible: true,
+    visible: false,
     eyebrow: "Made for everyday routines",
     title: "A device that can fit into real life.",
     description:
@@ -390,29 +448,28 @@ export const homepageContent = {
 
   appGuidance: {
     visible: true,
-    eyebrow: "A separate Neuvago product",
-    title: "More ways to support your nervous system.",
+    eyebrow: "Neuvago App",
+    title: "More tools for your nervous system.",
     description:
-      "The Neuvago App brings together guided sessions, breathing practices and simple tools for relaxation, focus, sleep and everyday routines.",
-    independenceNote:
-      "The app works independently from the Neuvago device. It does not connect to or control the device, and it can be used with or without stimulation.",
-    image: appHeroDesktop,
-    mobileImage: appHeroMobile,
+      "Every Neuvago device includes one year of access to the Neuvago App, with guided sessions for Sleep, Stress, Focus and Recovery, plus breathing tools being prepared for launch.",
+    image: {
+      src: "/images/home/app-mockup-library.png",
+      alt: "Neuvago App library interface preview.",
+    } satisfies HomepageImage,
+    mobileImage: {
+      src: "/images/home/app-mockup-progress.png",
+      alt: "Neuvago App progress interface preview.",
+    } satisfies HomepageImage,
     items: [
       {
-        title: "Guided sessions",
+        title: "Guided Sessions",
         description:
-          "Choose sessions organized around sleep, stress, focus and recovery.",
+          "Guided sessions for Sleep, Stress, Focus and Recovery.",
       },
       {
-        title: "Breathing tools",
+        title: "Breathing Tools",
         description:
-          "Follow guided breathing practices for different needs and situations.",
-      },
-      {
-        title: "Use it your way",
-        description:
-          "Use the app on its own or alongside a separate Neuvago device session.",
+          "Guided and visual breathing practices for different needs and situations, coming to the app.",
       },
     ] satisfies HomepageCard[],
     cta: {
@@ -423,7 +480,6 @@ export const homepageContent = {
     eyebrow: string;
     title: string;
     description: string;
-    independenceNote: string;
     image: HomepageImage;
     mobileImage: HomepageImage;
     items: HomepageCard[];
@@ -473,37 +529,37 @@ export const homepageContent = {
     eyebrow: "Frequently asked questions",
     title: "Clear answers before you explore the product.",
     description:
-      "The essentials about the Neuvago device, the separate app and the boundaries of use.",
+      "The essentials about the device, its four modes, what is included and its intended use.",
     items: [
       {
         question: "What is Neuvago?",
         answer:
-          "Neuvago is a non-invasive vagus nerve stimulation device designed for wellness use and everyday routines.",
-      },
-      {
-        question: "Does the Neuvago device need the app?",
-        answer:
-          "No. The device works independently. The Neuvago App is a separate product and is not required to operate the device.",
-      },
-      {
-        question: "Does the app connect to or control the device?",
-        answer:
-          "No. There is no Bluetooth connection or technical integration between the app and the device.",
+          "Neuvago is a non-invasive vagus nerve stimulation device designed for general wellness and everyday routines.",
       },
       {
         question: "Where is the stimulation applied?",
         answer:
-          "Neuvago uses an ear electrode positioned according to the instructions supplied with the device.",
+          "Neuvago uses an earpiece electrode positioned at the outer ear according to the instructions supplied with the device.",
       },
       {
-        question: "Is Neuvago a medical treatment?",
+        question: "What are the four stimulation modes?",
         answer:
-          "No. Neuvago is not intended to diagnose, treat, cure or prevent disease. Review the intended use, safety information and instructions before use.",
+          "Neuvago includes four named modes: Sleep, Relax, Meditation and Relief. Detailed guidance for each mode will be available before purchasing opens.",
       },
       {
-        question: "Where can I learn more about use and safety?",
+        question: "What is included with Neuvago?",
         answer:
-          "Visit the Product, How It Works and Intended Use pages for current information. Detailed instructions are also supplied with the device.",
+          "The planned package includes the Neuvago device, earpiece, conductive gel, charging cable and Quick Start Guide. Final package details will be confirmed before purchasing opens.",
+      },
+      {
+        question: "Is one year of the Neuvago App included?",
+        answer:
+          "Yes. Every Neuvago device includes one year of access to the Neuvago App. Activation, renewal, regional availability and pricing after the included period will be explained before purchase.",
+      },
+      {
+        question: "What is Neuvago intended for?",
+        answer:
+          "Neuvago is intended for general wellness use. It is not intended to diagnose, treat, cure or prevent disease and is not a replacement for professional medical care.",
       },
     ] satisfies HomepageFaqItem[],
     cta: {
@@ -525,7 +581,7 @@ export const homepageContent = {
     description:
       "See what is included, review how the device works and find current purchase information on the Product page.",
     primaryCta: {
-      label: "View the device",
+      label: "View purchase details",
       href: "/product#buy",
     } satisfies HomepageCta,
     secondaryCta: {

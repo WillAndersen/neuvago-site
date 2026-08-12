@@ -3,10 +3,11 @@ import { getHomepageContent } from "@/lib/content/get-homepage-content";
 import {
   HomeHero,
   HomeProofStrip,
+  HomeBenefits,
   HomeSystemReveal,
+  HomeStimulationModes,
   HomeVagusNerve,
   HomeRoutineSequence,
-  HomeEverydayPathways,
   HomeResearchBoundary,
   HomeAppGuidance,
   HomeFeaturedLearning,
@@ -23,7 +24,7 @@ import {
 export const metadata: Metadata = {
   title: "Neuvago | Non-Invasive Vagus Nerve Stimulation",
   description:
-    "Discover Neuvago, a non-invasive vagus nerve stimulation device designed for adjustable, everyday use via an ear electrode. No app or Bluetooth connection required.",
+    "Discover Neuvago, a non-invasive vagus nerve stimulation device with adjustable intensity, four stimulation modes and a design made for everyday wellness routines.",
   alternates: {
     canonical: "/",
     languages: {
@@ -35,7 +36,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Neuvago | Non-Invasive Vagus Nerve Stimulation",
     description:
-      "A non-invasive vagus nerve stimulation device designed for clear, adjustable everyday use. The device works independently, with no app or Bluetooth connection required.",
+      "Explore a non-invasive vagus nerve stimulation device with adjustable intensity, four stimulation modes and a clear path to current purchase information.",
     url: "/",
     siteName: "Neuvago",
     locale: "en_US",
@@ -45,7 +46,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Neuvago | Non-Invasive Vagus Nerve Stimulation",
     description:
-      "A non-invasive vagus nerve stimulation device designed for clear, adjustable everyday use.",
+      "A non-invasive vagus nerve stimulation device with adjustable intensity and four stimulation modes.",
   },
 };
 
@@ -84,8 +85,16 @@ export default async function HomePage() {
         <HomeProofStrip content={content.proofStrip} />
       ) : null}
 
+      {content.benefits.visible ? (
+        <HomeBenefits content={content.benefits} />
+      ) : null}
+
       {content.systemReveal.visible ? (
         <HomeSystemReveal content={content.systemReveal} />
+      ) : null}
+
+      {content.stimulationModes.visible ? (
+        <HomeStimulationModes content={content.stimulationModes} />
       ) : null}
 
       {content.vagusNerve.visible ? (
@@ -94,10 +103,6 @@ export default async function HomePage() {
 
       {content.ritualSequence.visible ? (
         <HomeRoutineSequence content={content.ritualSequence} />
-      ) : null}
-
-      {content.everydayPathways.visible ? (
-        <HomeEverydayPathways content={content.everydayPathways} />
       ) : null}
 
       {content.researchBoundary.visible ? (

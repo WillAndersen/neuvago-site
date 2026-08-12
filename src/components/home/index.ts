@@ -8,6 +8,8 @@ export { AppScreenCard } from "./AppScreenCard";
 
 export { HomeHero } from "./HomeHero";
 export { HomeProofStrip } from "./HomeProofStrip";
+export { HomeBenefits } from "./HomeBenefits";
+export { HomeStimulationModes } from "./HomeStimulationModes";
 export { HomeWhatIsNeuvago } from "./HomeWhatIsNeuvago";
 export { HomeWhyPeopleComeToNeuvago } from "./HomeWhyPeopleComeToNeuvago";
 export { HomeAppDeviceEcosystem } from "./HomeAppDeviceEcosystem";

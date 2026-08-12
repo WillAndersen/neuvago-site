@@ -8,30 +8,33 @@ type HomeAppGuidanceProps = {
 
 export function HomeAppGuidance({ content }: HomeAppGuidanceProps) {
   return (
-    <section id="neuvago-app" className="bg-[#f7f4ef]">
-      <div className="mx-auto grid max-w-[90rem] gap-12 px-5 py-20 sm:px-8 lg:grid-cols-[1.02fr_0.98fr] lg:items-center lg:px-12 lg:py-28">
-        <div className="overflow-hidden rounded-[2.5rem] border border-black/5 bg-white/55 shadow-[0_34px_100px_rgba(35,28,20,0.1)]">
-          <div className="relative hidden aspect-[16/11] lg:block">
+    <section id="neuvago-app" className="overflow-x-clip bg-[#f7f4ef]">
+      <div className="mx-auto grid min-w-0 max-w-[90rem] grid-cols-[minmax(0,1fr)] gap-12 px-5 py-20 sm:px-8 lg:grid-cols-[minmax(0,1.02fr)_minmax(0,0.98fr)] lg:items-center lg:px-12 lg:py-28">
+        <div className="relative min-h-[34rem] min-w-0 w-full max-w-full overflow-hidden rounded-[2.5rem] border border-black/5 bg-[#eadfd2] shadow-[0_34px_100px_rgba(35,28,20,0.1)] sm:min-h-[39rem]">
+          <div className="absolute left-[5%] top-[5%] w-[56%] max-w-full rotate-[-4deg] overflow-hidden rounded-[1.8rem] border border-white/60 bg-[#f1e8de] shadow-[0_30px_90px_rgba(49,35,20,0.18)]">
             <Image
               src={content.image.src}
               alt={content.image.alt}
-              fill
-              className="object-cover"
-              sizes="720px"
+              width={1024}
+              height={1536}
+              className="block h-auto w-full max-w-full"
+              sizes="(max-width: 1024px) 54vw, 390px"
             />
           </div>
-          <div className="relative aspect-[4/5] lg:hidden">
+
+          <div className="absolute bottom-[3%] right-[4%] w-[51%] max-w-full rotate-[4deg] overflow-hidden rounded-[1.8rem] border border-white/60 bg-[#f1e8de] shadow-[0_30px_90px_rgba(49,35,20,0.16)]">
             <Image
               src={content.mobileImage.src}
               alt={content.mobileImage.alt}
-              fill
-              className="object-cover"
-              sizes="92vw"
+              width={1024}
+              height={1536}
+              className="block h-auto w-full max-w-full"
+              sizes="(max-width: 1024px) 49vw, 360px"
             />
           </div>
         </div>
 
-        <div>
+        <div className="min-w-0">
           <p className="text-xs font-medium uppercase tracking-[0.28em] text-[#8b8277]">
             {content.eyebrow}
           </p>
@@ -42,22 +45,16 @@ export function HomeAppGuidance({ content }: HomeAppGuidanceProps) {
             {content.description}
           </p>
 
-          <div className="mt-7 rounded-[1.5rem] border border-[#c9b9a5]/50 bg-[#eee6db]/75 px-5 py-4">
-            <p className="text-sm font-medium leading-6 text-[#4f4942]">
-              {content.independenceNote}
-            </p>
-          </div>
-
-          <div className="mt-8 space-y-5">
+          <div className="mt-8 divide-y divide-black/8 border-y border-black/8">
             {content.items.map((item) => (
-              <div key={item.title} className="border-t border-black/8 pt-5">
+              <article key={item.title} className="py-5">
                 <h3 className="text-xl font-medium tracking-[-0.025em] text-[#1f1f1c]">
                   {item.title}
                 </h3>
                 <p className="mt-2 text-sm leading-7 text-[#5f5a52] sm:text-base">
                   {item.description}
                 </p>
-              </div>
+              </article>
             ))}
           </div>
 

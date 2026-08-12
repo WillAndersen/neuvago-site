@@ -125,41 +125,22 @@ export function ProductV2BuyBox({ content }: ProductV2BuyBoxProps) {
             </p>
 
             <div className="mt-5 grid gap-3 sm:grid-cols-2">
-              {content.purchaseOpen ? (
-                <ShopifyCheckoutButton
-                  locale="en"
-                  quantity={1}
-                  disabledLabel={content.checkoutDisabledLabel}
-                  loadingLabel={content.checkoutLoadingLabel}
-                  className="inline-flex w-full items-center justify-center rounded-full bg-[#1f1f1c] px-5 py-3 text-sm font-medium text-white transition hover:bg-[#2b2b28] disabled:cursor-not-allowed disabled:opacity-55"
-                >
-                  {content.checkoutLabel}
-                </ShopifyCheckoutButton>
-              ) : (
-                <Link
-                  href={content.prelaunchCta.href}
-                  className="inline-flex items-center justify-center rounded-full bg-[#1f1f1c] px-5 py-3 text-sm font-medium text-white transition hover:bg-[#2b2b28]"
-                >
-                  {content.prelaunchCta.label}
-                </Link>
-              )}
+              <ShopifyCheckoutButton
+                locale="en"
+                quantity={1}
+                disabledLabel={content.checkoutDisabledLabel}
+                loadingLabel={content.checkoutLoadingLabel}
+                className="inline-flex w-full items-center justify-center rounded-full bg-[#1f1f1c] px-5 py-3 text-sm font-medium text-white transition hover:bg-[#2b2b28] disabled:cursor-not-allowed disabled:opacity-55"
+              >
+                {content.checkoutLabel}
+              </ShopifyCheckoutButton>
 
-              {content.purchaseOpen ? (
-                <Link
-                  href={content.prelaunchCta.href}
-                  className="inline-flex items-center justify-center rounded-full border border-black/10 bg-white/70 px-5 py-3 text-sm font-medium text-[#1f1f1c] transition hover:bg-white"
-                >
-                  {content.prelaunchCta.label}
-                </Link>
-              ) : (
-                <button
-                  type="button"
-                  disabled
-                  className="inline-flex w-full cursor-not-allowed items-center justify-center rounded-full border border-black/8 bg-white/58 px-5 py-3 text-sm font-medium text-[#82796f] opacity-80"
-                >
-                  {content.checkoutDisabledLabel}
-                </button>
-              )}
+              <Link
+                href={content.prelaunchCta.href}
+                className="inline-flex items-center justify-center rounded-full border border-black/10 bg-white/70 px-5 py-3 text-sm font-medium text-[#1f1f1c] transition hover:bg-white"
+              >
+                {content.prelaunchCta.label}
+              </Link>
             </div>
 
             <Link

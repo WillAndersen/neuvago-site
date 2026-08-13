@@ -1,19 +1,17 @@
 import type { Metadata } from "next";
-import { getHomepageContent } from "@/lib/content/get-homepage-content";
 import {
-  HomeHero,
-  HomeProofStrip,
-  HomeBenefits,
-  HomeSystemReveal,
-  HomeStimulationModes,
-  HomeVagusNerve,
-  HomeRoutineSequence,
-  HomeResearchBoundary,
   HomeAppGuidance,
-  HomeFeaturedLearning,
-  HomeFaq,
   HomeFinalCta,
+  HomeHero,
 } from "@/components/home";
+import { Home03Benefits } from "@/components/home/Home03Benefits";
+import { Home03Faq } from "@/components/home/Home03Faq";
+import { Home03FeatureBar } from "@/components/home/Home03FeatureBar";
+import { Home03Learn } from "@/components/home/Home03Learn";
+import { Home03Research } from "@/components/home/Home03Research";
+import { Home03StimulationModes } from "@/components/home/Home03StimulationModes";
+import { Home03VagusNerve } from "@/components/home/Home03VagusNerve";
+import { homepage03Content } from "@/content/homepage-v3";
 import {
   buildFAQStructuredData,
   buildOrganizationStructuredData,
@@ -24,7 +22,7 @@ import {
 export const metadata: Metadata = {
   title: "Neuvago | Non-Invasive Vagus Nerve Stimulation",
   description:
-    "Discover Neuvago, a non-invasive vagus nerve stimulation device with adjustable intensity, four stimulation modes and a design made for everyday wellness routines.",
+    "Discover Neuvago, a non-invasive vagus nerve stimulation device with adjustable intensity, four stimulation modes, research context and practical tools for everyday wellness routines.",
   alternates: {
     canonical: "/",
     languages: {
@@ -36,7 +34,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Neuvago | Non-Invasive Vagus Nerve Stimulation",
     description:
-      "Explore a non-invasive vagus nerve stimulation device with adjustable intensity, four stimulation modes and a clear path to current purchase information.",
+      "Explore a non-invasive, ear-based vagus nerve stimulation device with adjustable intensity, four stimulation modes and a calm path to product information.",
     url: "/",
     siteName: "Neuvago",
     locale: "en_US",
@@ -46,12 +44,12 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Neuvago | Non-Invasive Vagus Nerve Stimulation",
     description:
-      "A non-invasive vagus nerve stimulation device with adjustable intensity and four stimulation modes.",
+      "A non-invasive, ear-based vagus nerve stimulation device with adjustable intensity and four stimulation modes.",
   },
 };
 
-export default async function HomePage() {
-  const content = await getHomepageContent();
+export default function HomePage() {
+  const content = homepage03Content;
 
   const structuredData = [
     buildOrganizationStructuredData(),
@@ -63,7 +61,9 @@ export default async function HomePage() {
     }),
   ];
 
-  const faqStructuredData = buildFAQStructuredData(content.faq.items);
+  const faqStructuredData = buildFAQStructuredData(
+    content.faq.items,
+  );
 
   if (faqStructuredData) {
     structuredData.push(faqStructuredData);
@@ -73,51 +73,51 @@ export default async function HomePage() {
     <main className="bg-[#f7f4ef] text-[#1f1f1c]">
       {structuredData.map((item, index) => (
         <script
-          key={`home-ld-${index}`}
+          key={`home-03-ld-${index}`}
           type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(item) }}
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(item),
+          }}
         />
       ))}
 
-      {content.hero.visible ? <HomeHero content={content.hero} /> : null}
+      {content.hero.visible ? (
+        <HomeHero content={content.hero} />
+      ) : null}
 
-      {content.proofStrip.visible ? (
-        <HomeProofStrip content={content.proofStrip} />
+      {content.featureBar.visible ? (
+        <Home03FeatureBar content={content.featureBar} />
       ) : null}
 
       {content.benefits.visible ? (
-        <HomeBenefits content={content.benefits} />
-      ) : null}
-
-      {content.systemReveal.visible ? (
-        <HomeSystemReveal content={content.systemReveal} />
+        <Home03Benefits content={content.benefits} />
       ) : null}
 
       {content.stimulationModes.visible ? (
-        <HomeStimulationModes content={content.stimulationModes} />
+        <Home03StimulationModes
+          content={content.stimulationModes}
+        />
       ) : null}
 
       {content.vagusNerve.visible ? (
-        <HomeVagusNerve content={content.vagusNerve} />
+        <Home03VagusNerve content={content.vagusNerve} />
       ) : null}
 
-      {content.ritualSequence.visible ? (
-        <HomeRoutineSequence content={content.ritualSequence} />
-      ) : null}
-
-      {content.researchBoundary.visible ? (
-        <HomeResearchBoundary content={content.researchBoundary} />
+      {content.research.visible ? (
+        <Home03Research content={content.research} />
       ) : null}
 
       {content.appGuidance.visible ? (
         <HomeAppGuidance content={content.appGuidance} />
       ) : null}
 
-      {content.featuredLearning.visible ? (
-        <HomeFeaturedLearning content={content.featuredLearning} />
+      {content.learn.visible ? (
+        <Home03Learn content={content.learn} />
       ) : null}
 
-      {content.faq.visible ? <HomeFaq content={content.faq} /> : null}
+      {content.faq.visible ? (
+        <Home03Faq content={content.faq} />
+      ) : null}
 
       {content.finalCta.visible ? (
         <HomeFinalCta content={content.finalCta} />

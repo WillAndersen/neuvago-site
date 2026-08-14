@@ -6,18 +6,16 @@ import {
   type HomepageFaqItem,
   type HomepageImage,
 } from "@/content/homepage";
-import { productV2Content } from "@/content/product-v2";
+import { commerceContent } from "@/content/commerce";
 
 export type Homepage03Link = {
   label: string;
   href: string;
 };
 
-const purchaseOpen = productV2Content.buyBox.purchaseOpen;
-
 const homeProductCta = {
-  label: purchaseOpen ? "Shop Neuvago" : "See the Neuvago device",
-  href: purchaseOpen ? "/product#buy" : "/product",
+  label: commerceContent.ctaLabel,
+  href: commerceContent.shopHref,
 } satisfies HomepageCta;
 
 const breathingToolsAvailable =
@@ -156,9 +154,9 @@ export const homepage03Content = {
     eyebrow: "Neuvago",
     title: "Designed for your nervous system.",
     productLine:
-      "Non-invasive vagus nerve stimulation designed for sleep-supportive routines, calmer moments, focused time and recovery.",
+      "Non-invasive vagus nerve stimulation designed to help you sleep better, feel calmer, manage everyday stress and support recovery.",
     description:
-      "Neuvago applies adjustable electrical stimulation at the outer ear, providing a simple, non-invasive approach to vagus nerve stimulation.",
+      "Neuvago gently stimulates the vagus nerve through the ear, supporting the body's natural shift toward calm, rest and recovery.",
     primaryCta: homeProductCta,
     secondaryCta: {
       label: "How it works",
@@ -168,7 +166,7 @@ export const homepage03Content = {
     mobileImage: homepageHeroMobile,
     proofLine: [
       "Non-invasive",
-      "Ear-based",
+      "Drug-free",
       "Four stimulation modes",
     ],
     mediaNote:
@@ -178,10 +176,10 @@ export const homepage03Content = {
   featureBar: {
     visible: true,
     items: [
-      "Non-invasive",
-      "Ear-based",
-      "Four stimulation modes",
-      "Adjustable intensity",
+      "NON-INVASIVE",
+      "DRUG-FREE",
+      "FOUR STIMULATION MODES",
+      "ADJUSTABLE INTENSITY",
     ],
   },
 
@@ -369,6 +367,7 @@ export const homepage03Content = {
 } satisfies Homepage03Content;
 
 export const homepage03Commerce = {
-  purchaseOpen,
+  mode: commerceContent.mode,
+  isLive: commerceContent.isLive,
   primaryCta: homeProductCta,
 } as const;

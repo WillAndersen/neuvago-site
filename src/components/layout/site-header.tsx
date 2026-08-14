@@ -2,6 +2,7 @@
 "use client";
 
 import Link from "next/link";
+import { commerceContent } from "@/content/commerce";
 import { usePathname } from "next/navigation";
 import { getLocaleFromPathname, localizedHref, type Locale } from "@/i18n/routes";
 
@@ -46,9 +47,14 @@ export function SiteHeader() {
 
   const homeHref = localizedHref("/", locale);
   const loginLabel = locale === "no" ? "Logg inn" : "Sign in";
-  const desktopCtaLabel = locale === "no" ? "Se produkt" : "View product";
-  const mobileCtaLabel = locale === "no" ? "Produkt" : "Product";
-  const productHref = localizedHref("/product#buy", locale);
+  const desktopCtaLabel =
+    locale === "no" ? "Se produkt" : commerceContent.ctaLabel;
+  const mobileCtaLabel =
+    locale === "no" ? "Produkt" : commerceContent.ctaLabel;
+  const productHref =
+    locale === "no"
+      ? localizedHref("/product#buy", locale)
+      : commerceContent.shopHref;
 
   return (
     <header className="sticky top-0 z-50 border-b border-black/5 bg-[#f7f4ef]/92 backdrop-blur-xl">

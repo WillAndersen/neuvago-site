@@ -309,37 +309,37 @@ export const homepage03Content = {
       {
         question: "What is Neuvago?",
         answer:
-          "Neuvago is a non-invasive vagus nerve stimulation device designed for general wellness and simple, repeatable everyday routines.",
+          "Neuvago is a non-invasive vagus nerve stimulation device designed for general wellness and simple, repeatable everyday routines. It applies adjustable electrical stimulation through an earpiece electrode positioned at the outer ear. The device includes four named stimulation modes\u2014Sleep, Relax, Meditation and Relief\u2014and physical controls that allow the intensity to be adjusted directly on the unit.",
       },
       {
         question: "What can Neuvago be used for?",
         answer:
-          "Neuvago is designed for general wellness routines around relaxation, evening wind-down and recovery. It is not intended to diagnose, treat, cure or prevent disease.",
+          "Neuvago is designed for general wellness routines centred on relaxation, evening wind-down, focused time and recovery. It can be incorporated into quiet moments when you want to slow down and create a more intentional routine around rest or everyday stress. Neuvago is not intended to diagnose, treat, cure or prevent disease.",
       },
       {
         question: "Where is the stimulation applied?",
         answer:
-          "Stimulation is applied through an earpiece electrode positioned at the outer ear according to the instructions supplied with the device.",
+          "Stimulation is applied through an earpiece electrode positioned at the outer ear. Neuvago uses an auricular, or ear-based, approach to non-invasive vagus nerve stimulation. The earpiece should always be positioned and used according to the instructions supplied with the device, including the guidance for preparing the contact point and adjusting the stimulation intensity.",
       },
       {
         question: "What are the four stimulation modes?",
         answer:
-          "Neuvago includes four named modes: Sleep, Relax, Meditation and Relief.",
+          "Neuvago includes four named stimulation modes: Sleep, Relax, Meditation and Relief. They provide four dedicated programmes that can be selected directly on the device for different moments and routines. We do not describe specific physiological effects or technical differences between the modes beyond the information confirmed in the product documentation.",
       },
       {
         question: "What is included with Neuvago?",
         answer:
-          "The package includes the Neuvago device, earpiece, conductive gel, charging cable, Quick Start Guide and one year of Neuvago App access.",
+          "The Neuvago package includes the Neuvago device, earpiece, conductive gel, charging cable and Quick Start Guide. Every device also includes one year of access to the Neuvago App. The Product page provides the current package contents and purchase information in one place.",
       },
       {
         question: "Is one year of the Neuvago App included?",
         answer:
-          "Yes. Every Neuvago device includes one year of access to the Neuvago App.",
+          "Yes. Every Neuvago device includes one year of access to the Neuvago App. The app provides Guided Sessions for Sleep, Stress, Focus and Recovery, together with Daily Check-In, Nervous System Score and progress tools. The app is a separate Neuvago product focused on practical tools for nervous system wellbeing and can also be explored through the dedicated App page.",
       },
       {
         question: "Is Neuvago a medical device?",
         answer:
-          "Neuvago is presented as a general wellness product. It is not intended to diagnose, treat, cure or prevent disease, and it is not a replacement for professional medical care.",
+          "Neuvago is presented as a general wellness product. It is not intended to diagnose, treat, cure or prevent disease, and it should not be used as a replacement for professional medical care. Always review the supplied safety information and seek appropriate professional advice if you are unsure whether the product is suitable for you.",
       },
     ],
     supportCta: {

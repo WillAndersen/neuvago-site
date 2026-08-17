@@ -1,10 +1,12 @@
 import { vagusnervenArticle } from "@/content/knowledge/no/articles/vagusnerven";
 import { vagusnervestimuleringArticle } from "@/content/knowledge/no/articles/vagusnervestimulering";
+import { ikkeInvasivVagusnervestimuleringArticle } from "@/content/knowledge/no/articles/ikke-invasiv-vagusnervestimulering";
 import type { NorwegianKnowledgeArticle } from "@/content/knowledge/no/types";
 
 const articleRegistry = [
   vagusnervenArticle,
   vagusnervestimuleringArticle,
+  ikkeInvasivVagusnervestimuleringArticle,
 ] as const satisfies readonly NorwegianKnowledgeArticle[];
 
 function isIsoDate(value: string): boolean {

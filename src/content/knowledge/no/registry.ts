@@ -4,6 +4,7 @@ import { ikkeInvasivVagusnervestimuleringArticle } from "@/content/knowledge/no/
 import { transkutanVagusnervestimuleringArticle } from "@/content/knowledge/no/articles/transkutan-vagusnervestimulering";
 import { aurikulaerVagusnervestimuleringArticle } from "@/content/knowledge/no/articles/aurikulaer-vagusnervestimulering";
 import { implantertOgIkkeInvasivVnsArticle } from "@/content/knowledge/no/articles/implantert-og-ikke-invasiv-vns";
+import { detAutonomeNervesystemetArticle } from "@/content/knowledge/no/articles/det-autonome-nervesystemet";
 import type { NorwegianKnowledgeArticle } from "@/content/knowledge/no/types";
 
 const articleRegistry = [
@@ -13,6 +14,7 @@ const articleRegistry = [
   transkutanVagusnervestimuleringArticle,
   aurikulaerVagusnervestimuleringArticle,
   implantertOgIkkeInvasivVnsArticle,
+  detAutonomeNervesystemetArticle,
 ] as const satisfies readonly NorwegianKnowledgeArticle[];
 
 function isIsoDate(value: string): boolean {

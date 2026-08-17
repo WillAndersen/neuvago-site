@@ -371,7 +371,7 @@ export const vagusnervenArticle = {
     },
   ],
 
-  relatedSlugs: ["vagusnervestimulering"],
+  relatedSlugs: ["vagusnervestimulering", "det-autonome-nervesystemet"],
   relatedLinks: [
     {
       title: "Forskning og kunnskapsgrunnlag",

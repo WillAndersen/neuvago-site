@@ -479,7 +479,7 @@ export const ikkeInvasivVagusnervestimuleringArticle = {
     },
   ],
 
-  relatedSlugs: ["vagusnervestimulering", "vagusnerven"],
+  relatedSlugs: ["vagusnervestimulering", "vagusnerven", "transkutan-vagusnervestimulering"],
   relatedLinks: [
     {
       title: "Forskning og kunnskapsgrunnlag",

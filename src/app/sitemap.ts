@@ -1,5 +1,6 @@
 import type { MetadataRoute } from "next";
 import { SEO_LAUNCH_REVIEW_DATE } from "@/lib/seo/editorial-dates";
+import { getPublishedNorwegianKnowledgeArticles } from "@/content/knowledge/no/registry";
 
 const siteUrl = "https://neuvago.com";
 
@@ -95,10 +96,20 @@ const routes: Array<{
 ];
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  return routes.map((route) => ({
+  const coreEntries: MetadataRoute.Sitemap = routes.map((route) => ({
     url: new URL(route.path, siteUrl).toString(),
     lastModified: new Date(route.lastModified ?? SEO_LAUNCH_REVIEW_DATE),
     changeFrequency: route.changeFrequency,
     priority: route.priority,
   }));
+
+  const norwegianKnowledgeEntries: MetadataRoute.Sitemap =
+    getPublishedNorwegianKnowledgeArticles().map((article) => ({
+      url: new URL(article.path, siteUrl).toString(),
+      lastModified: new Date(`${article.modifiedAt}T12:00:00Z`),
+      changeFrequency: article.changeFrequency,
+      priority: article.sitemapPriority,
+    }));
+
+  return [...coreEntries, ...norwegianKnowledgeEntries];
 }

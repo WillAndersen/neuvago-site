@@ -1,172 +1,187 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 
-const page = {
-  "file": "src/app/(no)/no/kunnskap/page.tsx",
-  "path": "/no/kunnskap",
-  "englishPath": "/learn",
-  "title": "Kunnskap om vagusnerven, regulering og VNS",
-  "metaTitle": "Kunnskap | Vagusnerven, VNS og regulering | Neuvago Norge",
-  "description": "En norsk startside for å forstå vagusnerven, ikke-invasiv VNS, daglig regulering og hvordan Neuvago passer inn i en roligere velværerutine.",
-  "eyebrow": "Kunnskap",
-  "intro": "Denne siden er en norsk inngang til kunnskapslaget rundt Neuvago. Målet er å gjøre det lettere å forstå ordene, sammenhengene og grensene vi bruker når vi snakker om vagusnerven, ikke-invasiv VNS og daglig regulering.",
-  "body": [
-    {
-      "title": "Et roligere sted å begynne",
-      "paragraphs": [
-        "Mange møter begreper som vagusnerven, VNS, tVNS, parasympatisk nervesystem og vagal tone uten at det er helt tydelig hva ordene betyr i praksis. Noen forklaringer blir for tekniske, mens andre blir for bastante. Neuvago forsøker å legge seg i et tydeligere mellomrom: nok faglig kontekst til at du forstår retningen, men uten å gjøre kunnskapslaget mer dramatisk enn det trenger å være.",
-        "Vagusnerven omtales ofte i forbindelse med ro, restitusjon, stressrespons og kroppens evne til å vende tilbake etter aktivering. Det betyr ikke at ett produkt kan forklare eller løse alt. Det betyr heller at vagusnerven er en del av et større reguleringssystem som mange ønsker å forstå bedre når de bygger roligere hverdagsrutiner."
-      ]
-    },
-    {
-      "title": "Hva vi mener med ikke-invasiv VNS",
-      "paragraphs": [
-        "VNS står for vagus nerve stimulation. Tradisjonelt kan begrepet brukes i medisinske sammenhenger, blant annet for implanterte systemer. Neuvago plasseres i en annen ramme: en ikke-invasiv, app-veiledet velværeopplevelse som er bygget rundt korte, gjentakbare rutiner. Derfor er det viktig at språket vårt skiller mellom generell forskning, historisk bruk av VNS-begrepet og Neuvagos faktiske tiltenkte bruk.",
-        "Når vi skriver om ikke-invasiv VNS, handler det om å forklare feltet med tydelige grenser. Vi omtaler ikke Neuvago som en behandling, diagnoseverktøy eller erstatning for helsehjelp. Vi bruker kunnskapslaget til å gi kontekst for en roligere produkt- og appopplevelse, ikke til å love medisinske resultater."
-      ]
-    },
-    {
-      "title": "Hvordan du bør bruke kunnskapssiden",
-      "paragraphs": [
-        "Bruk denne siden som et kart. Start her hvis du vil forstå de norske hovedbegrepene, og gå videre til engelske dypdykk når du vil lese mer detaljert. De engelske artiklene gir bredere forklaringer på vagusnerven, nVNS, tVNS, regulering, restitusjon og ulike mønstre i nervesystemet.",
-        "For norske brukere er de praktiske sidene ofte det beste neste steget. Produktsiden forklarer selve Neuvago-systemet, mens siden Slik fungerer det viser hvordan enheten, appen og rutinen henger sammen. Juridiske sider forklarer tiltenkt bruk, regulatoriske rammer og claim-grenser."
-      ]
-    }
-  ],
-  "cards": [
-    {
-      "title": "Vagusnerven",
-      "description": "En engelsk dypdykksside om hva vagusnerven er, og hvorfor den ofte nevnes i forbindelse med stress, søvn og restitusjon.",
-      "href": "/learn/vagus-nerve",
-      "note": "Engelsk dypdykk"
-    },
-    {
-      "title": "Ikke-invasiv VNS",
-      "description": "Les mer om ikke-invasiv vagusnervestimulering og hvordan feltet skiller seg fra implanterte medisinske systemer.",
-      "href": "/learn/non-invasive-vagus-nerve-stimulation",
-      "note": "Engelsk dypdykk"
-    },
-    {
-      "title": "Slik fungerer Neuvago",
-      "description": "Gå til den norske praktiske forklaringen av enhet, app, rutine og hvordan opplevelsen er bygget opp.",
-      "href": "/no/slik-fungerer-det",
-      "note": "Norsk side"
-    },
-    {
-      "title": "Tiltenkt bruk",
-      "description": "Les de norske grensene for hva Neuvago er ment for, og hva produktet ikke skal brukes til.",
-      "href": "/no/juridisk/tiltenkt-bruk",
-      "note": "Norsk juridisk side"
-    }
-  ],
-  "faq": [
-    {
-      "question": "Er denne siden medisinsk rådgivning?",
-      "answer": "Nei. Kunnskapssidene gir generell produkt- og forskningskontekst. De erstatter ikke medisinsk rådgivning, diagnose eller behandling."
-    },
-    {
-      "question": "Hvorfor peker noen lenker til engelske sider?",
-      "answer": "De mest detaljerte kunnskapsartiklene finnes foreløpig på engelsk. De norske hub-sidene gir en trygg inngang og peker videre til relevante dypdykk."
-    },
-    {
-      "question": "Hvor bør jeg gå videre?",
-      "answer": "Start med produktsiden hvis du vil forstå Neuvago som system. Gå til Slik fungerer det hvis du vil se den praktiske rutinen."
-    }
-  ],
-  "cta": {
-    "label": "Se hvordan Neuvago fungerer",
-    "href": "/no/slik-fungerer-det"
-  }
-} as const;
+import { JsonLd } from "@/components/seo/json-ld";
+import { getPublishedNorwegianKnowledgeArticles } from "@/content/knowledge/no/registry";
+import { buildNorwegianKnowledgeHubStructuredData } from "@/lib/seo/knowledge-article";
+
+const title = "Kunnskap om vagusnerven, regulering og VNS";
+const metaTitle = "Kunnskap | Vagusnerven, VNS og regulering | Neuvago Norge";
+const description =
+  "Norske, kildebaserte forklaringer om vagusnerven, vagusnervestimulering, VNS, tVNS, taVNS og nervesystemets regulering.";
+const path = "/no/kunnskap";
 
 export const metadata: Metadata = {
-  title: page.metaTitle,
-  description: page.description,
+  title: metaTitle,
+  description,
   alternates: {
-    canonical: page.path,
+    canonical: path,
     languages: {
-      "en-US": page.englishPath,
-      "no-NO": page.path,
-      "x-default": page.englishPath,
+      "en-US": "/learn",
+      "nb-NO": path,
+      "x-default": "/learn",
     },
   },
   openGraph: {
-    title: page.metaTitle,
-    description: page.description,
-    url: page.path,
+    title: metaTitle,
+    description,
+    url: path,
     siteName: "Neuvago",
-    locale: "no_NO",
+    locale: "nb_NO",
     type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: metaTitle,
+    description,
   },
 };
 
-export default function NorwegianHubPage() {
+const foundationCards = [
+  {
+    title: "Forskning og kunnskapsgrunnlag",
+    description:
+      "Gå videre til forskningshuben når du vil se studier, metode, sikkerhet, tolerabilitet og tydelige tolkningsgrenser.",
+    href: "/no/forskning",
+    label: "Norsk forskningshub",
+  },
+  {
+    title: "Slik fungerer Neuvago",
+    description:
+      "Se den praktiske forklaringen av enheten, appen, øktene og hvordan systemet er bygget opp.",
+    href: "/no/slik-fungerer-det",
+    label: "Praktisk side",
+  },
+  {
+    title: "Tiltenkt bruk",
+    description:
+      "Les hvilke rammer som gjelder for Neuvago som velværeprodukt, og hva produktet ikke er ment å erstatte.",
+    href: "/no/juridisk/tiltenkt-bruk",
+    label: "Juridisk og regulatorisk",
+  },
+] as const;
+
+const faq = [
+  {
+    question: "Er kunnskapssidene medisinsk rådgivning?",
+    answer:
+      "Nei. Sidene gir generell anatomi-, produkt- og forskningskontekst. De erstatter ikke medisinsk rådgivning, diagnose eller behandling.",
+  },
+  {
+    question: "Hvordan velges kildene?",
+    answer:
+      "Vi prioriterer identifiserbare fagfellevurderte publikasjoner, systematiske oversikter og offisielle kilder. Kildenes relevans og begrensninger skal beskrives, og generell forskning skal ikke presenteres som direkte dokumentasjon for Neuvago.",
+  },
+  {
+    question: "Hvorfor publiseres artiklene i kontrollerte batcher?",
+    answer:
+      "Hver batch gjennomgår kildekontroll, språk, metadata, internlenking, structured data og teknisk indekseringskontroll før neste del av kunnskapsbasen åpnes.",
+  },
+] as const;
+
+export default function NorwegianKnowledgeHubPage() {
+  const articles = getPublishedNorwegianKnowledgeArticles();
+  const structuredData = buildNorwegianKnowledgeHubStructuredData();
+
   return (
     <main className="bg-[#f7f4ef] text-[#1f1f1c]">
+      <JsonLd data={structuredData} idPrefix="no-kunnskap" />
+
       <section className="border-b border-black/5 px-5 py-20 sm:px-8 lg:px-12 lg:py-28">
         <div className="mx-auto grid max-w-[88rem] gap-12 lg:grid-cols-[0.92fr_1.08fr] lg:items-end">
           <div>
             <p className="text-xs font-medium uppercase tracking-[0.3em] text-[#7b7167]">
-              {page.eyebrow}
+              Kunnskap
             </p>
             <h1 className="mt-6 max-w-[12ch] text-[clamp(3.1rem,10vw,7.1rem)] font-medium leading-[0.88] tracking-[-0.08em]">
-              {page.title}
+              {title}
             </h1>
           </div>
 
           <div className="max-w-2xl rounded-[2rem] border border-black/6 bg-[#fbf8f2]/75 p-6 shadow-[0_24px_90px_rgba(31,31,28,0.08)] sm:p-8">
             <p className="text-lg leading-8 text-[#514c45]">
-              {page.intro}
+              Her bygger vi en norsk kunnskapsbase som skiller tydelig mellom anatomi, forskningsfelt, produktkategori og Neuvagos faktiske tiltenkte bruk. Målet er å forklare presist uten unødvendig fagspråk eller overdrevne løfter.
             </p>
           </div>
         </div>
       </section>
 
-      <section className="px-5 py-14 sm:px-8 lg:px-12 lg:py-20">
-        <div className="mx-auto grid max-w-[88rem] gap-6 lg:grid-cols-3">
-          {page.body.map((section) => (
-            <article
-              key={section.title}
-              className="rounded-[1.75rem] border border-black/6 bg-[#fbf8f2] p-6 shadow-[0_18px_64px_rgba(31,31,28,0.06)] sm:p-7"
-            >
-              <h2 className="text-2xl font-medium tracking-[-0.04em] text-[#1f1f1c]">
-                {section.title}
-              </h2>
-              <div className="mt-5 space-y-4">
-                {section.paragraphs.map((paragraph) => (
-                  <p key={paragraph} className="text-base leading-7 text-[#5f5a52]">
-                    {paragraph}
-                  </p>
-                ))}
-              </div>
-            </article>
-          ))}
-        </div>
-      </section>
-
-      <section className="px-5 pb-14 sm:px-8 lg:px-12 lg:pb-20">
+      <section className="border-b border-black/5 bg-[#eee7dd] px-5 py-16 sm:px-8 lg:px-12 lg:py-20">
         <div className="mx-auto max-w-[88rem]">
-          <div className="grid gap-5 md:grid-cols-2">
-            {page.cards.map((card) => (
+          <div className="max-w-3xl">
+            <p className="text-xs font-medium uppercase tracking-[0.22em] text-[#7b7167]">
+              Wave 1A · grunnbegrepene
+            </p>
+            <h2 className="mt-4 text-3xl font-medium tracking-[-0.04em] sm:text-5xl">
+              Start med artiklene som etablerer hele begrepshierarkiet
+            </h2>
+            <p className="mt-6 text-base leading-8 text-[#5f5a52] sm:text-lg">
+              Første batch dekker vagusnerven og bygger deretter videre mot vagusnervestimulering, ikke-invasive metoder, tVNS og aurikulær stimulering. Sidene publiseres kontrollert etter kilde- og teknisk QA.
+            </p>
+          </div>
+
+          <div className="mt-10 grid gap-5 md:grid-cols-2 xl:grid-cols-3">
+            {articles.map((article) => (
               <Link
-                key={card.href}
-                href={card.href}
+                key={article.slug}
+                href={article.path}
                 className="group rounded-[1.75rem] border border-black/6 bg-[#fbf8f2] p-6 shadow-[0_18px_64px_rgba(31,31,28,0.06)] transition hover:-translate-y-0.5 hover:shadow-[0_24px_90px_rgba(31,31,28,0.1)] sm:p-7"
               >
                 <div className="flex items-start justify-between gap-5">
                   <div>
                     <p className="text-[0.68rem] font-medium uppercase tracking-[0.22em] text-[#8a7f72]">
-                      {card.note}
+                      {article.hubLabel}
                     </p>
-                    <h2 className="mt-4 text-2xl font-medium tracking-[-0.04em] text-[#1f1f1c]">
-                      {card.title}
-                    </h2>
+                    <h3 className="mt-4 text-2xl font-medium tracking-[-0.04em] text-[#1f1f1c]">
+                      {article.title}
+                    </h3>
                   </div>
                   <span className="rounded-full border border-black/10 px-3 py-1 text-sm text-[#6b6257] transition group-hover:bg-[#1f1f1c] group-hover:text-white">
                     Åpne
                   </span>
                 </div>
+                <p className="mt-5 text-base leading-7 text-[#5f5a52]">
+                  {article.hubSummary}
+                </p>
+                <p className="mt-5 text-sm text-[#756e65]">
+                  Omtrent {article.readingTimeMinutes} min · Oppdatert {article.modifiedAt}
+                </p>
+              </Link>
+            ))}
+          </div>
 
+          <div className="mt-8 rounded-[1.5rem] border border-dashed border-black/12 bg-white/35 p-6">
+            <p className="text-sm leading-7 text-[#5f5a52]">
+              Neste sider i Wave 1A: vagusnervestimulering, ikke-invasiv vagusnervestimulering, transkutan VNS, aurikulær VNS og sammenligning av implantert og ikke-invasiv VNS.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section className="px-5 py-16 sm:px-8 lg:px-12 lg:py-20">
+        <div className="mx-auto max-w-[88rem]">
+          <div className="max-w-3xl">
+            <p className="text-xs font-medium uppercase tracking-[0.22em] text-[#7b7167]">
+              Videre veier
+            </p>
+            <h2 className="mt-4 text-3xl font-medium tracking-[-0.04em] sm:text-5xl">
+              Gå fra grunnkunnskap til forskning, produkt og sikkerhet
+            </h2>
+          </div>
+
+          <div className="mt-10 grid gap-5 md:grid-cols-3">
+            {foundationCards.map((card) => (
+              <Link
+                key={card.href}
+                href={card.href}
+                className="group rounded-[1.75rem] border border-black/6 bg-[#fbf8f2] p-6 shadow-[0_18px_64px_rgba(31,31,28,0.06)] transition hover:-translate-y-0.5 hover:shadow-[0_24px_90px_rgba(31,31,28,0.1)] sm:p-7"
+              >
+                <p className="text-[0.68rem] font-medium uppercase tracking-[0.22em] text-[#8a7f72]">
+                  {card.label}
+                </p>
+                <h3 className="mt-4 text-2xl font-medium tracking-[-0.04em]">
+                  {card.title}
+                </h3>
                 <p className="mt-5 text-base leading-7 text-[#5f5a52]">
                   {card.description}
                 </p>
@@ -176,11 +191,14 @@ export default function NorwegianHubPage() {
         </div>
       </section>
 
-      <section className="px-5 pb-14 sm:px-8 lg:px-12 lg:pb-20">
+      <section className="border-t border-black/5 bg-[#f2eee8] px-5 py-16 sm:px-8 lg:px-12 lg:py-20">
         <div className="mx-auto grid max-w-[88rem] gap-5 lg:grid-cols-3">
-          {page.faq.map((item) => (
-            <article key={item.question} className="rounded-[1.5rem] border border-black/6 bg-white/55 p-6">
-              <h2 className="text-lg font-medium tracking-[-0.03em] text-[#1f1f1c]">
+          {faq.map((item) => (
+            <article
+              key={item.question}
+              className="rounded-[1.5rem] border border-black/6 bg-white/55 p-6"
+            >
+              <h2 className="text-lg font-medium tracking-[-0.03em]">
                 {item.question}
               </h2>
               <p className="mt-4 text-sm leading-7 text-[#5f5a52]">
@@ -191,17 +209,25 @@ export default function NorwegianHubPage() {
         </div>
       </section>
 
-      <section className="px-5 pb-16 sm:px-8 lg:px-12 lg:pb-24">
+      <section className="px-5 py-16 sm:px-8 lg:px-12 lg:py-24">
         <div className="mx-auto max-w-[88rem] rounded-[2rem] border border-black/6 bg-[#1f1f1c] p-7 text-white sm:p-9">
           <p className="max-w-3xl text-xl leading-8 text-white/82">
-            {page.description}
+            {description}
           </p>
-          <Link
-            href={page.cta.href}
-            className="mt-7 inline-flex items-center justify-center rounded-full bg-white px-5 py-3 text-sm font-medium text-[#1f1f1c] transition hover:bg-[#f2eee8]"
-          >
-            {page.cta.label}
-          </Link>
+          <div className="mt-7 flex flex-wrap gap-3">
+            <Link
+              href="/no/forskning"
+              className="inline-flex items-center justify-center rounded-full bg-white px-5 py-3 text-sm font-medium text-[#1f1f1c] transition hover:bg-[#f2eee8]"
+            >
+              Utforsk forskning
+            </Link>
+            <Link
+              href="/no/slik-fungerer-det"
+              className="inline-flex items-center justify-center rounded-full border border-white/20 px-5 py-3 text-sm font-medium text-white transition hover:bg-white/10"
+            >
+              Se hvordan Neuvago fungerer
+            </Link>
+          </div>
         </div>
       </section>
     </main>

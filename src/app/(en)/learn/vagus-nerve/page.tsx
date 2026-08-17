@@ -11,6 +11,11 @@ export const metadata: Metadata = {
     "Learn what the vagus nerve is, how it connects brain and body, and why it matters for stress, sleep, recovery, and nervous system regulation.",
   alternates: {
     canonical: "/learn/vagus-nerve",
+    languages: {
+      "en-US": "/learn/vagus-nerve",
+      "nb-NO": "/no/kunnskap/vagusnerven",
+      "x-default": "/learn/vagus-nerve",
+    },
   },
   openGraph: {
     title:

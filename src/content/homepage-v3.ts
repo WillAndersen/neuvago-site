@@ -189,32 +189,32 @@ export const homepage03Content = {
     title:
       "Designed to support the way you sleep, respond to stress, focus and recover.",
     description:
-      "Your nervous system influences how you move between activation and rest. Neuvago offers a simple, non-invasive routine for moments centred on wind-down, calm, focus and recovery.",
+      "Your nervous system influences how easily you shift between activation and rest. Neuvago offers a simple, non-invasive way to support these everyday regulatory processes.",
     image: lifestyleImage,
     items: [
       {
-        title: "Sleep & Wind-down",
+        title: "Better Sleep",
         description:
-          "Support evening wind-down and create conditions for deeper relaxation.",
+          "Support the transition from alertness to rest, helping create the conditions for deeper relaxation and better sleep quality.",
       },
       {
         title: "Stress & Calm",
         description:
-          "Create a calmer pause during everyday stress and demanding moments.",
+          "Support a calmer response to everyday stress and help the nervous system shift toward a more regulated state.",
       },
       {
         title: "Focus & Mental Clarity",
         description:
-          "A calmer internal state can provide a useful setting for focused time.",
+          "Create a calmer internal state that can support attention, mental clarity and focused time.",
       },
       {
         title: "Recovery",
         description:
-          "Fit Neuvago into routines centred on rest and recovery.",
+          "Support parasympathetic activity and the body's natural processes for rest, recovery and autonomic balance.",
       },
     ],
     researchBridge:
-      "taVNS is being studied across areas including sleep, autonomic regulation, HRV, brain pathways, safety and tolerability.",
+      "taVNS is being studied across areas including sleep, stress, cognitive performance, HRV and autonomic function.",
     researchCta: {
       label: "Explore the Research",
       href: "/research",

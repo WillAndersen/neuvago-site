@@ -371,7 +371,7 @@ export const vagusnervenArticle = {
     },
   ],
 
-  relatedSlugs: [],
+  relatedSlugs: ["vagusnervestimulering"],
   relatedLinks: [
     {
       title: "Forskning og kunnskapsgrunnlag",

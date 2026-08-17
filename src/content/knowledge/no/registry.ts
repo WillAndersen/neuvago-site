@@ -1,7 +1,11 @@
 import { vagusnervenArticle } from "@/content/knowledge/no/articles/vagusnerven";
+import { vagusnervestimuleringArticle } from "@/content/knowledge/no/articles/vagusnervestimulering";
 import type { NorwegianKnowledgeArticle } from "@/content/knowledge/no/types";
 
-const articleRegistry = [vagusnervenArticle] as const satisfies readonly NorwegianKnowledgeArticle[];
+const articleRegistry = [
+  vagusnervenArticle,
+  vagusnervestimuleringArticle,
+] as const satisfies readonly NorwegianKnowledgeArticle[];
 
 function isIsoDate(value: string): boolean {
   return /^\d{4}-\d{2}-\d{2}$/.test(value) && !Number.isNaN(Date.parse(`${value}T12:00:00Z`));

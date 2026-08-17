@@ -361,7 +361,7 @@ export function NorwegianKnowledgeArticlePage({
               Kildegrunnlag for artikkelen
             </h2>
             <p className="mt-5 text-base leading-8 text-[#5f5a52] md:text-lg">
-              Kildene under er valgt for anatomi, fysiologi og vagal sansekommunikasjon. De dokumenterer ikke automatisk en bestemt effekt av Neuvago.
+              Kildene under er valgt for å forklare temaet, metodene og tolkningsgrensene. De dokumenterer ikke automatisk en bestemt effekt av Neuvago.
             </p>
           </div>
 
@@ -408,7 +408,7 @@ export function NorwegianKnowledgeArticlePage({
               Les videre
             </p>
             <h2 className="mt-4 text-3xl font-medium tracking-[-0.04em] md:text-5xl">
-              Fortsett fra anatomi til forskning og praktisk bruk
+              Fortsett til relaterte begreper, forskning og praktisk bruk
             </h2>
           </div>
 

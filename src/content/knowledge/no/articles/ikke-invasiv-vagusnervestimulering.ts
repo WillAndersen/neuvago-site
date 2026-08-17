@@ -479,7 +479,13 @@ export const ikkeInvasivVagusnervestimuleringArticle = {
     },
   ],
 
-  relatedSlugs: ["vagusnervestimulering", "vagusnerven", "transkutan-vagusnervestimulering"],
+  relatedSlugs: [
+    "vagusnervestimulering",
+    "vagusnerven",
+    "transkutan-vagusnervestimulering",
+    "aurikulaer-vagusnervestimulering",
+    "implantert-og-ikke-invasiv-vns",
+  ],
   relatedLinks: [
     {
       title: "Forskning og kunnskapsgrunnlag",

@@ -455,6 +455,7 @@ export const transkutanVagusnervestimuleringArticle = {
     "ikke-invasiv-vagusnervestimulering",
     "vagusnervestimulering",
     "vagusnerven",
+    "aurikulaer-vagusnervestimulering",
   ],
   relatedLinks: [
     {

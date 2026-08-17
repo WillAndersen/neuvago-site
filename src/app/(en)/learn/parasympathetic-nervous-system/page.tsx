@@ -9,6 +9,11 @@ export const metadata = {
     "Learn what the parasympathetic nervous system is, how it relates to calm, unwinding, digestion, sleep, and why it matters for recovery and nervous system restoration.",
   alternates: {
     canonical: "/learn/parasympathetic-nervous-system",
+    languages: {
+      "en-US": "/learn/parasympathetic-nervous-system",
+      "nb-NO": "/no/kunnskap/det-parasympatiske-nervesystemet",
+      "x-default": "/learn/parasympathetic-nervous-system",
+    },
   },
   openGraph: {
     title: "Parasympathetic Nervous System | Neuvago",

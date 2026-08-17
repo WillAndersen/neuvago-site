@@ -541,7 +541,11 @@ export const detAutonomeNervesystemetArticle = {
     },
   ],
 
-  relatedSlugs: ["vagusnerven", "vagusnervestimulering"],
+  relatedSlugs: [
+    "vagusnerven",
+    "vagusnervestimulering",
+    "det-parasympatiske-nervesystemet",
+  ],
   relatedLinks: [
     {
       title: "Autonom regulering i forskningsbiblioteket",

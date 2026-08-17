@@ -16,9 +16,9 @@ import {
 } from "@/lib/seo/structured-data";
 
 export const metadata: Metadata = {
-  title: "How to Use a Non-Invasive Vagus Nerve Stimulator | Neuvago",
+  title: "How Neuvago Works | Device, App and Non-Invasive VNS",
   description:
-    "See how Neuvago works as a non-invasive vagus nerve stimulator and app system, with guidance for placement, comfort, sessions, and daily routine support.",
+    "See how the Neuvago device, independent app guidance and non-invasive VNS approach fit together in a calm everyday wellness system.",
   alternates: {
     canonical: "/how-it-works",
     languages: {
@@ -28,9 +28,9 @@ export const metadata: Metadata = {
     },
   },
   openGraph: {
-    title: "How to Use a Non-Invasive Vagus Nerve Stimulator | Neuvago",
+    title: "How Neuvago Works | Device, App and Non-Invasive VNS",
     description:
-      "See how Neuvago works as a non-invasive vagus nerve stimulator and app system, with guidance for placement, comfort, sessions, and daily routine support.",
+      "See how the Neuvago device, independent app guidance and non-invasive VNS approach fit together in a calm everyday wellness system.",
     url: "/how-it-works",
     siteName: "Neuvago",
     locale: "en_US",
@@ -38,9 +38,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "How to Use a Non-Invasive Vagus Nerve Stimulator | Neuvago",
+    title: "How Neuvago Works | Device, App and Non-Invasive VNS",
     description:
-      "See how Neuvago works as a non-invasive vagus nerve stimulator and app system, with guidance for placement, comfort, sessions, and daily routine support.",
+      "See how the Neuvago device, independent app guidance and non-invasive VNS approach fit together in a calm everyday wellness system.",
   },
 };
 

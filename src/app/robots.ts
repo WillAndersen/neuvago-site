@@ -17,12 +17,9 @@ export default function robots(): MetadataRoute.Robots {
           "/onboarding",
           "/open-app",
           "/continue",
-          "/get-started",
-          "/how-to-use",
         ],
       },
     ],
     sitemap: "https://neuvago.com/sitemap.xml",
-    host: "https://neuvago.com",
   };
 }

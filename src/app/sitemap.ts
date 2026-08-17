@@ -31,6 +31,8 @@ const routes: Array<{
   { path: "/no/juridisk", changeFrequency: "monthly", priority: 0.68, lastModified: SEO_LAUNCH_REVIEW_DATE },
   { path: "/app", changeFrequency: "weekly", priority: 0.85, lastModified: SEO_LAUNCH_REVIEW_DATE },
   { path: "/how-it-works", changeFrequency: "weekly", priority: 0.88, lastModified: SEO_LAUNCH_REVIEW_DATE },
+  { path: "/how-to-use", changeFrequency: "monthly", priority: 0.82, lastModified: SEO_LAUNCH_REVIEW_DATE },
+  { path: "/get-started", changeFrequency: "monthly", priority: 0.8, lastModified: SEO_LAUNCH_REVIEW_DATE },
   { path: "/about", changeFrequency: "monthly", priority: 0.7 },
   { path: "/support", changeFrequency: "monthly", priority: 0.7 },
 

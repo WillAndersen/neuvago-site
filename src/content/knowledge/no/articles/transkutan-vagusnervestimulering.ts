@@ -456,6 +456,7 @@ export const transkutanVagusnervestimuleringArticle = {
     "vagusnervestimulering",
     "vagusnerven",
     "aurikulaer-vagusnervestimulering",
+    "implantert-og-ikke-invasiv-vns",
   ],
   relatedLinks: [
     {

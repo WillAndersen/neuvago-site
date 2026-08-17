@@ -239,11 +239,11 @@ export function NorwegianKnowledgeArticlePage({
 
       <section className="border-b border-black/6 bg-[#efe8de]">
         <div className="mx-auto grid max-w-7xl gap-12 px-5 py-16 sm:px-8 md:py-20 lg:grid-cols-[1.08fr_0.92fr] lg:items-end lg:px-12 lg:py-24">
-          <div className="max-w-4xl">
+          <div className="min-w-0 max-w-4xl">
             <p className="text-xs font-medium uppercase tracking-[0.22em] text-[#786e64]">
               {article.eyebrow}
             </p>
-            <h1 className="mt-5 max-w-[16ch] text-[clamp(2.8rem,7vw,5.8rem)] font-medium leading-[0.96] tracking-[-0.06em]">
+            <h1 className="mt-5 max-w-[16ch] break-words [hyphens:auto] text-[clamp(2.8rem,7vw,5.8rem)] font-medium leading-[0.96] tracking-[-0.06em]" lang="nb">
               {article.title}
             </h1>
             <p className="mt-7 max-w-3xl text-lg leading-8 text-[#514c45] md:text-xl md:leading-9">

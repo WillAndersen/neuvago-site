@@ -226,7 +226,7 @@ export const homepage03Content = {
     eyebrow: "Four stimulation modes",
     title: "Four modes for different needs.",
     description:
-      "Choose between four named stimulation programmes designed for different moments and routines.",
+      "Choose between four dedicated stimulation modes designed for different moments and routines.",
     modes: ["Sleep", "Relax", "Meditation", "Relief"],
   },
 

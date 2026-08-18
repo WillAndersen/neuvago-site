@@ -9,6 +9,11 @@ export const metadata = {
     "Learn what vagal tone means, how it relates to resilience, recovery, return after stress, and why the term matters in everyday nervous system conversations.",
   alternates: {
     canonical: "/learn/vagal-tone",
+    languages: {
+      "en-US": "/learn/vagal-tone",
+      "nb-NO": "/no/kunnskap/vagal-tone",
+      "x-default": "/learn/vagal-tone",
+    },
   },
   openGraph: {
     title: "What Is Vagal Tone? | Neuvago",

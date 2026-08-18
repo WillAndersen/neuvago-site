@@ -376,6 +376,7 @@ export const vagusnervenArticle = {
     "det-autonome-nervesystemet",
     "det-parasympatiske-nervesystemet",
     "regulering-av-nervesystemet",
+    "vagal-tone",
   ],
   relatedLinks: [
     {

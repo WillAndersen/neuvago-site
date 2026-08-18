@@ -546,6 +546,7 @@ export const detAutonomeNervesystemetArticle = {
     "vagusnervestimulering",
     "det-parasympatiske-nervesystemet",
     "regulering-av-nervesystemet",
+    "vagal-tone",
   ],
   relatedLinks: [
     {

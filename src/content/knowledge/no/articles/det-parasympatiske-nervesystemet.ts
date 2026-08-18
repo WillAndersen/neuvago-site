@@ -550,6 +550,7 @@ export const detParasympatiskeNervesystemetArticle = {
     "vagusnerven",
     "vagusnervestimulering",
     "regulering-av-nervesystemet",
+    "vagal-tone",
   ],
   relatedLinks: [
     {

@@ -9,6 +9,11 @@ export const metadata = {
     "Learn how to calm your nervous system in everyday life by understanding what keeps the body activated, what actually helps, and how calming connects to stress, sleep, and recovery.",
   alternates: {
     canonical: "/learn/how-to-calm-your-nervous-system",
+    languages: {
+      "en-US": "/learn/how-to-calm-your-nervous-system",
+      "nb-NO": "/no/kunnskap/hvordan-roe-ned-nervesystemet",
+      "x-default": "/learn/how-to-calm-your-nervous-system",
+    },
   },
   openGraph: {
     title: "How to Calm Your Nervous System | Neuvago",

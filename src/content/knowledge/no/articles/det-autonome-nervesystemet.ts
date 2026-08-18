@@ -548,6 +548,7 @@ export const detAutonomeNervesystemetArticle = {
     "regulering-av-nervesystemet",
     "vagal-tone",
     "hrv-og-vagusnerven",
+    "hvordan-roe-ned-nervesystemet",
   ],
   relatedLinks: [
     {

@@ -625,6 +625,7 @@ export const reguleringAvNervesystemetArticle = {
     "vagusnervestimulering",
     "vagal-tone",
     "hrv-og-vagusnerven",
+    "hvordan-roe-ned-nervesystemet",
   ],
   relatedLinks: [
     {

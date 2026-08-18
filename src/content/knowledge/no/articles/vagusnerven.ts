@@ -379,6 +379,7 @@ export const vagusnervenArticle = {
     "vagal-tone",
     "hrv-og-vagusnerven",
     "orets-anatomi-og-vagusnerven",
+    "hvordan-roe-ned-nervesystemet",
   ],
   relatedLinks: [
     {

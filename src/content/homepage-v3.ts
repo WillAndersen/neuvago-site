@@ -234,9 +234,9 @@ export const homepage03Content = {
     visible: true,
     eyebrow: "Why the vagus nerve matters",
     title:
-      "A key pathway in brain–body communication and autonomic regulation.",
+      "A key pathway in how your body responds, recovers and resets.",
     description:
-      "The vagus nerve is one of the body's major communication pathways between the brain and internal organs. It forms an important part of the parasympathetic nervous system and is studied in relation to rest, recovery and changing physiological states.",
+      "The vagus nerve is one of the body's main communication pathways between the brain and internal organs. As a major part of the parasympathetic nervous system, it plays an important role in the processes that help the body shift from activation toward rest, recovery and regulation.",
     image: vagusImage,
     cta: {
       label: "Learn about the vagus nerve",

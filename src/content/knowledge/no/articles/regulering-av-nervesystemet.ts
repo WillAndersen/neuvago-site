@@ -624,6 +624,7 @@ export const reguleringAvNervesystemetArticle = {
     "vagusnerven",
     "vagusnervestimulering",
     "vagal-tone",
+    "hrv-og-vagusnerven",
   ],
   relatedLinks: [
     {

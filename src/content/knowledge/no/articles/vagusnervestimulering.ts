@@ -396,6 +396,7 @@ export const vagusnervestimuleringArticle = {
     "implantert-og-ikke-invasiv-vns",
     "det-autonome-nervesystemet",
     "regulering-av-nervesystemet",
+    "hrv-og-vagusnerven",
   ],
   relatedLinks: [
     {

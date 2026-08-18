@@ -580,6 +580,7 @@ export const vagalToneArticle = {
     "det-parasympatiske-nervesystemet",
     "regulering-av-nervesystemet",
     "vagusnerven",
+    "hrv-og-vagusnerven",
   ],
   relatedLinks: [
     {

@@ -9,6 +9,7 @@ import { detParasympatiskeNervesystemetArticle } from "@/content/knowledge/no/ar
 import { reguleringAvNervesystemetArticle } from "@/content/knowledge/no/articles/regulering-av-nervesystemet";
 import { vagalToneArticle } from "@/content/knowledge/no/articles/vagal-tone";
 import { hrvOgVagusnervenArticle } from "@/content/knowledge/no/articles/hrv-og-vagusnerven";
+import { oretsAnatomiOgVagusnervenArticle } from "@/content/knowledge/no/articles/orets-anatomi-og-vagusnerven";
 import type { NorwegianKnowledgeArticle } from "@/content/knowledge/no/types";
 
 const articleRegistry = [
@@ -23,6 +24,7 @@ const articleRegistry = [
   reguleringAvNervesystemetArticle,
   vagalToneArticle,
   hrvOgVagusnervenArticle,
+  oretsAnatomiOgVagusnervenArticle,
 ] as const satisfies readonly NorwegianKnowledgeArticle[];
 
 function isIsoDate(value: string): boolean {

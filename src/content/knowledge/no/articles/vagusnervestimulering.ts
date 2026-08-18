@@ -397,6 +397,7 @@ export const vagusnervestimuleringArticle = {
     "det-autonome-nervesystemet",
     "regulering-av-nervesystemet",
     "hrv-og-vagusnerven",
+    "orets-anatomi-og-vagusnerven",
   ],
   relatedLinks: [
     {

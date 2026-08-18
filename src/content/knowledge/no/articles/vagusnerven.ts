@@ -378,6 +378,7 @@ export const vagusnervenArticle = {
     "regulering-av-nervesystemet",
     "vagal-tone",
     "hrv-og-vagusnerven",
+    "orets-anatomi-og-vagusnerven",
   ],
   relatedLinks: [
     {

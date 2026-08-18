@@ -11,6 +11,11 @@ export const metadata: Metadata = {
     "Learn what nervous system regulation means, how autonomic flexibility relates to stress, sleep and recovery, and why settling can feel easy or hard.",
   alternates: {
     canonical: "/learn/nervous-system-regulation",
+    languages: {
+      "en-US": "/learn/nervous-system-regulation",
+      "nb-NO": "/no/kunnskap/regulering-av-nervesystemet",
+      "x-default": "/learn/nervous-system-regulation",
+    },
   },
   openGraph: {
     title:

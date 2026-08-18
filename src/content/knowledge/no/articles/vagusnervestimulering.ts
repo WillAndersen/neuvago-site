@@ -390,7 +390,13 @@ export const vagusnervestimuleringArticle = {
     },
   ],
 
-  relatedSlugs: ["vagusnerven", "ikke-invasiv-vagusnervestimulering", "implantert-og-ikke-invasiv-vns", "det-autonome-nervesystemet"],
+  relatedSlugs: [
+    "vagusnerven",
+    "ikke-invasiv-vagusnervestimulering",
+    "implantert-og-ikke-invasiv-vns",
+    "det-autonome-nervesystemet",
+    "regulering-av-nervesystemet",
+  ],
   relatedLinks: [
     {
       title: "Forskning og kunnskapsgrunnlag",

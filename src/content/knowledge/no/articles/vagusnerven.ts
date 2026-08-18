@@ -375,6 +375,7 @@ export const vagusnervenArticle = {
     "vagusnervestimulering",
     "det-autonome-nervesystemet",
     "det-parasympatiske-nervesystemet",
+    "regulering-av-nervesystemet",
   ],
   relatedLinks: [
     {

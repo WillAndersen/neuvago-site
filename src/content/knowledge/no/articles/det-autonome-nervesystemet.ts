@@ -5,7 +5,7 @@ export const detAutonomeNervesystemetArticle = {
   path: "/no/kunnskap/det-autonome-nervesystemet",
   status: "published",
   wave: "1B",
-  order: 110,
+  order: 70,
 
   title: "Det autonome nervesystemet – hvordan kroppen regulerer seg selv",
   seoTitle: "Det autonome nervesystemet: funksjon og regulering | Neuvago",
@@ -23,7 +23,7 @@ export const detAutonomeNervesystemetArticle = {
   ],
   hubSummary:
     "En grunnleggende innføring i sympatisk, parasympatisk og enterisk regulering, sentrale autonome nettverk, homeostase og kroppens løpende tilpasning.",
-  hubLabel: "Wave 1B · Grunnartikkel",
+  hubLabel: "Fysiologisk grunnartikkel",
 
   primaryKeyword: "det autonome nervesystemet",
   secondaryKeywords: [

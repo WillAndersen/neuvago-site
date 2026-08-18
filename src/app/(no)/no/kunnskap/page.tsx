@@ -110,13 +110,13 @@ export default function NorwegianKnowledgeHubPage() {
         <div className="mx-auto max-w-[88rem]">
           <div className="max-w-3xl">
             <p className="text-xs font-medium uppercase tracking-[0.22em] text-[#7b7167]">
-              Wave 1A · grunnbegrepene
+              Kunnskapsbibliotek
             </p>
             <h2 className="mt-4 text-3xl font-medium tracking-[-0.04em] sm:text-5xl">
-              Start med artiklene som etablerer hele begrepshierarkiet
+              Start med grunnbegrepene og gå videre etter behov
             </h2>
             <p className="mt-6 text-base leading-8 text-[#5f5a52] sm:text-lg">
-              Første batch dekker vagusnerven og bygger deretter videre mot vagusnervestimulering, ikke-invasive metoder, tVNS og aurikulær stimulering. Sidene publiseres kontrollert etter kilde- og teknisk QA.
+              Biblioteket dekker vagusnerven, VNS, ikke-invasive metoder, autonom fysiologi, regulering, vagal tone, HRV og øreanatomi. Artiklene publiseres kontrollert etter kilde-, språk- og teknisk QA.
             </p>
           </div>
 
@@ -152,7 +152,7 @@ export default function NorwegianKnowledgeHubPage() {
 
           <div className="mt-8 rounded-[1.5rem] border border-dashed border-black/12 bg-white/35 p-6">
             <p className="text-sm leading-7 text-[#5f5a52]">
-              Neste sider i Wave 1A: vagusnervestimulering, ikke-invasiv vagusnervestimulering, transkutan VNS, aurikulær VNS og sammenligning av implantert og ikke-invasiv VNS.
+              Anbefalt start: vagusnerven → vagusnervestimulering → ikke-invasiv VNS. Gå deretter videre til autonom regulering, vagal tone, HRV eller øreanatomi etter hva du vil forstå.
             </p>
           </div>
         </div>

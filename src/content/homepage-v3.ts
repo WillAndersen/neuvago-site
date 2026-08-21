@@ -250,7 +250,7 @@ export const homepage03Content = {
     title:
       "A growing body of research on vagus nerve stimulation.",
     description:
-      "Vagus nerve stimulation has been studied for decades, and a growing body of research is exploring non-invasive approaches such as transcutaneous auricular vagus nerve stimulation, or taVNS, across areas including sleep, autonomic regulation, HRV, brain pathways, safety and tolerability.",
+      "Vagus nerve stimulation has been studied for decades. Research on non-invasive approaches, including transcutaneous auricular vagus nerve stimulation (taVNS), spans areas such as sleep, stress, autonomic regulation, heart rate variability (HRV), safety and tolerability.",
     image: researchImage,
     cta: {
       label: "Explore the Research",

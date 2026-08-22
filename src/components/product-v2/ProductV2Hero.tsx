@@ -17,7 +17,7 @@ export function ProductV2Hero({ content }: ProductV2HeroProps) {
             {content.eyebrow}
           </p>
 
-          <h1 className="max-w-[13ch] text-balance text-[clamp(2.85rem,11.5vw,5.3rem)] font-medium leading-[0.94] tracking-[-0.06em] text-[#1f1f1c] sm:text-[clamp(4rem,8.5vw,6.5rem)] sm:leading-[0.9] lg:text-[clamp(4.8rem,6.2vw,7.2rem)] lg:leading-[0.88] lg:tracking-[-0.075em]">
+          <h1 className="max-w-[15ch] text-balance text-[clamp(2.85rem,11.5vw,5.3rem)] font-medium leading-[0.94] tracking-[-0.06em] text-[#1f1f1c] sm:text-[clamp(4rem,8.5vw,6.5rem)] sm:leading-[0.9] lg:text-[clamp(4.8rem,6.2vw,7.2rem)] lg:leading-[0.88] lg:tracking-[-0.075em]">
             {content.title}
           </h1>
 

@@ -1,3 +1,5 @@
+import { commerceContent } from "@/content/commerce";
+
 export type ProductV2Cta = {
   label: string;
   href: string;
@@ -54,18 +56,23 @@ const purchaseCta: ProductV2Cta = {
   href: "#buy",
 };
 
+const heroPurchaseCta: ProductV2Cta = {
+  label: commerceContent.ctaLabel,
+  href: commerceContent.shopHref,
+};
+
 export const productV2Content = {
   hero: {
     eyebrow: "Neuvago",
-    title: "A non-invasive vagus nerve stimulator designed for everyday use.",
+    title: "A non-invasive vagus nerve stimulator for everyday use.",
     description:
-      "Gentle vagus nerve stimulation designed for relaxation, evening wind-down and everyday recovery routines.",
+      "Designed to support better sleep, calmer responses to everyday stress, focused time and recovery.",
     technologyDescription:
-      "Neuvago uses adjustable electrical stimulation at the outer ear, providing a simple, non-invasive approach to vagus nerve stimulation.",
-    primaryCta: purchaseCta,
+      "Neuvago delivers gentle, adjustable stimulation through an earpiece at the outer ear, with four 20-minute modes designed for different needs and moments.",
+    primaryCta: heroPurchaseCta,
     secondaryCta: {
       label: "How it works",
-      href: "#how-it-works",
+      href: "/how-it-works",
     } satisfies ProductV2Cta,
     desktopImage: {
       src: "/images/neuvago/launch/product-hero-desktop.webp",
@@ -76,9 +83,9 @@ export const productV2Content = {
       alt: "Close-up of the Neuvago device for a mobile product layout.",
     } satisfies ProductV2Image,
     proofLine: [
-      "Non-invasive",
-      "Adjustable intensity",
-      "Four stimulation modes",
+      "NON-INVASIVE",
+      "FOUR 20-MINUTE MODES",
+      "30 INTENSITY LEVELS",
     ],
   },
 

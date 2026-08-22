@@ -18,32 +18,21 @@ const homeProductCta = {
   href: commerceContent.shopHref,
 } satisfies HomepageCta;
 
-const breathingToolsAvailable =
-  appV2Content.availability.breathingTools;
-
-const guidedSessionsDescription =
-  "Guided sessions for Sleep, Stress, Focus and Recovery.";
+const appContentLaunchingSoon =
+  !appV2Content.availability.professionalGuidance ||
+  !appV2Content.availability.breathingTools;
 
 const appItems: HomepageCard[] = [
   {
     title: "Guided Sessions",
-    description: guidedSessionsDescription,
+    description:
+      "Professionally guided sessions for Sleep, Stress, Focus and Recovery.",
   },
-  ...(breathingToolsAvailable
-    ? [
-        {
-          title: "Breathing Tools",
-          description:
-            "Guided and visual breathing practices for calm, sleep, focus, recovery and brief reset moments.",
-        },
-      ]
-    : [
-        {
-          title: "Personal Tools",
-          description:
-            "Daily Check-In, Nervous System Score and progress tools designed to help you notice patterns over time.",
-        },
-      ]),
+  {
+    title: "Breathing Tools",
+    description:
+      "Guided and visual breathing practices for calm, sleep, focus, recovery and quick resets.",
+  },
 ];
 
 const homepageHeroDesktop = {
@@ -262,9 +251,9 @@ export const homepage03Content = {
     visible: true,
     eyebrow: "Neuvago App",
     title: "More tools for sleep, stress, focus and recovery.",
-    description: breathingToolsAvailable
-      ? "As part of Neuvago's broader focus on nervous system wellbeing, the Neuvago App brings together guided sessions, breathing practices and practical tools for different needs and moments. Every Neuvago device includes one year of app access."
-      : "As part of Neuvago's broader focus on nervous system wellbeing, the Neuvago App brings together guided sessions and practical tools for different needs and moments. Every Neuvago device includes one year of app access.",
+    description: appContentLaunchingSoon
+      ? "Guided Sessions and Breathing Tools are launching soon. As part of Neuvago's broader focus on nervous system wellbeing, the Neuvago App will bring together professionally guided sessions and breathing practices for different needs and moments. Every Neuvago device includes one year of access to the Neuvago App."
+      : "As part of Neuvago's broader focus on nervous system wellbeing, the Neuvago App brings together professionally guided sessions and breathing practices for different needs and moments. Every Neuvago device includes one year of access to the Neuvago App.",
     image: appLibraryImage,
     mobileImage: appProgressImage,
     items: appItems,

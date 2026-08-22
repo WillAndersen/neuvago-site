@@ -19,9 +19,7 @@ export type ProductV2LinkCard = ProductV2Card & {
   href: string;
 };
 
-export type ProductV2Benefit = ProductV2Card & {
-  label: string;
-};
+export type ProductV2Benefit = ProductV2Card;
 
 export type ProductV2FlowItem = ProductV2Card & {
   label: string;
@@ -93,35 +91,31 @@ export const productV2Content = {
     eyebrow: "Why Neuvago",
     title: "Designed for the way you want to feel.",
     description:
-      "Neuvago is designed to fit into everyday wellness routines, offering a simple, repeatable practice for moments when you want to slow down.",
+      "Neuvago combines four stimulation modes with adjustable intensity, giving you a simple way to support better sleep, calmer responses to everyday stress, focused time and recovery.",
     image: {
       src: "/images/neuvago/launch/product-lifestyle-card.webp",
       alt: "Neuvago device in a calm home setting for an everyday wellness routine.",
     } satisfies ProductV2Image,
     items: [
       {
-        label: "Sleep & wind-down",
-        title: "Make space for a quieter evening.",
+        title: "Better Sleep",
         description:
-          "Designed for evening wind-down and sleep-supportive routines.",
+          "Support the transition from alertness to rest, helping create the conditions for deeper relaxation and better sleep quality.",
       },
       {
-        label: "Stress & calm",
-        title: "Create a calmer pause.",
+        title: "Stress & Calm",
         description:
-          "Fit a short routine into demanding or stressful moments.",
+          "Support a calmer response to everyday stress and help the nervous system shift toward a more regulated state.",
       },
       {
-        label: "Recovery",
-        title: "Build rest into the day.",
+        title: "Focus & Mental Clarity",
         description:
-          "Use Neuvago within routines centred on rest and recovery.",
+          "Create a calmer internal state that can support attention, mental clarity and focused time.",
       },
       {
-        label: "Relaxation & balance",
-        title: "Find a steadier rhythm.",
+        title: "Recovery",
         description:
-          "Create a simple routine for slowing down and finding a calmer rhythm.",
+          "Support parasympathetic activity and the body's natural processes for rest, recovery and autonomic balance.",
       },
     ] satisfies ProductV2Benefit[],
   },

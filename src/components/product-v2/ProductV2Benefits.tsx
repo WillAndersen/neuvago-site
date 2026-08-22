@@ -39,11 +39,8 @@ export function ProductV2Benefits({
 
           <div className="divide-y divide-black/10 border-y border-black/10">
             {content.items.map((item) => (
-              <article key={item.label} className="py-5 sm:py-6">
-                <p className="text-xs font-medium uppercase tracking-[0.2em] text-[#927f68]">
-                  {item.label}
-                </p>
-                <h3 className="mt-3 text-2xl font-medium tracking-[-0.04em] text-[#1f1f1c]">
+              <article key={item.title} className="py-5 sm:py-6">
+                <h3 className="text-2xl font-medium tracking-[-0.04em] text-[#1f1f1c]">
                   {item.title}
                 </h3>
                 <p className="mt-2 text-sm leading-7 text-[#5f5a52] sm:text-base">

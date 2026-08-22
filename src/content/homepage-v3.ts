@@ -348,7 +348,7 @@ export const homepage03Content = {
     eyebrow: "The Neuvago device",
     title: "Ready to make Neuvago part of your routine?",
     description:
-      "Explore non-invasive vagus nerve stimulation designed for everyday routines around sleep, stress, focus and recovery.",
+      "Explore non-invasive vagus nerve stimulation designed for sleep, stress, focus and recovery.",
     primaryCta: homeProductCta,
     secondaryCta: {
       label: "How it works",

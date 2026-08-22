@@ -29,9 +29,19 @@ export function Home03Faq({
                   +
                 </span>
               </summary>
-              <p className="max-w-4xl pb-7 pr-12 text-sm leading-7 text-[#5f5a52] sm:text-base">
-                {item.answer}
-              </p>
+              <div className="max-w-4xl pb-7 pr-12">
+                <p className="text-sm leading-7 text-[#5f5a52] sm:text-base">
+                  {item.answer}
+                </p>
+                {item.answerLink ? (
+                  <Link
+                    href={item.answerLink.href}
+                    className="mt-3 inline-flex text-sm font-medium text-[#1f1f1c] underline underline-offset-4"
+                  >
+                    {item.answerLink.label}
+                  </Link>
+                ) : null}
+              </div>
             </details>
           ))}
         </div>

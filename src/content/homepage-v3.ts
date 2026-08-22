@@ -13,6 +13,10 @@ export type Homepage03Link = {
   href: string;
 };
 
+export type Homepage03FaqItem = HomepageFaqItem & {
+  answerLink?: Homepage03Link;
+};
+
 const homeProductCta = {
   label: commerceContent.ctaLabel,
   href: commerceContent.shopHref,
@@ -131,7 +135,7 @@ type Homepage03Content = {
   faq: {
     visible: boolean;
     title: string;
-    items: HomepageFaqItem[];
+    items: Homepage03FaqItem[];
     supportCta: HomepageCta;
   };
   finalCta: typeof homepageContent.finalCta;
@@ -296,37 +300,41 @@ export const homepage03Content = {
       {
         question: "What is Neuvago?",
         answer:
-          "Neuvago is a non-invasive vagus nerve stimulation device designed for general wellness and simple, repeatable everyday routines. It applies adjustable electrical stimulation through an earpiece electrode positioned at the outer ear. The device includes four named stimulation modes\u2014Sleep, Relax, Meditation and Relief\u2014and physical controls that allow the intensity to be adjusted directly on the unit.",
+          "Neuvago is a non-invasive vagus nerve stimulator designed to support better sleep, calmer responses to everyday stress, focus and recovery. It delivers gentle, adjustable electrical stimulation through an earpiece at the outer ear and offers four 20-minute modes for different needs and moments.",
       },
       {
         question: "What can Neuvago be used for?",
         answer:
-          "Neuvago is designed for general wellness routines centred on relaxation, evening wind-down, focused time and recovery. It can be incorporated into quiet moments when you want to slow down and create a more intentional routine around rest or everyday stress. Neuvago is not intended to diagnose, treat, cure or prevent disease.",
+          "Neuvago can be used as part of everyday routines for winding down before sleep, creating a calmer state, supporting focused time and making space for recovery. Research on transcutaneous auricular vagus nerve stimulation (taVNS) is also exploring areas including heart rate variability (HRV), headache and gut–brain function.",
+        answerLink: {
+          label: "Explore the Research",
+          href: "/research",
+        },
       },
       {
-        question: "Where is the stimulation applied?",
+        question: "What does vagus nerve stimulation feel like?",
         answer:
-          "Stimulation is applied through an earpiece electrode positioned at the outer ear. Neuvago uses an auricular, or ear-based, approach to non-invasive vagus nerve stimulation. The earpiece should always be positioned and used according to the instructions supplied with the device, including the guidance for preparing the contact point and adjusting the stimulation intensity.",
+          "Most Neuvago modes provide mild or very mild stimulation that feels like a light tingling or pricking sensation at the ear. The intensity is adjustable and should be increased gradually until the stimulation feels noticeable but comfortable. Relief uses slower, more distinct pulses and may therefore feel more pronounced than the other modes.",
       },
       {
         question: "What are the four stimulation modes?",
         answer:
-          "Neuvago includes four named stimulation modes: Sleep, Relax, Meditation and Relief. They provide four dedicated programmes that can be selected directly on the device for different moments and routines. We do not describe specific physiological effects or technical differences between the modes beyond the information confirmed in the product documentation.",
+          "Neuvago includes four stimulation modes: Sleep, Relax, Meditation and Relief. Sleep alternates between faster and slower stimulation rhythms and is designed for evening wind-down and sleep. Relax uses a gentle rhythmic pattern with four seconds of stimulation followed by four seconds of pause, designed for relaxation and everyday calm. Meditation uses the same four-seconds-on, four-seconds-off rhythm with a denser pulse pattern, designed for meditation, focus and concentration. Relief uses low-frequency, more distinct pulses for moments of tension and discomfort. Each mode runs for 20 minutes, and the stimulation intensity can be adjusted directly on the device.",
+      },
+      {
+        question: "How long is a Neuvago session?",
+        answer:
+          "Each Neuvago mode runs for 20 minutes. Begin at a low intensity and increase it gradually until the stimulation feels noticeable but comfortable.",
       },
       {
         question: "What is included with Neuvago?",
         answer:
-          "The Neuvago package includes the Neuvago device, earpiece, conductive gel, charging cable and Quick Start Guide. Every device also includes one year of access to the Neuvago App. The Product page provides the current package contents and purchase information in one place.",
+          "The Neuvago package includes the Neuvago device, a left earpiece, charging cable, felt case, User Manual, Quick Start Guide, spray bottle and conductive gel. One year of access to the Neuvago App is also included.",
       },
       {
         question: "Is one year of the Neuvago App included?",
         answer:
-          "Yes. Every Neuvago device includes one year of access to the Neuvago App. The app provides Guided Sessions for Sleep, Stress, Focus and Recovery, together with Daily Check-In, Nervous System Score and progress tools. The app is a separate Neuvago product focused on practical tools for nervous system wellbeing and can also be explored through the dedicated App page.",
-      },
-      {
-        question: "Is Neuvago a medical device?",
-        answer:
-          "Neuvago is presented as a general wellness product. It is not intended to diagnose, treat, cure or prevent disease, and it should not be used as a replacement for professional medical care. Always review the supplied safety information and seek appropriate professional advice if you are unsure whether the product is suitable for you.",
+          "Yes. Every Neuvago device includes one year of access to the Neuvago App, with professionally guided sessions and breathing practices for Sleep, Stress, Focus and Recovery.",
       },
     ],
     supportCta: {

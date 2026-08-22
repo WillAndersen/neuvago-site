@@ -456,6 +456,7 @@ export const implantertOgIkkeInvasivVnsArticle = {
     "transkutan-vagusnervestimulering",
     "aurikulaer-vagusnervestimulering",
     "vagusnerven",
+    "er-vagusnervestimulering-trygt",
   ],
   relatedLinks: [
     {

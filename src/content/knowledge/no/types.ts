@@ -1,7 +1,8 @@
 import type { EditorialEntityId } from "@/content/editorial/people";
 
 export type NorwegianKnowledgeArticleStatus = "draft" | "published";
-export type NorwegianKnowledgeWave = "1A" | "1B" | "1C";
+export type NorwegianKnowledgeWave = "1A" | "1B" | "1C"
+  | "1D";
 export type NorwegianKnowledgeSearchIntent =
   | "informational"
   | "commercial-investigation"

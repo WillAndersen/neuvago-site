@@ -458,6 +458,7 @@ export const transkutanVagusnervestimuleringArticle = {
     "aurikulaer-vagusnervestimulering",
     "implantert-og-ikke-invasiv-vns",
     "orets-anatomi-og-vagusnerven",
+    "er-vagusnervestimulering-trygt",
   ],
   relatedLinks: [
     {

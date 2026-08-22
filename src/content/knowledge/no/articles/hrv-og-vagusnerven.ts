@@ -808,6 +808,13 @@ export const hrvOgVagusnervenArticle = {
   ],
   relatedLinks: [
     {
+      title: "Søvn og nervesystemet",
+      description:
+        "Gå videre til den norske søvn-pathwayen om søvntrykk, døgnrytme, kveldsaktivering, insomni, søvnapné og trygge velværegrenser.",
+      href: "/no/tilstander/sovn",
+      label: "Les søvn-pathwayen",
+    },
+    {
       title: "Forskning på hjertefrekvensvariabilitet",
       description:
         "Gå til forskningsbibliotekets HRV-tema for standarder, fysiologisk tolkning, metodevalg og vanlige begrensninger.",

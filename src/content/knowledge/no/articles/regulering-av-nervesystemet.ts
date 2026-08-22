@@ -629,6 +629,13 @@ export const reguleringAvNervesystemetArticle = {
   ],
   relatedLinks: [
     {
+      title: "Søvn og nervesystemet",
+      description:
+        "Gå videre til den norske søvn-pathwayen om søvntrykk, døgnrytme, kveldsaktivering, insomni, søvnapné og trygge velværegrenser.",
+      href: "/no/tilstander/sovn",
+      label: "Les søvn-pathwayen",
+    },
+    {
       title: "Stress og nervesystemet",
       description:
         "Gå fra praktiske reguleringsstrategier til den norske stress-pathwayen om aktivering, belastning, søvn, sikkerhet og restitusjon.",

@@ -1,8 +1,10 @@
 import { stressConditionPage } from "@/content/conditions/no/pages/stress";
+import { sovnConditionPage } from "@/content/conditions/no/pages/sovn";
 import type { NorwegianConditionPage } from "@/content/conditions/no/types";
 
 const conditionRegistry = [
   stressConditionPage,
+  sovnConditionPage,
 ] as const satisfies readonly NorwegianConditionPage[];
 
 function isIsoDate(value: string): boolean {

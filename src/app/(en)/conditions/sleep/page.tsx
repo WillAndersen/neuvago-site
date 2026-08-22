@@ -11,6 +11,11 @@ export const metadata: Metadata = {
     "Understand sleep through evening activation, autonomic regulation, HRV, recovery, safety boundaries, and app-guided wind-down routines.",
   alternates: {
     canonical: "/conditions/sleep",
+    languages: {
+      "en-US": "/conditions/sleep",
+      "nb-NO": "/no/tilstander/sovn",
+      "x-default": "/conditions/sleep",
+    },
   },
   openGraph: {
     title: "Sleep Support, Evening Unwinding and Regulation | Neuvago",

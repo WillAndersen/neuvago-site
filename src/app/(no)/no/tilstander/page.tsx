@@ -41,10 +41,10 @@ const page = {
       "note": "Norsk hovedside"
     },
     {
-      "title": "Søvnforberedelse",
+      "title": "Søvn og nervesystemet",
       "description": "Utforsk hvordan kveld, nedtrapping og regulering kan forstås som del av en bredere velværerutine.",
-      "href": "/conditions/sleep",
-      "note": "Engelsk dypdykk"
+      "href": "/no/tilstander/sovn",
+      "note": "Norsk hovedside"
     },
     {
       "title": "Produktet",

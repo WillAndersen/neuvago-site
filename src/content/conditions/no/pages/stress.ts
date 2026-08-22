@@ -667,6 +667,13 @@ export const stressConditionPage = {
   ],
   relatedLinks: [
     {
+      title: "Søvn og nervesystemet",
+      description:
+        "Gå videre til den norske søvn-pathwayen om søvntrykk, døgnrytme, kveldsaktivering, insomni, søvnapné og trygge velværegrenser.",
+      href: "/no/tilstander/sovn",
+      label: "Les søvn-pathwayen",
+    },
+    {
       title: "Stress pathway på engelsk",
       description:
         "Les den eksisterende engelske parallellsiden om aktivering, belastning, restitusjon og rolige rutiner.",

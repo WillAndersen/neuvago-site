@@ -629,6 +629,13 @@ export const reguleringAvNervesystemetArticle = {
   ],
   relatedLinks: [
     {
+      title: "Stress og nervesystemet",
+      description:
+        "Gå fra praktiske reguleringsstrategier til den norske stress-pathwayen om aktivering, belastning, søvn, sikkerhet og restitusjon.",
+      href: "/no/tilstander/stress",
+      label: "Les stress-pathwayen",
+    },
+    {
       title: "Nervous system regulation",
       description:
         "Les den engelske parallellsiden om aktivering, nedregulering, restitusjon og hverdagslig støtte.",

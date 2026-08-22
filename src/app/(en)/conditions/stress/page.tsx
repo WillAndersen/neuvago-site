@@ -11,6 +11,11 @@ export const metadata: Metadata = {
     "Understand stress through nervous system activation, autonomic regulation, recovery, safety boundaries, and app-guided daily support.",
   alternates: {
     canonical: "/conditions/stress",
+    languages: {
+      "en-US": "/conditions/stress",
+      "nb-NO": "/no/tilstander/stress",
+      "x-default": "/conditions/stress",
+    },
   },
   openGraph: {
     title:

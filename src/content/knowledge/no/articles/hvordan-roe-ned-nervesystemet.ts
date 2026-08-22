@@ -590,6 +590,13 @@ export const hvordanRoeNedNervesystemetArticle = {
   ],
   relatedLinks: [
     {
+      title: "Stress og nervesystemet",
+      description:
+        "Gå fra praktiske reguleringsstrategier til den norske stress-pathwayen om aktivering, belastning, søvn, sikkerhet og restitusjon.",
+      href: "/no/tilstander/stress",
+      label: "Les stress-pathwayen",
+    },
+    {
       title: "How to calm your nervous system",
       description:
         "Les den engelske parallellsiden om praktiske strategier for aktivering, ro og hverdagslig regulering.",

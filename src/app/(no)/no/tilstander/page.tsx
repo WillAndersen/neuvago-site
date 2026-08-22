@@ -35,10 +35,10 @@ const page = {
   ],
   "cards": [
     {
-      "title": "Stress og aktivering",
+      "title": "Stress og nervesystemet",
       "description": "Forstå stress som et mønster i nervesystemet og hvordan rolige rutiner kan støtte en jevnere tilbakevending.",
-      "href": "/conditions/stress",
-      "note": "Engelsk dypdykk"
+      "href": "/no/tilstander/stress",
+      "note": "Norsk hovedside"
     },
     {
       "title": "Søvnforberedelse",

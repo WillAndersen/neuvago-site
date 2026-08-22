@@ -1,6 +1,7 @@
 import type { MetadataRoute } from "next";
 import { SEO_LAUNCH_REVIEW_DATE } from "@/lib/seo/editorial-dates";
 import { getPublishedNorwegianKnowledgeArticles } from "@/content/knowledge/no/registry";
+import { getPublishedNorwegianConditionPages } from "@/content/conditions/no/registry";
 
 const siteUrl = "https://neuvago.com";
 
@@ -111,5 +112,17 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: article.sitemapPriority,
     }));
 
-  return [...coreEntries, ...norwegianKnowledgeEntries];
+  const norwegianConditionEntries: MetadataRoute.Sitemap =
+    getPublishedNorwegianConditionPages().map((page) => ({
+      url: new URL(page.path, siteUrl).toString(),
+      lastModified: new Date(`${page.modifiedAt}T12:00:00Z`),
+      changeFrequency: page.changeFrequency,
+      priority: page.sitemapPriority,
+    }));
+
+  return [
+    ...coreEntries,
+    ...norwegianKnowledgeEntries,
+    ...norwegianConditionEntries,
+  ];
 }

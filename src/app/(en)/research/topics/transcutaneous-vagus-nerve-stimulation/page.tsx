@@ -16,6 +16,11 @@ export const metadata: Metadata = {
   description,
   alternates: {
     canonical: path,
+    languages: {
+      "en-US": "/research/topics/transcutaneous-vagus-nerve-stimulation",
+      "nb-NO": "/no/forskning/transkutan-vagusnervestimulering",
+      "x-default": "/research/topics/transcutaneous-vagus-nerve-stimulation",
+    },
   },
   openGraph: {
     title,

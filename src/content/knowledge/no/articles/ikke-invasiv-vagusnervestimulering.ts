@@ -492,6 +492,13 @@ export const ikkeInvasivVagusnervestimuleringArticle = {
   ],
   relatedLinks: [
     {
+      title: "Transkutan VNS i forskningen",
+      description:
+        "Gå fra begrepsforklaring til den norske metodeoversikten om anatomisk tilgang, elektriske parametere, sham, target engagement og tolkningsgrenser.",
+      href: "/no/forskning/transkutan-vagusnervestimulering",
+      label: "Utforsk tVNS-forskningen",
+    },
+    {
       title: "Forskning og kunnskapsgrunnlag",
       description:
         "Gå videre til den norske forskningshuben for metode, sikkerhet, tolerabilitet og tydelige tolkningsgrenser.",

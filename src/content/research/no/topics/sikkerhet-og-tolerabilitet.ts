@@ -986,7 +986,9 @@ export const sikkerhetOgTolerabilitetResearchTopic = {
     },
   ],
 
-  relatedSlugs: ["vagusnervestimulering"],
+  relatedSlugs: ["vagusnervestimulering",
+    "transkutan-vagusnervestimulering",
+  ],
   relatedKnowledgeSlugs: [
     "er-vagusnervestimulering-trygt",
     "bivirkninger-ved-ikke-invasiv-vagusnervestimulering",

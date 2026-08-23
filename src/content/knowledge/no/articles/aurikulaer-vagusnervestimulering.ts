@@ -532,6 +532,13 @@ export const aurikulaerVagusnervestimuleringArticle = {
   ],
   relatedLinks: [
     {
+      title: "Transkutan VNS i forskningen",
+      description:
+        "Gå fra begrepsforklaring til den norske metodeoversikten om anatomisk tilgang, elektriske parametere, sham, target engagement og tolkningsgrenser.",
+      href: "/no/forskning/transkutan-vagusnervestimulering",
+      label: "Utforsk tVNS-forskningen",
+    },
+    {
       title: "Forskning på transkutan og aurikulær VNS",
       description:
         "Gå videre til forskningsbibliotekets metodefokuserte side om tVNS, taVNS, stimuleringssteder, sham og rapporteringsstandarder.",

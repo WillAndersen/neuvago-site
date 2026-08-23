@@ -457,6 +457,7 @@ export const implantertOgIkkeInvasivVnsArticle = {
     "aurikulaer-vagusnervestimulering",
     "vagusnerven",
     "er-vagusnervestimulering-trygt",
+    "bivirkninger-ved-ikke-invasiv-vagusnervestimulering",
   ],
   relatedLinks: [
     {

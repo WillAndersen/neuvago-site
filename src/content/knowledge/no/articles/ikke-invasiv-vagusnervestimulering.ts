@@ -487,6 +487,7 @@ export const ikkeInvasivVagusnervestimuleringArticle = {
     "implantert-og-ikke-invasiv-vns",
     "orets-anatomi-og-vagusnerven",
     "er-vagusnervestimulering-trygt",
+    "bivirkninger-ved-ikke-invasiv-vagusnervestimulering",
   ],
   relatedLinks: [
     {

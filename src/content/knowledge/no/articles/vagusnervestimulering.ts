@@ -399,6 +399,7 @@ export const vagusnervestimuleringArticle = {
     "hrv-og-vagusnerven",
     "orets-anatomi-og-vagusnerven",
     "er-vagusnervestimulering-trygt",
+    "bivirkninger-ved-ikke-invasiv-vagusnervestimulering",
   ],
   relatedLinks: [
     {

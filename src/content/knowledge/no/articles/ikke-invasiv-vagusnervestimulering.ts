@@ -488,6 +488,7 @@ export const ikkeInvasivVagusnervestimuleringArticle = {
     "orets-anatomi-og-vagusnerven",
     "er-vagusnervestimulering-trygt",
     "bivirkninger-ved-ikke-invasiv-vagusnervestimulering",
+    "hvem-bor-vaere-forsiktig-med-vagusnervestimulering",
   ],
   relatedLinks: [
     {

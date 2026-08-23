@@ -839,6 +839,7 @@ export const bivirkningerVedIkkeInvasivVagusnervestimuleringArticle = {
     "aurikulaer-vagusnervestimulering",
     "implantert-og-ikke-invasiv-vns",
     "vagusnervestimulering",
+    "hvem-bor-vaere-forsiktig-med-vagusnervestimulering",
   ],
   relatedLinks: [
     {

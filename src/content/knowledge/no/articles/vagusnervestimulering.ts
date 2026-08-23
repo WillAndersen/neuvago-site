@@ -404,6 +404,13 @@ export const vagusnervestimuleringArticle = {
   ],
   relatedLinks: [
     {
+      title: "Forskning på vagusnervestimulering",
+      description:
+        "Gå fra begreper og sikkerhetsforklaringer til den norske forskningsoversikten om metoder, studiedesign, mekanismer, utfall og tolkningsgrenser.",
+      href: "/no/forskning/vagusnervestimulering",
+      label: "Utforsk forskningsoversikten",
+    },
+    {
       title: "Forskning og kunnskapsgrunnlag",
       description:
         "Gå videre til den norske forskningshuben for metode, sikkerhet, tolerabilitet og tydelige tolkningsgrenser.",

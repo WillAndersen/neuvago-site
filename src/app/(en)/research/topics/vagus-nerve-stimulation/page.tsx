@@ -11,6 +11,11 @@ export const metadata = {
     "Explore vagus nerve stimulation research across implanted, non-invasive, auricular and transcutaneous approaches, including evidence, safety and interpretation limits.",
   alternates: {
     canonical: "/research/topics/vagus-nerve-stimulation",
+    languages: {
+      "en-US": "/research/topics/vagus-nerve-stimulation",
+      "nb-NO": "/no/forskning/vagusnervestimulering",
+      "x-default": "/research/topics/vagus-nerve-stimulation",
+    },
   },
   openGraph: {
     title: "Vagus Nerve Stimulation Research | Evidence Overview | Neuvago",

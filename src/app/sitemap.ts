@@ -3,6 +3,7 @@ import { SEO_LAUNCH_REVIEW_DATE } from "@/lib/seo/editorial-dates";
 import { getPublishedNorwegianKnowledgeArticles } from "@/content/knowledge/no/registry";
 import { getPublishedNorwegianConditionPages } from "@/content/conditions/no/registry";
 
+import { getPublishedNorwegianResearchTopics } from "@/content/research/no/registry";
 const siteUrl = "https://neuvago.com";
 
 const routes: Array<{
@@ -120,9 +121,18 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: page.sitemapPriority,
     }));
 
+  const norwegianResearchTopicEntries: MetadataRoute.Sitemap =
+    getPublishedNorwegianResearchTopics().map((topic) => ({
+      url: new URL(topic.path, siteUrl).toString(),
+      lastModified: new Date(`${topic.modifiedAt}T12:00:00Z`),
+      changeFrequency: topic.changeFrequency,
+      priority: topic.sitemapPriority,
+    }));
+
   return [
     ...coreEntries,
     ...norwegianKnowledgeEntries,
     ...norwegianConditionEntries,
+    ...norwegianResearchTopicEntries,
   ];
 }

@@ -755,6 +755,13 @@ export const hvemBorVaereForsiktigMedVagusnervestimuleringArticle = {
   ],
   relatedLinks: [
     {
+      title: "Sikkerhet og tolerabilitet i forskningen",
+      description:
+        "Gå fra praktiske sikkerhetsforklaringer til den norske forskningsoversikten om hendelser, årsaksvurdering, rapporteringskvalitet, eksponering og produktgrenser.",
+      href: "/no/forskning/sikkerhet-og-tolerabilitet",
+      label: "Utforsk sikkerhetsforskningen",
+    },
+    {
       title: "Forskning på vagusnervestimulering",
       description:
         "Gå fra begreper og sikkerhetsforklaringer til den norske forskningsoversikten om metoder, studiedesign, mekanismer, utfall og tolkningsgrenser.",

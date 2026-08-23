@@ -16,6 +16,11 @@ export const metadata: Metadata = {
   description,
   alternates: {
     canonical: path,
+    languages: {
+      "en-US": "/research/topics/safety-and-tolerability",
+      "nb-NO": "/no/forskning/sikkerhet-og-tolerabilitet",
+      "x-default": "/research/topics/safety-and-tolerability",
+    },
   },
   openGraph: {
     title,

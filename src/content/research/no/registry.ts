@@ -1,8 +1,10 @@
 import { vagusnervestimuleringResearchTopic } from "@/content/research/no/topics/vagusnervestimulering";
+import { sikkerhetOgTolerabilitetResearchTopic } from "@/content/research/no/topics/sikkerhet-og-tolerabilitet";
 import type { NorwegianResearchTopic } from "@/content/research/no/types";
 
 const researchTopicRegistry = [
   vagusnervestimuleringResearchTopic,
+  sikkerhetOgTolerabilitetResearchTopic,
 ] as const satisfies readonly NorwegianResearchTopic[];
 
 function isIsoDate(value: string) {

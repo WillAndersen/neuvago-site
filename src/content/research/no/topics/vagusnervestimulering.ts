@@ -1013,7 +1013,9 @@ export const vagusnervestimuleringResearchTopic = {
     },
   ],
 
-  relatedSlugs: [],
+  relatedSlugs: [
+    "sikkerhet-og-tolerabilitet",
+  ],
   relatedKnowledgeSlugs: [
     "vagusnervestimulering",
     "ikke-invasiv-vagusnervestimulering",

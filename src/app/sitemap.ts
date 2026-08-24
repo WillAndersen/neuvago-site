@@ -67,6 +67,7 @@ const routes: Array<{
   { path: "/research/topics", changeFrequency: "weekly", priority: 0.8, lastModified: SEO_LAUNCH_REVIEW_DATE },
   { path: "/research/topics/vagus-nerve-stimulation", changeFrequency: "weekly", priority: 0.82, lastModified: SEO_LAUNCH_REVIEW_DATE },
   { path: "/research/topics/transcutaneous-vagus-nerve-stimulation", changeFrequency: "weekly", priority: 0.8, lastModified: SEO_LAUNCH_REVIEW_DATE },
+  { path: "/research/topics/auricular-vagus-nerve-stimulation", changeFrequency: "weekly", priority: 0.8, lastModified: SEO_LAUNCH_REVIEW_DATE },
   { path: "/research/topics/safety-and-tolerability", changeFrequency: "weekly", priority: 0.8, lastModified: SEO_LAUNCH_REVIEW_DATE },
   { path: "/research/topics/autonomic-regulation", changeFrequency: "weekly", priority: 0.8, lastModified: SEO_LAUNCH_REVIEW_DATE },
   { path: "/research/topics/heart-rate-variability", changeFrequency: "weekly", priority: 0.78, lastModified: SEO_LAUNCH_REVIEW_DATE },

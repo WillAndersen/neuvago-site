@@ -43,6 +43,14 @@ const topicCategories = [
     status: "Priority topic",
   },
   {
+    title: "Auricular VNS",
+    description:
+      "A focused research topic on taVNS, external-ear anatomy, stimulation sites, electrodes, sham design, target engagement, safety, and interpretation limits.",
+    href: "/research/topics/auricular-vagus-nerve-stimulation",
+    linkLabel: "Browse auricular topic",
+    status: "Priority topic",
+  },
+  {
     title: "Safety and tolerability",
     description:
       "Research on reported adverse events, tolerability, stimulation comfort, contraindication awareness, and responsible interpretation of non-invasive VNS evidence.",

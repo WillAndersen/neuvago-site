@@ -202,6 +202,13 @@ const internalPathways = [
     linkLabel: "View safety topic",
   },
   {
+    title: "Auricular VNS research",
+    description:
+      "Go deeper into taVNS, external-ear anatomy, cymba, cavum, tragus, electrode contact, sham design, and auricular interpretation limits.",
+    href: "/research/topics/auricular-vagus-nerve-stimulation",
+    linkLabel: "Explore auricular topic",
+  },
+  {
     title: "Autonomic regulation",
     description:
       "Connect tVNS and taVNS method details to sympathetic and parasympathetic dynamics, HRV, stress physiology, and recovery context.",

@@ -927,6 +927,7 @@ export const transkutanVagusnervestimuleringResearchTopic = {
   relatedSlugs: [
     "vagusnervestimulering",
     "sikkerhet-og-tolerabilitet",
+    "aurikulaer-vagusnervestimulering",
   ],
   relatedKnowledgeSlugs: [
     "transkutan-vagusnervestimulering",

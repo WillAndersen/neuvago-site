@@ -464,6 +464,13 @@ export const transkutanVagusnervestimuleringArticle = {
   ],
   relatedLinks: [
     {
+      title: "Aurikulær VNS i forskningen",
+      description:
+        "Gå fra begrepsforklaring og øreanatomi til den samlede forskningsoversikten om taVNS, stimuleringssteder, elektroder, parametere, sham, target engagement og tolkningsgrenser.",
+      href: "/no/forskning/aurikulaer-vagusnervestimulering",
+      label: "Utforsk aurikulær VNS-forskning",
+    },
+    {
       title: "Transkutan VNS i forskningen",
       description:
         "Gå fra begrepsforklaring til den norske metodeoversikten om anatomisk tilgang, elektriske parametere, sham, target engagement og tolkningsgrenser.",

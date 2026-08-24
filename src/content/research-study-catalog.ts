@@ -376,6 +376,13 @@ export const featuredTavnsStudies: readonly FeaturedTavnsStudy[] = [
         linkLabel: "Explore taVNS topic",
       },
       {
+        title: "Auricular VNS research",
+        description:
+          "Place the Frangos fMRI study inside the wider taVNS evidence landscape covering ear anatomy, sites, electrodes, dose, sham, safety, and interpretation limits.",
+        href: "/research/topics/auricular-vagus-nerve-stimulation",
+        linkLabel: "Explore auricular topic",
+      },
+      {
         title: "Vagus Nerve Stimulation",
         description:
           "Place auricular stimulation within the broader history of implanted and non-invasive VNS research.",

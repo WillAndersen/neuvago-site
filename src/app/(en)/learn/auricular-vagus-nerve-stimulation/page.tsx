@@ -221,6 +221,13 @@ const internalPathways = [
     linkLabel: "View tVNS research",
   },
   {
+    title: "Auricular VNS research",
+    description:
+      "Move from the plain-language guide into the focused research topic on taVNS anatomy, stimulation sites, parameters, controls, target engagement, safety, and evidence limits.",
+    href: "/research/topics/auricular-vagus-nerve-stimulation",
+    linkLabel: "View auricular research",
+  },
+  {
     title: "See how Neuvago works",
     description:
       "Move from education into the practical device-and-app explanation: placement, session guidance, comfort, and daily routine design.",

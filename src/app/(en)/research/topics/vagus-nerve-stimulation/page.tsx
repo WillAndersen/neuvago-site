@@ -157,6 +157,13 @@ const connectedResearch = [
     linkLabel: "Explore tVNS topic",
   },
   {
+    title: "Auricular VNS research",
+    description:
+      "A dedicated taVNS topic covering external-ear anatomy, stimulation sites, electrodes, sham design, target engagement, safety, and protocol-specific interpretation.",
+    href: "/research/topics/auricular-vagus-nerve-stimulation",
+    linkLabel: "Explore auricular topic",
+  },
+  {
     title: "Autonomic regulation research",
     description:
       "A bridge topic explaining sympathetic and parasympathetic physiology, HRV, vagal regulation, stress responses, and flexible state-shifting.",

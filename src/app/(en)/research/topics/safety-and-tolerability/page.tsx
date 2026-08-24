@@ -221,6 +221,13 @@ const internalPathways = [
     linkLabel: "Explore tVNS topic",
   },
   {
+    title: "Auricular VNS research",
+    description:
+      "Connect safety and tolerability to taVNS ear sites, contact geometry, stimulation dose, sham design, target engagement, and protocol-specific generalisability.",
+    href: "/research/topics/auricular-vagus-nerve-stimulation",
+    linkLabel: "Explore auricular topic",
+  },
+  {
     title: "Autonomic regulation research",
     description:
       "A physiology-focused topic connecting non-invasive VNS interpretation to HRV, vagal regulation, stress responses, and flexible state-shifting.",

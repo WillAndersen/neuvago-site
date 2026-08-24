@@ -1,16 +1,42 @@
-import type { HowItWorksV2Content } from "@/content/how-it-works-v2";
+import { commerceContent } from "@/content/commerce";
+import type {
+  HowItWorksV2Cta,
+  HowItWorksV2Content,
+} from "@/content/how-it-works-v2";
+
+const howItWorksHeroPrimaryCtaNo = {
+  label: commerceContent.isLive
+    ? "Kjøp Neuvago"
+    : "Få lanseringstilgang",
+  href: commerceContent.shopHref,
+} satisfies HowItWorksV2Cta;
 
 export const howItWorksV2ContentNo = {
   hero: {
     visible: true,
+    eyebrow: "SLIK FUNGERER DET",
     title: "Slik stimulerer Neuvago vagusnerven.",
+    mainIntroduction:
+      "Neuvago leverer skånsomme, justerbare elektriske impulser gjennom en øreelektrode ved det ytre øret for å stimulere den aurikulære grenen av vagusnerven. Disse sensoriske signalene beveger seg mot hjernestammen, der vagal informasjon videresendes til større nettverk som er involvert i autonom regulering og kommunikasjon mellom hjerne og kropp.",
+    benefitStatement:
+      "En ikke-invasiv tilnærming utviklet for å støtte bedre søvn, roligere responser på stress i hverdagen, fokusert tid og restitusjon.",
+    primaryCta: howItWorksHeroPrimaryCtaNo,
+    secondaryCta: {
+      label: "Utforsk produktet",
+      href: "/no/produkt",
+    },
+    quickFacts: [
+      "FIRE STIMULERINGSMODUSER",
+      "20-MINUTTERS ØKTER",
+      "30 INTENSITETSNIVÅER",
+    ],
     desktopImage: {
       src: "/images/neuvago/product-hero-desktop.webp",
-      alt: "",
+      alt: "Neuvago-enhet for vagusnervestimulering.",
     },
     mobileImage: {
       src: "/images/neuvago/product-hero-mobile.webp",
-      alt: "",
+      alt: "Neuvago-enhet for vagusnervestimulering.",
     },
   },
   mechanism: {

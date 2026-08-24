@@ -1,3 +1,5 @@
+import { commerceContent } from "@/content/commerce";
+
 export type HowItWorksV2Cta = {
   label: string;
   href: string;
@@ -34,10 +36,13 @@ export type HowItWorksV2Fact = {
 export type HowItWorksV2Content = {
   hero: {
     visible: boolean;
+    eyebrow: string;
     title: string;
-    description?: string;
-    primaryCta?: HowItWorksV2Cta;
-    secondaryCta?: HowItWorksV2Cta;
+    mainIntroduction: string;
+    benefitStatement: string;
+    primaryCta: HowItWorksV2Cta;
+    secondaryCta: HowItWorksV2Cta;
+    quickFacts: string[];
     desktopImage: HowItWorksV2Image;
     mobileImage: HowItWorksV2Image;
   };
@@ -82,17 +87,37 @@ export type HowItWorksV2Content = {
   };
 };
 
+const howItWorksHeroPrimaryCta = {
+  label: commerceContent.ctaLabel,
+  href: commerceContent.shopHref,
+} satisfies HowItWorksV2Cta;
+
 export const howItWorksV2Content = {
   hero: {
     visible: true,
+    eyebrow: "HOW IT WORKS",
     title: "How Neuvago stimulates the vagus nerve.",
+    mainIntroduction:
+      "Neuvago delivers gentle, adjustable electrical impulses through an earpiece at the outer ear to stimulate the auricular branch of the vagus nerve. These sensory signals travel toward the brainstem, where vagal information is relayed into wider networks involved in autonomic regulation and brain–body communication.",
+    benefitStatement:
+      "A non-invasive approach designed to support better sleep, calmer responses to everyday stress, focused time and recovery.",
+    primaryCta: howItWorksHeroPrimaryCta,
+    secondaryCta: {
+      label: "Explore the Product",
+      href: "/product",
+    } satisfies HowItWorksV2Cta,
+    quickFacts: [
+      "FOUR STIMULATION MODES",
+      "20-MINUTE SESSIONS",
+      "30 INTENSITY LEVELS",
+    ],
     desktopImage: {
       src: "/images/neuvago/product-hero-desktop.webp",
-      alt: "",
+      alt: "Neuvago vagus nerve stimulation device.",
     },
     mobileImage: {
       src: "/images/neuvago/product-hero-mobile.webp",
-      alt: "",
+      alt: "Neuvago vagus nerve stimulation device.",
     },
   },
   mechanism: {

@@ -122,9 +122,9 @@ export const productV2Content = {
 
   howItWorks: {
     eyebrow: "How it works",
-    title: "How vagus nerve stimulation works.",
+    title: "How Neuvago stimulates the vagus nerve.",
     description:
-      "Neuvago uses non-invasive electrical stimulation at the outer ear. This auricular approach is associated with pathways connected to the vagus nerve, an important part of brain–body communication and the autonomic nervous system.",
+      "Neuvago delivers gentle, adjustable electrical impulses through an earpiece at the outer ear to stimulate the auricular branch of the vagus nerve. These sensory signals travel toward the brainstem, where vagal information is relayed into wider networks involved in autonomic regulation and brain–body communication.",
     image: {
       src: "/images/neuvago/auricular-vns-education-desktop.webp",
       alt: "Neuvago device beside a clean illustration of the outer ear.",
@@ -134,34 +134,34 @@ export const productV2Content = {
         label: "01",
         title: "Outer ear",
         description:
-          "The earpiece electrode is positioned at the outer ear according to the supplied instructions.",
+          "The earpiece applies gentle, adjustable electrical impulses at the outer ear.",
       },
       {
         label: "02",
-        title: "Auricular pathways",
+        title: "Vagus nerve",
         description:
-          "Electrical stimulation is applied through an ear-based, non-invasive contact point.",
+          "The impulses stimulate the auricular branch of the vagus nerve, which carries sensory information from parts of the outer ear.",
       },
       {
         label: "03",
-        title: "Vagus nerve",
+        title: "Brainstem",
         description:
-          "Auricular vagus nerve stimulation is studied in relation to pathways associated with the vagus nerve.",
+          "Signals travel toward the brainstem, where vagal sensory information is received and relayed.",
       },
       {
         label: "04",
-        title: "Autonomic nervous system",
+        title: "Autonomic networks",
         description:
-          "The vagus nerve forms part of the wider system involved in brain–body communication and changing physiological states.",
+          "From the brainstem, vagal pathways connect with wider networks involved in brain–body communication and the body's shift between activation, rest and recovery.",
       },
     ] satisfies ProductV2FlowItem[],
     primaryCta: {
-      label: "Explore How it Works",
+      label: "See how Neuvago works",
       href: "/how-it-works",
     } satisfies ProductV2Cta,
     secondaryCta: {
-      label: "Learn about taVNS",
-      href: "/research/topics/transcutaneous-vagus-nerve-stimulation",
+      label: "Explore taVNS Research",
+      href: "/research/topics/auricular-vagus-nerve-stimulation",
     } satisfies ProductV2Cta,
   },
 

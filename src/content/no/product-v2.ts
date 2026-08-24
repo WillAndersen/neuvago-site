@@ -94,9 +94,9 @@ export const productV2ContentNo = {
   howItWorks: {
     ...productV2Content.howItWorks,
     eyebrow: "Slik fungerer det",
-    title: "Slik fungerer vagusnervestimulering.",
+    title: "Slik stimulerer Neuvago vagusnerven.",
     description:
-      "Neuvago bruker ikke-invasiv elektrisk stimulering ved det ytre øret. Denne aurikulære tilnærmingen er knyttet til nervebaner forbundet med vagusnerven, en viktig del av kommunikasjonen mellom hjernen og kroppen og det autonome nervesystemet.",
+      "Neuvago gir skånsomme, justerbare elektriske impulser gjennom en øreelektrode ved det ytre øret for å stimulere den aurikulære grenen av vagusnerven. Disse sensoriske signalene går mot hjernestammen, der vagal informasjon formidles videre til større nettverk som er involvert i autonom regulering og kommunikasjon mellom hjernen og kroppen.",
     image: {
       ...productV2Content.howItWorks.image,
       alt:
@@ -107,35 +107,35 @@ export const productV2ContentNo = {
         label: "01",
         title: "Ytre øre",
         description:
-          "Øreelektroden plasseres ved det ytre øret i samsvar med den medfølgende veiledningen.",
+          "Øreelektroden gir skånsomme, justerbare elektriske impulser ved det ytre øret.",
       },
       {
         label: "02",
-        title: "Aurikulære nervebaner",
+        title: "Vagusnerven",
         description:
-          "Elektrisk stimulering påføres gjennom et ikke-invasivt kontaktpunkt ved øret.",
+          "Impulsene stimulerer den aurikulære grenen av vagusnerven, som fører sensorisk informasjon fra deler av det ytre øret.",
       },
       {
         label: "03",
-        title: "Vagusnerven",
+        title: "Hjernestammen",
         description:
-          "Aurikulær vagusnervestimulering studeres i forbindelse med nervebaner knyttet til vagusnerven.",
+          "Signalene går mot hjernestammen, der vagal sensorisk informasjon mottas og formidles videre.",
       },
       {
         label: "04",
-        title: "Det autonome nervesystemet",
+        title: "Autonome nettverk",
         description:
-          "Vagusnerven er en del av det større systemet som er involvert i kommunikasjon mellom hjernen og kroppen og skiftende fysiologiske tilstander.",
+          "Fra hjernestammen kobles vagale nervebaner til større nettverk som er involvert i kommunikasjon mellom hjernen og kroppen og kroppens overgang mellom aktivering, hvile og restitusjon.",
       },
     ],
     primaryCta: {
-      label: "Se hvordan det fungerer",
+      label: "Se hvordan Neuvago fungerer",
       href: "/no/slik-fungerer-det",
     },
     secondaryCta: {
-      label: "Lær om taVNS",
+      label: "Utforsk taVNS-forskning",
       href:
-        "/no/forskning/transkutan-vagusnervestimulering",
+        "/no/forskning/aurikulaer-vagusnervestimulering",
     },
   },
 

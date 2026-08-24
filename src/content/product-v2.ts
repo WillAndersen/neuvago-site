@@ -41,6 +41,7 @@ export type ProductV2Accordion = {
 export type ProductV2FaqItem = {
   question: string;
   answer: string;
+  answerLink?: ProductV2Cta;
 };
 
 /**
@@ -463,29 +464,34 @@ export const productV2Content = {
 
   faq: {
     eyebrow: "FAQ",
-    title: "Practical answers before purchase.",
+    title: "Questions about Neuvago?",
     description:
-      "The most important questions about the device, its intended use, modes, package contents and research context.",
+      "Clear answers about the device, its stimulation modes, what a session feels like, what is included and the research behind taVNS.",
     items: [
       {
         question: "What is Neuvago?",
         answer:
-          "Neuvago is a non-invasive vagus nerve stimulation device designed for general wellness and simple, repeatable everyday routines.",
+          "Neuvago is a non-invasive vagus nerve stimulator designed for everyday use. It stimulates the auricular branch of the vagus nerve through a left earpiece at the outer ear and offers four 20-minute modes with 30 adjustable intensity levels.",
       },
       {
-        question: "What is Neuvago designed for?",
+        question: "What is Neuvago designed to support?",
         answer:
-          "Neuvago is designed for general wellness routines around relaxation, evening wind-down and recovery. It is not intended to diagnose, treat, cure or prevent disease.",
+          "Neuvago is designed to support better sleep, calmer responses to everyday stress, focused time and recovery. It can be used when you want to wind down, create a calmer state, prepare for sleep, focus or make space for rest and recovery.",
       },
       {
-        question: "Where is stimulation applied?",
+        question: "What does the stimulation feel like?",
         answer:
-          "Stimulation is applied through an earpiece electrode positioned at the outer ear according to the placement guidance supplied with the product.",
+          "Most Neuvago modes provide mild or very mild stimulation that feels like a light tingling or pricking sensation at the ear. The intensity can be adjusted in small steps and should feel noticeable but comfortable. Relief uses slower, more distinct pulses and may therefore feel more pronounced than the other modes.",
       },
       {
         question: "What are the four stimulation modes?",
         answer:
-          "Neuvago includes four named modes: Sleep, Relax, Meditation and Relief. Detailed guidance for each mode will be available before purchasing opens.",
+          "Neuvago includes four stimulation modes: Sleep, Relax, Meditation and Relief. Sleep alternates between faster and slower stimulation rhythms and is designed for evening wind-down, rest and better sleep. Relax uses a gentle rhythm of four seconds of stimulation followed by four seconds of pause, designed for everyday stress, relaxation and a calmer state. Meditation uses the same four-seconds-on, four-seconds-off rhythm with a denser pulse pattern, designed for meditation, focus and concentration. Relief uses slower, more distinct pulses followed by four seconds of pause, designed for moments of tension and discomfort. Every mode runs for 20 minutes, and the stimulation intensity can be adjusted directly on the device.",
+      },
+      {
+        question: "How long is a Neuvago session?",
+        answer:
+          "Each Neuvago mode runs for 20 minutes. Begin at a low intensity and increase it gradually until the stimulation feels noticeable but comfortable.",
       },
       {
         question: "What is included with Neuvago?",
@@ -495,17 +501,25 @@ export const productV2Content = {
       {
         question: "Is one year of the Neuvago App included?",
         answer:
-          "Yes. Every Neuvago device includes one year of access to the Neuvago App. Activation, renewal, regional availability and pricing after the included period will be explained before purchase.",
+          "Yes. Every Neuvago device includes one year of access to the Neuvago App, with professionally guided sessions and breathing practices for Sleep, Stress, Focus and Recovery.",
       },
       {
-        question: "What research exists on taVNS?",
+        question: "What does research say about taVNS?",
         answer:
-          "A growing research field is exploring transcutaneous auricular vagus nerve stimulation across areas including autonomic regulation, brain pathways, safety and tolerability. External taVNS research provides scientific context and is not clinical evidence for the Neuvago device itself.",
+          "Vagus nerve stimulation has been studied for decades, and a growing body of peer-reviewed research is examining transcutaneous auricular vagus nerve stimulation (taVNS). Research includes systematic reviews, meta-analyses, randomized studies and human neuroimaging across areas such as sleep, stress, autonomic function, heart rate variability (HRV), brain pathways, headache, gut–brain function, safety and tolerability. Findings are encouraging across several areas, while results vary between devices, stimulation protocols and study populations.",
+        answerLink: {
+          label: "Explore the Research",
+          href: "/research",
+        } satisfies ProductV2Cta,
       },
       {
-        question: "What safety information should I review?",
+        question: "What safety information should I review before use?",
         answer:
-          "Read the instructions, contraindications and safety information supplied with the product before use. Contact a qualified healthcare professional if you are uncertain whether the device is suitable for you.",
+          "Read the User Manual and all supplied safety information before using Neuvago for the first time. Use the earpiece only on intact skin, begin at a low intensity and stop using the device if you experience significant discomfort or irritation. If you are uncertain whether Neuvago is suitable for you, consult a qualified healthcare professional before use.",
+        answerLink: {
+          label: "View full safety information",
+          href: "/support",
+        } satisfies ProductV2Cta,
       },
     ] satisfies ProductV2FaqItem[],
   },

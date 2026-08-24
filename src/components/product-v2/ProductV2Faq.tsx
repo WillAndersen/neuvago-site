@@ -1,10 +1,21 @@
-import type { productV2Content } from "@/content/product-v2";
+import Link from "next/link";
+import type {
+  productV2Content,
+  ProductV2FaqItem,
+} from "@/content/product-v2";
 
 type ProductV2FaqProps = {
-  content: typeof productV2Content.faq;
+  content: Omit<
+    typeof productV2Content.faq,
+    "items"
+  > & {
+    items: readonly ProductV2FaqItem[];
+  };
 };
 
-export function ProductV2Faq({ content }: ProductV2FaqProps) {
+export function ProductV2Faq({
+  content,
+}: ProductV2FaqProps) {
   return (
     <section className="bg-[#f7f4ef]">
       <div className="mx-auto max-w-5xl px-5 py-16 sm:px-8 lg:px-12 lg:py-24">
@@ -37,9 +48,21 @@ export function ProductV2Faq({ content }: ProductV2FaqProps) {
                   +
                 </span>
               </summary>
-              <p className="max-w-3xl pb-5 pr-10 text-sm leading-7 text-[#5f5a52] sm:text-base">
-                {item.answer}
-              </p>
+
+              <div className="max-w-3xl pb-5 pr-10">
+                <p className="text-sm leading-7 text-[#5f5a52] sm:text-base">
+                  {item.answer}
+                </p>
+
+                {item.answerLink ? (
+                  <Link
+                    href={item.answerLink.href}
+                    className="mt-3 inline-flex text-sm font-medium text-[#1f1f1c] underline underline-offset-4 transition hover:text-[#5f5a52] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#1f1f1c] focus-visible:ring-offset-2"
+                  >
+                    {item.answerLink.label}
+                  </Link>
+                ) : null}
+              </div>
             </details>
           ))}
         </div>

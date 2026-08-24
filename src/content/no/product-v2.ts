@@ -443,29 +443,34 @@ export const productV2ContentNo = {
   faq: {
     ...productV2Content.faq,
     eyebrow: "FAQ",
-    title: "Praktiske svar før kjøp.",
+    title: "Spørsmål om Neuvago?",
     description:
-      "De viktigste spørsmålene om enheten, tiltenkt bruk, moduser, pakkeinnhold og forskningskontekst.",
+      "Tydelige svar om enheten, stimuleringsmodusene, hvordan en økt kjennes, hva som følger med, og forskningen bak taVNS.",
     items: [
       {
         question: "Hva er Neuvago?",
         answer:
-          "Neuvago er en ikke-invasiv enhet for vagusnervestimulering, utviklet for generell velvære og enkle, repeterbare rutiner i hverdagen.",
+          "Neuvago er en ikke-invasiv vagusnervestimulator utviklet for daglig bruk. Den stimulerer den aurikulære grenen av vagusnerven gjennom en venstre øreelektrode ved det ytre øret og tilbyr fire moduser på 20 minutter med 30 justerbare intensitetsnivåer.",
       },
       {
-        question: "Hva er Neuvago utviklet for?",
+        question: "Hva er Neuvago utviklet for å støtte?",
         answer:
-          "Neuvago er utviklet for generelle velværerutiner knyttet til avspenning, nedtrapping om kvelden og restitusjon. Den er ikke ment å diagnostisere, behandle, kurere eller forebygge sykdom.",
+          "Neuvago er utviklet for å støtte bedre søvn, roligere responser på stress i hverdagen, fokusert tid og restitusjon. Den kan brukes når du ønsker å roe ned, skape en roligere tilstand, forberede deg på søvn, fokusere eller gi rom for hvile og restitusjon.",
       },
       {
-        question: "Hvor påføres stimuleringen?",
+        question: "Hvordan føles stimuleringen?",
         answer:
-          "Stimuleringen påføres gjennom en øreelektrode som plasseres ved det ytre øret i samsvar med plasseringsveiledningen som følger med produktet.",
+          "De fleste Neuvago-modusene gir mild eller svært mild stimulering som kjennes som en lett prikkende eller stikkende følelse ved øret. Intensiteten kan justeres i små trinn og bør kjennes merkbar, men komfortabel. Relief bruker langsommere og tydeligere pulser og kan derfor kjennes mer markant enn de andre modusene.",
       },
       {
         question: "Hva er de fire stimuleringsmodusene?",
         answer:
-          "Neuvago har fire navngitte moduser: Sleep, Relax, Meditation og Relief. Detaljert veiledning for hver modus vil være tilgjengelig før kjøp åpner.",
+          "Neuvago inkluderer fire stimuleringsmoduser: Sleep, Relax, Meditation og Relief. Sleep veksler mellom raskere og langsommere stimuleringsrytmer og er utviklet for nedtrapping om kvelden, hvile og bedre søvn. Relax bruker en skånsom rytme med fire sekunder stimulering etterfulgt av fire sekunder pause, utviklet for stress i hverdagen, avspenning og en roligere tilstand. Meditation bruker den samme rytmen med fire sekunder på og fire sekunder av, med et tettere pulsmønster, utviklet for meditasjon, fokus og konsentrasjon. Relief bruker langsommere og tydeligere pulser etterfulgt av fire sekunder pause, utviklet for øyeblikk med spenning og ubehag. Hver modus varer i 20 minutter, og stimuleringsintensiteten kan justeres direkte på enheten.",
+      },
+      {
+        question: "Hvor lenge varer en Neuvago-økt?",
+        answer:
+          "Hver Neuvago-modus varer i 20 minutter. Begynn med lav intensitet og øk den gradvis til stimuleringen kjennes merkbar, men komfortabel.",
       },
       {
         question: "Hva følger med Neuvago?",
@@ -473,21 +478,27 @@ export const productV2ContentNo = {
           "Neuvago-pakken inkluderer Neuvago-enheten, en venstre øreelektrode, ladekabel, filtetui, brukermanual, hurtigstartveiledning, sprayflaske og ledende gel. Ett års tilgang til Neuvago App er også inkludert.",
       },
       {
-        question:
-          "Er ett år med Neuvago App inkludert?",
+        question: "Er ett år med Neuvago App inkludert?",
         answer:
-          "Ja. Hver Neuvago-enhet inkluderer ett års tilgang til Neuvago App. Aktivering, fornyelse, regional tilgjengelighet og pris etter den inkluderte perioden vil bli forklart før kjøp.",
+          "Ja. Hver Neuvago-enhet inkluderer ett års tilgang til Neuvago App, med profesjonelt veiledede økter og pusteøvelser for søvn, stress, fokus og restitusjon.",
       },
       {
-        question: "Hvilken forskning finnes på taVNS?",
+        question: "Hva sier forskningen om taVNS?",
         answer:
-          "Et voksende forskningsfelt utforsker transkutan aurikulær vagusnervestimulering innen områder som autonom regulering, nervebaner i hjernen, sikkerhet og tolerabilitet. Ekstern taVNS-forskning gir vitenskapelig kontekst og er ikke klinisk dokumentasjon for selve Neuvago-enheten.",
+          "Vagusnervestimulering har blitt studert i flere tiår, og en voksende mengde fagfellevurdert forskning undersøker transkutan aurikulær vagusnervestimulering (taVNS). Forskningen omfatter systematiske oversikter, metaanalyser, randomiserte studier og nevroavbildning hos mennesker innen områder som søvn, stress, autonom funksjon, hjertefrekvensvariabilitet (HRV), nervebaner i hjernen, hodepine, tarm–hjerne-funksjon, sikkerhet og tolerabilitet. Funnene er oppmuntrende på flere områder, samtidig som resultatene varierer mellom enheter, stimuleringsprotokoller og studiepopulasjoner.",
+        answerLink: {
+          label: "Utforsk forskningen",
+          href: "/no/forskning",
+        },
       },
       {
-        question:
-          "Hvilken sikkerhetsinformasjon bør jeg lese?",
+        question: "Hvilken sikkerhetsinformasjon bør jeg lese før bruk?",
         answer:
-          "Les instruksjonene, kontraindikasjonene og sikkerhetsinformasjonen som følger med produktet før bruk. Kontakt kvalifisert helsepersonell dersom du er usikker på om enheten passer for deg.",
+          "Les brukermanualen og all medfølgende sikkerhetsinformasjon før du bruker Neuvago for første gang. Bruk øreelektroden bare på intakt hud, begynn med lav intensitet og stopp bruken dersom du opplever betydelig ubehag eller irritasjon. Dersom du er usikker på om Neuvago passer for deg, kontakt kvalifisert helsepersonell før bruk.",
+        answerLink: {
+          label: "Se fullstendig sikkerhetsinformasjon",
+          href: "/no/support",
+        },
       },
     ],
   },

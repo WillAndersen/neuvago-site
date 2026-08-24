@@ -25,14 +25,17 @@ export type ProductV2FlowItem = ProductV2Card & {
   label: string;
 };
 
+export type ProductV2Specification = {
+  label: string;
+  value: string;
+};
+
 export type ProductV2Accordion = {
   title: string;
-  description: string;
-  items: readonly string[];
-  links?: readonly {
-    label: string;
-    href: string;
-  }[];
+  description?: string;
+  items?: readonly string[];
+  specifications?: readonly ProductV2Specification[];
+  link?: ProductV2Cta;
 };
 
 export type ProductV2FaqItem = {
@@ -363,51 +366,86 @@ export const productV2Content = {
   },
 
   productDetails: {
-    eyebrow: "Product details",
-    title: "Details when you want them.",
+    eyebrow: "PRODUCT DETAILS",
+    title: "The details behind Neuvago.",
     description:
-      "Review device features, safety information and package contents.",
+      "Explore confirmed device features, technical specifications, safety guidance and everything included with Neuvago.",
     accordions: [
       {
         title: "Device Features",
         description:
-          "A concise overview of confirmed Neuvago device features.",
+          "Neuvago combines non-invasive, ear-based vagus nerve stimulation with four dedicated modes and adjustable intensity.",
         items: [
-          "Rechargeable handheld device",
-          "Physical controls and on-device display",
-          "Adjustable stimulation intensity",
-          "Four named stimulation modes",
-          "Charging cable included",
+          "Four stimulation modes: Sleep, Relax, Meditation and Relief",
+          "30 adjustable intensity levels",
+          "On-device controls for mode selection, intensity and session start or pause",
+          "On-device display showing mode and session information",
+          "Rechargeable handheld design",
+          "Left earpiece for ear-based stimulation",
+        ],
+      },
+      {
+        title: "Technical Specifications",
+        specifications: [
+          {
+            label: "Model",
+            value: "NVG-001",
+          },
+          {
+            label: "Session duration",
+            value: "20 minutes per mode",
+          },
+          {
+            label: "Stimulation modes",
+            value: "Sleep, Relax, Meditation and Relief",
+          },
+          {
+            label: "Intensity levels",
+            value: "30",
+          },
+          {
+            label: "Output intensity",
+            value: "0–8 mA",
+          },
+          {
+            label: "Frequency range",
+            value: "1–100 Hz",
+          },
+          {
+            label: "Pulse width",
+            value: "200–300 μs",
+          },
+          {
+            label: "Battery capacity",
+            value: "2000 mAh",
+          },
+          {
+            label: "Input",
+            value: "5V 1A",
+          },
         ],
       },
       {
         title: "Safety & Suitability",
         description:
-          "Review the supplied safety information before use.",
+          "Read the User Manual and all supplied safety information before using Neuvago for the first time.",
         items: [
-          "Read the instructions, contraindications and warnings supplied with the product",
-          "Use the earpiece and conductive gel only as described in the instructions",
-          "Contact a qualified healthcare professional if you are uncertain whether the device is suitable for you",
+          "Use Neuvago only as directed in the supplied User Manual.",
+          "Place the supplied left earpiece securely and ensure even, comfortable contact.",
+          "Use the earpiece only on intact skin. Do not use it on wounds, irritated skin, bruises, abrasions or inflamed areas.",
+          "Begin at a low intensity and increase it gradually until the stimulation feels noticeable but comfortable.",
+          "Stop using the device if you experience significant discomfort or irritation.",
+          "If you are uncertain whether Neuvago is suitable for you, consult a qualified healthcare professional before use.",
+          "Keep the device and accessories out of reach of children.",
         ],
-        links: [
-          {
-            label: "Intended use",
-            href: "/legal/intended-use",
-          },
-          {
-            label: "Safety and tolerability research",
-            href: "/research/topics/safety-and-tolerability",
-          },
-          {
-            label: "Support",
-            href: "/support",
-          },
-        ],
+        link: {
+          label: "View full safety information",
+          href: "/support",
+        },
       },
       {
         title: "What’s Included",
-        description:
-          "The confirmed package contents for Neuvago.",
+        description: "Every Neuvago package includes:",
         items: [
           "Neuvago device",
           "Left earpiece",
@@ -417,7 +455,7 @@ export const productV2Content = {
           "Quick Start Guide",
           "Spray bottle",
           "Conductive gel",
-          "One year of Neuvago App access",
+          "One year of access to the Neuvago App",
         ],
       },
     ] satisfies ProductV2Accordion[],

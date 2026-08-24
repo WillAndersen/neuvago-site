@@ -345,53 +345,86 @@ export const productV2ContentNo = {
 
   productDetails: {
     ...productV2Content.productDetails,
-    eyebrow: "Produktdetaljer",
-    title: "Detaljer når du ønsker dem.",
+    eyebrow: "PRODUKTDETALJER",
+    title: "Detaljene bak Neuvago.",
     description:
-      "Se produktfunksjoner, sikkerhetsinformasjon og pakkeinnhold.",
+      "Utforsk bekreftede enhetsfunksjoner, tekniske spesifikasjoner, sikkerhetsveiledning og alt som følger med Neuvago.",
     accordions: [
       {
         title: "Enhetsfunksjoner",
         description:
-          "En kort oversikt over bekreftede funksjoner i Neuvago-enheten.",
+          "Neuvago kombinerer ikke-invasiv, ørebasert vagusnervestimulering med fire dedikerte moduser og justerbar intensitet.",
         items: [
-          "Oppladbar håndholdt enhet",
-          "Fysiske kontroller og skjerm på enheten",
-          "Justerbar stimuleringsintensitet",
-          "Fire navngitte stimuleringsmoduser",
-          "Ladekabel inkludert",
+          "Fire stimuleringsmoduser: Sleep, Relax, Meditation og Relief",
+          "30 justerbare intensitetsnivåer",
+          "Kontroller på enheten for valg av modus, intensitet og start eller pause av økten",
+          "Skjerm på enheten som viser modus- og øktinformasjon",
+          "Oppladbar håndholdt utforming",
+          "Venstre øreelektrode for ørebasert stimulering",
+        ],
+      },
+      {
+        title: "Tekniske spesifikasjoner",
+        specifications: [
+          {
+            label: "Modell",
+            value: "NVG-001",
+          },
+          {
+            label: "Øktvarighet",
+            value: "20 minutter per modus",
+          },
+          {
+            label: "Stimuleringsmoduser",
+            value: "Sleep, Relax, Meditation og Relief",
+          },
+          {
+            label: "Intensitetsnivåer",
+            value: "30",
+          },
+          {
+            label: "Utgangsintensitet",
+            value: "0–8 mA",
+          },
+          {
+            label: "Frekvensområde",
+            value: "1–100 Hz",
+          },
+          {
+            label: "Pulsbredde",
+            value: "200–300 μs",
+          },
+          {
+            label: "Batterikapasitet",
+            value: "2000 mAh",
+          },
+          {
+            label: "Inngang",
+            value: "5V 1A",
+          },
         ],
       },
       {
         title: "Sikkerhet og egnethet",
         description:
-          "Les den medfølgende sikkerhetsinformasjonen før bruk.",
+          "Les brukermanualen og all medfølgende sikkerhetsinformasjon før du bruker Neuvago for første gang.",
         items: [
-          "Les instruksjonene, kontraindikasjonene og advarslene som følger med produktet",
-          "Bruk øreelektroden og den ledende gelen bare slik det er beskrevet i instruksjonene",
-          "Kontakt kvalifisert helsepersonell dersom du er usikker på om enheten passer for deg",
+          "Bruk Neuvago bare som beskrevet i den medfølgende brukermanualen.",
+          "Plasser den medfølgende venstre øreelektroden sikkert, og sørg for jevn og komfortabel kontakt.",
+          "Bruk øreelektroden bare på intakt hud. Ikke bruk den på sår, irritert hud, blåmerker, skrubbsår eller betente områder.",
+          "Begynn med lav intensitet og øk den gradvis til stimuleringen kjennes merkbar, men komfortabel.",
+          "Stopp bruken dersom du opplever betydelig ubehag eller irritasjon.",
+          "Dersom du er usikker på om Neuvago passer for deg, kontakt kvalifisert helsepersonell før bruk.",
+          "Oppbevar enheten og tilbehøret utilgjengelig for barn.",
         ],
-        links: [
-          {
-            label: "Tiltenkt bruk",
-            href: "/no/juridisk/tiltenkt-bruk",
-          },
-          {
-            label:
-              "Forskning på sikkerhet og tolerabilitet",
-            href:
-              "/no/forskning/sikkerhet-og-tolerabilitet",
-          },
-          {
-            label: "Support",
-            href: "/no/support",
-          },
-        ],
+        link: {
+          label: "Se fullstendig sikkerhetsinformasjon",
+          href: "/no/support",
+        },
       },
       {
         title: "Dette følger med",
-        description:
-          "Det bekreftede pakkeinnholdet for Neuvago.",
+        description: "Hver Neuvago-pakke inkluderer:",
         items: [
           "Neuvago-enhet",
           "Venstre øreelektrode",

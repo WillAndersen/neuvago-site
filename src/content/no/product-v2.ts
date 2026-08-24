@@ -267,49 +267,38 @@ export const productV2ContentNo = {
 
   research: {
     ...productV2Content.research,
-    eyebrow: "Forskning",
-    title:
-      "Vitenskapelig kontekst for en aurikulær tilnærming.",
+    eyebrow: "FORSKNING",
+    title: "Vitenskapen bak ørebasert vagusnervestimulering.",
     description:
-      "Neuvago bruker en aurikulær, ørebasert tilnærming til ikke-invasiv vagusnervestimulering. Forskningskategorien som ligger nærmest denne teknologien, er transkutan aurikulær vagusnervestimulering, eller taVNS.",
-    boundary:
-      "Forskning på taVNS gir vitenskapelig kontekst for teknologikategorien. Den er ikke klinisk dokumentasjon for selve Neuvago-enheten.",
-    links: [
+      "Neuvago bruker transkutan aurikulær vagusnervestimulering (taVNS), en ikke-invasiv tilnærming som gir skånsom elektrisk stimulering gjennom det ytre øret. Forskning utforsker taVNS innen områder som søvn, stress, autonom funksjon, hjertefrekvensvariabilitet (HRV), nervebaner i hjernen, sikkerhet og tolerabilitet.",
+    areas: [
       {
-        title: "taVNS-forskning",
+        title: "Søvn og stress",
         description:
-          "Utforsk aurikulær stimulering, protokollvariabler, aktivering av målområder og tolkning.",
-        href:
-          "/no/forskning/aurikulaer-vagusnervestimulering",
+          "Forskning utforsker taVNS i sammenheng med søvnkvalitet, stressresponser og restitusjon.",
       },
       {
-        title: "Autonom regulering",
+        title: "Autonom funksjon og HRV",
         description:
-          "Lær hvordan sympatisk og parasympatisk aktivitet studeres innen autonom regulering.",
-        href: "/no/forskning",
+          "Studier undersøker taVNS i sammenheng med autonome markører, inkludert hjertefrekvensvariabilitet.",
+      },
+      {
+        title: "Nervebaner i hjernen",
+        description:
+          "Nevroavbildningsforskning på mennesker har undersøkt hvordan aurikulær stimulering aktiverer sentrale nervebaner knyttet til vagusnerven.",
       },
       {
         title: "Sikkerhet og tolerabilitet",
         description:
-          "Se kontekst om bivirkninger, tolerabilitet og ansvarlig bruk i forskning på mennesker.",
-        href:
-          "/no/forskning/sikkerhet-og-tolerabilitet",
-      },
-      {
-        title: "Vitenskapelig studiebibliotek",
-        description:
-          "Utforsk samlingen av studiesammendrag og grunnleggende forskning.",
-        href: "/no/forskning",
+          "Systematisk forskning har vurdert tolerabilitet og rapporterte uønskede hendelser på tvers av studier av taVNS hos mennesker.",
       },
     ],
-    primaryCta: {
+    cta: {
       label: "Utforsk forskningen",
       href: "/no/forskning",
     },
-    secondaryCta: {
-      label: "Se tiltenkt bruk",
-      href: "/no/juridisk/tiltenkt-bruk",
-    },
+    contextNote:
+      "Forskningen som presenteres, gjelder VNS og taVNS som forskningsfelt. Funn varierer mellom enheter, stimuleringsprotokoller og studiepopulasjoner.",
   },
 
   buyBox: {

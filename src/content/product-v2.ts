@@ -286,46 +286,38 @@ export const productV2Content = {
   },
 
   research: {
-    eyebrow: "Research",
-    title: "Scientific context for an auricular approach.",
+    eyebrow: "RESEARCH",
+    title: "The science behind ear-based vagus nerve stimulation.",
     description:
-      "Neuvago uses an auricular, ear-based approach to non-invasive vagus nerve stimulation. The most closely related research category is transcutaneous auricular vagus nerve stimulation, or taVNS.",
-    boundary:
-      "Research on taVNS provides scientific context for the technology category. It is not clinical evidence for the Neuvago device itself.",
-    links: [
+      "Neuvago uses transcutaneous auricular vagus nerve stimulation (taVNS), a non-invasive approach that delivers gentle electrical stimulation through the outer ear. Research is exploring taVNS across areas including sleep, stress, autonomic function, heart rate variability (HRV), brain pathways, safety and tolerability.",
+    areas: [
       {
-        title: "taVNS research",
+        title: "Sleep & Stress",
         description:
-          "Explore auricular stimulation, protocol variables, target engagement and interpretation.",
-        href: "/research/topics/transcutaneous-vagus-nerve-stimulation",
+          "Research is exploring taVNS in relation to sleep quality, stress responses and recovery.",
       },
       {
-        title: "Autonomic regulation",
+        title: "Autonomic Function & HRV",
         description:
-          "Learn how sympathetic and parasympathetic activity are studied within autonomic regulation.",
-        href: "/research/topics/autonomic-regulation",
+          "Studies examine taVNS in relation to autonomic markers, including heart rate variability.",
       },
       {
-        title: "Safety and tolerability",
+        title: "Brain Pathways",
         description:
-          "Review adverse-event, tolerability and responsible-use context across human research.",
-        href: "/research/topics/safety-and-tolerability",
+          "Human neuroimaging research has investigated how auricular stimulation engages central pathways associated with the vagus nerve.",
       },
       {
-        title: "Scientific Studies Library",
+        title: "Safety & Tolerability",
         description:
-          "Browse the complete collection of study summaries and foundational research.",
-        href: "/research/studies",
+          "Systematic research has assessed tolerability and reported adverse events across human taVNS studies.",
       },
-    ] satisfies ProductV2LinkCard[],
-    primaryCta: {
+    ] satisfies ProductV2Card[],
+    cta: {
       label: "Explore the Research",
       href: "/research",
     } satisfies ProductV2Cta,
-    secondaryCta: {
-      label: "Review intended use",
-      href: "/legal/intended-use",
-    } satisfies ProductV2Cta,
+    contextNote:
+      "Research presented relates to VNS and taVNS as fields of study. Findings vary between devices, stimulation protocols and study populations.",
   },
 
   buyBox: {

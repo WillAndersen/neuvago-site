@@ -1,41 +1,41 @@
-
 import type { Metadata } from "next";
-import { productPageContentNo } from "@/content/no/product";
-import { productLaunchBuyBoxNo } from "@/content/no/product-buy-box";
 import {
-  ProductHero,
-  ProductLaunchBuyBox,
-  ProductIncludedInBox,
-  ProductSalesAssurance,
-  ProductWhatIsNeuvago,
-  ProductWhyItFeelsDifferent,
-  ProductDeviceAppTogether,
-  ProductHowItFitsIntoLife,
-  ProductHowToUse,
-  ProductTrustBridge,
-  ProductFaq,
-  ProductFinalCta,
-} from "@/components/product";
+  ProductV2Benefits,
+  ProductV2BuyBox,
+  ProductV2Details,
+  ProductV2Faq,
+  ProductV2Features,
+  ProductV2FinalCta,
+  ProductV2Hero,
+  ProductV2HowItWorks,
+  ProductV2Modes,
+  ProductV2Research,
+  ProductV2UseSequence,
+} from "@/components/product-v2";
+import { productV2ContentNo } from "@/content/no/product-v2";
 import {
   buildFAQStructuredData,
   buildPageWithBreadcrumbStructuredData,
 } from "@/lib/seo/structured-data";
 
 export const metadata: Metadata = {
-  title: "Neuvago Produkt | Ikke-invasiv VNS-enhet og app",
+  title:
+    "Neuvago produkt | Ikke-invasiv vagusnervestimulator",
   description:
-    "Møt Neuvago: en premium ikke-invasiv vagusnervestimulator og app for veiledede rutiner, tydelige sikkerhetsgrenser og roligere daglig reguleringsstøtte.",
+    "Utforsk Neuvago, en ikke-invasiv vagusnervestimulator med justerbar intensitet, fire stimuleringsmoduser, enkle kontroller og en ørebasert tilnærming utviklet for daglige velværerutiner.",
   alternates: {
     canonical: "/no/produkt",
     languages: {
       "en-US": "/product",
       "no-NO": "/no/produkt",
+      "x-default": "/product",
     },
   },
   openGraph: {
-    title: "Neuvago Produkt | Ikke-invasiv VNS-enhet og app",
+    title:
+      "Neuvago produkt | Ikke-invasiv vagusnervestimulator",
     description:
-      "Møt Neuvago: en premium ikke-invasiv vagusnervestimulator og app for veiledede rutiner, tydelige sikkerhetsgrenser og roligere daglig reguleringsstøtte.",
+      "Se Neuvago-enheten, de fire stimuleringsmodusene, forskningskonteksten, pakkeinnholdet og den aktuelle kjøpsinformasjonen.",
     url: "/no/produkt",
     siteName: "Neuvago",
     locale: "no_NO",
@@ -43,28 +43,30 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Neuvago Produkt | Ikke-invasiv VNS-enhet og app",
+    title:
+      "Neuvago produkt | Ikke-invasiv vagusnervestimulator",
     description:
-      "Møt Neuvago: en premium ikke-invasiv vagusnervestimulator og app for veiledede rutiner, tydelige sikkerhetsgrenser og roligere daglig reguleringsstøtte.",
+      "En ikke-invasiv vagusnervestimulator med justerbar intensitet, fire navngitte moduser og enkle fysiske kontroller.",
   },
 };
 
 export default function NorwayProductPage() {
-  const content = productPageContentNo;
+  const content = productV2ContentNo;
 
-  const structuredData: Array<Record<string, unknown>> = buildPageWithBreadcrumbStructuredData({
-    title: content.hero.title,
-    description: content.hero.description,
-    path: "/no/produkt",
-    breadcrumbs: [
-      { name: "Forside", path: "/no" },
-      { name: "Produkt", path: "/no/produkt" },
-    ],
-  });
+  const structuredData: Array<Record<string, unknown>> =
+    buildPageWithBreadcrumbStructuredData({
+      title: content.hero.title,
+      description:
+        `${content.hero.description} ${content.hero.technologyDescription}`,
+      path: "/no/produkt",
+      breadcrumbs: [
+        { name: "Forside", path: "/no" },
+        { name: "Produkt", path: "/no/produkt" },
+      ],
+    });
 
-  const faqStructuredData = content.faq.visible
-    ? buildFAQStructuredData(content.faq.items)
-    : null;
+  const faqStructuredData =
+    buildFAQStructuredData(content.faq.items);
 
   if (faqStructuredData) {
     structuredData.push(faqStructuredData);
@@ -74,49 +76,29 @@ export default function NorwayProductPage() {
     <main className="bg-[#f7f4ef] text-[#1f1f1c]">
       {structuredData.map((item, index) => (
         <script
-          key={`no-product-ld-${index}`}
+          key={`no-product-v2-ld-${index}`}
           type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(item) }}
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(item),
+          }}
         />
       ))}
 
-      {content.hero.visible ? <ProductHero content={content.hero} /> : null}
-
-      <ProductLaunchBuyBox copy={productLaunchBuyBoxNo} />
-
-      <ProductIncludedInBox locale="no" />
-
-      <ProductSalesAssurance locale="no" />
-
-      {content.whatIsNeuvago.visible ? (
-        <ProductWhatIsNeuvago content={content.whatIsNeuvago} />
-      ) : null}
-
-      {content.whyItFeelsDifferent.visible ? (
-        <ProductWhyItFeelsDifferent content={content.whyItFeelsDifferent} />
-      ) : null}
-
-      {content.howItFitsIntoLife.visible ? (
-        <ProductHowItFitsIntoLife content={content.howItFitsIntoLife} />
-      ) : null}
-
-      {content.deviceAppTogether.visible ? (
-        <ProductDeviceAppTogether content={content.deviceAppTogether} />
-      ) : null}
-
-      {content.howToUse.visible ? (
-        <ProductHowToUse content={content.howToUse} />
-      ) : null}
-
-      {content.trustBridge.visible ? (
-        <ProductTrustBridge content={content.trustBridge} />
-      ) : null}
-
-      {content.faq.visible ? <ProductFaq content={content.faq} /> : null}
-
-      {content.finalCta.visible ? (
-        <ProductFinalCta content={content.finalCta} />
-      ) : null}
+      <ProductV2Hero content={content.hero} />
+      <ProductV2Benefits content={content.benefits} />
+      <ProductV2HowItWorks content={content.howItWorks} />
+      <ProductV2Modes content={content.modes} />
+      <ProductV2Features content={content.features} />
+      <ProductV2UseSequence
+        content={content.useSequence}
+      />
+      <ProductV2Research content={content.research} />
+      <ProductV2BuyBox content={content.buyBox} />
+      <ProductV2Details
+        content={content.productDetails}
+      />
+      <ProductV2Faq content={content.faq} />
+      <ProductV2FinalCta content={content.finalCta} />
     </main>
   );
 }

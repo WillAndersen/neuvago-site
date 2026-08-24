@@ -320,10 +320,13 @@ export const productV2Content = {
     } satisfies ProductV2Cta,
     includedItems: [
       "Neuvago device",
-      "Earpiece",
-      "Conductive gel",
+      "Left earpiece",
       "Charging cable",
+      "Felt case",
+      "User Manual",
       "Quick Start Guide",
+      "Spray bottle",
+      "Conductive gel",
       "One year of Neuvago App access",
     ],
     trustLinks: [
@@ -383,13 +386,16 @@ export const productV2Content = {
       {
         title: "What’s Included",
         description:
-          "The planned package contents for Neuvago.",
+          "The confirmed package contents for Neuvago.",
         items: [
           "Neuvago device",
-          "Earpiece",
-          "Conductive gel",
+          "Left earpiece",
           "Charging cable",
+          "Felt case",
+          "User Manual",
           "Quick Start Guide",
+          "Spray bottle",
+          "Conductive gel",
           "One year of Neuvago App access",
         ],
       },
@@ -425,7 +431,7 @@ export const productV2Content = {
       {
         question: "What is included with Neuvago?",
         answer:
-          "The planned package includes the Neuvago device, earpiece, conductive gel, charging cable, Quick Start Guide and one year of Neuvago App access. Final package details will be confirmed before checkout opens.",
+          "The Neuvago package includes the Neuvago device, a left earpiece, charging cable, felt case, User Manual, Quick Start Guide, spray bottle and conductive gel. One year of access to the Neuvago App is also included.",
       },
       {
         question: "Is one year of the Neuvago App included?",

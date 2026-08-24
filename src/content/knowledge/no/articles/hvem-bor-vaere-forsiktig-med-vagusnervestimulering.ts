@@ -562,7 +562,7 @@ export const hvemBorVaereForsiktigMedVagusnervestimuleringArticle = {
         },
         {
           type: "table",
-          caption: "Redaksjonell grense for Wave 1D",
+          caption: "Hva som kan forklares nå – og hva som må vente på endelig dokumentasjon",
           columns: [
             "Kan forklares nå",
             "Må låses i produktdokumentasjonen",

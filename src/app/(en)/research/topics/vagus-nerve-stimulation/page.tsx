@@ -214,6 +214,38 @@ const connectedResearch = [
   },
 ]
 
+const externalReferences = [
+  {
+    title: "Vagus Nerve Stimulation for Treatment-Resistant Depression",
+    source: "Rush et al., Biological Psychiatry, 2005",
+    href: "https://pubmed.ncbi.nlm.nih.gov/16139580/",
+  },
+  {
+    title:
+      "Non-invasive access to the vagus nerve central projections via electrical stimulation of the external ear",
+    source: "Frangos et al., Brain Stimulation, 2015",
+    href: "https://pubmed.ncbi.nlm.nih.gov/25573069/",
+  },
+  {
+    title:
+      "Safety and tolerability of Transcutaneous Vagus Nerve stimulation in humans; a systematic review",
+    source: "Redgrave et al., Brain Stimulation, 2018",
+    href: "https://pubmed.ncbi.nlm.nih.gov/30217648/",
+  },
+  {
+    title:
+      "International consensus based review and recommendations for minimum reporting standards in tVNS research",
+    source: "Farmer et al., Frontiers in Human Neuroscience, 2021",
+    href: "https://pubmed.ncbi.nlm.nih.gov/33854421/",
+  },
+  {
+    title:
+      "Safety of transcutaneous auricular vagus nerve stimulation: a systematic review and meta-analysis",
+    source: "Kim et al., Journal of Clinical Medicine, 2022",
+    href: "https://pmc.ncbi.nlm.nih.gov/articles/PMC9772204/",
+  },
+]
+
 function StudyCard({
   title,
   authors,
@@ -268,12 +300,42 @@ function StudyCard({
   )
 }
 
+function ExternalReferenceCard({
+  title,
+  source,
+  href,
+}: {
+  title: string
+  source: string
+  href: string
+}) {
+  return (
+    <article className="rounded-[1.5rem] border border-black/5 bg-white/60 p-6 shadow-[0_12px_40px_rgba(31,31,28,0.04)]">
+      <p className="text-xs uppercase tracking-[0.16em] text-[#8a847b]">
+        {source}
+      </p>
+      <h3 className="mt-3 text-xl font-medium leading-tight text-[#1f1f1c]">
+        {title}
+      </h3>
+      <a
+        href={href}
+        target="_blank"
+        rel="noreferrer"
+        className="mt-6 inline-flex text-sm font-medium text-[#1f1f1c] underline-offset-4 transition hover:underline"
+      >
+        Open source
+      </a>
+    </article>
+  )
+}
+
 export default function VagusNerveStimulationResearchPage() {
   const structuredData = buildAuthorityPageStructuredData({
     title: "Vagus Nerve Stimulation Research | Evidence Overview | Neuvago",
     description: "Explore vagus nerve stimulation research across implanted, non-invasive, auricular and transcutaneous approaches, including evidence, safety and interpretation limits.",
     path: "/research/topics/vagus-nerve-stimulation",
     articleSection: "Research topics",
+    datePublished: authorityEditorialDates.vnsClusterPublished,
     dateModified: authorityEditorialDates.vnsClusterModified,
     breadcrumbs: [
       { name: "Home", path: "/" },
@@ -547,6 +609,33 @@ export default function VagusNerveStimulationResearchPage() {
                 </article>
               ))}
             </div>
+          </div>
+        </div>
+      </section>
+
+
+      <section className="border-b border-black/5 bg-[#f2eee8]">
+        <div className="mx-auto max-w-7xl px-6 py-24 md:px-10 md:py-28">
+          <div className="max-w-3xl">
+            <p className="text-sm uppercase tracking-[0.18em] text-[#7a756c]">
+              References
+            </p>
+
+            <h2 className="mt-4 text-3xl font-medium leading-tight tracking-[-0.03em] md:text-5xl">
+              Starting references for the vagus nerve stimulation topic
+            </h2>
+
+            <p className="mt-6 max-w-2xl text-base leading-8 text-[#5f5a52] md:text-lg">
+              These references provide transparent starting points across implanted
+              VNS, auricular stimulation, safety, and reporting standards. They are
+              not product-specific claims for Neuvago or individual medical advice.
+            </p>
+          </div>
+
+          <div className="mt-14 grid gap-6 md:grid-cols-2 xl:grid-cols-3">
+            {externalReferences.map((item) => (
+              <ExternalReferenceCard key={item.title} {...item} />
+            ))}
           </div>
         </div>
       </section>

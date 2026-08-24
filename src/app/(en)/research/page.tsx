@@ -26,7 +26,7 @@ export const metadata: Metadata = {
     canonical: "/research",
     languages: {
       "en-US": "/research",
-      "no-NO": "/no/forskning",
+      "nb-NO": "/no/forskning",
       "x-default": "/research",
     },
   },

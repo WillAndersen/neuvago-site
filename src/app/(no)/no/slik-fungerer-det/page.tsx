@@ -1,35 +1,30 @@
 import type { Metadata } from "next";
-import { howItWorksPageContentNo } from "@/content/no/how-it-works";
 import {
-  HowItWorksHero,
-  HowItWorksSystemAtAGlance,
-  HowItWorksSteps,
-  HowItWorksAppAdds,
-  HowItWorksDailyLife,
-  HowItWorksRepetition,
-  HowItWorksFaq,
-  HowItWorksFinalCta,
-} from "@/components/how-it-works-page";
-import {
-  buildFAQStructuredData,
-  buildPageWithBreadcrumbStructuredData,
-} from "@/lib/seo/structured-data";
+  HowItWorksV2FinalCta,
+  HowItWorksV2Hero,
+  HowItWorksV2Mechanism,
+  HowItWorksV2Modes,
+  HowItWorksV2Research,
+  HowItWorksV2WhatToExpect,
+  HowItWorksV2WhyItMatters,
+} from "@/components/how-it-works-v2";
+import { howItWorksV2ContentNo } from "@/content/no/how-it-works-v2";
+import { buildPageWithBreadcrumbStructuredData } from "@/lib/seo/structured-data";
 
 export const metadata: Metadata = {
-  title: "Slik fungerer Neuvago | Ikke-invasiv VNS og app",
-  description:
-    "Se hvordan Neuvago fungerer som et ikke-invasivt VNS- og appsystem, med veiledning for plassering, komfort, økter og daglig rutine.",
+  title: "Slik stimulerer Neuvago vagusnerven.",
+  description: "Slik stimulerer Neuvago vagusnerven.",
   alternates: {
     canonical: "/no/slik-fungerer-det",
     languages: {
       "en-US": "/how-it-works",
       "no-NO": "/no/slik-fungerer-det",
+      "x-default": "/how-it-works",
     },
   },
   openGraph: {
-    title: "Slik fungerer Neuvago | Ikke-invasiv VNS og app",
-    description:
-      "Se hvordan Neuvago fungerer som et ikke-invasivt VNS- og appsystem, med veiledning for plassering, komfort, økter og daglig rutine.",
+    title: "Slik stimulerer Neuvago vagusnerven.",
+    description: "Slik stimulerer Neuvago vagusnerven.",
     url: "/no/slik-fungerer-det",
     siteName: "Neuvago",
     locale: "no_NO",
@@ -37,69 +32,62 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Slik fungerer Neuvago | Ikke-invasiv VNS og app",
-    description:
-      "Se hvordan Neuvago fungerer som et ikke-invasivt VNS- og appsystem, med veiledning for plassering, komfort, økter og daglig rutine.",
+    title: "Slik stimulerer Neuvago vagusnerven.",
+    description: "Slik stimulerer Neuvago vagusnerven.",
   },
 };
 
 export default function NorwayHowItWorksPage() {
-  const content = howItWorksPageContentNo;
-
-  const structuredData: Array<Record<string, unknown>> = buildPageWithBreadcrumbStructuredData({
+  const content = howItWorksV2ContentNo;
+  const structuredData = buildPageWithBreadcrumbStructuredData({
     title: content.hero.title,
-    description: content.hero.description,
+    description: content.hero.title,
     path: "/no/slik-fungerer-det",
     breadcrumbs: [
       { name: "Forside", path: "/no" },
-      { name: "Slik fungerer det", path: "/no/slik-fungerer-det" },
+      {
+        name: "Slik fungerer det",
+        path: "/no/slik-fungerer-det",
+      },
     ],
   });
-
-  const faqStructuredData = content.faq.visible
-    ? buildFAQStructuredData(content.faq.items)
-    : null;
-
-  if (faqStructuredData) {
-    structuredData.push(faqStructuredData);
-  }
 
   return (
     <main className="bg-[#f7f4ef] text-[#1f1f1c]">
       {structuredData.map((item, index) => (
         <script
-          key={"no-how-it-works-ld-" + index}
+          key={`no-how-it-works-v2-ld-${index}`}
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(item) }}
         />
       ))}
 
-      {content.hero.visible ? <HowItWorksHero content={content.hero} /> : null}
-
-      {content.steps.visible ? (
-        <HowItWorksSteps content={content.steps} />
+      {content.hero.visible ? (
+        <HowItWorksV2Hero content={content.hero} />
       ) : null}
 
-      {content.systemAtAGlance.visible ? (
-        <HowItWorksSystemAtAGlance content={content.systemAtAGlance} />
+      {content.mechanism.visible ? (
+        <HowItWorksV2Mechanism content={content.mechanism} />
       ) : null}
 
-      {content.appAdds.visible ? (
-        <HowItWorksAppAdds content={content.appAdds} />
+      {content.whyItMatters.visible ? (
+        <HowItWorksV2WhyItMatters content={content.whyItMatters} />
       ) : null}
 
-      {content.dailyLife.visible ? (
-        <HowItWorksDailyLife content={content.dailyLife} />
+      {content.modes.visible ? (
+        <HowItWorksV2Modes content={content.modes} />
       ) : null}
 
-      {content.repetition.visible ? (
-        <HowItWorksRepetition content={content.repetition} />
+      {content.whatToExpect.visible ? (
+        <HowItWorksV2WhatToExpect content={content.whatToExpect} />
       ) : null}
 
-      {content.faq.visible ? <HowItWorksFaq content={content.faq} /> : null}
+      {content.research.visible ? (
+        <HowItWorksV2Research content={content.research} />
+      ) : null}
 
       {content.finalCta.visible ? (
-        <HowItWorksFinalCta content={content.finalCta} />
+        <HowItWorksV2FinalCta content={content.finalCta} />
       ) : null}
     </main>
   );

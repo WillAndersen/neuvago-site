@@ -1,24 +1,19 @@
 import type { Metadata } from "next";
-import { getHowItWorksContent } from "@/lib/content/get-how-it-works-content";
 import {
-  HowItWorksHero,
-  HowItWorksSystemAtAGlance,
-  HowItWorksSteps,
-  HowItWorksAppAdds,
-  HowItWorksDailyLife,
-  HowItWorksRepetition,
-  HowItWorksFaq,
-  HowItWorksFinalCta,
-} from "@/components/how-it-works-page";
-import {
-  buildFAQStructuredData,
-  buildWebPageStructuredData,
-} from "@/lib/seo/structured-data";
+  HowItWorksV2FinalCta,
+  HowItWorksV2Hero,
+  HowItWorksV2Mechanism,
+  HowItWorksV2Modes,
+  HowItWorksV2Research,
+  HowItWorksV2WhatToExpect,
+  HowItWorksV2WhyItMatters,
+} from "@/components/how-it-works-v2";
+import { howItWorksV2Content } from "@/content/how-it-works-v2";
+import { buildWebPageStructuredData } from "@/lib/seo/structured-data";
 
 export const metadata: Metadata = {
-  title: "How Neuvago Works | Device, App and Non-Invasive VNS",
-  description:
-    "See how the Neuvago device, independent app guidance and non-invasive VNS approach fit together in a calm everyday wellness system.",
+  title: "How Neuvago stimulates the vagus nerve.",
+  description: "How Neuvago stimulates the vagus nerve.",
   alternates: {
     canonical: "/how-it-works",
     languages: {
@@ -28,9 +23,8 @@ export const metadata: Metadata = {
     },
   },
   openGraph: {
-    title: "How Neuvago Works | Device, App and Non-Invasive VNS",
-    description:
-      "See how the Neuvago device, independent app guidance and non-invasive VNS approach fit together in a calm everyday wellness system.",
+    title: "How Neuvago stimulates the vagus nerve.",
+    description: "How Neuvago stimulates the vagus nerve.",
     url: "/how-it-works",
     siteName: "Neuvago",
     locale: "en_US",
@@ -38,67 +32,57 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "How Neuvago Works | Device, App and Non-Invasive VNS",
-    description:
-      "See how the Neuvago device, independent app guidance and non-invasive VNS approach fit together in a calm everyday wellness system.",
+    title: "How Neuvago stimulates the vagus nerve.",
+    description: "How Neuvago stimulates the vagus nerve.",
   },
 };
 
-export default async function HowItWorksPage() {
-  const content = await getHowItWorksContent();
-
-  const structuredData: Array<Record<string, unknown>> = [
+export default function HowItWorksPage() {
+  const content = howItWorksV2Content;
+  const structuredData = [
     buildWebPageStructuredData({
       title: content.hero.title,
-      description: content.hero.description,
+      description: content.hero.title,
       path: "/how-it-works",
     }),
   ];
-
-  const faqStructuredData = content.faq.visible
-    ? buildFAQStructuredData(content.faq.items)
-    : null;
-
-  if (faqStructuredData) {
-    structuredData.push(faqStructuredData);
-  }
 
   return (
     <main className="bg-[#f7f4ef] text-[#1f1f1c]">
       {structuredData.map((item, index) => (
         <script
-          key={`how-it-works-ld-${index}`}
+          key={`how-it-works-v2-ld-${index}`}
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(item) }}
         />
       ))}
 
-      {content.hero.visible ? <HowItWorksHero content={content.hero} /> : null}
-
-      {content.steps.visible ? (
-        <HowItWorksSteps content={content.steps} />
+      {content.hero.visible ? (
+        <HowItWorksV2Hero content={content.hero} />
       ) : null}
 
-      {content.systemAtAGlance.visible ? (
-        <HowItWorksSystemAtAGlance content={content.systemAtAGlance} />
+      {content.mechanism.visible ? (
+        <HowItWorksV2Mechanism content={content.mechanism} />
       ) : null}
 
-      {content.appAdds.visible ? (
-        <HowItWorksAppAdds content={content.appAdds} />
+      {content.whyItMatters.visible ? (
+        <HowItWorksV2WhyItMatters content={content.whyItMatters} />
       ) : null}
 
-      {content.dailyLife.visible ? (
-        <HowItWorksDailyLife content={content.dailyLife} />
+      {content.modes.visible ? (
+        <HowItWorksV2Modes content={content.modes} />
       ) : null}
 
-      {content.repetition.visible ? (
-        <HowItWorksRepetition content={content.repetition} />
+      {content.whatToExpect.visible ? (
+        <HowItWorksV2WhatToExpect content={content.whatToExpect} />
       ) : null}
 
-      {content.faq.visible ? <HowItWorksFaq content={content.faq} /> : null}
+      {content.research.visible ? (
+        <HowItWorksV2Research content={content.research} />
+      ) : null}
 
       {content.finalCta.visible ? (
-        <HowItWorksFinalCta content={content.finalCta} />
+        <HowItWorksV2FinalCta content={content.finalCta} />
       ) : null}
     </main>
   );

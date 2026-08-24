@@ -1,37 +1,40 @@
-
 import type { Metadata } from "next";
-import { homepageContentNo } from "@/content/no/homepage";
 import {
-  HomeHero,
-  HomeProofStrip,
-  HomeSystemReveal,
-  HomeRoutineSequence,
   HomeAppGuidance,
-  HomeResearchBoundary,
-  HomeEverydayPathways,
   HomeFinalCta,
+  HomeHero,
 } from "@/components/home";
+import { Home03Benefits } from "@/components/home/Home03Benefits";
+import { Home03Faq } from "@/components/home/Home03Faq";
+import { Home03FeatureBar } from "@/components/home/Home03FeatureBar";
+import { Home03Learn } from "@/components/home/Home03Learn";
+import { Home03Research } from "@/components/home/Home03Research";
+import { Home03StimulationModes } from "@/components/home/Home03StimulationModes";
+import { Home03VagusNerve } from "@/components/home/Home03VagusNerve";
+import { homepage03ContentNo } from "@/content/no/homepage-v3";
 import {
+  buildFAQStructuredData,
   buildOrganizationStructuredData,
   buildWebPageStructuredData,
   buildWebSiteStructuredData,
 } from "@/lib/seo/structured-data";
 
 export const metadata: Metadata = {
-  title: "Neuvago Norge | Ikke-invasiv VNS-enhet og veiledet app",
+  title: "Neuvago Norge | Ikke-invasiv vagusnervestimulering",
   description:
-    "Neuvago kombinerer en ikke-invasiv VNS-enhet med veiledede appøkter for korte daglige velværerutiner. Se produktdetaljer og kjøpsalternativer før lansering.",
+    "Oppdag Neuvago, en ikke-invasiv vagusnervestimulator med justerbar intensitet, fire stimuleringsmoduser, forskningskontekst og praktiske verktøy for daglige velværerutiner.",
   alternates: {
     canonical: "/no",
     languages: {
       "en-US": "/",
       "no-NO": "/no",
+      "x-default": "/",
     },
   },
   openGraph: {
-    title: "Neuvago Norge | Ikke-invasiv VNS-enhet og veiledet app",
+    title: "Neuvago Norge | Ikke-invasiv vagusnervestimulering",
     description:
-      "Et rolig, app-veiledet velværesystem bygget rundt en ikke-invasiv VNS-enhet og korte daglige rutiner.",
+      "Utforsk en ikke-invasiv, ørebasert vagusnervestimulator med justerbar intensitet, fire stimuleringsmoduser og en tydelig vei til produktinformasjon.",
     url: "/no",
     siteName: "Neuvago",
     locale: "no_NO",
@@ -39,59 +42,81 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Neuvago Norge | Ikke-invasiv VNS-enhet og veiledet app",
+    title: "Neuvago Norge | Ikke-invasiv vagusnervestimulering",
     description:
-      "Et rolig, app-veiledet velværesystem bygget rundt en ikke-invasiv VNS-enhet og korte daglige rutiner.",
+      "En ikke-invasiv, ørebasert vagusnervestimulator med justerbar intensitet og fire stimuleringsmoduser.",
   },
 };
 
 export default function NorwayHomePage() {
-  const content = homepageContentNo;
+  const content = homepage03ContentNo;
 
   const structuredData = [
     buildOrganizationStructuredData(),
     buildWebSiteStructuredData(),
     buildWebPageStructuredData({
       title: content.hero.title,
-      description: content.hero.description,
+      description: `${content.hero.productLine} ${content.hero.description}`,
       path: "/no",
     }),
   ];
+
+  const faqStructuredData = buildFAQStructuredData(
+    content.faq.items,
+  );
+
+  if (faqStructuredData) {
+    structuredData.push(faqStructuredData);
+  }
 
   return (
     <main className="bg-[#f7f4ef] text-[#1f1f1c]">
       {structuredData.map((item, index) => (
         <script
-          key={`no-home-ld-${index}`}
+          key={`no-home-03-ld-${index}`}
           type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(item) }}
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(item),
+          }}
         />
       ))}
 
-      {content.hero.visible ? <HomeHero content={content.hero} /> : null}
-
-      {content.proofStrip.visible ? (
-        <HomeProofStrip content={content.proofStrip} />
+      {content.hero.visible ? (
+        <HomeHero content={content.hero} />
       ) : null}
 
-      {content.systemReveal.visible ? (
-        <HomeSystemReveal content={content.systemReveal} />
+      {content.featureBar.visible ? (
+        <Home03FeatureBar content={content.featureBar} />
       ) : null}
 
-      {content.ritualSequence.visible ? (
-        <HomeRoutineSequence content={content.ritualSequence} />
+      {content.benefits.visible ? (
+        <Home03Benefits content={content.benefits} />
+      ) : null}
+
+      {content.stimulationModes.visible ? (
+        <Home03StimulationModes
+          content={content.stimulationModes}
+        />
+      ) : null}
+
+      {content.vagusNerve.visible ? (
+        <Home03VagusNerve content={content.vagusNerve} />
+      ) : null}
+
+      {content.research.visible ? (
+        <Home03Research content={content.research} />
       ) : null}
 
       {content.appGuidance.visible ? (
         <HomeAppGuidance content={content.appGuidance} />
       ) : null}
 
-      {content.researchBoundary.visible ? (
-        <HomeResearchBoundary content={content.researchBoundary} />
+      {content.learn.visible ? (
+        <Home03Learn content={content.learn} />
       ) : null}
 
-      {content.everydayPathways.visible ? (
-        <HomeEverydayPathways content={content.everydayPathways} />
+      {content.faq.visible ? (
+        <Home03Faq content={content.faq} />
       ) : null}
 
       {content.finalCta.visible ? (

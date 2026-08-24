@@ -141,12 +141,59 @@ export const productV2ContentNo = {
 
   modes: {
     ...productV2Content.modes,
-    eyebrow: "Fire stimuleringsmoduser",
-    title: "Ulike moduser for ulike øyeblikk.",
+    eyebrow: "FIRE STIMULERINGSMODUSER",
+    title: "Fire moduser, hver med sin egen rytme.",
     description:
-      "Neuvago har fire navngitte stimuleringsprogrammer. Detaljert veiledning for hver modus vil være tilgjengelig før kjøp åpner.",
-    items: ["Sleep", "Relax", "Meditation", "Relief"],
-    cta: purchaseCtaNo,
+      "Sleep, Relax, Meditation og Relief bruker ulike stimuleringsmønstre for forskjellige behov og situasjoner. Hver modus varer i 20 minutter og har 30 justerbare intensitetsnivåer.",
+    detailLabels: {
+      intendedUse: "Utviklet for",
+      stimulationPattern: "Stimuleringsmønster",
+    },
+    items: [
+      {
+        id: "sleep",
+        name: "Sleep",
+        intendedUse:
+          "Utviklet for nedtrapping om kvelden, hvile og bedre søvn.",
+        stimulationPattern:
+          "Sleep veksler mellom raskere og langsommere stimuleringsrytmer og skaper et skånsomt, skiftende mønster.",
+        sensation:
+          "Typisk følelse: Svært mild stimulering med en lett prikkende eller stikkende følelse ved øret.",
+      },
+      {
+        id: "relax",
+        name: "Relax",
+        intendedUse:
+          "Utviklet for stress i hverdagen, avspenning og en roligere tilstand.",
+        stimulationPattern:
+          "Relax følger en jevn rytme med fire sekunder stimulering etterfulgt av fire sekunder pause.",
+        sensation:
+          "Typisk følelse: Svært mild stimulering med en myk prikkende eller stikkende følelse.",
+      },
+      {
+        id: "meditation",
+        name: "Meditation",
+        intendedUse:
+          "Utviklet for meditasjon, fokus og konsentrasjon.",
+        stimulationPattern:
+          "Meditation følger den samme rytmen med fire sekunder på og fire sekunder av som Relax, med et tettere pulsmønster.",
+        sensation:
+          "Typisk følelse: Mild prikking eller stikking, vanligvis tydeligere enn Relax.",
+      },
+      {
+        id: "relief",
+        name: "Relief",
+        intendedUse:
+          "Utviklet for øyeblikk med spenning og ubehag.",
+        stimulationPattern:
+          "Relief bruker langsomme, tydelige pulser etterfulgt av fire sekunder pause.",
+        sensation:
+          "Typisk følelse: Mer merkbare, individuelle stikkende pulser.",
+      },
+    ],
+    intensityNote:
+      "Intensiteten i alle moduser kan justeres. Øk den gradvis til stimuleringen kjennes merkbar, men komfortabel.",
+    cta: heroPurchaseCtaNo,
   },
 
   features: {

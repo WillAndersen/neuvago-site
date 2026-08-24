@@ -166,12 +166,59 @@ export const productV2Content = {
   },
 
   modes: {
-    eyebrow: "Four stimulation modes",
-    title: "Different modes for different moments.",
+    eyebrow: "FOUR STIMULATION MODES",
+    title: "Four modes, each with its own rhythm.",
     description:
-      "Neuvago includes four named stimulation programmes. Detailed guidance for each mode will be available before purchasing opens.",
-    items: ["Sleep", "Relax", "Meditation", "Relief"],
-    cta: purchaseCta,
+      "Sleep, Relax, Meditation and Relief use distinct stimulation patterns for different needs and moments. Every mode runs for 20 minutes, with 30 adjustable intensity levels.",
+    detailLabels: {
+      intendedUse: "Intended use",
+      stimulationPattern: "Stimulation pattern",
+    },
+    items: [
+      {
+        id: "sleep",
+        name: "Sleep",
+        intendedUse:
+          "Designed for evening wind-down, rest and better sleep.",
+        stimulationPattern:
+          "Sleep alternates between faster and slower stimulation rhythms, creating a gentle, changing pattern.",
+        sensation:
+          "Typical sensation: Very mild stimulation with a light tingling or pricking sensation at the ear.",
+      },
+      {
+        id: "relax",
+        name: "Relax",
+        intendedUse:
+          "Designed for everyday stress, relaxation and a calmer state.",
+        stimulationPattern:
+          "Relax follows a steady rhythm of four seconds of stimulation followed by four seconds of pause.",
+        sensation:
+          "Typical sensation: Very mild stimulation with a soft tingling or pricking sensation.",
+      },
+      {
+        id: "meditation",
+        name: "Meditation",
+        intendedUse:
+          "Designed for meditation, focus and concentration.",
+        stimulationPattern:
+          "Meditation follows the same four-seconds-on, four-seconds-off rhythm as Relax, with a denser pulse pattern.",
+        sensation:
+          "Typical sensation: Mild tingling or pricking, usually more pronounced than Relax.",
+      },
+      {
+        id: "relief",
+        name: "Relief",
+        intendedUse:
+          "Designed for moments of tension and discomfort.",
+        stimulationPattern:
+          "Relief uses slow, distinct pulses followed by four seconds of pause.",
+        sensation:
+          "Typical sensation: More noticeable, individual pricking pulses.",
+      },
+    ],
+    intensityNote:
+      "The intensity of every mode is adjustable. Increase it gradually until the stimulation feels noticeable but comfortable.",
+    cta: heroPurchaseCta,
   },
 
   features: {

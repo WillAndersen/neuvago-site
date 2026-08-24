@@ -5,8 +5,6 @@ import {
   ProductV2Benefits,
   ProductV2HowItWorks,
   ProductV2Modes,
-  ProductV2Features,
-  ProductV2UseSequence,
   ProductV2Research,
   ProductV2BuyBox,
   ProductV2Details,
@@ -81,10 +79,8 @@ export default function ProductPage() {
       <ProductV2Benefits content={content.benefits} />
       <ProductV2HowItWorks content={content.howItWorks} />
       <ProductV2Modes content={content.modes} />
-      <ProductV2Features content={content.features} />
-      <ProductV2UseSequence content={content.useSequence} />
-      <ProductV2Research content={content.research} />
       <ProductV2BuyBox content={content.buyBox} />
+      <ProductV2Research content={content.research} />
       <ProductV2Details content={content.productDetails} />
       <ProductV2Faq content={content.faq} />
       <ProductV2FinalCta content={content.finalCta} />

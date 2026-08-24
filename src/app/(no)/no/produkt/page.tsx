@@ -4,13 +4,11 @@ import {
   ProductV2BuyBox,
   ProductV2Details,
   ProductV2Faq,
-  ProductV2Features,
   ProductV2FinalCta,
   ProductV2Hero,
   ProductV2HowItWorks,
   ProductV2Modes,
   ProductV2Research,
-  ProductV2UseSequence,
 } from "@/components/product-v2";
 import { productV2ContentNo } from "@/content/no/product-v2";
 import {
@@ -88,12 +86,8 @@ export default function NorwayProductPage() {
       <ProductV2Benefits content={content.benefits} />
       <ProductV2HowItWorks content={content.howItWorks} />
       <ProductV2Modes content={content.modes} />
-      <ProductV2Features content={content.features} />
-      <ProductV2UseSequence
-        content={content.useSequence}
-      />
-      <ProductV2Research content={content.research} />
       <ProductV2BuyBox content={content.buyBox} />
+      <ProductV2Research content={content.research} />
       <ProductV2Details
         content={content.productDetails}
       />

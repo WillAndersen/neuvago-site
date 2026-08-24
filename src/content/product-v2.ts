@@ -343,49 +343,31 @@ export const productV2Content = {
         alt: "Close detail of the Neuvago device controls and finish.",
       },
     ] satisfies ProductV2Image[],
-    eyebrow: "Purchase Neuvago",
+    eyebrow: "NEUVAGO",
+    title: "Everything you need to begin.",
+    description:
+      "Neuvago includes four 20-minute stimulation modes, 30 adjustable intensity levels and one year of access to the Neuvago App.",
     productName: "Neuvago",
-    productDescription: "Non-invasive vagus nerve stimulator.",
-    badge: "General wellness",
+    productDescription: "Non-invasive vagus nerve stimulator",
     price: currentPrice,
     purchaseOpen,
-    purchaseTitle: purchaseOpen ? "Ready to order" : "Purchase details",
-    launchStatus: purchaseOpen ? "Available" : "Prelaunch",
-    purchaseDescription: purchaseOpen
-      ? "Review the included items and continue to secure Shopify checkout."
-      : "Checkout is not yet open. Confirmed price, availability, delivery, returns and warranty information will appear here before purchasing opens.",
-    checkoutLabel: "Shop Neuvago",
-    checkoutDisabledLabel: "Checkout opens soon",
-    checkoutLoadingLabel: "Opening checkout…",
-    prelaunchCta: {
-      label: "How Neuvago works",
-      href: "#how-it-works",
-    } satisfies ProductV2Cta,
-    intendedUseCta: {
-      label: "Review intended use",
-      href: "/legal/intended-use",
-    } satisfies ProductV2Cta,
+    includedTitle: "What's included",
     includedItems: [
       "Neuvago device",
       "Left earpiece",
+      "Conductive gel",
+      "Spray bottle",
       "Charging cable",
       "Felt case",
       "User Manual",
       "Quick Start Guide",
-      "Spray bottle",
-      "Conductive gel",
       "One year of Neuvago App access",
     ],
-    trustLinks: [
-      {
-        label: "Terms",
-        href: "/legal/terms-of-service",
-      },
-      {
-        label: "Privacy",
-        href: "/legal/privacy-policy",
-      },
-    ],
+    primaryCta: heroPurchaseCta,
+    secondaryCta: {
+      label: "How it works",
+      href: "/how-it-works",
+    } satisfies ProductV2Cta,
   },
 
   productDetails: {

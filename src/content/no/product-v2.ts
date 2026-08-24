@@ -329,52 +329,29 @@ export const productV2ContentNo = {
           "Nærbilde av kontrollene og overflaten på Neuvago-enheten.",
       },
     ],
-    eyebrow: "Kjøp Neuvago",
+    eyebrow: "NEUVAGO",
+    title: "Alt du trenger for å komme i gang.",
+    description:
+      "Neuvago inkluderer fire stimuleringsmoduser på 20 minutter, 30 justerbare intensitetsnivåer og ett års tilgang til Neuvago App.",
     productName: "Neuvago",
-    productDescription:
-      "Ikke-invasiv vagusnervestimulator.",
-    badge: "Generell velvære",
-    purchaseTitle: purchaseOpenNo
-      ? "Klar til bestilling"
-      : "Kjøpsdetaljer",
-    launchStatus: purchaseOpenNo
-      ? "Tilgjengelig"
-      : "Før lansering",
-    purchaseDescription: purchaseOpenNo
-      ? "Se hva som følger med, og fortsett til sikker betaling med Shopify."
-      : "Kassen er ikke åpen ennå. Bekreftet pris, tilgjengelighet, levering, retur og garanti vil vises her før kjøp åpner.",
-    checkoutLabel: "Kjøp Neuvago",
-    checkoutDisabledLabel: "Kassen åpner snart",
-    checkoutLoadingLabel: "Åpner kassen…",
-    prelaunchCta: {
-      label: "Slik fungerer Neuvago",
-      href: "#how-it-works",
-    },
-    intendedUseCta: {
-      label: "Se tiltenkt bruk",
-      href: "/no/juridisk/tiltenkt-bruk",
-    },
+    productDescription: "Ikke-invasiv vagusnervestimulator",
+    includedTitle: "Dette følger med",
     includedItems: [
       "Neuvago-enhet",
       "Venstre øreelektrode",
+      "Ledende gel",
+      "Sprayflaske",
       "Ladekabel",
       "Filtetui",
       "Brukermanual",
       "Hurtigstartveiledning",
-      "Sprayflaske",
-      "Ledende gel",
       "Ett års tilgang til Neuvago App",
     ],
-    trustLinks: [
-      {
-        label: "Vilkår",
-        href: "/no/juridisk/vilkar",
-      },
-      {
-        label: "Personvern",
-        href: "/no/juridisk/personvern",
-      },
-    ],
+    primaryCta: heroPurchaseCtaNo,
+    secondaryCta: {
+      label: "Slik fungerer det",
+      href: "/no/slik-fungerer-det",
+    },
   },
 
   productDetails: {

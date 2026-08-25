@@ -13,7 +13,7 @@ export const metadata: Metadata = {
     canonical: "/learn",
     languages: {
       "en-US": "/learn",
-      "no-NO": "/no/kunnskap",
+      "nb-NO": "/no/kunnskap",
       "x-default": "/learn",
     },
   },

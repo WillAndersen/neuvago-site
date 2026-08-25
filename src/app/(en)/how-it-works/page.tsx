@@ -8,20 +8,25 @@ import {
 import { howItWorksV2Content } from "@/content/how-it-works-v2";
 import { buildWebPageStructuredData } from "@/lib/seo/structured-data";
 
+const title =
+  "How Neuvago Works | Non-Invasive Vagus Nerve Stimulation";
+const description =
+  "See how Neuvago uses adjustable, ear-based stimulation, guided 20-minute sessions and four modes to support everyday wellness routines.";
+
 export const metadata: Metadata = {
-  title: "How Neuvago stimulates the vagus nerve.",
-  description: "How Neuvago stimulates the vagus nerve.",
+  title,
+  description,
   alternates: {
     canonical: "/how-it-works",
     languages: {
       "en-US": "/how-it-works",
-      "no-NO": "/no/slik-fungerer-det",
+      "nb-NO": "/no/slik-fungerer-det",
       "x-default": "/how-it-works",
     },
   },
   openGraph: {
-    title: "How Neuvago stimulates the vagus nerve.",
-    description: "How Neuvago stimulates the vagus nerve.",
+    title,
+    description,
     url: "/how-it-works",
     siteName: "Neuvago",
     locale: "en_US",
@@ -29,8 +34,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "How Neuvago stimulates the vagus nerve.",
-    description: "How Neuvago stimulates the vagus nerve.",
+    title,
+    description,
   },
 };
 
@@ -38,8 +43,8 @@ export default function HowItWorksPage() {
   const content = howItWorksV2Content;
   const structuredData = [
     buildWebPageStructuredData({
-      title: content.hero.title,
-      description: content.hero.title,
+      title,
+      description,
       path: "/how-it-works",
     }),
   ];

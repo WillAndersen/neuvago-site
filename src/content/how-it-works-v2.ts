@@ -244,8 +244,8 @@ export const howItWorksV2Content = {
       "Discover the device, the four stimulation modes and everything included with Neuvago.",
     primaryCta: howItWorksHeroPrimaryCta,
     secondaryCta: {
-      label: "Explore the Product",
-      href: "/product",
+      label: "How to use Neuvago",
+      href: "/how-to-use",
     } satisfies HowItWorksV2Cta,
     image: {
       src: "/images/neuvago/launch/product-hero-desktop.webp",

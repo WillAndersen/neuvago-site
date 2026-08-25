@@ -19,6 +19,7 @@ const footerGroupsByLocale: Record<
         { href: "/product", label: "Product" },
         { href: "/app", label: "App" },
         { href: "/how-it-works", label: "How it works" },
+        { href: "/how-to-use", label: "How to use" },
       ],
     },
     {

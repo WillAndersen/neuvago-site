@@ -57,9 +57,9 @@ export function ResearchV2Hero({ content }: ResearchV2HeroProps) {
           <div className="absolute inset-[8%] rounded-full bg-[radial-gradient(circle,rgba(225,173,102,0.2),transparent_68%)] blur-2xl" />
 
           <div className="relative overflow-hidden rounded-[2.25rem] border border-black/6 bg-[#eee7dd]/82 p-5 shadow-[0_30px_110px_rgba(31,31,28,0.11)] backdrop-blur sm:p-7">
-            <p className="text-[0.65rem] font-medium uppercase tracking-[0.26em] text-[#8a7f72]">
+            <h2 className="text-[0.65rem] font-medium uppercase tracking-[0.26em] text-[#8a7f72]">
               Research terminology
-            </p>
+            </h2>
 
             <div className="mt-6 space-y-3">
               {content.hierarchy.map((item, index) => (

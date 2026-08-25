@@ -8,37 +8,42 @@ import {
 import { howItWorksV2ContentNo } from "@/content/no/how-it-works-v2";
 import { buildPageWithBreadcrumbStructuredData } from "@/lib/seo/structured-data";
 
+const title =
+  "Slik fungerer Neuvago | Ikke-invasiv vagusnervestimulering";
+const description =
+  "Se hvordan Neuvago kombinerer justerbar, ørebasert stimulering, fire 20-minutters moduser og veiledning for daglige velværerutiner.";
+
 export const metadata: Metadata = {
-  title: "Slik stimulerer Neuvago vagusnerven.",
-  description: "Slik stimulerer Neuvago vagusnerven.",
+  title,
+  description,
   alternates: {
     canonical: "/no/slik-fungerer-det",
     languages: {
       "en-US": "/how-it-works",
-      "no-NO": "/no/slik-fungerer-det",
+      "nb-NO": "/no/slik-fungerer-det",
       "x-default": "/how-it-works",
     },
   },
   openGraph: {
-    title: "Slik stimulerer Neuvago vagusnerven.",
-    description: "Slik stimulerer Neuvago vagusnerven.",
+    title,
+    description,
     url: "/no/slik-fungerer-det",
     siteName: "Neuvago",
-    locale: "no_NO",
+    locale: "nb_NO",
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Slik stimulerer Neuvago vagusnerven.",
-    description: "Slik stimulerer Neuvago vagusnerven.",
+    title,
+    description,
   },
 };
 
 export default function NorwayHowItWorksPage() {
   const content = howItWorksV2ContentNo;
   const structuredData = buildPageWithBreadcrumbStructuredData({
-    title: content.hero.title,
-    description: content.hero.title,
+    title,
+    description,
     path: "/no/slik-fungerer-det",
     breadcrumbs: [
       { name: "Forside", path: "/no" },

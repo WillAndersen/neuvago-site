@@ -113,8 +113,8 @@ export const englishGlossaryTerms = [
       "vagus-nerve",
       "implanted-vns",
       "non-invasive-vns",
-      "cervical-non-invasive-vns",
-      "transcutaneous-vns",
+      "intended-use",
+      "contraindication",
       "tolerability"
     ],
     "publishedAt": "2026-08-25",
@@ -175,9 +175,9 @@ export const englishGlossaryTerms = [
       "vagus-nerve-stimulation",
       "cervical-non-invasive-vns",
       "transcutaneous-vns",
-      "transcutaneous-auricular-vns",
       "auricular-vns",
-      "tolerability"
+      "precaution",
+      "intended-use"
     ],
     "publishedAt": "2026-08-25",
     "modifiedAt": "2026-08-25",
@@ -235,11 +235,11 @@ export const englishGlossaryTerms = [
     ],
     "relatedTermIds": [
       "non-invasive-vns",
-      "cervical-non-invasive-vns",
       "transcutaneous-auricular-vns",
       "stimulation-site",
-      "stimulation-intensity",
-      "stimulation-frequency"
+      "duty-cycle",
+      "session-duration",
+      "sham-stimulation"
     ],
     "publishedAt": "2026-08-25",
     "modifiedAt": "2026-08-25",
@@ -296,12 +296,12 @@ export const englishGlossaryTerms = [
       }
     ],
     "relatedTermIds": [
-      "transcutaneous-vns",
       "auricular-vns",
-      "auricular-branch",
-      "tragus",
-      "cymba-conchae",
-      "stimulation-site"
+      "stimulation-site",
+      "duty-cycle",
+      "session-duration",
+      "sham-stimulation",
+      "target-engagement"
     ],
     "publishedAt": "2026-08-25",
     "modifiedAt": "2026-08-25",
@@ -361,10 +361,10 @@ export const englishGlossaryTerms = [
     "relatedTermIds": [
       "transcutaneous-auricular-vns",
       "auricular-branch",
-      "tragus",
-      "cymba-conchae",
-      "cavum-conchae",
-      "earlobe"
+      "earlobe",
+      "sham-stimulation",
+      "target-engagement",
+      "stimulation-site"
     ],
     "publishedAt": "2026-08-25",
     "modifiedAt": "2026-08-25",
@@ -663,8 +663,10 @@ export const englishGlossaryTerms = [
     "relatedTermIds": [
       "vagal-tone",
       "autonomic-nervous-system",
-      "sympathetic-nervous-system",
-      "parasympathetic-nervous-system"
+      "target-engagement",
+      "randomized-controlled-trial",
+      "systematic-review",
+      "certainty-of-evidence"
     ],
     "publishedAt": "2026-08-25",
     "modifiedAt": "2026-08-25",
@@ -721,12 +723,12 @@ export const englishGlossaryTerms = [
       }
     ],
     "relatedTermIds": [
-      "vagus-nerve-stimulation",
-      "non-invasive-vns",
-      "transcutaneous-vns",
-      "transcutaneous-auricular-vns",
+      "adverse-event",
+      "serious-adverse-event",
+      "precaution",
+      "contraindication",
       "stimulation-intensity",
-      "electrode"
+      "session-duration"
     ],
     "publishedAt": "2026-08-25",
     "modifiedAt": "2026-08-25",
@@ -845,10 +847,10 @@ export const englishGlossaryTerms = [
     "relatedTermIds": [
       "vagus-nerve-stimulation",
       "non-invasive-vns",
-      "cervical-non-invasive-vns",
       "electrode",
-      "stimulation-frequency",
-      "pulse-width"
+      "adverse-event",
+      "serious-adverse-event",
+      "contraindication"
     ],
     "publishedAt": "2026-08-25",
     "modifiedAt": "2026-08-25",
@@ -1082,10 +1084,10 @@ export const englishGlossaryTerms = [
         "label": "Explore auricular research"
       },
       {
-        "title": "Ear-based VNS overview",
-        "description": "A plain-language bridge from anatomy to non-invasive stimulation methods.",
-        "href": "/learn/auricular-vagus-nerve-stimulation",
-        "label": "Review the method overview"
+        "title": "Transcutaneous VNS overview",
+        "description": "A plain-language bridge from auricular anatomy to transcutaneous stimulation methods and protocol variables.",
+        "href": "/learn/transcutaneous-vagus-nerve-stimulation",
+        "label": "Review the tVNS overview"
       }
     ],
     "relatedTermIds": [
@@ -1150,11 +1152,11 @@ export const englishGlossaryTerms = [
       }
     ],
     "relatedTermIds": [
+      "sham-stimulation",
       "auricular-branch",
       "transcutaneous-auricular-vns",
       "tragus",
       "cymba-conchae",
-      "cavum-conchae",
       "stimulation-site"
     ],
     "publishedAt": "2026-08-25",
@@ -1213,10 +1215,10 @@ export const englishGlossaryTerms = [
     ],
     "relatedTermIds": [
       "electrode",
-      "cervical-non-invasive-vns",
       "transcutaneous-auricular-vns",
-      "tragus",
-      "cymba-conchae",
+      "cervical-non-invasive-vns",
+      "sham-stimulation",
+      "target-engagement",
       "earlobe"
     ],
     "publishedAt": "2026-08-25",
@@ -1279,7 +1281,7 @@ export const englishGlossaryTerms = [
       "stimulation-frequency",
       "pulse-width",
       "waveform",
-      "tolerability"
+      "sham-stimulation"
     ],
     "publishedAt": "2026-08-25",
     "modifiedAt": "2026-08-25",
@@ -1340,8 +1342,8 @@ export const englishGlossaryTerms = [
       "stimulation-frequency",
       "pulse-width",
       "waveform",
-      "tolerability",
-      "stimulation-site"
+      "duty-cycle",
+      "session-duration"
     ],
     "publishedAt": "2026-08-25",
     "modifiedAt": "2026-08-25",
@@ -1400,9 +1402,9 @@ export const englishGlossaryTerms = [
       "pulse-width",
       "stimulation-intensity",
       "waveform",
-      "implanted-vns",
-      "transcutaneous-vns",
-      "electrode"
+      "duty-cycle",
+      "session-duration",
+      "transcutaneous-vns"
     ],
     "publishedAt": "2026-08-25",
     "modifiedAt": "2026-08-25",
@@ -1462,9 +1464,9 @@ export const englishGlossaryTerms = [
       "stimulation-frequency",
       "stimulation-intensity",
       "waveform",
-      "electrode",
-      "implanted-vns",
-      "transcutaneous-vns"
+      "duty-cycle",
+      "session-duration",
+      "electrode"
     ],
     "publishedAt": "2026-08-25",
     "modifiedAt": "2026-08-25",
@@ -1525,13 +1527,810 @@ export const englishGlossaryTerms = [
       "stimulation-frequency",
       "pulse-width",
       "stimulation-intensity",
+      "duty-cycle",
       "electrode",
-      "transcutaneous-vns",
-      "implanted-vns"
+      "transcutaneous-vns"
     ],
     "publishedAt": "2026-08-25",
     "modifiedAt": "2026-08-25",
     "sitemapPriority": 0.6,
+    "changeFrequency": "monthly"
+  },
+  {
+    "id": "duty-cycle",
+    "slug": "duty-cycle",
+    "path": "/glossary/duty-cycle",
+    "locale": "en",
+    "status": "published",
+    "order": 260,
+    "term": "Duty cycle",
+    "aliases": [
+      "stimulation duty cycle",
+      "on/off cycle"
+    ],
+    "category": "protocol-parameters",
+    "seoTitle": "Duty Cycle Definition | VNS Protocols | Neuvago",
+    "description": "What duty cycle means in stimulation protocols, how on/off periods are calculated, and why it must not be confused with session duration.",
+    "shortDefinition": "Duty cycle is the proportion of a repeating stimulation cycle during which stimulation is on rather than off.",
+    "hubSummary": "Duty cycle describes how much of a repeating on/off cycle contains active stimulation.",
+    "expandedDefinition": [
+      "In an intermittent stimulation protocol, duty cycle is usually calculated as on-time divided by total cycle time. For example, 30 seconds on and 30 seconds off gives a 50% duty cycle.",
+      "The same percentage can be produced by different on/off patterns, so reporting only the percentage can hide clinically or experimentally relevant timing details. Both the on-period and off-period should be stated.",
+      "Duty cycle is one part of a protocol alongside waveform, frequency, pulse width, intensity, stimulation site, and total session duration. A value used in one study is not automatically an optimal or product-specific setting."
+    ],
+    "whatItIsNot": [
+      "It is not the same as session duration or cumulative active time.",
+      "It does not describe pulse frequency, pulse width, or current intensity.",
+      "A higher duty cycle does not by itself establish stronger target engagement or better outcomes."
+    ],
+    "whyItMatters": "Separating duty cycle from total session length makes protocols easier to compare and prevents a familiar percentage from being treated as a universal dose.",
+    "primaryPillar": {
+      "title": "Transcutaneous VNS research",
+      "description": "A method-focused overview of stimulation parameters, protocol reporting, and interpretation limits.",
+      "href": "/research/topics/transcutaneous-vagus-nerve-stimulation",
+      "label": "Explore tVNS protocols"
+    },
+    "sourceLinks": [
+      {
+        "title": "Auricular VNS research",
+        "description": "How active and sham auricular protocols vary in site, timing, and parameter design.",
+        "href": "/research/topics/auricular-vagus-nerve-stimulation",
+        "label": "Review auricular methods"
+      },
+      {
+        "title": "Safety and tolerability",
+        "description": "Why exposure, intensity, and reporting details matter when interpreting adverse events.",
+        "href": "/research/topics/safety-and-tolerability",
+        "label": "Review safety context"
+      }
+    ],
+    "relatedTermIds": [
+      "session-duration",
+      "stimulation-frequency",
+      "pulse-width",
+      "waveform",
+      "stimulation-intensity",
+      "sham-stimulation"
+    ],
+    "publishedAt": "2026-08-25",
+    "modifiedAt": "2026-08-25",
+    "sitemapPriority": 0.58,
+    "changeFrequency": "monthly"
+  },
+  {
+    "id": "session-duration",
+    "slug": "session-duration",
+    "path": "/glossary/session-duration",
+    "locale": "en",
+    "status": "published",
+    "order": 270,
+    "term": "Session duration",
+    "aliases": [
+      "stimulation session length",
+      "session length"
+    ],
+    "category": "protocol-parameters",
+    "seoTitle": "Session Duration Definition | VNS Protocols | Neuvago",
+    "description": "A definition of session duration in VNS research and why total clock time, active stimulation time, and treatment schedule must be distinguished.",
+    "shortDefinition": "Session duration is the total elapsed time assigned to one stimulation session.",
+    "hubSummary": "Session duration is the total elapsed time assigned to one stimulation session.",
+    "expandedDefinition": [
+      "Session duration is normally reported in minutes, but the meaning depends on the protocol. A 30-minute session may contain continuous stimulation or repeated on/off periods with less than 30 minutes of active output.",
+      "It should be distinguished from the number of sessions, the spacing between sessions, the number of treatment days, and cumulative exposure across a study or routine.",
+      "Duration can interact with intensity, frequency, duty cycle, tolerability, and the outcome being measured. A duration used in one population or device cannot be assumed to be optimal for another."
+    ],
+    "whatItIsNot": [
+      "It is not necessarily equal to active stimulation time.",
+      "It does not describe how often sessions occur or how many weeks a programme lasts.",
+      "A longer session is not automatically more effective or more appropriate."
+    ],
+    "whyItMatters": "Clear duration reporting prevents a study's total exposure from being reduced to one ambiguous number and helps readers compare protocols responsibly.",
+    "primaryPillar": {
+      "title": "Transcutaneous VNS research",
+      "description": "A research overview of parameter combinations, session design, and method-specific interpretation.",
+      "href": "/research/topics/transcutaneous-vagus-nerve-stimulation",
+      "label": "Explore protocol research"
+    },
+    "sourceLinks": [
+      {
+        "title": "How to use Neuvago",
+        "description": "Product-specific guidance should define the actual session structure separately from general research terminology.",
+        "href": "/how-to-use",
+        "label": "See product guidance"
+      },
+      {
+        "title": "Safety and tolerability",
+        "description": "Research context for exposure, comfort, adverse-event reporting, and protocol differences.",
+        "href": "/research/topics/safety-and-tolerability",
+        "label": "Review safety context"
+      }
+    ],
+    "relatedTermIds": [
+      "duty-cycle",
+      "stimulation-intensity",
+      "stimulation-frequency",
+      "tolerability",
+      "adverse-event",
+      "waveform"
+    ],
+    "publishedAt": "2026-08-25",
+    "modifiedAt": "2026-08-25",
+    "sitemapPriority": 0.58,
+    "changeFrequency": "monthly"
+  },
+  {
+    "id": "sham-stimulation",
+    "slug": "sham-stimulation",
+    "path": "/glossary/sham-stimulation",
+    "locale": "en",
+    "status": "published",
+    "order": 280,
+    "term": "Sham stimulation",
+    "aliases": [
+      "sham control",
+      "placebo-like stimulation",
+      "control stimulation"
+    ],
+    "category": "safety-research",
+    "seoTitle": "Sham Stimulation Definition | Research Methods | Neuvago",
+    "description": "What sham stimulation means in neuromodulation trials, why it supports blinding, and why a sham condition may not be physiologically inert.",
+    "shortDefinition": "Sham stimulation is a comparison condition designed to resemble active stimulation while withholding or altering the hypothesised active component.",
+    "hubSummary": "Sham stimulation is a comparison condition intended to resemble active stimulation without matching the full active protocol.",
+    "expandedDefinition": [
+      "In device trials, sham design may change the stimulation site, intensity, waveform, duration, or timing while trying to preserve a believable participant experience.",
+      "A useful sham should support blinding and should not create a systematic difference in expectations, sensation, contact, or study procedures. Researchers therefore need to assess whether participants can guess their assignment.",
+      "Sham is not automatically biologically inactive. Earlobe stimulation, low-intensity stimulation, brief ramping, or another active-feeling control may have physiological or sensory effects that complicate interpretation."
+    ],
+    "whatItIsNot": [
+      "It is not automatically equivalent to no stimulation.",
+      "It does not guarantee successful blinding.",
+      "A non-significant active-versus-sham difference does not prove that neither condition had an effect."
+    ],
+    "whyItMatters": "The credibility and biological activity of the control condition can change the estimated treatment effect and the certainty of conclusions.",
+    "primaryPillar": {
+      "title": "Auricular VNS research",
+      "description": "A focused overview of ear anatomy, sham locations, blinding, and protocol-specific interpretation.",
+      "href": "/research/topics/auricular-vagus-nerve-stimulation",
+      "label": "Explore sham design"
+    },
+    "sourceLinks": [
+      {
+        "title": "Transcutaneous VNS research",
+        "description": "Method context for active protocols, control conditions, and parameter reporting.",
+        "href": "/research/topics/transcutaneous-vagus-nerve-stimulation",
+        "label": "Review tVNS methods"
+      },
+      {
+        "title": "Scientific studies library",
+        "description": "Individual study summaries show how comparator conditions differ across trials.",
+        "href": "/research/studies",
+        "label": "Browse study designs"
+      }
+    ],
+    "relatedTermIds": [
+      "randomized-controlled-trial",
+      "target-engagement",
+      "earlobe",
+      "stimulation-site",
+      "duty-cycle",
+      "certainty-of-evidence"
+    ],
+    "publishedAt": "2026-08-25",
+    "modifiedAt": "2026-08-25",
+    "sitemapPriority": 0.6,
+    "changeFrequency": "monthly"
+  },
+  {
+    "id": "target-engagement",
+    "slug": "target-engagement",
+    "path": "/glossary/target-engagement",
+    "locale": "en",
+    "status": "published",
+    "order": 290,
+    "term": "Target engagement",
+    "aliases": [
+      "mechanistic target engagement",
+      "engagement of the target"
+    ],
+    "category": "measurement-interpretation",
+    "seoTitle": "Target Engagement Definition | VNS Research | Neuvago",
+    "description": "What target engagement means in intervention research and why sensation, device output, or a single biomarker is not automatically proof of mechanism.",
+    "shortDefinition": "Target engagement is evidence that an intervention produced the predicted measurable effect on its hypothesised biological or behavioural target.",
+    "hubSummary": "Target engagement asks whether an intervention measurably affected the target its mechanism predicts.",
+    "expandedDefinition": [
+      "A target may be molecular, cellular, circuit-level, physiological, behavioural, or another clearly defined mechanism. The measure used should be objective, reproducible, and linked to a pre-specified hypothesis.",
+      "Demonstrating target engagement is different from showing clinical benefit. Researchers may first ask whether the target changed and then test whether that change is associated with the outcome of interest.",
+      "In VNS research, electrical output, skin sensation, electrode contact, or a change in one physiological measure does not automatically establish selective engagement of a vagal pathway. The inference depends on the measure and study design."
+    ],
+    "whatItIsNot": [
+      "It is not the same as feeling stimulation.",
+      "It is not automatically a clinical endpoint or proof of benefit.",
+      "A statistically significant biomarker change does not by itself validate every proposed mechanism."
+    ],
+    "whyItMatters": "Separating mechanism evidence from outcome evidence makes negative, mixed, and positive studies more informative and reduces overclaiming.",
+    "primaryPillar": {
+      "title": "VNS research overview",
+      "description": "A map of mechanisms, outcomes, device differences, and interpretation boundaries across VNS methods.",
+      "href": "/research/topics/vagus-nerve-stimulation",
+      "label": "Explore mechanism research"
+    },
+    "sourceLinks": [
+      {
+        "title": "Auricular VNS research",
+        "description": "Why ear sensation, placement, and sham design do not alone prove selective vagal engagement.",
+        "href": "/research/topics/auricular-vagus-nerve-stimulation",
+        "label": "Review auricular evidence"
+      },
+      {
+        "title": "HRV research",
+        "description": "How physiological markers such as HRV can be relevant without serving as universal proof of mechanism.",
+        "href": "/research/topics/heart-rate-variability",
+        "label": "Review HRV interpretation"
+      }
+    ],
+    "relatedTermIds": [
+      "sham-stimulation",
+      "stimulation-site",
+      "heart-rate-variability",
+      "randomized-controlled-trial",
+      "certainty-of-evidence",
+      "transcutaneous-auricular-vns"
+    ],
+    "publishedAt": "2026-08-25",
+    "modifiedAt": "2026-08-25",
+    "sitemapPriority": 0.62,
+    "changeFrequency": "monthly"
+  },
+  {
+    "id": "adverse-event",
+    "slug": "adverse-event",
+    "path": "/glossary/adverse-event",
+    "locale": "en",
+    "status": "published",
+    "order": 300,
+    "term": "Adverse event",
+    "termCode": "AE",
+    "aliases": [
+      "undesirable medical occurrence",
+      "untoward medical occurrence"
+    ],
+    "category": "safety-research",
+    "seoTitle": "Adverse Event (AE) Definition | Safety Research | Neuvago",
+    "description": "What an adverse event (AE) means in research, why it does not prove causation, and how it differs from an expected sensation or adverse reaction.",
+    "shortDefinition": "An adverse event is an unfavourable medical occurrence observed during a study or use period, whether or not it is considered caused by the intervention.",
+    "hubSummary": "An adverse event is an unfavourable occurrence recorded during a study, without automatically establishing causation.",
+    "expandedDefinition": [
+      "An AE may be a symptom, sign, diagnosis, injury, laboratory abnormality, or other unfavourable occurrence that happens after participation or exposure begins.",
+      "The event is recorded because of timing and participant safety, not because causality has already been established. Investigators separately assess seriousness, severity, expectedness, and possible relationship to the intervention.",
+      "In stimulation studies, an expected sensory experience should be distinguished from an unwanted event, but the protocol must define how sensations, discomfort, skin findings, and medical events are collected and classified."
+    ],
+    "whatItIsNot": [
+      "It is not automatically a side effect caused by the intervention.",
+      "It is not the same as a serious adverse event.",
+      "The number of reported events cannot be compared responsibly without considering monitoring and reporting methods."
+    ],
+    "whyItMatters": "Keeping occurrence, causality, severity, and seriousness separate prevents safety data from being exaggerated or dismissed.",
+    "primaryPillar": {
+      "title": "Safety and tolerability research",
+      "description": "A focused overview of adverse-event reporting, tolerability, study populations, and product-specific boundaries.",
+      "href": "/research/topics/safety-and-tolerability",
+      "label": "Explore safety research"
+    },
+    "sourceLinks": [
+      {
+        "title": "Non-invasive VNS side effects",
+        "description": "A Norwegian guide distinguishing expected sensation, reported symptoms, and device-specific evidence.",
+        "href": "/no/kunnskap/bivirkninger-ved-ikke-invasiv-vagusnervestimulering",
+        "label": "Read the side-effects guide"
+      },
+      {
+        "title": "VNS safety guide",
+        "description": "A broader explanation of safety language, uncertainty, and responsible claims.",
+        "href": "/no/kunnskap/er-vagusnervestimulering-trygt",
+        "label": "Read the safety guide"
+      }
+    ],
+    "relatedTermIds": [
+      "serious-adverse-event",
+      "tolerability",
+      "contraindication",
+      "precaution",
+      "intended-use",
+      "session-duration"
+    ],
+    "publishedAt": "2026-08-25",
+    "modifiedAt": "2026-08-25",
+    "sitemapPriority": 0.64,
+    "changeFrequency": "monthly"
+  },
+  {
+    "id": "serious-adverse-event",
+    "slug": "serious-adverse-event",
+    "path": "/glossary/serious-adverse-event",
+    "locale": "en",
+    "status": "published",
+    "order": 310,
+    "term": "Serious adverse event",
+    "termCode": "SAE",
+    "aliases": [
+      "serious adverse experience"
+    ],
+    "category": "safety-research",
+    "seoTitle": "Serious Adverse Event (SAE) Definition | Neuvago",
+    "description": "What a serious adverse event (SAE) means, why seriousness is based on outcome or required action, and why it is distinct from symptom severity.",
+    "shortDefinition": "A serious adverse event is an adverse event meeting defined outcome-based criteria such as death, life-threatening risk, hospitalisation, disability, or another medically important event.",
+    "hubSummary": "A serious adverse event meets defined outcome-based seriousness criteria; seriousness is not the same as symptom intensity.",
+    "expandedDefinition": [
+      "Common seriousness criteria include death, a life-threatening event, inpatient hospitalisation or prolonged hospitalisation, persistent or significant disability, congenital anomaly, or another important medical event requiring intervention.",
+      "Seriousness is a regulatory and reporting classification based mainly on outcome or required action. Severity describes intensity, so a severe symptom may be non-serious while a moderate event may still meet serious criteria.",
+      "An SAE occurring during a trial is not automatically caused by the intervention. Causality, expectedness, and relationship are assessed separately, while expedited reporting rules may still apply."
+    ],
+    "whatItIsNot": [
+      "It is not simply an event described as intense or painful.",
+      "It does not by itself establish that the device or intervention caused the event.",
+      "It should not be merged with all minor discomfort or expected stimulation sensation."
+    ],
+    "whyItMatters": "Accurate use of SAE prevents serious reporting obligations from being confused with ordinary severity scales and keeps causality claims separate.",
+    "primaryPillar": {
+      "title": "Safety and tolerability research",
+      "description": "Research context for event classification, reporting quality, and protocol-specific safety interpretation.",
+      "href": "/research/topics/safety-and-tolerability",
+      "label": "Explore safety research"
+    },
+    "sourceLinks": [
+      {
+        "title": "VNS caution guide",
+        "description": "How contraindications, precautions, exclusions, and urgent-care boundaries differ.",
+        "href": "/no/kunnskap/hvem-bor-vaere-forsiktig-med-vagusnervestimulering",
+        "label": "Review caution boundaries"
+      },
+      {
+        "title": "Scientific studies library",
+        "description": "Study summaries provide context for how trials report safety outcomes.",
+        "href": "/research/studies",
+        "label": "Browse study reports"
+      }
+    ],
+    "relatedTermIds": [
+      "adverse-event",
+      "contraindication",
+      "precaution",
+      "intended-use",
+      "tolerability",
+      "certainty-of-evidence"
+    ],
+    "publishedAt": "2026-08-25",
+    "modifiedAt": "2026-08-25",
+    "sitemapPriority": 0.62,
+    "changeFrequency": "monthly"
+  },
+  {
+    "id": "contraindication",
+    "slug": "contraindication",
+    "path": "/glossary/contraindication",
+    "locale": "en",
+    "status": "published",
+    "order": 320,
+    "term": "Contraindication",
+    "aliases": [
+      "contraindicated use"
+    ],
+    "category": "safety-research",
+    "seoTitle": "Contraindication Definition | Device Safety | Neuvago",
+    "description": "What a contraindication means in device safety, how it differs from a precaution, and why product-specific labeling must take priority.",
+    "shortDefinition": "A contraindication is a situation in which a device or intervention should not be used because the known risk clearly outweighs any possible benefit.",
+    "hubSummary": "A contraindication identifies a situation in which a device or intervention should not be used.",
+    "expandedDefinition": [
+      "Contraindications are product- and use-specific. They should describe known situations where use creates an unacceptable risk, rather than theoretical possibilities copied from unrelated devices.",
+      "A contraindication is stronger than a precaution. A precaution calls for additional care, information, or professional assessment, while a contraindication states that use should be avoided.",
+      "For any specific product, the final instructions for use, labeling, and current safety information take priority over a general educational definition."
+    ],
+    "whatItIsNot": [
+      "It is not the same as a research exclusion criterion.",
+      "It is not a generic list that can be transferred from another device.",
+      "Lack of evidence in a group does not automatically create a universal contraindication."
+    ],
+    "whyItMatters": "Precise labeling prevents research exclusions, uncertainty, and known unacceptable risks from being collapsed into one list.",
+    "primaryPillar": {
+      "title": "VNS caution guide",
+      "description": "A detailed guide to contraindications, precautions, exclusion criteria, data gaps, and product boundaries.",
+      "href": "/no/kunnskap/hvem-bor-vaere-forsiktig-med-vagusnervestimulering",
+      "label": "Read the caution guide"
+    },
+    "sourceLinks": [
+      {
+        "title": "Safety and tolerability research",
+        "description": "Evidence context for reported events, studied populations, and method-specific limits.",
+        "href": "/research/topics/safety-and-tolerability",
+        "label": "Review safety evidence"
+      },
+      {
+        "title": "Medical disclaimer",
+        "description": "The boundary between general education and individual medical advice.",
+        "href": "/legal/medical-disclaimer",
+        "label": "Read the disclaimer"
+      }
+    ],
+    "relatedTermIds": [
+      "precaution",
+      "intended-use",
+      "adverse-event",
+      "serious-adverse-event",
+      "implanted-vns",
+      "non-invasive-vns"
+    ],
+    "publishedAt": "2026-08-25",
+    "modifiedAt": "2026-08-25",
+    "sitemapPriority": 0.64,
+    "changeFrequency": "monthly"
+  },
+  {
+    "id": "precaution",
+    "slug": "precaution",
+    "path": "/glossary/precaution",
+    "locale": "en",
+    "status": "published",
+    "order": 330,
+    "term": "Precaution",
+    "aliases": [
+      "safety precaution",
+      "use precaution"
+    ],
+    "category": "safety-research",
+    "seoTitle": "Precaution Definition | Device Safety | Neuvago",
+    "description": "What a precaution means in device labeling, how it differs from a contraindication, and why uncertainty or special populations may require added care.",
+    "shortDefinition": "A precaution is safety information describing circumstances in which additional care, assessment, monitoring, or limitations may be needed.",
+    "hubSummary": "A precaution identifies circumstances that require added care or assessment rather than automatically prohibiting use.",
+    "expandedDefinition": [
+      "Precautions may address special populations, limited evidence, interactions, operating conditions, monitoring, or actions that reduce a known or plausible risk.",
+      "They differ from contraindications because they do not necessarily prohibit use. The appropriate response may be consultation, closer monitoring, changed technique, or following specific instructions.",
+      "General educational precautions cannot replace a product's final instructions for use. Product design, intended use, evidence, and regulatory status determine the actual wording."
+    ],
+    "whatItIsNot": [
+      "It is not automatically a prohibition.",
+      "It is not interchangeable with a warning or contraindication.",
+      "A precaution from one product should not be copied to another without product-specific justification."
+    ],
+    "whyItMatters": "The distinction supports proportionate safety communication without turning every uncertainty into a ban or understating a known risk.",
+    "primaryPillar": {
+      "title": "VNS caution guide",
+      "description": "A detailed guide to precautions, contraindications, exclusions, and missing-data boundaries.",
+      "href": "/no/kunnskap/hvem-bor-vaere-forsiktig-med-vagusnervestimulering",
+      "label": "Read the caution guide"
+    },
+    "sourceLinks": [
+      {
+        "title": "Safety and tolerability research",
+        "description": "Research context for studied populations, event reporting, and limits of transferability.",
+        "href": "/research/topics/safety-and-tolerability",
+        "label": "Review safety evidence"
+      },
+      {
+        "title": "Intended use",
+        "description": "Why safety language must be interpreted within the product's defined purpose and instructions.",
+        "href": "/legal/intended-use",
+        "label": "Read intended use"
+      }
+    ],
+    "relatedTermIds": [
+      "contraindication",
+      "intended-use",
+      "adverse-event",
+      "serious-adverse-event",
+      "tolerability",
+      "non-invasive-vns"
+    ],
+    "publishedAt": "2026-08-25",
+    "modifiedAt": "2026-08-25",
+    "sitemapPriority": 0.62,
+    "changeFrequency": "monthly"
+  },
+  {
+    "id": "intended-use",
+    "slug": "intended-use",
+    "path": "/glossary/intended-use",
+    "locale": "en",
+    "status": "published",
+    "order": 340,
+    "term": "Intended use",
+    "aliases": [
+      "intended purpose",
+      "purpose of use"
+    ],
+    "category": "safety-research",
+    "seoTitle": "Intended Use Definition | Product Boundaries | Neuvago",
+    "description": "What intended use means for a device, why it frames users and conditions of use, and why research findings do not automatically expand product claims.",
+    "shortDefinition": "Intended use describes the purpose for which a product is designed, labeled, communicated, and expected to be used.",
+    "hubSummary": "Intended use defines the product's purpose and the conditions and users for which that purpose is communicated.",
+    "expandedDefinition": [
+      "An intended-use statement typically defines what the product is for and may identify users, settings, anatomical sites, operating conditions, or relevant limitations.",
+      "It anchors directions, warnings, precautions, contraindications, evidence, and claims. A product's technical capability or a paper about another device does not automatically change its intended use.",
+      "Promotional language, labeling, instructions, and other manufacturer communications should remain consistent. For Neuvago, final product documentation and approved commercial positioning take priority over general educational content."
+    ],
+    "whatItIsNot": [
+      "It is not every possible way a device could physically be used.",
+      "It is not automatically expanded by general VNS research.",
+      "It is not the same as proof that the product achieves every outcome associated with the category."
+    ],
+    "whyItMatters": "Keeping intended use visible protects the boundary between category education, research context, product instructions, and medical claims.",
+    "primaryPillar": {
+      "title": "Neuvago intended use",
+      "description": "The current product-specific statement defining the wellness purpose and communication boundary.",
+      "href": "/legal/intended-use",
+      "label": "Read intended use"
+    },
+    "sourceLinks": [
+      {
+        "title": "Regulatory information",
+        "description": "An overview of product status, documentation, and communication boundaries.",
+        "href": "/legal/regulatory",
+        "label": "Review regulatory context"
+      },
+      {
+        "title": "How Neuvago works",
+        "description": "A practical explanation of the device and sessions within the product's defined wellness lane.",
+        "href": "/how-it-works",
+        "label": "See how it works"
+      }
+    ],
+    "relatedTermIds": [
+      "contraindication",
+      "precaution",
+      "adverse-event",
+      "serious-adverse-event",
+      "vagus-nerve-stimulation",
+      "certainty-of-evidence"
+    ],
+    "publishedAt": "2026-08-25",
+    "modifiedAt": "2026-08-25",
+    "sitemapPriority": 0.66,
+    "changeFrequency": "monthly"
+  },
+  {
+    "id": "randomized-controlled-trial",
+    "slug": "randomized-controlled-trial",
+    "path": "/glossary/randomized-controlled-trial",
+    "locale": "en",
+    "status": "published",
+    "order": 350,
+    "term": "Randomized controlled trial",
+    "termCode": "RCT",
+    "aliases": [
+      "randomised controlled trial",
+      "randomized trial"
+    ],
+    "category": "safety-research",
+    "seoTitle": "Randomized Controlled Trial (RCT) Definition | Neuvago",
+    "description": "What a randomized controlled trial (RCT) is, how random allocation supports comparison, and why randomization does not remove every source of bias.",
+    "shortDefinition": "A randomized controlled trial assigns participants by chance to intervention groups and compares outcomes between the concurrently followed groups.",
+    "hubSummary": "An RCT uses random allocation to compare outcomes between intervention groups.",
+    "expandedDefinition": [
+      "Random allocation aims to make prognostic factors similar on average between groups before the intervention begins, reducing confounding in the estimated comparison.",
+      "A control group may receive sham stimulation, another intervention, standard care, or no intervention. Blinding, allocation concealment, adherence, missing data, outcome measurement, and selective reporting still affect validity.",
+      "An RCT estimates an effect for the tested population, protocol, comparator, and outcomes. Its result should not automatically be transferred to another device, dose, setting, or intended use."
+    ],
+    "whatItIsNot": [
+      "It is not automatically unbiased simply because it is randomized.",
+      "It does not guarantee successful blinding or complete reporting.",
+      "One RCT is not the same as a complete body of evidence."
+    ],
+    "whyItMatters": "Understanding what randomization does—and does not do—helps readers interpret trial results without treating the design label as a quality guarantee.",
+    "primaryPillar": {
+      "title": "Scientific studies library",
+      "description": "Browse individual trials and evidence summaries across VNS methods and research questions.",
+      "href": "/research/studies",
+      "label": "Browse studies"
+    },
+    "sourceLinks": [
+      {
+        "title": "VNS research overview",
+        "description": "How trial populations, comparators, protocols, and outcomes shape interpretation.",
+        "href": "/research/topics/vagus-nerve-stimulation",
+        "label": "Explore VNS research"
+      },
+      {
+        "title": "Safety and tolerability",
+        "description": "Why trial safety reporting and studied populations matter alongside efficacy outcomes.",
+        "href": "/research/topics/safety-and-tolerability",
+        "label": "Review safety research"
+      }
+    ],
+    "relatedTermIds": [
+      "sham-stimulation",
+      "target-engagement",
+      "systematic-review",
+      "meta-analysis",
+      "certainty-of-evidence",
+      "adverse-event"
+    ],
+    "publishedAt": "2026-08-25",
+    "modifiedAt": "2026-08-25",
+    "sitemapPriority": 0.64,
+    "changeFrequency": "monthly"
+  },
+  {
+    "id": "systematic-review",
+    "slug": "systematic-review",
+    "path": "/glossary/systematic-review",
+    "locale": "en",
+    "status": "published",
+    "order": 360,
+    "term": "Systematic review",
+    "termCode": "SR",
+    "aliases": [
+      "systematic evidence review",
+      "evidence synthesis"
+    ],
+    "category": "safety-research",
+    "seoTitle": "Systematic Review Definition | Research Evidence | Neuvago",
+    "description": "What a systematic review is, how predefined methods distinguish it from a narrative overview, and why review quality determines confidence in its conclusions.",
+    "shortDefinition": "A systematic review uses predefined, transparent methods to identify, select, appraise, and synthesise studies that answer a focused question.",
+    "hubSummary": "A systematic review uses explicit methods to find, appraise, and synthesise a defined body of evidence.",
+    "expandedDefinition": [
+      "A review normally specifies the question, eligibility criteria, search strategy, study-selection process, data extraction, risk-of-bias methods, and synthesis plan before drawing conclusions.",
+      "Systematic does not mean flawless or complete. Searches can miss studies, eligibility decisions can introduce bias, included studies may be weak, and outcomes or protocols may be too heterogeneous to combine.",
+      "A systematic review may contain a meta-analysis, but it does not have to. Narrative synthesis may be more appropriate when statistical pooling would obscure important differences."
+    ],
+    "whatItIsNot": [
+      "It is not simply an article that cites many studies.",
+      "It is not automatically a meta-analysis.",
+      "The review label does not guarantee high-certainty evidence."
+    ],
+    "whyItMatters": "Transparent methods make the evidence base traceable, while critical appraisal prevents the review's conclusion from being treated as stronger than its included studies.",
+    "primaryPillar": {
+      "title": "Scientific studies library",
+      "description": "Individual study summaries and evidence resources across VNS, safety, HRV, sleep, and mechanism research.",
+      "href": "/research/studies",
+      "label": "Browse evidence"
+    },
+    "sourceLinks": [
+      {
+        "title": "Safety and tolerability review",
+        "description": "A topic layer that explains event reporting, populations, and uncertainty across studies.",
+        "href": "/research/topics/safety-and-tolerability",
+        "label": "Review safety synthesis"
+      },
+      {
+        "title": "VNS research overview",
+        "description": "A broader map of method families and limits on transferring findings between them.",
+        "href": "/research/topics/vagus-nerve-stimulation",
+        "label": "Explore VNS evidence"
+      }
+    ],
+    "relatedTermIds": [
+      "meta-analysis",
+      "randomized-controlled-trial",
+      "certainty-of-evidence",
+      "adverse-event",
+      "target-engagement",
+      "tolerability"
+    ],
+    "publishedAt": "2026-08-25",
+    "modifiedAt": "2026-08-25",
+    "sitemapPriority": 0.64,
+    "changeFrequency": "monthly"
+  },
+  {
+    "id": "meta-analysis",
+    "slug": "meta-analysis",
+    "path": "/glossary/meta-analysis",
+    "locale": "en",
+    "status": "published",
+    "order": 370,
+    "term": "Meta-analysis",
+    "aliases": [
+      "statistical evidence synthesis",
+      "pooled analysis"
+    ],
+    "category": "safety-research",
+    "seoTitle": "Meta-Analysis Definition | Research Evidence | Neuvago",
+    "description": "What a meta-analysis is, how results are statistically pooled, and why heterogeneity, missing evidence, and study quality limit the summary estimate.",
+    "shortDefinition": "A meta-analysis is a statistical synthesis that combines compatible effect estimates from two or more studies.",
+    "hubSummary": "A meta-analysis statistically combines compatible results from multiple studies.",
+    "expandedDefinition": [
+      "Meta-analysis can improve precision and show the direction and spread of results across studies, but the pooling model and included data must match a clearly defined question.",
+      "The summary estimate inherits the limitations of the studies and the review process. Risk of bias, indirectness, imprecision, heterogeneity, and missing results can make a precise-looking number misleading.",
+      "Pooling is not always appropriate. If interventions, populations, comparators, outcomes, or follow-up periods differ substantially, separate analyses or narrative synthesis may be more responsible."
+    ],
+    "whatItIsNot": [
+      "It is not automatically stronger than every individual study.",
+      "It cannot correct poor study design simply by adding more studies.",
+      "A statistically significant pooled estimate is not automatically clinically important or product-specific."
+    ],
+    "whyItMatters": "Readers need to interpret the pooled number together with study compatibility, uncertainty, and certainty of evidence.",
+    "primaryPillar": {
+      "title": "Scientific studies library",
+      "description": "Evidence summaries include systematic reviews and meta-analyses relevant to VNS, HRV, safety, and sleep.",
+      "href": "/research/studies",
+      "label": "Browse evidence syntheses"
+    },
+    "sourceLinks": [
+      {
+        "title": "Safety meta-analysis summary",
+        "description": "A study page illustrating how adverse-event data across taVNS studies are synthesised and bounded.",
+        "href": "/research/studies/kim-2022-tavns-safety-systematic-review-meta-analysis",
+        "label": "Open safety synthesis"
+      },
+      {
+        "title": "HRV meta-analysis summary",
+        "description": "A study page showing why pooled physiological outcomes still require protocol-specific interpretation.",
+        "href": "/research/studies/soltani-2023-tavns-heart-rate-variability-systematic-review",
+        "label": "Open HRV synthesis"
+      }
+    ],
+    "relatedTermIds": [
+      "systematic-review",
+      "randomized-controlled-trial",
+      "certainty-of-evidence",
+      "heart-rate-variability",
+      "adverse-event",
+      "tolerability"
+    ],
+    "publishedAt": "2026-08-25",
+    "modifiedAt": "2026-08-25",
+    "sitemapPriority": 0.64,
+    "changeFrequency": "monthly"
+  },
+  {
+    "id": "certainty-of-evidence",
+    "slug": "certainty-of-evidence",
+    "path": "/glossary/certainty-of-evidence",
+    "locale": "en",
+    "status": "published",
+    "order": 380,
+    "term": "Certainty of evidence",
+    "aliases": [
+      "confidence in the evidence",
+      "quality of evidence",
+      "GRADE certainty"
+    ],
+    "category": "measurement-interpretation",
+    "seoTitle": "Certainty of Evidence Definition | GRADE | Neuvago",
+    "description": "What certainty of evidence means, how GRADE evaluates confidence in an effect estimate, and why statistical significance alone is not enough.",
+    "shortDefinition": "Certainty of evidence expresses how confident reviewers are that the true effect is close to the reported estimate for a specific outcome.",
+    "hubSummary": "Certainty of evidence describes confidence that the true effect is close to the reported estimate.",
+    "expandedDefinition": [
+      "Using GRADE, a body of evidence is commonly rated high, moderate, low, or very low for a defined outcome and comparison.",
+      "Reviewers consider domains such as risk of bias, inconsistency, indirectness, imprecision, and publication or non-reporting bias. The judgement applies to the body of evidence, not to a topic in the abstract.",
+      "Certainty is separate from effect size and statistical significance. A large or significant estimate may still have low certainty, while a small precise estimate may have high certainty."
+    ],
+    "whatItIsNot": [
+      "It is not a score for how impressive a result looks.",
+      "It is not identical to the design label of one study.",
+      "High certainty about a small effect does not make the effect large or clinically important."
+    ],
+    "whyItMatters": "Certainty helps readers distinguish what the evidence estimates from how much confidence should be placed in that estimate.",
+    "primaryPillar": {
+      "title": "VNS research overview",
+      "description": "An evidence map that separates mechanisms, outcomes, method families, and confidence boundaries.",
+      "href": "/research/topics/vagus-nerve-stimulation",
+      "label": "Explore evidence boundaries"
+    },
+    "sourceLinks": [
+      {
+        "title": "Scientific studies library",
+        "description": "Study summaries provide the underlying designs and outcomes that evidence syntheses evaluate.",
+        "href": "/research/studies",
+        "label": "Browse studies"
+      },
+      {
+        "title": "Safety and tolerability",
+        "description": "Why inconsistent reporting, indirectness, and missing data affect confidence in safety conclusions.",
+        "href": "/research/topics/safety-and-tolerability",
+        "label": "Review safety certainty"
+      }
+    ],
+    "relatedTermIds": [
+      "systematic-review",
+      "meta-analysis",
+      "randomized-controlled-trial",
+      "target-engagement",
+      "adverse-event",
+      "heart-rate-variability"
+    ],
+    "publishedAt": "2026-08-25",
+    "modifiedAt": "2026-08-25",
+    "sitemapPriority": 0.66,
     "changeFrequency": "monthly"
   }
 ] as const satisfies readonly GlossaryTerm[];

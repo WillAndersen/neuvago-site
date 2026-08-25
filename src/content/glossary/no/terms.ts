@@ -114,8 +114,8 @@ export const norwegianGlossaryTerms = [
       "vagus-nerve",
       "implanted-vns",
       "non-invasive-vns",
-      "cervical-non-invasive-vns",
-      "transcutaneous-vns",
+      "intended-use",
+      "contraindication",
       "tolerability"
     ],
     "publishedAt": "2026-08-25",
@@ -176,9 +176,9 @@ export const norwegianGlossaryTerms = [
       "vagus-nerve-stimulation",
       "cervical-non-invasive-vns",
       "transcutaneous-vns",
-      "transcutaneous-auricular-vns",
       "auricular-vns",
-      "tolerability"
+      "precaution",
+      "intended-use"
     ],
     "publishedAt": "2026-08-25",
     "modifiedAt": "2026-08-25",
@@ -236,11 +236,11 @@ export const norwegianGlossaryTerms = [
     ],
     "relatedTermIds": [
       "non-invasive-vns",
-      "cervical-non-invasive-vns",
       "transcutaneous-auricular-vns",
       "stimulation-site",
-      "stimulation-intensity",
-      "stimulation-frequency"
+      "duty-cycle",
+      "session-duration",
+      "sham-stimulation"
     ],
     "publishedAt": "2026-08-25",
     "modifiedAt": "2026-08-25",
@@ -297,12 +297,12 @@ export const norwegianGlossaryTerms = [
       }
     ],
     "relatedTermIds": [
-      "transcutaneous-vns",
       "auricular-vns",
-      "auricular-branch",
-      "tragus",
-      "cymba-conchae",
-      "stimulation-site"
+      "stimulation-site",
+      "duty-cycle",
+      "session-duration",
+      "sham-stimulation",
+      "target-engagement"
     ],
     "publishedAt": "2026-08-25",
     "modifiedAt": "2026-08-25",
@@ -362,10 +362,10 @@ export const norwegianGlossaryTerms = [
     "relatedTermIds": [
       "transcutaneous-auricular-vns",
       "auricular-branch",
-      "tragus",
-      "cymba-conchae",
-      "cavum-conchae",
-      "earlobe"
+      "earlobe",
+      "sham-stimulation",
+      "target-engagement",
+      "stimulation-site"
     ],
     "publishedAt": "2026-08-25",
     "modifiedAt": "2026-08-25",
@@ -666,8 +666,10 @@ export const norwegianGlossaryTerms = [
     "relatedTermIds": [
       "vagal-tone",
       "autonomic-nervous-system",
-      "sympathetic-nervous-system",
-      "parasympathetic-nervous-system"
+      "target-engagement",
+      "randomized-controlled-trial",
+      "systematic-review",
+      "certainty-of-evidence"
     ],
     "publishedAt": "2026-08-25",
     "modifiedAt": "2026-08-25",
@@ -724,12 +726,12 @@ export const norwegianGlossaryTerms = [
       }
     ],
     "relatedTermIds": [
-      "vagus-nerve-stimulation",
-      "non-invasive-vns",
-      "transcutaneous-vns",
-      "transcutaneous-auricular-vns",
+      "adverse-event",
+      "serious-adverse-event",
+      "precaution",
+      "contraindication",
       "stimulation-intensity",
-      "electrode"
+      "session-duration"
     ],
     "publishedAt": "2026-08-25",
     "modifiedAt": "2026-08-25",
@@ -849,10 +851,10 @@ export const norwegianGlossaryTerms = [
     "relatedTermIds": [
       "vagus-nerve-stimulation",
       "non-invasive-vns",
-      "cervical-non-invasive-vns",
       "electrode",
-      "stimulation-frequency",
-      "pulse-width"
+      "adverse-event",
+      "serious-adverse-event",
+      "contraindication"
     ],
     "publishedAt": "2026-08-25",
     "modifiedAt": "2026-08-25",
@@ -1154,11 +1156,11 @@ export const norwegianGlossaryTerms = [
       }
     ],
     "relatedTermIds": [
+      "sham-stimulation",
       "auricular-branch",
       "transcutaneous-auricular-vns",
       "tragus",
       "cymba-conchae",
-      "cavum-conchae",
       "stimulation-site"
     ],
     "publishedAt": "2026-08-25",
@@ -1217,10 +1219,10 @@ export const norwegianGlossaryTerms = [
     ],
     "relatedTermIds": [
       "electrode",
-      "cervical-non-invasive-vns",
       "transcutaneous-auricular-vns",
-      "tragus",
-      "cymba-conchae",
+      "cervical-non-invasive-vns",
+      "sham-stimulation",
+      "target-engagement",
       "earlobe"
     ],
     "publishedAt": "2026-08-25",
@@ -1283,7 +1285,7 @@ export const norwegianGlossaryTerms = [
       "stimulation-frequency",
       "pulse-width",
       "waveform",
-      "tolerability"
+      "sham-stimulation"
     ],
     "publishedAt": "2026-08-25",
     "modifiedAt": "2026-08-25",
@@ -1344,8 +1346,8 @@ export const norwegianGlossaryTerms = [
       "stimulation-frequency",
       "pulse-width",
       "waveform",
-      "tolerability",
-      "stimulation-site"
+      "duty-cycle",
+      "session-duration"
     ],
     "publishedAt": "2026-08-25",
     "modifiedAt": "2026-08-25",
@@ -1404,9 +1406,9 @@ export const norwegianGlossaryTerms = [
       "pulse-width",
       "stimulation-intensity",
       "waveform",
-      "implanted-vns",
-      "transcutaneous-vns",
-      "electrode"
+      "duty-cycle",
+      "session-duration",
+      "transcutaneous-vns"
     ],
     "publishedAt": "2026-08-25",
     "modifiedAt": "2026-08-25",
@@ -1466,9 +1468,9 @@ export const norwegianGlossaryTerms = [
       "stimulation-frequency",
       "stimulation-intensity",
       "waveform",
-      "electrode",
-      "implanted-vns",
-      "transcutaneous-vns"
+      "duty-cycle",
+      "session-duration",
+      "electrode"
     ],
     "publishedAt": "2026-08-25",
     "modifiedAt": "2026-08-25",
@@ -1529,13 +1531,814 @@ export const norwegianGlossaryTerms = [
       "stimulation-frequency",
       "pulse-width",
       "stimulation-intensity",
+      "duty-cycle",
       "electrode",
-      "transcutaneous-vns",
-      "implanted-vns"
+      "transcutaneous-vns"
     ],
     "publishedAt": "2026-08-25",
     "modifiedAt": "2026-08-25",
     "sitemapPriority": 0.6,
+    "changeFrequency": "monthly"
+  },
+  {
+    "id": "duty-cycle",
+    "slug": "stimuleringssyklus",
+    "path": "/no/ordliste/stimuleringssyklus",
+    "locale": "no",
+    "status": "published",
+    "order": 260,
+    "term": "Stimuleringssyklus (duty cycle)",
+    "aliases": [
+      "duty cycle",
+      "på/av-syklus",
+      "arbeidssyklus"
+    ],
+    "category": "protocol-parameters",
+    "seoTitle": "Stimuleringssyklus og duty cycle | Neuvago-ordliste",
+    "description": "Hva duty cycle betyr i stimuleringsprotokoller, hvordan på- og av-perioder beregnes, og hvorfor dette ikke er det samme som øktvarighet.",
+    "shortDefinition": "Stimuleringssyklus, eller duty cycle, er andelen av en gjentakende syklus der stimuleringen er på fremfor av.",
+    "hubSummary": "Stimuleringssyklus beskriver hvor stor del av en gjentakende på/av-syklus som inneholder aktiv stimulering.",
+    "expandedDefinition": [
+      "I en intermitterende stimuleringsprotokoll beregnes duty cycle vanligvis som på-tid delt på total syklustid. Tretti sekunder på og tretti sekunder av gir for eksempel 50 prosent duty cycle.",
+      "Den samme prosentandelen kan komme fra ulike på/av-mønstre. Derfor kan prosent alene skjule viktige tidsdetaljer, og både på-perioden og av-perioden bør oppgis.",
+      "Stimuleringssyklus er én del av en protokoll sammen med bølgeform, frekvens, pulsbredde, intensitet, stimuleringssted og total øktvarighet. En verdi brukt i én studie er ikke automatisk en optimal eller produktspesifikk innstilling."
+    ],
+    "whatItIsNot": [
+      "Det er ikke det samme som øktvarighet eller samlet aktiv stimuleringstid.",
+      "Det beskriver ikke pulsfrekvens, pulsbredde eller strømstyrke.",
+      "En høyere duty cycle dokumenterer ikke i seg selv sterkere target engagement eller bedre utfall."
+    ],
+    "whyItMatters": "Når stimuleringssyklus skilles fra total øktlengde, blir protokoller lettere å sammenligne uten at en kjent prosent behandles som en universell dose.",
+    "primaryPillar": {
+      "title": "Forskning på transkutan VNS",
+      "description": "En metodeoversikt over stimuleringsparametere, protokollrapportering og tolkningsgrenser.",
+      "href": "/no/forskning/transkutan-vagusnervestimulering",
+      "label": "Utforsk tVNS-protokoller"
+    },
+    "sourceLinks": [
+      {
+        "title": "Forskning på aurikulær VNS",
+        "description": "Hvordan aktive og sham-baserte øreprotokoller varierer i sted, timing og parameterdesign.",
+        "href": "/no/forskning/aurikulaer-vagusnervestimulering",
+        "label": "Se aurikulære metoder"
+      },
+      {
+        "title": "Sikkerhet og tolerabilitet",
+        "description": "Hvorfor eksponering, intensitet og rapporteringsmåte påvirker tolkningen av uønskede hendelser.",
+        "href": "/no/forskning/sikkerhet-og-tolerabilitet",
+        "label": "Se sikkerhetskontekst"
+      }
+    ],
+    "relatedTermIds": [
+      "session-duration",
+      "stimulation-frequency",
+      "pulse-width",
+      "waveform",
+      "stimulation-intensity",
+      "sham-stimulation"
+    ],
+    "publishedAt": "2026-08-25",
+    "modifiedAt": "2026-08-25",
+    "sitemapPriority": 0.58,
+    "changeFrequency": "monthly"
+  },
+  {
+    "id": "session-duration",
+    "slug": "oktvarighet",
+    "path": "/no/ordliste/oktvarighet",
+    "locale": "no",
+    "status": "published",
+    "order": 270,
+    "term": "Øktvarighet",
+    "aliases": [
+      "øktlengde",
+      "sesjonsvarighet",
+      "session duration"
+    ],
+    "category": "protocol-parameters",
+    "seoTitle": "Øktvarighet i VNS-protokoller | Neuvago-ordliste",
+    "description": "Hva øktvarighet betyr i VNS-forskning, og hvorfor klokketid, aktiv stimuleringstid og samlet behandlingsplan må skilles fra hverandre.",
+    "shortDefinition": "Øktvarighet er den totale tiden som er satt av til én stimuleringsøkt.",
+    "hubSummary": "Øktvarighet er den totale tiden som er satt av til én stimuleringsøkt.",
+    "expandedDefinition": [
+      "Øktvarighet oppgis vanligvis i minutter, men betydningen avhenger av protokollen. En økt på 30 minutter kan inneholde kontinuerlig stimulering eller gjentatte på/av-perioder med mindre enn 30 minutter aktivt signal.",
+      "Begrepet bør skilles fra antall økter, tiden mellom øktene, antall behandlingsdager og samlet eksponering gjennom en studie eller rutine.",
+      "Varighet kan samspille med intensitet, frekvens, duty cycle, tolerabilitet og utfallet som måles. En varighet brukt i én populasjon eller enhet kan ikke antas å være optimal for en annen."
+    ],
+    "whatItIsNot": [
+      "Det er ikke nødvendigvis lik aktiv stimuleringstid.",
+      "Det beskriver ikke hvor ofte øktene gjennomføres eller hvor mange uker et program varer.",
+      "En lengre økt er ikke automatisk mer effektiv eller mer passende."
+    ],
+    "whyItMatters": "Tydelig varighetsrapportering hindrer at samlet eksponering reduseres til ett tvetydig tall og gjør protokoller lettere å sammenligne.",
+    "primaryPillar": {
+      "title": "Forskning på transkutan VNS",
+      "description": "En forskningsoversikt over parameterkombinasjoner, øktdesign og metodespesifikk tolkning.",
+      "href": "/no/forskning/transkutan-vagusnervestimulering",
+      "label": "Utforsk protokollforskning"
+    },
+    "sourceLinks": [
+      {
+        "title": "Slik fungerer Neuvago",
+        "description": "Produktspesifikk veiledning må definere faktisk øktstruktur separat fra generell forskningsterminologi.",
+        "href": "/no/slik-fungerer-det",
+        "label": "Se produktveiledning"
+      },
+      {
+        "title": "Sikkerhet og tolerabilitet",
+        "description": "Forskningskontekst for eksponering, komfort, hendelsesrapportering og protokollforskjeller.",
+        "href": "/no/forskning/sikkerhet-og-tolerabilitet",
+        "label": "Se sikkerhetskontekst"
+      }
+    ],
+    "relatedTermIds": [
+      "duty-cycle",
+      "stimulation-intensity",
+      "stimulation-frequency",
+      "tolerability",
+      "adverse-event",
+      "waveform"
+    ],
+    "publishedAt": "2026-08-25",
+    "modifiedAt": "2026-08-25",
+    "sitemapPriority": 0.58,
+    "changeFrequency": "monthly"
+  },
+  {
+    "id": "sham-stimulation",
+    "slug": "sham-stimulering",
+    "path": "/no/ordliste/sham-stimulering",
+    "locale": "no",
+    "status": "published",
+    "order": 280,
+    "term": "Sham-stimulering",
+    "aliases": [
+      "sham-kontroll",
+      "kontrollstimulering",
+      "placebolignende stimulering"
+    ],
+    "category": "safety-research",
+    "seoTitle": "Sham-stimulering i forskning | Neuvago-ordliste",
+    "description": "Hva sham-stimulering betyr i nevromodulasjonsstudier, hvorfor den brukes for blinding, og hvorfor en sham-betingelse ikke alltid er fysiologisk inert.",
+    "shortDefinition": "Sham-stimulering er en kontrollbetingelse som skal ligne aktiv stimulering, men der den antatte aktive komponenten fjernes eller endres.",
+    "hubSummary": "Sham-stimulering er en kontrollbetingelse som skal ligne aktiv stimulering uten å kopiere hele den aktive protokollen.",
+    "expandedDefinition": [
+      "I utstyrsstudier kan sham-design endre stimuleringssted, intensitet, bølgeform, varighet eller timing samtidig som deltakeropplevelsen forsøkes gjort troverdig.",
+      "En god sham-betingelse bør støtte blinding og unngå systematiske forskjeller i forventning, sensasjon, kontakt eller studieprosedyrer. Derfor bør forskere undersøke om deltakerne klarer å gjette gruppetilhørigheten.",
+      "Sham er ikke automatisk biologisk inaktiv. Øreflippstimulering, lav intensitet, kort opptrapping eller en annen kontroll som kjennes aktiv, kan ha fysiologiske eller sensoriske effekter."
+    ],
+    "whatItIsNot": [
+      "Det er ikke automatisk det samme som ingen stimulering.",
+      "Det garanterer ikke vellykket blinding.",
+      "Manglende forskjell mellom aktiv og sham dokumenterer ikke at ingen av betingelsene hadde effekt."
+    ],
+    "whyItMatters": "Kontrollbetingelsens troverdighet og biologiske aktivitet kan endre estimert effekt og sikkerheten i konklusjonene.",
+    "primaryPillar": {
+      "title": "Forskning på aurikulær VNS",
+      "description": "En fokusert oversikt over øreanatomi, sham-steder, blinding og protokollspesifikk tolkning.",
+      "href": "/no/forskning/aurikulaer-vagusnervestimulering",
+      "label": "Utforsk sham-design"
+    },
+    "sourceLinks": [
+      {
+        "title": "Forskning på transkutan VNS",
+        "description": "Metodekontekst for aktive protokoller, kontrollbetingelser og parameterrapportering.",
+        "href": "/no/forskning/transkutan-vagusnervestimulering",
+        "label": "Se tVNS-metoder"
+      },
+      {
+        "title": "Vitenskapelig studiebibliotek",
+        "description": "Enkelte studiesammendrag viser hvordan kontrollbetingelser varierer mellom studier.",
+        "href": "/research/studies",
+        "label": "Se studiedesign"
+      }
+    ],
+    "relatedTermIds": [
+      "randomized-controlled-trial",
+      "target-engagement",
+      "earlobe",
+      "stimulation-site",
+      "duty-cycle",
+      "certainty-of-evidence"
+    ],
+    "publishedAt": "2026-08-25",
+    "modifiedAt": "2026-08-25",
+    "sitemapPriority": 0.6,
+    "changeFrequency": "monthly"
+  },
+  {
+    "id": "target-engagement",
+    "slug": "target-engagement",
+    "path": "/no/ordliste/target-engagement",
+    "locale": "no",
+    "status": "published",
+    "order": 290,
+    "term": "Target engagement (målengasjement)",
+    "aliases": [
+      "målengasjement",
+      "mekanistisk target engagement",
+      "påvirkning av antatt mål"
+    ],
+    "category": "measurement-interpretation",
+    "seoTitle": "Target engagement og målengasjement | Neuvago",
+    "description": "Hva target engagement betyr i intervensjonsforskning, og hvorfor sensasjon, apparatutgang eller én biomarkør ikke automatisk dokumenterer mekanisme.",
+    "shortDefinition": "Target engagement er dokumentasjon på at en intervensjon ga den forutsagte målbare endringen i det biologiske eller atferdsmessige målet.",
+    "hubSummary": "Target engagement spør om intervensjonen målbar påvirket målet som den foreslåtte mekanismen forutsier.",
+    "expandedDefinition": [
+      "Et mål kan være molekylært, cellulært, kretsbasert, fysiologisk, atferdsmessig eller en annen tydelig definert mekanisme. Målet bør undersøkes med objektive, reproduserbare mål knyttet til en forhåndsdefinert hypotese.",
+      "Dokumentert target engagement er noe annet enn dokumentert klinisk nytte. Forskere kan først spørre om målet endres og deretter om endringen henger sammen med utfallet av interesse.",
+      "I VNS-forskning dokumenterer ikke elektrisk utgang, hudsensasjon, elektrodekontakt eller endring i ett fysiologisk signal automatisk selektiv påvirkning av en vagal bane."
+    ],
+    "whatItIsNot": [
+      "Det er ikke det samme som å kjenne stimuleringen.",
+      "Det er ikke automatisk et klinisk endepunkt eller dokumentasjon på nytte.",
+      "En statistisk signifikant biomarkørendring validerer ikke alene alle foreslåtte mekanismer."
+    ],
+    "whyItMatters": "Når mekanismedata skilles fra utfallsdata, blir både negative, blandede og positive studier mer informative og risikoen for overtolkning mindre.",
+    "primaryPillar": {
+      "title": "Forskning på vagusnervestimulering",
+      "description": "Et kart over mekanismer, utfall, enhetsforskjeller og tolkningsgrenser på tvers av VNS-metoder.",
+      "href": "/no/forskning/vagusnervestimulering",
+      "label": "Utforsk mekanismeforskning"
+    },
+    "sourceLinks": [
+      {
+        "title": "Forskning på aurikulær VNS",
+        "description": "Hvorfor øresensasjon, plassering og sham-design ikke alene dokumenterer selektiv vagal påvirkning.",
+        "href": "/no/forskning/aurikulaer-vagusnervestimulering",
+        "label": "Se aurikulær evidens"
+      },
+      {
+        "title": "HRV og vagusnerven",
+        "description": "Hvordan fysiologiske mål kan være relevante uten å fungere som universell mekanismedokumentasjon.",
+        "href": "/no/kunnskap/hrv-og-vagusnerven",
+        "label": "Se HRV-tolkning"
+      }
+    ],
+    "relatedTermIds": [
+      "sham-stimulation",
+      "stimulation-site",
+      "heart-rate-variability",
+      "randomized-controlled-trial",
+      "certainty-of-evidence",
+      "transcutaneous-auricular-vns"
+    ],
+    "publishedAt": "2026-08-25",
+    "modifiedAt": "2026-08-25",
+    "sitemapPriority": 0.62,
+    "changeFrequency": "monthly"
+  },
+  {
+    "id": "adverse-event",
+    "slug": "uonsket-hendelse",
+    "path": "/no/ordliste/uonsket-hendelse",
+    "locale": "no",
+    "status": "published",
+    "order": 300,
+    "term": "Uønsket hendelse",
+    "termCode": "AE",
+    "aliases": [
+      "adverse event",
+      "ugunstig medisinsk hendelse"
+    ],
+    "category": "safety-research",
+    "seoTitle": "Uønsket hendelse (AE) | Sikkerhet | Neuvago",
+    "description": "Hva en uønsket hendelse betyr i forskning, hvorfor hendelsen ikke dokumenterer årsak, og hvordan den skiller seg fra forventet sensasjon og bivirkning.",
+    "shortDefinition": "En uønsket hendelse er en ugunstig medisinsk forekomst som registreres under en studie eller bruksperiode, uansett om den vurderes som forårsaket av intervensjonen.",
+    "hubSummary": "En uønsket hendelse er en ugunstig forekomst registrert under en studie, uten at årsak automatisk er dokumentert.",
+    "expandedDefinition": [
+      "En hendelse kan være et symptom, tegn, diagnose, skade, laboratorieavvik eller en annen ugunstig forekomst som oppstår etter at deltakelse eller eksponering har startet.",
+      "Hendelsen registreres av hensyn til timing og sikkerhet, ikke fordi årsakssammenheng allerede er fastslått. Alvorlighetsgrad, seriousness, forventethet og mulig relasjon vurderes separat.",
+      "I stimuleringsstudier bør forventet stimulussensasjon skilles fra en uønsket hendelse, men protokollen må definere hvordan sensasjon, ubehag, hudfunn og medisinske hendelser samles inn og klassifiseres."
+    ],
+    "whatItIsNot": [
+      "Det er ikke automatisk en bivirkning forårsaket av intervensjonen.",
+      "Det er ikke det samme som en alvorlig uønsket hendelse.",
+      "Antall rapporterte hendelser kan ikke sammenlignes ansvarlig uten å vurdere overvåking og rapporteringsmetode."
+    ],
+    "whyItMatters": "Når forekomst, årsak, intensitet og seriousness holdes atskilt, unngår man både å overdrive og å bagatellisere sikkerhetsdata.",
+    "primaryPillar": {
+      "title": "Sikkerhet og tolerabilitet",
+      "description": "En forskningsoversikt over hendelsesrapportering, tolerabilitet, studiedeltakere og produktspesifikke grenser.",
+      "href": "/no/forskning/sikkerhet-og-tolerabilitet",
+      "label": "Utforsk sikkerhetsforskning"
+    },
+    "sourceLinks": [
+      {
+        "title": "Bivirkninger ved ikke-invasiv VNS",
+        "description": "En guide som skiller forventet sensasjon, rapporterte symptomer og enhetsspesifikk dokumentasjon.",
+        "href": "/no/kunnskap/bivirkninger-ved-ikke-invasiv-vagusnervestimulering",
+        "label": "Les bivirkningsguiden"
+      },
+      {
+        "title": "Er vagusnervestimulering trygt?",
+        "description": "En bredere forklaring av sikkerhetsspråk, usikkerhet og ansvarlige påstander.",
+        "href": "/no/kunnskap/er-vagusnervestimulering-trygt",
+        "label": "Les sikkerhetsguiden"
+      }
+    ],
+    "relatedTermIds": [
+      "serious-adverse-event",
+      "tolerability",
+      "contraindication",
+      "precaution",
+      "intended-use",
+      "session-duration"
+    ],
+    "publishedAt": "2026-08-25",
+    "modifiedAt": "2026-08-25",
+    "sitemapPriority": 0.64,
+    "changeFrequency": "monthly"
+  },
+  {
+    "id": "serious-adverse-event",
+    "slug": "alvorlig-uonsket-hendelse",
+    "path": "/no/ordliste/alvorlig-uonsket-hendelse",
+    "locale": "no",
+    "status": "published",
+    "order": 310,
+    "term": "Alvorlig uønsket hendelse",
+    "termCode": "SAE",
+    "aliases": [
+      "serious adverse event",
+      "alvorlig medisinsk hendelse"
+    ],
+    "category": "safety-research",
+    "seoTitle": "Alvorlig uønsket hendelse (SAE) | Neuvago",
+    "description": "Hva en alvorlig uønsket hendelse betyr, hvorfor seriousness bestemmes av utfall eller tiltak, og hvorfor begrepet skiller seg fra symptomintensitet.",
+    "shortDefinition": "En alvorlig uønsket hendelse er en hendelse som oppfyller definerte kriterier som død, livstruende risiko, sykehusinnleggelse, funksjonstap eller annen medisinsk viktig hendelse.",
+    "hubSummary": "En alvorlig uønsket hendelse oppfyller utfallsbaserte kriterier; seriousness er ikke det samme som symptomintensitet.",
+    "expandedDefinition": [
+      "Vanlige kriterier omfatter død, livstruende hendelse, sykehusinnleggelse eller forlenget innleggelse, varig eller betydelig funksjonstap, medfødt avvik eller en annen viktig medisinsk hendelse som krever tiltak.",
+      "Alvorlighet (seriousness) er en regulatorisk rapporteringsklassifisering basert hovedsakelig på utfall eller nødvendig handling. Intensitet (severity) beskriver styrke, slik at et kraftig symptom kan være ikke-alvorlig mens en moderat hendelse kan oppfylle alvorlighetskriteriene.",
+      "En SAE som oppstår i en studie er ikke automatisk forårsaket av intervensjonen. Årsak, forventethet og relasjon vurderes separat, selv om rask rapportering kan være nødvendig."
+    ],
+    "whatItIsNot": [
+      "Det er ikke bare en hendelse som beskrives som sterk eller smertefull.",
+      "Det dokumenterer ikke alene at enheten eller intervensjonen forårsaket hendelsen.",
+      "Det bør ikke slås sammen med alt mindre ubehag eller forventet stimulussensasjon."
+    ],
+    "whyItMatters": "Korrekt SAE-bruk hindrer at rapporteringsplikt forveksles med vanlige intensitetsskalaer og holder årsaksvurderingen separat.",
+    "primaryPillar": {
+      "title": "Sikkerhet og tolerabilitet",
+      "description": "Forskningskontekst for hendelsesklassifisering, rapporteringskvalitet og protokollspesifikk sikkerhet.",
+      "href": "/no/forskning/sikkerhet-og-tolerabilitet",
+      "label": "Utforsk sikkerhetsforskning"
+    },
+    "sourceLinks": [
+      {
+        "title": "Hvem bør være forsiktig med VNS?",
+        "description": "Hvordan kontraindikasjoner, forsiktighetsregler, eksklusjoner og akutte grenser skiller seg.",
+        "href": "/no/kunnskap/hvem-bor-vaere-forsiktig-med-vagusnervestimulering",
+        "label": "Se forsiktighetsgrenser"
+      },
+      {
+        "title": "Vitenskapelig studiebibliotek",
+        "description": "Studiesammendrag gir kontekst for hvordan sikkerhetsutfall rapporteres.",
+        "href": "/research/studies",
+        "label": "Se studierapporter"
+      }
+    ],
+    "relatedTermIds": [
+      "adverse-event",
+      "contraindication",
+      "precaution",
+      "intended-use",
+      "tolerability",
+      "certainty-of-evidence"
+    ],
+    "publishedAt": "2026-08-25",
+    "modifiedAt": "2026-08-25",
+    "sitemapPriority": 0.62,
+    "changeFrequency": "monthly"
+  },
+  {
+    "id": "contraindication",
+    "slug": "kontraindikasjon",
+    "path": "/no/ordliste/kontraindikasjon",
+    "locale": "no",
+    "status": "published",
+    "order": 320,
+    "term": "Kontraindikasjon",
+    "aliases": [
+      "kontraindisert bruk"
+    ],
+    "category": "safety-research",
+    "seoTitle": "Kontraindikasjon | Enhetssikkerhet | Neuvago",
+    "description": "Hva en kontraindikasjon betyr i enhetssikkerhet, hvordan den skiller seg fra en forsiktighetsregel, og hvorfor produktets endelige merking har forrang.",
+    "shortDefinition": "En kontraindikasjon er en situasjon der en enhet eller intervensjon ikke bør brukes fordi kjent risiko klart veier tyngre enn mulig nytte.",
+    "hubSummary": "En kontraindikasjon beskriver en situasjon der en enhet eller intervensjon ikke bør brukes.",
+    "expandedDefinition": [
+      "Kontraindikasjoner er produkt- og bruksspesifikke. De bør beskrive kjente situasjoner der bruk gir uakseptabel risiko, ikke teoretiske muligheter kopiert fra andre enheter.",
+      "En kontraindikasjon er sterkere enn en forsiktighetsregel. En forsiktighetsregel krever ekstra vurdering, informasjon eller oppfølging, mens en kontraindikasjon sier at bruk skal unngås.",
+      "For et konkret produkt har endelig bruksanvisning, merking og oppdatert sikkerhetsinformasjon forrang foran en generell definisjon."
+    ],
+    "whatItIsNot": [
+      "Det er ikke det samme som et forskningsmessig eksklusjonskriterium.",
+      "Det er ikke en generell liste som kan overføres fra en annen enhet.",
+      "Mangel på data i en gruppe skaper ikke automatisk en universell kontraindikasjon."
+    ],
+    "whyItMatters": "Presis merking hindrer at forskningsutelukkelser, usikkerhet og kjent uakseptabel risiko slås sammen til én liste.",
+    "primaryPillar": {
+      "title": "Hvem bør være forsiktig med VNS?",
+      "description": "En detaljert guide til kontraindikasjoner, forsiktighetsregler, eksklusjonskriterier og datamangler.",
+      "href": "/no/kunnskap/hvem-bor-vaere-forsiktig-med-vagusnervestimulering",
+      "label": "Les forsiktighetsguiden"
+    },
+    "sourceLinks": [
+      {
+        "title": "Sikkerhet og tolerabilitet",
+        "description": "Evidenskontekst for rapporterte hendelser, studerte grupper og metodespesifikke grenser.",
+        "href": "/no/forskning/sikkerhet-og-tolerabilitet",
+        "label": "Se sikkerhetsevidens"
+      },
+      {
+        "title": "Medisinsk ansvarsfraskrivelse",
+        "description": "Grensen mellom generell kunnskap og individuell medisinsk rådgivning.",
+        "href": "/no/juridisk/medisinsk-ansvarsfraskrivelse",
+        "label": "Les ansvarsfraskrivelsen"
+      }
+    ],
+    "relatedTermIds": [
+      "precaution",
+      "intended-use",
+      "adverse-event",
+      "serious-adverse-event",
+      "implanted-vns",
+      "non-invasive-vns"
+    ],
+    "publishedAt": "2026-08-25",
+    "modifiedAt": "2026-08-25",
+    "sitemapPriority": 0.64,
+    "changeFrequency": "monthly"
+  },
+  {
+    "id": "precaution",
+    "slug": "forsiktighetsregel",
+    "path": "/no/ordliste/forsiktighetsregel",
+    "locale": "no",
+    "status": "published",
+    "order": 330,
+    "term": "Forsiktighetsregel",
+    "aliases": [
+      "precaution",
+      "sikkerhetsforbehold"
+    ],
+    "category": "safety-research",
+    "seoTitle": "Forsiktighetsregel | Enhetssikkerhet | Neuvago",
+    "description": "Hva en forsiktighetsregel betyr i produktmerking, hvordan den skiller seg fra kontraindikasjon, og hvorfor datamangler kan kreve ekstra vurdering.",
+    "shortDefinition": "En forsiktighetsregel beskriver forhold der ekstra vurdering, oppfølging, overvåking eller begrensninger kan være nødvendig.",
+    "hubSummary": "En forsiktighetsregel beskriver forhold som krever ekstra vurdering uten automatisk å forby bruk.",
+    "expandedDefinition": [
+      "Forsiktighetsregler kan gjelde særlige grupper, begrenset dokumentasjon, interaksjoner, bruksforhold, overvåking eller tiltak som reduserer en kjent eller mulig risiko.",
+      "De skiller seg fra kontraindikasjoner fordi de ikke nødvendigvis forbyr bruk. Riktig respons kan være konsultasjon, tettere oppfølging, endret teknikk eller å følge spesifikke instruksjoner.",
+      "Generelle forsiktighetsregler kan ikke erstatte produktets endelige bruksanvisning. Produktdesign, tiltenkt bruk, dokumentasjon og regulatorisk status bestemmer den faktiske ordlyden."
+    ],
+    "whatItIsNot": [
+      "Det er ikke automatisk et forbud.",
+      "Det er ikke det samme som en advarsel eller kontraindikasjon.",
+      "En forsiktighetsregel fra ett produkt bør ikke kopieres til et annet uten produktspesifikk begrunnelse."
+    ],
+    "whyItMatters": "Skillet støtter proporsjonal sikkerhetskommunikasjon uten å gjøre all usikkerhet til et forbud eller undervurdere kjent risiko.",
+    "primaryPillar": {
+      "title": "Hvem bør være forsiktig med VNS?",
+      "description": "En detaljert guide til forsiktighetsregler, kontraindikasjoner, eksklusjoner og datamangler.",
+      "href": "/no/kunnskap/hvem-bor-vaere-forsiktig-med-vagusnervestimulering",
+      "label": "Les forsiktighetsguiden"
+    },
+    "sourceLinks": [
+      {
+        "title": "Sikkerhet og tolerabilitet",
+        "description": "Forskningskontekst for studerte grupper, hendelsesrapportering og overførbarhetsgrenser.",
+        "href": "/no/forskning/sikkerhet-og-tolerabilitet",
+        "label": "Se sikkerhetsevidens"
+      },
+      {
+        "title": "Tiltenkt bruk",
+        "description": "Hvorfor sikkerhetsspråk må tolkes innenfor produktets definerte formål og instruksjoner.",
+        "href": "/no/juridisk/tiltenkt-bruk",
+        "label": "Les tiltenkt bruk"
+      }
+    ],
+    "relatedTermIds": [
+      "contraindication",
+      "intended-use",
+      "adverse-event",
+      "serious-adverse-event",
+      "tolerability",
+      "non-invasive-vns"
+    ],
+    "publishedAt": "2026-08-25",
+    "modifiedAt": "2026-08-25",
+    "sitemapPriority": 0.62,
+    "changeFrequency": "monthly"
+  },
+  {
+    "id": "intended-use",
+    "slug": "tiltenkt-bruk",
+    "path": "/no/ordliste/tiltenkt-bruk",
+    "locale": "no",
+    "status": "published",
+    "order": 340,
+    "term": "Tiltenkt bruk",
+    "aliases": [
+      "tiltenkt formål",
+      "intended use"
+    ],
+    "category": "safety-research",
+    "seoTitle": "Tiltenkt bruk | Produktgrenser | Neuvago-ordliste",
+    "description": "Hva tiltenkt bruk betyr for en enhet, hvordan begrepet rammer inn brukere og bruksforhold, og hvorfor forskning ikke automatisk utvider produktpåstander.",
+    "shortDefinition": "Tiltenkt bruk beskriver formålet et produkt er utviklet, merket, kommunisert og forventet brukt for.",
+    "hubSummary": "Tiltenkt bruk definerer produktets formål og hvilke brukere og forhold formålet kommuniseres for.",
+    "expandedDefinition": [
+      "En erklæring om tiltenkt bruk beskriver vanligvis hva produktet er ment for og kan angi brukere, omgivelser, anatomiske steder, bruksforhold eller relevante begrensninger.",
+      "Begrepet forankrer instruksjoner, advarsler, forsiktighetsregler, kontraindikasjoner, dokumentasjon og påstander. Teknisk kapasitet eller en studie av en annen enhet endrer ikke automatisk tiltenkt bruk.",
+      "Markedsføring, merking, bruksanvisning og annen produsentkommunikasjon bør være konsistent. For Neuvago har endelig produktdokumentasjon og godkjent kommersiell posisjonering forrang foran generell kunnskapstekst."
+    ],
+    "whatItIsNot": [
+      "Det er ikke enhver måte enheten fysisk kan brukes på.",
+      "Det utvides ikke automatisk av generell VNS-forskning.",
+      "Det er ikke det samme som dokumentasjon på at produktet oppnår alle utfall knyttet til kategorien."
+    ],
+    "whyItMatters": "Synlig tiltenkt bruk beskytter grensen mellom kategorikunnskap, forskningskontekst, produktinstruksjoner og medisinske påstander.",
+    "primaryPillar": {
+      "title": "Neuvagos tiltenkte bruk",
+      "description": "Den gjeldende produktspesifikke erklæringen som definerer velværeformål og kommunikasjonsgrense.",
+      "href": "/no/juridisk/tiltenkt-bruk",
+      "label": "Les tiltenkt bruk"
+    },
+    "sourceLinks": [
+      {
+        "title": "Regulatorisk informasjon",
+        "description": "En oversikt over produktstatus, dokumentasjon og kommunikasjonsgrenser.",
+        "href": "/no/juridisk/regulatorisk",
+        "label": "Se regulatorisk kontekst"
+      },
+      {
+        "title": "Slik fungerer Neuvago",
+        "description": "En praktisk forklaring av enheten og øktene innenfor produktets definerte velværespor.",
+        "href": "/no/slik-fungerer-det",
+        "label": "Se hvordan det fungerer"
+      }
+    ],
+    "relatedTermIds": [
+      "contraindication",
+      "precaution",
+      "adverse-event",
+      "serious-adverse-event",
+      "vagus-nerve-stimulation",
+      "certainty-of-evidence"
+    ],
+    "publishedAt": "2026-08-25",
+    "modifiedAt": "2026-08-25",
+    "sitemapPriority": 0.66,
+    "changeFrequency": "monthly"
+  },
+  {
+    "id": "randomized-controlled-trial",
+    "slug": "randomisert-kontrollert-studie",
+    "path": "/no/ordliste/randomisert-kontrollert-studie",
+    "locale": "no",
+    "status": "published",
+    "order": 350,
+    "term": "Randomisert kontrollert studie",
+    "termCode": "RCT",
+    "aliases": [
+      "randomisert kontrollert forsøk",
+      "randomized controlled trial"
+    ],
+    "category": "safety-research",
+    "seoTitle": "Randomisert kontrollert studie (RCT) | Neuvago",
+    "description": "Hva en randomisert kontrollert studie er, hvordan tilfeldig fordeling støtter sammenligning, og hvorfor randomisering ikke fjerner alle former for skjevhet.",
+    "shortDefinition": "En randomisert kontrollert studie fordeler deltakere tilfeldig mellom intervensjonsgrupper og sammenligner utfall i gruppene som følges samtidig.",
+    "hubSummary": "En RCT bruker tilfeldig fordeling for å sammenligne utfall mellom intervensjonsgrupper.",
+    "expandedDefinition": [
+      "Tilfeldig fordeling skal gjøre prognostiske faktorer mest mulig like mellom gruppene før intervensjonen starter og redusere konfunderende påvirkning i sammenligningen.",
+      "Kontrollgruppen kan få sham-stimulering, en annen intervensjon, standard behandling eller ingen intervensjon. Blinding, skjult tildeling, etterlevelse, manglende data, utfallsmåling og selektiv rapportering påvirker fortsatt gyldigheten.",
+      "En RCT estimerer effekt for den testede populasjonen, protokollen, kontrollen og utfallene. Resultatet kan ikke automatisk overføres til en annen enhet, dose, setting eller tiltenkt bruk."
+    ],
+    "whatItIsNot": [
+      "Den er ikke automatisk uten skjevhet bare fordi den er randomisert.",
+      "Den garanterer ikke vellykket blinding eller fullstendig rapportering.",
+      "Én RCT er ikke det samme som hele kunnskapsgrunnlaget."
+    ],
+    "whyItMatters": "Når man forstår hva randomisering gjør og ikke gjør, kan studiedesign tolkes uten å brukes som et automatisk kvalitetsstempel.",
+    "primaryPillar": {
+      "title": "Vitenskapelig studiebibliotek",
+      "description": "Se enkeltstudier og evidensoppsummeringer på tvers av VNS-metoder og forskningsspørsmål.",
+      "href": "/research/studies",
+      "label": "Se studier"
+    },
+    "sourceLinks": [
+      {
+        "title": "Forskning på vagusnervestimulering",
+        "description": "Hvordan populasjon, kontroll, protokoll og utfall former tolkningen.",
+        "href": "/no/forskning/vagusnervestimulering",
+        "label": "Utforsk VNS-forskning"
+      },
+      {
+        "title": "Sikkerhet og tolerabilitet",
+        "description": "Hvorfor sikkerhetsrapportering og studerte grupper må vurderes sammen med effektutfall.",
+        "href": "/no/forskning/sikkerhet-og-tolerabilitet",
+        "label": "Se sikkerhetsforskning"
+      }
+    ],
+    "relatedTermIds": [
+      "sham-stimulation",
+      "target-engagement",
+      "systematic-review",
+      "meta-analysis",
+      "certainty-of-evidence",
+      "adverse-event"
+    ],
+    "publishedAt": "2026-08-25",
+    "modifiedAt": "2026-08-25",
+    "sitemapPriority": 0.64,
+    "changeFrequency": "monthly"
+  },
+  {
+    "id": "systematic-review",
+    "slug": "systematisk-oversikt",
+    "path": "/no/ordliste/systematisk-oversikt",
+    "locale": "no",
+    "status": "published",
+    "order": 360,
+    "term": "Systematisk oversikt",
+    "termCode": "SR",
+    "aliases": [
+      "systematisk litteraturoversikt",
+      "evidenssyntese"
+    ],
+    "category": "safety-research",
+    "seoTitle": "Systematisk oversikt | Forskningsbegrep | Neuvago",
+    "description": "Hva en systematisk oversikt er, hvordan forhåndsdefinerte metoder skiller den fra en narrativ oversikt, og hvorfor kvaliteten avgjør konklusjonens styrke.",
+    "shortDefinition": "En systematisk oversikt bruker forhåndsdefinerte og transparente metoder for å finne, velge, vurdere og sammenstille studier om et avgrenset spørsmål.",
+    "hubSummary": "En systematisk oversikt bruker eksplisitte metoder for å finne, vurdere og sammenstille et definert kunnskapsgrunnlag.",
+    "expandedDefinition": [
+      "En oversikt beskriver vanligvis spørsmål, inklusjonskriterier, søkestrategi, studieutvelgelse, datauthenting, vurdering av risiko for skjevhet og plan for sammenstilling før konklusjonene trekkes.",
+      "Systematisk betyr ikke feilfri eller fullstendig. Søk kan overse studier, utvelgelse kan gi skjevhet, inkluderte studier kan være svake, og utfall eller protokoller kan være for ulike til å kombineres.",
+      "En systematisk oversikt kan inneholde en metaanalyse, men må ikke gjøre det. Narrativ sammenstilling kan være mer ansvarlig når statistisk sammenslåing skjuler viktige forskjeller."
+    ],
+    "whatItIsNot": [
+      "Det er ikke bare en artikkel som viser til mange studier.",
+      "Det er ikke automatisk en metaanalyse.",
+      "Betegnelsen garanterer ikke evidens med høy sikkerhet."
+    ],
+    "whyItMatters": "Transparente metoder gjør kunnskapsgrunnlaget etterprøvbart, mens kritisk vurdering hindrer at konklusjonen blir sterkere enn de inkluderte studiene.",
+    "primaryPillar": {
+      "title": "Vitenskapelig studiebibliotek",
+      "description": "Enkeltstudier og evidensressurser innen VNS, sikkerhet, HRV, søvn og mekanismeforskning.",
+      "href": "/research/studies",
+      "label": "Se evidens"
+    },
+    "sourceLinks": [
+      {
+        "title": "Sikkerhet og tolerabilitet",
+        "description": "Et temalag som forklarer hendelsesrapportering, populasjoner og usikkerhet på tvers av studier.",
+        "href": "/no/forskning/sikkerhet-og-tolerabilitet",
+        "label": "Se sikkerhetssyntese"
+      },
+      {
+        "title": "Forskning på vagusnervestimulering",
+        "description": "Et bredere kart over metodefamilier og grenser for å overføre funn mellom dem.",
+        "href": "/no/forskning/vagusnervestimulering",
+        "label": "Utforsk VNS-evidens"
+      }
+    ],
+    "relatedTermIds": [
+      "meta-analysis",
+      "randomized-controlled-trial",
+      "certainty-of-evidence",
+      "adverse-event",
+      "target-engagement",
+      "tolerability"
+    ],
+    "publishedAt": "2026-08-25",
+    "modifiedAt": "2026-08-25",
+    "sitemapPriority": 0.64,
+    "changeFrequency": "monthly"
+  },
+  {
+    "id": "meta-analysis",
+    "slug": "metaanalyse",
+    "path": "/no/ordliste/metaanalyse",
+    "locale": "no",
+    "status": "published",
+    "order": 370,
+    "term": "Metaanalyse",
+    "aliases": [
+      "statistisk evidenssyntese",
+      "samlet effektanalyse"
+    ],
+    "category": "safety-research",
+    "seoTitle": "Metaanalyse | Forskningsbegrep | Neuvago",
+    "description": "Hva en metaanalyse er, hvordan resultater slås statistisk sammen, og hvorfor heterogenitet, manglende evidens og studiekvalitet begrenser estimatet.",
+    "shortDefinition": "En metaanalyse er en statistisk sammenstilling som kombinerer kompatible effektestimater fra to eller flere studier.",
+    "hubSummary": "En metaanalyse kombinerer kompatible resultater fra flere studier statistisk.",
+    "expandedDefinition": [
+      "Metaanalyse kan øke presisjonen og vise retning og spredning i resultater på tvers av studier, men modell og data må passe til et tydelig definert spørsmål.",
+      "Det samlede estimatet arver begrensningene i studiene og oversiktsprosessen. Risiko for skjevhet, indirekte evidens, upresisjon, heterogenitet og manglende resultater kan gjøre et presist tall misvisende.",
+      "Statistisk sammenslåing er ikke alltid riktig. Hvis intervensjoner, populasjoner, kontroller, utfall eller oppfølging er svært ulike, kan separate analyser eller narrativ sammenstilling være mer ansvarlig."
+    ],
+    "whatItIsNot": [
+      "Den er ikke automatisk sterkere enn hver enkelt studie.",
+      "Den kan ikke reparere svakt studiedesign bare ved å legge sammen flere studier.",
+      "Et statistisk signifikant samlet estimat er ikke automatisk klinisk viktig eller produktspesifikt."
+    ],
+    "whyItMatters": "Det samlede tallet må tolkes sammen med studienes kompatibilitet, usikkerhet og evidenssikkerhet.",
+    "primaryPillar": {
+      "title": "Vitenskapelig studiebibliotek",
+      "description": "Evidensoppsummeringer inkluderer systematiske oversikter og metaanalyser om VNS, HRV, sikkerhet og søvn.",
+      "href": "/research/studies",
+      "label": "Se evidenssynteser"
+    },
+    "sourceLinks": [
+      {
+        "title": "Metaanalyse av taVNS-sikkerhet",
+        "description": "Et studiesammendrag som viser hvordan hendelsesdata sammenstilles og avgrenses.",
+        "href": "/research/studies/kim-2022-tavns-safety-systematic-review-meta-analysis",
+        "label": "Åpne sikkerhetssyntese"
+      },
+      {
+        "title": "Metaanalyse av taVNS og HRV",
+        "description": "Et studiesammendrag som viser hvorfor fysiologiske samleutfall fortsatt krever protokollspesifikk tolkning.",
+        "href": "/research/studies/soltani-2023-tavns-heart-rate-variability-systematic-review",
+        "label": "Åpne HRV-syntese"
+      }
+    ],
+    "relatedTermIds": [
+      "systematic-review",
+      "randomized-controlled-trial",
+      "certainty-of-evidence",
+      "heart-rate-variability",
+      "adverse-event",
+      "tolerability"
+    ],
+    "publishedAt": "2026-08-25",
+    "modifiedAt": "2026-08-25",
+    "sitemapPriority": 0.64,
+    "changeFrequency": "monthly"
+  },
+  {
+    "id": "certainty-of-evidence",
+    "slug": "evidenssikkerhet",
+    "path": "/no/ordliste/evidenssikkerhet",
+    "locale": "no",
+    "status": "published",
+    "order": 380,
+    "term": "Evidenssikkerhet",
+    "aliases": [
+      "sikkerhet i evidensen",
+      "tillit til kunnskapsgrunnlaget",
+      "GRADE-sikkerhet"
+    ],
+    "category": "measurement-interpretation",
+    "seoTitle": "Evidenssikkerhet og GRADE | Neuvago-ordliste",
+    "description": "Hva evidenssikkerhet betyr, hvordan GRADE vurderer tillit til et effektestimat, og hvorfor statistisk signifikans alene ikke er nok.",
+    "shortDefinition": "Evidenssikkerhet uttrykker hvor trygge fagpersoner er på at den sanne effekten ligger nær det rapporterte estimatet for et bestemt utfall.",
+    "hubSummary": "Evidenssikkerhet beskriver tilliten til at den sanne effekten ligger nær det rapporterte estimatet.",
+    "expandedDefinition": [
+      "Med GRADE vurderes et kunnskapsgrunnlag vanligvis som høy, moderat, lav eller svært lav sikkerhet for et definert utfall og en definert sammenligning.",
+      "Vurderingen omfatter blant annet risiko for skjevhet, inkonsistens, indirekte evidens, upresisjon og publiserings- eller ikke-rapporteringsskjevhet. Den gjelder kunnskapsgrunnlaget for utfallet, ikke temaet generelt.",
+      "Evidenssikkerhet er noe annet enn effektstørrelse og statistisk signifikans. Et stort eller signifikant estimat kan ha lav sikkerhet, mens et lite presist estimat kan ha høy sikkerhet."
+    ],
+    "whatItIsNot": [
+      "Det er ikke en poengsum for hvor imponerende et resultat ser ut.",
+      "Det er ikke identisk med studiedesignet i én enkelt studie.",
+      "Høy sikkerhet om en liten effekt gjør ikke effekten stor eller klinisk viktig."
+    ],
+    "whyItMatters": "Evidenssikkerhet hjelper leseren å skille hva forskningen estimerer fra hvor stor tillit man bør ha til estimatet.",
+    "primaryPillar": {
+      "title": "Forskning på vagusnervestimulering",
+      "description": "Et evidenskart som skiller mekanismer, utfall, metodefamilier og grenser for tillit.",
+      "href": "/no/forskning/vagusnervestimulering",
+      "label": "Utforsk evidensgrenser"
+    },
+    "sourceLinks": [
+      {
+        "title": "Vitenskapelig studiebibliotek",
+        "description": "Studiesammendrag viser designene og utfallene som evidenssynteser vurderer.",
+        "href": "/research/studies",
+        "label": "Se studier"
+      },
+      {
+        "title": "Sikkerhet og tolerabilitet",
+        "description": "Hvorfor ulik rapportering, indirekte evidens og manglende data påvirker tilliten til sikkerhetskonklusjoner.",
+        "href": "/no/forskning/sikkerhet-og-tolerabilitet",
+        "label": "Se evidenssikkerhet"
+      }
+    ],
+    "relatedTermIds": [
+      "systematic-review",
+      "meta-analysis",
+      "randomized-controlled-trial",
+      "target-engagement",
+      "adverse-event",
+      "heart-rate-variability"
+    ],
+    "publishedAt": "2026-08-25",
+    "modifiedAt": "2026-08-25",
+    "sitemapPriority": 0.66,
     "changeFrequency": "monthly"
   }
 ] as const satisfies readonly GlossaryTerm[];

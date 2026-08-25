@@ -17,7 +17,7 @@ const hubConfig = {
     locale: "en_US",
     title: "Glossary | VNS, Nervous System and Research Terms | Neuvago",
     description:
-      "Clear definitions of VNS, ear anatomy, stimulation methods and parameters, autonomic regulation, HRV, tolerability, and related research terms.",
+      "Clear definitions of VNS, stimulation protocols, safety, study design, evidence certainty, ear anatomy, autonomic regulation, HRV, and related terms.",
     name: "Neuvago glossary of VNS and nervous system terms",
     breadcrumbHome: "Home",
     breadcrumbHub: "Glossary",
@@ -29,7 +29,7 @@ const hubConfig = {
     locale: "nb_NO",
     title: "Ordliste | VNS, nervesystem og forskningsbegreper | Neuvago",
     description:
-      "Tydelige definisjoner av VNS, øreanatomi, stimuleringsmetoder og -parametere, autonom regulering, HRV, tolerabilitet og relaterte forskningsbegreper.",
+      "Tydelige definisjoner av VNS, stimuleringsprotokoller, sikkerhet, studiedesign, evidenssikkerhet, øreanatomi, autonom regulering, HRV og relaterte begreper.",
     name: "Neuvago-ordliste for VNS og nervesystemet",
     breadcrumbHome: "Forside",
     breadcrumbHub: "Ordliste",

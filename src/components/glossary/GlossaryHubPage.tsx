@@ -16,7 +16,7 @@ const copy = {
       "Short, careful definitions that connect technical language to the deeper Learn and Research layers without turning an abbreviation into a claim.",
     pilot: "Curated bilingual collection",
     pilotText:
-      "The glossary grows through reviewed bilingual term pairs across anatomy, stimulation methods, protocol parameters, nervous-system physiology, measurement, and safety. Aliases remain attached to canonical entries rather than creating duplicate indexable pages.",
+      "The glossary grows through reviewed bilingual term pairs across anatomy, stimulation methods, protocol parameters, nervous-system physiology, safety, research design, evidence interpretation, and product boundaries. Aliases remain attached to canonical entries rather than creating duplicate indexable pages.",
     browse: "Browse by letter",
     categories: "Term categories",
     entries: "Definitions",
@@ -38,7 +38,7 @@ const copy = {
       "Korte og forsiktige definisjoner som kobler fagspråk til kunnskaps- og forskningslagene uten å gjøre en forkortelse til en påstand.",
     pilot: "Kurert tospråklig samling",
     pilotText:
-      "Ordlisten utvides med kvalitetssikrede tospråklige begrepspar innen anatomi, stimuleringsmetoder, protokollparametere, nervesystemfysiologi, måling og sikkerhet. Aliaser samles på kanoniske oppføringer i stedet for å skape dupliserte indekserbare sider.",
+      "Ordlisten utvides med kvalitetssikrede tospråklige begrepspar innen anatomi, stimuleringsmetoder, protokollparametere, nervesystemfysiologi, sikkerhet, studiedesign, evidenstolkning og produktgrenser. Aliaser samles på kanoniske oppføringer i stedet for å skape dupliserte indekserbare sider.",
     browse: "Bla etter bokstav",
     categories: "Begrepskategorier",
     entries: "Definisjoner",

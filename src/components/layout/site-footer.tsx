@@ -26,6 +26,7 @@ const footerGroupsByLocale: Record<
       title: "Knowledge",
       links: [
         { href: "/learn", label: "Learning hub" },
+        { href: "/glossary", label: "Glossary" },
         { href: "/conditions", label: "Conditions" },
         { href: "/research", label: "Research" },
         { href: "/learn/vagus-nerve", label: "Vagus nerve" },
@@ -75,11 +76,12 @@ const footerGroupsByLocale: Record<
       title: "Kunnskap",
       links: [
         { href: "/no/kunnskap", label: "Kunnskapssenter" },
+        { href: "/no/ordliste", label: "Ordliste" },
         { href: "/no/tilstander", label: "Tilstander" },
         { href: "/no/forskning", label: "Forskning" },
-        { href: "/learn/vagus-nerve", label: "Vagusnerven" },
+        { href: "/no/kunnskap/vagusnerven", label: "Vagusnerven" },
         {
-          href: "/learn/nervous-system-regulation",
+          href: "/no/kunnskap/regulering-av-nervesystemet",
           label: "Regulering av nervesystemet",
         },
       ],

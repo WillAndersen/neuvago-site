@@ -498,6 +498,13 @@ export default function LearnPage() {
                 </Link>
 
                 <Link
+                  href="/glossary"
+                  className="rounded-full border border-black/10 bg-transparent px-6 py-3 text-sm font-medium text-[#1f1f1c] transition hover:bg-white/40"
+                >
+                  Browse glossary
+                </Link>
+
+                <Link
                   href="/how-it-works"
                   className="rounded-full border border-black/10 bg-transparent px-6 py-3 text-sm font-medium text-[#1f1f1c] transition hover:bg-white/40"
                 >

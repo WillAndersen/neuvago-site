@@ -39,6 +39,13 @@ export const metadata: Metadata = {
 
 const foundationCards = [
   {
+    title: "Ordliste for VNS og nervesystemet",
+    description:
+      "Slå opp forkortelser, metodebegreper, anatomi, HRV, vagal tone og sikkerhet uten å åpne en full pilarartikkel.",
+    href: "/no/ordliste",
+    label: "Definisjoner og aliaser",
+  },
+  {
     title: "Forskning og kunnskapsgrunnlag",
     description:
       "Gå videre til forskningshuben når du vil se studier, metode, sikkerhet, tolerabilitet og tydelige tolkningsgrenser.",
@@ -185,7 +192,7 @@ export default function NorwegianKnowledgeHubPage() {
             </h2>
           </div>
 
-          <div className="mt-10 grid gap-5 md:grid-cols-3">
+          <div className="mt-10 grid gap-5 md:grid-cols-2 xl:grid-cols-4">
             {foundationCards.map((card) => (
               <Link
                 key={card.href}

@@ -4,6 +4,11 @@ import { getPublishedNorwegianKnowledgeArticles } from "@/content/knowledge/no/r
 import { getPublishedNorwegianConditionPages } from "@/content/conditions/no/registry";
 
 import { getPublishedNorwegianResearchTopics } from "@/content/research/no/registry";
+import {
+  getPublishedEnglishGlossaryTerms,
+  getPublishedNorwegianGlossaryTerms,
+} from "@/content/glossary/registry";
+
 const siteUrl = "https://neuvago.com";
 
 const routes: Array<{
@@ -23,6 +28,7 @@ const routes: Array<{
   { path: "/no/kunnskap", changeFrequency: "monthly", priority: 0.7, lastModified: SEO_LAUNCH_REVIEW_DATE },
   { path: "/no/tilstander", changeFrequency: "monthly", priority: 0.7, lastModified: SEO_LAUNCH_REVIEW_DATE },
   { path: "/no/forskning", changeFrequency: "monthly", priority: 0.7, lastModified: SEO_LAUNCH_REVIEW_DATE },
+  { path: "/no/ordliste", changeFrequency: "monthly", priority: 0.76, lastModified: "2026-08-25" },
   { path: "/no/juridisk/vilkar", changeFrequency: "monthly", priority: 0.62, lastModified: SEO_LAUNCH_REVIEW_DATE },
   { path: "/no/juridisk/fda-status", changeFrequency: "monthly", priority: 0.52, lastModified: SEO_LAUNCH_REVIEW_DATE },
   { path: "/no/juridisk/ce-samsvar", changeFrequency: "monthly", priority: 0.54, lastModified: SEO_LAUNCH_REVIEW_DATE },
@@ -46,6 +52,7 @@ const routes: Array<{
   { path: "/conditions/burnout", changeFrequency: "weekly", priority: 0.76 },
 
   { path: "/learn", changeFrequency: "weekly", priority: 0.86, lastModified: SEO_LAUNCH_REVIEW_DATE },
+  { path: "/glossary", changeFrequency: "monthly", priority: 0.78, lastModified: "2026-08-25" },
   { path: "/learn/vagus-nerve", changeFrequency: "weekly", priority: 0.82, lastModified: SEO_LAUNCH_REVIEW_DATE },
   { path: "/learn/vagus-nerve-stimulation", changeFrequency: "weekly", priority: 0.86, lastModified: SEO_LAUNCH_REVIEW_DATE },
   { path: "/learn/non-invasive-vagus-nerve-stimulation", changeFrequency: "weekly", priority: 0.86, lastModified: SEO_LAUNCH_REVIEW_DATE },
@@ -130,10 +137,28 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: topic.sitemapPriority,
     }));
 
+  const englishGlossaryEntries: MetadataRoute.Sitemap =
+    getPublishedEnglishGlossaryTerms().map((term) => ({
+      url: new URL(term.path, siteUrl).toString(),
+      lastModified: new Date(`${term.modifiedAt}T12:00:00Z`),
+      changeFrequency: term.changeFrequency,
+      priority: term.sitemapPriority,
+    }));
+
+  const norwegianGlossaryEntries: MetadataRoute.Sitemap =
+    getPublishedNorwegianGlossaryTerms().map((term) => ({
+      url: new URL(term.path, siteUrl).toString(),
+      lastModified: new Date(`${term.modifiedAt}T12:00:00Z`),
+      changeFrequency: term.changeFrequency,
+      priority: term.sitemapPriority,
+    }));
+
   return [
     ...coreEntries,
     ...norwegianKnowledgeEntries,
     ...norwegianConditionEntries,
     ...norwegianResearchTopicEntries,
+    ...englishGlossaryEntries,
+    ...norwegianGlossaryEntries,
   ];
 }

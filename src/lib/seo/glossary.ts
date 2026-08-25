@@ -17,7 +17,7 @@ const hubConfig = {
     locale: "en_US",
     title: "Glossary | VNS, Nervous System and Research Terms | Neuvago",
     description:
-      "Clear definitions of VNS, tVNS, taVNS, vagus nerve, autonomic regulation, HRV, vagal tone, tolerability, and related research terms.",
+      "Clear definitions of VNS, ear anatomy, stimulation methods and parameters, autonomic regulation, HRV, tolerability, and related research terms.",
     name: "Neuvago glossary of VNS and nervous system terms",
     breadcrumbHome: "Home",
     breadcrumbHub: "Glossary",
@@ -29,7 +29,7 @@ const hubConfig = {
     locale: "nb_NO",
     title: "Ordliste | VNS, nervesystem og forskningsbegreper | Neuvago",
     description:
-      "Tydelige definisjoner av VNS, tVNS, taVNS, vagusnerven, autonom regulering, HRV, vagal tone, tolerabilitet og relaterte forskningsbegreper.",
+      "Tydelige definisjoner av VNS, øreanatomi, stimuleringsmetoder og -parametere, autonom regulering, HRV, tolerabilitet og relaterte forskningsbegreper.",
     name: "Neuvago-ordliste for VNS og nervesystemet",
     breadcrumbHome: "Forside",
     breadcrumbHub: "Ordliste",

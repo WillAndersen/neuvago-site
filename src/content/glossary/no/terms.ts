@@ -53,6 +53,7 @@ export const norwegianGlossaryTerms = [
     "relatedTermIds": [
       "vagus-nerve-stimulation",
       "autonomic-nervous-system",
+      "sympathetic-nervous-system",
       "parasympathetic-nervous-system",
       "auricular-branch"
     ],
@@ -111,9 +112,10 @@ export const norwegianGlossaryTerms = [
     ],
     "relatedTermIds": [
       "vagus-nerve",
+      "implanted-vns",
       "non-invasive-vns",
+      "cervical-non-invasive-vns",
       "transcutaneous-vns",
-      "auricular-vns",
       "tolerability"
     ],
     "publishedAt": "2026-08-25",
@@ -172,6 +174,7 @@ export const norwegianGlossaryTerms = [
     ],
     "relatedTermIds": [
       "vagus-nerve-stimulation",
+      "cervical-non-invasive-vns",
       "transcutaneous-vns",
       "transcutaneous-auricular-vns",
       "auricular-vns",
@@ -233,10 +236,11 @@ export const norwegianGlossaryTerms = [
     ],
     "relatedTermIds": [
       "non-invasive-vns",
+      "cervical-non-invasive-vns",
       "transcutaneous-auricular-vns",
-      "auricular-vns",
-      "vagus-nerve-stimulation",
-      "tolerability"
+      "stimulation-site",
+      "stimulation-intensity",
+      "stimulation-frequency"
     ],
     "publishedAt": "2026-08-25",
     "modifiedAt": "2026-08-25",
@@ -296,8 +300,9 @@ export const norwegianGlossaryTerms = [
       "transcutaneous-vns",
       "auricular-vns",
       "auricular-branch",
-      "non-invasive-vns",
-      "tolerability"
+      "tragus",
+      "cymba-conchae",
+      "stimulation-site"
     ],
     "publishedAt": "2026-08-25",
     "modifiedAt": "2026-08-25",
@@ -356,9 +361,11 @@ export const norwegianGlossaryTerms = [
     ],
     "relatedTermIds": [
       "transcutaneous-auricular-vns",
-      "transcutaneous-vns",
       "auricular-branch",
-      "non-invasive-vns"
+      "tragus",
+      "cymba-conchae",
+      "cavum-conchae",
+      "earlobe"
     ],
     "publishedAt": "2026-08-25",
     "modifiedAt": "2026-08-25",
@@ -416,7 +423,10 @@ export const norwegianGlossaryTerms = [
     "relatedTermIds": [
       "auricular-vns",
       "transcutaneous-auricular-vns",
-      "vagus-nerve"
+      "tragus",
+      "cymba-conchae",
+      "cavum-conchae",
+      "earlobe"
     ],
     "publishedAt": "2026-08-25",
     "modifiedAt": "2026-08-25",
@@ -473,6 +483,7 @@ export const norwegianGlossaryTerms = [
       }
     ],
     "relatedTermIds": [
+      "sympathetic-nervous-system",
       "parasympathetic-nervous-system",
       "vagus-nerve",
       "vagal-tone",
@@ -534,6 +545,7 @@ export const norwegianGlossaryTerms = [
     ],
     "relatedTermIds": [
       "autonomic-nervous-system",
+      "sympathetic-nervous-system",
       "vagus-nerve",
       "vagal-tone",
       "heart-rate-variability"
@@ -594,6 +606,7 @@ export const norwegianGlossaryTerms = [
     "relatedTermIds": [
       "heart-rate-variability",
       "parasympathetic-nervous-system",
+      "sympathetic-nervous-system",
       "autonomic-nervous-system",
       "vagus-nerve"
     ],
@@ -653,6 +666,7 @@ export const norwegianGlossaryTerms = [
     "relatedTermIds": [
       "vagal-tone",
       "autonomic-nervous-system",
+      "sympathetic-nervous-system",
       "parasympathetic-nervous-system"
     ],
     "publishedAt": "2026-08-25",
@@ -713,11 +727,815 @@ export const norwegianGlossaryTerms = [
       "vagus-nerve-stimulation",
       "non-invasive-vns",
       "transcutaneous-vns",
-      "transcutaneous-auricular-vns"
+      "transcutaneous-auricular-vns",
+      "stimulation-intensity",
+      "electrode"
     ],
     "publishedAt": "2026-08-25",
     "modifiedAt": "2026-08-25",
     "sitemapPriority": 0.62,
+    "changeFrequency": "monthly"
+  },
+  {
+    "id": "sympathetic-nervous-system",
+    "slug": "det-sympatiske-nervesystemet",
+    "path": "/no/ordliste/det-sympatiske-nervesystemet",
+    "locale": "no",
+    "status": "published",
+    "order": 130,
+    "term": "Det sympatiske nervesystemet",
+    "aliases": [
+      "sympatikus",
+      "sympatisk del",
+      "sympatisk nervesystem"
+    ],
+    "category": "nervous-system",
+    "seoTitle": "Det sympatiske nervesystemet – definisjon | Neuvago",
+    "description": "Definerer det sympatiske nervesystemet, hvordan det mobiliserer ressurser, og hvorfor sympatisk aktivering ikke automatisk er skadelig eller dysregulert.",
+    "shortDefinition": "Det sympatiske nervesystemet er en hoveddel av det autonome nervesystemet som bidrar til å mobilisere ressurser og koordinere respons på skiftende krav.",
+    "hubSummary": "Det sympatiske nervesystemet er en hoveddel av det autonome nervesystemet som bidrar til å mobilisere ressurser og koordinere respons på skiftende krav.",
+    "expandedDefinition": [
+      "Sympatiske signalveier påvirker blant annet hjertefrekvens, blodårespenning, svetting, pupillstørrelse og fordeling av energi under aktivitet eller utfordring. Virkningen varierer mellom organer og situasjoner.",
+      "Systemet omtales ofte gjennom uttrykket «kamp eller flukt», men dette er bare en forenkling. Sympatisk aktivitet bidrar også til vanlig bevegelse, oppmerksomhet, temperaturregulering, det å stå oppreist, trening og løpende tilpasning.",
+      "Autonom regulering er ikke en enkel konkurranse der sympatisk aktivitet er dårlig og parasympatisk aktivitet er god. Fleksibel regulering krever samspill og skift mellom flere nevrale og kroppslige systemer."
+    ],
+    "whatItIsNot": [
+      "Det er ikke aktivt bare ved frykt, panikk eller akutte farer.",
+      "Sympatisk aktivering er ikke automatisk tegn på dysregulering eller sykdom.",
+      "Det er ikke bare det motsatte av vagusnerven eller det parasympatiske nervesystemet."
+    ],
+    "whyItMatters": "Skillet hindrer at normal mobilisering og tilpasning reduseres til én «stressmodus» som kroppen alltid bør slå av.",
+    "primaryPillar": {
+      "title": "Det autonome nervesystemet",
+      "description": "En norsk grunnartikkel om autonom regulering, sympatisk og parasympatisk funksjon og tilpasning.",
+      "href": "/no/kunnskap/det-autonome-nervesystemet",
+      "label": "Les artikkelen om det autonome nervesystemet"
+    },
+    "sourceLinks": [
+      {
+        "title": "Regulering av nervesystemet",
+        "description": "En bredere forklaring av regulering, restitusjon og tilpasning til skiftende krav.",
+        "href": "/no/kunnskap/regulering-av-nervesystemet",
+        "label": "Les reguleringsguiden"
+      },
+      {
+        "title": "Det parasympatiske nervesystemet",
+        "description": "Et tydelig språkpar for den andre hoveddelen av det autonome nervesystemet.",
+        "href": "/no/kunnskap/det-parasympatiske-nervesystemet",
+        "label": "Les om parasympatisk funksjon"
+      }
+    ],
+    "relatedTermIds": [
+      "autonomic-nervous-system",
+      "parasympathetic-nervous-system",
+      "heart-rate-variability",
+      "vagal-tone"
+    ],
+    "publishedAt": "2026-08-25",
+    "modifiedAt": "2026-08-25",
+    "sitemapPriority": 0.62,
+    "changeFrequency": "monthly",
+    "termCode": "SNS"
+  },
+  {
+    "id": "implanted-vns",
+    "slug": "implantert-vagusnervestimulering",
+    "path": "/no/ordliste/implantert-vagusnervestimulering",
+    "locale": "no",
+    "status": "published",
+    "order": 140,
+    "term": "Implantert vagusnervestimulering",
+    "aliases": [
+      "implantert VNS",
+      "kirurgisk implantert VNS",
+      "cervikal implantert VNS"
+    ],
+    "category": "stimulation-methods",
+    "seoTitle": "Implantert VNS – definisjon | Neuvago ordliste",
+    "description": "Hva implantert VNS er, hvordan elektrode og pulsgenerator danner et klinisk system, og hvorfor evidensen ikke automatisk gjelder ikke-invasive apparater.",
+    "shortDefinition": "Implantert vagusnervestimulering bruker en kirurgisk plassert elektrode og en implantert pulsgenerator til å gi programmert stimulering av vagusnerven på halsen.",
+    "hubSummary": "Implantert vagusnervestimulering bruker en kirurgisk plassert elektrode og en implantert pulsgenerator til å gi programmert stimulering av vagusnerven på halsen.",
+    "expandedDefinition": [
+      "Et implantert VNS-system består vanligvis av en ledning med elektrode rundt vagusnerven på halsen og en pulsgenerator under huden. En kliniker programmerer blant annet utgangsstrøm, frekvens, pulsbredde og PÅ/AV-tider.",
+      "Implantert VNS hører til en medisinsk og klinisk kontekst. Indikasjoner, oppfølging, programmering, bivirkninger og dokumentasjon avhenger av systemet og pasientgruppen som faktisk er godkjent og undersøkt.",
+      "Implanterte og ikke-invasive metoder deler ordet VNS, men er forskjellige i anatomi, maskinvare, eksponering, klinisk oppfølging og evidens. Funn kan ikke flyttes mellom kategoriene uten direkte støtte."
+    ],
+    "whatItIsNot": [
+      "Det er ikke en ikke-invasiv eller transkutan metode.",
+      "Det er ikke det samme som ørebasert eller utvendig stimulering på halsen.",
+      "Klinisk evidens for et implantert system er ikke automatisk evidens for et velværeprodukt."
+    ],
+    "whyItMatters": "Skillet hindrer at medisinske indikasjoner, parameterinnstillinger og resultater lånes mellom grunnleggende ulike systemer.",
+    "primaryPillar": {
+      "title": "Implantert og ikke-invasiv VNS",
+      "description": "En norsk sammenligning av kirurgisk implanterte systemer og eksterne stimuleringsmetoder.",
+      "href": "/no/kunnskap/implantert-og-ikke-invasiv-vns",
+      "label": "Les sammenligningen"
+    },
+    "sourceLinks": [
+      {
+        "title": "Forskning på vagusnervestimulering",
+        "description": "Evidens og tolkningsgrenser på tvers av implanterte og ikke-invasive tilnærminger.",
+        "href": "/no/forskning/vagusnervestimulering",
+        "label": "Utforsk VNS-forskning"
+      },
+      {
+        "title": "Rush et al. 2005",
+        "description": "En sentral studie av implantert VNS ved behandlingsresistent depresjon.",
+        "href": "/research/studies/rush-2005-vagus-nerve-stimulation-depression",
+        "label": "Les studiesammendraget"
+      }
+    ],
+    "relatedTermIds": [
+      "vagus-nerve-stimulation",
+      "non-invasive-vns",
+      "cervical-non-invasive-vns",
+      "electrode",
+      "stimulation-frequency",
+      "pulse-width"
+    ],
+    "publishedAt": "2026-08-25",
+    "modifiedAt": "2026-08-25",
+    "sitemapPriority": 0.63,
+    "changeFrequency": "monthly"
+  },
+  {
+    "id": "cervical-non-invasive-vns",
+    "slug": "cervikal-ikke-invasiv-vagusnervestimulering",
+    "path": "/no/ordliste/cervikal-ikke-invasiv-vagusnervestimulering",
+    "locale": "no",
+    "status": "published",
+    "order": 150,
+    "term": "Cervikal ikke-invasiv vagusnervestimulering",
+    "aliases": [
+      "cervikal nVNS",
+      "ikke-invasiv VNS på halsen",
+      "transkutan cervikal VNS",
+      "tcVNS"
+    ],
+    "category": "stimulation-methods",
+    "seoTitle": "Cervikal ikke-invasiv VNS – definisjon | Neuvago",
+    "description": "En definisjon av cervikal ikke-invasiv VNS: utvendig stimulering på halsen, tydelig skilt fra implantert VNS og aurikulær taVNS.",
+    "shortDefinition": "Cervikal ikke-invasiv vagusnervestimulering gir elektrisk stimulering utvendig på halsen med hensikt å påvirke cervikale vagale signalveier uten kirurgi.",
+    "hubSummary": "Cervikal ikke-invasiv vagusnervestimulering gir elektrisk stimulering utvendig på halsen med hensikt å påvirke cervikale vagale signalveier uten kirurgi.",
+    "expandedDefinition": [
+      "Cervikal nVNS gis gjennom huden på halsen, ikke via en implantert ledning eller en elektrode på det ytre øret. Apparater kan variere i plassering, side, bølgeform, kontaktutforming og øktinstruksjoner.",
+      "Forskning kan bruke betegnelser som n-cVNS, cervikal nVNS eller transkutan cervikal VNS. Begrepene sier noe om leveringsvei og anatomisk område, men definerer ikke én protokoll eller dokumenterer target engagement.",
+      "Cervikale og aurikulære metoder bør rapporteres hver for seg. Et funn fra én plassering, ett apparat eller én indikasjon beskriver ikke automatisk en annen metode eller et generelt velværeprodukt."
+    ],
+    "whatItIsNot": [
+      "Det er ikke implantert VNS.",
+      "Det er ikke samme metode som aurikulær eller ørebasert taVNS.",
+      "Betegnelsen cervikal gjør ikke funn apparatuavhengige eller universelt overførbare."
+    ],
+    "whyItMatters": "Begrepet holder utvendig stimulering på halsen atskilt fra både kirurgisk VNS og stimulering på det ytre øret.",
+    "primaryPillar": {
+      "title": "Ikke-invasiv vagusnervestimulering",
+      "description": "En norsk guide til eksterne VNS-metoder, apparatforskjeller og ansvarlig vurdering.",
+      "href": "/no/kunnskap/ikke-invasiv-vagusnervestimulering",
+      "label": "Les guiden til ikke-invasiv VNS"
+    },
+    "sourceLinks": [
+      {
+        "title": "Implantert og ikke-invasiv VNS",
+        "description": "Sammenligning av kirurgiske og eksterne systemer uten å blande evidens.",
+        "href": "/no/kunnskap/implantert-og-ikke-invasiv-vns",
+        "label": "Les sammenligningen"
+      },
+      {
+        "title": "Forskning på transkutan VNS",
+        "description": "Metodekontekst for stimulering gjennom huden, plasseringer, parametere og tolkningsgrenser.",
+        "href": "/no/forskning/transkutan-vagusnervestimulering",
+        "label": "Utforsk tVNS-forskning"
+      }
+    ],
+    "relatedTermIds": [
+      "non-invasive-vns",
+      "transcutaneous-vns",
+      "implanted-vns",
+      "stimulation-site",
+      "electrode",
+      "stimulation-intensity"
+    ],
+    "publishedAt": "2026-08-25",
+    "modifiedAt": "2026-08-25",
+    "sitemapPriority": 0.63,
+    "changeFrequency": "monthly",
+    "termCode": "n-cVNS"
+  },
+  {
+    "id": "tragus",
+    "slug": "tragus",
+    "path": "/no/ordliste/tragus",
+    "locale": "no",
+    "status": "published",
+    "order": 160,
+    "term": "Tragus",
+    "aliases": [
+      "øretragus"
+    ],
+    "category": "anatomy",
+    "seoTitle": "Tragus – øreanatomi og taVNS | Neuvago",
+    "description": "En definisjon av tragus, plasseringen foran øregangen og hvorfor bruk som taVNS-sted fortsatt krever anatomisk og protokollspesifikk forsiktighet.",
+    "shortDefinition": "Tragus er det lille bruskfremspringet foran åpningen til den ytre øregangen.",
+    "hubSummary": "Tragus er det lille bruskfremspringet foran åpningen til den ytre øregangen.",
+    "expandedDefinition": [
+      "Tragus er en del av det ytre øret og ligger som et fremspring over inngangen til øregangen. Strukturen er forskjellig fra concha, antitragus og øreflippen.",
+      "Noen studier av aurikulær stimulering plasserer elektroden på eller nær tragus. Andre protokoller bruker cymba conchae, cavum conchae eller flere aurikulære områder.",
+      "Det ytre øret har blandet og variabel nerveforsyning. Navnet tragus beskriver det synlige plasseringsområdet, men dokumenterer ikke alene selektiv stimulering av den aurikulære vagusgrenen."
+    ],
+    "whatItIsNot": [
+      "Det er ikke samme struktur som cymba conchae eller cavum conchae.",
+      "Plassering på tragus beviser ikke selektiv aktivering av vagusnerven.",
+      "Resultater fra én tragusprotokoll definerer ikke alle ørebaserte VNS-apparater."
+    ],
+    "whyItMatters": "Presist språk om øreplassering gjør studier og apparater lettere å sammenligne uten å behandle alle aurikulære steder som like.",
+    "primaryPillar": {
+      "title": "Ørets anatomi og vagusnerven",
+      "description": "En norsk guide til ytre øre, nerveforsyning, ABVN og tolkningsgrenser.",
+      "href": "/no/kunnskap/orets-anatomi-og-vagusnerven",
+      "label": "Les anatomiartikkelen"
+    },
+    "sourceLinks": [
+      {
+        "title": "Aurikulær VNS-forskning",
+        "description": "Detaljert kontekst om øreanatomi, stimuleringssteder og sham-design.",
+        "href": "/no/forskning/aurikulaer-vagusnervestimulering",
+        "label": "Utforsk aurikulær forskning"
+      },
+      {
+        "title": "Frangos et al. 2015",
+        "description": "En nevroavbildningsstudie som ofte brukes i tolkning av aurikulære stimuleringssteder.",
+        "href": "/research/studies/frangos-2015-auricular-vagus-nerve-stimulation-fmri",
+        "label": "Les studiesammendraget"
+      }
+    ],
+    "relatedTermIds": [
+      "auricular-branch",
+      "transcutaneous-auricular-vns",
+      "cymba-conchae",
+      "cavum-conchae",
+      "earlobe",
+      "stimulation-site"
+    ],
+    "publishedAt": "2026-08-25",
+    "modifiedAt": "2026-08-25",
+    "sitemapPriority": 0.6,
+    "changeFrequency": "monthly"
+  },
+  {
+    "id": "cymba-conchae",
+    "slug": "cymba-conchae",
+    "path": "/no/ordliste/cymba-conchae",
+    "locale": "no",
+    "status": "published",
+    "order": 170,
+    "term": "Cymba conchae",
+    "aliases": [
+      "cymba concha",
+      "øvre concha"
+    ],
+    "category": "anatomy",
+    "seoTitle": "Cymba conchae – definisjon | Neuvago ordliste",
+    "description": "Hva cymba conchae er, hvor området ligger i concha, og hvorfor bruk i taVNS-forskning fortsatt avhenger av elektrodeplassering og protokolldetaljer.",
+    "shortDefinition": "Cymba conchae er den øvre og mindre delen av concha i det ytre øret, over helixroten.",
+    "hubSummary": "Cymba conchae er den øvre og mindre delen av concha i det ytre øret, over helixroten.",
+    "expandedDefinition": [
+      "Concha er den skålformede delen som leder inn mot øregangen. Helixroten deler området i øvre cymba conchae og nedre cavum conchae.",
+      "Cymba conchae omtales ofte som et aktivt område i taVNS-forskning fordi anatomiske og nevroavbildende studier har knyttet deler av concha til aurikulære vagale signalveier.",
+      "Anatomisk plassering er bare én protokollvariabel. Elektrodegeometri, kontaktflate, bølgeform, intensitet, side, kontrollbetingelse og utfallsmål påvirker tolkningen."
+    ],
+    "whatItIsNot": [
+      "Det er ikke samme område som cavum conchae, tragus eller øreflippen.",
+      "Plassering i cymba dokumenterer ikke alene selektiv target engagement.",
+      "Det definerer ikke en standard frekvens, pulsbredde, intensitet eller øktlengde."
+    ],
+    "whyItMatters": "Begrepet brukes ofte i taVNS-studier, og en presis anatomisk definisjon gjør protokoller lettere å sammenligne.",
+    "primaryPillar": {
+      "title": "Ørets anatomi og vagusnerven",
+      "description": "En norsk forklaring av concha, tragus, ABVN og overlappende nerveforsyning.",
+      "href": "/no/kunnskap/orets-anatomi-og-vagusnerven",
+      "label": "Les anatomiartikkelen"
+    },
+    "sourceLinks": [
+      {
+        "title": "Aurikulær VNS-forskning",
+        "description": "Forskningskontekst for cymba, cavum, tragus, elektroder og metodegrenser.",
+        "href": "/no/forskning/aurikulaer-vagusnervestimulering",
+        "label": "Utforsk aurikulær forskning"
+      },
+      {
+        "title": "Frangos et al. 2015",
+        "description": "En grunnleggende fMRI-studie som ofte omtales ved stimulering i concha.",
+        "href": "/research/studies/frangos-2015-auricular-vagus-nerve-stimulation-fmri",
+        "label": "Les studiesammendraget"
+      }
+    ],
+    "relatedTermIds": [
+      "auricular-branch",
+      "transcutaneous-auricular-vns",
+      "tragus",
+      "cavum-conchae",
+      "earlobe",
+      "stimulation-site"
+    ],
+    "publishedAt": "2026-08-25",
+    "modifiedAt": "2026-08-25",
+    "sitemapPriority": 0.61,
+    "changeFrequency": "monthly"
+  },
+  {
+    "id": "cavum-conchae",
+    "slug": "cavum-conchae",
+    "path": "/no/ordliste/cavum-conchae",
+    "locale": "no",
+    "status": "published",
+    "order": 180,
+    "term": "Cavum conchae",
+    "aliases": [
+      "cavum concha",
+      "nedre concha"
+    ],
+    "category": "anatomy",
+    "seoTitle": "Cavum conchae – definisjon | Neuvago ordliste",
+    "description": "En definisjon av cavum conchae, den nedre delen av concha, og hvorfor nøyaktig plassering må holdes atskilt fra påstander om vagal target engagement.",
+    "shortDefinition": "Cavum conchae er den nedre og større delen av concha i det ytre øret, under helixroten og nær inngangen til øregangen.",
+    "hubSummary": "Cavum conchae er den nedre og større delen av concha i det ytre øret, under helixroten og nær inngangen til øregangen.",
+    "expandedDefinition": [
+      "Cavum conchae utgjør den nedre delen av concha. Området ligger under cymba conchae og er en del av den skålformede strukturen som leder inn mot den ytre øregangen.",
+      "Noen aurikulære stimuleringsprotokoller bruker cavum, tilgrensende conchaområder eller elektroder som dekker flere navngitte områder. Rapporteringen bør derfor beskrive den faktiske kontaktflaten.",
+      "Nerveforsyningen i det ytre øret er overlappende og variabel. Cavum kan være relevant i taVNS-forskning, men anatomi alene viser ikke hvilke fibre en bestemt elektrode aktiverer."
+    ],
+    "whatItIsNot": [
+      "Det er ikke den øvre cymba conchae.",
+      "Det er ikke synonymt med hele concha eller alle områder nær øregangen.",
+      "Plassering i cavum er ikke direkte bevis på selektiv vagal aktivering."
+    ],
+    "whyItMatters": "Skillet mellom cavum, cymba, tragus og bredere conchabetegnelser styrker reproduserbarhet og tolkning.",
+    "primaryPillar": {
+      "title": "Ørets anatomi og vagusnerven",
+      "description": "En praktisk guide til concha, tragus, øreflipp og anatomiske tolkningsgrenser.",
+      "href": "/no/kunnskap/orets-anatomi-og-vagusnerven",
+      "label": "Les anatomiartikkelen"
+    },
+    "sourceLinks": [
+      {
+        "title": "Aurikulær VNS-forskning",
+        "description": "Detaljert gjennomgang av øreområder, blandet nerveforsyning og protokollrapportering.",
+        "href": "/no/forskning/aurikulaer-vagusnervestimulering",
+        "label": "Utforsk aurikulær forskning"
+      },
+      {
+        "title": "Aurikulær vagusnervestimulering",
+        "description": "En norsk metodeguide fra anatomi til ikke-invasiv ørestimulering.",
+        "href": "/no/kunnskap/aurikulaer-vagusnervestimulering",
+        "label": "Les metodeguiden"
+      }
+    ],
+    "relatedTermIds": [
+      "auricular-branch",
+      "auricular-vns",
+      "cymba-conchae",
+      "tragus",
+      "earlobe",
+      "stimulation-site"
+    ],
+    "publishedAt": "2026-08-25",
+    "modifiedAt": "2026-08-25",
+    "sitemapPriority": 0.59,
+    "changeFrequency": "monthly"
+  },
+  {
+    "id": "earlobe",
+    "slug": "oreflipp",
+    "path": "/no/ordliste/oreflipp",
+    "locale": "no",
+    "status": "published",
+    "order": 190,
+    "term": "Øreflipp",
+    "aliases": [
+      "aurikulær lobulus",
+      "lobulus"
+    ],
+    "category": "anatomy",
+    "seoTitle": "Øreflipp – definisjon og sham-kontekst | Neuvago",
+    "description": "Hva øreflippen er og hvorfor den ofte brukes som sham- eller kontrollsted i aurikulær forskning uten at kontrollen automatisk kan regnes som fysiologisk inert.",
+    "shortDefinition": "Øreflippen er den myke, nederste delen av det ytre øret og består hovedsakelig av hud, bindevev og fett fremfor brusk.",
+    "hubSummary": "Øreflippen er den myke, nederste delen av det ytre øret og består hovedsakelig av hud, bindevev og fett fremfor brusk.",
+    "expandedDefinition": [
+      "Øreflippen, eller aurikulær lobulus, henger under bruskskjelettet i det ytre øret. Struktur og nerveforsyning skiller seg fra tragus og conchaområdene som brukes i mange aktive taVNS-protokoller.",
+      "Forskere velger ofte øreflippen som sham- eller sammenligningssted fordi området vanligvis antas å ha liten eller ingen direkte aurikulær vagal forsyning, samtidig som deltakeren kan kjenne stimuleringen.",
+      "Et sham-sted må likevel vurderes. Sensasjon, blinding, elektrodekontakt, strømspredning og mulige fysiologiske effekter avgjør om øreflippen er en troverdig kontroll i den konkrete studien."
+    ],
+    "whatItIsNot": [
+      "Det er ikke samme struktur som tragus, cymba conchae eller cavum conchae.",
+      "Bruk som sham beviser ikke at kontrollen er fysiologisk inert.",
+      "En øreflippkontroll kan ikke tolkes uten intensitet, elektrode og blindingsdesign."
+    ],
+    "whyItMatters": "Skillet forklarer hvorfor øreflippen brukes som kontroll, og hvorfor sham-validitet må undersøkes fremfor å antas.",
+    "primaryPillar": {
+      "title": "Ørets anatomi og vagusnerven",
+      "description": "En norsk guide til aktive øreområder, øreflipp, sham-design og overlappende nerveforsyning.",
+      "href": "/no/kunnskap/orets-anatomi-og-vagusnerven",
+      "label": "Les anatomiartikkelen"
+    },
+    "sourceLinks": [
+      {
+        "title": "Aurikulær VNS-forskning",
+        "description": "Forskningskontekst for aktive steder, øreflippkontroller, sensasjon og target engagement.",
+        "href": "/no/forskning/aurikulaer-vagusnervestimulering",
+        "label": "Utforsk aurikulær forskning"
+      },
+      {
+        "title": "Sikkerhet og tolerabilitet",
+        "description": "Hvorfor sensasjon, ubehag, hendelser og protokollforhold må rapporteres separat.",
+        "href": "/no/forskning/sikkerhet-og-tolerabilitet",
+        "label": "Les sikkerhetsforskningen"
+      }
+    ],
+    "relatedTermIds": [
+      "auricular-branch",
+      "transcutaneous-auricular-vns",
+      "tragus",
+      "cymba-conchae",
+      "cavum-conchae",
+      "stimulation-site"
+    ],
+    "publishedAt": "2026-08-25",
+    "modifiedAt": "2026-08-25",
+    "sitemapPriority": 0.58,
+    "changeFrequency": "monthly"
+  },
+  {
+    "id": "stimulation-site",
+    "slug": "stimuleringssted",
+    "path": "/no/ordliste/stimuleringssted",
+    "locale": "no",
+    "status": "published",
+    "order": 200,
+    "term": "Stimuleringssted",
+    "aliases": [
+      "elektrodeplassering",
+      "stimuleringsområde",
+      "påføringssted"
+    ],
+    "category": "protocol-parameters",
+    "seoTitle": "Stimuleringssted – definisjon | Neuvago ordliste",
+    "description": "Hva et stimuleringssted er i VNS-forskning, og hvorfor anatomi, side, kontaktgeometri og strømlevering må rapporteres separat fra target engagement.",
+    "shortDefinition": "Stimuleringsstedet er det anatomiske området der en elektrode eller apparatkontakt leverer elektrisk stimulering.",
+    "hubSummary": "Stimuleringsstedet er det anatomiske området der en elektrode eller apparatkontakt leverer elektrisk stimulering.",
+    "expandedDefinition": [
+      "En nyttig beskrivelse angir kroppsregion, side og nøyaktig kontaktområde. Ved ikke-invasiv VNS kan dette være et cervikalt område på halsen eller et bestemt øreområde som tragus, cymba conchae, cavum conchae eller øreflipp.",
+      "Plasseringen virker sammen med elektrodegeometri, hudkontakt, intensitet, bølgeform og individuell anatomi. To protokoller med samme brede stedsnavn kan skape ulike elektriske felt og sensasjoner.",
+      "Det synlige påføringsstedet er ikke det samme som det nevrale målet. Target engagement krever selvstendig dokumentasjon og kan ikke utledes fra plassering eller sensasjon alene."
+    ],
+    "whatItIsNot": [
+      "Det er ikke en fullstendig stimuleringsprotokoll.",
+      "Det beviser ikke at de tiltenkte nervefibrene ble selektivt påvirket.",
+      "Brede ord som «øre» eller «hals» er ikke presise nok for nær metodesammenligning."
+    ],
+    "whyItMatters": "Presis stedsrapportering er nødvendig for reproduserbarhet, anatomisk tolkning og ansvarlig overføring av evidens.",
+    "primaryPillar": {
+      "title": "Forskning på transkutan VNS",
+      "description": "En metodefokusert guide til stimuleringssteder, protokollvariabler og tolkningsgrenser.",
+      "href": "/no/forskning/transkutan-vagusnervestimulering",
+      "label": "Utforsk tVNS-metoder"
+    },
+    "sourceLinks": [
+      {
+        "title": "Aurikulær VNS-forskning",
+        "description": "Detaljert kontekst om tragus, concha, øreflippkontroller og elektrodeplassering.",
+        "href": "/no/forskning/aurikulaer-vagusnervestimulering",
+        "label": "Utforsk aurikulære steder"
+      },
+      {
+        "title": "Forskning på vagusnervestimulering",
+        "description": "Hvordan implanterte, cervikale og aurikulære steder inngår i den større VNS-kategorien.",
+        "href": "/no/forskning/vagusnervestimulering",
+        "label": "Utforsk VNS-forskning"
+      }
+    ],
+    "relatedTermIds": [
+      "electrode",
+      "cervical-non-invasive-vns",
+      "transcutaneous-auricular-vns",
+      "tragus",
+      "cymba-conchae",
+      "earlobe"
+    ],
+    "publishedAt": "2026-08-25",
+    "modifiedAt": "2026-08-25",
+    "sitemapPriority": 0.62,
+    "changeFrequency": "monthly"
+  },
+  {
+    "id": "electrode",
+    "slug": "elektrode",
+    "path": "/no/ordliste/elektrode",
+    "locale": "no",
+    "status": "published",
+    "order": 210,
+    "term": "Elektrode",
+    "aliases": [
+      "stimuleringselektrode",
+      "hudelektrode",
+      "elektrodekontakt"
+    ],
+    "category": "protocol-parameters",
+    "seoTitle": "Elektrode – definisjon i VNS | Neuvago",
+    "description": "Definerer en elektrode ved elektrisk stimulering og hvordan kontaktflate, materiale, geometri, avstand og hudgrensesnitt påvirker strøm og sensasjon.",
+    "shortDefinition": "En elektrode er det ledende grensesnittet som en elektrisk stimulator bruker til å levere strøm til kroppen.",
+    "hubSummary": "En elektrode er det ledende grensesnittet som en elektrisk stimulator bruker til å levere strøm til kroppen.",
+    "expandedDefinition": [
+      "Overflateelektroder kan være klips, puter, kroker eller formede kontaktpunkter. Implanterte systemer bruker ledninger og kontakter som plasseres kirurgisk nær en nerve. Ordet elektrode beskriver ikke hele apparatet eller protokollen.",
+      "Kontaktflate, materiale, avstand, trykk, fuktighet, hudimpedans og plassering påvirker strømtetthet og hvordan stimuleringen oppleves. Samme nominelle strøm kan derfor gi ulike lokale forhold med ulike elektroder.",
+      "Forskningsrapportering bør beskrive elektrodedesign og konfigurasjon sammen med intensitet, pulsbredde, frekvens, bølgeform, sted og økttid."
+    ],
+    "whatItIsNot": [
+      "Det er ikke bare kabelen eller hele stimulatoren.",
+      "Samme strømstyrke gir ikke nødvendigvis samme strømtetthet med ulike elektroder.",
+      "Elektrodekontakt eller sensasjon beviser ikke selektiv target engagement."
+    ],
+    "whyItMatters": "Elektrodedesign er en del av intervensjonen og kan endre komfort, reproduserbarhet, strømfordeling og sammenlignbarhet.",
+    "primaryPillar": {
+      "title": "Slik fungerer Neuvago",
+      "description": "Produktkontekst for plassering, kontakt, justerbar stimulering og veiledede økter.",
+      "href": "/no/slik-fungerer-det",
+      "label": "Se hvordan systemet fungerer"
+    },
+    "sourceLinks": [
+      {
+        "title": "Aurikulær VNS-forskning",
+        "description": "Metodekontekst for elektrodegeometri, stimuleringssteder, kontroller og rapportering.",
+        "href": "/no/forskning/aurikulaer-vagusnervestimulering",
+        "label": "Utforsk elektrodekontekst"
+      },
+      {
+        "title": "Aurikulær vagusnervestimulering",
+        "description": "En norsk forklaring av øreplassering, hudkontakt, komfort og metodegrenser.",
+        "href": "/no/kunnskap/aurikulaer-vagusnervestimulering",
+        "label": "Les den aurikulære guiden"
+      }
+    ],
+    "relatedTermIds": [
+      "stimulation-site",
+      "stimulation-intensity",
+      "stimulation-frequency",
+      "pulse-width",
+      "waveform",
+      "tolerability"
+    ],
+    "publishedAt": "2026-08-25",
+    "modifiedAt": "2026-08-25",
+    "sitemapPriority": 0.61,
+    "changeFrequency": "monthly"
+  },
+  {
+    "id": "stimulation-intensity",
+    "slug": "stimuleringsintensitet",
+    "path": "/no/ordliste/stimuleringsintensitet",
+    "locale": "no",
+    "status": "published",
+    "order": 220,
+    "term": "Stimuleringsintensitet",
+    "aliases": [
+      "strømamplitude",
+      "utgangsstrøm",
+      "stimulusintensitet"
+    ],
+    "category": "protocol-parameters",
+    "seoTitle": "Stimuleringsintensitet – definisjon | Neuvago",
+    "description": "Hva stimuleringsintensitet betyr, hvordan den kan angis mot sensoriske terskler, og hvorfor sterkere sensasjon ikke beviser sterkere effekt.",
+    "shortDefinition": "Stimuleringsintensitet beskriver størrelsen på den elektriske utgangen under stimulering, ofte som strømamplitude eller i forhold til en sensorisk eller ubehagsterskel.",
+    "hubSummary": "Stimuleringsintensitet beskriver størrelsen på den elektriske utgangen under stimulering, ofte som strømamplitude eller i forhold til en sensorisk eller ubehagsterskel.",
+    "expandedDefinition": [
+      "Intensiteten kan være fast, individuelt justert eller beskrevet mot terskel for persepsjon, komfort eller smerte. Strømamplitude oppgis ofte i milliampere, men tallet alene beskriver ikke det lokale elektriske feltet.",
+      "Elektrodeareal, kontaktkvalitet, hudimpedans, pulsbredde, bølgeform og sted påvirker strømtetthet, ladningslevering og sensasjon. Protokoller med samme nominelle intensitet kan derfor være vesentlig forskjellige.",
+      "Økt intensitet kan endre sensasjon og tolerabilitet. Den øker ikke automatisk selektivitet, target engagement eller effekt, og én innstilling kan ikke behandles som universelt optimal."
+    ],
+    "whatItIsNot": [
+      "Det er ikke et fullstendig mål på stimuleringsdose.",
+      "Sterkere sensasjon beviser ikke sterkere vagal aktivering eller større nytte.",
+      "En intensitetsverdi kan ikke sammenlignes ansvarlig uten elektrode- og bølgeformkontekst."
+    ],
+    "whyItMatters": "Presist intensitetsspråk hindrer at en apparatinnstilling eller subjektiv følelse forveksles med target engagement, effekt eller universell dose.",
+    "primaryPillar": {
+      "title": "Forskning på transkutan VNS",
+      "description": "En metodeoversikt over intensitet, frekvens, pulsbredde, bølgeform, steder og protokollspesifikk tolkning.",
+      "href": "/no/forskning/transkutan-vagusnervestimulering",
+      "label": "Utforsk stimuleringsparametere"
+    },
+    "sourceLinks": [
+      {
+        "title": "Aurikulær VNS-forskning",
+        "description": "Hvordan intensitet virker sammen med elektrodedesign, plassering, sensasjon og kontrollbetingelser.",
+        "href": "/no/forskning/aurikulaer-vagusnervestimulering",
+        "label": "Utforsk aurikulære metoder"
+      },
+      {
+        "title": "Sikkerhet og tolerabilitet",
+        "description": "Forskningskontekst for ubehag, uønskede hendelser, etterlevelse og produktgrenser.",
+        "href": "/no/forskning/sikkerhet-og-tolerabilitet",
+        "label": "Les tolerabilitetsforskning"
+      }
+    ],
+    "relatedTermIds": [
+      "electrode",
+      "stimulation-frequency",
+      "pulse-width",
+      "waveform",
+      "tolerability",
+      "stimulation-site"
+    ],
+    "publishedAt": "2026-08-25",
+    "modifiedAt": "2026-08-25",
+    "sitemapPriority": 0.63,
+    "changeFrequency": "monthly"
+  },
+  {
+    "id": "stimulation-frequency",
+    "slug": "stimuleringsfrekvens",
+    "path": "/no/ordliste/stimuleringsfrekvens",
+    "locale": "no",
+    "status": "published",
+    "order": 230,
+    "term": "Stimuleringsfrekvens",
+    "aliases": [
+      "pulsfrekvens",
+      "repetisjonsfrekvens"
+    ],
+    "category": "protocol-parameters",
+    "seoTitle": "Stimuleringsfrekvens – definisjon | Neuvago",
+    "description": "Definerer stimuleringsfrekvens i hertz, hvorfor den bare er én protokollvariabel, og hvorfor ingen frekvens er universelt optimal for VNS.",
+    "shortDefinition": "Stimuleringsfrekvens er antall pulser eller gjentatte stimuleringssykluser som leveres per sekund, vanligvis uttrykt i hertz.",
+    "hubSummary": "Stimuleringsfrekvens er antall pulser eller gjentatte stimuleringssykluser som leveres per sekund, vanligvis uttrykt i hertz.",
+    "expandedDefinition": [
+      "En frekvens på 20 Hz betyr vanligvis tjue gjentatte pulser eller pulssykluser per sekund. Komplekse bølgeformer kan også ha burst-, bære- eller vekslende frekvenser som krever mer detaljert rapportering.",
+      "Frekvens virker sammen med pulsbredde, intensitet, bølgeform, elektrode, sted, stimuleringssyklus og total øktvarighet. Endring av én parameter kan endre sensasjon og nevral rekruttering.",
+      "Studier bruker ulike frekvenser for ulike metoder, grupper og utfall. Et funn ved én frekvens dokumenterer ikke et universelt optimum og gjelder ikke automatisk for et annet apparat."
+    ],
+    "whatItIsNot": [
+      "Det er ikke det samme som pulsbredde eller øktvarighet.",
+      "Frekvens alene beskriver ikke ladningslevering eller hele bølgeformen.",
+      "Ett studiefunn beviser ikke at en frekvens er best for alle utfall eller apparater."
+    ],
+    "whyItMatters": "Frekvens er lett å sammenligne som tall, men ansvarlig tolkning krever at resten av protokollen og metoden er synlig.",
+    "primaryPillar": {
+      "title": "Forskning på transkutan VNS",
+      "description": "En norsk forskningsoversikt over protokollvariabler, frekvensforskjeller og metodegrenser.",
+      "href": "/no/forskning/transkutan-vagusnervestimulering",
+      "label": "Utforsk tVNS-parametere"
+    },
+    "sourceLinks": [
+      {
+        "title": "Aurikulær VNS-forskning",
+        "description": "Hvordan frekvens rapporteres sammen med sted, elektrode, intensitet og kontrolldesign.",
+        "href": "/no/forskning/aurikulaer-vagusnervestimulering",
+        "label": "Utforsk aurikulære protokoller"
+      },
+      {
+        "title": "Forskning på vagusnervestimulering",
+        "description": "Parameterforskjeller på tvers av implanterte og ikke-invasive VNS-systemer.",
+        "href": "/no/forskning/vagusnervestimulering",
+        "label": "Utforsk VNS-forskning"
+      }
+    ],
+    "relatedTermIds": [
+      "pulse-width",
+      "stimulation-intensity",
+      "waveform",
+      "implanted-vns",
+      "transcutaneous-vns",
+      "electrode"
+    ],
+    "publishedAt": "2026-08-25",
+    "modifiedAt": "2026-08-25",
+    "sitemapPriority": 0.61,
+    "changeFrequency": "monthly",
+    "termCode": "Hz"
+  },
+  {
+    "id": "pulse-width",
+    "slug": "pulsbredde",
+    "path": "/no/ordliste/pulsbredde",
+    "locale": "no",
+    "status": "published",
+    "order": 240,
+    "term": "Pulsbredde",
+    "aliases": [
+      "pulsvarighet",
+      "fasebredde"
+    ],
+    "category": "protocol-parameters",
+    "seoTitle": "Pulsbredde – stimuleringsparameter | Neuvago",
+    "description": "Hva pulsbredde betyr ved elektrisk stimulering, hvorfor den ofte oppgis i mikrosekunder, og hvordan den virker sammen med intensitet, bølgeform og elektrode.",
+    "shortDefinition": "Pulsbredde er varigheten til én elektrisk puls eller én pulsfase, vanligvis uttrykt i mikrosekunder.",
+    "hubSummary": "Pulsbredde er varigheten til én elektrisk puls eller én pulsfase, vanligvis uttrykt i mikrosekunder.",
+    "expandedDefinition": [
+      "Pulsbredde beskriver hvor lenge en puls – eller én fase i en bifasisk puls – varer. Den er forskjellig fra tiden mellom pulsene, antall pulser per sekund og total øktvarighet.",
+      "Sammen med strømamplitude og elektrodeforhold påvirker pulsbredde ladningen per puls og hvilke nevrale elementer som kan rekrutteres. Samme intensitet med en annen pulsbredde er ikke samme stimulus.",
+      "Studier bruker ulike pulsbredder, og en foretrukket innstilling kan avhenge av bølgeform, sted, tolerabilitet, apparat, gruppe og utfall. Parameteren bør ikke tolkes isolert."
+    ],
+    "whatItIsNot": [
+      "Det er ikke det samme som frekvens, stimuleringssyklus eller øktlengde.",
+      "En lengre puls er ikke automatisk mer effektiv eller mer selektiv.",
+      "Pulsbredde alene beskriver ikke ladningslevering uten intensitet og bølgeform."
+    ],
+    "whyItMatters": "Pulsbredde er en grunnleggende protokollvariabel, og utelatelse kan gjøre tilsynelatende like metoder umulige å sammenligne.",
+    "primaryPillar": {
+      "title": "Forskning på transkutan VNS",
+      "description": "En metodeguide til pulsbredde, frekvens, intensitet, bølgeform og rapporteringsgrenser.",
+      "href": "/no/forskning/transkutan-vagusnervestimulering",
+      "label": "Utforsk protokollparametere"
+    },
+    "sourceLinks": [
+      {
+        "title": "Aurikulær VNS-forskning",
+        "description": "Hvordan pulsbredde virker sammen med øreplassering, elektrodedesign og tolerabilitet.",
+        "href": "/no/forskning/aurikulaer-vagusnervestimulering",
+        "label": "Utforsk aurikulære protokoller"
+      },
+      {
+        "title": "Forskning på vagusnervestimulering",
+        "description": "Parameterkontekst på tvers av implanterte og eksterne stimuleringssystemer.",
+        "href": "/no/forskning/vagusnervestimulering",
+        "label": "Utforsk VNS-forskning"
+      }
+    ],
+    "relatedTermIds": [
+      "stimulation-frequency",
+      "stimulation-intensity",
+      "waveform",
+      "electrode",
+      "implanted-vns",
+      "transcutaneous-vns"
+    ],
+    "publishedAt": "2026-08-25",
+    "modifiedAt": "2026-08-25",
+    "sitemapPriority": 0.61,
+    "changeFrequency": "monthly",
+    "termCode": "µs"
+  },
+  {
+    "id": "waveform",
+    "slug": "bolgeform",
+    "path": "/no/ordliste/bolgeform",
+    "locale": "no",
+    "status": "published",
+    "order": 250,
+    "term": "Bølgeform",
+    "aliases": [
+      "pulsform",
+      "strømbølgeform",
+      "stimuleringsbølgeform"
+    ],
+    "category": "protocol-parameters",
+    "seoTitle": "Bølgeform – elektrisk stimulering | Neuvago ordliste",
+    "description": "Definerer bølgeform ved elektrisk stimulering, som pulsform, polaritet og fasestruktur, og hvorfor proprietære bølgeformer begrenser sammenligning.",
+    "shortDefinition": "Bølgeformen er det tidsvarierende mønsteret i form og polaritet til den elektriske utgangen fra en stimulator.",
+    "hubSummary": "Bølgeformen er det tidsvarierende mønsteret i form og polaritet til den elektriske utgangen fra en stimulator.",
+    "expandedDefinition": [
+      "Beskrivelsen kan angi om pulser er monofasiske eller bifasiske, symmetriske eller asymmetriske, ladningsbalanserte eller ikke, rektangulære eller annerledes formet, kontinuerlige eller samlet i burst.",
+      "Frekvens, pulsbredde, amplitude, faserekkefølge, mellomfaseintervall og stimuleringssyklus kan inngå i en full bølgeformbeskrivelse. Et apparatnavn eller markedsføringsord erstatter ikke disse detaljene.",
+      "Ulike bølgeformer kan endre strømlevering, sensasjon, elektrodeoppførsel og nevral rekruttering. Funn fra en proprietær bølgeform kan ikke uten videre overføres til et annet apparat."
+    ],
+    "whatItIsNot": [
+      "Det er ikke det samme som frekvens eller pulsbredde alene.",
+      "Et bølgeformnavn dokumenterer ikke target engagement eller effekt.",
+      "To apparater er ikke like bare fordi de bruker samme nominelle frekvens."
+    ],
+    "whyItMatters": "Detaljer om bølgeform forklarer hvorfor protokoller med like navn kan levere vesentlig forskjellig stimulering og ha ulik evidens.",
+    "primaryPillar": {
+      "title": "Forskning på transkutan VNS",
+      "description": "En forskningsguide til bølgeform, parametere, steder, kontroller og ansvarlig tolkning.",
+      "href": "/no/forskning/transkutan-vagusnervestimulering",
+      "label": "Utforsk bølgeformkontekst"
+    },
+    "sourceLinks": [
+      {
+        "title": "Aurikulær VNS-forskning",
+        "description": "Hvordan bølgeform og elektrodevalg inngår i aurikulære stimuleringsprotokoller.",
+        "href": "/no/forskning/aurikulaer-vagusnervestimulering",
+        "label": "Utforsk aurikulære metoder"
+      },
+      {
+        "title": "Forskning på vagusnervestimulering",
+        "description": "Hvorfor apparat- og protokolldetaljer er avgjørende på tvers av VNS-metoder.",
+        "href": "/no/forskning/vagusnervestimulering",
+        "label": "Utforsk VNS-forskning"
+      }
+    ],
+    "relatedTermIds": [
+      "stimulation-frequency",
+      "pulse-width",
+      "stimulation-intensity",
+      "electrode",
+      "transcutaneous-vns",
+      "implanted-vns"
+    ],
+    "publishedAt": "2026-08-25",
+    "modifiedAt": "2026-08-25",
+    "sitemapPriority": 0.6,
     "changeFrequency": "monthly"
   }
 ] as const satisfies readonly GlossaryTerm[];

@@ -60,6 +60,7 @@ const categoryLabels = {
     "nervous-system": "Nervous system",
     "measurement-interpretation": "Measurement and interpretation",
     "safety-research": "Safety and research",
+    "protocol-parameters": "Protocol and stimulation parameters",
   },
   no: {
     anatomy: "Anatomi",
@@ -67,6 +68,7 @@ const categoryLabels = {
     "nervous-system": "Nervesystemet",
     "measurement-interpretation": "Måling og tolkning",
     "safety-research": "Sikkerhet og forskning",
+    "protocol-parameters": "Protokoll og stimuleringsparametere",
   },
 } as const;
 

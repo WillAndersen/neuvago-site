@@ -5,7 +5,8 @@ export type GlossaryCategoryId =
   | "stimulation-methods"
   | "nervous-system"
   | "measurement-interpretation"
-  | "safety-research";
+  | "safety-research"
+  | "protocol-parameters";
 
 export type GlossaryLink = {
   title: string;

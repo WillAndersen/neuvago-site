@@ -14,9 +14,9 @@ const copy = {
     title: "Glossary of VNS and nervous system terms",
     lead:
       "Short, careful definitions that connect technical language to the deeper Learn and Research layers without turning an abbreviation into a claim.",
-    pilot: "Curated starting collection",
+    pilot: "Curated bilingual collection",
     pilotText:
-      "This first collection contains 12 bilingual term pairs. Aliases remain attached to canonical entries rather than creating duplicate indexable pages.",
+      "The glossary grows through reviewed bilingual term pairs across anatomy, stimulation methods, protocol parameters, nervous-system physiology, measurement, and safety. Aliases remain attached to canonical entries rather than creating duplicate indexable pages.",
     browse: "Browse by letter",
     categories: "Term categories",
     entries: "Definitions",
@@ -36,9 +36,9 @@ const copy = {
     title: "Ordliste for VNS og nervesystemet",
     lead:
       "Korte og forsiktige definisjoner som kobler fagspråk til kunnskaps- og forskningslagene uten å gjøre en forkortelse til en påstand.",
-    pilot: "Første begrepssamling",
+    pilot: "Kurert tospråklig samling",
     pilotText:
-      "Denne første samlingen inneholder 12 tospråklige begrepspar. Aliaser samles på kanoniske oppføringer i stedet for å skape dupliserte indekserbare sider.",
+      "Ordlisten utvides med kvalitetssikrede tospråklige begrepspar innen anatomi, stimuleringsmetoder, protokollparametere, nervesystemfysiologi, måling og sikkerhet. Aliaser samles på kanoniske oppføringer i stedet for å skape dupliserte indekserbare sider.",
     browse: "Bla etter bokstav",
     categories: "Begrepskategorier",
     entries: "Definisjoner",
@@ -65,6 +65,7 @@ const categoryLabels: Record<
     "nervous-system": "Nervous system",
     "measurement-interpretation": "Measurement and interpretation",
     "safety-research": "Safety and research",
+    "protocol-parameters": "Protocol and stimulation parameters",
   },
   no: {
     anatomy: "Anatomi",
@@ -72,6 +73,7 @@ const categoryLabels: Record<
     "nervous-system": "Nervesystemet",
     "measurement-interpretation": "Måling og tolkning",
     "safety-research": "Sikkerhet og forskning",
+    "protocol-parameters": "Protokoll og stimuleringsparametere",
   },
 };
 
@@ -126,7 +128,7 @@ export function GlossaryHubPage({
               {labels.pilotText}
             </p>
             <p className="mt-6 text-sm text-[#66736a]">
-              {terms.length} {locale === "en" ? "published entries" : "publiserte oppføringer"}
+              {terms.length} {locale === "en" ? "published bilingual term pairs" : "publiserte tospråklige begrepspar"}
             </p>
           </aside>
         </div>

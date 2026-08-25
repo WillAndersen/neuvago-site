@@ -200,35 +200,20 @@ export default function LearnPage() {
     <main className="bg-[#f7f4ef] text-[#1f1f1c]">
       <JsonLd data={structuredData} idPrefix="learn" />
       <AuthorityEditorialHero
-        eyebrow="Learn"
-        title="A calmer education library for VNS, stress, sleep, and regulation"
-        description="Start with clear, plain-language guides. Learn connects vagus nerve stimulation, non-invasive VNS, autonomic regulation, stress, sleep, and recovery without asking readers to begin in research jargon."
-        secondaryDescription="The goal is orientation: understand the concept, follow the pathway, then move into research or the Neuvago system when it is relevant."
+        eyebrow="LEARN"
+        title="Understand your nervous system."
+        description="Explore clear, science-informed articles on the vagus nerve, nervous system regulation, stress, sleep, recovery and non-invasive vagus nerve stimulation."
+        secondaryDescription="Start with the fundamentals or explore the questions and patterns that matter to you."
         tone="learn"
         actions={[
-          { href: "/learn/vagus-nerve-stimulation", label: "Start with VNS" },
-          { href: "/learn/transcutaneous-vagus-nerve-stimulation", label: "Explore tVNS", variant: "secondary" },
-        ]}
-        points={[
-          {
-            label: "Foundation",
-            title: "Understand the category",
-            description: "Start with the vagus nerve, VNS, non-invasive VNS, tVNS, and auricular VNS before moving into product decisions.",
-          },
-          {
-            label: "Pattern",
-            title: "Recognize what you feel",
-            description: "Use stress, sleep, tired-but-wired, and dysregulation pages to connect lived experience to the larger system.",
-          },
-          {
-            label: "Pathway",
-            title: "Move toward support",
-            description: "Each guide points onward to research, safety, how-it-works, or app guidance instead of leaving readers at a dead end.",
-          },
+          { href: "#articles", label: "Browse articles" },
         ]}
       />
 
-      <section className="border-b border-black/5 bg-[#f2eee8]">
+      <section
+        id="articles"
+        className="scroll-mt-28 border-b border-black/5 bg-[#f2eee8]"
+      >
         <div className="mx-auto max-w-7xl px-6 py-24 md:px-10 md:py-28">
           <div className="max-w-3xl">
             <p className="text-sm uppercase tracking-[0.18em] text-[#7a756c]">

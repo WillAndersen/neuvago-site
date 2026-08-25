@@ -5,7 +5,7 @@ import { JsonLd } from "@/components/seo/json-ld";
 import { getPublishedNorwegianKnowledgeArticles } from "@/content/knowledge/no/registry";
 import { buildNorwegianKnowledgeHubStructuredData } from "@/lib/seo/knowledge-article";
 
-const title = "Kunnskap om vagusnerven, regulering og VNS";
+const title = "Forstå nervesystemet ditt.";
 const metaTitle = "Kunnskap | Vagusnerven, VNS og regulering | Neuvago Norge";
 const description =
   "Norske, kildebaserte forklaringer om vagusnerven, vagusnervestimulering, VNS, tVNS, taVNS og nervesystemets regulering.";
@@ -88,25 +88,41 @@ export default function NorwegianKnowledgeHubPage() {
       <JsonLd data={structuredData} idPrefix="no-kunnskap" />
 
       <section className="border-b border-black/5 px-5 py-20 sm:px-8 lg:px-12 lg:py-28">
-        <div className="mx-auto grid max-w-[88rem] gap-12 lg:grid-cols-[0.92fr_1.08fr] lg:items-end">
-          <div>
+        <div className="mx-auto grid max-w-[88rem] gap-12 lg:grid-cols-[1.08fr_0.92fr] lg:items-end">
+          <div className="max-w-4xl">
             <p className="text-xs font-medium uppercase tracking-[0.3em] text-[#7b7167]">
-              Kunnskap
+              KUNNSKAP
             </p>
-            <h1 className="mt-6 max-w-[12ch] text-[clamp(3.1rem,10vw,7.1rem)] font-medium leading-[0.88] tracking-[-0.08em]">
+            <h1 className="mt-6 max-w-[16ch] text-[clamp(3.1rem,8vw,6.6rem)] font-medium leading-[0.95] tracking-[-0.07em]">
               {title}
             </h1>
+            <p className="mt-7 max-w-2xl text-base leading-8 text-[#5f5a52] sm:text-lg">
+              Utforsk tydelige, forskningsinformerte artikler om vagusnerven,
+              regulering av nervesystemet, stress, søvn, restitusjon og
+              ikke-invasiv vagusnervestimulering.
+            </p>
+            <p className="mt-5 max-w-2xl text-base leading-8 text-[#5f5a52]">
+              Begynn med det grunnleggende, eller utforsk spørsmålene og
+              mønstrene som er viktige for deg.
+            </p>
+            <div className="mt-10">
+              <Link
+                href="#artikler"
+                className="inline-flex items-center justify-center rounded-full bg-[#1f1f1c] px-6 py-3 text-sm font-medium text-white transition hover:opacity-90"
+              >
+                Utforsk artiklene
+              </Link>
+            </div>
           </div>
 
-          <div className="max-w-2xl rounded-[2rem] border border-black/6 bg-[#fbf8f2]/75 p-6 shadow-[0_24px_90px_rgba(31,31,28,0.08)] sm:p-8">
-            <p className="text-lg leading-8 text-[#514c45]">
-              Her bygger vi en norsk kunnskapsbase som skiller tydelig mellom anatomi, forskningsfelt, produktkategori og Neuvagos faktiske tiltenkte bruk. Målet er å forklare presist uten unødvendig fagspråk eller overdrevne løfter.
-            </p>
-          </div>
+          <div aria-hidden="true" className="hidden min-h-[22rem] lg:block" />
         </div>
       </section>
 
-      <section className="border-b border-black/5 bg-[#eee7dd] px-5 py-16 sm:px-8 lg:px-12 lg:py-20">
+      <section
+        id="artikler"
+        className="scroll-mt-28 border-b border-black/5 bg-[#eee7dd] px-5 py-16 sm:px-8 lg:px-12 lg:py-20"
+      >
         <div className="mx-auto max-w-[88rem]">
           <div className="max-w-3xl">
             <p className="text-xs font-medium uppercase tracking-[0.22em] text-[#7b7167]">

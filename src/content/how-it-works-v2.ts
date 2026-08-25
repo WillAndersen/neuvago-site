@@ -13,7 +13,7 @@ export type HowItWorksV2Image = {
 export type HowItWorksV2MechanismStep = {
   id: string;
   label: string;
-  description?: string;
+  description: string;
 };
 
 export type HowItWorksV2Area = {
@@ -48,8 +48,9 @@ export type HowItWorksV2Content = {
   };
   mechanism: {
     visible: boolean;
+    eyebrow: string;
     title: string;
-    description?: string;
+    description: string;
     steps: HowItWorksV2MechanismStep[];
   };
   whyItMatters: {
@@ -122,12 +123,35 @@ export const howItWorksV2Content = {
   },
   mechanism: {
     visible: true,
+    eyebrow: "THE PATHWAY",
     title: "From the outer ear to wider autonomic networks.",
+    description:
+      "Neuvago stimulates the auricular branch of the vagus nerve through the outer ear. The sequence below shows how sensory signals travel toward the brainstem and onward into wider autonomic networks.",
     steps: [
-      { id: "outer-ear", label: "Outer ear" },
-      { id: "vagus-nerve", label: "Vagus nerve" },
-      { id: "brainstem", label: "Brainstem" },
-      { id: "autonomic-networks", label: "Autonomic networks" },
+      {
+        id: "outer-ear",
+        label: "Outer ear",
+        description:
+          "The earpiece applies gentle, adjustable electrical impulses at the outer ear.",
+      },
+      {
+        id: "vagus-nerve",
+        label: "Vagus nerve",
+        description:
+          "The impulses stimulate the auricular branch of the vagus nerve, which carries sensory information from parts of the outer ear.",
+      },
+      {
+        id: "brainstem",
+        label: "Brainstem",
+        description:
+          "The signals travel toward the brainstem, where vagal sensory information is received and relayed.",
+      },
+      {
+        id: "autonomic-networks",
+        label: "Autonomic networks",
+        description:
+          "From the brainstem, vagal pathways connect with wider networks involved in brain–body communication and the body's shift between activation, rest and recovery.",
+      },
     ],
   },
   whyItMatters: {

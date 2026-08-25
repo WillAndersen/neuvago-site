@@ -41,12 +41,35 @@ export const howItWorksV2ContentNo = {
   },
   mechanism: {
     visible: true,
+    eyebrow: "SIGNALVEIEN",
     title: "Fra det ytre øret til større autonome nettverk.",
+    description:
+      "Neuvago stimulerer den aurikulære grenen av vagusnerven gjennom det ytre øret. Sekvensen nedenfor viser hvordan sensoriske signaler beveger seg mot hjernestammen og videre inn i større autonome nettverk.",
     steps: [
-      { id: "outer-ear", label: "Ytre øre" },
-      { id: "vagus-nerve", label: "Vagusnerven" },
-      { id: "brainstem", label: "Hjernestammen" },
-      { id: "autonomic-networks", label: "Autonome nettverk" },
+      {
+        id: "outer-ear",
+        label: "Ytre øre",
+        description:
+          "Øreelektroden tilfører skånsomme, justerbare elektriske impulser ved det ytre øret.",
+      },
+      {
+        id: "vagus-nerve",
+        label: "Vagusnerven",
+        description:
+          "Impulsene stimulerer den aurikulære grenen av vagusnerven, som fører sensorisk informasjon fra deler av det ytre øret.",
+      },
+      {
+        id: "brainstem",
+        label: "Hjernestammen",
+        description:
+          "Signalene beveger seg mot hjernestammen, der vagal sensorisk informasjon mottas og videresendes.",
+      },
+      {
+        id: "autonomic-networks",
+        label: "Autonome nettverk",
+        description:
+          "Fra hjernestammen er vagale nervebaner koblet til større nettverk som er involvert i kommunikasjon mellom hjerne og kropp og i kroppens skifte mellom aktivering, hvile og restitusjon.",
+      },
     ],
   },
   whyItMatters: {

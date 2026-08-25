@@ -148,10 +148,18 @@ export const howItWorksV2ContentNo = {
   },
   finalCta: {
     visible: true,
+    eyebrow: "NEUVAGO-ENHETEN",
     title: "Klar til å oppleve Neuvago?",
+    description:
+      "Oppdag enheten, de fire stimuleringsmodusene og alt som følger med Neuvago.",
+    primaryCta: howItWorksHeroPrimaryCtaNo,
+    secondaryCta: {
+      label: "Utforsk produktet",
+      href: "/no/produkt",
+    },
     image: {
       src: "/images/neuvago/launch/product-hero-desktop.webp",
-      alt: "",
+      alt: "Neuvago-enhet for vagusnervestimulering.",
     },
   },
 } satisfies HowItWorksV2Content;

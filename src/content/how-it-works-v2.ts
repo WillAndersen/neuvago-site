@@ -87,10 +87,11 @@ export type HowItWorksV2Content = {
   };
   finalCta: {
     visible: boolean;
+    eyebrow: string;
     title: string;
-    description?: string;
-    primaryCta?: HowItWorksV2Cta;
-    secondaryCta?: HowItWorksV2Cta;
+    description: string;
+    primaryCta: HowItWorksV2Cta;
+    secondaryCta: HowItWorksV2Cta;
     image: HowItWorksV2Image;
   };
 };
@@ -237,10 +238,18 @@ export const howItWorksV2Content = {
   },
   finalCta: {
     visible: true,
+    eyebrow: "THE NEUVAGO DEVICE",
     title: "Ready to experience Neuvago?",
+    description:
+      "Discover the device, the four stimulation modes and everything included with Neuvago.",
+    primaryCta: howItWorksHeroPrimaryCta,
+    secondaryCta: {
+      label: "Explore the Product",
+      href: "/product",
+    } satisfies HowItWorksV2Cta,
     image: {
       src: "/images/neuvago/launch/product-hero-desktop.webp",
-      alt: "",
+      alt: "Neuvago vagus nerve stimulation device.",
     },
   },
 } satisfies HowItWorksV2Content;

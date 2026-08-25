@@ -106,6 +106,15 @@ export const howItWorksV2ContentNo = {
           "Parasympatiske prosesser støtter hvile, gjenoppbygging og tilbakevending mot balanse etter fysisk eller mental belastning.",
       },
     ],
+    researchBridge: {
+      title: "Fordyp deg i vitenskapen.",
+      description:
+        "Utforsk forskning på transkutan aurikulær vagusnervestimulering (taVNS), inkludert søvn, stress, autonom funksjon, HRV, nervebaner i hjernen, sikkerhet og tolerabilitet.",
+      cta: {
+        label: "Utforsk forskningen",
+        href: "/no/forskning",
+      },
+    },
   },
   modes: {
     visible: true,

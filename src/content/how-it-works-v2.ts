@@ -60,6 +60,11 @@ export type HowItWorksV2Content = {
     description: string;
     productConnection: string;
     areas: HowItWorksV2Area[];
+    researchBridge: {
+      title: string;
+      description: string;
+      cta: HowItWorksV2Cta;
+    };
   };
   modes: {
     visible: boolean;
@@ -190,6 +195,15 @@ export const howItWorksV2Content = {
           "Parasympathetic processes support rest, restoration and the return toward balance after physical or mental demand.",
       },
     ],
+    researchBridge: {
+      title: "Go deeper into the science.",
+      description:
+        "Explore research on transcutaneous auricular vagus nerve stimulation (taVNS), including sleep, stress, autonomic function, HRV, brain pathways, safety and tolerability.",
+      cta: {
+        label: "Explore Research",
+        href: "/research",
+      },
+    },
   },
   modes: {
     visible: true,

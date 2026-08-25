@@ -1,3 +1,4 @@
+import Link from "next/link";
 import type { HowItWorksV2Content } from "@/content/how-it-works-v2";
 
 export type HowItWorksV2WhyItMattersProps = {
@@ -32,20 +33,41 @@ export function HowItWorksV2WhyItMatters({
             </p>
           </div>
 
-          <div className="divide-y divide-black/10 border-y border-black/10">
-            {content.areas.map((area) => (
-              <article
-                key={area.id}
-                className="grid gap-3 py-7 sm:py-8 xl:grid-cols-[0.44fr_0.56fr] xl:gap-8"
+          <div>
+            <div className="divide-y divide-black/10 border-y border-black/10">
+              {content.areas.map((area) => (
+                <article
+                  key={area.id}
+                  className="grid gap-3 py-7 sm:py-8 xl:grid-cols-[0.44fr_0.56fr] xl:gap-8"
+                >
+                  <h3 className="text-2xl font-medium tracking-[-0.04em] text-[#1f1f1c] sm:text-3xl">
+                    {area.label}
+                  </h3>
+                  <p className="max-w-2xl text-sm leading-7 text-[#5f5a52] sm:text-base">
+                    {area.description}
+                  </p>
+                </article>
+              ))}
+            </div>
+
+            <div
+              data-how-it-works-research-bridge="true"
+              className="mt-10 border-t border-black/10 pt-8 sm:mt-12 sm:pt-10"
+            >
+              <h3 className="text-xl font-medium tracking-[-0.035em] text-[#1f1f1c] sm:text-2xl">
+                {content.researchBridge.title}
+              </h3>
+              <p className="mt-3 max-w-2xl text-sm leading-7 text-[#5f5a52] sm:text-base">
+                {content.researchBridge.description}
+              </p>
+              <Link
+                href={content.researchBridge.cta.href}
+                className="mt-5 inline-flex items-center gap-2 text-sm font-medium text-[#1f1f1c] underline decoration-black/25 underline-offset-4 transition hover:decoration-black/70 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#1f1f1c] focus-visible:ring-offset-4 focus-visible:ring-offset-[#e8ded0]"
               >
-                <h3 className="text-2xl font-medium tracking-[-0.04em] text-[#1f1f1c] sm:text-3xl">
-                  {area.label}
-                </h3>
-                <p className="max-w-2xl text-sm leading-7 text-[#5f5a52] sm:text-base">
-                  {area.description}
-                </p>
-              </article>
-            ))}
+                {content.researchBridge.cta.label}
+                <span aria-hidden="true">→</span>
+              </Link>
+            </div>
           </div>
         </div>
       </div>

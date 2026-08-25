@@ -3,9 +3,6 @@ import {
   HowItWorksV2FinalCta,
   HowItWorksV2Hero,
   HowItWorksV2Mechanism,
-  HowItWorksV2Modes,
-  HowItWorksV2Research,
-  HowItWorksV2WhatToExpect,
   HowItWorksV2WhyItMatters,
 } from "@/components/how-it-works-v2";
 import { howItWorksV2ContentNo } from "@/content/no/how-it-works-v2";
@@ -72,18 +69,6 @@ export default function NorwayHowItWorksPage() {
 
       {content.whyItMatters.visible ? (
         <HowItWorksV2WhyItMatters content={content.whyItMatters} />
-      ) : null}
-
-      {content.modes.visible ? (
-        <HowItWorksV2Modes content={content.modes} />
-      ) : null}
-
-      {content.whatToExpect.visible ? (
-        <HowItWorksV2WhatToExpect content={content.whatToExpect} />
-      ) : null}
-
-      {content.research.visible ? (
-        <HowItWorksV2Research content={content.research} />
       ) : null}
 
       {content.finalCta.visible ? (

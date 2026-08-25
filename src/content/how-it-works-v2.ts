@@ -19,7 +19,7 @@ export type HowItWorksV2MechanismStep = {
 export type HowItWorksV2Area = {
   id: string;
   label: string;
-  description?: string;
+  description: string;
 };
 
 export type HowItWorksV2Mode = {
@@ -55,8 +55,10 @@ export type HowItWorksV2Content = {
   };
   whyItMatters: {
     visible: boolean;
+    eyebrow: string;
     title: string;
-    description?: string;
+    description: string;
+    productConnection: string;
     areas: HowItWorksV2Area[];
   };
   modes: {
@@ -156,15 +158,37 @@ export const howItWorksV2Content = {
   },
   whyItMatters: {
     visible: true,
-    title: "Why vagus nerve stimulation matters.",
+    eyebrow: "WHY IT MATTERS",
+    title: "Why the vagus nerve matters.",
+    description:
+      "The vagus nerve is a major pathway within the parasympathetic nervous system. It carries signals between the brain and body and contributes to the processes that help us respond to demand, settle toward rest and recover.",
+    productConnection:
+      "Neuvago is designed to support these everyday regulatory processes through non-invasive, ear-based vagus nerve stimulation.",
     areas: [
-      { id: "better-sleep", label: "Better Sleep" },
-      { id: "stress-calm", label: "Stress & Calm" },
+      {
+        id: "better-sleep",
+        label: "Sleep & Rest",
+        description:
+          "Moving from alertness toward rest is part of the body's natural preparation for sleep.",
+      },
+      {
+        id: "stress-calm",
+        label: "Stress Response",
+        description:
+          "Autonomic regulation influences how the body responds to everyday demands and how it settles afterwards.",
+      },
       {
         id: "focus-mental-clarity",
         label: "Focus & Mental Clarity",
+        description:
+          "A calmer internal state can create better conditions for attention, concentration and clear thinking.",
       },
-      { id: "recovery", label: "Recovery" },
+      {
+        id: "recovery",
+        label: "Recovery & Balance",
+        description:
+          "Parasympathetic processes support rest, restoration and the return toward balance after physical or mental demand.",
+      },
     ],
   },
   modes: {

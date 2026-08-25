@@ -74,15 +74,37 @@ export const howItWorksV2ContentNo = {
   },
   whyItMatters: {
     visible: true,
-    title: "Hvorfor vagusnervestimulering er viktig.",
+    eyebrow: "HVORFOR DET ER VIKTIG",
+    title: "Hvorfor vagusnerven er viktig.",
+    description:
+      "Vagusnerven er en sentral nervebane i det parasympatiske nervesystemet. Den fører signaler mellom hjernen og kroppen og bidrar til prosessene som hjelper oss med å respondere på belastning, finne ro og restituere.",
+    productConnection:
+      "Neuvago er utviklet for å støtte disse daglige reguleringsprosessene gjennom ikke-invasiv, ørebasert vagusnervestimulering.",
     areas: [
-      { id: "better-sleep", label: "Bedre søvn" },
-      { id: "stress-calm", label: "Stress og ro" },
+      {
+        id: "better-sleep",
+        label: "Søvn og hvile",
+        description:
+          "Å bevege seg fra årvåkenhet mot hvile er en del av kroppens naturlige forberedelse til søvn.",
+      },
+      {
+        id: "stress-calm",
+        label: "Stressrespons",
+        description:
+          "Autonom regulering påvirker hvordan kroppen reagerer på hverdagens krav, og hvordan den finner ro etterpå.",
+      },
       {
         id: "focus-mental-clarity",
         label: "Fokus og mental klarhet",
+        description:
+          "En roligere indre tilstand kan skape bedre forhold for oppmerksomhet, konsentrasjon og klar tenkning.",
       },
-      { id: "recovery", label: "Restitusjon" },
+      {
+        id: "recovery",
+        label: "Restitusjon og balanse",
+        description:
+          "Parasympatiske prosesser støtter hvile, gjenoppbygging og tilbakevending mot balanse etter fysisk eller mental belastning.",
+      },
     ],
   },
   modes: {

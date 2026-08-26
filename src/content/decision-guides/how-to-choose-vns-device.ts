@@ -42,6 +42,17 @@ export const howToChooseVnsDeviceGuidePair = {
     "readingTimeMinutes": 17,
     "authorName": "Neuvago Editorial Team",
     "reviewerName": "Neuvago Source Review",
+    "download": {
+      "title": "Download the printable 12-point checklist",
+      "description": "A six-page PDF for recording what is verified, unclear or missing before you compare or buy a VNS device.",
+      "href": "/downloads/neuvago-vns-device-buyer-checklist-en.pdf",
+      "fileName": "neuvago-vns-device-buyer-checklist-en.pdf",
+      "format": "PDF",
+      "pageCount": 6,
+      "version": "1.0",
+      "publishedAt": "2026-08-26",
+      "downloadLabel": "Download English PDF"
+    },
     "sections": [
       {
         "id": "name-the-method",
@@ -659,6 +670,17 @@ export const howToChooseVnsDeviceGuidePair = {
     "readingTimeMinutes": 18,
     "authorName": "Neuvago-redaksjonen",
     "reviewerName": "Neuvago kildekontroll",
+    "download": {
+      "title": "Last ned den utskriftsvennlige 12-punkts sjekklisten",
+      "description": "En sekssiders PDF der du kan notere hva som er dokumentert, uklart eller ikke funnet før du sammenligner eller kjøper VNS-enhet.",
+      "href": "/downloads/neuvago-kjopersjekkliste-vns-enhet-no.pdf",
+      "fileName": "neuvago-kjopersjekkliste-vns-enhet-no.pdf",
+      "format": "PDF",
+      "pageCount": 6,
+      "version": "1.0",
+      "publishedAt": "2026-08-26",
+      "downloadLabel": "Last ned norsk PDF"
+    },
     "sections": [
       {
         "id": "navngi-metoden",

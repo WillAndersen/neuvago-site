@@ -138,6 +138,18 @@ export type DecisionGuideProductBridge = {
   }[];
 };
 
+export type DecisionGuideDownload = {
+  title: string;
+  description: string;
+  href: string;
+  fileName: string;
+  format: "PDF";
+  pageCount: number;
+  version: string;
+  publishedAt: string;
+  downloadLabel: string;
+};
+
 export type DecisionGuideContent = {
   id: string;
   locale: DecisionGuideLocale;
@@ -167,6 +179,7 @@ export type DecisionGuideContent = {
   readingTimeMinutes: number;
   authorName: string;
   reviewerName: string;
+  download?: DecisionGuideDownload;
 
   comparison?: DecisionGuideComparison;
   sections: readonly DecisionGuideSection[];

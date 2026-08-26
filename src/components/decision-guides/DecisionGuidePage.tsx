@@ -260,6 +260,63 @@ function BlockRenderer({
   }
 }
 
+function DownloadableChecklist({
+  guide,
+}: {
+  guide: DecisionGuideContent;
+}) {
+  const resource = guide.download;
+
+  if (!resource) {
+    return null;
+  }
+
+  const isNo = guide.locale === "no";
+
+  return (
+    <section
+      id="download-checklist"
+      className="border-b border-black/6 bg-[#eee7dd]"
+    >
+      <div className="mx-auto max-w-7xl px-5 py-14 sm:px-8 lg:px-12 lg:py-18">
+        <div className="grid gap-8 rounded-[2rem] border border-black/7 bg-white/72 p-7 shadow-[0_20px_70px_rgba(31,31,28,0.06)] sm:p-9 lg:grid-cols-[minmax(0,1fr)_auto] lg:items-center">
+          <div className="max-w-3xl">
+            <p className="text-xs font-medium uppercase tracking-[0.2em] text-[#7b7167]">
+              {isNo ? "Nedlastbar kjøpersjekkliste" : "Downloadable buyer checklist"}
+            </p>
+            <h2 className="mt-4 text-3xl font-medium leading-tight tracking-[-0.04em] md:text-4xl">
+              {resource.title}
+            </h2>
+            <p className="mt-4 text-base leading-8 text-[#5f5a52] md:text-lg">
+              {resource.description}
+            </p>
+            <div className="mt-5 flex flex-wrap gap-2 text-xs font-medium uppercase tracking-[0.14em] text-[#776d63]">
+              <span className="rounded-full border border-black/7 bg-[#f4efe8] px-3 py-2">
+                {resource.format}
+              </span>
+              <span className="rounded-full border border-black/7 bg-[#f4efe8] px-3 py-2">
+                {resource.pageCount} {isNo ? "sider" : "pages"}
+              </span>
+              <span className="rounded-full border border-black/7 bg-[#f4efe8] px-3 py-2">
+                {isNo ? "Versjon" : "Version"} {resource.version}
+              </span>
+            </div>
+          </div>
+
+          <a
+            href={resource.href}
+            download={resource.fileName}
+            type="application/pdf"
+            className="inline-flex min-h-14 items-center justify-center rounded-full bg-[#1f1f1c] px-6 py-4 text-center text-sm font-medium text-white transition hover:bg-[#373630]"
+          >
+            {resource.downloadLabel}
+          </a>
+        </div>
+      </div>
+    </section>
+  );
+}
+
 function ComparisonVisual({ guide }: { guide: DecisionGuideContent }) {
   const comparison = guide.comparison;
 
@@ -524,6 +581,8 @@ export function DecisionGuidePage({ guide }: { guide: DecisionGuideContent }) {
           </div>
         </div>
       </section>
+
+      <DownloadableChecklist guide={guide} />
 
       <ComparisonVisual guide={guide} />
 

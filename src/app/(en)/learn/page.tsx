@@ -95,53 +95,60 @@ const moreFoundationGuides = [
   },
 ] as const;
 
-const practicalPages = [
+const everydayQuestionGroups = [
   {
-    title: "How to calm your nervous system",
+    id: "practical-guidance",
+    title: "Practical guidance",
     description:
-      "A practical page focused on what actually helps the body come down in real life.",
-    href: "/learn/how-to-calm-your-nervous-system",
-    linkLabel: "See what helps",
+      "Clear articles for moments when the main question is what may help in everyday life.",
+    articles: [
+      {
+        title: "How to calm your nervous system",
+        description:
+          "Explore practical, science-informed ways to help the body move from activation toward a calmer state.",
+        href: "/learn/how-to-calm-your-nervous-system",
+      },
+      {
+        title: "Why your body feels stuck in stress",
+        description:
+          "Understand why the body can remain activated even after the stressful moment has passed.",
+        href: "/learn/why-your-body-feels-stuck-in-stress",
+      },
+      {
+        title: "Why you feel tired but can’t relax",
+        description:
+          "Explore why exhaustion and activation can exist at the same time, and how this may affect evenings, sleep and recovery.",
+        href: "/learn/why-you-feel-tired-but-cant-relax",
+      },
+    ],
   },
   {
-    title: "Why your body feels stuck in stress",
+    id: "recognize-the-pattern",
+    title: "Recognize the pattern",
     description:
-      "An explanation page for lingering activation and why the body can still feel “on” after the stressful thing is over.",
-    href: "/learn/why-your-body-feels-stuck-in-stress",
-    linkLabel: "Understand stuck stress",
+      "Articles that help readers understand common nervous system patterns and put everyday experiences into context.",
+    articles: [
+      {
+        title: "Signs of a dysregulated nervous system",
+        description:
+          "Learn about patterns such as overstimulation, poor sleep, shutdown and difficulty winding down.",
+        href: "/learn/signs-of-a-dysregulated-nervous-system",
+      },
+      {
+        title: "What nervous system regulation feels like",
+        description:
+          "Understand how regulation may feel in everyday life, including greater steadiness and a more flexible return after stress.",
+        href: "/learn/what-nervous-system-regulation-feels-like",
+      },
+      {
+        title: "Emotional regulation and the nervous system",
+        description:
+          "Explore the relationship between the nervous system, overwhelm, reactivity and emotional shutdown.",
+        href: "/learn/emotional-regulation-and-the-nervous-system",
+      },
+    ],
   },
-  {
-    title: "Why you feel tired but can’t relax",
-    description:
-      "A practical explainer that connects exhaustion, activation, evening tension, sleep, and recovery.",
-    href: "/learn/why-you-feel-tired-but-cant-relax",
-    linkLabel: "Explore wired-but-tired",
-  },
-];
-
-const recognitionPages = [
-  {
-    title: "Signs of a dysregulated nervous system",
-    description:
-      "A recognition page for patterns like overstimulation, poor sleep, shutdown, low resilience, and trouble winding down.",
-    href: "/learn/signs-of-a-dysregulated-nervous-system",
-    linkLabel: "Recognize the signs",
-  },
-  {
-    title: "What nervous system regulation feels like",
-    description:
-      "A felt-experience page for recognizing steadiness, better return, and less inner urgency.",
-    href: "/learn/what-nervous-system-regulation-feels-like",
-    linkLabel: "See what regulation feels like",
-  },
-  {
-    title: "Emotional regulation and the nervous system",
-    description:
-      "A bridge page for overwhelm, reactivity, emotional shutdown, and how the body carries emotion in everyday life.",
-    href: "/learn/emotional-regulation-and-the-nervous-system",
-    linkLabel: "Explore emotional load",
-  },
-];
+] as const;
 
 const pathwayCards = [
   {
@@ -315,99 +322,72 @@ export default function LearnPage() {
         </section>
       ) : null}
 
-      <section className="border-b border-black/5 bg-[#f2eee8]">
+      <section className="border-b border-black/5 bg-[#eee7dd]">
         <div className="mx-auto max-w-7xl px-6 py-24 md:px-10 md:py-28">
-          <div className="flex flex-col gap-6 md:flex-row md:items-end md:justify-between">
-            <div className="max-w-3xl">
-              <p className="text-sm uppercase tracking-[0.18em] text-[#7a756c]">
-                Practical support pages
-              </p>
-
-              <h2 className="mt-4 text-3xl font-medium leading-tight tracking-[-0.03em] md:text-5xl">
-                Start here if the main question is what helps in real life
-              </h2>
-
-              <p className="mt-6 max-w-2xl text-base leading-8 text-[#5f5a52] md:text-lg">
-                These pages connect learning with practical support, calmer
-                transitions, and what the body may need in order to come back
-                down.
-              </p>
-            </div>
-
-            <div>
-              <Link
-                href="/conditions"
-                className="inline-flex rounded-full border border-black/10 px-6 py-3 text-sm font-medium text-[#1f1f1c] transition hover:bg-white/60"
-              >
-                Browse conditions
-              </Link>
-            </div>
-          </div>
-
-          <div className="mt-14 grid gap-6 md:grid-cols-3">
-            {practicalPages.map((item) => (
-              <article
-                key={item.title}
-                className="rounded-[2rem] border border-black/5 bg-white/60 p-8 shadow-[0_12px_40px_rgba(31,31,28,0.04)]"
-              >
-                <h3 className="text-2xl font-medium leading-tight text-[#1f1f1c]">
-                  {item.title}
-                </h3>
-
-                <p className="mt-4 text-sm leading-7 text-[#5f5a52] md:text-base">
-                  {item.description}
-                </p>
-
-                <Link
-                  href={item.href}
-                  className="mt-8 inline-flex text-sm font-medium text-[#1f1f1c] transition hover:opacity-70"
-                >
-                  {item.linkLabel}
-                </Link>
-              </article>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      <section className="border-b border-black/5 bg-[#f7f4ef]">
-        <div className="mx-auto max-w-7xl px-6 py-24 md:px-10 md:py-28">
-          <div className="max-w-3xl">
+          <div className="max-w-4xl">
             <p className="text-sm uppercase tracking-[0.18em] text-[#7a756c]">
-              Recognition and lived experience
+              EVERYDAY NERVOUS SYSTEM QUESTIONS
             </p>
 
             <h2 className="mt-4 text-3xl font-medium leading-tight tracking-[-0.03em] md:text-5xl">
-              These pages help people recognize patterns and make sense of what daily life actually feels like
+              Start with what you’re experiencing.
             </h2>
 
-            <p className="mt-6 max-w-2xl text-base leading-8 text-[#5f5a52] md:text-lg">
-              Not everyone begins with theory. Some people begin with
-              recognition. These pages are designed for that stage.
+            <p className="mt-6 max-w-3xl text-base leading-8 text-[#5f5a52] md:text-lg">
+              Explore articles that begin with the questions, sensations and
+              patterns people often notice in everyday life — from feeling
+              stuck in stress or unable to unwind to understanding nervous
+              system regulation and emotional responses.
             </p>
           </div>
 
-          <div className="mt-14 grid gap-6 md:grid-cols-3">
-            {recognitionPages.map((item) => (
-              <article
-                key={item.title}
-                className="rounded-[2rem] border border-black/5 bg-white/60 p-8 shadow-[0_12px_40px_rgba(31,31,28,0.04)]"
+          <div className="mt-16 grid gap-14 lg:grid-cols-2 lg:gap-16">
+            {everydayQuestionGroups.map((group) => (
+              <section
+                key={group.id}
+                aria-labelledby={`learn-${group.id}`}
+                className="min-w-0"
               >
-                <h3 className="text-2xl font-medium leading-tight text-[#1f1f1c]">
-                  {item.title}
-                </h3>
+                <div className="max-w-xl">
+                  <h3
+                    id={`learn-${group.id}`}
+                    className="text-2xl font-medium tracking-[-0.035em] text-[#1f1f1c] md:text-3xl"
+                  >
+                    {group.title}
+                  </h3>
+                  <p className="mt-4 text-sm leading-7 text-[#5f5a52] md:text-base">
+                    {group.description}
+                  </p>
+                </div>
 
-                <p className="mt-4 text-sm leading-7 text-[#5f5a52] md:text-base">
-                  {item.description}
-                </p>
+                <div className="mt-8 border-t border-black/10">
+                  {group.articles.map((article) => (
+                    <Link
+                      key={article.href}
+                      href={article.href}
+                      className="group block border-b border-black/10 py-7 transition hover:border-black/20"
+                    >
+                      <div className="grid gap-5 sm:grid-cols-[1fr_auto] sm:items-center">
+                        <div className="max-w-xl">
+                          <h4 className="text-xl font-medium leading-tight tracking-[-0.03em] text-[#1f1f1c] md:text-2xl">
+                            {article.title}
+                          </h4>
+                          <p className="mt-3 text-sm leading-7 text-[#5f5a52] md:text-base">
+                            {article.description}
+                          </p>
+                        </div>
 
-                <Link
-                  href={item.href}
-                  className="mt-8 inline-flex text-sm font-medium text-[#1f1f1c] transition hover:opacity-70"
-                >
-                  {item.linkLabel}
-                </Link>
-              </article>
+                        <span
+                          aria-hidden="true"
+                          className="text-xl text-[#1f1f1c] transition group-hover:translate-x-0.5"
+                        >
+                          →
+                        </span>
+                      </div>
+                    </Link>
+                  ))}
+                </div>
+              </section>
             ))}
           </div>
         </div>

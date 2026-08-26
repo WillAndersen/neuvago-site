@@ -492,6 +492,13 @@ export const ikkeInvasivVagusnervestimuleringArticle = {
   ],
   relatedLinks: [
     {
+      title: "Hvordan velge vagusnervestimulator",
+      description:
+        "Gå fra metodekategorien til en produktsjekk som dekker tiltenkt bruk, dokumentasjon, sikkerhet, innstillinger, app, support og gjeldende vilkår.",
+      href: "/no/kunnskap/hvordan-velge-vagusnervestimulator",
+      label: "Bruk kjøpssjekklisten",
+    },
+    {
       title: "Ørebasert vs. hals-/nakkebasert VNS",
       description:
         "Bruk en nøytral beslutningsguide til å skille aurikulær taVNS fra cervikal nVNS før du vurderer produkt eller påstander.",

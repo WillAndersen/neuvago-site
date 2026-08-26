@@ -532,6 +532,13 @@ export const aurikulaerVagusnervestimuleringArticle = {
   ],
   relatedLinks: [
     {
+      title: "Hvordan velge vagusnervestimulator",
+      description:
+        "Bruk et produktnivå-rammeverk for øreplassering, kontakt, kontroller, dokumentasjon, sikkerhet, appvilkår, forbruksmateriell og support.",
+      href: "/no/kunnskap/hvordan-velge-vagusnervestimulator",
+      label: "Åpne kjøpsguiden",
+    },
+    {
       title: "Ørebasert vs. hals-/nakkebasert VNS",
       description:
         "Sammenlign aurikulær taVNS med cervikal nVNS uten å behandle stimuleringsstedene, protokollene eller dokumentasjonen som utskiftbare.",

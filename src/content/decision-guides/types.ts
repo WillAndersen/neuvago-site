@@ -100,7 +100,12 @@ export type DecisionGuideSourceType =
   | "anatomy-review"
   | "randomized-trial"
   | "systematic-review"
-  | "consensus-review";
+  | "consensus-review"
+  | "regulatory-guidance"
+  | "regulation"
+  | "consumer-guidance"
+  | "reporting-standard"
+  | "research-guidance";
 
 export type DecisionGuideSource = {
   id: string;

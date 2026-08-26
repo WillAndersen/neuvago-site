@@ -1,3 +1,4 @@
+import { Fragment, type ReactNode } from "react";
 import Link from "next/link";
 
 import { JsonLd } from "@/components/seo/json-ld";
@@ -45,7 +46,106 @@ const sourceTypeLabels: Record<
     en: "Consensus review",
     no: "Konsensusoversikt",
   },
+  "regulatory-guidance": {
+    en: "Regulatory guidance",
+    no: "Regulatorisk veiledning",
+  },
+  regulation: {
+    en: "Regulation",
+    no: "Forordning",
+  },
+  "consumer-guidance": {
+    en: "Consumer guidance",
+    no: "Forbrukerveiledning",
+  },
+  "reporting-standard": {
+    en: "Reporting standard",
+    no: "Rapporteringsstandard",
+  },
+  "research-guidance": {
+    en: "Research guidance",
+    no: "Forskningsveiledning",
+  },
 };
+
+
+type ManualTitleBreak = {
+  token: string;
+  before: string;
+  after: string;
+};
+
+const manualTitleBreaks: readonly ManualTitleBreak[] = [
+  {
+    token: "vagusnervestimulering",
+    before: "vagusnerve",
+    after: "stimulering",
+  },
+  {
+    token: "vagusnervestimulator",
+    before: "vagusnerve",
+    after: "stimulator",
+  },
+  {
+    token: "nakkebasert",
+    before: "nakke",
+    after: "basert",
+  },
+];
+
+function splitTitleNode(
+  value: string,
+  rule: ManualTitleBreak,
+  ruleIndex: number
+): ReactNode[] {
+  const result: ReactNode[] = [];
+  let remaining = value;
+  let occurrence = 0;
+
+  while (remaining.includes(rule.token)) {
+    const index = remaining.indexOf(rule.token);
+    const prefix = remaining.slice(0, index);
+
+    if (prefix) {
+      result.push(prefix);
+    }
+
+    result.push(
+      <Fragment key={`${rule.token}-${ruleIndex}-${occurrence}`}>
+        {rule.before}
+        <wbr />
+        {rule.after}
+      </Fragment>
+    );
+
+    remaining = remaining.slice(index + rule.token.length);
+    occurrence += 1;
+  }
+
+  if (remaining) {
+    result.push(remaining);
+  }
+
+  return result;
+}
+
+function renderControlledTitle(title: string, locale: "en" | "no") {
+  if (locale !== "no") {
+    return title;
+  }
+
+  let nodes: ReactNode[] = [title];
+
+  for (const [ruleIndex, rule] of manualTitleBreaks.entries()) {
+    nodes = nodes.flatMap((node) =>
+      typeof node === "string"
+        ? splitTitleNode(node, rule, ruleIndex)
+        : [node]
+    );
+  }
+
+  return nodes;
+}
 
 function formatDate(value: string, locale: "en" | "no") {
   return new Intl.DateTimeFormat(locale === "no" ? "nb-NO" : "en-US", {
@@ -282,6 +382,35 @@ export function DecisionGuidePage({ guide }: { guide: DecisionGuideContent }) {
   const structuredData = buildDecisionGuideStructuredData(guide);
   const hubPath = isNo ? "/no/kunnskap" : "/learn";
   const homePath = isNo ? "/no" : "/";
+  const isBuyerGuide = guide.kind === "buyer-guide";
+  const faqTitle = isBuyerGuide
+    ? isNo
+      ? "Korte svar før du velger en VNS-enhet"
+      : "Short answers before choosing a VNS device"
+    : isNo
+      ? "Korte svar om øre- og halsbasert VNS"
+      : "Short answers about ear- and neck-based VNS";
+  const sourcesTitle = isBuyerGuide
+    ? isNo
+      ? "Kildegrunnlag for kjøpsguiden"
+      : "Source basis for the buyer guide"
+    : isNo
+      ? "Kildegrunnlag for sammenligningen"
+      : "Evidence base for the comparison";
+  const sourcesIntroduction = isBuyerGuide
+    ? isNo
+      ? "Kildene rammer inn tiltenkt bruk, påstander, produktspesifikk dokumentasjon, metode, target engagement, rapportering og sikkerhet. De rangerer ikke produkter og dokumenterer ikke automatisk en bestemt effekt av Neuvago."
+      : "These sources frame intended use, claims, product-specific evidence, method, target engagement, reporting, and safety. They do not rank products or automatically document a specific effect of Neuvago."
+    : isNo
+      ? "Kildene forklarer metode, anatomi, target engagement, studiedesign og sikkerhetsrapportering. De dokumenterer ikke automatisk en bestemt effekt av Neuvago."
+      : "These sources frame method, anatomy, target engagement, study design, and safety reporting. They do not automatically document a specific effect of Neuvago.";
+  const relatedTitle = isBuyerGuide
+    ? isNo
+      ? "Fortsett til metode, sikkerhet, dokumentasjon og produktfakta"
+      : "Continue into method, safety, evidence, and product facts"
+    : isNo
+      ? "Fortsett til metode, forskning, sikkerhet og produktgrenser"
+      : "Continue into method, research, safety, and product boundaries";
 
   return (
     <main className="bg-[#f7f4ef] text-[#1f1f1c]">
@@ -318,10 +447,10 @@ export function DecisionGuidePage({ guide }: { guide: DecisionGuideContent }) {
               {guide.eyebrow}
             </p>
             <h1
-              className="mt-5 max-w-[18ch] break-words text-[clamp(2.7rem,7vw,5.7rem)] font-medium leading-[0.96] tracking-[-0.06em] [hyphens:auto] [overflow-wrap:anywhere]"
+              className="mt-5 max-w-[19ch] text-balance text-[clamp(2.55rem,6.6vw,5.45rem)] font-medium leading-[0.98] tracking-[-0.055em] [hyphens:none] [overflow-wrap:break-word]"
               lang={isNo ? "nb" : "en"}
             >
-              {guide.title}
+              {renderControlledTitle(guide.title, guide.locale)}
             </h1>
             <p className="mt-7 max-w-3xl text-lg leading-8 text-[#514c45] md:text-xl md:leading-9">
               {guide.lead}
@@ -505,9 +634,7 @@ export function DecisionGuidePage({ guide }: { guide: DecisionGuideContent }) {
               {isNo ? "Vanlige spørsmål" : "Frequently asked questions"}
             </p>
             <h2 className="mt-4 text-3xl font-medium tracking-[-0.04em] md:text-5xl">
-              {isNo
-                ? "Korte svar om øre- og halsbasert VNS"
-                : "Short answers about ear- and neck-based VNS"}
+              {faqTitle}
             </h2>
           </div>
 
@@ -536,12 +663,10 @@ export function DecisionGuidePage({ guide }: { guide: DecisionGuideContent }) {
               {isNo ? "Kilder" : "Sources"}
             </p>
             <h2 className="mt-4 text-3xl font-medium tracking-[-0.04em] md:text-5xl">
-              {isNo ? "Kildegrunnlag for sammenligningen" : "Evidence base for the comparison"}
+              {sourcesTitle}
             </h2>
             <p className="mt-5 text-base leading-8 text-[#5f5a52] md:text-lg">
-              {isNo
-                ? "Kildene forklarer metode, anatomi, target engagement, studiedesign og sikkerhetsrapportering. De dokumenterer ikke automatisk en bestemt effekt av Neuvago."
-                : "These sources frame method, anatomy, target engagement, study design, and safety reporting. They do not automatically document a specific effect of Neuvago."}
+              {sourcesIntroduction}
             </p>
           </div>
 
@@ -588,9 +713,7 @@ export function DecisionGuidePage({ guide }: { guide: DecisionGuideContent }) {
               {isNo ? "Les videre" : "Continue learning"}
             </p>
             <h2 className="mt-4 text-3xl font-medium tracking-[-0.04em] md:text-5xl">
-              {isNo
-                ? "Fortsett til metode, forskning, sikkerhet og produktgrenser"
-                : "Continue into method, research, safety, and product boundaries"}
+              {relatedTitle}
             </h2>
           </div>
 

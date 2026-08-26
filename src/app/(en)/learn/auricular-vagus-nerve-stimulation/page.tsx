@@ -193,6 +193,13 @@ const neuvagoFit = [
 
 const internalPathways = [
   {
+    title: "How to choose a VNS device",
+    description:
+      "Use a product-level framework to evaluate ear placement, contact, controls, evidence, safety, app terms, consumables, support, and live purchase conditions.",
+    href: "/learn/how-to-choose-a-vagus-nerve-stimulation-device",
+    linkLabel: "Open the buyer guide",
+  },
+  {
     title: "Ear-based vs. neck-based VNS",
     description:
       "Compare auricular taVNS with cervical nVNS without treating the two access sites, protocols, or evidence bases as interchangeable.",

@@ -189,6 +189,13 @@ const boundaries = [
 
 const relatedLearning = [
   {
+    title: "How to choose a VNS device",
+    description:
+      "Move from the non-invasive category to a product-level checklist covering intended use, evidence, safety, settings, app dependence, support, and purchase terms.",
+    href: "/learn/how-to-choose-a-vagus-nerve-stimulation-device",
+    linkLabel: "Use the buyer checklist",
+  },
+  {
     title: "Ear-based vs. neck-based VNS",
     description:
       "Use a neutral method comparison to separate auricular taVNS from cervical nVNS before evaluating devices or claims.",

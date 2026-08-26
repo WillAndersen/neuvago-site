@@ -404,6 +404,13 @@ export const vagusnervestimuleringArticle = {
   ],
   relatedLinks: [
     {
+      title: "Hvordan velge vagusnervestimulator",
+      description:
+        "Bruk 12 etterprøvbare kriterier for metode, tiltenkt bruk, produktspesifikk dokumentasjon, sikkerhet, protokoll, praktisk eierskap og gjeldende kjøpsvilkår.",
+      href: "/no/kunnskap/hvordan-velge-vagusnervestimulator",
+      label: "Åpne kjøpsguiden",
+    },
+    {
       title: "Ørebasert vs. hals-/nakkebasert VNS",
       description:
         "Sammenlign aurikulær taVNS og cervikal nVNS etter anatomi, enhetsdesign, protokoll, dokumentasjon, sikkerhet og praktisk bruk.",

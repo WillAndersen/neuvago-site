@@ -464,6 +464,13 @@ export const transkutanVagusnervestimuleringArticle = {
   ],
   relatedLinks: [
     {
+      title: "Hvordan velge vagusnervestimulator",
+      description:
+        "Kontroller hvordan produktet forklarer stimuleringssted, elektrode, parametere, target engagement, sikkerhet, eierkostnader og aktuelle kjøpsvilkår.",
+      href: "/no/kunnskap/hvordan-velge-vagusnervestimulator",
+      label: "Åpne kjøpsguiden",
+    },
+    {
       title: "Ørebasert vs. hals-/nakkebasert VNS",
       description:
         "Se hvorfor aurikulær og cervikal stimulering krever ulike spørsmål om anatomi, elektroder, protokoll og target engagement.",

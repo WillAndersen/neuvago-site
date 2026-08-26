@@ -1,11 +1,15 @@
 import { earVsNeckVnsGuidePair } from "@/content/decision-guides/ear-vs-neck-vns";
+import { howToChooseVnsDeviceGuidePair } from "@/content/decision-guides/how-to-choose-vns-device";
 import type {
   DecisionGuideContent,
   DecisionGuideLocale,
   DecisionGuidePair,
 } from "@/content/decision-guides/types";
 
-const pairRegistry = [earVsNeckVnsGuidePair] as const satisfies readonly DecisionGuidePair[];
+const pairRegistry = [
+  earVsNeckVnsGuidePair,
+  howToChooseVnsDeviceGuidePair,
+] as const satisfies readonly DecisionGuidePair[];
 
 function isIsoDate(value: string): boolean {
   return /^\d{4}-\d{2}-\d{2}$/.test(value) && !Number.isNaN(Date.parse(`${value}T12:00:00Z`));

@@ -161,6 +161,13 @@ const boundaries = [
 
 const relatedLearning = [
   {
+    title: "How to choose a VNS device",
+    description:
+      "Use a 12-point buyer framework to check method, intended use, product-specific evidence, safety, protocol, practical ownership, and live purchase terms.",
+    href: "/learn/how-to-choose-a-vagus-nerve-stimulation-device",
+    linkLabel: "Open the buyer guide",
+  },
+  {
     title: "Ear-based vs. neck-based VNS",
     description:
       "Compare auricular taVNS and cervical nVNS by anatomy, device design, protocol, evidence, safety, comfort, and intended use.",

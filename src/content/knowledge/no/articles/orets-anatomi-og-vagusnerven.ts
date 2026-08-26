@@ -708,6 +708,13 @@ export const oretsAnatomiOgVagusnervenArticle = {
   ],
   relatedLinks: [
     {
+      title: "Hvordan velge vagusnervestimulator",
+      description:
+        "Sett øreanatomi inn i en praktisk produktsjekk for plassering, elektrode, protokoll, dokumentasjon, sikkerhet og gjeldende kjøpsvilkår.",
+      href: "/no/kunnskap/hvordan-velge-vagusnervestimulator",
+      label: "Åpne kjøpsguiden",
+    },
+    {
       title: "Ørebasert vs. hals-/nakkebasert VNS",
       description:
         "Sett øreanatomi inn i et nøytralt metodekart som forklarer forskjellen mellom aurikulær og cervikal ikke-invasiv VNS.",

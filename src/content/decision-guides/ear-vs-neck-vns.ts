@@ -550,6 +550,13 @@ export const earVsNeckVnsGuidePair = {
 
     relatedLinks: [
       {
+        title: "How to choose a VNS device",
+        description:
+          "Use a 12-point buyer framework to check method, intended use, product-specific evidence, safety, protocol, ownership costs, privacy, support, and live purchase terms.",
+        href: "/learn/how-to-choose-a-vagus-nerve-stimulation-device",
+        label: "Open the buyer guide",
+      },
+      {
         title: "Vagus nerve stimulation overview",
         description:
           "Start with the full VNS category, including implanted systems, non-invasive approaches and responsible evidence boundaries.",
@@ -1182,6 +1189,13 @@ export const earVsNeckVnsGuidePair = {
     ],
 
     relatedLinks: [
+      {
+        title: "Hvordan velge vagusnervestimulator",
+        description:
+          "Bruk et rammeverk med 12 punkter for å kontrollere metode, tiltenkt bruk, produktspesifikk dokumentasjon, sikkerhet, protokoll, eierkostnader, personvern, support og gjeldende kjøpsvilkår.",
+        href: "/no/kunnskap/hvordan-velge-vagusnervestimulator",
+        label: "Åpne kjøpsguiden",
+      },
       {
         title: "Vagusnervestimulering – oversikt",
         description:

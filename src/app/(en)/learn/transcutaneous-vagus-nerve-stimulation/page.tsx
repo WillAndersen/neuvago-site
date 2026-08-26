@@ -171,6 +171,13 @@ const neuvagoFit = [
 
 const relatedLearning = [
   {
+    title: "How to choose a VNS device",
+    description:
+      "Check how a product explains stimulation site, electrode contact, parameters, target evidence, safety, total ownership, and current commercial terms.",
+    href: "/learn/how-to-choose-a-vagus-nerve-stimulation-device",
+    linkLabel: "Open the buyer guide",
+  },
+  {
     title: "Ear-based vs. neck-based VNS",
     description:
       "See why auricular and cervical stimulation need different anatomy, hardware, target-engagement, and protocol questions.",

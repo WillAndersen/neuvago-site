@@ -3,7 +3,7 @@ import Link from "next/link";
 import { JsonLd } from "@/components/seo/json-ld"
 import { AuthorityEditorialHero } from "@/components/authority";
 import { buildPageWithBreadcrumbStructuredData } from "@/lib/seo/structured-data"
-import { getPublishedDecisionGuidesForLocale } from "@/content/decision-guides/registry";
+
 
 export const metadata: Metadata = {
   title:
@@ -150,32 +150,24 @@ const everydayQuestionGroups = [
   },
 ] as const;
 
-const pathwayCards = [
+const finalPathways = [
   {
-    title: "Start with the foundations",
+    title: "Conditions",
     description:
-      "Begin with the big concepts if you want the clearest understanding of how stress, calm, sleep, and recovery fit together.",
-    href: "/learn/nervous-system-regulation",
-    linkLabel: "Start with regulation",
+      "Browse articles on sleep, stress, anxiety, migraine and headache, gut–brain function, depression, chronic pain and related nervous system topics.",
+    href: "/conditions",
+    ctaLabel: "Browse conditions",
   },
   {
-    title: "Start with something you recognize",
+    title: "Research",
     description:
-      "If the body feels wired, tired, overwhelmed, reactive, or difficult to settle, begin with the pages that map lived experience more directly.",
-    href: "/learn/signs-of-a-dysregulated-nervous-system",
-    linkLabel: "Start with recognition",
+      "Explore peer-reviewed studies, systematic reviews and scientific context across VNS, taVNS, autonomic regulation, HRV, safety and related fields.",
+    href: "/research",
+    ctaLabel: "Explore Research",
   },
-  {
-    title: "Start with practical support",
-    description:
-      "If the main question is what actually helps, begin with the practical pages around calming, recovery, and everyday nervous system support.",
-    href: "/learn/how-to-calm-your-nervous-system",
-    linkLabel: "Start with support",
-  },
-];
+] as const;
 
 export default function LearnPage() {
-  const decisionGuides = getPublishedDecisionGuidesForLocale("en");
   const structuredData = buildPageWithBreadcrumbStructuredData({
     title: "Learn | VNS, Non-Invasive VNS, tVNS and Auricular VNS | Neuvago",
     description: "Explore practical explainers on vagus nerve stimulation, non-invasive VNS, tVNS, auricular VNS, the vagus nerve, nervous system regulation, stress, sleep, and recovery.",
@@ -281,46 +273,6 @@ export default function LearnPage() {
       </section>
 
 
-      {decisionGuides.length > 0 ? (
-        <section className="border-b border-black/5 bg-[#eee7dd]">
-          <div className="mx-auto max-w-7xl px-6 py-24 md:px-10 md:py-28">
-            <div className="max-w-3xl">
-              <p className="text-sm uppercase tracking-[0.18em] text-[#7a756c]">
-                Decision guides
-              </p>
-              <h2 className="mt-4 text-3xl font-medium leading-tight tracking-[-0.03em] md:text-5xl">
-                Compare methods before comparing promises
-              </h2>
-              <p className="mt-6 max-w-2xl text-base leading-8 text-[#5f5a52] md:text-lg">
-                These guides turn anatomy, device design, intended use, evidence, safety, and practical fit into clearer decision criteria. They do not rank brands or declare a universal winner.
-              </p>
-            </div>
-
-            <div className="mt-14 grid gap-6 md:grid-cols-2">
-              {decisionGuides.map((guide) => (
-                <Link
-                  key={guide.path}
-                  href={guide.path}
-                  className="group rounded-[2rem] border border-black/5 bg-white/65 p-8 shadow-[0_16px_52px_rgba(31,31,28,0.05)] transition hover:-translate-y-0.5 hover:bg-white"
-                >
-                  <p className="text-xs font-medium uppercase tracking-[0.18em] text-[#84796e]">
-                    {guide.hubLabel}
-                  </p>
-                  <h3 className="mt-4 text-2xl font-medium leading-tight tracking-[-0.03em] text-[#1f1f1c]">
-                    {guide.hubTitle}
-                  </h3>
-                  <p className="mt-4 text-sm leading-7 text-[#5f5a52] md:text-base">
-                    {guide.hubSummary}
-                  </p>
-                  <span className="mt-7 inline-flex text-sm font-medium underline-offset-4 group-hover:underline">
-                    Open decision guide
-                  </span>
-                </Link>
-              ))}
-            </div>
-          </div>
-        </section>
-      ) : null}
 
       <section className="border-b border-black/5 bg-[#eee7dd]">
         <div className="mx-auto max-w-7xl px-6 py-24 md:px-10 md:py-28">
@@ -393,90 +345,54 @@ export default function LearnPage() {
         </div>
       </section>
 
-      <section className="border-b border-black/5 bg-[#f2eee8]">
-        <div className="mx-auto max-w-7xl px-6 py-24 md:px-10 md:py-28">
-          <div className="max-w-3xl">
+      <section
+        aria-labelledby="learn-continue-exploring-title"
+        className="bg-[#e8ded0]"
+      >
+        <div className="mx-auto grid max-w-7xl gap-14 px-6 py-24 md:px-10 md:py-28 lg:grid-cols-[0.8fr_1.2fr] lg:gap-20">
+          <div className="max-w-2xl lg:sticky lg:top-32 lg:self-start">
             <p className="text-sm uppercase tracking-[0.18em] text-[#7a756c]">
-              Choose where to start
+              CONTINUE EXPLORING
             </p>
-
-            <h2 className="mt-4 text-3xl font-medium leading-tight tracking-[-0.03em] md:text-5xl">
-              A clearer way to begin based on the kind of question you actually have
+            <h2
+              id="learn-continue-exploring-title"
+              className="mt-4 text-3xl font-medium leading-tight tracking-[-0.03em] md:text-5xl"
+            >
+              Explore specific conditions or go deeper into the science.
             </h2>
+            <p className="mt-6 max-w-xl text-base leading-8 text-[#5f5a52] md:text-lg">
+              Continue with condition-focused articles, or explore the
+              scientific studies and reviews behind vagus nerve stimulation
+              and nervous system regulation.
+            </p>
           </div>
 
-          <div className="mt-14 grid gap-6 md:grid-cols-3">
-            {pathwayCards.map((item) => (
+          <div className="border-y border-black/10">
+            {finalPathways.map((pathway) => (
               <article
-                key={item.title}
-                className="rounded-[2rem] border border-black/5 bg-white/60 p-8 shadow-[0_12px_40px_rgba(31,31,28,0.04)]"
+                key={pathway.href}
+                className="border-b border-black/10 py-8 last:border-b-0 md:py-10"
               >
-                <h3 className="text-2xl font-medium leading-tight text-[#1f1f1c]">
-                  {item.title}
+                <h3 className="text-2xl font-medium leading-tight tracking-[-0.035em] text-[#1f1f1c] md:text-3xl">
+                  {pathway.title}
                 </h3>
-                <p className="mt-4 text-sm leading-7 text-[#5f5a52] md:text-base">
-                  {item.description}
+                <p className="mt-4 max-w-2xl text-sm leading-7 text-[#5f5a52] md:text-base">
+                  {pathway.description}
                 </p>
                 <Link
-                  href={item.href}
-                  className="mt-8 inline-flex text-sm font-medium text-[#1f1f1c] transition hover:opacity-70"
+                  href={pathway.href}
+                  className="group mt-5 inline-flex items-center gap-2 text-sm font-medium text-[#1f1f1c] underline-offset-4 transition hover:underline"
                 >
-                  {item.linkLabel}
+                  {pathway.ctaLabel}
+                  <span
+                    aria-hidden="true"
+                    className="transition group-hover:translate-x-0.5"
+                  >
+                    →
+                  </span>
                 </Link>
               </article>
             ))}
-          </div>
-        </div>
-      </section>
-
-      <section className="bg-[#f7f4ef]">
-        <div className="mx-auto max-w-7xl px-6 py-24 md:px-10 md:py-32">
-          <div className="rounded-[2.5rem] border border-black/5 bg-gradient-to-br from-[#efe7dc] to-[#e5dbcf] px-8 py-14 shadow-[0_20px_80px_rgba(31,31,28,0.06)] md:px-12 md:py-16">
-            <div className="max-w-3xl">
-              <p className="text-sm uppercase tracking-[0.18em] text-[#7a756c]">
-                Keep learning, then go deeper
-              </p>
-
-              <h2 className="mt-4 text-3xl font-medium leading-tight tracking-[-0.03em] md:text-5xl">
-                Continue into conditions, research, or the broader Neuvago system
-              </h2>
-
-              <p className="mt-6 max-w-2xl text-base leading-8 text-[#5f5a52] md:text-lg">
-                The Learn hub is designed to help people move from confusion
-                into clearer understanding. From here, you can continue into
-                conditions, research, or the broader product and app system.
-              </p>
-
-              <div className="mt-10 flex flex-wrap gap-4">
-                <Link
-                  href="/conditions"
-                  className="rounded-full bg-[#1f1f1c] px-6 py-3 text-sm font-medium text-white transition hover:opacity-90"
-                >
-                  Browse conditions
-                </Link>
-
-                <Link
-                  href="/research"
-                  className="rounded-full border border-black/10 bg-white/50 px-6 py-3 text-sm font-medium text-[#1f1f1c] transition hover:bg-white/75"
-                >
-                  View research hub
-                </Link>
-
-                <Link
-                  href="/glossary"
-                  className="rounded-full border border-black/10 bg-transparent px-6 py-3 text-sm font-medium text-[#1f1f1c] transition hover:bg-white/40"
-                >
-                  Browse glossary
-                </Link>
-
-                <Link
-                  href="/how-it-works"
-                  className="rounded-full border border-black/10 bg-transparent px-6 py-3 text-sm font-medium text-[#1f1f1c] transition hover:bg-white/40"
-                >
-                  See how it works
-                </Link>
-              </div>
-            </div>
           </div>
         </div>
       </section>

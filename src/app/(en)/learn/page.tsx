@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { JsonLd } from "@/components/seo/json-ld"
-import { AuthorityEditorialHero, AuthorityPathways } from "@/components/authority";
+import { AuthorityEditorialHero } from "@/components/authority";
 import { buildPageWithBreadcrumbStructuredData } from "@/lib/seo/structured-data"
 import { getPublishedDecisionGuidesForLocale } from "@/content/decision-guides/registry";
 
@@ -37,81 +37,63 @@ export const metadata: Metadata = {
   },
 };
 
-const parentPages = [
+const primaryFoundationArticles = [
   {
     title: "Nervous system regulation",
     description:
-      "The clearest starting point for understanding how the body shifts between activation, settling, recovery, and return.",
+      "Understand how the nervous system shifts between activation, regulation, rest and recovery.",
     href: "/learn/nervous-system-regulation",
-    linkLabel: "Start with regulation",
+    linkLabel: "Read about nervous system regulation",
   },
   {
     title: "Vagus nerve",
     description:
-      "A broad introduction to one of the body’s key communication pathways and why it matters for stress, sleep, calm, and recovery.",
+      "Learn how the vagus nerve carries signals between the brain and body and why it matters for stress, sleep and recovery.",
     href: "/learn/vagus-nerve",
     linkLabel: "Understand the vagus nerve",
   },
   {
     title: "Vagus nerve stimulation",
     description:
-      "A category pillar explaining implanted VNS, non-invasive VNS, ear-based approaches, and how a guided wellness device fits responsibly.",
+      "Explore what vagus nerve stimulation is and how implanted and non-invasive approaches differ.",
     href: "/learn/vagus-nerve-stimulation",
-    linkLabel: "Explore VNS",
+    linkLabel: "Explore vagus nerve stimulation",
   },
   {
-    title: "Non-invasive VNS",
+    title: "Non-invasive vagus nerve stimulation",
     description:
-      "A practical category guide to nVNS, external stimulation, device differences, and how a guided wellness system should be evaluated.",
+      "Understand external approaches to vagus nerve stimulation, including tVNS and ear-based taVNS.",
     href: "/learn/non-invasive-vagus-nerve-stimulation",
     linkLabel: "Explore non-invasive VNS",
   },
-  {
-    title: "Transcutaneous VNS",
-    description:
-      "A plain-language guide to tVNS, taVNS, stimulation through the skin, method differences, and responsible category interpretation.",
-    href: "/learn/transcutaneous-vagus-nerve-stimulation",
-    linkLabel: "Explore tVNS",
-  },
-  {
-    title: "Auricular VNS",
-    description:
-      "A plain-language guide to ear-based vagus nerve stimulation, taVNS, placement language, research context, and responsible product boundaries.",
-    href: "/learn/auricular-vagus-nerve-stimulation",
-    linkLabel: "Explore auricular VNS",
-  },
-  {
-    title: "Recovery and regulation",
-    description:
-      "A broader explainer on restoration, capacity, resilience, and why rest is not always the same as real recovery.",
-    href: "/learn/recovery-and-regulation",
-    linkLabel: "Explore recovery",
-  },
-];
+] as const;
 
-const foundationPages = [
+const moreFoundationGuides = [
+  {
+    title: "Transcutaneous vagus nerve stimulation (tVNS)",
+    href: "/learn/transcutaneous-vagus-nerve-stimulation",
+  },
+  {
+    title: "Auricular vagus nerve stimulation (taVNS)",
+    href: "/learn/auricular-vagus-nerve-stimulation",
+  },
   {
     title: "Parasympathetic nervous system",
-    description:
-      "Understand the calmer side of the nervous system and why unwinding, digestion, sleep, and restoration matter.",
     href: "/learn/parasympathetic-nervous-system",
-    linkLabel: "See calmer states",
   },
   {
     title: "Vagal tone",
-    description:
-      "A more specific lens into resilience, flexibility, recovery quality, and how well the body seems able to return after stress.",
     href: "/learn/vagal-tone",
-    linkLabel: "Explore vagal tone",
   },
   {
-    title: "Fight, flight, freeze",
-    description:
-      "A practical explanation of protective states, urgency, shutdown, and why the body reacts so differently under pressure.",
+    title: "Fight, flight and freeze",
     href: "/learn/fight-flight-freeze",
-    linkLabel: "Understand protective states",
   },
-];
+  {
+    title: "Recovery and regulation",
+    href: "/learn/recovery-and-regulation",
+  },
+] as const;
 
 const practicalPages = [
   {
@@ -216,80 +198,81 @@ export default function LearnPage() {
         id="articles"
         className="scroll-mt-28 border-b border-black/5 bg-[#f2eee8]"
       >
-        <div className="mx-auto max-w-7xl px-6 py-24 md:px-10 md:py-28">
-          <div className="max-w-3xl">
+        <div className="mx-auto grid max-w-7xl gap-14 px-6 py-24 md:px-10 md:py-28 lg:grid-cols-[0.78fr_1.22fr] lg:gap-20">
+          <div className="max-w-2xl lg:sticky lg:top-32 lg:self-start">
             <p className="text-sm uppercase tracking-[0.18em] text-[#7a756c]">
-              Core foundations
+              START HERE
             </p>
 
             <h2 className="mt-4 text-3xl font-medium leading-tight tracking-[-0.03em] md:text-5xl">
-              Start with the pages that explain the bigger picture
+              Start with the foundations.
             </h2>
 
-            <p className="mt-6 max-w-2xl text-base leading-8 text-[#5f5a52] md:text-lg">
-              These are the strongest starting points when you want to
-              understand how stress, calm, recovery, sleep, nervous system
-              support, non-invasive VNS, tVNS, auricular VNS, and device-guided routines fit together.
+            <p className="mt-6 max-w-xl text-base leading-8 text-[#5f5a52] md:text-lg">
+              Build a clear understanding of nervous system regulation, the
+              vagus nerve and non-invasive vagus nerve stimulation before
+              exploring more specific questions, patterns and conditions.
             </p>
           </div>
 
-          <div className="mt-14 grid gap-6 md:grid-cols-2 xl:grid-cols-4">
-            {parentPages.map((item) => (
-              <article
-                key={item.title}
-                className="rounded-[2rem] border border-black/5 bg-white/60 p-8 shadow-[0_12px_40px_rgba(31,31,28,0.04)]"
-              >
-                <h3 className="text-2xl font-medium leading-tight text-[#1f1f1c]">
-                  {item.title}
-                </h3>
-
-                <p className="mt-4 text-sm leading-7 text-[#5f5a52] md:text-base">
-                  {item.description}
-                </p>
-
+          <div>
+            <div className="border-t border-black/10">
+              {primaryFoundationArticles.map((article) => (
                 <Link
-                  href={item.href}
-                  className="mt-8 inline-flex text-sm font-medium text-[#1f1f1c] transition hover:opacity-70"
+                  key={article.href}
+                  href={article.href}
+                  className="group block border-b border-black/10 py-8 transition hover:border-black/20"
                 >
-                  {item.linkLabel}
+                  <div className="grid gap-5 sm:grid-cols-[1fr_auto] sm:items-end">
+                    <div className="max-w-2xl">
+                      <h3 className="text-2xl font-medium leading-tight tracking-[-0.035em] text-[#1f1f1c] md:text-3xl">
+                        {article.title}
+                      </h3>
+                      <p className="mt-4 text-sm leading-7 text-[#5f5a52] md:text-base">
+                        {article.description}
+                      </p>
+                    </div>
+
+                    <span className="inline-flex items-center gap-2 text-sm font-medium text-[#1f1f1c] transition group-hover:translate-x-0.5">
+                      {article.linkLabel}
+                      <span aria-hidden="true">→</span>
+                    </span>
+                  </div>
                 </Link>
-              </article>
-            ))}
+              ))}
+            </div>
+
+            <div className="mt-12 border-t border-black/10 pt-8">
+              <h3 className="text-2xl font-medium tracking-[-0.035em] text-[#1f1f1c]">
+                More foundational guides
+              </h3>
+              <p className="mt-4 max-w-2xl text-sm leading-7 text-[#5f5a52] md:text-base">
+                Go deeper into the pathways, concepts and stress responses that
+                shape nervous system regulation.
+              </p>
+
+              <div className="mt-7 grid gap-x-10 gap-y-4 sm:grid-cols-2">
+                {moreFoundationGuides.map((guide) => (
+                  <Link
+                    key={guide.href}
+                    href={guide.href}
+                    className="group inline-flex items-start justify-between gap-4 border-b border-black/8 pb-4 text-base font-medium leading-7 text-[#1f1f1c] transition hover:border-black/20"
+                  >
+                    <span>{guide.title}</span>
+                    <span
+                      aria-hidden="true"
+                      className="shrink-0 transition group-hover:translate-x-0.5"
+                    >
+                      →
+                    </span>
+                  </Link>
+                ))}
+              </div>
+            </div>
           </div>
         </div>
       </section>
 
-      <AuthorityPathways
-        eyebrow="Learning pathways"
-        title="Choose the level of understanding you need next"
-        description="The Learn hub should feel like an edited guide, not a blog archive. These pathways help readers move from category basics into lived patterns, research, and product context."
-        pathways={[
-          {
-            title: "VNS basics",
-            description: "Start with vagus nerve stimulation and the difference between implanted, non-invasive, tVNS, and auricular approaches.",
-            href: "/learn/vagus-nerve-stimulation",
-            linkLabel: "Start with VNS",
-          },
-          {
-            title: "Non-invasive device context",
-            description: "Understand how a wellness-oriented vagus nerve stimulator should be evaluated without borrowing medical claims.",
-            href: "/learn/non-invasive-vagus-nerve-stimulation",
-            linkLabel: "Read nVNS guide",
-          },
-          {
-            title: "Nervous system regulation",
-            description: "Move from device vocabulary into activation, settling, recovery, and the broader autonomic framework.",
-            href: "/learn/nervous-system-regulation",
-            linkLabel: "Explore regulation",
-          },
-          {
-            title: "Research and safety",
-            description: "Use the research layer when you want evidence context, limitations, safety, and responsible interpretation.",
-            href: "/research/topics/safety-and-tolerability",
-            linkLabel: "Review safety",
-          },
-        ]}
-      />
 
       {decisionGuides.length > 0 ? (
         <section className="border-b border-black/5 bg-[#eee7dd]">
@@ -331,47 +314,6 @@ export default function LearnPage() {
           </div>
         </section>
       ) : null}
-
-      <section className="border-b border-black/5 bg-[#f7f4ef]">
-        <div className="mx-auto grid max-w-7xl gap-14 px-6 py-24 md:px-10 md:py-28 lg:grid-cols-[0.95fr_1.05fr] lg:items-start">
-          <div>
-            <p className="text-sm uppercase tracking-[0.18em] text-[#7a756c]">
-              Foundational concepts
-            </p>
-
-            <h2 className="mt-4 max-w-3xl text-3xl font-medium leading-tight tracking-[-0.03em] md:text-5xl">
-              Go deeper into the concepts behind calmer states, resilience, and protective patterns
-            </h2>
-
-            <p className="mt-6 max-w-2xl text-base leading-8 text-[#5f5a52] md:text-lg">
-              These pages help clarify the specific concepts people often
-              encounter once they move beyond the broad introduction pages.
-            </p>
-          </div>
-
-          <div className="grid gap-6 md:grid-cols-1">
-            {foundationPages.map((item) => (
-              <article
-                key={item.title}
-                className="rounded-[2rem] border border-black/5 bg-white/60 p-7 shadow-[0_12px_40px_rgba(31,31,28,0.04)]"
-              >
-                <h3 className="text-xl font-medium leading-tight text-[#1f1f1c]">
-                  {item.title}
-                </h3>
-                <p className="mt-4 text-sm leading-7 text-[#5f5a52] md:text-base">
-                  {item.description}
-                </p>
-                <Link
-                  href={item.href}
-                  className="mt-6 inline-flex text-sm font-medium text-[#1f1f1c] transition hover:opacity-70"
-                >
-                  {item.linkLabel}
-                </Link>
-              </article>
-            ))}
-          </div>
-        </div>
-      </section>
 
       <section className="border-b border-black/5 bg-[#f2eee8]">
         <div className="mx-auto max-w-7xl px-6 py-24 md:px-10 md:py-28">

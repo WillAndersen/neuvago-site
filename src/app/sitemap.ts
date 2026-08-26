@@ -1,6 +1,7 @@
 import type { MetadataRoute } from "next";
 import { SEO_LAUNCH_REVIEW_DATE } from "@/lib/seo/editorial-dates";
 import { getPublishedNorwegianKnowledgeArticles } from "@/content/knowledge/no/registry";
+import { getPublishedDecisionGuides } from "@/content/decision-guides/registry";
 import { getPublishedNorwegianConditionPages } from "@/content/conditions/no/registry";
 
 import { getPublishedNorwegianResearchTopics } from "@/content/research/no/registry";
@@ -121,6 +122,14 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: article.sitemapPriority,
     }));
 
+  const decisionGuideEntries: MetadataRoute.Sitemap =
+    getPublishedDecisionGuides().map((guide) => ({
+      url: new URL(guide.path, siteUrl).toString(),
+      lastModified: new Date(`${guide.modifiedAt}T12:00:00Z`),
+      changeFrequency: guide.changeFrequency,
+      priority: guide.sitemapPriority,
+    }));
+
   const norwegianConditionEntries: MetadataRoute.Sitemap =
     getPublishedNorwegianConditionPages().map((page) => ({
       url: new URL(page.path, siteUrl).toString(),
@@ -155,6 +164,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
   return [
     ...coreEntries,
+    ...decisionGuideEntries,
     ...norwegianKnowledgeEntries,
     ...norwegianConditionEntries,
     ...norwegianResearchTopicEntries,

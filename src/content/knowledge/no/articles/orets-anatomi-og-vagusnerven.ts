@@ -708,6 +708,13 @@ export const oretsAnatomiOgVagusnervenArticle = {
   ],
   relatedLinks: [
     {
+      title: "Ørebasert vs. hals-/nakkebasert VNS",
+      description:
+        "Sett øreanatomi inn i et nøytralt metodekart som forklarer forskjellen mellom aurikulær og cervikal ikke-invasiv VNS.",
+      href: "/no/kunnskap/orebasert-vs-halsbasert-vns",
+      label: "Se metodesammenligningen",
+    },
+    {
       title: "Aurikulær VNS i forskningen",
       description:
         "Gå fra begrepsforklaring og øreanatomi til den samlede forskningsoversikten om taVNS, stimuleringssteder, elektroder, parametere, sham, target engagement og tolkningsgrenser.",

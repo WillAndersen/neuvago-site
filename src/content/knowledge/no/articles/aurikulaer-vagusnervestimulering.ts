@@ -532,6 +532,13 @@ export const aurikulaerVagusnervestimuleringArticle = {
   ],
   relatedLinks: [
     {
+      title: "Ørebasert vs. hals-/nakkebasert VNS",
+      description:
+        "Sammenlign aurikulær taVNS med cervikal nVNS uten å behandle stimuleringsstedene, protokollene eller dokumentasjonen som utskiftbare.",
+      href: "/no/kunnskap/orebasert-vs-halsbasert-vns",
+      label: "Sammenlign metodene",
+    },
+    {
       title: "Aurikulær VNS i forskningen",
       description:
         "Gå fra begrepsforklaring og øreanatomi til den samlede forskningsoversikten om taVNS, stimuleringssteder, elektroder, parametere, sham, target engagement og tolkningsgrenser.",

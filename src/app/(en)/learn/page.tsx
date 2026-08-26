@@ -3,6 +3,7 @@ import Link from "next/link";
 import { JsonLd } from "@/components/seo/json-ld"
 import { AuthorityEditorialHero, AuthorityPathways } from "@/components/authority";
 import { buildPageWithBreadcrumbStructuredData } from "@/lib/seo/structured-data"
+import { getPublishedDecisionGuidesForLocale } from "@/content/decision-guides/registry";
 
 export const metadata: Metadata = {
   title:
@@ -185,7 +186,8 @@ const pathwayCards = [
 ];
 
 export default function LearnPage() {
-    const structuredData = buildPageWithBreadcrumbStructuredData({
+  const decisionGuides = getPublishedDecisionGuidesForLocale("en");
+  const structuredData = buildPageWithBreadcrumbStructuredData({
     title: "Learn | VNS, Non-Invasive VNS, tVNS and Auricular VNS | Neuvago",
     description: "Explore practical explainers on vagus nerve stimulation, non-invasive VNS, tVNS, auricular VNS, the vagus nerve, nervous system regulation, stress, sleep, and recovery.",
     path: "/learn",
@@ -288,6 +290,47 @@ export default function LearnPage() {
           },
         ]}
       />
+
+      {decisionGuides.length > 0 ? (
+        <section className="border-b border-black/5 bg-[#eee7dd]">
+          <div className="mx-auto max-w-7xl px-6 py-24 md:px-10 md:py-28">
+            <div className="max-w-3xl">
+              <p className="text-sm uppercase tracking-[0.18em] text-[#7a756c]">
+                Decision guides
+              </p>
+              <h2 className="mt-4 text-3xl font-medium leading-tight tracking-[-0.03em] md:text-5xl">
+                Compare methods before comparing promises
+              </h2>
+              <p className="mt-6 max-w-2xl text-base leading-8 text-[#5f5a52] md:text-lg">
+                These guides turn anatomy, device design, intended use, evidence, safety, and practical fit into clearer decision criteria. They do not rank brands or declare a universal winner.
+              </p>
+            </div>
+
+            <div className="mt-14 grid gap-6 md:grid-cols-2">
+              {decisionGuides.map((guide) => (
+                <Link
+                  key={guide.path}
+                  href={guide.path}
+                  className="group rounded-[2rem] border border-black/5 bg-white/65 p-8 shadow-[0_16px_52px_rgba(31,31,28,0.05)] transition hover:-translate-y-0.5 hover:bg-white"
+                >
+                  <p className="text-xs font-medium uppercase tracking-[0.18em] text-[#84796e]">
+                    {guide.hubLabel}
+                  </p>
+                  <h3 className="mt-4 text-2xl font-medium leading-tight tracking-[-0.03em] text-[#1f1f1c]">
+                    {guide.hubTitle}
+                  </h3>
+                  <p className="mt-4 text-sm leading-7 text-[#5f5a52] md:text-base">
+                    {guide.hubSummary}
+                  </p>
+                  <span className="mt-7 inline-flex text-sm font-medium underline-offset-4 group-hover:underline">
+                    Open decision guide
+                  </span>
+                </Link>
+              ))}
+            </div>
+          </div>
+        </section>
+      ) : null}
 
       <section className="border-b border-black/5 bg-[#f7f4ef]">
         <div className="mx-auto grid max-w-7xl gap-14 px-6 py-24 md:px-10 md:py-28 lg:grid-cols-[0.95fr_1.05fr] lg:items-start">

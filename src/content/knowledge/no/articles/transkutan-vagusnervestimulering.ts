@@ -464,6 +464,13 @@ export const transkutanVagusnervestimuleringArticle = {
   ],
   relatedLinks: [
     {
+      title: "Ørebasert vs. hals-/nakkebasert VNS",
+      description:
+        "Se hvorfor aurikulær og cervikal stimulering krever ulike spørsmål om anatomi, elektroder, protokoll og target engagement.",
+      href: "/no/kunnskap/orebasert-vs-halsbasert-vns",
+      label: "Åpne metodesammenligningen",
+    },
+    {
       title: "Aurikulær VNS i forskningen",
       description:
         "Gå fra begrepsforklaring og øreanatomi til den samlede forskningsoversikten om taVNS, stimuleringssteder, elektroder, parametere, sham, target engagement og tolkningsgrenser.",

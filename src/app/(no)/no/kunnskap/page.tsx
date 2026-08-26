@@ -3,6 +3,7 @@ import Link from "next/link";
 
 import { JsonLd } from "@/components/seo/json-ld";
 import { getPublishedNorwegianKnowledgeArticles } from "@/content/knowledge/no/registry";
+import { getPublishedDecisionGuidesForLocale } from "@/content/decision-guides/registry";
 import { buildNorwegianKnowledgeHubStructuredData } from "@/lib/seo/knowledge-article";
 
 const title = "Forstå nervesystemet ditt.";
@@ -88,6 +89,7 @@ const faq = [
 
 export default function NorwegianKnowledgeHubPage() {
   const articles = getPublishedNorwegianKnowledgeArticles();
+  const decisionGuides = getPublishedDecisionGuidesForLocale("no");
   const structuredData = buildNorwegianKnowledgeHubStructuredData();
 
   return (
@@ -180,6 +182,47 @@ export default function NorwegianKnowledgeHubPage() {
           </div>
         </div>
       </section>
+
+      {decisionGuides.length > 0 ? (
+        <section className="border-b border-black/5 bg-[#f2eee8] px-5 py-16 sm:px-8 lg:px-12 lg:py-20">
+          <div className="mx-auto max-w-[88rem]">
+            <div className="max-w-3xl">
+              <p className="text-xs font-medium uppercase tracking-[0.22em] text-[#7b7167]">
+                Beslutningsguider
+              </p>
+              <h2 className="mt-4 text-3xl font-medium tracking-[-0.04em] sm:text-5xl">
+                Sammenlign metode og dokumentasjon før du sammenligner løfter
+              </h2>
+              <p className="mt-6 text-base leading-8 text-[#5f5a52] sm:text-lg">
+                Guidene gjør anatomi, enhetsdesign, tiltenkt bruk, dokumentasjon, sikkerhet og praktisk bruk om til tydelige vurderingskriterier. De rangerer ikke merker og kårer ikke en universell vinner.
+              </p>
+            </div>
+
+            <div className="mt-10 grid gap-5 md:grid-cols-2">
+              {decisionGuides.map((guide) => (
+                <Link
+                  key={guide.path}
+                  href={guide.path}
+                  className="group rounded-[1.75rem] border border-black/6 bg-[#fbf8f2] p-6 shadow-[0_18px_64px_rgba(31,31,28,0.06)] transition hover:-translate-y-0.5 hover:shadow-[0_24px_90px_rgba(31,31,28,0.1)] sm:p-7"
+                >
+                  <p className="text-[0.68rem] font-medium uppercase tracking-[0.22em] text-[#8a7f72]">
+                    {guide.hubLabel}
+                  </p>
+                  <h3 className="mt-4 text-2xl font-medium tracking-[-0.04em]">
+                    {guide.hubTitle}
+                  </h3>
+                  <p className="mt-5 text-base leading-7 text-[#5f5a52]">
+                    {guide.hubSummary}
+                  </p>
+                  <span className="mt-6 inline-flex text-sm font-medium underline-offset-4 group-hover:underline">
+                    Åpne beslutningsguiden
+                  </span>
+                </Link>
+              ))}
+            </div>
+          </div>
+        </section>
+      ) : null}
 
       <section className="px-5 py-16 sm:px-8 lg:px-12 lg:py-20">
         <div className="mx-auto max-w-[88rem]">

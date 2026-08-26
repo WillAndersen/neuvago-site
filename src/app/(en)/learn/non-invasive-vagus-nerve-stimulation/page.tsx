@@ -189,6 +189,13 @@ const boundaries = [
 
 const relatedLearning = [
   {
+    title: "Ear-based vs. neck-based VNS",
+    description:
+      "Use a neutral method comparison to separate auricular taVNS from cervical nVNS before evaluating devices or claims.",
+    href: "/learn/ear-vs-neck-vagus-nerve-stimulation",
+    linkLabel: "Compare the methods",
+  },
+  {
     title: "Vagus nerve stimulation",
     description:
       "The broader category pillar explaining implanted VNS, non-invasive VNS, auricular approaches, and responsible wellness positioning.",

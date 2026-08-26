@@ -171,6 +171,13 @@ const neuvagoFit = [
 
 const relatedLearning = [
   {
+    title: "Ear-based vs. neck-based VNS",
+    description:
+      "See why auricular and cervical stimulation need different anatomy, hardware, target-engagement, and protocol questions.",
+    href: "/learn/ear-vs-neck-vagus-nerve-stimulation",
+    linkLabel: "Compare ear and neck VNS",
+  },
+  {
     title: "Auricular vagus nerve stimulation",
     description:
       "Go deeper into the ear-based branch of tVNS, including taVNS, auricular placement language, comfort, and responsible claims.",

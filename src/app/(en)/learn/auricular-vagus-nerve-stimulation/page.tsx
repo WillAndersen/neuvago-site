@@ -193,6 +193,13 @@ const neuvagoFit = [
 
 const internalPathways = [
   {
+    title: "Ear-based vs. neck-based VNS",
+    description:
+      "Compare auricular taVNS with cervical nVNS without treating the two access sites, protocols, or evidence bases as interchangeable.",
+    href: "/learn/ear-vs-neck-vagus-nerve-stimulation",
+    linkLabel: "Open the method comparison",
+  },
+  {
     title: "Non-invasive VNS guide",
     description:
       "Step back to the broader device-category guide covering nVNS, tVNS, taVNS, external stimulation, and wellness boundaries.",

@@ -17,8 +17,10 @@ export type ConditionsV2Image = {
 export type ConditionsV2Content = {
   hero: {
     visible: boolean;
+    eyebrow: string;
     title: string;
-    description?: string;
+    introduction: string;
+    supportingCopy: string;
     primaryCta: ConditionsV2Link;
   };
   featured: {
@@ -53,7 +55,12 @@ export type ConditionsV2Content = {
 export const conditionsV2Content = {
   hero: {
     visible: true,
+    eyebrow: "CONDITIONS",
     title: "Explore conditions through the nervous system.",
+    introduction:
+      "Browse clear, science-informed articles on sleep problems, stress, anxiety, burnout, migraine and headache, gut–brain function, depression and mood, chronic pain and related concerns.",
+    supportingCopy:
+      "Each article begins with the condition or concern itself, then explores the relevant nervous system, vagus nerve and research context in clear, accessible language.",
     primaryCta: {
       label: "Browse conditions",
       href: "#featured-conditions",

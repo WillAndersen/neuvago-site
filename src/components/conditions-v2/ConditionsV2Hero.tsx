@@ -15,17 +15,23 @@ export function ConditionsV2Hero({
 
   return (
     <section className="border-b border-black/5 bg-[#f7f4ef]">
-      <div className="mx-auto flex min-h-[68vh] max-w-[92rem] items-center px-5 py-20 sm:px-8 lg:px-12 lg:py-28">
-        <div className="max-w-5xl">
-          <h1 className="max-w-[15ch] text-[clamp(3.25rem,8vw,7.75rem)] font-medium leading-[0.92] tracking-[-0.07em] text-[#1f1f1c]">
+      <div className="mx-auto max-w-[92rem] px-5 py-16 sm:px-8 sm:py-20 lg:flex lg:min-h-[70vh] lg:items-center lg:px-12 lg:py-28">
+        <div className="max-w-6xl">
+          <p className="text-xs font-medium uppercase tracking-[0.22em] text-[#7a756c] sm:text-sm">
+            {content.eyebrow}
+          </p>
+
+          <h1 className="mt-5 max-w-[20ch] text-[clamp(3.25rem,7vw,7.25rem)] font-medium leading-[0.94] tracking-[-0.065em] text-[#1f1f1c]">
             {content.title}
           </h1>
 
-          {content.description ? (
-            <p className="mt-8 max-w-2xl text-base leading-8 text-[#5f5a52] sm:text-lg">
-              {content.description}
-            </p>
-          ) : null}
+          <p className="mt-8 max-w-[54rem] text-base leading-8 text-[#4f4b45] sm:text-lg lg:text-xl lg:leading-9">
+            {content.introduction}
+          </p>
+
+          <p className="mt-7 max-w-[47rem] border-l border-black/15 pl-5 text-sm leading-7 text-[#686158] sm:text-base sm:leading-8">
+            {content.supportingCopy}
+          </p>
 
           <Link
             href={content.primaryCta.href}

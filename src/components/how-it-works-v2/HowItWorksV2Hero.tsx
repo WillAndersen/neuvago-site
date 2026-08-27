@@ -67,7 +67,8 @@ export function HowItWorksV2Hero({
                 src={content.mobileImage.src}
                 alt={content.mobileImage.alt}
                 fill
-                priority
+                loading="eager"
+                fetchPriority="high"
                 className="object-cover md:hidden"
                 sizes="(max-width: 767px) 92vw, 0px"
               />
@@ -75,7 +76,8 @@ export function HowItWorksV2Hero({
                 src={content.desktopImage.src}
                 alt={content.desktopImage.alt}
                 fill
-                priority
+                loading="eager"
+                fetchPriority="high"
                 className="hidden object-cover md:block"
                 sizes="(max-width: 1024px) 92vw, 44vw"
               />

@@ -47,7 +47,7 @@ export function Home03Faq({
         </div>
 
         <p className="mt-7 text-sm text-[#5f5a52]">
-          Need more help?{" "}
+          {content.supportPrompt}{" "}
           <Link
             href={content.supportCta.href}
             className="font-medium text-[#1f1f1c] underline underline-offset-4"

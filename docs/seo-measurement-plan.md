@@ -294,3 +294,36 @@ Prioritize in this order:
 4. Product/how-it-works commercial-intent refinements if device/stimulator terms appear.
 5. New page only if a query family has impressions and no suitable existing landing page.
 
+## Wave 2C.0A — organic conversion event taxonomy
+
+The public English and Norwegian route groups mount a provider-neutral client
+bridge. The bridge does not inject a new analytics vendor, create cookies or
+send personal data on its own. If an externally configured `window.gtag` is
+available, the bridge sends the event through it. Otherwise it pushes a custom
+event object to `window.dataLayer` and dispatches the browser event
+`neuvago:conversion` for future integration and QA.
+
+| Event | Trigger | Primary use |
+|---|---|---|
+| `neuvago_how_it_works_click` | Internal click to the English or Norwegian How It Works page | Measure movement from education and customer-intent pages into product mechanics |
+| `neuvago_product_click` | Internal click to `/product`, `/no/produkt` or the Norwegian redirect path | Measure qualified product discovery |
+| `neuvago_buyer_guide_click` | Internal click to either VNS buyer guide | Measure decision-support engagement |
+| `neuvago_buyer_checklist_download` | Click to either locked buyer-checklist PDF | Measure high-intent resource use |
+| `neuvago_launch_access_click` | Click to `/shop` whose visible label refers to launch access or the waitlist | Measure prelaunch commercial intent |
+| `neuvago_shop_click` | Other click to `/shop` | Preserve measurement when commerce wording changes |
+| `neuvago_launch_signup_submit` | Email-form submit attempt on `/shop` | Measure launch-list form intent; successful API completion should be added as a separate event when the form is next revised |
+
+Each event carries only non-personal page context:
+
+- `conversion_target`
+- `source_path`
+- `destination_path`
+- `source_locale`
+- `source_page_group`
+- `source_section`
+- `link_text`
+
+Do not add email addresses, account IDs, health information, free-text form
+content or other personal data to these event parameters. Acquisition source,
+medium and campaign should continue to come from the configured analytics
+provider rather than being inferred by the site code.

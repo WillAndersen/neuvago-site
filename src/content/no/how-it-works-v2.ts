@@ -17,9 +17,9 @@ export const howItWorksV2ContentNo = {
     eyebrow: "SLIK FUNGERER DET",
     title: "Slik stimulerer Neuvago vagusnerven.",
     mainIntroduction:
-      "Neuvago leverer skånsomme, justerbare elektriske impulser gjennom en øreelektrode ved det ytre øret for å stimulere den aurikulære grenen av vagusnerven. Disse sensoriske signalene beveger seg mot hjernestammen, der vagal informasjon videresendes til større nettverk som er involvert i autonom regulering og kommunikasjon mellom hjerne og kropp.",
+      "Neuvago leverer skånsomme, justerbare elektriske impulser gjennom en øreelektrode ved det ytre øret. Enheten er utviklet som en ørebasert VNS-enhet, og forklaringen nedenfor viser den tilsiktede signalveien uten å være dokumentasjon på at det tilsiktede nervemålet faktisk er påvirket eller at den enkelte bruker får en bestemt effekt.",
     benefitStatement:
-      "En ikke-invasiv tilnærming utviklet for å støtte bedre søvn, roligere responser på stress i hverdagen, fokusert tid og restitusjon.",
+      "En ikke-invasiv, ørebasert tilnærming med fire moduser på 20 minutter for strukturerte velværerutiner.",
     primaryCta: howItWorksHeroPrimaryCtaNo,
     secondaryCta: {
       label: "Utforsk produktet",
@@ -44,7 +44,7 @@ export const howItWorksV2ContentNo = {
     eyebrow: "SIGNALVEIEN",
     title: "Fra det ytre øret til større autonome nettverk.",
     description:
-      "Neuvago stimulerer den aurikulære grenen av vagusnerven gjennom det ytre øret. Sekvensen nedenfor viser hvordan sensoriske signaler beveger seg mot hjernestammen og videre inn i større autonome nettverk.",
+      "Sekvensen nedenfor viser den tilsiktede signalveien for ørebasert stimulering. Den er en forklaringsmodell og dokumenterer ikke i seg selv at det tilsiktede nervemålet er påvirket eller at brukeren får en bestemt effekt.",
     steps: [
       {
         id: "outer-ear",
@@ -56,19 +56,19 @@ export const howItWorksV2ContentNo = {
         id: "vagus-nerve",
         label: "Vagusnerven",
         description:
-          "Impulsene stimulerer den aurikulære grenen av vagusnerven, som fører sensorisk informasjon fra deler av det ytre øret.",
+          "Plasseringen er valgt for å rette stimuleringen mot områder som brukes i aurikulær VNS. Ørets innervasjon er sammensatt, og sensasjon alene dokumenterer ikke at det tilsiktede nervemålet er påvirket.",
       },
       {
         id: "brainstem",
         label: "Hjernestammen",
         description:
-          "Signalene beveger seg mot hjernestammen, der vagal sensorisk informasjon mottas og videresendes.",
+          "I taVNS-forskning undersøkes hvordan sensoriske signaler fra aurikulær stimulering kan nå og påvirke signalbehandling i hjernestammen.",
       },
       {
         id: "autonomic-networks",
         label: "Autonome nettverk",
         description:
-          "Fra hjernestammen er vagale nervebaner koblet til større nettverk som er involvert i kommunikasjon mellom hjerne og kropp og i kroppens skifte mellom aktivering, hvile og restitusjon.",
+          "Forskning undersøker videre forbindelser til større autonome nettverk. Et foreslått mekanismeforløp er ikke automatisk et klinisk eller praktisk utfall.",
       },
     ],
   },
@@ -79,7 +79,7 @@ export const howItWorksV2ContentNo = {
     description:
       "Vagusnerven er en sentral nervebane i det parasympatiske nervesystemet. Den fører signaler mellom hjernen og kroppen og bidrar til prosessene som hjelper oss med å respondere på belastning, finne ro og restituere.",
     productConnection:
-      "Neuvago er utviklet for å støtte disse daglige reguleringsprosessene gjennom ikke-invasiv, ørebasert vagusnervestimulering.",
+      "Neuvago gir et ikke-invasivt, ørebasert format for korte, strukturerte velværeøkter i hverdagen.",
     areas: [
       {
         id: "better-sleep",
@@ -109,7 +109,7 @@ export const howItWorksV2ContentNo = {
     researchBridge: {
       title: "Fordyp deg i vitenskapen.",
       description:
-        "Utforsk forskning på transkutan aurikulær vagusnervestimulering (taVNS), inkludert søvn, stress, autonom funksjon, HRV, nervebaner i hjernen, sikkerhet og tolerabilitet.",
+        "Utforsk forskning på transkutan aurikulær vagusnervestimulering (taVNS), inkludert søvn, stress, autonom funksjon, HRV, nervebaner i hjernen, sikkerhet og tolerabilitet. Funnene er metode- og protokollavhengige og dokumenterer ikke automatisk en bestemt effekt av Neuvago.",
       cta: {
         label: "Utforsk forskningen",
         href: "/no/forskning",

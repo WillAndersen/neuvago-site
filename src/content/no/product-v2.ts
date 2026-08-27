@@ -30,7 +30,7 @@ export const productV2ContentNo = {
     title:
       "En ikke-invasiv vagusnervestimulator for daglig bruk.",
     description:
-      "Utviklet for å støtte bedre søvn, roligere responser på stress i hverdagen, fokusert tid og restitusjon.",
+      "Utviklet for korte, strukturerte velværerutiner rundt nedtrapping, hverdagsstress, fokusert tid og restitusjon.",
     technologyDescription:
       "Neuvago gir skånsom, justerbar stimulering gjennom en øreelektrode ved det ytre øret, med fire 20-minutters moduser utviklet for ulike behov og situasjoner.",
     primaryCta: heroPurchaseCtaNo,
@@ -59,9 +59,9 @@ export const productV2ContentNo = {
     ...productV2Content.benefits,
     eyebrow: "Hvorfor Neuvago",
     title:
-      "Utviklet for hvordan du ønsker å føle deg.",
+      "Fire moduser for ulike øyeblikk i hverdagen.",
     description:
-      "Neuvago kombinerer fire stimuleringsmoduser med justerbar intensitet og gir deg en enkel måte å støtte bedre søvn, roligere responser på stress i hverdagen, fokusert tid og restitusjon.",
+      "Neuvago kombinerer fire stimuleringsmønstre med justerbar intensitet, slik at du kan bygge korte velværeøkter rundt nedtrapping, pauser, fokus og restitusjon.",
     image: {
       ...productV2Content.benefits.image,
       alt:
@@ -69,24 +69,24 @@ export const productV2ContentNo = {
     },
     items: [
       {
-        title: "Bedre søvn",
+        title: "Søvn og nedtrapping",
         description:
-          "Støtt overgangen fra årvåkenhet til hvile, og bidra til å skape forholdene for dypere avspenning og bedre søvnkvalitet.",
+          "Bruk Neuvago som del av en rolig kveldsrutine når du vil markere overgangen fra aktivitet til hvile.",
       },
       {
         title: "Stress og ro",
         description:
-          "Støtt en roligere respons på stress i hverdagen og hjelp nervesystemet med å bevege seg mot en mer regulert tilstand.",
+          "Lag rom for en kort pause og en roligere rutine i perioder med mye aktivitet eller hverdagsstress.",
       },
       {
-        title: "Fokus og mental klarhet",
+        title: "Fokus og tilstedeværelse",
         description:
-          "Skap en roligere indre tilstand som kan støtte oppmerksomhet, mental klarhet og fokusert tid.",
+          "Bruk en strukturert økt før meditasjon, arbeid eller andre øyeblikk der du vil samle oppmerksomheten.",
       },
       {
-        title: "Restitusjon",
+        title: "Hvile og restitusjon",
         description:
-          "Støtt parasympatisk aktivitet og kroppens naturlige prosesser for hvile, restitusjon og autonom balanse.",
+          "Gjør Neuvago til et fast holdepunkt i rutiner for pauser, hvile og restitusjon.",
       },
     ],
   },
@@ -94,9 +94,9 @@ export const productV2ContentNo = {
   howItWorks: {
     ...productV2Content.howItWorks,
     eyebrow: "Slik fungerer det",
-    title: "Slik stimulerer Neuvago vagusnerven.",
+    title: "Ørebasert stimulering i fire trinn.",
     description:
-      "Neuvago gir skånsomme, justerbare elektriske impulser gjennom en øreelektrode ved det ytre øret for å stimulere den aurikulære grenen av vagusnerven. Disse sensoriske signalene går mot hjernestammen, der vagal informasjon formidles videre til større nettverk som er involvert i autonom regulering og kommunikasjon mellom hjernen og kroppen.",
+      "Neuvago leverer skånsomme, justerbare elektriske impulser gjennom en øreelektrode ved det ytre øret. Enheten er utviklet som en ørebasert VNS-enhet; flyten nedenfor viser den tilsiktede signalveien uten å være dokumentasjon på at det tilsiktede nervemålet faktisk er påvirket eller at brukeren får en bestemt effekt.",
     image: {
       ...productV2Content.howItWorks.image,
       alt:
@@ -113,19 +113,19 @@ export const productV2ContentNo = {
         label: "02",
         title: "Vagusnerven",
         description:
-          "Impulsene stimulerer den aurikulære grenen av vagusnerven, som fører sensorisk informasjon fra deler av det ytre øret.",
+          "Plasseringen er valgt for å rette stimuleringen mot områder som brukes i aurikulær VNS. Sensasjon alene dokumenterer ikke at det tilsiktede nervemålet er påvirket.",
       },
       {
         label: "03",
         title: "Hjernestammen",
         description:
-          "Signalene går mot hjernestammen, der vagal sensorisk informasjon mottas og formidles videre.",
+          "I taVNS-forskning undersøkes hvordan sensoriske signaler fra aurikulær stimulering kan nå og påvirke signalbehandling i hjernestammen.",
       },
       {
         label: "04",
         title: "Autonome nettverk",
         description:
-          "Fra hjernestammen kobles vagale nervebaner til større nettverk som er involvert i kommunikasjon mellom hjernen og kroppen og kroppens overgang mellom aktivering, hvile og restitusjon.",
+          "Forskning undersøker videre forbindelser til større autonome nettverk. Et foreslått mekanismeforløp er ikke automatisk et klinisk eller praktisk utfall.",
       },
     ],
     primaryCta: {
@@ -146,7 +146,7 @@ export const productV2ContentNo = {
     description:
       "Sleep, Relax, Meditation og Relief bruker ulike stimuleringsmønstre for forskjellige behov og situasjoner. Hver modus varer i 20 minutter og har 30 justerbare intensitetsnivåer.",
     detailLabels: {
-      intendedUse: "Utviklet for",
+      intendedUse: "Beregnet for",
       stimulationPattern: "Stimuleringsmønster",
     },
     items: [
@@ -154,7 +154,7 @@ export const productV2ContentNo = {
         id: "sleep",
         name: "Sleep",
         intendedUse:
-          "Utviklet for nedtrapping om kvelden, hvile og bedre søvn.",
+          "Kveldsrutiner, rolig nedtrapping og overgang mot hvile.",
         stimulationPattern:
           "Sleep veksler mellom raskere og langsommere stimuleringsrytmer og skaper et skånsomt, skiftende mønster.",
         sensation:
@@ -164,7 +164,7 @@ export const productV2ContentNo = {
         id: "relax",
         name: "Relax",
         intendedUse:
-          "Utviklet for stress i hverdagen, avspenning og en roligere tilstand.",
+          "Korte pauser, avspenning og roligere øyeblikk i hverdagen.",
         stimulationPattern:
           "Relax følger en jevn rytme med fire sekunder stimulering etterfulgt av fire sekunder pause.",
         sensation:
@@ -174,7 +174,7 @@ export const productV2ContentNo = {
         id: "meditation",
         name: "Meditation",
         intendedUse:
-          "Utviklet for meditasjon, fokus og konsentrasjon.",
+          "Meditasjon, tilstedeværelse og fokusert tid.",
         stimulationPattern:
           "Meditation følger den samme rytmen med fire sekunder på og fire sekunder av som Relax, med et tettere pulsmønster.",
         sensation:
@@ -184,7 +184,7 @@ export const productV2ContentNo = {
         id: "relief",
         name: "Relief",
         intendedUse:
-          "Utviklet for øyeblikk med spenning og ubehag.",
+          "En langsommere, mer tydelig stimuleringsrytme og en annen sanseprofil.",
         stimulationPattern:
           "Relief bruker langsomme, tydelige pulser etterfulgt av fire sekunder pause.",
         sensation:
@@ -268,14 +268,14 @@ export const productV2ContentNo = {
   research: {
     ...productV2Content.research,
     eyebrow: "FORSKNING",
-    title: "Vitenskapen bak ørebasert vagusnervestimulering.",
+    title: "Forskningsfeltet rundt ørebasert vagusnervestimulering.",
     description:
-      "Neuvago bruker transkutan aurikulær vagusnervestimulering (taVNS), en ikke-invasiv tilnærming som gir skånsom elektrisk stimulering gjennom det ytre øret. Forskning utforsker taVNS innen områder som søvn, stress, autonom funksjon, hjertefrekvensvariabilitet (HRV), nervebaner i hjernen, sikkerhet og tolerabilitet.",
+      "Neuvago er utviklet som en ørebasert VNS-enhet. Forskning på transkutan aurikulær vagusnervestimulering (taVNS) undersøker blant annet søvn, stress, autonom funksjon, hjertefrekvensvariabilitet (HRV), nervebaner i hjernen, sikkerhet og tolerabilitet. Funnene kan ikke automatisk overføres til en bestemt effekt av Neuvago.",
     areas: [
       {
-        title: "Søvn og stress",
+        title: "Søvn, stress og rutiner",
         description:
-          "Forskning utforsker taVNS i sammenheng med søvnkvalitet, stressresponser og restitusjon.",
+          "Studier undersøker taVNS i sammenheng med søvnrelaterte mål, stressresponser og restitusjon i ulike populasjoner og protokoller.",
       },
       {
         title: "Autonom funksjon og HRV",
@@ -285,7 +285,7 @@ export const productV2ContentNo = {
       {
         title: "Nervebaner i hjernen",
         description:
-          "Nevroavbildningsforskning på mennesker har undersøkt hvordan aurikulær stimulering aktiverer sentrale nervebaner knyttet til vagusnerven.",
+          "Nevroavbildningsforskning på mennesker har undersøkt responser i sentrale nervebaner under aurikulær stimulering.",
       },
       {
         title: "Sikkerhet og tolerabilitet",
@@ -298,7 +298,7 @@ export const productV2ContentNo = {
       href: "/no/forskning",
     },
     contextNote:
-      "Forskningen som presenteres, gjelder VNS og taVNS som forskningsfelt. Funn varierer mellom enheter, stimuleringsprotokoller og studiepopulasjoner.",
+      "Forskningen som presenteres, gjelder VNS og taVNS som forskningsfelt. Funn varierer mellom enheter, stimuleringsprotokoller og studiepopulasjoner og dokumenterer ikke automatisk en bestemt effekt av Neuvago.",
   },
 
   buyBox: {
@@ -450,12 +450,12 @@ export const productV2ContentNo = {
       {
         question: "Hva er Neuvago?",
         answer:
-          "Neuvago er en ikke-invasiv vagusnervestimulator utviklet for daglig bruk. Den stimulerer den aurikulære grenen av vagusnerven gjennom en venstre øreelektrode ved det ytre øret og tilbyr fire moduser på 20 minutter med 30 justerbare intensitetsnivåer.",
+          "Neuvago er en ikke-invasiv, ørebasert vagusnervestimulator for generell velvære og strukturerte hverdagsrutiner. Den leverer justerbar elektrisk stimulering gjennom en venstre øreelektrode ved det ytre øret og tilbyr fire moduser på 20 minutter med 30 intensitetsnivåer.",
       },
       {
-        question: "Hva er Neuvago utviklet for å støtte?",
+        question: "Hvordan kan Neuvago inngå i en velværerutine?",
         answer:
-          "Neuvago er utviklet for å støtte bedre søvn, roligere responser på stress i hverdagen, fokusert tid og restitusjon. Den kan brukes når du ønsker å roe ned, skape en roligere tilstand, forberede deg på søvn, fokusere eller gi rom for hvile og restitusjon.",
+          "Neuvago kan brukes som del av velværerutiner for nedtrapping før hvile, korte pauser, meditasjon, fokusert tid og restitusjon. Produktet er ikke ment å diagnostisere, behandle, kurere eller forebygge sykdom.",
       },
       {
         question: "Hvordan føles stimuleringen?",
@@ -465,7 +465,7 @@ export const productV2ContentNo = {
       {
         question: "Hva er de fire stimuleringsmodusene?",
         answer:
-          "Neuvago inkluderer fire stimuleringsmoduser: Sleep, Relax, Meditation og Relief. Sleep veksler mellom raskere og langsommere stimuleringsrytmer og er utviklet for nedtrapping om kvelden, hvile og bedre søvn. Relax bruker en skånsom rytme med fire sekunder stimulering etterfulgt av fire sekunder pause, utviklet for stress i hverdagen, avspenning og en roligere tilstand. Meditation bruker den samme rytmen med fire sekunder på og fire sekunder av, med et tettere pulsmønster, utviklet for meditasjon, fokus og konsentrasjon. Relief bruker langsommere og tydeligere pulser etterfulgt av fire sekunder pause, utviklet for øyeblikk med spenning og ubehag. Hver modus varer i 20 minutter, og stimuleringsintensiteten kan justeres direkte på enheten.",
+          "Neuvago inkluderer fire stimuleringsmoduser: Sleep, Relax, Meditation og Relief. Sleep veksler mellom raskere og langsommere stimuleringsrytmer og er beregnet for kveldsrutiner og nedtrapping. Relax bruker en skånsom rytme med fire sekunder stimulering etterfulgt av fire sekunder pause, beregnet for avspenning og korte pauser. Meditation bruker den samme rytmen med fire sekunder på og fire sekunder av, med et tettere pulsmønster, beregnet for meditasjon og fokusert tid. Relief bruker langsommere og tydeligere pulser etterfulgt av fire sekunder pause og gir en annen sanseprofil enn de øvrige modusene. Hver modus varer i 20 minutter, og stimuleringsintensiteten kan justeres direkte på enheten.",
       },
       {
         question: "Hvor lenge varer en Neuvago-økt?",
@@ -480,12 +480,12 @@ export const productV2ContentNo = {
       {
         question: "Er ett år med Neuvago App inkludert?",
         answer:
-          "Ja. Hver Neuvago-enhet inkluderer ett års tilgang til Neuvago App, med profesjonelt veiledede økter og pusteøvelser for søvn, stress, fokus og restitusjon.",
+          "Ja. Hver Neuvago-enhet inkluderer ett års tilgang til Neuvago App, med profesjonelt veiledede økter og pusteøvelser organisert rundt søvn, stress, fokus og restitusjon.",
       },
       {
         question: "Hva sier forskningen om taVNS?",
         answer:
-          "Vagusnervestimulering har blitt studert i flere tiår, og en voksende mengde fagfellevurdert forskning undersøker transkutan aurikulær vagusnervestimulering (taVNS). Forskningen omfatter systematiske oversikter, metaanalyser, randomiserte studier og nevroavbildning hos mennesker innen områder som søvn, stress, autonom funksjon, hjertefrekvensvariabilitet (HRV), nervebaner i hjernen, hodepine, tarm–hjerne-funksjon, sikkerhet og tolerabilitet. Funnene er oppmuntrende på flere områder, samtidig som resultatene varierer mellom enheter, stimuleringsprotokoller og studiepopulasjoner.",
+          "Vagusnervestimulering har blitt studert i flere tiår, og fagfellevurdert forskning undersøker transkutan aurikulær vagusnervestimulering (taVNS) gjennom systematiske oversikter, metaanalyser, randomiserte studier og nevroavbildning hos mennesker. Resultatene varierer mellom enheter, stimuleringsprotokoller, kontrollbetingelser og studiepopulasjoner og er ikke automatisk dokumentasjon for en bestemt effekt av Neuvago.",
         answerLink: {
           label: "Utforsk forskningen",
           href: "/no/forskning",

@@ -4,17 +4,6 @@ type Home03StimulationModesProps = {
   content: typeof homepage03Content.stimulationModes;
 };
 
-const modeDescriptions: Record<string, string> = {
-  Sleep:
-    "For evening wind-down, rest and better sleep.",
-  Relax:
-    "For everyday stress, relaxation and a calmer state.",
-  Meditation:
-    "For meditation, calm focus and mental clarity.",
-  Relief:
-    "For moments of tension and discomfort.",
-};
-
 export function Home03StimulationModes({
   content,
 }: Home03StimulationModesProps) {
@@ -36,14 +25,14 @@ export function Home03StimulationModes({
         <div className="grid gap-px overflow-hidden rounded-[1.7rem] border border-white/12 bg-white/12 sm:grid-cols-2 lg:grid-cols-4">
           {content.modes.map((mode) => (
             <article
-              key={mode}
+              key={mode.name}
               className="bg-[#40362e] px-5 py-7 text-center sm:px-6 lg:py-9"
             >
               <h3 className="text-2xl font-medium tracking-[-0.04em] text-white sm:text-3xl">
-                {mode}
+                {mode.name}
               </h3>
               <p className="mx-auto mt-3 max-w-[18rem] text-sm leading-6 text-[#d9cfc4]">
-                {modeDescriptions[mode]}
+                {mode.description}
               </p>
             </article>
           ))}

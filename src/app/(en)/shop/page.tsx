@@ -102,7 +102,8 @@ export default function ShopPage() {
                 src="/images/neuvago/product-hero-desktop.webp"
                 alt="Neuvago non-invasive vagus nerve stimulation device."
                 fill
-                priority
+                loading="eager"
+                fetchPriority="high"
                 className="object-cover object-[72%_center]"
                 sizes="(max-width: 1024px) 92vw, 46vw"
               />

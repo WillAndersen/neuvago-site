@@ -6,6 +6,31 @@ type ProductV2HeroProps = {
   content: typeof productV2Content.hero;
 };
 
+const controlledCompound = "vagusnervestimulator";
+
+function renderProductHeroTitle(title: string) {
+  const compoundIndex = title.indexOf(controlledCompound);
+
+  if (compoundIndex === -1) {
+    return title;
+  }
+
+  return (
+    <>
+      {title.slice(0, compoundIndex)}
+      <span
+        data-neuvago-controlled-compound={controlledCompound}
+        className="hyphens-none [overflow-wrap:normal]"
+      >
+        {"vagusnerve"}
+        <wbr />
+        {"stimulator"}
+      </span>
+      {title.slice(compoundIndex + controlledCompound.length)}
+    </>
+  );
+}
+
 export function ProductV2Hero({ content }: ProductV2HeroProps) {
   return (
     <section className="relative isolate overflow-hidden border-b border-black/5 bg-[#f7f4ef] text-[#1f1f1c]">
@@ -17,8 +42,8 @@ export function ProductV2Hero({ content }: ProductV2HeroProps) {
             {content.eyebrow}
           </p>
 
-          <h1 className="max-w-[15ch] text-balance text-[clamp(2.85rem,11.5vw,5.3rem)] font-medium leading-[0.94] tracking-[-0.06em] text-[#1f1f1c] sm:text-[clamp(4rem,8.5vw,6.5rem)] sm:leading-[0.9] lg:text-[clamp(4.8rem,6.2vw,7.2rem)] lg:leading-[0.88] lg:tracking-[-0.075em]">
-            {content.title}
+          <h1 className="max-w-[15ch] [hyphens:manual] [overflow-wrap:anywhere] text-balance text-[clamp(2.85rem,11.5vw,5.3rem)] font-medium leading-[0.94] tracking-[-0.06em] text-[#1f1f1c] sm:text-[clamp(4rem,8.5vw,6.5rem)] sm:leading-[0.9] lg:text-[clamp(4.8rem,6.2vw,7.2rem)] lg:leading-[0.88] lg:tracking-[-0.075em]">
+            {renderProductHeroTitle(content.title)}
           </h1>
 
           <div className="mt-7 overflow-hidden rounded-[1.9rem] border border-white/55 bg-[#eee7dc] shadow-[0_26px_90px_rgba(42,34,24,0.12)] lg:hidden">

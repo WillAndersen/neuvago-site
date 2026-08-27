@@ -17,6 +17,11 @@ export type Homepage03FaqItem = HomepageFaqItem & {
   answerLink?: Homepage03Link;
 };
 
+export type Homepage03Mode = {
+  name: string;
+  description: string;
+};
+
 const homeProductCta = {
   label: commerceContent.ctaLabel,
   href: commerceContent.shopHref,
@@ -105,7 +110,7 @@ type Homepage03Content = {
     eyebrow: string;
     title: string;
     description: string;
-    modes: string[];
+    modes: Homepage03Mode[];
   };
   vagusNerve: {
     visible: boolean;
@@ -136,6 +141,7 @@ type Homepage03Content = {
     visible: boolean;
     title: string;
     items: Homepage03FaqItem[];
+    supportPrompt: string;
     supportCta: HomepageCta;
   };
   finalCta: typeof homepageContent.finalCta;
@@ -220,7 +226,28 @@ export const homepage03Content = {
     title: "Four modes for different needs.",
     description:
       "Choose between four dedicated stimulation modes designed for different moments and routines.",
-    modes: ["Sleep", "Relax", "Meditation", "Relief"],
+    modes: [
+      {
+        name: "Sleep",
+        description:
+          "For evening wind-down, rest and better sleep.",
+      },
+      {
+        name: "Relax",
+        description:
+          "For everyday stress, relaxation and a calmer state.",
+      },
+      {
+        name: "Meditation",
+        description:
+          "For meditation, calm focus and mental clarity.",
+      },
+      {
+        name: "Relief",
+        description:
+          "For moments of tension and discomfort.",
+      },
+    ],
   },
 
   vagusNerve: {
@@ -337,6 +364,7 @@ export const homepage03Content = {
           "Yes. Every Neuvago device includes one year of access to the Neuvago App, with professionally guided sessions and breathing practices for Sleep, Stress, Focus and Recovery.",
       },
     ],
+    supportPrompt: "Need more help?",
     supportCta: {
       label: "Visit Support",
       href: "/support",

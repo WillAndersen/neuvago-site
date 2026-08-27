@@ -23,7 +23,7 @@ export const metadata: Metadata = {
     canonical: "/conditions",
     languages: {
       "en-US": "/conditions",
-      "no-NO": "/no/tilstander",
+      "nb-NO": "/no/tilstander",
       "x-default": "/conditions",
     },
   },

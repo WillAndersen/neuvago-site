@@ -86,7 +86,7 @@ export const metadata: Metadata = {
     canonical: page.path,
     languages: {
       "en-US": page.englishPath,
-      "no-NO": page.path,
+      "nb-NO": page.path,
       "x-default": page.englishPath,
     },
   },
@@ -95,7 +95,7 @@ export const metadata: Metadata = {
     description: page.description,
     url: page.path,
     siteName: "Neuvago",
-    locale: "no_NO",
+    locale: "nb_NO",
     type: "website",
   },
 };

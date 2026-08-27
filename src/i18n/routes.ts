@@ -1,88 +1,132 @@
+import {
+  getLocaleFromPathname,
+  type Locale,
+} from "@/i18n/locale-registry";
 
-export const locales = ["en", "no"] as const;
+export { getLocaleFromPathname };
+export type { Locale };
 
-export type Locale = (typeof locales)[number];
-
-export const defaultLocale = "en" satisfies Locale;
-
-export const localeConfig = {
-  en: {
-    label: "International",
-    pathPrefix: "",
-    lang: "en-US",
-    ogLocale: "en_US",
-    market: "INTL",
-    currency: "USD",
+export const localizedRoutes = {
+  home: { en: "/", no: "/no", de: "/de" },
+  product: { en: "/product", no: "/no/produkt" },
+  shop: { en: "/shop" },
+  app: { en: "/app", no: "/no/app" },
+  howItWorks: { en: "/how-it-works", no: "/no/slik-fungerer-det" },
+  howToUse: { en: "/how-to-use" },
+  learn: { en: "/learn", no: "/no/kunnskap" },
+  glossary: { en: "/glossary", no: "/no/ordliste" },
+  conditions: { en: "/conditions", no: "/no/tilstander" },
+  research: { en: "/research", no: "/no/forskning" },
+  about: { en: "/about", no: "/no/om-oss" },
+  support: { en: "/support", no: "/no/support" },
+  legal: { en: "/legal", no: "/no/juridisk" },
+  intendedUse: {
+    en: "/legal/intended-use",
+    no: "/no/juridisk/tiltenkt-bruk",
   },
-  no: {
-    label: "Norge",
-    pathPrefix: "/no",
-    lang: "no-NO",
-    ogLocale: "no_NO",
-    market: "NO",
-    currency: "NOK",
+  medicalDisclaimer: {
+    en: "/legal/medical-disclaimer",
+    no: "/no/juridisk/medisinsk-ansvarsfraskrivelse",
   },
-} as const;
+  regulatory: {
+    en: "/legal/regulatory",
+    no: "/no/juridisk/regulatorisk",
+  },
+  ceCompliance: {
+    en: "/legal/ce-compliance",
+    no: "/no/juridisk/ce-samsvar",
+  },
+  fdaStatus: {
+    en: "/legal/fda-status",
+    no: "/no/juridisk/fda-status",
+  },
+  trustSafety: {
+    en: "/legal/trust-safety",
+    no: "/no/juridisk/tillit-og-sikkerhet",
+  },
+  privacyPolicy: {
+    en: "/legal/privacy-policy",
+    no: "/no/juridisk/personvern",
+  },
+  termsOfService: {
+    en: "/legal/terms-of-service",
+    no: "/no/juridisk/vilkar",
+  },
+  getStarted: { en: "/get-started" },
+  login: { en: "/login" },
+} as const satisfies Record<string, Partial<Record<Locale, string>>>;
 
-export const noPathMap: Record<string, string> = {
-  "/": "/no",
-  "/product": "/no/produkt",
-  "/app": "/no/app",
-  "/how-it-works": "/no/slik-fungerer-det",
-  "/learn": "/no/kunnskap",
-  "/conditions": "/no/tilstander",
-  "/research": "/no/forskning",
-  "/about": "/no/om-oss",
-  "/support": "/no/support",
-  "/legal": "/no/juridisk",
-  "/legal/intended-use": "/no/juridisk/tiltenkt-bruk",
-  "/legal/medical-disclaimer": "/no/juridisk/medisinsk-ansvarsfraskrivelse",
-  "/legal/privacy-policy": "/no/juridisk/personvern",
-  "/legal/terms-of-service": "/no/juridisk/vilkar",
-  "/legal/regulatory": "/no/juridisk/regulatorisk",
-  "/legal/trust-safety": "/no/juridisk/tillit-og-sikkerhet",
-  "/legal/ce-compliance": "/no/juridisk/ce-samsvar",
-  "/legal/fda-status": "/no/juridisk/fda-status",
-};
+export type LocalizedRouteId = keyof typeof localizedRoutes;
 
-export function getLocaleFromPathname(pathname: string | null | undefined): Locale {
-  if (pathname === "/no" || pathname?.startsWith("/no/")) {
-    return "no";
+const routeIdByPath = new Map<string, LocalizedRouteId>();
+
+for (const [routeId, variants] of Object.entries(localizedRoutes) as Array<
+  [LocalizedRouteId, Partial<Record<Locale, string>>]
+>) {
+  for (const path of Object.values(variants)) {
+    if (path) {
+      routeIdByPath.set(path, routeId);
+    }
   }
-
-  return defaultLocale;
 }
 
-function splitHref(href: string) {
-  const hashIndex = href.indexOf("#");
+function splitInternalHref(href: string): { pathname: string; suffix: string } | null {
+  if (!href.startsWith("/") || href.startsWith("//")) {
+    return null;
+  }
 
-  if (hashIndex === -1) {
-    return { path: href, hash: "" };
+  const suffixIndex = href.search(/[?#]/);
+
+  if (suffixIndex === -1) {
+    return { pathname: href, suffix: "" };
   }
 
   return {
-    path: href.slice(0, hashIndex) || "/",
-    hash: href.slice(hashIndex),
+    pathname: href.slice(0, suffixIndex) || "/",
+    suffix: href.slice(suffixIndex),
   };
 }
 
+export function getLocalizedRoutePath(
+  routeId: LocalizedRouteId,
+  locale: Locale,
+): string | undefined {
+  const variants = localizedRoutes[routeId] as Partial<
+    Record<Locale, string>
+  >;
+
+  return variants[locale];
+}
+
+export function getLocalizedRouteId(pathname: string): LocalizedRouteId | undefined {
+  return routeIdByPath.get(pathname);
+}
+
+export function hasLocalizedRoute(
+  routeId: LocalizedRouteId,
+  locale: Locale,
+): boolean {
+  return Boolean(getLocalizedRoutePath(routeId, locale));
+}
+
 export function localizedHref(href: string, locale: Locale): string {
-  if (
-    locale === defaultLocale ||
-    href.startsWith("#") ||
-    href.startsWith("http://") ||
-    href.startsWith("https://") ||
-    href.startsWith("mailto:") ||
-    href.startsWith("tel:")
-  ) {
+  const internalHref = splitInternalHref(href);
+
+  if (!internalHref) {
     return href;
   }
 
-  const { path, hash } = splitHref(href);
+  const routeId = getLocalizedRouteId(internalHref.pathname);
 
-  if (locale === "no") {
-    return `${noPathMap[path] ?? path}${hash}`;
+  if (!routeId) {
+    return href;
   }
 
-  return href;
+  const localizedPath = getLocalizedRoutePath(routeId, locale);
+
+  if (!localizedPath) {
+    return href;
+  }
+
+  return `${localizedPath}${internalHref.suffix}`;
 }

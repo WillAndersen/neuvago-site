@@ -25,7 +25,7 @@ export const metadata: Metadata = {
     canonical: "/no/produkt",
     languages: {
       "en-US": "/product",
-      "no-NO": "/no/produkt",
+      "nb-NO": "/no/produkt",
       "x-default": "/product",
     },
   },
@@ -36,7 +36,7 @@ export const metadata: Metadata = {
       "Se Neuvago-enheten, de fire stimuleringsmodusene, forskningskonteksten, pakkeinnholdet og den aktuelle kjøpsinformasjonen.",
     url: "/no/produkt",
     siteName: "Neuvago",
-    locale: "no_NO",
+    locale: "nb_NO",
     type: "website",
   },
   twitter: {

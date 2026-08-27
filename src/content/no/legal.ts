@@ -22,7 +22,8 @@ function metadata({
  canonical,
  languages: {
  "en-US": english,
- "no-NO": canonical,
+ "nb-NO": canonical,
+ "x-default": english,
  },
  },
  openGraph: {
@@ -30,7 +31,7 @@ function metadata({
  description,
  url: canonical,
  siteName: "Neuvago",
- locale: "no_NO",
+ locale: "nb_NO",
  type: "website",
  },
  twitter: {

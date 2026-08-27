@@ -27,7 +27,7 @@ export const metadata: Metadata = {
     canonical: "/no",
     languages: {
       "en-US": "/",
-      "no-NO": "/no",
+      "nb-NO": "/no",
       "x-default": "/",
     },
   },
@@ -37,7 +37,7 @@ export const metadata: Metadata = {
       "Utforsk en ikke-invasiv, ørebasert vagusnervestimulator med justerbar intensitet, fire stimuleringsmoduser og en tydelig vei til produktinformasjon.",
     url: "/no",
     siteName: "Neuvago",
-    locale: "no_NO",
+    locale: "nb_NO",
     type: "website",
   },
   twitter: {

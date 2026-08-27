@@ -24,7 +24,8 @@ export const metadata: Metadata = {
     canonical: "/no/app",
     languages: {
       "en-US": "/app",
-      "no-NO": "/no/app",
+      "nb-NO": "/no/app",
+      "x-default": "/app",
     },
   },
   openGraph: {
@@ -33,7 +34,7 @@ export const metadata: Metadata = {
       "Utforsk Neuvago-appen med veiledede økter, roligere rutiner og kontinuitet laget for å gjøre daglig regulering enklere å vende tilbake til.",
     url: "/no/app",
     siteName: "Neuvago",
-    locale: "no_NO",
+    locale: "nb_NO",
     type: "website",
   },
   twitter: {

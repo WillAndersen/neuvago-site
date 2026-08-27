@@ -11,7 +11,7 @@ export const metadata = {
     canonical: "/legal",
     languages: {
       "en-US": "/legal",
-      "no-NO": "/no/juridisk",
+      "nb-NO": "/no/juridisk",
       "x-default": "/legal",
     },
   },

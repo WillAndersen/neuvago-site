@@ -24,7 +24,7 @@ export const metadata: Metadata = {
     canonical: "/product",
     languages: {
       "en-US": "/product",
-      "no-NO": "/no/produkt",
+      "nb-NO": "/no/produkt",
       "x-default": "/product",
     },
   },

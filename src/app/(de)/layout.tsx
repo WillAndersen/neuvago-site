@@ -6,15 +6,15 @@ import { buildRootMetadata } from "@/i18n/root-metadata";
 
 import "../globals.css";
 
-export const metadata = buildRootMetadata("en");
+export const metadata = buildRootMetadata("de");
 
-export default function EnglishRootLayout({
+export default function GermanRootLayout({
   children,
 }: Readonly<{
   children: ReactNode;
 }>) {
   return (
-    <html lang={getLocaleDefinition("en").htmlLang}>
+    <html lang={getLocaleDefinition("de").htmlLang}>
       <body className="bg-[#f7f4ef] text-[#1f1f1c] antialiased">
         <AppChrome>{children}</AppChrome>
       </body>

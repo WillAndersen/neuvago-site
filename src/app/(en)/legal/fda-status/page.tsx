@@ -11,7 +11,7 @@ export const metadata = {
     canonical: "/legal/fda-status",
     languages: {
       "en-US": "/legal/fda-status",
-      "no-NO": "/no/juridisk/fda-status",
+      "nb-NO": "/no/juridisk/fda-status",
       "x-default": "/legal/fda-status",
     },
   },

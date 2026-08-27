@@ -22,7 +22,8 @@ export const metadata: Metadata = {
     canonical: "/no/support",
     languages: {
       "en-US": "/support",
-      "no-NO": "/no/support",
+      "nb-NO": "/no/support",
+      "x-default": "/support",
     },
   },
   openGraph: {
@@ -31,7 +32,7 @@ export const metadata: Metadata = {
       "Finn tydelig hjelp for å forstå Neuvago-produktet, appen, daglige rutiner, juridisk informasjon og hvor du bør starte videre.",
     url: "/no/support",
     siteName: "Neuvago",
-    locale: "no_NO",
+    locale: "nb_NO",
     type: "website",
   },
   twitter: {

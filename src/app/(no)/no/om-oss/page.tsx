@@ -24,7 +24,8 @@ export const metadata: Metadata = {
     canonical: "/no/om-oss",
     languages: {
       "en-US": "/about",
-      "no-NO": "/no/om-oss",
+      "nb-NO": "/no/om-oss",
+      "x-default": "/about",
     },
   },
   openGraph: {
@@ -33,7 +34,7 @@ export const metadata: Metadata = {
       "Lær hvorfor Neuvago finnes, hvordan enheten og appen fungerer sammen, og den rolige designfilosofien bak merkevaren.",
     url: "/no/om-oss",
     siteName: "Neuvago",
-    locale: "no_NO",
+    locale: "nb_NO",
     type: "website",
   },
   twitter: {

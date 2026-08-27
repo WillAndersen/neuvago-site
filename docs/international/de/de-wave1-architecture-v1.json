@@ -1,0 +1,49 @@
+{
+  "schemaVersion": 1,
+  "wave": "DE Wave 1",
+  "scope": "locale architecture and German route shell",
+  "wave0BaselineCommit": "43369d78e868238317571c30cf2131f4e75b857e",
+  "wave0Concepts": 45,
+  "priorities": {
+    "P0": 20,
+    "P1": 25
+  },
+  "locales": {
+    "en": {
+      "languageTag": "en-US",
+      "market": "GLOBAL",
+      "prefix": "",
+      "status": "published",
+      "indexable": true,
+      "sitemap": true
+    },
+    "no": {
+      "languageTag": "nb-NO",
+      "market": "NO",
+      "prefix": "/no",
+      "status": "published",
+      "indexable": true,
+      "sitemap": true
+    },
+    "de": {
+      "languageTag": "de-DE",
+      "market": "DE",
+      "prefix": "/de",
+      "status": "draft",
+      "indexable": false,
+      "sitemap": false,
+      "languageSwitcher": false
+    }
+  },
+  "physicalGermanRoutes": [
+    "/de"
+  ],
+  "plannedGermanChildRoutes": 44,
+  "guards": [
+    "metadata noindex",
+    "X-Robots-Tag noindex, nofollow, noarchive",
+    "excluded from sitemap",
+    "excluded from language switcher",
+    "excluded from published hreflang"
+  ]
+}

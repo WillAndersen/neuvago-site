@@ -7,7 +7,10 @@
     "build": "next build",
     "start": "next start",
     "lint": "eslint",
-    "seo:vns": "node scripts/seo-vns-cluster-audit.mjs"
+    "seo:vns": "node scripts/seo-vns-cluster-audit.mjs",
+    "de:registry": "node scripts/generate-de-page-registry.mjs",
+    "de:registry:check": "node scripts/generate-de-page-registry.mjs --check",
+    "audit:de-wave1": "node scripts/audit-de-wave1-locale-architecture.mjs"
   },
   "dependencies": {
     "@supabase/supabase-js": "^2.102.1",

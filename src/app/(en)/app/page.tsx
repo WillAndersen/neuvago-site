@@ -26,7 +26,7 @@ export const metadata: Metadata = {
     canonical: "/app",
     languages: {
       "en-US": "/app",
-      "no-NO": "/no/app",
+      "nb-NO": "/no/app",
       "x-default": "/app",
     },
   },

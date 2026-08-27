@@ -22,7 +22,7 @@ export const metadata: Metadata = {
     canonical: "/support",
     languages: {
       "en-US": "/support",
-      "no-NO": "/no/support",
+      "nb-NO": "/no/support",
       "x-default": "/support",
     },
   },

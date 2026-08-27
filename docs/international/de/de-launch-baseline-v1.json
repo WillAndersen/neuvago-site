@@ -1,0 +1,1822 @@
+{
+  "schemaVersion": 1,
+  "project": "Neuvago",
+  "wave": "DE Wave 0",
+  "baselineName": "German Launch Baseline v1",
+  "status": "approved-with-corrections",
+  "approvedDate": "2026-08-26",
+  "provenance": {
+    "baselineCommit": "43369d78e868238317571c30cf2131f4e75b857e",
+    "baselineCommitShort": "43369d78e868",
+    "commitDate": "2026-08-26T14:59:14+02:00",
+    "commitSubject": "Refine Learn everyday questions and patterns",
+    "branch": "main",
+    "originMainAtAudit": "43369d78e868238317571c30cf2131f4e75b857e",
+    "trackedWorktreeClean": true,
+    "buildStatus": "success",
+    "originalPackage": "neuvago-de-wave0-43369d78e868-20260826T130057Z.zip",
+    "originalPackageSha256": "9d10d3e23f9d9d2e5ed8a7913c64910956b7c0f216a12660ffa7e116ee7fc484",
+    "originalBaselineDigest": "e3f878883f4f107a1ecff37fdcd2c8c94d992e6306aeb63c117b58db2508bedf"
+  },
+  "inventory": {
+    "rows": 219,
+    "exactBuildRoutes": 212,
+    "dynamicPatterns": 7,
+    "pageSourceFiles": 118,
+    "routeHandlers": 3,
+    "sourceFilesHashed": 414,
+    "originalAutomatedPriorities": {
+      "P0": 35,
+      "EXCLUDE": 28,
+      "P2": 132,
+      "P1": 24
+    },
+    "originalRegistrySeedEntries": 191
+  },
+  "scope": {
+    "uniquePageConcepts": 45,
+    "P0": 20,
+    "P1": 25,
+    "sourceLocales": {
+      "en-US": 36,
+      "nb-NO": 5,
+      "de-native": 4
+    },
+    "targetLocale": "de-DE",
+    "targetMarket": "Germany",
+    "targetPathStatus": "candidate-not-frozen-until-de-wave-2",
+    "allP0AndP1LaunchBlocking": true
+  },
+  "bindingDecisions": [
+    "The launch baseline is concept-based, not route-count based.",
+    "The original de-page-registry-seed.json must not be installed.",
+    "The source content is frozen at commit 43369d78e868238317571c30cf2131f4e75b857e.",
+    "New English/Norwegian P2 content may continue after the baseline without blocking German launch.",
+    "Target German slugs remain provisional until DE Wave 2 keyword and terminology work.",
+    "P0 and P1 pages in this baseline must be complete and approved before German indexation.",
+    "FDA-specific pages are outside the German launch scope.",
+    "Private account/app routes are outside the first German public-web scope.",
+    "Curated copy digests and implementation digests are tracked separately."
+  ],
+  "nonRouteLaunchDependencies": [
+    "German-language instructions for use, safety information and any required product/packaging information",
+    "German checkout, order confirmation and service-email journey",
+    "Germany/EU price, VAT, shipping, delivery, withdrawal, return, refund, warranty and complaints setup",
+    "German customer-support operating model",
+    "Claims matrix reconciled with intended use, CE documentation and final product documentation",
+    "Production CMS export/freeze for pages that can be overridden outside Git"
+  ],
+  "findingsFile": "de-wave0-audit-findings-v1.json",
+  "routeDispositionFile": "de-wave0-route-disposition-v1.csv",
+  "pages": [
+    {
+      "pageId": "de-home",
+      "priority": "P0",
+      "launchBlocking": true,
+      "category": "commercial",
+      "title": "German home page",
+      "workType": "translate-seo-adapt",
+      "source": {
+        "locale": "en-US",
+        "path": "/",
+        "copyFiles": [
+          "src/app/(en)/page.tsx",
+          "src/content/homepage-v3.ts"
+        ],
+        "implementationFiles": [
+          "src/app/(en)/page.tsx"
+        ],
+        "copyDigest": "33cd3228a48ab7b51ef16f9b5865601697019724f3277c0d9e197349c108bf20",
+        "implementationDigest": "dcd7b597caf7b5decb29694b8db5ce0b25aece09355fe3525b317825e681e588",
+        "digestPolicy": "curated-copy-files-v1"
+      },
+      "referencePaths": [
+        "/no"
+      ],
+      "target": {
+        "locale": "de-DE",
+        "pathCandidate": "/de",
+        "pathStatus": "candidate-not-frozen-until-de-wave-2",
+        "status": "planned"
+      },
+      "reviews": {
+        "linguistic": true,
+        "seo": true,
+        "regulatoryClaims": true,
+        "legal": false,
+        "commercial": true
+      },
+      "notes": [
+        "Translate and adapt the full German value proposition; do not reuse disease-treatment language."
+      ]
+    },
+    {
+      "pageId": "de-product",
+      "priority": "P0",
+      "launchBlocking": true,
+      "category": "commercial",
+      "title": "German product page",
+      "workType": "translate-seo-adapt",
+      "source": {
+        "locale": "en-US",
+        "path": "/product",
+        "copyFiles": [
+          "src/app/(en)/product/page.tsx",
+          "src/content/product-v2.ts",
+          "src/content/commerce.ts"
+        ],
+        "implementationFiles": [
+          "src/app/(en)/product/page.tsx"
+        ],
+        "copyDigest": "9e637e2894ce57cd090ad1c0da4a561637b6c61aca0a1cca394671314c61ced6",
+        "implementationDigest": "1284774b823daafeffd0eac5cd040d5af9c4751d4aa3b2ee3c83c1c25ef5f5bc",
+        "digestPolicy": "curated-copy-files-v1"
+      },
+      "referencePaths": [
+        "/no/produkt"
+      ],
+      "target": {
+        "locale": "de-DE",
+        "pathCandidate": "/de/produkt",
+        "pathStatus": "candidate-not-frozen-until-de-wave-2",
+        "status": "planned"
+      },
+      "reviews": {
+        "linguistic": true,
+        "seo": true,
+        "regulatoryClaims": true,
+        "legal": false,
+        "commercial": true
+      },
+      "notes": [
+        "The legacy /no/product route is a redirect and is excluded from the concept registry."
+      ]
+    },
+    {
+      "pageId": "de-shop",
+      "priority": "P0",
+      "launchBlocking": true,
+      "category": "commercial",
+      "title": "German shop / launch-access page",
+      "workType": "translate-seo-adapt",
+      "source": {
+        "locale": "en-US",
+        "path": "/shop",
+        "copyFiles": [
+          "src/app/(en)/shop/page.tsx",
+          "src/content/commerce.ts",
+          "src/content/product-v2.ts"
+        ],
+        "implementationFiles": [
+          "src/app/(en)/shop/page.tsx"
+        ],
+        "copyDigest": "92c7c6a49b22df04197703ee8b3a9672d5ccc263dcb1e781e18fa6e75c0b6d8b",
+        "implementationDigest": "bda3b8be2c504a9c7094461fa1edf7e8c3970c375a6bb323f90e4f60c98617a8",
+        "digestPolicy": "curated-copy-files-v1"
+      },
+      "referencePaths": [],
+      "target": {
+        "locale": "de-DE",
+        "pathCandidate": "/de/shop",
+        "pathStatus": "candidate-not-frozen-until-de-wave-2",
+        "status": "planned"
+      },
+      "reviews": {
+        "linguistic": true,
+        "seo": true,
+        "regulatoryClaims": true,
+        "legal": false,
+        "commercial": true
+      },
+      "notes": [
+        "Contains stronger benefit language than several other pages; claims review is mandatory before translation."
+      ]
+    },
+    {
+      "pageId": "de-app",
+      "priority": "P0",
+      "launchBlocking": true,
+      "category": "commercial",
+      "title": "German app page",
+      "workType": "translate-seo-adapt",
+      "source": {
+        "locale": "en-US",
+        "path": "/app",
+        "copyFiles": [
+          "src/app/(en)/app/page.tsx",
+          "src/content/app-v2.ts"
+        ],
+        "implementationFiles": [
+          "src/app/(en)/app/page.tsx"
+        ],
+        "copyDigest": "21c69a3e6e4b1b1c82e738456fc797d51997af6072703d9ecf40429b96962c36",
+        "implementationDigest": "f998c648dd65aef510779b0d6dc4c8c0c8287c4c8c1e044140727441465fb290",
+        "digestPolicy": "curated-copy-files-v1"
+      },
+      "referencePaths": [
+        "/no/app"
+      ],
+      "target": {
+        "locale": "de-DE",
+        "pathCandidate": "/de/app",
+        "pathStatus": "candidate-not-frozen-until-de-wave-2",
+        "status": "planned"
+      },
+      "reviews": {
+        "linguistic": true,
+        "seo": true,
+        "regulatoryClaims": true,
+        "legal": false,
+        "commercial": true
+      },
+      "notes": []
+    },
+    {
+      "pageId": "de-how-it-works",
+      "priority": "P0",
+      "launchBlocking": true,
+      "category": "commercial",
+      "title": "How Neuvago works",
+      "workType": "translate-seo-adapt",
+      "source": {
+        "locale": "en-US",
+        "path": "/how-it-works",
+        "copyFiles": [
+          "src/app/(en)/how-it-works/page.tsx",
+          "src/content/how-it-works-v2.ts"
+        ],
+        "implementationFiles": [
+          "src/app/(en)/how-it-works/page.tsx"
+        ],
+        "copyDigest": "9dcf55ed03be6f5b3eb4ee0332dd9099eacf0309e5d1deb28fda92cd8875ece8",
+        "implementationDigest": "91b92a14b46696c29db849c4bb55ceafe2d4646e25549bf1d9b183f0ce7f833d",
+        "digestPolicy": "curated-copy-files-v1"
+      },
+      "referencePaths": [
+        "/no/slik-fungerer-det"
+      ],
+      "target": {
+        "locale": "de-DE",
+        "pathCandidate": "/de/so-funktioniert-neuvago",
+        "pathStatus": "candidate-not-frozen-until-de-wave-2",
+        "status": "planned"
+      },
+      "reviews": {
+        "linguistic": true,
+        "seo": true,
+        "regulatoryClaims": true,
+        "legal": false,
+        "commercial": true
+      },
+      "notes": [
+        "The Norwegian counterpart was misclassified as P2 by the automated heuristic; corrected to P0."
+      ]
+    },
+    {
+      "pageId": "de-how-to-use",
+      "priority": "P0",
+      "launchBlocking": true,
+      "category": "support-safety",
+      "title": "How to use Neuvago",
+      "workType": "translate-seo-adapt",
+      "source": {
+        "locale": "en-US",
+        "path": "/how-to-use",
+        "copyFiles": [
+          "src/app/(en)/how-to-use/page.tsx"
+        ],
+        "implementationFiles": [
+          "src/app/(en)/how-to-use/page.tsx"
+        ],
+        "copyDigest": "28eb70a5af7aa1357663ce5505c6153f18bc091db08042777ebd90b970d696b9",
+        "implementationDigest": "28eb70a5af7aa1357663ce5505c6153f18bc091db08042777ebd90b970d696b9",
+        "digestPolicy": "curated-copy-files-v1"
+      },
+      "referencePaths": [],
+      "target": {
+        "locale": "de-DE",
+        "pathCandidate": "/de/anwendung",
+        "pathStatus": "candidate-not-frozen-until-de-wave-2",
+        "status": "planned"
+      },
+      "reviews": {
+        "linguistic": true,
+        "seo": true,
+        "regulatoryClaims": true,
+        "legal": false,
+        "commercial": true
+      },
+      "notes": [
+        "Current English page lacks page-level metadata, canonical and hreflang; repair before/with German implementation."
+      ]
+    },
+    {
+      "pageId": "de-about",
+      "priority": "P0",
+      "launchBlocking": true,
+      "category": "trust-support",
+      "title": "About Neuvago",
+      "workType": "translate-seo-adapt",
+      "source": {
+        "locale": "en-US",
+        "path": "/about",
+        "copyFiles": [
+          "src/content/about.ts"
+        ],
+        "implementationFiles": [
+          "src/app/(en)/about/page.tsx",
+          "src/lib/content/get-about-content.ts",
+          "src/lib/content/get-page-content.ts"
+        ],
+        "copyDigest": "c26609b9e22f58bd736be866f48f06e473d76511365bcd6613e5e38aea39903c",
+        "implementationDigest": "4fe5e27e7940457dd2da71d3277e4adca43f2abf4fae7f4f448690ce7c8c0bbe",
+        "digestPolicy": "curated-copy-files-v1",
+        "externalContentDependency": "Supabase page_content row for the about page may override Git content"
+      },
+      "referencePaths": [
+        "/no/om-oss"
+      ],
+      "target": {
+        "locale": "de-DE",
+        "pathCandidate": "/de/ueber-uns",
+        "pathStatus": "candidate-not-frozen-until-de-wave-2",
+        "status": "planned"
+      },
+      "reviews": {
+        "linguistic": true,
+        "seo": true,
+        "regulatoryClaims": true,
+        "legal": false,
+        "commercial": false
+      },
+      "notes": [
+        "Export and freeze the effective production CMS value before translation."
+      ]
+    },
+    {
+      "pageId": "de-support",
+      "priority": "P0",
+      "launchBlocking": true,
+      "category": "trust-support",
+      "title": "German support hub",
+      "workType": "translate-seo-adapt",
+      "source": {
+        "locale": "en-US",
+        "path": "/support",
+        "copyFiles": [
+          "src/content/support.ts"
+        ],
+        "implementationFiles": [
+          "src/app/(en)/support/page.tsx",
+          "src/lib/content/get-support-content.ts",
+          "src/lib/content/get-page-content.ts"
+        ],
+        "copyDigest": "4f624c44996090297696e32b7e143f9fb80fb5606439f0a18ec14647144ecd6d",
+        "implementationDigest": "58866a331378e7d34626759cea8c5530901c60ee68a0be1147e60c8283165a70",
+        "digestPolicy": "curated-copy-files-v1",
+        "externalContentDependency": "Supabase page_content row for the support page may override Git content"
+      },
+      "referencePaths": [
+        "/no/support"
+      ],
+      "target": {
+        "locale": "de-DE",
+        "pathCandidate": "/de/support",
+        "pathStatus": "candidate-not-frozen-until-de-wave-2",
+        "status": "planned"
+      },
+      "reviews": {
+        "linguistic": true,
+        "seo": true,
+        "regulatoryClaims": false,
+        "legal": false,
+        "commercial": false
+      },
+      "notes": [
+        "Export and freeze the effective production CMS value before translation."
+      ]
+    },
+    {
+      "pageId": "de-legal-hub",
+      "priority": "P0",
+      "launchBlocking": true,
+      "category": "legal-regulatory",
+      "title": "Legal and compliance hub",
+      "workType": "legal-market-adaptation",
+      "source": {
+        "locale": "en-US",
+        "path": "/legal",
+        "copyFiles": [
+          "src/app/(en)/legal/page.tsx"
+        ],
+        "implementationFiles": [
+          "src/app/(en)/legal/page.tsx"
+        ],
+        "copyDigest": "d2deabbd551426f634b5cf698772395a541b8a0a9b4b779cbc1fdf4b10609009",
+        "implementationDigest": "d2deabbd551426f634b5cf698772395a541b8a0a9b4b779cbc1fdf4b10609009",
+        "digestPolicy": "curated-copy-files-v1"
+      },
+      "referencePaths": [
+        "/no/juridisk"
+      ],
+      "target": {
+        "locale": "de-DE",
+        "pathCandidate": "/de/rechtliches",
+        "pathStatus": "candidate-not-frozen-until-de-wave-2",
+        "status": "planned"
+      },
+      "reviews": {
+        "linguistic": true,
+        "seo": true,
+        "regulatoryClaims": false,
+        "legal": true,
+        "commercial": false
+      },
+      "notes": [
+        "Do not publish as a literal translation; adapt to the German market and obtain legal review."
+      ]
+    },
+    {
+      "pageId": "de-intended-use",
+      "priority": "P0",
+      "launchBlocking": true,
+      "category": "legal-regulatory",
+      "title": "Intended use",
+      "workType": "legal-market-adaptation",
+      "source": {
+        "locale": "en-US",
+        "path": "/legal/intended-use",
+        "copyFiles": [
+          "src/app/(en)/legal/intended-use/page.tsx"
+        ],
+        "implementationFiles": [
+          "src/app/(en)/legal/intended-use/page.tsx"
+        ],
+        "copyDigest": "8f56a3aafa3e539e982c044e731c22aca5dab177f57cadaab78ff64c8358ae43",
+        "implementationDigest": "8f56a3aafa3e539e982c044e731c22aca5dab177f57cadaab78ff64c8358ae43",
+        "digestPolicy": "curated-copy-files-v1"
+      },
+      "referencePaths": [
+        "/no/juridisk/tiltenkt-bruk"
+      ],
+      "target": {
+        "locale": "de-DE",
+        "pathCandidate": "/de/rechtliches/vorgesehene-verwendung",
+        "pathStatus": "candidate-not-frozen-until-de-wave-2",
+        "status": "planned"
+      },
+      "reviews": {
+        "linguistic": true,
+        "seo": true,
+        "regulatoryClaims": true,
+        "legal": true,
+        "commercial": false
+      },
+      "notes": [
+        "Do not publish as a literal translation; adapt to the German market and obtain legal review."
+      ]
+    },
+    {
+      "pageId": "de-medical-disclaimer",
+      "priority": "P0",
+      "launchBlocking": true,
+      "category": "legal-regulatory",
+      "title": "Medical disclaimer",
+      "workType": "legal-market-adaptation",
+      "source": {
+        "locale": "en-US",
+        "path": "/legal/medical-disclaimer",
+        "copyFiles": [
+          "src/app/(en)/legal/medical-disclaimer/page.tsx"
+        ],
+        "implementationFiles": [
+          "src/app/(en)/legal/medical-disclaimer/page.tsx"
+        ],
+        "copyDigest": "c2dfabfa716f9327318139170ea88e90781af3291fc51da44921fa7d6f17fc1d",
+        "implementationDigest": "c2dfabfa716f9327318139170ea88e90781af3291fc51da44921fa7d6f17fc1d",
+        "digestPolicy": "curated-copy-files-v1"
+      },
+      "referencePaths": [
+        "/no/juridisk/medisinsk-ansvarsfraskrivelse"
+      ],
+      "target": {
+        "locale": "de-DE",
+        "pathCandidate": "/de/rechtliches/medizinischer-hinweis",
+        "pathStatus": "candidate-not-frozen-until-de-wave-2",
+        "status": "planned"
+      },
+      "reviews": {
+        "linguistic": true,
+        "seo": true,
+        "regulatoryClaims": true,
+        "legal": true,
+        "commercial": false
+      },
+      "notes": [
+        "Do not publish as a literal translation; adapt to the German market and obtain legal review."
+      ]
+    },
+    {
+      "pageId": "de-regulatory-information",
+      "priority": "P0",
+      "launchBlocking": true,
+      "category": "legal-regulatory",
+      "title": "Regulatory information",
+      "workType": "legal-market-adaptation",
+      "source": {
+        "locale": "en-US",
+        "path": "/legal/regulatory",
+        "copyFiles": [
+          "src/app/(en)/legal/regulatory/page.tsx"
+        ],
+        "implementationFiles": [
+          "src/app/(en)/legal/regulatory/page.tsx"
+        ],
+        "copyDigest": "83d53381566a8af93f694fab441531677aa4967fffdb26094d17269e6a8a7d70",
+        "implementationDigest": "83d53381566a8af93f694fab441531677aa4967fffdb26094d17269e6a8a7d70",
+        "digestPolicy": "curated-copy-files-v1"
+      },
+      "referencePaths": [
+        "/no/juridisk/regulatorisk"
+      ],
+      "target": {
+        "locale": "de-DE",
+        "pathCandidate": "/de/rechtliches/regulatorische-informationen",
+        "pathStatus": "candidate-not-frozen-until-de-wave-2",
+        "status": "planned"
+      },
+      "reviews": {
+        "linguistic": true,
+        "seo": true,
+        "regulatoryClaims": true,
+        "legal": true,
+        "commercial": false
+      },
+      "notes": [
+        "Do not publish as a literal translation; adapt to the German market and obtain legal review."
+      ]
+    },
+    {
+      "pageId": "de-ce-compliance",
+      "priority": "P0",
+      "launchBlocking": true,
+      "category": "legal-regulatory",
+      "title": "CE compliance",
+      "workType": "legal-market-adaptation",
+      "source": {
+        "locale": "en-US",
+        "path": "/legal/ce-compliance",
+        "copyFiles": [
+          "src/app/(en)/legal/ce-compliance/page.tsx"
+        ],
+        "implementationFiles": [
+          "src/app/(en)/legal/ce-compliance/page.tsx"
+        ],
+        "copyDigest": "b947c1f74685b05124241ef2bcb6513f39be9c4797bccdb108dfdb469ef5661a",
+        "implementationDigest": "b947c1f74685b05124241ef2bcb6513f39be9c4797bccdb108dfdb469ef5661a",
+        "digestPolicy": "curated-copy-files-v1"
+      },
+      "referencePaths": [
+        "/no/juridisk/ce-samsvar"
+      ],
+      "target": {
+        "locale": "de-DE",
+        "pathCandidate": "/de/rechtliches/ce-konformitaet",
+        "pathStatus": "candidate-not-frozen-until-de-wave-2",
+        "status": "planned"
+      },
+      "reviews": {
+        "linguistic": true,
+        "seo": true,
+        "regulatoryClaims": true,
+        "legal": true,
+        "commercial": false
+      },
+      "notes": [
+        "Do not publish as a literal translation; adapt to the German market and obtain legal review."
+      ]
+    },
+    {
+      "pageId": "de-trust-safety",
+      "priority": "P0",
+      "launchBlocking": true,
+      "category": "legal-regulatory",
+      "title": "Trust and safety",
+      "workType": "legal-market-adaptation",
+      "source": {
+        "locale": "en-US",
+        "path": "/legal/trust-safety",
+        "copyFiles": [
+          "src/app/(en)/legal/trust-safety/page.tsx"
+        ],
+        "implementationFiles": [
+          "src/app/(en)/legal/trust-safety/page.tsx"
+        ],
+        "copyDigest": "fe72f237be23e62a4e2c5c5561de7913e308a55fd01ba48d13c7c5e965de7aec",
+        "implementationDigest": "fe72f237be23e62a4e2c5c5561de7913e308a55fd01ba48d13c7c5e965de7aec",
+        "digestPolicy": "curated-copy-files-v1"
+      },
+      "referencePaths": [
+        "/no/juridisk/tillit-og-sikkerhet"
+      ],
+      "target": {
+        "locale": "de-DE",
+        "pathCandidate": "/de/rechtliches/vertrauen-und-sicherheit",
+        "pathStatus": "candidate-not-frozen-until-de-wave-2",
+        "status": "planned"
+      },
+      "reviews": {
+        "linguistic": true,
+        "seo": true,
+        "regulatoryClaims": true,
+        "legal": true,
+        "commercial": false
+      },
+      "notes": [
+        "Do not publish as a literal translation; adapt to the German market and obtain legal review."
+      ]
+    },
+    {
+      "pageId": "de-privacy",
+      "priority": "P0",
+      "launchBlocking": true,
+      "category": "legal-regulatory",
+      "title": "Privacy policy",
+      "workType": "legal-market-adaptation",
+      "source": {
+        "locale": "en-US",
+        "path": "/legal/privacy-policy",
+        "copyFiles": [
+          "src/app/(en)/legal/privacy-policy/page.tsx"
+        ],
+        "implementationFiles": [
+          "src/app/(en)/legal/privacy-policy/page.tsx"
+        ],
+        "copyDigest": "df5ce6e99d22cd4fbcccce8a0dd5d351d26498b22c1a981b2c724c8653628f20",
+        "implementationDigest": "df5ce6e99d22cd4fbcccce8a0dd5d351d26498b22c1a981b2c724c8653628f20",
+        "digestPolicy": "curated-copy-files-v1"
+      },
+      "referencePaths": [
+        "/no/juridisk/personvern"
+      ],
+      "target": {
+        "locale": "de-DE",
+        "pathCandidate": "/de/rechtliches/datenschutz",
+        "pathStatus": "candidate-not-frozen-until-de-wave-2",
+        "status": "planned"
+      },
+      "reviews": {
+        "linguistic": true,
+        "seo": true,
+        "regulatoryClaims": false,
+        "legal": true,
+        "commercial": false
+      },
+      "notes": [
+        "Do not publish as a literal translation; adapt to the German market and obtain legal review."
+      ]
+    },
+    {
+      "pageId": "de-terms",
+      "priority": "P0",
+      "launchBlocking": true,
+      "category": "legal-regulatory",
+      "title": "Terms of service / German terms",
+      "workType": "legal-market-adaptation",
+      "source": {
+        "locale": "en-US",
+        "path": "/legal/terms-of-service",
+        "copyFiles": [
+          "src/app/(en)/legal/terms-of-service/page.tsx"
+        ],
+        "implementationFiles": [
+          "src/app/(en)/legal/terms-of-service/page.tsx"
+        ],
+        "copyDigest": "e6fe2a8bd4b69ec4acabe16ea809dc7d6d723e039c22c187b5ccab08594f38fa",
+        "implementationDigest": "e6fe2a8bd4b69ec4acabe16ea809dc7d6d723e039c22c187b5ccab08594f38fa",
+        "digestPolicy": "curated-copy-files-v1"
+      },
+      "referencePaths": [
+        "/no/juridisk/vilkar"
+      ],
+      "target": {
+        "locale": "de-DE",
+        "pathCandidate": "/de/rechtliches/agb",
+        "pathStatus": "candidate-not-frozen-until-de-wave-2",
+        "status": "planned"
+      },
+      "reviews": {
+        "linguistic": true,
+        "seo": true,
+        "regulatoryClaims": false,
+        "legal": true,
+        "commercial": false
+      },
+      "notes": [
+        "Do not publish as a literal translation; adapt to the German market and obtain legal review."
+      ]
+    },
+    {
+      "pageId": "de-imprint",
+      "priority": "P0",
+      "launchBlocking": true,
+      "category": "legal-commerce",
+      "title": "German imprint",
+      "workType": "de-native-authoring",
+      "source": {
+        "locale": null,
+        "path": null,
+        "copyFiles": [],
+        "implementationFiles": [],
+        "copyDigest": null,
+        "implementationDigest": null,
+        "digestPolicy": "not-applicable-de-native-authoring"
+      },
+      "referencePaths": [],
+      "target": {
+        "locale": "de-DE",
+        "pathCandidate": "/de/impressum",
+        "pathStatus": "candidate-not-frozen-until-de-wave-2",
+        "status": "planned"
+      },
+      "reviews": {
+        "linguistic": true,
+        "seo": true,
+        "regulatoryClaims": false,
+        "legal": true,
+        "commercial": true
+      },
+      "notes": [
+        "New German-market page with no complete current English/Norwegian source page."
+      ]
+    },
+    {
+      "pageId": "de-shipping-delivery",
+      "priority": "P0",
+      "launchBlocking": true,
+      "category": "legal-commerce",
+      "title": "Shipping and delivery",
+      "workType": "de-native-authoring",
+      "source": {
+        "locale": null,
+        "path": null,
+        "copyFiles": [],
+        "implementationFiles": [],
+        "copyDigest": null,
+        "implementationDigest": null,
+        "digestPolicy": "not-applicable-de-native-authoring"
+      },
+      "referencePaths": [],
+      "target": {
+        "locale": "de-DE",
+        "pathCandidate": "/de/versand-und-lieferung",
+        "pathStatus": "candidate-not-frozen-until-de-wave-2",
+        "status": "planned"
+      },
+      "reviews": {
+        "linguistic": true,
+        "seo": true,
+        "regulatoryClaims": false,
+        "legal": true,
+        "commercial": true
+      },
+      "notes": [
+        "New German-market page with no complete current English/Norwegian source page."
+      ]
+    },
+    {
+      "pageId": "de-withdrawal-returns",
+      "priority": "P0",
+      "launchBlocking": true,
+      "category": "legal-commerce",
+      "title": "Withdrawal, returns and refunds",
+      "workType": "de-native-authoring",
+      "source": {
+        "locale": null,
+        "path": null,
+        "copyFiles": [],
+        "implementationFiles": [],
+        "copyDigest": null,
+        "implementationDigest": null,
+        "digestPolicy": "not-applicable-de-native-authoring"
+      },
+      "referencePaths": [],
+      "target": {
+        "locale": "de-DE",
+        "pathCandidate": "/de/widerruf-und-rueckgabe",
+        "pathStatus": "candidate-not-frozen-until-de-wave-2",
+        "status": "planned"
+      },
+      "reviews": {
+        "linguistic": true,
+        "seo": true,
+        "regulatoryClaims": false,
+        "legal": true,
+        "commercial": true
+      },
+      "notes": [
+        "New German-market page with no complete current English/Norwegian source page."
+      ]
+    },
+    {
+      "pageId": "de-warranty-complaints",
+      "priority": "P0",
+      "launchBlocking": true,
+      "category": "legal-commerce",
+      "title": "Warranty and complaints",
+      "workType": "de-native-authoring",
+      "source": {
+        "locale": null,
+        "path": null,
+        "copyFiles": [],
+        "implementationFiles": [],
+        "copyDigest": null,
+        "implementationDigest": null,
+        "digestPolicy": "not-applicable-de-native-authoring"
+      },
+      "referencePaths": [],
+      "target": {
+        "locale": "de-DE",
+        "pathCandidate": "/de/gewaehrleistung-und-reklamation",
+        "pathStatus": "candidate-not-frozen-until-de-wave-2",
+        "status": "planned"
+      },
+      "reviews": {
+        "linguistic": true,
+        "seo": true,
+        "regulatoryClaims": false,
+        "legal": true,
+        "commercial": true
+      },
+      "notes": [
+        "New German-market page with no complete current English/Norwegian source page."
+      ]
+    },
+    {
+      "pageId": "de-learn-hub",
+      "priority": "P1",
+      "launchBlocking": true,
+      "category": "knowledge",
+      "title": "German knowledge hub",
+      "workType": "translate-seo-adapt",
+      "source": {
+        "locale": "en-US",
+        "path": "/learn",
+        "copyFiles": [
+          "src/app/(en)/learn/page.tsx"
+        ],
+        "implementationFiles": [
+          "src/app/(en)/learn/page.tsx",
+          "src/content/decision-guides/registry.ts"
+        ],
+        "copyDigest": "ee0c9bcc26fd39647d3aa51916e2aa589e242c8a05fbfd05f5cd63bb974bd1e7",
+        "implementationDigest": "8ada5bd38b31a8beb108580b8711998694d257c0fd9e6f1960b50b38fecc66af",
+        "digestPolicy": "curated-copy-files-v1"
+      },
+      "referencePaths": [
+        "/no/kunnskap"
+      ],
+      "target": {
+        "locale": "de-DE",
+        "pathCandidate": "/de/wissen",
+        "pathStatus": "candidate-not-frozen-until-de-wave-2",
+        "status": "planned"
+      },
+      "reviews": {
+        "linguistic": true,
+        "seo": true,
+        "regulatoryClaims": true,
+        "legal": false,
+        "commercial": false
+      },
+      "notes": []
+    },
+    {
+      "pageId": "de-vagus-nerve",
+      "priority": "P1",
+      "launchBlocking": true,
+      "category": "knowledge",
+      "title": "Vagus nerve",
+      "workType": "translate-seo-adapt",
+      "source": {
+        "locale": "en-US",
+        "path": "/learn/vagus-nerve",
+        "copyFiles": [
+          "src/app/(en)/learn/vagus-nerve/page.tsx"
+        ],
+        "implementationFiles": [
+          "src/app/(en)/learn/vagus-nerve/page.tsx"
+        ],
+        "copyDigest": "1af646b951917c79b70dfd1d4be2ac3d3b55fcffbb7f19475e5e21392f3de709",
+        "implementationDigest": "1af646b951917c79b70dfd1d4be2ac3d3b55fcffbb7f19475e5e21392f3de709",
+        "digestPolicy": "curated-copy-files-v1"
+      },
+      "referencePaths": [
+        "/no/kunnskap/vagusnerven"
+      ],
+      "target": {
+        "locale": "de-DE",
+        "pathCandidate": "/de/wissen/vagusnerv",
+        "pathStatus": "candidate-not-frozen-until-de-wave-2",
+        "status": "planned"
+      },
+      "reviews": {
+        "linguistic": true,
+        "seo": true,
+        "regulatoryClaims": true,
+        "legal": false,
+        "commercial": false
+      },
+      "notes": []
+    },
+    {
+      "pageId": "de-vagus-nerve-stimulation",
+      "priority": "P1",
+      "launchBlocking": true,
+      "category": "knowledge",
+      "title": "Vagus nerve stimulation",
+      "workType": "translate-seo-adapt",
+      "source": {
+        "locale": "en-US",
+        "path": "/learn/vagus-nerve-stimulation",
+        "copyFiles": [
+          "src/app/(en)/learn/vagus-nerve-stimulation/page.tsx"
+        ],
+        "implementationFiles": [
+          "src/app/(en)/learn/vagus-nerve-stimulation/page.tsx"
+        ],
+        "copyDigest": "0490adf6cc57e4701de292362d27109decf186f0869fa16d4a6d624dd0e177c0",
+        "implementationDigest": "0490adf6cc57e4701de292362d27109decf186f0869fa16d4a6d624dd0e177c0",
+        "digestPolicy": "curated-copy-files-v1"
+      },
+      "referencePaths": [
+        "/no/kunnskap/vagusnervestimulering"
+      ],
+      "target": {
+        "locale": "de-DE",
+        "pathCandidate": "/de/wissen/vagusnervstimulation",
+        "pathStatus": "candidate-not-frozen-until-de-wave-2",
+        "status": "planned"
+      },
+      "reviews": {
+        "linguistic": true,
+        "seo": true,
+        "regulatoryClaims": true,
+        "legal": false,
+        "commercial": false
+      },
+      "notes": []
+    },
+    {
+      "pageId": "de-non-invasive-vns",
+      "priority": "P1",
+      "launchBlocking": true,
+      "category": "knowledge",
+      "title": "Non-invasive vagus nerve stimulation",
+      "workType": "translate-seo-adapt",
+      "source": {
+        "locale": "en-US",
+        "path": "/learn/non-invasive-vagus-nerve-stimulation",
+        "copyFiles": [
+          "src/app/(en)/learn/non-invasive-vagus-nerve-stimulation/page.tsx"
+        ],
+        "implementationFiles": [
+          "src/app/(en)/learn/non-invasive-vagus-nerve-stimulation/page.tsx"
+        ],
+        "copyDigest": "08d945254353bcc343d9a4c4a9734acc526c06159c57d0d0dcb9ee7785c136ad",
+        "implementationDigest": "08d945254353bcc343d9a4c4a9734acc526c06159c57d0d0dcb9ee7785c136ad",
+        "digestPolicy": "curated-copy-files-v1"
+      },
+      "referencePaths": [
+        "/no/kunnskap/ikke-invasiv-vagusnervestimulering"
+      ],
+      "target": {
+        "locale": "de-DE",
+        "pathCandidate": "/de/wissen/nicht-invasive-vagusnervstimulation",
+        "pathStatus": "candidate-not-frozen-until-de-wave-2",
+        "status": "planned"
+      },
+      "reviews": {
+        "linguistic": true,
+        "seo": true,
+        "regulatoryClaims": true,
+        "legal": false,
+        "commercial": false
+      },
+      "notes": []
+    },
+    {
+      "pageId": "de-transcutaneous-vns",
+      "priority": "P1",
+      "launchBlocking": true,
+      "category": "knowledge",
+      "title": "Transcutaneous vagus nerve stimulation",
+      "workType": "translate-seo-adapt",
+      "source": {
+        "locale": "en-US",
+        "path": "/learn/transcutaneous-vagus-nerve-stimulation",
+        "copyFiles": [
+          "src/app/(en)/learn/transcutaneous-vagus-nerve-stimulation/page.tsx"
+        ],
+        "implementationFiles": [
+          "src/app/(en)/learn/transcutaneous-vagus-nerve-stimulation/page.tsx"
+        ],
+        "copyDigest": "1ef0532ef0d82ed5099b8721e6caf1fc3583b889b6c59e4a2fd54ad8c4025f9c",
+        "implementationDigest": "1ef0532ef0d82ed5099b8721e6caf1fc3583b889b6c59e4a2fd54ad8c4025f9c",
+        "digestPolicy": "curated-copy-files-v1"
+      },
+      "referencePaths": [
+        "/no/kunnskap/transkutan-vagusnervestimulering"
+      ],
+      "target": {
+        "locale": "de-DE",
+        "pathCandidate": "/de/wissen/transkutane-vagusnervstimulation",
+        "pathStatus": "candidate-not-frozen-until-de-wave-2",
+        "status": "planned"
+      },
+      "reviews": {
+        "linguistic": true,
+        "seo": true,
+        "regulatoryClaims": true,
+        "legal": false,
+        "commercial": false
+      },
+      "notes": []
+    },
+    {
+      "pageId": "de-auricular-vns",
+      "priority": "P1",
+      "launchBlocking": true,
+      "category": "knowledge",
+      "title": "Auricular vagus nerve stimulation",
+      "workType": "translate-seo-adapt",
+      "source": {
+        "locale": "en-US",
+        "path": "/learn/auricular-vagus-nerve-stimulation",
+        "copyFiles": [
+          "src/app/(en)/learn/auricular-vagus-nerve-stimulation/page.tsx"
+        ],
+        "implementationFiles": [
+          "src/app/(en)/learn/auricular-vagus-nerve-stimulation/page.tsx"
+        ],
+        "copyDigest": "1b6cf9030fc7a71c1cf0d5b354ad0d9f3b14ce9d83446a3e952a77696230739f",
+        "implementationDigest": "1b6cf9030fc7a71c1cf0d5b354ad0d9f3b14ce9d83446a3e952a77696230739f",
+        "digestPolicy": "curated-copy-files-v1"
+      },
+      "referencePaths": [
+        "/no/kunnskap/aurikulaer-vagusnervestimulering"
+      ],
+      "target": {
+        "locale": "de-DE",
+        "pathCandidate": "/de/wissen/aurikulaere-vagusnervstimulation",
+        "pathStatus": "candidate-not-frozen-until-de-wave-2",
+        "status": "planned"
+      },
+      "reviews": {
+        "linguistic": true,
+        "seo": true,
+        "regulatoryClaims": true,
+        "legal": false,
+        "commercial": false
+      },
+      "notes": []
+    },
+    {
+      "pageId": "de-ear-vs-neck-vns",
+      "priority": "P1",
+      "launchBlocking": true,
+      "category": "decision-guide",
+      "title": "Ear-based vs neck-based VNS",
+      "workType": "translate-seo-adapt",
+      "source": {
+        "locale": "en-US",
+        "path": "/learn/ear-vs-neck-vagus-nerve-stimulation",
+        "copyFiles": [
+          "src/content/decision-guides/ear-vs-neck-vns.ts"
+        ],
+        "implementationFiles": [
+          "src/app/(en)/learn/ear-vs-neck-vagus-nerve-stimulation/page.tsx"
+        ],
+        "copyDigest": "ffb142671d83dcf085e5f90e7dd6499e8476b9915128191b30f77152ce4b1558",
+        "implementationDigest": "77eb40f05cec673c7d51e478ce38a39808a34c716e988b04c6d348c1d7a02584",
+        "digestPolicy": "curated-copy-files-v1"
+      },
+      "referencePaths": [
+        "/no/kunnskap/orebasert-vs-halsbasert-vns"
+      ],
+      "target": {
+        "locale": "de-DE",
+        "pathCandidate": "/de/wissen/vagusnervstimulation-ohr-oder-hals",
+        "pathStatus": "candidate-not-frozen-until-de-wave-2",
+        "status": "planned"
+      },
+      "reviews": {
+        "linguistic": true,
+        "seo": true,
+        "regulatoryClaims": true,
+        "legal": false,
+        "commercial": false
+      },
+      "notes": []
+    },
+    {
+      "pageId": "de-choose-vns-device",
+      "priority": "P1",
+      "launchBlocking": true,
+      "category": "decision-guide",
+      "title": "How to choose a VNS device",
+      "workType": "translate-seo-adapt",
+      "source": {
+        "locale": "en-US",
+        "path": "/learn/how-to-choose-a-vagus-nerve-stimulation-device",
+        "copyFiles": [
+          "src/content/decision-guides/how-to-choose-vns-device.ts"
+        ],
+        "implementationFiles": [
+          "src/app/(en)/learn/how-to-choose-a-vagus-nerve-stimulation-device/page.tsx"
+        ],
+        "copyDigest": "7afd366946540a2ee3214f66bef82392d3c23cf885cf2a9502421116b4099242",
+        "implementationDigest": "a99053b9c334222f933fb2a0bc766cc9367dac9a55e2ddd5531d021e6240ad35",
+        "digestPolicy": "curated-copy-files-v1"
+      },
+      "referencePaths": [
+        "/no/kunnskap/hvordan-velge-vagusnervestimulator"
+      ],
+      "target": {
+        "locale": "de-DE",
+        "pathCandidate": "/de/wissen/vagusnervstimulator-auswaehlen",
+        "pathStatus": "candidate-not-frozen-until-de-wave-2",
+        "status": "planned"
+      },
+      "reviews": {
+        "linguistic": true,
+        "seo": true,
+        "regulatoryClaims": true,
+        "legal": false,
+        "commercial": false
+      },
+      "notes": []
+    },
+    {
+      "pageId": "de-ear-anatomy-vagus",
+      "priority": "P1",
+      "launchBlocking": true,
+      "category": "knowledge-safety",
+      "title": "Ear anatomy and the vagus nerve",
+      "workType": "translate-seo-adapt",
+      "source": {
+        "locale": "nb-NO",
+        "path": "/no/kunnskap/orets-anatomi-og-vagusnerven",
+        "copyFiles": [
+          "src/content/knowledge/no/articles/orets-anatomi-og-vagusnerven.ts"
+        ],
+        "implementationFiles": [
+          "src/app/(no)/no/kunnskap/[slug]/page.tsx"
+        ],
+        "copyDigest": "dfe8a40b56aae229ff6b37aa98e4e2210c6d13800c6d7c08ebc82052b4e4649b",
+        "implementationDigest": "2aed2a540ae098e6a89a42551d5a74d1ee490efbdd53412bf603b6eabb22d9aa",
+        "digestPolicy": "curated-copy-files-v1"
+      },
+      "referencePaths": [],
+      "target": {
+        "locale": "de-DE",
+        "pathCandidate": "/de/wissen/ohranatomie-und-vagusnerv",
+        "pathStatus": "candidate-not-frozen-until-de-wave-2",
+        "status": "planned"
+      },
+      "reviews": {
+        "linguistic": true,
+        "seo": true,
+        "regulatoryClaims": true,
+        "legal": false,
+        "commercial": false
+      },
+      "notes": [
+        "Norwegian is the current editorial source because no distinct English counterpart exists."
+      ]
+    },
+    {
+      "pageId": "de-implanted-vs-non-invasive-vns",
+      "priority": "P1",
+      "launchBlocking": true,
+      "category": "knowledge-safety",
+      "title": "Implanted and non-invasive VNS",
+      "workType": "translate-seo-adapt",
+      "source": {
+        "locale": "nb-NO",
+        "path": "/no/kunnskap/implantert-og-ikke-invasiv-vns",
+        "copyFiles": [
+          "src/content/knowledge/no/articles/implantert-og-ikke-invasiv-vns.ts"
+        ],
+        "implementationFiles": [
+          "src/app/(no)/no/kunnskap/[slug]/page.tsx"
+        ],
+        "copyDigest": "1861bbe88f2acadc8cd3a37a7e49259305e6fc39b06403eeedac2a2f1ea30b93",
+        "implementationDigest": "2aed2a540ae098e6a89a42551d5a74d1ee490efbdd53412bf603b6eabb22d9aa",
+        "digestPolicy": "curated-copy-files-v1"
+      },
+      "referencePaths": [],
+      "target": {
+        "locale": "de-DE",
+        "pathCandidate": "/de/wissen/implantierte-und-nicht-invasive-vagusnervstimulation",
+        "pathStatus": "candidate-not-frozen-until-de-wave-2",
+        "status": "planned"
+      },
+      "reviews": {
+        "linguistic": true,
+        "seo": true,
+        "regulatoryClaims": true,
+        "legal": false,
+        "commercial": false
+      },
+      "notes": [
+        "Norwegian is the current editorial source because no distinct English counterpart exists."
+      ]
+    },
+    {
+      "pageId": "de-is-vns-safe",
+      "priority": "P1",
+      "launchBlocking": true,
+      "category": "knowledge-safety",
+      "title": "Is vagus nerve stimulation safe?",
+      "workType": "translate-seo-adapt",
+      "source": {
+        "locale": "nb-NO",
+        "path": "/no/kunnskap/er-vagusnervestimulering-trygt",
+        "copyFiles": [
+          "src/content/knowledge/no/articles/er-vagusnervestimulering-trygt.ts"
+        ],
+        "implementationFiles": [
+          "src/app/(no)/no/kunnskap/[slug]/page.tsx"
+        ],
+        "copyDigest": "521e87b9b1b10f3ce409793fedf555733939ecf465684bda0934e1ec4d3d5d41",
+        "implementationDigest": "2aed2a540ae098e6a89a42551d5a74d1ee490efbdd53412bf603b6eabb22d9aa",
+        "digestPolicy": "curated-copy-files-v1"
+      },
+      "referencePaths": [],
+      "target": {
+        "locale": "de-DE",
+        "pathCandidate": "/de/wissen/ist-vagusnervstimulation-sicher",
+        "pathStatus": "candidate-not-frozen-until-de-wave-2",
+        "status": "planned"
+      },
+      "reviews": {
+        "linguistic": true,
+        "seo": true,
+        "regulatoryClaims": true,
+        "legal": false,
+        "commercial": false
+      },
+      "notes": [
+        "Norwegian is the current editorial source because no distinct English counterpart exists."
+      ]
+    },
+    {
+      "pageId": "de-non-invasive-vns-side-effects",
+      "priority": "P1",
+      "launchBlocking": true,
+      "category": "knowledge-safety",
+      "title": "Side effects of non-invasive VNS",
+      "workType": "translate-seo-adapt",
+      "source": {
+        "locale": "nb-NO",
+        "path": "/no/kunnskap/bivirkninger-ved-ikke-invasiv-vagusnervestimulering",
+        "copyFiles": [
+          "src/content/knowledge/no/articles/bivirkninger-ved-ikke-invasiv-vagusnervestimulering.ts"
+        ],
+        "implementationFiles": [
+          "src/app/(no)/no/kunnskap/[slug]/page.tsx"
+        ],
+        "copyDigest": "e584a0b8172515e9079a550582d7f78352a9b1e2c67f11b93b664781ff68e3b8",
+        "implementationDigest": "2aed2a540ae098e6a89a42551d5a74d1ee490efbdd53412bf603b6eabb22d9aa",
+        "digestPolicy": "curated-copy-files-v1"
+      },
+      "referencePaths": [],
+      "target": {
+        "locale": "de-DE",
+        "pathCandidate": "/de/wissen/nebenwirkungen-nicht-invasive-vagusnervstimulation",
+        "pathStatus": "candidate-not-frozen-until-de-wave-2",
+        "status": "planned"
+      },
+      "reviews": {
+        "linguistic": true,
+        "seo": true,
+        "regulatoryClaims": true,
+        "legal": false,
+        "commercial": false
+      },
+      "notes": [
+        "Norwegian is the current editorial source because no distinct English counterpart exists."
+      ]
+    },
+    {
+      "pageId": "de-vns-caution",
+      "priority": "P1",
+      "launchBlocking": true,
+      "category": "knowledge-safety",
+      "title": "Who should be cautious with VNS?",
+      "workType": "translate-seo-adapt",
+      "source": {
+        "locale": "nb-NO",
+        "path": "/no/kunnskap/hvem-bor-vaere-forsiktig-med-vagusnervestimulering",
+        "copyFiles": [
+          "src/content/knowledge/no/articles/hvem-bor-vaere-forsiktig-med-vagusnervestimulering.ts"
+        ],
+        "implementationFiles": [
+          "src/app/(no)/no/kunnskap/[slug]/page.tsx"
+        ],
+        "copyDigest": "17158c692c5e0f8f5c83b25fa17bc309486cde45ea9caffafa7b6f345d89d680",
+        "implementationDigest": "2aed2a540ae098e6a89a42551d5a74d1ee490efbdd53412bf603b6eabb22d9aa",
+        "digestPolicy": "curated-copy-files-v1"
+      },
+      "referencePaths": [],
+      "target": {
+        "locale": "de-DE",
+        "pathCandidate": "/de/wissen/wer-sollte-bei-vagusnervstimulation-vorsichtig-sein",
+        "pathStatus": "candidate-not-frozen-until-de-wave-2",
+        "status": "planned"
+      },
+      "reviews": {
+        "linguistic": true,
+        "seo": true,
+        "regulatoryClaims": true,
+        "legal": false,
+        "commercial": false
+      },
+      "notes": [
+        "Norwegian is the current editorial source because no distinct English counterpart exists."
+      ]
+    },
+    {
+      "pageId": "de-research-hub",
+      "priority": "P1",
+      "launchBlocking": true,
+      "category": "research",
+      "title": "German research hub",
+      "workType": "translate-seo-adapt",
+      "source": {
+        "locale": "en-US",
+        "path": "/research",
+        "copyFiles": [
+          "src/app/(en)/research/page.tsx",
+          "src/content/research-v2.ts"
+        ],
+        "implementationFiles": [
+          "src/app/(en)/research/page.tsx"
+        ],
+        "copyDigest": "3c8a9be966decfea369bdbb0363997b1ee20d28665e9fa895252ddf5c4ef0fe3",
+        "implementationDigest": "a0e5720d296dc53c0bf4aacbdce4ccb01e6bd1b3e37aefebee0c52af985f77a0",
+        "digestPolicy": "curated-copy-files-v1"
+      },
+      "referencePaths": [
+        "/no/forskning"
+      ],
+      "target": {
+        "locale": "de-DE",
+        "pathCandidate": "/de/forschung",
+        "pathStatus": "candidate-not-frozen-until-de-wave-2",
+        "status": "planned"
+      },
+      "reviews": {
+        "linguistic": true,
+        "seo": true,
+        "regulatoryClaims": true,
+        "legal": false,
+        "commercial": false
+      },
+      "notes": []
+    },
+    {
+      "pageId": "de-research-topics-hub",
+      "priority": "P1",
+      "launchBlocking": true,
+      "category": "research",
+      "title": "German research topics hub",
+      "workType": "translate-seo-adapt",
+      "source": {
+        "locale": "en-US",
+        "path": "/research/topics",
+        "copyFiles": [
+          "src/app/(en)/research/topics/page.tsx"
+        ],
+        "implementationFiles": [
+          "src/app/(en)/research/topics/page.tsx"
+        ],
+        "copyDigest": "1709fa2c0b10dbe321e79da1acf6ea5366555dd827f893ddee03db54e271a053",
+        "implementationDigest": "1709fa2c0b10dbe321e79da1acf6ea5366555dd827f893ddee03db54e271a053",
+        "digestPolicy": "curated-copy-files-v1"
+      },
+      "referencePaths": [],
+      "target": {
+        "locale": "de-DE",
+        "pathCandidate": "/de/forschung/themen",
+        "pathStatus": "candidate-not-frozen-until-de-wave-2",
+        "status": "planned"
+      },
+      "reviews": {
+        "linguistic": true,
+        "seo": true,
+        "regulatoryClaims": true,
+        "legal": false,
+        "commercial": false
+      },
+      "notes": []
+    },
+    {
+      "pageId": "de-research-vns",
+      "priority": "P1",
+      "launchBlocking": true,
+      "category": "research",
+      "title": "VNS research topic",
+      "workType": "translate-seo-adapt",
+      "source": {
+        "locale": "en-US",
+        "path": "/research/topics/vagus-nerve-stimulation",
+        "copyFiles": [
+          "src/app/(en)/research/topics/vagus-nerve-stimulation/page.tsx"
+        ],
+        "implementationFiles": [
+          "src/app/(en)/research/topics/vagus-nerve-stimulation/page.tsx"
+        ],
+        "copyDigest": "7b449fce38fa78dd47dbb3f7312d03f81edf21c54ae9e2021a671d73b624aaec",
+        "implementationDigest": "7b449fce38fa78dd47dbb3f7312d03f81edf21c54ae9e2021a671d73b624aaec",
+        "digestPolicy": "curated-copy-files-v1"
+      },
+      "referencePaths": [
+        "/no/forskning/vagusnervestimulering"
+      ],
+      "target": {
+        "locale": "de-DE",
+        "pathCandidate": "/de/forschung/themen/vagusnervstimulation",
+        "pathStatus": "candidate-not-frozen-until-de-wave-2",
+        "status": "planned"
+      },
+      "reviews": {
+        "linguistic": true,
+        "seo": true,
+        "regulatoryClaims": true,
+        "legal": false,
+        "commercial": false
+      },
+      "notes": []
+    },
+    {
+      "pageId": "de-research-tvns",
+      "priority": "P1",
+      "launchBlocking": true,
+      "category": "research",
+      "title": "tVNS research topic",
+      "workType": "translate-seo-adapt",
+      "source": {
+        "locale": "en-US",
+        "path": "/research/topics/transcutaneous-vagus-nerve-stimulation",
+        "copyFiles": [
+          "src/app/(en)/research/topics/transcutaneous-vagus-nerve-stimulation/page.tsx"
+        ],
+        "implementationFiles": [
+          "src/app/(en)/research/topics/transcutaneous-vagus-nerve-stimulation/page.tsx"
+        ],
+        "copyDigest": "dc6cd5156f7ba01c1692b845abaef31e865396c543c2836d931623b819b5279e",
+        "implementationDigest": "dc6cd5156f7ba01c1692b845abaef31e865396c543c2836d931623b819b5279e",
+        "digestPolicy": "curated-copy-files-v1"
+      },
+      "referencePaths": [
+        "/no/forskning/transkutan-vagusnervestimulering"
+      ],
+      "target": {
+        "locale": "de-DE",
+        "pathCandidate": "/de/forschung/themen/transkutane-vagusnervstimulation",
+        "pathStatus": "candidate-not-frozen-until-de-wave-2",
+        "status": "planned"
+      },
+      "reviews": {
+        "linguistic": true,
+        "seo": true,
+        "regulatoryClaims": true,
+        "legal": false,
+        "commercial": false
+      },
+      "notes": []
+    },
+    {
+      "pageId": "de-research-auricular-vns",
+      "priority": "P1",
+      "launchBlocking": true,
+      "category": "research",
+      "title": "Auricular VNS research topic",
+      "workType": "translate-seo-adapt",
+      "source": {
+        "locale": "en-US",
+        "path": "/research/topics/auricular-vagus-nerve-stimulation",
+        "copyFiles": [
+          "src/app/(en)/research/topics/auricular-vagus-nerve-stimulation/page.tsx"
+        ],
+        "implementationFiles": [
+          "src/app/(en)/research/topics/auricular-vagus-nerve-stimulation/page.tsx"
+        ],
+        "copyDigest": "c9f718189eef95032d27cba80fd3959aad51e362c8a3a7cd231fedc1bd8da39c",
+        "implementationDigest": "c9f718189eef95032d27cba80fd3959aad51e362c8a3a7cd231fedc1bd8da39c",
+        "digestPolicy": "curated-copy-files-v1"
+      },
+      "referencePaths": [
+        "/no/forskning/aurikulaer-vagusnervestimulering"
+      ],
+      "target": {
+        "locale": "de-DE",
+        "pathCandidate": "/de/forschung/themen/aurikulaere-vagusnervstimulation",
+        "pathStatus": "candidate-not-frozen-until-de-wave-2",
+        "status": "planned"
+      },
+      "reviews": {
+        "linguistic": true,
+        "seo": true,
+        "regulatoryClaims": true,
+        "legal": false,
+        "commercial": false
+      },
+      "notes": []
+    },
+    {
+      "pageId": "de-research-safety",
+      "priority": "P1",
+      "launchBlocking": true,
+      "category": "research",
+      "title": "Safety and tolerability research",
+      "workType": "translate-seo-adapt",
+      "source": {
+        "locale": "en-US",
+        "path": "/research/topics/safety-and-tolerability",
+        "copyFiles": [
+          "src/app/(en)/research/topics/safety-and-tolerability/page.tsx"
+        ],
+        "implementationFiles": [
+          "src/app/(en)/research/topics/safety-and-tolerability/page.tsx"
+        ],
+        "copyDigest": "0c8ef97c75cab84ee352f18ce8460edd50fe79bdae0f1b9bd7b1faac7ff9ce0c",
+        "implementationDigest": "0c8ef97c75cab84ee352f18ce8460edd50fe79bdae0f1b9bd7b1faac7ff9ce0c",
+        "digestPolicy": "curated-copy-files-v1"
+      },
+      "referencePaths": [
+        "/no/forskning/sikkerhet-og-tolerabilitet"
+      ],
+      "target": {
+        "locale": "de-DE",
+        "pathCandidate": "/de/forschung/themen/sicherheit-und-vertraeglichkeit",
+        "pathStatus": "candidate-not-frozen-until-de-wave-2",
+        "status": "planned"
+      },
+      "reviews": {
+        "linguistic": true,
+        "seo": true,
+        "regulatoryClaims": true,
+        "legal": false,
+        "commercial": false
+      },
+      "notes": []
+    },
+    {
+      "pageId": "de-study-frangos-2015",
+      "priority": "P1",
+      "launchBlocking": true,
+      "category": "research-study",
+      "title": "Frangos 2015 taVNS fMRI study",
+      "workType": "translate-seo-adapt",
+      "source": {
+        "locale": "en-US",
+        "path": "/research/studies/frangos-2015-auricular-vagus-nerve-stimulation-fmri",
+        "copyFiles": [
+          "src/content/research-study-catalog.ts"
+        ],
+        "implementationFiles": [
+          "src/app/(en)/research/studies/frangos-2015-auricular-vagus-nerve-stimulation-fmri/page.tsx"
+        ],
+        "copyDigest": "a52f012b9dc444fefb8b60ad5b7994393cce7996fc8db49306495ea3c36a3ba5",
+        "implementationDigest": "ee0e2519fdc2d507546b53a796be9bfb1fbabdfad73673441097d142d82e530a",
+        "digestPolicy": "curated-copy-files-v1",
+        "selector": "study.slug == \"frangos-2015-auricular-vagus-nerve-stimulation-fmri\""
+      },
+      "referencePaths": [],
+      "target": {
+        "locale": "de-DE",
+        "pathCandidate": "/de/forschung/studien/frangos-2015-aurikulaere-vagusnervstimulation-fmri",
+        "pathStatus": "candidate-not-frozen-until-de-wave-2",
+        "status": "planned"
+      },
+      "reviews": {
+        "linguistic": true,
+        "seo": true,
+        "regulatoryClaims": true,
+        "legal": false,
+        "commercial": false
+      },
+      "notes": [
+        "Wave 5 should replace the whole-catalog file hash with an entry-level copy hash."
+      ]
+    },
+    {
+      "pageId": "de-glossary-hub",
+      "priority": "P1",
+      "launchBlocking": true,
+      "category": "glossary",
+      "title": "German glossary hub",
+      "workType": "translate-seo-adapt",
+      "source": {
+        "locale": "en-US",
+        "path": "/glossary",
+        "copyFiles": [
+          "src/content/glossary/en/terms.ts"
+        ],
+        "implementationFiles": [
+          "src/app/(en)/glossary/page.tsx",
+          "src/components/glossary/GlossaryHubPage.tsx"
+        ],
+        "copyDigest": "c3770d3ccab3ea5ef97b250c15833e448513e017ff78eaf5bf26e04a59b12b28",
+        "implementationDigest": "11d7b2441ee1949ca2a736c9ecde046b8a2abdf58867c05fe16fc61b042727c0",
+        "digestPolicy": "curated-copy-files-v1"
+      },
+      "referencePaths": [
+        "/no/ordliste"
+      ],
+      "target": {
+        "locale": "de-DE",
+        "pathCandidate": "/de/glossar",
+        "pathStatus": "candidate-not-frozen-until-de-wave-2",
+        "status": "planned"
+      },
+      "reviews": {
+        "linguistic": true,
+        "seo": true,
+        "regulatoryClaims": true,
+        "legal": false,
+        "commercial": false
+      },
+      "notes": [
+        "German glossary locale support requires extending the current en/no-only types and registry."
+      ]
+    },
+    {
+      "pageId": "de-glossary-vagus-nerve",
+      "priority": "P1",
+      "launchBlocking": true,
+      "category": "glossary",
+      "title": "Vagus nerve glossary term",
+      "workType": "translate-seo-adapt",
+      "source": {
+        "locale": "en-US",
+        "path": "/glossary/vagus-nerve",
+        "copyFiles": [
+          "src/content/glossary/en/terms.ts"
+        ],
+        "implementationFiles": [
+          "src/app/(en)/glossary/[slug]/page.tsx"
+        ],
+        "copyDigest": "2858a2be89ffa8547fae638ae0155bbbc8ef7681c1e6bd0fd331fa5a0bffb485",
+        "implementationDigest": "3f1754cc7a4f025c8d0ab121d9e5982d5fb608543f1f73b98c71c70c69e060a3",
+        "digestPolicy": "entry-normalized-v1",
+        "selector": "glossaryTerm.id == \"vagus-nerve\""
+      },
+      "referencePaths": [
+        "/no/ordliste/vagusnerven"
+      ],
+      "target": {
+        "locale": "de-DE",
+        "pathCandidate": "/de/glossar/vagusnerv",
+        "pathStatus": "candidate-not-frozen-until-de-wave-2",
+        "status": "planned"
+      },
+      "reviews": {
+        "linguistic": true,
+        "seo": true,
+        "regulatoryClaims": true,
+        "legal": false,
+        "commercial": false
+      },
+      "notes": [
+        "Copy digest is entry-specific and will not change when unrelated glossary terms are added."
+      ]
+    },
+    {
+      "pageId": "de-glossary-vns",
+      "priority": "P1",
+      "launchBlocking": true,
+      "category": "glossary",
+      "title": "Vagus nerve stimulation glossary term",
+      "workType": "translate-seo-adapt",
+      "source": {
+        "locale": "en-US",
+        "path": "/glossary/vagus-nerve-stimulation",
+        "copyFiles": [
+          "src/content/glossary/en/terms.ts"
+        ],
+        "implementationFiles": [
+          "src/app/(en)/glossary/[slug]/page.tsx"
+        ],
+        "copyDigest": "c264814c9c44e1472eeb73b319af2f58e192e02b317c96cf45129d1e7f0bfcb7",
+        "implementationDigest": "3f1754cc7a4f025c8d0ab121d9e5982d5fb608543f1f73b98c71c70c69e060a3",
+        "digestPolicy": "entry-normalized-v1",
+        "selector": "glossaryTerm.id == \"vagus-nerve-stimulation\""
+      },
+      "referencePaths": [
+        "/no/ordliste/vagusnervestimulering"
+      ],
+      "target": {
+        "locale": "de-DE",
+        "pathCandidate": "/de/glossar/vagusnervstimulation",
+        "pathStatus": "candidate-not-frozen-until-de-wave-2",
+        "status": "planned"
+      },
+      "reviews": {
+        "linguistic": true,
+        "seo": true,
+        "regulatoryClaims": true,
+        "legal": false,
+        "commercial": false
+      },
+      "notes": [
+        "Copy digest is entry-specific and will not change when unrelated glossary terms are added."
+      ]
+    },
+    {
+      "pageId": "de-glossary-non-invasive-vns",
+      "priority": "P1",
+      "launchBlocking": true,
+      "category": "glossary",
+      "title": "Non-invasive VNS glossary term",
+      "workType": "translate-seo-adapt",
+      "source": {
+        "locale": "en-US",
+        "path": "/glossary/non-invasive-vagus-nerve-stimulation",
+        "copyFiles": [
+          "src/content/glossary/en/terms.ts"
+        ],
+        "implementationFiles": [
+          "src/app/(en)/glossary/[slug]/page.tsx"
+        ],
+        "copyDigest": "c888d02948e7757c613db404e26a3c8027580e8ba4aa80527a105f51cd0bbc76",
+        "implementationDigest": "3f1754cc7a4f025c8d0ab121d9e5982d5fb608543f1f73b98c71c70c69e060a3",
+        "digestPolicy": "entry-normalized-v1",
+        "selector": "glossaryTerm.id == \"non-invasive-vns\""
+      },
+      "referencePaths": [
+        "/no/ordliste/ikke-invasiv-vagusnervestimulering"
+      ],
+      "target": {
+        "locale": "de-DE",
+        "pathCandidate": "/de/glossar/nicht-invasive-vagusnervstimulation",
+        "pathStatus": "candidate-not-frozen-until-de-wave-2",
+        "status": "planned"
+      },
+      "reviews": {
+        "linguistic": true,
+        "seo": true,
+        "regulatoryClaims": true,
+        "legal": false,
+        "commercial": false
+      },
+      "notes": [
+        "Copy digest is entry-specific and will not change when unrelated glossary terms are added."
+      ]
+    },
+    {
+      "pageId": "de-glossary-tavns",
+      "priority": "P1",
+      "launchBlocking": true,
+      "category": "glossary",
+      "title": "Transcutaneous auricular VNS glossary term",
+      "workType": "translate-seo-adapt",
+      "source": {
+        "locale": "en-US",
+        "path": "/glossary/transcutaneous-auricular-vagus-nerve-stimulation",
+        "copyFiles": [
+          "src/content/glossary/en/terms.ts"
+        ],
+        "implementationFiles": [
+          "src/app/(en)/glossary/[slug]/page.tsx"
+        ],
+        "copyDigest": "52c791c9c4969fda9acbea3d31828e1fe5488c419eedb4b420b33f53b574d34e",
+        "implementationDigest": "3f1754cc7a4f025c8d0ab121d9e5982d5fb608543f1f73b98c71c70c69e060a3",
+        "digestPolicy": "entry-normalized-v1",
+        "selector": "glossaryTerm.id == \"transcutaneous-auricular-vns\""
+      },
+      "referencePaths": [
+        "/no/ordliste/transkutan-aurikulaer-vagusnervestimulering"
+      ],
+      "target": {
+        "locale": "de-DE",
+        "pathCandidate": "/de/glossar/transkutane-aurikulaere-vagusnervstimulation",
+        "pathStatus": "candidate-not-frozen-until-de-wave-2",
+        "status": "planned"
+      },
+      "reviews": {
+        "linguistic": true,
+        "seo": true,
+        "regulatoryClaims": true,
+        "legal": false,
+        "commercial": false
+      },
+      "notes": [
+        "Copy digest is entry-specific and will not change when unrelated glossary terms are added."
+      ]
+    }
+  ]
+}

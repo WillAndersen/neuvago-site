@@ -1,0 +1,245 @@
+{
+  "schemaVersion": 1,
+  "project": "Neuvago",
+  "wave": "DE Wave 0",
+  "baselineCommit": "43369d78e868238317571c30cf2131f4e75b857e",
+  "status": "approved-with-corrections",
+  "findings": [
+    {
+      "id": "DE-W0-001",
+      "severity": "critical",
+      "area": "scope-model",
+      "title": "The automated seed models language routes as separate pages",
+      "evidence": {
+        "file": "de-page-registry-seed.json",
+        "entries": 191,
+        "automatedP0P1Routes": 59
+      },
+      "impact": "English and Norwegian counterparts are double-counted and would create an inflated, unstable translation scope.",
+      "decision": "Do not install the original seed. German Launch Baseline v1 uses 45 unique page concepts: 20 P0 and 25 P1."
+    },
+    {
+      "id": "DE-W0-002",
+      "severity": "high",
+      "area": "route-classification",
+      "title": "Redirect and counterpart routes were misclassified",
+      "evidence": {
+        "routes": [
+          {
+            "route": "/no/product",
+            "finding": "redirect-only route incorrectly proposed as P0"
+          },
+          {
+            "route": "/no/slik-fungerer-det",
+            "finding": "actual Norwegian counterpart to /how-it-works incorrectly proposed as P2"
+          }
+        ]
+      },
+      "impact": "The launch set would translate infrastructure while omitting a core commercial counterpart.",
+      "decision": "Exclude /no/product; map /no/slik-fungerer-det to the de-how-it-works P0 concept."
+    },
+    {
+      "id": "DE-W0-003",
+      "severity": "critical",
+      "area": "change-detection",
+      "title": "The generated translation hashes are too broad and cross-locale",
+      "evidence": {
+        "modes": {
+          "dependency-bundle": 164,
+          "route-file-plus-matched-content": 52,
+          "source-file": 3
+        },
+        "examples": [
+          "/product includes English and Norwegian product content",
+          "/how-it-works includes English and Norwegian content",
+          "slug collisions attach unrelated knowledge and research files",
+          "shared visual components are included in translation hashes"
+        ]
+      },
+      "impact": "Unrelated design or Norwegian content changes can incorrectly mark German translations stale, while source ownership remains ambiguous.",
+      "decision": "Baseline v1 stores curated copy digests separately from implementation digests. DE Wave 5 must implement locale- and entry-aware stale detection."
+    },
+    {
+      "id": "DE-W0-004",
+      "severity": "high",
+      "area": "audit-package",
+      "title": "The source snapshot is not complete",
+      "evidence": {
+        "manifestFiles": 414,
+        "missingFromSnapshot": [
+          "src/hooks/useAccountProfile.ts",
+          "src/hooks/useAuthUser.ts",
+          "src/hooks/useRequireAccountAccess.ts",
+          "src/i18n/routes.ts"
+        ],
+        "relevantMissingFile": "src/i18n/routes.ts"
+      },
+      "impact": "The immutable commit is verified, but the packaged source snapshot omits a file central to locale routing.",
+      "decision": "No rerun is required for Wave 0 because the commit and manifest are immutable and verified. Add src/i18n/ and src/hooks/ to the next audit script snapshot allowlist."
+    },
+    {
+      "id": "DE-W0-005",
+      "severity": "critical",
+      "area": "i18n-architecture",
+      "title": "The current runtime architecture is binary English/Norwegian",
+      "evidence": {
+        "files": [
+          "src/proxy.ts",
+          "src/components/layout/site-header.tsx",
+          "src/components/layout/site-footer.tsx",
+          "src/content/glossary/types.ts"
+        ],
+        "examples": [
+          "src/proxy.ts maps only /no to no and every other path to en",
+          "header/footer dictionaries are typed for current en/no locales",
+          "GlossaryLocale is defined as en | no"
+        ]
+      },
+      "impact": "Creating /de pages without a shared locale registry would produce English locale state, scattered special cases, and fragile future expansion.",
+      "decision": "DE Wave 1 must introduce a generic locale/market registry before substantive German page production."
+    },
+    {
+      "id": "DE-W0-006",
+      "severity": "high",
+      "area": "international-seo",
+      "title": "Canonical and hreflang conventions are inconsistent",
+      "evidence": {
+        "examples": [
+          "Core pages mix no-NO and nb-NO",
+          "/no/app, /no/om-oss and /no/support omit x-default",
+          "the Norwegian legal metadata helper does not emit a complete reciprocal set"
+        ]
+      },
+      "impact": "Adding de-DE on top of inconsistent local metadata would multiply errors and make reciprocity audits unreliable.",
+      "decision": "Centralize metadata and standardize active language tags to en-US, nb-NO, de-DE and x-default in DE Wave 1."
+    },
+    {
+      "id": "DE-W0-007",
+      "severity": "high",
+      "area": "technical-seo",
+      "title": "Two launch-adjacent English pages lack page-level metadata",
+      "evidence": {
+        "routes": [
+          {
+            "route": "/how-to-use",
+            "missing": [
+              "metadata export",
+              "canonical",
+              "hreflang"
+            ]
+          },
+          {
+            "route": "/get-started",
+            "missing": [
+              "metadata export",
+              "canonical",
+              "hreflang",
+              "JSON-LD"
+            ]
+          }
+        ]
+      },
+      "impact": "The German implementation could inherit incomplete SEO foundations.",
+      "decision": "Keep /how-to-use in P0 and repair metadata. Hold /get-started outside the German launch set until the account/app journey is localized or the page is redefined."
+    },
+    {
+      "id": "DE-W0-008",
+      "severity": "critical",
+      "area": "content-baseline",
+      "title": "About and support may be overridden by production CMS content not captured in Git",
+      "evidence": {
+        "routes": [
+          "/about",
+          "/support"
+        ],
+        "dependency": "Supabase page_content via getPageContent()",
+        "files": [
+          "src/lib/content/get-about-content.ts",
+          "src/lib/content/get-support-content.ts",
+          "src/lib/content/get-page-content.ts"
+        ]
+      },
+      "impact": "The verified Git commit may not equal the text a production user sees.",
+      "decision": "Export and freeze the effective production CMS rows before translation; then make locale ownership explicit."
+    },
+    {
+      "id": "DE-W0-009",
+      "severity": "critical",
+      "area": "legal-readiness",
+      "title": "Current legal copy is not ready for German publication",
+      "evidence": {
+        "examples": [
+          "English privacy and terms pages contain Effective Date: [Insert date]",
+          "Norwegian legal content labels itself launch copy and lists unresolved shipping, returns, withdrawal, complaints, processors and app-data details",
+          "The baseline Norwegian CE wording reflects an in-progress state and must be reconciled with the now-completed CE documentation"
+        ]
+      },
+      "impact": "Literal translation would carry placeholders, stale status statements and incomplete market terms into Germany.",
+      "decision": "Treat German legal pages as market adaptation or German-native authoring, with separate legal and regulatory approval."
+    },
+    {
+      "id": "DE-W0-010",
+      "severity": "high",
+      "area": "market-scope",
+      "title": "US-specific FDA pages should not enter the German launch set",
+      "evidence": {
+        "routes": [
+          "/legal/fda-status",
+          "/no/juridisk/fda-status"
+        ]
+      },
+      "impact": "They add irrelevant launch work and confuse an EU/CE-focused German legal journey.",
+      "decision": "Keep FDA content available on existing languages but exclude it from German Wave 0/P0."
+    },
+    {
+      "id": "DE-W0-011",
+      "severity": "high",
+      "area": "customer-journey",
+      "title": "Get started currently enters an English-only private account journey",
+      "evidence": {
+        "route": "/get-started",
+        "links": [
+          "/signup",
+          "/login",
+          "/app"
+        ]
+      },
+      "impact": "A translated public page would hand German customers into an untranslated account flow.",
+      "decision": "Hold /get-started outside the initial German launch scope. Reintroduce it when the private account/app boundary is deliberately localized."
+    },
+    {
+      "id": "DE-W0-012",
+      "severity": "medium",
+      "area": "registry-model",
+      "title": "Dynamic route patterns are templates, not translation concepts",
+      "evidence": {
+        "patterns": [
+          "/glossary/[slug]",
+          "/no/forskning/[slug]",
+          "/no/kunnskap/[slug]",
+          "/no/ordliste/[slug]",
+          "/no/tilstander/[slug]"
+        ]
+      },
+      "impact": "Registering templates alongside generated routes creates duplicates and misleading coverage counts.",
+      "decision": "Track templates as implementation infrastructure; register exact published content entries as concepts."
+    },
+    {
+      "id": "DE-W0-013",
+      "severity": "high",
+      "area": "claims",
+      "title": "The shop page contains comparatively strong benefit claims",
+      "evidence": {
+        "route": "/shop",
+        "examples": [
+          "help you sleep better",
+          "feel calmer",
+          "manage everyday stress",
+          "support recovery"
+        ]
+      },
+      "impact": "Direct translation may conflict with the intended-use and claims framework chosen for Germany.",
+      "decision": "P0 claims review is mandatory before German copy is drafted."
+    }
+  ]
+}

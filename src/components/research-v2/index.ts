@@ -5,6 +5,7 @@ export { ResearchV2Exploring } from "./ResearchV2Exploring";
 export { ResearchV2Featured } from "./ResearchV2Featured";
 export { ResearchV2Foundations } from "./ResearchV2Foundations";
 export { ResearchV2Approach } from "./ResearchV2Approach";
+export { ResearchV2Guides } from "./ResearchV2Guides";
 export { ResearchV2Library } from "./ResearchV2Library";
 export { ResearchV2Continue } from "./ResearchV2Continue";
 export { FeaturedTavnsStudyPage } from "./FeaturedTavnsStudyPage";

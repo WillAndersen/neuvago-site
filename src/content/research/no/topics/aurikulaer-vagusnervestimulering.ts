@@ -1246,5 +1246,12 @@ export const aurikulaerVagusnervestimuleringResearchTopic = {
       href: "/no/slik-fungerer-det",
       label: "See how it works",
     },
+    {
+      title: "Slik leser du en VNS-studie",
+      description:
+        "Skill øreanatomi, stimuleringsparametere, sham-design, target engagement og senere utfall før et aurikulært funn overføres.",
+      href: "/no/forskning/slik-leser-du-en-vns-studie",
+      label: "Åpne forskningsguiden",
+    },
   ],
 } as const satisfies NorwegianResearchTopic;

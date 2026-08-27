@@ -990,5 +990,12 @@ export const transkutanVagusnervestimuleringResearchTopic = {
       href: "/no/slik-fungerer-det",
       label: "Se hvordan systemet fungerer",
     },
+    {
+      title: "Slik leser du en VNS-studie",
+      description:
+        "Rekonstruer enhet, stimuleringssted, parametere, kontrollbetingelse, utfall og overføringsgrenser før et tVNS-resultat gjentas.",
+      href: "/no/forskning/slik-leser-du-en-vns-studie",
+      label: "Åpne forskningsguiden",
+    },
   ],
 } as const satisfies NorwegianResearchTopic;

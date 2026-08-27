@@ -83,6 +83,13 @@ const libraryLayers = [
     linkLabel: "Go to research hub",
   },
   {
+    title: "How to read a VNS study",
+    description:
+      "Use the 12-step research-literacy framework to check design, protocol, sham, outcomes, uncertainty, bias, harms and evidence transfer before relying on a conclusion.",
+    href: "/research/how-to-read-a-vns-study",
+    linkLabel: "Open research-literacy guide",
+  },
+  {
     title: "Learn",
     description:
       "The learning hub translates foundational ideas such as regulation, vagal signalling, stress, sleep, and recovery into everyday language.",

@@ -1065,5 +1065,12 @@ export const vagusnervestimuleringResearchTopic = {
       href: "/no/juridisk/medisinsk-ansvarsfraskrivelse",
       label: "Les ansvarsfraskrivelsen",
     },
+    {
+      title: "Slik leser du en VNS-studie",
+      description:
+        "Bruk en tolvtrinnsmodell for studiedesign, protokoll, sham, utfall, usikkerhet, skjevhet, uønskede hendelser og evidensoverføring.",
+      href: "/no/forskning/slik-leser-du-en-vns-studie",
+      label: "Åpne forskningsguiden",
+    },
   ],
 } as const satisfies NorwegianResearchTopic;

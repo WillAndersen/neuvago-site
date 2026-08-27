@@ -243,6 +243,13 @@ const internalPathways = [
     href: "/research/studies/frangos-2015-auricular-vagus-nerve-stimulation-fmri",
     linkLabel: "Read study summary",
   },
+  {
+    title: "How to read a VNS study",
+    description:
+      "Use the research-literacy guide to reconstruct the device, site, parameters, comparator, outcomes and transfer limits behind a tVNS result.",
+    href: "/research/how-to-read-a-vns-study",
+    linkLabel: "Open research-literacy guide",
+  },
 ];
 
 const commercialPathways = [

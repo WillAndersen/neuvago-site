@@ -199,6 +199,13 @@ const connectedResearch = [
     linkLabel: "Explore the product",
   },
   {
+    title: "How to read a VNS study",
+    description:
+      "Use a 12-step framework for design, participants, device, protocol, sham, outcomes, uncertainty, bias, harms and evidence transfer.",
+    href: "/research/how-to-read-a-vns-study",
+    linkLabel: "Open research-literacy guide",
+  },
+  {
     title: "Scientific Studies Library",
     description:
       "Return to the full studies library to browse individual papers across multiple research tracks.",

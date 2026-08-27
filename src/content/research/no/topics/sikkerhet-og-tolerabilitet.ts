@@ -1043,5 +1043,12 @@ export const sikkerhetOgTolerabilitetResearchTopic = {
       href: "/no/slik-fungerer-det",
       label: "Se hvordan systemet fungerer",
     },
+    {
+      title: "Slik leser du en VNS-studie",
+      description:
+        "Kontroller eksponering, eksklusjoner, hendelsesdefinisjoner, nevnere, manglende data og årsaksvurdering før en sikkerhetskonklusjon gjentas.",
+      href: "/no/forskning/slik-leser-du-en-vns-studie",
+      label: "Åpne forskningsguiden",
+    },
   ],
 } as const satisfies NorwegianResearchTopic;

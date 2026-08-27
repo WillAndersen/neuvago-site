@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 import { JsonLd } from "@/components/seo/json-ld";
+import { getPublishedResearchGuidesForLocale } from "@/content/research-guides/registry";
 import { getPublishedNorwegianResearchTopics } from "@/content/research/no/registry";
 import { buildNorwegianResearchHubStructuredData } from "@/lib/seo/norwegian-research-topic";
 
@@ -86,6 +87,7 @@ const pathways = [
 ] as const;
 
 export default function NorwegianResearchHubPage() {
+  const guides = getPublishedResearchGuidesForLocale("no");
   const topics = getPublishedNorwegianResearchTopics();
   const structuredData =
     buildNorwegianResearchHubStructuredData();
@@ -154,6 +156,65 @@ export default function NorwegianResearchHubPage() {
                 <p className="mt-4 text-sm leading-7 text-[#596159]">
                   {item.description}
                 </p>
+              </article>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="border-b border-black/6 bg-[#f7f4ef]">
+        <div className="mx-auto max-w-7xl px-5 py-16 sm:px-8 lg:px-12 lg:py-24">
+          <div className="max-w-4xl">
+            <p className="text-xs font-medium uppercase tracking-[0.2em] text-[#66736a]">
+              Forskningsguider
+            </p>
+            <h2 className="mt-4 text-3xl font-medium tracking-[-0.035em] md:text-5xl">
+              Lær å lese metoden før konklusjonen
+            </h2>
+            <p className="mt-5 text-base leading-8 text-[#596159] md:text-lg">
+              Guidene viser hvordan studiedesign, protokoll, sham,
+              utfall, usikkerhet og risiko for skjevhet påvirker hva
+              en VNS-studie faktisk kan støtte.
+            </p>
+          </div>
+
+          <div className="mt-12 grid gap-6 md:grid-cols-2">
+            {guides.map((guide, index) => (
+              <article
+                key={guide.path}
+                className={`min-w-0 rounded-[1.75rem] border p-7 shadow-[0_16px_52px_rgba(31,31,28,0.05)] ${
+                  index === 0
+                    ? "border-black/10 bg-[#1f1f1c] text-white"
+                    : "border-black/6 bg-white/74 text-[#1f1f1c]"
+                }`}
+              >
+                <p
+                  className={`text-xs font-medium uppercase tracking-[0.16em] ${
+                    index === 0 ? "text-white/50" : "text-[#718076]"
+                  }`}
+                >
+                  {guide.hubLabel}
+                </p>
+                <h3 className="mt-3 break-words text-3xl font-medium tracking-[-0.035em]">
+                  {guide.hubTitle}
+                </h3>
+                <p
+                  className={`mt-5 text-base leading-8 ${
+                    index === 0 ? "text-white/70" : "text-[#596159]"
+                  }`}
+                >
+                  {guide.hubSummary}
+                </p>
+                <Link
+                  href={guide.path}
+                  className={`mt-7 inline-flex rounded-full px-5 py-2.5 text-sm font-medium ${
+                    index === 0
+                      ? "bg-white text-[#1f1f1c]"
+                      : "bg-[#1f1f1c] text-white"
+                  }`}
+                >
+                  Åpne forskningsguiden
+                </Link>
               </article>
             ))}
           </div>

@@ -4,6 +4,7 @@ import { getPublishedNorwegianKnowledgeArticles } from "@/content/knowledge/no/r
 import { getPublishedDecisionGuides } from "@/content/decision-guides/registry";
 import { getPublishedNorwegianConditionPages } from "@/content/conditions/no/registry";
 
+import { getPublishedResearchGuides } from "@/content/research-guides/registry";
 import { getPublishedNorwegianResearchTopics } from "@/content/research/no/registry";
 import {
   getPublishedEnglishGlossaryTerms,
@@ -146,6 +147,14 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: topic.sitemapPriority,
     }));
 
+  const researchGuideEntries: MetadataRoute.Sitemap =
+    getPublishedResearchGuides().map((guide) => ({
+      url: new URL(guide.path, siteUrl).toString(),
+      lastModified: new Date(`${guide.modifiedAt}T12:00:00Z`),
+      changeFrequency: guide.changeFrequency,
+      priority: guide.sitemapPriority,
+    }));
+
   const englishGlossaryEntries: MetadataRoute.Sitemap =
     getPublishedEnglishGlossaryTerms().map((term) => ({
       url: new URL(term.path, siteUrl).toString(),
@@ -168,6 +177,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     ...norwegianKnowledgeEntries,
     ...norwegianConditionEntries,
     ...norwegianResearchTopicEntries,
+    ...researchGuideEntries,
     ...englishGlossaryEntries,
     ...norwegianGlossaryEntries,
   ];

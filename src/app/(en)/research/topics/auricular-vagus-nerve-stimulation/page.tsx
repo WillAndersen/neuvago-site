@@ -504,6 +504,13 @@ const relatedPathways = [
     linkLabel: "Read study summary",
   },
   {
+    title: "How to read a VNS study",
+    description:
+      "Use the 12-step guide to separate anatomy, stimulation parameters, sham design, target engagement and downstream outcomes.",
+    href: "/research/how-to-read-a-vns-study",
+    linkLabel: "Open research-literacy guide",
+  },
+  {
     title: "Auricular VNS guide",
     description:
       "Move from the research layer to a plain-language explanation of taVNS, ear placement, comfort, and responsible claims.",

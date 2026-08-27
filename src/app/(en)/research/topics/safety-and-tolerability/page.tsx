@@ -242,6 +242,13 @@ const internalPathways = [
     linkLabel: "Explore VNS research",
   },
   {
+    title: "How to read a VNS study",
+    description:
+      "Check exposure, exclusions, adverse-event definitions, denominators, missing data and attribution before repeating a safety conclusion.",
+    href: "/research/how-to-read-a-vns-study",
+    linkLabel: "Open research-literacy guide",
+  },
+  {
     title: "How Neuvago works",
     description:
       "Move from research boundaries into the practical device, app guidance, session structure, and daily use experience.",

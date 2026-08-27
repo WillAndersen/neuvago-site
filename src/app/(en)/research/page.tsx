@@ -8,9 +8,11 @@ import {
   ResearchV2Featured,
   ResearchV2Foundations,
   ResearchV2Approach,
+  ResearchV2Guides,
   ResearchV2Library,
   ResearchV2Continue,
 } from "@/components/research-v2";
+import { getPublishedResearchGuidesForLocale } from "@/content/research-guides/registry";
 import { researchV2Content } from "@/content/research-v2";
 import { buildPageWithBreadcrumbStructuredData } from "@/lib/seo/structured-data";
 
@@ -47,6 +49,7 @@ export const metadata: Metadata = {
 
 export default function ResearchPage() {
   const content = researchV2Content;
+  const researchGuides = getPublishedResearchGuidesForLocale("en");
 
   const structuredData = buildPageWithBreadcrumbStructuredData({
     title,
@@ -69,6 +72,7 @@ export default function ResearchPage() {
       <ResearchV2Featured content={content.featured} />
       <ResearchV2Foundations content={content.foundations} />
       <ResearchV2Approach content={content.approach} />
+      <ResearchV2Guides guides={researchGuides} />
       <ResearchV2Library content={content.library} />
       <ResearchV2Continue content={content.continue} />
     </main>

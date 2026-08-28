@@ -250,20 +250,35 @@ export const researchV2Content = {
   },
 
   featured: {
-    eyebrow: "Featured taVNS Research",
-    title: "Four perspectives on an active research field.",
+    eyebrow: "FEATURED taVNS RESEARCH",
+    title: "Selected research across the taVNS field.",
     description:
-      "Explore verified taVNS research across sleep, safety and tolerability, brain pathways, and autonomic function. The evidence includes systematic reviews, meta-analyses, and human neuroimaging.",
-    studies: featuredTavnsStudies.map((study) => ({
-      researchArea: study.researchArea,
-      evidenceType: study.evidenceType,
-      heading: study.cardHeading,
-      summary: study.cardSummary,
-      year: study.year,
-      href: study.href,
-    })) satisfies ResearchV2FeaturedStudyCard[],
-    boundary:
-      "These studies describe the wider taVNS research field. They do not automatically establish clinical effects for every protocol, device, population, or the Neuvago device itself.",
+      "These studies span systematic reviews, meta-analyses and human neuroimaging across sleep, safety and tolerability, central vagal pathways and autonomic function.",
+    studies: featuredTavnsStudies.map((study) => {
+      let summary = study.cardSummary;
+
+      if (
+        study.slug ===
+        "de-oliveira-2025-tavns-insomnia-systematic-review-meta-analysis"
+      ) {
+        summary =
+          "A 2025 systematic review and meta-analysis of six studies involving 336 participants reported improvements in sleep quality and insomnia severity.";
+      } else if (
+        study.slug === "kim-2022-tavns-safety-systematic-review-meta-analysis"
+      ) {
+        summary =
+          "A large systematic review and meta-analysis evaluated taVNS safety across 177 studies involving 6,322 participants.";
+      }
+
+      return {
+        researchArea: study.researchArea,
+        evidenceType: study.evidenceType,
+        heading: study.cardHeading,
+        summary,
+        year: study.year,
+        href: study.href,
+      };
+    }) satisfies ResearchV2FeaturedStudyCard[],
   },
 
   foundations: {

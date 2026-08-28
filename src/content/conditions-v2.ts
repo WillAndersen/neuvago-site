@@ -1,3 +1,5 @@
+import { commerceContent } from "@/content/commerce";
+
 export type ConditionsV2Link = {
   label: string;
   href: string;
@@ -41,19 +43,27 @@ export type ConditionsV2Content = {
   };
   researchBridge: {
     visible: boolean;
+    eyebrow: string;
     title: string;
-    description?: string;
+    introduction: string;
+    context: string;
     cta: ConditionsV2Link;
   };
   finalCta: {
     visible: boolean;
+    eyebrow: string;
     title: string;
-    description?: string;
-    primaryCta?: ConditionsV2Link;
-    secondaryCta?: ConditionsV2Link;
+    description: string;
+    primaryCta: ConditionsV2Link;
+    secondaryCta: ConditionsV2Link;
     image: ConditionsV2Image;
   };
 };
+
+const conditionsFinalPrimaryCta = {
+  label: commerceContent.ctaLabel,
+  href: commerceContent.shopHref,
+} satisfies ConditionsV2Link;
 
 export const conditionsV2Content = {
   hero: {
@@ -146,7 +156,12 @@ export const conditionsV2Content = {
   },
   researchBridge: {
     visible: true,
-    title: "Explore what the research says.",
+    eyebrow: "RESEARCH",
+    title: "Explore what the science says.",
+    introduction:
+      "A growing body of research is examining vagus nerve stimulation and transcutaneous auricular vagus nerve stimulation (taVNS) across areas including sleep, stress, anxiety and mood, migraine and headache, gut–brain function, chronic pain, autonomic regulation, heart rate variability (HRV), safety and tolerability.",
+    context:
+      "Findings are encouraging across several areas, while results vary between devices, stimulation protocols and study populations.",
     cta: {
       label: "Explore Research",
       href: "/research",
@@ -154,10 +169,18 @@ export const conditionsV2Content = {
   },
   finalCta: {
     visible: true,
-    title: "Explore Neuvago.",
+    eyebrow: "NEUVAGO",
+    title: "Explore a practical approach to vagus nerve stimulation.",
+    description:
+      "Neuvago combines four 20-minute stimulation modes with 30 adjustable intensity levels in a simple handheld device designed to support better sleep, calmer responses to everyday stress, focused time and recovery.",
+    primaryCta: conditionsFinalPrimaryCta,
+    secondaryCta: {
+      label: "Explore the Product",
+      href: "/product",
+    } satisfies ConditionsV2Link,
     image: {
       src: "/images/neuvago/launch/product-hero-desktop.webp",
-      alt: "",
+      alt: "Neuvago vagus nerve stimulation device.",
     },
   },
 } as const satisfies ConditionsV2Content;

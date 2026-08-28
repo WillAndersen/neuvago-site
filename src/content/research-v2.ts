@@ -371,24 +371,24 @@ export const researchV2Content = {
   },
 
   continue: {
-    eyebrow: "Continue exploring",
-    title: "Move from research into technology or plain-language learning.",
+    eyebrow: "CONTINUE EXPLORING",
+    title: "Continue from evidence to understanding.",
     description:
-      "Research provides the evidence context. How it Works explains the Neuvago approach, while Learn provides accessible education about the vagus nerve and nervous system.",
+      "Explore clear educational articles, or see how Neuvago stimulates the vagus nerve through the outer ear.",
     cards: [
       {
-        title: "How Neuvago works",
+        title: "Learn",
         description:
-          "Understand the device, ear-based application, adjustable stimulation, intended use, and product boundaries.",
-        href: "/how-it-works",
-        linkLabel: "Go to How it Works",
+          "Explore clear, science-informed articles on the vagus nerve, nervous system regulation, stress, sleep, recovery and non-invasive vagus nerve stimulation.",
+        href: "/learn",
+        linkLabel: "Explore Learn",
       },
       {
-        title: "Learn about the vagus nerve",
+        title: "How It Works",
         description:
-          "Explore plain-language guides to the vagus nerve, autonomic nervous system, tVNS, taVNS, stress, sleep, and recovery.",
-        href: "/learn",
-        linkLabel: "Go to Learn",
+          "See how Neuvago delivers ear-based stimulation, how sensory signals travel toward the brainstem and why the pathway matters.",
+        href: "/how-it-works",
+        linkLabel: "See how Neuvago works",
       },
     ] satisfies ResearchV2LinkCard[],
   },

@@ -41,16 +41,6 @@ export function ResearchV2Hero({ content }: ResearchV2HeroProps) {
             />
           </div>
 
-          <div className="mt-7 flex flex-wrap gap-2.5">
-            {content.proofLine.map((item) => (
-              <span
-                key={item}
-                className="rounded-full border border-black/8 bg-white/70 px-3.5 py-2 text-xs font-medium text-[#625a51] shadow-[0_12px_35px_rgba(31,31,28,0.04)]"
-              >
-                {item}
-              </span>
-            ))}
-          </div>
         </div>
 
         <div className="relative">

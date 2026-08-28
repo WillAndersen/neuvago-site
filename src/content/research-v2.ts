@@ -61,51 +61,49 @@ export type ResearchV2DepthItem = {
 
 export const researchV2Content = {
   hero: {
-    eyebrow: "Research",
+    eyebrow: "RESEARCH",
     title: "The science behind vagus nerve stimulation.",
     description:
-      "Vagus nerve stimulation has been studied for decades. A growing body of research is now exploring non-invasive approaches, including transcutaneous auricular vagus nerve stimulation, or taVNS.",
+      "Vagus nerve stimulation has been studied for decades. A growing body of research is examining non-invasive approaches, including transcutaneous auricular vagus nerve stimulation (taVNS).",
     secondaryDescription:
-      "Research is exploring taVNS across areas including autonomic regulation, sleep, stress, heart rate variability, brain pathways, safety, and tolerability.",
+      "Explore research across sleep, stress, autonomic function, heart rate variability (HRV), brain pathways, safety and tolerability.",
     primaryCta: {
-      label: "Explore taVNS research",
-      href: "/research/topics/transcutaneous-vagus-nerve-stimulation",
+      label: "Explore taVNS Research",
+      href: "/research/topics/auricular-vagus-nerve-stimulation",
     } satisfies ResearchV2Cta,
     secondaryCta: {
-      label: "Browse scientific studies",
+      label: "Browse Scientific Studies",
       href: "/research/studies",
     } satisfies ResearchV2Cta,
-    proofLine: [
-      "Decades of VNS research",
-      "Growing taVNS field",
-      "Findings vary by protocol and population",
-    ],
     hierarchy: [
       {
         abbreviation: "VNS",
         name: "Vagus Nerve Stimulation",
-        description: "The broader field.",
+        description:
+          "The broader research field, including implanted and non-invasive approaches.",
       },
       {
         abbreviation: "tVNS",
         name: "Transcutaneous Vagus Nerve Stimulation",
-        description: "Non-invasive stimulation through the skin.",
+        description:
+          "Non-invasive vagus nerve stimulation delivered through the skin.",
       },
       {
         abbreviation: "taVNS",
         name: "Transcutaneous Auricular Vagus Nerve Stimulation",
-        description: "The auricular, ear-based research direction.",
+        description:
+          "Ear-based stimulation targeting the auricular branch of the vagus nerve.",
       },
     ],
   },
 
   closest: {
-    eyebrow: "The research closest to Neuvago",
-    title: "taVNS is the most relevant research category for an auricular approach.",
+    eyebrow: "taVNS RESEARCH",
+    title: "Research on ear-based vagus nerve stimulation.",
     description:
-      "Neuvago uses an auricular, ear-based approach to non-invasive vagus nerve stimulation. The research field most closely related to this technology is known as transcutaneous auricular vagus nerve stimulation, or taVNS.",
-    boundary:
-      "Research on taVNS provides scientific context for the technology category. It should not be interpreted as clinical evidence for the Neuvago device itself.",
+      "Transcutaneous auricular vagus nerve stimulation (taVNS) applies non-invasive electrical stimulation at the outer ear. Research is examining how auricular stimulation engages vagal pathways, how stimulation protocols influence outcomes, and how taVNS relates to autonomic function, sleep, stress, brain pathways, safety and other areas.",
+    context:
+      "Findings vary between devices, stimulation protocols, study populations and measured outcomes.",
     image: {
       src: "/images/neuvago/auricular-vns-education-desktop.webp",
       alt: "Neuvago device beside a clean illustration of the outer ear.",
@@ -115,12 +113,8 @@ export const researchV2Content = {
       alt: "Neuvago device beside a clean illustration of the outer ear.",
     } satisfies ResearchV2Image,
     primaryCta: {
-      label: "Explore taVNS research",
-      href: "/research/topics/transcutaneous-vagus-nerve-stimulation",
-    } satisfies ResearchV2Cta,
-    secondaryCta: {
-      label: "Read the Frangos 2015 summary",
-      href: "/research/studies/frangos-2015-auricular-vagus-nerve-stimulation-fmri",
+      label: "Explore taVNS Research",
+      href: "/research/topics/auricular-vagus-nerve-stimulation",
     } satisfies ResearchV2Cta,
   },
 

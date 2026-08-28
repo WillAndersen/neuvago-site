@@ -282,23 +282,12 @@ export const researchV2Content = {
   },
 
   foundations: {
-    eyebrow: "Foundational Science",
-    title: "The wider science behind autonomic, vagal, immune, and gut–brain research.",
+    eyebrow: "FOUNDATIONAL SCIENCE",
+    title:
+      "The wider science behind autonomic, neural–immune and gut–brain pathways.",
     description:
-      "These study summaries provide important theoretical, methodological, experimental, and review-level context for the broader science behind vagal and autonomic research.",
-    labelNote:
-      "The labels describe each paper’s role in the library. They are not a ranking of evidence strength.",
+      "Selected papers provide theoretical, methodological and experimental context for the broader science surrounding vagal and autonomic regulation.",
     studies: [
-      {
-        label: "FOUNDATIONAL THEORY",
-        title: "Orienting in a Defensive World: The Polyvagal Theory",
-        authors: "Stephen W. Porges",
-        year: "1995",
-        journal: "Psychophysiology",
-        description:
-          "A foundational theory linking vagal pathways with safety, defensive responses, and social engagement.",
-        href: "/research/studies/porges-1995-polyvagal-theory",
-      },
       {
         label: "CONCEPTUAL MODEL",
         title: "A Model of Neurovisceral Integration in Emotion Regulation",
@@ -306,7 +295,7 @@ export const researchV2Content = {
         year: "2000",
         journal: "Journal of Affective Disorders",
         description:
-          "A model connecting brain systems, emotional regulation, autonomic flexibility, HRV, and vagal activity.",
+          "A model connecting brain networks, emotional regulation, autonomic flexibility, heart rate variability and vagal activity.",
         href: "/research/studies/thayer-lane-2000-neurovisceral-integration",
       },
       {
@@ -318,39 +307,19 @@ export const researchV2Content = {
         year: "1996",
         journal: "Circulation",
         description:
-          "The foundational methodological reference for HRV measurement and interpretation.",
+          "A foundational methodological reference for heart rate variability measurement, terminology and interpretation.",
         href: "/research/studies/task-force-1996-heart-rate-variability-standards",
       },
       {
-        label: "EXPERIMENTAL RESEARCH",
+        label: "PRECLINICAL EXPERIMENTAL RESEARCH",
         title:
           "Vagus Nerve Stimulation Attenuates the Systemic Inflammatory Response",
         authors: "L. V. Borovikova et al.",
         year: "2000",
         journal: "Nature",
         description:
-          "A landmark experimental study on vagal signalling and inflammatory cytokine responses.",
+          "A landmark preclinical experiment examining how vagus nerve stimulation influenced systemic inflammatory signalling.",
         href: "/research/studies/borovikova-2000-vagus-nerve-inflammation",
-      },
-      {
-        label: "FOUNDATIONAL CONCEPT",
-        title: "The Inflammatory Reflex",
-        authors: "Kevin J. Tracey",
-        year: "2002",
-        journal: "Nature",
-        description:
-          "A foundational concept describing how neural pathways may detect and regulate inflammatory activity.",
-        href: "/research/studies/inflammatory-reflex-tracey-2002",
-      },
-      {
-        label: "REVIEW",
-        title: "The Cholinergic Anti-Inflammatory Pathway",
-        authors: "Valentin A. Pavlov & Kevin J. Tracey",
-        year: "2005",
-        journal: "Brain, Behavior, and Immunity",
-        description:
-          "A review of cholinergic signalling, cytokine release, and neural regulation of inflammation.",
-        href: "/research/studies/pavlov-tracey-2005-cholinergic-anti-inflammatory-pathway",
       },
       {
         label: "REVIEW",
@@ -359,10 +328,14 @@ export const researchV2Content = {
         year: "2011",
         journal: "Nature Reviews Neuroscience",
         description:
-          "A major review of neural, hormonal, microbial, and immune communication between the gut and brain.",
+          "A major review of neural, hormonal, microbial and immune communication between the gut and brain.",
         href: "/research/studies/mayer-2011-gut-brain-axis",
       },
     ] satisfies ResearchV2StudyCard[],
+    allStudiesCta: {
+      label: "Browse all foundational studies",
+      href: "/research/studies",
+    } satisfies ResearchV2Cta,
   },
 
   approach: {

@@ -1,7 +1,4 @@
-import {
-  featuredTavnsStudies,
-  researchStudyCatalog,
-} from "@/content/research-study-catalog";
+import { featuredTavnsStudies } from "@/content/research-study-catalog";
 
 export type ResearchV2Cta = {
   label: string;
@@ -339,87 +336,38 @@ export const researchV2Content = {
   },
 
   approach: {
-    eyebrow: "How We Approach Research",
-    title: "Clear evidence, careful context, no shortcuts.",
+    eyebrow: "RESEARCH CONTEXT",
+    title: "Evidence needs context.",
     description:
-      "Research should make the field easier to understand without turning external studies into claims for a specific wellness product.",
-    principles: [
+      "Study design, stimulation protocol, participant group and measured outcome all shape what a research finding can tell us.",
+    items: [
       {
-        title: "Evidence first",
+        title: "Different studies answer different questions",
         description:
-          "We use peer-reviewed research to understand the science surrounding VNS, tVNS, taVNS, and nervous system regulation.",
+          "Systematic reviews and meta-analyses combine findings across multiple studies. Randomized trials examine outcomes under controlled conditions, while neuroimaging and mechanistic studies explore how stimulation may engage biological pathways.",
       },
       {
-        title: "Context matters",
+        title: "Stimulation protocols matter",
         description:
-          "Results from one device, stimulation protocol, study population, or clinical setting cannot automatically be applied to every device or user.",
+          "Stimulation site, frequency, pulse width, intensity, session duration and control condition can differ substantially between taVNS studies and influence the results.",
       },
       {
-        title: "No shortcuts",
+        title: "Results belong to the context studied",
         description:
-          "Research informs Neuvago’s education and scientific context. It is not presented as clinical evidence for the Neuvago device itself.",
+          "Findings from one device, protocol, participant group or clinical setting cannot automatically be assumed to apply to every device, user or outcome.",
       },
     ] satisfies ResearchV2Card[],
   },
 
   library: {
-    eyebrow: "Scientific Studies Library",
-    title: "Browse the Scientific Studies Library.",
+    eyebrow: "SCIENTIFIC STUDIES LIBRARY",
+    title: "Browse the full research library.",
     description:
-      "Explore research topics and study summaries organised around stimulation technology, autonomic science, safety, HRV, inflammation, and gut–brain communication.",
-    stats: [
-      {
-        value: "7",
-        label: "Research topics",
-      },
-      {
-        value: String(researchStudyCatalog.length),
-        label: "Study summaries",
-      },
-      {
-        value: "3",
-        label: "Technology levels",
-      },
-    ],
+      "Explore study summaries across VNS, taVNS, sleep, safety, autonomic function, heart rate variability, brain pathways, inflammation and gut–brain communication.",
     primaryCta: {
-      label: "Browse scientific studies",
+      label: "Browse Scientific Studies",
       href: "/research/studies",
     } satisfies ResearchV2Cta,
-    secondaryCta: {
-      label: "Explore all topics",
-      href: "/research/topics",
-    } satisfies ResearchV2Cta,
-    studies: researchStudyCatalog.map((study) => ({
-      title: study.libraryTitle,
-      context: study.libraryContext,
-      href: study.href,
-    })) satisfies ResearchV2StudyLink[],
-    depthTitle: "Understand the evidence in more depth.",
-    depthDescription:
-      "Explore terminology, stimulation protocols, and the reasons findings can vary between studies.",
-    depthItems: [
-      {
-        title: "Understanding VNS, tVNS, and taVNS",
-        paragraphs: [
-          "VNS is the broad field of vagus nerve stimulation. tVNS describes transcutaneous approaches delivered through the skin. taVNS is the auricular branch of that category and focuses on stimulation at the outer ear.",
-          "These terms are related, but they are not interchangeable with every implanted, cervical, auricular, clinical, or wellness protocol.",
-        ],
-      },
-      {
-        title: "Why stimulation protocols matter",
-        paragraphs: [
-          "Placement, frequency, pulse width, intensity, waveform, duty cycle, session length, sham design, study population, and measured outcome can all change how a study should be interpreted.",
-          "A finding from one protocol should not automatically be generalised to every other protocol or device.",
-        ],
-      },
-      {
-        title: "Why results vary between studies",
-        paragraphs: [
-          "Studies may examine different populations, devices, controls, physiological markers, symptoms, imaging outcomes, or clinical settings.",
-          "The Research library keeps those differences visible so that encouraging findings are read with the context needed to understand their limits.",
-        ],
-      },
-    ] satisfies ResearchV2DepthItem[],
   },
 
   continue: {

@@ -9,10 +9,10 @@ export function ResearchV2Approach({
 }: ResearchV2ApproachProps) {
   return (
     <section className="bg-[#f2eee8]">
-      <div className="mx-auto max-w-[92rem] px-5 py-16 sm:px-8 lg:px-12 lg:py-24">
-        <div className="grid gap-10 lg:grid-cols-[0.75fr_1.25fr] lg:items-start">
-          <div className="max-w-xl">
-            <p className="text-[0.7rem] font-medium uppercase tracking-[0.28em] text-[#81766a]">
+      <div className="mx-auto max-w-[92rem] px-5 py-16 sm:px-8 sm:py-20 lg:px-12 lg:py-28">
+        <div className="grid gap-10 lg:grid-cols-[0.82fr_1.18fr] lg:items-start lg:gap-16">
+          <div className="max-w-[36rem]">
+            <p className="text-[0.7rem] font-medium tracking-[0.28em] text-[#81766a]">
               {content.eyebrow}
             </p>
             <h2 className="mt-4 text-balance text-[clamp(2.5rem,9vw,3.8rem)] font-medium leading-[0.97] tracking-[-0.048em] text-[#1f1f1c] sm:text-5xl lg:text-6xl">
@@ -23,34 +23,29 @@ export function ResearchV2Approach({
             </p>
           </div>
 
-          <div className="grid gap-4 md:grid-cols-3">
-            {content.principles.map((principle, index) => (
-              <article
-                key={principle.title}
-                className={`rounded-[1.7rem] border p-6 shadow-[0_18px_62px_rgba(31,31,28,0.05)] ${
-                  index === 2
-                    ? "border-black/10 bg-[#1f1f1c] text-white"
-                    : "border-black/6 bg-[#fbf8f2] text-[#1f1f1c]"
-                }`}
+          <div className="border-t border-black/10">
+            {content.items.map((item) => (
+              <details
+                key={item.title}
+                className="group border-b border-black/10"
               >
-                <p
-                  className={`text-[0.65rem] font-medium uppercase tracking-[0.2em] ${
-                    index === 2 ? "text-white/45" : "text-[#9a8f82]"
-                  }`}
-                >
-                  Principle {String(index + 1).padStart(2, "0")}
+                <summary className="flex cursor-pointer list-none items-center justify-between gap-6 py-6 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#b98c50] focus-visible:ring-offset-4 focus-visible:ring-offset-[#f2eee8] sm:py-7 [&::-webkit-details-marker]:hidden">
+                  <span className="text-lg font-medium tracking-[-0.03em] text-[#1f1f1c] sm:text-xl">
+                    {item.title}
+                  </span>
+                  <span
+                    aria-hidden="true"
+                    className="relative grid h-8 w-8 shrink-0 place-items-center text-[#81766a]"
+                  >
+                    <span className="absolute h-px w-4 bg-current" />
+                    <span className="absolute h-4 w-px bg-current transition-transform duration-200 group-open:scale-y-0" />
+                  </span>
+                </summary>
+
+                <p className="max-w-3xl pb-7 pr-10 text-sm leading-7 text-[#5f5a52] sm:text-base">
+                  {item.description}
                 </p>
-                <h3 className="mt-5 text-2xl font-medium tracking-[-0.045em]">
-                  {principle.title}
-                </h3>
-                <p
-                  className={`mt-4 text-sm leading-7 ${
-                    index === 2 ? "text-white/68" : "text-[#5f5a52]"
-                  }`}
-                >
-                  {principle.description}
-                </p>
-              </article>
+              </details>
             ))}
           </div>
         </div>

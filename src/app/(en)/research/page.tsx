@@ -70,8 +70,8 @@ export default function ResearchPage() {
       <ResearchV2Featured content={content.featured} />
       <ResearchV2Foundations content={content.foundations} />
       <ResearchV2Approach content={content.approach} />
-      <ResearchV2Guides guides={researchGuides} />
       <ResearchV2Library content={content.library} />
+      <ResearchV2Guides guides={researchGuides} />
       <ResearchV2Continue content={content.continue} />
     </main>
   );

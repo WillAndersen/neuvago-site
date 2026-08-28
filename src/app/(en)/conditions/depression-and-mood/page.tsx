@@ -14,11 +14,11 @@ export const metadata: Metadata = {
   title: metadataTitle,
   description: metadataDescription,
   robots: {
-    index: false,
-    follow: false,
+    index: true,
+    follow: true,
     googleBot: {
-      index: false,
-      follow: false,
+      index: true,
+      follow: true,
     },
   },
   alternates: {

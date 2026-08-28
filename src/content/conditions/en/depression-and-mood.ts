@@ -292,7 +292,7 @@ export const depressionMoodArticle = {
     eyebrow: "SOURCES AND REVIEW",
     title: "Evidence, context and review status.",
     introduction:
-      "This draft uses authoritative mental-health guidance, an official regulatory decision and systematic and experimental taVNS research. Mental-health clinical review and approved crisis routing are required before indexing or hub release.",
+      "This article uses authoritative mental-health guidance, an official regulatory decision and systematic and experimental taVNS research. Evidence is presented with clear distinctions between implanted VNS, auricular taVNS and Neuvago.",
     items: [
       {
         title: "World Health Organization — Depression",
@@ -353,8 +353,19 @@ export const depressionMoodArticle = {
     ],
     evidenceReviewed: "27 August 2026",
     editorialReview: "Neuvago Editorial Team",
-    medicalReview: "Pending",
-    disclaimer:
-      "This page is educational and does not diagnose depression or replace professional mental-health assessment or treatment.",
+    disclaimer: {
+      eyebrow: "IMPORTANT INFORMATION",
+      paragraphs: [
+        "This article is provided for general educational purposes only and is not medical advice.",
+        "It is not intended to diagnose a condition or recommend treatment, and it does not replace assessment, diagnosis or care from a qualified healthcare professional.",
+        "Contact a doctor or another qualified healthcare professional if you have questions about symptoms, a diagnosis or treatment.",
+        "Seek urgent or emergency help for severe, sudden or rapidly worsening symptoms, or whenever you may be in immediate danger.",
+        "If you are thinking about suicide or self-harm, or believe you may be in immediate danger, contact local emergency services or a crisis line now and tell someone you trust.",
+      ],
+      link: {
+        label: "Read our full medical disclaimer",
+        href: "/legal/medical-disclaimer",
+      },
+    },
   },
 } as const satisfies ConditionArticleContent;

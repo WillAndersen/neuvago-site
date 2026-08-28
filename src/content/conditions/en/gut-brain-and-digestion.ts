@@ -269,7 +269,7 @@ export const gutBrainDigestionArticle = {
     eyebrow: "SOURCES AND REVIEW",
     title: "Evidence, context and review status.",
     introduction:
-      "This draft uses authoritative digestive-health information, foundational gut–brain research and condition-specific taVNS studies. Findings remain limited to the populations, interventions and outcomes studied. A gastroenterology-informed review is required before indexing or hub release.",
+      "This article uses authoritative digestive-health information, foundational gut–brain research and condition-specific taVNS studies. Findings remain limited to the populations, interventions and outcomes studied.",
     items: [
       {
         title: "NIDDK — Irritable Bowel Syndrome",
@@ -322,8 +322,18 @@ export const gutBrainDigestionArticle = {
     ],
     evidenceReviewed: "27 August 2026",
     editorialReview: "Neuvago Editorial Team",
-    medicalReview: "Pending",
-    disclaimer:
-      "This page is educational and does not diagnose digestive conditions or replace professional medical assessment.",
+    disclaimer: {
+      eyebrow: "IMPORTANT INFORMATION",
+      paragraphs: [
+        "This article is provided for general educational purposes only and is not medical advice.",
+        "It is not intended to diagnose a condition or recommend treatment, and it does not replace assessment, diagnosis or care from a qualified healthcare professional.",
+        "Contact a doctor or another qualified healthcare professional if you have questions about symptoms, a diagnosis or treatment.",
+        "Seek urgent or emergency help for severe, sudden or rapidly worsening symptoms, or whenever you may be in immediate danger.",
+      ],
+      link: {
+        label: "Read our full medical disclaimer",
+        href: "/legal/medical-disclaimer",
+      },
+    },
   },
 } as const satisfies ConditionArticleContent;

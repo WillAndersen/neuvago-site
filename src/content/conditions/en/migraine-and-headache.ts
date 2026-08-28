@@ -244,7 +244,7 @@ export const migraineHeadacheArticle = {
     eyebrow: "SOURCES AND REVIEW",
     title: "Evidence, context and review status.",
     introduction:
-      "This draft uses authoritative classification, regulatory material and peer-reviewed reviews. The evidence is presented by modality and remains subject to medical review before indexing or hub release.",
+      "This article uses authoritative classification, regulatory material and peer-reviewed reviews. Evidence is presented by modality, with device-, protocol- and population-specific limits stated throughout.",
     items: [
       {
         title: "International Headache Society — ICHD-3",
@@ -308,13 +308,23 @@ export const migraineHeadacheArticle = {
           "Do TP, Remmers A, Schytz HW, et al. Red and orange flags for secondary headaches in clinical practice: SNNOOP10 list. Neurology. 2019;92(3):134–144.",
         href: "https://pubmed.ncbi.nlm.nih.gov/30587518/",
         context:
-          "Used as the evidence base for a conservative urgent-headache assessment block. Final wording remains subject to medical review.",
+          "Used as the evidence base for the conservative urgent-headache assessment block.",
       },
     ],
     evidenceReviewed: "26 August 2026",
     editorialReview: "Neuvago Editorial Team",
-    medicalReview: "Pending",
-    disclaimer:
-      "This page is educational and does not diagnose migraine or replace professional medical assessment.",
+    disclaimer: {
+      eyebrow: "IMPORTANT INFORMATION",
+      paragraphs: [
+        "This article is provided for general educational purposes only and is not medical advice.",
+        "It is not intended to diagnose a condition or recommend treatment, and it does not replace assessment, diagnosis or care from a qualified healthcare professional.",
+        "Contact a doctor or another qualified healthcare professional if you have questions about symptoms, a diagnosis or treatment.",
+        "Seek urgent or emergency help for severe, sudden or rapidly worsening symptoms, or whenever you may be in immediate danger.",
+      ],
+      link: {
+        label: "Read our full medical disclaimer",
+        href: "/legal/medical-disclaimer",
+      },
+    },
   },
 } as const satisfies ConditionArticleContent;

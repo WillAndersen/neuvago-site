@@ -51,7 +51,11 @@ const routes: Array<{
   { path: "/conditions/stress", changeFrequency: "weekly", priority: 0.8, lastModified: SEO_LAUNCH_REVIEW_DATE },
   { path: "/conditions/sleep", changeFrequency: "weekly", priority: 0.8, lastModified: SEO_LAUNCH_REVIEW_DATE },
   { path: "/conditions/anxiety", changeFrequency: "weekly", priority: 0.76 },
+  { path: "/conditions/migraine-and-headache", changeFrequency: "weekly", priority: 0.76, lastModified: "2026-08-28" },
+  { path: "/conditions/gut-brain-and-digestion", changeFrequency: "weekly", priority: 0.76, lastModified: "2026-08-28" },
   { path: "/conditions/burnout", changeFrequency: "weekly", priority: 0.76 },
+  { path: "/conditions/depression-and-mood", changeFrequency: "weekly", priority: 0.76, lastModified: "2026-08-28" },
+  { path: "/conditions/chronic-pain", changeFrequency: "weekly", priority: 0.76, lastModified: "2026-08-28" },
 
   { path: "/learn", changeFrequency: "weekly", priority: 0.86, lastModified: SEO_LAUNCH_REVIEW_DATE },
   { path: "/glossary", changeFrequency: "monthly", priority: 0.78, lastModified: "2026-08-25" },

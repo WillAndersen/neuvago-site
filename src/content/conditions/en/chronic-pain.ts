@@ -309,7 +309,7 @@ export const chronicPainArticle = {
     eyebrow: "SOURCES AND REVIEW",
     title: "Evidence, context and review status.",
     introduction:
-      "This draft uses authoritative pain definitions, chronic-pain classification, systematic reviews and current taVNS pain research. Pain-medicine clinical review and approved urgent-assessment wording are required before indexing or hub release.",
+      "This article uses authoritative pain definitions, chronic-pain classification, systematic reviews and current taVNS pain research. Findings remain limited to the pain conditions, devices, protocols and outcomes studied.",
     items: [
       {
         title: "International Association for the Study of Pain — Terminology",
@@ -365,7 +365,7 @@ export const chronicPainArticle = {
           "U.S. National Library of Medicine. Recognizing medical emergencies. Reviewed 8 January 2025.",
         href: "https://medlineplus.gov/ency/article/001927.htm",
         context:
-          "Used only for general emergency symptoms in the draft urgent-assessment framework.",
+          "Used only for general emergency symptoms in the urgent-assessment framework.",
       },
       {
         title: "NHS — Cauda equina syndrome",
@@ -373,13 +373,23 @@ export const chronicPainArticle = {
           "Torbay and South Devon NHS Foundation Trust. Cauda Equina Syndrome patient information.",
         href: "https://www.torbayandsouthdevon.nhs.uk/services/specialist-spinal-orthopaedic-physiotherapy-service/common-spinal-conditions/cauda-equina-syndrome/",
         context:
-          "Used only for bladder, bowel and saddle-sensory warning signs in the draft urgent-assessment framework.",
+          "Used only for bladder, bowel and saddle-sensory warning signs in the urgent-assessment framework.",
       },
     ],
     evidenceReviewed: "27 August 2026",
     editorialReview: "Neuvago Editorial Team",
-    medicalReview: "Pending",
-    disclaimer:
-      "This page is educational and does not diagnose chronic pain or replace professional medical assessment or treatment.",
+    disclaimer: {
+      eyebrow: "IMPORTANT INFORMATION",
+      paragraphs: [
+        "This article is provided for general educational purposes only and is not medical advice.",
+        "It is not intended to diagnose a condition or recommend treatment, and it does not replace assessment, diagnosis or care from a qualified healthcare professional.",
+        "Contact a doctor or another qualified healthcare professional if you have questions about symptoms, a diagnosis or treatment.",
+        "Seek urgent or emergency help for severe, sudden or rapidly worsening symptoms, or whenever you may be in immediate danger.",
+      ],
+      link: {
+        label: "Read our full medical disclaimer",
+        href: "/legal/medical-disclaimer",
+      },
+    },
   },
 } as const satisfies ConditionArticleContent;

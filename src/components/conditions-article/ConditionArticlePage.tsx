@@ -65,8 +65,14 @@ export type ConditionArticleContent = {
     items: readonly ConditionArticleSource[];
     evidenceReviewed: string;
     editorialReview: string;
-    medicalReview: string;
-    disclaimer: string;
+    disclaimer: {
+      eyebrow: string;
+      paragraphs: readonly string[];
+      link: {
+        label: string;
+        href: string;
+      };
+    };
   };
 };
 
@@ -355,7 +361,7 @@ export function ConditionArticlePage({ content }: ConditionArticlePageProps) {
             ))}
           </div>
 
-          <div className="mt-12 grid border-y border-white/12 sm:grid-cols-3 sm:divide-x sm:divide-white/12">
+          <div className="mt-12 grid border-y border-white/12 sm:grid-cols-2 sm:divide-x sm:divide-white/12">
             <div className="py-5 sm:pr-6">
               <p className="text-xs uppercase tracking-[0.16em] text-[#b9aa99]">
                 Evidence reviewed
@@ -364,7 +370,7 @@ export function ConditionArticlePage({ content }: ConditionArticlePageProps) {
                 {content.sources.evidenceReviewed}
               </p>
             </div>
-            <div className="border-t border-white/12 py-5 sm:border-t-0 sm:px-6">
+            <div className="border-t border-white/12 py-5 sm:border-t-0 sm:pl-6">
               <p className="text-xs uppercase tracking-[0.16em] text-[#b9aa99]">
                 Editorial review
               </p>
@@ -372,19 +378,27 @@ export function ConditionArticlePage({ content }: ConditionArticlePageProps) {
                 {content.sources.editorialReview}
               </p>
             </div>
-            <div className="border-t border-white/12 py-5 sm:border-t-0 sm:pl-6">
-              <p className="text-xs uppercase tracking-[0.16em] text-[#b9aa99]">
-                Medical review
-              </p>
-              <p className="mt-2 text-sm leading-6 text-white">
-                {content.sources.medicalReview}
-              </p>
-            </div>
           </div>
 
-          <p className="mt-8 max-w-3xl text-sm leading-7 text-[#c9bcae]">
-            {content.sources.disclaimer}
-          </p>
+          <div className="mt-12 border-t border-white/12 pt-10">
+            <p className="text-xs font-medium uppercase tracking-[0.22em] text-[#cdbda9]">
+              {content.sources.disclaimer.eyebrow}
+            </p>
+            <div className="mt-5 max-w-3xl space-y-4">
+              {content.sources.disclaimer.paragraphs.map((paragraph) => (
+                <p key={paragraph} className="text-sm leading-7 text-[#c9bcae]">
+                  {paragraph}
+                </p>
+              ))}
+            </div>
+            <Link
+              href={content.sources.disclaimer.link.href}
+              className="mt-6 inline-flex items-center gap-2 text-sm font-medium text-white underline decoration-white/35 underline-offset-4 transition hover:decoration-white"
+            >
+              {content.sources.disclaimer.link.label}
+              <span aria-hidden="true">→</span>
+            </Link>
+          </div>
         </div>
       </section>
     </article>

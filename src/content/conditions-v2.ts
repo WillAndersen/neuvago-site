@@ -6,7 +6,8 @@ export type ConditionsV2Link = {
 export type ConditionsV2ConditionItem = {
   id: string;
   title: string;
-  href?: string;
+  description: string;
+  href: string;
 };
 
 export type ConditionsV2Image = {
@@ -26,14 +27,16 @@ export type ConditionsV2Content = {
   featured: {
     visible: boolean;
     id: string;
+    eyebrow: string;
     title: string;
-    description?: string;
+    description: string;
     items: readonly ConditionsV2ConditionItem[];
   };
   more: {
     visible: boolean;
+    eyebrow: string;
     title: string;
-    description?: string;
+    description: string;
     items: readonly ConditionsV2ConditionItem[];
   };
   researchBridge: {
@@ -69,49 +72,75 @@ export const conditionsV2Content = {
   featured: {
     visible: true,
     id: "featured-conditions",
-    title: "Start with the conditions people explore most.",
+    eyebrow: "FEATURED CONDITIONS",
+    title: "Start with a condition or concern.",
+    description:
+      "Explore science-informed articles that begin with the condition itself, then examine the relevant nervous system, vagus nerve and research context.",
     items: [
       {
         id: "stress",
         title: "Stress",
+        description:
+          "Explore how prolonged stress can affect autonomic regulation, sleep, recovery and the body's ability to settle after demanding moments.",
         href: "/conditions/stress",
       },
       {
         id: "sleep",
         title: "Sleep",
+        description:
+          "Understand how nervous system activation and stress can affect winding down, sleep quality and the ability to return to sleep.",
         href: "/conditions/sleep",
       },
       {
         id: "anxiety",
         title: "Anxiety",
+        description:
+          "Explore how anxiety can overlap with autonomic arousal, vigilance, physical sensations, breathing and sleep.",
         href: "/conditions/anxiety",
       },
       {
         id: "migraine-headache",
         title: "Migraine & Headache",
+        description:
+          "Learn about the complex neurological pathways involved in migraine and headache, and why vagus nerve stimulation is being studied in this field.",
+        href: "/conditions/migraine-and-headache",
+      },
+      {
+        id: "gut-brain-digestion",
+        title: "Gut–Brain & Digestion",
+        description:
+          "Explore how the gut and brain communicate through neural, immune and hormonal pathways, including the vagus nerve, and what research is examining in digestive symptoms.",
+        href: "/conditions/gut-brain-and-digestion",
       },
     ],
   },
   more: {
     visible: true,
-    title: "Explore more conditions.",
+    eyebrow: "MORE CONDITIONS",
+    title: "Continue exploring important conditions.",
+    description:
+      "Explore how prolonged demand, mood, pain, sleep, recovery and nervous system regulation can intersect over time.",
     items: [
       {
         id: "burnout",
         title: "Burnout",
+        description:
+          "Understand how prolonged demand, exhaustion, disrupted sleep and reduced recovery can overlap over time.",
         href: "/conditions/burnout",
-      },
-      {
-        id: "gut-brain-digestion",
-        title: "Gut–Brain & Digestion",
       },
       {
         id: "depression-mood",
         title: "Depression & Mood",
+        description:
+          "Explore how mood, stress systems, sleep and brain–body regulation are studied together.",
+        href: "/conditions/depression-and-mood",
       },
       {
         id: "chronic-pain",
         title: "Chronic Pain",
+        description:
+          "Learn how pain, stress, sleep and autonomic regulation can interact and reinforce one another over time.",
+        href: "/conditions/chronic-pain",
       },
     ],
   },

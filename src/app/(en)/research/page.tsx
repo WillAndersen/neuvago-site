@@ -4,7 +4,6 @@ import {
   ResearchV2Hero,
   ResearchV2Closest,
   ResearchV2Topics,
-  ResearchV2Exploring,
   ResearchV2Featured,
   ResearchV2Foundations,
   ResearchV2Approach,
@@ -68,7 +67,6 @@ export default function ResearchPage() {
       <ResearchV2Hero content={content.hero} />
       <ResearchV2Closest content={content.closest} />
       <ResearchV2Topics content={content.topics} />
-      <ResearchV2Exploring content={content.exploring} />
       <ResearchV2Featured content={content.featured} />
       <ResearchV2Foundations content={content.foundations} />
       <ResearchV2Approach content={content.approach} />

@@ -119,65 +119,75 @@ export const researchV2Content = {
   },
 
   topics: {
-    eyebrow: "Core Research Topics",
-    title: "Start with the technology, then explore the related research areas.",
+    eyebrow: "RESEARCH AREAS",
+    title: "Explore the questions researchers are asking.",
     description:
-      "Begin with VNS and transcutaneous VNS, then move into related research on safety, autonomic function, HRV, inflammation, and gut–brain communication.",
-    primary: [
+      "Browse research on how VNS and taVNS are being studied across sleep, stress, autonomic regulation, heart rate variability, brain pathways, safety, inflammation and gut–brain communication.",
+    areas: [
       {
-        title: "Vagus Nerve Stimulation",
+        title: "Sleep",
         description:
-          "The broader research field covering implanted and non-invasive approaches, neuromodulation, mechanisms, and brain–body pathways.",
-        href: "/research/topics/vagus-nerve-stimulation",
-        linkLabel: "Explore VNS research",
+          "Research examining sleep quality, insomnia and sleep-related outcomes.",
+        href: undefined,
       },
       {
-        title: "Transcutaneous VNS and taVNS",
+        title: "Stress",
         description:
-          "Research on stimulation through the skin, auricular approaches, stimulation sites, protocol variables, target engagement, safety, and interpretation.",
-        href: "/research/topics/transcutaneous-vagus-nerve-stimulation",
-        linkLabel: "Explore tVNS and taVNS",
-      },
-    ] satisfies ResearchV2LinkCard[],
-    related: [
-      {
-        title: "Safety and Tolerability",
-        description:
-          "Reported adverse events, tolerability, contraindication awareness, study populations, and responsible interpretation.",
-        href: "/research/topics/safety-and-tolerability",
-        linkLabel: "Explore safety research",
+          "Research examining stress-related physiological, autonomic and emotional responses.",
+        href: undefined,
       },
       {
         title: "Autonomic Regulation",
         description:
-          "Sympathetic and parasympathetic activity, vagal regulation, stress physiology, recovery, and state-shifting.",
+          "Research on sympathetic and parasympathetic activity, recovery and the body's shift between physiological states.",
         href: "/research/topics/autonomic-regulation",
-        linkLabel: "Explore autonomic research",
       },
       {
         title: "Heart Rate Variability",
         description:
-          "HRV methodology, autonomic flexibility, physiological interpretation, and the limits of using one marker in isolation.",
+          "Research examining HRV as a marker of autonomic activity, including its uses and limitations.",
         href: "/research/topics/heart-rate-variability",
-        linkLabel: "Explore HRV research",
+      },
+      {
+        title: "Brain Pathways",
+        description:
+          "Human neuroimaging and mechanistic research examining how auricular stimulation engages central vagal pathways.",
+        href: undefined,
+      },
+      {
+        title: "Safety & Tolerability",
+        description:
+          "Systematic research examining reported adverse events, tolerability and safety across human taVNS studies.",
+        href: "/research/topics/safety-and-tolerability",
       },
       {
         title: "Inflammation",
         description:
-          "Neuroimmune communication, the inflammatory reflex, cytokine signalling, and cholinergic pathways.",
+          "Research on neural–immune communication, inflammatory signalling and the cholinergic anti-inflammatory pathway.",
         href: "/research/topics/inflammation",
-        linkLabel: "Explore inflammation research",
       },
       {
-        title: "Gut–Brain Axis",
+        title: "Gut–Brain Communication",
         description:
-          "Neural, hormonal, microbial, and immune communication between the digestive system and the brain.",
+          "Research on neural, hormonal, microbial and immune communication between the digestive system and the brain.",
         href: "/research/topics/gut-brain-axis",
-        linkLabel: "Explore gut–brain research",
       },
-    ] satisfies ResearchV2LinkCard[],
+    ] satisfies Array<ResearchV2Card & { href?: string }>,
+    technologyFoundations: {
+      title: "Technology foundations",
+      links: [
+        {
+          title: "Vagus Nerve Stimulation",
+          href: "/research/topics/vagus-nerve-stimulation",
+        },
+        {
+          title: "Transcutaneous VNS and taVNS",
+          href: "/research/topics/transcutaneous-vagus-nerve-stimulation",
+        },
+      ],
+    },
     allTopicsCta: {
-      label: "Browse all research topics",
+      label: "Browse all Research topics",
       href: "/research/topics",
     } satisfies ResearchV2Cta,
   },

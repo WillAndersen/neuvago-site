@@ -11,8 +11,8 @@ export function ResearchV2Topics({
   return (
     <section className="bg-[#f7f4ef]">
       <div className="mx-auto max-w-[92rem] px-5 py-16 sm:px-8 lg:px-12 lg:py-24">
-        <div className="flex flex-col gap-7 lg:flex-row lg:items-end lg:justify-between">
-          <div className="max-w-3xl">
+        <div className="grid gap-12 lg:grid-cols-[0.78fr_1.22fr] lg:gap-20">
+          <div className="max-w-xl">
             <p className="text-[0.7rem] font-medium uppercase tracking-[0.28em] text-[#81766a]">
               {content.eyebrow}
             </p>
@@ -26,59 +26,75 @@ export function ResearchV2Topics({
             </p>
           </div>
 
-          <Link
-            href={content.allTopicsCta.href}
-            className="inline-flex w-fit items-center justify-center rounded-full border border-black/10 bg-white/70 px-6 py-3 text-sm font-medium text-[#1f1f1c] transition hover:bg-white"
-          >
-            {content.allTopicsCta.label}
-          </Link>
-        </div>
+          <div>
+            <div className="grid border-b border-black/10 sm:grid-cols-2">
+              {content.areas.map((area) => {
+                const areaContent = (
+                  <>
+                    <div className="flex items-start justify-between gap-5">
+                      <h3 className="text-2xl font-medium tracking-[-0.045em] text-[#1f1f1c]">
+                        {area.title}
+                      </h3>
+                      {area.href ? (
+                        <span
+                          aria-hidden="true"
+                          className="mt-1 shrink-0 text-lg text-[#8a7f72] transition-transform group-hover:translate-x-1"
+                        >
+                          →
+                        </span>
+                      ) : null}
+                    </div>
+                    <p className="mt-3 text-sm leading-7 text-[#5f5a52] sm:text-base">
+                      {area.description}
+                    </p>
+                  </>
+                );
 
-        <div className="mt-10 grid gap-5 lg:grid-cols-2">
-          {content.primary.map((topic, index) => (
-            <Link
-              key={topic.href}
-              href={topic.href}
-              className={`group rounded-[2rem] border p-6 shadow-[0_20px_72px_rgba(31,31,28,0.06)] transition hover:-translate-y-0.5 sm:p-8 ${
-                index === 1
-                  ? "border-[#b98c50]/25 bg-[#f3e6d2]"
-                  : "border-black/6 bg-[#f2eee8]"
-              }`}
-            >
-              <p className="text-[0.65rem] font-medium uppercase tracking-[0.23em] text-[#8a7f72]">
-                Primary technology topic
-              </p>
-              <h3 className="mt-4 text-3xl font-medium tracking-[-0.05em] text-[#1f1f1c]">
-                {topic.title}
-              </h3>
-              <p className="mt-4 max-w-xl text-sm leading-7 text-[#5f5a52] sm:text-base">
-                {topic.description}
-              </p>
-              <span className="mt-7 inline-flex text-sm font-medium text-[#1f1f1c] underline-offset-4 group-hover:underline">
-                {topic.linkLabel}
-              </span>
-            </Link>
-          ))}
-        </div>
+                const rowClassName =
+                  "group border-t border-black/10 py-6 sm:min-h-[12rem] sm:py-7 sm:odd:border-r sm:odd:border-black/10 sm:odd:pr-8 sm:even:pl-8";
 
-        <div className="mt-5 grid gap-4 sm:grid-cols-2 xl:grid-cols-5">
-          {content.related.map((topic) => (
-            <Link
-              key={topic.href}
-              href={topic.href}
-              className="group rounded-[1.55rem] border border-black/6 bg-[#fbf8f2] p-5 shadow-[0_14px_50px_rgba(31,31,28,0.045)] transition hover:-translate-y-0.5"
-            >
-              <h3 className="text-xl font-medium tracking-[-0.04em] text-[#1f1f1c]">
-                {topic.title}
+                return area.href ? (
+                  <Link
+                    key={area.title}
+                    href={area.href}
+                    className={`${rowClassName} transition hover:bg-black/[0.018] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#8d6a3f] focus-visible:ring-offset-4 focus-visible:ring-offset-[#f7f4ef]`}
+                  >
+                    {areaContent}
+                  </Link>
+                ) : (
+                  <article key={area.title} className={rowClassName}>
+                    {areaContent}
+                  </article>
+                );
+              })}
+            </div>
+
+            <div className="mt-10 border-t border-black/10 pt-7">
+              <h3 className="text-sm font-medium uppercase tracking-[0.2em] text-[#81766a]">
+                {content.technologyFoundations.title}
               </h3>
-              <p className="mt-3 text-sm leading-6 text-[#5f5a52]">
-                {topic.description}
-              </p>
-              <span className="mt-5 inline-flex text-xs font-medium text-[#1f1f1c] underline-offset-4 group-hover:underline">
-                {topic.linkLabel}
-              </span>
+              <div className="mt-5 flex flex-col gap-3 sm:flex-row sm:flex-wrap sm:gap-x-8 sm:gap-y-4">
+                {content.technologyFoundations.links.map((topic) => (
+                  <Link
+                    key={topic.href}
+                    href={topic.href}
+                    className="inline-flex w-fit items-center gap-2 text-sm font-medium text-[#1f1f1c] underline decoration-black/20 underline-offset-4 transition hover:decoration-black/60 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#8d6a3f] focus-visible:ring-offset-4 focus-visible:ring-offset-[#f7f4ef]"
+                  >
+                    {topic.title}
+                    <span aria-hidden="true">→</span>
+                  </Link>
+                ))}
+              </div>
+            </div>
+
+            <Link
+              href={content.allTopicsCta.href}
+              className="mt-9 inline-flex w-fit items-center gap-2 rounded-full border border-black/10 bg-white/70 px-6 py-3 text-sm font-medium text-[#1f1f1c] transition hover:bg-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#8d6a3f] focus-visible:ring-offset-4 focus-visible:ring-offset-[#f7f4ef]"
+            >
+              {content.allTopicsCta.label}
+              <span aria-hidden="true">→</span>
             </Link>
-          ))}
+          </div>
         </div>
       </div>
     </section>

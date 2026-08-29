@@ -1,109 +1,51 @@
-import type { Metadata } from "next";
-import { getAboutContent } from "@/lib/content/get-about-content";
 import {
-  AboutHero,
-  AboutWhyItExists,
-  AboutApproach,
-  AboutConnectedSystem,
-  AboutCalmDesign,
-  AboutBuiltForEverydayLife,
-  AboutKnowledgeUniverse,
-  AboutFaq,
-  AboutFinalCta,
-} from "@/components/about-page";
-import {
-  buildFAQStructuredData,
-  buildWebPageStructuredData,
-} from "@/lib/seo/structured-data";
+  AboutV2FinalCta,
+  AboutV2Focus,
+  AboutV2Hero,
+  AboutV2Principles,
+  AboutV2WhyItExists,
+} from "@/components/about-v2";
+import { JsonLd } from "@/components/seo/json-ld";
+import { aboutV2Content } from "@/content/about-v2";
+import { buildLocalizedPageMetadata } from "@/i18n/metadata";
+import { buildPageWithBreadcrumbStructuredData } from "@/lib/seo/structured-data";
 
-export const metadata: Metadata = {
-  title: "About Neuvago | A Calmer Approach to Everyday Regulation",
-  description:
-    "Learn why Neuvago exists, how the device and app work together, and the calmer design philosophy behind the brand.",
-  alternates: {
-    canonical: "/about",
-    languages: {
-      "en-US": "/about",
-      "nb-NO": "/no/om-oss",
-      "x-default": "/about",
-    },
-  },
-  openGraph: {
-    title: "About Neuvago | A Calmer Approach to Everyday Regulation",
-    description:
-      "Learn why Neuvago exists, how the device and app work together, and the calmer design philosophy behind the brand.",
-    url: "/about",
-    siteName: "Neuvago",
-    locale: "en_US",
-    type: "website",
-  },
-  twitter: {
-    card: "summary_large_image",
-    title: "About Neuvago | A Calmer Approach to Everyday Regulation",
-    description:
-      "Learn why Neuvago exists, how the device and app work together, and the calmer design philosophy behind the brand.",
-  },
-};
+const metadataTitle = "About Neuvago | Vagus Nerve Stimulation";
+const metadataDescription =
+  "A more practical approach to vagus nerve stimulation.";
 
-export default async function AboutPage() {
-  const content = await getAboutContent();
+export const metadata = buildLocalizedPageMetadata({
+  pageId: "de-about",
+  locale: "en",
+  title: metadataTitle,
+  description: metadataDescription,
+});
 
-  const structuredData: Array<Record<string, unknown>> = [
-    buildWebPageStructuredData({
-      title: content.hero.title,
-      description: content.hero.description,
-      path: "/about",
-    }),
-  ];
-
-  const faqStructuredData = content.faq.visible
-    ? buildFAQStructuredData(content.faq.items)
-    : null;
-
-  if (faqStructuredData) {
-    structuredData.push(faqStructuredData);
-  }
+export default function AboutPage() {
+  const content = aboutV2Content;
+  const structuredData = buildPageWithBreadcrumbStructuredData({
+    title: content.hero.title,
+    description: metadataDescription,
+    path: "/about",
+    breadcrumbs: [
+      { name: "Home", path: "/" },
+      { name: "About", path: "/about" },
+    ],
+  });
 
   return (
     <main className="bg-[#f7f4ef] text-[#1f1f1c]">
-      {structuredData.map((item, index) => (
-        <script
-          key={`about-ld-${index}`}
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(item) }}
-        />
-      ))}
-
-      {content.hero.visible ? <AboutHero content={content.hero} /> : null}
-
+      <JsonLd data={structuredData} idPrefix="about-v2" />
+      {content.hero.visible ? <AboutV2Hero content={content.hero} /> : null}
       {content.whyItExists.visible ? (
-        <AboutWhyItExists content={content.whyItExists} />
+        <AboutV2WhyItExists content={content.whyItExists} />
       ) : null}
-
-      {content.approach.visible ? (
-        <AboutApproach content={content.approach} />
+      {content.principles.visible ? (
+        <AboutV2Principles content={content.principles} />
       ) : null}
-
-      {content.connectedSystem.visible ? (
-        <AboutConnectedSystem content={content.connectedSystem} />
-      ) : null}
-
-      {content.calmDesign.visible ? (
-        <AboutCalmDesign content={content.calmDesign} />
-      ) : null}
-
-      {content.builtForEverydayLife.visible ? (
-        <AboutBuiltForEverydayLife content={content.builtForEverydayLife} />
-      ) : null}
-
-      {content.knowledgeUniverse.visible ? (
-        <AboutKnowledgeUniverse content={content.knowledgeUniverse} />
-      ) : null}
-
-      {content.faq.visible ? <AboutFaq content={content.faq} /> : null}
-
+      {content.focus.visible ? <AboutV2Focus content={content.focus} /> : null}
       {content.finalCta.visible ? (
-        <AboutFinalCta content={content.finalCta} />
+        <AboutV2FinalCta content={content.finalCta} />
       ) : null}
     </main>
   );

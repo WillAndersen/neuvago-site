@@ -18,7 +18,7 @@ export type AboutV2FocusArea = {
   id: string;
   title: string;
   priority: "primary" | "secondary";
-  description?: string;
+  description: string;
 };
 
 export type AboutV2Content = {
@@ -48,7 +48,10 @@ export type AboutV2Content = {
   };
   focus: {
     visible: boolean;
+    eyebrow: string;
     title: string;
+    introduction: string;
+    image: AboutV2Image;
     areas: readonly AboutV2FocusArea[];
   };
   finalCta: {
@@ -126,22 +129,35 @@ export const aboutV2Content = {
   },
   focus: {
     visible: true,
+    eyebrow: "WHAT WE’RE BUILDING",
     title: "Built around one focus.",
+    introduction:
+      "Neuvago is centred on the vagus nerve and parasympathetic nervous system. We develop practical products, digital tools and science-informed resources that make this field easier to understand and explore.",
+    image: {
+      src: "/images/neuvago/launch/product-hero-desktop.webp",
+      alt: "Neuvago device.",
+    },
     areas: [
       {
         id: "device",
         title: "The Neuvago device",
         priority: "primary",
+        description:
+          "Non-invasive vagus nerve stimulation is the core of Neuvago. Our handheld device is designed to make ear-based stimulation approachable, adjustable and practical for everyday use.",
       },
       {
         id: "digital-tools",
         title: "Digital tools",
         priority: "secondary",
+        description:
+          "The Neuvago App brings together professionally guided sessions, breathing practices and personal tools for sleep, stress, focus and recovery.",
       },
       {
         id: "learn-research",
         title: "Learn & Research",
         priority: "secondary",
+        description:
+          "Learn offers clear educational articles, while Research provides access to scientific studies, summaries and context across VNS, taVNS and nervous system regulation.",
       },
     ],
   },

@@ -56,10 +56,11 @@ export type AboutV2Content = {
   };
   finalCta: {
     visible: boolean;
+    eyebrow: string;
     title: string;
-    description?: string;
-    primaryCta?: AboutV2Link;
-    secondaryCta?: AboutV2Link;
+    description: string;
+    primaryCta: AboutV2Link;
+    secondaryCta: AboutV2Link;
     image: AboutV2Image;
   };
 };
@@ -163,7 +164,18 @@ export const aboutV2Content = {
   },
   finalCta: {
     visible: true,
+    eyebrow: "THE NEUVAGO DEVICE",
     title: "Explore Neuvago.",
+    description:
+      "Discover a non-invasive vagus nerve stimulator with four 20-minute modes and adjustable intensity, designed to support better sleep, calmer responses to everyday stress, focused time and recovery.",
+    primaryCta: {
+      label: "Get launch access",
+      href: "/shop",
+    },
+    secondaryCta: {
+      label: "Explore the Product",
+      href: "/product",
+    },
     image: {
       src: "/images/neuvago/product-hero-desktop.webp",
       alt: "Neuvago device.",

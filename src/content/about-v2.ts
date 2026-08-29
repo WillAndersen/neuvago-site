@@ -41,7 +41,9 @@ export type AboutV2Content = {
   };
   principles: {
     visible: boolean;
+    eyebrow: string;
     title: string;
+    introduction: string;
     items: readonly AboutV2Principle[];
   };
   focus: {
@@ -97,19 +99,28 @@ export const aboutV2Content = {
   },
   principles: {
     visible: true,
+    eyebrow: "OUR PHILOSOPHY",
     title: "What guides us.",
+    introduction:
+      "Neuvago is built around one idea: products and knowledge related to vagus nerve stimulation, the vagus nerve and the parasympathetic nervous system should be scientifically grounded, clearly explained and practical enough for everyday life.",
     items: [
       {
         id: "science-with-context",
         title: "Science with context",
+        description:
+          "We follow peer-reviewed research across VNS, taVNS and autonomic regulation. We communicate encouraging findings clearly while keeping differences between devices, stimulation protocols and study populations visible.",
       },
       {
         id: "clarity-with-purpose",
         title: "Clarity with purpose",
+        description:
+          "Complex science should be easier to understand without being oversimplified. We aim to make every product, article and interaction clear, considered and useful.",
       },
       {
         id: "designed-for-real-life",
         title: "Designed for real life",
+        description:
+          "We create approachable products and tools that can fit into ordinary routines, with thoughtful design, adjustable experiences and a low threshold for getting started.",
       },
     ],
   },

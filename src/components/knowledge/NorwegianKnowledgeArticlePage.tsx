@@ -249,6 +249,32 @@ export function NorwegianKnowledgeArticlePage({
             <p className="mt-7 max-w-3xl text-lg leading-8 text-[#514c45] md:text-xl md:leading-9">
               {article.lead}
             </p>
+            {article.primaryCta || article.secondaryCta ? (
+              <div
+                className="mt-9 flex flex-wrap gap-3"
+                data-conversion-placement="hero-actions"
+                data-knowledge-article-ctas
+              >
+                {article.primaryCta ? (
+                  <Link
+                    href={article.primaryCta.href}
+                    data-knowledge-primary-cta
+                    className="inline-flex items-center justify-center rounded-full bg-[#1f1f1c] px-6 py-3 text-sm font-medium text-white transition hover:opacity-90"
+                  >
+                    {article.primaryCta.label}
+                  </Link>
+                ) : null}
+                {article.secondaryCta ? (
+                  <Link
+                    href={article.secondaryCta.href}
+                    data-knowledge-secondary-cta
+                    className="inline-flex items-center justify-center rounded-full border border-black/10 bg-white/70 px-6 py-3 text-sm font-medium text-[#1f1f1c] transition hover:bg-white"
+                  >
+                    {article.secondaryCta.label}
+                  </Link>
+                ) : null}
+              </div>
+            ) : null}
           </div>
 
           <div className="rounded-[2rem] border border-black/7 bg-white/58 p-6 shadow-[0_24px_90px_rgba(31,31,28,0.08)] sm:p-8">

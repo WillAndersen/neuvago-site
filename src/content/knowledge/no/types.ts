@@ -1,8 +1,12 @@
 import type { EditorialEntityId } from "@/content/editorial/people";
 
 export type NorwegianKnowledgeArticleStatus = "draft" | "published";
-export type NorwegianKnowledgeWave = "1A" | "1B" | "1C"
-  | "1D";
+export type NorwegianKnowledgeWave =
+  | "1A"
+  | "1B"
+  | "1C"
+  | "1D"
+  | "2C.1";
 export type NorwegianKnowledgeSearchIntent =
   | "informational"
   | "commercial-investigation"
@@ -91,6 +95,11 @@ export type NorwegianKnowledgeRelatedLink = {
   label: string;
 };
 
+export type NorwegianKnowledgeCta = {
+  label: string;
+  href: string;
+};
+
 export type NorwegianKnowledgeArticle = {
   slug: string;
   path: string;
@@ -121,6 +130,9 @@ export type NorwegianKnowledgeArticle = {
   englishEquivalent?: string;
   sitemapPriority: number;
   changeFrequency: "weekly" | "monthly" | "yearly";
+
+  primaryCta?: NorwegianKnowledgeCta;
+  secondaryCta?: NorwegianKnowledgeCta;
 
   sections: readonly NorwegianKnowledgeSection[];
   sources: readonly NorwegianKnowledgeSource[];

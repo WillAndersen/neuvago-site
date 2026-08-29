@@ -9,6 +9,11 @@ export const metadata = {
     "Learn why you can feel tired but unable to relax, and how this wired-but-tired pattern connects to stress, sleep, recovery, and nervous system regulation.",
   alternates: {
     canonical: "/learn/why-you-feel-tired-but-cant-relax",
+    languages: {
+      "en-US": "/learn/why-you-feel-tired-but-cant-relax",
+      "nb-NO": "/no/kunnskap/trott-men-far-ikke-slappet-av",
+      "x-default": "/learn/why-you-feel-tired-but-cant-relax",
+    },
   },
   openGraph: {
     title: "Tired but Can’t Relax | Wired and Stressed | Neuvago",
@@ -200,6 +205,13 @@ export default function WhyYouFeelTiredButCantRelaxPage() {
                 className="inline-flex items-center justify-center rounded-full border border-black/10 bg-white/70 px-6 py-3 text-sm font-medium text-[#1f1f1c] transition hover:bg-white"
               >
                 Explore sleep
+              </Link>
+              <Link
+                href="/no/kunnskap/trott-men-far-ikke-slappet-av"
+                data-language-counterpart="nb-NO"
+                className="inline-flex items-center justify-center rounded-full border border-black/10 bg-transparent px-6 py-3 text-sm font-medium text-[#1f1f1c] transition hover:bg-white"
+              >
+                Les denne siden på norsk
               </Link>
             </div>
           </div>

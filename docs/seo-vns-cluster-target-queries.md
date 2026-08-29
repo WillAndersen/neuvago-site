@@ -1,6 +1,6 @@
 # VNS Cluster Target Queries and Landing Page Map
 
-_Last updated: 2026-08-27_
+_Last updated: 2026-08-29_
 
 Use this map to evaluate whether Search Console queries are landing on the correct Neuvago page.
 
@@ -51,6 +51,7 @@ Use this map to evaluate whether Search Console queries are landing on the corre
 | vagus nerve stimulation for stress | `/conditions/stress` | `/research/topics/autonomic-regulation` | Keep claims careful. |
 | nervous system regulation for sleep | `/conditions/sleep` | `/research/topics/heart-rate-variability` | Sleep page should lead to routine/app. |
 | vagus nerve stimulation for sleep | `/conditions/sleep` | `/research/topics/autonomic-regulation` | Avoid promising treatment. |
+| trøtt men får ikke slappet av | `/no/kunnskap/trott-men-far-ikke-slappet-av` | `/no/tilstander/sovn` | Recognition guide owns the everyday contradiction; the sleep pathway owns broad sleep and clinical-boundary intent. |
 
 ## Commercial support queries
 
@@ -73,5 +74,6 @@ Watch these pairs in Search Console.
 | `/learn/transcutaneous-vagus-nerve-stimulation` vs `/research/topics/transcutaneous-vagus-nerve-stimulation` | tVNS overlap | Learn explains; Research details. |
 | `/learn/auricular-vagus-nerve-stimulation` vs Frangos study page | Auricular research overlap | Learn page should be primary for general users. |
 | `/learn/what-does-vagus-nerve-stimulation-feel-like` vs `/product` | Sensation/product overlap | Experience page owns sensation and comfort; Product owns branded specifications, modes and purchase intent. |
+| `/no/kunnskap/trott-men-far-ikke-slappet-av` vs `/no/tilstander/sovn` | Recognition/sleep overlap | The knowledge article owns the exact tired-but-wired question; the condition page owns the broader sleep pathway and assessment context. |
 | `/conditions/stress` vs `/learn/nervous-system-regulation` | Stress/regulation overlap | Conditions owns problem; Learn owns concept. |
 | `/research/topics/safety-and-tolerability` vs product page | Safety/commercial overlap | Safety page should own safety queries. Product should link to it. |

@@ -11,6 +11,7 @@ import { vagalToneArticle } from "@/content/knowledge/no/articles/vagal-tone";
 import { hrvOgVagusnervenArticle } from "@/content/knowledge/no/articles/hrv-og-vagusnerven";
 import { oretsAnatomiOgVagusnervenArticle } from "@/content/knowledge/no/articles/orets-anatomi-og-vagusnerven";
 import { hvordanRoeNedNervesystemetArticle } from "@/content/knowledge/no/articles/hvordan-roe-ned-nervesystemet";
+import { trottMenFarIkkeSlappetAvArticle } from "@/content/knowledge/no/articles/trott-men-far-ikke-slappet-av";
 import { erVagusnervestimuleringTrygtArticle } from "@/content/knowledge/no/articles/er-vagusnervestimulering-trygt";
 import { bivirkningerVedIkkeInvasivVagusnervestimuleringArticle } from "@/content/knowledge/no/articles/bivirkninger-ved-ikke-invasiv-vagusnervestimulering";
 import { hvemBorVaereForsiktigMedVagusnervestimuleringArticle } from "@/content/knowledge/no/articles/hvem-bor-vaere-forsiktig-med-vagusnervestimulering";
@@ -30,6 +31,7 @@ const articleRegistry = [
   hrvOgVagusnervenArticle,
   oretsAnatomiOgVagusnervenArticle,
   hvordanRoeNedNervesystemetArticle,
+  trottMenFarIkkeSlappetAvArticle,
   erVagusnervestimuleringTrygtArticle,
   bivirkningerVedIkkeInvasivVagusnervestimuleringArticle,
   hvemBorVaereForsiktigMedVagusnervestimuleringArticle,

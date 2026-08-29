@@ -1,6 +1,6 @@
 # Neuvago SEO Measurement Plan — P2.6
 
-_Last updated: 2026-08-28_
+_Last updated: 2026-08-29_
 
 ## Purpose
 
@@ -206,6 +206,18 @@ Expected next-step events:
 - `neuvago_buyer_guide_click` from `related-guides`.
 
 Review query-page fit against `/product`, `/learn/auricular-vagus-nerve-stimulation` and `/research/topics/safety-and-tolerability`. Do not interpret a click as proof of product efficacy, and do not add personal data to the event contract.
+
+## Wave 2C.1B pilot measurement
+
+Monitor `/no/kunnskap/trott-men-far-ikke-slappet-av` as a Norwegian recognition-intent page. The route should own the exact everyday query without taking broad sleep-pathway intent from `/no/tilstander/sovn` or turning a lived experience into a diagnosis.
+
+The locked primary CTA, `Se kveldsrutinen`, points to the in-page section `#kort-kveldssekvens` until the separate evening-routine page is published. This in-page jump is a usability pathway and is not assigned a new analytics event in Wave 2C.1B.
+
+Expected tracked next-step event:
+
+- `neuvago_how_it_works_click` from `hero-actions` to `/no/slik-fungerer-det`.
+
+Review query-page fit against `/no/tilstander/sovn`, `/no/tilstander/stress`, `/no/kunnskap/hvordan-roe-ned-nervesystemet` and the English counterpart `/learn/why-you-feel-tired-but-cant-relax`. Do not interpret a routine click as proof of sleep benefit, and do not add personal data, symptoms or free-text content to the event contract.
 
 ## Weekly workflow
 

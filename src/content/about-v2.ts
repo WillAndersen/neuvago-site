@@ -35,9 +35,9 @@ export type AboutV2Content = {
   };
   whyItExists: {
     visible: boolean;
+    eyebrow: string;
     title: string;
     paragraphs: readonly string[];
-    companyStatement?: string;
   };
   principles: {
     visible: boolean;
@@ -62,7 +62,20 @@ export type AboutV2Content = {
 export const aboutV2Content = {
   hero: {
     visible: true,
+    eyebrow: "ABOUT NEUVAGO",
     title: "A more practical approach to vagus nerve stimulation.",
+    introduction:
+      "Neuvago is focused on making non-invasive vagus nerve stimulation more understandable, accessible and practical.",
+    supportingStatement:
+      "We also create digital tools and clear, science-informed resources that make the vagus nerve and parasympathetic nervous system easier to explore.",
+    primaryCta: {
+      label: "Explore the Product",
+      href: "/product",
+    },
+    secondaryCta: {
+      label: "Explore Research",
+      href: "/research",
+    },
     desktopImage: {
       src: "/images/neuvago/launch/product-hero-desktop.webp",
       alt: "Neuvago device.",
@@ -74,8 +87,13 @@ export const aboutV2Content = {
   },
   whyItExists: {
     visible: true,
-    title: "Why Neuvago exists.",
-    paragraphs: [],
+    eyebrow: "WHY NEUVAGO EXISTS",
+    title: "Making a complex field easier to approach.",
+    paragraphs: [
+      "Interest in the vagus nerve and nervous system is growing, but the science, terminology and available tools can still feel complex, clinical or difficult to bring into everyday life.",
+      "Neuvago was created to make this field clearer and more accessible through practical products, digital tools and science-informed education.",
+      "Neuvago is independently founded and led from Norway. We work closely with experienced manufacturing and specialist partners to develop thoughtful products and digital experiences around the nervous system and vagus nerve.",
+    ],
   },
   principles: {
     visible: true,

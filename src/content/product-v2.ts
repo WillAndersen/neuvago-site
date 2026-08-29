@@ -482,6 +482,10 @@ export const productV2Content = {
         question: "What does the stimulation feel like?",
         answer:
           "Most Neuvago modes provide mild or very mild stimulation that feels like a light tingling or pricking sensation at the ear. The intensity can be adjusted in small steps and should feel noticeable but comfortable. Relief uses slower, more distinct pulses and may therefore feel more pronounced than the other modes.",
+        answerLink: {
+          label: "Read the sensation and comfort guide",
+          href: "/learn/what-does-vagus-nerve-stimulation-feel-like",
+        } satisfies ProductV2Cta,
       },
       {
         question: "What are the four stimulation modes?",

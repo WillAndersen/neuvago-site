@@ -78,6 +78,10 @@ const moreFoundationGuides = [
     href: "/learn/auricular-vagus-nerve-stimulation",
   },
   {
+    title: "What does vagus nerve stimulation feel like?",
+    href: "/learn/what-does-vagus-nerve-stimulation-feel-like",
+  },
+  {
     title: "Parasympathetic nervous system",
     href: "/learn/parasympathetic-nervous-system",
   },

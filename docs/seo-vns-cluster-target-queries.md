@@ -1,6 +1,6 @@
 # VNS Cluster Target Queries and Landing Page Map
 
-_Last updated: 2026-05-31_
+_Last updated: 2026-08-27_
 
 Use this map to evaluate whether Search Console queries are landing on the correct Neuvago page.
 
@@ -57,6 +57,7 @@ Use this map to evaluate whether Search Console queries are landing on the corre
 | Query family | Preferred page | Secondary page | Notes |
 |---|---|---|---|
 | non-invasive vagus nerve stimulator | `/product` | `/learn/non-invasive-vagus-nerve-stimulation` | Product should be clear that Neuvago is a non-invasive stimulator + app system. |
+| what does vagus nerve stimulation feel like | `/learn/what-does-vagus-nerve-stimulation-feel-like` | `/product` | Experience page owns sensation, comfort and intensity boundaries; Product owns branded features and purchase intent. |
 | app guided vagus nerve stimulation | `/app` | `/how-it-works` | App page should own guided routine/adherence intent. |
 | how to use a vagus nerve stimulator | `/how-it-works` | `/product` | Practical mechanics page should lead. |
 | vagus nerve stimulation device with app | `/product` | `/app` | Commercial bridge. |
@@ -71,6 +72,6 @@ Watch these pairs in Search Console.
 | `/learn/non-invasive-vagus-nerve-stimulation` vs `/product` | Device/commercial overlap | Learn educates; Product converts. |
 | `/learn/transcutaneous-vagus-nerve-stimulation` vs `/research/topics/transcutaneous-vagus-nerve-stimulation` | tVNS overlap | Learn explains; Research details. |
 | `/learn/auricular-vagus-nerve-stimulation` vs Frangos study page | Auricular research overlap | Learn page should be primary for general users. |
+| `/learn/what-does-vagus-nerve-stimulation-feel-like` vs `/product` | Sensation/product overlap | Experience page owns sensation and comfort; Product owns branded specifications, modes and purchase intent. |
 | `/conditions/stress` vs `/learn/nervous-system-regulation` | Stress/regulation overlap | Conditions owns problem; Learn owns concept. |
 | `/research/topics/safety-and-tolerability` vs product page | Safety/commercial overlap | Safety page should own safety queries. Product should link to it. |
-

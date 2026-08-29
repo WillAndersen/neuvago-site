@@ -9,6 +9,7 @@ const clusterRoutes = [
   "/learn/non-invasive-vagus-nerve-stimulation",
   "/learn/transcutaneous-vagus-nerve-stimulation",
   "/learn/auricular-vagus-nerve-stimulation",
+  "/learn/what-does-vagus-nerve-stimulation-feel-like",
   "/learn/nervous-system-regulation",
   "/research/topics/vagus-nerve-stimulation",
   "/research/topics/transcutaneous-vagus-nerve-stimulation",
@@ -26,22 +27,62 @@ const requiredBuildRoutes = [
   "/learn/non-invasive-vagus-nerve-stimulation",
   "/learn/transcutaneous-vagus-nerve-stimulation",
   "/learn/auricular-vagus-nerve-stimulation",
+  "/learn/what-does-vagus-nerve-stimulation-feel-like",
   "/research/topics/vagus-nerve-stimulation",
   "/research/topics/transcutaneous-vagus-nerve-stimulation",
   "/research/topics/safety-and-tolerability",
   "/research/topics/autonomic-regulation",
 ];
 
-const conditionBridgeRequirements = {
-  "/conditions": [
-    "Condition-to-product pathways",
-    "/conditions/stress",
-    "/conditions/sleep",
-    "/research/topics/autonomic-regulation",
-    "/research/topics/safety-and-tolerability",
+const wave2c1aSensationRequirements = {
+  route: "/learn/what-does-vagus-nerve-stimulation-feel-like",
+  sourceMarkers: [
+    "What does vagus nerve stimulation feel like?",
+    "productV2Content.modes.items.map",
+    "Sensation alone does not prove selective vagus-nerve target",
+    "Neuvago Editorial Team",
+    "Neuvago Source Review",
+    "datePublished",
+    "dateModified",
     "/how-it-works",
-    "/app",
+    "/product",
+    "/learn/how-to-choose-a-vagus-nerve-stimulation-device",
+    "/research/topics/safety-and-tolerability",
+    "/learn/auricular-vagus-nerve-stimulation",
+    "/glossary/stimulation-intensity",
+    "/glossary/electrode",
+    "/glossary/target-engagement",
+    "33854421",
+    "30663712",
+    "36543841",
+    "30217648",
   ],
+};
+
+// Architecture-aware conditions contracts.
+// The current /conditions route is intentionally a thin composition layer;
+// customer pathways live in the shared Conditions V2 content model.
+const conditionHubArchitectureRequirements = {
+  routeFile: "src/app/(en)/conditions/page.tsx",
+  routeMarkers: [
+    'import { conditionsV2Content } from "@/content/conditions-v2"',
+    "ConditionsV2Featured",
+    "ConditionsV2ResearchBridge",
+    "ConditionsV2FinalCta",
+  ],
+  contentFile: "src/content/conditions-v2.ts",
+  contentMarkers: [
+    'href: "/conditions/stress"',
+    'href: "/conditions/sleep"',
+    'href: "/research"',
+    'href: "/product"',
+    "commerceContent.shopHref",
+    "researchBridge:",
+    "finalCta:",
+  ],
+};
+
+const conditionLeafBridgeRequirements = {
   "/conditions/stress": [
     "Condition-to-routine pathway",
     "/research/topics/autonomic-regulation",
@@ -112,13 +153,68 @@ for (const route of clusterRoutes) {
   }
 }
 
+const wave2c1aSource = readIfExists(
+  pageFileForRoute(wave2c1aSensationRequirements.route),
+);
+
+if (!wave2c1aSource) {
+  errors.push(`${wave2c1aSensationRequirements.route} is missing.`);
+} else {
+  for (const marker of wave2c1aSensationRequirements.sourceMarkers) {
+    if (!wave2c1aSource.includes(marker)) {
+      errors.push(
+        `${wave2c1aSensationRequirements.route} is missing Wave 2C.1A marker: ${marker}.`,
+      );
+    }
+  }
+
+  for (const forbidden of [
+    "sensation proves",
+    "stronger is better",
+    "treats insomnia",
+    "cures",
+    "diagnoses",
+  ]) {
+    if (wave2c1aSource.toLowerCase().includes(forbidden)) {
+      errors.push(
+        `${wave2c1aSensationRequirements.route} contains forbidden Wave 2C.1A wording: ${forbidden}.`,
+      );
+    }
+  }
+}
+
 for (const route of requiredBuildRoutes) {
   if (!existsSync(pageFileForRoute(route))) {
     errors.push(`${route} will not appear in the Next.js route list because its page.tsx is missing.`);
   }
 }
 
-for (const [route, markers] of Object.entries(conditionBridgeRequirements)) {
+for (const [relativePath, markers, label] of [
+  [
+    conditionHubArchitectureRequirements.routeFile,
+    conditionHubArchitectureRequirements.routeMarkers,
+    "/conditions route composition",
+  ],
+  [
+    conditionHubArchitectureRequirements.contentFile,
+    conditionHubArchitectureRequirements.contentMarkers,
+    "/conditions shared content pathways",
+  ],
+]) {
+  const source = readIfExists(path.join(repoRoot, relativePath));
+  if (!source) {
+    errors.push(`${relativePath} is missing and cannot be checked for ${label}.`);
+    continue;
+  }
+
+  for (const marker of markers) {
+    if (!source.includes(marker)) {
+      errors.push(`${relativePath} is missing ${label} marker: ${marker}.`);
+    }
+  }
+}
+
+for (const [route, markers] of Object.entries(conditionLeafBridgeRequirements)) {
   const source = readIfExists(pageFileForRoute(route));
 
   if (!source) {
@@ -145,16 +241,37 @@ if (!llmsSource) {
   }
 }
 
-const visualImageMarkers = {
-  "src/content/homepage.ts": [
-    "/images/neuvago/homepage-master-hero-desktop.webp",
-    "/images/neuvago/homepage-master-hero-mobile.webp",
-    "/images/neuvago/final-cta-desktop.webp",
+const activeVisualRouteBindings = {
+  "src/app/(en)/page.tsx": [
+    '@/content/homepage-v3',
+    "homepage03Content",
+    "HomeHero",
+    "HomeFinalCta",
   ],
-  "src/content/product.ts": [
+  "src/app/(en)/product/page.tsx": [
+    '@/content/product-v2',
+    "productV2Content",
+    "ProductV2Hero",
+    "ProductV2FinalCta",
+  ],
+};
+
+const visualImageMarkers = {
+  "src/content/homepage-v3.ts": [
+    "/images/neuvago/product-hero-desktop.webp",
+    "/images/neuvago/launch/product-hero-mobile.webp",
+    "/images/neuvago/product-hero-mobile.webp",
+    "desktopImage: homepageHeroDesktop",
+    "mobileImage: homepageHeroMobile",
+    "backgroundImage: finalCtaDesktop",
+    "mobileImage: finalCtaMobile",
+  ],
+  "src/content/product-v2.ts": [
+    "/images/neuvago/launch/product-hero-desktop.webp",
+    "/images/neuvago/launch/product-hero-mobile.webp",
     "/images/neuvago/product-hero-desktop.webp",
     "/images/neuvago/product-hero-mobile.webp",
-    "/images/neuvago/final-cta-desktop.webp",
+    "finalCta:",
   ],
   "src/content/app.ts": [
     "/images/neuvago/app-hero-desktop.webp",
@@ -178,19 +295,33 @@ const visualImageMarkers = {
     "/images/neuvago/how-it-works-routine-desktop.webp",
     "/images/neuvago/support-guidance-desktop.webp",
   ],
-  "src/app/research/topics/safety-and-tolerability/page.tsx": [
+  "src/app/(en)/research/topics/safety-and-tolerability/page.tsx": [
     "/images/neuvago/safety-tolerability-desktop.webp",
     "AuthorityVisualSection",
   ],
-  "src/app/learn/auricular-vagus-nerve-stimulation/page.tsx": [
+  "src/app/(en)/learn/auricular-vagus-nerve-stimulation/page.tsx": [
     "/images/neuvago/auricular-vns-education-desktop.webp",
     "AuthorityVisualSection",
   ],
-  "src/app/learn/transcutaneous-vagus-nerve-stimulation/page.tsx": [
+  "src/app/(en)/learn/transcutaneous-vagus-nerve-stimulation/page.tsx": [
     "/images/neuvago/transcutaneous-vns-education-desktop.webp",
     "AuthorityVisualSection",
   ],
 };
+
+for (const [relativePath, markers] of Object.entries(activeVisualRouteBindings)) {
+  const source = readIfExists(path.join(repoRoot, relativePath));
+  if (!source) {
+    errors.push(`${relativePath} is missing and cannot be checked for active visual route binding.`);
+    continue;
+  }
+
+  for (const marker of markers) {
+    if (!source.includes(marker)) {
+      errors.push(`${relativePath} is missing active visual route binding marker: ${marker}.`);
+    }
+  }
+}
 
 for (const [relativePath, markers] of Object.entries(visualImageMarkers)) {
   const source = readIfExists(path.join(repoRoot, relativePath));
@@ -252,11 +383,71 @@ if (productSource.includes("buildProductStructuredData")) {
   errors.push("/product still renders Product structured data; keep Product schema disabled until real offer/review data exists.");
 }
 
-const studyPageFiles = collectFiles(path.join(repoRoot, "src/app/research/studies"), "page.tsx")
+const featuredStudyRendererPath = path.join(
+  repoRoot,
+  "src/components/research-v2/FeaturedTavnsStudyPage.tsx",
+);
+const featuredStudyCatalogPath = path.join(
+  repoRoot,
+  "src/content/research-study-catalog.ts",
+);
+const featuredStudyRendererSource = readIfExists(featuredStudyRendererPath);
+const featuredStudyCatalogSource = readIfExists(featuredStudyCatalogPath);
+
+for (const marker of [
+  "PlainEnglishSummary",
+  "study.plainEnglish.title",
+  "study.plainEnglish.description",
+  "study.plainEnglish.points",
+  'href={`https://doi.org/${study.doi}`}',
+  "DOI: {study.doi}",
+]) {
+  if (!featuredStudyRendererSource.includes(marker)) {
+    errors.push(
+      `src/components/research-v2/FeaturedTavnsStudyPage.tsx is missing shared featured-study marker: ${marker}.`,
+    );
+  }
+}
+
+if (!featuredStudyCatalogSource) {
+  errors.push("src/content/research-study-catalog.ts is missing.");
+}
+
+const studyPageFiles = collectFiles(path.join(repoRoot, "src/app/(en)/research/studies"), "page.tsx")
   .filter((filePath) => !filePath.endsWith(path.join("research", "studies", "page.tsx")));
 
 for (const filePath of studyPageFiles) {
   const source = readIfExists(filePath);
+  const usesFeaturedStudyRenderer =
+    source.includes("FeaturedTavnsStudyPage") &&
+    source.includes("getFeaturedTavnsStudy");
+
+  if (usesFeaturedStudyRenderer) {
+    const slugMatch = source.match(
+      /getFeaturedTavnsStudy\(\s*["']([^"']+)["']\s*,?\s*\)/s,
+    );
+    const slug = slugMatch?.[1];
+
+    if (!slug) {
+      errors.push(`${relative(filePath)} does not expose a featured-study slug.`);
+      continue;
+    }
+
+    const catalogEntry = catalogEntryForSlug(featuredStudyCatalogSource, slug);
+    if (!catalogEntry) {
+      errors.push(`${relative(filePath)} has no matching study catalog entry for ${slug}.`);
+      continue;
+    }
+
+    if (!catalogEntry.includes("plainEnglish:")) {
+      errors.push(`${relative(filePath)} catalog entry is missing plain-English study content.`);
+    }
+    if (!catalogEntry.includes("doi:")) {
+      errors.push(`${relative(filePath)} catalog entry is missing DOI metadata.`);
+    }
+    continue;
+  }
+
   if (!source.includes("PlainEnglishSummary") || !source.includes("studyPlainEnglish")) {
     errors.push(`${relative(filePath)} is missing the P4.3B plain-English study summary.`);
   }
@@ -335,7 +526,14 @@ function collectFiles(dir, fileName, matches = []) {
 
 function pageFileForRoute(route) {
   const routePath = route === "/" ? "" : route.replace(/^\//, "");
-  return path.join(repoRoot, "src/app", routePath, "page.tsx");
+  const directPath = path.join(repoRoot, "src/app", routePath, "page.tsx");
+
+  if (existsSync(directPath)) {
+    return directPath;
+  }
+
+  const routeGroup = route === "/no" || route.startsWith("/no/") ? "(no)" : "(en)";
+  return path.join(repoRoot, "src/app", routeGroup, routePath, "page.tsx");
 }
 
 function isAuthorityRoute(route) {
@@ -353,6 +551,15 @@ function hasCanonical(source, route) {
 
 function readIfExists(filePath) {
   return existsSync(filePath) ? readFileSync(filePath, "utf8") : "";
+}
+
+function catalogEntryForSlug(source, slug) {
+  if (!source) return "";
+  const marker = `slug: "${slug}"`;
+  const start = source.indexOf(marker);
+  if (start === -1) return "";
+  const next = source.indexOf("\n  {\n    slug:", start + marker.length);
+  return source.slice(start, next === -1 ? source.length : next);
 }
 
 function findArtifacts(dir, matches = []) {

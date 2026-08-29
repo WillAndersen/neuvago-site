@@ -1,6 +1,6 @@
 # Neuvago SEO Measurement Plan — P2.6
 
-_Last updated: 2026-05-31_
+_Last updated: 2026-08-28_
 
 ## Purpose
 
@@ -126,6 +126,7 @@ Use this as the initial VNS cluster monitoring set.
 | VNS pillar | `/learn/vagus-nerve-stimulation` |
 | Non-invasive VNS | `/learn/non-invasive-vagus-nerve-stimulation` |
 | Auricular VNS | `/learn/auricular-vagus-nerve-stimulation` |
+| VNS sensation and comfort | `/learn/what-does-vagus-nerve-stimulation-feel-like` |
 | Transcutaneous VNS | `/learn/transcutaneous-vagus-nerve-stimulation` |
 | Nervous system foundation | `/learn/nervous-system-regulation` |
 | VNS research overview | `/research/topics/vagus-nerve-stimulation` |
@@ -191,6 +192,20 @@ If a page does not exist in the current repo, skip it until that route is presen
 - vagus nerve stimulation device with app
 - how to use a vagus nerve stimulator
 - ear vagus nerve stimulator
+- what does vagus nerve stimulation feel like
+- vagus nerve stimulation sensation
+
+## Wave 2C.1A pilot measurement
+
+Monitor `/learn/what-does-vagus-nerve-stimulation-feel-like` as a customer-intent Learn page. The route should own sensation, comfort and intensity questions without taking branded Product intent or safety-evidence intent from their preferred pages.
+
+Expected next-step events:
+
+- `neuvago_how_it_works_click` from `hero-actions` and `final-cta`;
+- `neuvago_product_click` from `hero-actions` and `final-cta`;
+- `neuvago_buyer_guide_click` from `related-guides`.
+
+Review query-page fit against `/product`, `/learn/auricular-vagus-nerve-stimulation` and `/research/topics/safety-and-tolerability`. Do not interpret a click as proof of product efficacy, and do not add personal data to the event contract.
 
 ## Weekly workflow
 

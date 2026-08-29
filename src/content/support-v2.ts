@@ -3,15 +3,16 @@ export type SupportV2Link = {
   href: string;
 };
 
-export type SupportV2ResourceItem = {
+export type SupportV2ResourceItem = SupportV2Link & {
   id: string;
-  label: string;
-  href?: string;
+  fileType?: "PDF";
+  openInNewTab?: boolean;
 };
 
 export type SupportV2ResourceGroup = {
   id: string;
   title: string;
+  description: string;
   items: readonly SupportV2ResourceItem[];
 };
 
@@ -24,15 +25,17 @@ export type SupportV2FaqItem = {
 export type SupportV2Content = {
   hero: {
     visible: boolean;
-    eyebrow?: string;
+    eyebrow: string;
     title: string;
-    introduction?: string;
+    introduction: string;
     primaryCta: SupportV2Link;
-    secondaryCta?: SupportV2Link;
+    secondaryCta: SupportV2Link;
   };
   resources: {
     visible: boolean;
+    eyebrow: string;
     title: string;
+    introduction: string;
     groups: readonly SupportV2ResourceGroup[];
   };
   faq: {
@@ -61,96 +64,50 @@ export type SupportV2Content = {
 export const supportV2Content = {
   hero: {
     visible: true,
+    eyebrow: "SUPPORT",
     title: "How can we help?",
+    introduction:
+      "Find product guides, safety information and answers to common questions, or contact Neuvago for personal support.",
     primaryCta: {
-      label: "Contact Support",
+      label: "Contact support",
       href: "#contact-support",
     },
     secondaryCta: {
-      label: "Support Resources",
+      label: "Browse support resources",
       href: "#support-resources",
     },
   },
   resources: {
     visible: true,
-    title: "Support resources.",
+    eyebrow: "SUPPORT RESOURCES",
+    title: "Find the right guide.",
+    introduction:
+      "Start with the essential guides for setting up, using and caring for Neuvago, or review the approved safety information before use.",
     groups: [
       {
         id: "getting-started",
         title: "Getting started",
-        items: [
-          {
-            id: "quick-start-guide",
-            label: "Quick Start Guide",
-          },
-          {
-            id: "preparing-the-earpiece",
-            label: "Preparing the earpiece",
-          },
-          {
-            id: "positioning-the-earpiece",
-            label: "Positioning the earpiece in the left ear",
-          },
-          {
-            id: "choosing-a-stimulation-mode",
-            label: "Choosing a stimulation mode",
-          },
-          {
-            id: "adjusting-the-intensity",
-            label: "Adjusting the intensity",
-          },
-        ],
+        description:
+          "Find clear guidance on preparing the earpiece, positioning it correctly in the left ear, choosing a stimulation mode and adjusting the intensity.",
+        items: [],
       },
       {
         id: "using-and-caring",
         title: "Using and caring for Neuvago",
-        items: [
-          {
-            id: "user-manual",
-            label: "User Manual",
-          },
-          {
-            id: "conductive-gel-or-water",
-            label: "Conductive gel or water",
-          },
-          {
-            id: "cleaning-the-earpiece",
-            label: "Cleaning the earpiece",
-          },
-          {
-            id: "charging",
-            label: "Charging",
-          },
-          {
-            id: "storage-and-care",
-            label: "Storage and care",
-          },
-        ],
+        description:
+          "Find guidance on stimulation intensity, conductive gel or water, cleaning the earpiece, charging, storage and general product care.",
+        items: [],
       },
       {
         id: "safety-and-suitability",
         title: "Safety & suitability",
+        description:
+          "Review contraindications, intended use and the full safety information before using Neuvago for the first time.",
         items: [
           {
-            id: "full-safety-information",
-            label: "Full safety information",
-          },
-          {
-            id: "contraindications",
-            label: "Contraindications",
-          },
-          {
             id: "intended-use",
-            label: "Intended use",
+            label: "Read Intended Use",
             href: "/legal/intended-use",
-          },
-          {
-            id: "when-to-stop-use",
-            label: "When to stop use",
-          },
-          {
-            id: "professional-guidance",
-            label: "When to seek professional guidance",
           },
         ],
       },

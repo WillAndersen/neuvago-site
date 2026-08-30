@@ -9,6 +9,11 @@ export const metadata = {
     "Learn why the body can feel stuck in stress even after the stressful thing is over, and how lingering activation connects to sleep, recovery, anxiety, and nervous system regulation.",
   alternates: {
     canonical: "/learn/why-your-body-feels-stuck-in-stress",
+    languages: {
+      "en-US": "/learn/why-your-body-feels-stuck-in-stress",
+      "nb-NO": "/no/kunnskap/fastlast-i-stress",
+      "x-default": "/learn/why-your-body-feels-stuck-in-stress",
+    },
   },
   openGraph: {
     title: "Stuck in Stress | Nervous System Activation | Neuvago",
@@ -200,6 +205,13 @@ export default function WhyYourBodyFeelsStuckInStressPage() {
                 className="rounded-full border border-[#d8d1c7] bg-transparent px-6 py-3 text-sm font-medium text-[#1f1f1c] transition hover:bg-white/70"
               >
                 Explore regulation
+              </Link>
+              <Link
+                href="/no/kunnskap/fastlast-i-stress"
+                data-language-counterpart="nb-NO"
+                className="rounded-full border border-[#d8d1c7] bg-transparent px-6 py-3 text-sm font-medium text-[#1f1f1c] transition hover:bg-white/70"
+              >
+                Les denne siden på norsk
               </Link>
             </div>
           </div>

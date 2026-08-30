@@ -963,6 +963,137 @@ for (const [relativePath, markers, label] of [
   }
 }
 
+// Wave 2C.1E publishes a registry-backed Norwegian lived-experience guide.
+// It uses the established shared article renderer, timeline and actions blocks;
+// no new physical page.tsx or analytics contract is introduced.
+const wave2c1eStuckStressRequirements = {
+  route: "/no/kunnskap/fastlast-i-stress",
+  articleFile: "src/content/knowledge/no/articles/fastlast-i-stress.ts",
+  articleMarkers: [
+    'slug: "fastlast-i-stress"',
+    'path: "/no/kunnskap/fastlast-i-stress"',
+    'wave: "2C.1"',
+    'order: 138',
+    'primaryKeyword: "fastlåst i stress"',
+    'englishEquivalent: "/learn/why-your-body-feels-stuck-in-stress"',
+    'label: "Slik kan kroppen skifte gir"',
+    'href: "#fra-aktivering-til-tilbakevending"',
+    'label: "Slik fungerer Neuvago"',
+    'href: "/no/slik-fungerer-det"',
+    'id: "fra-aktivering-til-tilbakevending"',
+    'type: "timeline"',
+    'id: "forste-ti-minutter"',
+    'id: "nar-pust-eller-stillhet-ikke-hjelper"',
+    'id: "nar-soke-hjelp"',
+    'id: "neuvago-som-valgfritt-steg"',
+    'placement: "stuck-stress-product-bridge"',
+    'href: "/no/produkt"',
+    'href: "/no/tilstander/stress"',
+    '"hvordan-roe-ned-nervesystemet"',
+    'pmid: "16439263"',
+    'pmid: "32799204"',
+    "ikke en diagnose",
+    "ikke som behandling for langvarig stress",
+    "Sterkere stimulering er ikke nødvendigvis bedre",
+  ],
+  forbiddenMarkers: [
+    "Neuvago behandler kronisk stress",
+    "Neuvago kurerer stress",
+    "Neuvago behandler angst",
+    "Neuvago behandler PTSD",
+    "Neuvago behandler utbrenthet",
+    "Neuvago normaliserer kortisol",
+    "Neuvago normaliserer HRV",
+    "resetter nervesystemet",
+    "frigjør traumer",
+    "garanterer restitusjon",
+  ],
+};
+const wave2c1eArticleSource = readIfExists(
+  path.join(repoRoot, wave2c1eStuckStressRequirements.articleFile),
+);
+if (!wave2c1eArticleSource) {
+  errors.push(`${wave2c1eStuckStressRequirements.articleFile} is missing.`);
+} else {
+  for (const marker of wave2c1eStuckStressRequirements.articleMarkers) {
+    if (!wave2c1eArticleSource.includes(marker)) {
+      errors.push(
+        `${wave2c1eStuckStressRequirements.route} is missing Wave 2C.1E marker: ${marker}.`,
+      );
+    }
+  }
+  for (const forbidden of wave2c1eStuckStressRequirements.forbiddenMarkers) {
+    if (wave2c1eArticleSource.includes(forbidden)) {
+      errors.push(
+        `${wave2c1eStuckStressRequirements.route} contains forbidden Wave 2C.1E marker: ${forbidden}.`,
+      );
+    }
+  }
+}
+for (const [relativePath, markers, label] of [
+  [
+    "src/content/knowledge/no/registry.ts",
+    ["fastlastIStressArticle", "articles/fastlast-i-stress"],
+    "Wave 2C.1E registry binding",
+  ],
+  [
+    "src/app/(en)/learn/why-your-body-feels-stuck-in-stress/page.tsx",
+    [
+      '\"nb-NO\": \"/no/kunnskap/fastlast-i-stress\"',
+      'data-language-counterpart=\"nb-NO\"',
+      "Les denne siden på norsk",
+    ],
+    "Wave 2C.1E English counterpart",
+  ],
+  [
+    "src/app/(no)/no/kunnskap/[slug]/page.tsx",
+    [
+      "generateStaticParams",
+      "getPublishedNorwegianKnowledgeArticles",
+      "getNorwegianKnowledgeArticle",
+      "NorwegianKnowledgeArticlePage",
+    ],
+    "Norwegian dynamic article route",
+  ],
+  [
+    "src/app/sitemap.ts",
+    ["getPublishedNorwegianKnowledgeArticles", "norwegianKnowledgeEntries", "article.path"],
+    "registry-backed Norwegian sitemap",
+  ],
+  [
+    "public/llms.txt",
+    ["[Hvorfor kroppen føles fastlåst i stress](/no/kunnskap/fastlast-i-stress)"],
+    "Wave 2C.1E llms entry",
+  ],
+  [
+    "docs/seo-vns-cluster-target-queries.md",
+    ["fastlåst i stress", "/no/kunnskap/fastlast-i-stress", "Stuck-in-stress/calming/stress overlap"],
+    "Wave 2C.1E query map",
+  ],
+  [
+    "docs/seo-measurement-plan.md",
+    [
+      "## Wave 2C.1E pilot measurement",
+      "/no/kunnskap/fastlast-i-stress",
+      "neuvago_how_it_works_click",
+      "neuvago_product_click",
+      "timeline interactions",
+    ],
+    "Wave 2C.1E measurement plan",
+  ],
+]) {
+  const source = readIfExists(path.join(repoRoot, relativePath));
+  if (!source) {
+    errors.push(`${relativePath} is missing and cannot be checked for ${label}.`);
+    continue;
+  }
+  for (const marker of markers) {
+    if (!source.includes(marker)) {
+      errors.push(`${relativePath} is missing ${label} marker: ${marker}.`);
+    }
+  }
+}
+
 const artifacts = findArtifacts(repoRoot);
 if (artifacts.length > 0) {
   errors.push(`Remove generated artifacts before commit: ${artifacts.slice(0, 12).join(", ")}${artifacts.length > 12 ? " ..." : ""}`);

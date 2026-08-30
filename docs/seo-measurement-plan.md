@@ -1,6 +1,6 @@
 # Neuvago SEO Measurement Plan — P2.6
 
-_Last updated: 2026-08-29_
+_Last updated: 2026-08-30_
 
 ## Purpose
 
@@ -236,6 +236,20 @@ Expected tracked product-bridge events:
 - `neuvago_product_click` from `routine-product-bridge` to `/no/produkt`.
 
 Treat these events as navigation signals, not proof of sleep benefit, treatment response or target engagement. Keep the existing seven non-personal parameters only; do not add symptoms, sleep diary content, free text, account identifiers or health data.
+
+## Wave 2C.1D pilot measurement
+
+Monitor `/no/kunnskap/overstimulert` as the owner of ordinary-language Norwegian recognition intent around `overstimulert nervesystem`. Keep query ownership distinct from the broader calming guide and the stress condition pathway.
+
+Untracked editorial pathway:
+
+- `Lær hvordan du kan roe ned` from `hero-actions` to `/no/kunnskap/hvordan-roe-ned-nervesystemet`.
+
+Expected tracked next-step event:
+
+- `neuvago_how_it_works_click` from `hero-actions` to `/no/slik-fungerer-det`.
+
+Treat the event as navigation to product mechanics, not evidence that Neuvago treats overstimulation or a related condition. Keep the existing seven non-personal parameters only; do not add symptom selections, checklist answers, free text, account identifiers or health data.
 
 ## Weekly workflow
 

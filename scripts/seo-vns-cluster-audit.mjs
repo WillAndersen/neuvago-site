@@ -605,7 +605,6 @@ for (const [relativePath, markers, label] of [
   [
     "public/llms.txt",
     [
-      "Updated: 2026-08-29",
       "[Trøtt, men får ikke slappet av](/no/kunnskap/trott-men-far-ikke-slappet-av)",
     ],
     "Wave 2C.1B llms entry",
@@ -841,6 +840,125 @@ for (const [relativePath, minimumBytes, marker] of [
     const source = readIfExists(absolutePath);
     if (!source?.includes(marker)) {
       errors.push(`${relativePath} is missing media marker: ${marker}.`);
+    }
+  }
+}
+
+// Wave 2C.1D publishes a registry-backed Norwegian recognition guide.
+// It uses the established article model and shared renderer; no new physical
+// page.tsx or analytics contract is introduced.
+const wave2c1dOverstimulationRequirements = {
+  route: "/no/kunnskap/overstimulert",
+  articleFile: "src/content/knowledge/no/articles/overstimulert.ts",
+  articleMarkers: [
+    'slug: "overstimulert"',
+    'path: "/no/kunnskap/overstimulert"',
+    'wave: "2C.1"',
+    'order: 137',
+    'primaryKeyword: "overstimulert nervesystem"',
+    'label: "Lær hvordan du kan roe ned"',
+    'href: "/no/kunnskap/hvordan-roe-ned-nervesystemet"',
+    'label: "Se hvordan Neuvago fungerer"',
+    'href: "/no/slik-fungerer-det"',
+    'id: "stimulusbelastningssjekkliste"',
+    'id: "forste-fem-minutter"',
+    'id: "nar-stillhet-eller-pust-ikke-hjelper"',
+    'id: "nar-soke-hjelp"',
+    'id: "neuvago-som-valgfritt-steg"',
+    'href: "/no/tilstander/stress"',
+    'href: "/no/tilstander/sovn"',
+    'href: "/learn/signs-of-a-dysregulated-nervous-system"',
+    'pmid: "37416535"',
+    "ikke en diagnose",
+    "ikke som behandling for overstimulering",
+    "Sterkere stimulering er ikke nødvendigvis bedre",
+  ],
+  forbiddenMarkers: [
+    "Neuvago behandler overstimulering",
+    "Neuvago kurerer overstimulering",
+    "Neuvago behandler angst",
+    "Neuvago behandler ADHD",
+    "Neuvago behandler autisme",
+    "Neuvago normaliserer kortisol",
+    "Neuvago normaliserer HRV",
+    "beviser autonom dysfunksjon",
+    "vagusnerven virker ikke",
+  ],
+};
+const wave2c1dArticleSource = readIfExists(
+  path.join(repoRoot, wave2c1dOverstimulationRequirements.articleFile),
+);
+if (!wave2c1dArticleSource) {
+  errors.push(`${wave2c1dOverstimulationRequirements.articleFile} is missing.`);
+} else {
+  for (const marker of wave2c1dOverstimulationRequirements.articleMarkers) {
+    if (!wave2c1dArticleSource.includes(marker)) {
+      errors.push(
+        `${wave2c1dOverstimulationRequirements.route} is missing Wave 2C.1D marker: ${marker}.`,
+      );
+    }
+  }
+  for (const forbidden of wave2c1dOverstimulationRequirements.forbiddenMarkers) {
+    if (wave2c1dArticleSource.includes(forbidden)) {
+      errors.push(
+        `${wave2c1dOverstimulationRequirements.route} contains forbidden Wave 2C.1D marker: ${forbidden}.`,
+      );
+    }
+  }
+}
+for (const [relativePath, markers, label] of [
+  [
+    "src/content/knowledge/no/registry.ts",
+    ["overstimulertArticle", "articles/overstimulert"],
+    "Wave 2C.1D registry binding",
+  ],
+  [
+    "src/app/(no)/no/kunnskap/[slug]/page.tsx",
+    [
+      "generateStaticParams",
+      "getPublishedNorwegianKnowledgeArticles",
+      "getNorwegianKnowledgeArticle",
+      "NorwegianKnowledgeArticlePage",
+    ],
+    "Norwegian dynamic article route",
+  ],
+  [
+    "src/app/sitemap.ts",
+    ["getPublishedNorwegianKnowledgeArticles", "norwegianKnowledgeEntries", "article.path"],
+    "registry-backed Norwegian sitemap",
+  ],
+  [
+    "public/llms.txt",
+    [
+      "Updated: 2026-08-30",
+      "[Overstimulert – hva betyr det, og hva kan hjelpe?](/no/kunnskap/overstimulert)",
+    ],
+    "Wave 2C.1D llms entry",
+  ],
+  [
+    "docs/seo-vns-cluster-target-queries.md",
+    ["overstimulert nervesystem", "/no/kunnskap/overstimulert", "Overstimulation/calming/stress overlap"],
+    "Wave 2C.1D query map",
+  ],
+  [
+    "docs/seo-measurement-plan.md",
+    [
+      "## Wave 2C.1D pilot measurement",
+      "/no/kunnskap/overstimulert",
+      "neuvago_how_it_works_click",
+      "checklist answers",
+    ],
+    "Wave 2C.1D measurement plan",
+  ],
+]) {
+  const source = readIfExists(path.join(repoRoot, relativePath));
+  if (!source) {
+    errors.push(`${relativePath} is missing and cannot be checked for ${label}.`);
+    continue;
+  }
+  for (const marker of markers) {
+    if (!source.includes(marker)) {
+      errors.push(`${relativePath} is missing ${label} marker: ${marker}.`);
     }
   }
 }

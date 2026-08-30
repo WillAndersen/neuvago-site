@@ -58,7 +58,7 @@ export const trottMenFarIkkeSlappetAvArticle = {
 
   primaryCta: {
     label: "Se kveldsrutinen",
-    href: "#kort-kveldssekvens",
+    href: "/no/kunnskap/kveldsrutine-for-nedtrapping",
   },
   secondaryCta: {
     label: "Slik fungerer Neuvago",

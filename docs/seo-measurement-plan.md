@@ -211,13 +211,31 @@ Review query-page fit against `/product`, `/learn/auricular-vagus-nerve-stimulat
 
 Monitor `/no/kunnskap/trott-men-far-ikke-slappet-av` as a Norwegian recognition-intent page. The route should own the exact everyday query without taking broad sleep-pathway intent from `/no/tilstander/sovn` or turning a lived experience into a diagnosis.
 
-The locked primary CTA, `Se kveldsrutinen`, points to the in-page section `#kort-kveldssekvens` until the separate evening-routine page is published. This in-page jump is a usability pathway and is not assigned a new analytics event in Wave 2C.1B.
+The primary CTA, `Se kveldsrutinen`, now points to the published routine page `/no/kunnskap/kveldsrutine-for-nedtrapping`. This editorial pathway is not assigned a new commercial analytics event; it should be evaluated as an internal content progression from recognition to practical routine.
 
 Expected tracked next-step event:
 
 - `neuvago_how_it_works_click` from `hero-actions` to `/no/slik-fungerer-det`.
 
 Review query-page fit against `/no/tilstander/sovn`, `/no/tilstander/stress`, `/no/kunnskap/hvordan-roe-ned-nervesystemet` and the English counterpart `/learn/why-you-feel-tired-but-cant-relax`. Do not interpret a routine click as proof of sleep benefit, and do not add personal data, symptoms or free-text content to the event contract.
+
+## Wave 2C.1C pilot measurement
+
+Monitor `/no/kunnskap/kveldsrutine-for-nedtrapping` as the owner of actionable Norwegian evening-routine intent. Keep query ownership distinct from the tired-but-wired recognition page and the broader sleep pathway.
+
+Untracked editorial pathways:
+
+- hero anchor `Se hvordan en Neuvago-økt passer inn` to `#neuvago-i-rutinen`;
+- secondary hero CTA to `/no/tilstander/sovn`;
+- internal bridge from `/no/kunnskap/trott-men-far-ikke-slappet-av`;
+- video playback, captions and transcript interaction in this wave.
+
+Expected tracked product-bridge events:
+
+- `neuvago_how_it_works_click` from `routine-product-bridge` to `/no/slik-fungerer-det`;
+- `neuvago_product_click` from `routine-product-bridge` to `/no/produkt`.
+
+Treat these events as navigation signals, not proof of sleep benefit, treatment response or target engagement. Keep the existing seven non-personal parameters only; do not add symptoms, sleep diary content, free text, account identifiers or health data.
 
 ## Weekly workflow
 

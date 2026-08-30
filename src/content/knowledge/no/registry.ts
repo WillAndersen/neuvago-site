@@ -12,6 +12,7 @@ import { hrvOgVagusnervenArticle } from "@/content/knowledge/no/articles/hrv-og-
 import { oretsAnatomiOgVagusnervenArticle } from "@/content/knowledge/no/articles/orets-anatomi-og-vagusnerven";
 import { hvordanRoeNedNervesystemetArticle } from "@/content/knowledge/no/articles/hvordan-roe-ned-nervesystemet";
 import { trottMenFarIkkeSlappetAvArticle } from "@/content/knowledge/no/articles/trott-men-far-ikke-slappet-av";
+import { kveldsrutineForNedtrappingArticle } from "@/content/knowledge/no/articles/kveldsrutine-for-nedtrapping";
 import { erVagusnervestimuleringTrygtArticle } from "@/content/knowledge/no/articles/er-vagusnervestimulering-trygt";
 import { bivirkningerVedIkkeInvasivVagusnervestimuleringArticle } from "@/content/knowledge/no/articles/bivirkninger-ved-ikke-invasiv-vagusnervestimulering";
 import { hvemBorVaereForsiktigMedVagusnervestimuleringArticle } from "@/content/knowledge/no/articles/hvem-bor-vaere-forsiktig-med-vagusnervestimulering";
@@ -32,6 +33,7 @@ const articleRegistry = [
   oretsAnatomiOgVagusnervenArticle,
   hvordanRoeNedNervesystemetArticle,
   trottMenFarIkkeSlappetAvArticle,
+  kveldsrutineForNedtrappingArticle,
   erVagusnervestimuleringTrygtArticle,
   bivirkningerVedIkkeInvasivVagusnervestimuleringArticle,
   hvemBorVaereForsiktigMedVagusnervestimuleringArticle,

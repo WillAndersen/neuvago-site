@@ -60,13 +60,50 @@ export type NorwegianKnowledgeCalloutBlock = {
   paragraphs: readonly string[];
 };
 
+export type NorwegianKnowledgeTimelineItem = {
+  time: string;
+  title: string;
+  description: string;
+};
+
+export type NorwegianKnowledgeTimelineBlock = {
+  type: "timeline";
+  totalDuration: string;
+  items: readonly NorwegianKnowledgeTimelineItem[];
+};
+
+export type NorwegianKnowledgeVideoBlock = {
+  type: "video";
+  title: string;
+  description: string;
+  src: string;
+  poster: string;
+  captionsSrc: string;
+  transcript: readonly string[];
+};
+
+export type NorwegianKnowledgeActionItem = {
+  label: string;
+  href: string;
+  variant?: "primary" | "secondary";
+};
+
+export type NorwegianKnowledgeActionsBlock = {
+  type: "actions";
+  placement: string;
+  items: readonly NorwegianKnowledgeActionItem[];
+};
+
 export type NorwegianKnowledgeBlock =
   | NorwegianKnowledgeParagraphBlock
   | NorwegianKnowledgeBulletListBlock
   | NorwegianKnowledgeNumberedListBlock
   | NorwegianKnowledgeDefinitionBlock
   | NorwegianKnowledgeTableBlock
-  | NorwegianKnowledgeCalloutBlock;
+  | NorwegianKnowledgeCalloutBlock
+  | NorwegianKnowledgeTimelineBlock
+  | NorwegianKnowledgeVideoBlock
+  | NorwegianKnowledgeActionsBlock;
 
 export type NorwegianKnowledgeSection = {
   id: string;

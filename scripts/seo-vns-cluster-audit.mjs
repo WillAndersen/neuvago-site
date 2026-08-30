@@ -491,7 +491,7 @@ const wave2c1bTiredButWiredRequirements = {
     'wave: "2C.1"',
     'primaryKeyword: "trøtt men får ikke slappet av"',
     'label: "Se kveldsrutinen"',
-    'href: "#kort-kveldssekvens"',
+    'href: "/no/kunnskap/kveldsrutine-for-nedtrapping"',
     'label: "Slik fungerer Neuvago"',
     'href: "/no/slik-fungerer-det"',
     'id: "gjenkjennelsessjekkliste"',
@@ -515,7 +515,6 @@ const wave2c1bTiredButWiredRequirements = {
     "Neuvago normaliserer HRV",
     "Neuvago normaliserer søvnarkitektur",
     "beviser autonom dysfunksjon",
-    'href: "/no/kunnskap/kveldsrutine-for-nedtrapping"',
   ],
 };
 
@@ -624,7 +623,7 @@ for (const [relativePath, markers, label] of [
     "docs/seo-measurement-plan.md",
     [
       "## Wave 2C.1B pilot measurement",
-      "#kort-kveldssekvens",
+      "/no/kunnskap/kveldsrutine-for-nedtrapping",
       "neuvago_how_it_works_click",
       "hero-actions",
     ],
@@ -640,6 +639,208 @@ for (const [relativePath, markers, label] of [
   for (const marker of markers) {
     if (!source.includes(marker)) {
       errors.push(`${relativePath} is missing ${label} marker: ${marker}.`);
+    }
+  }
+}
+
+// Wave 2C.1C publishes a registry-backed practical routine with new
+// shared timeline, video and tracked-action block contracts. The media is an
+// abstract explanatory asset, not a product instruction or evidence claim.
+const wave2c1cEveningRoutineRequirements = {
+  route: "/no/kunnskap/kveldsrutine-for-nedtrapping",
+  articleFile: "src/content/knowledge/no/articles/kveldsrutine-for-nedtrapping.ts",
+  articleMarkers: [
+    'slug: "kveldsrutine-for-nedtrapping"',
+    'path: "/no/kunnskap/kveldsrutine-for-nedtrapping"',
+    'wave: "2C.1"',
+    'primaryKeyword: "kveldsrutine for å roe ned"',
+    'label: "Se hvordan en Neuvago-økt passer inn"',
+    'href: "#neuvago-i-rutinen"',
+    'label: "Les om søvn og nedtrapping"',
+    'href: "/no/tilstander/sovn"',
+    'type: "timeline"',
+    'totalDuration: "20–30 minutter"',
+    'type: "video"',
+    'src: "/videos/neuvago/kveldsrutine-for-nedtrapping.mp4"',
+    'captionsSrc: "/videos/neuvago/kveldsrutine-for-nedtrapping-no.vtt"',
+    'type: "actions"',
+    'placement: "routine-product-bridge"',
+    'href: "/no/slik-fungerer-det"',
+    'href: "/no/produkt"',
+    'id: "nar-du-ikke-blir-sovnig"',
+    'id: "nar-soke-hjelp"',
+    'id: "neuvago-i-rutinen"',
+    'href: "/no/kunnskap/trott-men-far-ikke-slappet-av"',
+    'href: "/learn/recovery-and-regulation"',
+    'pmid: "33164742"',
+    "ikke behandling for søvnløshet",
+    "Søvnhygiene alene",
+  ],
+  forbiddenMarkers: [
+    "Neuvago behandler insomni",
+    "Neuvago kurerer søvnløshet",
+    "Neuvago normaliserer kortisol",
+    "Neuvago normaliserer HRV",
+    "Neuvago normaliserer søvnarkitektur",
+    "garanterer raskere innsovning",
+    "sterkere stimulering er bedre",
+    "start med melatonin",
+  ],
+};
+
+const wave2c1cArticleSource = readIfExists(
+  path.join(repoRoot, wave2c1cEveningRoutineRequirements.articleFile),
+);
+
+if (!wave2c1cArticleSource) {
+  errors.push(`${wave2c1cEveningRoutineRequirements.articleFile} is missing.`);
+} else {
+  for (const marker of wave2c1cEveningRoutineRequirements.articleMarkers) {
+    if (!wave2c1cArticleSource.includes(marker)) {
+      errors.push(
+        `${wave2c1cEveningRoutineRequirements.route} is missing Wave 2C.1C marker: ${marker}.`,
+      );
+    }
+  }
+
+  for (const forbidden of wave2c1cEveningRoutineRequirements.forbiddenMarkers) {
+    if (wave2c1cArticleSource.includes(forbidden)) {
+      errors.push(
+        `${wave2c1cEveningRoutineRequirements.route} contains forbidden Wave 2C.1C marker: ${forbidden}.`,
+      );
+    }
+  }
+}
+
+for (const [relativePath, markers, label] of [
+  [
+    "src/content/knowledge/no/registry.ts",
+    [
+      "kveldsrutineForNedtrappingArticle",
+      "kveldsrutine-for-nedtrapping",
+    ],
+    "Wave 2C.1C registry binding",
+  ],
+  [
+    "src/content/knowledge/no/types.ts",
+    [
+      "NorwegianKnowledgeTimelineBlock",
+      "NorwegianKnowledgeVideoBlock",
+      "NorwegianKnowledgeActionsBlock",
+      'type: "timeline"',
+      'type: "video"',
+      'type: "actions"',
+    ],
+    "Wave 2C.1C shared block contract",
+  ],
+  [
+    "src/components/knowledge/NorwegianKnowledgeArticlePage.tsx",
+    [
+      'case "timeline"',
+      'case "video"',
+      'case "actions"',
+      "data-knowledge-timeline",
+      "data-knowledge-video",
+      "data-video-transcript",
+      "data-knowledge-actions",
+      "data-conversion-placement={block.placement}",
+      'kind="captions"',
+    ],
+    "Wave 2C.1C shared renderer",
+  ],
+  [
+    "src/content/knowledge/no/articles/trott-men-far-ikke-slappet-av.ts",
+    [
+      'label: "Se kveldsrutinen"',
+      'href: "/no/kunnskap/kveldsrutine-for-nedtrapping"',
+    ],
+    "Wave 2C.1B to 2C.1C editorial bridge",
+  ],
+  [
+    "src/app/(no)/no/kunnskap/[slug]/page.tsx",
+    [
+      "generateStaticParams",
+      "getPublishedNorwegianKnowledgeArticles",
+      "getNorwegianKnowledgeArticle",
+      "NorwegianKnowledgeArticlePage",
+    ],
+    "Norwegian dynamic article route",
+  ],
+  [
+    "src/app/sitemap.ts",
+    [
+      "getPublishedNorwegianKnowledgeArticles",
+      "norwegianKnowledgeEntries",
+      "article.path",
+    ],
+    "registry-backed Norwegian sitemap",
+  ],
+  [
+    "public/llms.txt",
+    [
+      "[Kveldsrutine for nedtrapping](/no/kunnskap/kveldsrutine-for-nedtrapping)",
+    ],
+    "Wave 2C.1C llms entry",
+  ],
+  [
+    "docs/seo-vns-cluster-target-queries.md",
+    [
+      "kveldsrutine for å roe ned",
+      "/no/kunnskap/kveldsrutine-for-nedtrapping",
+      "Routine/recognition/sleep overlap",
+    ],
+    "Wave 2C.1C query map",
+  ],
+  [
+    "docs/seo-measurement-plan.md",
+    [
+      "## Wave 2C.1C pilot measurement",
+      "routine-product-bridge",
+      "neuvago_how_it_works_click",
+      "neuvago_product_click",
+      "video playback, captions and transcript interaction",
+    ],
+    "Wave 2C.1C measurement plan",
+  ],
+]) {
+  const source = readIfExists(path.join(repoRoot, relativePath));
+  if (!source) {
+    errors.push(`${relativePath} is missing and cannot be checked for ${label}.`);
+    continue;
+  }
+
+  for (const marker of markers) {
+    if (!source.includes(marker)) {
+      errors.push(`${relativePath} is missing ${label} marker: ${marker}.`);
+    }
+  }
+}
+
+for (const [relativePath, minimumBytes, marker] of [
+  [
+    "public/videos/neuvago/kveldsrutine-for-nedtrapping.mp4",
+    100000,
+    null,
+  ],
+  [
+    "public/videos/neuvago/kveldsrutine-for-nedtrapping-no.vtt",
+    500,
+    "WEBVTT",
+  ],
+]) {
+  const absolutePath = path.join(repoRoot, relativePath);
+  if (!existsSync(absolutePath)) {
+    errors.push(`${relativePath} is missing.`);
+    continue;
+  }
+  const stat = statSync(absolutePath);
+  if (stat.size < minimumBytes) {
+    errors.push(`${relativePath} is unexpectedly small: ${stat.size} bytes.`);
+  }
+  if (marker) {
+    const source = readIfExists(absolutePath);
+    if (!source?.includes(marker)) {
+      errors.push(`${relativePath} is missing media marker: ${marker}.`);
     }
   }
 }

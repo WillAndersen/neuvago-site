@@ -162,6 +162,119 @@ function BlockRenderer({ block }: { block: NorwegianKnowledgeBlock }) {
         </div>
       );
 
+    case "timeline":
+      return (
+        <div
+          className="overflow-hidden rounded-[1.75rem] border border-black/7 bg-white/72 shadow-[0_18px_58px_rgba(31,31,28,0.06)]"
+          data-knowledge-timeline
+        >
+          <div className="flex flex-wrap items-center justify-between gap-3 border-b border-black/7 bg-[#eee7dd] px-5 py-4 sm:px-6">
+            <p className="text-xs font-medium uppercase tracking-[0.18em] text-[#756b61]">
+              Eksempel på tidslinje
+            </p>
+            <p className="rounded-full border border-black/8 bg-white/65 px-3 py-1 text-sm font-medium text-[#514c45]">
+              {block.totalDuration}
+            </p>
+          </div>
+          <ol className="divide-y divide-black/6">
+            {block.items.map((item, index) => (
+              <li
+                key={`${item.time}-${item.title}`}
+                className="grid gap-3 px-5 py-5 sm:grid-cols-[7.5rem_minmax(0,1fr)] sm:px-6 sm:py-6"
+                data-timeline-item
+              >
+                <div className="flex items-start gap-3 sm:block">
+                  <span className="inline-flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-[#e9e1d6] text-sm font-medium text-[#5f574f] sm:mb-3">
+                    {index + 1}
+                  </span>
+                  <p className="pt-1 text-sm font-medium text-[#70675f] sm:pt-0">
+                    {item.time}
+                  </p>
+                </div>
+                <div>
+                  <h3 className="text-xl font-medium tracking-[-0.025em] text-[#1f1f1c]">
+                    {item.title}
+                  </h3>
+                  <p className="mt-2 text-sm leading-7 text-[#5f5a52] md:text-base">
+                    {item.description}
+                  </p>
+                </div>
+              </li>
+            ))}
+          </ol>
+        </div>
+      );
+    case "video":
+      return (
+        <figure
+          className="overflow-hidden rounded-[1.75rem] border border-black/7 bg-[#1f1f1c] shadow-[0_22px_80px_rgba(31,31,28,0.12)]"
+          data-knowledge-video
+        >
+          <video
+            className="aspect-video w-full bg-[#1f1f1c] object-cover"
+            controls
+            playsInline
+            preload="metadata"
+            poster={block.poster}
+            aria-label={block.title}
+          >
+            <source src={block.src} type="video/mp4" />
+            <track
+              kind="captions"
+              src={block.captionsSrc}
+              srcLang="nb"
+              label="Norsk"
+              default
+            />
+          </video>
+          <figcaption className="border-t border-white/10 bg-[#262522] px-5 py-5 text-white sm:px-6">
+            <h3 className="text-xl font-medium tracking-[-0.025em]">
+              {block.title}
+            </h3>
+            <p className="mt-2 text-sm leading-7 text-white/72">
+              {block.description}
+            </p>
+            <details
+              className="mt-5 rounded-[1.25rem] border border-white/12 bg-white/6 px-4 py-3"
+              data-video-transcript
+            >
+              <summary className="cursor-pointer text-sm font-medium text-white">
+                Les tekstutskrift
+              </summary>
+              <ol className="mt-4 space-y-3 pl-5 text-sm leading-7 text-white/72 marker:text-white/45">
+                {block.transcript.map((line) => (
+                  <li key={line} className="pl-1">
+                    {line}
+                  </li>
+                ))}
+              </ol>
+            </details>
+          </figcaption>
+        </figure>
+      );
+    case "actions":
+      return (
+        <div
+          className="flex flex-wrap gap-3 rounded-[1.5rem] border border-black/7 bg-white/70 p-5 shadow-[0_14px_48px_rgba(31,31,28,0.05)] sm:p-6"
+          data-conversion-placement={block.placement}
+          data-knowledge-actions
+        >
+          {block.items.map((item) => (
+            <Link
+              key={`${item.href}-${item.label}`}
+              href={item.href}
+              data-knowledge-action
+              className={
+                item.variant === "secondary"
+                  ? "inline-flex items-center justify-center rounded-full border border-black/10 bg-transparent px-6 py-3 text-sm font-medium text-[#1f1f1c] transition hover:bg-white"
+                  : "inline-flex items-center justify-center rounded-full bg-[#1f1f1c] px-6 py-3 text-sm font-medium text-white transition hover:opacity-90"
+              }
+            >
+              {item.label}
+            </Link>
+          ))}
+        </div>
+      );
     case "callout":
       return (
         <aside

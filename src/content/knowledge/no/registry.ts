@@ -15,6 +15,7 @@ import { trottMenFarIkkeSlappetAvArticle } from "@/content/knowledge/no/articles
 import { kveldsrutineForNedtrappingArticle } from "@/content/knowledge/no/articles/kveldsrutine-for-nedtrapping";
 import { overstimulertArticle } from "@/content/knowledge/no/articles/overstimulert";
 import { fastlastIStressArticle } from "@/content/knowledge/no/articles/fastlast-i-stress";
+import { restitusjonOgReguleringArticle } from "@/content/knowledge/no/articles/restitusjon-og-regulering";
 import { erVagusnervestimuleringTrygtArticle } from "@/content/knowledge/no/articles/er-vagusnervestimulering-trygt";
 import { bivirkningerVedIkkeInvasivVagusnervestimuleringArticle } from "@/content/knowledge/no/articles/bivirkninger-ved-ikke-invasiv-vagusnervestimulering";
 import { hvemBorVaereForsiktigMedVagusnervestimuleringArticle } from "@/content/knowledge/no/articles/hvem-bor-vaere-forsiktig-med-vagusnervestimulering";
@@ -38,6 +39,7 @@ const articleRegistry = [
   kveldsrutineForNedtrappingArticle,
   overstimulertArticle,
   fastlastIStressArticle,
+  restitusjonOgReguleringArticle,
   erVagusnervestimuleringTrygtArticle,
   bivirkningerVedIkkeInvasivVagusnervestimuleringArticle,
   hvemBorVaereForsiktigMedVagusnervestimuleringArticle,

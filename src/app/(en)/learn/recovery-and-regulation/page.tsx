@@ -9,6 +9,11 @@ export const metadata = {
     "Learn how recovery and nervous system regulation connect to stress, sleep, capacity, resilience, and why rest is not always the same as real restoration.",
   alternates: {
     canonical: "/learn/recovery-and-regulation",
+    languages: {
+      "en-US": "/learn/recovery-and-regulation",
+      "nb-NO": "/no/kunnskap/restitusjon-og-regulering",
+      "x-default": "/learn/recovery-and-regulation",
+    },
   },
   openGraph: {
     title: "Recovery and Regulation | Neuvago",
@@ -199,6 +204,13 @@ export default function RecoveryAndRegulationPage() {
                 className="rounded-full border border-[#d8d1c7] bg-transparent px-6 py-3 text-sm font-medium text-[#1f1f1c] transition hover:bg-white/70"
               >
                 Explore burnout
+              </Link>
+              <Link
+                href="/no/kunnskap/restitusjon-og-regulering"
+                data-language-counterpart="nb-NO"
+                className="rounded-full border border-[#d8d1c7] bg-transparent px-6 py-3 text-sm font-medium text-[#1f1f1c] transition hover:bg-white/70"
+              >
+                Les denne siden på norsk
               </Link>
             </div>
           </div>

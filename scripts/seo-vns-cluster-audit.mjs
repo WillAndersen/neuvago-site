@@ -1094,6 +1094,141 @@ for (const [relativePath, markers, label] of [
   }
 }
 
+// Wave 2C.1F publishes a registry-backed Norwegian recovery guide.
+// It reuses the established article renderer, timeline and actions blocks;
+// no new physical page.tsx or analytics contract is introduced.
+const wave2c1fRecoveryRequirements = {
+  route: "/no/kunnskap/restitusjon-og-regulering",
+  articleFile: "src/content/knowledge/no/articles/restitusjon-og-regulering.ts",
+  articleMarkers: [
+    'slug: "restitusjon-og-regulering"',
+    'path: "/no/kunnskap/restitusjon-og-regulering"',
+    'wave: "2C.1"',
+    'order: 139',
+    'primaryKeyword: "restitusjon nervesystemet"',
+    'englishEquivalent: "/learn/recovery-and-regulation"',
+    'label: "Bygg en roligere rutine"',
+    'href: "#bygg-en-roligere-rutine"',
+    'label: "Utforsk Neuvago-systemet"',
+    'href: "/no/produkt"',
+    'id: "restitusjonskart"',
+    'type: "timeline"',
+    'id: "hrv-og-vagal-tone-som-kontekst"',
+    'id: "nar-soke-hjelp"',
+    'id: "neuvago-som-valgfritt-steg"',
+    'placement: "recovery-product-bridge"',
+    'href: "/no/slik-fungerer-det"',
+    'href: "/no/app"',
+    'href: "/no/tilstander/stress"',
+    'href: "/no/tilstander/sovn"',
+    'href: "/no/kunnskap/hrv-og-vagusnerven"',
+    'href: "/no/kunnskap/vagal-tone"',
+    'pmid: "28358572"',
+    'pmid: "28265249"',
+    'pmid: "29034226"',
+    "En opplevelse er ikke en biomarkørdiagnose",
+    "HRV og vagal tone kan gi kontekst",
+    "uten løfte om restitusjon eller HRV-endring",
+    "Sterkere stimulering er ikke nødvendigvis bedre",
+  ],
+  forbiddenMarkers: [
+    "Neuvago garanterer restitusjon",
+    "Neuvago behandler stress",
+    "Neuvago behandler søvnløshet",
+    "Neuvago behandler utmattelse",
+    "Neuvago normaliserer HRV",
+    "Neuvago øker vagal tone",
+    "Neuvago reparerer nervesystemet",
+    "Neuvago resetter nervesystemet",
+    "beviser autonom dysfunksjon",
+    "beviser selektiv vagusaktivering",
+  ],
+};
+const wave2c1fArticleSource = readIfExists(
+  path.join(repoRoot, wave2c1fRecoveryRequirements.articleFile),
+);
+if (!wave2c1fArticleSource) {
+  errors.push(`${wave2c1fRecoveryRequirements.articleFile} is missing.`);
+} else {
+  for (const marker of wave2c1fRecoveryRequirements.articleMarkers) {
+    if (!wave2c1fArticleSource.includes(marker)) {
+      errors.push(
+        `${wave2c1fRecoveryRequirements.route} is missing Wave 2C.1F marker: ${marker}.`,
+      );
+    }
+  }
+  for (const forbidden of wave2c1fRecoveryRequirements.forbiddenMarkers) {
+    if (wave2c1fArticleSource.includes(forbidden)) {
+      errors.push(
+        `${wave2c1fRecoveryRequirements.route} contains forbidden Wave 2C.1F marker: ${forbidden}.`,
+      );
+    }
+  }
+}
+for (const [relativePath, markers, label] of [
+  [
+    "src/content/knowledge/no/registry.ts",
+    ["restitusjonOgReguleringArticle", "articles/restitusjon-og-regulering"],
+    "Wave 2C.1F registry binding",
+  ],
+  [
+    "src/app/(en)/learn/recovery-and-regulation/page.tsx",
+    [
+      '\"nb-NO\": \"/no/kunnskap/restitusjon-og-regulering\"',
+      'data-language-counterpart=\"nb-NO\"',
+      "Les denne siden på norsk",
+    ],
+    "Wave 2C.1F English counterpart",
+  ],
+  [
+    "src/app/(no)/no/kunnskap/[slug]/page.tsx",
+    [
+      "generateStaticParams",
+      "getPublishedNorwegianKnowledgeArticles",
+      "getNorwegianKnowledgeArticle",
+      "NorwegianKnowledgeArticlePage",
+    ],
+    "Norwegian dynamic article route",
+  ],
+  [
+    "src/app/sitemap.ts",
+    ["getPublishedNorwegianKnowledgeArticles", "norwegianKnowledgeEntries", "article.path"],
+    "registry-backed Norwegian sitemap",
+  ],
+  [
+    "public/llms.txt",
+    ["[Restitusjon og regulering](/no/kunnskap/restitusjon-og-regulering)"],
+    "Wave 2C.1F llms entry",
+  ],
+  [
+    "docs/seo-vns-cluster-target-queries.md",
+    ["restitusjon nervesystemet", "/no/kunnskap/restitusjon-og-regulering", "Recovery/stress/sleep/HRV overlap"],
+    "Wave 2C.1F query map",
+  ],
+  [
+    "docs/seo-measurement-plan.md",
+    [
+      "## Wave 2C.1F pilot measurement",
+      "/no/kunnskap/restitusjon-og-regulering",
+      "neuvago_how_it_works_click",
+      "neuvago_product_click",
+      "recovery scores",
+    ],
+    "Wave 2C.1F measurement plan",
+  ],
+]) {
+  const source = readIfExists(path.join(repoRoot, relativePath));
+  if (!source) {
+    errors.push(`${relativePath} is missing and cannot be checked for ${label}.`);
+    continue;
+  }
+  for (const marker of markers) {
+    if (!source.includes(marker)) {
+      errors.push(`${relativePath} is missing ${label} marker: ${marker}.`);
+    }
+  }
+}
+
 const artifacts = findArtifacts(repoRoot);
 if (artifacts.length > 0) {
   errors.push(`Remove generated artifacts before commit: ${artifacts.slice(0, 12).join(", ")}${artifacts.length > 12 ? " ..." : ""}`);

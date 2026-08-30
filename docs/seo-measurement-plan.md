@@ -267,6 +267,23 @@ Expected tracked next-step events:
 
 Treat these events as navigation signals, not evidence of a nervous-system reset, cortisol reduction, trauma release, treatment response or target engagement. Keep the existing seven non-personal parameters only; do not add timeline interactions, observations, symptom descriptions, free text, account identifiers or health data.
 
+## Wave 2C.1F pilot measurement
+
+Monitor `/no/kunnskap/restitusjon-og-regulering` as the Norwegian owner of everyday recovery-capacity intent around `restitusjon nervesystemet`. Keep query ownership distinct from the broad regulation pillar, the stress and sleep pathways, the HRV guide and the English counterpart.
+
+Untracked editorial pathways:
+
+- `Bygg en roligere rutine` from `hero-actions` to `#bygg-en-roligere-rutine`;
+- the recovery map, HRV/vagal-tone links, `/no/app` and the reciprocal language link.
+
+Expected tracked next-step events:
+
+- `neuvago_product_click` from `hero-actions` to `/no/produkt`;
+- `neuvago_how_it_works_click` from `recovery-product-bridge` to `/no/slik-fungerer-det`;
+- `neuvago_product_click` from `recovery-product-bridge` to `/no/produkt`.
+
+Treat these events as navigation signals, not proof of recovery, HRV normalization, increased vagal tone, treatment response or target engagement. Keep the existing seven non-personal parameters only; do not add recovery scores, HRV values, routine answers, symptom descriptions, free text, account identifiers or health data.
+
 ## Weekly workflow
 
 1. Open Google Search Console.

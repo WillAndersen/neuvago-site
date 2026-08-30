@@ -55,6 +55,7 @@ Use this map to evaluate whether Search Console queries are landing on the corre
 | kveldsrutine for å roe ned | `/no/kunnskap/kveldsrutine-for-nedtrapping` | `/no/tilstander/sovn` | Routine page owns actionable evening steps; the sleep pathway owns broad sleep and assessment context. |
 | overstimulert nervesystem | `/no/kunnskap/overstimulert` | `/no/kunnskap/hvordan-roe-ned-nervesystemet` | Recognition page owns ordinary-language stimulus-load intent; the calming guide owns the broader practical regulation pathway. |
 | fastlåst i stress | `/no/kunnskap/fastlast-i-stress` | `/no/tilstander/stress` | Lived-experience guide owns persistent-activation recognition intent; the stress pathway owns broad stress and assessment context. |
+| restitusjon nervesystemet | `/no/kunnskap/restitusjon-og-regulering` | `/no/kunnskap/regulering-av-nervesystemet` | Recovery guide owns recovery-capacity, sleep/load/pause and routine intent; the regulation pillar owns the broader nervous-system concept. |
 
 ## Commercial support queries
 
@@ -81,5 +82,6 @@ Watch these pairs in Search Console.
 | `/no/kunnskap/kveldsrutine-for-nedtrapping` vs `/no/kunnskap/trott-men-far-ikke-slappet-av` vs `/no/tilstander/sovn` | Routine/recognition/sleep overlap | NO-020 owns the actionable routine; NO-015 owns recognition; the condition page owns broad sleep and assessment intent. |
 | `/no/kunnskap/overstimulert` vs `/no/kunnskap/hvordan-roe-ned-nervesystemet` vs `/no/tilstander/stress` | Overstimulation/calming/stress overlap | NO-022 owns the exact recognition query and stimulus checklist; the calming guide owns broad self-help; the condition page owns stress pathway and assessment context. |
 | `/no/kunnskap/fastlast-i-stress` vs `/no/kunnskap/hvordan-roe-ned-nervesystemet` vs `/no/tilstander/stress` | Stuck-in-stress/calming/stress overlap | NO-014 owns the lived-experience explanation; the calming guide owns practical self-help; the condition page owns broad stress and assessment intent. |
+| `/no/kunnskap/restitusjon-og-regulering` vs `/no/tilstander/stress` vs `/no/tilstander/sovn` vs `/no/kunnskap/hrv-og-vagusnerven` | Recovery/stress/sleep/HRV overlap | NO-019 owns practical recovery-capacity and routine intent; stress and sleep own condition pathways; the HRV guide owns measurement interpretation. |
 | `/conditions/stress` vs `/learn/nervous-system-regulation` | Stress/regulation overlap | Conditions owns problem; Learn owns concept. |
 | `/research/topics/safety-and-tolerability` vs product page | Safety/commercial overlap | Safety page should own safety queries. Product should link to it. |

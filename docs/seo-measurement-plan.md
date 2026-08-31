@@ -305,6 +305,21 @@ Expected tracked next-step events:
 
 Treat these events as navigation signals, not evidence that one VNS method is superior, that implanted evidence transfers to Neuvago, or that the product has a clinical effect. Keep the existing seven non-personal parameters only; do not add medical history, suitability answers, implanted-device status, symptoms, free text, account identifiers or health data.
 
+## Wave 2C.2B pilot measurement
+
+Monitor `/no/kunnskap/pause-i-arbeidsdagen` as the Norwegian owner of concrete workday-pause intent around `hvordan roe ned på jobb`. Keep ownership distinct from the broad stress pathway, the general calming guide and the recovery guide.
+
+Untracked editorial pathways:
+- `Prøv femminutterspausen` from `hero-actions` to `#fem-minutters-pause`;
+- the hero link to `/no/app`;
+- the timeline, video playback, captions, transcript, stress links and primary-source links.
+
+Expected tracked next-step events:
+- `neuvago_how_it_works_click` from `workday-product-bridge` to `/no/slik-fungerer-det`;
+- `neuvago_product_click` from `workday-product-bridge` to `/no/produkt`.
+
+Treat these events as navigation signals, not proof of stress reduction, cortisol change, HRV normalization, treatment response, improved performance or target engagement. Keep the existing seven non-personal parameters only; do not add workplace details, stress descriptions, symptoms, free text, email, account identifiers, user identifiers or health data.
+
 ## Weekly workflow
 
 1. Open Google Search Console.

@@ -6,7 +6,8 @@ export type NorwegianKnowledgeWave =
   | "1B"
   | "1C"
   | "1D"
-  | "2C.1";
+  | "2C.1"
+  | "2C.2";
 export type NorwegianKnowledgeSearchIntent =
   | "informational"
   | "commercial-investigation"

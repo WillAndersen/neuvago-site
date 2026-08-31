@@ -1352,6 +1352,134 @@ for (const [relativePath, markers, label] of [
     }
   }
 }
+// Wave 2C.2B publishes a registry-backed Norwegian workday-pause guide.
+// It owns the concrete use moment while preserving broad stress, regulation,
+// recovery, workplace-responsibility and product-specific evidence boundaries.
+const wave2c2bWorkdayPauseRequirements = {
+  route: "/no/kunnskap/pause-i-arbeidsdagen",
+  articleFile: "src/content/knowledge/no/articles/pause-i-arbeidsdagen.ts",
+  articleMarkers: [
+    'slug: "pause-i-arbeidsdagen"',
+    'path: "/no/kunnskap/pause-i-arbeidsdagen"',
+    'wave: "2C.2"',
+    'order: 140',
+    'primaryKeyword: "hvordan roe ned på jobb"',
+    'label: "Prøv femminutterspausen"',
+    'href: "#fem-minutters-pause"',
+    'label: "Utforsk Neuvago-appen"',
+    'href: "/no/app"',
+    'id: "fem-minutters-pause"',
+    'id: "kort-videoguide"',
+    'id: "velg-pause-etter-belastning"',
+    'id: "nar-en-pause-ikke-er-nok"',
+    'id: "neuvago-som-valgfritt-steg"',
+    'placement: "workday-product-bridge"',
+    'src: "/videos/neuvago/pause-i-arbeidsdagen.mp4"',
+    'captionsSrc: "/videos/neuvago/pause-i-arbeidsdagen-no.vtt"',
+    'poster: "/images/neuvago/pause-i-arbeidsdagen-poster.webp"',
+    'href: "/no/tilstander/stress"',
+    'href: "/no/slik-fungerer-det"',
+    'href: "/no/produkt"',
+    'doi: "10.1371/journal.pone.0272460"',
+    "ikke behandling for arbeidsrelatert stress",
+    "Organisatoriske problemer må fortsatt håndteres organisatorisk",
+    "sterkere stimulering er ikke nødvendigvis bedre",
+  ],
+  forbiddenMarkers: [
+    "Neuvago behandler arbeidsrelatert stress",
+    "Neuvago behandler utbrenthet",
+    "garanterer en fysiologisk reset",
+    "normaliserer kortisol",
+    "normaliserer HRV",
+    "beviser vagal aktivering",
+    "beviser autonom dysfunksjon",
+  ],
+};
+const wave2c2bSource = readIfExists(
+  path.join(repoRoot, wave2c2bWorkdayPauseRequirements.articleFile),
+);
+if (!wave2c2bSource) {
+  errors.push(`${wave2c2bWorkdayPauseRequirements.articleFile} is missing.`);
+} else {
+  for (const marker of wave2c2bWorkdayPauseRequirements.articleMarkers) {
+    if (!wave2c2bSource.includes(marker)) {
+      errors.push(`${wave2c2bWorkdayPauseRequirements.route} is missing Wave 2C.2B marker: ${marker}.`);
+    }
+  }
+  for (const forbidden of wave2c2bWorkdayPauseRequirements.forbiddenMarkers) {
+    if (wave2c2bSource.includes(forbidden)) {
+      errors.push(`${wave2c2bWorkdayPauseRequirements.route} contains forbidden Wave 2C.2B marker: ${forbidden}.`);
+    }
+  }
+}
+for (const [relativePath, markers, label] of [
+  [
+    "src/content/knowledge/no/types.ts",
+    ['| "2C.2";'],
+    "Wave 2C.2B wave type",
+  ],
+  [
+    "src/content/knowledge/no/registry.ts",
+    ["pauseIArbeidsdagenArticle", "pause-i-arbeidsdagen"],
+    "Wave 2C.2B registry binding",
+  ],
+  [
+    "src/content/conditions/no/pages/stress.ts",
+    ["Pause i arbeidsdagen", wave2c2bWorkdayPauseRequirements.route],
+    "Wave 2C.2B stress-pathway bridge",
+  ],
+  [
+    "src/app/(no)/no/kunnskap/[slug]/page.tsx",
+    ["generateStaticParams", "getPublishedNorwegianKnowledgeArticles", "getNorwegianKnowledgeArticle", "NorwegianKnowledgeArticlePage"],
+    "Norwegian dynamic article route",
+  ],
+  [
+    "src/app/sitemap.ts",
+    ["getPublishedNorwegianKnowledgeArticles", "norwegianKnowledgeEntries", "article.path"],
+    "registry-backed Norwegian sitemap",
+  ],
+  [
+    "public/llms.txt",
+    ["[Pause i arbeidsdagen – hjelp kroppen å skifte gir](/no/kunnskap/pause-i-arbeidsdagen)"],
+    "Wave 2C.2B llms entry",
+  ],
+  [
+    "docs/seo-vns-cluster-target-queries.md",
+    ["hvordan roe ned på jobb", wave2c2bWorkdayPauseRequirements.route, "Wave 2C.2B cannibalization watchlist"],
+    "Wave 2C.2B query map",
+  ],
+  [
+    "docs/seo-measurement-plan.md",
+    ["## Wave 2C.2B pilot measurement", wave2c2bWorkdayPauseRequirements.route, "workday-product-bridge", "workplace details"],
+    "Wave 2C.2B measurement plan",
+  ],
+  [
+    "docs/seo/wave2c2b-workday-pause-source-and-claims-lock.md",
+    ["## Workplace boundary", "guarantees calm, focus, productivity or recovery", "must not stage, commit, push or delete unrelated untracked work"],
+    "Wave 2C.2B source and claims lock",
+  ],
+]) {
+  const source = readIfExists(path.join(repoRoot, relativePath));
+  if (!source) {
+    errors.push(`${relativePath} is missing and cannot be checked for ${label}.`);
+    continue;
+  }
+  for (const marker of markers) {
+    if (!source.includes(marker)) {
+      errors.push(`${relativePath} is missing ${label} marker: ${marker}.`);
+    }
+  }
+}
+for (const mediaPath of [
+  "public/videos/neuvago/pause-i-arbeidsdagen.mp4",
+  "public/videos/neuvago/pause-i-arbeidsdagen-no.vtt",
+  "public/images/neuvago/pause-i-arbeidsdagen-poster.webp",
+]) {
+  if (!existsSync(path.join(repoRoot, mediaPath))) {
+    errors.push(`${mediaPath} is missing for Wave 2C.2B media.`);
+  }
+}
+
 const artifacts = findArtifacts(repoRoot);
 if (artifacts.length > 0) {
   errors.push(`Remove generated artifacts before commit: ${artifacts.slice(0, 12).join(", ")}${artifacts.length > 12 ? " ..." : ""}`);

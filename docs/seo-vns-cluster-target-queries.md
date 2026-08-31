@@ -62,6 +62,12 @@ Use this map to evaluate whether Search Console queries are landing on the corre
 | overstimulert nervesystem | `/no/kunnskap/overstimulert` | `/no/kunnskap/hvordan-roe-ned-nervesystemet` | Recognition page owns ordinary-language stimulus-load intent; the calming guide owns the broader practical regulation pathway. |
 | fastlåst i stress | `/no/kunnskap/fastlast-i-stress` | `/no/tilstander/stress` | Lived-experience guide owns persistent-activation recognition intent; the stress pathway owns broad stress and assessment context. |
 | restitusjon nervesystemet | `/no/kunnskap/restitusjon-og-regulering` | `/no/kunnskap/regulering-av-nervesystemet` | Recovery guide owns recovery-capacity, sleep/load/pause and routine intent; the regulation pillar owns the broader nervous-system concept. |
+| hvordan roe ned på jobb | `/no/kunnskap/pause-i-arbeidsdagen` | `/no/tilstander/stress` | Workday-pause page owns the concrete use moment; the stress pathway owns broad stress, assessment and workplace context. |
+
+## Wave 2C.2B cannibalization watchlist
+| Query family | Preferred owner | Pages to monitor | Resolution rule |
+|---|---|---|---|
+| hvordan roe ned på jobb / pause i arbeidsdagen | `/no/kunnskap/pause-i-arbeidsdagen` | `/no/tilstander/stress`; `/no/kunnskap/hvordan-roe-ned-nervesystemet`; `/no/kunnskap/restitusjon-og-regulering` | NO-021 owns the concrete workday pause and transition. Stress owns broad workplace-stress and assessment intent; the calming and recovery guides retain their wider practical concepts. |
 
 ## Commercial support queries
 

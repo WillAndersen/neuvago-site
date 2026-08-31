@@ -667,6 +667,13 @@ export const stressConditionPage = {
   ],
   relatedLinks: [
     {
+      title: "Pause i arbeidsdagen",
+      description:
+        "En konkret femminutters pause med skjermavlastning, bevegelse, lavere krav og en tydelig grense mellom egenpause og arbeidsmiljøansvar.",
+      href: "/no/kunnskap/pause-i-arbeidsdagen",
+      label: "Prøv arbeidspausen",
+    },
+    {
       title: "Søvn og nervesystemet",
       description:
         "Gå videre til den norske søvn-pathwayen om søvntrykk, døgnrytme, kveldsaktivering, insomni, søvnapné og trygge velværegrenser.",

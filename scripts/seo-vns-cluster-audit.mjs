@@ -7,6 +7,7 @@ const clusterRoutes = [
   "/learn/vagus-nerve",
   "/learn/vagus-nerve-stimulation",
   "/learn/non-invasive-vagus-nerve-stimulation",
+  "/learn/implanted-vs-non-invasive-vagus-nerve-stimulation",
   "/learn/transcutaneous-vagus-nerve-stimulation",
   "/learn/auricular-vagus-nerve-stimulation",
   "/learn/what-does-vagus-nerve-stimulation-feel-like",
@@ -25,6 +26,7 @@ const clusterRoutes = [
 const requiredBuildRoutes = [
   "/learn/vagus-nerve-stimulation",
   "/learn/non-invasive-vagus-nerve-stimulation",
+  "/learn/implanted-vs-non-invasive-vagus-nerve-stimulation",
   "/learn/transcutaneous-vagus-nerve-stimulation",
   "/learn/auricular-vagus-nerve-stimulation",
   "/learn/what-does-vagus-nerve-stimulation-feel-like",
@@ -932,7 +934,6 @@ for (const [relativePath, markers, label] of [
   [
     "public/llms.txt",
     [
-      "Updated: 2026-08-30",
       "[Overstimulert – hva betyr det, og hva kan hjelpe?](/no/kunnskap/overstimulert)",
     ],
     "Wave 2C.1D llms entry",
@@ -1234,6 +1235,123 @@ for (const [relativePath, markers, label] of [
   }
 }
 
+// Wave 2C.2A publishes a new physical English comparison page.
+// It owns direct implanted-versus-non-invasive intent while preserving the
+// broad VNS, nVNS, method, safety and product-specific evidence boundaries.
+const wave2c2aComparisonRequirements = {
+  route: "/learn/implanted-vs-non-invasive-vagus-nerve-stimulation",
+  pageFile: "src/app/(en)/learn/implanted-vs-non-invasive-vagus-nerve-stimulation/page.tsx",
+  sourceMarkers: [
+    'const path = "/learn/implanted-vs-non-invasive-vagus-nerve-stimulation"',
+    "Implanted vs non-invasive vagus nerve stimulation",
+    "buildAuthorityPageStructuredData",
+    "buildFAQStructuredData",
+    "datePublished: publishedAt",
+    "dateModified: modifiedAt",
+    "data-wave2c2a-page",
+    "data-wave2c2a-comparison-table",
+    "data-wave2c2a-category-card",
+    "data-wave2c2a-source-card",
+    "data-wave2c2a-faq",
+    "Implanted clinical VNS",
+    "Cervical non-invasive VNS",
+    "Auricular VNS / taVNS",
+    "comparison-product-bridge",
+    'href="/how-it-works"',
+    'href="/product"',
+    'href="/research/topics/safety-and-tolerability"',
+    'href="/legal/intended-use"',
+    'href="/legal/medical-disclaimer"',
+    "25614179",
+    "33854421",
+    "31742681",
+    "36543841",
+    "30217648",
+    "Neuvago Editorial Team",
+    "Neuvago Source Review",
+    "General information only",
+    "stronger stimulation is not automatically better",
+  ],
+  forbiddenMarkers: [
+    "all VNS devices work the same",
+    "implanted VNS evidence proves",
+    "Neuvago treats epilepsy",
+    "Neuvago treats depression",
+    "Neuvago is FDA approved",
+    "non-invasive VNS is universally safer",
+    "stronger sensation means stronger target engagement",
+  ],
+};
+const wave2c2aSource = readIfExists(
+  path.join(repoRoot, wave2c2aComparisonRequirements.pageFile),
+);
+if (!wave2c2aSource) {
+  errors.push(`${wave2c2aComparisonRequirements.pageFile} is missing.`);
+} else {
+  for (const marker of wave2c2aComparisonRequirements.sourceMarkers) {
+    if (!wave2c2aSource.includes(marker)) {
+      errors.push(`${wave2c2aComparisonRequirements.route} is missing Wave 2C.2A marker: ${marker}.`);
+    }
+  }
+  for (const forbidden of wave2c2aComparisonRequirements.forbiddenMarkers) {
+    if (wave2c2aSource.includes(forbidden)) {
+      errors.push(`${wave2c2aComparisonRequirements.route} contains forbidden Wave 2C.2A marker: ${forbidden}.`);
+    }
+  }
+}
+for (const [relativePath, markers, label] of [
+  [
+    "src/app/(en)/learn/page.tsx",
+    ["Implanted vs non-invasive vagus nerve stimulation", wave2c2aComparisonRequirements.route],
+    "Wave 2C.2A Learn hub binding",
+  ],
+  [
+    "src/app/(en)/learn/vagus-nerve-stimulation/page.tsx",
+    ["Implanted vs non-invasive VNS", wave2c2aComparisonRequirements.route],
+    "Wave 2C.2A VNS pillar bridge",
+  ],
+  [
+    "src/app/(en)/learn/non-invasive-vagus-nerve-stimulation/page.tsx",
+    ["Implanted vs non-invasive VNS", wave2c2aComparisonRequirements.route],
+    "Wave 2C.2A nVNS guide bridge",
+  ],
+  [
+    "src/app/sitemap.ts",
+    [wave2c2aComparisonRequirements.route, 'lastModified: "2026-08-31"'],
+    "Wave 2C.2A sitemap entry",
+  ],
+  [
+    "public/llms.txt",
+    ["Updated: 2026-08-31", "[Implanted vs non-invasive vagus nerve stimulation](/learn/implanted-vs-non-invasive-vagus-nerve-stimulation)"],
+    "Wave 2C.2A llms entry",
+  ],
+  [
+    "docs/seo-vns-cluster-target-queries.md",
+    ["implanted vs non-invasive VNS", wave2c2aComparisonRequirements.route, "Wave 2C.2A cannibalization watchlist"],
+    "Wave 2C.2A query map",
+  ],
+  [
+    "docs/seo-measurement-plan.md",
+    ["## Wave 2C.2A pilot measurement", wave2c2aComparisonRequirements.route, "comparison-product-bridge", "medical history"],
+    "Wave 2C.2A measurement plan",
+  ],
+  [
+    "docs/seo/wave2c2a-implanted-vs-non-invasive-source-and-claims-lock.md",
+    ["VNS is an umbrella category", "product-specific bridge", "must not stage, commit, push"],
+    "Wave 2C.2A source and claims lock",
+  ],
+]) {
+  const source = readIfExists(path.join(repoRoot, relativePath));
+  if (!source) {
+    errors.push(`${relativePath} is missing and cannot be checked for ${label}.`);
+    continue;
+  }
+  for (const marker of markers) {
+    if (!source.includes(marker)) {
+      errors.push(`${relativePath} is missing ${label} marker: ${marker}.`);
+    }
+  }
+}
 const artifacts = findArtifacts(repoRoot);
 if (artifacts.length > 0) {
   errors.push(`Remove generated artifacts before commit: ${artifacts.slice(0, 12).join(", ")}${artifacts.length > 12 ? " ..." : ""}`);

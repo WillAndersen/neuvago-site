@@ -62,6 +62,7 @@ const routes: Array<{
   { path: "/learn/vagus-nerve", changeFrequency: "weekly", priority: 0.82, lastModified: SEO_LAUNCH_REVIEW_DATE },
   { path: "/learn/vagus-nerve-stimulation", changeFrequency: "weekly", priority: 0.86, lastModified: SEO_LAUNCH_REVIEW_DATE },
   { path: "/learn/non-invasive-vagus-nerve-stimulation", changeFrequency: "weekly", priority: 0.86, lastModified: SEO_LAUNCH_REVIEW_DATE },
+  { path: "/learn/implanted-vs-non-invasive-vagus-nerve-stimulation", changeFrequency: "weekly", priority: 0.84, lastModified: "2026-08-31" },
   { path: "/learn/transcutaneous-vagus-nerve-stimulation", changeFrequency: "weekly", priority: 0.84, lastModified: SEO_LAUNCH_REVIEW_DATE },
   { path: "/learn/auricular-vagus-nerve-stimulation", changeFrequency: "weekly", priority: 0.84, lastModified: SEO_LAUNCH_REVIEW_DATE },
   { path: "/learn/what-does-vagus-nerve-stimulation-feel-like", changeFrequency: "weekly", priority: 0.82, lastModified: "2026-08-28" },

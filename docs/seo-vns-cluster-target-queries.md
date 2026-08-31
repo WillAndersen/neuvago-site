@@ -1,6 +1,6 @@
 # VNS Cluster Target Queries and Landing Page Map
 
-_Last updated: 2026-08-30_
+_Last updated: 2026-08-31_
 
 Use this map to evaluate whether Search Console queries are landing on the correct Neuvago page.
 
@@ -11,6 +11,7 @@ Use this map to evaluate whether Search Console queries are landing on the corre
 | vagus nerve stimulation | `/learn/vagus-nerve-stimulation` | `/research/topics/vagus-nerve-stimulation` | Learn page should own plain-language intent. Research page should own evidence intent. |
 | VNS | `/learn/vagus-nerve-stimulation` | `/research/topics/vagus-nerve-stimulation` | Avoid over-optimizing acronym alone. |
 | non-invasive vagus nerve stimulation | `/learn/non-invasive-vagus-nerve-stimulation` | `/product` | Commercial bridge should be clear but not aggressive. |
+| implanted vs non-invasive VNS | `/learn/implanted-vs-non-invasive-vagus-nerve-stimulation` | `/learn/vagus-nerve-stimulation` | Direct comparison page owns category-difference intent; preserve method, intended-use, safety and evidence-transfer boundaries. |
 | vagus nerve stimulation device | `/product` | `/learn/non-invasive-vagus-nerve-stimulation` | Product page should eventually own device/commercial intent. |
 | vagus nerve stimulator | `/product` | `/how-it-works` | Highest commercial-intent keyword family. |
 
@@ -42,6 +43,11 @@ Use this map to evaluate whether Search Console queries are landing on the corre
 | vagus nerve stimulation research | `/research/topics/vagus-nerve-stimulation` | `/research/studies` | Research topic should be the hub. |
 | tVNS research | `/research/topics/transcutaneous-vagus-nerve-stimulation` | `/research/studies/frangos-2015-auricular-vagus-nerve-stimulation-fmri` | Method topic should link to key studies. |
 | autonomic regulation research | `/research/topics/autonomic-regulation` | `/research/topics/heart-rate-variability` | Good bridge to HRV and stress/sleep. |
+
+## Wave 2C.2A cannibalization watchlist
+| Query family | Preferred owner | Pages to monitor | Resolution rule |
+|---|---|---|---|
+| implanted vs non-invasive VNS | `/learn/implanted-vs-non-invasive-vagus-nerve-stimulation` | `/learn/vagus-nerve-stimulation`; `/learn/non-invasive-vagus-nerve-stimulation`; `/research/topics/vagus-nerve-stimulation` | The comparison page owns direct difference intent. Pillars retain broad definitions and research pages retain evidence intent. |
 
 ## Condition queries
 

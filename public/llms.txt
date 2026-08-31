@@ -2,7 +2,7 @@
 
 > Neuvago is a premium wellness brand building a non-invasive vagus nerve stimulator and app for calm, guided nervous system regulation routines.
 
-Updated: 2026-08-30
+Updated: 2026-08-31
 Canonical site: https://neuvago.com
 
 ## Important context
@@ -30,6 +30,7 @@ When summarizing Neuvago, use conservative language:
 
 - [Vagus nerve stimulation guide](/learn/vagus-nerve-stimulation)
 - [Non-invasive vagus nerve stimulation guide](/learn/non-invasive-vagus-nerve-stimulation)
+- [Implanted vs non-invasive vagus nerve stimulation](/learn/implanted-vs-non-invasive-vagus-nerve-stimulation)
 - [Transcutaneous vagus nerve stimulation guide](/learn/transcutaneous-vagus-nerve-stimulation)
 - [Auricular vagus nerve stimulation guide](/learn/auricular-vagus-nerve-stimulation)
 - [What vagus nerve stimulation feels like](/learn/what-does-vagus-nerve-stimulation-feel-like)

@@ -1,6 +1,6 @@
 # Neuvago SEO Measurement Plan — P2.6
 
-_Last updated: 2026-08-30_
+_Last updated: 2026-08-31_
 
 ## Purpose
 
@@ -27,6 +27,7 @@ Make Neuvago increasingly visible for the category around:
 
 - vagus nerve stimulation
 - non-invasive vagus nerve stimulation
+- implanted vs non-invasive VNS
 - vagus nerve stimulator
 - transcutaneous vagus nerve stimulation
 - auricular vagus nerve stimulation
@@ -125,6 +126,7 @@ Use this as the initial VNS cluster monitoring set.
 | Vagus nerve foundation | `/learn/vagus-nerve` |
 | VNS pillar | `/learn/vagus-nerve-stimulation` |
 | Non-invasive VNS | `/learn/non-invasive-vagus-nerve-stimulation` |
+| Implanted vs non-invasive VNS | `/learn/implanted-vs-non-invasive-vagus-nerve-stimulation` |
 | Auricular VNS | `/learn/auricular-vagus-nerve-stimulation` |
 | VNS sensation and comfort | `/learn/what-does-vagus-nerve-stimulation-feel-like` |
 | Transcutaneous VNS | `/learn/transcutaneous-vagus-nerve-stimulation` |
@@ -149,6 +151,7 @@ If a page does not exist in the current repo, skip it until that route is presen
 - vagus nerve stimulation
 - VNS
 - non-invasive vagus nerve stimulation
+- implanted vs non-invasive VNS
 - vagus nerve stimulation device
 - vagus nerve stimulator
 
@@ -283,6 +286,24 @@ Expected tracked next-step events:
 - `neuvago_product_click` from `recovery-product-bridge` to `/no/produkt`.
 
 Treat these events as navigation signals, not proof of recovery, HRV normalization, increased vagal tone, treatment response or target engagement. Keep the existing seven non-personal parameters only; do not add recovery scores, HRV values, routine answers, symptom descriptions, free text, account identifiers or health data.
+
+## Wave 2C.2A pilot measurement
+
+Monitor `/learn/implanted-vs-non-invasive-vagus-nerve-stimulation` as the English owner of direct implanted-versus-non-invasive comparison intent. Keep query ownership distinct from the broad VNS pillar, the non-invasive VNS guide, product selection intent, and the safety research topic.
+
+Untracked editorial pathways:
+
+- `Compare the categories` from `hero-actions` to `#comparison-table`;
+- the hero link to `/learn/non-invasive-vagus-nerve-stimulation`;
+- category, evidence, safety, legal and primary-source links.
+
+Expected tracked next-step events:
+
+- `neuvago_how_it_works_click` from `comparison-product-bridge` to `/how-it-works`;
+- `neuvago_product_click` from `comparison-product-bridge` to `/product`;
+- the existing buyer-guide classifier may record `/learn/how-to-choose-a-vagus-nerve-stimulation-device` from `related-guides`.
+
+Treat these events as navigation signals, not evidence that one VNS method is superior, that implanted evidence transfers to Neuvago, or that the product has a clinical effect. Keep the existing seven non-personal parameters only; do not add medical history, suitability answers, implanted-device status, symptoms, free text, account identifiers or health data.
 
 ## Weekly workflow
 

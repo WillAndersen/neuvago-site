@@ -189,6 +189,13 @@ const boundaries = [
 
 const relatedLearning = [
   {
+    title: "Implanted vs non-invasive VNS",
+    description:
+      "Compare surgery, hardware, stimulation site, intended use, safety context, and evidence boundaries before treating VNS methods as equivalent.",
+    href: "/learn/implanted-vs-non-invasive-vagus-nerve-stimulation",
+    linkLabel: "Compare implanted and non-invasive VNS",
+  },
+  {
     title: "How to choose a VNS device",
     description:
       "Move from the non-invasive category to a product-level checklist covering intended use, evidence, safety, settings, app dependence, support, and purchase terms.",

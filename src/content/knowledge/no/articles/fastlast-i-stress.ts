@@ -524,9 +524,9 @@ export const fastlastIStressArticle = {
     {
       title: "Restitusjon og regulering",
       description:
-        "Utforsk den engelske fordypningssiden om restitusjon, rytme og tilbakevending.",
-      href: "/learn/recovery-and-regulation",
-      label: "Les om restitusjon (engelsk)",
+        "Utforsk den norske fordypningssiden om restitusjon, rytme, belastning og gradvis tilbakevending av kapasitet.",
+      href: "/no/kunnskap/restitusjon-og-regulering",
+      label: "Les om restitusjon og regulering",
     },
     {
       title: "Engelsk parallellside",

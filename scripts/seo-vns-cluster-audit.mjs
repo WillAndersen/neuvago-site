@@ -670,7 +670,8 @@ const wave2c1cEveningRoutineRequirements = {
     'id: "nar-soke-hjelp"',
     'id: "neuvago-i-rutinen"',
     'href: "/no/kunnskap/trott-men-far-ikke-slappet-av"',
-    'href: "/learn/recovery-and-regulation"',
+    'label: "Les om restitusjon og regulering"',
+    'href: "/no/kunnskap/restitusjon-og-regulering"',
     'pmid: "33164742"',
     "ikke behandling for søvnløshet",
     "Søvnhygiene alene",
@@ -684,6 +685,7 @@ const wave2c1cEveningRoutineRequirements = {
     "garanterer raskere innsovning",
     "sterkere stimulering er bedre",
     "start med melatonin",
+    'href: "/learn/recovery-and-regulation"',
   ],
 };
 
@@ -989,6 +991,8 @@ const wave2c1eStuckStressRequirements = {
     'placement: "stuck-stress-product-bridge"',
     'href: "/no/produkt"',
     'href: "/no/tilstander/stress"',
+    'label: "Les om restitusjon og regulering"',
+    'href: "/no/kunnskap/restitusjon-og-regulering"',
     '"hvordan-roe-ned-nervesystemet"',
     'pmid: "16439263"',
     'pmid: "32799204"',
@@ -1007,6 +1011,7 @@ const wave2c1eStuckStressRequirements = {
     "resetter nervesystemet",
     "frigjør traumer",
     "garanterer restitusjon",
+    'href: "/learn/recovery-and-regulation"',
   ],
 };
 const wave2c1eArticleSource = readIfExists(

@@ -467,7 +467,6 @@ export const kveldsrutineForNedtrappingArticle = {
   ],
 
   relatedSlugs: [
-    "trott-men-far-ikke-slappet-av",
     "hvordan-roe-ned-nervesystemet",
     "regulering-av-nervesystemet",
     "det-autonome-nervesystemet",
@@ -490,9 +489,9 @@ export const kveldsrutineForNedtrappingArticle = {
     {
       title: "Restitusjon og regulering",
       description:
-        "En engelskspråklig guide om restitusjon, belastning og regulering mens den norske NO-019-siden fortsatt står i den låste publiseringsbatchen.",
-      href: "/learn/recovery-and-regulation",
-      label: "Les om restitusjon (engelsk)",
+        "En norsk guide om restitusjon, samlet belastning, søvn, pauser og rutiner – uten å gjøre én følelse eller måling til en diagnose.",
+      href: "/no/kunnskap/restitusjon-og-regulering",
+      label: "Les om restitusjon og regulering",
     },
     {
       title: "Tiltenkt bruk",

@@ -63,11 +63,17 @@ Use this map to evaluate whether Search Console queries are landing on the corre
 | fastlåst i stress | `/no/kunnskap/fastlast-i-stress` | `/no/tilstander/stress` | Lived-experience guide owns persistent-activation recognition intent; the stress pathway owns broad stress and assessment context. |
 | restitusjon nervesystemet | `/no/kunnskap/restitusjon-og-regulering` | `/no/kunnskap/regulering-av-nervesystemet` | Recovery guide owns recovery-capacity, sleep/load/pause and routine intent; the regulation pillar owns the broader nervous-system concept. |
 | hvordan roe ned på jobb | `/no/kunnskap/pause-i-arbeidsdagen` | `/no/tilstander/stress` | Workday-pause page owns the concrete use moment; the stress pathway owns broad stress, assessment and workplace context. |
+| tegn på dysregulert nervesystem | `/no/kunnskap/tegn-pa-dysregulert-nervesystem` | `/no/kunnskap/regulering-av-nervesystemet` | NO-016 owns non-diagnostic recognition intent; the regulation pillar owns the broad concept and the calming guide owns practical how-to intent. |
 
 ## Wave 2C.2B cannibalization watchlist
 | Query family | Preferred owner | Pages to monitor | Resolution rule |
 |---|---|---|---|
 | hvordan roe ned på jobb / pause i arbeidsdagen | `/no/kunnskap/pause-i-arbeidsdagen` | `/no/tilstander/stress`; `/no/kunnskap/hvordan-roe-ned-nervesystemet`; `/no/kunnskap/restitusjon-og-regulering` | NO-021 owns the concrete workday pause and transition. Stress owns broad workplace-stress and assessment intent; the calming and recovery guides retain their wider practical concepts. |
+
+## Wave 2C.2C cannibalization watchlist
+| Query family | Preferred owner | Pages to monitor | Resolution rule |
+|---|---|---|---|
+| tegn på dysregulert nervesystem / nervesystem i ubalanse | `/no/kunnskap/tegn-pa-dysregulert-nervesystem` | `/no/kunnskap/regulering-av-nervesystemet`; `/no/kunnskap/hvordan-roe-ned-nervesystemet`; `/no/kunnskap/overstimulert`; `/no/tilstander/stress`; `/no/tilstander/sovn` | NO-016 owns recognition without diagnosis. Regulation owns the broad framework, calming owns practical action, overstimulation owns stimulus-load language, and condition pathways own broad assessment context. |
 
 ## Commercial support queries
 

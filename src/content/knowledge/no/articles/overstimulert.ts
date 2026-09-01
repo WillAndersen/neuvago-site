@@ -512,9 +512,9 @@ export const overstimulertArticle = {
     {
       title: "Tegn på et dysregulert nervesystem",
       description:
-        "En engelskspråklig guide som skiller gjenkjennelsesmønstre fra diagnose og forklarer når symptomer bør vurderes bredere.",
-      href: "/learn/signs-of-a-dysregulated-nervous-system",
-      label: "Les gjenkjennelsesguiden (engelsk)",
+        "En norsk gjenkjennelsesguide som beskriver mønstre uten poengsum, diagnose eller påstand om vagal dysfunksjon.",
+      href: "/no/kunnskap/tegn-pa-dysregulert-nervesystem",
+      label: "Les gjenkjennelsesguiden",
     },
     {
       title: "Slik fungerer Neuvago",

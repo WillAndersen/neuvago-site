@@ -320,6 +320,21 @@ Expected tracked next-step events:
 
 Treat these events as navigation signals, not proof of stress reduction, cortisol change, HRV normalization, treatment response, improved performance or target engagement. Keep the existing seven non-personal parameters only; do not add workplace details, stress descriptions, symptoms, free text, email, account identifiers, user identifiers or health data.
 
+## Wave 2C.2C pilot measurement
+
+Monitor `/no/kunnskap/tegn-pa-dysregulert-nervesystem` as the Norwegian owner of non-diagnostic recognition intent around `tegn på dysregulert nervesystem`. Keep ownership distinct from the broad regulation pillar, practical calming guide, overstimulation guide and stress/sleep pathways.
+
+Untracked editorial pathways:
+- `Se gjenkjennelsessjekklisten` to `#gjenkjennelsessjekkliste`;
+- the hero link to `/no/kunnskap/regulering-av-nervesystemet`;
+- links to stress, sleep, related knowledge, sources and the English counterpart.
+
+Expected tracked next-step events:
+- `neuvago_how_it_works_click` from `signs-product-bridge` to `/no/slik-fungerer-det`;
+- `neuvago_product_click` from `signs-product-bridge` to `/no/produkt`.
+
+Treat these as navigation signals, not diagnosis, symptom severity, treatment response, autonomic status or proof of target engagement. Keep the existing seven non-personal parameters only. Do not add checklist selections, symptoms, diagnostic labels, medical history, HRV values, stress scores, free text, email, account IDs, user IDs or health data.
+
 ## Weekly workflow
 
 1. Open Google Search Console.

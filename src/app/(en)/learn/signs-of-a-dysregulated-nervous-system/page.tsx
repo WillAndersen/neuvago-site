@@ -9,6 +9,10 @@ export const metadata = {
     "Learn the common signs of a dysregulated nervous system, how they show up in everyday life, and how they connect to stress, sleep, recovery, anxiety, and shutdown.",
   alternates: {
     canonical: "/learn/signs-of-a-dysregulated-nervous-system",
+    languages: {
+      en: "/learn/signs-of-a-dysregulated-nervous-system",
+      "nb-NO": "/no/kunnskap/tegn-pa-dysregulert-nervesystem",
+    },
   },
   openGraph: {
     title: "Signs of a Dysregulated Nervous System | Neuvago",
@@ -560,6 +564,17 @@ export default function SignsOfADysregulatedNervousSystemPage() {
           </div>
         </div>
       </section>
-    </main>
+
+      <section className="border-t border-black/10 bg-white/55">
+        <div className="mx-auto max-w-6xl px-6 py-8 lg:px-8">
+          <Link
+            href="/no/kunnskap/tegn-pa-dysregulert-nervesystem"
+            className="inline-flex rounded-full border border-black/10 bg-white px-5 py-2.5 text-sm font-medium text-[#1f1f1c] transition hover:bg-[#f6f3ed]"
+          >
+            Les denne siden på norsk
+          </Link>
+        </div>
+      </section>
+</main>
   )
 }

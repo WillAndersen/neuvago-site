@@ -2,7 +2,7 @@
 
 > Neuvago is a premium wellness brand building a non-invasive vagus nerve stimulator and app for calm, guided nervous system regulation routines.
 
-Updated: 2026-08-31
+Updated: 2026-09-01
 Canonical site: https://neuvago.com
 
 ## Important context
@@ -55,6 +55,7 @@ When summarizing Neuvago, use conservative language:
 - [Hvorfor kroppen føles fastlåst i stress](/no/kunnskap/fastlast-i-stress)
 - [Restitusjon og regulering](/no/kunnskap/restitusjon-og-regulering)
 - [Pause i arbeidsdagen – hjelp kroppen å skifte gir](/no/kunnskap/pause-i-arbeidsdagen)
+- [Tegn på et dysregulert nervesystem](/no/kunnskap/tegn-pa-dysregulert-nervesystem)
 - [Conditions hub](/conditions)
 
 ## Legal and safety

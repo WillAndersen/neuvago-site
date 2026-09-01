@@ -17,6 +17,7 @@ import { overstimulertArticle } from "@/content/knowledge/no/articles/overstimul
 import { fastlastIStressArticle } from "@/content/knowledge/no/articles/fastlast-i-stress";
 import { restitusjonOgReguleringArticle } from "@/content/knowledge/no/articles/restitusjon-og-regulering";
 import { pauseIArbeidsdagenArticle } from "@/content/knowledge/no/articles/pause-i-arbeidsdagen";
+import { tegnPaDysregulertNervesystemArticle } from "@/content/knowledge/no/articles/tegn-pa-dysregulert-nervesystem";
 import { erVagusnervestimuleringTrygtArticle } from "@/content/knowledge/no/articles/er-vagusnervestimulering-trygt";
 import { bivirkningerVedIkkeInvasivVagusnervestimuleringArticle } from "@/content/knowledge/no/articles/bivirkninger-ved-ikke-invasiv-vagusnervestimulering";
 import { hvemBorVaereForsiktigMedVagusnervestimuleringArticle } from "@/content/knowledge/no/articles/hvem-bor-vaere-forsiktig-med-vagusnervestimulering";
@@ -42,6 +43,7 @@ const articleRegistry = [
   fastlastIStressArticle,
   restitusjonOgReguleringArticle,
   pauseIArbeidsdagenArticle,
+  tegnPaDysregulertNervesystemArticle,
   erVagusnervestimuleringTrygtArticle,
   bivirkningerVedIkkeInvasivVagusnervestimuleringArticle,
   hvemBorVaereForsiktigMedVagusnervestimuleringArticle,

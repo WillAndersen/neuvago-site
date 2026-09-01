@@ -871,7 +871,7 @@ const wave2c1dOverstimulationRequirements = {
     'id: "neuvago-som-valgfritt-steg"',
     'href: "/no/tilstander/stress"',
     'href: "/no/tilstander/sovn"',
-    'href: "/learn/signs-of-a-dysregulated-nervous-system"',
+    'href: "/no/kunnskap/tegn-pa-dysregulert-nervesystem"',
     'pmid: "37416535"',
     "ikke en diagnose",
     "ikke som behandling for overstimulering",
@@ -1322,7 +1322,7 @@ for (const [relativePath, markers, label] of [
   ],
   [
     "public/llms.txt",
-    ["Updated: 2026-08-31", "[Implanted vs non-invasive vagus nerve stimulation](/learn/implanted-vs-non-invasive-vagus-nerve-stimulation)"],
+    ["Updated: 2026-09-01", "[Implanted vs non-invasive vagus nerve stimulation](/learn/implanted-vs-non-invasive-vagus-nerve-stimulation)"],
     "Wave 2C.2A llms entry",
   ],
   [
@@ -1477,6 +1477,94 @@ for (const mediaPath of [
 ]) {
   if (!existsSync(path.join(repoRoot, mediaPath))) {
     errors.push(`${mediaPath} is missing for Wave 2C.2B media.`);
+  }
+}
+
+// Wave 2C.2C publishes a registry-backed Norwegian recognition guide.
+// It owns non-diagnostic signs intent while preserving regulation, calming,
+// overstimulation, condition-pathway and product-specific evidence boundaries.
+const wave2c2cSignsRequirements = {
+  route: "/no/kunnskap/tegn-pa-dysregulert-nervesystem",
+  articleFile: "src/content/knowledge/no/articles/tegn-pa-dysregulert-nervesystem.ts",
+  sourceMarkers: [
+    'slug: "tegn-pa-dysregulert-nervesystem"',
+    'path: "/no/kunnskap/tegn-pa-dysregulert-nervesystem"',
+    'wave: "2C.2"',
+    'primaryKeyword: "tegn på dysregulert nervesystem"',
+    'id: "gjenkjennelsessjekkliste"',
+    'placement: "signs-product-bridge"',
+    'englishEquivalent: "/learn/signs-of-a-dysregulated-nervous-system"',
+    "ikke én avgrenset medisinsk diagnose",
+    "Ikke bruk antall kryss som diagnose",
+    "Legevakt og akutt hjelp",
+    "Sterkere stimulering er ikke nødvendigvis bedre",
+  ],
+  forbiddenMarkers: [
+    "Neuvago behandler autonom dysfunksjon",
+    "Neuvago normaliserer HRV",
+    "garanterer en fysiologisk reset",
+    "beviser vagal dysfunksjon",
+  ],
+};
+const wave2c2cSource = readIfExists(path.join(repoRoot, wave2c2cSignsRequirements.articleFile));
+if (!wave2c2cSource) {
+  errors.push(`${wave2c2cSignsRequirements.articleFile} is missing.`);
+} else {
+  for (const marker of wave2c2cSignsRequirements.sourceMarkers) {
+    if (!wave2c2cSource.includes(marker)) {
+      errors.push(`${wave2c2cSignsRequirements.route} is missing Wave 2C.2C marker: ${marker}.`);
+    }
+  }
+  for (const forbidden of wave2c2cSignsRequirements.forbiddenMarkers) {
+    if (wave2c2cSource.includes(forbidden)) {
+      errors.push(`${wave2c2cSignsRequirements.route} contains forbidden Wave 2C.2C marker: ${forbidden}.`);
+    }
+  }
+}
+for (const [relativePath, markers, label] of [
+  [
+    "src/content/knowledge/no/registry.ts",
+    ["tegnPaDysregulertNervesystemArticle", "tegn-pa-dysregulert-nervesystem"],
+    "Wave 2C.2C registry binding",
+  ],
+  [
+    "src/content/knowledge/no/articles/overstimulert.ts",
+    ['href: "/no/kunnskap/tegn-pa-dysregulert-nervesystem"'],
+    "Wave 2C.2C overstimulation bridge",
+  ],
+  [
+    "src/app/(en)/learn/signs-of-a-dysregulated-nervous-system/page.tsx",
+    ['"nb-NO": "/no/kunnskap/tegn-pa-dysregulert-nervesystem"', "Les denne siden på norsk"],
+    "Wave 2C.2C reciprocal language discovery",
+  ],
+  [
+    "public/llms.txt",
+    ["Updated: 2026-09-01", "[Tegn på et dysregulert nervesystem](/no/kunnskap/tegn-pa-dysregulert-nervesystem)"],
+    "Wave 2C.2C llms entry",
+  ],
+  [
+    "docs/seo-vns-cluster-target-queries.md",
+    ["tegn på dysregulert nervesystem", wave2c2cSignsRequirements.route, "Wave 2C.2C cannibalization watchlist"],
+    "Wave 2C.2C query map",
+  ],
+  [
+    "docs/seo-measurement-plan.md",
+    ["## Wave 2C.2C pilot measurement", wave2c2cSignsRequirements.route, "signs-product-bridge", "checklist selections"],
+    "Wave 2C.2C measurement plan",
+  ],
+  [
+    "docs/seo/wave2c2c-signs-dysregulation-source-and-claims-lock.md",
+    ["## Recognition boundary", "Symptoms and lived experiences are non-specific", "checklist result", "116 117", "113", "must not stage, commit, push or delete unrelated untracked work"],
+    "Wave 2C.2C source and claims lock",
+  ],
+]) {
+  const source = readIfExists(path.join(repoRoot, relativePath));
+  if (!source) {
+    errors.push(`${label}: ${relativePath} is missing.`);
+    continue;
+  }
+  for (const marker of markers) {
+    if (!source.includes(marker)) errors.push(`${label} is missing marker: ${marker}.`);
   }
 }
 

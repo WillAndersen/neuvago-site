@@ -674,6 +674,13 @@ export const stressConditionPage = {
       label: "Prøv arbeidspausen",
     },
     {
+      title: "Hverdagsuro og et nervesystem som ikke roer seg",
+      description:
+        "Se hvordan kroppslig uro og rastløshet kan forstås som hverdagsopplevelser med flere mulige forklaringer – uten å gjøre dem til en diagnose.",
+      href: "/no/tilstander/hverdagsuro",
+      label: "Les om hverdagsuro",
+    },
+    {
       title: "Søvn og nervesystemet",
       description:
         "Gå videre til den norske søvn-pathwayen om søvntrykk, døgnrytme, kveldsaktivering, insomni, søvnapné og trygge velværegrenser.",

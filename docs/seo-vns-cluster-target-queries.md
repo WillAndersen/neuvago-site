@@ -64,6 +64,7 @@ Use this map to evaluate whether Search Console queries are landing on the corre
 | restitusjon nervesystemet | `/no/kunnskap/restitusjon-og-regulering` | `/no/kunnskap/regulering-av-nervesystemet` | Recovery guide owns recovery-capacity, sleep/load/pause and routine intent; the regulation pillar owns the broader nervous-system concept. |
 | hvordan roe ned på jobb | `/no/kunnskap/pause-i-arbeidsdagen` | `/no/tilstander/stress` | Workday-pause page owns the concrete use moment; the stress pathway owns broad stress, assessment and workplace context. |
 | tegn på dysregulert nervesystem | `/no/kunnskap/tegn-pa-dysregulert-nervesystem` | `/no/kunnskap/regulering-av-nervesystemet` | NO-016 owns non-diagnostic recognition intent; the regulation pillar owns the broad concept and the calming guide owns practical how-to intent. |
+| uro i kroppen nervesystemet | `/no/tilstander/hverdagsuro` | `/no/tilstander/stress` | NO-025 owns everyday bodily-unease and restlessness intent without diagnosis framing; the stress pathway owns broad stress, load and recovery, while practical calming pages own how-to intent. |
 
 ## Wave 2C.2B cannibalization watchlist
 | Query family | Preferred owner | Pages to monitor | Resolution rule |
@@ -74,6 +75,11 @@ Use this map to evaluate whether Search Console queries are landing on the corre
 | Query family | Preferred owner | Pages to monitor | Resolution rule |
 |---|---|---|---|
 | tegn på dysregulert nervesystem / nervesystem i ubalanse | `/no/kunnskap/tegn-pa-dysregulert-nervesystem` | `/no/kunnskap/regulering-av-nervesystemet`; `/no/kunnskap/hvordan-roe-ned-nervesystemet`; `/no/kunnskap/overstimulert`; `/no/tilstander/stress`; `/no/tilstander/sovn` | NO-016 owns recognition without diagnosis. Regulation owns the broad framework, calming owns practical action, overstimulation owns stimulus-load language, and condition pathways own broad assessment context. |
+
+## Wave 2C.2D cannibalization watchlist
+| Query family | Preferred owner | Pages to monitor | Resolution rule |
+|---|---|---|---|
+| uro i kroppen / indre uro / kroppen roer seg ikke | `/no/tilstander/hverdagsuro` | `/no/tilstander/stress`; `/no/kunnskap/tegn-pa-dysregulert-nervesystem`; `/no/kunnskap/overstimulert`; `/no/kunnskap/hvordan-roe-ned-nervesystemet`; anxiety-adjacent pages | NO-025 owns everyday bodily-unease lived experience without diagnosis. Stress owns broad load and stress physiology, NO-016 owns dysregulation-recognition language, overstimulation owns stimulus-load language, and the calming guide owns practical methods. |
 
 ## Commercial support queries
 

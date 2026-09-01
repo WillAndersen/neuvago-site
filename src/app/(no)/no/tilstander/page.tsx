@@ -41,6 +41,12 @@ const page = {
       "note": "Norsk hovedside"
     },
     {
+      "title": "Hverdagsuro og nervesystemet",
+      "description": "Les om kroppslig uro og rastløshet som hverdagsopplevelser med flere mulige forklaringer, trygge første steg og tydelige grenser for når du bør søke hjelp.",
+      "href": "/no/tilstander/hverdagsuro",
+      "note": "Norsk hovedside"
+    },
+    {
       "title": "Søvn og nervesystemet",
       "description": "Utforsk hvordan kveld, nedtrapping og regulering kan forstås som del av en bredere velværerutine.",
       "href": "/no/tilstander/sovn",

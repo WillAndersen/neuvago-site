@@ -1568,6 +1568,163 @@ for (const [relativePath, markers, label] of [
   }
 }
 
+// Wave 2C.2D publishes NO-025 through the existing Norwegian condition registry.
+// The page owns everyday bodily-unease lived experience without diagnosing anxiety,
+// dysregulation or autonomic/vagal dysfunction, and all pathways remain untracked.
+const wave2c2d2HverdagsuroRequirements = {
+  route: "/no/tilstander/hverdagsuro",
+  articleFile: "src/content/conditions/no/pages/hverdagsuro.ts",
+  sourceMarkers: [
+    'slug: "hverdagsuro"',
+    'path: "/no/tilstander/hverdagsuro"',
+    'status: "published"',
+    'wave: "2C.2"',
+    'order: 15',
+    'primaryKeyword: "uro i kroppen nervesystemet"',
+    'sourceReviewerId: "neuvago-redaksjonen"',
+    'sitemapPriority: 0.78',
+    'changeFrequency: "monthly"',
+    'id: "hva-mener-vi-med-hverdagsuro"',
+    'id: "slik-kan-uro-kjennes"',
+    'id: "uro-stress-angst-og-overstimulering"',
+    'id: "behold-flere-forklaringer-apne"',
+    'id: "fire-sporsmal-for-du-velger-tiltak"',
+    'id: "start-med-det-enkleste"',
+    'id: "nar-bor-du-soke-hjelp"',
+    'id: "legevakt-og-akutt-hjelp"',
+    'id: "hvor-neuvago-eventuelt-passer-inn"',
+    "Hverdagsuro er en beskrivelse – ikke en diagnose",
+    "Uro betyr ikke automatisk angst eller panikklidelse",
+    "Uro alene beviser ikke vagal eller autonom dysfunksjon",
+    "Fire spørsmål gir mer informasjon enn en symptomscore",
+    "Start med støtte som ikke krever en diagnose",
+    "Ring 116 117",
+    "Ring 113",
+    "Neuvago kan eventuelt inngå som et valgfritt steg i en bredere velværerutine",
+    "Sterkere stimulering er ikke nødvendigvis bedre",
+    "Generell informasjon. Ikke medisinsk rådgivning, diagnose eller behandling.",
+  ],
+  forbiddenMarkers: [
+    "Neuvago behandler angst",
+    "Neuvago forebygger angst",
+    "Neuvago lindrer angstlidelse",
+    "Neuvago kurerer uro",
+    "Neuvago resetter nervesystemet",
+    "Neuvago reparerer nervesystemet",
+    "Neuvago normaliserer kortisol",
+    "Neuvago normaliserer HRV",
+    "Neuvago øker vagal tone",
+    "uro beviser vagal dysfunksjon",
+    "uro beviser autonom dysfunksjon",
+    "alle som kjenner uro har et dysregulert nervesystem",
+    "ett bestemt antall symptomer gir en diagnose",
+    "sterkere stimulering gir bedre effekt",
+    "HRV avgjør om Neuvago passer for deg",
+    "denne siden kan avgjøre om du har angst",
+    "endre eller stopp legemidler på egen hånd",
+    "akutte symptomer skal håndteres av kundeservice",
+  ],
+};
+const wave2c2dSource = readIfExists(path.join(repoRoot, wave2c2d2HverdagsuroRequirements.articleFile));
+if (!wave2c2dSource) {
+  errors.push(`${wave2c2d2HverdagsuroRequirements.articleFile} is missing.`);
+} else {
+  for (const marker of wave2c2d2HverdagsuroRequirements.sourceMarkers) {
+    if (!wave2c2dSource.includes(marker)) {
+      errors.push(`${wave2c2d2HverdagsuroRequirements.route} is missing Wave 2C.2D marker: ${marker}.`);
+    }
+  }
+  for (const forbidden of wave2c2d2HverdagsuroRequirements.forbiddenMarkers) {
+    if (wave2c2dSource.toLocaleLowerCase("nb-NO").includes(forbidden.toLocaleLowerCase("nb-NO"))) {
+      errors.push(`${wave2c2d2HverdagsuroRequirements.route} contains forbidden Wave 2C.2D marker: ${forbidden}.`);
+    }
+  }
+  if ((wave2c2dSource.match(/type: "table"/g) ?? []).length !== 2) {
+    errors.push(`${wave2c2d2HverdagsuroRequirements.route} must contain exactly two semantic tables.`);
+  }
+  if (wave2c2dSource.includes('/no/produkt') || wave2c2dSource.includes('englishEquivalent:')) {
+    errors.push(`${wave2c2d2HverdagsuroRequirements.route} contains a forbidden direct Product link or English equivalent.`);
+  }
+  if (wave2c2dSource.includes('data-knowledge-action') || wave2c2dSource.includes('trackOrganicConversion')) {
+    errors.push(`${wave2c2d2HverdagsuroRequirements.route} must keep every Wave 2C.2D.2 action untracked.`);
+  }
+}
+for (const [relativePath, markers, label] of [
+  [
+    "src/content/conditions/no/registry.ts",
+    ["hverdagsuroConditionPage", "@/content/conditions/no/pages/hverdagsuro"],
+    "Wave 2C.2D condition registry binding",
+  ],
+  [
+    "src/app/(no)/no/tilstander/page.tsx",
+    ["Hverdagsuro og nervesystemet", wave2c2d2HverdagsuroRequirements.route, "Norsk hovedside"],
+    "Wave 2C.2D condition hub card",
+  ],
+  [
+    "src/content/conditions/no/pages/stress.ts",
+    ["Hverdagsuro og et nervesystem som ikke roer seg", wave2c2d2HverdagsuroRequirements.route, "Les om hverdagsuro"],
+    "Wave 2C.2D stress incoming link",
+  ],
+  [
+    "public/llms.txt",
+    ["Updated: 2026-09-01", "[Hverdagsuro og et nervesystem som ikke roer seg](/no/tilstander/hverdagsuro)"],
+    "Wave 2C.2D llms entry",
+  ],
+  [
+    "docs/seo-vns-cluster-target-queries.md",
+    ["uro i kroppen nervesystemet", wave2c2d2HverdagsuroRequirements.route, "Wave 2C.2D cannibalization watchlist"],
+    "Wave 2C.2D query map",
+  ],
+  [
+    "docs/seo-measurement-plan.md",
+    ["## Wave 2C.2D pilot measurement", wave2c2d2HverdagsuroRequirements.route, "All Wave 2C.2D.2 pathways remain editorial and untracked", "free text"],
+    "Wave 2C.2D privacy measurement lock",
+  ],
+  [
+    "docs/seo/wave2c2d-hverdagsuro-source-and-claims-lock.md",
+    ["Hverdagsuro er en beskrivelse – ikke en diagnose", "No new analytics contract", "The 2D.2 pilot must not link directly to `/no/produkt`", "`/conditions/anxiety` is adjacent but not equivalent"],
+    "Wave 2C.2D source and claims lock",
+  ],
+]) {
+  const source = readIfExists(path.join(repoRoot, relativePath));
+  if (!source) {
+    errors.push(`${label}: ${relativePath} is missing.`);
+    continue;
+  }
+  for (const marker of markers) {
+    if (!source.includes(marker)) errors.push(`${label} is missing marker: ${marker}.`);
+  }
+}
+
+// Wave 2C.2D.2 privacy recovery: the global conversion tracker classifies links
+// by destination. NO-025 is a health-adjacent lived-experience page whose locked
+// contract requires every action to remain editorial and untracked. The source
+// path must therefore be excluded before the document-level click listener mounts.
+const wave2c2d2PrivacySourceExclusion = {
+  trackerFile: "src/components/analytics/OrganicConversionTracker.tsx",
+  sourcePath: "/no/tilstander/hverdagsuro",
+};
+const wave2c2d2TrackerSource = readIfExists(
+  path.join(repoRoot, wave2c2d2PrivacySourceExclusion.trackerFile),
+);
+if (!wave2c2d2TrackerSource) {
+  errors.push(`${wave2c2d2PrivacySourceExclusion.trackerFile} is missing.`);
+} else {
+  const excludedSourceBlock =
+    wave2c2d2TrackerSource.match(
+      /const\s+EXCLUDED_SOURCE_PREFIXES\s*=\s*\[([\s\S]*?)\];/,
+    )?.[1] ?? "";
+  const exclusionCount = (
+    excludedSourceBlock.match(/"\/no\/tilstander\/hverdagsuro"/g) ?? []
+  ).length;
+  if (exclusionCount !== 1) {
+    errors.push(
+      `${wave2c2d2PrivacySourceExclusion.sourcePath} ` +
+        `must appear exactly once in EXCLUDED_SOURCE_PREFIXES; found ${exclusionCount}.`,
+    );
+  }
+}
+
 const artifacts = findArtifacts(repoRoot);
 if (artifacts.length > 0) {
   errors.push(`Remove generated artifacts before commit: ${artifacts.slice(0, 12).join(", ")}${artifacts.length > 12 ? " ..." : ""}`);

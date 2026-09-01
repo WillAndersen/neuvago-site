@@ -43,6 +43,7 @@ const EXCLUDED_SOURCE_PREFIXES = [
   "/open-app",
   "/signup",
   "/verify-email",
+  "/no/tilstander/hverdagsuro",
 ];
 
 function normalizePath(pathname: string) {

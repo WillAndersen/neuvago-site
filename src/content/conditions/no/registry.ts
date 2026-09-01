@@ -1,9 +1,11 @@
 import { stressConditionPage } from "@/content/conditions/no/pages/stress";
+import { hverdagsuroConditionPage } from "@/content/conditions/no/pages/hverdagsuro";
 import { sovnConditionPage } from "@/content/conditions/no/pages/sovn";
 import type { NorwegianConditionPage } from "@/content/conditions/no/types";
 
 const conditionRegistry = [
   stressConditionPage,
+  hverdagsuroConditionPage,
   sovnConditionPage,
 ] as const satisfies readonly NorwegianConditionPage[];
 

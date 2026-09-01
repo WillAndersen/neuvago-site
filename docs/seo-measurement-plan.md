@@ -335,6 +335,19 @@ Expected tracked next-step events:
 
 Treat these as navigation signals, not diagnosis, symptom severity, treatment response, autonomic status or proof of target engagement. Keep the existing seven non-personal parameters only. Do not add checklist selections, symptoms, diagnostic labels, medical history, HRV values, stress scores, free text, email, account IDs, user IDs or health data.
 
+## Wave 2C.2D pilot measurement
+
+Monitor `/no/tilstander/hverdagsuro` as the Norwegian owner of everyday bodily-unease and restlessness intent around `uro i kroppen nervesystemet`. Keep its page job distinct from broad stress, anxiety diagnosis, dysregulation recognition, overstimulation and practical calming-method intent.
+
+All Wave 2C.2D.2 pathways remain editorial and untracked:
+- the condition-hub card;
+- the incoming link from `/no/tilstander/stress`;
+- section anchors, reflection prompts, help and safety links;
+- related knowledge and condition links;
+- the late How It Works and buyer-guide bridges.
+
+No conversion event is expected from Wave 2C.2D.2. Wave 2C.2D.2 adds no analytics schema and no tracked action. Do not collect or infer symptom examples, reflection responses, diagnosis labels, medical history, HRV values, stress scores, free text, email, account IDs, user IDs or health data. Search and navigation performance may be reviewed only through aggregate page-level reporting already available outside the article interaction itself.
+
 ## Weekly workflow
 
 1. Open Google Search Console.

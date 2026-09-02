@@ -1,4 +1,3 @@
-import { appV2Content } from "@/content/app-v2";
 import {
   homepageContent,
   type HomepageCard,
@@ -27,9 +26,6 @@ const homeProductCta = {
   href: commerceContent.shopHref,
 } satisfies HomepageCta;
 
-const appContentLaunchingSoon =
-  !appV2Content.availability.professionalGuidance ||
-  !appV2Content.availability.breathingTools;
 
 const appItems: HomepageCard[] = [
   {
@@ -176,7 +172,7 @@ export const homepage03Content = {
     visible: true,
     items: [
       "NON-INVASIVE",
-      "DRUG-FREE",
+      "EAR-BASED",
       "FOUR STIMULATION MODES",
       "ADJUSTABLE INTENSITY",
     ],
@@ -282,9 +278,8 @@ export const homepage03Content = {
     visible: true,
     eyebrow: "Neuvago App",
     title: "More tools for sleep, stress, focus and recovery.",
-    description: appContentLaunchingSoon
-      ? "Guided Sessions and Breathing Tools are launching soon. As part of Neuvago's broader focus on nervous system wellbeing, the Neuvago App will bring together professionally guided sessions and breathing practices for different needs and moments. Every Neuvago device includes one year of access to the Neuvago App."
-      : "As part of Neuvago's broader focus on nervous system wellbeing, the Neuvago App brings together professionally guided sessions and breathing practices for different needs and moments. Every Neuvago device includes one year of access to the Neuvago App.",
+    description:
+      "As part of Neuvago's broader focus on nervous system wellbeing, the Neuvago App brings together professionally guided sessions and breathing practices for different needs and moments. Every Neuvago device includes one year of access to the Neuvago App.",
     image: appLibraryImage,
     mobileImage: appProgressImage,
     items: appItems,
@@ -299,7 +294,7 @@ export const homepage03Content = {
     eyebrow: "Learn",
     title: "Understand your nervous system.",
     description:
-      "Explore clear, science-informed guides to the vagus nerve, stress, sleep, recovery and the autonomic nervous system.",
+      "Explore clear, science-informed articles on the vagus nerve, nervous system regulation, stress, sleep and recovery.",
     links: [
       {
         label: "Vagus nerve",

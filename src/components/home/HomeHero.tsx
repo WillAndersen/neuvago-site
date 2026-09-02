@@ -10,8 +10,13 @@ function HeroTitle({ title }: { title: string }) {
   if (title === "Designed for your nervous system.") {
     return (
       <>
-        <span className="block">Designed for your</span>{" "}
-        <span className="block">nervous system.</span>
+        <span aria-hidden="true" className="md:hidden">
+          {title}
+        </span>
+        <span aria-hidden="true" className="hidden md:block">
+          <span className="block whitespace-nowrap">Designed for your</span>{" "}
+          <span className="block">nervous system.</span>
+        </span>
       </>
     );
   }
@@ -47,14 +52,14 @@ export function HomeHero({ content }: HomeHeroProps) {
       <div className="absolute inset-0 -z-10 bg-[radial-gradient(circle_at_18%_18%,rgba(255,251,244,0.96),transparent_34%),radial-gradient(circle_at_76%_82%,rgba(224,207,184,0.16),transparent_42%)]" />
 
       <div className="mx-auto flex min-h-[740px] max-w-[92rem] items-start px-5 pb-16 pt-24 sm:min-h-[790px] sm:px-8 sm:pt-28 lg:min-h-[860px] lg:items-center lg:px-12 lg:py-28">
-        <div className="max-w-[48rem]">
+        <div className="max-w-[48rem] md:max-w-[60rem]">
           <p className="mb-5 text-[0.68rem] font-medium uppercase tracking-[0.3em] text-[#7b7167] sm:text-xs sm:tracking-[0.32em]">
             {content.eyebrow}
           </p>
 
           <h1
             aria-label={content.title}
-            className="max-w-[15ch] text-[clamp(3.25rem,14.8vw,5.8rem)] font-medium leading-[0.91] tracking-[-0.072em] text-[#1f1f1c] drop-shadow-[0_1px_24px_rgba(247,244,239,0.72)] sm:text-[clamp(4.5rem,10.5vw,7.5rem)] sm:leading-[0.88] lg:text-[clamp(5.8rem,8vw,8.8rem)] lg:leading-[0.86] lg:tracking-[-0.082em]"
+            className="max-w-[15ch] text-balance text-[clamp(3.25rem,14.8vw,5.8rem)] font-medium leading-[0.91] tracking-[-0.072em] text-[#1f1f1c] drop-shadow-[0_1px_24px_rgba(247,244,239,0.72)] sm:text-[clamp(4.5rem,10.5vw,7.5rem)] sm:leading-[0.88] md:max-w-none md:text-[clamp(4.75rem,6vw,6.6rem)] md:leading-[0.9] md:tracking-[-0.075em]"
           >
             <HeroTitle title={content.title} />
           </h1>

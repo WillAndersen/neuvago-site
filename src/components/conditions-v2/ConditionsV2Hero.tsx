@@ -16,12 +16,12 @@ export function ConditionsV2Hero({
   return (
     <section className="border-b border-black/5 bg-[#f7f4ef]">
       <div className="mx-auto max-w-[92rem] px-5 py-16 sm:px-8 sm:py-20 lg:flex lg:min-h-[70vh] lg:items-center lg:px-12 lg:py-28">
-        <div className="max-w-6xl">
+        <div className="max-w-[84rem]">
           <p className="text-xs font-medium uppercase tracking-[0.22em] text-[#7a756c] sm:text-sm">
             {content.eyebrow}
           </p>
 
-          <h1 className="mt-5 max-w-[20ch] text-[clamp(3.25rem,7vw,7.25rem)] font-medium leading-[0.94] tracking-[-0.065em] text-[#1f1f1c]">
+          <h1 className="mt-5 max-w-[26ch] text-balance text-[clamp(3.25rem,6.6vw,6.75rem)] font-medium leading-[0.94] tracking-[-0.065em] text-[#1f1f1c]">
             {content.title}
           </h1>
 

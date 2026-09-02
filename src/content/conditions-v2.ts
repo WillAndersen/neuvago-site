@@ -69,9 +69,9 @@ export const conditionsV2Content = {
   hero: {
     visible: true,
     eyebrow: "CONDITIONS",
-    title: "Explore conditions through the nervous system.",
+    title: "Explore conditions through a nervous system lens.",
     introduction:
-      "Browse clear, science-informed articles on sleep problems, stress, anxiety, burnout, migraine and headache, gut–brain function, depression and mood, chronic pain and related concerns.",
+      "Browse clear, science-informed articles on stress, sleep, anxiety, migraine and headache, gut–brain function and digestion, burnout, depression and mood, chronic pain and related concerns.",
     supportingCopy:
       "Each article begins with the condition or concern itself, then explores the relevant nervous system, vagus nerve and research context in clear, accessible language.",
     primaryCta: {
@@ -85,7 +85,7 @@ export const conditionsV2Content = {
     eyebrow: "FEATURED CONDITIONS",
     title: "Start with a condition or concern.",
     description:
-      "Explore science-informed articles that begin with the condition itself, then examine the relevant nervous system, vagus nerve and research context.",
+      "Choose the topic that feels most relevant to you.",
     items: [
       {
         id: "stress",
@@ -119,7 +119,7 @@ export const conditionsV2Content = {
         id: "gut-brain-digestion",
         title: "Gut–Brain & Digestion",
         description:
-          "Explore how the gut and brain communicate through neural, immune and hormonal pathways, including the vagus nerve, and what research is examining in digestive symptoms.",
+          "Explore how the gut and brain communicate through neural, immune and hormonal pathways, including the vagus nerve, and how these pathways are being studied in relation to digestive symptoms.",
         href: "/conditions/gut-brain-and-digestion",
       },
     ],
@@ -127,9 +127,9 @@ export const conditionsV2Content = {
   more: {
     visible: true,
     eyebrow: "MORE CONDITIONS",
-    title: "Continue exploring important conditions.",
+    title: "Explore more conditions and concerns.",
     description:
-      "Explore how prolonged demand, mood, pain, sleep, recovery and nervous system regulation can intersect over time.",
+      "Continue with articles on burnout, depression and mood, chronic pain, and how these topics may intersect with sleep, stress, recovery and nervous system regulation.",
     items: [
       {
         id: "burnout",

@@ -1,9 +1,16 @@
 import Image from "next/image";
 import { CtaButton } from "@/components/home/CtaButton";
-import type { productV2Content } from "@/content/product-v2";
+import type {
+  productV2Content,
+  ProductV2Cta,
+} from "@/content/product-v2";
+
+type ProductV2FinalCtaContent = typeof productV2Content.finalCta & {
+  secondaryCta?: ProductV2Cta;
+};
 
 type ProductV2FinalCtaProps = {
-  content: typeof productV2Content.finalCta;
+  content: ProductV2FinalCtaContent;
 };
 
 export function ProductV2FinalCta({
@@ -52,11 +59,13 @@ export function ProductV2FinalCta({
                 label={content.primaryCta.label}
                 variant="primary"
               />
-              <CtaButton
-                href={content.secondaryCta.href}
-                label={content.secondaryCta.label}
-                variant="secondary"
-              />
+              {content.secondaryCta ? (
+                <CtaButton
+                  href={content.secondaryCta.href}
+                  label={content.secondaryCta.label}
+                  variant="secondary"
+                />
+              ) : null}
             </div>
           </div>
         </div>

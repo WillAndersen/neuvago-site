@@ -53,13 +53,13 @@ export type ProductV2FaqItem = {
 const purchaseOpen: boolean = false;
 const currentPrice: string | null = null;
 
-const purchaseCta: ProductV2Cta = {
-  label: purchaseOpen ? "Shop Neuvago" : "View purchase details",
-  href: "#buy",
-};
-
 const heroPurchaseCta: ProductV2Cta = {
   label: commerceContent.ctaLabel,
+  href: commerceContent.shopHref,
+};
+
+const finalProductCta: ProductV2Cta = {
+  label: "Get launch access",
   href: commerceContent.shopHref,
 };
 
@@ -175,7 +175,7 @@ export const productV2Content = {
     description:
       "Sleep, Relax, Meditation and Relief use distinct stimulation patterns for different needs and moments. Every mode runs for 20 minutes, with 30 adjustable intensity levels.",
     detailLabels: {
-      intendedUse: "Intended use",
+      intendedUse: "Designed for",
       stimulationPattern: "Stimulation pattern",
     },
     items: [
@@ -221,8 +221,7 @@ export const productV2Content = {
       },
     ],
     intensityNote:
-      "The intensity of every mode is adjustable. Increase it gradually until the stimulation feels noticeable but comfortable.",
-    cta: heroPurchaseCta,
+      "The intensity of every mode is adjustable. Begin at a low intensity and increase it gradually until the stimulation feels clearly noticeable but comfortable. Higher intensity does not mean better results.",
   },
 
   features: {
@@ -481,21 +480,25 @@ export const productV2Content = {
       {
         question: "What does the stimulation feel like?",
         answer:
-          "Most Neuvago modes provide mild or very mild stimulation that feels like a light tingling or pricking sensation at the ear. The intensity can be adjusted in small steps and should feel noticeable but comfortable. Relief uses slower, more distinct pulses and may therefore feel more pronounced than the other modes.",
-        answerLink: {
-          label: "Read the sensation and comfort guide",
-          href: "/learn/what-does-vagus-nerve-stimulation-feel-like",
-        } satisfies ProductV2Cta,
+          "Most Neuvago modes provide mild or very mild stimulation that feels like a light tingling or pricking sensation at the ear. The intensity can be adjusted in small steps and should feel clearly noticeable but comfortable. Relief uses slower, more distinct pulses and may therefore feel more pronounced than the other modes. Higher intensity does not mean better results, and the stimulation should never feel painful.",
       },
       {
         question: "What are the four stimulation modes?",
-        answer:
-          "Neuvago includes four stimulation modes: Sleep, Relax, Meditation and Relief. Sleep alternates between faster and slower stimulation rhythms and is designed for evening wind-down, rest and better sleep. Relax uses a gentle rhythm of four seconds of stimulation followed by four seconds of pause, designed for everyday stress, relaxation and a calmer state. Meditation uses the same four-seconds-on, four-seconds-off rhythm with a denser pulse pattern, designed for meditation, focus and concentration. Relief uses slower, more distinct pulses followed by four seconds of pause, designed for moments of tension and discomfort. Every mode runs for 20 minutes, and the stimulation intensity can be adjusted directly on the device.",
+        answer: `Neuvago includes four stimulation modes: Sleep, Relax, Meditation and Relief.
+
+Sleep alternates between faster and slower stimulation rhythms and is designed for evening wind-down, rest and better sleep.
+
+Relax uses a gentle rhythm of four seconds of stimulation followed by four seconds of pause, designed for relaxation and everyday calm.
+
+Meditation uses the same four-seconds-on, four-seconds-off rhythm with a denser pulse pattern, designed for meditation, focus and concentration.
+
+Relief uses slower, more distinct pulses followed by four seconds of pause, designed for moments of tension and discomfort.
+
+Every mode runs for 20 minutes, and the stimulation intensity can be adjusted directly on the device.`,
       },
       {
         question: "How long is a Neuvago session?",
-        answer:
-          "Each Neuvago mode runs for 20 minutes. Begin at a low intensity and increase it gradually until the stimulation feels noticeable but comfortable.",
+        answer: "Each Neuvago mode runs for 20 minutes.",
       },
       {
         question: "What is included with Neuvago?",
@@ -520,25 +523,16 @@ export const productV2Content = {
         question: "What safety information should I review before use?",
         answer:
           "Read the User Manual and all supplied safety information before using Neuvago for the first time. Use the earpiece only on intact skin, begin at a low intensity and stop using the device if you experience significant discomfort or irritation. If you are uncertain whether Neuvago is suitable for you, consult a qualified healthcare professional before use.",
-        answerLink: {
-          label: "View full safety information",
-          href: "/support",
-        } satisfies ProductV2Cta,
       },
     ] satisfies ProductV2FaqItem[],
   },
 
   finalCta: {
-    eyebrow: "Neuvago",
-    title: purchaseOpen ? "Shop Neuvago." : "Explore Neuvago.",
-    description: purchaseOpen
-      ? "Review the device, what is included and continue to secure checkout."
-      : "Review what is included, how the device works and the purchase information available before checkout opens.",
-    primaryCta: purchaseCta,
-    secondaryCta: {
-      label: "How it works",
-      href: "#how-it-works",
-    } satisfies ProductV2Cta,
+    eyebrow: "THE NEUVAGO DEVICE",
+    title: "Ready to experience Neuvago?",
+    description:
+      "Discover four 20-minute stimulation modes, 30 adjustable intensity levels and everything included with Neuvago.",
+    primaryCta: finalProductCta,
     desktopImage: {
       src: "/images/neuvago/product-hero-desktop.webp",
       alt: "Neuvago device standing alone in a calm product setting.",

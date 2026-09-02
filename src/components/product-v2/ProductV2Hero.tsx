@@ -7,8 +7,10 @@ type ProductV2HeroProps = {
 };
 
 const controlledCompound = "vagusnervestimulator";
+const finalQaEnglishTitle =
+  "A non-invasive vagus nerve stimulator for everyday use.";
 
-function renderProductHeroTitle(title: string) {
+function renderControlledCompoundTitle(title: string) {
   const compoundIndex = title.indexOf(controlledCompound);
 
   if (compoundIndex === -1) {
@@ -31,7 +33,43 @@ function renderProductHeroTitle(title: string) {
   );
 }
 
+function renderProductHeroTitle(title: string) {
+  if (title === finalQaEnglishTitle) {
+    return (
+      <>
+        <span aria-hidden="true" className="lg:hidden">
+          A{" "}
+          <span
+            data-neuvago-controlled-term="non-invasive"
+            className="whitespace-nowrap hyphens-none [overflow-wrap:normal]"
+          >
+            non-invasive
+          </span>{" "}
+          vagus nerve stimulator for everyday use.
+        </span>
+        <span aria-hidden="true" className="hidden lg:block">
+          <span className="block whitespace-nowrap">
+            A{" "}
+            <span
+              data-neuvago-controlled-term="non-invasive"
+              className="whitespace-nowrap hyphens-none [overflow-wrap:normal]"
+            >
+              non-invasive
+            </span>
+          </span>
+          <span className="block whitespace-nowrap">vagus nerve</span>
+          <span className="block whitespace-nowrap">stimulator for</span>
+          <span className="block whitespace-nowrap">everyday use.</span>
+        </span>
+      </>
+    );
+  }
+
+  return renderControlledCompoundTitle(title);
+}
+
 export function ProductV2Hero({ content }: ProductV2HeroProps) {
+  const usesFinalQaEnglishTitle = content.title === finalQaEnglishTitle;
   return (
     <section className="relative isolate overflow-hidden border-b border-black/5 bg-[#f7f4ef] text-[#1f1f1c]">
       <div className="absolute inset-x-0 top-0 -z-10 h-[28rem] bg-[radial-gradient(circle_at_18%_18%,rgba(255,251,244,0.95),transparent_34%),radial-gradient(circle_at_82%_24%,rgba(224,207,184,0.28),transparent_34%)]" />
@@ -42,7 +80,14 @@ export function ProductV2Hero({ content }: ProductV2HeroProps) {
             {content.eyebrow}
           </p>
 
-          <h1 className="max-w-[15ch] [hyphens:manual] [overflow-wrap:anywhere] text-balance text-[clamp(2.85rem,11.5vw,5.3rem)] font-medium leading-[0.94] tracking-[-0.06em] text-[#1f1f1c] sm:text-[clamp(4rem,8.5vw,6.5rem)] sm:leading-[0.9] lg:text-[clamp(4.8rem,6.2vw,7.2rem)] lg:leading-[0.88] lg:tracking-[-0.075em]">
+          <h1
+            aria-label={content.title}
+            className={
+              usesFinalQaEnglishTitle
+                ? "max-w-[18ch] [hyphens:none] [overflow-wrap:normal] text-balance text-[clamp(2.85rem,11.5vw,5.3rem)] font-medium leading-[0.94] tracking-[-0.06em] text-[#1f1f1c] sm:text-[clamp(4rem,8.5vw,6.5rem)] sm:leading-[0.9] lg:max-w-none lg:text-[clamp(3.45rem,4.6vw,5.1rem)] lg:leading-[0.91] lg:tracking-[-0.065em]"
+                : "max-w-[15ch] [hyphens:manual] [overflow-wrap:anywhere] text-balance text-[clamp(2.85rem,11.5vw,5.3rem)] font-medium leading-[0.94] tracking-[-0.06em] text-[#1f1f1c] sm:text-[clamp(4rem,8.5vw,6.5rem)] sm:leading-[0.9] lg:text-[clamp(4.8rem,6.2vw,7.2rem)] lg:leading-[0.88] lg:tracking-[-0.075em]"
+            }
+          >
             {renderProductHeroTitle(content.title)}
           </h1>
 

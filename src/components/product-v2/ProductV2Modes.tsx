@@ -7,13 +7,19 @@ import {
   useRef,
   useState,
 } from "react";
-import type { productV2Content } from "@/content/product-v2";
+import type {
+  productV2Content,
+  ProductV2Cta,
+} from "@/content/product-v2";
 
-type ProductV2ModesProps = {
-  content: typeof productV2Content.modes;
+type ModesContent = typeof productV2Content.modes & {
+  cta?: ProductV2Cta;
 };
 
-type ModesContent = ProductV2ModesProps["content"];
+type ProductV2ModesProps = {
+  content: ModesContent;
+};
+
 type Mode = ModesContent["items"][number];
 
 type ModeDetailsProps = {
@@ -27,6 +33,16 @@ function ModeDetails({
   mode,
   showTitle = true,
 }: ModeDetailsProps) {
+  const separatorIndex = mode.sensation.indexOf(":");
+  const sensationLabel =
+    separatorIndex >= 0
+      ? mode.sensation.slice(0, separatorIndex)
+      : "Typical sensation";
+  const sensationText =
+    separatorIndex >= 0
+      ? mode.sensation.slice(separatorIndex + 1).trim()
+      : mode.sensation;
+
   return (
     <div>
       {showTitle ? (
@@ -56,8 +72,11 @@ function ModeDetails({
       </div>
 
       <div className="mt-6 rounded-[1.15rem] border border-white/10 bg-black/10 px-4 py-4 sm:px-5">
-        <p className="text-sm leading-7 text-[#ddd2c6]">
-          {mode.sensation}
+        <p className="text-[0.65rem] font-medium uppercase tracking-[0.24em] text-[#cdbda9]">
+          {sensationLabel}
+        </p>
+        <p className="mt-3 text-sm leading-7 text-[#ddd2c6] sm:text-base">
+          {sensationText}
         </p>
       </div>
     </div>
@@ -258,14 +277,16 @@ export function ProductV2Modes({
               </p>
             </div>
 
-            <div className="mt-7 flex justify-start lg:justify-end">
-              <Link
-                href={content.cta.href}
-                className="inline-flex items-center justify-center rounded-full bg-[#f7f4ef] px-6 py-3 text-sm font-medium text-[#1f1f1c] transition hover:bg-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-[#3a312a] motion-reduce:transition-none"
-              >
-                {content.cta.label}
-              </Link>
-            </div>
+            {content.cta ? (
+              <div className="mt-7 flex justify-start lg:justify-end">
+                <Link
+                  href={content.cta.href}
+                  className="inline-flex items-center justify-center rounded-full bg-[#f7f4ef] px-6 py-3 text-sm font-medium text-[#1f1f1c] transition hover:bg-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-[#3a312a] motion-reduce:transition-none"
+                >
+                  {content.cta.label}
+                </Link>
+              </div>
+            ) : null}
           </div>
         </div>
       </div>

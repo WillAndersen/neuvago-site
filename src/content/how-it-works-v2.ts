@@ -107,7 +107,7 @@ export const howItWorksV2Content = {
     eyebrow: "HOW IT WORKS",
     title: "How Neuvago stimulates the vagus nerve.",
     mainIntroduction:
-      "Neuvago delivers gentle, adjustable electrical impulses through an earpiece at the outer ear to stimulate the auricular branch of the vagus nerve. These sensory signals travel toward the brainstem, where vagal information is relayed into wider networks involved in autonomic regulation and brain–body communication.",
+      "Neuvago delivers gentle, adjustable electrical impulses through an earpiece at the outer ear to stimulate the auricular branch of the vagus nerve.",
     benefitStatement:
       "A non-invasive approach designed to support better sleep, calmer responses to everyday stress, focused time and recovery.",
     primaryCta: howItWorksHeroPrimaryCta,
@@ -244,8 +244,8 @@ export const howItWorksV2Content = {
       "Discover the device, the four stimulation modes and everything included with Neuvago.",
     primaryCta: howItWorksHeroPrimaryCta,
     secondaryCta: {
-      label: "How to use Neuvago",
-      href: "/how-to-use",
+      label: "Explore the Product",
+      href: "/product",
     } satisfies HowItWorksV2Cta,
     image: {
       src: "/images/neuvago/launch/product-hero-desktop.webp",

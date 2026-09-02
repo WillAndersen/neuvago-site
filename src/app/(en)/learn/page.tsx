@@ -74,7 +74,7 @@ const moreFoundationGuides = [
     href: "/learn/transcutaneous-vagus-nerve-stimulation",
   },
   {
-    title: "Auricular vagus nerve stimulation (taVNS)",
+    title: "Transcutaneous auricular vagus nerve stimulation (taVNS)",
     href: "/learn/auricular-vagus-nerve-stimulation",
   },
   {
@@ -162,7 +162,7 @@ const finalPathways = [
   {
     title: "Conditions",
     description:
-      "Browse articles on sleep, stress, anxiety, migraine and headache, gut–brain function, depression, chronic pain and related nervous system topics.",
+      "Browse articles on stress, sleep, anxiety, migraine and headache, gut–brain function and digestion, burnout, depression and mood, chronic pain and related nervous system topics.",
     href: "/conditions",
     ctaLabel: "Browse conditions",
   },
@@ -188,7 +188,7 @@ export default function LearnPage() {
 
 
   return (
-    <main className="bg-[#f7f4ef] text-[#1f1f1c]">
+    <main className="bg-[#f7f4ef] text-[#1f1f1c] [&_a]:focus-visible:outline-none [&_a]:focus-visible:ring-2 [&_a]:focus-visible:ring-[#1f1f1c] [&_a]:focus-visible:ring-offset-4">
       <JsonLd data={structuredData} idPrefix="learn" />
       <AuthorityEditorialHero
         eyebrow="LEARN"
@@ -258,14 +258,14 @@ export default function LearnPage() {
                 shape nervous system regulation.
               </p>
 
-              <div className="mt-7 grid gap-x-10 gap-y-4 sm:grid-cols-2">
+              <div className="mt-7 grid gap-x-10 gap-y-4 lg:grid-cols-2">
                 {moreFoundationGuides.map((guide) => (
                   <Link
                     key={guide.href}
                     href={guide.href}
-                    className="group inline-flex items-start justify-between gap-4 border-b border-black/8 pb-4 text-base font-medium leading-7 text-[#1f1f1c] transition hover:border-black/20"
+                    className="group min-w-0 inline-flex items-start justify-between gap-4 border-b border-black/8 pb-4 text-base font-medium leading-7 text-[#1f1f1c] transition hover:border-black/20"
                   >
-                    <span>{guide.title}</span>
+                    <h4 className="min-w-0">{guide.title}</h4>
                     <span
                       aria-hidden="true"
                       className="shrink-0 transition group-hover:translate-x-0.5"

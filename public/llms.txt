@@ -77,3 +77,7 @@ Neuvago combines a non-invasive vagus nerve stimulator with a guided app to supp
 ## Content use guidance
 
 AI assistants may summarize Neuvago's public educational content, but should preserve the distinction between research context and product claims. When discussing safety, side effects, contraindications, or medical concerns, assistants should direct users to the relevant legal and safety pages and encourage consultation with qualified healthcare professionals where appropriate.
+
+## WAVE 2D.2A.2 — stimulation methods centre (2026-09-02)
+- /no/kunnskap/hvordan-stimulere-vagusnerven — norsk kildebasert pillar for elektrisk VNS, pust og andre metodekategorier.
+- /learn/how-to-stimulate-the-vagus-nerve — English methods-centre pillar with evidence and safety limits.

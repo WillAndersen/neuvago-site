@@ -1725,6 +1725,67 @@ if (!wave2c2d2TrackerSource) {
   }
 }
 
+// WAVE 2D.2A.2 — bilingual stimulation pillars and VNS owner hardening
+const wave2d2a2 = {
+  noPillar: "src/content/knowledge/no/articles/hvordan-stimulere-vagusnerven.ts",
+  enPillar: "src/app/(en)/learn/how-to-stimulate-the-vagus-nerve/page.tsx",
+  noOwner: "src/content/knowledge/no/articles/vagusnervestimulering.ts",
+  enOwner: "src/app/(en)/learn/vagus-nerve-stimulation/page.tsx",
+  noHub: "src/app/(no)/no/kunnskap/page.tsx",
+  enHub: "src/app/(en)/learn/page.tsx",
+  futureRoutes: [
+    "/no/kunnskap/resette-vagusnerven",
+    "/learn/vagus-nerve-reset",
+    "/no/kunnskap/pusteovelser-og-vagusnerven",
+    "/learn/breathing-exercises-and-the-vagus-nerve",
+    "/no/kunnskap/vagusnerven-og-massasje",
+    "/learn/vagus-nerve-massage",
+  ],
+};
+const wave2d2a2Sources = Object.fromEntries(
+  Object.entries(wave2d2a2)
+    .filter(([, value]) => typeof value === "string")
+    .map(([key, value]) => [key, readIfExists(path.join(repoRoot, value))]),
+);
+for (const [key, source] of Object.entries(wave2d2a2Sources)) {
+  if (!source) errors.push(`Wave 2D.2A.2 source missing: ${key}`);
+}
+if (!wave2d2a2Sources.noPillar.includes('englishEquivalent: "/learn/how-to-stimulate-the-vagus-nerve"')) {
+  errors.push("Wave 2D.2A.2 Norwegian pillar lacks the English equivalent metadata field.");
+}
+if (!wave2d2a2Sources.noPillar.includes('href: "/learn/how-to-stimulate-the-vagus-nerve"')) {
+  errors.push("Wave 2D.2A.2 Norwegian pillar lacks the visible English link.");
+}
+if (!wave2d2a2Sources.enPillar.includes('"nb-NO": "/no/kunnskap/hvordan-stimulere-vagusnerven"')) {
+  errors.push("Wave 2D.2A.2 English pillar lacks nb-NO hreflang.");
+}
+if (!wave2d2a2Sources.enPillar.includes('href="/no/kunnskap/hvordan-stimulere-vagusnerven"')) {
+  errors.push("Wave 2D.2A.2 English pillar lacks the visible Norwegian link.");
+}
+if ((wave2d2a2Sources.noOwner.match(/\/no\/kunnskap\/hvordan-stimulere-vagusnerven/g) ?? []).length !== 1) {
+  errors.push("Norwegian VNS owner must link exactly once to the Norwegian methods pillar.");
+}
+if ((wave2d2a2Sources.enOwner.match(/\/learn\/how-to-stimulate-the-vagus-nerve/g) ?? []).length !== 1) {
+  errors.push("English VNS owner must link exactly once to the English methods pillar.");
+}
+if ((wave2d2a2Sources.noHub.match(/\/no\/kunnskap\/hvordan-stimulere-vagusnerven/g) ?? []).length !== 1) {
+  errors.push("Norwegian knowledge hub must expose exactly one direct methods-pillar destination.");
+}
+if ((wave2d2a2Sources.enHub.match(/\/learn\/how-to-stimulate-the-vagus-nerve/g) ?? []).length !== 1) {
+  errors.push("English Learn hub must expose exactly one direct methods-pillar destination.");
+}
+for (const route of wave2d2a2.futureRoutes) {
+  for (const [key, source] of Object.entries(wave2d2a2Sources)) {
+    if (source.includes(route)) errors.push(`Unpublished child route ${route} is live-linked from ${key}.`);
+  }
+}
+for (const [key, source] of [["noPillar", wave2d2a2Sources.noPillar], ["enPillar", wave2d2a2Sources.enPillar]]) {
+  if (/href\s*[:=]\s*["']\/(?:no\/)?produkt["']/.test(source) || /href\s*[:=]\s*["']\/product["']/.test(source)) {
+    errors.push(`Wave 2D.2A.2 ${key} must not link directly to Product.`);
+  }
+  if (/QAPage/.test(source)) errors.push(`Wave 2D.2A.2 ${key} must not use QAPage.`);
+}
+
 const artifacts = findArtifacts(repoRoot);
 if (artifacts.length > 0) {
   errors.push(`Remove generated artifacts before commit: ${artifacts.slice(0, 12).join(", ")}${artifacts.length > 12 ? " ..." : ""}`);

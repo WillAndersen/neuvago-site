@@ -88,7 +88,9 @@ const faq = [
 ] as const;
 
 export default function NorwegianKnowledgeHubPage() {
-  const articles = getPublishedNorwegianKnowledgeArticles();
+  const articles = getPublishedNorwegianKnowledgeArticles().filter(
+    (article) => article.slug !== "hvordan-stimulere-vagusnerven"
+  );
   const decisionGuides = getPublishedDecisionGuidesForLocale("no");
   const structuredData = buildNorwegianKnowledgeHubStructuredData();
 
@@ -127,6 +129,18 @@ export default function NorwegianKnowledgeHubPage() {
           <div aria-hidden="true" className="hidden min-h-[22rem] lg:block" />
         </div>
       </section>
+
+      <section data-wave2d2a2-methods-centre="no" className="border-b border-black/5 bg-[#1f1f1c] px-5 py-14 text-white sm:px-8 lg:px-12 lg:py-18">
+        <div className="mx-auto grid max-w-[88rem] gap-8 lg:grid-cols-[0.72fr_0.28fr] lg:items-end">
+          <div>
+            <p className="text-xs font-medium uppercase tracking-[0.24em] text-white/55">Fagsenter: metoder</p>
+            <h2 className="mt-4 max-w-4xl text-3xl font-medium tracking-[-0.04em] sm:text-5xl">Hvordan stimulere vagusnerven?</h2>
+            <p className="mt-6 max-w-3xl text-base leading-8 text-white/72">En kildebasert oversikt over elektrisk VNS, pust, bevegelse, avslapning og andre metoder – med tydelige grenser for hva forskningen faktisk viser.</p>
+          </div>
+          <div className="lg:text-right"><Link href="/no/kunnskap/hvordan-stimulere-vagusnerven" className="inline-flex rounded-full bg-white px-5 py-3 text-sm font-medium text-[#1f1f1c]">Utforsk metodene</Link></div>
+        </div>
+      </section>
+
 
       <section
         id="artikler"

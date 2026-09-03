@@ -39,7 +39,7 @@ export const vagusnervestimuleringArticle = {
   searchIntent: "informational",
 
   publishedAt: "2026-08-17",
-  modifiedAt: "2026-08-17",
+  modifiedAt: "2026-09-02",
   readingTimeMinutes: 13,
 
   authorId: "john-willander",
@@ -321,6 +321,40 @@ export const vagusnervestimuleringArticle = {
         },
       ],
     },
+    {
+      id: "direkte-svar-vagusnervestimulering",
+      eyebrow: "Direkte svar på vanlige søk",
+      title: "Hva er vagusnervestimulering – og hva er en vagusnervestimulator?",
+      blocks: [
+        {
+          type: "paragraph",
+          text: "Vagusnervestimulering, forkortet VNS, betyr i medisinsk og teknisk sammenheng vanligvis at en enhet leverer kontrollerte elektriske impulser med mål om å påvirke nervebaner knyttet til vagusnerven. En vagusnervestimulator er derfor en enhet som leverer slik stimulering. Begrepene sier likevel ikke alene om systemet er implantert eller eksternt, hvor stimuleringen gis, hvilken protokoll som brukes, eller hva produktet er ment for.",
+        },
+        {
+          type: "paragraph",
+          text: "Implantert medisinsk VNS bruker kirurgisk plasserte komponenter og medisinsk oppfølging for produkt- og indikasjonsspesifikke formål. Ikke-invasive systemer bruker elektroder på huden, for eksempel ved halsen eller det ytre øret. tVNS og taVNS er ikke én standardisert dose: enhet, plassering, waveform, intensitet, øktlengde, populasjon og utfall påvirker hva en studie faktisk kan vise.",
+        },
+        {
+          type: "paragraph",
+          text: "VNS brukes medisinsk innenfor rammene til konkrete regulerte systemer og jurisdiksjoner. At en implantert enhetskategori har en bestemt amerikansk oppføring, betyr ikke at alle stimulatorer har samme indikasjon eller at dokumentasjonen gjelder Neuvago. Forskning på én enhet eller protokoll overføres heller ikke automatisk til andre produkter.",
+        },
+        {
+          type: "paragraph",
+          text: "Den brede methods-pillaren forklarer hvordan elektrisk VNS skiller seg fra pust, bevegelse, avslapning og andre praksiser. Disse praksisene kan påvirke opplevelse eller autonome mål, men de er ikke automatisk definert elektrisk VNS. Denne siden beholder derfor eierskapet til selve VNS-kategorien, mens pillaren eier det bredere spørsmålet om alle måter vagusnerven omtales som stimulert på.",
+        },
+        {
+          type: "callout",
+          tone: "scope",
+          title: "Fire ting å kontrollere før du sammenligner stimulatorer",
+          paragraphs: [
+            "Se hvilken metode og hvilket stimuleringssted som faktisk brukes.",
+            "Kontroller enhet, parametere, populasjon og utfall i dokumentasjonen.",
+            "Skill medisinsk tiltenkt bruk fra generell velværebruk.",
+            "Ikke anta at sterkere følelse eller høyere intensitet betyr bedre effekt.",
+          ],
+        },
+      ],
+    },
   ],
 
   sources: [
@@ -403,6 +437,13 @@ export const vagusnervestimuleringArticle = {
     "hvem-bor-vaere-forsiktig-med-vagusnervestimulering",
   ],
   relatedLinks: [
+    {
+      title: "Hvordan stimulere vagusnerven?",
+      description:
+        "Se den brede, kildebaserte oversikten over elektrisk VNS, pust, bevegelse, avslapning og viktige sikkerhetsgrenser.",
+      href: "/no/kunnskap/hvordan-stimulere-vagusnerven",
+      label: "Utforsk alle metodekategoriene",
+    },
     {
       title: "Hvordan velge vagusnervestimulator",
       description:

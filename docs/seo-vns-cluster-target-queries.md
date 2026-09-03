@@ -109,3 +109,14 @@ Watch these pairs in Search Console.
 | `/no/kunnskap/restitusjon-og-regulering` vs `/no/tilstander/stress` vs `/no/tilstander/sovn` vs `/no/kunnskap/hrv-og-vagusnerven` | Recovery/stress/sleep/HRV overlap | NO-019 owns practical recovery-capacity and routine intent; stress and sleep own condition pathways; the HRV guide owns measurement interpretation. |
 | `/conditions/stress` vs `/learn/nervous-system-regulation` | Stress/regulation overlap | Conditions owns problem; Learn owns concept. |
 | `/research/topics/safety-and-tolerability` vs product page | Safety/commercial overlap | Safety page should own safety queries. Product should link to it. |
+
+## WAVE 2D.2A.2 SERP OWNER LOCK
+
+| Route | Primary owner job | PAA families | Must not absorb |
+|---|---|---|---|
+| `/no/kunnskap/hvordan-stimulere-vagusnerven` | Broad Norwegian methods overview | stimulere, aktivere, øvelser, selv, tid | full VNS definition, reset detail, breathing detail, massage detail |
+| `/learn/how-to-stimulate-the-vagus-nerve` | Broad English methods overview | stimulate, activate, exercises, self, time | full VNS definition, reset detail, breathing detail, massage detail |
+| `/no/kunnskap/vagusnervestimulering` | Electrical VNS definition and device category | hva er VNS, hva er en stimulator, medical vs non-invasive | all behavioural methods |
+| `/learn/vagus-nerve-stimulation` | Electrical VNS definition and device category | what is VNS, what is a stimulator, implanted vs external | all behavioural methods |
+
+Future reset, breathing and massage routes remain unpublished and must not receive live links in this wave.

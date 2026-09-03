@@ -280,6 +280,18 @@ export default function LearnPage() {
         </div>
       </section>
 
+      <section data-wave2d2a2-methods-centre="en" className="border-b border-black/5 bg-[#1f1f1c] px-5 py-14 text-white sm:px-8 lg:px-12 lg:py-18">
+        <div className="mx-auto grid max-w-[88rem] gap-8 lg:grid-cols-[0.72fr_0.28fr] lg:items-end">
+          <div>
+            <p className="text-xs font-medium uppercase tracking-[0.24em] text-white/55">Vagus nerve methods centre</p>
+            <h2 className="mt-4 max-w-4xl text-3xl font-medium tracking-[-0.04em] sm:text-5xl">How to stimulate the vagus nerve</h2>
+            <p className="mt-6 max-w-3xl text-base leading-8 text-white/72">A source-based guide to electrical VNS, breathing, movement, relaxation and other methods—with clear limits around what the evidence can actually show.</p>
+          </div>
+          <div className="lg:text-right"><Link href="/learn/how-to-stimulate-the-vagus-nerve" className="inline-flex rounded-full bg-white px-5 py-3 text-sm font-medium text-[#1f1f1c]">Explore the methods</Link></div>
+        </div>
+      </section>
+
+
 
 
       <section className="border-b border-black/5 bg-[#eee7dd]">

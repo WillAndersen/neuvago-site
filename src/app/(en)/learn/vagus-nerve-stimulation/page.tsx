@@ -815,6 +815,25 @@ export default function VagusNerveStimulationPage() {
           </div>
         </div>
       </section>
+
+      <section data-wave2d2a2-vns-overview-hardening="true" className="border-t border-black/5 bg-[#eee7dd] px-5 py-16 sm:px-8 lg:px-12 lg:py-20">
+        <div className="mx-auto max-w-[88rem]">
+          <p className="text-xs font-medium uppercase tracking-[0.22em] text-[#7b7167]">Direct answers</p>
+          <h2 className="mt-4 max-w-4xl text-3xl font-medium tracking-[-0.04em] sm:text-5xl">What is vagus nerve stimulation—and what is a vagus nerve stimulator?</h2>
+          <div className="mt-8 grid gap-6 lg:grid-cols-2">
+            <div className="space-y-5 text-base leading-8 text-[#5f5a52]">
+              <p>In medical and technical usage, vagus nerve stimulation normally means controlled electrical stimulation delivered by a device with the aim of influencing pathways associated with the vagus nerve. A vagus nerve stimulator is a device that delivers that stimulation. The name alone does not tell you whether the system is implanted or external, where it stimulates, which protocol it uses or what it is intended to do.</p>
+              <p>Implanted medical VNS uses surgically placed components and clinical follow-up. Non-invasive systems use surface electrodes, including cervical and auricular approaches. tVNS and taVNS are not one standard dose: device, site, waveform, intensity, session design, population and outcome determine what a study can support.</p>
+            </div>
+            <div className="space-y-5 text-base leading-8 text-[#5f5a52]">
+              <p>Medical use belongs to specific regulated products, indications and jurisdictions. An implanted-device listing does not give every stimulator the same indication, and evidence from one system or protocol does not automatically become evidence for Neuvago or another device.</p>
+              <p>The broader methods pillar separates electrical VNS from breathing, movement, relaxation, sound and touch. Those practices may influence experience or autonomic measures without becoming defined electrical VNS. This page remains the owner of the electrical-VNS category.</p>
+              <p><Link href="/learn/how-to-stimulate-the-vagus-nerve" className="font-medium underline underline-offset-4">Explore all stimulation-method categories and their evidence limits</Link></p>
+            </div>
+          </div>
+          <div className="mt-10 rounded-[1.5rem] border border-black/8 bg-white/65 p-6"><h3 className="text-xl font-medium">Before comparing stimulators</h3><ul className="mt-4 list-disc space-y-2 pl-5 text-sm leading-7 text-[#5f5a52]"><li>Name the method and stimulation site.</li><li>Check the device, parameters, population and measured outcome.</li><li>Separate medical intended use from general wellness use.</li><li>Do not treat stronger sensation as proof of better engagement or outcome.</li></ul></div>
+        </div>
+      </section>
     </main>
   );
 }

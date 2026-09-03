@@ -483,3 +483,9 @@ Do not add email addresses, account IDs, health information, free-text form
 content or other personal data to these event parameters. Acquisition source,
 medium and campaign should continue to come from the configured analytics
 provider rather than being inferred by the site code.
+
+## WAVE 2D.2A.2 MEASUREMENT AND PRIVACY LOCK
+
+The new methods-centre pages use the existing organic-conversion architecture only. No event name, event parameter or analytics schema is added.
+
+Do not record method preference, breathing choice, exercise interaction, symptom, diagnosis, health history, free text or a personalised conclusion. Ordinary editorial navigation and the late How It Works pathway must remain usable without health-data inference.

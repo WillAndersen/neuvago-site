@@ -111,6 +111,12 @@ const everydayQuestionGroups = [
       "Clear articles for moments when the main question is what may help in everyday life.",
     articles: [
       {
+        title: "Vagus nerve reset",
+        description:
+          "Understand what the popular reset phrase means, why there is no literal reset button and what gentle regulation practices can—and cannot—show.",
+        href: "/learn/vagus-nerve-reset",
+      },
+      {
         title: "How to calm your nervous system",
         description:
           "Explore practical, science-informed ways to help the body move from activation toward a calmer state.",

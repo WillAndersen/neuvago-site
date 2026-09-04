@@ -36,7 +36,7 @@ export const hvordanStimulereVagusnervenArticle = {
   searchIntent: "informational",
 
   publishedAt: "2026-09-02",
-  modifiedAt: "2026-09-02",
+  modifiedAt: "2026-09-04",
   readingTimeMinutes: 18,
 
   authorId: "john-willander",
@@ -511,6 +511,13 @@ export const hvordanStimulereVagusnervenArticle = {
         "Read the semantically equivalent English methods-centre guide.",
       href: "/learn/how-to-stimulate-the-vagus-nerve",
       label: "Read in English",
+    },
+    {
+      title: "Kan man «resette» vagusnerven?",
+      description:
+        "Les hva reset-uttrykket betyr, hvorfor ingen universell sju-minutters nullstilling er dokumentert, og hvilke grenser som gjelder for pust, HRV og elektrisk VNS.",
+      href: "/no/kunnskap/resette-vagusnerven",
+      label: "Forstå reset-påstanden",
     },
     {
       title: "Slik fungerer Neuvago",

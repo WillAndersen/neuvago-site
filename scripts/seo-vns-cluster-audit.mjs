@@ -1,3 +1,4 @@
+import { execFileSync } from "node:child_process";
 import { existsSync, readdirSync, readFileSync, statSync } from "node:fs";
 import path from "node:path";
 
@@ -1734,8 +1735,6 @@ const wave2d2a2 = {
   noHub: "src/app/(no)/no/kunnskap/page.tsx",
   enHub: "src/app/(en)/learn/page.tsx",
   futureRoutes: [
-    "/no/kunnskap/resette-vagusnerven",
-    "/learn/vagus-nerve-reset",
     "/no/kunnskap/pusteovelser-og-vagusnerven",
     "/learn/breathing-exercises-and-the-vagus-nerve",
     "/no/kunnskap/vagusnerven-og-massasje",
@@ -1786,6 +1785,91 @@ for (const [key, source] of [["noPillar", wave2d2a2Sources.noPillar], ["enPillar
   if (/QAPage/.test(source)) errors.push(`Wave 2D.2A.2 ${key} must not use QAPage.`);
 }
 
+// WAVE 2D.2B.2 — bilingual vagus nerve reset pages
+const wave2d2b2Routes = [
+  "/no/kunnskap/resette-vagusnerven",
+  "/learn/vagus-nerve-reset",
+];
+const wave2d2b2 = {
+  noReset: "src/content/knowledge/no/articles/resette-vagusnerven.ts",
+  enReset: "src/app/(en)/learn/vagus-nerve-reset/page.tsx",
+  noRegistry: "src/content/knowledge/no/registry.ts",
+  noMethods: "src/content/knowledge/no/articles/hvordan-stimulere-vagusnerven.ts",
+  enMethods: "src/app/(en)/learn/how-to-stimulate-the-vagus-nerve/page.tsx",
+  noHub: "src/app/(no)/no/kunnskap/page.tsx",
+  enHub: "src/app/(en)/learn/page.tsx",
+  sitemap: "src/app/sitemap.ts",
+  llms: "public/llms.txt",
+  sourceLock: "docs/seo/wave2d2b-reset-pages-source-and-claims-lock.md",
+};
+const wave2d2b2Sources = Object.fromEntries(
+  Object.entries(wave2d2b2).map(([key, value]) => [key, readIfExists(path.join(repoRoot, value))]),
+);
+for (const [key, source] of Object.entries(wave2d2b2Sources)) {
+  if (!source) errors.push(`Wave 2D.2B.2 source missing: ${key}`);
+}
+const wave2d2b2NoSections = [
+  "kort-svar",
+  "hva-reset-betyr",
+  "syv-minutters-reset",
+  "hva-som-kan-pavirke-ro",
+  "puls-hrv-og-tolkning",
+  "forskjellen-fra-elektrisk-vns",
+  "trygge-praktiske-rammer",
+  "videre-lesning-og-kilder",
+];
+const wave2d2b2EnSections = [
+  "short-answer",
+  "what-reset-means",
+  "seven-minute-reset",
+  "what-may-support-calm",
+  "heart-rate-hrv-and-interpretation",
+  "difference-from-electrical-vns",
+  "practical-safety-boundaries",
+  "further-reading-and-sources",
+];
+const wave2d2b2SourceIds = ["A-001", "A-002", "A-003", "B-001", "B-002", "B-003", "B-004", "B-005", "B-006", "B-007"];
+for (const sectionId of wave2d2b2NoSections) {
+  if (!wave2d2b2Sources.noReset.includes(`id: "${sectionId}"`)) errors.push(`Norwegian reset section missing: ${sectionId}`);
+}
+for (const sectionId of wave2d2b2EnSections) {
+  if (!wave2d2b2Sources.enReset.includes(`id: "${sectionId}"`)) errors.push(`English reset section missing: ${sectionId}`);
+}
+for (const sourceId of wave2d2b2SourceIds) {
+  if (!wave2d2b2Sources.noReset.includes(`id: "${sourceId}"`)) errors.push(`Norwegian reset source missing: ${sourceId}`);
+  if (!wave2d2b2Sources.enReset.includes(`id: "${sourceId}"`)) errors.push(`English reset source missing: ${sourceId}`);
+}
+if (!wave2d2b2Sources.noReset.includes('englishEquivalent: "/learn/vagus-nerve-reset"')) errors.push("Norwegian reset page lacks English equivalent metadata.");
+if (!wave2d2b2Sources.noReset.includes('href: "/learn/vagus-nerve-reset"') || !wave2d2b2Sources.noReset.includes('label: "Read in English"')) errors.push("Norwegian reset page lacks visible English language link.");
+if (!wave2d2b2Sources.enReset.includes('"nb-NO": "/no/kunnskap/resette-vagusnerven"') || !wave2d2b2Sources.enReset.includes('"x-default": path')) errors.push("English reset page lacks reciprocal hreflang and x-default.");
+if (!wave2d2b2Sources.enReset.includes('href="/no/kunnskap/resette-vagusnerven"') || !wave2d2b2Sources.enReset.includes("Les på norsk")) errors.push("English reset page lacks visible Norwegian language link.");
+if ((wave2d2b2Sources.noRegistry.match(/resetteVagusnervenArticle/g) ?? []).length !== 2) errors.push("Norwegian reset article must be imported and registered exactly once.");
+if ((wave2d2b2Sources.noMethods.match(/\/no\/kunnskap\/resette-vagusnerven/g) ?? []).length !== 1) errors.push("Norwegian methods pillar must link exactly once to reset page.");
+if ((wave2d2b2Sources.enMethods.match(/\/learn\/vagus-nerve-reset/g) ?? []).length !== 1) errors.push("English methods pillar must link exactly once to reset page.");
+if ((wave2d2b2Sources.enHub.match(/\/learn\/vagus-nerve-reset/g) ?? []).length !== 1) errors.push("English Learn hub must expose exactly one reset destination.");
+if (wave2d2b2Sources.noHub.includes("resette-vagusnerven")) errors.push("Norwegian hub must remain registry-driven without an explicit reset route.");
+if ((wave2d2b2Sources.sitemap.match(/\/learn\/vagus-nerve-reset/g) ?? []).length !== 1) errors.push("Sitemap source must contain the English reset route exactly once.");
+if ((wave2d2b2Sources.llms.match(/\/no\/kunnskap\/resette-vagusnerven/g) ?? []).length !== 1 || (wave2d2b2Sources.llms.match(/\/learn\/vagus-nerve-reset/g) ?? []).length !== 1) errors.push("llms.txt must publish both reset routes exactly once.");
+for (const [key, source] of [["noReset", wave2d2b2Sources.noReset], ["enReset", wave2d2b2Sources.enReset]]) {
+  if (/QAPage/.test(source)) errors.push(`Wave 2D.2B.2 ${key} must not use QAPage.`);
+  if (/href\s*[:=]\s*["']\/(?:no\/)?(?:produkt|product)["']/.test(source)) errors.push(`Wave 2D.2B.2 ${key} must not link directly to Product.`);
+  if (/<(?:form|input|textarea|select)\b/.test(source)) errors.push(`Wave 2D.2B.2 ${key} must not contain forms or health inputs.`);
+  if (/\b(?:gtag|dataLayer|trackEvent|OrganicConversionTracker|TrackedLink|analytics)\b|\btrack[A-Z][A-Za-z0-9_]*\s*\(/.test(source)) errors.push(`Wave 2D.2B.2 ${key} must not add tracking logic.`);
+  for (const route of [
+    "/no/kunnskap/pusteovelser-og-vagusnerven",
+    "/learn/breathing-exercises-and-the-vagus-nerve",
+    "/no/kunnskap/vagusnerven-og-massasje",
+    "/learn/vagus-nerve-massage",
+  ]) {
+    if (source.includes(route)) errors.push(`Future child route ${route} must remain absent from ${key}.`);
+  }
+}
+if (!wave2d2b2Sources.enReset.includes("buildAuthorityPageStructuredData")) errors.push("English reset page must emit Article and BreadcrumbList through the authority structured-data builder.");
+if (!wave2d2b2Sources.noReset.includes("Ingen universell metode kan garanteres å resette vagusnerven på sju minutter")) errors.push("Norwegian reset page lacks the seven-minute no-guarantee boundary.");
+if (!wave2d2b2Sources.enReset.includes("cannot be guaranteed to work in seven minutes")) errors.push("English reset page lacks the seven-minute no-guarantee boundary.");
+if (!wave2d2b2Sources.noReset.includes("Dette er ikke bevis for at ingen relevant studie finnes")) errors.push("Norwegian reset page lacks the negative-evidence limitation.");
+if (!wave2d2b2Sources.enReset.includes("This is not evidence that no relevant study exists")) errors.push("English reset page lacks the negative-evidence limitation.");
+
 const artifacts = findArtifacts(repoRoot);
 if (artifacts.length > 0) {
   errors.push(`Remove generated artifacts before commit: ${artifacts.slice(0, 12).join(", ")}${artifacts.length > 12 ? " ..." : ""}`);
@@ -1805,7 +1889,7 @@ if (errors.length > 0) {
   process.exit(1);
 }
 
-console.log(`SEO VNS cluster audit passed for ${clusterRoutes.length} routes.`);
+console.log(`SEO VNS cluster audit passed for ${clusterRoutes.length + wave2d2b2Routes.length} routes.`);
 
 
 function collectFiles(dir, fileName, matches = []) {
@@ -1870,26 +1954,35 @@ function catalogEntryForSlug(source, slug) {
   return source.slice(start, next === -1 ? source.length : next);
 }
 
-function findArtifacts(dir, matches = []) {
-  for (const entry of readdirSync(dir)) {
-    if (["node_modules", ".next", ".git", "out", "dist", "build"].includes(entry)) {
-      continue;
-    }
-
-    const absolute = path.join(dir, entry);
-    const stat = statSync(absolute);
-
-    if (stat.isDirectory()) {
-      findArtifacts(absolute, matches);
-      continue;
-    }
-
-    if (/\.(rej|orig|patch|zip)$/.test(entry) || entry.includes(".bak")) {
-      matches.push(relative(absolute));
-    }
+function findArtifacts(dir) {
+  let output = "";
+  try {
+    output = execFileSync(
+      "git",
+      ["ls-files", "--cached", "--others", "--exclude-standard", "-z"],
+      {
+        cwd: dir,
+        encoding: "utf8",
+        stdio: ["ignore", "pipe", "pipe"],
+      },
+    );
+  } catch (error) {
+    const detail =
+      error && typeof error === "object" && "stderr" in error
+        ? String(error.stderr || "").trim()
+        : "";
+    throw new Error(
+      `Could not enumerate Git-relevant repository files${detail ? `: ${detail}` : "."}`,
+    );
   }
 
-  return matches;
+  return output
+    .split("\0")
+    .filter(Boolean)
+    .filter((relativePath) => {
+      const entry = path.basename(relativePath);
+      return /\.(rej|orig|patch|zip)$/.test(entry) || entry.includes(".bak");
+    });
 }
 
 function relative(filePath) {

@@ -61,6 +61,7 @@ const routes: Array<{
   { path: "/glossary", changeFrequency: "monthly", priority: 0.78, lastModified: "2026-08-25" },
   { path: "/learn/vagus-nerve", changeFrequency: "weekly", priority: 0.82, lastModified: SEO_LAUNCH_REVIEW_DATE },
   { path: "/learn/how-to-stimulate-the-vagus-nerve", changeFrequency: "weekly", priority: 0.92, lastModified: "2026-09-02" },
+  { path: "/learn/vagus-nerve-reset", changeFrequency: "weekly", priority: 0.82, lastModified: "2026-09-04" },
   { path: "/learn/vagus-nerve-stimulation", changeFrequency: "weekly", priority: 0.86, lastModified: SEO_LAUNCH_REVIEW_DATE },
   { path: "/learn/non-invasive-vagus-nerve-stimulation", changeFrequency: "weekly", priority: 0.86, lastModified: SEO_LAUNCH_REVIEW_DATE },
   { path: "/learn/implanted-vs-non-invasive-vagus-nerve-stimulation", changeFrequency: "weekly", priority: 0.84, lastModified: "2026-08-31" },

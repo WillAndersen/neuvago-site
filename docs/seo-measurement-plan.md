@@ -489,3 +489,9 @@ provider rather than being inferred by the site code.
 The new methods-centre pages use the existing organic-conversion architecture only. No event name, event parameter or analytics schema is added.
 
 Do not record method preference, breathing choice, exercise interaction, symptom, diagnosis, health history, free text or a personalised conclusion. Ordinary editorial navigation and the late How It Works pathway must remain usable without health-data inference.
+
+## WAVE 2D.2B.2 RESET MEASUREMENT AND PRIVACY LOCK
+
+The bilingual reset pair adds no event name, event parameter, tracked action or analytics schema. Do not record which question, calming practice, breathing pattern or source card a reader chooses, and do not infer symptoms, diagnosis, health status or a personalised conclusion from ordinary editorial navigation.
+
+Measurement watchlist after publication: indexation, impressions, queries, click-through rate and cannibalisation between reset, calming, regulation, breathing, massage and electrical-VNS owners. Use aggregate search-performance data only; no health-input surface is introduced.

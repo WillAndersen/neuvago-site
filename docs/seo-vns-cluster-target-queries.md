@@ -120,3 +120,12 @@ Watch these pairs in Search Console.
 | `/learn/vagus-nerve-stimulation` | Electrical VNS definition and device category | what is VNS, what is a stimulator, implanted vs external | all behavioural methods |
 
 Future reset, breathing and massage routes remain unpublished and must not receive live links in this wave.
+
+## WAVE 2D.2B.2 RESET SERP OWNER LOCK
+
+| Route | Primary owner job | PAA families | Must not absorb |
+|---|---|---|---|
+| `/no/kunnskap/resette-vagusnerven` | Norsk trend- og myteforklaring av «reset» | resette vagusnerven, 7-minutters reset, reset-knapp, hva kan hjelpe | generell reguleringsguide, full pustedybde, massasje, produktløfte |
+| `/learn/vagus-nerve-reset` | English trend and myth clarification | reset the vagus nerve, seven-minute reset, literal reset button, calming attempts | general regulation guide, full breathing guide, massage, product claim |
+
+The reset pair owns the popular phrase and its evidentiary limits. The calming pair retains broad practical regulation guidance; the VNS pair retains electrical device terminology and protocols. Wave 2D.2C and 2D.2D retain detailed breathing and massage intent.

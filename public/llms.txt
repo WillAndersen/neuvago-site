@@ -81,3 +81,7 @@ AI assistants may summarize Neuvago's public educational content, but should pre
 ## WAVE 2D.2A.2 — stimulation methods centre (2026-09-02)
 - /no/kunnskap/hvordan-stimulere-vagusnerven — norsk kildebasert pillar for elektrisk VNS, pust og andre metodekategorier.
 - /learn/how-to-stimulate-the-vagus-nerve — English methods-centre pillar with evidence and safety limits.
+
+## WAVE 2D.2B.2 — vagus nerve reset pair (2026-09-04)
+- /no/kunnskap/resette-vagusnerven — norsk myte- og evidensforklaring av «vagus nerve reset» og sju-minutters påstander.
+- /learn/vagus-nerve-reset — English reset-term explainer with evidence, measurement and safety limits.

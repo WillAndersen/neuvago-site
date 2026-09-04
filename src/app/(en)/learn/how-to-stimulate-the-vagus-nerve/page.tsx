@@ -242,7 +242,7 @@ export default function HowToStimulateTheVagusNervePage() {
     path,
     articleSection: "Learn",
     datePublished: "2026-09-02",
-    dateModified: "2026-09-02",
+    dateModified: "2026-09-04",
     keywords: [
       "how to stimulate the vagus nerve",
       "vagus nerve exercises",
@@ -306,6 +306,7 @@ export default function HowToStimulateTheVagusNervePage() {
             <div>
               <h2 className="max-w-4xl text-3xl font-medium tracking-[-0.04em] sm:text-5xl">{section.title}</h2>
               <div className="mt-8 max-w-3xl space-y-6">{section.paragraphs.map((paragraph) => <p key={paragraph} className="text-base leading-8 text-[#5f5a52] sm:text-lg">{paragraph}</p>)}</div>
+              {section.id === "how-long-does-it-take" ? <p className="mt-8"><Link href="/learn/vagus-nerve-reset" className="font-medium underline underline-offset-4">Read what “vagus nerve reset” means—and why there is no universal seven-minute guarantee</Link></p> : null}
               {section.id === "electrical-vagus-nerve-stimulation" ? <p className="mt-8"><Link href="/learn/vagus-nerve-stimulation" className="font-medium underline underline-offset-4">Read the electrical VNS overview</Link></p> : null}
               {section.id === "breathing-and-autonomic-regulation" ? <p className="mt-8"><Link href="/learn/how-to-calm-your-nervous-system" className="font-medium underline underline-offset-4">Explore nervous-system calming practices</Link></p> : null}
               {section.id === "ear-and-neck-stimulation" ? <div className="mt-8 flex flex-wrap gap-5"><Link href="/learn/auricular-vagus-nerve-stimulation" className="font-medium underline underline-offset-4">Auricular VNS</Link><Link href="/learn/implanted-vs-non-invasive-vagus-nerve-stimulation" className="font-medium underline underline-offset-4">Implanted vs non-invasive VNS</Link></div> : null}

@@ -501,3 +501,9 @@ Measurement watchlist after publication: indexation, impressions, queries, click
 The bilingual breathing pair adds no event name, event parameter, tracked action or analytics schema. Do not record which breathing pattern, ratio, count, breath hold, question, comparison row or source card a reader chooses. Do not collect or infer symptoms, diagnosis, health status, HRV values, wearable data, breathlessness, dizziness or a personalised recommendation from ordinary editorial navigation.
 
 Measurement watchlist after publication: indexation, impressions, query families, click-through rate and cannibalisation between breathing, reset, calming, regulation, methods-centre, HRV and electrical-VNS owners. Use aggregate search-performance data only; no exercise interaction or health-input surface is introduced.
+
+## WAVE 2D.2D.2 MASSAGE MEASUREMENT AND PRIVACY LOCK
+
+The bilingual massage pair adds no event name, event parameter, tracked action or analytics schema. Do not record which touch area, pressure point, comparison row, safety warning, source card or professional-care link a reader selects. Do not collect or infer symptoms, medical history, vascular status, heart-rhythm concerns, prior syncope, pain, neurological signs or a personalised recommendation from ordinary editorial navigation.
+
+Measurement watchlist after publication: indexation, impressions, query families, click-through rate and cannibalisation between massage, ear anatomy, auricular VNS, methods, breathing, reset, safety and vagus-foundation owners. Use aggregate search-performance data only; no touch, pressure-point or health-input surface is introduced.

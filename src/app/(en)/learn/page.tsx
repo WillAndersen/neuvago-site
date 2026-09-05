@@ -123,6 +123,12 @@ const everydayQuestionGroups = [
         href: "/learn/breathing-exercises-and-the-vagus-nerve",
       },
       {
+        title: "Vagus nerve massage",
+        description:
+          "Understand what people mean by vagus nerve massage, what is actually touched, the evidence limits, and why strong carotid or neck pressure is not a home technique.",
+        href: "/learn/vagus-nerve-massage",
+      },
+      {
         title: "How to calm your nervous system",
         description:
           "Explore practical, science-informed ways to help the body move from activation toward a calmer state.",

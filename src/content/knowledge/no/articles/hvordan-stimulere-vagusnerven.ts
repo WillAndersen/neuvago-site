@@ -527,6 +527,13 @@ export const hvordanStimulereVagusnervenArticle = {
       label: "Les pusteguiden",
     },
     {
+      title: "Vagusnerven og massasje",
+      description:
+        "Forstå hva som faktisk berøres, hvorfor carotissinusmassasje ikke er en egenøvelse, og hvordan massasje skiller seg fra elektrisk VNS.",
+      href: "/no/kunnskap/vagusnerven-og-massasje",
+      label: "Les massasje- og sikkerhetsguiden",
+    },
+    {
       title: "Slik fungerer Neuvago",
       description:
         "Se den praktiske forklaringen av den ikke-invasive enheten, øreelektroden og appen innenfor Neuvagos gjeldende velværeramme.",

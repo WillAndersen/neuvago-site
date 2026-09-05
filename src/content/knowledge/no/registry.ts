@@ -2,6 +2,7 @@ import { vagusnervenArticle } from "@/content/knowledge/no/articles/vagusnerven"
 import { hvordanStimulereVagusnervenArticle } from "@/content/knowledge/no/articles/hvordan-stimulere-vagusnerven";
 import { resetteVagusnervenArticle } from "@/content/knowledge/no/articles/resette-vagusnerven";
 import { pusteovelserOgVagusnervenArticle } from "@/content/knowledge/no/articles/pusteovelser-og-vagusnerven";
+import { vagusnervenOgMassasjeArticle } from "@/content/knowledge/no/articles/vagusnerven-og-massasje";
 import { vagusnervestimuleringArticle } from "@/content/knowledge/no/articles/vagusnervestimulering";
 import { ikkeInvasivVagusnervestimuleringArticle } from "@/content/knowledge/no/articles/ikke-invasiv-vagusnervestimulering";
 import { transkutanVagusnervestimuleringArticle } from "@/content/knowledge/no/articles/transkutan-vagusnervestimulering";
@@ -31,6 +32,7 @@ const articleRegistry = [
   hvordanStimulereVagusnervenArticle,
   resetteVagusnervenArticle,
   pusteovelserOgVagusnervenArticle,
+  vagusnervenOgMassasjeArticle,
   vagusnervestimuleringArticle,
   ikkeInvasivVagusnervestimuleringArticle,
   transkutanVagusnervestimuleringArticle,

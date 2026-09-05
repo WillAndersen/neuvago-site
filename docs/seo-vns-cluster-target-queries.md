@@ -138,3 +138,12 @@ The reset pair owns the popular phrase and its evidentiary limits. The calming p
 | `/learn/breathing-exercises-and-the-vagus-nerve` | English breathing-practice and measurement explainer | slow breathing, longer exhale, 4-7-8, HRV/RSA/RespHRV | all methods, reset myth, treatment, electrical VNS, massage |
 
 The breathing pair owns the dedicated breathing intent. The methods pillars retain broad navigation, the reset pair retains reset-language and seven-minute claims, the calming pair retains general regulation guidance, and the VNS pair retains electrical device terminology and protocols. Wave 2D.2D retains massage and pressure-point intent.
+
+## WAVE 2D.2D.2 MASSAGE SERP OWNER LOCK
+
+| Route | Primary owner job | PAA families | Must not absorb |
+|---|---|---|---|
+| `/no/kunnskap/vagusnerven-og-massasje` | Norsk forklaring av «vagusnervemassasje», hva som faktisk berøres, evidens og sikkerhet | massere vagusnerven, trykkpunkt, øre-/nakkemassasje, carotissinus | full anatomi, pust, reset, elektrisk VNS, produktbruk, klinisk how-to |
+| `/learn/vagus-nerve-massage` | English massage, touch, pressure-point and safety explainer | vagus nerve massage, pressure points, ear/neck touch, carotid sinus | broad anatomy, breathing, reset, electrical VNS, product use, clinical how-to |
+
+The massage pair owns the dedicated massage and pressure-point intent. The methods pillars retain broad method navigation; the ear-anatomy and auricular-VNS pages retain detailed anatomy and electrical stimulation; the breathing and reset pairs retain their own intents. Carotid sinus massage remains a clinician-directed medical manoeuvre, not a consumer technique.

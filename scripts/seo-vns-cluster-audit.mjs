@@ -1734,10 +1734,7 @@ const wave2d2a2 = {
   enOwner: "src/app/(en)/learn/vagus-nerve-stimulation/page.tsx",
   noHub: "src/app/(no)/no/kunnskap/page.tsx",
   enHub: "src/app/(en)/learn/page.tsx",
-  futureRoutes: [
-    "/no/kunnskap/vagusnerven-og-massasje",
-    "/learn/vagus-nerve-massage",
-  ],
+  futureRoutes: [],
 };
 const wave2d2a2Sources = Object.fromEntries(
   Object.entries(wave2d2a2)
@@ -1939,6 +1936,78 @@ if (!wave2d2c2Sources.enBreathing.includes("not automatically evidence for Neuva
 if (!wave2d2c2Sources.noBreathing.includes("RespHRV")) errors.push("Norwegian breathing page lacks RespHRV terminology.");
 if (!wave2d2c2Sources.enBreathing.includes("RespHRV")) errors.push("English breathing page lacks RespHRV terminology.");
 
+// WAVE 2D.2D.2 — bilingual vagus-nerve massage pages
+const wave2d2d2Routes = [
+  "/no/kunnskap/vagusnerven-og-massasje",
+  "/learn/vagus-nerve-massage",
+];
+const wave2d2d2 = {
+  noMassage: "src/content/knowledge/no/articles/vagusnerven-og-massasje.ts",
+  enMassage: "src/app/(en)/learn/vagus-nerve-massage/page.tsx",
+  noRegistry: "src/content/knowledge/no/registry.ts",
+  noMethods: "src/content/knowledge/no/articles/hvordan-stimulere-vagusnerven.ts",
+  enMethods: "src/app/(en)/learn/how-to-stimulate-the-vagus-nerve/page.tsx",
+  noHub: "src/app/(no)/no/kunnskap/page.tsx",
+  enHub: "src/app/(en)/learn/page.tsx",
+  sitemap: "src/app/sitemap.ts",
+  llms: "public/llms.txt",
+  sourceLock: "docs/seo/wave2d2d-massage-pages-source-and-claims-lock.md",
+};
+const wave2d2d2Sources = Object.fromEntries(
+  Object.entries(wave2d2d2).map(([key, value]) => [key, readIfExists(path.join(repoRoot, value))]),
+);
+for (const [key, source] of Object.entries(wave2d2d2Sources)) {
+  if (!source) errors.push(`Wave 2D.2D.2 source missing: ${key}`);
+}
+const wave2d2d2Sections = [
+  "short-answer",
+  "what-people-mean",
+  "anatomy-and-what-is-touched",
+  "neck-and-carotid-sinus",
+  "ear-touch-and-mixed-innervation",
+  "pressure-points-and-acupressure",
+  "what-massage-studies-show",
+  "gentle-practical-boundaries",
+  "safety-stop-and-care-boundaries",
+  "further-reading-and-sources",
+];
+const wave2d2d2SourceIds = ["A-001", "A-002", "A-003", "A-004", "A-005", "B-001", "B-002", "B-004", "B-005", "B-006", "B-007", "B-008", "B-010", "B-011", "B-012", "B-013"];
+for (const sectionId of wave2d2d2Sections) {
+  if (!wave2d2d2Sources.noMassage.includes(`"id": "${sectionId}"`) && !wave2d2d2Sources.noMassage.includes(`id: "${sectionId}"`)) errors.push(`Norwegian massage section missing: ${sectionId}`);
+  if (!wave2d2d2Sources.enMassage.includes(`"id": "${sectionId}"`) && !wave2d2d2Sources.enMassage.includes(`id: "${sectionId}"`)) errors.push(`English massage section missing: ${sectionId}`);
+}
+for (const sourceId of wave2d2d2SourceIds) {
+  if (!wave2d2d2Sources.noMassage.includes(`"id": "${sourceId}"`) && !wave2d2d2Sources.noMassage.includes(`id: "${sourceId}"`)) errors.push(`Norwegian massage source missing: ${sourceId}`);
+  if (!wave2d2d2Sources.enMassage.includes(`"id": "${sourceId}"`) && !wave2d2d2Sources.enMassage.includes(`id: "${sourceId}"`)) errors.push(`English massage source missing: ${sourceId}`);
+}
+if (!wave2d2d2Sources.noMassage.includes('englishEquivalent: "/learn/vagus-nerve-massage"') && !wave2d2d2Sources.noMassage.includes('"englishEquivalent": "/learn/vagus-nerve-massage"')) errors.push("Norwegian massage page lacks English equivalent metadata.");
+if (!wave2d2d2Sources.noMassage.includes('"href": "/learn/vagus-nerve-massage"') || !wave2d2d2Sources.noMassage.includes('"label": "Read in English"')) errors.push("Norwegian massage page lacks visible English language link.");
+if (!wave2d2d2Sources.enMassage.includes('"nb-NO": "/no/kunnskap/vagusnerven-og-massasje"') || !wave2d2d2Sources.enMassage.includes('"x-default": path')) errors.push("English massage page lacks reciprocal hreflang and x-default.");
+if (!wave2d2d2Sources.enMassage.includes('href="/no/kunnskap/vagusnerven-og-massasje"') || !wave2d2d2Sources.enMassage.includes("Les på norsk")) errors.push("English massage page lacks visible Norwegian language link.");
+if ((wave2d2d2Sources.noRegistry.match(/vagusnervenOgMassasjeArticle/g) ?? []).length !== 2) errors.push("Norwegian massage article must be imported and registered exactly once.");
+if ((wave2d2d2Sources.noMethods.match(/\/no\/kunnskap\/vagusnerven-og-massasje/g) ?? []).length !== 1) errors.push("Norwegian methods pillar must link exactly once to massage page.");
+if ((wave2d2d2Sources.enMethods.match(/\/learn\/vagus-nerve-massage/g) ?? []).length !== 1) errors.push("English methods pillar must link exactly once to massage page.");
+if ((wave2d2d2Sources.enHub.match(/\/learn\/vagus-nerve-massage/g) ?? []).length !== 1) errors.push("English Learn hub must expose exactly one massage destination.");
+if (wave2d2d2Sources.noHub.includes("vagusnerven-og-massasje")) errors.push("Norwegian hub must remain registry-driven without an explicit massage route.");
+if ((wave2d2d2Sources.sitemap.match(/\/learn\/vagus-nerve-massage/g) ?? []).length !== 1) errors.push("Sitemap source must contain the English massage route exactly once.");
+if ((wave2d2d2Sources.llms.match(/\/no\/kunnskap\/vagusnerven-og-massasje/g) ?? []).length !== 1 || (wave2d2d2Sources.llms.match(/\/learn\/vagus-nerve-massage/g) ?? []).length !== 1) errors.push("llms.txt must publish both massage routes exactly once.");
+for (const [key, source] of [["noMassage", wave2d2d2Sources.noMassage], ["enMassage", wave2d2d2Sources.enMassage]]) {
+  if (/QAPage/.test(source)) errors.push(`Wave 2D.2D.2 ${key} must not use QAPage.`);
+  if (/href\s*[:=]\s*["']\/(?:no\/)?(?:produkt|product|shop)["']/.test(source)) errors.push(`Wave 2D.2D.2 ${key} must not link directly to Product or Shop.`);
+  if (/<(?:form|input|textarea|select)\b/.test(source)) errors.push(`Wave 2D.2D.2 ${key} must not contain forms or health inputs.`);
+  if (/\b(?:gtag|dataLayer|trackEvent|OrganicConversionTracker|TrackedLink|analytics)\b|\btrack[A-Z][A-Za-z0-9_]*\s*\(/.test(source)) errors.push(`Wave 2D.2D.2 ${key} must not add tracking logic.`);
+}
+if (!wave2d2d2Sources.enMassage.includes("buildAuthorityPageStructuredData")) errors.push("English massage page must emit Article and BreadcrumbList through the authority structured-data builder.");
+if (!wave2d2d2Sources.noMassage.includes("man direkte masserer selve vagusnerven")) errors.push("Norwegian massage page lacks the direct-massage distinction.");
+if (!wave2d2d2Sources.enMassage.includes("not the same as directly massaging the vagus nerve")) errors.push("English massage page lacks the direct-massage distinction.");
+if (!wave2d2d2Sources.noMassage.includes("Kraftig trykk over halspulsåren eller carotissinus")) errors.push("Norwegian massage page lacks the carotid pressure prohibition.");
+if (!wave2d2d2Sources.enMassage.includes("Strong pressure over the carotid sinus should not be taught as a self-treatment")) errors.push("English massage page lacks the carotid pressure prohibition.");
+if (!wave2d2d2Sources.noMassage.includes("klinikerstyrt medisinsk manøver")) errors.push("Norwegian massage page lacks the clinician-directed carotid distinction.");
+if (!wave2d2d2Sources.enMassage.includes("clinician-directed medical manoeuvre")) errors.push("English massage page lacks the clinician-directed carotid distinction.");
+if (!wave2d2d2Sources.noMassage.includes("blandet nerveforsyning")) errors.push("Norwegian massage page lacks the mixed ear innervation boundary.");
+if (!wave2d2d2Sources.enMassage.includes("mixed innervation")) errors.push("English massage page lacks the mixed ear innervation boundary.");
+if (!wave2d2d2Sources.noMassage.includes("ikke automatisk dokumentasjon for Neuvago")) errors.push("Norwegian massage page lacks the product-evidence boundary.");
+if (!wave2d2d2Sources.enMassage.includes("not automatically product evidence for Neuvago")) errors.push("English massage page lacks the product-evidence boundary.");
 const artifacts = findArtifacts(repoRoot);
 if (artifacts.length > 0) {
   errors.push(`Remove generated artifacts before commit: ${artifacts.slice(0, 12).join(", ")}${artifacts.length > 12 ? " ..." : ""}`);
@@ -1958,7 +2027,7 @@ if (errors.length > 0) {
   process.exit(1);
 }
 
-console.log(`SEO VNS cluster audit passed for ${clusterRoutes.length + wave2d2b2Routes.length + wave2d2c2Routes.length} routes.`);
+console.log(`SEO VNS cluster audit passed for ${clusterRoutes.length + wave2d2b2Routes.length + wave2d2c2Routes.length + wave2d2d2Routes.length} routes.`);
 
 
 function collectFiles(dir, fileName, matches = []) {

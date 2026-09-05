@@ -129,3 +129,12 @@ Future reset, breathing and massage routes remain unpublished and must not recei
 | `/learn/vagus-nerve-reset` | English trend and myth clarification | reset the vagus nerve, seven-minute reset, literal reset button, calming attempts | general regulation guide, full breathing guide, massage, product claim |
 
 The reset pair owns the popular phrase and its evidentiary limits. The calming pair retains broad practical regulation guidance; the VNS pair retains electrical device terminology and protocols. Wave 2D.2C and 2D.2D retain detailed breathing and massage intent.
+
+## WAVE 2D.2C.2 BREATHING SERP OWNER LOCK
+
+| Route | Primary owner job | PAA families | Must not absorb |
+|---|---|---|---|
+| `/no/kunnskap/pusteovelser-og-vagusnerven` | Norsk forklaring av pusteøvelser, målinger og evidensgrenser | langsom pust, forlenget utpust, 4–7–8, HRV/RSA/RespHRV | full metodeoversikt, reset-myte, behandling, elektrisk VNS, massasje |
+| `/learn/breathing-exercises-and-the-vagus-nerve` | English breathing-practice and measurement explainer | slow breathing, longer exhale, 4-7-8, HRV/RSA/RespHRV | all methods, reset myth, treatment, electrical VNS, massage |
+
+The breathing pair owns the dedicated breathing intent. The methods pillars retain broad navigation, the reset pair retains reset-language and seven-minute claims, the calming pair retains general regulation guidance, and the VNS pair retains electrical device terminology and protocols. Wave 2D.2D retains massage and pressure-point intent.

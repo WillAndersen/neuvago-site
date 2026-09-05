@@ -85,3 +85,7 @@ AI assistants may summarize Neuvago's public educational content, but should pre
 ## WAVE 2D.2B.2 — vagus nerve reset pair (2026-09-04)
 - /no/kunnskap/resette-vagusnerven — norsk myte- og evidensforklaring av «vagus nerve reset» og sju-minutters påstander.
 - /learn/vagus-nerve-reset — English reset-term explainer with evidence, measurement and safety limits.
+
+## WAVE 2D.2C.2 — breathing exercises pair (2026-09-05)
+- /no/kunnskap/pusteovelser-og-vagusnerven — norsk kildebasert guide til langsom pust, forlenget utpust, 4–7–8, HRV og evidensgrenser.
+- /learn/breathing-exercises-and-the-vagus-nerve — English guide to slow breathing, longer exhalation, 4-7-8, HRV/RespHRV and evidence limits.

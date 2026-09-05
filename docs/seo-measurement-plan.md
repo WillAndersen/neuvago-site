@@ -495,3 +495,9 @@ Do not record method preference, breathing choice, exercise interaction, symptom
 The bilingual reset pair adds no event name, event parameter, tracked action or analytics schema. Do not record which question, calming practice, breathing pattern or source card a reader chooses, and do not infer symptoms, diagnosis, health status or a personalised conclusion from ordinary editorial navigation.
 
 Measurement watchlist after publication: indexation, impressions, queries, click-through rate and cannibalisation between reset, calming, regulation, breathing, massage and electrical-VNS owners. Use aggregate search-performance data only; no health-input surface is introduced.
+
+## WAVE 2D.2C.2 BREATHING MEASUREMENT AND PRIVACY LOCK
+
+The bilingual breathing pair adds no event name, event parameter, tracked action or analytics schema. Do not record which breathing pattern, ratio, count, breath hold, question, comparison row or source card a reader chooses. Do not collect or infer symptoms, diagnosis, health status, HRV values, wearable data, breathlessness, dizziness or a personalised recommendation from ordinary editorial navigation.
+
+Measurement watchlist after publication: indexation, impressions, query families, click-through rate and cannibalisation between breathing, reset, calming, regulation, methods-centre, HRV and electrical-VNS owners. Use aggregate search-performance data only; no exercise interaction or health-input surface is introduced.

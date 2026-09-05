@@ -1735,8 +1735,6 @@ const wave2d2a2 = {
   noHub: "src/app/(no)/no/kunnskap/page.tsx",
   enHub: "src/app/(en)/learn/page.tsx",
   futureRoutes: [
-    "/no/kunnskap/pusteovelser-og-vagusnerven",
-    "/learn/breathing-exercises-and-the-vagus-nerve",
     "/no/kunnskap/vagusnerven-og-massasje",
     "/learn/vagus-nerve-massage",
   ],
@@ -1870,6 +1868,77 @@ if (!wave2d2b2Sources.enReset.includes("cannot be guaranteed to work in seven mi
 if (!wave2d2b2Sources.noReset.includes("Dette er ikke bevis for at ingen relevant studie finnes")) errors.push("Norwegian reset page lacks the negative-evidence limitation.");
 if (!wave2d2b2Sources.enReset.includes("This is not evidence that no relevant study exists")) errors.push("English reset page lacks the negative-evidence limitation.");
 
+// WAVE 2D.2C.2 — bilingual breathing exercises pages
+const wave2d2c2Routes = [
+  "/no/kunnskap/pusteovelser-og-vagusnerven",
+  "/learn/breathing-exercises-and-the-vagus-nerve",
+];
+const wave2d2c2 = {
+  noBreathing: "src/content/knowledge/no/articles/pusteovelser-og-vagusnerven.ts",
+  enBreathing: "src/app/(en)/learn/breathing-exercises-and-the-vagus-nerve/page.tsx",
+  noRegistry: "src/content/knowledge/no/registry.ts",
+  noMethods: "src/content/knowledge/no/articles/hvordan-stimulere-vagusnerven.ts",
+  enMethods: "src/app/(en)/learn/how-to-stimulate-the-vagus-nerve/page.tsx",
+  noHub: "src/app/(no)/no/kunnskap/page.tsx",
+  enHub: "src/app/(en)/learn/page.tsx",
+  sitemap: "src/app/sitemap.ts",
+  llms: "public/llms.txt",
+  sourceLock: "docs/seo/wave2d2c-breathing-pages-source-and-claims-lock.md",
+};
+const wave2d2c2Sources = Object.fromEntries(
+  Object.entries(wave2d2c2).map(([key, value]) => [key, readIfExists(path.join(repoRoot, value))]),
+);
+for (const [key, source] of Object.entries(wave2d2c2Sources)) {
+  if (!source) errors.push(`Wave 2D.2C.2 source missing: ${key}`);
+}
+const wave2d2c2Sections = [
+  "short-answer",
+  "breathing-autonomic-and-vagus-language",
+  "slow-paced-breathing",
+  "inhale-exhale-ratio",
+  "four-seven-eight",
+  "hrv-resphrv",
+  "choosing-a-pattern",
+  "safety-and-care-boundaries",
+  "further-reading-and-sources",
+];
+const wave2d2c2SourceIds = ["A-001", "A-002", "B-001", "B-002", "B-003", "B-004", "B-005", "B-006", "B-007", "B-008", "B-009", "B-010", "B-011", "B-012"];
+for (const sectionId of wave2d2c2Sections) {
+  if (!wave2d2c2Sources.noBreathing.includes(`"id": "${sectionId}"`) && !wave2d2c2Sources.noBreathing.includes(`id: "${sectionId}"`)) errors.push(`Norwegian breathing section missing: ${sectionId}`);
+  if (!wave2d2c2Sources.enBreathing.includes(`"id": "${sectionId}"`) && !wave2d2c2Sources.enBreathing.includes(`id: "${sectionId}"`)) errors.push(`English breathing section missing: ${sectionId}`);
+}
+for (const sourceId of wave2d2c2SourceIds) {
+  if (!wave2d2c2Sources.noBreathing.includes(`"id": "${sourceId}"`) && !wave2d2c2Sources.noBreathing.includes(`id: "${sourceId}"`)) errors.push(`Norwegian breathing source missing: ${sourceId}`);
+  if (!wave2d2c2Sources.enBreathing.includes(`"id": "${sourceId}"`) && !wave2d2c2Sources.enBreathing.includes(`id: "${sourceId}"`)) errors.push(`English breathing source missing: ${sourceId}`);
+}
+if (!wave2d2c2Sources.noBreathing.includes('"englishEquivalent": "/learn/breathing-exercises-and-the-vagus-nerve"') && !wave2d2c2Sources.noBreathing.includes('englishEquivalent: "/learn/breathing-exercises-and-the-vagus-nerve"')) errors.push("Norwegian breathing page lacks English equivalent metadata.");
+if (!wave2d2c2Sources.noBreathing.includes('"href": "/learn/breathing-exercises-and-the-vagus-nerve"') || !wave2d2c2Sources.noBreathing.includes('"label": "Read in English"')) errors.push("Norwegian breathing page lacks visible English language link.");
+if (!wave2d2c2Sources.enBreathing.includes('"nb-NO": "/no/kunnskap/pusteovelser-og-vagusnerven"') || !wave2d2c2Sources.enBreathing.includes('"x-default": path')) errors.push("English breathing page lacks reciprocal hreflang and x-default.");
+if (!wave2d2c2Sources.enBreathing.includes('href="/no/kunnskap/pusteovelser-og-vagusnerven"') || !wave2d2c2Sources.enBreathing.includes("Les på norsk")) errors.push("English breathing page lacks visible Norwegian language link.");
+if ((wave2d2c2Sources.noRegistry.match(/pusteovelserOgVagusnervenArticle/g) ?? []).length !== 2) errors.push("Norwegian breathing article must be imported and registered exactly once.");
+if ((wave2d2c2Sources.noMethods.match(/\/no\/kunnskap\/pusteovelser-og-vagusnerven/g) ?? []).length !== 1) errors.push("Norwegian methods pillar must link exactly once to breathing page.");
+if ((wave2d2c2Sources.enMethods.match(/\/learn\/breathing-exercises-and-the-vagus-nerve/g) ?? []).length !== 1) errors.push("English methods pillar must link exactly once to breathing page.");
+if ((wave2d2c2Sources.enHub.match(/\/learn\/breathing-exercises-and-the-vagus-nerve/g) ?? []).length !== 1) errors.push("English Learn hub must expose exactly one breathing destination.");
+if (wave2d2c2Sources.noHub.includes("pusteovelser-og-vagusnerven")) errors.push("Norwegian hub must remain registry-driven without an explicit breathing route.");
+if ((wave2d2c2Sources.sitemap.match(/\/learn\/breathing-exercises-and-the-vagus-nerve/g) ?? []).length !== 1) errors.push("Sitemap source must contain the English breathing route exactly once.");
+if ((wave2d2c2Sources.llms.match(/\/no\/kunnskap\/pusteovelser-og-vagusnerven/g) ?? []).length !== 1 || (wave2d2c2Sources.llms.match(/\/learn\/breathing-exercises-and-the-vagus-nerve/g) ?? []).length !== 1) errors.push("llms.txt must publish both breathing routes exactly once.");
+for (const [key, source] of [["noBreathing", wave2d2c2Sources.noBreathing], ["enBreathing", wave2d2c2Sources.enBreathing]]) {
+  if (/QAPage/.test(source)) errors.push(`Wave 2D.2C.2 ${key} must not use QAPage.`);
+  if (/href\s*[:=]\s*["']\/(?:no\/)?(?:produkt|product|shop)["']/.test(source)) errors.push(`Wave 2D.2C.2 ${key} must not link directly to Product or Shop.`);
+  if (/<(?:form|input|textarea|select)\b/.test(source)) errors.push(`Wave 2D.2C.2 ${key} must not contain forms or health inputs.`);
+  if (/\b(?:gtag|dataLayer|trackEvent|OrganicConversionTracker|TrackedLink|analytics)\b|\btrack[A-Z][A-Za-z0-9_]*\s*\(/.test(source)) errors.push(`Wave 2D.2C.2 ${key} must not add tracking logic.`);
+  for (const route of ["/no/kunnskap/vagusnerven-og-massasje", "/learn/vagus-nerve-massage"]) {
+    if (source.includes(route)) errors.push(`Future massage route ${route} must remain absent from ${key}.`);
+  }
+}
+if (!wave2d2c2Sources.enBreathing.includes("buildAuthorityPageStructuredData")) errors.push("English breathing page must emit Article and BreadcrumbList through the authority structured-data builder.");
+if (!wave2d2c2Sources.noBreathing.includes("Det finnes ikke én pusteteknikk som er etablert som best for alle")) errors.push("Norwegian breathing page lacks the no-universal-best boundary.");
+if (!wave2d2c2Sources.enBreathing.includes("No breathing technique is established as best for every person")) errors.push("English breathing page lacks the no-universal-best boundary.");
+if (!wave2d2c2Sources.noBreathing.includes("ikke automatisk dokumentasjon for Neuvago")) errors.push("Norwegian breathing page lacks the product-evidence boundary.");
+if (!wave2d2c2Sources.enBreathing.includes("not automatically evidence for Neuvago")) errors.push("English breathing page lacks the product-evidence boundary.");
+if (!wave2d2c2Sources.noBreathing.includes("RespHRV")) errors.push("Norwegian breathing page lacks RespHRV terminology.");
+if (!wave2d2c2Sources.enBreathing.includes("RespHRV")) errors.push("English breathing page lacks RespHRV terminology.");
+
 const artifacts = findArtifacts(repoRoot);
 if (artifacts.length > 0) {
   errors.push(`Remove generated artifacts before commit: ${artifacts.slice(0, 12).join(", ")}${artifacts.length > 12 ? " ..." : ""}`);
@@ -1889,7 +1958,7 @@ if (errors.length > 0) {
   process.exit(1);
 }
 
-console.log(`SEO VNS cluster audit passed for ${clusterRoutes.length + wave2d2b2Routes.length} routes.`);
+console.log(`SEO VNS cluster audit passed for ${clusterRoutes.length + wave2d2b2Routes.length + wave2d2c2Routes.length} routes.`);
 
 
 function collectFiles(dir, fileName, matches = []) {

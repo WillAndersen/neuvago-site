@@ -117,6 +117,12 @@ const everydayQuestionGroups = [
         href: "/learn/vagus-nerve-reset",
       },
       {
+        title: "Breathing exercises and the vagus nerve",
+        description:
+          "Compare slow breathing, longer exhalation and 4-7-8 with clear limits around HRV, RespHRV and direct vagus-nerve claims.",
+        href: "/learn/breathing-exercises-and-the-vagus-nerve",
+      },
+      {
         title: "How to calm your nervous system",
         description:
           "Explore practical, science-informed ways to help the body move from activation toward a calmer state.",

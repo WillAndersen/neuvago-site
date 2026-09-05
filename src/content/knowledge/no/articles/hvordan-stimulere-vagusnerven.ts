@@ -36,7 +36,7 @@ export const hvordanStimulereVagusnervenArticle = {
   searchIntent: "informational",
 
   publishedAt: "2026-09-02",
-  modifiedAt: "2026-09-04",
+  modifiedAt: "2026-09-05",
   readingTimeMinutes: 18,
 
   authorId: "john-willander",
@@ -151,7 +151,7 @@ export const hvordanStimulereVagusnervenArticle = {
         },
         {
           type: "paragraph",
-          text: "En praktisk pusteøvelse kan beskrives uten å love en bestemt nerveeffekt: finn en komfortabel rytme, unngå å presse pusten, og stopp dersom du blir svimmel eller uvel. Målet kan være å senke tempoet og rette oppmerksomheten mot en roligere utpust. Den dedikerte pusteartikkelen kommer i en senere bølge og skal behandle teknikker, evidens og sikkerhetsgrenser mer detaljert.",
+          text: "En praktisk pusteøvelse kan beskrives uten å love en bestemt nerveeffekt: finn en komfortabel rytme, unngå å presse pusten, og stopp dersom du blir svimmel eller uvel. Målet kan være å senke tempoet og rette oppmerksomheten mot en roligere utpust. Den dedikerte pusteartikkelen behandler teknikker, evidens og sikkerhetsgrenser mer detaljert.",
         },
         {
           type: "callout",
@@ -518,6 +518,13 @@ export const hvordanStimulereVagusnervenArticle = {
         "Les hva reset-uttrykket betyr, hvorfor ingen universell sju-minutters nullstilling er dokumentert, og hvilke grenser som gjelder for pust, HRV og elektrisk VNS.",
       href: "/no/kunnskap/resette-vagusnerven",
       label: "Forstå reset-påstanden",
+    },
+    {
+      title: "Pusteøvelser og vagusnerven",
+      description:
+        "Sammenlign langsom pust, noe lengre utpust og 4–7–8 med tydelige grenser for HRV, RespHRV og påstander om direkte vagusstimulering.",
+      href: "/no/kunnskap/pusteovelser-og-vagusnerven",
+      label: "Les pusteguiden",
     },
     {
       title: "Slik fungerer Neuvago",

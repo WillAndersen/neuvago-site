@@ -109,10 +109,6 @@ export const researchV2Content = {
       src: "/images/neuvago/auricular-vns-education-mobile.webp",
       alt: "Neuvago device beside a clean illustration of the outer ear.",
     } satisfies ResearchV2Image,
-    primaryCta: {
-      label: "Explore taVNS Research",
-      href: "/research/topics/auricular-vagus-nerve-stimulation",
-    } satisfies ResearchV2Cta,
   },
 
   topics: {
@@ -252,6 +248,7 @@ export const researchV2Content = {
     description:
       "These studies span systematic reviews, meta-analyses and human neuroimaging across sleep, safety and tolerability, central vagal pathways and autonomic function.",
     studies: featuredTavnsStudies.map((study) => {
+      let heading = study.cardHeading;
       let summary = study.cardSummary;
 
       if (
@@ -259,18 +256,24 @@ export const researchV2Content = {
         "de-oliveira-2025-tavns-insomnia-systematic-review-meta-analysis"
       ) {
         summary =
-          "A 2025 systematic review and meta-analysis of six studies involving 336 participants reported improvements in sleep quality and insomnia severity.";
+          "A 2025 systematic review and meta-analysis of six studies involving 336 participants reported improvements in sleep quality and insomnia severity, while rating the certainty of evidence as low to very low.";
       } else if (
         study.slug === "kim-2022-tavns-safety-systematic-review-meta-analysis"
       ) {
         summary =
-          "A large systematic review and meta-analysis evaluated taVNS safety across 177 studies involving 6,322 participants.";
+          "A systematic review and meta-analysis of 177 studies involving 6,322 participants found no difference in overall adverse-event risk between active taVNS and control conditions, while noting incomplete adverse-event reporting across much of the literature.";
+      } else if (
+        study.slug === "frangos-2015-auricular-vagus-nerve-stimulation-fmri"
+      ) {
+        heading = "How auricular stimulation engages vagal pathways";
+        summary =
+          "A human fMRI study in 12 healthy adults found that electrical stimulation at the left cymba conchae engaged central pathways associated with the vagus nerve.";
       }
 
       return {
         researchArea: study.researchArea,
         evidenceType: study.evidenceType,
-        heading: study.cardHeading,
+        heading,
         summary,
         year: study.year,
         href: study.href,
@@ -287,7 +290,7 @@ export const researchV2Content = {
     studies: [
       {
         label: "CONCEPTUAL MODEL",
-        title: "A Model of Neurovisceral Integration in Emotion Regulation",
+        title: "A Model of Neurovisceral Integration in Emotion Regulation and Dysregulation",
         authors: "Julian F. Thayer & Richard D. Lane",
         year: "2000",
         journal: "Journal of Affective Disorders",
@@ -310,7 +313,7 @@ export const researchV2Content = {
       {
         label: "PRECLINICAL EXPERIMENTAL RESEARCH",
         title:
-          "Vagus Nerve Stimulation Attenuates the Systemic Inflammatory Response",
+          "Vagus Nerve Stimulation Attenuates the Systemic Inflammatory Response to Endotoxin",
         authors: "L. V. Borovikova et al.",
         year: "2000",
         journal: "Nature",

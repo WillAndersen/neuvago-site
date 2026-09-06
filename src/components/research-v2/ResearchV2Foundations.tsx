@@ -10,7 +10,7 @@ export function ResearchV2Foundations({
 }: ResearchV2FoundationsProps) {
   return (
     <section className="bg-[#f7f4ef]">
-      <div className="mx-auto grid max-w-[92rem] gap-x-16 px-5 py-16 sm:px-8 sm:py-20 lg:grid-cols-[0.78fr_1.22fr] lg:grid-rows-[auto_1fr] lg:px-12 lg:py-24">
+      <div className="mx-auto grid max-w-[92rem] gap-x-16 px-5 py-16 sm:px-8 sm:py-20 lg:grid-cols-[0.78fr_1.22fr] lg:items-start lg:px-12 lg:py-24">
         <div className="max-w-[36rem] lg:col-start-1 lg:row-start-1">
           <p className="text-[0.7rem] font-medium tracking-[0.28em] text-[#81766a]">
             {content.eyebrow}
@@ -21,9 +21,16 @@ export function ResearchV2Foundations({
           <p className="mt-6 text-base leading-8 text-[#5f5a52] sm:text-lg">
             {content.description}
           </p>
+          <Link
+            href={content.allStudiesCta.href}
+            className="mt-8 inline-flex items-center gap-2 text-sm font-medium text-[#1f1f1c] underline underline-offset-4 transition hover:opacity-70 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#b98c50] focus-visible:ring-offset-4 focus-visible:ring-offset-[#f7f4ef]"
+          >
+            {content.allStudiesCta.label}
+            <span aria-hidden="true">→</span>
+          </Link>
         </div>
 
-        <div className="mt-12 border-t border-black/10 lg:col-start-2 lg:row-span-2 lg:row-start-1 lg:mt-0">
+        <div className="mt-12 border-t border-black/10 lg:col-start-2 lg:mt-0">
           {content.studies.map((study) => (
             <Link
               key={study.href}
@@ -63,15 +70,6 @@ export function ResearchV2Foundations({
           ))}
         </div>
 
-        <div className="mt-10 lg:col-start-1 lg:row-start-2 lg:self-end lg:mt-12">
-          <Link
-            href={content.allStudiesCta.href}
-            className="inline-flex items-center gap-2 text-sm font-medium text-[#1f1f1c] underline underline-offset-4 transition hover:opacity-70 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#b98c50] focus-visible:ring-offset-4 focus-visible:ring-offset-[#f7f4ef]"
-          >
-            {content.allStudiesCta.label}
-            <span aria-hidden="true">→</span>
-          </Link>
-        </div>
       </div>
     </section>
   );

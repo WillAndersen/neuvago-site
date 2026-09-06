@@ -5,19 +5,57 @@ type ResearchV2HeroProps = {
   content: typeof researchV2Content.hero;
 };
 
+const finalQaResearchHeading =
+  "The science behind vagus nerve stimulation.";
+
 export function ResearchV2Hero({ content }: ResearchV2HeroProps) {
+  const usesFinalQaResearchHeading = content.title === finalQaResearchHeading;
+
   return (
     <section className="relative isolate overflow-hidden border-b border-black/5 bg-[#f7f4ef]">
       <div className="absolute inset-x-0 top-0 -z-10 h-[34rem] bg-[radial-gradient(circle_at_18%_18%,rgba(255,252,247,0.98),transparent_34%),radial-gradient(circle_at_84%_20%,rgba(226,193,148,0.22),transparent_34%)]" />
 
-      <div className="mx-auto grid max-w-[92rem] gap-12 px-5 py-16 sm:px-8 lg:grid-cols-[0.92fr_1.08fr] lg:items-center lg:gap-16 lg:px-12 lg:py-24">
+      <div className="mx-auto grid max-w-[92rem] gap-12 px-5 py-16 sm:px-8 lg:grid-cols-[1.05fr_0.95fr] lg:items-center lg:gap-16 lg:px-12 lg:py-24">
         <div className="max-w-[44rem]">
           <p className="text-[0.7rem] font-medium uppercase tracking-[0.3em] text-[#7d7267]">
             {content.eyebrow}
           </p>
 
-          <h1 className="mt-5 max-w-[12ch] text-balance text-[clamp(3rem,12vw,5.7rem)] font-medium leading-[0.93] tracking-[-0.066em] text-[#1f1f1c] sm:text-[clamp(4rem,8vw,6.8rem)] lg:text-[clamp(5rem,6.2vw,7.35rem)] lg:leading-[0.88] lg:tracking-[-0.08em]">
-            {content.title}
+          <h1
+            aria-label={usesFinalQaResearchHeading ? content.title : undefined}
+            className={
+              usesFinalQaResearchHeading
+                ? "mt-5 max-w-[16ch] text-balance text-[clamp(3rem,12vw,5.7rem)] font-medium leading-[0.93] tracking-[-0.066em] text-[#1f1f1c] sm:text-[clamp(4rem,8vw,6.8rem)] lg:max-w-none lg:text-[clamp(3.25rem,4.25vw,4.25rem)] lg:leading-[0.93] lg:tracking-[-0.07em]"
+                : "mt-5 max-w-[12ch] text-balance text-[clamp(3rem,12vw,5.7rem)] font-medium leading-[0.93] tracking-[-0.066em] text-[#1f1f1c] sm:text-[clamp(4rem,8vw,6.8rem)] lg:text-[clamp(5rem,6.2vw,7.35rem)] lg:leading-[0.88] lg:tracking-[-0.08em]"
+            }
+          >
+            {usesFinalQaResearchHeading ? (
+              <>
+                <span aria-hidden="true" className="lg:hidden">
+                  {content.title}
+                </span>
+                <span
+                  aria-hidden="true"
+                  className="hidden lg:block xl:hidden"
+                >
+                  <span className="block whitespace-nowrap">The science</span>
+                  <span className="block whitespace-nowrap">behind vagus</span>
+                  <span className="block whitespace-nowrap">
+                    nerve stimulation.
+                  </span>
+                </span>
+                <span aria-hidden="true" className="hidden xl:block">
+                  <span className="block whitespace-nowrap">
+                    The science behind
+                  </span>
+                  <span className="block whitespace-nowrap">
+                    vagus nerve stimulation.
+                  </span>
+                </span>
+              </>
+            ) : (
+              content.title
+            )}
           </h1>
 
           <p className="mt-7 max-w-[40rem] text-base leading-8 text-[#514c45] sm:text-lg lg:text-xl lg:leading-9">

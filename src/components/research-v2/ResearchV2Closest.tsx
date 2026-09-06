@@ -1,5 +1,4 @@
 import Image from "next/image";
-import { CtaButton } from "@/components/home/CtaButton";
 import type { researchV2Content } from "@/content/research-v2";
 
 type ResearchV2ClosestProps = {
@@ -29,13 +28,6 @@ export function ResearchV2Closest({
             {content.context}
           </p>
 
-          <div className="mt-8">
-            <CtaButton
-              href={content.primaryCta.href}
-              label={content.primaryCta.label}
-              variant="primary"
-            />
-          </div>
         </div>
 
         <div className="overflow-hidden rounded-[2.2rem] border border-black/6 bg-[#e9dfd2] shadow-[0_28px_95px_rgba(31,31,28,0.09)]">

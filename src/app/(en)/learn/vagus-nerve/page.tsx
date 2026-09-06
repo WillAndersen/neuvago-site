@@ -1,728 +1,378 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { JsonLd } from "@/components/seo/json-ld"
-import { buildAuthorityPageStructuredData } from "@/lib/seo/structured-data"
-import { authorityEditorialDates } from "@/lib/seo/editorial-dates";
+
+import { JsonLd } from "@/components/seo/json-ld";
+import { buildAuthorityPageStructuredData } from "@/lib/seo/structured-data";
+
+const title = "Vagus nerve: anatomy, function and what it does";
+const description =
+  "Learn what the paired vagus nerves are, where they run, which functions they participate in, and why HRV is not a complete test of vagus function.";
+const path = "/learn/vagus-nerve";
 
 export const metadata: Metadata = {
-  title:
-    "What Is the Vagus Nerve? | Stress, Sleep and Recovery | Neuvago",
-  description:
-    "Learn what the vagus nerve is, how it connects brain and body, and why it matters for stress, sleep, recovery, and nervous system regulation.",
+  title,
+  description,
   alternates: {
-    canonical: "/learn/vagus-nerve",
+    canonical: path,
     languages: {
-      "en-US": "/learn/vagus-nerve",
+      "en-US": path,
       "nb-NO": "/no/kunnskap/vagusnerven",
-      "x-default": "/learn/vagus-nerve",
+      "x-default": path,
     },
   },
   openGraph: {
-    title:
-      "What Is the Vagus Nerve? | Stress, Sleep and Recovery | Neuvago",
-    description:
-      "Learn what the vagus nerve is, how it connects brain and body, and why it matters for stress, sleep, recovery, and nervous system regulation.",
-    url: "/learn/vagus-nerve",
+    title,
+    description,
+    url: path,
     siteName: "Neuvago",
     locale: "en_US",
-    type: "website",
+    type: "article",
   },
-  twitter: {
-    card: "summary_large_image",
-    title:
-      "What Is the Vagus Nerve? | Stress, Sleep and Recovery | Neuvago",
-    description:
-      "Learn what the vagus nerve is, how it connects brain and body, and why it matters for stress, sleep, recovery, and nervous system regulation.",
-  },
-}
+  twitter: { card: "summary_large_image", title, description },
+};
 
-const keyPoints = [
-  {
-    title: "A major communication pathway",
-    description:
-      "The vagus nerve is one of the body’s most important communication pathways, linking the brain with key organs and systems throughout the body.",
-  },
-  {
-    title: "A practical entry point into the nervous system",
-    description:
-      "The topic matters because it helps people understand why stress, calm, recovery, sleep, and regulation are so closely connected.",
-  },
-  {
-    title: "Most useful when explained clearly",
-    description:
-      "The vagus nerve becomes more valuable as a topic when it is used to make daily experience easier to understand, not more technical or overcomplicated.",
-  },
-]
+type DirectAnswer = { question: string; answer: string };
+type PageSection = {
+  id: string;
+  eyebrow: string;
+  title: string;
+  paragraphs: readonly string[];
+  answers?: readonly DirectAnswer[];
+  bullets?: readonly string[];
+};
 
-const whatItConnects = [
+const sections: readonly PageSection[] = [
   {
-    title: "Brain and body",
-    description:
-      "The vagus nerve helps connect the brain with processes happening throughout the body rather than keeping stress and calm as ‘mental’ topics alone.",
+    id: "short-answer",
+    eyebrow: "Direct answer and scope",
+    title: "Short answer",
+    paragraphs: [
+      "The vagus nerve is the tenth cranial nerve and runs from the brainstem to structures in the neck, chest and abdomen. It participates in sensory, motor and autonomic functions and should not be reduced to a simple “calm switch.”",
+      "Humans have a left and a right vagus nerve. The singular term is convenient, but the paired nerves branch repeatedly and contain different fibre types. They are better understood as part of a distributed, two-way communication system than as one uninterrupted cable controlling the whole body.",
+      "This foundation page explains anatomy, course and major function families. Practical methods, breathing, massage, reset language, HRV interpretation and electrical vagus nerve stimulation have separate owners so that anatomy is not confused with a protocol or product claim.",
+    ],
+    answers: [
+      {
+        question: "What is the vagus nerve?",
+        answer:
+          "The vagus nerve is cranial nerve X: a paired, mixed nerve system linking the brainstem with structures in the neck, chest and upper abdomen. It carries sensory, motor and parasympathetic fibres and participates in several reflex and regulatory networks.",
+      },
+    ],
   },
   {
-    title: "Stress and settling",
-    description:
-      "It often appears in discussions about how the body responds to stress and how it shifts back toward calmer, more supported states.",
+    id: "definition-and-cranial-nerve-x",
+    eyebrow: "Cranial nerve X",
+    title: "What the vagus nerve is",
+    paragraphs: [
+      "The vagus nerve is the tenth of twelve paired cranial nerves. Anatomical sources use vagus nerve, nervus vagus and cranial nerve X for the same nerve system. The Roman numeral describes its place in the traditional cranial-nerve sequence; it does not identify one single function.",
+      "There are two vagus nerves, one on each side. Left and right share a broad organisation but do not follow perfectly identical courses or produce identical branches. The recurrent laryngeal branches are a familiar example: the right and left sides loop around different structures before returning towards the larynx.",
+      "Each vagus is a mixed nerve. It contains sensory fibres carrying information towards the central nervous system, motor fibres serving selected muscles of the pharynx and larynx, and preganglionic parasympathetic efferents whose signals are relayed through peripheral ganglia and local circuits. These fibre groups travel together for part of the route and then separate into branches with different destinations.",
+      "The name vagus comes from Latin for wandering, reflecting the nerve’s extensive course. That historical label is not a functional theory. Likewise, calling it the body’s longest nerve without qualification is less useful than describing its unusually broad cranial-to-thoracoabdominal distribution and its many branches.",
+      "The vagus does not form a single line between the brain and one organ. It is embedded in plexuses, communicates with other nerves and reaches tissues through region-specific branches. Descriptions that erase this organisation can make later claims about stimulation, symptoms or measurement appear more certain than the anatomy supports.",
+    ],
+    answers: [
+      {
+        question: "Do we have one vagus nerve or two?",
+        answer:
+          "We have a left and a right vagus nerve. “The vagus nerve” is commonly used as a collective term, but it should not be taken to mean one continuous cable. The two sides have related yet partly different courses and branches.",
+      },
+    ],
   },
   {
-    title: "Sleep and recovery",
-    description:
-      "Because it is closely associated with calming and restorative functions, the topic often overlaps with unwinding, rest, and deeper recovery.",
+    id: "brainstem-to-body-course",
+    eyebrow: "Anatomical course",
+    title: "From the brainstem through the body",
+    paragraphs: [
+      "Vagal fibres connect with several nuclei in the medulla. The nucleus tractus solitarius receives much visceral sensory input. The dorsal motor nucleus contributes parasympathetic efferent fibres, while the nucleus ambiguus is associated with branchial motor and selected cardiac functions. A public foundation page does not need to turn these nuclei into a memorisation exercise; the important point is that different fibre types connect with different central circuits.",
+      "The paired nerves leave the skull through the jugular foramina and descend on either side of the neck. Their cervical course is deep, close to major blood vessels and other nerves. It is therefore inaccurate to present the cervical vagus as a superficial point that a person can reliably find by pressing the skin. Relationships between the nerve and nearby structures also vary between individuals.",
+      "In the head and neck, branches serve parts of the ear, pharynx and larynx and participate in sensory, motor and reflex functions. The auricular branch is only one contributor to the outer ear’s mixed innervation. Pharyngeal and laryngeal branches interact with other cranial and cervical pathways rather than acting as isolated lines.",
+      "Within the chest, branches contribute to cardiac, pulmonary and oesophageal plexuses. The recurrent laryngeal nerves take asymmetric routes before ascending to the larynx. Around the oesophagus, vagal fibres reorganise into trunks that pass through the diaphragm and distribute connections to the stomach, bowel and associated upper-abdominal plexuses.",
+      "The phrase “brain to gut” captures only part of this map. Vagal signalling is routed through branches, ganglia, plexuses and local organ networks. Not every thoracic or abdominal organ has the same innervation, and the anatomical reach of a branch does not imply complete control of the tissue it enters.",
+    ],
+    bullets: [
+      "Brainstem: distinct nuclei receive and send different vagal signals.",
+      "Skull base and neck: the nerves exit the skull and descend deeply on both sides.",
+      "Chest: branches join cardiac, pulmonary and oesophageal networks.",
+      "Upper abdomen: vagal connections enter distributed gastrointestinal and visceral circuits.",
+    ],
+    answers: [
+      {
+        question: "Where is the vagus nerve?",
+        answer:
+          "The left and right vagus nerves begin in the brainstem region, leave the skull and descend deep in the neck before continuing into the chest and upper abdomen. They divide into many branches; they are not one superficial pressure point that can be located or tested with the fingers.",
+      },
+    ],
   },
   {
-    title: "Daily rhythm",
-    description:
-      "Many people care about the vagus nerve because they are really trying to understand why some days feel steadier, more resilient, and easier to recover from than others.",
+    id: "afferent-efferent-and-mixed-fibres",
+    eyebrow: "Two-way signalling",
+    title: "Signals in both directions",
+    paragraphs: [
+      "The vagus nerves carry information towards and away from the central nervous system. Afferent means travelling towards the brain and spinal cord. Efferent means travelling from the central nervous system towards peripheral targets. These words describe direction, not whether a signal is beneficial, calming, uncomfortable or clinically important.",
+      "Vagal afferents include sensory pathways from defined internal tissues and mucosal surfaces. Efferent groups include motor fibres to selected muscles of the pharynx and larynx and parasympathetic fibres that act through peripheral relays. Calling all vagal traffic “parasympathetic” therefore leaves out major sensory and motor components.",
+      "Popular explanations often state that about four fifths of vagal fibres are afferent. That can be a useful teaching estimate, but it is not a universal measurement for every person, side, level or branch. Proportions depend on what is counted, where the sample is taken, the species and the method. The defensible foundation claim is that a large share of vagal communication is sensory while efferent pathways remain functionally important.",
+      "Vagal sensory neurons are not one homogeneous population. Experimental atlases identify specialised cellular groups related to different organs and signal types. Such work helps explain functional diversity, but animal cell proportions and molecular maps should not be copied directly into universal claims about human branches.",
+      "Because direction and fibre identity matter, an observation in one organ does not establish a whole-nerve state. A change in heart rate, digestion, voice or subjective calm cannot by itself reveal which vagal fibres were active or whether the vagus caused the change.",
+    ],
   },
-]
+  {
+    id: "organs-branches-and-territories",
+    eyebrow: "Function families",
+    title: "Branches and organ territories",
+    paragraphs: [
+      "The paired vagus nerves participate in several function families because they contain many branches and fibre types. Participate is the careful term: organ function emerges from vagal and non-vagal nerves, brainstem and spinal circuits, local plexuses, hormones, muscles and the organs’ own mechanisms. Innervation is not complete or exclusive control.",
+      "Pharyngeal and laryngeal branches contribute to swallowing, voice and airway protection. Cardiac branches participate in selected aspects of heart-rate and reflex regulation. Pulmonary and airway pathways carry sensory and autonomic signals. Oesophageal and gastrointestinal branches take part in motility, secretion, stretch, nutrient and satiety signalling through interaction with enteric and local networks.",
+      "The territories are not interchangeable. Motor control of the larynx, sensory signalling from the gut and parasympathetic influence on the heart involve different fibres and circuits. A result measured in one domain should not be used as proof that all vagal functions changed in the same direction.",
+      "This distinction also matters for symptoms. Hoarseness, swallowing difficulty, palpitations, nausea, bowel changes, dizziness or fainting can arise from many causes. A symptom list on a website cannot identify vagal injury or dysfunction, and the absence of one symptom cannot confirm that every vagal branch is functioning normally.",
+      "Clinical examination of cranial nerve X is therefore task-specific. Voice, palate movement, swallowing, cough and cardiovascular responses may each provide different information. Assessment depends on history, examination and sometimes targeted investigations rather than one home test or wearable score.",
+    ],
+    answers: [
+      {
+        question: "What does the vagus nerve do?",
+        answer:
+          "The vagus nerves carry visceral sensory information, contribute motor fibres to the pharynx and larynx, and provide parasympathetic pathways to selected thoracic and abdominal targets. They participate in swallowing, voice, protective reflexes, cardiac regulation, airway signalling and digestion, but they do not control those systems alone.",
+      },
+    ],
+  },
+  {
+    id: "autonomic-and-parasympathetic-role",
+    eyebrow: "Part of a larger system",
+    title: "The vagus nerve in the autonomic nervous system",
+    paragraphs: [
+      "The autonomic nervous system helps regulate functions that largely operate without conscious command. Sympathetic and parasympathetic pathways work alongside the enteric nervous system, central networks, hormones and local organ mechanisms. Vagal efferents are an important parasympathetic route to several organs, but they are not the whole autonomic system.",
+      "Parasympathetic activity is often associated with digestion, energy conservation and selected restorative processes. It is not a synonym for a felt state of calm, safety or sleep. Different organs can receive different patterns of autonomic input, and sympathetic and parasympathetic activity are not always simple opposites moving on one shared dial.",
+      "Other cranial nerves carry parasympathetic fibres to structures in the head, and sacral pathways serve pelvic organs. Peripheral ganglia and enteric circuits also shape the final response. This is why “vagus nerve equals parasympathetic nervous system” is anatomically incomplete.",
+      "Stress, sleep, pain, mood and recovery involve distributed brain and body systems. Vagal pathways may contribute to parts of that picture, but one nerve cannot explain why a person feels activated, sleeps poorly or recovers slowly. A useful foundation account keeps the vagus important without making it the sole cause of broad human experiences.",
+      "Autonomic language should also avoid moral ranking. Higher or lower activity is not automatically better in every organ or situation. Adaptive regulation depends on context, timing, demand and the ability of multiple systems to change appropriately.",
+    ],
+    answers: [
+      {
+        question: "Is the vagus nerve the same as the parasympathetic nervous system?",
+        answer:
+          "No. Vagal efferents are a major parasympathetic pathway to several organs, but parasympathetic regulation also includes other cranial nerves, sacral pathways, peripheral ganglia and local circuits. The broader autonomic system includes sympathetic and enteric components as well.",
+      },
+      {
+        question: "Is the vagus nerve a “calm switch” or “reset button”?",
+        answer:
+          "No. Those phrases are metaphors, not a single biological switch that resets the body or always makes someone calm. Effects depend on the fibres, branch, target organ, reflex circuit and the person’s wider physiological context.",
+      },
+    ],
+  },
+  {
+    id: "reflexes-interoception-and-homeostasis",
+    eyebrow: "Body–brain integration",
+    title: "Reflexes, interoception and homeostasis",
+    paragraphs: [
+      "Many vagal afferents report conditions within the body. Specialised endings can respond to mechanical or chemical features in particular tissues and carry that information to the brainstem. The incoming signals are integrated with other sensory pathways and may contribute to reflexes, autonomic responses and wider brain processing.",
+      "Interoception refers to sensing and interpreting the internal state of the body. Vagal pathways contribute to parts of this information stream, but interoception also uses spinal pathways, other cranial nerves, circulating signals, hormones and local receptors. Hunger, fullness, nausea, breathing effort and awareness of the heartbeat should not be assigned to one nerve alone.",
+      "Homeostasis describes distributed processes that keep important variables within workable ranges. Neural, endocrine, immune, behavioural and local mechanisms all participate. Vagal reflex arcs can form part of this regulation, but homeostasis is not one vagus mechanism or a control panel that can be manually switched on.",
+      "The inflammatory reflex is an influential mechanistic framework for neural contributions to immune regulation. The precise anatomy and relay pathways, including how splenic effects are mediated, have also been debated. Mechanistic and animal evidence is not the same as proof that a common wellness practice or a particular device treats systemic inflammation in people.",
+      "Reflex language can create false certainty when the stimulus and outcome are not specified. Cough, gagging, heart-rate responses and digestive signalling use different receptors and circuits. Demonstrating one response does not establish that the entire vagus was activated or that a desired clinical outcome will follow.",
+    ],
+    answers: [
+      {
+        question: "What happens when the vagus nerve is activated?",
+        answer:
+          "There is no single universal result. Activation can refer to activity in different sensory, motor or parasympathetic fibres, on either side, within different branches and target organs. It may be part of a sensation, movement or autonomic reflex; it does not automatically mean calm or one particular feeling.",
+      },
+    ],
+  },
+  {
+    id: "vagal-tone-hrv-and-measurement-limits",
+    eyebrow: "Measurement and interpretation",
+    title: "Vagal tone, HRV and measurement limits",
+    paragraphs: [
+      "Vagal tone is used differently across disciplines. In cardiac physiology it may refer to vagal influence on the sinus node under defined conditions. In consumer language it is sometimes treated as though the entire vagus nerve has one measurable strength. That broader meaning is too imprecise to serve as a diagnosis or an overall health score.",
+      "Heart-rate variability, or HRV, describes variation in the time intervals between heartbeats. Under controlled conditions, selected HRV measures can be used as operational indicators of aspects of cardiac vagal modulation. They do not directly measure the whole vagus nerve, reveal how every branch functions or diagnose vagal damage or autonomic disease on their own.",
+      "Respiration changes the timing of heartbeats. The term respiratory heart-rate variability, RespHRV, can make that component explicit and has been recommended as a clearer term than respiratory sinus arrhythmia in some contexts. RespHRV and RSA still are not direct whole-nerve measurements of “vagal tone”. Breathing rate, tidal volume, posture and analysis choices affect the result.",
+      "Recording duration, signal quality, artefact handling and the selected time- or frequency-domain metric also matter. Age, fitness, sleep, illness, medication, time of day, recent activity and emotional or cognitive demand can alter a reading. A number without a standardised context can easily be overinterpreted.",
+      "A wearable can support personal trend observation, but it cannot label a vagus nerve as weak, damaged, overactive or successfully reset. Comparisons within the same person under similar conditions are generally more interpretable than ranking different people by a single score, and even repeated trends remain indirect.",
+      "A study that directly recorded tonic vagus activity in rats did not find the assumed relationship with common HRV measures. The animal result is not a universal clinical rule for humans, but it reinforces a central measurement boundary: cardiac timing metrics and electrical activity across the entire nerve are not the same variable.",
+    ],
+    bullets: [
+      "Specify the HRV metric, recording length and artefact method.",
+      "Record breathing conditions when respiratory effects matter.",
+      "Avoid turning population associations into a personal diagnosis.",
+      "Treat consumer-device trends as context-dependent and indirect.",
+    ],
+    answers: [
+      {
+        question: "Can HRV measure whether the vagus nerve is working?",
+        answer:
+          "No single HRV value tests the whole vagus nerve. Some HRV measures can reflect aspects of cardiac vagal modulation under defined conditions, but breathing, posture, activity, age, health, medication and analysis method influence the result. HRV cannot by itself diagnose vagal injury or function across all branches.",
+      },
+    ],
+  },
+  {
+    id: "stimulation-wellness-and-medical-boundaries",
+    eyebrow: "Separate anatomy from intervention",
+    title: "Stimulation, wellness and medical boundaries",
+    paragraphs: [
+      "Anatomy explains why the vagus is scientifically interesting; it does not prove that every practice described as “vagal” reaches the nerve or produces a health benefit. Slow breathing, relaxation, movement, sound, cold exposure, gargling, touch and massage have different mechanisms and evidence bases. They should not be presented as interchangeable methods for selectively stimulating the entire vagus nerve.",
+      "Electrical vagus nerve stimulation is a distinct category. Implanted cervical systems, non-invasive cervical devices and transcutaneous auricular approaches differ in location, hardware, waveform, intensity, timing, control condition, population and intended use. Evidence from one modality, protocol or indication cannot automatically be transferred to another.",
+      "Research recommendations for transcutaneous VNS emphasise transparent reporting of stimulation site, electrode, parameters, sham or control, participant characteristics and outcomes. That level of specificity is necessary because the phrase vagus nerve stimulation alone does not identify what was delivered or what can reasonably be inferred.",
+      "Regulatory decisions are equally device- and indication-specific. An authorisation for one named product is not authorisation for every vagus-related product, and general anatomy or external VNS literature is not automatically product evidence for Neuvago. Product claims require the product’s own specifications, intended use, safety documentation and directly relevant evidence.",
+      "This page therefore teaches no breathing protocol, pressure point, massage sequence, electrical settings or self-test. Those topics have separate, bounded pages where the actual method and safety limits can be stated. A sensation such as warmth, tingling, yawning, sighing, belching or calm is not proof that a specific vagal target was engaged.",
+      "New or persistent swallowing difficulty, voice change, fainting, marked dizziness, unexplained neurological symptoms or concerns about nerve injury require qualified medical assessment rather than online self-labelling. Sudden neurological symptoms, collapse or other acute warning signs should follow local emergency guidance.",
+    ],
+  },
+  {
+    id: "further-reading-and-sources",
+    eyebrow: "Evidence map",
+    title: "Further reading and sources",
+    paragraphs: [
+      "The sources below were selected for the eleven evidence classes locked for this foundation pair: gross and functional anatomy, mixed fibres, central pathways, organ territories, autonomic context, interoception, major function families, HRV and RespHRV limits, neuroimmune claims, clinical boundaries and the distinction between anatomy, VNS and product evidence.",
+      "The same sixteen reader-visible sources appear on both language versions. They include authoritative references, reviews, recommendations, primary research, a critical review and an official regulatory example. A source supports only the claim families for which it was reviewed; inclusion does not imply endorsement of Neuvago or every conclusion in the publication.",
+      "This is a dated editorial evidence review rather than a systematic review, clinical guideline or individual medical assessment. Reviewed and modified 5 September 2026. General educational information does not replace diagnosis, treatment or personalised advice from a qualified professional.",
+    ],
+  },
+];
 
-const whyItMatters = [
-  {
-    title: "Stress makes more sense",
-    description:
-      "The vagus nerve helps people understand why stress is not only a thought or emotion, but also a body-wide experience with real physiological patterns.",
-    href: "/conditions/stress",
-    linkLabel: "Explore stress",
-  },
-  {
-    title: "Sleep becomes part of the same picture",
-    description:
-      "The topic often overlaps with sleep because winding down, resting, and shifting out of activation are all part of the larger conversation.",
-    href: "/conditions/sleep",
-    linkLabel: "Explore sleep",
-  },
-  {
-    title: "Recovery becomes easier to explain",
-    description:
-      "The vagus nerve is often relevant when people are asking why recovery feels stronger at times and thinner or slower at others.",
-    href: "/learn/recovery-and-regulation",
-    linkLabel: "Explore recovery",
-  },
-]
+const organRows = [
+  ["Pharynx and larynx", "Motor and sensory contributions to swallowing, voice and protective reflexes", "Several branches, muscles and central circuits participate"],
+  ["Heart and circulation", "Parasympathetic influence on selected heart-rate and reflex processes", "The vagus is not the sole controller of heart rate or blood pressure"],
+  ["Lungs and airways", "Sensory and autonomic signalling related to airways and protective responses", "Breathing rhythm arises from a broader respiratory network"],
+  ["Oesophagus and stomach", "Signals related to stretch, movement, chemistry and satiety", "Enteric, hormonal and local regulation remain essential"],
+  ["Bowel and upper abdomen", "Visceral sensory and parasympathetic connections to selected territories", "Not every organ or bowel segment has the same vagal supply"],
+] as const;
 
-const searchReasons = [
-  {
-    title: "They want to understand stress differently",
-    description:
-      "Many people first encounter the vagus nerve while trying to understand tension, overwhelm, and why the body can stay activated long after pressure should have passed.",
-    href: "/conditions/stress",
-    linkLabel: "Explore stress",
-  },
-  {
-    title: "They are trying to understand sleep and unwinding",
-    description:
-      "The topic often appears when people are searching for clearer explanations around evenings, settling, rest, and why the body does not easily switch off.",
-    href: "/conditions/sleep",
-    linkLabel: "Explore sleep",
-  },
-  {
-    title: "They want a broader nervous system framework",
-    description:
-      "Often the real search is not for a nerve in isolation, but for a more connected explanation of calm, regulation, resilience, and recovery.",
-    href: "/learn/nervous-system-regulation",
-    linkLabel: "Explore regulation",
-  },
-  {
-    title: "They are following the vagus nerve conversation itself",
-    description:
-      "Some people arrive here after seeing terms like vagal tone, parasympathetic nervous system, or nervous system regulation and wanting the clearest starting point.",
-    href: "/learn/vagal-tone",
-    linkLabel: "Explore vagal tone",
-  },
-]
-
-const connectedTopics = [
-  {
-    title: "Vagus nerve stimulation",
-    description:
-      "A clearer category page on implanted VNS, non-invasive VNS, ear-based approaches, and how guided wellness devices should be understood.",
-    href: "/learn/vagus-nerve-stimulation",
-    linkLabel: "Explore VNS",
-  },
-  {
-    title: "Non-invasive VNS",
-    description:
-      "A practical next step for understanding external stimulation, nVNS devices, and how a guided wellness system should be evaluated.",
-    href: "/learn/non-invasive-vagus-nerve-stimulation",
-    linkLabel: "Explore non-invasive VNS",
-  },
-  {
-    title: "Transcutaneous VNS",
-    description:
-      "A method-focused guide to tVNS, taVNS, stimulation through the skin, and why device details matter.",
-    href: "/learn/transcutaneous-vagus-nerve-stimulation",
-    linkLabel: "Explore tVNS",
-  },
-  {
-    title: "Auricular VNS",
-    description:
-      "A focused guide to ear-based vagus nerve stimulation, taVNS, placement language, research context, and careful claims.",
-    href: "/learn/auricular-vagus-nerve-stimulation",
-    linkLabel: "Explore auricular VNS",
-  },
-  {
-    title: "Nervous system regulation",
-    description:
-      "A broader framework for understanding how the body shifts between activation, settling, recovery, and steadier daily balance.",
-    href: "/learn/nervous-system-regulation",
-    linkLabel: "Explore regulation",
-  },
-  {
-    title: "Parasympathetic nervous system",
-    description:
-      "A calmer-state lens that helps explain why the vagus nerve is so often discussed in relation to restoration, digestion, and unwinding.",
-    href: "/learn/parasympathetic-nervous-system",
-    linkLabel: "Explore parasympathetic states",
-  },
-  {
-    title: "Vagal tone",
-    description:
-      "A more specific concept often used to talk about steadiness, resilience, recovery, and how supported the system feels over time.",
-    href: "/learn/vagal-tone",
-    linkLabel: "Explore vagal tone",
-  },
-  {
-    title: "Recovery and regulation",
-    description:
-      "A practical next step for understanding why stress load, sleep, restoration, and daily capacity all shape how supported the system feels.",
-    href: "/learn/recovery-and-regulation",
-    linkLabel: "Explore recovery",
-  },
-  {
-    title: "VNS research topic",
-    description:
-      "A research hub for implanted and non-invasive vagus nerve stimulation, foundational studies, adjacent topics, and responsible interpretation.",
-    href: "/research/topics/vagus-nerve-stimulation",
-    linkLabel: "View VNS research",
-  },
-  {
-    title: "How Neuvago works",
-    description:
-      "A practical explanation of how the Neuvago device, app guidance, session flow, and routine design fit together.",
-    href: "/how-it-works",
-    linkLabel: "See how it works",
-  },
-]
-
+const sources = [
+  { id: "A-001", title: "Neuroanatomy, Cranial Nerve 10 (Vagus Nerve)", publisher: "Kenny BJ, Bordoni B", publication: "StatPearls / PubMed", year: 2026, url: "https://pubmed.ncbi.nlm.nih.gov/30725856/" },
+  { id: "A-003", title: "Redefining respiratory sinus arrhythmia as respiratory heart rate variability: an international Expert Recommendation for terminological clarity", publisher: "Menuet C et al.", publication: "Nature Reviews Cardiology / PubMed", year: 2025, url: "https://pubmed.ncbi.nlm.nih.gov/40328963/" },
+  { id: "A-004", title: "International Consensus Based Review and Recommendations for Minimum Reporting Standards in Research on Transcutaneous Vagus Nerve Stimulation (Version 2020)", publisher: "Farmer AD et al.", publication: "Frontiers in Human Neuroscience / PubMed", year: 2021, url: "https://pubmed.ncbi.nlm.nih.gov/33854421/" },
+  { id: "A-005", title: "gammaCore Non-invasive Vagus Nerve Stimulator — De Novo DEN150048", publisher: "US Food and Drug Administration", publication: "FDA De Novo database", year: 2017, url: "https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpmn/denovo.cfm?ID=DEN150048" },
+  { id: "B-001", title: "Functional and chemical anatomy of the afferent vagal system", publisher: "Berthoud HR, Neuhuber WL", publication: "Autonomic Neuroscience / PubMed", year: 2000, url: "https://pubmed.ncbi.nlm.nih.gov/11189015/" },
+  { id: "B-002", title: "Functional anatomy of the vagus system — Emphasis on the somato-visceral interface", publisher: "Neuhuber WL, Berthoud HR", publication: "Autonomic Neuroscience / PubMed", year: 2021, url: "https://pubmed.ncbi.nlm.nih.gov/34634680/" },
+  { id: "B-003", title: "Internal senses of the vagus nerve", publisher: "Prescott SL, Liberles SD", publication: "Neuron / PubMed", year: 2022, url: "https://pubmed.ncbi.nlm.nih.gov/35051375/" },
+  { id: "B-004", title: "An Atlas of Vagal Sensory Neurons and Their Molecular Specialization", publisher: "Kupari J et al.", publication: "Cell Reports / PubMed", year: 2019, url: "https://pubmed.ncbi.nlm.nih.gov/31116992/" },
+  { id: "B-005", title: "Overview of the Anatomy, Physiology, and Pharmacology of the Autonomic Nervous System", publisher: "Wehrwein EA, Orer HS, Barman SM", publication: "Comprehensive Physiology / PubMed", year: 2016, url: "https://pubmed.ncbi.nlm.nih.gov/27347892/" },
+  { id: "B-006", title: "Visceral influences on brain and behavior", publisher: "Critchley HD, Harrison NA", publication: "Neuron / PubMed", year: 2013, url: "https://pubmed.ncbi.nlm.nih.gov/23439117/" },
+  { id: "B-010", title: "Heart Rate Variability and Cardiac Vagal Tone in Psychophysiological Research", publisher: "Laborde S, Mosley E, Thayer JF", publication: "Frontiers in Psychology / PubMed", year: 2017, url: "https://pubmed.ncbi.nlm.nih.gov/28265249/" },
+  { id: "B-011", title: "Pitfalls of assessment of autonomic function by heart rate variability", publisher: "Hayano J, Yuda E", publication: "Journal of Physiological Anthropology / PubMed", year: 2019, url: "https://pubmed.ncbi.nlm.nih.gov/30867063/" },
+  { id: "B-012", title: "Direct measurement of vagal tone in rats does not show correlation to HRV", publisher: "Marmerstein JT, McCallum GA, Durand DM", publication: "Scientific Reports / PubMed", year: 2021, url: "https://pubmed.ncbi.nlm.nih.gov/33441733/" },
+  { id: "B-013", title: "Toward understanding respiratory sinus arrhythmia", publisher: "Grossman P, Taylor EW", publication: "Biological Psychology / PubMed", year: 2007, url: "https://pubmed.ncbi.nlm.nih.gov/17081672/" },
+  { id: "B-014", title: "The inflammatory reflex", publisher: "Tracey KJ", publication: "Nature / PubMed", year: 2002, url: "https://pubmed.ncbi.nlm.nih.gov/12490958/" },
+  { id: "B-015", title: "The cholinergic anti-inflammatory pathway: a critical review", publisher: "Martelli D, McKinley MJ, McAllen RM", publication: "Autonomic Neuroscience / PubMed", year: 2014, url: "https://pubmed.ncbi.nlm.nih.gov/24411268/" },
+] as const;
 
 export default function VagusNervePage() {
-    const structuredData = buildAuthorityPageStructuredData({
-    title: "What Is the Vagus Nerve? | Stress, Sleep and Recovery | Neuvago",
-    description: "Learn what the vagus nerve is, how it connects brain and body, and why it matters for stress, sleep, recovery, and nervous system regulation.",
-    path: "/learn/vagus-nerve",
+  const structuredData = buildAuthorityPageStructuredData({
+    title,
+    description,
+    path,
     articleSection: "Learn",
-    dateModified: authorityEditorialDates.vnsClusterModified,
+    datePublished: "2026-08-17",
+    dateModified: "2026-09-05",
+    keywords: [
+      "vagus nerve",
+      "what is the vagus nerve",
+      "cranial nerve X",
+      "left and right vagus nerve",
+      "what does the vagus nerve do",
+      "vagal tone",
+      "HRV and vagus nerve",
+    ],
     breadcrumbs: [
       { name: "Home", path: "/" },
       { name: "Learn", path: "/learn" },
-      { name: "Vagus Nerve", path: "/learn/vagus-nerve" },
+      { name: "Vagus nerve", path },
     ],
   });
 
-
   return (
-    <main className="bg-[#f7f4ef] text-[#1f1f1c]">
+    <main className="bg-[#f7f4ef] text-[#1f1f1c]" data-wave2d2e2-foundation-page="en">
       <JsonLd data={structuredData} idPrefix="learn-vagus-nerve" />
-      <section className="border-b border-black/5">
-        <div className="mx-auto grid lg:min-h-[80vh] max-w-7xl items-center gap-16 px-6 py-20 md:px-10 lg:grid-cols-[1.05fr_0.95fr] lg:py-28">
-          <div className="max-w-3xl">
-            <p className="mb-5 text-sm uppercase tracking-[0.18em] text-[#7a756c]">
-              Learn / Vagus nerve
-            </p>
 
-            <h1 className="text-4xl font-medium leading-[1.05] tracking-[-0.03em] md:text-6xl lg:text-7xl">
-              What the vagus nerve is — and why it matters for stress, sleep, and recovery
-            </h1>
-
-            <p className="mt-6 max-w-2xl text-base leading-8 text-[#5f5a52] md:text-lg">
-              The vagus nerve is one of the body’s most important
-              communication pathways. It matters because it helps connect many
-              of the same themes people are already trying to understand in real
-              life: stress, calm, sleep, recovery, and how the body settles and
-              returns.
-            </p>
-
-            <div className="mt-10 flex flex-wrap gap-4">
-              <Link
-                href="/learn/nervous-system-regulation"
-                className="rounded-full bg-[#1f1f1c] px-6 py-3 text-sm font-medium text-white transition hover:opacity-90"
-              >
-                Explore regulation
-              </Link>
-
-              <Link
-                href="/conditions/stress"
-                className="rounded-full border border-[#d8d1c7] bg-transparent px-6 py-3 text-sm font-medium text-[#1f1f1c] transition hover:bg-white/70"
-              >
-                Explore stress
-              </Link>
-            </div>
-          </div>
-
-          <div className="relative hidden lg:block">
-            <div className="absolute inset-0 -z-10 rounded-[2rem] bg-gradient-to-br from-white/70 to-[#ebe4da] blur-2xl" />
-
-            <div className="hidden rounded-[2rem] border border-black/5 bg-white/50 p-4 shadow-[0_20px_80px_rgba(31,31,28,0.08)] backdrop-blur lg:block">
-              <div className="rounded-[1.75rem] bg-[#efe8de] p-6 md:p-8">
-                <div className="aspect-[4/5] rounded-[1.5rem] border border-black/5 bg-gradient-to-b from-[#f9f6f1] to-[#e7dfd4] p-6">
-                  <div className="flex h-full flex-col justify-between rounded-[1.25rem] border border-white/60 bg-white/40 p-6">
-                    <div>
-                      <p className="text-xs uppercase tracking-[0.16em] text-[#8a847b]">
-                        Foundation topic
-                      </p>
-                      <h2 className="mt-3 text-2xl font-medium text-[#1f1f1c]">
-                        A key entry point into stress, calm, recovery, and the
-                        wider nervous system conversation
-                      </h2>
-                    </div>
-
-                    <div className="space-y-4">
-                      <div className="rounded-2xl bg-white/70 p-4">
-                        <p className="text-sm font-medium text-[#1f1f1c]">
-                          Stress
-                        </p>
-                        <p className="mt-1 text-sm leading-6 text-[#5f5a52]">
-                          How the body responds
-                        </p>
-                      </div>
-
-                      <div className="grid grid-cols-2 gap-4">
-                        <div className="rounded-2xl bg-white/70 p-4">
-                          <p className="text-sm font-medium text-[#1f1f1c]">
-                            Sleep
-                          </p>
-                          <p className="mt-1 text-sm leading-6 text-[#5f5a52]">
-                            Winding down and rest
-                          </p>
-                        </div>
-
-                        <div className="rounded-2xl bg-white/70 p-4">
-                          <p className="text-sm font-medium text-[#1f1f1c]">
-                            Recovery
-                          </p>
-                          <p className="mt-1 text-sm leading-6 text-[#5f5a52]">
-                            Return and restoration
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
+      <section className="border-b border-black/5 px-5 py-20 sm:px-8 lg:px-12 lg:py-28">
+        <div className="mx-auto max-w-[88rem]">
+          <p className="text-xs font-medium uppercase tracking-[0.3em] text-[#7b7167]">Foundation guide · cranial nerve X</p>
+          <h1 className="mt-6 max-w-[18ch] text-[clamp(3rem,7vw,6.4rem)] font-medium leading-[0.96] tracking-[-0.065em]">
+            The vagus nerve: anatomy, course and function
+          </h1>
+          <p className="mt-8 max-w-3xl text-lg leading-8 text-[#5f5a52]">
+            The paired vagus nerves connect the brainstem with structures in the neck, chest and upper abdomen. This evidence-based foundation separates anatomy from “calm switch” claims, consumer tests and product-specific evidence.
+          </p>
+          <div className="mt-10 flex flex-wrap gap-3">
+            <Link href="/no/kunnskap/vagusnerven" className="rounded-full border border-black/12 px-5 py-3 text-sm font-medium hover:bg-white/70">Les på norsk</Link>
+            <Link href="#short-answer" className="rounded-full bg-[#1f1f1c] px-5 py-3 text-sm font-medium text-white hover:opacity-90">Read the direct answer</Link>
           </div>
         </div>
       </section>
 
-      <section className="border-b border-black/5 bg-[#f2eee8]">
-        <div className="mx-auto grid max-w-7xl gap-14 px-6 py-24 md:px-10 md:py-28 lg:grid-cols-[1fr_0.95fr] lg:items-start">
-          <div>
-            <p className="text-sm uppercase tracking-[0.18em] text-[#7a756c]">
-              What the vagus nerve is
-            </p>
-
-            <h2 className="mt-4 max-w-3xl text-3xl font-medium leading-tight tracking-[-0.03em] md:text-5xl">
-              The vagus nerve is a major pathway connecting the brain with the
-              rest of the body
-            </h2>
-
-            <p className="mt-6 max-w-2xl text-base leading-8 text-[#5f5a52] md:text-lg">
-              The vagus nerve is often described as one of the body’s most
-              important communication pathways. It helps connect the brain with
-              systems involved in heart rate, breathing, digestion, and broader
-              nervous system function.
-            </p>
-
-            <p className="mt-6 max-w-2xl text-base leading-8 text-[#5f5a52]">
-              That is one reason it appears so often in conversations about
-              stress and calm. The topic gives people a more connected way to
-              think about the body, rather than treating stress, sleep, and
-              recovery as completely separate experiences.
-            </p>
-
-            <p className="mt-6 max-w-2xl text-base leading-8 text-[#5f5a52]">
-              A useful starting point is not to get lost in technical detail,
-              but to understand why the vagus nerve keeps showing up whenever
-              people are asking how the body settles, restores, and returns
-              after pressure.
-            </p>
-
-            <div className="mt-10 flex flex-wrap gap-4">
-              <Link
-                href="/learn/nervous-system-regulation"
-                className="rounded-full bg-[#1f1f1c] px-6 py-3 text-sm font-medium text-white transition hover:opacity-90"
-              >
-                Explore nervous system regulation
-              </Link>
-
-              <Link
-                href="/conditions/stress"
-                className="rounded-full border border-black/10 px-6 py-3 text-sm font-medium text-[#1f1f1c] transition hover:bg-white/60"
-              >
-                Explore stress
-              </Link>
-            </div>
-          </div>
-
-          <div className="rounded-[2rem] border border-black/5 bg-white/60 p-8 shadow-[0_12px_40px_rgba(31,31,28,0.04)] md:p-10">
-            <p className="text-sm uppercase tracking-[0.16em] text-[#8a847b]">
-              Key takeaways
-            </p>
-
-            <div className="mt-8 space-y-5">
-              {keyPoints.map((item) => (
-                <article
-                  key={item.title}
-                  className="rounded-2xl border border-black/5 bg-[#f8f5f0] p-5"
-                >
-                  <h3 className="text-lg font-medium text-[#1f1f1c]">
-                    {item.title}
-                  </h3>
-                  <p className="mt-2 text-sm leading-7 text-[#5f5a52] md:text-base">
-                    {item.description}
-                  </p>
-                </article>
-              ))}
-            </div>
-
-            <div className="mt-8 rounded-2xl bg-[#e9e1d6] p-5">
-              <p className="text-sm font-medium text-[#1f1f1c]">
-                Best used as a clear starting point
-              </p>
-              <p className="mt-2 text-sm leading-7 text-[#5f5a52]">
-                You do not need to master the science first. The most important
-                thing is understanding why this topic matters in practical
-                conversations about daily life.
-              </p>
-            </div>
-          </div>
+      <section className="border-b border-black/5 bg-[#eee7dd] px-5 py-14 sm:px-8 lg:px-12 lg:py-16" data-wave2d2e2-direct-answer="en">
+        <div className="mx-auto max-w-[88rem] rounded-[1.75rem] border border-black/8 bg-white/70 p-7 sm:p-10">
+          <p className="text-xs font-medium uppercase tracking-[0.22em] text-[#7b7167]">Direct answer</p>
+          <p className="mt-4 max-w-4xl text-xl leading-9 text-[#3d3934] sm:text-2xl">
+            The vagus nerve is the tenth cranial nerve and runs from the brainstem to structures in the neck, chest and abdomen. It participates in sensory, motor and autonomic functions and should not be reduced to a simple “calm switch.”
+          </p>
         </div>
       </section>
 
-      <section className="border-b border-black/5 bg-[#f7f4ef]">
-        <div className="mx-auto max-w-7xl px-6 py-24 md:px-10 md:py-28">
-          <div className="max-w-3xl">
-            <p className="text-sm uppercase tracking-[0.18em] text-[#7a756c]">
-              Why it matters in practice
-            </p>
-
-            <h2 className="mt-4 text-3xl font-medium leading-tight tracking-[-0.03em] md:text-5xl">
-              The vagus nerve matters because it helps connect stress, settling,
-              sleep, recovery, and daily rhythm into one larger picture
-            </h2>
-
-            <p className="mt-6 max-w-2xl text-base leading-8 text-[#5f5a52] md:text-lg">
-              One reason the vagus nerve has become such an important topic is
-              that it helps bridge the gap between theory and lived experience.
-              People may start by searching for stress relief, better sleep, or
-              deeper recovery, and then discover that the vagus nerve sits close
-              to all of those conversations.
-            </p>
-
-            <p className="mt-6 max-w-2xl text-base leading-8 text-[#5f5a52]">
-              That does not mean the vagus nerve is the whole answer. It means
-              it is one of the clearest entry points into understanding why
-              nervous system topics feel so relevant in ordinary life.
-            </p>
-          </div>
-
-          <div className="mt-14 grid gap-6 md:grid-cols-2 xl:grid-cols-4">
-            {whatItConnects.map((item) => (
-              <article
-                key={item.title}
-                className="rounded-[2rem] border border-black/5 bg-white/60 p-8 shadow-[0_12px_40px_rgba(31,31,28,0.04)]"
-              >
-                <h3 className="text-2xl font-medium leading-tight text-[#1f1f1c]">
-                  {item.title}
-                </h3>
-
-                <p className="mt-4 text-sm leading-7 text-[#5f5a52] md:text-base">
-                  {item.description}
-                </p>
-              </article>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      <section className="border-b border-black/5 bg-[#f2eee8]">
-        <div className="mx-auto grid max-w-7xl gap-14 px-6 py-24 md:px-10 md:py-28 lg:grid-cols-[0.95fr_1.05fr] lg:items-center">
-          <div className="rounded-[2rem] border border-black/5 bg-white/60 p-8 shadow-[0_12px_40px_rgba(31,31,28,0.04)] md:p-10">
-            <p className="text-sm uppercase tracking-[0.16em] text-[#8a847b]">
-              Why people care about it
-            </p>
-
-            <div className="mt-8 space-y-5">
-              {whyItMatters.map((item) => (
-                <article
-                  key={item.title}
-                  className="rounded-2xl border border-black/5 bg-[#f8f5f0] p-5"
-                >
-                  <h3 className="text-lg font-medium text-[#1f1f1c]">
-                    {item.title}
-                  </h3>
-                  <p className="mt-2 text-sm leading-7 text-[#5f5a52] md:text-base">
-                    {item.description}
-                  </p>
-                  <Link
-                    href={item.href}
-                    className="mt-4 inline-flex text-sm font-medium text-[#1f1f1c] transition hover:opacity-70"
-                  >
-                    {item.linkLabel}
-                  </Link>
-                </article>
-              ))}
-            </div>
-
-            <div className="mt-8 rounded-2xl bg-[#e9e1d6] p-5">
-              <p className="text-sm font-medium text-[#1f1f1c]">
-                The topic becomes useful when it connects to real life
-              </p>
-              <p className="mt-2 text-sm leading-7 text-[#5f5a52]">
-                Stress, sleep, and recovery are usually the practical reasons
-                people care about this topic in the first place.
-              </p>
-            </div>
-          </div>
-
-          <div>
-            <p className="text-sm uppercase tracking-[0.18em] text-[#7a756c]">
-              Why this page matters in the cluster
-            </p>
-
-            <h2 className="mt-4 max-w-3xl text-3xl font-medium leading-tight tracking-[-0.03em] md:text-5xl">
-              This page works best as the broad entry point into the whole
-              vagus nerve conversation
-            </h2>
-
-            <p className="mt-6 max-w-2xl text-base leading-8 text-[#5f5a52] md:text-lg">
-              Some Learn pages are there to explain frameworks. Some are there
-              to explain symptoms or lived experience. This page has a different
-              job: it should help someone understand why the vagus nerve keeps
-              appearing across all of those conversations.
-            </p>
-
-            <p className="mt-6 max-w-2xl text-base leading-8 text-[#5f5a52]">
-              That is why this page works best as a broad topic page — one that
-              introduces the theme clearly, then sends people deeper into
-              regulation, vagus nerve stimulation, vagal tone, parasympathetic
-              states, stress, sleep, and recovery.
-            </p>
-
-            <div className="mt-10 flex flex-wrap gap-4">
-              <Link
-                href="/learn/vagus-nerve-stimulation"
-                className="rounded-full bg-[#1f1f1c] px-6 py-3 text-sm font-medium text-white transition hover:opacity-90"
-              >
-                Explore VNS
-              </Link>
-
-              <Link
-                href="/learn/non-invasive-vagus-nerve-stimulation"
-                className="rounded-full border border-black/10 px-6 py-3 text-sm font-medium text-[#1f1f1c] transition hover:bg-white/60"
-              >
-                Non-invasive VNS
-              </Link>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section className="border-b border-black/5 bg-[#f7f4ef]">
-        <div className="mx-auto max-w-7xl px-6 py-24 md:px-10 md:py-28">
-          <div className="flex flex-col gap-6 md:flex-row md:items-end md:justify-between">
-            <div className="max-w-3xl">
-              <p className="text-sm uppercase tracking-[0.18em] text-[#7a756c]">
-                Why people search for it
-              </p>
-
-              <h2 className="mt-4 text-3xl font-medium leading-tight tracking-[-0.03em] md:text-5xl">
-                Most people are not really searching for a nerve. They are
-                searching for relief, clarity, or a better explanation of what
-                the body is doing.
-              </h2>
-
-              <p className="mt-6 max-w-2xl text-base leading-8 text-[#5f5a52] md:text-lg">
-                The term “vagus nerve” often becomes a gateway topic. People
-                discover it while trying to make sense of tension, overwhelm,
-                sleep problems, fragile recovery, or why the body does not feel
-                as settled as they want it to.
-              </p>
-            </div>
-
+      {sections.map((section, index) => (
+        <section key={section.id} id={section.id} className={`scroll-mt-28 border-b border-black/5 px-5 py-16 sm:px-8 lg:px-12 lg:py-20 ${index % 2 === 0 ? "bg-[#f7f4ef]" : "bg-[#eee7dd]"}`}>
+          <div className="mx-auto grid max-w-[88rem] gap-8 lg:grid-cols-[0.36fr_0.64fr] lg:gap-16">
             <div>
-              <Link
-                href="/conditions"
-                className="inline-flex rounded-full border border-black/10 px-6 py-3 text-sm font-medium text-[#1f1f1c] transition hover:bg-white/60"
-              >
-                Explore conditions
-              </Link>
+              <p className="text-xs font-medium uppercase tracking-[0.22em] text-[#7b7167]">{section.eyebrow}</p>
+              <p className="mt-3 text-sm text-[#8a8178]">{String(index + 1).padStart(2, "0")} / 10</p>
+            </div>
+            <div className="min-w-0">
+              <h2 className="max-w-4xl text-3xl font-medium tracking-[-0.04em] sm:text-5xl">{section.title}</h2>
+              <div className="mt-8 max-w-3xl space-y-6">
+                {section.paragraphs.map((paragraph) => (
+                  <p key={paragraph} className="text-base leading-8 text-[#5f5a52] sm:text-lg">{paragraph}</p>
+                ))}
+              </div>
+
+              {section.bullets ? (
+                <ul className="mt-8 max-w-3xl space-y-3 rounded-[1.5rem] border border-black/8 bg-white/70 p-6">
+                  {section.bullets.map((item) => <li key={item} className="flex gap-3 text-base leading-7 text-[#5f5a52]"><span aria-hidden="true">—</span><span>{item}</span></li>)}
+                </ul>
+              ) : null}
+
+              {section.answers?.map((answer) => (
+                <div key={answer.question} className="mt-8 rounded-[1.5rem] border border-black/8 bg-white/70 p-6" data-direct-answer-question={answer.question}>
+                  <h3 className="text-xl font-medium tracking-[-0.025em]">{answer.question}</h3>
+                  <p className="mt-3 text-base leading-8 text-[#5f5a52]">{answer.answer}</p>
+                </div>
+              ))}
+
+              {section.id === "organs-branches-and-territories" ? (
+                <div className="mt-10 overflow-x-auto rounded-[1.5rem] border border-black/8 bg-white/70">
+                  <table className="w-full min-w-[56rem] border-collapse text-left">
+                    <caption className="p-5 text-left text-sm text-[#625b52]">Examples of vagal territories and the interpretation boundary</caption>
+                    <thead className="border-y border-black/8 bg-white/70"><tr>{["Territory", "Examples of vagal contribution", "Important limit"].map((heading) => <th key={heading} className="p-4 text-sm font-medium">{heading}</th>)}</tr></thead>
+                    <tbody>{organRows.map((row) => <tr key={row[0]} className="border-b border-black/7 last:border-b-0">{row.map((cell) => <td key={cell} className="p-4 align-top text-sm leading-7 text-[#5f5a52]">{cell}</td>)}</tr>)}</tbody>
+                  </table>
+                </div>
+              ) : null}
+
+              {section.id === "short-answer" ? <div className="mt-8 flex flex-wrap gap-5"><Link href="/learn/how-to-stimulate-the-vagus-nerve" className="font-medium underline underline-offset-4">Explore the methods overview</Link><Link href="/learn/vagus-nerve-stimulation" className="font-medium underline underline-offset-4">Read the electrical VNS overview</Link></div> : null}
+              {section.id === "autonomic-and-parasympathetic-role" ? <p className="mt-8"><Link href="/learn/nervous-system-regulation" className="font-medium underline underline-offset-4">Explore the broader nervous-system regulation framework</Link></p> : null}
+              {section.id === "vagal-tone-hrv-and-measurement-limits" ? <p className="mt-8"><Link href="/learn/vagal-tone" className="font-medium underline underline-offset-4">Read the dedicated vagal-tone and measurement guide</Link></p> : null}
+              {section.id === "stimulation-wellness-and-medical-boundaries" ? <div className="mt-8 flex flex-wrap gap-5"><Link href="/learn/vagus-nerve-reset" className="font-medium underline underline-offset-4">Understand reset language</Link><Link href="/learn/breathing-exercises-and-the-vagus-nerve" className="font-medium underline underline-offset-4">Read the breathing evidence guide</Link><Link href="/learn/vagus-nerve-massage" className="font-medium underline underline-offset-4">Read the massage evidence and safety guide</Link></div> : null}
             </div>
           </div>
+        </section>
+      ))}
 
-          <div className="mt-14 grid gap-6 md:grid-cols-2 xl:grid-cols-4">
-            {searchReasons.map((item) => (
-              <article
-                key={item.title}
-                className="rounded-[2rem] border border-black/5 bg-white/60 p-8 shadow-[0_12px_40px_rgba(31,31,28,0.04)]"
-              >
-                <h3 className="text-2xl font-medium leading-tight text-[#1f1f1c]">
-                  {item.title}
-                </h3>
-
-                <p className="mt-4 text-sm leading-7 text-[#5f5a52] md:text-base">
-                  {item.description}
-                </p>
-
-                <Link
-                  href={item.href}
-                  className="mt-8 inline-flex text-sm font-medium text-[#1f1f1c] transition hover:opacity-70"
-                >
-                  {item.linkLabel}
-                </Link>
-              </article>
+      <section className="border-b border-black/5 bg-[#1f1f1c] px-5 py-16 text-white sm:px-8 lg:px-12 lg:py-20" data-wave2d2e2-sources="en">
+        <div className="mx-auto max-w-[88rem]">
+          <p className="text-xs font-medium uppercase tracking-[0.22em] text-white/60">Reader-visible sources</p>
+          <h2 className="mt-4 max-w-4xl text-3xl font-medium tracking-[-0.04em] sm:text-5xl">Read claims at the level of the fibre, branch, measure and intervention</h2>
+          <div className="mt-10 grid gap-4 md:grid-cols-2">
+            {sources.map((source) => (
+              <a key={source.id} href={source.url} target="_blank" rel="noreferrer" data-source-id={source.id} className="rounded-[1.25rem] border border-white/15 p-5 hover:bg-white/5">
+                <p className="text-xs font-medium uppercase tracking-[0.18em] text-white/45">{source.id}</p>
+                <p className="mt-3 text-sm font-medium">{source.title}</p>
+                <p className="mt-2 text-sm leading-6 text-white/65">{source.publisher} · {source.publication} · {source.year}</p>
+              </a>
             ))}
           </div>
-        </div>
-      </section>
-
-      <section className="border-b border-black/5 bg-[#f2eee8]">
-        <div className="mx-auto grid max-w-7xl gap-14 px-6 py-24 md:px-10 md:py-28 lg:grid-cols-[0.95fr_1.05fr] lg:items-center">
-          <div className="rounded-[2rem] border border-black/5 bg-white/60 p-8 shadow-[0_12px_40px_rgba(31,31,28,0.04)] md:p-10">
-            <p className="text-sm uppercase tracking-[0.16em] text-[#8a847b]">
-              Connected topics
-            </p>
-
-            <div className="mt-8 space-y-5">
-              {connectedTopics.map((item) => (
-                <article
-                  key={item.title}
-                  className="rounded-2xl border border-black/5 bg-[#f8f5f0] p-5"
-                >
-                  <h3 className="text-lg font-medium text-[#1f1f1c]">
-                    {item.title}
-                  </h3>
-                  <p className="mt-2 text-sm leading-7 text-[#5f5a52] md:text-base">
-                    {item.description}
-                  </p>
-                  <Link
-                    href={item.href}
-                    className="mt-4 inline-flex text-sm font-medium text-[#1f1f1c] transition hover:opacity-70"
-                  >
-                    {item.linkLabel}
-                  </Link>
-                </article>
-              ))}
-            </div>
-
-            <div className="mt-8 rounded-2xl bg-[#e9e1d6] p-5">
-              <p className="text-sm font-medium text-[#1f1f1c]">
-                This topic becomes stronger inside a larger cluster
-              </p>
-              <p className="mt-2 text-sm leading-7 text-[#5f5a52]">
-                The vagus nerve is most useful when connected to regulation,
-                stimulation, recovery, calm-state learning, and real-life
-                nervous system experience.
-              </p>
-            </div>
-          </div>
-
-          <div>
-            <p className="text-sm uppercase tracking-[0.18em] text-[#7a756c]">
-              Clarification
-            </p>
-
-            <h2 className="mt-4 max-w-3xl text-3xl font-medium leading-tight tracking-[-0.03em] md:text-5xl">
-              The vagus nerve matters, but it makes most sense as part of a
-              broader nervous system picture
-            </h2>
-
-            <p className="mt-6 max-w-2xl text-base leading-8 text-[#5f5a52] md:text-lg">
-              Because the vagus nerve has become such a visible online topic, it
-              can sometimes be framed too simply. That usually makes the topic
-              feel more dramatic than it needs to be.
-            </p>
-
-            <p className="mt-6 max-w-2xl text-base leading-8 text-[#5f5a52]">
-              A calmer and more useful perspective is that the vagus nerve is an
-              important part of the conversation — but it still makes the most
-              sense when placed inside a larger understanding of stress,
-              regulation, sleep, recovery, and everyday nervous system function.
-            </p>
-
-            <div className="mt-10 flex flex-wrap gap-4">
-              <Link
-                href="/research"
-                className="rounded-full bg-[#1f1f1c] px-6 py-3 text-sm font-medium text-white transition hover:opacity-90"
-              >
-                Explore research
-              </Link>
-
-              <Link
-                href="/learn/nervous-system-regulation"
-                className="rounded-full border border-black/10 px-6 py-3 text-sm font-medium text-[#1f1f1c] transition hover:bg-white/60"
-              >
-                Explore regulation
-              </Link>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section className="bg-[#f7f4ef]">
-        <div className="mx-auto max-w-7xl px-6 py-24 md:px-10 md:py-32">
-          <div className="rounded-[2.5rem] border border-black/5 bg-gradient-to-br from-[#efe7dc] to-[#e5dbcf] px-8 py-14 shadow-[0_20px_80px_rgba(31,31,28,0.06)] md:px-12 md:py-16">
-            <div className="max-w-3xl">
-              <p className="text-sm uppercase tracking-[0.18em] text-[#7a756c]">
-                Keep exploring the broader picture
-              </p>
-
-              <h2 className="mt-4 text-3xl font-medium leading-tight tracking-[-0.03em] md:text-5xl">
-                Use the vagus nerve as the entry point into regulation, resilience, and stress-related support
-              </h2>
-
-              <p className="mt-6 max-w-2xl text-base leading-8 text-[#5f5a52] md:text-lg">
-                The vagus nerve is one of the most important foundation topics
-                in the Neuvago learning universe because it helps connect what
-                people are already searching for — stress relief, better sleep,
-                calmer evenings, stronger recovery — into one broader,
-                more understandable picture.
-              </p>
-
-              <div className="mt-10 flex flex-wrap gap-4">
-                <Link
-                  href="/learn/nervous-system-regulation"
-                  className="rounded-full bg-[#1f1f1c] px-6 py-3 text-sm font-medium text-white transition hover:opacity-90"
-                >
-                  Explore regulation
-                </Link>
-
-                <Link
-                  href="/learn/vagal-tone"
-                  className="rounded-full border border-black/10 bg-white/50 px-6 py-3 text-sm font-medium text-[#1f1f1c] transition hover:bg-white/75"
-                >
-                  Explore vagal tone
-                </Link>
-
-                <Link
-                  href="/conditions/stress"
-                  className="rounded-full border border-black/10 bg-transparent px-6 py-3 text-sm font-medium text-[#1f1f1c] transition hover:bg-white/40"
-                >
-                  Explore stress
-                </Link>
-
-                <Link
-                  href="/learn/vagus-nerve-stimulation"
-                  className="rounded-full border border-black/10 bg-transparent px-6 py-3 text-sm font-medium text-[#1f1f1c] transition hover:bg-white/40"
-                >
-                  Understand VNS
-                </Link>
-              </div>
-            </div>
-          </div>
+          <p className="mt-10 max-w-3xl text-sm leading-7 text-white/65">
+            Reviewed and modified 5 September 2026. General educational information only. This page does not diagnose vagal injury or dysfunction, teach a stimulation protocol, provide medical clearance or replace individual care. General anatomy, HRV, inflammation or VNS research is not automatically product evidence for Neuvago.
+          </p>
         </div>
       </section>
     </main>
-  )
+  );
 }

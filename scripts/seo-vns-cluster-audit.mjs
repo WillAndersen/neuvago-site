@@ -2008,6 +2008,135 @@ if (!wave2d2d2Sources.noMassage.includes("blandet nerveforsyning")) errors.push(
 if (!wave2d2d2Sources.enMassage.includes("mixed innervation")) errors.push("English massage page lacks the mixed ear innervation boundary.");
 if (!wave2d2d2Sources.noMassage.includes("ikke automatisk dokumentasjon for Neuvago")) errors.push("Norwegian massage page lacks the product-evidence boundary.");
 if (!wave2d2d2Sources.enMassage.includes("not automatically product evidence for Neuvago")) errors.push("English massage page lacks the product-evidence boundary.");
+
+// WAVE 2D.2E.2 — bilingual vagus-nerve foundation-page hardening
+const wave2d2e2 = {
+  noPage: "src/content/knowledge/no/articles/vagusnerven.ts",
+  enPage: "src/app/(en)/learn/vagus-nerve/page.tsx",
+  noHub: "src/app/(no)/no/kunnskap/page.tsx",
+  enHub: "src/app/(en)/learn/page.tsx",
+  noMethods: "src/content/knowledge/no/articles/hvordan-stimulere-vagusnerven.ts",
+  enMethods: "src/app/(en)/learn/how-to-stimulate-the-vagus-nerve/page.tsx",
+  noVns: "src/content/knowledge/no/articles/vagusnervestimulering.ts",
+  enVns: "src/app/(en)/learn/vagus-nerve-stimulation/page.tsx",
+  sitemap: "src/app/sitemap.ts",
+  llms: "public/llms.txt",
+  queries: "docs/seo-vns-cluster-target-queries.md",
+  measurement: "docs/seo-measurement-plan.md",
+  sourceLock: "docs/seo/wave2d2e-foundation-pages-source-and-claims-lock.md",
+};
+const wave2d2e2Sources = Object.fromEntries(
+  Object.entries(wave2d2e2).map(([key, value]) => [key, readIfExists(path.join(repoRoot, value))]),
+);
+for (const [key, source] of Object.entries(wave2d2e2Sources)) {
+  if (!source) errors.push(`Wave 2D.2E.2 source missing: ${key}`);
+}
+const wave2d2e2Sections = [
+  "short-answer",
+  "definition-and-cranial-nerve-x",
+  "brainstem-to-body-course",
+  "afferent-efferent-and-mixed-fibres",
+  "organs-branches-and-territories",
+  "autonomic-and-parasympathetic-role",
+  "reflexes-interoception-and-homeostasis",
+  "vagal-tone-hrv-and-measurement-limits",
+  "stimulation-wellness-and-medical-boundaries",
+  "further-reading-and-sources",
+];
+const wave2d2e2SourceIds = ["A-001", "A-003", "A-004", "A-005", "B-001", "B-002", "B-003", "B-004", "B-005", "B-006", "B-010", "B-011", "B-012", "B-013", "B-014", "B-015"];
+for (const sectionId of wave2d2e2Sections) {
+  const noMatches = wave2d2e2Sources.noPage.match(new RegExp(`\\bid: ["']${sectionId}["']`, "g")) ?? [];
+  const enMatches = wave2d2e2Sources.enPage.match(new RegExp(`\\bid: ["']${sectionId}["']`, "g")) ?? [];
+  if (noMatches.length !== 1) errors.push(`Norwegian foundation section ${sectionId} must occur exactly once; found ${noMatches.length}.`);
+  if (enMatches.length !== 1) errors.push(`English foundation section ${sectionId} must occur exactly once; found ${enMatches.length}.`);
+}
+for (const sourceId of wave2d2e2SourceIds) {
+  const noMatches = wave2d2e2Sources.noPage.match(new RegExp(`\\bid: ["']${sourceId}["']`, "g")) ?? [];
+  const enMatches = wave2d2e2Sources.enPage.match(new RegExp(`\\bid: ["']${sourceId}["']`, "g")) ?? [];
+  if (noMatches.length !== 1) errors.push(`Norwegian foundation source ${sourceId} must occur exactly once; found ${noMatches.length}.`);
+  if (enMatches.length !== 1) errors.push(`English foundation source ${sourceId} must occur exactly once; found ${enMatches.length}.`);
+}
+const wave2d2e2NoQuestions = [
+  "Hva er vagusnerven?",
+  "Hvor er vagusnerven?",
+  "Hvilken oppgave har vagusnerven?",
+  "Hva skjer når vagusnerven aktiveres?",
+  "Har vi én eller to vagusnerver?",
+  "Er vagusnerven det samme som det parasympatiske nervesystemet?",
+  "Er vagusnerven en «ro-knapp» eller «reset-knapp»?",
+  "Kan HRV måle om vagusnerven fungerer?",
+];
+const wave2d2e2EnQuestions = [
+  "What is the vagus nerve?",
+  "Where is the vagus nerve?",
+  "What does the vagus nerve do?",
+  "What happens when the vagus nerve is activated?",
+  "Do we have one vagus nerve or two?",
+  "Is the vagus nerve the same as the parasympathetic nervous system?",
+  "Is the vagus nerve a “calm switch” or “reset button”?",
+  "Can HRV measure whether the vagus nerve is working?",
+];
+for (const question of wave2d2e2NoQuestions) if (!wave2d2e2Sources.noPage.includes(question)) errors.push(`Norwegian foundation direct answer missing: ${question}`);
+for (const question of wave2d2e2EnQuestions) if (!wave2d2e2Sources.enPage.includes(question)) errors.push(`English foundation direct answer missing: ${question}`);
+if (!wave2d2e2Sources.noPage.includes('title: "Vagusnerven: anatomi, forløp og funksjon"')) errors.push("Norwegian foundation H1 contract is missing.");
+if (!wave2d2e2Sources.noPage.includes('seoTitle: "Vagusnerven: anatomi, funksjon og hva den gjør"')) errors.push("Norwegian foundation SEO title contract is missing.");
+if (!wave2d2e2Sources.noPage.includes('modifiedAt: "2026-09-05"')) errors.push("Norwegian foundation modified date is missing.");
+if (!wave2d2e2Sources.noPage.includes('englishEquivalent: "/learn/vagus-nerve"')) errors.push("Norwegian foundation English equivalent is missing.");
+if ((wave2d2e2Sources.noPage.match(/href: "\/learn\/vagus-nerve"/g) ?? []).length !== 1 || !wave2d2e2Sources.noPage.includes('label: "Read in English"')) errors.push("Norwegian foundation visible English link must occur exactly once.");
+if (!wave2d2e2Sources.enPage.includes('const title = "Vagus nerve: anatomy, function and what it does"')) errors.push("English foundation SEO title contract is missing.");
+if (!wave2d2e2Sources.enPage.includes('The vagus nerve: anatomy, course and function')) errors.push("English foundation H1 contract is missing.");
+if (!wave2d2e2Sources.enPage.includes('datePublished: "2026-08-17"') || !wave2d2e2Sources.enPage.includes('dateModified: "2026-09-05"')) errors.push("English foundation editorial dates are missing.");
+if (!wave2d2e2Sources.enPage.includes('"nb-NO": "/no/kunnskap/vagusnerven"') || !wave2d2e2Sources.enPage.includes('"x-default": path')) errors.push("English foundation reciprocal hreflang is missing.");
+if ((wave2d2e2Sources.enPage.match(/href="\/no\/kunnskap\/vagusnerven"/g) ?? []).length !== 1 || !wave2d2e2Sources.enPage.includes("Les på norsk")) errors.push("English foundation visible Norwegian link must occur exactly once.");
+if (!wave2d2e2Sources.enPage.includes("buildAuthorityPageStructuredData")) errors.push("English foundation must emit Article and BreadcrumbList through the authority builder.");
+for (const [key, source] of [["noPage", wave2d2e2Sources.noPage], ["enPage", wave2d2e2Sources.enPage]]) {
+  if (/QAPage|FAQPage/.test(source)) errors.push(`Wave 2D.2E.2 ${key} must not use QAPage or FAQPage.`);
+  if (/href\s*[:=]\s*["']\/(?:no\/)?(?:produkt|product|shop)["']/.test(source)) errors.push(`Wave 2D.2E.2 ${key} must not link directly to Product or Shop.`);
+  if (/<(?:form|input|textarea|select)\b/.test(source)) errors.push(`Wave 2D.2E.2 ${key} must not contain forms or health inputs.`);
+  if (/\b(?:gtag|dataLayer|trackEvent|OrganicConversionTracker|TrackedLink|analytics)\b|\btrack[A-Z][A-Za-z0-9_]*\s*\(/.test(source)) errors.push(`Wave 2D.2E.2 ${key} must not add tracking logic.`);
+}
+for (const marker of [
+  "venstre og en høyre vagusnerve",
+  "ikke en direkte test av hele vagusnerven",
+  "kan ikke reduseres til en enkel «ro-knapp»",
+  "ikke automatisk dokumentasjon for Neuvago",
+]) if (!wave2d2e2Sources.noPage.includes(marker)) errors.push(`Norwegian foundation boundary missing: ${marker}`);
+for (const marker of [
+  "left and a right vagus nerve",
+  "do not directly measure the whole vagus nerve",
+  "should not be reduced to a simple “calm switch.”",
+  "not automatically product evidence for Neuvago",
+]) if (!wave2d2e2Sources.enPage.includes(marker)) errors.push(`English foundation boundary missing: ${marker}`);
+for (const route of [
+  "/no/kunnskap/hvordan-stimulere-vagusnerven",
+  "/no/kunnskap/vagusnervestimulering",
+  "/no/kunnskap/hrv-og-vagusnerven",
+  "/no/kunnskap/vagal-tone",
+  "/no/kunnskap/resette-vagusnerven",
+  "/no/kunnskap/pusteovelser-og-vagusnerven",
+  "/no/kunnskap/vagusnerven-og-massasje",
+]) if (!wave2d2e2Sources.noPage.includes(route)) errors.push(`Norwegian foundation owner link missing: ${route}`);
+for (const route of [
+  "/learn/how-to-stimulate-the-vagus-nerve",
+  "/learn/vagus-nerve-stimulation",
+  "/learn/vagal-tone",
+  "/learn/vagus-nerve-reset",
+  "/learn/breathing-exercises-and-the-vagus-nerve",
+  "/learn/vagus-nerve-massage",
+  "/learn/nervous-system-regulation",
+]) if (!wave2d2e2Sources.enPage.includes(route)) errors.push(`English foundation owner link missing: ${route}`);
+if (!wave2d2e2Sources.sitemap.includes('{ path: "/learn/vagus-nerve", changeFrequency: "weekly", priority: 0.82, lastModified: "2026-09-05" }')) errors.push("English foundation sitemap date is not locked to 2026-09-05.");
+const wave2d2e2ExactRouteCount = (source, route) => {
+  const escaped = route.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+  return (source.match(new RegExp(`${escaped}(?=$|[\\s)\\]}>.,;:])`, "gm")) ?? []).length;
+};
+if (wave2d2e2ExactRouteCount(wave2d2e2Sources.llms, "/learn/vagus-nerve") !== 1) errors.push("llms.txt must contain the exact English foundation route once.");
+if (wave2d2e2ExactRouteCount(wave2d2e2Sources.llms, "/no/kunnskap/vagusnerven") !== 1) errors.push("llms.txt must contain the exact Norwegian foundation route once.");
+if (wave2d2e2ExactRouteCount(wave2d2e2Sources.llms, "/no/kunnskap/vagusnerven-og-massasje") !== 1) errors.push("llms.txt must keep the Norwegian massage route distinct and present once.");
+if (!wave2d2e2Sources.queries.includes("## WAVE 2D.2E.2 — foundation SERP owner lock")) errors.push("Foundation query-owner lock is missing.");
+if (!wave2d2e2Sources.measurement.includes("## WAVE 2D.2E.2 — foundation measurement and privacy lock")) errors.push("Foundation measurement lock is missing.");
+if (!wave2d2e2Sources.sourceLock.includes("## Exact implementation scope") || !wave2d2e2Sources.sourceLock.includes("HRV, RSA and RespHRV")) errors.push("Foundation source-and-claims repository lock is incomplete.");
+if (wave2d2e2Sources.noHub.includes("/no/kunnskap/vagusnerven/page.tsx")) errors.push("Norwegian hub must remain registry-driven and must not reference a competing physical page.");
 const artifacts = findArtifacts(repoRoot);
 if (artifacts.length > 0) {
   errors.push(`Remove generated artifacts before commit: ${artifacts.slice(0, 12).join(", ")}${artifacts.length > 12 ? " ..." : ""}`);

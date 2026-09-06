@@ -507,3 +507,16 @@ Measurement watchlist after publication: indexation, impressions, query families
 The bilingual massage pair adds no event name, event parameter, tracked action or analytics schema. Do not record which touch area, pressure point, comparison row, safety warning, source card or professional-care link a reader selects. Do not collect or infer symptoms, medical history, vascular status, heart-rhythm concerns, prior syncope, pain, neurological signs or a personalised recommendation from ordinary editorial navigation.
 
 Measurement watchlist after publication: indexation, impressions, query families, click-through rate and cannibalisation between massage, ear anatomy, auricular VNS, methods, breathing, reset, safety and vagus-foundation owners. Use aggregate search-performance data only; no touch, pressure-point or health-input surface is introduced.
+
+## WAVE 2D.2E.2 — foundation measurement and privacy lock
+
+Routes:
+
+- `/no/kunnskap/vagusnerven`
+- `/learn/vagus-nerve`
+
+Measure search visibility, impressions, clicks, landing-page engagement and onward navigation at the existing aggregate page level. Segment the two routes from specialist method, VNS, reset, breathing, massage, regulation and HRV owners to watch cannibalisation and query migration.
+
+No new analytics event, event parameter, tracked language-link action, health input, symptom score, HRV upload or personalised recommendation is introduced. The visible language links and all source links remain ordinary untracked editorial links. HRV, RSA and RespHRV must not be interpreted in reporting as a direct whole-vagus test or a diagnosis of weak, damaged or overactive vagus function.
+
+Technical expectations remain fixed: VNS SEO audit 23→23 routes, sitemap 208→208 URLs, static build 240→240 pages, zero new routes and zero remaining future first-batch child routes.

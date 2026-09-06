@@ -147,3 +147,16 @@ The breathing pair owns the dedicated breathing intent. The methods pillars reta
 | `/learn/vagus-nerve-massage` | English massage, touch, pressure-point and safety explainer | vagus nerve massage, pressure points, ear/neck touch, carotid sinus | broad anatomy, breathing, reset, electrical VNS, product use, clinical how-to |
 
 The massage pair owns the dedicated massage and pressure-point intent. The methods pillars retain broad method navigation; the ear-anatomy and auricular-VNS pages retain detailed anatomy and electrical stimulation; the breathing and reset pairs retain their own intents. Carotid sinus massage remains a clinician-directed medical manoeuvre, not a consumer technique.
+
+## WAVE 2D.2E.2 — foundation SERP owner lock
+
+| Query family | Primary owner | Protected adjacent owners | Boundary |
+|---|---|---|---|
+| what is the vagus nerve / hva er vagusnerven | `/learn/vagus-nerve` · `/no/kunnskap/vagusnerven` | methods, VNS, reset, breathing and massage pages | Foundation definition, paired anatomy and high-level function only. |
+| vagus nerve anatomy / vagusnerven anatomi | foundation pair | auricular anatomy and ear-vs-neck guides | Gross course and major branches; no electrode placement or device selection. |
+| what does the vagus nerve do / hva gjør vagusnerven | foundation pair | regulation, calming, HRV and vagal-tone pages | Sensory, motor, autonomic and reflex function families; no one-mechanism explanation. |
+| vagus nerve and parasympathetic system | foundation pair | nervous-system regulation owners | Vagal parasympathetic role inside the broader autonomic and enteric systems. |
+| HRV vagus nerve / HRV vagusnerven | dedicated HRV and vagal-tone owners | foundation pair | Foundation page states only the measurement boundary and routes interpretation outward. |
+| stimulate, reset, breathe, massage or choose device | specialist method owners | foundation pair | Foundation page does not teach protocols, pressure points, electrical settings or product choice. |
+
+Cannibalisation watch: the foundation pair must not absorb practical-method, electrical-VNS, reset, breathing, massage, broad calming, nervous-system regulation, HRV workflow, detailed auricular anatomy or device-comparison intent. The VNS SEO route total remains 23 and no new route is introduced.

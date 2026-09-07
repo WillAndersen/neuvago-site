@@ -141,6 +141,25 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: guide.sitemapPriority,
     }));
 
+  // WAVE 2D.3.2A — buyer-guide atomic-pair assertion
+  const wave2d32aBuyerGuideRoutes = [
+    "/no/kunnskap/hvordan-velge-vagusnervestimulator",
+    "/learn/how-to-choose-a-vagus-nerve-stimulation-device",
+  ] as const;
+
+  for (const expectedPath of wave2d32aBuyerGuideRoutes) {
+    const expectedUrl = new URL(expectedPath, siteUrl).toString();
+    const occurrences = decisionGuideEntries.filter(
+      (entry) => entry.url === expectedUrl,
+    ).length;
+
+    if (occurrences !== 1) {
+      throw new Error(
+        `Wave 2D.3.2A buyer-guide route ${expectedPath} must occur exactly once in the decision-guide sitemap entries; found ${occurrences}.`,
+      );
+    }
+  }
+
   const norwegianConditionEntries: MetadataRoute.Sitemap =
     getPublishedNorwegianConditionPages().map((page) => ({
       url: new URL(page.path, siteUrl).toString(),

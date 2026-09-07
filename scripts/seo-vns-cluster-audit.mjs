@@ -2137,6 +2137,133 @@ if (!wave2d2e2Sources.queries.includes("## WAVE 2D.2E.2 — foundation SERP owne
 if (!wave2d2e2Sources.measurement.includes("## WAVE 2D.2E.2 — foundation measurement and privacy lock")) errors.push("Foundation measurement lock is missing.");
 if (!wave2d2e2Sources.sourceLock.includes("## Exact implementation scope") || !wave2d2e2Sources.sourceLock.includes("HRV, RSA and RespHRV")) errors.push("Foundation source-and-claims repository lock is incomplete.");
 if (wave2d2e2Sources.noHub.includes("/no/kunnskap/vagusnerven/page.tsx")) errors.push("Norwegian hub must remain registry-driven and must not reference a competing physical page.");
+// WAVE 2D.3.2A — bilingual VNS buyer-guide hardening
+const wave2d32aGuidePath = path.join(
+  repoRoot,
+  "src/content/decision-guides/how-to-choose-vns-device.ts",
+);
+const wave2d32aGuide = readIfExists(wave2d32aGuidePath);
+const wave2d32aLock = readIfExists(
+  path.join(repoRoot, "docs/seo/wave2d3-second-batch-source-and-claims-lock.md"),
+);
+const wave2d32aQueries = readIfExists(
+  path.join(repoRoot, "docs/seo-vns-cluster-target-queries.md"),
+);
+const wave2d32aMeasurement = readIfExists(
+  path.join(repoRoot, "docs/seo-measurement-plan.md"),
+);
+
+function wave2d32aCount(source, marker) {
+  return source.split(marker).length - 1;
+}
+
+if (!wave2d32aGuide) {
+  errors.push("Wave 2D.3.2A buyer-guide source is missing.");
+} else {
+  const sectionIds = [
+    "short-answer",
+    "identify-device-category",
+    "read-intended-use-and-label",
+    "separate-method-from-product-evidence",
+    "placement-contact-and-protocol",
+    "safety-contraindications-and-stop-rules",
+    "controls-app-support-and-privacy",
+    "price-subscription-warranty-and-returns",
+    "twelve-point-evaluation-checklist",
+    "sources-and-review-date",
+  ];
+  for (const sectionId of sectionIds) {
+    if (wave2d32aCount(wave2d32aGuide, `"id": "${sectionId}"`) !== 2) {
+      errors.push(`Wave 2D.3.2A section ${sectionId} must occur once per language.`);
+    }
+  }
+
+  const questions = [
+    "Hva bør man sjekke før man velger en vagusnervestimulator?",
+    "Er alle vagusnervestimulatorer samme type?",
+    "Betyr CE-merking eller FDA-status at effekten er dokumentert for alle formål?",
+    "Hvordan vurderer man evidensen for en konkret enhet?",
+    "Er prikking eller ubehag et bevis på at enheten virker?",
+    "Hvilke kostnader og personvernforhold bør sammenlignes?",
+    "What should you check before choosing a vagus nerve stimulator?",
+    "Are all vagus nerve stimulators the same type?",
+    "Does CE marking or FDA status prove effectiveness for every purpose?",
+    "How should evidence for a specific device be evaluated?",
+    "Does tingling or discomfort prove that a device works?",
+    "Which costs, support and privacy terms should be compared?",
+  ];
+  for (const question of questions) {
+    if (wave2d32aCount(wave2d32aGuide, question) !== 1) {
+      errors.push(`Wave 2D.3.2A direct-answer question is not unique: ${question}`);
+    }
+  }
+
+  const sourceIds = [
+    "S001", "S002", "S003", "S004", "S005", "S006", "S007",
+    "S008", "S011", "S012", "S047", "S048", "S049", "S050",
+  ];
+  for (const sourceId of sourceIds) {
+    if (wave2d32aCount(wave2d32aGuide, `"id": "${sourceId}"`) !== 2) {
+      errors.push(`Wave 2D.3.2A source ${sourceId} must occur once per language.`);
+    }
+  }
+
+  for (const marker of [
+    "How to Choose a Vagus Nerve Stimulator | Neuvago",
+    "Hvordan velge vagusnervestimulator | Neuvago",
+    "A neutral checklist for evaluating device type, intended use, evidence, safety, controls, costs, support and privacy.",
+    "En nøytral sjekkliste for å vurdere type stimulator, tiltenkt bruk, evidens, sikkerhet, kontroller, kostnader og personvern.",
+    "not a ranking",
+    "ikke en rangering",
+    "does not by itself prove every",
+    "dokumenterer ikke automatisk alle",
+    "do not prove selective target engagement",
+    "dokumenterer ikke selektivt target engagement",
+  ]) {
+    if (!wave2d32aGuide.includes(marker)) {
+      errors.push(`Wave 2D.3.2A buyer-guide marker is missing: ${marker}`);
+    }
+  }
+
+  for (const [route, expected] of [
+    ["/product", 1],
+    ["/no/produkt", 1],
+  ]) {
+    const count = wave2d32aCount(wave2d32aGuide, `"href": "${route}"`);
+    if (count !== expected) {
+      errors.push(`Wave 2D.3.2A late product link ${route} must occur exactly once; found ${count}.`);
+    }
+  }
+  for (const forbidden of [
+    `"href": "/shop"`,
+    `"href": "/no/butikk"`,
+    `"@type": "Product"`,
+    `"@type": "Review"`,
+    `"@type": "AggregateRating"`,
+    `"@type": "ItemList"`,
+  ]) {
+    if (wave2d32aGuide.includes(forbidden)) {
+      errors.push(`Wave 2D.3.2A forbidden buyer-guide marker is present: ${forbidden}`);
+    }
+  }
+}
+
+if (!wave2d32aLock || !wave2d32aLock.includes("50 reviewed sources across 23 source classes")) {
+  errors.push("Wave 2D.3.2A repository source-and-claims lock is missing or incomplete.");
+}
+if (!wave2d32aQueries || !wave2d32aQueries.includes("## WAVE 2D.3.2A — bilingual VNS buyer-guide owner lock")) {
+  errors.push("Wave 2D.3.2A query-owner lock is missing.");
+}
+if (!wave2d32aMeasurement || !wave2d32aMeasurement.includes("## WAVE 2D.3.2A — buyer-guide measurement and privacy lock")) {
+  errors.push("Wave 2D.3.2A measurement lock is missing.");
+}
+if (!sitemapSource.includes("WAVE 2D.3.2A — buyer-guide atomic-pair assertion")) {
+  errors.push("Wave 2D.3.2A sitemap atomic-pair assertion is missing.");
+}
+if (!llmsSource || wave2d32aCount(llmsSource, "/no/kunnskap/vagusnervestimulering") !== 1) {
+  errors.push("Wave 2D.3.2A must close the exact llms.txt gap once for /no/kunnskap/vagusnervestimulering.");
+}
+
 const artifacts = findArtifacts(repoRoot);
 if (artifacts.length > 0) {
   errors.push(`Remove generated artifacts before commit: ${artifacts.slice(0, 12).join(", ")}${artifacts.length > 12 ? " ..." : ""}`);

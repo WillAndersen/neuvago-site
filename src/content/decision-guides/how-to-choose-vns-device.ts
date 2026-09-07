@@ -17,9 +17,9 @@ export const howToChooseVnsDeviceGuidePair = {
     "order": 2,
     "title": "How to choose a vagus nerve stimulation device",
     "seoTitle": "How to Choose a Vagus Nerve Stimulator | Neuvago",
-    "description": "Use 12 checks to compare VNS devices by method, intended use, evidence, safety, protocol, app costs, privacy, support and purchase terms.",
+    "description": "A neutral checklist for evaluating device type, intended use, evidence, safety, controls, costs, support and privacy.",
     "eyebrow": "BUYER GUIDE / VNS DEVICES",
-    "lead": "Do not start with the boldest promise or strongest sensation. Start with the stimulation method, intended use, exact product evidence, safety instructions, protocol transparency, practical ownership and the terms that apply when you buy.",
+    "lead": "Choose by verifiable criteria rather than by the boldest promise, strongest sensation or highest marketing score. Start with the device category, current intended use, exact product evidence, safety instructions, protocol transparency, practical ownership, support, privacy and the commercial terms that apply on the date you compare.",
     "shortAnswer": [
       "Name the method first: implanted, cervical, auricular and other electrical-stimulation products are not interchangeable.",
       "Match every benefit claim to the exact product, protocol, population and intended use that support it.",
@@ -27,7 +27,7 @@ export const howToChooseVnsDeviceGuidePair = {
       "Verify total cost, app access, consumables, privacy, delivery, returns and warranty on the live purchase pages before ordering."
     ],
     "hubTitle": "How to choose a VNS device",
-    "hubSummary": "A 12-point buyer framework for method, intended use, product-specific evidence, safety, protocol, app terms, privacy, support and live purchase conditions.",
+    "hubSummary": "A neutral checklist for evaluating device type, intended use, evidence, safety, controls, costs, support and privacy.",
     "hubLabel": "Buyer guide",
     "primaryKeyword": "how to choose a vagus nerve stimulation device",
     "secondaryKeywords": [
@@ -38,8 +38,8 @@ export const howToChooseVnsDeviceGuidePair = {
       "taVNS device comparison"
     ],
     "publishedAt": "2026-08-26",
-    "modifiedAt": "2026-08-26",
-    "readingTimeMinutes": 17,
+    "modifiedAt": "2026-09-06",
+    "readingTimeMinutes": 21,
     "authorName": "Neuvago Editorial Team",
     "reviewerName": "Neuvago Source Review",
     "download": {
@@ -55,7 +55,27 @@ export const howToChooseVnsDeviceGuidePair = {
     },
     "sections": [
       {
-        "id": "name-the-method",
+        "id": "short-answer",
+        "eyebrow": "START HERE",
+        "title": "Use a neutral framework, not a winner list",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "Before choosing a vagus nerve stimulation device, identify the method and stimulation site, read the current intended use and labeling, separate research on a method from evidence for the named product, and review placement, contact, protocol, safety, app, privacy, support and total cost. The page is an evaluation framework, not a ranking, and it does not decide whether a device is medically suitable for an individual."
+          },
+          {
+            "type": "callout",
+            "tone": "summary",
+            "title": "The short answer",
+            "paragraphs": [
+              "A responsible comparison records what is verified, what is current only for a particular market or product version, and what remains unknown.",
+              "No CE mark, FDA status, sensation, intensity level, study on another device or polished app can replace the missing link between a specific product and a specific claim."
+            ]
+          }
+        ]
+      },
+      {
+        "id": "identify-device-category",
         "eyebrow": "1 / METHOD BEFORE MARKETING",
         "title": "Identify what the product actually stimulates and where",
         "blocks": [
@@ -100,7 +120,7 @@ export const howToChooseVnsDeviceGuidePair = {
         ]
       },
       {
-        "id": "intended-use-and-status",
+        "id": "read-intended-use-and-label",
         "eyebrow": "2 / PURPOSE AND JURISDICTION",
         "title": "Read intended use before reading the benefit list",
         "blocks": [
@@ -129,7 +149,7 @@ export const howToChooseVnsDeviceGuidePair = {
         ]
       },
       {
-        "id": "product-specific-evidence",
+        "id": "separate-method-from-product-evidence",
         "eyebrow": "3 / EVIDENCE THAT BELONGS TO THE PRODUCT",
         "title": "Separate method research from product-specific proof",
         "blocks": [
@@ -174,7 +194,7 @@ export const howToChooseVnsDeviceGuidePair = {
         ]
       },
       {
-        "id": "hardware-contact-and-protocol",
+        "id": "placement-contact-and-protocol",
         "eyebrow": "4 / WHAT THE DEVICE DELIVERS",
         "title": "Inspect placement, contact, controls and the full protocol",
         "blocks": [
@@ -215,7 +235,7 @@ export const howToChooseVnsDeviceGuidePair = {
         ]
       },
       {
-        "id": "safety-and-suitability",
+        "id": "safety-contraindications-and-stop-rules",
         "eyebrow": "5 / SAFETY BEFORE CONVENIENCE",
         "title": "Check contraindications, precautions, and when use should stop",
         "blocks": [
@@ -245,7 +265,7 @@ export const howToChooseVnsDeviceGuidePair = {
         ]
       },
       {
-        "id": "ownership-app-and-privacy",
+        "id": "controls-app-support-and-privacy",
         "eyebrow": "6 / THE SYSTEM AROUND THE DEVICE",
         "title": "Assess practical ownership, app dependence and data use",
         "blocks": [
@@ -291,7 +311,7 @@ export const howToChooseVnsDeviceGuidePair = {
         ]
       },
       {
-        "id": "live-purchase-terms",
+        "id": "price-subscription-warranty-and-returns",
         "eyebrow": "7 / VERIFY AT THE TIME OF PURCHASE",
         "title": "Treat price, delivery, returns and warranty as time-sensitive facts",
         "blocks": [
@@ -322,10 +342,14 @@ export const howToChooseVnsDeviceGuidePair = {
         ]
       },
       {
-        "id": "red-flags",
-        "eyebrow": "8 / RED-FLAG FILTER",
-        "title": "Pause when marketing outruns the product facts",
+        "id": "twelve-point-evaluation-checklist",
+        "eyebrow": "9 / RECORD THE EVIDENCE",
+        "title": "Use the twelve-point checklist as a record, not a score",
         "blocks": [
+          {
+            "type": "paragraph",
+            "text": "Complete the same twelve fields for every product and record the date and market. Do not convert missing evidence into points, badges or a winner. A blank field should stay blank until the manufacturer, applicable instructions, regulatory database, current policy or product-specific study supplies an answer."
+          },
           {
             "type": "cards",
             "items": [
@@ -369,6 +393,26 @@ export const howToChooseVnsDeviceGuidePair = {
                 "title": "Personal stories replace controlled evidence",
                 "description": "Testimonials may describe experience, but they cannot establish product efficacy, mechanism or safety for other users."
               }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "sources-and-review-date",
+        "eyebrow": "10 / SOURCES AND REVIEW DATE",
+        "title": "Check the source, jurisdiction, model and date",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "This guide was reviewed on 6 September 2026. It uses regulations and official guidance to explain intended use, labeling and claim boundaries; official device databases to show how model-specific status can be checked; a consensus reporting standard to define the protocol details needed for interpretation; and privacy law to keep app and account questions inside the comparison."
+          },
+          {
+            "type": "callout",
+            "tone": "scope",
+            "title": "A database record is a starting point, not a product verdict",
+            "paragraphs": [
+              "Confirm that a record belongs to the exact manufacturer, model, version, jurisdiction and intended use being discussed. Similar names or method categories are not enough.",
+              "Price, availability, delivery, subscription, returns, warranty, app functions and privacy practices can change. Verify them on current official pages immediately before purchase."
             ]
           }
         ]
@@ -431,114 +475,171 @@ export const howToChooseVnsDeviceGuidePair = {
     },
     "faq": [
       {
-        "question": "What is the best vagus nerve stimulator?",
-        "answer": "There is no responsible universal winner. The better choice depends on method, intended use, exact product evidence, safety, protocol transparency, practical ownership and the buyer’s market and needs."
+        "question": "What should you check before choosing a vagus nerve stimulator?",
+        "answer": "Check the device category and stimulation site, current intended use and labeling, evidence for the exact product and protocol, placement and contact instructions, contraindications and stop rules, app and account requirements, privacy, support and the full date-stamped cost of ownership. Record unknowns rather than filling them with marketing assumptions."
       },
       {
-        "question": "Does a CE mark or registration prove every advertised benefit?",
-        "answer": "No. A mark, registration, clearance or conformity statement must be read with its jurisdiction, exact model, intended purpose and documentation. It does not replace product-specific evidence for each express or implied benefit claim."
+        "question": "Are all vagus nerve stimulators the same type?",
+        "answer": "No. Implanted clinical VNS, cervical non-invasive VNS, auricular or transcutaneous VNS and generic electrical stimulation differ in anatomy, hardware, contact, protocol, intended use, risk and evidence. A shared acronym does not make the devices interchangeable."
       },
       {
-        "question": "Can taVNS research support any ear-based device?",
-        "answer": "It can provide method context, but evidence does not transfer automatically. Placement, electrode, output, protocol, control condition, population and outcome must be relevant to the product claim."
+        "question": "Does CE marking or FDA status prove effectiveness for every purpose?",
+        "answer": "No. Regulatory status must be read for the exact device, version, jurisdiction, intended purpose or indication and pathway. It does not by itself prove every express or implied benefit in advertising, and it should not be transferred from one device to another."
       },
       {
-        "question": "Should I choose the device with the strongest stimulation?",
-        "answer": "No. Stronger sensation is not proof of better vagal engagement or outcomes. Follow the exact product instructions and use intensity only within the supplied comfort and safety guidance."
+        "question": "How should evidence for a specific device be evaluated?",
+        "answer": "Ask whether the exact hardware or a defensibly equivalent configuration was tested with the marketed placement, contact method, parameters and schedule, in a relevant population, against an appropriate comparator, for the outcome being claimed. Method-level research may provide context without becoming product-specific proof."
       },
       {
-        "question": "Where does Neuvago fit in this framework?",
-        "answer": "Neuvago is presented as an ear-based general-wellness system with a left earpiece, four 20-minute modes and adjustable intensity. Buyers should still verify current product, safety, app, privacy and purchase terms before ordering."
+        "question": "Does tingling or discomfort prove that a device works?",
+        "answer": "No. Sensation, comfort and intensity are subjective and do not prove selective target engagement or meaningful benefit. Stronger is not automatically better. Follow the applicable instructions and treat unexpected or concerning symptoms according to the product-specific stop guidance."
+      },
+      {
+        "question": "Which costs, support and privacy terms should be compared?",
+        "answer": "Compare current device price, tax, shipping, import costs, consumables, replacement parts, subscription or app renewal, returns, statutory rights, voluntary warranty and support. Also check account dependence, offline use, data collected, service providers, retention, user rights and what happens when access ends."
       }
     ],
     "sources": [
       {
-        "id": "fda-2026-general-wellness",
+        "id": "S001",
+        "authors": "European Union",
+        "title": "Regulation (EU) 2017/745 on medical devices",
+        "publication": "Official Journal of the European Union",
+        "year": 2017,
+        "type": "regulation",
+        "url": "https://eur-lex.europa.eu/eli/reg/2017/745/oj",
+        "note": "Defines the EU medical-device framework and makes intended purpose, claims, labeling and the exact product context central to interpretation."
+      },
+      {
+        "id": "S002",
+        "authors": "U.S. Food and Drug Administration",
+        "title": "Overview of Device Regulation",
+        "publication": "FDA medical-device guidance",
+        "year": 2026,
+        "type": "regulatory-guidance",
+        "url": "https://www.fda.gov/medical-devices/device-advice-comprehensive-regulatory-assistance/overview-device-regulation",
+        "note": "Provides a high-level map of U.S. device regulation and why pathway and device identity must be checked rather than inferred from a category name."
+      },
+      {
+        "id": "S003",
+        "authors": "U.S. Food and Drug Administration",
+        "title": "Device Labeling",
+        "publication": "FDA medical-device guidance",
+        "year": 2026,
+        "type": "regulatory-guidance",
+        "url": "https://www.fda.gov/medical-devices/overview-device-regulation/device-labeling",
+        "note": "Supports checking the current label and instructions instead of relying on an advertisement, review or older summary."
+      },
+      {
+        "id": "S004",
+        "authors": "U.S. Food and Drug Administration",
+        "title": "Medical Device Databases",
+        "publication": "FDA medical-device resources",
+        "year": 2026,
+        "type": "regulatory-guidance",
+        "url": "https://www.fda.gov/medical-devices/device-advice-comprehensive-regulatory-assistance/medical-device-databases",
+        "note": "Points readers to official databases that can be used to verify records for a named manufacturer and device."
+      },
+      {
+        "id": "S005",
         "authors": "U.S. Food and Drug Administration",
         "title": "General Wellness: Policy for Low Risk Devices",
         "publication": "Guidance for Industry and Food and Drug Administration Staff",
         "year": 2026,
         "type": "regulatory-guidance",
         "url": "https://www.fda.gov/regulatory-information/search-fda-guidance-documents/general-wellness-policy-low-risk-devices",
-        "note": "Clarifies the U.S. general-wellness lane and why disease diagnosis, treatment, mitigation, cure, or prevention claims change the regulatory question."
+        "note": "Clarifies the general-wellness lane and the boundary against disease diagnosis, treatment, mitigation, cure or prevention claims."
       },
       {
-        "id": "eu-mdr-2017-intended-purpose-claims",
-        "authors": "European Parliament and Council of the European Union",
-        "title": "Regulation (EU) 2017/745 on medical devices — intended purpose and claims",
-        "publication": "EUR-Lex / Official Journal of the European Union",
-        "year": 2017,
-        "type": "regulation",
-        "url": "https://eur-lex.europa.eu/eli/reg/2017/745/oj/eng",
-        "note": "Defines intended purpose from manufacturer-supplied information and prohibits misleading claims about a device’s purpose, safety, and performance."
-      },
-      {
-        "id": "ftc-2022-health-products-guidance",
-        "authors": "Federal Trade Commission",
+        "id": "S006",
+        "authors": "U.S. Federal Trade Commission",
         "title": "Health Products Compliance Guidance",
-        "publication": "FTC Business Guidance",
+        "publication": "FTC business guidance",
         "year": 2022,
         "type": "consumer-guidance",
         "url": "https://www.ftc.gov/business-guidance/resources/health-products-compliance-guidance",
-        "note": "Explains that objective health-related claims need adequate, scientifically reliable, and product-relevant substantiation before they are marketed."
+        "note": "Supports matching health-product advertising claims to competent and reliable evidence rather than to implication or borrowed research."
       },
       {
-        "id": "farmer-2021-reporting-standards",
-        "authors": "Adam D. Farmer et al.",
-        "title": "International Consensus Based Review and Recommendations for Minimum Reporting Standards in Research on Transcutaneous Vagus Nerve Stimulation (Version 2020)",
+        "id": "S007",
+        "authors": "Electronic Code of Federal Regulations",
+        "title": "21 CFR Part 801 — Labeling",
+        "publication": "United States federal regulations",
+        "year": 2026,
+        "type": "regulation",
+        "url": "https://www.ecfr.gov/current/title-21/chapter-I/subchapter-H/part-801",
+        "note": "Provides the U.S. labeling context and reinforces that applicable labeling belongs to the specific device."
+      },
+      {
+        "id": "S008",
+        "authors": "U.S. Food and Drug Administration",
+        "title": "PMA P970003 — VNS Therapy System",
+        "publication": "FDA Premarket Approval database",
+        "year": 2026,
+        "type": "regulatory-guidance",
+        "url": "https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpma/pma.cfm?id=P970003",
+        "note": "An example of a device- and indication-specific PMA record; it is not evidence for unrelated products or purposes."
+      },
+      {
+        "id": "S011",
+        "authors": "U.S. Food and Drug Administration",
+        "title": "Premarket Approval (PMA) database",
+        "publication": "FDA medical-device database",
+        "year": 2026,
+        "type": "regulatory-guidance",
+        "url": "https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpma/pma.cfm",
+        "note": "Allows verification of PMA records and illustrates why a database search must be tied to exact device identity."
+      },
+      {
+        "id": "S012",
+        "authors": "Farmer et al.",
+        "title": "International consensus recommendations for minimum reporting standards in transcutaneous vagus nerve stimulation research",
         "publication": "Frontiers in Human Neuroscience",
         "year": 2021,
         "type": "reporting-standard",
         "url": "https://pubmed.ncbi.nlm.nih.gov/33854421/",
-        "doi": "10.3389/fnhum.2020.568051",
-        "pmid": "33854421",
-        "note": "Shows why device, site, electrode, waveform, intensity, timing, control condition, participant group, and safety reporting matter when interpreting tVNS evidence."
+        "note": "Lists method and protocol details that should be reported before transcutaneous VNS findings can be interpreted or transferred.",
+        "pmid": "33854421"
       },
       {
-        "id": "nimh-target-engagement",
-        "authors": "National Institute of Mental Health",
-        "title": "NIMH’s New Focus in Clinical Trials",
-        "publication": "NIMH Research Guidance",
-        "year": 2013,
-        "type": "research-guidance",
-        "url": "https://www.nimh.nih.gov/funding/grant-writing-and-application-process/concept-clearances/2013/nimhs-new-focus-in-clinical-trials",
-        "note": "Defines target engagement as verification that an intervention affected its intended target, which is separate from demonstrating a clinical outcome."
-      },
-      {
-        "id": "yang-2026-site-specific",
-        "authors": "Xuejuan Yang et al.",
-        "title": "Site-specific stimulation imperative: Lessons from a failed auricular-cervical transcutaneous vagus nerve stimulation comparison using closely matched parameters",
-        "publication": "Brain Stimulation",
+        "id": "S047",
+        "authors": "U.S. Food and Drug Administration",
+        "title": "Manufacturer and User Facility Device Experience (MAUDE) database",
+        "publication": "FDA medical-device database",
         "year": 2026,
-        "type": "comparative-study",
-        "url": "https://pubmed.ncbi.nlm.nih.gov/41482152/",
-        "doi": "10.1016/j.brs.2025.103022",
-        "pmid": "41482152",
-        "note": "Demonstrates why copied settings and strong sensation cannot substitute for site-specific target-engagement verification."
+        "type": "regulatory-guidance",
+        "url": "https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfmaude/search.cfm",
+        "note": "A post-market report database that can inform due diligence but does not establish incidence, causality or a comparative safety ranking by itself."
       },
       {
-        "id": "kim-2022-tavns-safety",
-        "authors": "Angela Yun Kim et al.",
-        "title": "Safety of transcutaneous auricular vagus nerve stimulation (taVNS): a systematic review and meta-analysis",
-        "publication": "Scientific Reports",
-        "year": 2022,
-        "type": "systematic-review",
-        "url": "https://pubmed.ncbi.nlm.nih.gov/36543841/",
-        "doi": "10.1038/s41598-022-25864-1",
-        "pmid": "36543841",
-        "note": "Provides safety context while also showing that adverse-event reporting was incomplete in much of the literature."
+        "id": "S048",
+        "authors": "U.S. Food and Drug Administration",
+        "title": "Medical Device Recalls database",
+        "publication": "FDA medical-device database",
+        "year": 2026,
+        "type": "regulatory-guidance",
+        "url": "https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfres/res.cfm",
+        "note": "Supports checking current recall information for a named device or manufacturer at the time of comparison."
       },
       {
-        "id": "butt-2020-auricular-anatomy",
-        "authors": "M. F. Butt et al.",
-        "title": "The anatomical basis for transcutaneous auricular vagus nerve stimulation",
-        "publication": "Journal of Anatomy",
-        "year": 2020,
-        "type": "anatomy-review",
-        "url": "https://pubmed.ncbi.nlm.nih.gov/31742681/",
-        "doi": "10.1111/joa.13122",
-        "pmid": "31742681",
-        "note": "Reviews the mixed and incompletely mapped innervation of the outer ear, supporting precise rather than generic placement claims."
+        "id": "S049",
+        "authors": "U.S. Food and Drug Administration",
+        "title": "510(k) Premarket Notification database",
+        "publication": "FDA medical-device database",
+        "year": 2026,
+        "type": "regulatory-guidance",
+        "url": "https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpmn/pmn.cfm",
+        "note": "Supports checking 510(k) records and their exact device context rather than treating the existence of a record as proof of every claim."
+      },
+      {
+        "id": "S050",
+        "authors": "European Union",
+        "title": "Regulation (EU) 2016/679 — General Data Protection Regulation",
+        "publication": "Official Journal of the European Union",
+        "year": 2016,
+        "type": "regulation",
+        "url": "https://eur-lex.europa.eu/eli/reg/2016/679/oj",
+        "note": "Makes personal-data handling, transparency, purpose and user rights relevant when an app or account is part of the device system."
       }
     ],
     "relatedLinks": [
@@ -579,12 +680,6 @@ export const howToChooseVnsDeviceGuidePair = {
         "label": "Review safety research"
       },
       {
-        "title": "Neuvago product details",
-        "description": "Review the current product configuration, specifications, package contents, safety summary and launch status.",
-        "href": "/product",
-        "label": "View current product details"
-      },
-      {
         "title": "Intended use",
         "description": "Read the general-wellness purpose and the medical claims Neuvago does not make.",
         "href": "/legal/intended-use",
@@ -604,21 +699,21 @@ export const howToChooseVnsDeviceGuidePair = {
       }
     ],
     "productBridge": {
-      "eyebrow": "NEUVAGO IN THE CHECKLIST",
-      "title": "Apply the same twelve checks to Neuvago",
+      "eyebrow": "APPLY THE FRAMEWORK TO NEUVAGO",
+      "title": "Use the same twelve checks for Neuvago",
       "paragraphs": [
-        "Neuvago’s current product page describes an ear-based system with a supplied left earpiece, four 20-minute modes, 30 intensity levels, conductive gel and one year of app access. Those are product facts to verify—not a reason to declare a universal winner.",
-        "Field-level taVNS research does not automatically become Neuvago-specific proof. Claims should remain tied to Neuvago’s intended use, instructions and verified documentation.",
-        "Because commercial details can change, use the live product, safety, privacy and terms pages to verify price, availability, delivery, returns, warranty, app conditions and suitability at the time of purchase."
+        "Use Neuvago’s live product page to verify the current device configuration and package facts on the date you compare. A product page is not a substitute for the intended-use statement, safety information, instructions or evidence for a specific claim.",
+        "Research on auricular or transcutaneous VNS does not automatically become Neuvago-specific proof. The exact product, placement, contact method, parameters, population and outcome still have to match the claim being considered.",
+        "Commercial and app details can change. Verify availability, delivery, returns, warranty, support, included app access and privacy terms on the current official pages before making a purchase decision."
       ],
       "actions": [
         {
-          "label": "View product details",
+          "label": "View current product details",
           "href": "/product",
           "variant": "primary"
         },
         {
-          "label": "Compare ear and neck",
+          "label": "Compare ear and neck methods",
           "href": "/learn/ear-vs-neck-vagus-nerve-stimulation",
           "variant": "secondary"
         },
@@ -645,9 +740,9 @@ export const howToChooseVnsDeviceGuidePair = {
     "order": 2,
     "title": "Hvordan velge en vagusnervestimulator",
     "seoTitle": "Hvordan velge vagusnervestimulator | Neuvago",
-    "description": "Bruk 12 kontroller for metode, tiltenkt bruk, dokumentasjon, sikkerhet, protokoll, appkostnad, personvern, support og kjøpsvilkår.",
+    "description": "En nøytral sjekkliste for å vurdere type stimulator, tiltenkt bruk, evidens, sikkerhet, kontroller, kostnader og personvern.",
     "eyebrow": "KJØPSGUIDE / VNS-ENHETER",
-    "lead": "Ikke begynn med det største løftet eller den sterkeste følelsen. Begynn med stimuleringsmetode, tiltenkt bruk, dokumentasjon for det konkrete produktet, sikkerhetsinstruksjoner, protokoll, praktisk eierskap og vilkårene som gjelder når du kjøper.",
+    "lead": "Velg etter opplysninger som kan kontrolleres, ikke etter den sterkeste påstanden, tydeligste prikkingen eller høyeste markedsføringsscore. Start med enhetskategori, gjeldende tiltenkt bruk, dokumentasjon for det konkrete produktet, sikkerhetsinstruksjoner, protokolltransparens, praktisk eierskap, support, personvern og vilkårene som gjelder den dagen du sammenligner.",
     "shortAnswer": [
       "Navngi metoden først: implantert, cervikal, aurikulær og andre elektriske stimuleringsprodukter er ikke utskiftbare.",
       "Knytt hver nyttepåstand til det konkrete produktet, protokollen, populasjonen og den tiltenkte bruken som faktisk støtter den.",
@@ -655,7 +750,7 @@ export const howToChooseVnsDeviceGuidePair = {
       "Kontroller totalkostnad, app, forbruksmateriell, personvern, levering, retur og garanti på gjeldende produkt- og vilkårssider før bestilling."
     ],
     "hubTitle": "Hvordan velge vagusnervestimulator",
-    "hubSummary": "Et rammeverk med 12 punkter for metode, tiltenkt bruk, produktspesifikk dokumentasjon, sikkerhet, protokoll, app, personvern, support og gjeldende kjøpsvilkår.",
+    "hubSummary": "En nøytral sjekkliste for å vurdere type stimulator, tiltenkt bruk, evidens, sikkerhet, kontroller, kostnader og personvern.",
     "hubLabel": "Kjøpsguide",
     "primaryKeyword": "hvordan velge vagusnervestimulator",
     "secondaryKeywords": [
@@ -666,8 +761,8 @@ export const howToChooseVnsDeviceGuidePair = {
       "taVNS-enhet sammenligning"
     ],
     "publishedAt": "2026-08-26",
-    "modifiedAt": "2026-08-26",
-    "readingTimeMinutes": 18,
+    "modifiedAt": "2026-09-06",
+    "readingTimeMinutes": 21,
     "authorName": "Neuvago-redaksjonen",
     "reviewerName": "Neuvago kildekontroll",
     "download": {
@@ -683,7 +778,27 @@ export const howToChooseVnsDeviceGuidePair = {
     },
     "sections": [
       {
-        "id": "navngi-metoden",
+        "id": "short-answer",
+        "eyebrow": "START HER",
+        "title": "Bruk et nøytralt rammeverk, ikke en vinnerliste",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "Før du velger en vagusnervestimulator, bør du identifisere metode og stimuleringssted, lese gjeldende tiltenkt bruk og merking, skille forskning på en metode fra dokumentasjon for det navngitte produktet og vurdere plassering, kontakt, protokoll, sikkerhet, app, personvern, support og totalkostnad. Siden er et vurderingsrammeverk, ikke en rangering, og den avgjør ikke om en enhet er medisinsk egnet for en bestemt person."
+          },
+          {
+            "type": "callout",
+            "tone": "summary",
+            "title": "Kort svar",
+            "paragraphs": [
+              "En ansvarlig sammenligning skiller mellom det som er verifisert, det som bare gjelder et bestemt marked eller en bestemt produktversjon, og det som fortsatt er ukjent.",
+              "CE-merking, FDA-status, følelse, intensitetsnivå, en studie på en annen enhet eller en gjennomarbeidet app kan ikke erstatte den manglende forbindelsen mellom et konkret produkt og en konkret påstand."
+            ]
+          }
+        ]
+      },
+      {
+        "id": "identify-device-category",
         "eyebrow": "1 / METODE FØR MARKEDSFØRING",
         "title": "Finn ut hva produktet faktisk stimulerer – og hvor",
         "blocks": [
@@ -728,7 +843,7 @@ export const howToChooseVnsDeviceGuidePair = {
         ]
       },
       {
-        "id": "tiltenkt-bruk-og-status",
+        "id": "read-intended-use-and-label",
         "eyebrow": "2 / FORMÅL OG JURISDIKSJON",
         "title": "Les tiltenkt bruk før du leser listen over fordeler",
         "blocks": [
@@ -757,7 +872,7 @@ export const howToChooseVnsDeviceGuidePair = {
         ]
       },
       {
-        "id": "produktspesifikk-dokumentasjon",
+        "id": "separate-method-from-product-evidence",
         "eyebrow": "3 / DOKUMENTASJON SOM TILHØRER PRODUKTET",
         "title": "Skill metodeforskning fra produktspesifikt bevis",
         "blocks": [
@@ -802,7 +917,7 @@ export const howToChooseVnsDeviceGuidePair = {
         ]
       },
       {
-        "id": "maskinvare-kontakt-og-protokoll",
+        "id": "placement-contact-and-protocol",
         "eyebrow": "4 / HVA ENHETEN LEVERER",
         "title": "Kontroller plassering, kontakt, betjening og hele protokollen",
         "blocks": [
@@ -843,7 +958,7 @@ export const howToChooseVnsDeviceGuidePair = {
         ]
       },
       {
-        "id": "sikkerhet-og-egnethet",
+        "id": "safety-contraindications-and-stop-rules",
         "eyebrow": "5 / SIKKERHET FØR BEKVEMMELIGHET",
         "title": "Kontroller kontraindikasjoner, forsiktighetsregler og når bruken skal stoppes",
         "blocks": [
@@ -873,7 +988,7 @@ export const howToChooseVnsDeviceGuidePair = {
         ]
       },
       {
-        "id": "eierskap-app-og-personvern",
+        "id": "controls-app-support-and-privacy",
         "eyebrow": "6 / SYSTEMET RUNDT ENHETEN",
         "title": "Vurder praktisk eierskap, appavhengighet og databruk",
         "blocks": [
@@ -919,7 +1034,7 @@ export const howToChooseVnsDeviceGuidePair = {
         ]
       },
       {
-        "id": "gjeldende-kjopsvilkar",
+        "id": "price-subscription-warranty-and-returns",
         "eyebrow": "7 / KONTROLLER VED KJØP",
         "title": "Kontroller pris, levering, retur og garanti på kjøpstidspunktet",
         "blocks": [
@@ -950,10 +1065,14 @@ export const howToChooseVnsDeviceGuidePair = {
         ]
       },
       {
-        "id": "rode-flagg",
-        "eyebrow": "8 / FILTER FOR RØDE FLAGG",
-        "title": "Stopp når markedsføringen løper foran produktfakta",
+        "id": "twelve-point-evaluation-checklist",
+        "eyebrow": "9 / DOKUMENTER GRUNNLAGET",
+        "title": "Bruk tolvpunktslisten som dokumentasjon, ikke som poengscore",
         "blocks": [
+          {
+            "type": "paragraph",
+            "text": "Fyll ut de samme tolv feltene for hvert produkt, og noter dato og marked. Ikke gjør manglende dokumentasjon om til poeng, merker eller en vinner. Et tomt felt skal forbli tomt til produsenten, gjeldende instruksjoner, en regulatorisk database, en aktuell policy eller en produktspesifikk studie gir et kontrollerbart svar."
+          },
           {
             "type": "cards",
             "items": [
@@ -997,6 +1116,26 @@ export const howToChooseVnsDeviceGuidePair = {
                 "title": "Personlige erfaringer erstatter kontrollert forskning",
                 "description": "Omtaler kan beskrive opplevelse, men dokumenterer ikke effekt, mekanisme eller sikkerhet for andre brukere."
               }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "sources-and-review-date",
+        "eyebrow": "10 / KILDER OG GJENNOMGANGSDATO",
+        "title": "Kontroller kilde, jurisdiksjon, modell og dato",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "Guiden ble gjennomgått 6. september 2026. Den bruker regelverk og offisiell veiledning for å forklare tiltenkt bruk, merking og påstandsgrenser; offisielle enhetsdatabaser for å vise hvordan modellspesifikk status kan kontrolleres; en konsensusstandard for hvilke protokolldetaljer som trengs for tolkning; og personvernregelverk for å holde app- og kontospørsmål inne i sammenligningen."
+          },
+          {
+            "type": "callout",
+            "tone": "scope",
+            "title": "En databaseoppføring er et startpunkt, ikke en produktdom",
+            "paragraphs": [
+              "Bekreft at oppføringen gjelder nøyaktig produsent, modell, versjon, jurisdiksjon og tiltenkt bruk som omtales. Lignende navn eller samme metodekategori er ikke tilstrekkelig.",
+              "Pris, tilgjengelighet, levering, abonnement, retur, garanti, appfunksjoner og personvernpraksis kan endres. Kontroller dem på gjeldende offisielle sider rett før kjøp."
             ]
           }
         ]
@@ -1059,114 +1198,171 @@ export const howToChooseVnsDeviceGuidePair = {
     },
     "faq": [
       {
-        "question": "Hva er den beste vagusnervestimulatoren?",
-        "answer": "Det finnes ingen ansvarlig universell vinner. Riktig valg avhenger av metode, tiltenkt bruk, dokumentasjon for det konkrete produktet, sikkerhet, protokoll, praktisk eierskap og kjøperens marked og behov."
+        "question": "Hva bør man sjekke før man velger en vagusnervestimulator?",
+        "answer": "Kontroller enhetskategori og stimuleringssted, gjeldende tiltenkt bruk og merking, dokumentasjon for det konkrete produktet og protokollen, instruksjoner for plassering og kontakt, kontraindikasjoner og stoppregler, app- og kontokrav, personvern, support og hele den daterte eierkostnaden. Noter det som er ukjent i stedet for å fylle tomrommet med markedsføringsantakelser."
       },
       {
-        "question": "Dokumenterer CE-merke eller registrering alle markedsførte fordeler?",
-        "answer": "Nei. Et merke, en registrering, godkjenning eller samsvarspåstand må leses sammen med jurisdiksjon, eksakt modell, tiltenkt formål og dokumentasjon. Den erstatter ikke produktspesifikk dokumentasjon for hver uttrykte eller underforståtte nyttepåstand."
+        "question": "Er alle vagusnervestimulatorer samme type?",
+        "answer": "Nei. Implantert klinisk VNS, cervikal ikke-invasiv VNS, aurikulær eller transkutan VNS og generell elektrisk stimulering skiller seg i anatomi, maskinvare, kontakt, protokoll, tiltenkt bruk, risiko og dokumentasjon. En felles forkortelse gjør ikke enhetene utskiftbare."
       },
       {
-        "question": "Kan taVNS-forskning støtte alle ørebaserte produkter?",
-        "answer": "Den kan gi metodekontekst, men dokumentasjon overføres ikke automatisk. Plassering, elektrode, utgang, protokoll, kontrollbetingelse, populasjon og utfall må være relevante for produktpåstanden."
+        "question": "Betyr CE-merking eller FDA-status at effekten er dokumentert for alle formål?",
+        "answer": "Nei. Regulatorisk status må leses for eksakt enhet, versjon, jurisdiksjon, tiltenkt formål eller indikasjon og regulatorisk løp. Den dokumenterer ikke automatisk alle uttrykte eller underforståtte fordeler i markedsføringen, og den skal ikke overføres fra én enhet til en annen."
       },
       {
-        "question": "Bør jeg velge enheten med sterkest stimulering?",
-        "answer": "Nei. Sterkere følelse er ikke dokumentasjon på bedre vagalt target engagement eller utfall. Følg produktets eksakte instruksjoner og bruk intensitet bare innenfor medfølgende komfort- og sikkerhetsveiledning."
+        "question": "Hvordan vurderer man evidensen for en konkret enhet?",
+        "answer": "Spør om den eksakte maskinvaren eller en forsvarlig ekvivalent konfigurasjon ble undersøkt med den markedsførte plasseringen, kontaktmetoden, parameterne og planen, i en relevant populasjon, mot en egnet kontrollbetingelse, for utfallet som påstås. Metodeforskning kan gi kontekst uten å bli produktspesifikt bevis."
       },
       {
-        "question": "Hvor plasserer Neuvago seg i dette rammeverket?",
-        "answer": "Neuvago presenteres som et ørebasert velværesystem med venstre øreelektrode, fire moduser på 20 minutter og justerbar intensitet. Kjøperen bør likevel kontrollere gjeldende produkt-, sikkerhets-, app-, personvern- og kjøpsvilkår før bestilling."
+        "question": "Er prikking eller ubehag et bevis på at enheten virker?",
+        "answer": "Nei. Følelse, komfort og intensitet er subjektive og dokumenterer ikke selektivt target engagement eller meningsfull nytte. Sterkere er ikke automatisk bedre. Følg gjeldende instruksjoner og håndter uventede eller bekymringsfulle symptomer etter produktets egne stoppregler."
+      },
+      {
+        "question": "Hvilke kostnader og personvernforhold bør sammenlignes?",
+        "answer": "Sammenlign gjeldende enhetspris, mva., frakt, importkostnader, forbruksvarer, reservedeler, abonnement eller appfornyelse, retur, lovfestede rettigheter, frivillig garanti og support. Kontroller også kontoavhengighet, offlinebruk, data som samles inn, tjenesteleverandører, lagringstid, brukerrettigheter og hva som skjer når tilgangen utløper."
       }
     ],
     "sources": [
       {
-        "id": "fda-2026-general-wellness",
+        "id": "S001",
+        "authors": "European Union",
+        "title": "Regulation (EU) 2017/745 on medical devices",
+        "publication": "Official Journal of the European Union",
+        "year": 2017,
+        "type": "regulation",
+        "url": "https://eur-lex.europa.eu/eli/reg/2017/745/oj",
+        "note": "Definerer EUs rammeverk for medisinsk utstyr og gjør tiltenkt formål, påstander, merking og konkret produktkontekst sentralt for tolkningen."
+      },
+      {
+        "id": "S002",
+        "authors": "U.S. Food and Drug Administration",
+        "title": "Overview of Device Regulation",
+        "publication": "FDA medical-device guidance",
+        "year": 2026,
+        "type": "regulatory-guidance",
+        "url": "https://www.fda.gov/medical-devices/device-advice-comprehensive-regulatory-assistance/overview-device-regulation",
+        "note": "Gir en overordnet oversikt over amerikansk enhetsregulering og hvorfor løp og enhetsidentitet må kontrolleres i stedet for å utledes fra et kategorinavn."
+      },
+      {
+        "id": "S003",
+        "authors": "U.S. Food and Drug Administration",
+        "title": "Device Labeling",
+        "publication": "FDA medical-device guidance",
+        "year": 2026,
+        "type": "regulatory-guidance",
+        "url": "https://www.fda.gov/medical-devices/overview-device-regulation/device-labeling",
+        "note": "Støtter kontroll av gjeldende merking og instruksjoner fremfor reklame, omtale eller en eldre oppsummering."
+      },
+      {
+        "id": "S004",
+        "authors": "U.S. Food and Drug Administration",
+        "title": "Medical Device Databases",
+        "publication": "FDA medical-device resources",
+        "year": 2026,
+        "type": "regulatory-guidance",
+        "url": "https://www.fda.gov/medical-devices/device-advice-comprehensive-regulatory-assistance/medical-device-databases",
+        "note": "Viser til offisielle databaser som kan brukes til å kontrollere oppføringer for en navngitt produsent og enhet."
+      },
+      {
+        "id": "S005",
         "authors": "U.S. Food and Drug Administration",
         "title": "General Wellness: Policy for Low Risk Devices",
         "publication": "Guidance for Industry and Food and Drug Administration Staff",
         "year": 2026,
         "type": "regulatory-guidance",
         "url": "https://www.fda.gov/regulatory-information/search-fda-guidance-documents/general-wellness-policy-low-risk-devices",
-        "note": "Forklarer den amerikanske velværerammen og hvorfor påstander om diagnose, behandling, lindring, kur eller forebygging endrer det regulatoriske spørsmålet."
+        "note": "Forklarer velværesporet og grensen mot påstander om diagnostisering, behandling, lindring, kur eller forebygging av sykdom."
       },
       {
-        "id": "eu-mdr-2017-intended-purpose-claims",
-        "authors": "European Parliament and Council of the European Union",
-        "title": "Regulation (EU) 2017/745 on medical devices — intended purpose and claims",
-        "publication": "EUR-Lex / Official Journal of the European Union",
-        "year": 2017,
-        "type": "regulation",
-        "url": "https://eur-lex.europa.eu/eli/reg/2017/745/oj/eng",
-        "note": "Definerer tiltenkt formål ut fra produsentens informasjon og forbyr villedende påstander om formål, sikkerhet og ytelse."
-      },
-      {
-        "id": "ftc-2022-health-products-guidance",
-        "authors": "Federal Trade Commission",
+        "id": "S006",
+        "authors": "U.S. Federal Trade Commission",
         "title": "Health Products Compliance Guidance",
-        "publication": "FTC Business Guidance",
+        "publication": "FTC business guidance",
         "year": 2022,
         "type": "consumer-guidance",
         "url": "https://www.ftc.gov/business-guidance/resources/health-products-compliance-guidance",
-        "note": "Forklarer at objektive helsepåstander må ha tilstrekkelig, vitenskapelig pålitelig og produktrelevant dokumentasjon før markedsføring."
+        "note": "Støtter at helsepåstander i markedsføring må knyttes til pålitelig dokumentasjon, ikke antydninger eller lånt forskning."
       },
       {
-        "id": "farmer-2021-reporting-standards",
-        "authors": "Adam D. Farmer et al.",
-        "title": "International Consensus Based Review and Recommendations for Minimum Reporting Standards in Research on Transcutaneous Vagus Nerve Stimulation (Version 2020)",
+        "id": "S007",
+        "authors": "Electronic Code of Federal Regulations",
+        "title": "21 CFR Part 801 — Labeling",
+        "publication": "United States federal regulations",
+        "year": 2026,
+        "type": "regulation",
+        "url": "https://www.ecfr.gov/current/title-21/chapter-I/subchapter-H/part-801",
+        "note": "Gir amerikansk merkingskontekst og understreker at gjeldende merking tilhører den konkrete enheten."
+      },
+      {
+        "id": "S008",
+        "authors": "U.S. Food and Drug Administration",
+        "title": "PMA P970003 — VNS Therapy System",
+        "publication": "FDA Premarket Approval database",
+        "year": 2026,
+        "type": "regulatory-guidance",
+        "url": "https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpma/pma.cfm?id=P970003",
+        "note": "Et eksempel på en enhets- og indikasjonsspesifikk PMA-oppføring; den er ikke dokumentasjon for andre produkter eller formål."
+      },
+      {
+        "id": "S011",
+        "authors": "U.S. Food and Drug Administration",
+        "title": "Premarket Approval (PMA) database",
+        "publication": "FDA medical-device database",
+        "year": 2026,
+        "type": "regulatory-guidance",
+        "url": "https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpma/pma.cfm",
+        "note": "Gjør det mulig å kontrollere PMA-oppføringer og viser hvorfor databasesøk må knyttes til eksakt enhetsidentitet."
+      },
+      {
+        "id": "S012",
+        "authors": "Farmer et al.",
+        "title": "International consensus recommendations for minimum reporting standards in transcutaneous vagus nerve stimulation research",
         "publication": "Frontiers in Human Neuroscience",
         "year": 2021,
         "type": "reporting-standard",
         "url": "https://pubmed.ncbi.nlm.nih.gov/33854421/",
-        "doi": "10.3389/fnhum.2020.568051",
-        "pmid": "33854421",
-        "note": "Viser hvorfor enhet, sted, elektrode, bølgeform, intensitet, timing, kontrollbetingelse, deltakergruppe og sikkerhetsrapportering betyr noe ved tolkning av tVNS-forskning."
+        "note": "Lister metode- og protokolldetaljer som bør rapporteres før funn om transkutan VNS kan tolkes eller overføres.",
+        "pmid": "33854421"
       },
       {
-        "id": "nimh-target-engagement",
-        "authors": "National Institute of Mental Health",
-        "title": "NIMH’s New Focus in Clinical Trials",
-        "publication": "NIMH Research Guidance",
-        "year": 2013,
-        "type": "research-guidance",
-        "url": "https://www.nimh.nih.gov/funding/grant-writing-and-application-process/concept-clearances/2013/nimhs-new-focus-in-clinical-trials",
-        "note": "Definerer target engagement som verifisering av at en intervensjon påvirket det tiltenkte målet, noe som er forskjellig fra å dokumentere et klinisk utfall."
-      },
-      {
-        "id": "yang-2026-site-specific",
-        "authors": "Xuejuan Yang et al.",
-        "title": "Site-specific stimulation imperative: Lessons from a failed auricular-cervical transcutaneous vagus nerve stimulation comparison using closely matched parameters",
-        "publication": "Brain Stimulation",
+        "id": "S047",
+        "authors": "U.S. Food and Drug Administration",
+        "title": "Manufacturer and User Facility Device Experience (MAUDE) database",
+        "publication": "FDA medical-device database",
         "year": 2026,
-        "type": "comparative-study",
-        "url": "https://pubmed.ncbi.nlm.nih.gov/41482152/",
-        "doi": "10.1016/j.brs.2025.103022",
-        "pmid": "41482152",
-        "note": "Viser hvorfor kopierte innstillinger og sterk følelse ikke kan erstatte stedsspesifikk verifisering av target engagement."
+        "type": "regulatory-guidance",
+        "url": "https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfmaude/search.cfm",
+        "note": "En database for rapporter etter markedsføring som kan inngå i kontrollarbeid, men som alene ikke fastslår forekomst, årsak eller en sammenlignende sikkerhetsrangering."
       },
       {
-        "id": "kim-2022-tavns-safety",
-        "authors": "Angela Yun Kim et al.",
-        "title": "Safety of transcutaneous auricular vagus nerve stimulation (taVNS): a systematic review and meta-analysis",
-        "publication": "Scientific Reports",
-        "year": 2022,
-        "type": "systematic-review",
-        "url": "https://pubmed.ncbi.nlm.nih.gov/36543841/",
-        "doi": "10.1038/s41598-022-25864-1",
-        "pmid": "36543841",
-        "note": "Gir sikkerhetskontekst og viser samtidig at rapportering av uønskede hendelser var mangelfull i store deler av litteraturen."
+        "id": "S048",
+        "authors": "U.S. Food and Drug Administration",
+        "title": "Medical Device Recalls database",
+        "publication": "FDA medical-device database",
+        "year": 2026,
+        "type": "regulatory-guidance",
+        "url": "https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfres/res.cfm",
+        "note": "Støtter kontroll av gjeldende tilbakekallingsinformasjon for navngitt enhet eller produsent på sammenligningstidspunktet."
       },
       {
-        "id": "butt-2020-auricular-anatomy",
-        "authors": "M. F. Butt et al.",
-        "title": "The anatomical basis for transcutaneous auricular vagus nerve stimulation",
-        "publication": "Journal of Anatomy",
-        "year": 2020,
-        "type": "anatomy-review",
-        "url": "https://pubmed.ncbi.nlm.nih.gov/31742681/",
-        "doi": "10.1111/joa.13122",
-        "pmid": "31742681",
-        "note": "Gjennomgår den blandede og ufullstendig kartlagte innerveringen av det ytre øret og støtter presise fremfor generelle plasseringspåstander."
+        "id": "S049",
+        "authors": "U.S. Food and Drug Administration",
+        "title": "510(k) Premarket Notification database",
+        "publication": "FDA medical-device database",
+        "year": 2026,
+        "type": "regulatory-guidance",
+        "url": "https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpmn/pmn.cfm",
+        "note": "Støtter kontroll av 510(k)-oppføringer og deres konkrete enhetskontekst fremfor å bruke en oppføring som bevis for alle påstander."
+      },
+      {
+        "id": "S050",
+        "authors": "European Union",
+        "title": "Regulation (EU) 2016/679 — General Data Protection Regulation",
+        "publication": "Official Journal of the European Union",
+        "year": 2016,
+        "type": "regulation",
+        "url": "https://eur-lex.europa.eu/eli/reg/2016/679/oj",
+        "note": "Gjør behandling av personopplysninger, åpenhet, formål og brukerrettigheter relevant når app eller konto inngår i enhetssystemet."
       }
     ],
     "relatedLinks": [
@@ -1201,16 +1397,10 @@ export const howToChooseVnsDeviceGuidePair = {
         "label": "Les aurikulær guide"
       },
       {
-        "title": "Sikkerhet og tolerabilitet",
-        "description": "Se forskningskontekst for uønskede hendelser, rapporteringsgap, tolerabilitet og produktspesifikke grenser.",
-        "href": "/no/forskning/sikkerhet-og-tolerabilitet",
-        "label": "Les sikkerhetsforskning"
-      },
-      {
-        "title": "Neuvago-produktdetaljer",
-        "description": "Kontroller gjeldende produktkonfigurasjon, spesifikasjoner, pakkeinnhold, sikkerhetssammendrag og lanseringsstatus.",
-        "href": "/no/produkt",
-        "label": "Se gjeldende produktdetaljer"
+        "title": "Forskning på sikkerhet og tolerabilitet",
+        "description": "Se den engelske forskningsoversikten for sikkerhetsdata, rapporteringsbegrensninger og produktspecifikke grenser.",
+        "href": "/research/topics/safety-and-tolerability",
+        "label": "Les forskningsoversikten"
       },
       {
         "title": "Tiltenkt bruk",
@@ -1232,21 +1422,21 @@ export const howToChooseVnsDeviceGuidePair = {
       }
     ],
     "productBridge": {
-      "eyebrow": "NEUVAGO I SJEKKLISTEN",
+      "eyebrow": "BRUK RAMMEVERKET PÅ NEUVAGO",
       "title": "Bruk de samme tolv kontrollene på Neuvago",
       "paragraphs": [
-        "Neuvagos gjeldende produktside beskriver et ørebasert system med venstre øreelektrode, fire moduser på 20 minutter, 30 intensitetsnivåer, ledende gel og ett års apptilgang. Dette er produktfakta som må kontrolleres – ikke grunnlag for å erklære en universell vinner.",
-        "Forskning på taVNS-feltet blir ikke automatisk Neuvago-spesifikk dokumentasjon. Påstander skal fortsatt knyttes til Neuvagos tiltenkte bruk, instruksjoner og verifiserte dokumentasjon.",
-        "Fordi kommersielle detaljer kan endres, skal gjeldende sider for produkt, sikkerhet, personvern og vilkår brukes til å kontrollere pris, tilgjengelighet, levering, retur, garanti, appvilkår og egnethet når kjøpet gjøres."
+        "Bruk Neuvagos gjeldende produktside til å kontrollere nåværende enhetskonfigurasjon og pakkeopplysninger den dagen du sammenligner. En produktside erstatter ikke formuleringen om tiltenkt bruk, sikkerhetsinformasjon, instruksjoner eller dokumentasjon for en konkret påstand.",
+        "Forskning på aurikulær eller transkutan VNS blir ikke automatisk Neuvago-spesifikt bevis. Produkt, plassering, kontaktmetode, parametere, populasjon og utfall må fortsatt samsvare med påstanden som vurderes.",
+        "Kommersielle opplysninger og appvilkår kan endres. Kontroller tilgjengelighet, levering, retur, garanti, support, inkludert apptilgang og personvern på gjeldende offisielle sider før en kjøpsbeslutning."
       ],
       "actions": [
         {
-          "label": "Se produktdetaljer",
+          "label": "Se gjeldende produktdetaljer",
           "href": "/no/produkt",
           "variant": "primary"
         },
         {
-          "label": "Sammenlign øre og hals",
+          "label": "Sammenlign øre- og halsmetoder",
           "href": "/no/kunnskap/orebasert-vs-halsbasert-vns",
           "variant": "secondary"
         },

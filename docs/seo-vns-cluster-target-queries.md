@@ -160,3 +160,16 @@ The massage pair owns the dedicated massage and pressure-point intent. The metho
 | stimulate, reset, breathe, massage or choose device | specialist method owners | foundation pair | Foundation page does not teach protocols, pressure points, electrical settings or product choice. |
 
 Cannibalisation watch: the foundation pair must not absorb practical-method, electrical-VNS, reset, breathing, massage, broad calming, nervous-system regulation, HRV workflow, detailed auricular anatomy or device-comparison intent. The VNS SEO route total remains 23 and no new route is introduced.
+
+## WAVE 2D.3.2A — bilingual VNS buyer-guide owner lock
+
+| Query family | Primary owner | Protected adjacent owners | Boundary |
+|---|---|---|---|
+| choose a vagus nerve stimulator / velge vagusnervestimulator | `/learn/how-to-choose-a-vagus-nerve-stimulation-device` · `/no/kunnskap/hvordan-velge-vagusnervestimulator` | Product, VNS overview, non-invasive VNS and ear-versus-neck guides | Neutral evaluation framework; no ranking, winner or checkout intent. |
+| best VNS device | buyer-guide pair answers the evaluation question | `/product` · `/no/produkt` | Do not publish a universal winner or unsupported competitor score. |
+| CE marking / FDA status | buyer-guide pair | legal and regulatory owner pages | Status is device-, purpose-, jurisdiction- and version-specific; it does not prove every benefit. |
+| device evidence | buyer-guide pair | Research and VNS method owners | Separate field-level evidence from evidence for the exact named device and protocol. |
+| tingling, strength or comfort | buyer-guide pair | product instructions and safety owner | Sensation and intensity do not prove target engagement or benefit. |
+| price, subscription, warranty, app and privacy | buyer-guide pair | live Product, Terms and Privacy owners | Treat as dated, market-specific facts and verify immediately before purchase. |
+
+The two routes remain existing decision-guide owners. Wave 2D.3.2A introduces no new public URL and preserves 23 VNS SEO routes, 208 sitemap URLs and 240 static pages.

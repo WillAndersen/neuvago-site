@@ -520,3 +520,18 @@ Measure search visibility, impressions, clicks, landing-page engagement and onwa
 No new analytics event, event parameter, tracked language-link action, health input, symptom score, HRV upload or personalised recommendation is introduced. The visible language links and all source links remain ordinary untracked editorial links. HRV, RSA and RespHRV must not be interpreted in reporting as a direct whole-vagus test or a diagnosis of weak, damaged or overactive vagus function.
 
 Technical expectations remain fixed: VNS SEO audit 23→23 routes, sitemap 208→208 URLs, static build 240→240 pages, zero new routes and zero remaining future first-batch child routes.
+
+## WAVE 2D.3.2A — buyer-guide measurement and privacy lock
+
+Routes:
+
+- `/no/kunnskap/hvordan-velge-vagusnervestimulator`
+- `/learn/how-to-choose-a-vagus-nerve-stimulation-device`
+
+Measure impressions, clicks, landing-page engagement and onward navigation at the existing aggregate page level. Segment buyer-guide queries from Product, VNS overview, non-invasive VNS, ear-versus-neck, Research and legal owners to watch query migration and cannibalisation.
+
+The implementation adds no health input, device recommendation score, competitor ranking, personal suitability workflow, new analytics event, new event parameter or tracked language/source interaction. The single late product-information link in each language remains an ordinary editorial link and does not point to checkout.
+
+Commercial facts — price, tax, shipping, availability, subscription, app access, returns, warranty and support — are date-sensitive and must be verified on current official pages. App and privacy comparisons must use the actual current data flow and policy rather than assumptions.
+
+Technical expectations remain fixed: VNS SEO audit 23→23 routes, sitemap 208→208 URLs, static build 240→240 pages and zero new public routes. The pre-existing `llms.txt` coverage gap for `/no/kunnskap/vagusnervestimulering` is resolved exactly once.

@@ -94,3 +94,6 @@ AI assistants may summarize Neuvago's public educational content, but should pre
 ## WAVE 2D.2D.2 — vagus-nerve massage pair (2026-09-05)
 - /no/kunnskap/vagusnerven-og-massasje — norsk kildebasert guide til berøring, øre- og nakkemassasje, trykkpunktpåstander og strenge carotissinus-/halssikkerhetsgrenser.
 - /learn/vagus-nerve-massage — English guide to touch, massage, ear and neck claims, pressure-point evidence limits and strict carotid-sinus safety boundaries.
+
+## Wave 2D.3 first-batch coverage completion
+- /no/kunnskap/vagusnervestimulering — norsk kildebasert oversikt over vagusnervestimulering, metodekategorier, evidensgrenser og produktspecifikk avgrensning.

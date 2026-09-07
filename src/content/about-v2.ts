@@ -97,8 +97,8 @@ export const aboutV2Content = {
     title: "Making a complex field easier to approach.",
     paragraphs: [
       "Interest in the vagus nerve and nervous system is growing, but the science, terminology and available tools can still feel complex, clinical or difficult to bring into everyday life.",
-      "Neuvago was created to make this field clearer and more accessible through practical products, digital tools and science-informed education.",
-      "Neuvago is independently founded and led from Norway. We work closely with experienced manufacturing and specialist partners to develop thoughtful products and digital experiences around the nervous system and vagus nerve.",
+      "Neuvago was created to bridge that gap through practical products, digital tools and science-informed education.",
+      "Neuvago was founded in Norway and is independently led. We work closely with experienced manufacturing and specialist partners to develop thoughtful products and digital experiences focused on the vagus nerve and nervous system.",
     ],
   },
   principles: {
@@ -124,7 +124,7 @@ export const aboutV2Content = {
         id: "designed-for-real-life",
         title: "Designed for real life",
         description:
-          "We create approachable products and tools that can fit into ordinary routines, with thoughtful design, adjustable experiences and a low threshold for getting started.",
+          "We create approachable products and tools that can fit into ordinary routines, with thoughtful design, flexible use and a simple way to get started.",
       },
     ],
   },

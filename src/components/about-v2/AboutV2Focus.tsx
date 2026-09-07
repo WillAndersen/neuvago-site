@@ -37,7 +37,13 @@ export function AboutV2Focus({ content }: AboutV2FocusProps) {
 
         <div className="mt-14 grid gap-12 sm:mt-16 lg:grid-cols-[minmax(0,1.72fr)_minmax(18rem,0.98fr)] lg:items-start lg:gap-16 xl:gap-20">
           <article data-priority={primaryArea.priority}>
-            <div className="relative aspect-[16/11] overflow-hidden border border-white/10 bg-[#eee7dc]">
+            <h3 className="max-w-[14ch] text-4xl font-medium leading-[0.98] tracking-[-0.055em] sm:text-5xl lg:text-6xl">
+              {primaryArea.title}
+            </h3>
+            <p className="mt-5 max-w-3xl text-base leading-8 text-white/68 sm:text-lg">
+              {primaryArea.description}
+            </p>
+            <div className="relative mt-8 aspect-[16/11] overflow-hidden border border-white/10 bg-[#eee7dc] sm:mt-10">
               <Image
                 src={content.image.src}
                 alt={content.image.alt}
@@ -46,12 +52,6 @@ export function AboutV2Focus({ content }: AboutV2FocusProps) {
                 className="object-contain"
               />
             </div>
-            <h3 className="mt-7 max-w-[14ch] text-4xl font-medium leading-[0.98] tracking-[-0.055em] sm:mt-8 sm:text-5xl lg:text-6xl">
-              {primaryArea.title}
-            </h3>
-            <p className="mt-5 max-w-3xl text-base leading-8 text-white/68 sm:text-lg">
-              {primaryArea.description}
-            </p>
           </article>
 
           <div className="border-t border-white/15">

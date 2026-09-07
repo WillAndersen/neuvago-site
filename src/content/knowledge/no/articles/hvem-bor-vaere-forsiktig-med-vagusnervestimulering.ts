@@ -721,15 +721,14 @@ export const hvemBorVaereForsiktigMedVagusnervestimuleringArticle = {
     {
       id: "gammacore-safety-context",
       authors: "electroCore",
-      title:
-        "Official gammaCore product safety statements for non-invasive cervical VNS",
-      publication: "Official manufacturer information",
-      year: 2021,
+      title: "gammaCore Important Safety and Performance Information",
+      publication: "Official gammaCore product safety information",
+      year: 2026,
       type: "official-guidance",
       url:
-        "https://investor.electrocore.com/news-releases/news-release-details/electrocore-announces-publication-premium-ii-trial-gammacore-non/",
+        "https://www.gammacore.com/about-gammacore/important-safety-information/",
       note:
-        "Oppgir produktspesifikke kontraindikasjoner og grupper der sikkerhet og effekt ikke var evaluert; brukes som eksempel, ikke som Neuvago-regel.",
+        "Offisiell inngang til gjeldende produktspesifikk sikkerhetsinformasjon for en reseptbelagt halsbasert nVNS-enhet; brukes som eksempel, ikke som Neuvago-regel.",
     },
     {
       id: "helsenorge-helsehjelp",

@@ -89,6 +89,10 @@ function buildWebPage(guide: ResearchGuideContent) {
       name: "Neuvago",
       url: "https://neuvago.com",
     },
+    reviewedBy: {
+      "@type": "Organization",
+      name: guide.reviewerName,
+    },
     publisher: {
       "@type": "Organization",
       name: "Neuvago",
@@ -119,10 +123,6 @@ function buildArticle(guide: ResearchGuideContent) {
     author: {
       "@type": "Person",
       name: guide.authorName,
-    },
-    reviewedBy: {
-      "@type": "Organization",
-      name: guide.reviewerName,
     },
     publisher: {
       "@type": "Organization",
@@ -160,8 +160,11 @@ function buildFrameworkList(guide: ResearchGuideContent) {
     itemListElement: guide.framework.items.map((item, index) => ({
       "@type": "ListItem",
       position: index + 1,
-      name: item.title,
-      description: `${item.question} ${item.whyItMatters}`,
+      item: {
+        "@type": "Thing",
+        name: item.title,
+        description: `${item.question} ${item.whyItMatters}`,
+      },
     })),
   };
 }

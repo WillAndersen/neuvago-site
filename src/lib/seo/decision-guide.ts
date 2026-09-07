@@ -86,6 +86,10 @@ function buildWebPage(guide: DecisionGuideContent) {
       name: "Neuvago",
       url: "https://neuvago.com",
     },
+    reviewedBy: {
+      "@type": "Organization",
+      name: guide.reviewerName,
+    },
     publisher: {
       "@type": "Organization",
       name: "Neuvago",
@@ -116,10 +120,6 @@ function buildArticle(guide: DecisionGuideContent) {
     author: {
       "@type": "Person",
       name: guide.authorName,
-    },
-    reviewedBy: {
-      "@type": "Organization",
-      name: guide.reviewerName,
     },
     publisher: {
       "@type": "Organization",
@@ -155,8 +155,11 @@ function buildChecklist(guide: DecisionGuideContent) {
     itemListElement: guide.checklist.items.map((item, index) => ({
       "@type": "ListItem",
       position: index + 1,
-      name: item.title,
-      description: item.description,
+      item: {
+        "@type": "Thing",
+        name: item.title,
+        description: item.description,
+      },
     })),
   };
 }

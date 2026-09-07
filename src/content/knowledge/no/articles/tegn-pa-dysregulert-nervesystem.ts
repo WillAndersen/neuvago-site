@@ -309,11 +309,11 @@ export const tegnPaDysregulertNervesystemArticle = {
     {
       id: "helsenorge-sovnrad",
       authors: "Helsedirektoratet",
-      title: "Gode råd for bedre søvn",
+      title: "Gode råd for betre søvn",
       publication: "Helsenorge",
       year: 2025,
       type: "official-guidance",
-      url: "https://www.helsenorge.no/sovnproblemer/gode-rad-for-bedre-sovn/",
+      url: "https://www.helsenorge.no/sovnproblemer/rad-for-bedre-sovn/",
       note:
         "Brukt for søvnvaner og for å holde søvnsymptomer adskilt fra én autonom forklaring.",
     },

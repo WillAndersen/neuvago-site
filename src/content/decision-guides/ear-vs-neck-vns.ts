@@ -557,6 +557,20 @@ export const earVsNeckVnsGuidePair = {
         label: "Open the buyer guide",
       },
       {
+        title: "What does vagus nerve stimulation feel like?",
+        description:
+          "Compare common sensations, comfort, contact quality and why stronger stimulation is not automatically better.",
+        href: "/learn/what-does-vagus-nerve-stimulation-feel-like",
+        label: "Read the sensation guide",
+      },
+      {
+        title: "VNS device buyer checklist (PDF)",
+        description:
+          "Use the printable 12-point checklist to record what is verified, unclear or missing when comparing devices.",
+        href: "/downloads/neuvago-vns-device-buyer-checklist-en.pdf",
+        label: "Open the English PDF",
+      },
+      {
         title: "Vagus nerve stimulation overview",
         description:
           "Start with the full VNS category, including implanted systems, non-invasive approaches and responsible evidence boundaries.",
@@ -1195,6 +1209,13 @@ export const earVsNeckVnsGuidePair = {
           "Bruk et rammeverk med 12 punkter for å kontrollere metode, tiltenkt bruk, produktspesifikk dokumentasjon, sikkerhet, protokoll, eierkostnader, personvern, support og gjeldende kjøpsvilkår.",
         href: "/no/kunnskap/hvordan-velge-vagusnervestimulator",
         label: "Åpne kjøpsguiden",
+      },
+      {
+        title: "Kjøpersjekkliste for VNS-enheter (PDF)",
+        description:
+          "Bruk den utskrivbare sjekklisten med 12 punkter for å notere hva som er bekreftet, uklart eller mangler når du sammenligner enheter.",
+        href: "/downloads/neuvago-kjopersjekkliste-vns-enhet-no.pdf",
+        label: "Åpne norsk PDF",
       },
       {
         title: "Vagusnervestimulering – oversikt",

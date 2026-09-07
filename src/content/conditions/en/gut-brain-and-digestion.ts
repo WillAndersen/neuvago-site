@@ -251,6 +251,12 @@ export const gutBrainDigestionArticle = {
             description: "Explore vigilance and autonomic arousal.",
             href: "/conditions/anxiety",
           },
+          {
+            title: "Chronic Pain",
+            description:
+              "Explore persistent pain, interacting factors and condition-specific research.",
+            href: "/conditions/chronic-pain",
+          },
         ],
       },
       {

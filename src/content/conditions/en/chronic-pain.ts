@@ -285,6 +285,18 @@ export const chronicPainArticle = {
               "Explore mood, sleep, stress systems and brain–body context.",
             href: "/conditions/depression-and-mood",
           },
+          {
+            title: "Migraine & Headache",
+            description:
+              "Explore migraine, headache patterns and the boundaries of condition-specific VNS research.",
+            href: "/conditions/migraine-and-headache",
+          },
+          {
+            title: "Gut–Brain & Digestion",
+            description:
+              "Explore digestive symptoms, gut–brain communication and research involving conditions such as IBS.",
+            href: "/conditions/gut-brain-and-digestion",
+          },
         ],
       },
       {

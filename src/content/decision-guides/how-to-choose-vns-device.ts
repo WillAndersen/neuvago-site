@@ -61,7 +61,7 @@ export const howToChooseVnsDeviceGuidePair = {
         "blocks": [
           {
             "type": "paragraph",
-            "text": "Before choosing a vagus nerve stimulation device, identify the method and stimulation site, read the current intended use and labeling, separate research on a method from evidence for the named product, and review placement, contact, protocol, safety, app, privacy, support and total cost. The page is an evaluation framework, not a ranking, and it does not decide whether a device is medically suitable for an individual."
+            "text": "Before choosing a vagus nerve stimulation device, identify the method and stimulation site. Read the current intended use and labeling, and separate research on a method from evidence for the named product. Then review placement, contact, protocol, safety, app, privacy, support and total cost. This page is an evaluation framework, not a ranking, and it does not decide whether a device is medically suitable for an individual."
           },
           {
             "type": "callout",
@@ -404,7 +404,7 @@ export const howToChooseVnsDeviceGuidePair = {
         "blocks": [
           {
             "type": "paragraph",
-            "text": "This guide was reviewed on 6 September 2026. It uses regulations and official guidance to explain intended use, labeling and claim boundaries; official device databases to show how model-specific status can be checked; a consensus reporting standard to define the protocol details needed for interpretation; and privacy law to keep app and account questions inside the comparison."
+            "text": "This guide was reviewed on 6 September 2026. Regulations and official guidance explain intended use, labeling and claim boundaries. Official device databases show how model-specific status can be checked. A consensus reporting standard identifies the protocol details needed for interpretation. Privacy law keeps app and account questions inside the comparison."
           },
           {
             "type": "callout",
@@ -476,7 +476,7 @@ export const howToChooseVnsDeviceGuidePair = {
     "faq": [
       {
         "question": "What should you check before choosing a vagus nerve stimulator?",
-        "answer": "Check the device category and stimulation site, current intended use and labeling, evidence for the exact product and protocol, placement and contact instructions, contraindications and stop rules, app and account requirements, privacy, support and the full date-stamped cost of ownership. Record unknowns rather than filling them with marketing assumptions."
+        "answer": "Check the device category and stimulation site, then read the current intended use and labeling. Review evidence for the exact product and protocol, placement and contact instructions, contraindications and stop rules. Also check app and account requirements, privacy, support and the full date-stamped cost of ownership. Record unknowns rather than filling them with marketing assumptions."
       },
       {
         "question": "Are all vagus nerve stimulators the same type?",

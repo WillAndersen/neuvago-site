@@ -133,7 +133,7 @@ export const depressionMoodArticle = {
       title:
         "A narrow regulatory indication in treatment-resistant depression.",
       paragraphs: [
-        "In 2005, the U.S. Food and Drug Administration approved the implanted VNS Therapy System as an adjunctive long-term treatment for patients 18 years of age or older with chronic or recurrent depression who were experiencing a major depressive episode and had not responded adequately to four or more adequate antidepressant treatments.",
+        "In 2005, the U.S. Food and Drug Administration approved the implanted VNS Therapy System for a narrowly defined use. The approval covers adjunctive long-term treatment for people aged 18 or older with chronic or recurrent depression. It applies when they are experiencing a major depressive episode and have not responded adequately to four or more adequate antidepressant treatments.",
         "This is surgically implanted prescription therapy for a narrowly defined clinical population. The approval does not apply to cervical non-invasive VNS, auricular taVNS or Neuvago.",
       ],
       tone: "light",

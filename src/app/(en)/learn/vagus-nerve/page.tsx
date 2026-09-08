@@ -49,7 +49,7 @@ const sections: readonly PageSection[] = [
     paragraphs: [
       "The vagus nerve is the tenth cranial nerve and runs from the brainstem to structures in the neck, chest and abdomen. It participates in sensory, motor and autonomic functions and should not be reduced to a simple “calm switch.”",
       "Humans have a left and a right vagus nerve. The singular term is convenient, but the paired nerves branch repeatedly and contain different fibre types. They are better understood as part of a distributed, two-way communication system than as one uninterrupted cable controlling the whole body.",
-      "This foundation page explains anatomy, course and major function families. Practical methods, breathing, massage, reset language, HRV interpretation and electrical vagus nerve stimulation have separate owners so that anatomy is not confused with a protocol or product claim.",
+      "This foundation page explains anatomy, the nerve’s course and its major function families. Separate guides cover practical methods, breathing, massage, reset language, HRV interpretation and electrical vagus nerve stimulation. Keeping these topics separate helps prevent anatomy from being confused with a protocol or product claim.",
     ],
     answers: [
       {
@@ -221,7 +221,7 @@ const sections: readonly PageSection[] = [
     eyebrow: "Evidence map",
     title: "Further reading and sources",
     paragraphs: [
-      "The sources below were selected for the eleven evidence classes locked for this foundation pair: gross and functional anatomy, mixed fibres, central pathways, organ territories, autonomic context, interoception, major function families, HRV and RespHRV limits, neuroimmune claims, clinical boundaries and the distinction between anatomy, VNS and product evidence.",
+      "The sources below cover eleven evidence areas used for this foundation page. They include gross and functional anatomy, mixed fibres, central pathways, organ territories, autonomic context, interoception and major function families. They also cover HRV and RespHRV limits, neuroimmune claims, clinical boundaries and the distinction between anatomy, VNS and product evidence.",
       "The same sixteen reader-visible sources appear on both language versions. They include authoritative references, reviews, recommendations, primary research, a critical review and an official regulatory example. A source supports only the claim families for which it was reviewed; inclusion does not imply endorsement of Neuvago or every conclusion in the publication.",
       "This is a dated editorial evidence review rather than a systematic review, clinical guideline or individual medical assessment. Reviewed and modified 5 September 2026. General educational information does not replace diagnosis, treatment or personalised advice from a qualified professional.",
     ],

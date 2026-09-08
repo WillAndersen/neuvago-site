@@ -610,11 +610,12 @@ export default function ImplantedVsNonInvasiveVnsPage() {
           <div className="space-y-7 text-base leading-8 text-[#5f5a52] md:text-lg">
             <p>
               Non-invasive VNS means that no stimulation lead is surgically
-              implanted. That definition still leaves many open questions: neck
-              or ear, left or right, handheld or wearable, dry or conductive
-              contact, electrode size, waveform, frequency, pulse width,
-              current or voltage control, duty cycle, intensity, session length,
-              schedule, and intended use.
+              implanted. That definition still leaves important questions about
+              where and how stimulation is delivered. These include neck or ear,
+              left or right, handheld or wearable, dry or conductive contact,
+              electrode size, waveform, frequency, pulse width, current or
+              voltage control, duty cycle, intensity, session length, schedule,
+              and intended use.
             </p>
             <p>
               Cervical nVNS and auricular taVNS should therefore not be blended
@@ -624,11 +625,12 @@ export default function ImplantedVsNonInvasiveVnsPage() {
               participant population.
             </p>
             <p>
-              A product page should answer the practical questions that a
-              category label cannot: where the contact goes, how intensity is
-              adjusted, what a session involves, who should seek advice, when
-              use should stop, what is included, what evidence belongs to the
-              final product, and what the product is intended to do.
+              A category label cannot answer every practical question about a
+              product. The product page should explain where the contact goes,
+              how intensity is adjusted, and what a session involves. It should
+              also state who should seek advice, when use should stop, what is
+              included, what evidence belongs to the final product, and what the
+              product is intended to do.
             </p>
           </div>
         </div>

@@ -25,9 +25,11 @@ import { tegnPaDysregulertNervesystemArticle } from "@/content/knowledge/no/arti
 import { erVagusnervestimuleringTrygtArticle } from "@/content/knowledge/no/articles/er-vagusnervestimulering-trygt";
 import { bivirkningerVedIkkeInvasivVagusnervestimuleringArticle } from "@/content/knowledge/no/articles/bivirkninger-ved-ikke-invasiv-vagusnervestimulering";
 import { hvemBorVaereForsiktigMedVagusnervestimuleringArticle } from "@/content/knowledge/no/articles/hvem-bor-vaere-forsiktig-med-vagusnervestimulering";
+import { tensOgVagusnervestimuleringArticle } from "@/content/knowledge/no/articles/tens-og-vagusnervestimulering";
 import type { NorwegianKnowledgeArticle } from "@/content/knowledge/no/types";
 
 const articleRegistry = [
+  tensOgVagusnervestimuleringArticle,
   vagusnervenArticle,
   hvordanStimulereVagusnervenArticle,
   resetteVagusnervenArticle,

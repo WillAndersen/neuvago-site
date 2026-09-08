@@ -173,3 +173,34 @@ Cannibalisation watch: the foundation pair must not absorb practical-method, ele
 | price, subscription, warranty, app and privacy | buyer-guide pair | live Product, Terms and Privacy owners | Treat as dated, market-specific facts and verify immediately before purchase. |
 
 The two routes remain existing decision-guide owners. Wave 2D.3.2A introduces no new public URL and preserves 23 VNS SEO routes, 208 sitemap URLs and 240 static pages.
+
+## WAVE 2D.3.2B — TENS versus VNS (2026-09-08)
+
+Baseline: `697d45886ff512afd6c920432d0619f76f7232bc` after Semrush 10.3.
+Owner pair: `/no/kunnskap/tens-og-vagusnervestimulering` ↔ `/learn/tens-vs-vagus-nerve-stimulation`.
+Own category-comparison intent only: intended use, target, delivery, protocol and evidence.
+Do not own TENS treatment advice, electrode placement, numeric settings, product suitability or a product ranking.
+Both locales contain ten parallel section jobs, six visible direct answers and fourteen annotated references.
+Required schema: Article and BreadcrumbList. No FAQPage, QAPage, HowTo, Product, Review or AggregateRating on this new pair.
+Preserve current Semrush helpers, including reviewedBy on WebPage and nested ListItem.item.Thing in existing decision/research guides.
+Existing Article/FAQ/ItemList content is not overwritten by the new route contracts.
+The English Learn hub receives one TENS comparison link and one previously deferred buyer-guide link; verify rendered main counts before declaring the carry-forward complete.
+No direct Product, Shop, checkout, application or medical-input CTA on the new comparison pages.
+Cross-link to existing VNS/tVNS/auricular/ear-versus-neck/safety/intended-use owners instead.
+No extra image, electrode diagram, audio or video is generated or installed in this wave.
+Expected technical delta is +2 URLs and +2 source-audit routes. Runtime/build totals are measured in the local audit, not assumed from the old plan.
+
+### Source refresh — explicit corrections, not rewritten historical evidence
+
+Original five contract JSON files and the A source-lock document remain unchanged.
+The B implementation keeps the fourteen source roles/IDs but corrects six mismatched PubMed destinations:
+S014: 24816182 → 24834378; S015: 12855337 → 14622708; S017: 25167364 → 24953072;
+S023: 31249564 → 31447643; S024: 31249565 → 31396044;
+S026: 29222821 → DOI 10.1016/j.brs.2018.03.018 (methodological comment).
+S013 publication is Headache, not Neuromodulation. Exact publication titles are normalized to the verified bibliographic records.
+S009 uses the fully qualified current eCFR section URL for the same regulation.
+`SOURCE_REFRESH.json` in the installation package records originals, corrections, inspection coverage and access date 2026-09-08.
+Some background sources were checked through metadata/abstract rather than full text; S026 is not the sole support for any factual claim.
+Historical TENS reviews are not described as the latest treatment guidance. This is not a systematic clinical review or independent specialist sign-off.
+Check reuse of the six incorrect identifiers in other source registers in a separately scoped source-maintenance task; do not silently change protected pages here.
+

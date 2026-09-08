@@ -535,3 +535,17 @@ The implementation adds no health input, device recommendation score, competitor
 Commercial facts — price, tax, shipping, availability, subscription, app access, returns, warranty and support — are date-sensitive and must be verified on current official pages. App and privacy comparisons must use the actual current data flow and policy rather than assumptions.
 
 Technical expectations remain fixed: VNS SEO audit 23→23 routes, sitemap 208→208 URLs, static build 240→240 pages and zero new public routes. The pre-existing `llms.txt` coverage gap for `/no/kunnskap/vagusnervestimulering` is resolved exactly once.
+
+## WAVE 2D.3.2B — TENS/VNS comparison measurement boundary (2026-09-08)
+
+Publish the NO and EN category-comparison routes as one reviewed pair from the reconciled Semrush baseline.
+Observe ordinary page impressions/clicks and each route's intended query ownership through existing reporting.
+No new events, event parameters, health input, personalized suitability scores or tracked source/language links are introduced.
+The new routes are not evidence of indexing or ranking. Record those separately only when search-console/crawl evidence exists.
+Local gates: exact 7M/2A scope; original URLs and dates preserved; NO registry +1; sitemap +2 with existing entries unchanged; VNS source audit 23→25.
+Expected build 240→242 is checked against an actual baseline build and a candidate build before installing in main.
+English Learn main must have exactly one buyer-guide link and one TENS link after the candidate build.
+Six direct answers per language are editorial callouts, not FAQPage schema. No direct product/shop/checkout links in either comparison main.
+Retain newer Semrush schema and buyer-guide wording. Historical A artifacts and their parser-correction decision remain unchanged.
+The local pilot does not authorize staging, commit, push, deployment or database activity.
+

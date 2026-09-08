@@ -69,6 +69,15 @@ const primaryFoundationArticles = [
 ] as const;
 
 const moreFoundationGuides = [
+  // WAVE 2D.3.2B: one comparison link and the deferred buyer-guide link.
+  {
+    title: "TENS vs vagus nerve stimulation",
+    href: "/learn/tens-vs-vagus-nerve-stimulation",
+  },
+  {
+    title: "How to choose a vagus nerve stimulation device",
+    href: "/learn/how-to-choose-a-vagus-nerve-stimulation-device",
+  },
   {
     title: "Transcutaneous vagus nerve stimulation (tVNS)",
     href: "/learn/transcutaneous-vagus-nerve-stimulation",

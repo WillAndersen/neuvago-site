@@ -1,4 +1,5 @@
 import { execFileSync } from "node:child_process";
+import { createHash } from "node:crypto";
 import { existsSync, readdirSync, readFileSync, statSync } from "node:fs";
 import path from "node:path";
 
@@ -416,11 +417,48 @@ if (!featuredStudyCatalogSource) {
   errors.push("src/content/research-study-catalog.ts is missing.");
 }
 
+// BEGIN WAVE 2D.3.2B STUDY 07.10 ARCHITECTURE RECONCILIATION
+// Only this reviewed route has the 07.10 inline-summary architecture.
+// Other study routes retain their existing component/catalog requirements.
+// The full source hash makes comments, missing copy, hidden markup or a new
+// unreviewed implementation ineligible for this route-specific contract.
+const inlineStudyPilotPath = "src/app/(en)/research/studies/de-oliveira-2025-tavns-insomnia-systematic-review-meta-analysis/page.tsx";
+const inlineStudyPilotSlug = "de-oliveira-2025-tavns-insomnia-systematic-review-meta-analysis";
+function inlineStudyPilotErrors(source, catalogEntry) {
+  const failures = [];
+  const normalized = source.replace(/\s+/gu, " ");
+  if (createHash("sha256").update(source, "utf8").digest("hex") !== "c2074c04814e5de35e7930375cdb0709332c82c2d2fedd457509d6167825b037") {
+    failures.push("07.10 inline study source differs from its reviewed contract; review the actual summary architecture rather than restoring old component names.");
+  }
+  for (const marker of [
+    "IN PLAIN ENGLISH", "What this review examined.",
+    "The review brought together clinical studies examining transcutaneous auricular vagus nerve stimulation in people with insomnia.",
+    "The results were statistically significant, but the evidence base was small and the certainty of evidence was limited.",
+    "How to interpret the findings.", "Citation and original sources.",
+    "Open DOI record", "View on PubMed",
+  ]) {
+    if (!normalized.includes(marker)) failures.push(`07.10 inline summary is missing reviewed content: ${marker}`);
+  }
+  if (!catalogEntry || !catalogEntry.includes('doi: "10.1016/j.neurom.2025.04.001"') || !catalogEntry.includes('pubmedId: "40323248"')) {
+    failures.push("07.10 inline study has missing or mismatched catalog DOI/PubMed identity.");
+  }
+  return failures;
+}
+// END WAVE 2D.3.2B STUDY 07.10 ARCHITECTURE RECONCILIATION
+
 const studyPageFiles = collectFiles(path.join(repoRoot, "src/app/(en)/research/studies"), "page.tsx")
   .filter((filePath) => !filePath.endsWith(path.join("research", "studies", "page.tsx")));
 
 for (const filePath of studyPageFiles) {
   const source = readIfExists(filePath);
+  if (relative(filePath) === inlineStudyPilotPath) {
+    for (const failure of inlineStudyPilotErrors(
+      source,
+      catalogEntryForSlug(featuredStudyCatalogSource, inlineStudyPilotSlug),
+    )) errors.push(`${relative(filePath)}: ${failure}`);
+    continue;
+  }
+
   const usesFeaturedStudyRenderer =
     source.includes("FeaturedTavnsStudyPage") &&
     source.includes("getFeaturedTavnsStudy");
@@ -2269,6 +2307,40 @@ if (artifacts.length > 0) {
   errors.push(`Remove generated artifacts before commit: ${artifacts.slice(0, 12).join(", ")}${artifacts.length > 12 ? " ..." : ""}`);
 }
 
+// WAVE 2D.3.2B — bilingual TENS/VNS comparison, not a use protocol.
+const wave2d32bRoutes = [
+  "/no/kunnskap/tens-og-vagusnervestimulering",
+  "/learn/tens-vs-vagus-nerve-stimulation",
+];
+const wave2d32bNo = readIfExists(path.join(repoRoot, "src/content/knowledge/no/articles/tens-og-vagusnervestimulering.ts"));
+const wave2d32bEn = readIfExists(pageFileForRoute(wave2d32bRoutes[1]));
+const wave2d32bRegistry = readIfExists(path.join(repoRoot, "src/content/knowledge/no/registry.ts"));
+const wave2d32bHub = readIfExists(pageFileForRoute("/learn"));
+const wave2d32bLlms = readIfExists(path.join(repoRoot, "public/llms.txt"));
+for (const [locale, source] of [["no", wave2d32bNo], ["en", wave2d32bEn]]) {
+  if (!source) { errors.push(`Wave 2D.3.2B: missing ${locale} article`); continue; }
+  for (const section of ["short-answer", "what-tens-means", "what-vns-means", "why-the-labels-are-not-interchangeable", "comparison-by-purpose-site-waveform-and-protocol", "hardware-similarity-does-not-prove-target", "evidence-and-regulatory-specificity", "safety-and-no-diy-placement", "related-owner-pages", "sources-and-review-date"]) {
+    if (!source.includes(`"id": "${section}"`)) errors.push(`Wave 2D.3.2B ${locale}: missing ${section}`);
+  }
+  for (const sourceId of ["S008", "S009", "S010", "S011", "S012", "S013", "S014", "S015", "S016", "S017", "S023", "S024", "S025", "S026"]) {
+    if (!source.includes(`"id": "${sourceId}"`)) errors.push(`Wave 2D.3.2B ${locale}: missing source ${sourceId}`);
+  }
+  if (/["']href["']\s*:\s*["']\/(?:no\/produkt|product|shop|checkout)(?:["'/?#])/.test(source)) {
+    errors.push(`Wave 2D.3.2B ${locale}: forbidden direct commercial link`);
+  }
+  if (/"@type"\s*:\s*"(?:FAQPage|QAPage|HowTo|Product|Review|AggregateRating)"/.test(source)) {
+    errors.push(`Wave 2D.3.2B ${locale}: prohibited structured data`);
+  }
+}
+if (!wave2d32bRegistry.includes("tensOgVagusnervestimuleringArticle")) errors.push("Wave 2D.3.2B: missing NO registry integration");
+for (const route of [wave2d32bRoutes[1], "/learn/how-to-choose-a-vagus-nerve-stimulation-device"]) {
+  if ((wave2d32bHub.match(new RegExp(`href: "${route}"`, "g")) || []).length !== 1) errors.push(`Wave 2D.3.2B: expected exactly one hub link for ${route}`);
+}
+for (const route of wave2d32bRoutes) {
+  if (!wave2d32bLlms.includes(`https://neuvago.com${route})`)) errors.push(`Wave 2D.3.2B: missing llms entry ${route}`);
+  if (!sitemapSource.includes(route)) errors.push(`Wave 2D.3.2B: sitemap pair guard missing ${route}`);
+}
+
 if (errors.length > 0) {
   console.error("SEO VNS cluster audit failed:");
   for (const error of errors) console.error(`- ${error}`);
@@ -2283,7 +2355,7 @@ if (errors.length > 0) {
   process.exit(1);
 }
 
-console.log(`SEO VNS cluster audit passed for ${clusterRoutes.length + wave2d2b2Routes.length + wave2d2c2Routes.length + wave2d2d2Routes.length} routes.`);
+console.log(`SEO VNS cluster audit passed for ${clusterRoutes.length + wave2d2b2Routes.length + wave2d2c2Routes.length + wave2d2d2Routes.length + wave2d32bRoutes.length} routes.`);
 
 
 function collectFiles(dir, fileName, matches = []) {

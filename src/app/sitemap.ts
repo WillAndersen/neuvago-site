@@ -67,6 +67,7 @@ const routes: Array<{
   { path: "/learn/vagus-nerve-stimulation", changeFrequency: "weekly", priority: 0.86, lastModified: SEO_LAUNCH_REVIEW_DATE },
   { path: "/learn/non-invasive-vagus-nerve-stimulation", changeFrequency: "weekly", priority: 0.86, lastModified: SEO_LAUNCH_REVIEW_DATE },
   { path: "/learn/implanted-vs-non-invasive-vagus-nerve-stimulation", changeFrequency: "weekly", priority: 0.84, lastModified: "2026-08-31" },
+  { path: "/learn/tens-vs-vagus-nerve-stimulation", changeFrequency: "monthly", priority: 0.8, lastModified: "2026-09-08" },
   { path: "/learn/transcutaneous-vagus-nerve-stimulation", changeFrequency: "weekly", priority: 0.84, lastModified: SEO_LAUNCH_REVIEW_DATE },
   { path: "/learn/auricular-vagus-nerve-stimulation", changeFrequency: "weekly", priority: 0.84, lastModified: SEO_LAUNCH_REVIEW_DATE },
   { path: "/learn/what-does-vagus-nerve-stimulation-feel-like", changeFrequency: "weekly", priority: 0.82, lastModified: "2026-08-28" },
@@ -200,7 +201,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: term.sitemapPriority,
     }));
 
-  return [
+  const entries: MetadataRoute.Sitemap = [
     ...coreEntries,
     ...decisionGuideEntries,
     ...norwegianKnowledgeEntries,
@@ -210,4 +211,16 @@ export default function sitemap(): MetadataRoute.Sitemap {
     ...englishGlossaryEntries,
     ...norwegianGlossaryEntries,
   ];
+
+  // WAVE 2D.3.2B — publish the language pair together, without duplicate URLs.
+  for (const expectedPath of [
+    "/no/kunnskap/tens-og-vagusnervestimulering",
+    "/learn/tens-vs-vagus-nerve-stimulation",
+  ]) {
+    const expectedUrl = new URL(expectedPath, siteUrl).toString();
+    if (entries.filter((entry) => entry.url === expectedUrl).length !== 1) {
+      throw new Error(`Wave 2D.3.2B requires exactly one sitemap entry for ${expectedPath}.`);
+    }
+  }
+  return entries;
 }

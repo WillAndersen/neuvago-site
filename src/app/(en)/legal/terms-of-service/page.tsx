@@ -178,9 +178,9 @@ const sections = [
     title: "Contact information",
     body: [
       "If you have questions regarding these Terms of Service, please contact support@neuvago.com.",
-      "Company: Neuvago.",
-      "Address: [Insert company address].",
-      "Effective Date: [Insert date].",
+      "Company: Willander AS (Neuvago). Norwegian organisation number: 928 489 574.",
+      "Address: Øvre Langgate 57, 3110 Tønsberg, Norway.",
+      "Effective Date: 1 August 2026.",
     ],
   },
 ]

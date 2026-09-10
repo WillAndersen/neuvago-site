@@ -1,0 +1,9 @@
+gate_id,scope,requirement,default_if_open,owner_role
+GATE-EDITORIAL,All priority content,"Editorial owner, sources and evidence boundary documented",BLOCK,Editorial owner
+GATE-EVIDENCE,High/Very High health content,Evidence characterization and modality lock verified,BLOCK,Scientific / evidence reviewer
+GATE-MEDICAL,Very High/Critical condition or safety content,Qualified specialist review complete where required,BLOCK,Medical/specialist reviewer
+GATE-REG,Regulatory/product classification claims,Controlled fact record VERIFIED by regulatory/claims owner,BLOCK,Regulatory / claims owner
+GATE-SAFETY,Warnings/contraindications/stop rules,Matches current controlled product instructions,BLOCK,Safety + regulatory owner
+GATE-CONFLICT,Reviewer/comparison content,Conflict disclosure recorded,BLOCK,Editorial owner
+GATE-CORRECTIONS,Content with required revisions,Critical/Major approved change requests implemented and verified,BLOCK,Editorial owner
+GATE-INDEX,New gated page,"Applicable gates closed before index/follow, sitemap and hub inclusion",BLOCK,Release owner

@@ -29,6 +29,12 @@ export function SiteFooter() {
   const pathname = usePathname() ?? "/";
   const locale = getLocaleFromPathname(pathname);
   const { footer } = getSiteChromeConfig(locale);
+  const editorialPolicyLink =
+    locale === "en"
+      ? { href: "/legal/editorial-policy", label: "Editorial Policy" }
+      : locale === "no"
+        ? { href: "/no/redaksjonell-policy", label: "Redaksjonell policy" }
+        : null;
   const groupGridClass =
     footer.groups.length >= 4
       ? "sm:grid-cols-2 lg:grid-cols-5"
@@ -94,6 +100,14 @@ export function SiteFooter() {
                       {link.label}
                     </Link>
                   ))}
+                  {editorialPolicyLink ? (
+                    <Link
+                      href={editorialPolicyLink.href}
+                      className="transition hover:text-[#1f1f1c]"
+                    >
+                      {editorialPolicyLink.label}
+                    </Link>
+                  ) : null}
                 </div>
               ) : null}
             </div>

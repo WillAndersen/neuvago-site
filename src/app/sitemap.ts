@@ -35,6 +35,7 @@ const routes: Array<{
   { path: "/no/juridisk/fda-status", changeFrequency: "monthly", priority: 0.52, lastModified: SEO_LAUNCH_REVIEW_DATE },
   { path: "/no/juridisk/ce-samsvar", changeFrequency: "monthly", priority: 0.54, lastModified: SEO_LAUNCH_REVIEW_DATE },
   { path: "/no/juridisk/tillit-og-sikkerhet", changeFrequency: "monthly", priority: 0.58, lastModified: SEO_LAUNCH_REVIEW_DATE },
+  { path: "/no/redaksjonell-policy", changeFrequency: "monthly", priority: 0.62, lastModified: SEO_LAUNCH_REVIEW_DATE },
   { path: "/no/juridisk/regulatorisk", changeFrequency: "monthly", priority: 0.58, lastModified: SEO_LAUNCH_REVIEW_DATE },
   { path: "/no/juridisk/medisinsk-ansvarsfraskrivelse", changeFrequency: "monthly", priority: 0.58, lastModified: SEO_LAUNCH_REVIEW_DATE },
   { path: "/no/juridisk/personvern", changeFrequency: "monthly", priority: 0.62, lastModified: SEO_LAUNCH_REVIEW_DATE },
@@ -114,6 +115,7 @@ const routes: Array<{
   { path: "/legal/ce-compliance", changeFrequency: "yearly", priority: 0.42 },
   { path: "/legal/fda-status", changeFrequency: "yearly", priority: 0.42 },
   { path: "/legal/trust-safety", changeFrequency: "yearly", priority: 0.45, lastModified: SEO_LAUNCH_REVIEW_DATE },
+  { path: "/legal/editorial-policy", changeFrequency: "monthly", priority: 0.62, lastModified: SEO_LAUNCH_REVIEW_DATE },
   { path: "/legal/privacy-policy", changeFrequency: "yearly", priority: 0.35 },
   { path: "/legal/terms-of-service", changeFrequency: "yearly", priority: 0.35 },
 ];

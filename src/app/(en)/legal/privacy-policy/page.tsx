@@ -168,9 +168,9 @@ const sections = [
     title: "Contact",
     body: [
       "If you have questions about this Privacy Policy or privacy practices, please contact: privacy@neuvago.com.",
-      "Company: Neuvago.",
-      "Address: [Insert company address].",
-      "Effective Date: [Insert date].",
+      "Company: Willander AS (Neuvago). Norwegian organisation number: 928 489 574.",
+      "Address: Øvre Langgate 57, 3110 Tønsberg, Norway.",
+      "Effective Date: 1 August 2026.",
     ],
   },
 ]

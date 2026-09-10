@@ -1,0 +1,6 @@
+risk,typical_scope,minimum_review,release_rule
+LOW,Non-health company/editorial copy,Editorial review,No specialist gate by default
+MEDIUM,General educational anatomy/physiology without clinical inference,Editorial + source verification,Escalate if health/benefit inference becomes material
+HIGH,"Research interpretation, HRV, practical wellness methods",Editorial + evidence/scientific review as appropriate,No mechanism-to-outcome transfer
+VERY_HIGH,"VNS safety, contraindications, condition pages, device efficacy, regulatory classification",Qualified specialist or regulatory/claims owner as applicable,Release blocked until required gate closes
+CRITICAL,"Crisis/urgent care, diagnosis/treatment/cure/prevention claims, market authorization, high-risk safety",Independent specialist plus safety/crisis/regulatory gates as applicable,Do not release while any critical gate is open

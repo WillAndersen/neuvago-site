@@ -40,6 +40,13 @@ export type LegalTemplateContent = {
   title: string;
   description: string;
   secondaryDescription?: string;
+  labels?: {
+    contentEyebrow: string;
+    contentTitle: string;
+    contentIntro: string;
+    relatedEyebrow: string;
+    relatedTitle: string;
+  };
   primaryCta?: LegalCta;
   secondaryCta?: LegalCta;
   trustCard: {
@@ -67,6 +74,15 @@ export type LegalTemplateContent = {
 };
 
 export function LocalizedLegalPage({ content }: { content: LegalTemplateContent }) {
+  const labels = content.labels ?? {
+    contentEyebrow: "Innhold",
+    contentTitle: "Tydelig struktur, samlet på ett sted",
+    contentIntro:
+      "Denne siden er skrevet for å gi brukere en klarere oversikt. Informasjonen oppdateres når produkt, betalingsflyt, personvernoppsett eller regulatorisk dokumentasjon endres på en måte som påvirker innholdet.",
+    relatedEyebrow: "Relaterte sider",
+    relatedTitle: "Gå videre i juridisk og tillitslaget",
+  };
+
   const structuredData = buildPageWithBreadcrumbStructuredData({
     title: content.structuredDataTitle,
     description: content.structuredDataDescription,
@@ -190,13 +206,13 @@ export function LocalizedLegalPage({ content }: { content: LegalTemplateContent 
         <div className="mx-auto grid max-w-7xl gap-12 px-6 py-20 md:px-10 md:py-24 lg:grid-cols-[0.34fr_0.66fr]">
           <div>
             <p className="text-sm uppercase tracking-[0.18em] text-[#7a756c]">
-              Innhold
+              {labels.contentEyebrow}
             </p>
             <h2 className="mt-4 text-3xl font-medium leading-tight tracking-[-0.03em] md:text-5xl">
-              Tydelig struktur, samlet på ett sted
+              {labels.contentTitle}
             </h2>
             <p className="mt-6 text-base leading-8 text-[#5f5a52]">
-              Denne siden er skrevet for å gi brukere en klarere oversikt. Endelig juridisk tekst bør alltid kontrolleres opp mot selskapets faktiske produkt, betalingsflyt, personvernoppsett og regulatoriske dokumentasjon.
+              {labels.contentIntro}
             </p>
           </div>
 
@@ -226,10 +242,10 @@ export function LocalizedLegalPage({ content }: { content: LegalTemplateContent 
         <div className="mx-auto max-w-7xl px-6 py-20 md:px-10 md:py-24">
           <div className="max-w-3xl">
             <p className="text-sm uppercase tracking-[0.18em] text-[#7a756c]">
-              Relaterte sider
+              {labels.relatedEyebrow}
             </p>
             <h2 className="mt-4 text-3xl font-medium leading-tight tracking-[-0.03em] md:text-5xl">
-              Gå videre i juridisk og tillitslaget
+              {labels.relatedTitle}
             </h2>
           </div>
 

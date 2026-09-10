@@ -6,7 +6,7 @@ export const metadata = {
   title:
     "Legal, Compliance and Policies | Neuvago",
   description:
-    "Explore Neuvago legal, compliance, safety, privacy, and policy information, including medical disclaimer, intended use, regulatory information, CE compliance, FDA status, privacy policy, and terms of service.",
+    "Explore Neuvago legal, compliance, safety, privacy, and policy information, including medical disclaimer, intended use, regulatory information, CE compliance, FDA status, editorial policy, privacy policy, and terms of service.",
   alternates: {
     canonical: "/legal",
     languages: {
@@ -17,7 +17,7 @@ export const metadata = {
   },
   openGraph: {
     title: "Legal, Compliance and Policies | Neuvago",
-    description: "Explore Neuvago legal, compliance, safety, privacy, and policy information, including medical disclaimer, intended use, regulatory information, CE compliance, FDA status, privacy policy, and terms of service.",
+    description: "Explore Neuvago legal, compliance, safety, privacy, and policy information, including medical disclaimer, intended use, regulatory information, CE compliance, FDA status, editorial policy, privacy policy, and terms of service.",
     url: "/legal",
     siteName: "Neuvago",
     locale: "en_US",
@@ -26,7 +26,7 @@ export const metadata = {
   twitter: {
     card: "summary_large_image",
     title: "Legal, Compliance and Policies | Neuvago",
-    description: "Explore Neuvago legal, compliance, safety, privacy, and policy information, including medical disclaimer, intended use, regulatory information, CE compliance, FDA status, privacy policy, and terms of service.",
+    description: "Explore Neuvago legal, compliance, safety, privacy, and policy information, including medical disclaimer, intended use, regulatory information, CE compliance, FDA status, editorial policy, privacy policy, and terms of service.",
   },
 }
 
@@ -81,6 +81,11 @@ const legalGroups = [
       "These pages explain how we handle personal data, what terms apply to use of the website and products, and how we aim to communicate clearly and responsibly.",
     links: [
       {
+        title: "Editorial Policy",
+        href: "/legal/editorial-policy",
+        label: "Read editorial policy",
+      },
+      {
         title: "Privacy Policy",
         href: "/legal/privacy-policy",
         label: "Read privacy policy",
@@ -115,7 +120,7 @@ const principles = [
 export default function LegalPage() {
   const structuredData = buildPageWithBreadcrumbStructuredData({
     title: "Legal, Compliance and Policies | Neuvago",
-    description: "Explore Neuvago legal, compliance, safety, privacy, and policy information, including medical disclaimer, intended use, regulatory information, CE compliance, FDA status, privacy policy, and terms of service.",
+    description: "Explore Neuvago legal, compliance, safety, privacy, and policy information, including medical disclaimer, intended use, regulatory information, CE compliance, FDA status, editorial policy, privacy policy, and terms of service.",
     path: "/legal",
     breadcrumbs: [
       { name: "Home", path: "/" },

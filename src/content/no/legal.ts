@@ -62,6 +62,12 @@ const legalRelated = [
  linkLabel: "Les vilkår",
  },
  {
+ title: "Redaksjonell policy",
+ description: "Slik arbeider Neuvago med kilder, faglig gjennomgang, rettelser, AI-bruk og påstandsgrenser.",
+ href: "/no/redaksjonell-policy",
+ linkLabel: "Les redaksjonell policy",
+ },
+ {
  title: "Support",
  description: "Finn praktisk hjelp og riktig sted å starte hvis du vil forstå Neuvago bedre.",
  href: no("/support"),
@@ -74,13 +80,13 @@ export const noLegalContent = {
  metadata: metadata({
  title: "Juridisk og samsvar | Neuvago",
  description:
- "Samlet juridisk informasjon for Neuvago i Norge, inkludert tiltenkt bruk, personvern og vilkår.",
+ "Samlet juridisk informasjon for Neuvago i Norge, inkludert tiltenkt bruk, redaksjonell policy, personvern og vilkår.",
  canonical: "/no/juridisk",
  english: "/legal",
  }),
  structuredDataTitle: "Juridisk og samsvar | Neuvago",
  structuredDataDescription:
- "Samlet juridisk informasjon for Neuvago i Norge, inkludert tiltenkt bruk, personvern og vilkår.",
+ "Samlet juridisk informasjon for Neuvago i Norge, inkludert tiltenkt bruk, redaksjonell policy, personvern og vilkår.",
  path: "/no/juridisk",
  breadcrumbs: [
  { name: "Forside", path: "/no" },
@@ -91,7 +97,7 @@ export const noLegalContent = {
  description:
  "Denne delen samler de viktigste juridiske, personvernmessige og produktrelaterte rammene for Neuvago. Målet er at brukere skal forstå hva produktet er ment for, hvilke grenser som gjelder, og hvor de finner praktisk informasjon.",
  secondaryDescription:
- "Sidene er laget som et strukturert utgangspunkt for norsk lansering. Endelig tekst bør gjennomgås av juridisk og regulatorisk rådgiver før offentlig launch.",
+ "Sidene samler den norske juridiske og regulatoriske informasjonen som er publisert for Neuvago. Innholdet oppdateres når produkt, marked, kjøpsflyt eller regulatoriske forhold endres.",
  primaryCta: { label: "Les tiltenkt bruk", href: no("/legal/intended-use") },
  secondaryCta: { label: "Personvern", href: no("/legal/privacy-policy") },
  trustCard: {
@@ -104,9 +110,9 @@ export const noLegalContent = {
  ],
  },
  notice: {
- title: "Lanseringsnotat",
+ title: "Om denne juridiske informasjonen",
  body:
- "Dette er norsk launch-copy og ikke juridisk rådgivning. Selskapsopplysninger, datoer, betalingsflyt, returvilkår, personvernleverandører, appdata og endelig regulatorisk posisjonering må kontrolleres før siden publiseres.",
+ "Denne delen gir generell informasjon og er ikke juridisk rådgivning. Produkt-, kjøps-, personvern- og regulatoriske opplysninger skal samsvare med de løsningene og dokumentene som faktisk gjelder når de brukes.",
  },
  keyPoints: [
  {
@@ -134,10 +140,10 @@ export const noLegalContent = {
  ],
  },
  {
- title: "Hva som må fylles inn før launch",
+ title: "Opplysninger som holdes oppdatert",
  body: [
- "Selskapsnavn, organisasjonsnummer, adresse, kontaktadresse, effektiv dato, returvilkår, leverandører, betalingsløsninger og eventuelle databehandlere må fylles inn eller bekreftes.",
- "Dersom appen samler inn helse- eller sensorrelaterte opplysninger, må personvernteksten oppdateres eksplisitt for den faktiske databehandlingen.",
+ "Selskapsnavn, organisasjonsnummer, adresse, kontaktopplysninger, gjeldende datoer, returvilkår, leverandører, betalingsløsninger og databehandlere beskrives på de sidene der de er relevante.",
+ "Dersom appen behandler helse-, sensor- eller andre personopplysninger, skal personvernteksten beskrive den faktiske databehandlingen.",
  ],
  },
  {
@@ -196,7 +202,7 @@ export const noLegalContent = {
  notice: {
  title: "Viktig sikkerhets- og regulatorisk notat",
  body:
- "Denne teksten må samsvare med endelig produktdokumentasjon, brukerhåndbok, regulatorisk vurdering og faktiske claims. Ikke bruk medisinske behandlingspåstander med mindre de er uttrykkelig godkjent, dokumentert og juridisk avklart.",
+ "Tiltenkt bruk skal forstås sammen med gjeldende produktdokumentasjon, brukerhåndbok, regulatorisk vurdering og dokumenterte påstander. Medisinske behandlingspåstander skal ikke brukes uten uttrykkelig dokumentasjon og relevant regulatorisk grunnlag.",
  },
  keyPoints: [
  {
@@ -249,7 +255,7 @@ export const noLegalContent = {
  title: "Endringer i dokumentasjon",
  body: [
  "Tiltenkt bruk kan oppdateres dersom produktet, appen, regulatorisk dokumentasjon, sikkerhetsinformasjon eller markedsposisjonering endres.",
- "Den til enhver tid publiserte versjonen bør gjenspeile den faktiske lanseringsstatusen for produktet i Norge.",
+ "Den publiserte versjonen oppdateres dersom produktets markedsstatus i Norge endres.",
  ],
  },
  ],
@@ -286,7 +292,7 @@ export const noLegalContent = {
  description:
  "Denne personvernsiden forklarer hvordan Neuvago kan samle inn, bruke, lagre og beskytte personopplysninger når brukere besøker nettstedet, kjøper produkter, kontakter support eller bruker relaterte tjenester.",
  secondaryDescription:
- "Teksten må tilpasses faktisk databehandling, faktiske leverandører, appfunksjoner, analyseverktøy, e-handelsoppsett og selskapets kontaktinformasjon før lansering.",
+ "Personvernerklæringen skal beskrive den faktiske databehandlingen, relevante leverandører, appfunksjoner, analyseverktøy, e-handelsoppsett og selskapets kontaktinformasjon.",
  primaryCta: { label: "Kontakt support", href: no("/support") },
  secondaryCta: { label: "Vilkår", href: no("/legal/terms-of-service") },
  trustCard: {
@@ -299,9 +305,9 @@ export const noLegalContent = {
  ],
  },
  notice: {
- title: "Må tilpasses før launch",
+ title: "Når databehandlingen endres",
  body:
- "Denne siden inneholder generell norsk personvernstruktur. Fyll inn behandlingsansvarlig, kontaktadresse, eventuelt personvernombud, leverandører, datakategorier, behandlingsgrunnlag, lagringstid, overføringer, cookieverktøy og appdata før publisering.",
+ "Personvernerklæringen oppdateres når behandlingsansvarlig, leverandører, datakategorier, behandlingsgrunnlag, lagring, overføringer, cookieverktøy eller appdata endres på en måte som er relevant for brukerne.",
  },
  keyPoints: [
  {
@@ -333,7 +339,7 @@ export const noLegalContent = {
  body: [
  "Vi kan behandle opplysninger du oppgir selv, for eksempel navn, e-postadresse, leveringsadresse, fakturaadresse, telefonnummer, ordreopplysninger, supportmeldinger og nyhetsbrevpreferanser.",
  "Vi kan også behandle tekniske opplysninger som IP-adresse, enhetstype, nettleser, operativsystem, sider som besøkes, henvisningskilde, omtrentelig plassering basert på IP og cookie- eller analyseopplysninger.",
- "Appdata og databehandlere er ikke endelig spesifisert. Når appoppsettet er klart, må datakategorier som øktdata, enhetsdata, preferanser, kontoopplysninger og eventuelle andre personrelaterte opplysninger beskrives eksplisitt her.",
+ "Dersom appen behandler øktdata, enhetsdata, preferanser, kontoopplysninger eller andre personopplysninger, skal relevante datakategorier, formål, behandlingsgrunnlag og leverandører beskrives før den aktuelle behandlingen tas i bruk.",
  ],
  },
  {
@@ -347,14 +353,14 @@ export const noLegalContent = {
  title: "Behandlingsgrunnlag",
  body: [
  "Avhengig av situasjonen kan behandlingen bygge på avtale, samtykke, rettslig forpliktelse eller berettiget interesse der dette er tillatt etter gjeldende personvernregler.",
- "Den endelige personvernerklæringen bør koble hver hovedkategori av behandling til riktig behandlingsgrunnlag.",
+ "Personvernerklæringen skal koble relevante hovedkategorier av behandling til riktig behandlingsgrunnlag.",
  ],
  },
  {
  title: "Deling med tredjeparter",
  body: [
  "Vi selger ikke personopplysninger. Opplysninger kan deles med betrodde leverandører der det er nødvendig for drift, betaling, frakt, hosting, analyse, sikkerhet, kommunikasjon eller support.",
- "Kjent leverandør for nettbutikk og betaling er Shopify. Øvrige leverandører og databehandlere, inkludert app-, hosting-, analyse-, e-post-, support- og fraktleverandører, må dokumenteres og beskrives i tråd med faktisk oppsett før lansering.",
+ "Shopify er oppgitt som leverandør for nettbutikk og betaling. Andre leverandører og databehandlere skal dokumenteres og beskrives i personvernerklæringen når behandlingen deres er relevant for informasjonen brukerne skal ha.",
  ],
  },
  {
@@ -368,7 +374,7 @@ export const noLegalContent = {
  title: "Lagring og sletting",
  body: [
  "Personopplysninger lagres bare så lenge det er nødvendig for formålene de ble samlet inn for, eller så lenge selskapet er pålagt å lagre dem etter lov, regnskap, sikkerhet eller tvisteløsning.",
- "Konkrete lagringsperioder bør fylles inn når selskapets faktiske prosesser er bekreftet.",
+ "Lagringsperioder beskrives så konkret som mulig for de aktuelle datakategoriene, med hensyn til formål og lovkrav.",
  ],
  },
  {
@@ -426,7 +432,7 @@ export const noLegalContent = {
  description:
  "Disse vilkårene beskriver rammene for bruk av Neuvago-nettstedet, produktinformasjon, kjøp, betaling, levering, retur, immaterielle rettigheter og ansvarsgrenser.",
  secondaryDescription:
- "Vilkårene er oppdatert med Willander AS som ansvarlig selskap og Shopify som nettbutikk-/betalingsplattform. Frakt, returpolicy, angrerett, reklamasjon og eventuelle garantier må fylles inn når butikkoppsettet er endelig.",
+ "Willander AS er ansvarlig selskap, og Shopify er oppgitt som nettbutikk-/betalingsplattform. Gjeldende informasjon om frakt, retur, angrerett, reklamasjon og eventuell garanti skal fremgå av kjøpsflyten eller tilknyttede policyer.",
  primaryCta: { label: "Personvern", href: no("/legal/privacy-policy") },
  secondaryCta: { label: "Tiltenkt bruk", href: no("/legal/intended-use") },
  trustCard: {
@@ -439,9 +445,9 @@ export const noLegalContent = {
  ],
  },
  notice: {
- title: "Må juridisk kvalitetssikres",
+ title: "Viktig om kjøpsvilkår",
  body:
- "Dette er et lanseringsutkast. Selskapsinformasjon, Shopify som betalings-/nettbutikkplattform og ikrafttredelsesdato er fylt inn. Frakt, retur, angrerett, reklamasjon og eventuelle garantier må kvalitetssikres før publisering.",
+ "Vilkårene gir en generell ramme for bruk av nettstedet og kjøp. Kjøpsspesifikke vilkår om frakt, retur, angrerett, reklamasjon og eventuell garanti skal være tilgjengelige i kjøpsflyten eller tilknyttede policyer når kjøp er mulig.",
  },
  keyPoints: [
  {
@@ -452,7 +458,7 @@ export const noLegalContent = {
  {
  title: "Produkt og kjøp",
  description:
- "Produktbeskrivelser, priser, tilgjengelighet, frakt, retur og betaling må samsvare med faktisk nettbutikk og lanseringsstatus.",
+ "Produktbeskrivelser, priser, tilgjengelighet, frakt, retur og betaling skal samsvare med den faktiske nettbutikken og informasjonen som vises når kjøp er tilgjengelig.",
  },
  {
  title: "Ansvarsgrenser",
@@ -508,7 +514,7 @@ export const noLegalContent = {
  title: "Levering, retur og refusjon",
  body: [
  "Leveringstider er estimater og kan påvirkes av transportør, lagerstatus, toll, helligdager eller andre forhold utenfor vår kontroll.",
- "Detaljer om retur, refusjon, angrerett, reklamasjon og eventuell garanti fylles inn når norsk salgsoppsett, fraktflyt og Shopify-konfigurasjon er endelig avklart.",
+ "Gjeldende detaljer om retur, refusjon, angrerett, reklamasjon og eventuell garanti skal vises i kjøpsflyten eller tilknyttede policyer når kjøp er tilgjengelig.",
  ],
  },
  {
@@ -573,7 +579,7 @@ export const noLegalContent = {
  description:
  "Neuvago-informasjon er ment som generell produkt-, velvære- og utdanningsinformasjon. Den skal ikke forstås som medisinsk rådgivning, diagnose, behandling eller en erstatning for kontakt med kvalifisert helsepersonell.",
  secondaryDescription:
- "Denne siden bør leses sammen med tiltenkt bruk, regulatorisk informasjon og sikkerhetsinformasjon før offentlig launch.",
+ "Denne siden bør leses sammen med tiltenkt bruk, regulatorisk informasjon og gjeldende sikkerhetsinformasjon.",
  primaryCta: { label: "Les tiltenkt bruk", href: no("/legal/intended-use") },
  secondaryCta: { label: "Regulatorisk informasjon", href: no("/legal/regulatory") },
  trustCard: {
@@ -586,9 +592,9 @@ export const noLegalContent = {
  ],
  },
  notice: {
- title: "Viktig før launch",
+ title: "Viktig om medisinsk informasjon",
  body:
- "Denne teksten er en konservativ norsk launch-ramme. Endelig medisinsk ansvarsfraskrivelse må gjennomgås mot faktisk produktdokumentasjon, påstander, appfunksjoner, brukergruppe og regulatorisk strategi.",
+ "Den medisinske ansvarsfraskrivelsen skal samsvare med gjeldende produktdokumentasjon, påstander, appfunksjoner, brukergruppe og regulatorisk posisjonering. Den erstatter ikke personlig vurdering fra kvalifisert helsepersonell.",
  },
  keyPoints: [
  {
@@ -695,7 +701,7 @@ export const noLegalContent = {
  description:
  "Denne siden forklarer hvordan Neuvago bør forstås på et overordnet regulatorisk nivå, og hvorfor tiltenkt formål, markedsføringspåstander og produktdokumentasjon må henge sammen.",
  secondaryDescription:
- "Teksten er et norsk launch-utgangspunkt og må ikke tolkes som endelig regulatorisk konklusjon uten rådgivergjennomgang.",
+ "Denne siden er en overordnet regulatorisk forklaring. Den er ikke en selvstendig regulatorisk konklusjon eller markedsgodkjenning.",
  primaryCta: { label: "Tiltenkt bruk", href: no("/legal/intended-use") },
  secondaryCta: { label: "CE-samsvar", href: no("/legal/ce-compliance") },
  trustCard: {
@@ -710,7 +716,7 @@ export const noLegalContent = {
  notice: {
  title: "Regulatorisk forbehold",
  body:
- "Endelig regulatorisk status avhenger av faktisk produktdesign, teknisk dokumentasjon, appfunksjoner, bruksanvisning, påstander, marked og juridisk produsent. Denne siden skal gjennomgås før launch.",
+ "Regulatorisk status avhenger av faktisk produktdesign, teknisk dokumentasjon, appfunksjoner, bruksanvisning, påstander, marked og juridisk produsent. Statusinformasjon skal oppdateres når disse forholdene endres vesentlig.",
  },
  keyPoints: [
  {
@@ -752,7 +758,7 @@ export const noLegalContent = {
  ],
  },
  {
- title: "Endringer etter launch",
+ title: "Endringer i produkt eller marked",
  body: [
  "Hvis produktet, appen, algoritmer, bruksanvisning, markedsføringspåstander eller målgruppe endres, bør regulatorisk vurdering og juridisk tekst oppdateres.",
  "Det samme gjelder dersom Neuvago senere søker eller oppnår spesifikke godkjenninger, sertifiseringer eller samsvarserklæringer.",
@@ -830,7 +836,7 @@ export const noLegalContent = {
  notice: {
  title: "Sikkerhetsnotat",
  body:
- "Denne siden beskriver prinsipper for tillit og sikkerhet. Konkrete sikkerhetsinstruksjoner, kontraindikasjoner, advarsler og bruksbegrensninger må samsvare med endelig produktdokumentasjon.",
+ "Denne siden beskriver prinsipper for tillit og sikkerhet. Konkrete sikkerhetsinstruksjoner, kontraindikasjoner, advarsler og bruksbegrensninger skal samsvare med gjeldende kontrollert produktdokumentasjon.",
  },
  keyPoints: [
  {
@@ -868,7 +874,7 @@ export const noLegalContent = {
  title: "Praktisk sikkerhet i hverdagen",
  body: [
  "Brukere bør følge instruksjoner for lading, oppbevaring, rengjøring, materialkontakt og daglig håndtering. Produktet bør ikke brukes dersom det er skadet eller oppleves ubehagelig.",
- "Eventuelle advarsler for implantert elektronisk utstyr, graviditet, hudirritasjon, underliggende tilstander eller sensitivitet for elektrisk stimulering må være tydelige i endelig dokumentasjon.",
+ "Advarsler for implantert elektronisk utstyr, graviditet, hudirritasjon, underliggende tilstander eller sensitivitet for elektrisk stimulering skal fremgå tydelig når de gjelder for produktet og den aktuelle brukssituasjonen.",
  ],
  },
  {
@@ -880,6 +886,12 @@ export const noLegalContent = {
  },
  ],
  relatedPages: [
+ {
+ title: "Redaksjonell policy",
+ description: "Se hvordan Neuvago arbeider med kilder, review, rettelser, AI-bruk, interessekonflikter og påstandsgrenser.",
+ href: "/no/redaksjonell-policy",
+ linkLabel: "Les redaksjonell policy",
+ },
  {
  title: "Medisinsk ansvarsfraskrivelse",
  description: "Se grensene for medisinsk informasjon og bruk.",
@@ -919,13 +931,13 @@ export const noLegalContent = {
  metadata: metadata({
  title: "CE-samsvar | Neuvago Norge",
  description:
- "Les om CE-samsvar, europeisk markedsramme og hvilke forbehold som gjelder for Neuvago før endelig produktlaunch.",
+ "Les om CE-samsvar, europeisk markedsramme og hvilke forbehold som gjelder for Neuvagos nåværende CE-status.",
  canonical: "/no/juridisk/ce-samsvar",
  english: "/legal/ce-compliance",
  }),
  structuredDataTitle: "CE-samsvar | Neuvago Norge",
  structuredDataDescription:
- "Les om CE-samsvar, europeisk markedsramme og hvilke forbehold som gjelder for Neuvago før endelig produktlaunch.",
+ "Les om CE-samsvar, europeisk markedsramme og hvilke forbehold som gjelder for Neuvagos nåværende CE-status.",
  path: "/no/juridisk/ce-samsvar",
  breadcrumbs: [
  { name: "Forside", path: "/no" },
@@ -937,7 +949,7 @@ export const noLegalContent = {
  description:
  "CE-merking er en europeisk samsvarsramme for produktkategorier som omfattes av harmoniserte EU-regler. For Neuvago må relevante krav vurderes mot faktisk produktdesign, marked og tiltenkt formål.",
  secondaryDescription:
- "Denne siden er en forklarende launch-side, ikke en endelig EU-samsvarserklæring.",
+ "Denne siden forklarer CE-rammen og er ikke en EU-samsvarserklæring for produktet.",
  primaryCta: { label: "Regulatorisk informasjon", href: no("/legal/regulatory") },
  secondaryCta: { label: "Tillit og sikkerhet", href: no("/legal/trust-safety") },
  trustCard: {
@@ -952,7 +964,7 @@ export const noLegalContent = {
  notice: {
  title: "CE-forbehold",
  body:
- "CE-samsvar for Neuvago er under ferdigstillelse. Ikke publiser formuleringer som antyder endelig CE-status, sertifisering eller medisinsk godkjenning før dokumentasjonen er ferdig. Oppdater siden med EU-samsvarserklæring, relevante regelverk, dokumentreferanser og ansvarlig økonomisk aktør når dette er klart.",
+ "Neuvagos CE-relaterte dokumentasjon er under ferdigstillelse. Inntil den er verifisert, skal siden ikke forstås som en bekreftelse på ferdigstilt CE-status, sertifisering eller medisinsk godkjenning. Når dokumentasjonen er klar, oppdateres siden med relevant samsvarsinformasjon og dokumentreferanser.",
  },
  keyPoints: [
  {
@@ -968,7 +980,7 @@ export const noLegalContent = {
  {
  title: "Dokumentasjon må ligge bak",
  description:
- "Teknisk dokumentasjon, risikovurdering, tester, bruksanvisning og samsvarserklæring bør være kontrollert før offentlig lansering.",
+ "Teknisk dokumentasjon, risikovurdering, tester, bruksanvisning og eventuell samsvarserklæring skal samsvare med den CE-statusen som kommuniseres offentlig.",
  },
  ],
  sections: [
@@ -982,7 +994,7 @@ export const noLegalContent = {
  {
  title: "Relevante områder for Neuvago",
  body: [
- "Avhengig av endelig produktkonfigurasjon kan områder som elektrisk sikkerhet, elektromagnetisk kompatibilitet, radioutstyr, RoHS, batterisikkerhet, produktsikkerhet, miljøkrav og medisinsk utstyr-vurdering være relevante.",
+ "Avhengig av produktkonfigurasjon kan områder som elektrisk sikkerhet, elektromagnetisk kompatibilitet, radioutstyr, RoHS, batterisikkerhet, produktsikkerhet, miljøkrav og medisinsk utstyr-vurdering være relevante.",
  "Hvilke krav som gjelder må avgjøres av faktisk produktdesign, tiltenkt formål, markedsføringspåstander og hvilke markeder produktet tilbys i.",
  ],
  },
@@ -1031,7 +1043,7 @@ export const noLegalContent = {
  eyebrow: "Neste steg",
  title: "Koble CE-språk til faktisk produktdokumentasjon",
  description:
- "CE-siden bør oppdateres med EU-samsvarserklæring, dokumentreferanser og endelig samsvarsinformasjon når dette er klart.",
+ "CE-siden oppdateres med samsvarserklæring, dokumentreferanser og annen relevant samsvarsinformasjon når dette er dokumentert.",
  primaryCta: { label: "Regulatorisk informasjon", href: no("/legal/regulatory") },
  secondaryCta: { label: "Tillit og sikkerhet", href: no("/legal/trust-safety") },
  },
@@ -1068,13 +1080,13 @@ export const noLegalContent = {
  items: [
  { title: "Ingen ubegrunnet status", description: "Ikke bruk FDA-approved, FDA-cleared eller FDA-authorized uten konkret dokumentasjon." },
  { title: "Generell velvære", description: "Velværeposisjonering må holdes adskilt fra diagnose, behandling, kurering, lindring eller forebygging av sykdom." },
- { title: "Markedsavhengig", description: "USA-tekst bør vurderes separat fra EU/EØS-tekst og norsk lanseringskommunikasjon." },
+ { title: "Markedsavhengig", description: "USA-tekst vurderes separat fra EU/EØS-tekst og norsk markedskommunikasjon." },
  ],
  },
  notice: {
  title: "FDA-forbehold",
  body:
- "Denne siden er en konservativ norsk forklaring av FDA-relatert språk. Den skal ikke brukes som endelig USA-compliance-tekst før produktets faktiske status, claims, appfunksjoner og lanseringsmarked er vurdert.",
+ "Denne siden forklarer FDA-relatert språk for norske lesere. Den er ikke en selvstendig USA-compliance-vurdering; produktets faktiske status, påstander, appfunksjoner og marked må verifiseres separat.",
  },
  keyPoints: [
  {
@@ -1112,13 +1124,13 @@ export const noLegalContent = {
  title: "Forholdet til app og data",
  body: [
  "Hvis appen gir fysiologiske målinger, anbefalinger, risikosignaler, klinisk-lignende tolkninger eller beslutningsstøtte, kan det påvirke regulatorisk vurdering i USA.",
- "Endelig tekst må derfor vurderes mot faktiske appfunksjoner, datakilder, brukergrensesnitt og markedsføringspåstander.",
+ "FDA-relatert tekst skal vurderes opp mot faktiske appfunksjoner, datakilder, brukergrensesnitt og markedsføringspåstander.",
  ],
  },
  {
- title: "Før USA-relatert launch",
+ title: "Før FDA-status kommuniseres mer konkret",
  body: [
- "Før Neuvago lanseres i USA eller omtaler FDA-status mer konkret, bør selskapet bekrefte produktets status med kvalifisert regulatorisk rådgiver.",
+ "Før FDA-status kommuniseres mer konkret, skal Neuvagos produktstatus bekreftes mot relevant dokumentasjon og kvalifisert regulatorisk vurdering.",
  "Denne norske siden kan beholdes som en forklaring av status, men bør oppdateres dersom Neuvago senere får en spesifikk FDA-relatert regulatorisk posisjon.",
  ],
  },

@@ -123,6 +123,13 @@ const sections = [
 
 const relatedPages = [
   {
+    title: "Editorial Policy",
+    description:
+      "How Neuvago handles sources, scientific and medical review, corrections, AI assistance, conflicts of interest, and claims boundaries.",
+    href: "/legal/editorial-policy",
+    linkLabel: "Read editorial policy",
+  },
+  {
     title: "Medical Disclaimer",
     description:
       "The legal disclaimer explaining how Neuvago content and products should be understood in a non-medical context.",

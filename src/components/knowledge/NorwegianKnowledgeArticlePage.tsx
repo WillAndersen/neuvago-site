@@ -343,7 +343,7 @@ export function NorwegianKnowledgeArticlePage({
             <p className="text-xs font-medium uppercase tracking-[0.22em] text-[#786e64]">
               {article.eyebrow}
             </p>
-            <h1 className="mt-5 max-w-[16ch] break-words [hyphens:auto] text-[clamp(2.8rem,7vw,5.8rem)] font-medium leading-[0.96] tracking-[-0.06em]" lang="nb">
+            <h1 className="mt-5 max-w-[16ch] break-words text-[clamp(2.8rem,7vw,5.8rem)] font-medium leading-[0.96] tracking-[-0.06em]" lang="nb" style={{ overflowWrap: "anywhere", hyphens: "auto" }}>
               {article.title}
             </h1>
             <p className="mt-7 max-w-3xl text-lg leading-8 text-[#514c45] md:text-xl md:leading-9">

@@ -9,23 +9,23 @@ export const transkutanVagusnervestimuleringArticle = {
 
   title:
     "Transkutan vagusnervestimulering (tVNS) – metode, plassering og protokoller",
-  seoTitle: "Transkutan vagusnervestimulering (tVNS) | Neuvago",
+  seoTitle: "tVNS: transkutan vagusnervestimulering | Neuvago",
   description:
-    "Lær hva transkutan vagusnervestimulering er, hvordan tVNS leveres gjennom huden, og hvorfor plassering, elektrode, parametere, kontrollbetingelser og sikkerhet må vurderes separat.",
-  eyebrow: "Kunnskap om transkutan VNS",
+    "Hva er tVNS? Lær hva transkutan vagusnervestimulering betyr, forskjellen mellom øre- og halsbasert stimulering, og hvorfor plassering, parametere, kontrollbetingelser og sikkerhet må vurderes separat.",
+  eyebrow: "Kunnskap om tVNS",
   lead:
-    "Transkutan vagusnervestimulering, ofte forkortet tVNS, er en samlebetegnelse for eksterne metoder som leverer elektrisk stimulering gjennom huden i stedet for via et kirurgisk implantat. Begrepet kan omfatte både ørebaserte og halsbaserte tilnærminger. Derfor må en tVNS-metode alltid beskrives med stimuleringssted, elektrode, innstillinger, øktlengde, målgruppe og tiltenkt bruk.",
+    "tVNS står for transkutan vagusnervestimulering og beskriver eksterne metoder som leverer elektrisk stimulering gjennom huden uten et kirurgisk implantat. Begrepet kan omfatte både ørebaserte og halsbaserte tilnærminger, så en tVNS-metode må alltid beskrives med stimuleringssted, elektrode, innstillinger, øktlengde, målgruppe og tiltenkt bruk.",
   shortAnswer: [
-    "Transkutan betyr at stimuleringen leveres gjennom huden med en ekstern elektrode eller kontaktflate.",
-    "tVNS er en metodefamilie, ikke én standardisert protokoll eller ett bestemt produkt.",
+    "tVNS betyr transkutan vagusnervestimulering: elektrisk stimulering leveres gjennom huden med en ekstern elektrode eller kontaktflate.",
+    "tVNS er en metodefamilie, ikke én standardisert protokoll, dose eller ett bestemt produkt.",
     "taVNS er den aurikulære, ørebaserte delen av tVNS, mens transkutan cervikal VNS brukes om halsbaserte tilnærminger.",
-    "Plassering, frekvens, pulsvidde, intensitet, bølgeform, øktlengde og kontrollbetingelser påvirker hvordan forskning skal tolkes.",
+    "Plassering, frekvens, pulsvidde, intensitet, bølgeform, øktlengde og kontrollbetingelser avgjør hva en tVNS-studie faktisk kan støtte.",
   ],
   hubSummary:
-    "En metodeartikkel om tVNS, stimulering gjennom huden, forskjellen mellom aurikulær og cervikal plassering og hvorfor protokolldetaljer er avgjørende for tolkning.",
+    "Den norske tVNS-guiden: transkutan stimulering gjennom huden, forskjellen mellom aurikulær og cervikal plassering og hvorfor protokolldetaljer er avgjørende for tolkning.",
   hubLabel: "Metodeartikkel",
 
-  primaryKeyword: "transkutan vagusnervestimulering",
+  primaryKeyword: "tVNS",
   secondaryKeywords: [
     "tVNS",
     "transkutan VNS",
@@ -41,7 +41,7 @@ export const transkutanVagusnervestimuleringArticle = {
   searchIntent: "informational",
 
   publishedAt: "2026-08-17",
-  modifiedAt: "2026-08-17",
+  modifiedAt: "2026-09-12",
   readingTimeMinutes: 15,
 
   authorId: "john-willander",
@@ -452,6 +452,7 @@ export const transkutanVagusnervestimuleringArticle = {
   ],
 
   relatedSlugs: [
+    "hvordan-stimulere-vagusnerven",
     "ikke-invasiv-vagusnervestimulering",
     "vagusnervestimulering",
     "vagusnerven",

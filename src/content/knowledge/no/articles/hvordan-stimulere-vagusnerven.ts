@@ -10,18 +10,18 @@ export const hvordanStimulereVagusnervenArticle = {
   title: "Hvordan stimulere vagusnerven? Metoder, dokumentasjon og viktige grenser",
   seoTitle: "Hvordan stimulere vagusnerven? Metoder og evidens | Neuvago",
   description:
-    "Lær hva «stimulere vagusnerven» kan bety, hvordan elektrisk VNS skiller seg fra pust og andre metoder, og hvilke evidens- og sikkerhetsgrenser som gjelder.",
+    "Hvordan kan vagusnerven stimuleres? Sammenlign elektrisk VNS med pust, bevegelse og andre praksiser, og se hvilke evidens- og sikkerhetsgrenser som gjelder for hver metodekategori.",
   eyebrow: "Fagsenter om vagusnerven",
   lead:
-    "Uttrykket kan vise til flere ulike ting. Elektrisk VNS er en egen metodekategori, mens pust, bevegelse, avslapning, lyd og skånsom berøring kan påvirke autonom tilstand uten at de dermed er dokumentert som direkte og selektiv vagusnervestimulering.",
+    "Å stimulere vagusnerven kan bety forskjellige ting. Elektrisk VNS er en definert metodekategori med enhet, plassering og protokoll, mens pust, bevegelse, avslapning, lyd og skånsom berøring kan påvirke autonom tilstand uten at de dermed er dokumentert som direkte og selektiv vagusnervestimulering.",
   shortAnswer: [
-    "«Stimulere vagusnerven» brukes om elektrisk VNS, vanlige reguleringspraksiser og en rekke trendpåstander som ikke har samme evidensgrunnlag.",
-    "Pust og bevegelse kan påvirke opplevelse og enkelte autonome mål, men er ikke det samme som definert elektrisk VNS.",
-    "Implantert, cervikal og aurikulær stimulering er forskjellige metoder med ulike enheter, protokoller og sikkerhetsrammer.",
+    "Hvis du mener elektrisk vagusnervestimulering, kreves en definert enhet, plassering og protokoll; pust og andre reguleringspraksiser er ikke det samme som elektrisk VNS.",
+    "Pust og bevegelse kan påvirke opplevelse og enkelte autonome mål, men dokumenterer ikke automatisk direkte eller selektiv stimulering av vagusnerven.",
+    "Implantert, cervikal, transkutan og aurikulær stimulering er forskjellige metoder med ulike enheter, protokoller og sikkerhetsrammer.",
     "Det finnes ingen universell syv-minutters reset, hjemmetest eller intensitet som dokumenterer vagusfunksjon eller passer alle.",
   ],
   hubSummary:
-    "En kildebasert oversikt over elektrisk VNS, pust, bevegelse, avslapning og andre metoder – med tydelige grenser for hva forskningen faktisk viser.",
+    "Hovedguiden for «stimulere vagusnerven»: elektrisk VNS, pust, bevegelse, avslapning og andre metoder – med tydelige grenser for hva forskningen faktisk viser.",
   hubLabel: "Fagsenter: metoder",
 
   primaryKeyword: "hvordan stimulere vagusnerven",
@@ -36,7 +36,7 @@ export const hvordanStimulereVagusnervenArticle = {
   searchIntent: "informational",
 
   publishedAt: "2026-09-02",
-  modifiedAt: "2026-09-05",
+  modifiedAt: "2026-09-12",
   readingTimeMinutes: 18,
 
   authorId: "john-willander",
@@ -499,6 +499,7 @@ export const hvordanStimulereVagusnervenArticle = {
   relatedSlugs: [
     "vagusnerven",
     "vagusnervestimulering",
+    "transkutan-vagusnervestimulering",
     "hvordan-roe-ned-nervesystemet",
     "aurikulaer-vagusnervestimulering",
     "implantert-og-ikke-invasiv-vns",

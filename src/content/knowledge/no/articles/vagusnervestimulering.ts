@@ -8,20 +8,20 @@ export const vagusnervestimuleringArticle = {
   order: 20,
 
   title: "Vagusnervestimulering (VNS) – hva det er og hvilke typer som finnes",
-  seoTitle: "Vagusnervestimulering (VNS): typer og metode | Neuvago",
+  seoTitle: "VNS: vagusnervestimulering, typer og forskjeller | Neuvago",
   description:
-    "Lær hva vagusnervestimulering er, forskjellen på implantert og ikke-invasiv VNS, og hvorfor metode, protokoll og tiltenkt bruk må vurderes hver for seg.",
+    "Hva er VNS? Lær hva vagusnervestimulering betyr, forskjellen mellom implantert, ikke-invasiv, transkutan og aurikulær VNS, og hvorfor dokumentasjon må vurderes metode for metode.",
   eyebrow: "Kunnskap om VNS",
   lead:
-    "Vagusnervestimulering, ofte forkortet VNS, er en samlebetegnelse for metoder som bruker kontrollerte elektriske impulser med mål om å påvirke nervebaner knyttet til vagusnerven. Begrepet omfatter svært forskjellige systemer – fra kirurgisk implanterte medisinske enheter til eksterne metoder ved halsen eller øret – og sier derfor ikke alene noe sikkert om effekt, risiko eller tiltenkt bruk.",
+    "VNS står for vagusnervestimulering og er en samlebetegnelse for metoder som bruker kontrollerte elektriske impulser med mål om å påvirke nervebaner knyttet til vagusnerven. Kategorien omfatter både kirurgisk implanterte systemer og eksterne metoder ved halsen eller øret. Derfor må en VNS-påstand alltid knyttes til riktig enhet, plassering, protokoll, målgruppe og tiltenkt bruk.",
   shortAnswer: [
-    "VNS er en kategori av stimuleringsmetoder, ikke én bestemt enhet eller universell protokoll.",
+    "VNS betyr vagusnervestimulering og beskriver en kategori av elektriske stimuleringsmetoder – ikke én bestemt enhet eller universell protokoll.",
     "Implantert VNS og ikke-invasiv VNS skiller seg i plassering, maskinvare, oppfølging, regulering og dokumentasjonsgrunnlag.",
-    "tVNS og taVNS beskriver transkutane metoder gjennom huden; taVNS er den aurikulære, ørebaserte grenen.",
-    "Forskning på én enhet, protokoll eller pasientgruppe kan ikke automatisk brukes som dokumentasjon for et annet produkt eller et annet formål.",
+    "tVNS betyr transkutan VNS gjennom huden; taVNS er den aurikulære, ørebaserte grenen av denne metodefamilien.",
+    "Forskning på én VNS-enhet, protokoll eller pasientgruppe kan ikke automatisk brukes som dokumentasjon for et annet produkt eller formål.",
   ],
   hubSummary:
-    "En grunnartikkel om hva VNS betyr, hovedtypene av stimulering og hvorfor metode, evidens og tiltenkt bruk må holdes adskilt.",
+    "Hovedguiden til VNS: hva vagusnervestimulering betyr, hvilke hovedtyper som finnes, og hvorfor metode, evidens og tiltenkt bruk må holdes adskilt.",
   hubLabel: "Kategoriartikkel",
 
   primaryKeyword: "vagusnervestimulering",
@@ -39,7 +39,7 @@ export const vagusnervestimuleringArticle = {
   searchIntent: "informational",
 
   publishedAt: "2026-08-17",
-  modifiedAt: "2026-09-02",
+  modifiedAt: "2026-09-12",
   readingTimeMinutes: 13,
 
   authorId: "john-willander",
@@ -426,6 +426,8 @@ export const vagusnervestimuleringArticle = {
 
   relatedSlugs: [
     "vagusnerven",
+    "transkutan-vagusnervestimulering",
+    "aurikulaer-vagusnervestimulering",
     "ikke-invasiv-vagusnervestimulering",
     "implantert-og-ikke-invasiv-vns",
     "det-autonome-nervesystemet",

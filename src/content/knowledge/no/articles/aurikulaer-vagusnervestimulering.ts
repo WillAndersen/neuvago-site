@@ -11,18 +11,18 @@ export const aurikulaerVagusnervestimuleringArticle = {
     "Aurikulær vagusnervestimulering (taVNS) – øreanatomi, plassering og metode",
   seoTitle: "Aurikulær vagusnervestimulering (taVNS) | Neuvago",
   description:
-    "Lær hva aurikulær vagusnervestimulering er, hvordan taVNS brukes ved det ytre øret, og hvorfor øreområde, elektrode, parametere, kontrollbetingelser og sikkerhet må beskrives presist.",
+    "Hva er taVNS? Lær hva aurikulær vagusnervestimulering betyr, hvordan metoden brukes ved det ytre øret, og hvorfor øreområde, elektrode, parametere, kontrollbetingelser og sikkerhet må beskrives presist.",
   eyebrow: "Kunnskap om aurikulær VNS",
   lead:
-    "Aurikulær vagusnervestimulering er den ørebaserte delen av den transkutane VNS-familien. Metoden omtales ofte som taVNS, kort for transkutan aurikulær vagusnervestimulering. Elektriske pulser leveres gjennom hudkontakt ved bestemte områder av det ytre øret. Fordi øret har sammensatt og delvis overlappende nerveforsyning, må plassering, elektrode, side, intensitet og forskningsdesign alltid vurderes som en del av selve metoden.",
+    "taVNS står for transkutan aurikulær vagusnervestimulering og er den ørebaserte delen av den transkutane VNS-familien. Elektriske pulser leveres gjennom hudkontakt ved bestemte områder av det ytre øret. Fordi øret har sammensatt og delvis overlappende nerveforsyning, må plassering, elektrode, side, intensitet og forskningsdesign alltid vurderes som en del av selve metoden.",
   shortAnswer: [
-    "Aurikulær VNS betyr ekstern stimulering ved det ytre øret og omtales ofte som taVNS.",
+    "taVNS betyr transkutan aurikulær vagusnervestimulering: ekstern elektrisk stimulering gjennom huden ved det ytre øret.",
     "Det ytre øret forsynes av flere nerver, og anatomiske kart er ikke helt ensartede eller absolutte.",
     "Cymba conchae, cavum conchae og tragus forekommer i forskning, mens øreflippen ofte brukes som kontrollområde.",
-    "Forskning fra ett øreområde, én elektrode eller én protokoll dokumenterer ikke automatisk andre enheter eller Neuvago-produktet.",
+    "Forskning fra ett øreområde, én elektrode eller én taVNS-protokoll dokumenterer ikke automatisk andre enheter eller Neuvago-produktet.",
   ],
   hubSummary:
-    "En fordypning i taVNS, ørets sammensatte nerveforsyning, vanlige stimuleringsområder og hvorfor plassering, kontakt og forskningsdesign er avgjørende.",
+    "Den norske taVNS-guiden: aurikulær vagusnervestimulering, ørets sammensatte nerveforsyning, vanlige stimuleringsområder og hvorfor plassering, kontakt og forskningsdesign er avgjørende.",
   hubLabel: "Ørebasert metode",
 
   primaryKeyword: "aurikulær vagusnervestimulering",
@@ -43,7 +43,7 @@ export const aurikulaerVagusnervestimuleringArticle = {
   searchIntent: "informational",
 
   publishedAt: "2026-08-17",
-  modifiedAt: "2026-08-17",
+  modifiedAt: "2026-09-12",
   readingTimeMinutes: 16,
 
   authorId: "john-willander",
@@ -520,6 +520,7 @@ export const aurikulaerVagusnervestimuleringArticle = {
   ],
 
   relatedSlugs: [
+    "hvordan-stimulere-vagusnerven",
     "transkutan-vagusnervestimulering",
     "ikke-invasiv-vagusnervestimulering",
     "vagusnervestimulering",

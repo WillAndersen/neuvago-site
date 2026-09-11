@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   title:
     "Nervous System Regulation | Autonomic Flexibility Guide | Neuvago",
   description:
-    "Learn what nervous system regulation means, how autonomic flexibility relates to stress, sleep and recovery, and why settling can feel easy or hard.",
+    "Understand what nervous system regulation means, how autonomic control adapts to demand, what you can and cannot measure, and how regulation relates to stress and recovery.",
   alternates: {
     canonical: "/learn/nervous-system-regulation",
     languages: {
@@ -21,7 +21,7 @@ export const metadata: Metadata = {
     title:
       "Nervous System Regulation | Autonomic Flexibility Guide | Neuvago",
     description:
-      "Learn what nervous system regulation means, how autonomic flexibility relates to stress, sleep and recovery, and why settling can feel easy or hard.",
+      "Understand what nervous system regulation means, how autonomic control adapts to demand, what you can and cannot measure, and how regulation relates to stress and recovery.",
     url: "/learn/nervous-system-regulation",
     siteName: "Neuvago",
     locale: "en_US",
@@ -32,7 +32,7 @@ export const metadata: Metadata = {
     title:
       "Nervous System Regulation | Autonomic Flexibility Guide | Neuvago",
     description:
-      "Learn what nervous system regulation means, how autonomic flexibility relates to stress, sleep and recovery, and why settling can feel easy or hard.",
+      "Understand what nervous system regulation means, how autonomic control adapts to demand, what you can and cannot measure, and how regulation relates to stress and recovery.",
   },
 }
 
@@ -119,7 +119,7 @@ const searchReasons = [
   {
     title: "They want a bigger framework",
     description:
-      "Often the real search is for a concept that ties together stress, sleep, recovery, tension, resilience, and the feeling of being hard to regulate.",
+      "A broader framework can tie together stress, sleep, recovery, tension, resilience, and the feeling of being hard to regulate.",
     href: "/learn/recovery-and-regulation",
     linkLabel: "Explore recovery",
   },
@@ -136,6 +136,91 @@ const searchReasons = [
       "Autonomic regulation research connects the everyday language of activation and return with HRV, vagal pathways, and nervous system flexibility.",
     href: "/research/topics/autonomic-regulation",
     linkLabel: "View research topic",
+  },
+]
+
+const physiologyCards = [
+  {
+    title: "Regulation is distributed, not controlled by one nerve",
+    description:
+      "Autonomic control is coordinated across brain networks, the sympathetic and parasympathetic divisions, endocrine signals, breathing, circulation, and organ-specific reflexes. The vagus nerve is important, but it is not the whole system.",
+  },
+  {
+    title: "Different organs can respond differently at the same time",
+    description:
+      "The body does not move along one universal sympathetic-versus-parasympathetic slider. Reciprocal change can happen, but independent change and coactivation can happen too.",
+  },
+  {
+    title: "Adaptation can be anticipatory",
+    description:
+      "Allostasis describes how the brain can adjust physiology in anticipation of likely demand rather than waiting for every variable to drift first. Regulation is therefore dynamic, context-dependent, and predictive.",
+  },
+  {
+    title: "Recovery is part of regulation",
+    description:
+      "A response is not judged only by how strongly the body activates. Timing, duration, recovery, and whether the response fits the situation all matter.",
+  },
+]
+
+const measurementCards = [
+  {
+    title: "Heart rate",
+    canTell:
+      "It can show one cardiovascular response to posture, movement, emotion, temperature, illness, medication, and many other influences.",
+    cannotTell:
+      "Heart rate alone cannot identify a whole-body autonomic state or diagnose whether someone is 'regulated' or 'dysregulated'.",
+  },
+  {
+    title: "Heart-rate variability (HRV)",
+    canTell:
+      "Under defined conditions, HRV can provide information about parts of cardiac autonomic regulation and beat-to-beat variability.",
+    cannotTell:
+      "HRV is not a direct meter of the whole autonomic nervous system, sympathetic output, parasympathetic output, or the entire vagus nerve.",
+  },
+  {
+    title: "Wearable stress or readiness scores",
+    canTell:
+      "They may combine heart rate, HRV, sleep, activity, temperature, and proprietary algorithms into a useful personal trend.",
+    cannotTell:
+      "A proprietary score is not a clinical diagnosis and should not be treated as a universal measure of nervous-system regulation.",
+  },
+  {
+    title: "How you feel",
+    canTell:
+      "Subjective state matters because regulation includes lived experience, behavior, context, and what the body is being asked to do.",
+    cannotTell:
+      "Feeling activated, flat, tense, or calm does not by itself identify one specific autonomic mechanism.",
+  },
+]
+
+const regulationSources = [
+  {
+    title: "Stress and the 'extended' autonomic system",
+    source: "Goldstein DS. Autonomic Neuroscience, 2021.",
+    href: "https://pubmed.ncbi.nlm.nih.gov/34656967/",
+    note:
+      "Review of central autonomic networks, stress physiology, allostasis, and the limits of reducing autonomic regulation to a simple two-branch model.",
+  },
+  {
+    title: "Allostasis: a brain-centered, predictive mode of physiological regulation",
+    source: "Schulkin J, Sterling P. Trends in Neurosciences, 2019.",
+    href: "https://pubmed.ncbi.nlm.nih.gov/31488322/",
+    note:
+      "Review of allostasis as predictive regulation and flexible physiological adaptation.",
+  },
+  {
+    title: "Allostasis: a model of predictive regulation",
+    source: "Sterling P. Physiology & Behavior, 2012.",
+    href: "https://pubmed.ncbi.nlm.nih.gov/21684297/",
+    note:
+      "Foundational explanation of regulation as anticipatory adjustment rather than simple constancy.",
+  },
+  {
+    title: "Publication guidelines for human heart rate and heart rate variability studies",
+    source: "Quigley KS et al. Psychophysiology, 2024.",
+    href: "https://pubmed.ncbi.nlm.nih.gov/38873876/",
+    note:
+      "Modern measurement guidance supporting careful interpretation of HR and HRV rather than treating either as a whole-system autonomic score.",
   },
 ]
 
@@ -160,7 +245,7 @@ const clarifications = [
 export default function NervousSystemRegulationPage() {
     const structuredData = buildAuthorityPageStructuredData({
     title: "Nervous System Regulation | Autonomic Flexibility Guide | Neuvago",
-    description: "Learn what nervous system regulation means, how autonomic flexibility relates to stress, sleep and recovery, and why settling can feel easy or hard.",
+    description: "Understand what nervous system regulation means, how autonomic control adapts to demand, what you can and cannot measure, and how regulation relates to stress and recovery.",
     path: "/learn/nervous-system-regulation",
     articleSection: "Learn",
     dateModified: authorityEditorialDates.vnsClusterModified,
@@ -183,16 +268,15 @@ export default function NervousSystemRegulationPage() {
             </p>
 
             <h1 className="text-4xl font-medium leading-[1.05] tracking-[-0.03em] md:text-6xl lg:text-7xl">
-              Nervous system regulation is about autonomic flexibility, settling, and return
+              Nervous system regulation: what it means, how it works, and what it does not mean
             </h1>
 
             <p className="mt-6 max-w-2xl text-base leading-8 text-[#5f5a52] md:text-lg">
-              Nervous system regulation is a practical way to understand
-              how the body moves between stress, settling, recovery, and
-              steadier daily balance. It matters because many people are trying
-              to understand why the body sometimes feels flexible and
-              recoverable, and other times tense, overstimulated, wired, or
-              hard to bring back down.
+              Nervous system regulation is a useful framework for how the
+              brain and body adjust to changing demands and return toward a
+              workable range afterward. It is not a single switch, a diagnosis,
+              or a promise of constant calm. The useful question is whether
+              responses can change with context instead of staying rigid.
             </p>
 
             <div className="mt-10 flex flex-wrap gap-4">
@@ -391,6 +475,120 @@ export default function NervousSystemRegulationPage() {
       </section>
 
       <section className="border-b border-black/5 bg-[#f2eee8]">
+        <div className="mx-auto max-w-7xl px-6 py-24 md:px-10 md:py-28">
+          <div className="max-w-3xl">
+            <p className="text-sm uppercase tracking-[0.18em] text-[#7a756c]">
+              Physiological anchor
+            </p>
+
+            <h2 className="mt-4 text-3xl font-medium leading-tight tracking-[-0.03em] md:text-5xl">
+              Regulation is not a single parasympathetic switch. It is coordinated across systems and organs.
+            </h2>
+
+            <p className="mt-6 max-w-2xl text-base leading-8 text-[#5f5a52] md:text-lg">
+              Everyday regulation language becomes more accurate when it stays
+              connected to physiology. The autonomic nervous system is one part
+              of that physiology, but its outputs are organ-specific and are
+              coordinated with central stress networks, breathing, circulation,
+              endocrine signals, movement, and behavior.
+            </p>
+
+            <div className="mt-8 flex flex-wrap gap-4">
+              <Link
+                href="/learn/autonomic-nervous-system"
+                className="rounded-full bg-[#1f1f1c] px-6 py-3 text-sm font-medium text-white transition hover:opacity-90"
+              >
+                Understand the autonomic nervous system
+              </Link>
+              <Link
+                href="/learn/sympathetic-vs-parasympathetic-nervous-system"
+                className="rounded-full border border-black/10 px-6 py-3 text-sm font-medium text-[#1f1f1c] transition hover:bg-white/60"
+              >
+                Compare sympathetic and parasympathetic
+              </Link>
+            </div>
+          </div>
+
+          <div className="mt-14 grid gap-6 md:grid-cols-2">
+            {physiologyCards.map((item) => (
+              <article
+                key={item.title}
+                className="rounded-[2rem] border border-black/5 bg-white/65 p-8 shadow-[0_12px_40px_rgba(31,31,28,0.04)]"
+              >
+                <h3 className="text-2xl font-medium leading-tight text-[#1f1f1c]">
+                  {item.title}
+                </h3>
+                <p className="mt-4 text-sm leading-7 text-[#5f5a52] md:text-base">
+                  {item.description}
+                </p>
+              </article>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="border-b border-black/5 bg-[#f7f4ef]">
+        <div className="mx-auto max-w-7xl px-6 py-24 md:px-10 md:py-28">
+          <div className="max-w-3xl">
+            <p className="text-sm uppercase tracking-[0.18em] text-[#7a756c]">
+              Measurement boundary
+            </p>
+
+            <h2 className="mt-4 text-3xl font-medium leading-tight tracking-[-0.03em] md:text-5xl">
+              There is no single test that tells you whether your whole nervous system is “regulated.”
+            </h2>
+
+            <p className="mt-6 max-w-2xl text-base leading-8 text-[#5f5a52] md:text-lg">
+              Measurements can sample parts of physiology, but interpretation
+              depends on what was measured, how it was measured, and the context.
+              A useful metric should be treated as a metric — not as a diagnosis
+              or a complete picture of the nervous system.
+            </p>
+          </div>
+
+          <div className="mt-14 grid gap-6 md:grid-cols-2">
+            {measurementCards.map((item) => (
+              <article
+                key={item.title}
+                className="rounded-[2rem] border border-black/5 bg-white/65 p-8 shadow-[0_12px_40px_rgba(31,31,28,0.04)]"
+              >
+                <h3 className="text-2xl font-medium leading-tight text-[#1f1f1c]">
+                  {item.title}
+                </h3>
+                <dl className="mt-5 space-y-5">
+                  <div>
+                    <dt className="text-xs font-medium uppercase tracking-[0.16em] text-[#84796e]">
+                      Can contribute
+                    </dt>
+                    <dd className="mt-2 text-sm leading-7 text-[#5f5a52] md:text-base">
+                      {item.canTell}
+                    </dd>
+                  </div>
+                  <div>
+                    <dt className="text-xs font-medium uppercase tracking-[0.16em] text-[#84796e]">
+                      Cannot establish alone
+                    </dt>
+                    <dd className="mt-2 text-sm leading-7 text-[#5f5a52] md:text-base">
+                      {item.cannotTell}
+                    </dd>
+                  </div>
+                </dl>
+              </article>
+            ))}
+          </div>
+
+          <div className="mt-10">
+            <Link
+              href="/research/topics/heart-rate-variability"
+              className="inline-flex rounded-full border border-black/10 px-6 py-3 text-sm font-medium text-[#1f1f1c] transition hover:bg-white/60"
+            >
+              Explore HRV research
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      <section className="border-b border-black/5 bg-[#f2eee8]">
         <div className="mx-auto grid max-w-7xl gap-14 px-6 py-24 md:px-10 md:py-28 lg:grid-cols-[0.95fr_1.05fr] lg:items-center">
           <div className="rounded-[2rem] border border-black/5 bg-white/60 p-8 shadow-[0_12px_40px_rgba(31,31,28,0.04)] md:p-10">
             <p className="text-sm uppercase tracking-[0.16em] text-[#8a847b]">
@@ -485,12 +683,12 @@ export default function NervousSystemRegulationPage() {
           <div className="flex flex-col gap-6 md:flex-row md:items-end md:justify-between">
             <div className="max-w-3xl">
               <p className="text-sm uppercase tracking-[0.18em] text-[#7a756c]">
-                Why people search for it
+                Why this concept matters
               </p>
 
               <h2 className="mt-4 text-3xl font-medium leading-tight tracking-[-0.03em] md:text-5xl">
-                Most people are not searching for theory first. They are trying
-                to understand what their body is doing.
+                The concept matters when it helps people understand what their
+                body is doing.
               </h2>
 
               <p className="mt-6 max-w-2xl text-base leading-8 text-[#5f5a52] md:text-lg">
@@ -613,6 +811,58 @@ export default function NervousSystemRegulationPage() {
         </div>
       </section>
 
+      <section className="border-b border-black/5 bg-[#f7f4ef]">
+        <div className="mx-auto max-w-7xl px-6 py-24 md:px-10 md:py-28">
+          <div className="max-w-3xl">
+            <p className="text-sm uppercase tracking-[0.18em] text-[#7a756c]">
+              Evidence references
+            </p>
+            <h2 className="mt-4 text-3xl font-medium leading-tight tracking-[-0.03em] md:text-5xl">
+              The framework is useful only when the physiology and measurement limits stay visible.
+            </h2>
+            <p className="mt-6 max-w-2xl text-base leading-8 text-[#5f5a52] md:text-lg">
+              These references support the core physiology and measurement
+              boundaries on this page. They are background evidence, not
+              Neuvago product evidence.
+            </p>
+          </div>
+
+          <div className="mt-12 grid gap-5 md:grid-cols-2">
+            {regulationSources.map((source) => (
+              <article
+                key={source.href}
+                className="rounded-[1.75rem] border border-black/5 bg-white/65 p-7 shadow-[0_12px_40px_rgba(31,31,28,0.04)]"
+              >
+                <h3 className="text-lg font-medium leading-7 text-[#1f1f1c]">
+                  {source.title}
+                </h3>
+                <p className="mt-2 text-sm leading-6 text-[#84796e]">
+                  {source.source}
+                </p>
+                <p className="mt-4 text-sm leading-7 text-[#5f5a52]">
+                  {source.note}
+                </p>
+                <a
+                  href={source.href}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="mt-5 inline-flex text-sm font-medium text-[#1f1f1c] underline decoration-black/20 underline-offset-4 transition hover:decoration-black/60"
+                >
+                  Open source
+                </a>
+              </article>
+            ))}
+          </div>
+
+          <p className="mt-8 max-w-3xl text-sm leading-7 text-[#6b655d]">
+            General autonomic and stress-regulation research should not be
+            interpreted as evidence that Neuvago changes sympathetic activity,
+            parasympathetic activity, HRV, or a person&apos;s overall
+            &ldquo;nervous system regulation&rdquo; without direct product evidence.
+          </p>
+        </div>
+      </section>
+
       <section className="bg-[#f7f4ef]">
         <div className="mx-auto max-w-7xl px-6 py-24 md:px-10 md:py-32">
           <div className="rounded-[2.5rem] border border-black/5 bg-gradient-to-br from-[#efe7dc] to-[#e5dbcf] px-8 py-14 shadow-[0_20px_80px_rgba(31,31,28,0.06)] md:px-12 md:py-16">
@@ -627,10 +877,11 @@ export default function NervousSystemRegulationPage() {
               </h2>
 
               <p className="mt-6 max-w-2xl text-base leading-8 text-[#5f5a52] md:text-lg">
-                Nervous system regulation is one of the most important
-                foundation topics in the Neuvago learning universe because it
-                helps connect what people feel with a broader, calmer framework
-                for stress, recovery, sleep, resilience, and return.
+                Nervous system regulation is most useful when it connects
+                everyday experience with accurate physiology: stress responses
+                can be adaptive, recovery matters, no single metric tells the
+                whole story, and practical support should match the person and
+                the context.
               </p>
 
               <div className="mt-10 flex flex-wrap gap-4">

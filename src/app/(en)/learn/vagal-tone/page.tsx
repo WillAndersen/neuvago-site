@@ -428,18 +428,18 @@ export default function VagalTonePage() {
           <div className="flex flex-col gap-6 md:flex-row md:items-end md:justify-between">
             <div className="max-w-3xl">
               <p className="text-sm uppercase tracking-[0.18em] text-[#7a756c]">
-                Why people search for it
+                When resilience feels different from day to day
               </p>
 
               <h2 className="mt-4 text-3xl font-medium leading-tight tracking-[-0.03em] md:text-5xl">
-                Most people are not searching for a number. They are trying to
-                understand why the body sometimes feels more resilient, more recoverable, or less so.
+                Vagal tone is often discussed when people notice that resilience and
+                recovery can feel different from one day or situation to another.
               </h2>
 
               <p className="mt-6 max-w-2xl text-base leading-8 text-[#5f5a52] md:text-lg">
-                Searches around vagal tone are often really searches for a more
-                specific explanation of resilience, recovery quality, and return
-                after stress rather than a purely technical explanation of a single term.
+                The practical question is how resilience, recovery quality, and return
+                after stress relate to the term — without reducing the whole
+                picture to one technical measure.
               </p>
             </div>
 
@@ -510,11 +510,11 @@ export default function VagalTonePage() {
 
             <div className="mt-8 rounded-2xl bg-[#e9e1d6] p-5">
               <p className="text-sm font-medium text-[#1f1f1c]">
-                This page works best as a specific resilience page
+                Vagal tone is one part of the resilience picture
               </p>
               <p className="mt-2 text-sm leading-7 text-[#5f5a52]">
-                It is strongest when it sharpens the bigger conversation about
-                vagus nerve, regulation, and recovery rather than trying to replace it.
+                It is most useful when it sharpens the bigger conversation about the
+                vagus nerve, regulation, and recovery rather than replacing it.
               </p>
             </div>
           </div>

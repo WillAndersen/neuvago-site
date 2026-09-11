@@ -181,8 +181,8 @@ export default function FightFlightFreezePage() {
             <p className="mt-6 max-w-2xl text-base leading-8 text-[#5f5a52] md:text-lg">
               Fight, flight, and freeze are often used to describe protective
               patterns in the body when stress, pressure, overload, or lack of
-              safety feels too high. This page is designed to make those states
-              easier to recognize in ordinary life, where they often show up as
+              safety feels too high. Those states can be easier to recognize in ordinary
+              life, where they often show up as
               urgency, irritability, avoidance, shutdown, or difficulty settling.
             </p>
 
@@ -423,17 +423,16 @@ export default function FightFlightFreezePage() {
           <div className="flex flex-col gap-6 md:flex-row md:items-end md:justify-between">
             <div className="max-w-3xl">
               <p className="text-sm uppercase tracking-[0.18em] text-[#7a756c]">
-                Why people search for this
+                When the body shifts into protection
               </p>
 
               <h2 className="mt-4 text-3xl font-medium leading-tight tracking-[-0.03em] md:text-5xl">
-                Most people are not searching for a theory of the stress response.
-                They are trying to understand what their body is doing.
+                Fight, flight, and freeze become easier to understand when you start
+                with what the body is doing in the moment.
               </h2>
 
               <p className="mt-6 max-w-2xl text-base leading-8 text-[#5f5a52] md:text-lg">
-                Searches around fight, flight, and freeze are often really
-                searches for explanation: why the body gets sharper, more urgent,
+                The practical questions are why the body gets sharper, more urgent,
                 more avoidant, or more shut down — and why these reactions can
                 feel so strong even in ordinary life.
               </p>
@@ -504,11 +503,11 @@ export default function FightFlightFreezePage() {
 
             <div className="mt-8 rounded-2xl bg-[#e9e1d6] p-5">
               <p className="text-sm font-medium text-[#1f1f1c]">
-                This page works best as a protective-states page
+                Protective states make more sense when the patterns stay concrete
               </p>
               <p className="mt-2 text-sm leading-7 text-[#5f5a52]">
-                It is strongest when it explains defense patterns clearly, then
-                sends the reader toward broader regulation, support, and recovery topics.
+                Start with recognizable defense patterns, then connect them to broader
+                regulation, support, and recovery topics.
               </p>
             </div>
           </div>

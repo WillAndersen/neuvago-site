@@ -90,9 +90,9 @@ const evidenceBoundaries = [
       "An evidence overview should connect potential benefits with side effects, tolerability, contraindication awareness, and product-specific intended use.",
   },
   {
-    title: "Neuvago should stay in a wellness lane",
+    title: "Keep category evidence separate from Neuvago’s intended use",
     description:
-      "The product bridge should explain app-guided sessions, comfort, routine design, and clear boundaries without borrowing medical indications from other devices.",
+      "Neuvago’s product explanation focuses on app-guided sessions, comfort, routine design, and clear boundaries without borrowing medical indications from other devices.",
   },
 ]
 
@@ -215,7 +215,7 @@ const connectedResearch = [
   {
     title: "Topic Research",
     description:
-      "Return to the broader topic layer to explore other major subject areas in the research library.",
+      "Explore other major research topics connected to VNS.",
     href: "/research/topics",
     linkLabel: "Back to topic research",
   },
@@ -367,17 +367,17 @@ export default function VagusNerveStimulationResearchPage() {
             </h1>
 
             <p className="mt-6 max-w-3xl text-base leading-8 text-[#5f5a52] md:text-lg">
-              This topic page organizes research related to vagus nerve stimulation,
-              including implanted VNS, non-invasive VNS, auricular stimulation,
-              transcutaneous approaches, and the limits of translating evidence
-              across devices, protocols, and populations.
+              Research on vagus nerve stimulation spans implanted VNS, non-invasive
+              VNS, auricular stimulation, transcutaneous approaches, and questions
+              about how far evidence can be translated across devices, protocols,
+              and populations.
             </p>
 
             <div className="mt-8 flex flex-wrap gap-x-8 gap-y-3 text-sm text-[#6b665e]">
-              <span>Current topic: 2 study summaries</span>
-              <span>Connected Learn pillar added</span>
+              <span>2 study summaries</span>
+              <span>Plain-language Learn guide</span>
               <span>Implanted + non-invasive stimulation</span>
-              <span>Built to grow over time</span>
+              <span>Evidence boundaries kept visible</span>
             </div>
 
             <div className="mt-10 flex flex-wrap gap-4">
@@ -424,7 +424,7 @@ export default function VagusNerveStimulationResearchPage() {
         items={[
           { title: "What research suggests", description: "The field explores how vagal pathways may be engaged through implanted and non-invasive stimulation, and how those signals relate to brain–body regulation." },
           { title: "What it does not prove", description: "Evidence from one VNS device, protocol, or clinical population does not prove every non-invasive vagus nerve stimulator has the same effect." },
-          { title: "Neuvago boundary", description: "Neuvago should be presented as a non-invasive, app-guided wellness system for regulation routines, not as a treatment or diagnostic tool." },
+          { title: "Neuvago boundary", description: "Neuvago is presented as a non-invasive, app-guided wellness system for regulation routines, not as a treatment or diagnostic tool." },
         ]}
       />
 
@@ -447,16 +447,15 @@ export default function VagusNerveStimulationResearchPage() {
             </p>
 
             <p className="mt-6 max-w-2xl text-base leading-8 text-[#5f5a52]">
-              This topic page groups those research directions together so the
-              literature can be understood as a broader field rather than as a
-              disconnected set of individual papers. It also keeps method, safety,
-              and product claims separated so the evidence is not overstated.
+              Taken together, these research directions show why method, device,
+              target, safety context, and product claims must be kept separate when
+              interpreting the evidence.
             </p>
           </div>
 
           <div className="rounded-[1.75rem] border border-black/8 bg-white/70 p-8 shadow-[0_8px_24px_rgba(31,31,28,0.03)]">
             <p className="text-sm uppercase tracking-[0.16em] text-[#8a847b]">
-              What this topic includes
+              Key research areas
             </p>
 
             <div className="mt-7 space-y-5">
@@ -486,7 +485,7 @@ export default function VagusNerveStimulationResearchPage() {
             </p>
 
             <h2 className="mt-4 text-3xl font-medium leading-tight tracking-[-0.03em] md:text-5xl">
-              The current literature can be read through a few major research tracks
+              VNS research spans several distinct method and evidence tracks
             </h2>
           </div>
 
@@ -516,7 +515,7 @@ export default function VagusNerveStimulationResearchPage() {
             </p>
 
             <h2 className="mt-4 text-3xl font-medium leading-tight tracking-[-0.03em] md:text-5xl">
-              The strongest research page also explains what the evidence does not prove
+              Good evidence interpretation also asks what a study does not prove
             </h2>
 
             <p className="mt-6 max-w-2xl text-base leading-8 text-[#5f5a52] md:text-lg">
@@ -548,11 +547,11 @@ export default function VagusNerveStimulationResearchPage() {
         <div className="mx-auto max-w-7xl px-6 py-20 md:px-10 md:py-24">
           <div className="max-w-3xl">
             <p className="text-sm uppercase tracking-[0.18em] text-[#7a756c]">
-              Foundational studies in this topic
+              Foundational studies
             </p>
 
             <h2 className="mt-4 text-3xl font-medium leading-tight tracking-[-0.03em] md:text-5xl">
-              The first two anchor studies in the vagus nerve stimulation track
+              Two foundational references across clinical and non-invasive VNS
             </h2>
           </div>
 
@@ -568,24 +567,21 @@ export default function VagusNerveStimulationResearchPage() {
         <div className="mx-auto grid max-w-7xl gap-14 px-6 py-20 md:px-10 md:py-24 lg:grid-cols-[1fr_0.95fr]">
           <div>
             <p className="text-sm uppercase tracking-[0.18em] text-[#7a756c]">
-              How this topic fits the library
+              Reading VNS research
             </p>
 
             <h2 className="mt-4 max-w-3xl text-3xl font-medium leading-tight tracking-[-0.03em] md:text-5xl">
-              Topic pages help a growing studies library stay usable as it expands
+              Method and device context come before cross-study comparison
             </h2>
 
             <p className="mt-6 max-w-2xl text-base leading-8 text-[#5f5a52] md:text-lg">
-              As more studies are added, topic pages make it easier to browse the
-              literature by subject area rather than by title alone. This is
-              especially important in a field like vagus nerve stimulation, where
-              methods, devices, targets, and interpretations can vary significantly.
+              VNS studies are easier to compare when the method, device, target,
+              protocol, population, and outcome are kept explicit. Those differences
+              matter because one family name covers very different interventions.
             </p>
 
             <p className="mt-6 max-w-2xl text-base leading-8 text-[#5f5a52]">
-              Over time, this topic page can expand to include more studies,
-              clearer internal categorization, and stronger links into adjacent
-              research themes such as safety and tolerability, stress physiology,
+              Related research paths include safety and tolerability, stress physiology,
               HRV, autonomic regulation, and emotional processing.
             </p>
           </div>
@@ -651,13 +647,13 @@ export default function VagusNerveStimulationResearchPage() {
         <div className="mx-auto max-w-7xl px-6 py-16 md:px-10 md:py-20">
           <div className="max-w-4xl border-t border-black/8 pt-8">
             <p className="text-sm uppercase tracking-[0.18em] text-[#7a756c]">
-              Topic note
+              Research scope
             </p>
             <p className="mt-4 max-w-3xl text-base leading-8 text-[#5f5a52] md:text-lg">
-              This topic page is intended as a growing research index rather than
-              a final review article. It is designed to organize the literature as
-              the studies library expands across implanted, non-invasive, and
-              mechanism-oriented vagus nerve stimulation research.
+              This overview highlights selected implanted, non-invasive, and
+              mechanism-oriented VNS research and is not a systematic review. Use
+              the individual study summaries and source links to evaluate each method
+              in its own evidence context.
             </p>
 
             <div className="mt-8 flex flex-wrap gap-4">

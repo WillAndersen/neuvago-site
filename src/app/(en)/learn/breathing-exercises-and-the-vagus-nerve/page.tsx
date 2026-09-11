@@ -167,7 +167,7 @@ const sections: readonly PageSection[] = [
     "eyebrow": "Further reading and source use",
     "title": "Read onward without collapsing breathing, measurement, electrical VNS and product claims",
     "paragraphs": [
-      "This page owns the specific question of breathing exercises and the vagus nerve. The broader methods pillar explains multiple method categories. The reset page addresses reset language and seven-minute claims. The calming page offers broader practical regulation guidance, while the vagus-nerve foundation and VNS overview explain anatomy and electrical stimulation.",
+      "This guide focuses on the specific question of breathing exercises and the vagus nerve. The broader methods guide explains multiple method categories. The reset guide addresses reset language and seven-minute claims. The calming guide offers broader practical regulation guidance, while the vagus-nerve foundation and VNS overview explain anatomy and electrical stimulation.",
       "The sources below should be read at the level they actually studied. A systematic review of slow breathing can support qualified language about heart rate and cardiac HRV measures, not a product claim. A small ratio study describes its tested condition, not a universal optimum. A tVNS consensus explains why electrical methods must be specified; it is not evidence that breathing is tVNS.",
       "This page provides general educational information only. It does not diagnose vagus-nerve dysfunction, prevent or treat disease, or replace individual medical or psychological care. External breathing research is not automatically evidence for Neuvago, and no product-specific frequency, duration, contraindication or stop-use rule is supplied."
     ]

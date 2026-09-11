@@ -161,7 +161,7 @@ const sections = [
     paragraphs: [
       "The sympathetic and parasympathetic nervous systems are major autonomic efferent systems with different anatomical origins, ganglia, target distributions and common signaling patterns.",
       "The sympathetic system is classically associated with mobilization and ‘fight or flight,’ while the parasympathetic system is associated with ‘rest and digest.’ Those phrases are useful introductions, but they are incomplete: both systems are continuously regulated, many organs are not controlled as simple opposites, and co-activation can occur.",
-      "This page owns the comparison question. The broader Autonomic nervous system guide owns the full ANS architecture, and the Parasympathetic nervous system page remains the dedicated parasympathetic owner.",
+      "This guide focuses on the comparison itself. For the wider ANS framework, use the Autonomic nervous system guide; for a deeper parasympathetic explanation, continue to the Parasympathetic nervous system guide.",
     ],
   },
   {
@@ -230,7 +230,7 @@ const sections = [
     paragraphs: [
       "Stress responses can involve sympathetic cardiovascular and sudomotor changes, endocrine signaling, respiratory changes, attention and behavior. Recovery likewise involves more than one pathway.",
       "A person can feel calmer without proving a specific parasympathetic change, and a higher heart rate does not by itself prove a pathological sympathetic state.",
-      "The practical regulation page is the better owner for everyday calming and recovery strategies; this comparison page stays focused on physiology.",
+      "For everyday calming and recovery strategies, use the practical regulation guide; this comparison stays focused on physiology.",
     ],
   },
   {

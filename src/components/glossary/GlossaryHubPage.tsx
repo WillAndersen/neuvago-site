@@ -25,7 +25,7 @@ const copy = {
     noAlias: "No additional aliases",
     useTitle: "Use the glossary as a map—not as a substitute for the full guide",
     useText:
-      "Each entry gives a compact definition, shows what the term does not establish, and points to a primary pillar plus research context. Follow those links when you need evidence, method detail, or product boundaries.",
+      "Each entry gives a compact definition, shows what the term does not establish, and links to a fuller guide plus relevant research context. Follow those links when you need evidence, method detail, or product boundaries.",
     primaryCta: "Go to the Learn hub",
     primaryHref: "/learn",
     secondaryCta: "Explore research",
@@ -47,7 +47,7 @@ const copy = {
     noAlias: "Ingen ekstra aliaser",
     useTitle: "Bruk ordlisten som kart – ikke som erstatning for hovedartikkelen",
     useText:
-      "Hver oppføring gir en kort definisjon, viser hva begrepet ikke dokumenterer og peker til en primær pilar og relevant forskningskontekst. Følg lenkene når du trenger evidens, metodedetaljer eller produktgrenser.",
+      "Hver oppføring gir en kort definisjon, viser hva begrepet ikke dokumenterer og peker videre til en mer utfyllende guide og relevant forskningskontekst. Følg lenkene når du trenger evidens, metodedetaljer eller produktgrenser.",
     primaryCta: "Gå til kunnskapssenteret",
     primaryHref: "/no/kunnskap",
     secondaryCta: "Utforsk forskning",

@@ -112,7 +112,7 @@ const sections: readonly Section[] = [
     paragraphs: [
       "The vagus nerve is cranial nerve X. Humans have a left and a right vagus nerve. They arise from the brainstem region, leave the skull through the jugular foramina, descend deep in the neck and continue into the chest and upper abdomen through multiple branches, plexuses and vagal trunks.",
       "That route explains the name vagus, meaning wandering. It does not mean there is one continuous surface line that can be traced with a finger. Much of the cervical course lies deep beside major blood vessels, and the thoracic and abdominal pathways repeatedly branch and reorganise.",
-      "This page owns the detailed anatomy, location, course and branch question. The broader Vagus nerve guide remains the place for the plain-language definition, function families, HRV limits and wider context.",
+      "This guide focuses on detailed anatomy, location, course, and branches. For the plain-language definition, function families, HRV limits, and wider context, use the broader Vagus nerve guide.",
     ],
     answers: [
       {

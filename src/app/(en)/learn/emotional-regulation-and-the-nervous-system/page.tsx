@@ -331,11 +331,11 @@ export default function EmotionalRegulationAndTheNervousSystemPage() {
 
             <div className="mt-8 rounded-2xl bg-[#e9e1d6] p-5">
               <p className="text-sm font-medium text-[#1f1f1c]">
-                This page works best as an emotional-capacity page
+                Emotional capacity changes with load and recovery
               </p>
               <p className="mt-2 text-sm leading-7 text-[#5f5a52]">
-                The topic becomes clearest when it explains how much emotion the
-                system can carry and how well it returns afterward.
+                A useful way to understand emotional regulation is to look at how much
+                emotion the system can carry and how well it returns afterward.
               </p>
             </div>
           </div>
@@ -423,18 +423,17 @@ export default function EmotionalRegulationAndTheNervousSystemPage() {
           <div className="flex flex-col gap-6 md:flex-row md:items-end md:justify-between">
             <div className="max-w-3xl">
               <p className="text-sm uppercase tracking-[0.18em] text-[#7a756c]">
-                Why people search for this
+                When emotions feel harder to carry
               </p>
 
               <h2 className="mt-4 text-3xl font-medium leading-tight tracking-[-0.03em] md:text-5xl">
-                Most people are not searching for emotional control. They are
-                trying to understand why emotions feel harder to carry than they should.
+                Emotional regulation is often less about control and more about
+                understanding why feelings become intense, fast, sticky, or hard to recover from.
               </h2>
 
               <p className="mt-6 max-w-2xl text-base leading-8 text-[#5f5a52] md:text-lg">
-                Searches around emotional regulation are often really searches
-                for explanation: why emotions feel too intense, too fast, too
-                sticky, too overwhelming, or too hard to recover from in everyday life.
+                The practical questions are often why emotions feel too intense, too fast,
+                too sticky, too overwhelming, or too hard to recover from in everyday life.
               </p>
             </div>
 
@@ -503,11 +502,11 @@ export default function EmotionalRegulationAndTheNervousSystemPage() {
 
             <div className="mt-8 rounded-2xl bg-[#e9e1d6] p-5">
               <p className="text-sm font-medium text-[#1f1f1c]">
-                This page works best as an emotional-load page
+                Emotional load is easier to understand in context
               </p>
               <p className="mt-2 text-sm leading-7 text-[#5f5a52]">
-                It is strongest when it explains emotional carrying capacity,
-                then sends the reader toward broader regulation, support, and recovery topics.
+                A useful next step is to connect emotional carrying capacity with broader
+                regulation, support, and recovery topics.
               </p>
             </div>
           </div>

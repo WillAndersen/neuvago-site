@@ -132,7 +132,7 @@ const connectedResearch = [
   {
     title: "Topic Research",
     description:
-      "Return to the broader topic layer to explore other major subject areas in the research library.",
+      "Explore other major research topics connected to HRV.",
     href: "/research/topics",
     linkLabel: "Back to topic research",
   },
@@ -222,16 +222,15 @@ export default function HeartRateVariabilityResearchPage() {
             </h1>
 
             <p className="mt-6 max-w-3xl text-base leading-8 text-[#5f5a52] md:text-lg">
-              This topic page organizes research related to heart rate variability
-              (HRV), including measurement standards, autonomic flexibility, vagal
-              regulation, emotional regulation, and stress physiology. It is designed
-              to provide a structured overview before readers move into individual studies.
+              HRV research spans measurement standards, autonomic flexibility,
+              vagal regulation, emotional regulation, and stress physiology. This
+              overview brings those areas together before the individual studies.
             </p>
 
             <div className="mt-8 flex flex-wrap gap-x-8 gap-y-3 text-sm text-[#6b665e]">
-              <span>Current topic: 2 study summaries</span>
+              <span>2 study summaries</span>
               <span>Methodology + theory</span>
-              <span>Built to grow over time</span>
+              <span>Measurement + autonomic context</span>
             </div>
 
             <div className="mt-10 flex flex-wrap gap-4">
@@ -302,15 +301,15 @@ export default function HeartRateVariabilityResearchPage() {
             </p>
 
             <p className="mt-6 max-w-2xl text-base leading-8 text-[#5f5a52]">
-              This topic page groups the literature together so HRV can be understood
-              not only as a measurement technique, but as a broader research track
-              tied to vagal regulation, stress responses, and autonomic balance.
+              Taken together, the literature shows HRV as both a measurement method
+              and a broader research area tied to vagal regulation, stress responses,
+              and autonomic flexibility.
             </p>
           </div>
 
           <div className="rounded-[1.75rem] border border-black/8 bg-white/70 p-8 shadow-[0_8px_24px_rgba(31,31,28,0.03)]">
             <p className="text-sm uppercase tracking-[0.16em] text-[#8a847b]">
-              What this topic includes
+              Key research areas
             </p>
 
             <div className="mt-7 space-y-5">
@@ -366,11 +365,11 @@ export default function HeartRateVariabilityResearchPage() {
         <div className="mx-auto max-w-7xl px-6 py-20 md:px-10 md:py-24">
           <div className="max-w-3xl">
             <p className="text-sm uppercase tracking-[0.18em] text-[#7a756c]">
-              Foundational studies in this topic
+              Foundational studies
             </p>
 
             <h2 className="mt-4 text-3xl font-medium leading-tight tracking-[-0.03em] md:text-5xl">
-              The first two anchor studies in the HRV track
+              Two foundational references for HRV research
             </h2>
           </div>
 
@@ -386,24 +385,22 @@ export default function HeartRateVariabilityResearchPage() {
         <div className="mx-auto grid max-w-7xl gap-14 px-6 py-20 md:px-10 md:py-24 lg:grid-cols-[1fr_0.95fr]">
           <div>
             <p className="text-sm uppercase tracking-[0.18em] text-[#7a756c]">
-              How this topic fits the library
+              Reading HRV research
             </p>
 
             <h2 className="mt-4 max-w-3xl text-3xl font-medium leading-tight tracking-[-0.03em] md:text-5xl">
-              Topic pages help a growing studies library stay usable as it expands
+              Methodology matters when comparing HRV findings
             </h2>
 
             <p className="mt-6 max-w-2xl text-base leading-8 text-[#5f5a52] md:text-lg">
-              As more studies are added, topic pages make it easier to browse
-              the literature by subject area rather than by title alone. This is
-              especially useful in HRV research, where interpretation depends heavily
-              on methodology, context, and how autonomic signals are understood.
+              HRV findings are especially sensitive to methodology, context, and
+              how autonomic signals are interpreted. Comparing studies therefore
+              requires attention to measurement method, recording conditions, and population.
             </p>
 
             <p className="mt-6 max-w-2xl text-base leading-8 text-[#5f5a52]">
-              Over time, this topic page can expand to include more studies,
-              stronger internal grouping, and clearer links into adjacent research
-              themes such as stress physiology, sleep, vagal signaling, and emotional regulation.
+              Related research paths include stress physiology, sleep, vagal signaling,
+              emotional regulation, and broader autonomic regulation.
             </p>
           </div>
 
@@ -441,13 +438,12 @@ export default function HeartRateVariabilityResearchPage() {
         <div className="mx-auto max-w-7xl px-6 py-16 md:px-10 md:py-20">
           <div className="max-w-4xl border-t border-black/8 pt-8">
             <p className="text-sm uppercase tracking-[0.18em] text-[#7a756c]">
-              Topic note
+              Research scope
             </p>
             <p className="mt-4 max-w-3xl text-base leading-8 text-[#5f5a52] md:text-lg">
-              This topic page is intended as a growing research index rather than
-              a final review article. It is designed to organize the literature as
-              the studies library expands across HRV methodology, autonomic flexibility,
-              vagal regulation, and stress-related physiology.
+              This overview highlights selected HRV methodology and theory sources
+              and is not a systematic review. Read individual studies in light of
+              measurement method, recording conditions, population, and outcome.
             </p>
 
             <div className="mt-8 flex flex-wrap gap-4">

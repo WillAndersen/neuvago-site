@@ -119,7 +119,7 @@ const whatToEvaluate = [
   {
     title: "What safety boundaries are visible",
     description:
-      "A credible non-invasive VNS page should make side effects, contraindication awareness, intended use, and medical-disclaimer links visible instead of hiding them in legal copy only.",
+      "Side effects, contraindication awareness, intended use, and medical-disclaimer links should be visible when evaluating a non-invasive VNS device rather than hidden in legal copy only.",
   },
 ];
 
@@ -137,7 +137,7 @@ const whyPeopleSearch = [
   {
     title: "They want practical support, not hype",
     description:
-      "The best page for this intent should explain the category clearly, set boundaries, and connect the reader to how a guided device-and-app system works in real life.",
+      "A useful explanation should make the category clear, set boundaries, and connect the reader to how a guided device-and-app system works in real life.",
   },
 ];
 
@@ -212,7 +212,7 @@ const relatedLearning = [
   {
     title: "Vagus nerve stimulation",
     description:
-      "The broader category pillar explaining implanted VNS, non-invasive VNS, auricular approaches, and responsible wellness positioning.",
+      "A broader guide to implanted VNS, non-invasive VNS, auricular approaches, and responsible wellness boundaries.",
     href: "/learn/vagus-nerve-stimulation",
     linkLabel: "Read the VNS overview",
   },
@@ -678,15 +678,15 @@ export default function NonInvasiveVagusNerveStimulationPage() {
             </p>
 
             <h2 className="mt-4 text-3xl font-medium leading-tight tracking-[-0.03em] md:text-5xl">
-              A responsible non-invasive VNS page should help users ask better
+              A responsible non-invasive VNS evaluation starts with better
               questions
             </h2>
 
             <p className="mt-6 max-w-2xl text-base leading-8 text-[#5f5a52] md:text-lg">
-              Search intent around non-invasive vagus nerve stimulation is
-              partly educational and partly commercial. People want to know what
-              the category means, but they are also beginning to compare devices
-              and decide what feels trustworthy.
+              People evaluating non-invasive vagus nerve stimulation usually need both
+              category clarity and practical comparison criteria. That means
+              understanding what the method is, how devices differ, and what
+              makes a product explanation trustworthy.
             </p>
           </div>
 
@@ -702,32 +702,31 @@ export default function NonInvasiveVagusNerveStimulationPage() {
         <div className="mx-auto grid max-w-7xl gap-14 px-6 py-24 md:px-10 md:py-28 lg:grid-cols-[1fr_0.95fr] lg:items-start">
           <div>
             <p className="text-sm uppercase tracking-[0.18em] text-[#7a756c]">
-              Why people search for it
+              From category understanding to device evaluation
             </p>
 
             <h2 className="mt-4 max-w-3xl text-3xl font-medium leading-tight tracking-[-0.03em] md:text-5xl">
-              Non-invasive VNS is often the bridge between curiosity and product
-              evaluation
+              Non-invasive VNS becomes more useful when category and product questions
+              are kept separate
             </h2>
 
             <p className="mt-6 max-w-2xl text-base leading-8 text-[#5f5a52] md:text-lg">
-              Someone searching for the vagus nerve may still be learning the
-              concept. Someone searching for non-invasive vagus nerve
-              stimulation is usually closer to the product category. They may
-              already understand that stimulation exists and want to know what
-              more accessible, non-surgical options look like — and what safety boundaries should still be visible.
+              Once the basic vagus-nerve concept is clear, the next questions are usually
+              more practical: what non-surgical options exist, how different
+              methods are described, how devices differ, and what safety
+              boundaries should still be visible.
             </p>
 
             <p className="mt-6 max-w-2xl text-base leading-8 text-[#5f5a52]">
-              That makes this page strategically important for Neuvago. It can
-              answer a high-intent educational query while also creating a
-              respectful path into the device, app, research, and trust pages.
+              Keeping those questions separate creates a clearer path from education to
+              device details, app guidance, research context, and trust information
+              without turning category evidence into a product promise.
             </p>
           </div>
 
           <div className="rounded-[2rem] border border-black/5 bg-white/60 p-8 shadow-[0_12px_40px_rgba(31,31,28,0.04)] md:p-10">
             <p className="text-sm uppercase tracking-[0.16em] text-[#8a847b]">
-              Search intent
+              What people are trying to understand
             </p>
 
             <div className="mt-8 space-y-5">
@@ -771,9 +770,8 @@ export default function NonInvasiveVagusNerveStimulationPage() {
             </p>
 
             <p className="mt-6 max-w-2xl text-base leading-8 text-[#5f5a52]">
-              This is the commercial bridge that should feel natural: if the
-              user understands the category, the next question becomes how
-              Neuvago delivers that experience in practice.
+              Once the category is clear, the practical next question is how Neuvago
+              delivers the experience through the device, app, guidance, and routine.
             </p>
 
             <div className="mt-10 flex flex-wrap gap-4">

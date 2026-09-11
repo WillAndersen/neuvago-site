@@ -205,7 +205,7 @@ const neuvagoUse = [
   {
     title: "Support HRV without overclaiming",
     description:
-      "HRV belongs in the authority system, but it should be framed as a useful measurement window with limitations rather than a complete proof of calm, health, or product effect.",
+      "HRV is a useful measurement window with important limitations; it is not a complete proof of calm, health, or product effect.",
   },
   {
     title: "Bridge VNS to everyday outcomes carefully",
@@ -213,7 +213,7 @@ const neuvagoUse = [
       "Autonomic regulation helps connect VNS/tVNS research to stress, sleep, and recovery while keeping the interpretation physiological and conservative.",
   },
   {
-    title: "Strengthen trust before conversion",
+    title: "Use physiology to support informed decisions",
     description:
       "Readers who understand the physiology, limits, and vocabulary behind regulation are better prepared to evaluate how Neuvago works without needing exaggerated claims.",
   },
@@ -514,10 +514,9 @@ export default function AutonomicRegulationResearchPage() {
             </p>
 
             <p className="mt-5 max-w-2xl text-base leading-8 text-[#5f5a52]">
-              This page gives Neuvago a research-grade bridge between vagus
-              nerve stimulation, transcutaneous VNS, heart rate variability, and
-              everyday regulation without turning physiology into overconfident
-              product claims.
+              This topic connects vagus nerve stimulation, transcutaneous VNS, heart
+              rate variability, and everyday regulation while keeping physiology
+              separate from overconfident product claims.
             </p>
 
             <div className="mt-10 flex flex-wrap gap-4">
@@ -623,7 +622,7 @@ export default function AutonomicRegulationResearchPage() {
         items={[
           { title: "What research suggests", description: "Autonomic markers can help researchers study activation, recovery, vagal influence, and flexible state-shifting." },
           { title: "What it does not prove", description: "No single marker or protocol can fully describe a person’s internal state or guarantee a product outcome." },
-          { title: "Neuvago boundary", description: "Neuvago can use this framework to educate about regulation routines while staying away from diagnostic or treatment claims." },
+          { title: "Product boundary", description: "Neuvago can use this framework to educate about regulation routines while staying away from diagnostic or treatment claims." },
         ]}
       />
 
@@ -634,7 +633,7 @@ export default function AutonomicRegulationResearchPage() {
               Quick answers
             </p>
             <h2 className="mt-4 text-3xl font-medium leading-tight tracking-[-0.03em] md:text-5xl">
-              What autonomic regulation means in the Neuvago research library
+              What autonomic regulation means in research
             </h2>
           </div>
 
@@ -650,7 +649,7 @@ export default function AutonomicRegulationResearchPage() {
         <div className="mx-auto grid max-w-7xl gap-14 px-6 py-20 md:px-10 md:py-24 lg:grid-cols-[1fr_0.95fr]">
           <div>
             <p className="text-sm uppercase tracking-[0.18em] text-[#7a756c]">
-              The system layer
+              Autonomic context
             </p>
 
             <h2 className="mt-4 max-w-3xl text-3xl font-medium leading-tight tracking-[-0.03em] md:text-5xl">
@@ -667,9 +666,9 @@ export default function AutonomicRegulationResearchPage() {
             </p>
 
             <p className="mt-6 max-w-2xl text-base leading-8 text-[#5f5a52]">
-              For Neuvago, the point is not to make users memorize physiology.
-              The point is to explain why stress, sleep, recovery, HRV, and
-              vagus nerve stimulation belong in the same knowledge system.
+              For readers, the practical value is understanding why stress, sleep,
+              recovery, HRV, and vagus nerve stimulation often appear in the
+              same physiology discussion.
             </p>
           </div>
 
@@ -688,7 +687,7 @@ export default function AutonomicRegulationResearchPage() {
               Research themes
             </p>
             <h2 className="mt-4 text-3xl font-medium leading-tight tracking-[-0.03em] md:text-5xl">
-              The topic connects physiology, measurement, stress, and VNS
+              The research connects physiology, measurement, stress, and VNS
               interpretation
             </h2>
           </div>
@@ -711,10 +710,9 @@ export default function AutonomicRegulationResearchPage() {
               A few anchor references help keep the topic grounded
             </h2>
             <p className="mt-6 max-w-2xl text-base leading-8 text-[#5f5a52] md:text-lg">
-              This page is not a final systematic review. It is a topic layer
-              that organizes important research directions and links out to
-              foundational sources that shape how autonomic regulation is
-              interpreted.
+              This overview is not a systematic review. It highlights selected
+              research directions and foundational sources that help explain
+              how autonomic regulation is interpreted.
             </p>
           </div>
 
@@ -768,10 +766,10 @@ export default function AutonomicRegulationResearchPage() {
             </p>
 
             <p className="mt-6 max-w-2xl text-base leading-8 text-[#5f5a52]">
-              That is why Neuvago should use HRV language carefully. It can help
-              explain stress load, recovery, and flexibility, but it should not
-              be used as a simplified promise that a device has created one
-              universal physiological outcome.
+              For Neuvago, HRV language needs the same caution. It can help explain
+              stress load, recovery, and flexibility, but it should not be used
+              as a simplified promise that a device has created one universal
+              physiological outcome.
             </p>
 
             <div className="mt-10 flex flex-wrap gap-4">
@@ -824,27 +822,25 @@ export default function AutonomicRegulationResearchPage() {
         <div className="mx-auto grid max-w-7xl gap-14 px-6 py-20 md:px-10 md:py-24 lg:grid-cols-[1fr_0.95fr]">
           <div>
             <p className="text-sm uppercase tracking-[0.18em] text-[#7a756c]">
-              Responsible Neuvago use
+              Responsible interpretation
             </p>
 
             <h2 className="mt-4 max-w-3xl text-3xl font-medium leading-tight tracking-[-0.03em] md:text-5xl">
-              This topic should make the site more trustworthy, not more
-              claim-heavy.
+              Autonomic-regulation context is useful only when it adds clarity without
+              expanding claims.
             </h2>
 
             <p className="mt-6 max-w-2xl text-base leading-8 text-[#5f5a52] md:text-lg">
-              Autonomic regulation is a powerful organizing concept because it
-              ties together the user’s lived experience with physiological
-              research. But it should stay educational. Neuvago should not use
-              it to imply diagnosis, treatment, prevention, cure, or guaranteed
+              Autonomic regulation connects lived experience with physiological research,
+              but the interpretation should stay educational. For Neuvago, it
+              does not imply diagnosis, treatment, prevention, cure, or guaranteed
               physiological change.
             </p>
 
             <p className="mt-6 max-w-2xl text-base leading-8 text-[#5f5a52]">
-              The strongest commercial role for this topic is trust. It helps
-              readers understand the science vocabulary, then move calmly into
-              how the Neuvago product and app are designed for guided wellness
-              routines.
+              Its practical value is helping readers understand the science vocabulary
+              before considering how the Neuvago device and app fit into
+              guided wellness routines.
             </p>
           </div>
 
@@ -860,11 +856,11 @@ export default function AutonomicRegulationResearchPage() {
         <div className="mx-auto max-w-7xl px-6 py-20 md:px-10 md:py-24">
           <div className="max-w-3xl">
             <p className="text-sm uppercase tracking-[0.18em] text-[#7a756c]">
-              Continue through the authority system
+              Continue through related topics
             </p>
             <h2 className="mt-4 text-3xl font-medium leading-tight tracking-[-0.03em] md:text-5xl">
-              Autonomic regulation connects the research library to Learn,
-              Conditions, and the product experience
+              Continue from autonomic regulation into related guides,
+              conditions, and practical use
             </h2>
           </div>
 
@@ -883,7 +879,7 @@ export default function AutonomicRegulationResearchPage() {
               Practical next steps
             </p>
             <h2 className="mt-4 text-3xl font-medium leading-tight tracking-[-0.03em] md:text-5xl">
-              Move from research context into how Neuvago is designed and used
+              See how Neuvago turns research context into guided everyday use
             </h2>
           </div>
 
@@ -918,10 +914,10 @@ export default function AutonomicRegulationResearchPage() {
         <div className="mx-auto max-w-7xl px-6 py-16 md:px-10 md:py-20">
           <div className="max-w-4xl border-t border-black/8 pt-8">
             <p className="text-sm uppercase tracking-[0.18em] text-[#7a756c]">
-              Topic note
+              Interpretation note
             </p>
             <p className="mt-4 max-w-3xl text-base leading-8 text-[#5f5a52] md:text-lg">
-              This page is educational and research-oriented. It is not medical
+              This material is educational and research-oriented. It is not medical
               advice and should not be used to diagnose, treat, prevent, or cure
               any condition. Autonomic regulation research can help explain the
               physiology behind stress, sleep, recovery, HRV, and VNS, but it

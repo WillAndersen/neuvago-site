@@ -163,7 +163,7 @@ const neuvagoPositioning = [
   {
     title: "Wellness support, not treatment claims",
     description:
-      "Neuvago should be described as support for guided wellness routines, not as diagnosis, treatment, prevention, or cure of medical conditions.",
+      "Neuvago is described as support for guided wellness routines, not as diagnosis, treatment, prevention, or cure of medical conditions.",
   },
   {
     title: "Guided use, not self-experimentation",
@@ -178,7 +178,7 @@ const neuvagoPositioning = [
   {
     title: "Visible safety boundaries",
     description:
-      "The site should keep intended use, medical disclaimers, regulatory status, side effects, and product safety information easy to find from research and product pages.",
+      "Intended use, medical disclaimers, regulatory status, side effects, and product safety information should remain easy to find from research and product pages.",
   },
 ];
 
@@ -196,7 +196,7 @@ const responsibleQuestions = [
   {
     title: "What adverse events were reported?",
     description:
-      "A useful safety page should mention adverse events clearly rather than only saying that a method was well tolerated.",
+      "Look for clear adverse-event reporting rather than relying only on a statement that a method was well tolerated.",
   },
   {
     title: "What does the study not prove?",
@@ -595,7 +595,7 @@ export default function SafetyAndTolerabilityResearchPage() {
         items={[
           { title: "What research suggests", description: "Many tVNS and taVNS studies discuss tolerability and adverse-event reporting, often with mild local effects in studied contexts." },
           { title: "What it does not prove", description: "Research does not prove universal safety for every device, setting, placement, population, or unsupervised use case." },
-          { title: "Neuvago boundary", description: "Neuvago should keep safety guidance clear, conservative, and connected to intended use rather than leaning on broad claims." },
+          { title: "Neuvago boundary", description: "Neuvago keeps safety guidance clear, conservative, and connected to intended use rather than leaning on broad claims." },
         ]}
       />
 
@@ -775,12 +775,12 @@ export default function SafetyAndTolerabilityResearchPage() {
         <div className="mx-auto grid max-w-7xl gap-14 px-6 py-24 md:px-10 md:py-28 lg:grid-cols-[1fr_0.95fr] lg:items-start">
           <div>
             <p className="text-sm uppercase tracking-[0.18em] text-[#7a756c]">
-              How Neuvago should use this topic
+              What this means for Neuvago
             </p>
 
             <h2 className="mt-4 max-w-3xl text-3xl font-medium leading-tight tracking-[-0.03em] md:text-5xl">
-              The safety page should support trust, not make the product sound
-              clinical
+              Clear safety information supports trust without making a wellness product
+              sound clinical
             </h2>
 
             <p className="mt-6 max-w-2xl text-base leading-8 text-[#5f5a52] md:text-lg">
@@ -810,7 +810,7 @@ export default function SafetyAndTolerabilityResearchPage() {
 
           <div className="rounded-[2rem] border border-black/5 bg-white/60 p-8 shadow-[0_12px_40px_rgba(31,31,28,0.04)] md:p-10">
             <p className="text-sm uppercase tracking-[0.16em] text-[#8a847b]">
-              Neuvago positioning
+              Neuvago boundaries
             </p>
 
             <div className="mt-8 space-y-5">

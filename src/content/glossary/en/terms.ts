@@ -2186,7 +2186,7 @@ export const englishGlossaryTerms = [
     "sourceLinks": [
       {
         "title": "Safety and tolerability review",
-        "description": "A topic layer that explains event reporting, populations, and uncertainty across studies.",
+        "description": "A research overview that explains event reporting, populations, and uncertainty across studies.",
         "href": "/research/topics/safety-and-tolerability",
         "label": "Review safety synthesis"
       },

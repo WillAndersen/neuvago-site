@@ -167,7 +167,7 @@ const neuvagoUse = [
   {
     title: "Use tVNS as category education",
     description:
-      "This page gives Neuvago a precise place to explain the research category behind non-invasive stimulation without overloading product pages with technical nuance.",
+      "This research context helps separate non-invasive stimulation methods without overloading product information with technical detail.",
   },
   {
     title: "Keep product language conservative",
@@ -177,7 +177,7 @@ const neuvagoUse = [
   {
     title: "Link safety and method together",
     description:
-      "A method page should always connect to safety and tolerability, because protocol details and adverse-event interpretation belong in the same trust system.",
+      "Method details should be read together with safety and tolerability, because protocol choices and adverse-event interpretation belong in the same evidence context.",
   },
   {
     title: "Turn complexity into clarity",
@@ -500,10 +500,9 @@ export default function TranscutaneousVagusNerveStimulationResearchPage() {
             </p>
 
             <p className="mt-5 max-w-2xl text-base leading-8 text-[#5f5a52]">
-              This page explains the research vocabulary around tVNS and taVNS,
-              why protocol details matter, and how Neuvago should use this
-              evidence layer responsibly without turning every study into a
-              product claim.
+              This topic explains the research vocabulary around tVNS and taVNS, why
+              protocol details matter, and why category evidence should remain
+              separate from product-specific claims.
             </p>
 
             <div className="mt-10 flex flex-wrap gap-4">
@@ -658,8 +657,8 @@ export default function TranscutaneousVagusNerveStimulationResearchPage() {
             </h2>
 
             <p className="mt-6 max-w-2xl text-base leading-8 text-[#5f5a52] md:text-lg">
-              A strong research page should reduce acronym confusion. tVNS,
-              taVNS, nVNS, auricular stimulation, and cervical stimulation are
+              A useful first step is to reduce acronym confusion. tVNS, taVNS, nVNS,
+              auricular stimulation, and cervical stimulation are
               related, but they do not all mean the same thing.
             </p>
           </div>
@@ -781,26 +780,22 @@ export default function TranscutaneousVagusNerveStimulationResearchPage() {
         <div className="mx-auto grid max-w-7xl gap-14 px-6 py-24 md:px-10 md:py-28 lg:grid-cols-[1fr_0.95fr] lg:items-start">
           <div>
             <p className="text-sm uppercase tracking-[0.18em] text-[#7a756c]">
-              How Neuvago should use this topic
+              From research context to product understanding
             </p>
 
             <h2 className="mt-4 max-w-3xl text-3xl font-medium leading-tight tracking-[-0.03em] md:text-5xl">
-              This page should become the method bridge between education,
-              safety, and product understanding
+              Method details connect education, safety, and product understanding
             </h2>
 
             <p className="mt-6 max-w-2xl text-base leading-8 text-[#5f5a52] md:text-lg">
-              People searching for transcutaneous vagus nerve stimulation often
-              want more than a definition. They want to know whether tVNS is
-              different from implanted VNS, whether taVNS is the same thing,
-              what the ear has to do with the vagus nerve, and whether consumer
-              devices are making claims responsibly.
+              Useful questions go beyond a definition: how tVNS differs from implanted
+              VNS, whether taVNS is the same thing, what the ear has to do with
+              the vagus nerve, and how consumer-device claims should be interpreted.
             </p>
 
             <p className="mt-6 max-w-2xl text-base leading-8 text-[#5f5a52]">
-              That makes this page strategically important. It helps Neuvago own
-              the research vocabulary while keeping the product voice calm,
-              premium, and non-clinical.
+              Keeping those distinctions visible makes the research easier to understand
+              without turning category language into a product promise.
             </p>
 
             <div className="mt-10 flex flex-wrap gap-4">
@@ -822,7 +817,7 @@ export default function TranscutaneousVagusNerveStimulationResearchPage() {
 
           <div className="rounded-[2rem] border border-black/5 bg-white/60 p-8 shadow-[0_12px_40px_rgba(31,31,28,0.04)] md:p-10">
             <p className="text-sm uppercase tracking-[0.16em] text-[#8a847b]">
-              Neuvago use
+              What this means for Neuvago
             </p>
 
             <div className="mt-8 space-y-5">

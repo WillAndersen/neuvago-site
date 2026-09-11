@@ -8,7 +8,7 @@ import { authorityEditorialDates } from "@/lib/seo/editorial-dates";
 const title =
   "Vagus Nerve Stimulation (VNS) | How It Works and Types | Neuvago";
 const description =
-  "Learn what VNS is, how implanted and non-invasive approaches differ, and why method, evidence, safety, and intended use matter.";
+  "Learn what VNS is, how implanted, transcutaneous, and auricular approaches differ, how to read evidence, and why device, protocol, safety, and intended use matter.";
 const path = "/learn/vagus-nerve-stimulation";
 
 export const metadata: Metadata = {
@@ -41,7 +41,7 @@ const keyPoints = [
   {
     title: "VNS means using stimulation to influence vagal pathways",
     description:
-      "Vagus nerve stimulation is a broad term. It can describe implanted clinical systems, non-invasive approaches, and research methods that use gentle electrical stimulation to engage pathways associated with the vagus nerve.",
+      "Vagus nerve stimulation is a broad term. It can describe implanted clinical systems, transcutaneous approaches, and research methods that use controlled electrical stimulation to influence pathways associated with the vagus nerve.",
   },
   {
     title: "The method matters",
@@ -51,7 +51,7 @@ const keyPoints = [
   {
     title: "For Neuvago, the focus is non-invasive daily regulation",
     description:
-      "Neuvago is positioned around short, app-guided, non-invasive sessions that support a calmer nervous system routine. It is not framed as diagnosis, treatment, or a substitute for medical care.",
+      "Neuvago uses short, app-guided, non-invasive sessions to support a calmer nervous system routine. It is not framed as diagnosis, treatment, or a substitute for medical care.",
   },
 ];
 
@@ -84,9 +84,9 @@ const vnsTypes = [
 
 const whyItMatters = [
   {
-    title: "It gives the product category a clearer name",
+    title: "It separates the category before products are compared",
     description:
-      "People searching for a vagus nerve stimulator often want to understand the category before they compare products. This page gives that search intent a calm, accurate starting point.",
+      "A vagus nerve stimulator can refer to very different systems. Understanding delivery route, intended use, protocol, and evidence first makes later product comparison more meaningful.",
   },
   {
     title: "It connects education to mechanism",
@@ -96,7 +96,7 @@ const whyItMatters = [
   {
     title: "It protects trust by setting boundaries",
     description:
-      "Good VNS education should explain differences between clinical treatment, research, and wellness support. That makes the category more credible, not less compelling.",
+      "Understanding the differences between clinical treatment, research, and wellness support makes the VNS category clearer and easier to evaluate.",
   },
 ];
 
@@ -123,6 +123,84 @@ const mechanismCards = [
   },
 ];
 
+
+const evidenceLanes = [
+  {
+    title: "Implanted VNS",
+    description:
+      "Implanted VNS is a regulated clinical-device category with surgery, programming, follow-up, device-specific labeling, and a distinct risk context. Evidence from an implanted system stays with that system and indication.",
+  },
+  {
+    title: "Transcutaneous VNS",
+    description:
+      "tVNS uses external electrodes and includes more than one access site and protocol. Ear-based and neck-based approaches should be interpreted by device, placement, parameters, population, comparator, and outcome.",
+  },
+  {
+    title: "Auricular taVNS",
+    description:
+      "taVNS is the ear-based branch of transcutaneous VNS. The literature includes neuroimaging, physiological, safety, and clinical studies, but there is no single universal ear site, dose, or outcome that defines the whole field.",
+  },
+  {
+    title: "Product-specific evidence",
+    description:
+      "A category study does not become evidence for a specific consumer product automatically. Product claims need evidence that actually matches the device, protocol, intended use, and population being discussed.",
+  },
+];
+
+const studyChecklist = [
+  {
+    title: "1. Which VNS method was used?",
+    description:
+      "Start with implanted, cervical transcutaneous, or auricular transcutaneous stimulation. The route and hardware define the evidence lane.",
+  },
+  {
+    title: "2. Where and how was stimulation delivered?",
+    description:
+      "Look for site, electrode design, waveform, frequency, pulse width, intensity, duty cycle, session length, and total exposure.",
+  },
+  {
+    title: "3. Who was studied?",
+    description:
+      "Healthy volunteers, a specific clinical population, and everyday wellness users are not interchangeable populations.",
+  },
+  {
+    title: "4. What was the comparator and outcome?",
+    description:
+      "Sham design, control condition, blinding, follow-up period, and whether the outcome was subjective, physiological, imaging-based, or clinical all affect interpretation.",
+  },
+  {
+    title: "5. What can transfer to this product?",
+    description:
+      "Only evidence that matches the relevant device and intended use should support product-level claims. General VNS evidence is useful context, not a shortcut to product efficacy.",
+  },
+];
+
+const externalReferences = [
+  {
+    title: "VNS Therapy System — current FDA PMA labeling record",
+    source: "U.S. FDA, PMA P970003/S240",
+    href: "https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpma/pma.cfm?ID=P970003S240",
+  },
+  {
+    title:
+      "Critical Review of Transcutaneous Vagus Nerve Stimulation: Challenges for Translation to Clinical Practice",
+    source: "Yap et al., Frontiers in Neuroscience, 2020",
+    href: "https://pubmed.ncbi.nlm.nih.gov/32410932/",
+  },
+  {
+    title:
+      "International consensus based review and recommendations for minimum reporting standards in tVNS research",
+    source: "Farmer et al., Frontiers in Human Neuroscience, 2021",
+    href: "https://pubmed.ncbi.nlm.nih.gov/33854421/",
+  },
+  {
+    title:
+      "Safety of transcutaneous auricular vagus nerve stimulation: a systematic review and meta-analysis",
+    source: "Kim et al., Scientific Reports, 2022",
+    href: "https://pubmed.ncbi.nlm.nih.gov/36543841/",
+  },
+];
+
 const neuvagoPrinciples = [
   {
     title: "Non-invasive by design",
@@ -137,7 +215,7 @@ const neuvagoPrinciples = [
   {
     title: "Wellness support, not medical treatment",
     description:
-      "The strongest trust position is conservative: Neuvago can educate and support daily regulation routines without presenting itself as a treatment for disease or a replacement for clinical care.",
+      "Neuvago stays within clear wellness boundaries: it can educate and support daily regulation routines without presenting itself as a treatment for disease or a replacement for clinical care.",
   },
 ];
 
@@ -264,7 +342,7 @@ const nextPaths = [
   {
     title: "Explore the product",
     description:
-      "Go from category education to the device and app system designed for calm, repeatable, non-invasive support.",
+      "Move from the VNS overview to the device and app system designed for calm, repeatable, non-invasive support.",
     href: "/product",
     linkLabel: "Explore the product",
   },
@@ -318,6 +396,31 @@ function LinkCard({
   );
 }
 
+
+function ExternalReferenceCard({
+  title,
+  source,
+  href,
+}: {
+  title: string;
+  source: string;
+  href: string;
+}) {
+  return (
+    <article className="rounded-[1.5rem] border border-black/5 bg-white/60 p-6 shadow-[0_12px_40px_rgba(31,31,28,0.04)]">
+      <p className="text-xs uppercase tracking-[0.16em] text-[#8a847b]">
+        {source}
+      </p>
+      <h3 className="mt-3 text-xl font-medium leading-tight text-[#1f1f1c]">
+        {title}
+      </h3>
+      <a href={href} target="_blank" rel="noreferrer" className="mt-6 inline-flex text-sm font-medium text-[#1f1f1c] underline-offset-4 transition hover:underline">
+        Open source
+      </a>
+    </article>
+  );
+}
+
 export default function VagusNerveStimulationPage() {
   const structuredData = buildAuthorityPageStructuredData({
     title,
@@ -354,7 +457,7 @@ export default function VagusNerveStimulationPage() {
             </p>
 
             <h1 className="text-4xl font-medium leading-[1.05] tracking-[-0.03em] md:text-6xl lg:text-7xl">
-              Vagus nerve stimulation (VNS), explained clearly
+              Vagus nerve stimulation (VNS): types, methods, evidence, and limits
             </h1>
 
             <p className="mt-6 max-w-2xl text-base leading-8 text-[#5f5a52] md:text-lg">
@@ -392,7 +495,7 @@ export default function VagusNerveStimulationPage() {
                   <div className="flex h-full flex-col justify-between rounded-[1.25rem] border border-white/60 bg-white/40 p-6">
                     <div>
                       <p className="text-xs uppercase tracking-[0.16em] text-[#8a847b]">
-                        Category pillar
+                        VNS overview
                       </p>
                       <h2 className="mt-3 text-2xl font-medium text-[#1f1f1c]">
                         The bridge between vagus nerve education, research, and
@@ -525,8 +628,8 @@ export default function VagusNerveStimulationPage() {
             </h2>
 
             <p className="mt-6 max-w-2xl text-base leading-8 text-[#5f5a52] md:text-lg">
-              Search results often compress the category into a single phrase:
-              vagus nerve stimulation. A better explanation separates the main
+              The phrase vagus nerve stimulation can hide important differences.
+              A better explanation separates the main
               branches so users do not confuse clinical treatment, research, and
               wellness support.
             </p>
@@ -557,7 +660,7 @@ export default function VagusNerveStimulationPage() {
         <div className="mx-auto grid max-w-7xl gap-14 px-6 py-24 md:px-10 md:py-28 lg:grid-cols-[0.95fr_1.05fr] lg:items-start">
           <div className="rounded-[2rem] border border-black/5 bg-white/60 p-8 shadow-[0_12px_40px_rgba(31,31,28,0.04)] md:p-10">
             <p className="text-sm uppercase tracking-[0.16em] text-[#8a847b]">
-              Why this page matters
+              Why this distinction matters
             </p>
 
             <div className="mt-8 space-y-5">
@@ -578,19 +681,20 @@ export default function VagusNerveStimulationPage() {
             </h2>
 
             <p className="mt-6 max-w-2xl text-base leading-8 text-[#5f5a52] md:text-lg">
-              Many people arrive at this topic after searching for stress,
-              sleep, recovery, vagal tone, or nervous system regulation. Others
-              search directly for a vagus nerve stimulator because they have
-              already heard that stimulation may be a practical way to support
-              vagal pathways.
+              This topic often connects with questions about stress, sleep, recovery,
+              vagal tone, or nervous system regulation. Other readers
+              come to the topic while comparing vagus nerve stimulators because
+              they have already heard that stimulation may be a practical way
+              to support vagal pathways.
             </p>
 
             <p className="mt-6 max-w-2xl text-base leading-8 text-[#5f5a52]">
-              This page is designed to meet both kinds of intent. It explains
-              the category in plain language, connects it to the research layer,
-              and then shows where a non-invasive, app-guided system like
-              Neuvago fits without overstating what a wellness device should
-              claim.
+              People come to VNS from different starting points. Some want to
+              understand stress, sleep, recovery, vagal tone, or nervous system
+              regulation; others are comparing vagus nerve stimulators. In both
+              cases, the useful next step is to understand the category, connect
+              it to the research, and see where a non-invasive, app-guided system
+              like Neuvago fits without overstating what a wellness device can claim.
             </p>
 
             <div className="mt-10 flex flex-wrap gap-4">
@@ -640,6 +744,32 @@ export default function VagusNerveStimulationPage() {
           </div>
         </div>
       </section>
+      <section className="border-b border-black/5 bg-[#f7f4ef]">
+        <div className="mx-auto max-w-7xl px-6 py-24 md:px-10 md:py-28">
+          <div className="max-w-3xl">
+            <p className="text-sm uppercase tracking-[0.18em] text-[#7a756c]">Evidence map</p>
+            <h2 className="mt-4 max-w-4xl text-3xl font-medium leading-tight tracking-[-0.03em] md:text-5xl">VNS evidence belongs to different lanes, not one shared bucket</h2>
+            <p className="mt-6 max-w-2xl text-base leading-8 text-[#5f5a52] md:text-lg">
+              Implanted VNS, cervical tVNS, and auricular taVNS share a family name, but they do not share one device, one protocol, one intended use, or one evidence base. Start by identifying the method before interpreting a result.
+            </p>
+          </div>
+          <div className="mt-14 grid gap-6 md:grid-cols-2">{evidenceLanes.map((item) => (<TextCard key={item.title} {...item} />))}</div>
+        </div>
+      </section>
+
+      <section className="border-b border-black/5 bg-[#f2eee8]">
+        <div className="mx-auto grid max-w-7xl gap-14 px-6 py-24 md:px-10 md:py-28 lg:grid-cols-[0.85fr_1.15fr] lg:items-start">
+          <div>
+            <p className="text-sm uppercase tracking-[0.18em] text-[#7a756c]">Read the evidence</p>
+            <h2 className="mt-4 max-w-3xl text-3xl font-medium leading-tight tracking-[-0.03em] md:text-5xl">Five questions make a VNS study much easier to interpret</h2>
+            <p className="mt-6 max-w-2xl text-base leading-8 text-[#5f5a52] md:text-lg">
+              The name VNS is not enough. Method, dose, population, comparator, and outcome determine what a study can support — and whether any part of it is relevant to a specific product.
+            </p>
+          </div>
+          <div className="grid gap-6">{studyChecklist.map((item) => (<TextCard key={item.title} {...item} />))}</div>
+        </div>
+      </section>
+
 
       <section className="border-b border-black/5 bg-[#f2eee8]">
         <div className="mx-auto grid max-w-7xl gap-14 px-6 py-24 md:px-10 md:py-28 lg:grid-cols-[1fr_0.95fr] lg:items-start">
@@ -654,18 +784,16 @@ export default function VagusNerveStimulationPage() {
             </h2>
 
             <p className="mt-6 max-w-2xl text-base leading-8 text-[#5f5a52] md:text-lg">
-              Neuvago’s role is not to make the VNS category feel more dramatic.
-              It is to make it easier to use responsibly: short sessions,
-              comfortable stimulation, app guidance, and a calmer routine that
-              fits into real life.
+              Neuvago focuses on practical, responsible use rather than dramatic
+              claims: short sessions, comfortable stimulation, app guidance,
+              and a calmer routine that fits into real life.
             </p>
 
             <p className="mt-6 max-w-2xl text-base leading-8 text-[#5f5a52]">
-              This is also why Neuvago needs both a product layer and an
-              education layer. The product explains the device and app. The
-              Learn and Research libraries explain the larger category, the
-              underlying nervous system concepts, and the boundaries around what
-              should and should not be claimed.
+              The device and app explain how sessions work. The Learn and Research
+              libraries provide the broader VNS context, the underlying nervous
+              system concepts, and the boundaries around what the evidence can
+              and cannot support.
             </p>
 
             <div className="mt-10 flex flex-wrap gap-4">
@@ -736,15 +864,14 @@ export default function VagusNerveStimulationPage() {
             <p className="mt-6 max-w-2xl text-base leading-8 text-[#5f5a52] md:text-lg">
               Vagus nerve stimulation is a serious research and clinical field.
               That does not mean every non-invasive device has the same evidence
-              base or the same intended use. For Neuvago, the right tone is
-              calm, clear, and conservative.
+              base or the same intended use. For Neuvago, that means calm, clear,
+              and conservative communication.
             </p>
 
             <p className="mt-6 max-w-2xl text-base leading-8 text-[#5f5a52]">
-              This distinction helps users make better decisions. It also keeps
-              the brand away from exaggerated medical promises and toward a more
-              durable form of trust: explain the category well, make the product
-              easy to understand, and be honest about boundaries.
+              This distinction helps users make better decisions by separating
+              research context from product-specific evidence, keeping the product
+              easy to understand, and making the boundaries explicit.
             </p>
 
             <div className="mt-10 flex flex-wrap gap-4">
@@ -765,6 +892,17 @@ export default function VagusNerveStimulationPage() {
           </div>
         </div>
       </section>
+      <section className="border-b border-black/5 bg-[#f2eee8]">
+        <div className="mx-auto max-w-7xl px-6 py-24 md:px-10 md:py-28">
+          <div className="max-w-3xl">
+            <p className="text-sm uppercase tracking-[0.18em] text-[#7a756c]">Selected references</p>
+            <h2 className="mt-4 text-3xl font-medium leading-tight tracking-[-0.03em] md:text-5xl">Start with official labeling, method reviews, reporting standards, and safety evidence</h2>
+            <p className="mt-6 max-w-2xl text-base leading-8 text-[#5f5a52] md:text-lg">These sources help separate implanted clinical VNS from transcutaneous methods and show why protocol details and product-specific evidence boundaries matter.</p>
+          </div>
+          <div className="mt-14 grid gap-6 md:grid-cols-2 xl:grid-cols-4">{externalReferences.map((item) => (<ExternalReferenceCard key={item.title} {...item} />))}</div>
+        </div>
+      </section>
+
 
       <section className="border-b border-black/5 bg-[#f2eee8]">
         <div className="mx-auto max-w-7xl px-6 py-24 md:px-10 md:py-28">
@@ -796,7 +934,7 @@ export default function VagusNerveStimulationPage() {
               </p>
 
               <h2 className="mt-4 text-3xl font-medium leading-tight tracking-[-0.03em] md:text-5xl">
-                From category education to the Neuvago system
+                From VNS understanding to the Neuvago system
               </h2>
 
               <p className="mt-6 max-w-2xl text-base leading-8 text-[#5f5a52] md:text-lg">
@@ -827,7 +965,7 @@ export default function VagusNerveStimulationPage() {
             </div>
             <div className="space-y-5 text-base leading-8 text-[#5f5a52]">
               <p>Medical use belongs to specific regulated products, indications and jurisdictions. An implanted-device listing does not give every stimulator the same indication, and evidence from one system or protocol does not automatically become evidence for Neuvago or another device.</p>
-              <p>The broader methods pillar separates electrical VNS from breathing, movement, relaxation, sound and touch. Those practices may influence experience or autonomic measures without becoming defined electrical VNS. This page remains the owner of the electrical-VNS category.</p>
+              <p>Electrical VNS should be kept distinct from breathing, movement, relaxation, sound, and touch. Those practices may influence experience or autonomic measures without becoming defined electrical VNS.</p>
               <p><Link href="/learn/how-to-stimulate-the-vagus-nerve" className="font-medium underline underline-offset-4">Explore all stimulation-method categories and their evidence limits</Link></p>
             </div>
           </div>

@@ -367,7 +367,7 @@ export const hverdagsuroConditionPage = {
           title: "Velværeverktøy kommer etter sikkerhet og kontekst",
           paragraphs: [
             "Den primære veien videre er informasjon om hvordan Neuvago fungerer. Kjøpsguiden kan deretter brukes for å vurdere metode, tiltenkt bruk, dokumentasjon og praktiske spørsmål.",
-            "Denne piloten lenker ikke direkte til produktsiden og sporer ingen av handlingene på siden.",
+            "Du velger selv om du vil gå videre til mer informasjon; hovedmålet her er å gi kontekst, vurderingspunkter og tydelige neste steg.",
           ],
         },
       ],

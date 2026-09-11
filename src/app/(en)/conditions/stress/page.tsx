@@ -148,7 +148,7 @@ const stressRoutineSteps = [
   {
     title: "Keep safety boundaries visible",
     description:
-      "Because stress is health-adjacent, the page should keep clear boundaries: wellness support, not diagnosis, treatment, or a substitute for medical care.",
+      "Because stress is health-adjacent, the explanation should keep clear boundaries: wellness support, not diagnosis, treatment, or a substitute for medical care.",
   },
 ]
 
@@ -295,14 +295,14 @@ export default function StressPage() {
       <AuthorityVisualSection
         eyebrow="Everyday stress visual"
         title="Stress support should feel like a realistic pause"
-        description="The stress pathway is strongest when it points from everyday activation toward education, research context, and a repeatable guided routine."
+        description="A useful stress pathway moves from everyday activation toward education, research context, and a repeatable guided routine."
         image={{ src: "/images/neuvago/stress-daytime-pause-desktop.webp", alt: "Neuvago device and guided app arranged for a calm daytime pause routine." }}
       />
 
       <ConditionRoutinePathway
         eyebrow="Stress pathway"
         title="From activation to a repeatable pause"
-        description="The stress page should feel practical and human: recognize activation, understand the autonomic context, then move toward a short guided routine without making treatment claims."
+        description="A practical stress explanation starts with recognizing activation, adds autonomic context, and then points toward a short guided routine without making treatment claims."
         image={{ src: "/images/neuvago/stress-daytime-pause-desktop.webp", alt: "Neuvago device and app arranged for a calm daytime pause routine." }}
         cards={[
           { title: "Recognize activation", description: "Name the pattern: tension, urgency, shallow recovery, or a body that stays on.", href: "/learn/why-your-body-feels-stuck-in-stress", linkLabel: "Understand stuck stress" },
@@ -455,7 +455,7 @@ export default function StressPage() {
 
             <div className="mt-8 rounded-2xl bg-[#e9e1d6] p-5">
               <p className="text-sm font-medium text-[#1f1f1c]">
-                Stress works best as an entry point into the broader learning system
+                Stress is often a useful starting point for understanding regulation and recovery
               </p>
               <p className="mt-2 text-sm leading-7 text-[#5f5a52]">
                 The next step is often regulation, recovery, calming, or a clearer explanation of what the body is still carrying.
@@ -465,23 +465,23 @@ export default function StressPage() {
 
           <div>
             <p className="text-sm uppercase tracking-[0.18em] text-[#7a756c]">
-              Why people search for stress
+              When stress stays in the body
             </p>
 
             <h2 className="mt-4 max-w-3xl text-3xl font-medium leading-tight tracking-[-0.03em] md:text-5xl">
-              Most people are not searching for a definition. They are trying to understand why stress feels so physical, so persistent, or so hard to recover from.
+              Stress can feel physical, persistent, and hard to recover from even after the pressure changes.
             </h2>
 
             <p className="mt-6 max-w-2xl text-base leading-8 text-[#5f5a52] md:text-lg">
-              Stress searches are often really searches for explanation: why the
-              body stays activated, why sleep becomes lighter, why recovery feels
-              thinner, and why ordinary life starts to feel harder to carry.
+              Common questions are often body-based: why the body stays activated, why
+              sleep becomes lighter, why recovery feels thinner, and why ordinary
+              life starts to feel harder to carry.
             </p>
 
             <p className="mt-6 max-w-2xl text-base leading-8 text-[#5f5a52]">
-              That is why stress pages become much stronger when they connect not
-              only to the condition itself, but to the larger frameworks that
-              explain how the system returns, restores, and adapts over time.
+              Stress becomes easier to understand when it is connected to the larger
+              frameworks that explain how the system returns, restores, and
+              adapts over time.
             </p>
 
             <div className="mt-10 flex flex-wrap gap-4">

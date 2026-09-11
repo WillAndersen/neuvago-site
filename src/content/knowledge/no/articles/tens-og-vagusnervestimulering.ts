@@ -300,7 +300,7 @@ export const tensOgVagusnervestimuleringArticle = {
         },
         {
           "type": "paragraph",
-          "text": "Denne siden eier dermed ett avgrenset spørsmål: forskjellen mellom TENS og VNS. Den forsøker ikke samtidig å være en behandlingsguide, en produktvurdering eller en komplett anatomisk gjennomgang. Bruk lenkene til det spørsmålet du faktisk trenger svar på, fremfor å tolke alle temaene som én samlet effektpåstand."
+          "text": "Avgrensningen her er forskjellen mellom TENS og VNS. Artikkelen er ikke en behandlingsguide, en produktvurdering eller en komplett anatomisk gjennomgang. Bruk lenkene til det spørsmålet du faktisk trenger svar på, fremfor å tolke alle temaene som én samlet effektpåstand."
         },
         {
           "type": "actions",

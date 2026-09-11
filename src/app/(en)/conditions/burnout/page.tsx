@@ -346,7 +346,7 @@ export default function BurnoutPage() {
 
             <div className="mt-8 rounded-2xl bg-[#e9e1d6] p-5">
               <p className="text-sm font-medium text-[#1f1f1c]">
-                Burnout works best as an entry point into the broader learning system
+                Burnout makes more sense alongside recovery, sleep, and capacity
               </p>
               <p className="mt-2 text-sm leading-7 text-[#5f5a52]">
                 The next step is often recovery, emotional capacity, sleep, or a clearer explanation of what the system has been carrying for too long.
@@ -356,24 +356,22 @@ export default function BurnoutPage() {
 
           <div>
             <p className="text-sm uppercase tracking-[0.18em] text-[#7a756c]">
-              Why people search for burnout
+              When depletion keeps building
             </p>
 
             <h2 className="mt-4 max-w-3xl text-3xl font-medium leading-tight tracking-[-0.03em] md:text-5xl">
-              Most people are not searching only for a label. They are trying to understand why the system feels so depleted, thin, or hard to rebuild.
+              Burnout can feel like more than tiredness: the system may feel depleted, thin, or hard to rebuild.
             </h2>
 
             <p className="mt-6 max-w-2xl text-base leading-8 text-[#5f5a52] md:text-lg">
-              Burnout searches are often really searches for explanation: why
-              rest no longer restores properly, why capacity feels lower, why
-              emotions feel thinner, and why the body seems slower to recover
-              from ordinary life than before.
+              The practical questions often center on why rest no longer restores
+              properly, why capacity feels lower, why emotions feel thinner, and
+              why the body seems slower to recover from ordinary life than before.
             </p>
 
             <p className="mt-6 max-w-2xl text-base leading-8 text-[#5f5a52]">
-              That is why burnout pages become much stronger when they connect
-              not only to exhaustion itself, but to the larger body-based logic
-              of recovery, nervous system load, sleep, and restoration quality.
+              Burnout becomes easier to understand when exhaustion is considered
+              alongside recovery, nervous system load, sleep, and restoration quality.
             </p>
 
             <div className="mt-10 flex flex-wrap gap-4">

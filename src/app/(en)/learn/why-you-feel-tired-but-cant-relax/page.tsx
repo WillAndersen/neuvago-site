@@ -188,9 +188,8 @@ export default function WhyYouFeelTiredButCantRelaxPage() {
             <p className="mt-6 max-w-2xl text-lg leading-8 text-[#5f5a52] md:text-xl">
               Sometimes the body feels exhausted, but still unable to soften.
               You may want sleep, relief, or rest, yet still feel internally
-              alert, mentally busy, or subtly “on.” This page is designed to
-              explain that contradiction and why fatigue and settling do not
-              always arrive together.
+              alert, mentally busy, or subtly “on.” That contradiction can happen
+              because fatigue and settling do not always arrive together.
             </p>
 
             <div className="mt-10 flex flex-wrap gap-4">
@@ -313,11 +312,11 @@ export default function WhyYouFeelTiredButCantRelaxPage() {
         <div className="mx-auto max-w-7xl px-6 py-24 md:px-10 lg:px-12">
           <div className="flex max-w-3xl flex-col">
             <p className="text-sm font-semibold uppercase tracking-[0.18em] text-[#7a756c]">
-              Why people search for this
+              When tiredness does not bring relief
             </p>
             <h2 className="mt-4 text-3xl font-semibold tracking-[-0.03em] md:text-4xl">
-              Usually, people are not searching for a definition. They are trying
-              to understand a contradiction they live with regularly.
+              The contradiction is simple to describe but frustrating to live with: you
+              can feel exhausted without feeling able to relax.
             </h2>
             <p className="mt-6 text-lg leading-8 text-[#5f5a52]">
               The question is often not just “why am I tired?” It is “why does

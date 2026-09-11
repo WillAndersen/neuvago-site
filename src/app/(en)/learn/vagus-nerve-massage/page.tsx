@@ -182,12 +182,12 @@ const sections: readonly PageSection[] = [
   },
   {
     "id": "further-reading-and-sources",
-    "eyebrow": "Use the right content owner",
+    "eyebrow": "Scope and further reading",
     "title": "Further reading, source use and what this page does not do",
     "paragraphs": [
-      "This page owns the question of what “vagus nerve massage” means, what tissue is actually touched, what massage studies can measure and which neck boundaries are essential. It is not a complete overview of every way to influence the vagus nerve and not an instruction page for electrical stimulation.",
+      "This guide focuses on what “vagus nerve massage” means, what tissue is actually touched, what massage studies can measure, and which neck boundaries are essential. It is not a complete overview of every way to influence the vagus nerve and not an instruction page for electrical stimulation.",
       "Use the vagus-nerve foundation page for anatomy and function. Use the auricular VNS guide for the distinction between manual ear touch and electrical taVNS. The methods overview places massage alongside breathing and defined stimulation categories without treating them as equivalent.",
-      "The breathing guide owns slow breathing, exhalation ratios, 4-7-8 and RespHRV. The safety research library provides broader context for electrical VNS. Keeping these page jobs separate reduces the risk of borrowing evidence from one method as proof for another.",
+      "The breathing guide covers slow breathing, exhalation ratios, 4-7-8, and RespHRV. The safety research library provides broader context for electrical VNS. Keeping the methods separate reduces the risk of borrowing evidence from one method as proof for another.",
       "The reader-visible sources below cover cervical anatomy, clinical carotid sinus massage, vascular safety, outer-ear innervation, massage outcomes, HRV interpretation and auricular acupressure. They support a cautious bounded article—not a claim that one massage recipe treats disease or documents Neuvago."
     ]
   }

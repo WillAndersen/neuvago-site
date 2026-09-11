@@ -183,8 +183,8 @@ export default function SignsOfADysregulatedNervousSystemPage() {
               A dysregulated nervous system can show up in many ways: stress
               that stays high, trouble winding down, poor sleep, overstimulation,
               low resilience, anxiety, shutdown, or a body that does not easily
-              return to steadier ground. This page is designed to make those
-              signs easier to recognize in everyday life.
+              return to steadier ground. These signs can be easier to recognize in
+              everyday life when they are considered together.
             </p>
 
             <div className="mt-10 flex flex-wrap gap-4">
@@ -386,19 +386,18 @@ export default function SignsOfADysregulatedNervousSystemPage() {
           <div className="flex flex-col gap-6 md:flex-row md:items-end md:justify-between">
             <div className="max-w-3xl">
               <p className="text-sm uppercase tracking-[0.18em] text-[#7a756c]">
-                Why people search for this
+                When several signs show up together
               </p>
 
               <h2 className="mt-4 text-3xl font-medium leading-tight tracking-[-0.03em] md:text-5xl">
-                Most people are not searching for a diagnosis first. They are
-                trying to understand why so many things feel “off” at the same time.
+                Several changes can feel confusing when stress, sleep, anxiety, shutdown,
+                overstimulation, and low resilience begin to overlap.
               </h2>
 
               <p className="mt-6 max-w-2xl text-base leading-8 text-[#5f5a52] md:text-lg">
-                Searches around the signs of a dysregulated nervous system are
-                often really searches for a pattern: why stress, sleep, anxiety,
-                shutdown, overstimulation, and low resilience all seem to show
-                up together.
+                The useful question is often whether there is a pattern linking stress,
+                sleep, anxiety, shutdown, overstimulation, and low resilience
+                when several of them show up together.
               </p>
             </div>
 
@@ -467,7 +466,7 @@ export default function SignsOfADysregulatedNervousSystemPage() {
 
             <div className="mt-8 rounded-2xl bg-[#e9e1d6] p-5">
               <p className="text-sm font-medium text-[#1f1f1c]">
-                This page works best as a recognition page
+                Recognition is only the first step
               </p>
               <p className="mt-2 text-sm leading-7 text-[#5f5a52]">
                 The next step after recognition is usually explanation, practical

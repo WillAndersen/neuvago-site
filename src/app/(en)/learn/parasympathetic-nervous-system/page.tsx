@@ -447,12 +447,12 @@ export default function ParasympatheticNervousSystemPage() {
           <div className="flex flex-col gap-6 md:flex-row md:items-end md:justify-between">
             <div className="max-w-3xl">
               <p className="text-sm uppercase tracking-[0.18em] text-[#7a756c]">
-                Why people search for it
+                When the body has trouble settling
               </p>
 
               <h2 className="mt-4 text-3xl font-medium leading-tight tracking-[-0.03em] md:text-5xl">
-                Most people are not searching for a technical system. They are
-                trying to understand why the body will not settle — and what calm actually means.
+                The parasympathetic system is often most relevant when you are trying to
+                understand why the body will not settle — and what calm actually means.
               </h2>
 
               <p className="mt-6 max-w-2xl text-base leading-8 text-[#5f5a52] md:text-lg">
@@ -530,11 +530,11 @@ export default function ParasympatheticNervousSystemPage() {
 
             <div className="mt-8 rounded-2xl bg-[#e9e1d6] p-5">
               <p className="text-sm font-medium text-[#1f1f1c]">
-                This page works best as a calmer-states page
+                Calmer states are more than a single switch
               </p>
               <p className="mt-2 text-sm leading-7 text-[#5f5a52]">
-                It is strongest when it clarifies what the body is moving toward
-                when activation starts to ease.
+                The useful focus is what the body may be moving toward when activation
+                starts to ease.
               </p>
             </div>
           </div>

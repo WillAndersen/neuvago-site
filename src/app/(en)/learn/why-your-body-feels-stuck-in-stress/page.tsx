@@ -434,19 +434,16 @@ export default function WhyYourBodyFeelsStuckInStressPage() {
           <div className="flex flex-col gap-6 md:flex-row md:items-end md:justify-between">
             <div className="max-w-3xl">
               <p className="text-sm uppercase tracking-[0.18em] text-[#7a756c]">
-                Why people search for this
+                When the pressure is over but the body still feels on
               </p>
 
               <h2 className="mt-4 text-3xl font-medium leading-tight tracking-[-0.03em] md:text-5xl">
-                Most people are not searching for a stress theory. They are
-                trying to understand why the body still feels “on” when it should be over.
+                Stress can linger as a body state even when the obvious pressure has passed.
               </h2>
 
               <p className="mt-6 max-w-2xl text-base leading-8 text-[#5f5a52] md:text-lg">
-                Searches around feeling stuck in stress are often really
-                searches for a practical explanation: why the body stays tense,
-                wired, watchful, restless, or hard to settle even after the
-                obvious pressure has passed.
+                The practical question is why the body can stay tense, wired, watchful,
+                restless, or hard to settle even after the obvious pressure has passed.
               </p>
             </div>
 
@@ -515,7 +512,7 @@ export default function WhyYourBodyFeelsStuckInStressPage() {
 
             <div className="mt-8 rounded-2xl bg-[#e9e1d6] p-5">
               <p className="text-sm font-medium text-[#1f1f1c]">
-                This page works best as an explanation page
+                Understanding the pattern creates room for the next step
               </p>
               <p className="mt-2 text-sm leading-7 text-[#5f5a52]">
                 The next step after understanding why the body is stuck is often

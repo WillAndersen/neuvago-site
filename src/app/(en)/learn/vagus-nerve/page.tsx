@@ -49,7 +49,7 @@ const sections: readonly PageSection[] = [
     paragraphs: [
       "The vagus nerve is the tenth cranial nerve and runs from the brainstem to structures in the neck, chest and abdomen. It participates in sensory, motor and autonomic functions and should not be reduced to a simple “calm switch.”",
       "Humans have a left and a right vagus nerve. The singular term is convenient, but the paired nerves branch repeatedly and contain different fibre types. They are better understood as part of a distributed, two-way communication system than as one uninterrupted cable controlling the whole body.",
-      "This foundation page owns the broad question: what the vagus nerve is and what it does. A dedicated anatomy guide owns detailed location, course and branch intent, while separate guides cover ear anatomy, HRV, practical methods and electrical vagus nerve stimulation.",
+      "This overview focuses on what the vagus nerve is and what it does. For detailed location, course, and branches, continue to the anatomy guide; separate guides cover ear anatomy, HRV, practical methods, and electrical vagus nerve stimulation.",
     ],
     answers: [
       {

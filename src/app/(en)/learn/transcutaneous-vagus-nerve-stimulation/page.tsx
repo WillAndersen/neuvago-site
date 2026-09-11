@@ -8,7 +8,7 @@ import { authorityEditorialDates } from "@/lib/seo/editorial-dates";
 const title =
   "Transcutaneous Vagus Nerve Stimulation | tVNS Guide | Neuvago";
 const description =
-  "Learn what transcutaneous vagus nerve stimulation means, how tVNS and taVNS relate to non-invasive VNS, and how to evaluate the category responsibly.";
+  "Learn how transcutaneous vagus nerve stimulation works as a method family, which protocol details matter, and how tVNS evidence should be interpreted.";
 const path = "/learn/transcutaneous-vagus-nerve-stimulation";
 
 export const metadata: Metadata = {
@@ -84,9 +84,9 @@ const termCards = [
 
 const whyItMatters = [
   {
-    title: "It helps separate method from marketing",
+    title: "It separates broad categories from specific methods",
     description:
-      "People often see VNS, nVNS, tVNS, taVNS, and vagus nerve stimulator used together. A clear page helps explain which term describes the broad category and which term describes a specific method.",
+      "VNS, nVNS, tVNS, taVNS, and vagus nerve stimulator are related terms, but they do not describe the same delivery route or protocol. Separating them keeps evidence interpretation precise.",
   },
   {
     title: "It keeps evidence in the right lane",
@@ -101,31 +101,25 @@ const whyItMatters = [
   {
     title: "It supports responsible product education",
     description:
-      "Neuvago can explain transcutaneous VNS as category context while still keeping product language focused on wellness support, guided sessions, and daily routine design.",
+      "For Neuvago, tVNS is useful method context while the product itself remains focused on wellness support, guided sessions, and daily routine design.",
   },
 ];
 
 const evaluationCriteria = [
-  {
-    title: "Where stimulation is applied",
-    description:
-      "Ear placement, neck placement, control placement, and electrode design change how a method should be understood. The location is not a minor detail.",
-  },
-  {
-    title: "Which settings are used",
-    description:
-      "Frequency, pulse width, intensity, waveform, session length, and duty cycle can all shape comfort, tolerability, side effects, and research interpretation.",
-  },
-  {
-    title: "What the session is for",
-    description:
-      "A clinical protocol, laboratory study, and consumer wellness routine can share vocabulary without having the same purpose, evidence, safety assumptions, or claims.",
-  },
-  {
-    title: "How safety is explained",
-    description:
-      "Responsible tVNS education should discuss tolerability, contraindication awareness, medical contexts, and why non-invasive does not mean claim-free.",
-  },
+  { title: "Stimulation site", description: "Auricular and cervical stimulation are different access routes. The exact ear or neck location should be reported rather than hidden behind the generic label tVNS." },
+  { title: "Electrode and contact design", description: "Electrode geometry, contact area, montage, polarity, and how contact is maintained can change current delivery and the user experience." },
+  { title: "Frequency, pulse width, and waveform", description: "Technical parameters shape what was actually delivered. Two studies called tVNS can use materially different electrical protocols." },
+  { title: "Intensity and threshold method", description: "Look for how intensity was selected: fixed, sensory-threshold based, individually titrated, or adjusted during the session. Sensation alone is not proof of target engagement." },
+  { title: "Dose and timing", description: "Session length, duty cycle, sessions per day or week, treatment duration, and timing relative to tasks or outcomes all matter when comparing studies." },
+  { title: "Comparator, population, and outcome", description: "Sham site, blinding, participant population, follow-up window, and whether an outcome is physiological, imaging-based, subjective, or clinical determine what a result can support." },
+];
+
+
+const evidenceReading = [
+  { title: "There is no single standard tVNS dose", description: "Consensus reporting guidance exists because site, device, waveform, intensity, duty cycle, session duration, and study design vary substantially across the literature." },
+  { title: "Target engagement is not one universal biomarker", description: "Studies use different physiological, neuroimaging, behavioral, and clinical outcomes. A change in one measure should not be treated as a complete readout of vagal activity." },
+  { title: "Sham design matters", description: "A control condition can differ by site, intensity, sensation, and blinding success. That affects how confidently active and control groups can be compared." },
+  { title: "Safety reporting has been inconsistent", description: "Systematic safety reviews have found that adverse-event reporting is not uniform across taVNS studies. Tolerability claims should therefore stay tied to the actual evidence and protocol." },
 ];
 
 const methodBoundaries = [
@@ -163,9 +157,9 @@ const neuvagoFit = [
       "For everyday use, a device-and-app system should help with placement, comfort, session rhythm, and consistency rather than leaving people to interpret technical terms alone.",
   },
   {
-    title: "The product bridge stays calm",
+    title: "From method to everyday use",
     description:
-      "The right commercial bridge is practical: how sessions work, how the app guides the routine, and how Neuvago stays within clear wellness boundaries.",
+      "When moving from tVNS methods to Neuvago, the practical questions are how sessions work, how the app guides the routine, and how the product stays within clear wellness boundaries.",
   },
 ];
 
@@ -201,7 +195,7 @@ const relatedLearning = [
   {
     title: "Vagus nerve stimulation overview",
     description:
-      "Understand the full VNS category, including implanted systems, external approaches, research context, and responsible product language.",
+      "Understand the full VNS category, including implanted systems, external approaches, research context, and clear wellness boundaries.",
     href: "/learn/vagus-nerve-stimulation",
     linkLabel: "Read VNS overview",
   },
@@ -249,7 +243,7 @@ const nextPaths = [
   {
     title: "See how Neuvago works",
     description:
-      "Move from category education into the practical device-and-app explanation: placement, guided sessions, comfort, and daily routine design.",
+      "Move from tVNS education into the practical device-and-app explanation: placement, guided sessions, comfort, and daily routine design.",
     href: "/how-it-works",
     linkLabel: "See how it works",
   },
@@ -292,7 +286,13 @@ const externalReferences = [
     title:
       "Safety of transcutaneous auricular vagus nerve stimulation: a systematic review and meta-analysis",
     source: "Kim et al., Scientific Reports, 2022",
-    href: "https://www.nature.com/articles/s41598-022-25864-1",
+    href: "https://pubmed.ncbi.nlm.nih.gov/36543841/",
+  },
+  {
+    title:
+      "Clinical application of transcutaneous auricular vagus nerve stimulation: a scoping review",
+    source: "2024 scoping review",
+    href: "https://pubmed.ncbi.nlm.nih.gov/38362860/",
   },
 ];
 
@@ -438,7 +438,7 @@ export default function TranscutaneousVagusNerveStimulationPage() {
             </p>
 
             <h1 className="text-4xl font-medium leading-[1.05] tracking-[-0.03em] md:text-6xl lg:text-7xl">
-              Transcutaneous vagus nerve stimulation, explained clearly
+              Transcutaneous vagus nerve stimulation (tVNS): methods, parameters, and evidence
             </h1>
 
             <p className="mt-6 max-w-2xl text-base leading-8 text-[#5f5a52] md:text-lg">
@@ -655,6 +655,17 @@ export default function TranscutaneousVagusNerveStimulationPage() {
           </div>
         </div>
       </section>
+      <section className="border-b border-black/5 bg-[#f2eee8]">
+        <div className="mx-auto max-w-7xl px-6 py-24 md:px-10 md:py-28">
+          <div className="max-w-3xl">
+            <p className="text-sm uppercase tracking-[0.18em] text-[#7a756c]">Evidence interpretation</p>
+            <h2 className="mt-4 max-w-4xl text-3xl font-medium leading-tight tracking-[-0.03em] md:text-5xl">The tVNS label is only the start of the evidence question</h2>
+            <p className="mt-6 max-w-2xl text-base leading-8 text-[#5f5a52] md:text-lg">Minimum reporting standards exist because transcutaneous VNS is methodologically diverse. Site, parameters, comparator, population, and outcome need to be visible before findings can be compared.</p>
+          </div>
+          <div className="mt-14 grid gap-6 md:grid-cols-2">{evidenceReading.map((item) => (<TextCard key={item.title} {...item} />))}</div>
+        </div>
+      </section>
+
 
       <section className="border-b border-black/5 bg-[#f2eee8]">
         <div className="mx-auto grid max-w-7xl gap-14 px-6 py-24 md:px-10 md:py-28 lg:grid-cols-[1fr_0.95fr] lg:items-start">
@@ -664,7 +675,7 @@ export default function TranscutaneousVagusNerveStimulationPage() {
             </p>
 
             <h2 className="mt-4 max-w-3xl text-3xl font-medium leading-tight tracking-[-0.03em] md:text-5xl">
-              Good tVNS education should make the limits visible
+              Clear tVNS guidance should make the limits visible
             </h2>
 
             <p className="mt-6 max-w-2xl text-base leading-8 text-[#5f5a52] md:text-lg">
@@ -690,13 +701,12 @@ export default function TranscutaneousVagusNerveStimulationPage() {
             </p>
 
             <h2 className="mt-4 text-3xl font-medium leading-tight tracking-[-0.03em] md:text-5xl">
-              Neuvago uses tVNS language as category education, not as a shortcut to medical claims
+              tVNS describes the method; it does not create a medical claim
             </h2>
 
             <p className="mt-6 max-w-2xl text-base leading-8 text-[#5f5a52] md:text-lg">
-              The right role for this page is to help people understand the
-              category before they evaluate a non-invasive vagus nerve
-              stimulator. The product story should remain practical: placement,
+              Understanding the category comes before evaluating a non-invasive
+              vagus nerve stimulator. The practical questions are placement,
               guidance, comfort, routine, and responsible wellness support.
             </p>
           </div>
@@ -717,12 +727,13 @@ export default function TranscutaneousVagusNerveStimulationPage() {
             </p>
 
             <h2 className="mt-4 max-w-3xl text-3xl font-medium leading-tight tracking-[-0.03em] md:text-5xl">
-              Connect tVNS with the broader VNS and non-invasive VNS cluster
+              Place tVNS inside the broader VNS and non-invasive VNS picture
             </h2>
 
             <p className="mt-6 max-w-2xl text-base leading-8 text-[#5f5a52] md:text-lg">
-              These pages help place tVNS in the full authority system without
-              overloading one page with every detail.
+              These pages separate the broader category, the ear-based method,
+              product comparison, and the deeper research layer so each question
+              stays on the right page.
             </p>
           </div>
 

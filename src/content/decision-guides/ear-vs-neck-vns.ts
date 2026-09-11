@@ -278,7 +278,7 @@ export const earVsNeckVnsGuidePair = {
           {
             type: "callout",
             tone: "scope",
-            title: "A comparison page should not declare a universal winner",
+            title: "There is no universal winner across VNS methods",
             paragraphs: [
               "Different sites may be better suited to different devices, research questions, indications and routines. The absence of a universal winner is not a weakness in the evidence; it is a reason to compare more carefully.",
             ],
@@ -350,7 +350,7 @@ export const earVsNeckVnsGuidePair = {
           {
             type: "paragraph",
             text:
-              "Price, warranty, returns, subscription requirements, included accessories and availability matter, but they change over time and must be checked for the exact product and market. This pilot therefore compares method families rather than ranking brands or presenting a best-in-test table.",
+              "Price, warranty, returns, subscription requirements, included accessories and availability matter, but they change over time and must be checked for the exact product and market. This guide therefore compares method families rather than ranking brands or presenting a best-in-test table.",
           },
           {
             type: "callout",
@@ -358,7 +358,7 @@ export const earVsNeckVnsGuidePair = {
             title: "What should be dated and verified before purchase",
             paragraphs: [
               "Confirm the current price, what is included, whether an app or subscription is required, whether conductive materials are recurring costs, the warranty or statutory rights, return conditions, delivery region and support route.",
-              "A future buyer guide can compare those fields only when the data are current, sourced and displayed with an update date.",
+              "A buyer guide should compare those fields only when the data are current, sourced and displayed with an update date.",
             ],
           },
         ],
@@ -932,7 +932,7 @@ export const earVsNeckVnsGuidePair = {
           {
             type: "callout",
             tone: "scope",
-            title: "En sammenligningsside bør ikke kåre en universell vinner",
+            title: "Det finnes ingen universell vinner på tvers av VNS-metoder",
             paragraphs: [
               "Ulike stimuleringssteder kan passe til ulike enheter, forskningsspørsmål, indikasjoner og rutiner. At det ikke finnes én universell vinner, er ikke en svakhet – det er en grunn til å sammenligne mer presist.",
             ],
@@ -1004,7 +1004,7 @@ export const earVsNeckVnsGuidePair = {
           {
             type: "paragraph",
             text:
-              "Pris, garanti, retur, abonnement, medfølgende tilbehør og tilgjengelighet er viktige, men endrer seg over tid og må kontrolleres for riktig produkt og marked. Denne piloten sammenligner derfor metodefamilier i stedet for å rangere merker eller lage en best-i-test-tabell.",
+              "Pris, garanti, retur, abonnement, medfølgende tilbehør og tilgjengelighet er viktige, men endrer seg over tid og må kontrolleres for riktig produkt og marked. Denne guiden sammenligner derfor metodefamilier i stedet for å rangere merker eller lage en best-i-test-tabell.",
           },
           {
             type: "callout",
@@ -1012,7 +1012,7 @@ export const earVsNeckVnsGuidePair = {
             title: "Dette må dateres og bekreftes før kjøp",
             paragraphs: [
               "Kontroller gjeldende pris, hva som følger med, om app eller abonnement kreves, om gel eller elektroder gir løpende kostnader, garanti eller lovbestemte rettigheter, returvilkår, leveringsområde og supportkanal.",
-              "En senere kjøpsguide kan sammenligne disse feltene først når opplysningene er oppdaterte, kildebelagte og vist med oppdateringsdato.",
+              "En kjøpsguide bør sammenligne disse feltene først når opplysningene er oppdaterte, kildebelagte og vist med oppdateringsdato.",
             ],
           },
         ],

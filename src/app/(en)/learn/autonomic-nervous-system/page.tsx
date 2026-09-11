@@ -162,7 +162,7 @@ const sections = [
     paragraphs: [
       "The autonomic nervous system (ANS) coordinates involuntary and semi-automatic physiological functions such as cardiovascular control, digestion, thermoregulation, pupil responses, glandular activity and pelvic-organ function.",
       "A conventional anatomical framework describes sympathetic, parasympathetic and enteric divisions. That framework is useful, but modern physiology also emphasizes sensory input, central autonomic networks, organ-specific pathways and the fact that sympathetic and parasympathetic outputs do not always behave as simple opposites.",
-      "This page owns the broad ‘what is the autonomic nervous system?’ question. Nervous-system regulation remains the practical everyday-regulation page, while the dedicated comparison page owns ‘sympathetic vs parasympathetic.’",
+      "Use this guide for the broad “what is the autonomic nervous system?” overview. For practical everyday regulation, continue to Nervous system regulation; for a direct comparison, use Sympathetic vs. parasympathetic.",
     ],
   },
   {

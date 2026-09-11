@@ -223,9 +223,8 @@ export default function OpenAppPage() {
 
               <div className="mt-8 space-y-6 text-[#5f5a52]">
                 <p className="text-base leading-8">
-                  This page is designed as a simple launch point. It helps you
-                  move naturally between your account, profile, and the wider
-                  app-facing side of Neuvago.
+                  Use this launch point to move naturally between your account, profile,
+                  and the app-facing side of Neuvago.
                 </p>
 
                 <p className="text-base leading-8">
@@ -501,11 +500,10 @@ export default function OpenAppPage() {
 
             <div className="rounded-[2rem] border border-black/5 bg-white/70 p-6 shadow-[0_10px_30px_rgba(0,0,0,0.03)]">
               <p className="text-xs font-medium uppercase tracking-[0.14em] text-[#8a847b]">
-                Bridge note
+                A simple handoff
               </p>
               <p className="mt-3 text-sm leading-7 text-[#5f5a52]">
-                This page is designed to become a stronger launch point over time,
-                while staying calm and easy to understand.
+                The goal is a clear next step without extra setup or unnecessary choices.
               </p>
             </div>
           </div>

@@ -434,19 +434,18 @@ export default function RecoveryAndRegulationPage() {
           <div className="flex flex-col gap-6 md:flex-row md:items-end md:justify-between">
             <div className="max-w-3xl">
               <p className="text-sm uppercase tracking-[0.18em] text-[#7a756c]">
-                Why people search for recovery support
+                When rest is not restoring enough
               </p>
 
               <h2 className="mt-4 text-3xl font-medium leading-tight tracking-[-0.03em] md:text-5xl">
-                Most people are not searching for a theory of recovery. They are
-                searching for restoration, resilience, and a way to feel more like themselves again.
+                Recovery matters most when rest is not fully restoring capacity, resilience,
+                or the sense of feeling like yourself again.
               </h2>
 
               <p className="mt-6 max-w-2xl text-base leading-8 text-[#5f5a52] md:text-lg">
-                Searches around recovery are often really searches for something
-                practical: why the system still feels tired, why resilience feels
-                lower, why sleep is not enough, and how daily life can begin to
-                feel more carryable again.
+                The practical questions are why the system still feels tired, why
+                resilience feels lower, why sleep is not enough, and how daily
+                life can begin to feel more carryable again.
               </p>
             </div>
 
@@ -515,7 +514,7 @@ export default function RecoveryAndRegulationPage() {
 
             <div className="mt-8 rounded-2xl bg-[#e9e1d6] p-5">
               <p className="text-sm font-medium text-[#1f1f1c]">
-                This page works best as a restoration page
+                Recovery is about restoration over time
               </p>
               <p className="mt-2 text-sm leading-7 text-[#5f5a52]">
                 The next step after understanding recovery is often looking at

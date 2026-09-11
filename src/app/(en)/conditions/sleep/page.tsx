@@ -299,7 +299,7 @@ export default function SleepPage() {
       <ConditionRoutinePathway
         eyebrow="Sleep pathway"
         title="From evening alertness to a calmer wind-down"
-        description="The sleep page should connect lived experience to an evening routine: understand why settling can be hard, add HRV and autonomic context, then make the next step practical."
+        description="Sleep can be understood through lived experience and an evening routine: notice why settling can be hard, add HRV and autonomic context, then make the next step practical."
         image={{ src: "/images/neuvago/evening-wind-down-desktop.webp", alt: "Neuvago device and app arranged beside a warm evening wind-down routine." }}
         cards={[
           { title: "Name the pattern", description: "Recognize wired-but-tired, fragile rest, or the sense that the body has not fully downshifted.", href: "/learn/why-you-feel-tired-but-cant-relax", linkLabel: "Wired but tired" },
@@ -451,7 +451,7 @@ export default function SleepPage() {
 
             <div className="mt-8 rounded-2xl bg-[#e9e1d6] p-5">
               <p className="text-sm font-medium text-[#1f1f1c]">
-                Sleep works best as an entry point into the broader learning system
+                Sleep often connects naturally to calming, recovery, and evening regulation
               </p>
               <p className="mt-2 text-sm leading-7 text-[#5f5a52]">
                 The next step is often calming, recovery, or a better explanation of why the body still does not fully downshift.
@@ -461,23 +461,23 @@ export default function SleepPage() {
 
           <div>
             <p className="text-sm uppercase tracking-[0.18em] text-[#7a756c]">
-              Why people search for sleep support
+              When the body will not fully settle
             </p>
 
             <h2 className="mt-4 max-w-3xl text-3xl font-medium leading-tight tracking-[-0.03em] md:text-5xl">
-              Most people are not searching only for sleep tips. They are trying to understand why the body will not fully settle into rest.
+              Sleep can be difficult even when you are tired, especially when the body does not fully settle into rest.
             </h2>
 
             <p className="mt-6 max-w-2xl text-base leading-8 text-[#5f5a52] md:text-lg">
-              Sleep searches are often really searches for explanation: why the
-              body feels too activated at night, why rest feels fragile, and why
-              mornings still feel under-restored even after time in bed.
+              Common questions include why the body feels too activated at night, why
+              rest feels fragile, and why mornings still feel under-restored even
+              after time in bed.
             </p>
 
             <p className="mt-6 max-w-2xl text-base leading-8 text-[#5f5a52]">
-              That is why sleep pages become much stronger when they connect not
-              only to sleep itself, but to regulation, calming, evening state,
-              and the larger question of whether the system can truly unwind.
+              Sleep becomes easier to understand when it is connected to regulation,
+              calming, evening state, and the larger question of whether the
+              system can truly unwind.
             </p>
 
             <div className="mt-10 flex flex-wrap gap-4">

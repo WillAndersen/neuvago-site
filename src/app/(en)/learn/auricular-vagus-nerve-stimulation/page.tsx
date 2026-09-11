@@ -8,7 +8,7 @@ import { authorityEditorialDates } from "@/lib/seo/editorial-dates";
 const title =
   "Auricular Vagus Nerve Stimulation | taVNS and Ear VNS | Neuvago";
 const description =
-  "Learn what auricular vagus nerve stimulation is, how taVNS relates to ear-based non-invasive VNS, and how to interpret ear stimulation responsibly.";
+  "Learn what auricular VNS and taVNS mean, which ear and protocol details matter, what research can show, and where evidence and product claims diverge.";
 const path = "/learn/auricular-vagus-nerve-stimulation";
 
 export const metadata: Metadata = {
@@ -72,13 +72,13 @@ const termCards = [
     title: "ABVN",
     label: "Auricular branch",
     description:
-      "A commonly referenced anatomical pathway in ear-based VNS discussions. Consumer education should treat it carefully and avoid overstating certainty.",
+      "A commonly referenced anatomical pathway in ear-based VNS discussions. Anatomical interpretation should remain careful and avoid overstating certainty.",
   },
   {
-    title: "Ear VNS device",
-    label: "User search language",
+    title: "Ear VNS",
+    label: "Plain-language term",
     description:
-      "Many people search in simpler terms, such as ear vagus nerve stimulation or vagus nerve stimulation through the ear, before they know the acronym taVNS.",
+      "Ear VNS is a simpler label for the same broad ear-based conversation. Research papers more often use terms such as auricular VNS or transcutaneous auricular VNS (taVNS).",
   },
 ];
 
@@ -99,33 +99,27 @@ const whyEar = [
       "Terms like taVNS, stimulation site, intensity, pulse width, session duration, sham placement, and target engagement appear frequently in auricular VNS research.",
   },
   {
-    title: "It needs careful product language",
+    title: "Product claims still need evidence",
     description:
       "Ear-based does not mean every sensation, placement, or device has the same evidence. The method should be explained with the same boundaries as the broader VNS category.",
   },
 ];
 
 const whatToEvaluate = [
-  {
-    title: "Where stimulation is applied",
-    description:
-      "Ear region matters. A responsible explanation should avoid treating every part of the ear as if it had the same relationship to vagal pathways.",
-  },
-  {
-    title: "How contact and comfort are handled",
-    description:
-      "For everyday use, a device should make placement, skin contact, comfort, stop-use guidance, and session consistency easier rather than making the user guess.",
-  },
-  {
-    title: "What settings are used",
-    description:
-      "Intensity, frequency, pulse width, session length, and total exposure can all change how a study or device experience should be interpreted.",
-  },
-  {
-    title: "What claims are made",
-    description:
-      "The safest language for a wellness product is support, guidance, comfort, routine, and regulation context — not treatment promises.",
-  },
+  { title: "Exact ear location", description: "The external ear has mixed sensory innervation. A responsible study or device description should identify the stimulated region rather than treating the whole ear as one vagal target." },
+  { title: "Electrode geometry and contact", description: "Clip, surface, or custom electrodes can differ in contact area, montage, polarity, pressure, and comfort. Those details affect both delivery and reproducibility." },
+  { title: "Stimulation parameters", description: "Intensity, frequency, pulse width, waveform, duty cycle, session length, and total exposure can all change how a study or device experience should be interpreted." },
+  { title: "Comparator and sham", description: "Control sites and sham settings can differ in sensation and anatomical plausibility. Blinding quality matters when interpreting group differences." },
+  { title: "Outcome and target engagement", description: "Neuroimaging, HRV, pupil measures, symptoms, and clinical scales answer different questions. No single outcome is a universal readout of vagus engagement." },
+  { title: "Product claim fit", description: "A finding from one taVNS protocol should not be transferred to every ear-based device. Product claims need evidence that matches the actual device, protocol, population, and intended use." },
+];
+
+
+const anatomyBoundaries = [
+  { title: "The outer ear has mixed innervation", description: "The auricle is supplied by more than one nerve. Anatomical maps support careful site selection, but they do not make every point on the ear a validated vagal target." },
+  { title: "Anatomical plausibility is not the same as target engagement", description: "A site can be anatomically plausible without proving how strongly or selectively a specific stimulation protocol engaged vagal pathways in an individual participant." },
+  { title: "Laterality and site should be reported", description: "Left or right ear, tragus, cymba concha, concha, canal, or another site are method details — not interchangeable labels." },
+  { title: "Sensation is a usability signal, not a mechanism test", description: "Tingling or pressure can help describe comfort and tolerability, but sensation by itself does not establish vagal target engagement or a clinical effect." },
 ];
 
 const evidenceSignals = [
@@ -175,19 +169,19 @@ const boundaries = [
 
 const neuvagoFit = [
   {
-    title: "A calmer category explanation",
+    title: "Clearer ear-based VNS guidance",
     description:
       "Neuvago can explain ear-based non-invasive VNS in a way that is practical and premium without sounding clinical or overclaiming.",
   },
   {
     title: "Guided sessions instead of guesswork",
     description:
-      "The product story should connect placement, session structure, app guidance, comfort, and consistency into one clear user experience.",
+      "For everyday use, placement, session structure, app guidance, comfort, and consistency should connect into one clear user experience.",
   },
   {
     title: "Wellness boundaries stay visible",
     description:
-      "Auricular VNS can support Neuvago’s authority, but it should continue to be framed as wellness support rather than disease treatment.",
+      "Auricular VNS can support a clearer product explanation, but it should continue to be framed as wellness support rather than disease treatment.",
   },
 ];
 
@@ -216,7 +210,7 @@ const internalPathways = [
   {
     title: "Vagus nerve stimulation overview",
     description:
-      "Understand the broader VNS category, including implanted systems, non-invasive approaches, and responsible product language.",
+      "Understand the broader VNS category, including implanted systems, non-invasive approaches, and clear wellness boundaries.",
     href: "/learn/vagus-nerve-stimulation",
     linkLabel: "Read VNS overview",
   },
@@ -280,7 +274,13 @@ const externalReferences = [
     title:
       "Safety of transcutaneous auricular vagus nerve stimulation: a systematic review and meta-analysis",
     source: "Kim et al., Scientific Reports, 2022",
-    href: "https://www.nature.com/articles/s41598-022-25864-1",
+    href: "https://pubmed.ncbi.nlm.nih.gov/36543841/",
+  },
+  {
+    title:
+      "Clinical application of transcutaneous auricular vagus nerve stimulation: a scoping review",
+    source: "2024 scoping review",
+    href: "https://pubmed.ncbi.nlm.nih.gov/38362860/",
   },
 ];
 
@@ -427,7 +427,7 @@ export default function AuricularVagusNerveStimulationPage() {
             </p>
 
             <h1 className="text-4xl font-medium leading-[1.05] tracking-[-0.03em] md:text-6xl lg:text-7xl">
-              Auricular vagus nerve stimulation, explained without the jargon
+              Auricular vagus nerve stimulation (taVNS): ear anatomy, methods, and evidence
             </h1>
 
             <p className="mt-6 max-w-2xl text-base leading-8 text-[#5f5a52] md:text-lg">
@@ -580,10 +580,10 @@ export default function AuricularVagusNerveStimulationPage() {
             </h2>
 
             <p className="mt-6 max-w-2xl text-base leading-8 text-[#5f5a52] md:text-lg">
-              Search language is not always the same as research language.
-              Someone may search for ear VNS, auricular VNS, taVNS, or
-              non-invasive vagus nerve stimulation and be trying to understand
-              the same broad category.
+              Everyday terminology is not always the same as research terminology.
+              Ear VNS, auricular VNS, taVNS, and non-invasive vagus nerve
+              stimulation can overlap in conversation, but the technical method
+              still needs to be identified precisely.
             </p>
           </div>
 
@@ -621,6 +621,17 @@ export default function AuricularVagusNerveStimulationPage() {
           </div>
         </div>
       </section>
+      <section className="border-b border-black/5 bg-[#f7f4ef]">
+        <div className="mx-auto max-w-7xl px-6 py-24 md:px-10 md:py-28">
+          <div className="max-w-3xl">
+            <p className="text-sm uppercase tracking-[0.18em] text-[#7a756c]">Anatomy and target interpretation</p>
+            <h2 className="mt-4 max-w-4xl text-3xl font-medium leading-tight tracking-[-0.03em] md:text-5xl">Ear anatomy supports the method, but it does not make every ear site equivalent</h2>
+            <p className="mt-6 max-w-2xl text-base leading-8 text-[#5f5a52] md:text-lg">The outer ear has mixed sensory innervation. Good taVNS interpretation therefore separates anatomical plausibility, stimulation site, delivered protocol, sensation, and evidence of target engagement.</p>
+          </div>
+          <div className="mt-14 grid gap-6 md:grid-cols-2">{anatomyBoundaries.map((item) => (<TextCard key={item.title} {...item} />))}</div>
+        </div>
+      </section>
+
 
       <section className="border-b border-black/5 bg-[#f7f4ef]">
         <div className="mx-auto max-w-7xl px-6 py-24 md:px-10 md:py-28">
@@ -661,10 +672,10 @@ export default function AuricularVagusNerveStimulationPage() {
             </h2>
 
             <p className="mt-6 max-w-2xl text-base leading-8 text-[#5f5a52] md:text-lg">
-              Neuvago’s role is not to turn every auricular VNS study into a
-              product promise. The stronger trust position is to explain the
-              research area, connect it to the right topic pages, and keep the
-              difference between evidence context and product claims visible.
+              Auricular VNS research should remain separate from product promises.
+              The useful approach is to explain the research area, connect it to
+              the relevant topic pages, and keep the difference between evidence
+              context and product-specific claims visible.
             </p>
           </div>
 
@@ -684,14 +695,14 @@ export default function AuricularVagusNerveStimulationPage() {
             </p>
 
             <h2 className="mt-4 max-w-3xl text-3xl font-medium leading-tight tracking-[-0.03em] md:text-5xl">
-              A calm page should make the boundaries easier to see
+              Clear boundaries make auricular VNS easier to understand
             </h2>
 
             <p className="mt-6 max-w-2xl text-base leading-8 text-[#5f5a52] md:text-lg">
-              Auricular VNS is valuable for Neuvago’s authority because it is
-              specific. But specificity should not become overconfidence. The
-              best education separates what the category means from what a
-              particular product is allowed to promise.
+              Auricular VNS is a specific method family, but specificity should
+              not become overconfidence. Good education separates anatomy,
+              protocol, research findings, and what a particular product can
+              actually support with product-specific evidence.
             </p>
           </div>
 
@@ -715,9 +726,9 @@ export default function AuricularVagusNerveStimulationPage() {
             </h2>
 
             <p className="mt-6 max-w-2xl text-base leading-8 text-[#5f5a52] md:text-lg">
-              The commercial bridge should be calm and transparent: explain the
-              method, show how guidance works, keep comfort central, and point
-              users toward the product only after the category is clear.
+              Once the method is clear, the practical questions are how guidance
+              works, how comfort is handled, and how the product fits within
+              responsible wellness boundaries.
             </p>
           </div>
 

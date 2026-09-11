@@ -340,7 +340,7 @@ export const vagusnervestimuleringArticle = {
         },
         {
           type: "paragraph",
-          text: "Den brede methods-pillaren forklarer hvordan elektrisk VNS skiller seg fra pust, bevegelse, avslapning og andre praksiser. Disse praksisene kan påvirke opplevelse eller autonome mål, men de er ikke automatisk definert elektrisk VNS. Denne siden beholder derfor eierskapet til selve VNS-kategorien, mens pillaren eier det bredere spørsmålet om alle måter vagusnerven omtales som stimulert på.",
+          text: "Den brede metodeguiden forklarer hvordan elektrisk VNS skiller seg fra pust, bevegelse, avslapning og andre praksiser. Disse praksisene kan påvirke opplevelse eller autonome mål, men de er ikke automatisk definert elektrisk VNS. Her holder vi derfor fokus på selve VNS-kategorien, mens metodeguiden dekker det bredere spørsmålet om ulike måter vagusnerven omtales som stimulert på.",
         },
         {
           type: "callout",

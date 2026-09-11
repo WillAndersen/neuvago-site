@@ -121,7 +121,7 @@ export const vagusnervenOgMassasjeArticle = {
         },
         {
           "type": "paragraph",
-          "text": "For den som ønsker generell avspenning, er det derfor mer presist å snakke om lett berøring, muskelmassasje eller en avslappende rutine enn om å «finne» og massere vagusnerven. Den grunnleggende anatomiartikkelen forklarer nervens forløp, mens methods-pillaren skiller manuelle praksiser fra elektrisk vagusnervestimulering."
+          "text": "For den som ønsker generell avspenning, er det derfor mer presist å snakke om lett berøring, muskelmassasje eller en avslappende rutine enn om å «finne» og massere vagusnerven. Den grunnleggende anatomiartikkelen forklarer nervens forløp, mens metodeguiden skiller manuelle praksiser fra elektrisk vagusnervestimulering."
         },
         {
           "type": "callout",
@@ -390,11 +390,11 @@ export const vagusnervenOgMassasjeArticle = {
       "blocks": [
         {
           "type": "paragraph",
-          "text": "Denne siden eier spørsmålet om hva «vagusnervemassasje» betyr, hva som faktisk berøres, hvilke utfall massasjestudier kan beskrive, og hvilke halsgrenser som er nødvendige. Den er ikke en generell oversikt over alle måter å påvirke vagusnerven på og ikke en instruksjonsside for elektrisk stimulering."
+          "text": "Her er fokuset hva «vagusnervemassasje» betyr, hva som faktisk berøres, hvilke utfall massasjestudier kan beskrive, og hvilke halsgrenser som er nødvendige. Dette er ikke en generell oversikt over alle måter å påvirke vagusnerven på og ikke en instruksjonsside for elektrisk stimulering."
         },
         {
           "type": "paragraph",
-          "text": "For grunnleggende forløp og funksjon bør du lese siden om vagusnerven. For detaljene i ytre øres blandede nerveforsyning bør du bruke øreanatomiartikkelen. Den aurikulære VNS-siden forklarer hvorfor elektrisk taVNS ikke kan likestilles med manuell øreberøring, mens methods-pillaren samler metodekategoriene uten å gjøre dem identiske."
+          "text": "For grunnleggende forløp og funksjon bør du lese siden om vagusnerven. For detaljene i ytre øres blandede nerveforsyning bør du bruke øreanatomiartikkelen. Den aurikulære VNS-siden forklarer hvorfor elektrisk taVNS ikke kan likestilles med manuell øreberøring, mens metodeguiden samler flere metodekategorier uten å gjøre dem identiske."
         },
         {
           "type": "paragraph",
@@ -627,7 +627,7 @@ export const vagusnervenOgMassasjeArticle = {
       "title": "Hvordan stimulere vagusnerven?",
       "description": "Se massasje i sammenheng med pust, kulde, sang og elektrisk VNS uten å blande metodene.",
       "href": "/no/kunnskap/hvordan-stimulere-vagusnerven",
-      "label": "Utforsk methods-pillaren"
+      "label": "Utforsk metodeguiden"
     },
     {
       "title": "Ørets anatomi og vagusnerven",

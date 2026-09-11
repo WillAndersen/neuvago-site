@@ -372,20 +372,17 @@ export default function WhatNervousSystemRegulationFeelsLikePage() {
           <div className="flex flex-col gap-6 md:flex-row md:items-end md:justify-between">
             <div className="max-w-3xl">
               <p className="text-sm uppercase tracking-[0.18em] text-[#7a756c]">
-                Why people search for this
+                When you want to recognize progress
               </p>
 
               <h2 className="mt-4 text-3xl font-medium leading-tight tracking-[-0.03em] md:text-5xl">
-                Most people are not searching for a definition. They are trying
-                to understand what getting better is supposed to feel like.
+                Progress can be hard to recognize when change is gradual rather than dramatic.
               </h2>
 
               <p className="mt-6 max-w-2xl text-base leading-8 text-[#5f5a52] md:text-lg">
-                Searches around what nervous system regulation feels like are
-                often really searches for recognition: how to notice progress,
-                how to distinguish regulation from shutdown, and how to tell
-                whether more steadiness, ease, and return are beginning to show
-                up in everyday life.
+                Useful signs include how to notice progress, how to distinguish regulation
+                from shutdown, and whether more steadiness, ease, and return are
+                beginning to show up in everyday life.
               </p>
             </div>
 
@@ -454,7 +451,7 @@ export default function WhatNervousSystemRegulationFeelsLikePage() {
 
             <div className="mt-8 rounded-2xl bg-[#e9e1d6] p-5">
               <p className="text-sm font-medium text-[#1f1f1c]">
-                This page works best as a progress-recognition page
+                Progress is often easier to notice through patterns
               </p>
               <p className="mt-2 text-sm leading-7 text-[#5f5a52]">
                 The next step after recognition is often understanding the larger

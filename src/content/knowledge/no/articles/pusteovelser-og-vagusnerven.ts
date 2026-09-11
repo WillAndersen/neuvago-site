@@ -350,7 +350,7 @@ export const pusteovelserOgVagusnervenArticle = {
       "blocks": [
         {
           "type": "paragraph",
-          "text": "Denne siden eier det avgrensede spørsmålet om pusteøvelser og vagusnerven. Den bredere methods-pillaren forklarer flere metodekategorier. Reset-siden behandler reset-uttrykket og sju-minutters påstander. Nedroingssiden gir en bredere praktisk reguleringsguide, mens grunnsiden om vagusnerven og VNS-oversikten forklarer anatomi og elektrisk stimulering."
+          "text": "Her er fokuset det avgrensede spørsmålet om pusteøvelser og vagusnerven. Den bredere metodeguiden forklarer flere metodekategorier. Reset-siden behandler reset-uttrykket og sju-minutters påstander. Nedroingssiden gir en bredere praktisk reguleringsguide, mens grunnsiden om vagusnerven og VNS-oversikten forklarer anatomi og elektrisk stimulering."
         },
         {
           "type": "paragraph",
@@ -556,7 +556,7 @@ export const pusteovelserOgVagusnervenArticle = {
       "title": "Hvordan stimulere vagusnerven?",
       "description": "Se pusten i sammenheng med elektrisk VNS og andre metodekategorier.",
       "href": "/no/kunnskap/hvordan-stimulere-vagusnerven",
-      "label": "Utforsk methods-pillaren"
+      "label": "Utforsk metodeguiden"
     },
     {
       "title": "Kan man «resette» vagusnerven?",

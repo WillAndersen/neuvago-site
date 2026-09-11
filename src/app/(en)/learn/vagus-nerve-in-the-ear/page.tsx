@@ -107,7 +107,7 @@ const sections: readonly Section[] = [
     paragraphs: [
       "The auricular branch of the vagus nerve (ABVN), sometimes called Arnold's nerve, contributes sensory fibres to parts of the external ear and external auditory canal. It is unusual because it provides a superficial access point associated with a cranial nerve whose main trunk otherwise runs deep through the neck and body.",
       "The important qualifier is contributes. The human auricle also receives sensory fibres from the auriculotemporal nerve and cervical nerves including the great auricular and lesser occipital nerves. Their territories can overlap, and individual anatomy varies.",
-      "This page owns the anatomy question: where the vagus nerve may contribute in the ear, what landmarks researchers use, and what the maps can and cannot establish. The auricular-VNS guide owns the stimulation method, and the Research section owns study-level evidence.",
+      "This guide focuses on where the vagus nerve may contribute in the ear, what landmarks researchers use, and what the maps can and cannot establish. For stimulation methods, continue to the auricular-VNS guide; for study-level evidence, use the Research section.",
     ],
   },
   {

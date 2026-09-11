@@ -186,16 +186,16 @@ export default function GutBrainAxisResearchPage() {
             </h1>
 
             <p className="mt-6 max-w-3xl text-base leading-8 text-[#5f5a52] md:text-lg">
-              This topic page organizes research related to gut–brain communication,
-              including vagal signaling, microbiome-related processes, immune and endocrine
-              pathways, and broader brain–body regulation. It is designed to provide
-              a structured overview before readers move into individual studies.
+              Research on gut–brain communication spans vagal signaling,
+              microbiome-related processes, immune and endocrine pathways, and broader
+              brain–body regulation. This overview brings those strands together before
+              the individual studies.
             </p>
 
             <div className="mt-8 flex flex-wrap gap-x-8 gap-y-3 text-sm text-[#6b665e]">
-              <span>Current topic: 1 study summary</span>
-              <span>Built around brain–body communication</span>
-              <span>Designed to grow over time</span>
+              <span>1 study summary</span>
+              <span>Brain–body communication</span>
+              <span>Neural + immune + endocrine pathways</span>
             </div>
 
             <div className="mt-10 flex flex-wrap gap-4">
@@ -236,15 +236,14 @@ export default function GutBrainAxisResearchPage() {
             </p>
 
             <p className="mt-6 max-w-2xl text-base leading-8 text-[#5f5a52]">
-              This topic page groups the literature so the gut–brain axis can be
-              understood as a broader scientific framework rather than as a narrow
-              digestive topic alone.
+              Together, these research strands frame the gut–brain axis as a broader
+              scientific framework rather than a narrow digestive topic alone.
             </p>
           </div>
 
           <div className="rounded-[1.75rem] border border-black/8 bg-white/70 p-8 shadow-[0_8px_24px_rgba(31,31,28,0.03)]">
             <p className="text-sm uppercase tracking-[0.16em] text-[#8a847b]">
-              What this topic includes
+              Key research areas
             </p>
 
             <div className="mt-7 space-y-5">
@@ -300,11 +299,11 @@ export default function GutBrainAxisResearchPage() {
         <div className="mx-auto max-w-7xl px-6 py-20 md:px-10 md:py-24">
           <div className="max-w-3xl">
             <p className="text-sm uppercase tracking-[0.18em] text-[#7a756c]">
-              Foundational studies in this topic
+              Foundational study
             </p>
 
             <h2 className="mt-4 text-3xl font-medium leading-tight tracking-[-0.03em] md:text-5xl">
-              The first anchor study in the gut–brain axis track
+              A foundational reference for gut–brain axis research
             </h2>
           </div>
 
@@ -320,25 +319,22 @@ export default function GutBrainAxisResearchPage() {
         <div className="mx-auto grid max-w-7xl gap-14 px-6 py-20 md:px-10 md:py-24 lg:grid-cols-[1fr_0.95fr]">
           <div>
             <p className="text-sm uppercase tracking-[0.18em] text-[#7a756c]">
-              How this topic fits the library
+              Reading gut–brain research
             </p>
 
             <h2 className="mt-4 max-w-3xl text-3xl font-medium leading-tight tracking-[-0.03em] md:text-5xl">
-              Topic pages help a growing studies library stay usable as it expands
+              Compare mechanisms and study context before drawing conclusions
             </h2>
 
             <p className="mt-6 max-w-2xl text-base leading-8 text-[#5f5a52] md:text-lg">
-              As more studies are added, topic pages make it easier to browse
-              the literature by subject area rather than by title alone. This is
-              especially useful in gut–brain axis research, where neural, immune,
-              endocrine, digestive, and microbial mechanisms intersect.
+              Gut–brain axis research spans neural, immune, endocrine, digestive,
+              and microbial mechanisms. Reading studies by mechanism and design
+              makes it easier to see what each result actually addresses.
             </p>
 
             <p className="mt-6 max-w-2xl text-base leading-8 text-[#5f5a52]">
-              Over time, this topic page can expand to include more studies,
-              clearer internal grouping, and stronger links into adjacent research
-              themes such as inflammation, vagal signaling, IBS, stress physiology,
-              and brain–body communication.
+              Related research paths include inflammation, vagal signaling, IBS,
+              stress physiology, and broader brain–body communication.
             </p>
           </div>
 
@@ -376,13 +372,12 @@ export default function GutBrainAxisResearchPage() {
         <div className="mx-auto max-w-7xl px-6 py-16 md:px-10 md:py-20">
           <div className="max-w-4xl border-t border-black/8 pt-8">
             <p className="text-sm uppercase tracking-[0.18em] text-[#7a756c]">
-              Topic note
+              Research scope
             </p>
             <p className="mt-4 max-w-3xl text-base leading-8 text-[#5f5a52] md:text-lg">
-              This topic page is intended as a growing research index rather than
-              a final review article. It is designed to organize the literature as
-              the studies library expands across gut–brain communication, vagal pathways,
-              microbiome research, digestive regulation, and broader brain–body signaling.
+              This overview highlights selected gut–brain research and is not a
+              systematic review. Use the individual study summaries and source links
+              to evaluate methods, populations, outcomes, and the limits of each finding.
             </p>
 
             <div className="mt-8 flex flex-wrap gap-4">

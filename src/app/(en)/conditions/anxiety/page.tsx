@@ -345,7 +345,7 @@ export default function AnxietyPage() {
 
             <div className="mt-8 rounded-2xl bg-[#e9e1d6] p-5">
               <p className="text-sm font-medium text-[#1f1f1c]">
-                Anxiety works best as an entry point into the broader learning system
+                Anxiety often connects to a broader nervous system picture
               </p>
               <p className="mt-2 text-sm leading-7 text-[#5f5a52]">
                 The next step is often calming, emotional regulation, recovery, or a better explanation of how the body carries unease.
@@ -355,23 +355,23 @@ export default function AnxietyPage() {
 
           <div>
             <p className="text-sm uppercase tracking-[0.18em] text-[#7a756c]">
-              Why people search for anxiety
+              When unease is hard to explain
             </p>
 
             <h2 className="mt-4 max-w-3xl text-3xl font-medium leading-tight tracking-[-0.03em] md:text-5xl">
-              Most people are not searching only for labels. They are trying to understand why the body feels so watchful, uneasy, or hard to settle.
+              Anxiety can feel more confusing when the body stays watchful, uneasy, or hard to settle.
             </h2>
 
             <p className="mt-6 max-w-2xl text-base leading-8 text-[#5f5a52] md:text-lg">
-              Anxiety searches are often really searches for explanation: why the
-              body feels on edge, why evenings do not soften, why emotions feel
-              harder to carry, and why ordinary life can feel easier to overwhelm than before.
+              The practical questions are often body-based: why you feel on edge, why
+              evenings do not soften, why emotions feel harder to carry, and why
+              ordinary life can feel easier to overwhelm than before.
             </p>
 
             <p className="mt-6 max-w-2xl text-base leading-8 text-[#5f5a52]">
-              That is why anxiety pages become much stronger when they connect
-              not only to anxiety itself, but to the broader body-based logic of
-              activation, emotional load, sleep, and return after stress.
+              Understanding anxiety becomes more useful when it is connected to the
+              broader body-based logic of activation, emotional load, sleep, and
+              return after stress.
             </p>
 
             <div className="mt-10 flex flex-wrap gap-4">

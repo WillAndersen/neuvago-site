@@ -4,9 +4,9 @@ import Link from "next/link";
 import { JsonLd } from "@/components/seo/json-ld";
 import { buildAuthorityPageStructuredData } from "@/lib/seo/structured-data";
 
-const title = "Vagus nerve massage: evidence and safety limits | Neuvago";
+const title = "Vagus Nerve Massage: Evidence, Pressure Points & Safety | Neuvago";
 const description =
-  "An evidence-based guide to vagus nerve massage, pressure points, ear and neck touch, carotid-sinus safety and the boundary with electrical VNS.";
+  "Can you massage the vagus nerve? Learn what massage actually touches, what evidence can support, why no universal pressure point is proven, and key neck-safety limits.";
 const path = "/learn/vagus-nerve-massage";
 
 export const metadata: Metadata = {
@@ -55,7 +55,7 @@ const sections: readonly PageSection[] = [
     "eyebrow": "Define the practice first",
     "title": "What people mean by “vagus nerve massage”",
     "paragraphs": [
-      "“Vagus nerve massage” is a search phrase rather than a precise anatomical or medical method. Some people mean ordinary neck massage; others mean facial or jaw touch, outer-ear pressure, acupressure, reflexology or a manoeuvre they saw described as vagal. Without identifying the action, the phrase conceals differences in tissue, intensity, purpose and risk.",
+      "“Vagus nerve massage” is a popular umbrella label rather than a precise anatomical or medical method. Some people mean ordinary neck massage; others mean facial or jaw touch, outer-ear pressure, acupressure, reflexology or a manoeuvre they saw described as vagal. Without identifying the action, the phrase conceals differences in tissue, intensity, purpose and risk.",
       "The first useful question is what is actually being done. Light skin contact is different from working muscle. Ear touch is different from electrical auricular stimulation. A monitored clinical test is different from a wellness routine. Similar language does not make these methods equivalent.",
       "The second question is what was measured. A participant may report calm or less tension; heart rate or an HRV metric may change. These outcomes can matter, but they do not identify one nerve as the cause, establish selective engagement or guarantee the same response in another population or protocol.",
       "Precise language helps rather than hinders practical guidance. It separates low-intensity touch from hazardous neck pressure and prevents a familiar label from being mistaken for established mechanism. This page therefore treats “vagus nerve massage” as a claim to clarify, not an anatomical fact."
@@ -192,6 +192,24 @@ const sections: readonly PageSection[] = [
     ]
   }
 ];
+const quickAnswers = [
+  {
+    question: "Can you massage the vagus nerve?",
+    answer:
+      "Not directly. You can gently touch skin and massage muscles around the face, shoulders or ear, but the cervical vagus nerve is a deeper structure and should not be treated as a superficial cord or pressure point.",
+  },
+  {
+    question: "Is there a vagus nerve pressure point?",
+    answer:
+      "The sources do not establish one universal, manually accessible vagus pressure point that guarantees an effect. Ear and neck claims should be interpreted by the actual tissue, method, outcome and safety context.",
+  },
+  {
+    question: "What about neck massage?",
+    answer:
+      "Ordinary muscle massage is different from carotid sinus massage. Do not self-administer carotid sinus massage or use strong, deep, percussive or device-assisted pressure over the front or side of the neck.",
+  },
+] as const;
+
 const comparisonRows = [
   [
     "Light superficial touch",
@@ -368,7 +386,7 @@ export default function VagusNerveMassagePage() {
     path,
     articleSection: "Learn",
     datePublished: "2026-09-05",
-    dateModified: "2026-09-05",
+    dateModified: "2026-09-11",
     keywords: [
       "vagus nerve massage",
       "can you massage the vagus nerve",
@@ -385,14 +403,14 @@ export default function VagusNerveMassagePage() {
   });
 
   return (
-    <main className="bg-[#f7f4ef] text-[#1f1f1c]" data-wave2d2d2-massage-page="en">
+    <main className="bg-[#f7f4ef] text-[#1f1f1c]" data-wave2d2d2-massage-page="en" data-search-dominance-1e2d-owner="massage">
       <JsonLd data={structuredData} idPrefix="learn-vagus-nerve-massage" />
 
       <section className="border-b border-black/5 px-5 py-20 sm:px-8 lg:px-12 lg:py-28">
         <div className="mx-auto max-w-[88rem]">
           <p className="text-xs font-medium uppercase tracking-[0.3em] text-[#7b7167]">Touch, anatomy and safety</p>
           <h1 className="mt-6 max-w-[20ch] text-[clamp(3rem,7vw,6.4rem)] font-medium leading-[0.96] tracking-[-0.065em]">
-            Vagus nerve massage: what people mean, what evidence supports and what not to do
+            Vagus nerve massage: what people mean, what evidence supports, and what to avoid
           </h1>
           <p className="mt-8 max-w-3xl text-lg leading-8 text-[#5f5a52]">
             “Vagus nerve massage” can refer to gentle touch, muscle massage, ear pressure or hazardous neck techniques. This guide separates what is actually touched, what studies measure and why carotid-sinus pressure is not a home exercise.
@@ -410,6 +428,23 @@ export default function VagusNerveMassagePage() {
           <p className="mt-4 max-w-4xl text-xl leading-9 text-[#3d3934] sm:text-2xl">
             People can massage skin and muscles around the neck, face or ear, but that is not the same as directly massaging the vagus nerve. Strong pressure over the carotid sinus should not be taught as a self-treatment.
           </p>
+        </div>
+      </section>
+
+      <section className="border-b border-black/5 bg-[#f7f4ef] px-5 py-14 sm:px-8 lg:px-12 lg:py-16" data-search-dominance-1e2d-quick-answers="massage">
+        <div className="mx-auto max-w-[88rem]">
+          <p className="text-xs font-medium uppercase tracking-[0.22em] text-[#7b7167]">At a glance</p>
+          <h2 className="mt-4 max-w-4xl text-3xl font-medium tracking-[-0.04em] sm:text-5xl">
+            Three boundaries that make “vagus nerve massage” easier to understand
+          </h2>
+          <div className="mt-8 grid gap-4 lg:grid-cols-3">
+            {quickAnswers.map((item) => (
+              <article key={item.question} className="rounded-[1.5rem] border border-black/8 bg-white/70 p-6">
+                <h3 className="text-xl font-medium tracking-[-0.025em]">{item.question}</h3>
+                <p className="mt-3 text-base leading-8 text-[#5f5a52]">{item.answer}</p>
+              </article>
+            ))}
+          </div>
         </div>
       </section>
 
@@ -448,7 +483,7 @@ export default function VagusNerveMassagePage() {
               {section.id === "what-people-mean" ? <p className="mt-8"><Link href="/learn/how-to-stimulate-the-vagus-nerve" className="font-medium underline underline-offset-4">Explore the methods overview</Link></p> : null}
               {section.id === "anatomy-and-what-is-touched" ? <p className="mt-8"><Link href="/learn/vagus-nerve" className="font-medium underline underline-offset-4">Understand the vagus nerve foundation</Link></p> : null}
               {section.id === "ear-touch-and-mixed-innervation" ? <p className="mt-8"><Link href="/learn/auricular-vagus-nerve-stimulation" className="font-medium underline underline-offset-4">Separate ear touch from electrical auricular VNS</Link></p> : null}
-              {section.id === "what-massage-studies-show" ? <p className="mt-8"><Link href="/learn/breathing-exercises-and-the-vagus-nerve" className="font-medium underline underline-offset-4">Read the breathing and RespHRV evidence guide</Link></p> : null}
+              {section.id === "what-massage-studies-show" ? <div className="mt-8 flex flex-wrap gap-5"><Link href="/learn/breathing-exercises-and-the-vagus-nerve" className="font-medium underline underline-offset-4">Read the breathing and RespHRV evidence guide</Link><Link href="/research/topics/autonomic-regulation" className="font-medium underline underline-offset-4">Explore autonomic regulation research</Link></div> : null}
               {section.id === "safety-stop-and-care-boundaries" ? <div className="mt-8 flex flex-wrap gap-5"><Link href="/research/topics/safety-and-tolerability" className="font-medium underline underline-offset-4">Review safety and tolerability evidence</Link><Link href="/legal/medical-disclaimer" className="font-medium underline underline-offset-4">Read the medical disclaimer</Link></div> : null}
             </div>
           </div>

@@ -2124,9 +2124,11 @@ const wave2d2e2EnQuestions = [
 ];
 for (const question of wave2d2e2NoQuestions) if (!wave2d2e2Sources.noPage.includes(question)) errors.push(`Norwegian foundation direct answer missing: ${question}`);
 for (const question of wave2d2e2EnQuestions) if (!wave2d2e2Sources.enPage.includes(question)) errors.push(`English foundation direct answer missing: ${question}`);
-if (!wave2d2e2Sources.noPage.includes('title: "Vagusnerven: anatomi, forløp og funksjon"')) errors.push("Norwegian foundation H1 contract is missing.");
-if (!wave2d2e2Sources.noPage.includes('seoTitle: "Vagusnerven: anatomi, funksjon og hva den gjør"')) errors.push("Norwegian foundation SEO title contract is missing.");
-if (!wave2d2e2Sources.noPage.includes('modifiedAt: "2026-09-05"')) errors.push("Norwegian foundation modified date is missing.");
+// Search Dominance 1E.2E refreshes the Norwegian foundation owner title,
+// SEO title and modified date while preserving the Wave 2D.2E.2 scientific boundaries.
+if (!wave2d2e2Sources.noPage.includes('title: "Vagusnerven – hva den er, hvor den går og hva den gjør"')) errors.push("Norwegian foundation H1 contract is missing.");
+if (!wave2d2e2Sources.noPage.includes('seoTitle: "Vagusnerven: hva den er, hvor den går og hva den gjør | Neuvago"')) errors.push("Norwegian foundation SEO title contract is missing.");
+if (!wave2d2e2Sources.noPage.includes('modifiedAt: "2026-09-11"')) errors.push("Norwegian foundation modified date is missing.");
 if (!wave2d2e2Sources.noPage.includes('englishEquivalent: "/learn/vagus-nerve"')) errors.push("Norwegian foundation English equivalent is missing.");
 if ((wave2d2e2Sources.noPage.match(/href: "\/learn\/vagus-nerve"/g) ?? []).length !== 1 || !wave2d2e2Sources.noPage.includes('label: "Read in English"')) errors.push("Norwegian foundation visible English link must occur exactly once.");
 // Search Dominance 1E.1A intentionally moves detailed anatomy/location intent to

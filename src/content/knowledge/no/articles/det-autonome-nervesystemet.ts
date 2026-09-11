@@ -8,25 +8,27 @@ export const detAutonomeNervesystemetArticle = {
   order: 70,
 
   title: "Det autonome nervesystemet – hvordan kroppen regulerer seg selv",
-  seoTitle: "Det autonome nervesystemet: funksjon og regulering | Neuvago",
+  seoTitle: "Det autonome nervesystemet: hva det er og hva det gjør | Neuvago",
   description:
-    "Lær hvordan det autonome nervesystemet regulerer puls, blodtrykk, pust og fordøyelse, og hvordan sympatisk og parasympatisk aktivitet samspiller.",
+    "Det autonome nervesystemet regulerer puls, blodtrykk, fordøyelse og temperatur. Se hvordan sympatisk, parasympatisk og enterisk aktivitet samspiller.",
   eyebrow: "Nervesystem og fysiologi",
   lead:
     "Det autonome nervesystemet er et nettverk av sentrale og perifere nervebaner som kontinuerlig tilpasser kroppens indre funksjoner. Det påvirker blant annet puls, blodtrykk, pupiller, svette, fordøyelse, temperaturregulering og blærefunksjon. Systemet arbeider i stor grad uten bevisst styring, men det er ikke frakoblet tanker, følelser, pust, bevegelse eller omgivelser. Sympatisk, parasympatisk og enterisk aktivitet må derfor forstås som samordnede og organspesifikke reguleringsmønstre – ikke som én enkel balanseknapp.",
   shortAnswer: [
-    "Det autonome nervesystemet regulerer mange funksjoner som må tilpasses kontinuerlig uten at vi styrer hvert enkelt trinn bevisst.",
-    "Sympatisk og parasympatisk aktivitet er begge aktive over tid og virker ikke alltid som rene motpoler.",
-    "Det enteriske nervesystemet danner omfattende lokale nervekretser i fordøyelsessystemet og samarbeider med hjernen og øvrige autonome baner.",
+    "Det autonome nervesystemet er den delen av nervesystemet som kontinuerlig tilpasser indre funksjoner som puls, blodtrykk, pupiller, svette, fordøyelse, temperatur og blærefunksjon.",
+    "Sympatisk, parasympatisk og enterisk aktivitet samspiller; kroppen veksler ikke mellom to enkle av/på-moduser for stress og ro.",
     "Hjernen integrerer kroppssignaler, forventninger, følelser og situasjon før den koordinerer autonome responser.",
+    "Vagusnerven er en viktig parasympatisk forbindelse, men den er ikke hele det autonome eller parasympatiske nervesystemet.",
     "Puls, HRV eller én subjektiv følelse kan ikke alene beskrive tilstanden i hele det autonome nervesystemet.",
   ],
   hubSummary:
-    "En grunnleggende innføring i sympatisk, parasympatisk og enterisk regulering, sentrale autonome nettverk, homeostase og kroppens løpende tilpasning.",
+    "Grunnartikkel om det autonome nervesystemet: hva det gjør, hvordan sympatisk, parasympatisk og enterisk aktivitet samspiller, og hva HRV kan og ikke kan vise.",
   hubLabel: "Fysiologisk grunnartikkel",
 
   primaryKeyword: "det autonome nervesystemet",
   secondaryKeywords: [
+    "hva er det autonome nervesystemet",
+    "autonome nervesystemet funksjon",
     "autonome nervesystem",
     "autonomt nervesystem",
     "sympatisk nervesystem",
@@ -577,16 +579,16 @@ export const detAutonomeNervesystemetArticle = {
     {
       title: "Regulering av nervesystemet",
       description:
-        "Les den engelske introduksjonen til aktivering, nedregulering, restitusjon og hvordan kroppens tilstand endres over tid.",
-      href: "/learn/nervous-system-regulation",
+        "Les den norske introduksjonen til aktivering, nedregulering, restitusjon og hvordan kroppens tilstand endres over tid.",
+      href: "/no/kunnskap/regulering-av-nervesystemet",
       label: "Les om regulering",
     },
     {
       title: "Det parasympatiske nervesystemet",
       description:
         "Fordyp deg i den parasympatiske delen av ANS og hvorfor den ikke bør reduseres til uttrykket «rest and digest».",
-      href: "/learn/parasympathetic-nervous-system",
-      label: "Utforsk parasympatisk funksjon",
+      href: "/no/kunnskap/det-parasympatiske-nervesystemet",
+      label: "Les om det parasympatiske nervesystemet",
     },
     {
       title: "HRV og autonom regulering",

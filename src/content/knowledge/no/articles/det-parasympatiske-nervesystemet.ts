@@ -8,27 +8,30 @@ export const detParasympatiskeNervesystemetArticle = {
   order: 80,
 
   title:
-    "Det parasympatiske nervesystemet – funksjon, vagusnerven og vanlige misforståelser",
+    "Det parasympatiske nervesystemet – hva det gjør og hvilken rolle vagusnerven har",
   seoTitle:
-    "Det parasympatiske nervesystemet: funksjon og vagus | Neuvago",
+    "Det parasympatiske nervesystemet: hva det gjør | Neuvago",
   description:
-    "Lær hva det parasympatiske nervesystemet er, hvordan det regulerer ulike organer, hvilken rolle vagusnerven har, og hvorfor «rest and digest» er en forenkling.",
+    "Hva er det parasympatiske nervesystemet, hva gjør det, og hvilken rolle har vagusnerven? Les om organregulering, «rest and digest», pust og HRV.",
   eyebrow: "Nervesystem og fysiologi",
   lead:
     "Det parasympatiske nervesystemet er en del av kroppens autonome regulering. Det påvirker blant annet pupiller, spyttkjertler, hjerte, luftveier, fordøyelsessystem og bekkenorganer gjennom flere ulike nervebaner. Vagusnerven er den største parasympatiske forbindelsen til organer i bryst- og bukhulen, men den er ikke hele det parasympatiske nervesystemet. Systemet bør heller ikke forstås som én universell «roknapp»: virkningen er organspesifikk, situasjonsavhengig og tett integrert med sensoriske signaler, hjernestamme, ryggmarg og andre reguleringssystemer.",
   shortAnswer: [
-    "Det parasympatiske nervesystemet er en av hoveddelene i det autonome nervesystemet og regulerer bestemte organfunksjoner uten at de må styres viljemessig.",
-    "Parasympatiske nervebaner kommer fra hjernestammen og den sakrale delen av ryggmargen; vagusnerven er bare én av flere forbindelser.",
-    "Acetylkolin er hovedsignalstoff både i autonome ganglier og ved de fleste parasympatiske målorganer.",
+    "Det parasympatiske nervesystemet er en hoveddel av det autonome nervesystemet og regulerer bestemte organfunksjoner uten at de må styres viljemessig.",
+    "Det påvirker blant annet pupiller, kjertler, hjerte, luftveier, fordøyelse og bekkenorganer gjennom organspesifikke nervebaner.",
+    "Parasympatiske nervebaner kommer fra hjernestammen og den sakrale delen av ryggmargen; vagusnerven er en viktig forbindelse, men ikke hele systemet.",
     "Parasympatisk aktivitet betyr ikke alltid «ro», og sympatisk og parasympatisk aktivitet er ikke en enkel gass–brems-akse.",
     "HRV og pustesynkron variasjon i hjerterytmen kan gi informasjon om kardial vagal kontroll, men måler ikke hele det parasympatiske nervesystemet.",
   ],
   hubSummary:
-    "En presis forklaring av parasympatisk anatomi, signalstoffer og organregulering, med vagusnervens rolle, HRV-begrensninger og et mer nyansert alternativ til «rest and digest».",
-  hubLabel: "Fysiologisk grunnlag",
+    "Grunnartikkel om det parasympatiske nervesystemet: hva det gjør, hvordan organene reguleres, hvilken rolle vagusnerven har, og hvorfor «rest and digest» er en forenkling.",
+  hubLabel: "Parasympatisk grunnartikkel",
 
   primaryKeyword: "det parasympatiske nervesystemet",
   secondaryKeywords: [
+    "hva er det parasympatiske nervesystemet",
+    "parasympatiske nervesystemet funksjon",
+    "parasympatisk nervesystem funksjon",
     "parasympatisk nervesystem",
     "parasympatisk aktivitet",
     "vagusnerven parasympatisk",
@@ -557,6 +560,13 @@ export const detParasympatiskeNervesystemetArticle = {
   ],
   relatedLinks: [
     {
+      title: "Det autonome nervesystemet",
+      description:
+        "Se den bredere rammen for sympatisk, parasympatisk og enterisk regulering og hvordan de autonome delene samspiller.",
+      href: "/no/kunnskap/det-autonome-nervesystemet",
+      label: "Les om det autonome nervesystemet",
+    },
+    {
       title: "Det sympatiske nervesystemet",
       description:
         "Sammenlign med den sympatiske delen av ANS og se hvorfor de to grenene ikke er én enkel vippebryter.",
@@ -576,6 +586,13 @@ export const detParasympatiskeNervesystemetArticle = {
         "Les den engelske parallellsiden om parasympatisk regulering, vagusnerven og rolige tilstander.",
       href: "/learn/parasympathetic-nervous-system",
       label: "Les engelsk parallellside",
+    },
+    {
+      title: "Hvordan roe ned nervesystemet",
+      description:
+        "Gå til den praktiske norske guiden for pust, bevegelse, miljø, støtte og tydelige grenser for når du bør søke hjelp.",
+      href: "/no/kunnskap/hvordan-roe-ned-nervesystemet",
+      label: "Se praktiske strategier",
     },
     {
       title: "Forskning på autonom regulering",

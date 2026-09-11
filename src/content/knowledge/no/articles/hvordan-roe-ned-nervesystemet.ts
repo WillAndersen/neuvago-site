@@ -8,23 +8,23 @@ export const hvordanRoeNedNervesystemetArticle = {
   order: 130,
 
   title:
-    "Hvordan roe ned nervesystemet – trygge strategier for uro, aktivering og nedtrapping",
+    "Hvordan roe ned nervesystemet – trygge grep for nedregulering",
   seoTitle:
-    "Hvordan roe ned nervesystemet | Trygge strategier | Neuvago",
+    "Hvordan roe ned nervesystemet: trygge grep | Neuvago",
   description:
-    "Praktiske og forsiktige strategier for å dempe unødvendig aktivering, fra pust og bevegelse til sansemiljø, søvn, støtte og riktig vurderingsnivå.",
+    "Praktiske, trygge grep for å roe ned nervesystemet når aktiveringen er unødvendig høy: pust, bevegelse, miljø, muskelavspenning og sosial støtte.",
   eyebrow: "Praktisk regulering",
   lead:
     "Å «roe ned nervesystemet» betyr ikke å slå av kroppen eller holde seg avslappet hele tiden. Det betyr å hjelpe en sterk eller unødvendig aktivering til å bli mer håndterbar når situasjonen ikke lenger krever samme beredskap. Pust, bevegelse, oppmerksomhet, sansemiljø, søvn og sosial støtte kan påvirke tilstanden, men ingen teknikk passer alle. Start med å vurdere hva kroppen trenger, bruk milde tiltak, og velg medisinsk eller psykologisk hjelp når symptomer er nye, sterke eller vedvarende.",
   shortAnswer: [
-    "Begynn med å avklare om du trenger nedregulering, energi, problemløsning, restitusjon eller medisinsk vurdering.",
-    "Gjør omgivelsene enklere: reduser unødvendig støy, skjermpress, varme, konflikter eller krav når det er mulig.",
+    "Start med å vurdere om du faktisk trenger nedregulering, eller om kroppen trenger energi, problemløsning, restitusjon eller medisinsk vurdering.",
+    "Reduser unødvendige krav rundt deg, for eksempel støy, varsler, varme, konflikter eller mange samtidige oppgaver.",
     "Prøv rolig og behagelig pust uten å presse frem svært dype innpust eller lange pustehold.",
-    "Bevegelse, muskelavspenning, orientering og kontakt med en trygg person kan være nyttige alternativer til å sitte stille.",
-    "En kort øvelse kan endre øyeblikkstilstanden, men erstatter ikke søvn, mat, væske, smertebehandling, trygghet eller faglig hjelp.",
+    "Bruk bevegelse, muskelavspenning, orientering eller kontakt med en trygg person dersom det passer bedre enn å sitte stille.",
+    "Søk faglig hjelp når symptomer er nye, sterke, vedvarende eller medisinsk bekymringsfulle; en kort øvelse erstatter ikke nødvendig vurdering eller behandling.",
   ],
   hubSummary:
-    "En praktisk guide til trygg nedregulering: behovsavklaring, pust, bevegelse, muskelavspenning, orientering, sansemiljø, sosial støtte og tydelige sikkerhetsgrenser.",
+    "Praktisk guide til hvordan roe ned nervesystemet med behovsavklaring, pust, bevegelse, muskelavspenning, orientering, miljø, sosial støtte og tydelige sikkerhetsgrenser.",
   hubLabel: "Praktisk veiledning",
 
   primaryKeyword: "hvordan roe ned nervesystemet",
@@ -32,6 +32,8 @@ export const hvordanRoeNedNervesystemetArticle = {
     "roe ned nervesystemet",
     "nedregulere nervesystemet",
     "nervesystemregulering øvelser",
+    "øvelser for å roe ned nervesystemet",
+    "hvordan roe ned kroppen",
     "roe ned kroppen",
     "indre uro",
     "nervesystemet i alarmberedskap",
@@ -48,7 +50,7 @@ export const hvordanRoeNedNervesystemetArticle = {
   searchIntent: "informational",
 
   publishedAt: "2026-08-18",
-  modifiedAt: "2026-08-18",
+  modifiedAt: "2026-09-11",
   readingTimeMinutes: 18,
 
   authorId: "john-willander",
@@ -589,6 +591,13 @@ export const hvordanRoeNedNervesystemetArticle = {
     "vagusnerven",
   ],
   relatedLinks: [
+    {
+      title: "Regulering av nervesystemet",
+      description:
+        "Forstå forskjellen mellom aktivering, nedregulering og fleksibel regulering før du velger en praktisk strategi.",
+      href: "/no/kunnskap/regulering-av-nervesystemet",
+      label: "Les om nervesystemregulering",
+    },
     {
       title: "Søvn og nervesystemet",
       description:

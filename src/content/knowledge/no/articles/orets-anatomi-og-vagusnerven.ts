@@ -51,12 +51,13 @@ export const oretsAnatomiOgVagusnervenArticle = {
   searchIntent: "informational",
 
   publishedAt: "2026-08-18",
-  modifiedAt: "2026-08-18",
+  modifiedAt: "2026-09-11",
   readingTimeMinutes: 20,
 
   authorId: "john-willander",
   sourceReviewerId: "neuvago-redaksjonen",
 
+  englishEquivalent: "/learn/vagus-nerve-in-the-ear",
   sitemapPriority: 0.85,
   changeFrequency: "monthly",
 
@@ -707,6 +708,13 @@ export const oretsAnatomiOgVagusnervenArticle = {
     "vagusnervestimulering",
   ],
   relatedLinks: [
+    {
+      title: "Vagus nerve in the ear – English anatomy guide",
+      description:
+        "Read the English anatomy owner for ABVN, ear landmarks, overlapping innervation and the boundary between an anatomical map and target engagement.",
+      href: "/learn/vagus-nerve-in-the-ear",
+      label: "Read in English",
+    },
     {
       title: "Hvordan velge vagusnervestimulator",
       description:

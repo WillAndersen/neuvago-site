@@ -7,6 +7,8 @@ const repoRoot = process.cwd();
 
 const clusterRoutes = [
   "/learn/vagus-nerve",
+  "/learn/vagus-nerve-anatomy",
+  "/learn/vagus-nerve-in-the-ear",
   "/learn/vagus-nerve-stimulation",
   "/learn/non-invasive-vagus-nerve-stimulation",
   "/learn/implanted-vs-non-invasive-vagus-nerve-stimulation",
@@ -26,6 +28,8 @@ const clusterRoutes = [
 ];
 
 const requiredBuildRoutes = [
+  "/learn/vagus-nerve-anatomy",
+  "/learn/vagus-nerve-in-the-ear",
   "/learn/vagus-nerve-stimulation",
   "/learn/non-invasive-vagus-nerve-stimulation",
   "/learn/implanted-vs-non-invasive-vagus-nerve-stimulation",
@@ -1361,7 +1365,7 @@ for (const [relativePath, markers, label] of [
   ],
   [
     "public/llms.txt",
-    ["Updated: 2026-09-01", "[Implanted vs non-invasive vagus nerve stimulation](/learn/implanted-vs-non-invasive-vagus-nerve-stimulation)"],
+    ["[Implanted vs non-invasive vagus nerve stimulation](/learn/implanted-vs-non-invasive-vagus-nerve-stimulation)"],
     "Wave 2C.2A llms entry",
   ],
   [
@@ -1578,7 +1582,7 @@ for (const [relativePath, markers, label] of [
   ],
   [
     "public/llms.txt",
-    ["Updated: 2026-09-01", "[Tegn på et dysregulert nervesystem](/no/kunnskap/tegn-pa-dysregulert-nervesystem)"],
+    ["[Tegn på et dysregulert nervesystem](/no/kunnskap/tegn-pa-dysregulert-nervesystem)"],
     "Wave 2C.2C llms entry",
   ],
   [
@@ -1706,7 +1710,7 @@ for (const [relativePath, markers, label] of [
   ],
   [
     "public/llms.txt",
-    ["Updated: 2026-09-01", "[Hverdagsuro og et nervesystem som ikke roer seg](/no/tilstander/hverdagsuro)"],
+    ["[Hverdagsuro og et nervesystem som ikke roer seg](/no/tilstander/hverdagsuro)"],
     "Wave 2C.2D llms entry",
   ],
   [
@@ -2121,9 +2125,12 @@ if (!wave2d2e2Sources.noPage.includes('seoTitle: "Vagusnerven: anatomi, funksjon
 if (!wave2d2e2Sources.noPage.includes('modifiedAt: "2026-09-05"')) errors.push("Norwegian foundation modified date is missing.");
 if (!wave2d2e2Sources.noPage.includes('englishEquivalent: "/learn/vagus-nerve"')) errors.push("Norwegian foundation English equivalent is missing.");
 if ((wave2d2e2Sources.noPage.match(/href: "\/learn\/vagus-nerve"/g) ?? []).length !== 1 || !wave2d2e2Sources.noPage.includes('label: "Read in English"')) errors.push("Norwegian foundation visible English link must occur exactly once.");
-if (!wave2d2e2Sources.enPage.includes('const title = "Vagus nerve: anatomy, function and what it does"')) errors.push("English foundation SEO title contract is missing.");
-if (!wave2d2e2Sources.enPage.includes('The vagus nerve: anatomy, course and function')) errors.push("English foundation H1 contract is missing.");
-if (!wave2d2e2Sources.enPage.includes('datePublished: "2026-08-17"') || !wave2d2e2Sources.enPage.includes('dateModified: "2026-09-05"')) errors.push("English foundation editorial dates are missing.");
+// Search Dominance 1E.1A intentionally moves detailed anatomy/location intent to
+// /learn/vagus-nerve-anatomy while preserving the original Wave 2D.2E.2
+// safety, evidence, language and structured-data boundaries on the foundation page.
+if (!wave2d2e2Sources.enPage.includes('const title = "Vagus nerve: what it is, what it does and why it matters"')) errors.push("English foundation SEO title contract is missing.");
+if (!wave2d2e2Sources.enPage.includes('The vagus nerve: what it is, what it does and why it matters')) errors.push("English foundation H1 contract is missing.");
+if (!wave2d2e2Sources.enPage.includes('datePublished: "2026-08-17"') || !wave2d2e2Sources.enPage.includes('dateModified: "2026-09-11"')) errors.push("English foundation editorial dates are missing.");
 if (!wave2d2e2Sources.enPage.includes('"nb-NO": "/no/kunnskap/vagusnerven"') || !wave2d2e2Sources.enPage.includes('"x-default": path')) errors.push("English foundation reciprocal hreflang is missing.");
 if ((wave2d2e2Sources.enPage.match(/href="\/no\/kunnskap\/vagusnerven"/g) ?? []).length !== 1 || !wave2d2e2Sources.enPage.includes("Les på norsk")) errors.push("English foundation visible Norwegian link must occur exactly once.");
 if (!wave2d2e2Sources.enPage.includes("buildAuthorityPageStructuredData")) errors.push("English foundation must emit Article and BreadcrumbList through the authority builder.");
@@ -2380,6 +2387,71 @@ function collectFiles(dir, fileName, matches = []) {
   }
 
   return matches;
+}
+
+
+// SEARCH DOMINANCE 1E.1A — EN anatomy / ear-anatomy ownership contract.
+{
+  const anatomyRoute = "/learn/vagus-nerve-anatomy";
+  const earRoute = "/learn/vagus-nerve-in-the-ear";
+  const anatomy = readIfExists(pageFileForRoute(anatomyRoute));
+  const ear = readIfExists(pageFileForRoute(earRoute));
+  const foundation = readIfExists(pageFileForRoute("/learn/vagus-nerve"));
+  const learnHub = readIfExists(pageFileForRoute("/learn"));
+  const noEar = readIfExists(path.join(repoRoot, "src/content/knowledge/no/articles/orets-anatomi-og-vagusnerven.ts"));
+  const ownerMap = readIfExists(path.join(repoRoot, "docs/seo-vns-cluster-target-queries.md"));
+  const sourceLock = readIfExists(path.join(repoRoot, "docs/seo/search-dominance-1e1a-anatomy-ear-source-claims-lock.md"));
+  const llms = readIfExists(path.join(repoRoot, "public/llms.txt"));
+
+  const requireMarker = (source, needle, label) => {
+    if (!source.includes(needle)) errors.push(`Search Dominance 1E.1A: ${label} missing ${needle}`);
+  };
+
+  requireMarker(anatomy, 'const path = "/learn/vagus-nerve-anatomy"', "anatomy route");
+  requireMarker(anatomy, "Vagus nerve anatomy: where it runs and how it branches", "anatomy H1");
+  requireMarker(anatomy, "A location map with the interpretation boundary built in", "anatomy course map");
+  requireMarker(anatomy, "General vagus anatomy is also not product evidence for Neuvago", "anatomy product-evidence boundary");
+  requireMarker(anatomy, 'href="/learn/vagus-nerve-in-the-ear"', "anatomy to ear link");
+  requireMarker(anatomy, 'href="/legal/editorial-policy"', "anatomy editorial-policy link");
+  requireMarker(anatomy, 'dateModified: "2026-09-11"', "anatomy dateModified");
+
+  requireMarker(ear, 'const path = "/learn/vagus-nerve-in-the-ear"', "ear route");
+  requireMarker(ear, '"nb-NO": "/no/kunnskap/orets-anatomi-og-vagusnerven"', "ear reciprocal hreflang");
+  requireMarker(ear, "The ear regions you will see in taVNS papers", "ear landmark table");
+  requireMarker(ear, "Anatomical plausibility is not the same as target engagement", "ear target-engagement boundary");
+  requireMarker(ear, "This is not an electrode-placement or self-treatment guide", "ear safety scope");
+  requireMarker(ear, 'href="/research/topics/auricular-vagus-nerve-stimulation"', "ear research link");
+  requireMarker(ear, 'dateModified: "2026-09-11"', "ear dateModified");
+
+  requireMarker(foundation, 'href="/learn/vagus-nerve-anatomy"', "foundation to anatomy link");
+  requireMarker(foundation, 'href="/learn/vagus-nerve-in-the-ear"', "foundation to ear link");
+  requireMarker(foundation, 'const title = "Vagus nerve: what it is, what it does and why it matters"', "foundation broad-owner title");
+  if (foundation.includes('const title = "Vagus nerve: anatomy, function and what it does"')) {
+    errors.push("Search Dominance 1E.1A: broad foundation still claims anatomy in the title.");
+  }
+
+  for (const route of [anatomyRoute, earRoute]) {
+    const count = (learnHub.match(new RegExp(route.replace(/[.*+?^${}()|[\]\\]/g, "\\$&"), "g")) ?? []).length;
+    if (count !== 1) errors.push(`Search Dominance 1E.1A: Learn hub must expose ${route} exactly once; found ${count}.`);
+    const sitemapCount = (sitemapSource.match(new RegExp(route.replace(/[.*+?^${}()|[\]\\]/g, "\\$&"), "g")) ?? []).length;
+    if (sitemapCount !== 1) errors.push(`Search Dominance 1E.1A: sitemap must contain ${route} exactly once; found ${sitemapCount}.`);
+    const llmsCount = (llms.match(new RegExp(route.replace(/[.*+?^${}()|[\]\\]/g, "\\$&"), "g")) ?? []).length;
+    if (llmsCount !== 1) errors.push(`Search Dominance 1E.1A: llms.txt must contain ${route} exactly once; found ${llmsCount}.`);
+  }
+
+  requireMarker(noEar, 'englishEquivalent: "/learn/vagus-nerve-in-the-ear"', "NO ear English equivalent");
+  requireMarker(noEar, 'href: "/learn/vagus-nerve-in-the-ear"', "NO ear visible English pathway");
+  requireMarker(noEar, 'modifiedAt: "2026-09-11"', "NO ear modified date");
+
+  requireMarker(ownerMap, "SEARCH DOMINANCE 1E.1A — EN anatomy owner lock", "owner-map section");
+  requireMarker(ownerMap, "| vagus nerve anatomy / where is the vagus nerve / vagus nerve location | `/learn/vagus-nerve-anatomy`", "anatomy owner map");
+  requireMarker(sourceLock, "Sensation ≠ target engagement", "source/claims lock");
+  requireMarker(sourceLock, "Method evidence ≠ product evidence", "source/claims lock evidence transfer");
+
+  const germanLeak = [anatomy, ear, foundation, learnHub, noEar].some((source) =>
+    source.includes("/de/vagus") || source.includes("/de/lernen")
+  );
+  if (germanLeak) errors.push("Search Dominance 1E.1A: German child-route exposure detected.");
 }
 
 function pageFileForRoute(route) {

@@ -1,6 +1,6 @@
 # VNS Cluster Target Queries and Landing Page Map
 
-_Last updated: 2026-08-31_
+_Last updated: 2026-09-11_
 
 Use this map to evaluate whether Search Console queries are landing on the correct Neuvago page.
 
@@ -153,7 +153,7 @@ The massage pair owns the dedicated massage and pressure-point intent. The metho
 | Query family | Primary owner | Protected adjacent owners | Boundary |
 |---|---|---|---|
 | what is the vagus nerve / hva er vagusnerven | `/learn/vagus-nerve` · `/no/kunnskap/vagusnerven` | methods, VNS, reset, breathing and massage pages | Foundation definition, paired anatomy and high-level function only. |
-| vagus nerve anatomy / vagusnerven anatomi | foundation pair | auricular anatomy and ear-vs-neck guides | Gross course and major branches; no electrode placement or device selection. |
+| vagus nerve anatomy / where is the vagus nerve / vagus nerve location | `/learn/vagus-nerve-anatomy` | `/learn/vagus-nerve`; `/learn/vagus-nerve-in-the-ear` | Dedicated EN anatomy owner for location, course and major branches. Broad foundation retains definition/function; ear owner retains auricular anatomy. |
 | what does the vagus nerve do / hva gjør vagusnerven | foundation pair | regulation, calming, HRV and vagal-tone pages | Sensory, motor, autonomic and reflex function families; no one-mechanism explanation. |
 | vagus nerve and parasympathetic system | foundation pair | nervous-system regulation owners | Vagal parasympathetic role inside the broader autonomic and enteric systems. |
 | HRV vagus nerve / HRV vagusnerven | dedicated HRV and vagal-tone owners | foundation pair | Foundation page states only the measurement boundary and routes interpretation outward. |
@@ -203,4 +203,16 @@ S009 uses the fully qualified current eCFR section URL for the same regulation.
 Some background sources were checked through metadata/abstract rather than full text; S026 is not the sole support for any factual claim.
 Historical TENS reviews are not described as the latest treatment guidance. This is not a systematic clinical review or independent specialist sign-off.
 Check reuse of the six incorrect identifiers in other source registers in a separately scoped source-maintenance task; do not silently change protected pages here.
+
+## SEARCH DOMINANCE 1E.1A — EN anatomy owner lock
+
+| Query family | Primary owner | Protected adjacent owners | Boundary |
+|---|---|---|---|
+| what is the vagus nerve | `/learn/vagus-nerve` | anatomy, ear anatomy, VNS and methods pages | Broad definition and function owner. |
+| vagus nerve anatomy / where is the vagus nerve / vagus nerve location | `/learn/vagus-nerve-anatomy` | `/learn/vagus-nerve`; ear anatomy | Detailed location, course, branches and left-right anatomy; no DIY neck localisation or stimulation. |
+| vagus nerve in the ear / ABVN / ear vagus anatomy | `/learn/vagus-nerve-in-the-ear` | `/learn/auricular-vagus-nerve-stimulation`; auricular research topic | Anatomy, innervation overlap and target-engagement boundary; no device protocol or efficacy transfer. |
+| auricular VNS / taVNS | `/learn/auricular-vagus-nerve-stimulation` | ear anatomy; Research | Method explanation; ear anatomy supports but does not replace the method owner. |
+| auricular VNS research / target engagement | `/research/topics/auricular-vagus-nerve-stimulation` | ear anatomy; taVNS Learn page | Research and evidence interpretation. |
+
+The Norwegian market remains intentionally asymmetric: `/no/kunnskap/vagusnerven` retains general vagus anatomy while `/no/kunnskap/orets-anatomi-og-vagusnerven` remains the dedicated ear-anatomy owner.
 

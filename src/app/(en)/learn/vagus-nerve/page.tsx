@@ -4,9 +4,9 @@ import Link from "next/link";
 import { JsonLd } from "@/components/seo/json-ld";
 import { buildAuthorityPageStructuredData } from "@/lib/seo/structured-data";
 
-const title = "Vagus nerve: anatomy, function and what it does";
+const title = "Vagus nerve: what it is, what it does and why it matters";
 const description =
-  "Learn what the paired vagus nerves are, where they run, which functions they participate in, and why HRV is not a complete test of vagus function.";
+  "Learn what the vagus nerve is, what it does, how it fits into the autonomic nervous system, and where to go deeper into anatomy, HRV and stimulation.";
 const path = "/learn/vagus-nerve";
 
 export const metadata: Metadata = {
@@ -49,7 +49,7 @@ const sections: readonly PageSection[] = [
     paragraphs: [
       "The vagus nerve is the tenth cranial nerve and runs from the brainstem to structures in the neck, chest and abdomen. It participates in sensory, motor and autonomic functions and should not be reduced to a simple “calm switch.”",
       "Humans have a left and a right vagus nerve. The singular term is convenient, but the paired nerves branch repeatedly and contain different fibre types. They are better understood as part of a distributed, two-way communication system than as one uninterrupted cable controlling the whole body.",
-      "This foundation page explains anatomy, the nerve’s course and its major function families. Separate guides cover practical methods, breathing, massage, reset language, HRV interpretation and electrical vagus nerve stimulation. Keeping these topics separate helps prevent anatomy from being confused with a protocol or product claim.",
+      "This foundation page owns the broad question: what the vagus nerve is and what it does. A dedicated anatomy guide owns detailed location, course and branch intent, while separate guides cover ear anatomy, HRV, practical methods and electrical vagus nerve stimulation.",
     ],
     answers: [
       {
@@ -262,7 +262,7 @@ export default function VagusNervePage() {
     path,
     articleSection: "Learn",
     datePublished: "2026-08-17",
-    dateModified: "2026-09-05",
+    dateModified: "2026-09-11",
     keywords: [
       "vagus nerve",
       "what is the vagus nerve",
@@ -287,14 +287,16 @@ export default function VagusNervePage() {
         <div className="mx-auto max-w-[88rem]">
           <p className="text-xs font-medium uppercase tracking-[0.3em] text-[#7b7167]">Foundation guide · cranial nerve X</p>
           <h1 className="mt-6 max-w-[18ch] text-[clamp(3rem,7vw,6.4rem)] font-medium leading-[0.96] tracking-[-0.065em]">
-            The vagus nerve: anatomy, course and function
+            The vagus nerve: what it is, what it does and why it matters
           </h1>
           <p className="mt-8 max-w-3xl text-lg leading-8 text-[#5f5a52]">
-            The paired vagus nerves connect the brainstem with structures in the neck, chest and upper abdomen. This evidence-based foundation separates anatomy from “calm switch” claims, consumer tests and product-specific evidence.
+            The paired vagus nerves are cranial nerve X: a mixed sensory, motor and parasympathetic system. This foundation answers the broad definition-and-function question and routes detailed anatomy, measurement and stimulation intent to dedicated guides.
           </p>
           <div className="mt-10 flex flex-wrap gap-3">
             <Link href="/no/kunnskap/vagusnerven" className="rounded-full border border-black/12 px-5 py-3 text-sm font-medium hover:bg-white/70">Les på norsk</Link>
             <Link href="#short-answer" className="rounded-full bg-[#1f1f1c] px-5 py-3 text-sm font-medium text-white hover:opacity-90">Read the direct answer</Link>
+            <Link href="/learn/vagus-nerve-anatomy" className="rounded-full border border-black/12 px-5 py-3 text-sm font-medium hover:bg-white/70">Detailed anatomy</Link>
+            <Link href="/learn/vagus-nerve-in-the-ear" className="rounded-full border border-black/12 px-5 py-3 text-sm font-medium hover:bg-white/70">Vagus nerve in the ear</Link>
           </div>
         </div>
       </section>
@@ -347,6 +349,7 @@ export default function VagusNervePage() {
               ) : null}
 
               {section.id === "short-answer" ? <div className="mt-8 flex flex-wrap gap-5"><Link href="/learn/how-to-stimulate-the-vagus-nerve" className="font-medium underline underline-offset-4">Explore the methods overview</Link><Link href="/learn/vagus-nerve-stimulation" className="font-medium underline underline-offset-4">Read the electrical VNS overview</Link></div> : null}
+              {section.id === "brainstem-to-body-course" ? <div className="mt-8 flex flex-wrap gap-5"><Link href="/learn/vagus-nerve-anatomy" className="font-medium underline underline-offset-4">Go deeper into vagus nerve anatomy and branches</Link><Link href="/learn/vagus-nerve-in-the-ear" className="font-medium underline underline-offset-4">Explore the auricular branch and ear anatomy</Link></div> : null}
               {section.id === "autonomic-and-parasympathetic-role" ? <p className="mt-8"><Link href="/learn/nervous-system-regulation" className="font-medium underline underline-offset-4">Explore the broader nervous-system regulation framework</Link></p> : null}
               {section.id === "vagal-tone-hrv-and-measurement-limits" ? <p className="mt-8"><Link href="/learn/vagal-tone" className="font-medium underline underline-offset-4">Read the dedicated vagal-tone and measurement guide</Link></p> : null}
               {section.id === "stimulation-wellness-and-medical-boundaries" ? <div className="mt-8 flex flex-wrap gap-5"><Link href="/learn/vagus-nerve-reset" className="font-medium underline underline-offset-4">Understand reset language</Link><Link href="/learn/breathing-exercises-and-the-vagus-nerve" className="font-medium underline underline-offset-4">Read the breathing evidence guide</Link><Link href="/learn/vagus-nerve-massage" className="font-medium underline underline-offset-4">Read the massage evidence and safety guide</Link></div> : null}

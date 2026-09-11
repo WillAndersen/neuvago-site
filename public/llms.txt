@@ -2,7 +2,7 @@
 
 > Neuvago is a premium wellness brand building a non-invasive vagus nerve stimulator and app for calm, guided nervous system regulation routines.
 
-Updated: 2026-09-01
+Updated: 2026-09-11
 Canonical site: https://neuvago.com
 
 ## Important context
@@ -35,6 +35,8 @@ When summarizing Neuvago, use conservative language:
 - [Auricular vagus nerve stimulation guide](/learn/auricular-vagus-nerve-stimulation)
 - [What vagus nerve stimulation feels like](/learn/what-does-vagus-nerve-stimulation-feel-like)
 - [What is the vagus nerve?](/learn/vagus-nerve) — English evidence-based foundation guide to cranial nerve X, paired anatomy, function, HRV limits and VNS boundaries.
+- [Vagus nerve anatomy](/learn/vagus-nerve-anatomy) — English anatomy owner for location, course, major branches, left-right asymmetry and claim-transfer boundaries.
+- [Vagus nerve in the ear](/learn/vagus-nerve-in-the-ear) — English ear-anatomy owner for ABVN, overlapping auricular innervation, research landmarks and target-engagement limits.
 - [Vagusnerven: anatomi, forløp og funksjon](/no/kunnskap/vagusnerven) — Norsk kildebasert grunnartikkel om hjernenerve X, de to vagusnervene, funksjon, HRV-grenser og VNS-avgrensning.
 - [Nervous system regulation](/learn/nervous-system-regulation)
 

@@ -69,6 +69,14 @@ const primaryFoundationArticles = [
 ] as const;
 
 const moreFoundationGuides = [
+  {
+    title: "Vagus nerve anatomy: location, course and branches",
+    href: "/learn/vagus-nerve-anatomy",
+  },
+  {
+    title: "Vagus nerve in the ear: ABVN and ear anatomy",
+    href: "/learn/vagus-nerve-in-the-ear",
+  },
   // WAVE 2D.3.2B: one comparison link and the deferred buyer-guide link.
   {
     title: "TENS vs vagus nerve stimulation",

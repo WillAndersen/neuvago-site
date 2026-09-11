@@ -61,6 +61,8 @@ const routes: Array<{
   { path: "/learn", changeFrequency: "weekly", priority: 0.86, lastModified: SEO_LAUNCH_REVIEW_DATE },
   { path: "/glossary", changeFrequency: "monthly", priority: 0.78, lastModified: "2026-08-25" },
   { path: "/learn/vagus-nerve", changeFrequency: "weekly", priority: 0.82, lastModified: "2026-09-05" },
+  { path: "/learn/vagus-nerve-anatomy", changeFrequency: "weekly", priority: 0.84, lastModified: "2026-09-11" },
+  { path: "/learn/vagus-nerve-in-the-ear", changeFrequency: "weekly", priority: 0.82, lastModified: "2026-09-11" },
   { path: "/learn/how-to-stimulate-the-vagus-nerve", changeFrequency: "weekly", priority: 0.92, lastModified: "2026-09-02" },
   { path: "/learn/vagus-nerve-reset", changeFrequency: "weekly", priority: 0.82, lastModified: "2026-09-04" },
   { path: "/learn/breathing-exercises-and-the-vagus-nerve", changeFrequency: "weekly", priority: 0.81, lastModified: "2026-09-05" },

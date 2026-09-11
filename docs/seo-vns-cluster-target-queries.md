@@ -216,3 +216,16 @@ Check reuse of the six incorrect identifiers in other source registers in a sepa
 
 The Norwegian market remains intentionally asymmetric: `/no/kunnskap/vagusnerven` retains general vagus anatomy while `/no/kunnskap/orets-anatomi-og-vagusnerven` remains the dedicated ear-anatomy owner.
 
+## SEARCH DOMINANCE 1E.1B — Autonomic nervous system owner lock
+
+| Query family | Primary owner | Protected adjacent owners | Boundary |
+|---|---|---|---|
+| autonomic nervous system / ANS | `/learn/autonomic-nervous-system` | `/learn/nervous-system-regulation`; autonomic Research topic | Broad physiology, anatomy, divisions, central autonomic control and measurement limits. Regulation page keeps practical everyday-regulation intent. |
+| sympathetic vs parasympathetic nervous system | `/learn/sympathetic-vs-parasympathetic-nervous-system` | autonomic foundation; parasympathetic owner | Comparison intent only: anatomy, signaling, organ effects, coactivation and balance-model limits. |
+| parasympathetic nervous system | `/learn/parasympathetic-nervous-system` | comparison page; ANS foundation | Dedicated parasympathetic explanation remains the owner. |
+| sympathetic nervous system (EN) | future `/learn/sympathetic-nervous-system` | current comparison + ANS foundation | P1 later; 1E.1B does not create the EN standalone owner. |
+| det autonome nervesystemet | `/no/kunnskap/det-autonome-nervesystemet` | regulation and research owners | Existing broad NO ANS owner; now reciprocal with EN foundation. |
+| sympatiske nervesystem / sympatiske nervesystemet | `/no/kunnskap/det-sympatiske-nervesystemet` | NO autonomic + parasympathetic owners | Dedicated NO sympathetic owner; includes the market-specific sympathetic-vs-parasympathetic comparison section. |
+| sympatiske og parasympatiske nervesystemet | `/no/kunnskap/det-sympatiske-nervesystemet` | `/no/kunnskap/det-parasympatiske-nervesystemet` | Keep as a comparison section inside the NO sympathetic owner; do not create a separate NO comparison URL. |
+
+Do not describe sympathetic and parasympathetic activity as a universal one-dimensional balance. Reciprocal control is one pattern among several; organ, pathway and measurement context must remain explicit.

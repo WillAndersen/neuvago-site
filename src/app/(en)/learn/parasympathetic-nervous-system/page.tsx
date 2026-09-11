@@ -127,6 +127,20 @@ const whyPeopleSearch = [
 
 const connectedTopics = [
   {
+    title: "Autonomic nervous system",
+    description:
+      "Start with the broader ANS architecture, including sympathetic, parasympathetic and enteric pathways and central control.",
+    href: "/learn/autonomic-nervous-system",
+    linkLabel: "Explore the autonomic nervous system",
+  },
+  {
+    title: "Sympathetic vs parasympathetic",
+    description:
+      "Compare anatomy, signaling and organ effects without reducing the two systems to one simple stress-versus-calm scale.",
+    href: "/learn/sympathetic-vs-parasympathetic-nervous-system",
+    linkLabel: "Compare the two systems",
+  },
+  {
     title: "Vagus nerve",
     description:
       "The broader entry page for understanding why the vagus nerve matters across stress, sleep, calm, and recovery conversations.",
@@ -204,6 +218,12 @@ export default function ParasympatheticNervousSystemPage() {
                 className="rounded-full border border-[#d8d1c7] bg-transparent px-6 py-3 text-sm font-medium text-[#1f1f1c] transition hover:bg-white/70"
               >
                 Explore vagus nerve
+              </Link>
+              <Link
+                href="/learn/sympathetic-vs-parasympathetic-nervous-system"
+                className="rounded-full border border-[#d8d1c7] bg-transparent px-6 py-3 text-sm font-medium text-[#1f1f1c] transition hover:bg-white/70"
+              >
+                Compare sympathetic vs parasympathetic
               </Link>
             </div>
           </div>

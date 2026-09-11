@@ -42,12 +42,13 @@ export const detAutonomeNervesystemetArticle = {
   searchIntent: "informational",
 
   publishedAt: "2026-08-17",
-  modifiedAt: "2026-08-17",
+  modifiedAt: "2026-09-11",
   readingTimeMinutes: 16,
 
   authorId: "john-willander",
   sourceReviewerId: "neuvago-redaksjonen",
 
+  englishEquivalent: "/learn/autonomic-nervous-system",
   sitemapPriority: 0.86,
   changeFrequency: "monthly",
 
@@ -542,6 +543,7 @@ export const detAutonomeNervesystemetArticle = {
   ],
 
   relatedSlugs: [
+    "det-sympatiske-nervesystemet",
     "vagusnerven",
     "vagusnervestimulering",
     "det-parasympatiske-nervesystemet",
@@ -551,6 +553,20 @@ export const detAutonomeNervesystemetArticle = {
     "hvordan-roe-ned-nervesystemet",
   ],
   relatedLinks: [
+    {
+      title: "Autonomic nervous system",
+      description:
+        "Les den engelske foundation-siden for bred ANS-intensjon, sentral autonom kontroll og målegrenser.",
+      href: "/learn/autonomic-nervous-system",
+      label: "Les engelsk ANS-guide",
+    },
+    {
+      title: "Det sympatiske nervesystemet",
+      description:
+        "Fordyp deg i sympatisk anatomi, organfunksjon og hvorfor sympatisk aktivitet ikke bare betyr stress.",
+      href: "/no/kunnskap/det-sympatiske-nervesystemet",
+      label: "Les om det sympatiske nervesystemet",
+    },
     {
       title: "Autonom regulering i forskningsbiblioteket",
       description:

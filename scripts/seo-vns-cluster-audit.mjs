@@ -15,6 +15,8 @@ const clusterRoutes = [
   "/learn/transcutaneous-vagus-nerve-stimulation",
   "/learn/auricular-vagus-nerve-stimulation",
   "/learn/what-does-vagus-nerve-stimulation-feel-like",
+  "/learn/autonomic-nervous-system",
+  "/learn/sympathetic-vs-parasympathetic-nervous-system",
   "/learn/nervous-system-regulation",
   "/research/topics/vagus-nerve-stimulation",
   "/research/topics/transcutaneous-vagus-nerve-stimulation",
@@ -36,6 +38,8 @@ const requiredBuildRoutes = [
   "/learn/transcutaneous-vagus-nerve-stimulation",
   "/learn/auricular-vagus-nerve-stimulation",
   "/learn/what-does-vagus-nerve-stimulation-feel-like",
+  "/learn/autonomic-nervous-system",
+  "/learn/sympathetic-vs-parasympathetic-nervous-system",
   "/research/topics/vagus-nerve-stimulation",
   "/research/topics/transcutaneous-vagus-nerve-stimulation",
   "/research/topics/safety-and-tolerability",
@@ -2452,6 +2456,85 @@ function collectFiles(dir, fileName, matches = []) {
     source.includes("/de/vagus") || source.includes("/de/lernen")
   );
   if (germanLeak) errors.push("Search Dominance 1E.1A: German child-route exposure detected.");
+}
+
+
+// SEARCH DOMINANCE 1E.1B — autonomic nervous system ownership contract.
+{
+  const autonomicRoute = "/learn/autonomic-nervous-system";
+  const comparisonRoute = "/learn/sympathetic-vs-parasympathetic-nervous-system";
+  const noSympatheticRoute = "/no/kunnskap/det-sympatiske-nervesystemet";
+
+  const autonomic = readIfExists(pageFileForRoute(autonomicRoute));
+  const comparison = readIfExists(pageFileForRoute(comparisonRoute));
+  const parasympathetic = readIfExists(pageFileForRoute("/learn/parasympathetic-nervous-system"));
+  const regulation = readIfExists(pageFileForRoute("/learn/nervous-system-regulation"));
+  const learnHub = readIfExists(pageFileForRoute("/learn"));
+  const noRegistry = readIfExists(path.join(repoRoot, "src/content/knowledge/no/registry.ts"));
+  const noTypes = readIfExists(path.join(repoRoot, "src/content/knowledge/no/types.ts"));
+  const noAutonomic = readIfExists(path.join(repoRoot, "src/content/knowledge/no/articles/det-autonome-nervesystemet.ts"));
+  const noSympathetic = readIfExists(path.join(repoRoot, "src/content/knowledge/no/articles/det-sympatiske-nervesystemet.ts"));
+  const noParasympathetic = readIfExists(path.join(repoRoot, "src/content/knowledge/no/articles/det-parasympatiske-nervesystemet.ts"));
+  const ownerMap = readIfExists(path.join(repoRoot, "docs/seo-vns-cluster-target-queries.md"));
+  const sourceLock = readIfExists(path.join(repoRoot, "docs/seo/search-dominance-1e1b-ans-cluster-source-claims-lock.md"));
+  const llms = readIfExists(path.join(repoRoot, "public/llms.txt"));
+
+  const requireMarker1e1b = (source, needle, label) => {
+    if (!source.includes(needle)) errors.push(`Search Dominance 1E.1B: ${label} missing ${needle}`);
+  };
+  const count1e1b = (source, needle) => (source.match(new RegExp(needle.replace(/[.*+?^${}()|[\]\\]/g, "\\$&"), "g")) ?? []).length;
+
+  requireMarker1e1b(autonomic, 'const path = "/learn/autonomic-nervous-system"', "autonomic route");
+  requireMarker1e1b(autonomic, '"nb-NO": "/no/kunnskap/det-autonome-nervesystemet"', "autonomic hreflang");
+  requireMarker1e1b(autonomic, "The ANS is a distributed control network, not one automatic switch", "autonomic direct answer");
+  requireMarker1e1b(autonomic, "No single consumer metric measures the whole ANS", "autonomic measurement boundary");
+  requireMarker1e1b(autonomic, "General ANS physiology is therefore context for vagus-nerve education. It is not product evidence for Neuvago", "autonomic product boundary");
+
+  requireMarker1e1b(comparison, 'const path = "/learn/sympathetic-vs-parasympathetic-nervous-system"', "comparison route");
+  if (comparison.includes('"nb-NO":')) errors.push("Search Dominance 1E.1B: EN comparison must not declare a false NO page equivalent.");
+  requireMarker1e1b(comparison, "They are different autonomic pathways—not a good side and a bad side", "comparison direct answer");
+  requireMarker1e1b(comparison, "Reciprocal change is only one of several possible coordination patterns", "comparison non-binary control");
+  requireMarker1e1b(comparison, "HRV is not a direct sympathovagal balance meter", "comparison HRV boundary");
+  requireMarker1e1b(comparison, "General VNS, taVNS or autonomic research does not establish that Neuvago reduces sympathetic activity", "comparison product boundary");
+
+  requireMarker1e1b(noSympathetic, 'slug: "det-sympatiske-nervesystemet"', "NO sympathetic slug");
+  requireMarker1e1b(noSympathetic, 'wave: "SEARCH-1E"', "NO sympathetic wave");
+  requireMarker1e1b(noSympathetic, "Sympatisk og parasympatisk er ikke to ender av én vippebryter", "NO sympathetic comparison");
+  requireMarker1e1b(noSympathetic, "Neuvago bør derfor ikke beskrives som et produkt som", "NO sympathetic product boundary");
+  requireMarker1e1b(noSympathetic, "Hjertefrekvensvariabilitet kan beskrive variasjon mellom hjerteslag", "NO sympathetic HRV boundary");
+
+  if (count1e1b(noRegistry, "detSympatiskeNervesystemetArticle") !== 2) {
+    errors.push("Search Dominance 1E.1B: NO sympathetic registry import + registry item must total exactly two.");
+  }
+  requireMarker1e1b(noTypes, '| "SEARCH-1E"', "NO wave type");
+  requireMarker1e1b(noAutonomic, 'englishEquivalent: "/learn/autonomic-nervous-system"', "NO autonomic EN equivalent");
+  requireMarker1e1b(noAutonomic, '"det-sympatiske-nervesystemet"', "NO autonomic reciprocal slug");
+  requireMarker1e1b(noParasympathetic, '"det-sympatiske-nervesystemet"', "NO parasympathetic reciprocal slug");
+  requireMarker1e1b(parasympathetic, 'href="/learn/sympathetic-vs-parasympathetic-nervous-system"', "EN parasympathetic reciprocal link");
+  requireMarker1e1b(parasympathetic, 'href: "/learn/autonomic-nervous-system"', "EN parasympathetic ANS connected topic");
+  requireMarker1e1b(regulation, 'href="/learn/autonomic-nervous-system"', "regulation to ANS link");
+
+  for (const route of [autonomicRoute, comparisonRoute]) {
+    if (count1e1b(learnHub, route) !== 1) errors.push(`Search Dominance 1E.1B: Learn hub must expose ${route} exactly once.`);
+    if (count1e1b(sitemapSource, route) !== 1) errors.push(`Search Dominance 1E.1B: sitemap must contain ${route} exactly once.`);
+    if (count1e1b(llms, route) !== 1) errors.push(`Search Dominance 1E.1B: llms.txt must contain ${route} exactly once.`);
+  }
+  if (count1e1b(llms, noSympatheticRoute) !== 1) errors.push(`Search Dominance 1E.1B: llms.txt must contain ${noSympatheticRoute} exactly once.`);
+
+  requireMarker1e1b(ownerMap, "SEARCH DOMINANCE 1E.1B — Autonomic nervous system owner lock", "owner map");
+  requireMarker1e1b(sourceLock, "No universal balance axis", "source lock");
+  requireMarker1e1b(sourceLock, "No NO comparison duplicate", "source lock market asymmetry");
+
+  if (existsSync(pageFileForRoute("/learn/sympathetic-nervous-system"))) {
+    errors.push("Search Dominance 1E.1B: standalone EN sympathetic page is P1 later and must not be created in this batch.");
+  }
+  if (sitemapSource.includes('/no/kunnskap/sympatisk-vs-parasympatisk')) {
+    errors.push("Search Dominance 1E.1B: duplicate NO sympathetic-vs-parasympathetic route detected.");
+  }
+  const germanLeak = [autonomic, comparison, noSympathetic, learnHub].some((source) =>
+    source.includes("/de/learn") || source.includes("/de/lernen")
+  );
+  if (germanLeak) errors.push("Search Dominance 1E.1B: German child-route exposure detected.");
 }
 
 function pageFileForRoute(route) {

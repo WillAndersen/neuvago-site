@@ -39,6 +39,13 @@ export const metadata: Metadata = {
 
 const primaryFoundationArticles = [
   {
+    title: "Autonomic nervous system",
+    description:
+      "Learn the broad architecture of sympathetic, parasympathetic and enteric pathways, central control and measurement limits.",
+    href: "/learn/autonomic-nervous-system",
+    linkLabel: "Understand the autonomic nervous system",
+  },
+  {
     title: "Nervous system regulation",
     description:
       "Understand how the nervous system shifts between activation, regulation, rest and recovery.",
@@ -101,6 +108,10 @@ const moreFoundationGuides = [
   {
     title: "What does vagus nerve stimulation feel like?",
     href: "/learn/what-does-vagus-nerve-stimulation-feel-like",
+  },
+  {
+    title: "Sympathetic vs parasympathetic nervous system",
+    href: "/learn/sympathetic-vs-parasympathetic-nervous-system",
   },
   {
     title: "Parasympathetic nervous system",

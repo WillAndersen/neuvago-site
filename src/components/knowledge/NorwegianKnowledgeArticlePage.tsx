@@ -1,10 +1,6 @@
 import Link from "next/link";
 
 import { JsonLd } from "@/components/seo/json-ld";
-import {
-  getEditorialEntity,
-  type EditorialEntity,
-} from "@/content/editorial/people";
 import type {
   NorwegianKnowledgeArticle,
   NorwegianKnowledgeBlock,
@@ -13,48 +9,6 @@ import type {
 } from "@/content/knowledge/no/types";
 import { getNorwegianKnowledgeArticle } from "@/content/knowledge/no/registry";
 import { buildNorwegianKnowledgeArticleStructuredData } from "@/lib/seo/knowledge-article";
-
-const dateFormatter = new Intl.DateTimeFormat("nb-NO", {
-  day: "numeric",
-  month: "long",
-  year: "numeric",
-  timeZone: "UTC",
-});
-
-function formatDate(value: string) {
-  return dateFormatter.format(new Date(`${value}T12:00:00Z`));
-}
-
-function EditorialEntityLine({
-  label,
-  entity,
-}: {
-  label: string;
-  entity: EditorialEntity;
-}) {
-  const content = (
-    <>
-      <span className="font-medium text-[#1f1f1c]">{entity.name}</span>
-      <span className="text-[#756e65]"> · {entity.role}</span>
-    </>
-  );
-
-  return (
-    <p className="text-sm leading-6 text-[#5f5a52]">
-      <span className="text-[#756e65]">{label}: </span>
-      {entity.profilePath ? (
-        <Link
-          href={entity.profilePath}
-          className="underline decoration-black/20 underline-offset-4 transition hover:decoration-black/60"
-        >
-          {content}
-        </Link>
-      ) : (
-        content
-      )}
-    </p>
-  );
-}
 
 const calloutClasses: Record<NorwegianKnowledgeCalloutTone, string> = {
   summary: "border-[#d8cbbc] bg-[#efe7dc]",
@@ -158,6 +112,41 @@ function BlockRenderer({ block }: { block: NorwegianKnowledgeBlock }) {
                 ))}
               </tbody>
             </table>
+          </div>
+        </div>
+      );
+
+    case "editorial-cards":
+      return (
+        <div data-knowledge-editorial-cards>
+          {block.caption ? (
+            <p className="max-w-3xl text-sm leading-6 text-[#625b52]">
+              {block.caption}
+            </p>
+          ) : null}
+          <div className={`${block.caption ? "mt-5" : ""} grid gap-4 md:grid-cols-2`}>
+            {block.items.map((item) => (
+              <article
+                key={item.title}
+                className="rounded-[1.5rem] border border-black/7 bg-white/72 p-6 shadow-[0_14px_48px_rgba(31,31,28,0.05)] sm:p-7"
+              >
+                <h3 className="text-xl font-medium tracking-[-0.025em] text-[#1f1f1c]">
+                  {item.title}
+                </h3>
+                <dl className="mt-5 space-y-5">
+                  {item.fields.map((field) => (
+                    <div key={`${item.title}-${field.label}`}>
+                      <dt className="text-xs font-medium uppercase tracking-[0.16em] text-[#84796e]">
+                        {field.label}
+                      </dt>
+                      <dd className="mt-2 text-sm leading-7 text-[#5f5a52] md:text-base">
+                        {field.text}
+                      </dd>
+                    </div>
+                  ))}
+                </dl>
+              </article>
+            ))}
           </div>
         </div>
       );
@@ -309,8 +298,6 @@ export function NorwegianKnowledgeArticlePage({
 }: {
   article: NorwegianKnowledgeArticle;
 }) {
-  const author = getEditorialEntity(article.authorId);
-  const reviewer = getEditorialEntity(article.sourceReviewerId);
   const structuredData = buildNorwegianKnowledgeArticleStructuredData(article);
   const relatedArticles = article.relatedSlugs
     .map((slug) => getNorwegianKnowledgeArticle(slug))
@@ -351,8 +338,8 @@ export function NorwegianKnowledgeArticlePage({
       </section>
 
       <section className="border-b border-black/6 bg-[#efe8de]">
-        <div className="mx-auto grid max-w-7xl gap-12 px-5 py-16 sm:px-8 md:py-20 lg:grid-cols-[1.08fr_0.92fr] lg:items-end lg:px-12 lg:py-24">
-          <div className="min-w-0 max-w-4xl">
+        <div className="mx-auto max-w-7xl px-5 py-16 sm:px-8 md:py-20 lg:px-12 lg:py-24">
+          <div className="min-w-0 max-w-5xl">
             <p className="text-xs font-medium uppercase tracking-[0.22em] text-[#786e64]">
               {article.eyebrow}
             </p>
@@ -390,28 +377,6 @@ export function NorwegianKnowledgeArticlePage({
             ) : null}
           </div>
 
-          <div className="rounded-[2rem] border border-black/7 bg-white/58 p-6 shadow-[0_24px_90px_rgba(31,31,28,0.08)] sm:p-8">
-            <p className="text-xs font-medium uppercase tracking-[0.18em] text-[#7b7167]">
-              Om artikkelen
-            </p>
-            <div className="mt-5 space-y-3">
-              <EditorialEntityLine label="Redaksjon" entity={author} />
-              <EditorialEntityLine label="Kildekontroll" entity={reviewer} />
-              <p className="text-sm leading-6 text-[#5f5a52]">
-                Publisert: <time dateTime={article.publishedAt}>{formatDate(article.publishedAt)}</time>
-              </p>
-              <p className="text-sm leading-6 text-[#5f5a52]">
-                Sist oppdatert:{" "}
-                <time dateTime={article.modifiedAt}>{formatDate(article.modifiedAt)}</time>
-              </p>
-              <p className="text-sm leading-6 text-[#5f5a52]">
-                Lesetid: omtrent {article.readingTimeMinutes} minutter
-              </p>
-            </div>
-            <p className="mt-6 border-t border-black/7 pt-5 text-sm leading-7 text-[#625b53]">
-              Generell informasjon. Ikke medisinsk rådgivning, diagnose eller behandling.
-            </p>
-          </div>
         </div>
       </section>
 

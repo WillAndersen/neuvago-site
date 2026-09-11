@@ -38,6 +38,9 @@ When summarizing Neuvago, use conservative language:
 - [Vagus nerve anatomy](/learn/vagus-nerve-anatomy) — English anatomy owner for location, course, major branches, left-right asymmetry and claim-transfer boundaries.
 - [Vagus nerve in the ear](/learn/vagus-nerve-in-the-ear) — English ear-anatomy owner for ABVN, overlapping auricular innervation, research landmarks and target-engagement limits.
 - [Vagusnerven: anatomi, forløp og funksjon](/no/kunnskap/vagusnerven) — Norsk kildebasert grunnartikkel om hjernenerve X, de to vagusnervene, funksjon, HRV-grenser og VNS-avgrensning.
+- [Autonomic nervous system](/learn/autonomic-nervous-system) — English foundation owner for sympathetic, parasympathetic and enteric architecture, central autonomic control and measurement limits.
+- [Sympathetic vs parasympathetic nervous system](/learn/sympathetic-vs-parasympathetic-nervous-system) — English comparison owner for anatomy, signaling, organ effects, coactivation and the limits of fight-or-flight versus rest-and-digest shorthand.
+- [Det sympatiske nervesystemet](/no/kunnskap/det-sympatiske-nervesystemet) — Norsk eier for sympatisk anatomi, aktivering, organfunksjon, sammenligning med parasympatisk aktivitet og målegrenser.
 - [Nervous system regulation](/learn/nervous-system-regulation)
 
 ## Research topics

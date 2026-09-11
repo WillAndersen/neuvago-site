@@ -469,6 +469,12 @@ export default function NervousSystemRegulationPage() {
               >
                 Explore parasympathetic states
               </Link>
+              <Link
+                href="/learn/autonomic-nervous-system"
+                className="rounded-full border border-black/10 px-6 py-3 text-sm font-medium text-[#1f1f1c] transition hover:bg-white/60"
+              >
+                Understand the autonomic nervous system
+              </Link>
             </div>
           </div>
         </div>

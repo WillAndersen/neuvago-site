@@ -6,6 +6,7 @@ export type NorwegianKnowledgeWave =
   | "1B"
   | "1C"
   | "1D"
+  | "SEARCH-1E"
   | "2C.1"
   | "2C.2";
 export type NorwegianKnowledgeSearchIntent =
@@ -52,6 +53,22 @@ export type NorwegianKnowledgeTableBlock = {
   caption?: string;
   columns: readonly string[];
   rows: readonly (readonly string[])[];
+};
+
+export type NorwegianKnowledgeEditorialCardField = {
+  label: string;
+  text: string;
+};
+
+export type NorwegianKnowledgeEditorialCardItem = {
+  title: string;
+  fields: readonly NorwegianKnowledgeEditorialCardField[];
+};
+
+export type NorwegianKnowledgeEditorialCardsBlock = {
+  type: "editorial-cards";
+  caption?: string;
+  items: readonly NorwegianKnowledgeEditorialCardItem[];
 };
 
 export type NorwegianKnowledgeCalloutBlock = {
@@ -101,6 +118,7 @@ export type NorwegianKnowledgeBlock =
   | NorwegianKnowledgeNumberedListBlock
   | NorwegianKnowledgeDefinitionBlock
   | NorwegianKnowledgeTableBlock
+  | NorwegianKnowledgeEditorialCardsBlock
   | NorwegianKnowledgeCalloutBlock
   | NorwegianKnowledgeTimelineBlock
   | NorwegianKnowledgeVideoBlock

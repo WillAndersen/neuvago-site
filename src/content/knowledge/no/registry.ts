@@ -9,6 +9,7 @@ import { transkutanVagusnervestimuleringArticle } from "@/content/knowledge/no/a
 import { aurikulaerVagusnervestimuleringArticle } from "@/content/knowledge/no/articles/aurikulaer-vagusnervestimulering";
 import { implantertOgIkkeInvasivVnsArticle } from "@/content/knowledge/no/articles/implantert-og-ikke-invasiv-vns";
 import { detAutonomeNervesystemetArticle } from "@/content/knowledge/no/articles/det-autonome-nervesystemet";
+import { detSympatiskeNervesystemetArticle } from "@/content/knowledge/no/articles/det-sympatiske-nervesystemet";
 import { detParasympatiskeNervesystemetArticle } from "@/content/knowledge/no/articles/det-parasympatiske-nervesystemet";
 import { reguleringAvNervesystemetArticle } from "@/content/knowledge/no/articles/regulering-av-nervesystemet";
 import { vagalToneArticle } from "@/content/knowledge/no/articles/vagal-tone";
@@ -41,6 +42,7 @@ const articleRegistry = [
   aurikulaerVagusnervestimuleringArticle,
   implantertOgIkkeInvasivVnsArticle,
   detAutonomeNervesystemetArticle,
+  detSympatiskeNervesystemetArticle,
   detParasympatiskeNervesystemetArticle,
   reguleringAvNervesystemetArticle,
   vagalToneArticle,

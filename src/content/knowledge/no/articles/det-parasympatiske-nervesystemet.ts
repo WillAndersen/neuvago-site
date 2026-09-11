@@ -46,7 +46,7 @@ export const detParasympatiskeNervesystemetArticle = {
   searchIntent: "informational",
 
   publishedAt: "2026-08-17",
-  modifiedAt: "2026-08-17",
+  modifiedAt: "2026-09-11",
   readingTimeMinutes: 18,
 
   authorId: "john-willander",
@@ -547,6 +547,7 @@ export const detParasympatiskeNervesystemetArticle = {
 
   relatedSlugs: [
     "det-autonome-nervesystemet",
+    "det-sympatiske-nervesystemet",
     "vagusnerven",
     "vagusnervestimulering",
     "regulering-av-nervesystemet",
@@ -555,6 +556,20 @@ export const detParasympatiskeNervesystemetArticle = {
     "hvordan-roe-ned-nervesystemet",
   ],
   relatedLinks: [
+    {
+      title: "Det sympatiske nervesystemet",
+      description:
+        "Sammenlign med den sympatiske delen av ANS og se hvorfor de to grenene ikke er én enkel vippebryter.",
+      href: "/no/kunnskap/det-sympatiske-nervesystemet",
+      label: "Les om sympatisk funksjon",
+    },
+    {
+      title: "Sympathetic vs parasympathetic nervous system",
+      description:
+        "Les den engelske comparison-siden for anatomi, signalstoffer, organeksempler og koaktivering.",
+      href: "/learn/sympathetic-vs-parasympathetic-nervous-system",
+      label: "Sammenlign på engelsk",
+    },
     {
       title: "Parasympathetic nervous system",
       description:

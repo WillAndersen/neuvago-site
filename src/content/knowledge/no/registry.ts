@@ -13,6 +13,7 @@ import { detSympatiskeNervesystemetArticle } from "@/content/knowledge/no/articl
 import { detParasympatiskeNervesystemetArticle } from "@/content/knowledge/no/articles/det-parasympatiske-nervesystemet";
 import { reguleringAvNervesystemetArticle } from "@/content/knowledge/no/articles/regulering-av-nervesystemet";
 import { vagalToneArticle } from "@/content/knowledge/no/articles/vagal-tone";
+import { hrvArticle } from "@/content/knowledge/no/articles/hrv";
 import { hrvOgVagusnervenArticle } from "@/content/knowledge/no/articles/hrv-og-vagusnerven";
 import { oretsAnatomiOgVagusnervenArticle } from "@/content/knowledge/no/articles/orets-anatomi-og-vagusnerven";
 import { hvordanRoeNedNervesystemetArticle } from "@/content/knowledge/no/articles/hvordan-roe-ned-nervesystemet";
@@ -46,6 +47,7 @@ const articleRegistry = [
   detParasympatiskeNervesystemetArticle,
   reguleringAvNervesystemetArticle,
   vagalToneArticle,
+  hrvArticle,
   hrvOgVagusnervenArticle,
   oretsAnatomiOgVagusnervenArticle,
   hvordanRoeNedNervesystemetArticle,

@@ -523,7 +523,7 @@ export const detSympatiskeNervesystemetArticle = {
     "regulering-av-nervesystemet",
     "vagusnerven",
     "vagal-tone",
-    "hrv-og-vagusnerven",
+    "hrv",
     "fastlast-i-stress",
   ],
   relatedLinks: [

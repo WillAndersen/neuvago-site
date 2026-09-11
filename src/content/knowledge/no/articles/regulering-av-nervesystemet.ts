@@ -48,7 +48,7 @@ export const reguleringAvNervesystemetArticle = {
   searchIntent: "informational",
 
   publishedAt: "2026-08-18",
-  modifiedAt: "2026-08-18",
+  modifiedAt: "2026-09-11",
   readingTimeMinutes: 19,
 
   authorId: "john-willander",
@@ -624,7 +624,7 @@ export const reguleringAvNervesystemetArticle = {
     "vagusnerven",
     "vagusnervestimulering",
     "vagal-tone",
-    "hrv-og-vagusnerven",
+    "hrv",
     "hvordan-roe-ned-nervesystemet",
   ],
   relatedLinks: [

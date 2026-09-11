@@ -56,3 +56,13 @@ pre {
     "Courier New",
     monospace;
 }
+
+/* SEARCH DOMINANCE 1E.1C.R1 — prevent automatic hyphenation in Norwegian display headings */
+h1:lang(nb),
+h1:lang(no),
+h1:lang(nn) {
+  -webkit-hyphens: none;
+  hyphens: none;
+  overflow-wrap: normal;
+  word-break: normal;
+}

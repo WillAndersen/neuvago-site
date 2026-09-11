@@ -552,7 +552,7 @@ export const detParasympatiskeNervesystemetArticle = {
     "vagusnervestimulering",
     "regulering-av-nervesystemet",
     "vagal-tone",
-    "hrv-og-vagusnerven",
+    "hrv",
     "hvordan-roe-ned-nervesystemet",
   ],
   relatedLinks: [

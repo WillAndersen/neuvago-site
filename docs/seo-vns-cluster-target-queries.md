@@ -106,7 +106,7 @@ Watch these pairs in Search Console.
 | `/no/kunnskap/kveldsrutine-for-nedtrapping` vs `/no/kunnskap/trott-men-far-ikke-slappet-av` vs `/no/tilstander/sovn` | Routine/recognition/sleep overlap | NO-020 owns the actionable routine; NO-015 owns recognition; the condition page owns broad sleep and assessment intent. |
 | `/no/kunnskap/overstimulert` vs `/no/kunnskap/hvordan-roe-ned-nervesystemet` vs `/no/tilstander/stress` | Overstimulation/calming/stress overlap | NO-022 owns the exact recognition query and stimulus checklist; the calming guide owns broad self-help; the condition page owns stress pathway and assessment context. |
 | `/no/kunnskap/fastlast-i-stress` vs `/no/kunnskap/hvordan-roe-ned-nervesystemet` vs `/no/tilstander/stress` | Stuck-in-stress/calming/stress overlap | NO-014 owns the lived-experience explanation; the calming guide owns practical self-help; the condition page owns broad stress and assessment intent. |
-| `/no/kunnskap/restitusjon-og-regulering` vs `/no/tilstander/stress` vs `/no/tilstander/sovn` vs `/no/kunnskap/hrv-og-vagusnerven` | Recovery/stress/sleep/HRV overlap | NO-019 owns practical recovery-capacity and routine intent; stress and sleep own condition pathways; the HRV guide owns measurement interpretation. |
+| `/no/kunnskap/restitusjon-og-regulering` vs `/no/tilstander/stress` vs `/no/tilstander/sovn` vs `/no/kunnskap/hrv` | Recovery/stress/sleep/HRV overlap | NO-019 owns practical recovery-capacity and routine intent; stress and sleep own condition pathways; `/no/kunnskap/hrv` owns generic HRV measurement and interpretation. |
 | `/conditions/stress` vs `/learn/nervous-system-regulation` | Stress/regulation overlap | Conditions owns problem; Learn owns concept. |
 | `/research/topics/safety-and-tolerability` vs product page | Safety/commercial overlap | Safety page should own safety queries. Product should link to it. |
 
@@ -156,7 +156,7 @@ The massage pair owns the dedicated massage and pressure-point intent. The metho
 | vagus nerve anatomy / where is the vagus nerve / vagus nerve location | `/learn/vagus-nerve-anatomy` | `/learn/vagus-nerve`; `/learn/vagus-nerve-in-the-ear` | Dedicated EN anatomy owner for location, course and major branches. Broad foundation retains definition/function; ear owner retains auricular anatomy. |
 | what does the vagus nerve do / hva gjør vagusnerven | foundation pair | regulation, calming, HRV and vagal-tone pages | Sensory, motor, autonomic and reflex function families; no one-mechanism explanation. |
 | vagus nerve and parasympathetic system | foundation pair | nervous-system regulation owners | Vagal parasympathetic role inside the broader autonomic and enteric systems. |
-| HRV vagus nerve / HRV vagusnerven | dedicated HRV and vagal-tone owners | foundation pair | Foundation page states only the measurement boundary and routes interpretation outward. |
+| HRV vagus nerve / HRV vagusnerven | `/no/kunnskap/hrv-og-vagusnerven` for NO relationship intent; dedicated EN/vagal owners as applicable | generic HRV owner, foundation pair | Relationship owner explains kardial vagal modulation and VNS/taVNS boundaries; generic measurement stays on `/no/kunnskap/hrv`. |
 | stimulate, reset, breathe, massage or choose device | specialist method owners | foundation pair | Foundation page does not teach protocols, pressure points, electrical settings or product choice. |
 
 Cannibalisation watch: the foundation pair must not absorb practical-method, electrical-VNS, reset, breathing, massage, broad calming, nervous-system regulation, HRV workflow, detailed auricular anatomy or device-comparison intent. The VNS SEO route total remains 23 and no new route is introduced.
@@ -229,3 +229,21 @@ The Norwegian market remains intentionally asymmetric: `/no/kunnskap/vagusnerven
 | sympatiske og parasympatiske nervesystemet | `/no/kunnskap/det-sympatiske-nervesystemet` | `/no/kunnskap/det-parasympatiske-nervesystemet` | Keep as a comparison section inside the NO sympathetic owner; do not create a separate NO comparison URL. |
 
 Do not describe sympathetic and parasympathetic activity as a universal one-dimensional balance. Reciprocal control is one pattern among several; organ, pathway and measurement context must remain explicit.
+
+## SEARCH DOMINANCE 1E.1C — Norwegian HRV owner split
+
+| Query family | Primary owner | Protected adjacent owners | Boundary |
+|---|---|---|---|
+| HRV / hjertefrekvensvariabilitet / pulsvariasjon | `/no/kunnskap/hrv` | glossary term; HRV research topic | General definition and interpretation owner. |
+| HRV måling / HRV måler / RMSSD / SDNN / HRV klokke / HRV smartklokke | `/no/kunnskap/hrv` | device-specific documentation; research | Measurement methods, metrics, wearables and data-quality limits. |
+| HRV normalverdi / god HRV / høy HRV / lav HRV | `/no/kunnskap/hrv` | condition pages where symptoms matter | No universal normal score; emphasize within-person trends and measurement context. |
+| HRV og vagusnerven / vagusnerven HRV / vagal HRV / HRV vagal tone | `/no/kunnskap/hrv-og-vagusnerven` | `/no/kunnskap/hrv`; vagal-tone owner | Relationship-specific physiology only. Generic HRV workflow belongs to `/hrv`. |
+| HRV og VNS / taVNS HRV / HRV biomarkør VNS | `/no/kunnskap/hrv-og-vagusnerven` | Research HRV topic and individual studies | Vagal target-engagement and evidence limits; no product-evidence transfer. |
+| HRV research / standards / evidence | `/research/topics/heart-rate-variability` | both Knowledge pages | Evidence and study interpretation owner. |
+| hjertefrekvensvariabilitet definition | `/no/ordliste/hjertefrekvensvariabilitet` | `/no/kunnskap/hrv` | Glossary defines; Knowledge explains and guides interpretation. |
+
+Locked cannibalization rule:
+`/no/kunnskap/hrv` must not expand into detailed VNS/taVNS efficacy or vagal-target-engagement intent.
+`/no/kunnskap/hrv-og-vagusnerven` must not reclaim generic “what is HRV”, normal-value, wearable, or measurement-workflow ownership.
+
+No EN `/learn/heart-rate-variability` page is created in 1E.1C; that remains P1 later.

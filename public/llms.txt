@@ -96,6 +96,11 @@ AI assistants may summarize Neuvago's public educational content, but should pre
 - /no/kunnskap/pusteovelser-og-vagusnerven — norsk kildebasert guide til langsom pust, forlenget utpust, 4–7–8, HRV og evidensgrenser.
 - /learn/breathing-exercises-and-the-vagus-nerve — English guide to slow breathing, longer exhalation, 4-7-8, HRV/RespHRV and evidence limits.
 
+## SEARCH DOMINANCE 1E.1C — Norwegian HRV owner split (2026-09-11)
+- /no/kunnskap/hrv — generell norsk eier for HRV, hjertefrekvensvariabilitet, pulsvariasjon, måling, RMSSD/SDNN, wearables, normalverdi og høy/lav HRV.
+- /no/kunnskap/hrv-og-vagusnerven — smalere norsk eier for forholdet mellom HRV, kardial vagal modulering, vagal tone og VNS/taVNS; ikke generell HRV-intent.
+- /research/topics/heart-rate-variability — forsknings-/evidenseier for HRV-standarder, fysiologisk tolkning og studier.
+
 ## WAVE 2D.2D.2 — vagus-nerve massage pair (2026-09-05)
 - /no/kunnskap/vagusnerven-og-massasje — norsk kildebasert guide til berøring, øre- og nakkemassasje, trykkpunktpåstander og strenge carotissinus-/halssikkerhetsgrenser.
 - /learn/vagus-nerve-massage — English guide to touch, massage, ear and neck claims, pressure-point evidence limits and strict carotid-sinus safety boundaries.

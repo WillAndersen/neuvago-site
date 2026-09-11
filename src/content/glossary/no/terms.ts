@@ -624,6 +624,8 @@ export const norwegianGlossaryTerms = [
     "order": 110,
     "term": "Hjertefrekvensvariabilitet",
     "aliases": [
+      "HRV",
+      "pulsvariasjon",
       "pulsvariabilitet",
       "R–R-intervallvariabilitet"
     ],
@@ -644,9 +646,9 @@ export const norwegianGlossaryTerms = [
     ],
     "whyItMatters": "HRV brukes mye i samtaler om nervesystemet og VNS, og derfor må selve målingen skilles fra påstandene som bygges rundt den.",
     "primaryPillar": {
-      "title": "HRV og vagusnerven",
-      "description": "En norsk guide til HRV-mål, vagal sammenheng, påvirkningsfaktorer og tolkningsgrenser.",
-      "href": "/no/kunnskap/hrv-og-vagusnerven",
+      "title": "HRV – hjertefrekvensvariabilitet",
+      "description": "Den generelle norske guiden til HRV-måling, RMSSD, SDNN, wearables, normalverdier og tolkningsgrenser.",
+      "href": "/no/kunnskap/hrv",
       "label": "Les HRV-guiden"
     },
     "sourceLinks": [
@@ -672,7 +674,7 @@ export const norwegianGlossaryTerms = [
       "certainty-of-evidence"
     ],
     "publishedAt": "2026-08-25",
-    "modifiedAt": "2026-08-25",
+    "modifiedAt": "2026-09-11",
     "sitemapPriority": 0.64,
     "changeFrequency": "monthly",
     "termCode": "HRV"

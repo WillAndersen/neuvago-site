@@ -534,14 +534,13 @@ export const detParasympatiskeNervesystemetArticle = {
     },
     {
       id: "karemaker-2015",
-      authors: "Karemaker JM",
+      authors: "Bootsma M, Swenne CA, Janssen MJ, Manger Cats V, Schalij MJ",
       title:
         "Heart rate variability and sympathovagal balance: pharmacological validation",
       publication: "Netherlands Heart Journal",
-      year: 2015,
+      year: 2003,
       type: "research-article",
       url: "https://pubmed.ncbi.nlm.nih.gov/25696224/",
-      doi: "10.1007/s12471-015-0688-y",
       pmid: "25696224",
       note:
         "Farmakologisk validering som illustrerer begrensninger ved å bruke HRV som direkte mål på sympatisk–parasympatisk balanse.",

@@ -1,0 +1,108 @@
+{
+  "schema": "neuvago-source-identity-review-v1",
+  "version": "1.0.0-r4",
+  "baseline_commit": "e9dcc1efbc0096d58e100d95756f1b6c9b5c95b3",
+  "scope": "Two R2 returned proximity findings, plus the two PubMed hyperlinks on the Tracey study page. Not a full-corpus audit.",
+  "review_method": "Model-assisted editorial identity review; source context and official PubMed bibliographic records; no clinical appraisal",
+  "reviewed_on": "2026-09-12",
+  "human_approval": false,
+  "scientific_claim_support_approved": false,
+  "input_share_sha256": "7ea46c1641c346c2dfff7db16ca9eedee4a1d31a45e41435fd27d34a26cf2ed0",
+  "decisions": [
+    {
+      "review_id": "SID-1E4C-001",
+      "classification": "DISTINCT_REFERENCES_FALSE_POSITIVE",
+      "disposition": "CLOSED_NO_SOURCE_EDIT",
+      "file": "docs/seo/search-dominance-1e1b-ans-cluster-source-claims-lock.md",
+      "source_sha256": "e08bbb42bde01fa098477b26f259b713810bbf776766f23c9a1344aac2034543",
+      "source_lines": [
+        52,
+        54,
+        55
+      ],
+      "reason": "PMID 20429636 belongs to a separate Markdown bullet under Interaction / non-binary control. A heading separates it from the Carter reference at line 55, which includes PMID 42495990 and DOI 10.1152/ajpheart.00041.2026 together.",
+      "reference_identity_1": {
+        "pmid": "20429636",
+        "doi": "10.4149/endo_2010_02_69",
+        "metadata_url": "https://pubmed.ncbi.nlm.nih.gov/20429636/"
+      },
+      "reference_identity_2": {
+        "pmid": "42495990",
+        "doi": "10.1152/ajpheart.00041.2026",
+        "metadata_url": "https://pubmed.ncbi.nlm.nih.gov/42495990/"
+      },
+      "rule": "Never interpret proximity across distinct reference items as proof of one source card."
+    },
+    {
+      "review_id": "SID-1E4C-002",
+      "classification": "CONFIRMED_WRONG_PMID_IN_SOURCE_CARD",
+      "disposition": "CORRECTION_PREPARED_LOCAL_VALIDATION_REQUIRED",
+      "file": "src/content/knowledge/no/articles/hrv.ts",
+      "source_sha256_before": "499c9c36258a3de5470940e58842caf0150fb69970045256d0e4c7df5965fcf6",
+      "source_card_id": "petek-2023-wearables",
+      "source_lines": [
+        475,
+        478,
+        482,
+        483,
+        484
+      ],
+      "old_pmid": "37438083",
+      "correct_pmid": "37438010",
+      "doi": "10.1016/j.jacc.2023.04.054",
+      "fields_changed": [
+        "url",
+        "pmid"
+      ],
+      "other_card_fields_unchanged": true,
+      "correct_metadata_url": "https://pubmed.ncbi.nlm.nih.gov/37438010/",
+      "wrong_metadata_url": "https://pubmed.ncbi.nlm.nih.gov/37438083/",
+      "reason": "The title, Petek authorship and JACC DOI identify PMID 37438010. PMID 37438083 identifies a different SALL4/Okihiro paper. This is a reference error, not two aliases of the same article.",
+      "historical_erratum": {
+        "file": "docs/seo/search-dominance-1e1c-no-hrv-owner-split-source-claims-lock.md",
+        "file_sha256": "1752a3b2c1ad1f57ac4f77a0701694e3793e7b42756cc7df795052e7732066fe",
+        "line": 48,
+        "literal_line": "- Petek BJ et al. *Consumer Wearable Health and Fitness Technology in Cardiovascular Medicine.* Journal of the American College of Cardiology. 2023. PMID 37438083.",
+        "recorded_pmid": "37438083",
+        "intended_pmid": "37438010",
+        "status": "IMMUTABLE_LOCK_PRESERVED_WITH_SCOPED_ERRATUM",
+        "scope": "Only this file, hash and reference item; never a global PMID alias."
+      }
+    }
+  ],
+  "reviewed_candidate_count": 2,
+  "unreviewed_returned_candidates": 0,
+  "full_corpus_source_integrity_verified": false,
+  "approved_claim_evidence_links": 0,
+  "next_gate": "RETURN_R4_TRACEY_SOURCE_AND_SNAPSHOT_RECONCILIATION_FOR_REVIEW",
+  "prior_review_scope": "The two proximity candidates returned by 1E.4C-R2 V3, not a complete scientific or corpus audit",
+  "supplemental_source_link_reviews": [
+    {
+      "review_id": "SID-1E4C-003",
+      "classification": "CONFIRMED_WRONG_PUBMED_HREF_ON_TRACEY_STUDY_PAGE",
+      "disposition": "LOCAL_CORRECTION_PREPARED_REQUIRES_RETURN_REVIEW",
+      "file": "src/app/(en)/research/studies/inflammatory-reflex-tracey-2002/page.tsx",
+      "source_sha256_before": "341ad93ec5012fd3844d05f195fac226d0b0331f5346df1f9cd419f51c9b68f5",
+      "source_sha256_after": "b2a6ce7058f5b4d5ad4d3912914405bd70b287f47bd8c7d5084482bf986a1018",
+      "source_lines": [
+        290,
+        425
+      ],
+      "from_pmid": "12490959",
+      "to_pmid": "12490958",
+      "doi_unchanged": "10.1038/nature01321",
+      "href_values_changed": 2,
+      "other_source_bytes_preserved": true,
+      "correct_source_url": "https://pubmed.ncbi.nlm.nih.gov/12490958/",
+      "incorrect_source_url": "https://pubmed.ncbi.nlm.nih.gov/12490959/",
+      "correct_title": "The inflammatory reflex",
+      "incorrect_title": "Inflammation and cancer",
+      "scope": "Two exact PubMed anchor href values on the Tracey page. No global identifier alias.",
+      "basis": "Returned R3 source bytes and preserved PubMed metadata, checked against the two official PubMed records on 2026-09-12",
+      "human_approval": false,
+      "scientific_claim_support_approved": false
+    }
+  ],
+  "supplemental_findings_reviewed": 1,
+  "total_targeted_findings_reviewed": 3
+}

@@ -479,9 +479,9 @@ export const hrvArticle = {
       publication: "Journal of the American College of Cardiology",
       year: 2023,
       type: "review",
-      url: "https://pubmed.ncbi.nlm.nih.gov/37438083/",
+      url: "https://pubmed.ncbi.nlm.nih.gov/37438010/",
       doi: "10.1016/j.jacc.2023.04.054",
-      pmid: "37438083",
+      pmid: "37438010",
       note:
         "Klinisk oversikt over forbruker-wearables, PPG/ECG, HRV-tolkning, artefakter, individuelle trender og begrensninger ved proprietære målinger.",
     },

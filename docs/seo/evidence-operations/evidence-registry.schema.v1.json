@@ -1,0 +1,183 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://neuvago.com/internal/evidence-operations/evidence-registry.schema.v1.json",
+  "title": "Neuvago Evidence Registry v1",
+  "type": "object",
+  "required": [
+    "schema",
+    "registry_version",
+    "baseline_commit",
+    "status",
+    "scope",
+    "discovery_summary",
+    "evidence"
+  ],
+  "properties": {
+    "schema": {
+      "const": "neuvago-evidence-operations-evidence-registry-v1"
+    },
+    "registry_version": {
+      "type": "string"
+    },
+    "baseline_commit": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{40}$"
+    },
+    "status": {
+      "const": "IDENTITY_RECONCILED_METADATA_REGISTRY_LINK_APPROVAL_PENDING"
+    },
+    "evidence": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "evidence_id",
+          "source_type",
+          "pmid",
+          "doi",
+          "title",
+          "journal",
+          "publication_year",
+          "publication_types",
+          "study_design",
+          "evidence_tier",
+          "evidence_tier_basis",
+          "population",
+          "intervention",
+          "comparator",
+          "outcomes",
+          "directness",
+          "safety_relevance",
+          "claim_ids",
+          "source_url",
+          "last_verified",
+          "status",
+          "provenance",
+          "review_flags"
+        ],
+        "properties": {
+          "evidence_id": {
+            "type": "string"
+          },
+          "source_type": {
+            "enum": [
+              "PUBMED_ARTICLE",
+              "PUBMED_BOOK_ARTICLE",
+              "CROSSREF_DOI_WORK",
+              "PMID_UNRESOLVED",
+              "DOI_ONLY"
+            ]
+          },
+          "pmid": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "doi": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "title": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "journal": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "publication_year": {
+            "type": [
+              "integer",
+              "null"
+            ]
+          },
+          "authors": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "publication_types": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "study_design": {
+            "type": "string"
+          },
+          "evidence_tier": {
+            "type": "string"
+          },
+          "evidence_tier_basis": {
+            "const": "PUBLICATION_TYPE_METHOD_TIER_NOT_CERTAINTY_GRADE"
+          },
+          "population": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "intervention": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "comparator": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "outcomes": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "pico_status": {
+            "type": "string"
+          },
+          "directness": {
+            "const": "PENDING_CLAIM_REVIEW"
+          },
+          "safety_relevance": {
+            "const": "PENDING_REVIEW"
+          },
+          "claim_ids": {
+            "type": "array",
+            "maxItems": 0
+          },
+          "source_url": {
+            "type": "string"
+          },
+          "last_verified": {
+            "type": "string",
+            "format": "date"
+          },
+          "status": {
+            "type": "string"
+          },
+          "provenance": {
+            "type": "array",
+            "minItems": 1
+          },
+          "review_flags": {
+            "type": "array",
+            "items": {
+              "type": "object"
+            }
+          }
+        }
+      }
+    }
+  }
+}

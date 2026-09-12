@@ -278,7 +278,7 @@ export default function InflammatoryReflexTracey2002Page() {
                 DOI
               </p>
               <a
-                href="https://doi.org/10.1038/415853a"
+                href="https://doi.org/10.1038/nature01321"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="mt-2 inline-flex text-sm leading-7 text-[#1f1f1c] underline-offset-4 hover:underline"
@@ -287,7 +287,7 @@ export default function InflammatoryReflexTracey2002Page() {
               </a>
               <div className="mt-4">
                 <a
-                  href="https://pubmed.ncbi.nlm.nih.gov/12490959/"
+                  href="https://pubmed.ncbi.nlm.nih.gov/12490958/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex text-sm font-medium text-[#1f1f1c] underline-offset-4 hover:underline"
@@ -422,7 +422,7 @@ export default function InflammatoryReflexTracey2002Page() {
                 Back to studies library
               </Link>
               <a
-                href="https://pubmed.ncbi.nlm.nih.gov/12490959/"
+                href="https://pubmed.ncbi.nlm.nih.gov/12490958/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex text-sm font-medium text-[#1f1f1c] underline-offset-4 transition hover:underline"

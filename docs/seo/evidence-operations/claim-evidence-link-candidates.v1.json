@@ -1,0 +1,2904 @@
+{
+  "schema": "neuvago-evidence-operations-claim-evidence-link-candidates-v1",
+  "registry_version": "1.0.0-r1",
+  "baseline_commit": "e9dcc1efbc0096d58e100d95756f1b6c9b5c95b3",
+  "status": "CANDIDATES_ONLY_NO_APPROVED_LINKS",
+  "policy": {
+    "same_file_is_source_pool_only": true,
+    "auto_approval": false,
+    "canonical_claim_registry_modified": false,
+    "candidate_relationship_is_not_approval": true
+  },
+  "summary": {
+    "canonical_claims": 117,
+    "claims_with_source_pool": 68,
+    "claims_with_structural_candidates": 9,
+    "structural_candidate_references": 19,
+    "approved_links": 0
+  },
+  "claims": [
+    {
+      "claim_id": "CLM-0101E46E99",
+      "canonical_claim": "Carotid-sinus massage is a defined clinical diagnostic manoeuvre for selected syncope evaluation.",
+      "policy": "ALLOWED_WITH_QUALIFIERS",
+      "risk_class": "CRITICAL",
+      "owner_route": "/learn/vagus-nerve-evidence-vs-internet-claims",
+      "provenance_files": [
+        "docs/seo/search-dominance-1e3c-evidence-internet-claims-source-claims-lock.md"
+      ],
+      "source_pool_evidence_ids": [
+        "EVD-PMID-12119224",
+        "EVD-PMID-23599399",
+        "EVD-PMID-28265249",
+        "EVD-PMID-34823149",
+        "EVD-PMID-35623448",
+        "EVD-PMID-36219506",
+        "EVD-PMID-38663342",
+        "EVD-PMID-40482984",
+        "EVD-PMID-40941532",
+        "EVD-PMID-41686399",
+        "EVD-PMID-42204029"
+      ],
+      "candidate_evidence_ids": [],
+      "candidate_basis": [],
+      "candidate_relationship": "POTENTIAL_SUPPORT_REQUIRES_REVIEW",
+      "candidate_evidence": [],
+      "approved_evidence_ids": [],
+      "directness": "PENDING_REVIEW",
+      "review_status": "PENDING_HUMAN_REVIEW_NO_AUTO_APPROVAL"
+    },
+    {
+      "claim_id": "CLM-05A1EF5EDA",
+      "canonical_claim": "Instructions that deliberately provoke gagging as a wellness technique.",
+      "policy": "NOT_ALLOWED",
+      "risk_class": "CRITICAL",
+      "owner_route": "/learn/vagus-nerve-evidence-vs-internet-claims",
+      "provenance_files": [
+        "docs/seo/search-dominance-1e3c-evidence-internet-claims-source-claims-lock.md"
+      ],
+      "source_pool_evidence_ids": [
+        "EVD-PMID-12119224",
+        "EVD-PMID-23599399",
+        "EVD-PMID-28265249",
+        "EVD-PMID-34823149",
+        "EVD-PMID-35623448",
+        "EVD-PMID-36219506",
+        "EVD-PMID-38663342",
+        "EVD-PMID-40482984",
+        "EVD-PMID-40941532",
+        "EVD-PMID-41686399",
+        "EVD-PMID-42204029"
+      ],
+      "candidate_evidence_ids": [],
+      "candidate_basis": [],
+      "candidate_relationship": "BOUNDARY_CONTEXT_REQUIRES_REVIEW",
+      "candidate_evidence": [],
+      "approved_evidence_ids": [],
+      "directness": "PENDING_REVIEW",
+      "review_status": "PENDING_HUMAN_REVIEW_NO_AUTO_APPROVAL"
+    },
+    {
+      "claim_id": "CLM-0720173E7F",
+      "canonical_claim": "Treating CE marking, FDA status, tingling/intensity or category-level research as proof of efficacy for every product or purpose.",
+      "policy": "NOT_ALLOWED",
+      "risk_class": "HIGH",
+      "owner_route": "/no/kunnskap/hvordan-velge-vagusnervestimulator",
+      "provenance_files": [
+        "docs/seo/search-dominance-1e2g-no-protected-win-buyer-guide-source-claims-lock.md"
+      ],
+      "source_pool_evidence_ids": [],
+      "candidate_evidence_ids": [],
+      "candidate_basis": [],
+      "candidate_relationship": "BOUNDARY_CONTEXT_REQUIRES_REVIEW",
+      "candidate_evidence": [],
+      "approved_evidence_ids": [],
+      "directness": "PENDING_REVIEW",
+      "review_status": "PENDING_HUMAN_REVIEW_NO_AUTO_APPROVAL"
+    },
+    {
+      "claim_id": "CLM-08BEB5C1CB",
+      "canonical_claim": "A claim that stronger or colder exposure produces more useful vagus stimulation.",
+      "policy": "NOT_ALLOWED",
+      "risk_class": "MEDIUM",
+      "owner_route": "/learn/vagus-nerve-evidence-vs-internet-claims",
+      "provenance_files": [
+        "docs/seo/search-dominance-1e3c-evidence-internet-claims-source-claims-lock.md"
+      ],
+      "source_pool_evidence_ids": [
+        "EVD-PMID-12119224",
+        "EVD-PMID-23599399",
+        "EVD-PMID-28265249",
+        "EVD-PMID-34823149",
+        "EVD-PMID-35623448",
+        "EVD-PMID-36219506",
+        "EVD-PMID-38663342",
+        "EVD-PMID-40482984",
+        "EVD-PMID-40941532",
+        "EVD-PMID-41686399",
+        "EVD-PMID-42204029"
+      ],
+      "candidate_evidence_ids": [],
+      "candidate_basis": [],
+      "candidate_relationship": "BOUNDARY_CONTEXT_REQUIRES_REVIEW",
+      "candidate_evidence": [],
+      "approved_evidence_ids": [],
+      "directness": "PENDING_REVIEW",
+      "review_status": "PENDING_HUMAN_REVIEW_NO_AUTO_APPROVAL"
+    },
+    {
+      "claim_id": "CLM-08BF12021B",
+      "canonical_claim": "claiming that Neuvago treats sensory overload, anxiety, insomnia, ADHD, autism or another medical condition;",
+      "policy": "NOT_ALLOWED",
+      "risk_class": "HIGH",
+      "owner_route": "/no/kunnskap/overstimulert",
+      "provenance_files": [
+        "docs/seo/wave2c1d-overstimulation-source-and-claims-lock.md"
+      ],
+      "source_pool_evidence_ids": [],
+      "candidate_evidence_ids": [],
+      "candidate_basis": [],
+      "candidate_relationship": "BOUNDARY_CONTEXT_REQUIRES_REVIEW",
+      "candidate_evidence": [],
+      "approved_evidence_ids": [],
+      "directness": "PENDING_REVIEW",
+      "review_status": "PENDING_HUMAN_REVIEW_NO_AUTO_APPROVAL"
+    },
+    {
+      "claim_id": "CLM-08E0606427",
+      "canonical_claim": "Behavioural practices such as slow breathing, movement and relaxation can influence subjective experience and selected physiological/autonomic outcomes under studied conditions.",
+      "policy": "ALLOWED_WITH_QUALIFIERS",
+      "risk_class": "MEDIUM",
+      "owner_route": "/learn/vagus-nerve-exercises",
+      "provenance_files": [
+        "docs/seo/search-dominance-1e3b-vagus-nerve-exercises-source-claims-lock.md"
+      ],
+      "source_pool_evidence_ids": [
+        "EVD-PMID-28265249",
+        "EVD-PMID-30245619",
+        "EVD-PMID-34436236",
+        "EVD-PMID-35623448",
+        "EVD-PMID-37822096",
+        "EVD-PMID-38468106"
+      ],
+      "candidate_evidence_ids": [],
+      "candidate_basis": [],
+      "candidate_relationship": "POTENTIAL_SUPPORT_REQUIRES_REVIEW",
+      "candidate_evidence": [],
+      "approved_evidence_ids": [],
+      "directness": "PENDING_REVIEW",
+      "review_status": "PENDING_HUMAN_REVIEW_NO_AUTO_APPROVAL"
+    },
+    {
+      "claim_id": "CLM-0B91600FED",
+      "canonical_claim": "claiming that the page can identify high cortisol, low vagal tone, abnormal HRV, autonomic dysfunction or brain changes in an individual;",
+      "policy": "NOT_ALLOWED",
+      "risk_class": "HIGH",
+      "owner_route": "/no/kunnskap/fastlast-i-stress",
+      "provenance_files": [
+        "docs/seo/wave2c1e-stuck-in-stress-source-and-claims-lock.md"
+      ],
+      "source_pool_evidence_ids": [],
+      "candidate_evidence_ids": [],
+      "candidate_basis": [],
+      "candidate_relationship": "BOUNDARY_CONTEXT_REQUIRES_REVIEW",
+      "candidate_evidence": [],
+      "approved_evidence_ids": [],
+      "directness": "PENDING_REVIEW",
+      "review_status": "PENDING_HUMAN_REVIEW_NO_AUTO_APPROVAL"
+    },
+    {
+      "claim_id": "CLM-12420425B0",
+      "canonical_claim": "Humming has measurable respiratory/nasal effects, including altered sinus ventilation and nasal nitric oxide.",
+      "policy": "ALLOWED_WITH_QUALIFIERS",
+      "risk_class": "MEDIUM",
+      "owner_route": "/learn/vagus-nerve-evidence-vs-internet-claims",
+      "provenance_files": [
+        "docs/seo/search-dominance-1e3c-evidence-internet-claims-source-claims-lock.md"
+      ],
+      "source_pool_evidence_ids": [
+        "EVD-PMID-12119224",
+        "EVD-PMID-23599399",
+        "EVD-PMID-28265249",
+        "EVD-PMID-34823149",
+        "EVD-PMID-35623448",
+        "EVD-PMID-36219506",
+        "EVD-PMID-38663342",
+        "EVD-PMID-40482984",
+        "EVD-PMID-40941532",
+        "EVD-PMID-41686399",
+        "EVD-PMID-42204029"
+      ],
+      "candidate_evidence_ids": [
+        "EVD-PMID-12119224",
+        "EVD-PMID-40482984",
+        "EVD-PMID-41686399"
+      ],
+      "candidate_basis": [
+        "MATCHING_MARKDOWN_HEADING"
+      ],
+      "candidate_relationship": "POTENTIAL_SUPPORT_REQUIRES_REVIEW",
+      "candidate_evidence": [
+        {
+          "evidence_id": "EVD-PMID-12119224",
+          "relationship": "POTENTIAL_SUPPORT_REQUIRES_REVIEW"
+        },
+        {
+          "evidence_id": "EVD-PMID-40482984",
+          "relationship": "POTENTIAL_SUPPORT_REQUIRES_REVIEW"
+        },
+        {
+          "evidence_id": "EVD-PMID-41686399",
+          "relationship": "POTENTIAL_SUPPORT_REQUIRES_REVIEW"
+        }
+      ],
+      "approved_evidence_ids": [],
+      "directness": "PENDING_REVIEW",
+      "review_status": "PENDING_HUMAN_REVIEW_NO_AUTO_APPROVAL"
+    },
+    {
+      "claim_id": "CLM-143FE2FE9B",
+      "canonical_claim": "general taVNS research proves a Neuvago-specific outcome;",
+      "policy": "NOT_ALLOWED",
+      "risk_class": "HIGH",
+      "owner_route": "/learn/what-does-vagus-nerve-stimulation-feel-like",
+      "provenance_files": [
+        "docs/seo/wave2c1a-vns-sensation-source-and-claims-lock.md"
+      ],
+      "source_pool_evidence_ids": [
+        "EVD-PMID-30217648",
+        "EVD-PMID-30663712",
+        "EVD-PMID-33854421",
+        "EVD-PMID-36543841"
+      ],
+      "candidate_evidence_ids": [],
+      "candidate_basis": [],
+      "candidate_relationship": "BOUNDARY_CONTEXT_REQUIRES_REVIEW",
+      "candidate_evidence": [],
+      "approved_evidence_ids": [],
+      "directness": "PENDING_REVIEW",
+      "review_status": "PENDING_HUMAN_REVIEW_NO_AUTO_APPROVAL"
+    },
+    {
+      "claim_id": "CLM-17F0EB5068",
+      "canonical_claim": "A prescriptive cold-plunge temperature, duration or face-immersion protocol.",
+      "policy": "NOT_ALLOWED",
+      "risk_class": "CRITICAL",
+      "owner_route": "/learn/vagus-nerve-evidence-vs-internet-claims",
+      "provenance_files": [
+        "docs/seo/search-dominance-1e3c-evidence-internet-claims-source-claims-lock.md"
+      ],
+      "source_pool_evidence_ids": [
+        "EVD-PMID-12119224",
+        "EVD-PMID-23599399",
+        "EVD-PMID-28265249",
+        "EVD-PMID-34823149",
+        "EVD-PMID-35623448",
+        "EVD-PMID-36219506",
+        "EVD-PMID-38663342",
+        "EVD-PMID-40482984",
+        "EVD-PMID-40941532",
+        "EVD-PMID-41686399",
+        "EVD-PMID-42204029"
+      ],
+      "candidate_evidence_ids": [],
+      "candidate_basis": [],
+      "candidate_relationship": "BOUNDARY_CONTEXT_REQUIRES_REVIEW",
+      "candidate_evidence": [],
+      "approved_evidence_ids": [],
+      "directness": "PENDING_REVIEW",
+      "review_status": "PENDING_HUMAN_REVIEW_NO_AUTO_APPROVAL"
+    },
+    {
+      "claim_id": "CLM-19A9FFC693",
+      "canonical_claim": "Small studies report changes in breathing pattern, HRV or autonomic measures during humming.",
+      "policy": "ALLOWED_WITH_QUALIFIERS",
+      "risk_class": "HIGH",
+      "owner_route": "/learn/vagus-nerve-evidence-vs-internet-claims",
+      "provenance_files": [
+        "docs/seo/search-dominance-1e3c-evidence-internet-claims-source-claims-lock.md"
+      ],
+      "source_pool_evidence_ids": [
+        "EVD-PMID-12119224",
+        "EVD-PMID-23599399",
+        "EVD-PMID-28265249",
+        "EVD-PMID-34823149",
+        "EVD-PMID-35623448",
+        "EVD-PMID-36219506",
+        "EVD-PMID-38663342",
+        "EVD-PMID-40482984",
+        "EVD-PMID-40941532",
+        "EVD-PMID-41686399",
+        "EVD-PMID-42204029"
+      ],
+      "candidate_evidence_ids": [
+        "EVD-PMID-12119224",
+        "EVD-PMID-40482984",
+        "EVD-PMID-41686399"
+      ],
+      "candidate_basis": [
+        "MATCHING_MARKDOWN_HEADING"
+      ],
+      "candidate_relationship": "POTENTIAL_SUPPORT_REQUIRES_REVIEW",
+      "candidate_evidence": [
+        {
+          "evidence_id": "EVD-PMID-12119224",
+          "relationship": "POTENTIAL_SUPPORT_REQUIRES_REVIEW"
+        },
+        {
+          "evidence_id": "EVD-PMID-40482984",
+          "relationship": "POTENTIAL_SUPPORT_REQUIRES_REVIEW"
+        },
+        {
+          "evidence_id": "EVD-PMID-41686399",
+          "relationship": "POTENTIAL_SUPPORT_REQUIRES_REVIEW"
+        }
+      ],
+      "approved_evidence_ids": [],
+      "directness": "PENDING_REVIEW",
+      "review_status": "PENDING_HUMAN_REVIEW_NO_AUTO_APPROVAL"
+    },
+    {
+      "claim_id": "CLM-1A82B7FA24",
+      "canonical_claim": "Any product efficacy claim, condition-treatment claim, diagnosis, symptom score, health-input workflow or personalised exercise prescription.",
+      "policy": "NOT_ALLOWED",
+      "risk_class": "HIGH",
+      "owner_route": "/learn/vagus-nerve-exercises",
+      "provenance_files": [
+        "docs/seo/search-dominance-1e3b-vagus-nerve-exercises-source-claims-lock.md"
+      ],
+      "source_pool_evidence_ids": [
+        "EVD-PMID-28265249",
+        "EVD-PMID-30245619",
+        "EVD-PMID-34436236",
+        "EVD-PMID-35623448",
+        "EVD-PMID-37822096",
+        "EVD-PMID-38468106"
+      ],
+      "candidate_evidence_ids": [],
+      "candidate_basis": [],
+      "candidate_relationship": "BOUNDARY_CONTEXT_REQUIRES_REVIEW",
+      "candidate_evidence": [],
+      "approved_evidence_ids": [],
+      "directness": "PENDING_REVIEW",
+      "review_status": "PENDING_HUMAN_REVIEW_NO_AUTO_APPROVAL"
+    },
+    {
+      "claim_id": "CLM-1AC3EF54DB",
+      "canonical_claim": "Transfer of athletic recovery or diving-response findings into a general therapeutic claim.",
+      "policy": "NOT_ALLOWED",
+      "risk_class": "MEDIUM",
+      "owner_route": "/learn/vagus-nerve-evidence-vs-internet-claims",
+      "provenance_files": [
+        "docs/seo/search-dominance-1e3c-evidence-internet-claims-source-claims-lock.md"
+      ],
+      "source_pool_evidence_ids": [
+        "EVD-PMID-12119224",
+        "EVD-PMID-23599399",
+        "EVD-PMID-28265249",
+        "EVD-PMID-34823149",
+        "EVD-PMID-35623448",
+        "EVD-PMID-36219506",
+        "EVD-PMID-38663342",
+        "EVD-PMID-40482984",
+        "EVD-PMID-40941532",
+        "EVD-PMID-41686399",
+        "EVD-PMID-42204029"
+      ],
+      "candidate_evidence_ids": [],
+      "candidate_basis": [],
+      "candidate_relationship": "BOUNDARY_CONTEXT_REQUIRES_REVIEW",
+      "candidate_evidence": [],
+      "approved_evidence_ids": [],
+      "directness": "PENDING_REVIEW",
+      "review_status": "PENDING_HUMAN_REVIEW_NO_AUTO_APPROVAL"
+    },
+    {
+      "claim_id": "CLM-1E48802338",
+      "canonical_claim": "Electrical VNS is a distinct device/protocol category.",
+      "policy": "ALLOWED_WITH_QUALIFIERS",
+      "risk_class": "MEDIUM",
+      "owner_route": "/learn/vagus-nerve-reset",
+      "provenance_files": [
+        "docs/seo/search-dominance-1e2d-reset-massage-owner-lift-source-claims-lock.md"
+      ],
+      "source_pool_evidence_ids": [],
+      "candidate_evidence_ids": [],
+      "candidate_basis": [],
+      "candidate_relationship": "POTENTIAL_SUPPORT_REQUIRES_REVIEW",
+      "candidate_evidence": [],
+      "approved_evidence_ids": [],
+      "directness": "PENDING_REVIEW",
+      "review_status": "PENDING_HUMAN_REVIEW_NO_AUTO_APPROVAL"
+    },
+    {
+      "claim_id": "CLM-1EA77BC4E3",
+      "canonical_claim": "use the lowest comfortable level;",
+      "policy": "ALLOWED_WITH_QUALIFIERS",
+      "risk_class": "MEDIUM",
+      "owner_route": "/learn/what-does-vagus-nerve-stimulation-feel-like",
+      "provenance_files": [
+        "docs/seo/wave2c1a-vns-sensation-source-and-claims-lock.md"
+      ],
+      "source_pool_evidence_ids": [
+        "EVD-PMID-30217648",
+        "EVD-PMID-30663712",
+        "EVD-PMID-33854421",
+        "EVD-PMID-36543841"
+      ],
+      "candidate_evidence_ids": [],
+      "candidate_basis": [],
+      "candidate_relationship": "POTENTIAL_SUPPORT_REQUIRES_REVIEW",
+      "candidate_evidence": [],
+      "approved_evidence_ids": [],
+      "directness": "PENDING_REVIEW",
+      "review_status": "PENDING_HUMAN_REVIEW_NO_AUTO_APPROVAL"
+    },
+    {
+      "claim_id": "CLM-1EBD72C17B",
+      "canonical_claim": "Distinguishing implanted, cervical, auricular and other electrical stimulation products.",
+      "policy": "ALLOWED_WITH_QUALIFIERS",
+      "risk_class": "MEDIUM",
+      "owner_route": "/no/kunnskap/hvordan-velge-vagusnervestimulator",
+      "provenance_files": [
+        "docs/seo/search-dominance-1e2g-no-protected-win-buyer-guide-source-claims-lock.md"
+      ],
+      "source_pool_evidence_ids": [],
+      "candidate_evidence_ids": [],
+      "candidate_basis": [],
+      "candidate_relationship": "POTENTIAL_SUPPORT_REQUIRES_REVIEW",
+      "candidate_evidence": [],
+      "approved_evidence_ids": [],
+      "directness": "PENDING_REVIEW",
+      "review_status": "PENDING_HUMAN_REVIEW_NO_AUTO_APPROVAL"
+    },
+    {
+      "claim_id": "CLM-27B460CBB0",
+      "canonical_claim": "avoid deliberate gagging instructions",
+      "policy": "SAFETY_BOUNDARY",
+      "risk_class": "CRITICAL",
+      "owner_route": "/learn/vagus-nerve-evidence-vs-internet-claims",
+      "provenance_files": [
+        "docs/seo/search-dominance-1e3c-evidence-internet-claims-source-claims-lock.md"
+      ],
+      "source_pool_evidence_ids": [
+        "EVD-PMID-12119224",
+        "EVD-PMID-23599399",
+        "EVD-PMID-28265249",
+        "EVD-PMID-34823149",
+        "EVD-PMID-35623448",
+        "EVD-PMID-36219506",
+        "EVD-PMID-38663342",
+        "EVD-PMID-40482984",
+        "EVD-PMID-40941532",
+        "EVD-PMID-41686399",
+        "EVD-PMID-42204029"
+      ],
+      "candidate_evidence_ids": [],
+      "candidate_basis": [],
+      "candidate_relationship": "SAFETY_CONTEXT_REQUIRES_REVIEW",
+      "candidate_evidence": [],
+      "approved_evidence_ids": [],
+      "directness": "PENDING_REVIEW",
+      "review_status": "PENDING_HUMAN_REVIEW_NO_AUTO_APPROVAL"
+    },
+    {
+      "claim_id": "CLM-2B9A2F2C51",
+      "canonical_claim": "Slow breathing can affect heart rate, HRV-related measures and experience under studied conditions.",
+      "policy": "ALLOWED_WITH_QUALIFIERS",
+      "risk_class": "HIGH",
+      "owner_route": "/learn/vagus-nerve-reset",
+      "provenance_files": [
+        "docs/seo/search-dominance-1e2d-reset-massage-owner-lift-source-claims-lock.md"
+      ],
+      "source_pool_evidence_ids": [],
+      "candidate_evidence_ids": [],
+      "candidate_basis": [],
+      "candidate_relationship": "POTENTIAL_SUPPORT_REQUIRES_REVIEW",
+      "candidate_evidence": [],
+      "approved_evidence_ids": [],
+      "directness": "PENDING_REVIEW",
+      "review_status": "PENDING_HUMAN_REVIEW_NO_AUTO_APPROVAL"
+    },
+    {
+      "claim_id": "CLM-2CFD01DC0C",
+      "canonical_claim": "Slow-paced breathing has a clearer direct literature for heart rate and HRV-related measures than many viral “vagus hack” claims.",
+      "policy": "ALLOWED_WITH_QUALIFIERS",
+      "risk_class": "HIGH",
+      "owner_route": "/learn/vagus-nerve-exercises",
+      "provenance_files": [
+        "docs/seo/search-dominance-1e3b-vagus-nerve-exercises-source-claims-lock.md"
+      ],
+      "source_pool_evidence_ids": [
+        "EVD-PMID-28265249",
+        "EVD-PMID-30245619",
+        "EVD-PMID-34436236",
+        "EVD-PMID-35623448",
+        "EVD-PMID-37822096",
+        "EVD-PMID-38468106"
+      ],
+      "candidate_evidence_ids": [],
+      "candidate_basis": [],
+      "candidate_relationship": "POTENTIAL_SUPPORT_REQUIRES_REVIEW",
+      "candidate_evidence": [],
+      "approved_evidence_ids": [],
+      "directness": "PENDING_REVIEW",
+      "review_status": "PENDING_HUMAN_REVIEW_NO_AUTO_APPROVAL"
+    },
+    {
+      "claim_id": "CLM-2D9E4F88BC",
+      "canonical_claim": "“Cold resets the vagus nerve.”",
+      "policy": "NOT_ALLOWED",
+      "risk_class": "MEDIUM",
+      "owner_route": "/learn/vagus-nerve-evidence-vs-internet-claims",
+      "provenance_files": [
+        "docs/seo/search-dominance-1e3c-evidence-internet-claims-source-claims-lock.md"
+      ],
+      "source_pool_evidence_ids": [
+        "EVD-PMID-12119224",
+        "EVD-PMID-23599399",
+        "EVD-PMID-28265249",
+        "EVD-PMID-34823149",
+        "EVD-PMID-35623448",
+        "EVD-PMID-36219506",
+        "EVD-PMID-38663342",
+        "EVD-PMID-40482984",
+        "EVD-PMID-40941532",
+        "EVD-PMID-41686399",
+        "EVD-PMID-42204029"
+      ],
+      "candidate_evidence_ids": [],
+      "candidate_basis": [],
+      "candidate_relationship": "BOUNDARY_CONTEXT_REQUIRES_REVIEW",
+      "candidate_evidence": [],
+      "approved_evidence_ids": [],
+      "directness": "PENDING_REVIEW",
+      "review_status": "PENDING_HUMAN_REVIEW_NO_AUTO_APPROVAL"
+    },
+    {
+      "claim_id": "CLM-2E6602452A",
+      "canonical_claim": "using general VNS research as direct proof of a Neuvago outcome;",
+      "policy": "NOT_ALLOWED",
+      "risk_class": "HIGH",
+      "owner_route": "/no/kunnskap/overstimulert",
+      "provenance_files": [
+        "docs/seo/wave2c1d-overstimulation-source-and-claims-lock.md"
+      ],
+      "source_pool_evidence_ids": [],
+      "candidate_evidence_ids": [],
+      "candidate_basis": [],
+      "candidate_relationship": "BOUNDARY_CONTEXT_REQUIRES_REVIEW",
+      "candidate_evidence": [],
+      "approved_evidence_ids": [],
+      "directness": "PENDING_REVIEW",
+      "review_status": "PENDING_HUMAN_REVIEW_NO_AUTO_APPROVAL"
+    },
+    {
+      "claim_id": "CLM-30C3F01FD2",
+      "canonical_claim": "Converting a monitored clinical manoeuvre into a consumer wellness exercise.",
+      "policy": "NOT_ALLOWED",
+      "risk_class": "MEDIUM",
+      "owner_route": "/learn/vagus-nerve-evidence-vs-internet-claims",
+      "provenance_files": [
+        "docs/seo/search-dominance-1e3c-evidence-internet-claims-source-claims-lock.md"
+      ],
+      "source_pool_evidence_ids": [
+        "EVD-PMID-12119224",
+        "EVD-PMID-23599399",
+        "EVD-PMID-28265249",
+        "EVD-PMID-34823149",
+        "EVD-PMID-35623448",
+        "EVD-PMID-36219506",
+        "EVD-PMID-38663342",
+        "EVD-PMID-40482984",
+        "EVD-PMID-40941532",
+        "EVD-PMID-41686399",
+        "EVD-PMID-42204029"
+      ],
+      "candidate_evidence_ids": [],
+      "candidate_basis": [],
+      "candidate_relationship": "BOUNDARY_CONTEXT_REQUIRES_REVIEW",
+      "candidate_evidence": [],
+      "approved_evidence_ids": [],
+      "directness": "PENDING_REVIEW",
+      "review_status": "PENDING_HUMAN_REVIEW_NO_AUTO_APPROVAL"
+    },
+    {
+      "claim_id": "CLM-3201E08FC5",
+      "canonical_claim": "Any transfer of implanted VNS, tVNS, taVNS or other electrical-device evidence to breathing, movement, yoga, humming, gargling, tapping, cold exposure or Neuvago.",
+      "policy": "NOT_ALLOWED",
+      "risk_class": "HIGH",
+      "owner_route": "/learn/vagus-nerve-exercises",
+      "provenance_files": [
+        "docs/seo/search-dominance-1e3b-vagus-nerve-exercises-source-claims-lock.md"
+      ],
+      "source_pool_evidence_ids": [
+        "EVD-PMID-28265249",
+        "EVD-PMID-30245619",
+        "EVD-PMID-34436236",
+        "EVD-PMID-35623448",
+        "EVD-PMID-37822096",
+        "EVD-PMID-38468106"
+      ],
+      "candidate_evidence_ids": [],
+      "candidate_basis": [],
+      "candidate_relationship": "BOUNDARY_CONTEXT_REQUIRES_REVIEW",
+      "candidate_evidence": [],
+      "approved_evidence_ids": [],
+      "directness": "PENDING_REVIEW",
+      "review_status": "PENDING_HUMAN_REVIEW_NO_AUTO_APPROVAL"
+    },
+    {
+      "claim_id": "CLM-33DDD7F533",
+      "canonical_claim": "A short routine may help a person feel calmer without proving a vagus-specific mechanism.",
+      "policy": "ALLOWED_WITH_QUALIFIERS",
+      "risk_class": "MEDIUM",
+      "owner_route": "/learn/vagus-nerve-reset",
+      "provenance_files": [
+        "docs/seo/search-dominance-1e2d-reset-massage-owner-lift-source-claims-lock.md"
+      ],
+      "source_pool_evidence_ids": [],
+      "candidate_evidence_ids": [],
+      "candidate_basis": [],
+      "candidate_relationship": "POTENTIAL_SUPPORT_REQUIRES_REVIEW",
+      "candidate_evidence": [],
+      "approved_evidence_ids": [],
+      "directness": "PENDING_REVIEW",
+      "review_status": "PENDING_HUMAN_REVIEW_NO_AUTO_APPROVAL"
+    },
+    {
+      "claim_id": "CLM-371DCDA754",
+      "canonical_claim": "Carotid-sinus self-massage instructions, coordinates, force, duration or side choice.",
+      "policy": "NOT_ALLOWED",
+      "risk_class": "CRITICAL",
+      "owner_route": "/no/kunnskap/vagusnerven-og-massasje",
+      "provenance_files": [
+        "docs/seo/search-dominance-1e2g-no-protected-win-buyer-guide-source-claims-lock.md"
+      ],
+      "source_pool_evidence_ids": [],
+      "candidate_evidence_ids": [],
+      "candidate_basis": [],
+      "candidate_relationship": "BOUNDARY_CONTEXT_REQUIRES_REVIEW",
+      "candidate_evidence": [],
+      "approved_evidence_ids": [],
+      "directness": "PENDING_REVIEW",
+      "review_status": "PENDING_HUMAN_REVIEW_NO_AUTO_APPROVAL"
+    },
+    {
+      "claim_id": "CLM-3824165942",
+      "canonical_claim": "keep carotid-sinus and strong neck-pressure manoeuvres in clinical/safety-sensitive territory",
+      "policy": "SAFETY_BOUNDARY",
+      "risk_class": "CRITICAL",
+      "owner_route": "/learn/vagus-nerve-evidence-vs-internet-claims",
+      "provenance_files": [
+        "docs/seo/search-dominance-1e3c-evidence-internet-claims-source-claims-lock.md"
+      ],
+      "source_pool_evidence_ids": [
+        "EVD-PMID-12119224",
+        "EVD-PMID-23599399",
+        "EVD-PMID-28265249",
+        "EVD-PMID-34823149",
+        "EVD-PMID-35623448",
+        "EVD-PMID-36219506",
+        "EVD-PMID-38663342",
+        "EVD-PMID-40482984",
+        "EVD-PMID-40941532",
+        "EVD-PMID-41686399",
+        "EVD-PMID-42204029"
+      ],
+      "candidate_evidence_ids": [],
+      "candidate_basis": [],
+      "candidate_relationship": "SAFETY_CONTEXT_REQUIRES_REVIEW",
+      "candidate_evidence": [],
+      "approved_evidence_ids": [],
+      "directness": "PENDING_REVIEW",
+      "review_status": "PENDING_HUMAN_REVIEW_NO_AUTO_APPROVAL"
+    },
+    {
+      "claim_id": "CLM-38CCB4347C",
+      "canonical_claim": "Cold-water, face-cooling and cryostimulation paradigms can change heart rate, blood pressure and cardiac autonomic measures.",
+      "policy": "ALLOWED_WITH_QUALIFIERS",
+      "risk_class": "MEDIUM",
+      "owner_route": "/learn/vagus-nerve-evidence-vs-internet-claims",
+      "provenance_files": [
+        "docs/seo/search-dominance-1e3c-evidence-internet-claims-source-claims-lock.md"
+      ],
+      "source_pool_evidence_ids": [
+        "EVD-PMID-12119224",
+        "EVD-PMID-23599399",
+        "EVD-PMID-28265249",
+        "EVD-PMID-34823149",
+        "EVD-PMID-35623448",
+        "EVD-PMID-36219506",
+        "EVD-PMID-38663342",
+        "EVD-PMID-40482984",
+        "EVD-PMID-40941532",
+        "EVD-PMID-41686399",
+        "EVD-PMID-42204029"
+      ],
+      "candidate_evidence_ids": [],
+      "candidate_basis": [],
+      "candidate_relationship": "POTENTIAL_SUPPORT_REQUIRES_REVIEW",
+      "candidate_evidence": [],
+      "approved_evidence_ids": [],
+      "directness": "PENDING_REVIEW",
+      "review_status": "PENDING_HUMAN_REVIEW_NO_AUTO_APPROVAL"
+    },
+    {
+      "claim_id": "CLM-3A910CFF37",
+      "canonical_claim": "using general VNS or stress research as direct proof of a Neuvago outcome;",
+      "policy": "NOT_ALLOWED",
+      "risk_class": "HIGH",
+      "owner_route": "/no/kunnskap/fastlast-i-stress",
+      "provenance_files": [
+        "docs/seo/wave2c1e-stuck-in-stress-source-and-claims-lock.md"
+      ],
+      "source_pool_evidence_ids": [],
+      "candidate_evidence_ids": [],
+      "candidate_basis": [],
+      "candidate_relationship": "BOUNDARY_CONTEXT_REQUIRES_REVIEW",
+      "candidate_evidence": [],
+      "approved_evidence_ids": [],
+      "directness": "PENDING_REVIEW",
+      "review_status": "PENDING_HUMAN_REVIEW_NO_AUTO_APPROVAL"
+    },
+    {
+      "claim_id": "CLM-411854975C",
+      "canonical_claim": "set intensity slowly;",
+      "policy": "ALLOWED_WITH_QUALIFIERS",
+      "risk_class": "MEDIUM",
+      "owner_route": "/learn/what-does-vagus-nerve-stimulation-feel-like",
+      "provenance_files": [
+        "docs/seo/wave2c1a-vns-sensation-source-and-claims-lock.md"
+      ],
+      "source_pool_evidence_ids": [
+        "EVD-PMID-30217648",
+        "EVD-PMID-30663712",
+        "EVD-PMID-33854421",
+        "EVD-PMID-36543841"
+      ],
+      "candidate_evidence_ids": [],
+      "candidate_basis": [],
+      "candidate_relationship": "POTENTIAL_SUPPORT_REQUIRES_REVIEW",
+      "candidate_evidence": [],
+      "approved_evidence_ids": [],
+      "directness": "PENDING_REVIEW",
+      "review_status": "PENDING_HUMAN_REVIEW_NO_AUTO_APPROVAL"
+    },
+    {
+      "claim_id": "CLM-41DF51F987",
+      "canonical_claim": "Give carotid-sinus self-massage instructions, coordinates, force, duration or side choice.",
+      "policy": "NOT_ALLOWED",
+      "risk_class": "CRITICAL",
+      "owner_route": "/learn/vagus-nerve-massage",
+      "provenance_files": [
+        "docs/seo/search-dominance-1e2d-reset-massage-owner-lift-source-claims-lock.md"
+      ],
+      "source_pool_evidence_ids": [],
+      "candidate_evidence_ids": [],
+      "candidate_basis": [],
+      "candidate_relationship": "BOUNDARY_CONTEXT_REQUIRES_REVIEW",
+      "candidate_evidence": [],
+      "approved_evidence_ids": [],
+      "directness": "PENDING_REVIEW",
+      "review_status": "PENDING_HUMAN_REVIEW_NO_AUTO_APPROVAL"
+    },
+    {
+      "claim_id": "CLM-4383F7D266",
+      "canonical_claim": "Any statement that a behavioural exercise has been proven to directly and selectively stimulate the whole vagus nerve.",
+      "policy": "NOT_ALLOWED",
+      "risk_class": "MEDIUM",
+      "owner_route": "/learn/vagus-nerve-exercises",
+      "provenance_files": [
+        "docs/seo/search-dominance-1e3b-vagus-nerve-exercises-source-claims-lock.md"
+      ],
+      "source_pool_evidence_ids": [
+        "EVD-PMID-28265249",
+        "EVD-PMID-30245619",
+        "EVD-PMID-34436236",
+        "EVD-PMID-35623448",
+        "EVD-PMID-37822096",
+        "EVD-PMID-38468106"
+      ],
+      "candidate_evidence_ids": [],
+      "candidate_basis": [],
+      "candidate_relationship": "BOUNDARY_CONTEXT_REQUIRES_REVIEW",
+      "candidate_evidence": [],
+      "approved_evidence_ids": [],
+      "directness": "PENDING_REVIEW",
+      "review_status": "PENDING_HUMAN_REVIEW_NO_AUTO_APPROVAL"
+    },
+    {
+      "claim_id": "CLM-439EF0D688",
+      "canonical_claim": "A wearable value proves a weak, damaged, inflamed or “unbalanced” vagus nerve.",
+      "policy": "NOT_ALLOWED",
+      "risk_class": "MEDIUM",
+      "owner_route": "/learn/vagus-nerve-reset",
+      "provenance_files": [
+        "docs/seo/search-dominance-1e2d-reset-massage-owner-lift-source-claims-lock.md"
+      ],
+      "source_pool_evidence_ids": [],
+      "candidate_evidence_ids": [],
+      "candidate_basis": [],
+      "candidate_relationship": "BOUNDARY_CONTEXT_REQUIRES_REVIEW",
+      "candidate_evidence": [],
+      "approved_evidence_ids": [],
+      "directness": "PENDING_REVIEW",
+      "review_status": "PENDING_HUMAN_REVIEW_NO_AUTO_APPROVAL"
+    },
+    {
+      "claim_id": "CLM-4713550E4B",
+      "canonical_claim": "transfer of implanted VNS, tVNS, taVNS or Neuvago evidence to behavioural practices",
+      "policy": "PROHIBITED",
+      "risk_class": "CRITICAL",
+      "owner_route": "/learn/vagus-nerve-evidence-vs-internet-claims",
+      "provenance_files": [
+        "docs/seo/search-dominance-1e3c-evidence-internet-claims-source-claims-lock.md"
+      ],
+      "source_pool_evidence_ids": [
+        "EVD-PMID-12119224",
+        "EVD-PMID-23599399",
+        "EVD-PMID-28265249",
+        "EVD-PMID-34823149",
+        "EVD-PMID-35623448",
+        "EVD-PMID-36219506",
+        "EVD-PMID-38663342",
+        "EVD-PMID-40482984",
+        "EVD-PMID-40941532",
+        "EVD-PMID-41686399",
+        "EVD-PMID-42204029"
+      ],
+      "candidate_evidence_ids": [],
+      "candidate_basis": [],
+      "candidate_relationship": "BOUNDARY_CONTEXT_REQUIRES_REVIEW",
+      "candidate_evidence": [],
+      "approved_evidence_ids": [],
+      "directness": "PENDING_REVIEW",
+      "review_status": "PENDING_HUMAN_REVIEW_NO_AUTO_APPROVAL"
+    },
+    {
+      "claim_id": "CLM-4BF1EF37D5",
+      "canonical_claim": "diagnosis of a weak, damaged, overactive or underactive vagus nerve from self-observation",
+      "policy": "PROHIBITED",
+      "risk_class": "CRITICAL",
+      "owner_route": "/learn/vagus-nerve-evidence-vs-internet-claims",
+      "provenance_files": [
+        "docs/seo/search-dominance-1e3c-evidence-internet-claims-source-claims-lock.md"
+      ],
+      "source_pool_evidence_ids": [
+        "EVD-PMID-12119224",
+        "EVD-PMID-23599399",
+        "EVD-PMID-28265249",
+        "EVD-PMID-34823149",
+        "EVD-PMID-35623448",
+        "EVD-PMID-36219506",
+        "EVD-PMID-38663342",
+        "EVD-PMID-40482984",
+        "EVD-PMID-40941532",
+        "EVD-PMID-41686399",
+        "EVD-PMID-42204029"
+      ],
+      "candidate_evidence_ids": [],
+      "candidate_basis": [],
+      "candidate_relationship": "BOUNDARY_CONTEXT_REQUIRES_REVIEW",
+      "candidate_evidence": [],
+      "approved_evidence_ids": [],
+      "directness": "PENDING_REVIEW",
+      "review_status": "PENDING_HUMAN_REVIEW_NO_AUTO_APPROVAL"
+    },
+    {
+      "claim_id": "CLM-4DB60F3096",
+      "canonical_claim": "General breathing, grounding, movement or relaxation is automatically electrical VNS.",
+      "policy": "NOT_ALLOWED",
+      "risk_class": "MEDIUM",
+      "owner_route": "/learn/vagus-nerve-reset",
+      "provenance_files": [
+        "docs/seo/search-dominance-1e2d-reset-massage-owner-lift-source-claims-lock.md"
+      ],
+      "source_pool_evidence_ids": [],
+      "candidate_evidence_ids": [],
+      "candidate_basis": [],
+      "candidate_relationship": "BOUNDARY_CONTEXT_REQUIRES_REVIEW",
+      "candidate_evidence": [],
+      "approved_evidence_ids": [],
+      "directness": "PENDING_REVIEW",
+      "review_status": "PENDING_HUMAN_REVIEW_NO_AUTO_APPROVAL"
+    },
+    {
+      "claim_id": "CLM-4EF31024A2",
+      "canonical_claim": "stronger stimulation is better or more effective;",
+      "policy": "NOT_ALLOWED",
+      "risk_class": "HIGH",
+      "owner_route": "/learn/what-does-vagus-nerve-stimulation-feel-like",
+      "provenance_files": [
+        "docs/seo/wave2c1a-vns-sensation-source-and-claims-lock.md"
+      ],
+      "source_pool_evidence_ids": [
+        "EVD-PMID-30217648",
+        "EVD-PMID-30663712",
+        "EVD-PMID-33854421",
+        "EVD-PMID-36543841"
+      ],
+      "candidate_evidence_ids": [],
+      "candidate_basis": [],
+      "candidate_relationship": "BOUNDARY_CONTEXT_REQUIRES_REVIEW",
+      "candidate_evidence": [],
+      "approved_evidence_ids": [],
+      "directness": "PENDING_REVIEW",
+      "review_status": "PENDING_HUMAN_REVIEW_NO_AUTO_APPROVAL"
+    },
+    {
+      "claim_id": "CLM-555A0B2626",
+      "canonical_claim": "secure, balanced and comfortable earpiece contact;",
+      "policy": "ALLOWED_WITH_QUALIFIERS",
+      "risk_class": "HIGH",
+      "owner_route": "/learn/what-does-vagus-nerve-stimulation-feel-like",
+      "provenance_files": [
+        "docs/seo/wave2c1a-vns-sensation-source-and-claims-lock.md"
+      ],
+      "source_pool_evidence_ids": [
+        "EVD-PMID-30217648",
+        "EVD-PMID-30663712",
+        "EVD-PMID-33854421",
+        "EVD-PMID-36543841"
+      ],
+      "candidate_evidence_ids": [],
+      "candidate_basis": [],
+      "candidate_relationship": "POTENTIAL_SUPPORT_REQUIRES_REVIEW",
+      "candidate_evidence": [],
+      "approved_evidence_ids": [],
+      "directness": "PENDING_REVIEW",
+      "review_status": "PENDING_HUMAN_REVIEW_NO_AUTO_APPROVAL"
+    },
+    {
+      "claim_id": "CLM-55AEC4252F",
+      "canonical_claim": "promising a nervous-system reset, trauma release, cortisol reduction or guaranteed recovery;",
+      "policy": "NOT_ALLOWED",
+      "risk_class": "MEDIUM",
+      "owner_route": "/no/kunnskap/fastlast-i-stress",
+      "provenance_files": [
+        "docs/seo/wave2c1e-stuck-in-stress-source-and-claims-lock.md"
+      ],
+      "source_pool_evidence_ids": [],
+      "candidate_evidence_ids": [],
+      "candidate_basis": [],
+      "candidate_relationship": "BOUNDARY_CONTEXT_REQUIRES_REVIEW",
+      "candidate_evidence": [],
+      "approved_evidence_ids": [],
+      "directness": "PENDING_REVIEW",
+      "review_status": "PENDING_HUMAN_REVIEW_NO_AUTO_APPROVAL"
+    },
+    {
+      "claim_id": "CLM-55F74D6B7F",
+      "canonical_claim": "Massage studies can report subjective and cardiac/autonomic measures without proving selective vagus engagement.",
+      "policy": "ALLOWED_WITH_QUALIFIERS",
+      "risk_class": "MEDIUM",
+      "owner_route": "/learn/vagus-nerve-massage",
+      "provenance_files": [
+        "docs/seo/search-dominance-1e2d-reset-massage-owner-lift-source-claims-lock.md"
+      ],
+      "source_pool_evidence_ids": [],
+      "candidate_evidence_ids": [],
+      "candidate_basis": [],
+      "candidate_relationship": "POTENTIAL_SUPPORT_REQUIRES_REVIEW",
+      "candidate_evidence": [],
+      "approved_evidence_ids": [],
+      "directness": "PENDING_REVIEW",
+      "review_status": "PENDING_HUMAN_REVIEW_NO_AUTO_APPROVAL"
+    },
+    {
+      "claim_id": "CLM-5A7D1C1D8B",
+      "canonical_claim": "guaranteed vagus activation, reset, healing or “toning”",
+      "policy": "PROHIBITED",
+      "risk_class": "CRITICAL",
+      "owner_route": "/learn/vagus-nerve-evidence-vs-internet-claims",
+      "provenance_files": [
+        "docs/seo/search-dominance-1e3c-evidence-internet-claims-source-claims-lock.md"
+      ],
+      "source_pool_evidence_ids": [
+        "EVD-PMID-12119224",
+        "EVD-PMID-23599399",
+        "EVD-PMID-28265249",
+        "EVD-PMID-34823149",
+        "EVD-PMID-35623448",
+        "EVD-PMID-36219506",
+        "EVD-PMID-38663342",
+        "EVD-PMID-40482984",
+        "EVD-PMID-40941532",
+        "EVD-PMID-41686399",
+        "EVD-PMID-42204029"
+      ],
+      "candidate_evidence_ids": [],
+      "candidate_basis": [],
+      "candidate_relationship": "BOUNDARY_CONTEXT_REQUIRES_REVIEW",
+      "candidate_evidence": [],
+      "approved_evidence_ids": [],
+      "directness": "PENDING_REVIEW",
+      "review_status": "PENDING_HUMAN_REVIEW_NO_AUTO_APPROVAL"
+    },
+    {
+      "claim_id": "CLM-5C8DA3AA27",
+      "canonical_claim": "The outer ear has mixed innervation; manual ear touch is not equivalent to electrical taVNS.",
+      "policy": "ALLOWED_WITH_QUALIFIERS",
+      "risk_class": "MEDIUM",
+      "owner_route": "/learn/vagus-nerve-massage",
+      "provenance_files": [
+        "docs/seo/search-dominance-1e2d-reset-massage-owner-lift-source-claims-lock.md"
+      ],
+      "source_pool_evidence_ids": [],
+      "candidate_evidence_ids": [],
+      "candidate_basis": [],
+      "candidate_relationship": "POTENTIAL_SUPPORT_REQUIRES_REVIEW",
+      "candidate_evidence": [],
+      "approved_evidence_ids": [],
+      "directness": "PENDING_REVIEW",
+      "review_status": "PENDING_HUMAN_REVIEW_NO_AUTO_APPROVAL"
+    },
+    {
+      "claim_id": "CLM-60596631A5",
+      "canonical_claim": "avoid cold-plunge or face-immersion dosing",
+      "policy": "SAFETY_BOUNDARY",
+      "risk_class": "CRITICAL",
+      "owner_route": "/learn/vagus-nerve-evidence-vs-internet-claims",
+      "provenance_files": [
+        "docs/seo/search-dominance-1e3c-evidence-internet-claims-source-claims-lock.md"
+      ],
+      "source_pool_evidence_ids": [
+        "EVD-PMID-12119224",
+        "EVD-PMID-23599399",
+        "EVD-PMID-28265249",
+        "EVD-PMID-34823149",
+        "EVD-PMID-35623448",
+        "EVD-PMID-36219506",
+        "EVD-PMID-38663342",
+        "EVD-PMID-40482984",
+        "EVD-PMID-40941532",
+        "EVD-PMID-41686399",
+        "EVD-PMID-42204029"
+      ],
+      "candidate_evidence_ids": [],
+      "candidate_basis": [],
+      "candidate_relationship": "SAFETY_CONTEXT_REQUIRES_REVIEW",
+      "candidate_evidence": [],
+      "approved_evidence_ids": [],
+      "directness": "PENDING_REVIEW",
+      "review_status": "PENDING_HUMAN_REVIEW_NO_AUTO_APPROVAL"
+    },
+    {
+      "claim_id": "CLM-620E014D76",
+      "canonical_claim": "“Best” rankings, fabricated reviews/tests or comparative superiority claims.",
+      "policy": "NOT_ALLOWED",
+      "risk_class": "MEDIUM",
+      "owner_route": "/no/kunnskap/hvordan-velge-vagusnervestimulator",
+      "provenance_files": [
+        "docs/seo/search-dominance-1e2g-no-protected-win-buyer-guide-source-claims-lock.md"
+      ],
+      "source_pool_evidence_ids": [],
+      "candidate_evidence_ids": [],
+      "candidate_basis": [],
+      "candidate_relationship": "BOUNDARY_CONTEXT_REQUIRES_REVIEW",
+      "candidate_evidence": [],
+      "approved_evidence_ids": [],
+      "directness": "PENDING_REVIEW",
+      "review_status": "PENDING_HUMAN_REVIEW_NO_AUTO_APPROVAL"
+    },
+    {
+      "claim_id": "CLM-6545931318",
+      "canonical_claim": "direct target engagement inferred from warmth, tingling, yawning, sighing, calm, pulse change or one HRV reading",
+      "policy": "PROHIBITED",
+      "risk_class": "CRITICAL",
+      "owner_route": "/learn/vagus-nerve-evidence-vs-internet-claims",
+      "provenance_files": [
+        "docs/seo/search-dominance-1e3c-evidence-internet-claims-source-claims-lock.md"
+      ],
+      "source_pool_evidence_ids": [
+        "EVD-PMID-12119224",
+        "EVD-PMID-23599399",
+        "EVD-PMID-28265249",
+        "EVD-PMID-34823149",
+        "EVD-PMID-35623448",
+        "EVD-PMID-36219506",
+        "EVD-PMID-38663342",
+        "EVD-PMID-40482984",
+        "EVD-PMID-40941532",
+        "EVD-PMID-41686399",
+        "EVD-PMID-42204029"
+      ],
+      "candidate_evidence_ids": [],
+      "candidate_basis": [],
+      "candidate_relationship": "BOUNDARY_CONTEXT_REQUIRES_REVIEW",
+      "candidate_evidence": [],
+      "approved_evidence_ids": [],
+      "directness": "PENDING_REVIEW",
+      "review_status": "PENDING_HUMAN_REVIEW_NO_AUTO_APPROVAL"
+    },
+    {
+      "claim_id": "CLM-661FAD9613",
+      "canonical_claim": "Effects vary by exposure type, temperature, immersion, timing and individual context.",
+      "policy": "ALLOWED_WITH_QUALIFIERS",
+      "risk_class": "MEDIUM",
+      "owner_route": "/learn/vagus-nerve-evidence-vs-internet-claims",
+      "provenance_files": [
+        "docs/seo/search-dominance-1e3c-evidence-internet-claims-source-claims-lock.md"
+      ],
+      "source_pool_evidence_ids": [
+        "EVD-PMID-12119224",
+        "EVD-PMID-23599399",
+        "EVD-PMID-28265249",
+        "EVD-PMID-34823149",
+        "EVD-PMID-35623448",
+        "EVD-PMID-36219506",
+        "EVD-PMID-38663342",
+        "EVD-PMID-40482984",
+        "EVD-PMID-40941532",
+        "EVD-PMID-41686399",
+        "EVD-PMID-42204029"
+      ],
+      "candidate_evidence_ids": [],
+      "candidate_basis": [],
+      "candidate_relationship": "POTENTIAL_SUPPORT_REQUIRES_REVIEW",
+      "candidate_evidence": [],
+      "approved_evidence_ids": [],
+      "directness": "PENDING_REVIEW",
+      "review_status": "PENDING_HUMAN_REVIEW_NO_AUTO_APPROVAL"
+    },
+    {
+      "claim_id": "CLM-66D82B628C",
+      "canonical_claim": "Transferring implanted-VNS indications or research automatically to non-invasive devices or Neuvago.",
+      "policy": "NOT_ALLOWED",
+      "risk_class": "HIGH",
+      "owner_route": "/no/kunnskap/hvordan-velge-vagusnervestimulator",
+      "provenance_files": [
+        "docs/seo/search-dominance-1e2g-no-protected-win-buyer-guide-source-claims-lock.md"
+      ],
+      "source_pool_evidence_ids": [],
+      "candidate_evidence_ids": [],
+      "candidate_basis": [],
+      "candidate_relationship": "BOUNDARY_CONTEXT_REQUIRES_REVIEW",
+      "candidate_evidence": [],
+      "approved_evidence_ids": [],
+      "directness": "PENDING_REVIEW",
+      "review_status": "PENDING_HUMAN_REVIEW_NO_AUTO_APPROVAL"
+    },
+    {
+      "claim_id": "CLM-69302C1A6B",
+      "canonical_claim": "urgent help and not being alone when there is risk of self-harm or harm to others.",
+      "policy": "SAFETY_BOUNDARY",
+      "risk_class": "CRITICAL",
+      "owner_route": "/no/kunnskap/restitusjon-og-regulering",
+      "provenance_files": [
+        "docs/seo/wave2c1f-recovery-regulation-source-and-claims-lock.md"
+      ],
+      "source_pool_evidence_ids": [],
+      "candidate_evidence_ids": [],
+      "candidate_basis": [],
+      "candidate_relationship": "SAFETY_CONTEXT_REQUIRES_REVIEW",
+      "candidate_evidence": [],
+      "approved_evidence_ids": [],
+      "directness": "PENDING_REVIEW",
+      "review_status": "PENDING_HUMAN_REVIEW_NO_AUTO_APPROVAL"
+    },
+    {
+      "claim_id": "CLM-6BE408081F",
+      "canonical_claim": "Category-level VNS evidence becomes Neuvago product evidence.",
+      "policy": "NOT_ALLOWED",
+      "risk_class": "HIGH",
+      "owner_route": "/learn/vagus-nerve-reset",
+      "provenance_files": [
+        "docs/seo/search-dominance-1e2d-reset-massage-owner-lift-source-claims-lock.md"
+      ],
+      "source_pool_evidence_ids": [],
+      "candidate_evidence_ids": [],
+      "candidate_basis": [],
+      "candidate_relationship": "BOUNDARY_CONTEXT_REQUIRES_REVIEW",
+      "candidate_evidence": [],
+      "approved_evidence_ids": [],
+      "directness": "PENDING_REVIEW",
+      "review_status": "PENDING_HUMAN_REVIEW_NO_AUTO_APPROVAL"
+    },
+    {
+      "claim_id": "CLM-6EF605C4A5",
+      "canonical_claim": "Slow-paced breathing can change heart rate and vagally mediated HRV measures under studied conditions.",
+      "policy": "ALLOWED_WITH_QUALIFIERS",
+      "risk_class": "HIGH",
+      "owner_route": "/learn/vagus-nerve-evidence-vs-internet-claims",
+      "provenance_files": [
+        "docs/seo/search-dominance-1e3c-evidence-internet-claims-source-claims-lock.md"
+      ],
+      "source_pool_evidence_ids": [
+        "EVD-PMID-12119224",
+        "EVD-PMID-23599399",
+        "EVD-PMID-28265249",
+        "EVD-PMID-34823149",
+        "EVD-PMID-35623448",
+        "EVD-PMID-36219506",
+        "EVD-PMID-38663342",
+        "EVD-PMID-40482984",
+        "EVD-PMID-40941532",
+        "EVD-PMID-41686399",
+        "EVD-PMID-42204029"
+      ],
+      "candidate_evidence_ids": [],
+      "candidate_basis": [],
+      "candidate_relationship": "POTENTIAL_SUPPORT_REQUIRES_REVIEW",
+      "candidate_evidence": [],
+      "approved_evidence_ids": [],
+      "directness": "PENDING_REVIEW",
+      "review_status": "PENDING_HUMAN_REVIEW_NO_AUTO_APPROVAL"
+    },
+    {
+      "claim_id": "CLM-6F589F90BF",
+      "canonical_claim": "Consumer palpation targets for the cervical vagus.",
+      "policy": "NOT_ALLOWED",
+      "risk_class": "MEDIUM",
+      "owner_route": "/no/kunnskap/vagusnerven-og-massasje",
+      "provenance_files": [
+        "docs/seo/search-dominance-1e2g-no-protected-win-buyer-guide-source-claims-lock.md"
+      ],
+      "source_pool_evidence_ids": [],
+      "candidate_evidence_ids": [],
+      "candidate_basis": [],
+      "candidate_relationship": "BOUNDARY_CONTEXT_REQUIRES_REVIEW",
+      "candidate_evidence": [],
+      "approved_evidence_ids": [],
+      "directness": "PENDING_REVIEW",
+      "review_status": "PENDING_HUMAN_REVIEW_NO_AUTO_APPROVAL"
+    },
+    {
+      "claim_id": "CLM-6FC94A2BB4",
+      "canonical_claim": "adjustable intensity and gradual adjustment;",
+      "policy": "ALLOWED_WITH_QUALIFIERS",
+      "risk_class": "MEDIUM",
+      "owner_route": "/learn/what-does-vagus-nerve-stimulation-feel-like",
+      "provenance_files": [
+        "docs/seo/wave2c1a-vns-sensation-source-and-claims-lock.md"
+      ],
+      "source_pool_evidence_ids": [
+        "EVD-PMID-30217648",
+        "EVD-PMID-30663712",
+        "EVD-PMID-33854421",
+        "EVD-PMID-36543841"
+      ],
+      "candidate_evidence_ids": [],
+      "candidate_basis": [],
+      "candidate_relationship": "POTENTIAL_SUPPORT_REQUIRES_REVIEW",
+      "candidate_evidence": [],
+      "approved_evidence_ids": [],
+      "directness": "PENDING_REVIEW",
+      "review_status": "PENDING_HUMAN_REVIEW_NO_AUTO_APPROVAL"
+    },
+    {
+      "claim_id": "CLM-70D00E4A46",
+      "canonical_claim": "Treat manual massage or acupressure evidence as Neuvago product evidence.",
+      "policy": "NOT_ALLOWED",
+      "risk_class": "HIGH",
+      "owner_route": "/learn/vagus-nerve-massage",
+      "provenance_files": [
+        "docs/seo/search-dominance-1e2d-reset-massage-owner-lift-source-claims-lock.md"
+      ],
+      "source_pool_evidence_ids": [],
+      "candidate_evidence_ids": [],
+      "candidate_basis": [],
+      "candidate_relationship": "BOUNDARY_CONTEXT_REQUIRES_REVIEW",
+      "candidate_evidence": [],
+      "approved_evidence_ids": [],
+      "directness": "PENDING_REVIEW",
+      "review_status": "PENDING_HUMAN_REVIEW_NO_AUTO_APPROVAL"
+    },
+    {
+      "claim_id": "CLM-70EA1171F0",
+      "canonical_claim": "`113` for possible life-threatening emergencies;",
+      "policy": "SAFETY_BOUNDARY",
+      "risk_class": "CRITICAL",
+      "owner_route": "/no/kunnskap/restitusjon-og-regulering",
+      "provenance_files": [
+        "docs/seo/wave2c1f-recovery-regulation-source-and-claims-lock.md"
+      ],
+      "source_pool_evidence_ids": [],
+      "candidate_evidence_ids": [],
+      "candidate_basis": [],
+      "candidate_relationship": "SAFETY_CONTEXT_REQUIRES_REVIEW",
+      "candidate_evidence": [],
+      "approved_evidence_ids": [],
+      "directness": "PENDING_REVIEW",
+      "review_status": "PENDING_HUMAN_REVIEW_NO_AUTO_APPROVAL"
+    },
+    {
+      "claim_id": "CLM-7142FD284D",
+      "canonical_claim": "Present dizziness, pulse change, pain or neurological symptoms as desirable evidence of “vagus activation.”",
+      "policy": "NOT_ALLOWED",
+      "risk_class": "CRITICAL",
+      "owner_route": "/learn/vagus-nerve-massage",
+      "provenance_files": [
+        "docs/seo/search-dominance-1e2d-reset-massage-owner-lift-source-claims-lock.md"
+      ],
+      "source_pool_evidence_ids": [],
+      "candidate_evidence_ids": [],
+      "candidate_basis": [],
+      "candidate_relationship": "BOUNDARY_CONTEXT_REQUIRES_REVIEW",
+      "candidate_evidence": [],
+      "approved_evidence_ids": [],
+      "directness": "PENDING_REVIEW",
+      "review_status": "PENDING_HUMAN_REVIEW_NO_AUTO_APPROVAL"
+    },
+    {
+      "claim_id": "CLM-73373784A5",
+      "canonical_claim": "presenting `overstimulert nervesystem` as a medical diagnosis;",
+      "policy": "NOT_ALLOWED",
+      "risk_class": "HIGH",
+      "owner_route": "/no/kunnskap/overstimulert",
+      "provenance_files": [
+        "docs/seo/wave2c1d-overstimulation-source-and-claims-lock.md"
+      ],
+      "source_pool_evidence_ids": [],
+      "candidate_evidence_ids": [],
+      "candidate_basis": [],
+      "candidate_relationship": "BOUNDARY_CONTEXT_REQUIRES_REVIEW",
+      "candidate_evidence": [],
+      "approved_evidence_ids": [],
+      "directness": "PENDING_REVIEW",
+      "review_status": "PENDING_HUMAN_REVIEW_NO_AUTO_APPROVAL"
+    },
+    {
+      "claim_id": "CLM-73E277F48C",
+      "canonical_claim": "avoid improvised electrical stimulation",
+      "policy": "SAFETY_BOUNDARY",
+      "risk_class": "CRITICAL",
+      "owner_route": "/learn/vagus-nerve-evidence-vs-internet-claims",
+      "provenance_files": [
+        "docs/seo/search-dominance-1e3c-evidence-internet-claims-source-claims-lock.md"
+      ],
+      "source_pool_evidence_ids": [
+        "EVD-PMID-12119224",
+        "EVD-PMID-23599399",
+        "EVD-PMID-28265249",
+        "EVD-PMID-34823149",
+        "EVD-PMID-35623448",
+        "EVD-PMID-36219506",
+        "EVD-PMID-38663342",
+        "EVD-PMID-40482984",
+        "EVD-PMID-40941532",
+        "EVD-PMID-41686399",
+        "EVD-PMID-42204029"
+      ],
+      "candidate_evidence_ids": [],
+      "candidate_basis": [],
+      "candidate_relationship": "SAFETY_CONTEXT_REQUIRES_REVIEW",
+      "candidate_evidence": [],
+      "approved_evidence_ids": [],
+      "directness": "PENDING_REVIEW",
+      "review_status": "PENDING_HUMAN_REVIEW_NO_AUTO_APPROVAL"
+    },
+    {
+      "claim_id": "CLM-7593F77462",
+      "canonical_claim": "stop when the feeling becomes unpleasant or the user feels unwell;",
+      "policy": "ALLOWED_WITH_QUALIFIERS",
+      "risk_class": "MEDIUM",
+      "owner_route": "/learn/what-does-vagus-nerve-stimulation-feel-like",
+      "provenance_files": [
+        "docs/seo/wave2c1a-vns-sensation-source-and-claims-lock.md"
+      ],
+      "source_pool_evidence_ids": [
+        "EVD-PMID-30217648",
+        "EVD-PMID-30663712",
+        "EVD-PMID-33854421",
+        "EVD-PMID-36543841"
+      ],
+      "candidate_evidence_ids": [],
+      "candidate_basis": [],
+      "candidate_relationship": "POTENTIAL_SUPPORT_REQUIRES_REVIEW",
+      "candidate_evidence": [],
+      "approved_evidence_ids": [],
+      "directness": "PENDING_REVIEW",
+      "review_status": "PENDING_HUMAN_REVIEW_NO_AUTO_APPROVAL"
+    },
+    {
+      "claim_id": "CLM-79122F15F8",
+      "canonical_claim": "Transfer electrical taVNS findings directly to manual ear massage.",
+      "policy": "NOT_ALLOWED",
+      "risk_class": "MEDIUM",
+      "owner_route": "/learn/vagus-nerve-massage",
+      "provenance_files": [
+        "docs/seo/search-dominance-1e2d-reset-massage-owner-lift-source-claims-lock.md"
+      ],
+      "source_pool_evidence_ids": [],
+      "candidate_evidence_ids": [],
+      "candidate_basis": [],
+      "candidate_relationship": "BOUNDARY_CONTEXT_REQUIRES_REVIEW",
+      "candidate_evidence": [],
+      "approved_evidence_ids": [],
+      "directness": "PENDING_REVIEW",
+      "review_status": "PENDING_HUMAN_REVIEW_NO_AUTO_APPROVAL"
+    },
+    {
+      "claim_id": "CLM-7A94C006AE",
+      "canonical_claim": "comfort and stop-use guidance grounded in the current NVG-001 working manual;",
+      "policy": "ALLOWED_WITH_QUALIFIERS",
+      "risk_class": "MEDIUM",
+      "owner_route": "/learn/what-does-vagus-nerve-stimulation-feel-like",
+      "provenance_files": [
+        "docs/seo/wave2c1a-vns-sensation-source-and-claims-lock.md"
+      ],
+      "source_pool_evidence_ids": [
+        "EVD-PMID-30217648",
+        "EVD-PMID-30663712",
+        "EVD-PMID-33854421",
+        "EVD-PMID-36543841"
+      ],
+      "candidate_evidence_ids": [],
+      "candidate_basis": [],
+      "candidate_relationship": "POTENTIAL_SUPPORT_REQUIRES_REVIEW",
+      "candidate_evidence": [],
+      "approved_evidence_ids": [],
+      "directness": "PENDING_REVIEW",
+      "review_status": "PENDING_HUMAN_REVIEW_NO_AUTO_APPROVAL"
+    },
+    {
+      "claim_id": "CLM-7AAB59200B",
+      "canonical_claim": "Relaxation, meditation and gentle yoga can be described as broader behavioural regulation practices with heterogeneous evidence.",
+      "policy": "ALLOWED_WITH_QUALIFIERS",
+      "risk_class": "MEDIUM",
+      "owner_route": "/learn/vagus-nerve-exercises",
+      "provenance_files": [
+        "docs/seo/search-dominance-1e3b-vagus-nerve-exercises-source-claims-lock.md"
+      ],
+      "source_pool_evidence_ids": [
+        "EVD-PMID-28265249",
+        "EVD-PMID-30245619",
+        "EVD-PMID-34436236",
+        "EVD-PMID-35623448",
+        "EVD-PMID-37822096",
+        "EVD-PMID-38468106"
+      ],
+      "candidate_evidence_ids": [],
+      "candidate_basis": [],
+      "candidate_relationship": "POTENTIAL_SUPPORT_REQUIRES_REVIEW",
+      "candidate_evidence": [],
+      "approved_evidence_ids": [],
+      "directness": "PENDING_REVIEW",
+      "review_status": "PENDING_HUMAN_REVIEW_NO_AUTO_APPROVAL"
+    },
+    {
+      "claim_id": "CLM-7B1858783E",
+      "canonical_claim": "Strong/deep front- or side-neck pressure, carotid-sinus self-massage and device-assisted percussion/vibration there are outside this general-wellness guide.",
+      "policy": "ALLOWED_WITH_QUALIFIERS",
+      "risk_class": "CRITICAL",
+      "owner_route": "/learn/vagus-nerve-massage",
+      "provenance_files": [
+        "docs/seo/search-dominance-1e2d-reset-massage-owner-lift-source-claims-lock.md"
+      ],
+      "source_pool_evidence_ids": [],
+      "candidate_evidence_ids": [],
+      "candidate_basis": [],
+      "candidate_relationship": "POTENTIAL_SUPPORT_REQUIRES_REVIEW",
+      "candidate_evidence": [],
+      "approved_evidence_ids": [],
+      "directness": "PENDING_REVIEW",
+      "review_status": "PENDING_HUMAN_REVIEW_NO_AUTO_APPROVAL"
+    },
+    {
+      "claim_id": "CLM-7C1110519C",
+      "canonical_claim": "Any claim that a specific HRV change proves target engagement, vagus strength, vagus damage, or treatment response.",
+      "policy": "NOT_ALLOWED",
+      "risk_class": "HIGH",
+      "owner_route": "/learn/vagus-nerve-exercises",
+      "provenance_files": [
+        "docs/seo/search-dominance-1e3b-vagus-nerve-exercises-source-claims-lock.md"
+      ],
+      "source_pool_evidence_ids": [
+        "EVD-PMID-28265249",
+        "EVD-PMID-30245619",
+        "EVD-PMID-34436236",
+        "EVD-PMID-35623448",
+        "EVD-PMID-37822096",
+        "EVD-PMID-38468106"
+      ],
+      "candidate_evidence_ids": [],
+      "candidate_basis": [],
+      "candidate_relationship": "BOUNDARY_CONTEXT_REQUIRES_REVIEW",
+      "candidate_evidence": [],
+      "approved_evidence_ids": [],
+      "directness": "PENDING_REVIEW",
+      "review_status": "PENDING_HUMAN_REVIEW_NO_AUTO_APPROVAL"
+    },
+    {
+      "claim_id": "CLM-7CA249DD07",
+      "canonical_claim": "Gentle touch or muscle massage may be discussed as touch/massage, not as proven selective vagus activation.",
+      "policy": "ALLOWED_WITH_QUALIFIERS",
+      "risk_class": "HIGH",
+      "owner_route": "/no/kunnskap/vagusnerven-og-massasje",
+      "provenance_files": [
+        "docs/seo/search-dominance-1e2g-no-protected-win-buyer-guide-source-claims-lock.md"
+      ],
+      "source_pool_evidence_ids": [],
+      "candidate_evidence_ids": [],
+      "candidate_basis": [],
+      "candidate_relationship": "POTENTIAL_SUPPORT_REQUIRES_REVIEW",
+      "candidate_evidence": [],
+      "approved_evidence_ids": [],
+      "directness": "PENDING_REVIEW",
+      "review_status": "PENDING_HUMAN_REVIEW_NO_AUTO_APPROVAL"
+    },
+    {
+      "claim_id": "CLM-8283B50084",
+      "canonical_claim": "stronger intensity is not necessarily better;",
+      "policy": "ALLOWED_WITH_QUALIFIERS",
+      "risk_class": "MEDIUM",
+      "owner_route": "/learn/what-does-vagus-nerve-stimulation-feel-like",
+      "provenance_files": [
+        "docs/seo/wave2c1a-vns-sensation-source-and-claims-lock.md"
+      ],
+      "source_pool_evidence_ids": [
+        "EVD-PMID-30217648",
+        "EVD-PMID-30663712",
+        "EVD-PMID-33854421",
+        "EVD-PMID-36543841"
+      ],
+      "candidate_evidence_ids": [],
+      "candidate_basis": [],
+      "candidate_relationship": "POTENTIAL_SUPPORT_REQUIRES_REVIEW",
+      "candidate_evidence": [],
+      "approved_evidence_ids": [],
+      "directness": "PENDING_REVIEW",
+      "review_status": "PENDING_HUMAN_REVIEW_NO_AUTO_APPROVAL"
+    },
+    {
+      "claim_id": "CLM-848E66ABE4",
+      "canonical_claim": "delaying urgent or appropriate healthcare.",
+      "policy": "NOT_ALLOWED",
+      "risk_class": "CRITICAL",
+      "owner_route": "/no/kunnskap/overstimulert",
+      "provenance_files": [
+        "docs/seo/wave2c1d-overstimulation-source-and-claims-lock.md",
+        "docs/seo/wave2c1e-stuck-in-stress-source-and-claims-lock.md"
+      ],
+      "source_pool_evidence_ids": [],
+      "candidate_evidence_ids": [],
+      "candidate_basis": [],
+      "candidate_relationship": "BOUNDARY_CONTEXT_REQUIRES_REVIEW",
+      "candidate_evidence": [],
+      "approved_evidence_ids": [],
+      "directness": "PENDING_REVIEW",
+      "review_status": "PENDING_HUMAN_REVIEW_NO_AUTO_APPROVAL"
+    },
+    {
+      "claim_id": "CLM-86F9DCCB26",
+      "canonical_claim": "Manual massage/acupressure evidence as Neuvago product evidence.",
+      "policy": "NOT_ALLOWED",
+      "risk_class": "HIGH",
+      "owner_route": "/no/kunnskap/vagusnerven-og-massasje",
+      "provenance_files": [
+        "docs/seo/search-dominance-1e2g-no-protected-win-buyer-guide-source-claims-lock.md"
+      ],
+      "source_pool_evidence_ids": [],
+      "candidate_evidence_ids": [],
+      "candidate_basis": [],
+      "candidate_relationship": "BOUNDARY_CONTEXT_REQUIRES_REVIEW",
+      "candidate_evidence": [],
+      "approved_evidence_ids": [],
+      "directness": "PENDING_REVIEW",
+      "review_status": "PENDING_HUMAN_REVIEW_NO_AUTO_APPROVAL"
+    },
+    {
+      "claim_id": "CLM-8B06692C73",
+      "canonical_claim": "a specific sensation predicts sleep, stress, recovery or clinical benefit;",
+      "policy": "NOT_ALLOWED",
+      "risk_class": "MEDIUM",
+      "owner_route": "/learn/what-does-vagus-nerve-stimulation-feel-like",
+      "provenance_files": [
+        "docs/seo/wave2c1a-vns-sensation-source-and-claims-lock.md"
+      ],
+      "source_pool_evidence_ids": [
+        "EVD-PMID-30217648",
+        "EVD-PMID-30663712",
+        "EVD-PMID-33854421",
+        "EVD-PMID-36543841"
+      ],
+      "candidate_evidence_ids": [],
+      "candidate_basis": [],
+      "candidate_relationship": "BOUNDARY_CONTEXT_REQUIRES_REVIEW",
+      "candidate_evidence": [],
+      "approved_evidence_ids": [],
+      "directness": "PENDING_REVIEW",
+      "review_status": "PENDING_HUMAN_REVIEW_NO_AUTO_APPROVAL"
+    },
+    {
+      "claim_id": "CLM-8B16FE3B8D",
+      "canonical_claim": "One HR/HRV value does not diagnose vagus function or prove a reset.",
+      "policy": "ALLOWED_WITH_QUALIFIERS",
+      "risk_class": "HIGH",
+      "owner_route": "/learn/vagus-nerve-reset",
+      "provenance_files": [
+        "docs/seo/search-dominance-1e2d-reset-massage-owner-lift-source-claims-lock.md"
+      ],
+      "source_pool_evidence_ids": [],
+      "candidate_evidence_ids": [],
+      "candidate_basis": [],
+      "candidate_relationship": "POTENTIAL_SUPPORT_REQUIRES_REVIEW",
+      "candidate_evidence": [],
+      "approved_evidence_ids": [],
+      "directness": "PENDING_REVIEW",
+      "review_status": "PENDING_HUMAN_REVIEW_NO_AUTO_APPROVAL"
+    },
+    {
+      "claim_id": "CLM-8E3366FD95",
+      "canonical_claim": "Outcome evidence can be described at the level of the intervention actually studied.",
+      "policy": "ALLOWED_WITH_QUALIFIERS",
+      "risk_class": "MEDIUM",
+      "owner_route": "/learn/vagus-nerve-evidence-vs-internet-claims",
+      "provenance_files": [
+        "docs/seo/search-dominance-1e3c-evidence-internet-claims-source-claims-lock.md"
+      ],
+      "source_pool_evidence_ids": [
+        "EVD-PMID-12119224",
+        "EVD-PMID-23599399",
+        "EVD-PMID-28265249",
+        "EVD-PMID-34823149",
+        "EVD-PMID-35623448",
+        "EVD-PMID-36219506",
+        "EVD-PMID-38663342",
+        "EVD-PMID-40482984",
+        "EVD-PMID-40941532",
+        "EVD-PMID-41686399",
+        "EVD-PMID-42204029"
+      ],
+      "candidate_evidence_ids": [
+        "EVD-PMID-40941532"
+      ],
+      "candidate_basis": [
+        "MATCHING_MARKDOWN_HEADING"
+      ],
+      "candidate_relationship": "POTENTIAL_SUPPORT_REQUIRES_REVIEW",
+      "candidate_evidence": [
+        {
+          "evidence_id": "EVD-PMID-40941532",
+          "relationship": "POTENTIAL_SUPPORT_REQUIRES_REVIEW"
+        }
+      ],
+      "approved_evidence_ids": [],
+      "directness": "PENDING_REVIEW",
+      "review_status": "PENDING_HUMAN_REVIEW_NO_AUTO_APPROVAL"
+    },
+    {
+      "claim_id": "CLM-8EB71935B1",
+      "canonical_claim": "the statement that sensation depends on device, protocol, contact and individual sensitivity;",
+      "policy": "ALLOWED_WITH_QUALIFIERS",
+      "risk_class": "MEDIUM",
+      "owner_route": "/learn/what-does-vagus-nerve-stimulation-feel-like",
+      "provenance_files": [
+        "docs/seo/wave2c1a-vns-sensation-source-and-claims-lock.md"
+      ],
+      "source_pool_evidence_ids": [
+        "EVD-PMID-30217648",
+        "EVD-PMID-30663712",
+        "EVD-PMID-33854421",
+        "EVD-PMID-36543841"
+      ],
+      "candidate_evidence_ids": [],
+      "candidate_basis": [],
+      "candidate_relationship": "POTENTIAL_SUPPORT_REQUIRES_REVIEW",
+      "candidate_evidence": [],
+      "approved_evidence_ids": [],
+      "directness": "PENDING_REVIEW",
+      "review_status": "PENDING_HUMAN_REVIEW_NO_AUTO_APPROVAL"
+    },
+    {
+      "claim_id": "CLM-8F321521EC",
+      "canonical_claim": "claiming that Neuvago treats chronic stress, anxiety, PTSD, burnout, insomnia or another medical condition;",
+      "policy": "NOT_ALLOWED",
+      "risk_class": "HIGH",
+      "owner_route": "/no/kunnskap/fastlast-i-stress",
+      "provenance_files": [
+        "docs/seo/wave2c1e-stuck-in-stress-source-and-claims-lock.md"
+      ],
+      "source_pool_evidence_ids": [],
+      "candidate_evidence_ids": [],
+      "candidate_basis": [],
+      "candidate_relationship": "BOUNDARY_CONTEXT_REQUIRES_REVIEW",
+      "candidate_evidence": [],
+      "approved_evidence_ids": [],
+      "directness": "PENDING_REVIEW",
+      "review_status": "PENDING_HUMAN_REVIEW_NO_AUTO_APPROVAL"
+    },
+    {
+      "claim_id": "CLM-92CD776833",
+      "canonical_claim": "Dizziness, pain, pulse change or neurological symptoms as desirable proof of “vagus activation”.",
+      "policy": "NOT_ALLOWED",
+      "risk_class": "CRITICAL",
+      "owner_route": "/no/kunnskap/vagusnerven-og-massasje",
+      "provenance_files": [
+        "docs/seo/search-dominance-1e2g-no-protected-win-buyer-guide-source-claims-lock.md"
+      ],
+      "source_pool_evidence_ids": [],
+      "candidate_evidence_ids": [],
+      "candidate_basis": [],
+      "candidate_relationship": "BOUNDARY_CONTEXT_REQUIRES_REVIEW",
+      "candidate_evidence": [],
+      "approved_evidence_ids": [],
+      "directness": "PENDING_REVIEW",
+      "review_status": "PENDING_HUMAN_REVIEW_NO_AUTO_APPROVAL"
+    },
+    {
+      "claim_id": "CLM-9466EF2B65",
+      "canonical_claim": "A claim that symptom change proves vagus target engagement.",
+      "policy": "NOT_ALLOWED",
+      "risk_class": "HIGH",
+      "owner_route": "/learn/vagus-nerve-evidence-vs-internet-claims",
+      "provenance_files": [
+        "docs/seo/search-dominance-1e3c-evidence-internet-claims-source-claims-lock.md"
+      ],
+      "source_pool_evidence_ids": [
+        "EVD-PMID-12119224",
+        "EVD-PMID-23599399",
+        "EVD-PMID-28265249",
+        "EVD-PMID-34823149",
+        "EVD-PMID-35623448",
+        "EVD-PMID-36219506",
+        "EVD-PMID-38663342",
+        "EVD-PMID-40482984",
+        "EVD-PMID-40941532",
+        "EVD-PMID-41686399",
+        "EVD-PMID-42204029"
+      ],
+      "candidate_evidence_ids": [
+        "EVD-PMID-40941532"
+      ],
+      "candidate_basis": [
+        "MATCHING_MARKDOWN_HEADING"
+      ],
+      "candidate_relationship": "BOUNDARY_CONTEXT_REQUIRES_REVIEW",
+      "candidate_evidence": [
+        {
+          "evidence_id": "EVD-PMID-40941532",
+          "relationship": "BOUNDARY_CONTEXT_REQUIRES_REVIEW"
+        }
+      ],
+      "approved_evidence_ids": [],
+      "directness": "PENDING_REVIEW",
+      "review_status": "PENDING_HUMAN_REVIEW_NO_AUTO_APPROVAL"
+    },
+    {
+      "claim_id": "CLM-94915B3FF8",
+      "canonical_claim": "direct serious or worrying medical symptoms to appropriate professional/urgent care",
+      "policy": "SAFETY_BOUNDARY",
+      "risk_class": "CRITICAL",
+      "owner_route": "/learn/vagus-nerve-evidence-vs-internet-claims",
+      "provenance_files": [
+        "docs/seo/search-dominance-1e3c-evidence-internet-claims-source-claims-lock.md"
+      ],
+      "source_pool_evidence_ids": [
+        "EVD-PMID-12119224",
+        "EVD-PMID-23599399",
+        "EVD-PMID-28265249",
+        "EVD-PMID-34823149",
+        "EVD-PMID-35623448",
+        "EVD-PMID-36219506",
+        "EVD-PMID-38663342",
+        "EVD-PMID-40482984",
+        "EVD-PMID-40941532",
+        "EVD-PMID-41686399",
+        "EVD-PMID-42204029"
+      ],
+      "candidate_evidence_ids": [],
+      "candidate_basis": [],
+      "candidate_relationship": "SAFETY_CONTEXT_REQUIRES_REVIEW",
+      "candidate_evidence": [],
+      "approved_evidence_ids": [],
+      "directness": "PENDING_REVIEW",
+      "review_status": "PENDING_HUMAN_REVIEW_NO_AUTO_APPROVAL"
+    },
+    {
+      "claim_id": "CLM-94C5307450",
+      "canonical_claim": "product efficacy, disease treatment, prevention, cure, diagnosis or personalised suitability",
+      "policy": "PROHIBITED",
+      "risk_class": "CRITICAL",
+      "owner_route": "/learn/vagus-nerve-evidence-vs-internet-claims",
+      "provenance_files": [
+        "docs/seo/search-dominance-1e3c-evidence-internet-claims-source-claims-lock.md"
+      ],
+      "source_pool_evidence_ids": [
+        "EVD-PMID-12119224",
+        "EVD-PMID-23599399",
+        "EVD-PMID-28265249",
+        "EVD-PMID-34823149",
+        "EVD-PMID-35623448",
+        "EVD-PMID-36219506",
+        "EVD-PMID-38663342",
+        "EVD-PMID-40482984",
+        "EVD-PMID-40941532",
+        "EVD-PMID-41686399",
+        "EVD-PMID-42204029"
+      ],
+      "candidate_evidence_ids": [],
+      "candidate_basis": [],
+      "candidate_relationship": "BOUNDARY_CONTEXT_REQUIRES_REVIEW",
+      "candidate_evidence": [],
+      "approved_evidence_ids": [],
+      "directness": "PENDING_REVIEW",
+      "review_status": "PENDING_HUMAN_REVIEW_NO_AUTO_APPROVAL"
+    },
+    {
+      "claim_id": "CLM-957756A8CA",
+      "canonical_claim": "claiming that the experience proves high cortisol, low vagal tone, abnormal HRV, autonomic dysfunction or a damaged vagus nerve;",
+      "policy": "NOT_ALLOWED",
+      "risk_class": "HIGH",
+      "owner_route": "/no/kunnskap/overstimulert",
+      "provenance_files": [
+        "docs/seo/wave2c1d-overstimulation-source-and-claims-lock.md"
+      ],
+      "source_pool_evidence_ids": [],
+      "candidate_evidence_ids": [],
+      "candidate_basis": [],
+      "candidate_relationship": "BOUNDARY_CONTEXT_REQUIRES_REVIEW",
+      "candidate_evidence": [],
+      "approved_evidence_ids": [],
+      "directness": "PENDING_REVIEW",
+      "review_status": "PENDING_HUMAN_REVIEW_NO_AUTO_APPROVAL"
+    },
+    {
+      "claim_id": "CLM-96530D609D",
+      "canonical_claim": "The pharynx participates in cranial-nerve and airway-protective reflexes involving multiple pathways.",
+      "policy": "ALLOWED_WITH_QUALIFIERS",
+      "risk_class": "MEDIUM",
+      "owner_route": "/learn/vagus-nerve-evidence-vs-internet-claims",
+      "provenance_files": [
+        "docs/seo/search-dominance-1e3c-evidence-internet-claims-source-claims-lock.md"
+      ],
+      "source_pool_evidence_ids": [
+        "EVD-PMID-12119224",
+        "EVD-PMID-23599399",
+        "EVD-PMID-28265249",
+        "EVD-PMID-34823149",
+        "EVD-PMID-35623448",
+        "EVD-PMID-36219506",
+        "EVD-PMID-38663342",
+        "EVD-PMID-40482984",
+        "EVD-PMID-40941532",
+        "EVD-PMID-41686399",
+        "EVD-PMID-42204029"
+      ],
+      "candidate_evidence_ids": [],
+      "candidate_basis": [],
+      "candidate_relationship": "POTENTIAL_SUPPORT_REQUIRES_REVIEW",
+      "candidate_evidence": [],
+      "approved_evidence_ids": [],
+      "directness": "PENDING_REVIEW",
+      "review_status": "PENDING_HUMAN_REVIEW_NO_AUTO_APPROVAL"
+    },
+    {
+      "claim_id": "CLM-98C5DD356B",
+      "canonical_claim": "Live price, shipping, subscription, return or warranty claims that are not taken from current official commerce facts.",
+      "policy": "NOT_ALLOWED",
+      "risk_class": "MEDIUM",
+      "owner_route": "/no/kunnskap/hvordan-velge-vagusnervestimulator",
+      "provenance_files": [
+        "docs/seo/search-dominance-1e2g-no-protected-win-buyer-guide-source-claims-lock.md"
+      ],
+      "source_pool_evidence_ids": [],
+      "candidate_evidence_ids": [],
+      "candidate_basis": [],
+      "candidate_relationship": "BOUNDARY_CONTEXT_REQUIRES_REVIEW",
+      "candidate_evidence": [],
+      "approved_evidence_ids": [],
+      "directness": "PENDING_REVIEW",
+      "review_status": "PENDING_HUMAN_REVIEW_NO_AUTO_APPROVAL"
+    },
+    {
+      "claim_id": "CLM-9A095BE0F5",
+      "canonical_claim": "A claim that HRV proves direct, selective stimulation of the whole vagus nerve.",
+      "policy": "NOT_ALLOWED",
+      "risk_class": "HIGH",
+      "owner_route": "/learn/vagus-nerve-evidence-vs-internet-claims",
+      "provenance_files": [
+        "docs/seo/search-dominance-1e3c-evidence-internet-claims-source-claims-lock.md"
+      ],
+      "source_pool_evidence_ids": [
+        "EVD-PMID-12119224",
+        "EVD-PMID-23599399",
+        "EVD-PMID-28265249",
+        "EVD-PMID-34823149",
+        "EVD-PMID-35623448",
+        "EVD-PMID-36219506",
+        "EVD-PMID-38663342",
+        "EVD-PMID-40482984",
+        "EVD-PMID-40941532",
+        "EVD-PMID-41686399",
+        "EVD-PMID-42204029"
+      ],
+      "candidate_evidence_ids": [],
+      "candidate_basis": [],
+      "candidate_relationship": "BOUNDARY_CONTEXT_REQUIRES_REVIEW",
+      "candidate_evidence": [],
+      "approved_evidence_ids": [],
+      "directness": "PENDING_REVIEW",
+      "review_status": "PENDING_HUMAN_REVIEW_NO_AUTO_APPROVAL"
+    },
+    {
+      "claim_id": "CLM-9A56C84D86",
+      "canonical_claim": "Electrical VNS and behavioural exercises are different method categories.",
+      "policy": "ALLOWED_WITH_QUALIFIERS",
+      "risk_class": "MEDIUM",
+      "owner_route": "/learn/vagus-nerve-exercises",
+      "provenance_files": [
+        "docs/seo/search-dominance-1e3b-vagus-nerve-exercises-source-claims-lock.md"
+      ],
+      "source_pool_evidence_ids": [
+        "EVD-PMID-28265249",
+        "EVD-PMID-30245619",
+        "EVD-PMID-34436236",
+        "EVD-PMID-35623448",
+        "EVD-PMID-37822096",
+        "EVD-PMID-38468106"
+      ],
+      "candidate_evidence_ids": [],
+      "candidate_basis": [],
+      "candidate_relationship": "POTENTIAL_SUPPORT_REQUIRES_REVIEW",
+      "candidate_evidence": [],
+      "approved_evidence_ids": [],
+      "directness": "PENDING_REVIEW",
+      "review_status": "PENDING_HUMAN_REVIEW_NO_AUTO_APPROVAL"
+    },
+    {
+      "claim_id": "CLM-A3A385C1F5",
+      "canonical_claim": "A claim that EFT/tapping works by proven vagus-nerve stimulation.",
+      "policy": "NOT_ALLOWED",
+      "risk_class": "MEDIUM",
+      "owner_route": "/learn/vagus-nerve-evidence-vs-internet-claims",
+      "provenance_files": [
+        "docs/seo/search-dominance-1e3c-evidence-internet-claims-source-claims-lock.md"
+      ],
+      "source_pool_evidence_ids": [
+        "EVD-PMID-12119224",
+        "EVD-PMID-23599399",
+        "EVD-PMID-28265249",
+        "EVD-PMID-34823149",
+        "EVD-PMID-35623448",
+        "EVD-PMID-36219506",
+        "EVD-PMID-38663342",
+        "EVD-PMID-40482984",
+        "EVD-PMID-40941532",
+        "EVD-PMID-41686399",
+        "EVD-PMID-42204029"
+      ],
+      "candidate_evidence_ids": [
+        "EVD-PMID-40941532"
+      ],
+      "candidate_basis": [
+        "MATCHING_MARKDOWN_HEADING"
+      ],
+      "candidate_relationship": "BOUNDARY_CONTEXT_REQUIRES_REVIEW",
+      "candidate_evidence": [
+        {
+          "evidence_id": "EVD-PMID-40941532",
+          "relationship": "BOUNDARY_CONTEXT_REQUIRES_REVIEW"
+        }
+      ],
+      "approved_evidence_ids": [],
+      "directness": "PENDING_REVIEW",
+      "review_status": "PENDING_HUMAN_REVIEW_NO_AUTO_APPROVAL"
+    },
+    {
+      "claim_id": "CLM-A597AB4F5D",
+      "canonical_claim": "Controlled oropharyngeal stimulation can change cardiovascular and sympathetic responses.",
+      "policy": "ALLOWED_WITH_QUALIFIERS",
+      "risk_class": "MEDIUM",
+      "owner_route": "/learn/vagus-nerve-evidence-vs-internet-claims",
+      "provenance_files": [
+        "docs/seo/search-dominance-1e3c-evidence-internet-claims-source-claims-lock.md"
+      ],
+      "source_pool_evidence_ids": [
+        "EVD-PMID-12119224",
+        "EVD-PMID-23599399",
+        "EVD-PMID-28265249",
+        "EVD-PMID-34823149",
+        "EVD-PMID-35623448",
+        "EVD-PMID-36219506",
+        "EVD-PMID-38663342",
+        "EVD-PMID-40482984",
+        "EVD-PMID-40941532",
+        "EVD-PMID-41686399",
+        "EVD-PMID-42204029"
+      ],
+      "candidate_evidence_ids": [],
+      "candidate_basis": [],
+      "candidate_relationship": "POTENTIAL_SUPPORT_REQUIRES_REVIEW",
+      "candidate_evidence": [],
+      "approved_evidence_ids": [],
+      "directness": "PENDING_REVIEW",
+      "review_status": "PENDING_HUMAN_REVIEW_NO_AUTO_APPROVAL"
+    },
+    {
+      "claim_id": "CLM-AB5E5606AA",
+      "canonical_claim": "A neutral selection framework based on device category, intended use, documentation, safety information, protocol transparency, practical ownership, support, privacy and total cost.",
+      "policy": "ALLOWED_WITH_QUALIFIERS",
+      "risk_class": "MEDIUM",
+      "owner_route": "/no/kunnskap/hvordan-velge-vagusnervestimulator",
+      "provenance_files": [
+        "docs/seo/search-dominance-1e2g-no-protected-win-buyer-guide-source-claims-lock.md"
+      ],
+      "source_pool_evidence_ids": [],
+      "candidate_evidence_ids": [],
+      "candidate_basis": [],
+      "candidate_relationship": "POTENTIAL_SUPPORT_REQUIRES_REVIEW",
+      "candidate_evidence": [],
+      "approved_evidence_ids": [],
+      "directness": "PENDING_REVIEW",
+      "review_status": "PENDING_HUMAN_REVIEW_NO_AUTO_APPROVAL"
+    },
+    {
+      "claim_id": "CLM-AFBD0DA4C6",
+      "canonical_claim": "improvised electrical placement/settings, carotid/neck manoeuvres or cold-exposure dosing",
+      "policy": "PROHIBITED",
+      "risk_class": "CRITICAL",
+      "owner_route": "/learn/vagus-nerve-evidence-vs-internet-claims",
+      "provenance_files": [
+        "docs/seo/search-dominance-1e3c-evidence-internet-claims-source-claims-lock.md"
+      ],
+      "source_pool_evidence_ids": [
+        "EVD-PMID-12119224",
+        "EVD-PMID-23599399",
+        "EVD-PMID-28265249",
+        "EVD-PMID-34823149",
+        "EVD-PMID-35623448",
+        "EVD-PMID-36219506",
+        "EVD-PMID-38663342",
+        "EVD-PMID-40482984",
+        "EVD-PMID-40941532",
+        "EVD-PMID-41686399",
+        "EVD-PMID-42204029"
+      ],
+      "candidate_evidence_ids": [],
+      "candidate_basis": [],
+      "candidate_relationship": "BOUNDARY_CONTEXT_REQUIRES_REVIEW",
+      "candidate_evidence": [],
+      "approved_evidence_ids": [],
+      "directness": "PENDING_REVIEW",
+      "review_status": "PENDING_HUMAN_REVIEW_NO_AUTO_APPROVAL"
+    },
+    {
+      "claim_id": "CLM-B123609E1D",
+      "canonical_claim": "claiming that a stress response must be “completed” or that the nervous system is literally stuck;",
+      "policy": "NOT_ALLOWED",
+      "risk_class": "MEDIUM",
+      "owner_route": "/no/kunnskap/fastlast-i-stress",
+      "provenance_files": [
+        "docs/seo/wave2c1e-stuck-in-stress-source-and-claims-lock.md"
+      ],
+      "source_pool_evidence_ids": [],
+      "candidate_evidence_ids": [],
+      "candidate_basis": [],
+      "candidate_relationship": "BOUNDARY_CONTEXT_REQUIRES_REVIEW",
+      "candidate_evidence": [],
+      "approved_evidence_ids": [],
+      "directness": "PENDING_REVIEW",
+      "review_status": "PENDING_HUMAN_REVIEW_NO_AUTO_APPROVAL"
+    },
+    {
+      "claim_id": "CLM-B3CC102249",
+      "canonical_claim": "A claim that humming is a validated vagus reset, treatment or universal protocol.",
+      "policy": "NOT_ALLOWED",
+      "risk_class": "HIGH",
+      "owner_route": "/learn/vagus-nerve-evidence-vs-internet-claims",
+      "provenance_files": [
+        "docs/seo/search-dominance-1e3c-evidence-internet-claims-source-claims-lock.md"
+      ],
+      "source_pool_evidence_ids": [
+        "EVD-PMID-12119224",
+        "EVD-PMID-23599399",
+        "EVD-PMID-28265249",
+        "EVD-PMID-34823149",
+        "EVD-PMID-35623448",
+        "EVD-PMID-36219506",
+        "EVD-PMID-38663342",
+        "EVD-PMID-40482984",
+        "EVD-PMID-40941532",
+        "EVD-PMID-41686399",
+        "EVD-PMID-42204029"
+      ],
+      "candidate_evidence_ids": [
+        "EVD-PMID-12119224",
+        "EVD-PMID-40482984",
+        "EVD-PMID-41686399"
+      ],
+      "candidate_basis": [
+        "MATCHING_MARKDOWN_HEADING"
+      ],
+      "candidate_relationship": "BOUNDARY_CONTEXT_REQUIRES_REVIEW",
+      "candidate_evidence": [
+        {
+          "evidence_id": "EVD-PMID-12119224",
+          "relationship": "BOUNDARY_CONTEXT_REQUIRES_REVIEW"
+        },
+        {
+          "evidence_id": "EVD-PMID-40482984",
+          "relationship": "BOUNDARY_CONTEXT_REQUIRES_REVIEW"
+        },
+        {
+          "evidence_id": "EVD-PMID-41686399",
+          "relationship": "BOUNDARY_CONTEXT_REQUIRES_REVIEW"
+        }
+      ],
+      "approved_evidence_ids": [],
+      "directness": "PENDING_REVIEW",
+      "review_status": "PENDING_HUMAN_REVIEW_NO_AUTO_APPROVAL"
+    },
+    {
+      "claim_id": "CLM-B3F6B7DC0C",
+      "canonical_claim": "Massage studies may report subjective or cardiac/autonomic measures without proving selective vagus engagement.",
+      "policy": "ALLOWED_WITH_QUALIFIERS",
+      "risk_class": "MEDIUM",
+      "owner_route": "/no/kunnskap/vagusnerven-og-massasje",
+      "provenance_files": [
+        "docs/seo/search-dominance-1e2g-no-protected-win-buyer-guide-source-claims-lock.md"
+      ],
+      "source_pool_evidence_ids": [],
+      "candidate_evidence_ids": [],
+      "candidate_basis": [],
+      "candidate_relationship": "POTENTIAL_SUPPORT_REQUIRES_REVIEW",
+      "candidate_evidence": [],
+      "approved_evidence_ids": [],
+      "directness": "PENDING_REVIEW",
+      "review_status": "PENDING_HUMAN_REVIEW_NO_AUTO_APPROVAL"
+    },
+    {
+      "claim_id": "CLM-B4F8FCCEA4",
+      "canonical_claim": "A claim that a breathing count diagnoses vagus strength or guarantees a health outcome.",
+      "policy": "NOT_ALLOWED",
+      "risk_class": "HIGH",
+      "owner_route": "/learn/vagus-nerve-evidence-vs-internet-claims",
+      "provenance_files": [
+        "docs/seo/search-dominance-1e3c-evidence-internet-claims-source-claims-lock.md"
+      ],
+      "source_pool_evidence_ids": [
+        "EVD-PMID-12119224",
+        "EVD-PMID-23599399",
+        "EVD-PMID-28265249",
+        "EVD-PMID-34823149",
+        "EVD-PMID-35623448",
+        "EVD-PMID-36219506",
+        "EVD-PMID-38663342",
+        "EVD-PMID-40482984",
+        "EVD-PMID-40941532",
+        "EVD-PMID-41686399",
+        "EVD-PMID-42204029"
+      ],
+      "candidate_evidence_ids": [],
+      "candidate_basis": [],
+      "candidate_relationship": "BOUNDARY_CONTEXT_REQUIRES_REVIEW",
+      "candidate_evidence": [],
+      "approved_evidence_ids": [],
+      "directness": "PENDING_REVIEW",
+      "review_status": "PENDING_HUMAN_REVIEW_NO_AUTO_APPROVAL"
+    },
+    {
+      "claim_id": "CLM-B51A54CFD8",
+      "canonical_claim": "A claim that ordinary gargling is established as a direct vagus-stimulation or parasympathetic-reset protocol.",
+      "policy": "NOT_ALLOWED",
+      "risk_class": "MEDIUM",
+      "owner_route": "/learn/vagus-nerve-evidence-vs-internet-claims",
+      "provenance_files": [
+        "docs/seo/search-dominance-1e3c-evidence-internet-claims-source-claims-lock.md"
+      ],
+      "source_pool_evidence_ids": [
+        "EVD-PMID-12119224",
+        "EVD-PMID-23599399",
+        "EVD-PMID-28265249",
+        "EVD-PMID-34823149",
+        "EVD-PMID-35623448",
+        "EVD-PMID-36219506",
+        "EVD-PMID-38663342",
+        "EVD-PMID-40482984",
+        "EVD-PMID-40941532",
+        "EVD-PMID-41686399",
+        "EVD-PMID-42204029"
+      ],
+      "candidate_evidence_ids": [],
+      "candidate_basis": [],
+      "candidate_relationship": "BOUNDARY_CONTEXT_REQUIRES_REVIEW",
+      "candidate_evidence": [],
+      "approved_evidence_ids": [],
+      "directness": "PENDING_REVIEW",
+      "review_status": "PENDING_HUMAN_REVIEW_NO_AUTO_APPROVAL"
+    },
+    {
+      "claim_id": "CLM-B5E5922A06",
+      "canonical_claim": "Respiratory pacing and vocalisation are plausible contributors to observed autonomic changes.",
+      "policy": "ALLOWED_WITH_QUALIFIERS",
+      "risk_class": "MEDIUM",
+      "owner_route": "/learn/vagus-nerve-evidence-vs-internet-claims",
+      "provenance_files": [
+        "docs/seo/search-dominance-1e3c-evidence-internet-claims-source-claims-lock.md"
+      ],
+      "source_pool_evidence_ids": [
+        "EVD-PMID-12119224",
+        "EVD-PMID-23599399",
+        "EVD-PMID-28265249",
+        "EVD-PMID-34823149",
+        "EVD-PMID-35623448",
+        "EVD-PMID-36219506",
+        "EVD-PMID-38663342",
+        "EVD-PMID-40482984",
+        "EVD-PMID-40941532",
+        "EVD-PMID-41686399",
+        "EVD-PMID-42204029"
+      ],
+      "candidate_evidence_ids": [
+        "EVD-PMID-12119224",
+        "EVD-PMID-40482984",
+        "EVD-PMID-41686399"
+      ],
+      "candidate_basis": [
+        "MATCHING_MARKDOWN_HEADING"
+      ],
+      "candidate_relationship": "POTENTIAL_SUPPORT_REQUIRES_REVIEW",
+      "candidate_evidence": [
+        {
+          "evidence_id": "EVD-PMID-12119224",
+          "relationship": "POTENTIAL_SUPPORT_REQUIRES_REVIEW"
+        },
+        {
+          "evidence_id": "EVD-PMID-40482984",
+          "relationship": "POTENTIAL_SUPPORT_REQUIRES_REVIEW"
+        },
+        {
+          "evidence_id": "EVD-PMID-41686399",
+          "relationship": "POTENTIAL_SUPPORT_REQUIRES_REVIEW"
+        }
+      ],
+      "approved_evidence_ids": [],
+      "directness": "PENDING_REVIEW",
+      "review_status": "PENDING_HUMAN_REVIEW_NO_AUTO_APPROVAL"
+    },
+    {
+      "claim_id": "CLM-BD7369D8D9",
+      "canonical_claim": "EFT has been studied as a psychological intervention and systematic reviews report promising symptom outcomes with methodological limitations.",
+      "policy": "ALLOWED_WITH_QUALIFIERS",
+      "risk_class": "MEDIUM",
+      "owner_route": "/learn/vagus-nerve-evidence-vs-internet-claims",
+      "provenance_files": [
+        "docs/seo/search-dominance-1e3c-evidence-internet-claims-source-claims-lock.md"
+      ],
+      "source_pool_evidence_ids": [
+        "EVD-PMID-12119224",
+        "EVD-PMID-23599399",
+        "EVD-PMID-28265249",
+        "EVD-PMID-34823149",
+        "EVD-PMID-35623448",
+        "EVD-PMID-36219506",
+        "EVD-PMID-38663342",
+        "EVD-PMID-40482984",
+        "EVD-PMID-40941532",
+        "EVD-PMID-41686399",
+        "EVD-PMID-42204029"
+      ],
+      "candidate_evidence_ids": [
+        "EVD-PMID-40941532"
+      ],
+      "candidate_basis": [
+        "MATCHING_MARKDOWN_HEADING"
+      ],
+      "candidate_relationship": "POTENTIAL_SUPPORT_REQUIRES_REVIEW",
+      "candidate_evidence": [
+        {
+          "evidence_id": "EVD-PMID-40941532",
+          "relationship": "POTENTIAL_SUPPORT_REQUIRES_REVIEW"
+        }
+      ],
+      "approved_evidence_ids": [],
+      "directness": "PENDING_REVIEW",
+      "review_status": "PENDING_HUMAN_REVIEW_NO_AUTO_APPROVAL"
+    },
+    {
+      "claim_id": "CLM-BDA61AC5AC",
+      "canonical_claim": "HRV is an indirect, context-sensitive cardiac measure and is not a direct whole-vagus test.",
+      "policy": "ALLOWED_WITH_QUALIFIERS",
+      "risk_class": "HIGH",
+      "owner_route": "/learn/vagus-nerve-exercises",
+      "provenance_files": [
+        "docs/seo/search-dominance-1e3b-vagus-nerve-exercises-source-claims-lock.md"
+      ],
+      "source_pool_evidence_ids": [
+        "EVD-PMID-28265249",
+        "EVD-PMID-30245619",
+        "EVD-PMID-34436236",
+        "EVD-PMID-35623448",
+        "EVD-PMID-37822096",
+        "EVD-PMID-38468106"
+      ],
+      "candidate_evidence_ids": [],
+      "candidate_basis": [],
+      "candidate_relationship": "POTENTIAL_SUPPORT_REQUIRES_REVIEW",
+      "candidate_evidence": [],
+      "approved_evidence_ids": [],
+      "directness": "PENDING_REVIEW",
+      "review_status": "PENDING_HUMAN_REVIEW_NO_AUTO_APPROVAL"
+    },
+    {
+      "claim_id": "CLM-BDE1ECC98D",
+      "canonical_claim": "A claim that humming vibration is proven to selectively stimulate the vagus nerve.",
+      "policy": "NOT_ALLOWED",
+      "risk_class": "MEDIUM",
+      "owner_route": "/learn/vagus-nerve-evidence-vs-internet-claims",
+      "provenance_files": [
+        "docs/seo/search-dominance-1e3c-evidence-internet-claims-source-claims-lock.md"
+      ],
+      "source_pool_evidence_ids": [
+        "EVD-PMID-12119224",
+        "EVD-PMID-23599399",
+        "EVD-PMID-28265249",
+        "EVD-PMID-34823149",
+        "EVD-PMID-35623448",
+        "EVD-PMID-36219506",
+        "EVD-PMID-38663342",
+        "EVD-PMID-40482984",
+        "EVD-PMID-40941532",
+        "EVD-PMID-41686399",
+        "EVD-PMID-42204029"
+      ],
+      "candidate_evidence_ids": [
+        "EVD-PMID-12119224",
+        "EVD-PMID-40482984",
+        "EVD-PMID-41686399"
+      ],
+      "candidate_basis": [
+        "MATCHING_MARKDOWN_HEADING"
+      ],
+      "candidate_relationship": "BOUNDARY_CONTEXT_REQUIRES_REVIEW",
+      "candidate_evidence": [
+        {
+          "evidence_id": "EVD-PMID-12119224",
+          "relationship": "BOUNDARY_CONTEXT_REQUIRES_REVIEW"
+        },
+        {
+          "evidence_id": "EVD-PMID-40482984",
+          "relationship": "BOUNDARY_CONTEXT_REQUIRES_REVIEW"
+        },
+        {
+          "evidence_id": "EVD-PMID-41686399",
+          "relationship": "BOUNDARY_CONTEXT_REQUIRES_REVIEW"
+        }
+      ],
+      "approved_evidence_ids": [],
+      "directness": "PENDING_REVIEW",
+      "review_status": "PENDING_HUMAN_REVIEW_NO_AUTO_APPROVAL"
+    },
+    {
+      "claim_id": "CLM-BF9E54154D",
+      "canonical_claim": "Some controlled paradigms show increased cardiac vagal/parasympathetic indices during exposure.",
+      "policy": "ALLOWED_WITH_QUALIFIERS",
+      "risk_class": "MEDIUM",
+      "owner_route": "/learn/vagus-nerve-evidence-vs-internet-claims",
+      "provenance_files": [
+        "docs/seo/search-dominance-1e3c-evidence-internet-claims-source-claims-lock.md"
+      ],
+      "source_pool_evidence_ids": [
+        "EVD-PMID-12119224",
+        "EVD-PMID-23599399",
+        "EVD-PMID-28265249",
+        "EVD-PMID-34823149",
+        "EVD-PMID-35623448",
+        "EVD-PMID-36219506",
+        "EVD-PMID-38663342",
+        "EVD-PMID-40482984",
+        "EVD-PMID-40941532",
+        "EVD-PMID-41686399",
+        "EVD-PMID-42204029"
+      ],
+      "candidate_evidence_ids": [],
+      "candidate_basis": [],
+      "candidate_relationship": "POTENTIAL_SUPPORT_REQUIRES_REVIEW",
+      "candidate_evidence": [],
+      "approved_evidence_ids": [],
+      "directness": "PENDING_REVIEW",
+      "review_status": "PENDING_HUMAN_REVIEW_NO_AUTO_APPROVAL"
+    },
+    {
+      "claim_id": "CLM-C073162252",
+      "canonical_claim": "The vagus nerve can literally be reset on command.",
+      "policy": "NOT_ALLOWED",
+      "risk_class": "MEDIUM",
+      "owner_route": "/learn/vagus-nerve-reset",
+      "provenance_files": [
+        "docs/seo/search-dominance-1e2d-reset-massage-owner-lift-source-claims-lock.md"
+      ],
+      "source_pool_evidence_ids": [],
+      "candidate_evidence_ids": [],
+      "candidate_basis": [],
+      "candidate_relationship": "BOUNDARY_CONTEXT_REQUIRES_REVIEW",
+      "candidate_evidence": [],
+      "approved_evidence_ids": [],
+      "directness": "PENDING_REVIEW",
+      "review_status": "PENDING_HUMAN_REVIEW_NO_AUTO_APPROVAL"
+    },
+    {
+      "claim_id": "CLM-C236D84B2C",
+      "canonical_claim": "Pressure-point traditions and acupressure outcomes do not anatomically validate one universal “vagus point.”",
+      "policy": "ALLOWED_WITH_QUALIFIERS",
+      "risk_class": "MEDIUM",
+      "owner_route": "/learn/vagus-nerve-massage",
+      "provenance_files": [
+        "docs/seo/search-dominance-1e2d-reset-massage-owner-lift-source-claims-lock.md"
+      ],
+      "source_pool_evidence_ids": [],
+      "candidate_evidence_ids": [],
+      "candidate_basis": [],
+      "candidate_relationship": "POTENTIAL_SUPPORT_REQUIRES_REVIEW",
+      "candidate_evidence": [],
+      "approved_evidence_ids": [],
+      "directness": "PENDING_REVIEW",
+      "review_status": "PENDING_HUMAN_REVIEW_NO_AUTO_APPROVAL"
+    },
+    {
+      "claim_id": "CLM-C71E4EA67D",
+      "canonical_claim": "A universal vagus pressure point.",
+      "policy": "NOT_ALLOWED",
+      "risk_class": "MEDIUM",
+      "owner_route": "/learn/vagus-nerve-evidence-vs-internet-claims",
+      "provenance_files": [
+        "docs/seo/search-dominance-1e3c-evidence-internet-claims-source-claims-lock.md"
+      ],
+      "source_pool_evidence_ids": [
+        "EVD-PMID-12119224",
+        "EVD-PMID-23599399",
+        "EVD-PMID-28265249",
+        "EVD-PMID-34823149",
+        "EVD-PMID-35623448",
+        "EVD-PMID-36219506",
+        "EVD-PMID-38663342",
+        "EVD-PMID-40482984",
+        "EVD-PMID-40941532",
+        "EVD-PMID-41686399",
+        "EVD-PMID-42204029"
+      ],
+      "candidate_evidence_ids": [],
+      "candidate_basis": [],
+      "candidate_relationship": "BOUNDARY_CONTEXT_REQUIRES_REVIEW",
+      "candidate_evidence": [],
+      "approved_evidence_ids": [],
+      "directness": "PENDING_REVIEW",
+      "review_status": "PENDING_HUMAN_REVIEW_NO_AUTO_APPROVAL"
+    },
+    {
+      "claim_id": "CLM-C7E8CB01CD",
+      "canonical_claim": "Any “reset,” “heal,” “activate on command,” “tone the vagus,” or guaranteed parasympathetic-switch claim.",
+      "policy": "NOT_ALLOWED",
+      "risk_class": "MEDIUM",
+      "owner_route": "/learn/vagus-nerve-exercises",
+      "provenance_files": [
+        "docs/seo/search-dominance-1e3b-vagus-nerve-exercises-source-claims-lock.md"
+      ],
+      "source_pool_evidence_ids": [
+        "EVD-PMID-28265249",
+        "EVD-PMID-30245619",
+        "EVD-PMID-34436236",
+        "EVD-PMID-35623448",
+        "EVD-PMID-37822096",
+        "EVD-PMID-38468106"
+      ],
+      "candidate_evidence_ids": [],
+      "candidate_basis": [],
+      "candidate_relationship": "BOUNDARY_CONTEXT_REQUIRES_REVIEW",
+      "candidate_evidence": [],
+      "approved_evidence_ids": [],
+      "directness": "PENDING_REVIEW",
+      "review_status": "PENDING_HUMAN_REVIEW_NO_AUTO_APPROVAL"
+    },
+    {
+      "claim_id": "CLM-CE016905E4",
+      "canonical_claim": "implying that stronger stimulation is better;",
+      "policy": "NOT_ALLOWED",
+      "risk_class": "HIGH",
+      "owner_route": "/no/kunnskap/overstimulert",
+      "provenance_files": [
+        "docs/seo/wave2c1d-overstimulation-source-and-claims-lock.md"
+      ],
+      "source_pool_evidence_ids": [],
+      "candidate_evidence_ids": [],
+      "candidate_basis": [],
+      "candidate_relationship": "BOUNDARY_CONTEXT_REQUIRES_REVIEW",
+      "candidate_evidence": [],
+      "approved_evidence_ids": [],
+      "directness": "PENDING_REVIEW",
+      "review_status": "PENDING_HUMAN_REVIEW_NO_AUTO_APPROVAL"
+    },
+    {
+      "claim_id": "CLM-CFB678ED5E",
+      "canonical_claim": "People can massage skin and muscle, but that is not the same as directly massaging the cervical vagus nerve.",
+      "policy": "ALLOWED_WITH_QUALIFIERS",
+      "risk_class": "MEDIUM",
+      "owner_route": "/learn/vagus-nerve-massage",
+      "provenance_files": [
+        "docs/seo/search-dominance-1e2d-reset-massage-owner-lift-source-claims-lock.md",
+        "docs/seo/search-dominance-1e2g-no-protected-win-buyer-guide-source-claims-lock.md"
+      ],
+      "source_pool_evidence_ids": [],
+      "candidate_evidence_ids": [],
+      "candidate_basis": [],
+      "candidate_relationship": "POTENTIAL_SUPPORT_REQUIRES_REVIEW",
+      "candidate_evidence": [],
+      "approved_evidence_ids": [],
+      "directness": "PENDING_REVIEW",
+      "review_status": "PENDING_HUMAN_REVIEW_NO_AUTO_APPROVAL"
+    },
+    {
+      "claim_id": "CLM-D3FE29A3E7",
+      "canonical_claim": "presenting `fastlåst i stress` as a medical diagnosis;",
+      "policy": "NOT_ALLOWED",
+      "risk_class": "HIGH",
+      "owner_route": "/no/kunnskap/fastlast-i-stress",
+      "provenance_files": [
+        "docs/seo/wave2c1e-stuck-in-stress-source-and-claims-lock.md"
+      ],
+      "source_pool_evidence_ids": [],
+      "candidate_evidence_ids": [],
+      "candidate_basis": [],
+      "candidate_relationship": "BOUNDARY_CONTEXT_REQUIRES_REVIEW",
+      "candidate_evidence": [],
+      "approved_evidence_ids": [],
+      "directness": "PENDING_REVIEW",
+      "review_status": "PENDING_HUMAN_REVIEW_NO_AUTO_APPROVAL"
+    },
+    {
+      "claim_id": "CLM-D45BE1FCB6",
+      "canonical_claim": "the statement that sensation alone does not prove selective target engagement or benefit.",
+      "policy": "ALLOWED_WITH_QUALIFIERS",
+      "risk_class": "HIGH",
+      "owner_route": "/learn/what-does-vagus-nerve-stimulation-feel-like",
+      "provenance_files": [
+        "docs/seo/wave2c1a-vns-sensation-source-and-claims-lock.md"
+      ],
+      "source_pool_evidence_ids": [
+        "EVD-PMID-30217648",
+        "EVD-PMID-30663712",
+        "EVD-PMID-33854421",
+        "EVD-PMID-36543841"
+      ],
+      "candidate_evidence_ids": [],
+      "candidate_basis": [],
+      "candidate_relationship": "POTENTIAL_SUPPORT_REQUIRES_REVIEW",
+      "candidate_evidence": [],
+      "approved_evidence_ids": [],
+      "directness": "PENDING_REVIEW",
+      "review_status": "PENDING_HUMAN_REVIEW_NO_AUTO_APPROVAL"
+    },
+    {
+      "claim_id": "CLM-DB81755B97",
+      "canonical_claim": "Exercise and movement can influence stress-reactivity and cardiac-autonomic outcomes, with results varying by intervention, population and outcome.",
+      "policy": "ALLOWED_WITH_QUALIFIERS",
+      "risk_class": "MEDIUM",
+      "owner_route": "/learn/vagus-nerve-exercises",
+      "provenance_files": [
+        "docs/seo/search-dominance-1e3b-vagus-nerve-exercises-source-claims-lock.md"
+      ],
+      "source_pool_evidence_ids": [
+        "EVD-PMID-28265249",
+        "EVD-PMID-30245619",
+        "EVD-PMID-34436236",
+        "EVD-PMID-35623448",
+        "EVD-PMID-37822096",
+        "EVD-PMID-38468106"
+      ],
+      "candidate_evidence_ids": [],
+      "candidate_basis": [],
+      "candidate_relationship": "POTENTIAL_SUPPORT_REQUIRES_REVIEW",
+      "candidate_evidence": [],
+      "approved_evidence_ids": [],
+      "directness": "PENDING_REVIEW",
+      "review_status": "PENDING_HUMAN_REVIEW_NO_AUTO_APPROVAL"
+    },
+    {
+      "claim_id": "CLM-DC7321968D",
+      "canonical_claim": "“Reset” is popular shorthand / metaphor rather than a literal anatomical reset.",
+      "policy": "ALLOWED_WITH_QUALIFIERS",
+      "risk_class": "MEDIUM",
+      "owner_route": "/learn/vagus-nerve-reset",
+      "provenance_files": [
+        "docs/seo/search-dominance-1e2d-reset-massage-owner-lift-source-claims-lock.md"
+      ],
+      "source_pool_evidence_ids": [],
+      "candidate_evidence_ids": [],
+      "candidate_basis": [],
+      "candidate_relationship": "POTENTIAL_SUPPORT_REQUIRES_REVIEW",
+      "candidate_evidence": [],
+      "approved_evidence_ids": [],
+      "directness": "PENDING_REVIEW",
+      "review_status": "PENDING_HUMAN_REVIEW_NO_AUTO_APPROVAL"
+    },
+    {
+      "claim_id": "CLM-DF914B9514",
+      "canonical_claim": "One universal seven-minute routine is validated or guaranteed.",
+      "policy": "NOT_ALLOWED",
+      "risk_class": "MEDIUM",
+      "owner_route": "/learn/vagus-nerve-reset",
+      "provenance_files": [
+        "docs/seo/search-dominance-1e2d-reset-massage-owner-lift-source-claims-lock.md"
+      ],
+      "source_pool_evidence_ids": [],
+      "candidate_evidence_ids": [],
+      "candidate_basis": [],
+      "candidate_relationship": "BOUNDARY_CONTEXT_REQUIRES_REVIEW",
+      "candidate_evidence": [],
+      "approved_evidence_ids": [],
+      "directness": "PENDING_REVIEW",
+      "review_status": "PENDING_HUMAN_REVIEW_NO_AUTO_APPROVAL"
+    },
+    {
+      "claim_id": "CLM-E0497DC1E7",
+      "canonical_claim": "local outer-ear sensations such as light tingling, prickling, tapping or pulsing;",
+      "policy": "ALLOWED_WITH_QUALIFIERS",
+      "risk_class": "MEDIUM",
+      "owner_route": "/learn/what-does-vagus-nerve-stimulation-feel-like",
+      "provenance_files": [
+        "docs/seo/wave2c1a-vns-sensation-source-and-claims-lock.md"
+      ],
+      "source_pool_evidence_ids": [
+        "EVD-PMID-30217648",
+        "EVD-PMID-30663712",
+        "EVD-PMID-33854421",
+        "EVD-PMID-36543841"
+      ],
+      "candidate_evidence_ids": [],
+      "candidate_basis": [],
+      "candidate_relationship": "POTENTIAL_SUPPORT_REQUIRES_REVIEW",
+      "candidate_evidence": [],
+      "approved_evidence_ids": [],
+      "directness": "PENDING_REVIEW",
+      "review_status": "PENDING_HUMAN_REVIEW_NO_AUTO_APPROVAL"
+    },
+    {
+      "claim_id": "CLM-E3760ED200",
+      "canonical_claim": "treatment, diagnosis, cure or prevention language;",
+      "policy": "NOT_ALLOWED",
+      "risk_class": "HIGH",
+      "owner_route": "/learn/what-does-vagus-nerve-stimulation-feel-like",
+      "provenance_files": [
+        "docs/seo/wave2c1a-vns-sensation-source-and-claims-lock.md"
+      ],
+      "source_pool_evidence_ids": [
+        "EVD-PMID-30217648",
+        "EVD-PMID-30663712",
+        "EVD-PMID-33854421",
+        "EVD-PMID-36543841"
+      ],
+      "candidate_evidence_ids": [],
+      "candidate_basis": [],
+      "candidate_relationship": "BOUNDARY_CONTEXT_REQUIRES_REVIEW",
+      "candidate_evidence": [],
+      "approved_evidence_ids": [],
+      "directness": "PENDING_REVIEW",
+      "review_status": "PENDING_HUMAN_REVIEW_NO_AUTO_APPROVAL"
+    },
+    {
+      "claim_id": "CLM-E9084BDB34",
+      "canonical_claim": "Telling readers to verify current official product and legal information before purchase.",
+      "policy": "ALLOWED_WITH_QUALIFIERS",
+      "risk_class": "MEDIUM",
+      "owner_route": "/no/kunnskap/hvordan-velge-vagusnervestimulator",
+      "provenance_files": [
+        "docs/seo/search-dominance-1e2g-no-protected-win-buyer-guide-source-claims-lock.md"
+      ],
+      "source_pool_evidence_ids": [],
+      "candidate_evidence_ids": [],
+      "candidate_basis": [],
+      "candidate_relationship": "POTENTIAL_SUPPORT_REQUIRES_REVIEW",
+      "candidate_evidence": [],
+      "approved_evidence_ids": [],
+      "directness": "PENDING_REVIEW",
+      "review_status": "PENDING_HUMAN_REVIEW_NO_AUTO_APPROVAL"
+    },
+    {
+      "claim_id": "CLM-EB8FF0D66D",
+      "canonical_claim": "Breathing-related HRV changes are compatible with altered cardiac parasympathetic modulation.",
+      "policy": "ALLOWED_WITH_QUALIFIERS",
+      "risk_class": "HIGH",
+      "owner_route": "/learn/vagus-nerve-evidence-vs-internet-claims",
+      "provenance_files": [
+        "docs/seo/search-dominance-1e3c-evidence-internet-claims-source-claims-lock.md"
+      ],
+      "source_pool_evidence_ids": [
+        "EVD-PMID-12119224",
+        "EVD-PMID-23599399",
+        "EVD-PMID-28265249",
+        "EVD-PMID-34823149",
+        "EVD-PMID-35623448",
+        "EVD-PMID-36219506",
+        "EVD-PMID-38663342",
+        "EVD-PMID-40482984",
+        "EVD-PMID-40941532",
+        "EVD-PMID-41686399",
+        "EVD-PMID-42204029"
+      ],
+      "candidate_evidence_ids": [],
+      "candidate_basis": [],
+      "candidate_relationship": "POTENTIAL_SUPPORT_REQUIRES_REVIEW",
+      "candidate_evidence": [],
+      "approved_evidence_ids": [],
+      "directness": "PENDING_REVIEW",
+      "review_status": "PENDING_HUMAN_REVIEW_NO_AUTO_APPROVAL"
+    },
+    {
+      "claim_id": "CLM-ECB315330A",
+      "canonical_claim": "Give a consumer palpation target for the cervical vagus.",
+      "policy": "NOT_ALLOWED",
+      "risk_class": "MEDIUM",
+      "owner_route": "/learn/vagus-nerve-massage",
+      "provenance_files": [
+        "docs/seo/search-dominance-1e2d-reset-massage-owner-lift-source-claims-lock.md"
+      ],
+      "source_pool_evidence_ids": [],
+      "candidate_evidence_ids": [],
+      "candidate_basis": [],
+      "candidate_relationship": "BOUNDARY_CONTEXT_REQUIRES_REVIEW",
+      "candidate_evidence": [],
+      "approved_evidence_ids": [],
+      "directness": "PENDING_REVIEW",
+      "review_status": "PENDING_HUMAN_REVIEW_NO_AUTO_APPROVAL"
+    },
+    {
+      "claim_id": "CLM-EE7A0C6F96",
+      "canonical_claim": "persistent discomfort requires stopping and following support guidance.",
+      "policy": "ALLOWED_WITH_QUALIFIERS",
+      "risk_class": "MEDIUM",
+      "owner_route": "/learn/what-does-vagus-nerve-stimulation-feel-like",
+      "provenance_files": [
+        "docs/seo/wave2c1a-vns-sensation-source-and-claims-lock.md"
+      ],
+      "source_pool_evidence_ids": [
+        "EVD-PMID-30217648",
+        "EVD-PMID-30663712",
+        "EVD-PMID-33854421",
+        "EVD-PMID-36543841"
+      ],
+      "candidate_evidence_ids": [],
+      "candidate_basis": [],
+      "candidate_relationship": "POTENTIAL_SUPPORT_REQUIRES_REVIEW",
+      "candidate_evidence": [],
+      "approved_evidence_ids": [],
+      "directness": "PENDING_REVIEW",
+      "review_status": "PENDING_HUMAN_REVIEW_NO_AUTO_APPROVAL"
+    },
+    {
+      "claim_id": "CLM-F43B7937A5",
+      "canonical_claim": "Neck coordinates, pressure grades, timing sequences or DIY carotid-sinus instructions.",
+      "policy": "NOT_ALLOWED",
+      "risk_class": "CRITICAL",
+      "owner_route": "/learn/vagus-nerve-evidence-vs-internet-claims",
+      "provenance_files": [
+        "docs/seo/search-dominance-1e3c-evidence-internet-claims-source-claims-lock.md"
+      ],
+      "source_pool_evidence_ids": [
+        "EVD-PMID-12119224",
+        "EVD-PMID-23599399",
+        "EVD-PMID-28265249",
+        "EVD-PMID-34823149",
+        "EVD-PMID-35623448",
+        "EVD-PMID-36219506",
+        "EVD-PMID-38663342",
+        "EVD-PMID-40482984",
+        "EVD-PMID-40941532",
+        "EVD-PMID-41686399",
+        "EVD-PMID-42204029"
+      ],
+      "candidate_evidence_ids": [],
+      "candidate_basis": [],
+      "candidate_relationship": "BOUNDARY_CONTEXT_REQUIRES_REVIEW",
+      "candidate_evidence": [],
+      "approved_evidence_ids": [],
+      "directness": "PENDING_REVIEW",
+      "review_status": "PENDING_HUMAN_REVIEW_NO_AUTO_APPROVAL"
+    },
+    {
+      "claim_id": "CLM-F7F27673AF",
+      "canonical_claim": "`116 117` when help cannot wait for the regular GP;",
+      "policy": "SAFETY_BOUNDARY",
+      "risk_class": "CRITICAL",
+      "owner_route": "/no/kunnskap/restitusjon-og-regulering",
+      "provenance_files": [
+        "docs/seo/wave2c1f-recovery-regulation-source-and-claims-lock.md"
+      ],
+      "source_pool_evidence_ids": [],
+      "candidate_evidence_ids": [],
+      "candidate_basis": [],
+      "candidate_relationship": "SAFETY_CONTEXT_REQUIRES_REVIEW",
+      "candidate_evidence": [],
+      "approved_evidence_ids": [],
+      "directness": "PENDING_REVIEW",
+      "review_status": "PENDING_HUMAN_REVIEW_NO_AUTO_APPROVAL"
+    },
+    {
+      "claim_id": "CLM-F8C2DCB354",
+      "canonical_claim": "The outer ear has mixed innervation; manual ear touch is not electrical taVNS.",
+      "policy": "ALLOWED_WITH_QUALIFIERS",
+      "risk_class": "MEDIUM",
+      "owner_route": "/no/kunnskap/vagusnerven-og-massasje",
+      "provenance_files": [
+        "docs/seo/search-dominance-1e2g-no-protected-win-buyer-guide-source-claims-lock.md"
+      ],
+      "source_pool_evidence_ids": [],
+      "candidate_evidence_ids": [],
+      "candidate_basis": [],
+      "candidate_relationship": "POTENTIAL_SUPPORT_REQUIRES_REVIEW",
+      "candidate_evidence": [],
+      "approved_evidence_ids": [],
+      "directness": "PENDING_REVIEW",
+      "review_status": "PENDING_HUMAN_REVIEW_NO_AUTO_APPROVAL"
+    },
+    {
+      "claim_id": "CLM-FD7F77516A",
+      "canonical_claim": "Any improvised electrical electrode placement, electrical settings, carotid/neck pressure manoeuvre, medical protocol or personalised suitability recommendation.",
+      "policy": "NOT_ALLOWED",
+      "risk_class": "CRITICAL",
+      "owner_route": "/learn/vagus-nerve-exercises",
+      "provenance_files": [
+        "docs/seo/search-dominance-1e3b-vagus-nerve-exercises-source-claims-lock.md"
+      ],
+      "source_pool_evidence_ids": [
+        "EVD-PMID-28265249",
+        "EVD-PMID-30245619",
+        "EVD-PMID-34436236",
+        "EVD-PMID-35623448",
+        "EVD-PMID-37822096",
+        "EVD-PMID-38468106"
+      ],
+      "candidate_evidence_ids": [],
+      "candidate_basis": [],
+      "candidate_relationship": "BOUNDARY_CONTEXT_REQUIRES_REVIEW",
+      "candidate_evidence": [],
+      "approved_evidence_ids": [],
+      "directness": "PENDING_REVIEW",
+      "review_status": "PENDING_HUMAN_REVIEW_NO_AUTO_APPROVAL"
+    },
+    {
+      "claim_id": "CLM-FECA430A48",
+      "canonical_claim": "Clinical use includes monitoring, technique standards and exclusion criteria.",
+      "policy": "ALLOWED_WITH_QUALIFIERS",
+      "risk_class": "MEDIUM",
+      "owner_route": "/learn/vagus-nerve-evidence-vs-internet-claims",
+      "provenance_files": [
+        "docs/seo/search-dominance-1e3c-evidence-internet-claims-source-claims-lock.md"
+      ],
+      "source_pool_evidence_ids": [
+        "EVD-PMID-12119224",
+        "EVD-PMID-23599399",
+        "EVD-PMID-28265249",
+        "EVD-PMID-34823149",
+        "EVD-PMID-35623448",
+        "EVD-PMID-36219506",
+        "EVD-PMID-38663342",
+        "EVD-PMID-40482984",
+        "EVD-PMID-40941532",
+        "EVD-PMID-41686399",
+        "EVD-PMID-42204029"
+      ],
+      "candidate_evidence_ids": [],
+      "candidate_basis": [],
+      "candidate_relationship": "POTENTIAL_SUPPORT_REQUIRES_REVIEW",
+      "candidate_evidence": [],
+      "approved_evidence_ids": [],
+      "directness": "PENDING_REVIEW",
+      "review_status": "PENDING_HUMAN_REVIEW_NO_AUTO_APPROVAL"
+    },
+    {
+      "claim_id": "CLM-FF9FAACC09",
+      "canonical_claim": "sensation proves that the vagus nerve is selectively engaged;",
+      "policy": "NOT_ALLOWED",
+      "risk_class": "MEDIUM",
+      "owner_route": "/learn/what-does-vagus-nerve-stimulation-feel-like",
+      "provenance_files": [
+        "docs/seo/wave2c1a-vns-sensation-source-and-claims-lock.md"
+      ],
+      "source_pool_evidence_ids": [
+        "EVD-PMID-30217648",
+        "EVD-PMID-30663712",
+        "EVD-PMID-33854421",
+        "EVD-PMID-36543841"
+      ],
+      "candidate_evidence_ids": [],
+      "candidate_basis": [],
+      "candidate_relationship": "BOUNDARY_CONTEXT_REQUIRES_REVIEW",
+      "candidate_evidence": [],
+      "approved_evidence_ids": [],
+      "directness": "PENDING_REVIEW",
+      "review_status": "PENDING_HUMAN_REVIEW_NO_AUTO_APPROVAL"
+    }
+  ]
+}

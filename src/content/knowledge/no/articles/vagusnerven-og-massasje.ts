@@ -11,14 +11,14 @@ export const vagusnervenOgMassasjeArticle = {
   "seoTitle": "Vagusnerven og massasje: evidens og sikkerhet | Neuvago",
   "description": "En kildebasert guide til vagusnervemassasje, trykkpunkter, øre- og nakkemassasje – med tydelig grense mot carotissinus og kraftig halstrykk.",
   "eyebrow": "Berøring, anatomi og sikkerhet",
-  "lead": "Uttrykket «vagusnervemassasje» brukes om alt fra skånsom berøring og muskelmassasje til ørepunkter og risikofylt halstrykk. Denne guiden forklarer hva som faktisk berøres, hva studier kan måle, hvorfor ro eller HRV ikke beviser direkte målaktivering, og hvorfor carotissinusmassasje ikke er en egenøvelse.",
+  "lead": "Kan man massere vagusnerven? Du kan massere hud og muskler skånsomt, men det er ikke det samme som å massere selve vagusnerven. Denne guiden skiller mellom berøring, muskelmassasje, ørepunkter og klinisk carotissinusmassasje, og forklarer hva studier faktisk kan vise uten å gjøre ro, HRV eller prikking til bevis på direkte vagusaktivering.",
   "shortAnswer": [
     "Man kan massere hud og muskler, men det er ikke det samme som å massere selve vagusnerven.",
     "Vagusnerven ligger dypt i halsen nær store kar og har anatomisk variasjon; den skal ikke lokaliseres ved dyp selvpalpasjon.",
     "Øret har blandet nerveforsyning, og manuell øreberøring er ikke det samme som elektrisk taVNS.",
     "Kraftig trykk over halspulsåren eller carotissinus, dyp halskompresjon og apparatbasert slag eller vibrasjon skal ikke læres bort som wellness-teknikk."
   ],
-  "hubSummary": "Hva folk mener med vagusnervemassasje, hva som faktisk berøres, evidensgrensene og hvorfor kraftig carotis- eller halstrykk ikke er en egenøvelse.",
+  "hubSummary": "Kildebasert guide til vagusnervemassasje: hva som faktisk berøres, hva studier kan vise, og hvorfor kraftig carotis- eller halstrykk ikke er en egenøvelse.",
   "hubLabel": "Vagusnerven og massasje: evidens og sikkerhet",
   "primaryKeyword": "vagusnerven massasje",
   "secondaryKeywords": [
@@ -31,7 +31,7 @@ export const vagusnervenOgMassasjeArticle = {
   ],
   "searchIntent": "informational",
   "publishedAt": "2026-09-05",
-  "modifiedAt": "2026-09-05",
+  "modifiedAt": "2026-09-12",
   "readingTimeMinutes": 19,
   "authorId": "john-willander",
   "sourceReviewerId": "neuvago-redaksjonen",

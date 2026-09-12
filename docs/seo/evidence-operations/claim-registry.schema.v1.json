@@ -1,0 +1,204 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://neuvago.com/internal/evidence-operations/claim-registry.schema.v1.json",
+  "title": "Neuvago Canonical Claim Registry v1",
+  "type": "object",
+  "required": [
+    "schema",
+    "registry_version",
+    "baseline_commit",
+    "status",
+    "scope",
+    "baseline_inventory",
+    "registry_stats",
+    "claims"
+  ],
+  "properties": {
+    "schema": {
+      "const": "neuvago-evidence-operations-canonical-claim-registry-v1"
+    },
+    "registry_version": {
+      "type": "string"
+    },
+    "baseline_commit": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{40}$"
+    },
+    "baseline_share_sha256": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{64}$"
+    },
+    "status": {
+      "const": "POLICY_LAYER_LOCKED_EVIDENCE_LINK_PENDING"
+    },
+    "claims": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "claim_id",
+          "canonical_claim",
+          "policy",
+          "claim_class",
+          "risk_class",
+          "locale_scope",
+          "owner_route",
+          "applies_to_routes",
+          "evidence_ids",
+          "evidence_directness",
+          "regulatory_gate",
+          "last_reviewed",
+          "status",
+          "provenance"
+        ],
+        "properties": {
+          "claim_id": {
+            "type": "string",
+            "pattern": "^CLM-[0-9A-F]{10}$"
+          },
+          "canonical_claim": {
+            "type": "string",
+            "minLength": 1
+          },
+          "policy": {
+            "enum": [
+              "ALLOWED_WITH_QUALIFIERS",
+              "NOT_ALLOWED",
+              "PROHIBITED",
+              "SAFETY_BOUNDARY"
+            ]
+          },
+          "claim_class": {
+            "enum": [
+              "GENERAL",
+              "MECHANISM",
+              "MEASUREMENT",
+              "METHOD_BOUNDARY",
+              "EVIDENCE_TRANSFER",
+              "SAFETY",
+              "PRODUCT",
+              "COMMERCIAL",
+              "CONDITION"
+            ]
+          },
+          "risk_class": {
+            "enum": [
+              "MEDIUM",
+              "HIGH",
+              "CRITICAL"
+            ]
+          },
+          "locale_scope": {
+            "type": "array",
+            "items": {
+              "enum": [
+                "en",
+                "nb"
+              ]
+            },
+            "minItems": 1
+          },
+          "owner_route": {
+            "type": "string",
+            "pattern": "^/"
+          },
+          "applies_to_routes": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "pattern": "^/"
+            },
+            "minItems": 1
+          },
+          "allowed_wording": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "disallowed_wording": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "evidence_ids": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "evidence_directness": {
+            "const": "PENDING_1E4C"
+          },
+          "regulatory_gate": {
+            "enum": [
+              "NONE",
+              "PRODUCT_FACT_CONTROL",
+              "OPEN_REGULATORY_FACT_GATES"
+            ]
+          },
+          "safety_boundary": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "last_reviewed": {
+            "type": "string",
+            "format": "date"
+          },
+          "status": {
+            "const": "POLICY_LOCKED_EVIDENCE_LINK_PENDING"
+          },
+          "normalization_notes": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "provenance": {
+            "type": "array",
+            "minItems": 1,
+            "items": {
+              "type": "object",
+              "required": [
+                "file",
+                "line",
+                "heading",
+                "source_control",
+                "file_sha256"
+              ],
+              "properties": {
+                "file": {
+                  "type": "string"
+                },
+                "line": {
+                  "type": "integer",
+                  "minimum": 1
+                },
+                "heading": {
+                  "type": "string"
+                },
+                "source_control": {
+                  "enum": [
+                    "ALLOWED",
+                    "NOT_ALLOWED",
+                    "PROHIBITED",
+                    "SAFETY_BOUNDARY"
+                  ]
+                },
+                "file_sha256": {
+                  "type": "string",
+                  "pattern": "^[0-9a-f]{64}$"
+                }
+              },
+              "additionalProperties": false
+            }
+          }
+        },
+        "additionalProperties": false
+      }
+    }
+  }
+}

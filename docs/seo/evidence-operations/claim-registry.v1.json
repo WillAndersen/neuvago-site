@@ -1,0 +1,3952 @@
+{
+  "schema": "neuvago-evidence-operations-canonical-claim-registry-v1",
+  "registry_version": "1.0.0",
+  "baseline_commit": "a049fda29ec2af4a453eb10305d47104fa3d79a7",
+  "baseline_share_sha256": "085978822fa2bbb9bd56c27688359ba069e8e67f9a0a84c9728b5fb0d4cd6a5e",
+  "status": "POLICY_LAYER_LOCKED_EVIDENCE_LINK_PENDING",
+  "scope": {
+    "purpose": "Canonical public/editorial claim-governance seed. It is not an evidence approval list and does not change public copy.",
+    "auto_promote_legacy_controls": false,
+    "exact_normalized_dedupe_only": true,
+    "semantic_merge_deferred": true,
+    "evidence_linkage_gate": "1E.4C",
+    "route_coverage_gate": "1E.4D",
+    "enforcement_gate": "1E.4E"
+  },
+  "baseline_inventory": {
+    "routes_total": 140,
+    "text_files_scanned": 571,
+    "claim_hits_total": 12473,
+    "source_markers_total": 880,
+    "controlled_claim_rows_discovered": 230,
+    "legacy_source_claim_locks": 27,
+    "explicit_pmid_candidates": 49,
+    "unique_pubmed_url_pmids": 158,
+    "unique_pubmed_pmids_union": 159,
+    "unique_dois": 128
+  },
+  "registry_stats": {
+    "seed_rows": 119,
+    "canonical_claims": 117,
+    "policy_counts": {
+      "ALLOWED_WITH_QUALIFIERS": 47,
+      "NOT_ALLOWED": 56,
+      "SAFETY_BOUNDARY": 8,
+      "PROHIBITED": 6
+    },
+    "risk_counts": {
+      "CRITICAL": 25,
+      "HIGH": 34,
+      "MEDIUM": 58
+    },
+    "claim_class_counts": {
+      "SAFETY": 21,
+      "COMMERCIAL": 7,
+      "METHOD_BOUNDARY": 31,
+      "PRODUCT": 17,
+      "MEASUREMENT": 18,
+      "EVIDENCE_TRANSFER": 5,
+      "GENERAL": 5,
+      "CONDITION": 8,
+      "MECHANISM": 5
+    },
+    "legacy_parser_polarity_corrections": 5
+  },
+  "claims": [
+    {
+      "claim_id": "CLM-0101E46E99",
+      "canonical_claim": "Carotid-sinus massage is a defined clinical diagnostic manoeuvre for selected syncope evaluation.",
+      "policy": "ALLOWED_WITH_QUALIFIERS",
+      "claim_class": "SAFETY",
+      "risk_class": "CRITICAL",
+      "locale_scope": [
+        "en"
+      ],
+      "owner_route": "/learn/vagus-nerve-evidence-vs-internet-claims",
+      "applies_to_routes": [
+        "/learn/vagus-nerve-evidence-vs-internet-claims"
+      ],
+      "allowed_wording": "Carotid-sinus massage is a defined clinical diagnostic manoeuvre for selected syncope evaluation.",
+      "disallowed_wording": [],
+      "evidence_ids": [],
+      "evidence_directness": "PENDING_1E4C",
+      "regulatory_gate": "NONE",
+      "safety_boundary": "Carotid-sinus massage is a defined clinical diagnostic manoeuvre for selected syncope evaluation.",
+      "last_reviewed": "2026-09-12",
+      "status": "POLICY_LOCKED_EVIDENCE_LINK_PENDING",
+      "normalization_notes": [],
+      "provenance": [
+        {
+          "file": "docs/seo/search-dominance-1e3c-evidence-internet-claims-source-claims-lock.md",
+          "line": 109,
+          "heading": "Neck pressure / carotid sinus",
+          "source_control": "ALLOWED",
+          "file_sha256": "55d06456f3fae4cdf9800309384b81baaed80ca8dae64d1df32692e7b92dee42"
+        }
+      ]
+    },
+    {
+      "claim_id": "CLM-05A1EF5EDA",
+      "canonical_claim": "Instructions that deliberately provoke gagging as a wellness technique.",
+      "policy": "NOT_ALLOWED",
+      "claim_class": "SAFETY",
+      "risk_class": "CRITICAL",
+      "locale_scope": [
+        "en"
+      ],
+      "owner_route": "/learn/vagus-nerve-evidence-vs-internet-claims",
+      "applies_to_routes": [
+        "/learn/vagus-nerve-evidence-vs-internet-claims"
+      ],
+      "allowed_wording": null,
+      "disallowed_wording": [
+        "Instructions that deliberately provoke gagging as a wellness technique."
+      ],
+      "evidence_ids": [],
+      "evidence_directness": "PENDING_1E4C",
+      "regulatory_gate": "NONE",
+      "safety_boundary": "Instructions that deliberately provoke gagging as a wellness technique.",
+      "last_reviewed": "2026-09-12",
+      "status": "POLICY_LOCKED_EVIDENCE_LINK_PENDING",
+      "normalization_notes": [],
+      "provenance": [
+        {
+          "file": "docs/seo/search-dominance-1e3c-evidence-internet-claims-source-claims-lock.md",
+          "line": 84,
+          "heading": "Gargling",
+          "source_control": "NOT_ALLOWED",
+          "file_sha256": "55d06456f3fae4cdf9800309384b81baaed80ca8dae64d1df32692e7b92dee42"
+        }
+      ]
+    },
+    {
+      "claim_id": "CLM-0720173E7F",
+      "canonical_claim": "Treating CE marking, FDA status, tingling/intensity or category-level research as proof of efficacy for every product or purpose.",
+      "policy": "NOT_ALLOWED",
+      "claim_class": "COMMERCIAL",
+      "risk_class": "HIGH",
+      "locale_scope": [
+        "nb"
+      ],
+      "owner_route": "/no/kunnskap/hvordan-velge-vagusnervestimulator",
+      "applies_to_routes": [
+        "/no/kunnskap/hvordan-velge-vagusnervestimulator"
+      ],
+      "allowed_wording": null,
+      "disallowed_wording": [
+        "Treating CE marking, FDA status, tingling/intensity or category-level research as proof of efficacy for every product or purpose."
+      ],
+      "evidence_ids": [],
+      "evidence_directness": "PENDING_1E4C",
+      "regulatory_gate": "OPEN_REGULATORY_FACT_GATES",
+      "safety_boundary": null,
+      "last_reviewed": "2026-09-12",
+      "status": "POLICY_LOCKED_EVIDENCE_LINK_PENDING",
+      "normalization_notes": [],
+      "provenance": [
+        {
+          "file": "docs/seo/search-dominance-1e2g-no-protected-win-buyer-guide-source-claims-lock.md",
+          "line": 58,
+          "heading": "Buyer-guide claim / commercial boundaries",
+          "source_control": "NOT_ALLOWED",
+          "file_sha256": "fb08c83d351b3af9dc61dc18a1e0d93b81a26fa624de71cb51d01f20cb3292b4"
+        }
+      ]
+    },
+    {
+      "claim_id": "CLM-08BEB5C1CB",
+      "canonical_claim": "A claim that stronger or colder exposure produces more useful vagus stimulation.",
+      "policy": "NOT_ALLOWED",
+      "claim_class": "METHOD_BOUNDARY",
+      "risk_class": "MEDIUM",
+      "locale_scope": [
+        "en"
+      ],
+      "owner_route": "/learn/vagus-nerve-evidence-vs-internet-claims",
+      "applies_to_routes": [
+        "/learn/vagus-nerve-evidence-vs-internet-claims"
+      ],
+      "allowed_wording": null,
+      "disallowed_wording": [
+        "A claim that stronger or colder exposure produces more useful vagus stimulation."
+      ],
+      "evidence_ids": [],
+      "evidence_directness": "PENDING_1E4C",
+      "regulatory_gate": "NONE",
+      "safety_boundary": null,
+      "last_reviewed": "2026-09-12",
+      "status": "POLICY_LOCKED_EVIDENCE_LINK_PENDING",
+      "normalization_notes": [],
+      "provenance": [
+        {
+          "file": "docs/seo/search-dominance-1e3c-evidence-internet-claims-source-claims-lock.md",
+          "line": 94,
+          "heading": "Cold exposure / face cooling",
+          "source_control": "NOT_ALLOWED",
+          "file_sha256": "55d06456f3fae4cdf9800309384b81baaed80ca8dae64d1df32692e7b92dee42"
+        }
+      ]
+    },
+    {
+      "claim_id": "CLM-08BF12021B",
+      "canonical_claim": "claiming that Neuvago treats sensory overload, anxiety, insomnia, ADHD, autism or another medical condition;",
+      "policy": "NOT_ALLOWED",
+      "claim_class": "PRODUCT",
+      "risk_class": "HIGH",
+      "locale_scope": [
+        "nb"
+      ],
+      "owner_route": "/no/kunnskap/overstimulert",
+      "applies_to_routes": [
+        "/no/kunnskap/overstimulert"
+      ],
+      "allowed_wording": null,
+      "disallowed_wording": [
+        "claiming that Neuvago treats sensory overload, anxiety, insomnia, ADHD, autism or another medical condition;"
+      ],
+      "evidence_ids": [],
+      "evidence_directness": "PENDING_1E4C",
+      "regulatory_gate": "PRODUCT_FACT_CONTROL",
+      "safety_boundary": null,
+      "last_reviewed": "2026-09-12",
+      "status": "POLICY_LOCKED_EVIDENCE_LINK_PENDING",
+      "normalization_notes": [],
+      "provenance": [
+        {
+          "file": "docs/seo/wave2c1d-overstimulation-source-and-claims-lock.md",
+          "line": 36,
+          "heading": "Claims boundary",
+          "source_control": "NOT_ALLOWED",
+          "file_sha256": "6f5f5408df1d9aafc98c91528b7583d5459e580bb936573a59da00b6d8bafae9"
+        }
+      ]
+    },
+    {
+      "claim_id": "CLM-08E0606427",
+      "canonical_claim": "Behavioural practices such as slow breathing, movement and relaxation can influence subjective experience and selected physiological/autonomic outcomes under studied conditions.",
+      "policy": "ALLOWED_WITH_QUALIFIERS",
+      "claim_class": "METHOD_BOUNDARY",
+      "risk_class": "MEDIUM",
+      "locale_scope": [
+        "en"
+      ],
+      "owner_route": "/learn/vagus-nerve-exercises",
+      "applies_to_routes": [
+        "/learn/vagus-nerve-exercises"
+      ],
+      "allowed_wording": "Behavioural practices such as slow breathing, movement and relaxation can influence subjective experience and selected physiological/autonomic outcomes under studied conditions.",
+      "disallowed_wording": [],
+      "evidence_ids": [],
+      "evidence_directness": "PENDING_1E4C",
+      "regulatory_gate": "NONE",
+      "safety_boundary": null,
+      "last_reviewed": "2026-09-12",
+      "status": "POLICY_LOCKED_EVIDENCE_LINK_PENDING",
+      "normalization_notes": [],
+      "provenance": [
+        {
+          "file": "docs/seo/search-dominance-1e3b-vagus-nerve-exercises-source-claims-lock.md",
+          "line": 38,
+          "heading": "Locked claims",
+          "source_control": "ALLOWED",
+          "file_sha256": "7f7adebba42bc8230e3ad404fb1013532c561b8baa2c9a09e98e36a691ca5c70"
+        }
+      ]
+    },
+    {
+      "claim_id": "CLM-0B91600FED",
+      "canonical_claim": "claiming that the page can identify high cortisol, low vagal tone, abnormal HRV, autonomic dysfunction or brain changes in an individual;",
+      "policy": "NOT_ALLOWED",
+      "claim_class": "MEASUREMENT",
+      "risk_class": "HIGH",
+      "locale_scope": [
+        "nb"
+      ],
+      "owner_route": "/no/kunnskap/fastlast-i-stress",
+      "applies_to_routes": [
+        "/no/kunnskap/fastlast-i-stress"
+      ],
+      "allowed_wording": null,
+      "disallowed_wording": [
+        "claiming that the page can identify high cortisol, low vagal tone, abnormal HRV, autonomic dysfunction or brain changes in an individual;"
+      ],
+      "evidence_ids": [],
+      "evidence_directness": "PENDING_1E4C",
+      "regulatory_gate": "NONE",
+      "safety_boundary": null,
+      "last_reviewed": "2026-09-12",
+      "status": "POLICY_LOCKED_EVIDENCE_LINK_PENDING",
+      "normalization_notes": [],
+      "provenance": [
+        {
+          "file": "docs/seo/wave2c1e-stuck-in-stress-source-and-claims-lock.md",
+          "line": 38,
+          "heading": "Claims boundary",
+          "source_control": "NOT_ALLOWED",
+          "file_sha256": "f29ddb9f7a8ea6d8f7203b9acc688d210806c335a06b2af898d687c5c5a9b72d"
+        }
+      ]
+    },
+    {
+      "claim_id": "CLM-12420425B0",
+      "canonical_claim": "Humming has measurable respiratory/nasal effects, including altered sinus ventilation and nasal nitric oxide.",
+      "policy": "ALLOWED_WITH_QUALIFIERS",
+      "claim_class": "METHOD_BOUNDARY",
+      "risk_class": "MEDIUM",
+      "locale_scope": [
+        "en"
+      ],
+      "owner_route": "/learn/vagus-nerve-evidence-vs-internet-claims",
+      "applies_to_routes": [
+        "/learn/vagus-nerve-evidence-vs-internet-claims"
+      ],
+      "allowed_wording": "Humming has measurable respiratory/nasal effects, including altered sinus ventilation and nasal nitric oxide.",
+      "disallowed_wording": [],
+      "evidence_ids": [],
+      "evidence_directness": "PENDING_1E4C",
+      "regulatory_gate": "NONE",
+      "safety_boundary": null,
+      "last_reviewed": "2026-09-12",
+      "status": "POLICY_LOCKED_EVIDENCE_LINK_PENDING",
+      "normalization_notes": [],
+      "provenance": [
+        {
+          "file": "docs/seo/search-dominance-1e3c-evidence-internet-claims-source-claims-lock.md",
+          "line": 70,
+          "heading": "Humming / singing",
+          "source_control": "ALLOWED",
+          "file_sha256": "55d06456f3fae4cdf9800309384b81baaed80ca8dae64d1df32692e7b92dee42"
+        }
+      ]
+    },
+    {
+      "claim_id": "CLM-143FE2FE9B",
+      "canonical_claim": "general taVNS research proves a Neuvago-specific outcome;",
+      "policy": "NOT_ALLOWED",
+      "claim_class": "PRODUCT",
+      "risk_class": "HIGH",
+      "locale_scope": [
+        "en"
+      ],
+      "owner_route": "/learn/what-does-vagus-nerve-stimulation-feel-like",
+      "applies_to_routes": [
+        "/learn/what-does-vagus-nerve-stimulation-feel-like"
+      ],
+      "allowed_wording": null,
+      "disallowed_wording": [
+        "general taVNS research proves a Neuvago-specific outcome;"
+      ],
+      "evidence_ids": [],
+      "evidence_directness": "PENDING_1E4C",
+      "regulatory_gate": "PRODUCT_FACT_CONTROL",
+      "safety_boundary": null,
+      "last_reviewed": "2026-09-12",
+      "status": "POLICY_LOCKED_EVIDENCE_LINK_PENDING",
+      "normalization_notes": [
+        "1E.4B corrects the 1E.4A parser polarity for this must-not block; the locked source file is not changed."
+      ],
+      "provenance": [
+        {
+          "file": "docs/seo/wave2c1a-vns-sensation-source-and-claims-lock.md",
+          "line": 29,
+          "heading": "Binding claim boundary",
+          "source_control": "ALLOWED",
+          "file_sha256": "5379d1d9ee9322c8e803d433ee0373bfad7354cb8a0f14e6562535f8b4c615ad"
+        }
+      ]
+    },
+    {
+      "claim_id": "CLM-17F0EB5068",
+      "canonical_claim": "A prescriptive cold-plunge temperature, duration or face-immersion protocol.",
+      "policy": "NOT_ALLOWED",
+      "claim_class": "SAFETY",
+      "risk_class": "CRITICAL",
+      "locale_scope": [
+        "en"
+      ],
+      "owner_route": "/learn/vagus-nerve-evidence-vs-internet-claims",
+      "applies_to_routes": [
+        "/learn/vagus-nerve-evidence-vs-internet-claims"
+      ],
+      "allowed_wording": null,
+      "disallowed_wording": [
+        "A prescriptive cold-plunge temperature, duration or face-immersion protocol."
+      ],
+      "evidence_ids": [],
+      "evidence_directness": "PENDING_1E4C",
+      "regulatory_gate": "NONE",
+      "safety_boundary": "A prescriptive cold-plunge temperature, duration or face-immersion protocol.",
+      "last_reviewed": "2026-09-12",
+      "status": "POLICY_LOCKED_EVIDENCE_LINK_PENDING",
+      "normalization_notes": [],
+      "provenance": [
+        {
+          "file": "docs/seo/search-dominance-1e3c-evidence-internet-claims-source-claims-lock.md",
+          "line": 95,
+          "heading": "Cold exposure / face cooling",
+          "source_control": "NOT_ALLOWED",
+          "file_sha256": "55d06456f3fae4cdf9800309384b81baaed80ca8dae64d1df32692e7b92dee42"
+        }
+      ]
+    },
+    {
+      "claim_id": "CLM-19A9FFC693",
+      "canonical_claim": "Small studies report changes in breathing pattern, HRV or autonomic measures during humming.",
+      "policy": "ALLOWED_WITH_QUALIFIERS",
+      "claim_class": "MEASUREMENT",
+      "risk_class": "HIGH",
+      "locale_scope": [
+        "en"
+      ],
+      "owner_route": "/learn/vagus-nerve-evidence-vs-internet-claims",
+      "applies_to_routes": [
+        "/learn/vagus-nerve-evidence-vs-internet-claims"
+      ],
+      "allowed_wording": "Small studies report changes in breathing pattern, HRV or autonomic measures during humming.",
+      "disallowed_wording": [],
+      "evidence_ids": [],
+      "evidence_directness": "PENDING_1E4C",
+      "regulatory_gate": "NONE",
+      "safety_boundary": null,
+      "last_reviewed": "2026-09-12",
+      "status": "POLICY_LOCKED_EVIDENCE_LINK_PENDING",
+      "normalization_notes": [],
+      "provenance": [
+        {
+          "file": "docs/seo/search-dominance-1e3c-evidence-internet-claims-source-claims-lock.md",
+          "line": 69,
+          "heading": "Humming / singing",
+          "source_control": "ALLOWED",
+          "file_sha256": "55d06456f3fae4cdf9800309384b81baaed80ca8dae64d1df32692e7b92dee42"
+        }
+      ]
+    },
+    {
+      "claim_id": "CLM-1A82B7FA24",
+      "canonical_claim": "Any product efficacy claim, condition-treatment claim, diagnosis, symptom score, health-input workflow or personalised exercise prescription.",
+      "policy": "NOT_ALLOWED",
+      "claim_class": "PRODUCT",
+      "risk_class": "HIGH",
+      "locale_scope": [
+        "en"
+      ],
+      "owner_route": "/learn/vagus-nerve-exercises",
+      "applies_to_routes": [
+        "/learn/vagus-nerve-exercises"
+      ],
+      "allowed_wording": null,
+      "disallowed_wording": [
+        "Any product efficacy claim, condition-treatment claim, diagnosis, symptom score, health-input workflow or personalised exercise prescription."
+      ],
+      "evidence_ids": [],
+      "evidence_directness": "PENDING_1E4C",
+      "regulatory_gate": "PRODUCT_FACT_CONTROL",
+      "safety_boundary": null,
+      "last_reviewed": "2026-09-12",
+      "status": "POLICY_LOCKED_EVIDENCE_LINK_PENDING",
+      "normalization_notes": [],
+      "provenance": [
+        {
+          "file": "docs/seo/search-dominance-1e3b-vagus-nerve-exercises-source-claims-lock.md",
+          "line": 51,
+          "heading": "Locked claims",
+          "source_control": "NOT_ALLOWED",
+          "file_sha256": "7f7adebba42bc8230e3ad404fb1013532c561b8baa2c9a09e98e36a691ca5c70"
+        }
+      ]
+    },
+    {
+      "claim_id": "CLM-1AC3EF54DB",
+      "canonical_claim": "Transfer of athletic recovery or diving-response findings into a general therapeutic claim.",
+      "policy": "NOT_ALLOWED",
+      "claim_class": "EVIDENCE_TRANSFER",
+      "risk_class": "MEDIUM",
+      "locale_scope": [
+        "en"
+      ],
+      "owner_route": "/learn/vagus-nerve-evidence-vs-internet-claims",
+      "applies_to_routes": [
+        "/learn/vagus-nerve-evidence-vs-internet-claims"
+      ],
+      "allowed_wording": null,
+      "disallowed_wording": [
+        "Transfer of athletic recovery or diving-response findings into a general therapeutic claim."
+      ],
+      "evidence_ids": [],
+      "evidence_directness": "PENDING_1E4C",
+      "regulatory_gate": "NONE",
+      "safety_boundary": null,
+      "last_reviewed": "2026-09-12",
+      "status": "POLICY_LOCKED_EVIDENCE_LINK_PENDING",
+      "normalization_notes": [],
+      "provenance": [
+        {
+          "file": "docs/seo/search-dominance-1e3c-evidence-internet-claims-source-claims-lock.md",
+          "line": 96,
+          "heading": "Cold exposure / face cooling",
+          "source_control": "NOT_ALLOWED",
+          "file_sha256": "55d06456f3fae4cdf9800309384b81baaed80ca8dae64d1df32692e7b92dee42"
+        }
+      ]
+    },
+    {
+      "claim_id": "CLM-1E48802338",
+      "canonical_claim": "Electrical VNS is a distinct device/protocol category.",
+      "policy": "ALLOWED_WITH_QUALIFIERS",
+      "claim_class": "METHOD_BOUNDARY",
+      "risk_class": "MEDIUM",
+      "locale_scope": [
+        "en"
+      ],
+      "owner_route": "/learn/vagus-nerve-reset",
+      "applies_to_routes": [
+        "/learn/vagus-nerve-reset"
+      ],
+      "allowed_wording": "Electrical VNS is a distinct device/protocol category.",
+      "disallowed_wording": [],
+      "evidence_ids": [],
+      "evidence_directness": "PENDING_1E4C",
+      "regulatory_gate": "NONE",
+      "safety_boundary": null,
+      "last_reviewed": "2026-09-12",
+      "status": "POLICY_LOCKED_EVIDENCE_LINK_PENDING",
+      "normalization_notes": [],
+      "provenance": [
+        {
+          "file": "docs/seo/search-dominance-1e2d-reset-massage-owner-lift-source-claims-lock.md",
+          "line": 36,
+          "heading": "Reset claim boundaries",
+          "source_control": "ALLOWED",
+          "file_sha256": "7ed19918048703fd6afc359da8c00f62e52d49bd7c40e4fcf662f28520faab33"
+        }
+      ]
+    },
+    {
+      "claim_id": "CLM-1EA77BC4E3",
+      "canonical_claim": "use the lowest comfortable level;",
+      "policy": "ALLOWED_WITH_QUALIFIERS",
+      "claim_class": "GENERAL",
+      "risk_class": "MEDIUM",
+      "locale_scope": [
+        "en"
+      ],
+      "owner_route": "/learn/what-does-vagus-nerve-stimulation-feel-like",
+      "applies_to_routes": [
+        "/learn/what-does-vagus-nerve-stimulation-feel-like"
+      ],
+      "allowed_wording": "use the lowest comfortable level;",
+      "disallowed_wording": [],
+      "evidence_ids": [],
+      "evidence_directness": "PENDING_1E4C",
+      "regulatory_gate": "NONE",
+      "safety_boundary": null,
+      "last_reviewed": "2026-09-12",
+      "status": "POLICY_LOCKED_EVIDENCE_LINK_PENDING",
+      "normalization_notes": [],
+      "provenance": [
+        {
+          "file": "docs/seo/wave2c1a-vns-sensation-source-and-claims-lock.md",
+          "line": 47,
+          "heading": "Product-specific source lock",
+          "source_control": "ALLOWED",
+          "file_sha256": "5379d1d9ee9322c8e803d433ee0373bfad7354cb8a0f14e6562535f8b4c615ad"
+        }
+      ]
+    },
+    {
+      "claim_id": "CLM-1EBD72C17B",
+      "canonical_claim": "Distinguishing implanted, cervical, auricular and other electrical stimulation products.",
+      "policy": "ALLOWED_WITH_QUALIFIERS",
+      "claim_class": "COMMERCIAL",
+      "risk_class": "MEDIUM",
+      "locale_scope": [
+        "nb"
+      ],
+      "owner_route": "/no/kunnskap/hvordan-velge-vagusnervestimulator",
+      "applies_to_routes": [
+        "/no/kunnskap/hvordan-velge-vagusnervestimulator"
+      ],
+      "allowed_wording": "Distinguishing implanted, cervical, auricular and other electrical stimulation products.",
+      "disallowed_wording": [],
+      "evidence_ids": [],
+      "evidence_directness": "PENDING_1E4C",
+      "regulatory_gate": "PRODUCT_FACT_CONTROL",
+      "safety_boundary": null,
+      "last_reviewed": "2026-09-12",
+      "status": "POLICY_LOCKED_EVIDENCE_LINK_PENDING",
+      "normalization_notes": [],
+      "provenance": [
+        {
+          "file": "docs/seo/search-dominance-1e2g-no-protected-win-buyer-guide-source-claims-lock.md",
+          "line": 51,
+          "heading": "Buyer-guide claim / commercial boundaries",
+          "source_control": "ALLOWED",
+          "file_sha256": "fb08c83d351b3af9dc61dc18a1e0d93b81a26fa624de71cb51d01f20cb3292b4"
+        }
+      ]
+    },
+    {
+      "claim_id": "CLM-27B460CBB0",
+      "canonical_claim": "avoid deliberate gagging instructions",
+      "policy": "SAFETY_BOUNDARY",
+      "claim_class": "SAFETY",
+      "risk_class": "CRITICAL",
+      "locale_scope": [
+        "en"
+      ],
+      "owner_route": "/learn/vagus-nerve-evidence-vs-internet-claims",
+      "applies_to_routes": [
+        "/learn/vagus-nerve-evidence-vs-internet-claims"
+      ],
+      "allowed_wording": null,
+      "disallowed_wording": [],
+      "evidence_ids": [],
+      "evidence_directness": "PENDING_1E4C",
+      "regulatory_gate": "NONE",
+      "safety_boundary": "avoid deliberate gagging instructions",
+      "last_reviewed": "2026-09-12",
+      "status": "POLICY_LOCKED_EVIDENCE_LINK_PENDING",
+      "normalization_notes": [],
+      "provenance": [
+        {
+          "file": "docs/seo/search-dominance-1e3c-evidence-internet-claims-source-claims-lock.md",
+          "line": 134,
+          "heading": "Safety boundary",
+          "source_control": "SAFETY_BOUNDARY",
+          "file_sha256": "55d06456f3fae4cdf9800309384b81baaed80ca8dae64d1df32692e7b92dee42"
+        }
+      ]
+    },
+    {
+      "claim_id": "CLM-2B9A2F2C51",
+      "canonical_claim": "Slow breathing can affect heart rate, HRV-related measures and experience under studied conditions.",
+      "policy": "ALLOWED_WITH_QUALIFIERS",
+      "claim_class": "MEASUREMENT",
+      "risk_class": "HIGH",
+      "locale_scope": [
+        "en"
+      ],
+      "owner_route": "/learn/vagus-nerve-reset",
+      "applies_to_routes": [
+        "/learn/vagus-nerve-reset"
+      ],
+      "allowed_wording": "Slow breathing can affect heart rate, HRV-related measures and experience under studied conditions.",
+      "disallowed_wording": [],
+      "evidence_ids": [],
+      "evidence_directness": "PENDING_1E4C",
+      "regulatory_gate": "NONE",
+      "safety_boundary": null,
+      "last_reviewed": "2026-09-12",
+      "status": "POLICY_LOCKED_EVIDENCE_LINK_PENDING",
+      "normalization_notes": [],
+      "provenance": [
+        {
+          "file": "docs/seo/search-dominance-1e2d-reset-massage-owner-lift-source-claims-lock.md",
+          "line": 34,
+          "heading": "Reset claim boundaries",
+          "source_control": "ALLOWED",
+          "file_sha256": "7ed19918048703fd6afc359da8c00f62e52d49bd7c40e4fcf662f28520faab33"
+        }
+      ]
+    },
+    {
+      "claim_id": "CLM-2CFD01DC0C",
+      "canonical_claim": "Slow-paced breathing has a clearer direct literature for heart rate and HRV-related measures than many viral “vagus hack” claims.",
+      "policy": "ALLOWED_WITH_QUALIFIERS",
+      "claim_class": "MEASUREMENT",
+      "risk_class": "HIGH",
+      "locale_scope": [
+        "en"
+      ],
+      "owner_route": "/learn/vagus-nerve-exercises",
+      "applies_to_routes": [
+        "/learn/vagus-nerve-exercises"
+      ],
+      "allowed_wording": "Slow-paced breathing has a clearer direct literature for heart rate and HRV-related measures than many viral “vagus hack” claims.",
+      "disallowed_wording": [],
+      "evidence_ids": [],
+      "evidence_directness": "PENDING_1E4C",
+      "regulatory_gate": "NONE",
+      "safety_boundary": null,
+      "last_reviewed": "2026-09-12",
+      "status": "POLICY_LOCKED_EVIDENCE_LINK_PENDING",
+      "normalization_notes": [],
+      "provenance": [
+        {
+          "file": "docs/seo/search-dominance-1e3b-vagus-nerve-exercises-source-claims-lock.md",
+          "line": 39,
+          "heading": "Locked claims",
+          "source_control": "ALLOWED",
+          "file_sha256": "7f7adebba42bc8230e3ad404fb1013532c561b8baa2c9a09e98e36a691ca5c70"
+        }
+      ]
+    },
+    {
+      "claim_id": "CLM-2D9E4F88BC",
+      "canonical_claim": "“Cold resets the vagus nerve.”",
+      "policy": "NOT_ALLOWED",
+      "claim_class": "METHOD_BOUNDARY",
+      "risk_class": "MEDIUM",
+      "locale_scope": [
+        "en"
+      ],
+      "owner_route": "/learn/vagus-nerve-evidence-vs-internet-claims",
+      "applies_to_routes": [
+        "/learn/vagus-nerve-evidence-vs-internet-claims"
+      ],
+      "allowed_wording": null,
+      "disallowed_wording": [
+        "“Cold resets the vagus nerve.”"
+      ],
+      "evidence_ids": [],
+      "evidence_directness": "PENDING_1E4C",
+      "regulatory_gate": "NONE",
+      "safety_boundary": null,
+      "last_reviewed": "2026-09-12",
+      "status": "POLICY_LOCKED_EVIDENCE_LINK_PENDING",
+      "normalization_notes": [],
+      "provenance": [
+        {
+          "file": "docs/seo/search-dominance-1e3c-evidence-internet-claims-source-claims-lock.md",
+          "line": 93,
+          "heading": "Cold exposure / face cooling",
+          "source_control": "NOT_ALLOWED",
+          "file_sha256": "55d06456f3fae4cdf9800309384b81baaed80ca8dae64d1df32692e7b92dee42"
+        }
+      ]
+    },
+    {
+      "claim_id": "CLM-2E6602452A",
+      "canonical_claim": "using general VNS research as direct proof of a Neuvago outcome;",
+      "policy": "NOT_ALLOWED",
+      "claim_class": "PRODUCT",
+      "risk_class": "HIGH",
+      "locale_scope": [
+        "nb"
+      ],
+      "owner_route": "/no/kunnskap/overstimulert",
+      "applies_to_routes": [
+        "/no/kunnskap/overstimulert"
+      ],
+      "allowed_wording": null,
+      "disallowed_wording": [
+        "using general VNS research as direct proof of a Neuvago outcome;"
+      ],
+      "evidence_ids": [],
+      "evidence_directness": "PENDING_1E4C",
+      "regulatory_gate": "PRODUCT_FACT_CONTROL",
+      "safety_boundary": null,
+      "last_reviewed": "2026-09-12",
+      "status": "POLICY_LOCKED_EVIDENCE_LINK_PENDING",
+      "normalization_notes": [],
+      "provenance": [
+        {
+          "file": "docs/seo/wave2c1d-overstimulation-source-and-claims-lock.md",
+          "line": 38,
+          "heading": "Claims boundary",
+          "source_control": "NOT_ALLOWED",
+          "file_sha256": "6f5f5408df1d9aafc98c91528b7583d5459e580bb936573a59da00b6d8bafae9"
+        }
+      ]
+    },
+    {
+      "claim_id": "CLM-30C3F01FD2",
+      "canonical_claim": "Converting a monitored clinical manoeuvre into a consumer wellness exercise.",
+      "policy": "NOT_ALLOWED",
+      "claim_class": "SAFETY",
+      "risk_class": "MEDIUM",
+      "locale_scope": [
+        "en"
+      ],
+      "owner_route": "/learn/vagus-nerve-evidence-vs-internet-claims",
+      "applies_to_routes": [
+        "/learn/vagus-nerve-evidence-vs-internet-claims"
+      ],
+      "allowed_wording": null,
+      "disallowed_wording": [
+        "Converting a monitored clinical manoeuvre into a consumer wellness exercise."
+      ],
+      "evidence_ids": [],
+      "evidence_directness": "PENDING_1E4C",
+      "regulatory_gate": "NONE",
+      "safety_boundary": "Converting a monitored clinical manoeuvre into a consumer wellness exercise.",
+      "last_reviewed": "2026-09-12",
+      "status": "POLICY_LOCKED_EVIDENCE_LINK_PENDING",
+      "normalization_notes": [],
+      "provenance": [
+        {
+          "file": "docs/seo/search-dominance-1e3c-evidence-internet-claims-source-claims-lock.md",
+          "line": 115,
+          "heading": "Neck pressure / carotid sinus",
+          "source_control": "NOT_ALLOWED",
+          "file_sha256": "55d06456f3fae4cdf9800309384b81baaed80ca8dae64d1df32692e7b92dee42"
+        }
+      ]
+    },
+    {
+      "claim_id": "CLM-3201E08FC5",
+      "canonical_claim": "Any transfer of implanted VNS, tVNS, taVNS or other electrical-device evidence to breathing, movement, yoga, humming, gargling, tapping, cold exposure or Neuvago.",
+      "policy": "NOT_ALLOWED",
+      "claim_class": "PRODUCT",
+      "risk_class": "HIGH",
+      "locale_scope": [
+        "en"
+      ],
+      "owner_route": "/learn/vagus-nerve-exercises",
+      "applies_to_routes": [
+        "/learn/vagus-nerve-exercises"
+      ],
+      "allowed_wording": null,
+      "disallowed_wording": [
+        "Any transfer of implanted VNS, tVNS, taVNS or other electrical-device evidence to breathing, movement, yoga, humming, gargling, tapping, cold exposure or Neuvago."
+      ],
+      "evidence_ids": [],
+      "evidence_directness": "PENDING_1E4C",
+      "regulatory_gate": "PRODUCT_FACT_CONTROL",
+      "safety_boundary": null,
+      "last_reviewed": "2026-09-12",
+      "status": "POLICY_LOCKED_EVIDENCE_LINK_PENDING",
+      "normalization_notes": [],
+      "provenance": [
+        {
+          "file": "docs/seo/search-dominance-1e3b-vagus-nerve-exercises-source-claims-lock.md",
+          "line": 49,
+          "heading": "Locked claims",
+          "source_control": "NOT_ALLOWED",
+          "file_sha256": "7f7adebba42bc8230e3ad404fb1013532c561b8baa2c9a09e98e36a691ca5c70"
+        }
+      ]
+    },
+    {
+      "claim_id": "CLM-33DDD7F533",
+      "canonical_claim": "A short routine may help a person feel calmer without proving a vagus-specific mechanism.",
+      "policy": "ALLOWED_WITH_QUALIFIERS",
+      "claim_class": "METHOD_BOUNDARY",
+      "risk_class": "MEDIUM",
+      "locale_scope": [
+        "en"
+      ],
+      "owner_route": "/learn/vagus-nerve-reset",
+      "applies_to_routes": [
+        "/learn/vagus-nerve-reset"
+      ],
+      "allowed_wording": "A short routine may help a person feel calmer without proving a vagus-specific mechanism.",
+      "disallowed_wording": [],
+      "evidence_ids": [],
+      "evidence_directness": "PENDING_1E4C",
+      "regulatory_gate": "NONE",
+      "safety_boundary": null,
+      "last_reviewed": "2026-09-12",
+      "status": "POLICY_LOCKED_EVIDENCE_LINK_PENDING",
+      "normalization_notes": [],
+      "provenance": [
+        {
+          "file": "docs/seo/search-dominance-1e2d-reset-massage-owner-lift-source-claims-lock.md",
+          "line": 33,
+          "heading": "Reset claim boundaries",
+          "source_control": "ALLOWED",
+          "file_sha256": "7ed19918048703fd6afc359da8c00f62e52d49bd7c40e4fcf662f28520faab33"
+        }
+      ]
+    },
+    {
+      "claim_id": "CLM-371DCDA754",
+      "canonical_claim": "Carotid-sinus self-massage instructions, coordinates, force, duration or side choice.",
+      "policy": "NOT_ALLOWED",
+      "claim_class": "SAFETY",
+      "risk_class": "CRITICAL",
+      "locale_scope": [
+        "nb"
+      ],
+      "owner_route": "/no/kunnskap/vagusnerven-og-massasje",
+      "applies_to_routes": [
+        "/no/kunnskap/vagusnerven-og-massasje"
+      ],
+      "allowed_wording": null,
+      "disallowed_wording": [
+        "Carotid-sinus self-massage instructions, coordinates, force, duration or side choice."
+      ],
+      "evidence_ids": [],
+      "evidence_directness": "PENDING_1E4C",
+      "regulatory_gate": "NONE",
+      "safety_boundary": "Carotid-sinus self-massage instructions, coordinates, force, duration or side choice.",
+      "last_reviewed": "2026-09-12",
+      "status": "POLICY_LOCKED_EVIDENCE_LINK_PENDING",
+      "normalization_notes": [],
+      "provenance": [
+        {
+          "file": "docs/seo/search-dominance-1e2g-no-protected-win-buyer-guide-source-claims-lock.md",
+          "line": 42,
+          "heading": "Massage claim and safety boundaries",
+          "source_control": "NOT_ALLOWED",
+          "file_sha256": "fb08c83d351b3af9dc61dc18a1e0d93b81a26fa624de71cb51d01f20cb3292b4"
+        }
+      ]
+    },
+    {
+      "claim_id": "CLM-3824165942",
+      "canonical_claim": "keep carotid-sinus and strong neck-pressure manoeuvres in clinical/safety-sensitive territory",
+      "policy": "SAFETY_BOUNDARY",
+      "claim_class": "SAFETY",
+      "risk_class": "CRITICAL",
+      "locale_scope": [
+        "en"
+      ],
+      "owner_route": "/learn/vagus-nerve-evidence-vs-internet-claims",
+      "applies_to_routes": [
+        "/learn/vagus-nerve-evidence-vs-internet-claims"
+      ],
+      "allowed_wording": null,
+      "disallowed_wording": [],
+      "evidence_ids": [],
+      "evidence_directness": "PENDING_1E4C",
+      "regulatory_gate": "NONE",
+      "safety_boundary": "keep carotid-sinus and strong neck-pressure manoeuvres in clinical/safety-sensitive territory",
+      "last_reviewed": "2026-09-12",
+      "status": "POLICY_LOCKED_EVIDENCE_LINK_PENDING",
+      "normalization_notes": [],
+      "provenance": [
+        {
+          "file": "docs/seo/search-dominance-1e3c-evidence-internet-claims-source-claims-lock.md",
+          "line": 132,
+          "heading": "Safety boundary",
+          "source_control": "SAFETY_BOUNDARY",
+          "file_sha256": "55d06456f3fae4cdf9800309384b81baaed80ca8dae64d1df32692e7b92dee42"
+        }
+      ]
+    },
+    {
+      "claim_id": "CLM-38CCB4347C",
+      "canonical_claim": "Cold-water, face-cooling and cryostimulation paradigms can change heart rate, blood pressure and cardiac autonomic measures.",
+      "policy": "ALLOWED_WITH_QUALIFIERS",
+      "claim_class": "MEASUREMENT",
+      "risk_class": "MEDIUM",
+      "locale_scope": [
+        "en"
+      ],
+      "owner_route": "/learn/vagus-nerve-evidence-vs-internet-claims",
+      "applies_to_routes": [
+        "/learn/vagus-nerve-evidence-vs-internet-claims"
+      ],
+      "allowed_wording": "Cold-water, face-cooling and cryostimulation paradigms can change heart rate, blood pressure and cardiac autonomic measures.",
+      "disallowed_wording": [],
+      "evidence_ids": [],
+      "evidence_directness": "PENDING_1E4C",
+      "regulatory_gate": "NONE",
+      "safety_boundary": null,
+      "last_reviewed": "2026-09-12",
+      "status": "POLICY_LOCKED_EVIDENCE_LINK_PENDING",
+      "normalization_notes": [],
+      "provenance": [
+        {
+          "file": "docs/seo/search-dominance-1e3c-evidence-internet-claims-source-claims-lock.md",
+          "line": 88,
+          "heading": "Cold exposure / face cooling",
+          "source_control": "ALLOWED",
+          "file_sha256": "55d06456f3fae4cdf9800309384b81baaed80ca8dae64d1df32692e7b92dee42"
+        }
+      ]
+    },
+    {
+      "claim_id": "CLM-3A910CFF37",
+      "canonical_claim": "using general VNS or stress research as direct proof of a Neuvago outcome;",
+      "policy": "NOT_ALLOWED",
+      "claim_class": "PRODUCT",
+      "risk_class": "HIGH",
+      "locale_scope": [
+        "nb"
+      ],
+      "owner_route": "/no/kunnskap/fastlast-i-stress",
+      "applies_to_routes": [
+        "/no/kunnskap/fastlast-i-stress"
+      ],
+      "allowed_wording": null,
+      "disallowed_wording": [
+        "using general VNS or stress research as direct proof of a Neuvago outcome;"
+      ],
+      "evidence_ids": [],
+      "evidence_directness": "PENDING_1E4C",
+      "regulatory_gate": "PRODUCT_FACT_CONTROL",
+      "safety_boundary": null,
+      "last_reviewed": "2026-09-12",
+      "status": "POLICY_LOCKED_EVIDENCE_LINK_PENDING",
+      "normalization_notes": [],
+      "provenance": [
+        {
+          "file": "docs/seo/wave2c1e-stuck-in-stress-source-and-claims-lock.md",
+          "line": 41,
+          "heading": "Claims boundary",
+          "source_control": "NOT_ALLOWED",
+          "file_sha256": "f29ddb9f7a8ea6d8f7203b9acc688d210806c335a06b2af898d687c5c5a9b72d"
+        }
+      ]
+    },
+    {
+      "claim_id": "CLM-411854975C",
+      "canonical_claim": "set intensity slowly;",
+      "policy": "ALLOWED_WITH_QUALIFIERS",
+      "claim_class": "PRODUCT",
+      "risk_class": "MEDIUM",
+      "locale_scope": [
+        "en"
+      ],
+      "owner_route": "/learn/what-does-vagus-nerve-stimulation-feel-like",
+      "applies_to_routes": [
+        "/learn/what-does-vagus-nerve-stimulation-feel-like"
+      ],
+      "allowed_wording": "set intensity slowly;",
+      "disallowed_wording": [],
+      "evidence_ids": [],
+      "evidence_directness": "PENDING_1E4C",
+      "regulatory_gate": "NONE",
+      "safety_boundary": null,
+      "last_reviewed": "2026-09-12",
+      "status": "POLICY_LOCKED_EVIDENCE_LINK_PENDING",
+      "normalization_notes": [],
+      "provenance": [
+        {
+          "file": "docs/seo/wave2c1a-vns-sensation-source-and-claims-lock.md",
+          "line": 46,
+          "heading": "Product-specific source lock",
+          "source_control": "ALLOWED",
+          "file_sha256": "5379d1d9ee9322c8e803d433ee0373bfad7354cb8a0f14e6562535f8b4c615ad"
+        }
+      ]
+    },
+    {
+      "claim_id": "CLM-41DF51F987",
+      "canonical_claim": "Give carotid-sinus self-massage instructions, coordinates, force, duration or side choice.",
+      "policy": "NOT_ALLOWED",
+      "claim_class": "SAFETY",
+      "risk_class": "CRITICAL",
+      "locale_scope": [
+        "en"
+      ],
+      "owner_route": "/learn/vagus-nerve-massage",
+      "applies_to_routes": [
+        "/learn/vagus-nerve-massage"
+      ],
+      "allowed_wording": null,
+      "disallowed_wording": [
+        "Give carotid-sinus self-massage instructions, coordinates, force, duration or side choice."
+      ],
+      "evidence_ids": [],
+      "evidence_directness": "PENDING_1E4C",
+      "regulatory_gate": "NONE",
+      "safety_boundary": "Give carotid-sinus self-massage instructions, coordinates, force, duration or side choice.",
+      "last_reviewed": "2026-09-12",
+      "status": "POLICY_LOCKED_EVIDENCE_LINK_PENDING",
+      "normalization_notes": [],
+      "provenance": [
+        {
+          "file": "docs/seo/search-dominance-1e2d-reset-massage-owner-lift-source-claims-lock.md",
+          "line": 58,
+          "heading": "Massage claim and safety boundaries",
+          "source_control": "NOT_ALLOWED",
+          "file_sha256": "7ed19918048703fd6afc359da8c00f62e52d49bd7c40e4fcf662f28520faab33"
+        }
+      ]
+    },
+    {
+      "claim_id": "CLM-4383F7D266",
+      "canonical_claim": "Any statement that a behavioural exercise has been proven to directly and selectively stimulate the whole vagus nerve.",
+      "policy": "NOT_ALLOWED",
+      "claim_class": "METHOD_BOUNDARY",
+      "risk_class": "MEDIUM",
+      "locale_scope": [
+        "en"
+      ],
+      "owner_route": "/learn/vagus-nerve-exercises",
+      "applies_to_routes": [
+        "/learn/vagus-nerve-exercises"
+      ],
+      "allowed_wording": null,
+      "disallowed_wording": [
+        "Any statement that a behavioural exercise has been proven to directly and selectively stimulate the whole vagus nerve."
+      ],
+      "evidence_ids": [],
+      "evidence_directness": "PENDING_1E4C",
+      "regulatory_gate": "NONE",
+      "safety_boundary": null,
+      "last_reviewed": "2026-09-12",
+      "status": "POLICY_LOCKED_EVIDENCE_LINK_PENDING",
+      "normalization_notes": [],
+      "provenance": [
+        {
+          "file": "docs/seo/search-dominance-1e3b-vagus-nerve-exercises-source-claims-lock.md",
+          "line": 46,
+          "heading": "Locked claims",
+          "source_control": "NOT_ALLOWED",
+          "file_sha256": "7f7adebba42bc8230e3ad404fb1013532c561b8baa2c9a09e98e36a691ca5c70"
+        }
+      ]
+    },
+    {
+      "claim_id": "CLM-439EF0D688",
+      "canonical_claim": "A wearable value proves a weak, damaged, inflamed or “unbalanced” vagus nerve.",
+      "policy": "NOT_ALLOWED",
+      "claim_class": "MEASUREMENT",
+      "risk_class": "MEDIUM",
+      "locale_scope": [
+        "en"
+      ],
+      "owner_route": "/learn/vagus-nerve-reset",
+      "applies_to_routes": [
+        "/learn/vagus-nerve-reset"
+      ],
+      "allowed_wording": null,
+      "disallowed_wording": [
+        "A wearable value proves a weak, damaged, inflamed or “unbalanced” vagus nerve."
+      ],
+      "evidence_ids": [],
+      "evidence_directness": "PENDING_1E4C",
+      "regulatory_gate": "NONE",
+      "safety_boundary": null,
+      "last_reviewed": "2026-09-12",
+      "status": "POLICY_LOCKED_EVIDENCE_LINK_PENDING",
+      "normalization_notes": [],
+      "provenance": [
+        {
+          "file": "docs/seo/search-dominance-1e2d-reset-massage-owner-lift-source-claims-lock.md",
+          "line": 42,
+          "heading": "Reset claim boundaries",
+          "source_control": "NOT_ALLOWED",
+          "file_sha256": "7ed19918048703fd6afc359da8c00f62e52d49bd7c40e4fcf662f28520faab33"
+        }
+      ]
+    },
+    {
+      "claim_id": "CLM-4713550E4B",
+      "canonical_claim": "transfer of implanted VNS, tVNS, taVNS or Neuvago evidence to behavioural practices",
+      "policy": "PROHIBITED",
+      "claim_class": "PRODUCT",
+      "risk_class": "CRITICAL",
+      "locale_scope": [
+        "en"
+      ],
+      "owner_route": "/learn/vagus-nerve-evidence-vs-internet-claims",
+      "applies_to_routes": [
+        "/learn/vagus-nerve-evidence-vs-internet-claims"
+      ],
+      "allowed_wording": null,
+      "disallowed_wording": [
+        "transfer of implanted VNS, tVNS, taVNS or Neuvago evidence to behavioural practices"
+      ],
+      "evidence_ids": [],
+      "evidence_directness": "PENDING_1E4C",
+      "regulatory_gate": "PRODUCT_FACT_CONTROL",
+      "safety_boundary": null,
+      "last_reviewed": "2026-09-12",
+      "status": "POLICY_LOCKED_EVIDENCE_LINK_PENDING",
+      "normalization_notes": [],
+      "provenance": [
+        {
+          "file": "docs/seo/search-dominance-1e3c-evidence-internet-claims-source-claims-lock.md",
+          "line": 123,
+          "heading": "Cross-cutting prohibited claims",
+          "source_control": "PROHIBITED",
+          "file_sha256": "55d06456f3fae4cdf9800309384b81baaed80ca8dae64d1df32692e7b92dee42"
+        }
+      ]
+    },
+    {
+      "claim_id": "CLM-4BF1EF37D5",
+      "canonical_claim": "diagnosis of a weak, damaged, overactive or underactive vagus nerve from self-observation",
+      "policy": "PROHIBITED",
+      "claim_class": "CONDITION",
+      "risk_class": "CRITICAL",
+      "locale_scope": [
+        "en"
+      ],
+      "owner_route": "/learn/vagus-nerve-evidence-vs-internet-claims",
+      "applies_to_routes": [
+        "/learn/vagus-nerve-evidence-vs-internet-claims"
+      ],
+      "allowed_wording": null,
+      "disallowed_wording": [
+        "diagnosis of a weak, damaged, overactive or underactive vagus nerve from self-observation"
+      ],
+      "evidence_ids": [],
+      "evidence_directness": "PENDING_1E4C",
+      "regulatory_gate": "NONE",
+      "safety_boundary": null,
+      "last_reviewed": "2026-09-12",
+      "status": "POLICY_LOCKED_EVIDENCE_LINK_PENDING",
+      "normalization_notes": [],
+      "provenance": [
+        {
+          "file": "docs/seo/search-dominance-1e3c-evidence-internet-claims-source-claims-lock.md",
+          "line": 122,
+          "heading": "Cross-cutting prohibited claims",
+          "source_control": "PROHIBITED",
+          "file_sha256": "55d06456f3fae4cdf9800309384b81baaed80ca8dae64d1df32692e7b92dee42"
+        }
+      ]
+    },
+    {
+      "claim_id": "CLM-4DB60F3096",
+      "canonical_claim": "General breathing, grounding, movement or relaxation is automatically electrical VNS.",
+      "policy": "NOT_ALLOWED",
+      "claim_class": "METHOD_BOUNDARY",
+      "risk_class": "MEDIUM",
+      "locale_scope": [
+        "en"
+      ],
+      "owner_route": "/learn/vagus-nerve-reset",
+      "applies_to_routes": [
+        "/learn/vagus-nerve-reset"
+      ],
+      "allowed_wording": null,
+      "disallowed_wording": [
+        "General breathing, grounding, movement or relaxation is automatically electrical VNS."
+      ],
+      "evidence_ids": [],
+      "evidence_directness": "PENDING_1E4C",
+      "regulatory_gate": "NONE",
+      "safety_boundary": null,
+      "last_reviewed": "2026-09-12",
+      "status": "POLICY_LOCKED_EVIDENCE_LINK_PENDING",
+      "normalization_notes": [],
+      "provenance": [
+        {
+          "file": "docs/seo/search-dominance-1e2d-reset-massage-owner-lift-source-claims-lock.md",
+          "line": 43,
+          "heading": "Reset claim boundaries",
+          "source_control": "NOT_ALLOWED",
+          "file_sha256": "7ed19918048703fd6afc359da8c00f62e52d49bd7c40e4fcf662f28520faab33"
+        }
+      ]
+    },
+    {
+      "claim_id": "CLM-4EF31024A2",
+      "canonical_claim": "stronger stimulation is better or more effective;",
+      "policy": "NOT_ALLOWED",
+      "claim_class": "MECHANISM",
+      "risk_class": "HIGH",
+      "locale_scope": [
+        "en"
+      ],
+      "owner_route": "/learn/what-does-vagus-nerve-stimulation-feel-like",
+      "applies_to_routes": [
+        "/learn/what-does-vagus-nerve-stimulation-feel-like"
+      ],
+      "allowed_wording": null,
+      "disallowed_wording": [
+        "stronger stimulation is better or more effective;"
+      ],
+      "evidence_ids": [],
+      "evidence_directness": "PENDING_1E4C",
+      "regulatory_gate": "NONE",
+      "safety_boundary": null,
+      "last_reviewed": "2026-09-12",
+      "status": "POLICY_LOCKED_EVIDENCE_LINK_PENDING",
+      "normalization_notes": [
+        "1E.4B corrects the 1E.4A parser polarity for this must-not block; the locked source file is not changed."
+      ],
+      "provenance": [
+        {
+          "file": "docs/seo/wave2c1a-vns-sensation-source-and-claims-lock.md",
+          "line": 27,
+          "heading": "Binding claim boundary",
+          "source_control": "ALLOWED",
+          "file_sha256": "5379d1d9ee9322c8e803d433ee0373bfad7354cb8a0f14e6562535f8b4c615ad"
+        }
+      ]
+    },
+    {
+      "claim_id": "CLM-555A0B2626",
+      "canonical_claim": "secure, balanced and comfortable earpiece contact;",
+      "policy": "ALLOWED_WITH_QUALIFIERS",
+      "claim_class": "PRODUCT",
+      "risk_class": "HIGH",
+      "locale_scope": [
+        "en"
+      ],
+      "owner_route": "/learn/what-does-vagus-nerve-stimulation-feel-like",
+      "applies_to_routes": [
+        "/learn/what-does-vagus-nerve-stimulation-feel-like"
+      ],
+      "allowed_wording": "secure, balanced and comfortable earpiece contact;",
+      "disallowed_wording": [],
+      "evidence_ids": [],
+      "evidence_directness": "PENDING_1E4C",
+      "regulatory_gate": "NONE",
+      "safety_boundary": null,
+      "last_reviewed": "2026-09-12",
+      "status": "POLICY_LOCKED_EVIDENCE_LINK_PENDING",
+      "normalization_notes": [],
+      "provenance": [
+        {
+          "file": "docs/seo/wave2c1a-vns-sensation-source-and-claims-lock.md",
+          "line": 45,
+          "heading": "Product-specific source lock",
+          "source_control": "ALLOWED",
+          "file_sha256": "5379d1d9ee9322c8e803d433ee0373bfad7354cb8a0f14e6562535f8b4c615ad"
+        }
+      ]
+    },
+    {
+      "claim_id": "CLM-55AEC4252F",
+      "canonical_claim": "promising a nervous-system reset, trauma release, cortisol reduction or guaranteed recovery;",
+      "policy": "NOT_ALLOWED",
+      "claim_class": "METHOD_BOUNDARY",
+      "risk_class": "MEDIUM",
+      "locale_scope": [
+        "nb"
+      ],
+      "owner_route": "/no/kunnskap/fastlast-i-stress",
+      "applies_to_routes": [
+        "/no/kunnskap/fastlast-i-stress"
+      ],
+      "allowed_wording": null,
+      "disallowed_wording": [
+        "promising a nervous-system reset, trauma release, cortisol reduction or guaranteed recovery;"
+      ],
+      "evidence_ids": [],
+      "evidence_directness": "PENDING_1E4C",
+      "regulatory_gate": "NONE",
+      "safety_boundary": null,
+      "last_reviewed": "2026-09-12",
+      "status": "POLICY_LOCKED_EVIDENCE_LINK_PENDING",
+      "normalization_notes": [],
+      "provenance": [
+        {
+          "file": "docs/seo/wave2c1e-stuck-in-stress-source-and-claims-lock.md",
+          "line": 39,
+          "heading": "Claims boundary",
+          "source_control": "NOT_ALLOWED",
+          "file_sha256": "f29ddb9f7a8ea6d8f7203b9acc688d210806c335a06b2af898d687c5c5a9b72d"
+        }
+      ]
+    },
+    {
+      "claim_id": "CLM-55F74D6B7F",
+      "canonical_claim": "Massage studies can report subjective and cardiac/autonomic measures without proving selective vagus engagement.",
+      "policy": "ALLOWED_WITH_QUALIFIERS",
+      "claim_class": "MEASUREMENT",
+      "risk_class": "MEDIUM",
+      "locale_scope": [
+        "en"
+      ],
+      "owner_route": "/learn/vagus-nerve-massage",
+      "applies_to_routes": [
+        "/learn/vagus-nerve-massage"
+      ],
+      "allowed_wording": "Massage studies can report subjective and cardiac/autonomic measures without proving selective vagus engagement.",
+      "disallowed_wording": [],
+      "evidence_ids": [],
+      "evidence_directness": "PENDING_1E4C",
+      "regulatory_gate": "NONE",
+      "safety_boundary": null,
+      "last_reviewed": "2026-09-12",
+      "status": "POLICY_LOCKED_EVIDENCE_LINK_PENDING",
+      "normalization_notes": [],
+      "provenance": [
+        {
+          "file": "docs/seo/search-dominance-1e2d-reset-massage-owner-lift-source-claims-lock.md",
+          "line": 52,
+          "heading": "Massage claim and safety boundaries",
+          "source_control": "ALLOWED",
+          "file_sha256": "7ed19918048703fd6afc359da8c00f62e52d49bd7c40e4fcf662f28520faab33"
+        }
+      ]
+    },
+    {
+      "claim_id": "CLM-5A7D1C1D8B",
+      "canonical_claim": "guaranteed vagus activation, reset, healing or “toning”",
+      "policy": "PROHIBITED",
+      "claim_class": "METHOD_BOUNDARY",
+      "risk_class": "CRITICAL",
+      "locale_scope": [
+        "en"
+      ],
+      "owner_route": "/learn/vagus-nerve-evidence-vs-internet-claims",
+      "applies_to_routes": [
+        "/learn/vagus-nerve-evidence-vs-internet-claims"
+      ],
+      "allowed_wording": null,
+      "disallowed_wording": [
+        "guaranteed vagus activation, reset, healing or “toning”"
+      ],
+      "evidence_ids": [],
+      "evidence_directness": "PENDING_1E4C",
+      "regulatory_gate": "NONE",
+      "safety_boundary": null,
+      "last_reviewed": "2026-09-12",
+      "status": "POLICY_LOCKED_EVIDENCE_LINK_PENDING",
+      "normalization_notes": [],
+      "provenance": [
+        {
+          "file": "docs/seo/search-dominance-1e3c-evidence-internet-claims-source-claims-lock.md",
+          "line": 120,
+          "heading": "Cross-cutting prohibited claims",
+          "source_control": "PROHIBITED",
+          "file_sha256": "55d06456f3fae4cdf9800309384b81baaed80ca8dae64d1df32692e7b92dee42"
+        }
+      ]
+    },
+    {
+      "claim_id": "CLM-5C8DA3AA27",
+      "canonical_claim": "The outer ear has mixed innervation; manual ear touch is not equivalent to electrical taVNS.",
+      "policy": "ALLOWED_WITH_QUALIFIERS",
+      "claim_class": "METHOD_BOUNDARY",
+      "risk_class": "MEDIUM",
+      "locale_scope": [
+        "en"
+      ],
+      "owner_route": "/learn/vagus-nerve-massage",
+      "applies_to_routes": [
+        "/learn/vagus-nerve-massage"
+      ],
+      "allowed_wording": "The outer ear has mixed innervation; manual ear touch is not equivalent to electrical taVNS.",
+      "disallowed_wording": [],
+      "evidence_ids": [],
+      "evidence_directness": "PENDING_1E4C",
+      "regulatory_gate": "NONE",
+      "safety_boundary": null,
+      "last_reviewed": "2026-09-12",
+      "status": "POLICY_LOCKED_EVIDENCE_LINK_PENDING",
+      "normalization_notes": [],
+      "provenance": [
+        {
+          "file": "docs/seo/search-dominance-1e2d-reset-massage-owner-lift-source-claims-lock.md",
+          "line": 51,
+          "heading": "Massage claim and safety boundaries",
+          "source_control": "ALLOWED",
+          "file_sha256": "7ed19918048703fd6afc359da8c00f62e52d49bd7c40e4fcf662f28520faab33"
+        }
+      ]
+    },
+    {
+      "claim_id": "CLM-60596631A5",
+      "canonical_claim": "avoid cold-plunge or face-immersion dosing",
+      "policy": "SAFETY_BOUNDARY",
+      "claim_class": "SAFETY",
+      "risk_class": "CRITICAL",
+      "locale_scope": [
+        "en"
+      ],
+      "owner_route": "/learn/vagus-nerve-evidence-vs-internet-claims",
+      "applies_to_routes": [
+        "/learn/vagus-nerve-evidence-vs-internet-claims"
+      ],
+      "allowed_wording": null,
+      "disallowed_wording": [],
+      "evidence_ids": [],
+      "evidence_directness": "PENDING_1E4C",
+      "regulatory_gate": "NONE",
+      "safety_boundary": "avoid cold-plunge or face-immersion dosing",
+      "last_reviewed": "2026-09-12",
+      "status": "POLICY_LOCKED_EVIDENCE_LINK_PENDING",
+      "normalization_notes": [],
+      "provenance": [
+        {
+          "file": "docs/seo/search-dominance-1e3c-evidence-internet-claims-source-claims-lock.md",
+          "line": 133,
+          "heading": "Safety boundary",
+          "source_control": "SAFETY_BOUNDARY",
+          "file_sha256": "55d06456f3fae4cdf9800309384b81baaed80ca8dae64d1df32692e7b92dee42"
+        }
+      ]
+    },
+    {
+      "claim_id": "CLM-620E014D76",
+      "canonical_claim": "“Best” rankings, fabricated reviews/tests or comparative superiority claims.",
+      "policy": "NOT_ALLOWED",
+      "claim_class": "COMMERCIAL",
+      "risk_class": "MEDIUM",
+      "locale_scope": [
+        "nb"
+      ],
+      "owner_route": "/no/kunnskap/hvordan-velge-vagusnervestimulator",
+      "applies_to_routes": [
+        "/no/kunnskap/hvordan-velge-vagusnervestimulator"
+      ],
+      "allowed_wording": null,
+      "disallowed_wording": [
+        "“Best” rankings, fabricated reviews/tests or comparative superiority claims."
+      ],
+      "evidence_ids": [],
+      "evidence_directness": "PENDING_1E4C",
+      "regulatory_gate": "NONE",
+      "safety_boundary": null,
+      "last_reviewed": "2026-09-12",
+      "status": "POLICY_LOCKED_EVIDENCE_LINK_PENDING",
+      "normalization_notes": [],
+      "provenance": [
+        {
+          "file": "docs/seo/search-dominance-1e2g-no-protected-win-buyer-guide-source-claims-lock.md",
+          "line": 56,
+          "heading": "Buyer-guide claim / commercial boundaries",
+          "source_control": "NOT_ALLOWED",
+          "file_sha256": "fb08c83d351b3af9dc61dc18a1e0d93b81a26fa624de71cb51d01f20cb3292b4"
+        }
+      ]
+    },
+    {
+      "claim_id": "CLM-6545931318",
+      "canonical_claim": "direct target engagement inferred from warmth, tingling, yawning, sighing, calm, pulse change or one HRV reading",
+      "policy": "PROHIBITED",
+      "claim_class": "MEASUREMENT",
+      "risk_class": "CRITICAL",
+      "locale_scope": [
+        "en"
+      ],
+      "owner_route": "/learn/vagus-nerve-evidence-vs-internet-claims",
+      "applies_to_routes": [
+        "/learn/vagus-nerve-evidence-vs-internet-claims"
+      ],
+      "allowed_wording": null,
+      "disallowed_wording": [
+        "direct target engagement inferred from warmth, tingling, yawning, sighing, calm, pulse change or one HRV reading"
+      ],
+      "evidence_ids": [],
+      "evidence_directness": "PENDING_1E4C",
+      "regulatory_gate": "NONE",
+      "safety_boundary": null,
+      "last_reviewed": "2026-09-12",
+      "status": "POLICY_LOCKED_EVIDENCE_LINK_PENDING",
+      "normalization_notes": [],
+      "provenance": [
+        {
+          "file": "docs/seo/search-dominance-1e3c-evidence-internet-claims-source-claims-lock.md",
+          "line": 121,
+          "heading": "Cross-cutting prohibited claims",
+          "source_control": "PROHIBITED",
+          "file_sha256": "55d06456f3fae4cdf9800309384b81baaed80ca8dae64d1df32692e7b92dee42"
+        }
+      ]
+    },
+    {
+      "claim_id": "CLM-661FAD9613",
+      "canonical_claim": "Effects vary by exposure type, temperature, immersion, timing and individual context.",
+      "policy": "ALLOWED_WITH_QUALIFIERS",
+      "claim_class": "METHOD_BOUNDARY",
+      "risk_class": "MEDIUM",
+      "locale_scope": [
+        "en"
+      ],
+      "owner_route": "/learn/vagus-nerve-evidence-vs-internet-claims",
+      "applies_to_routes": [
+        "/learn/vagus-nerve-evidence-vs-internet-claims"
+      ],
+      "allowed_wording": "Effects vary by exposure type, temperature, immersion, timing and individual context.",
+      "disallowed_wording": [],
+      "evidence_ids": [],
+      "evidence_directness": "PENDING_1E4C",
+      "regulatory_gate": "NONE",
+      "safety_boundary": null,
+      "last_reviewed": "2026-09-12",
+      "status": "POLICY_LOCKED_EVIDENCE_LINK_PENDING",
+      "normalization_notes": [],
+      "provenance": [
+        {
+          "file": "docs/seo/search-dominance-1e3c-evidence-internet-claims-source-claims-lock.md",
+          "line": 90,
+          "heading": "Cold exposure / face cooling",
+          "source_control": "ALLOWED",
+          "file_sha256": "55d06456f3fae4cdf9800309384b81baaed80ca8dae64d1df32692e7b92dee42"
+        }
+      ]
+    },
+    {
+      "claim_id": "CLM-66D82B628C",
+      "canonical_claim": "Transferring implanted-VNS indications or research automatically to non-invasive devices or Neuvago.",
+      "policy": "NOT_ALLOWED",
+      "claim_class": "COMMERCIAL",
+      "risk_class": "HIGH",
+      "locale_scope": [
+        "nb"
+      ],
+      "owner_route": "/no/kunnskap/hvordan-velge-vagusnervestimulator",
+      "applies_to_routes": [
+        "/no/kunnskap/hvordan-velge-vagusnervestimulator"
+      ],
+      "allowed_wording": null,
+      "disallowed_wording": [
+        "Transferring implanted-VNS indications or research automatically to non-invasive devices or Neuvago."
+      ],
+      "evidence_ids": [],
+      "evidence_directness": "PENDING_1E4C",
+      "regulatory_gate": "PRODUCT_FACT_CONTROL",
+      "safety_boundary": null,
+      "last_reviewed": "2026-09-12",
+      "status": "POLICY_LOCKED_EVIDENCE_LINK_PENDING",
+      "normalization_notes": [],
+      "provenance": [
+        {
+          "file": "docs/seo/search-dominance-1e2g-no-protected-win-buyer-guide-source-claims-lock.md",
+          "line": 59,
+          "heading": "Buyer-guide claim / commercial boundaries",
+          "source_control": "NOT_ALLOWED",
+          "file_sha256": "fb08c83d351b3af9dc61dc18a1e0d93b81a26fa624de71cb51d01f20cb3292b4"
+        }
+      ]
+    },
+    {
+      "claim_id": "CLM-69302C1A6B",
+      "canonical_claim": "urgent help and not being alone when there is risk of self-harm or harm to others.",
+      "policy": "SAFETY_BOUNDARY",
+      "claim_class": "SAFETY",
+      "risk_class": "CRITICAL",
+      "locale_scope": [
+        "nb"
+      ],
+      "owner_route": "/no/kunnskap/restitusjon-og-regulering",
+      "applies_to_routes": [
+        "/no/kunnskap/restitusjon-og-regulering"
+      ],
+      "allowed_wording": null,
+      "disallowed_wording": [],
+      "evidence_ids": [],
+      "evidence_directness": "PENDING_1E4C",
+      "regulatory_gate": "NONE",
+      "safety_boundary": "urgent help and not being alone when there is risk of self-harm or harm to others.",
+      "last_reviewed": "2026-09-12",
+      "status": "POLICY_LOCKED_EVIDENCE_LINK_PENDING",
+      "normalization_notes": [],
+      "provenance": [
+        {
+          "file": "docs/seo/wave2c1f-recovery-regulation-source-and-claims-lock.md",
+          "line": 82,
+          "heading": "Medical and safety boundary",
+          "source_control": "SAFETY_BOUNDARY",
+          "file_sha256": "0e04dcb97ab585dbaac7a94b868c59930627a3f5fb6ce69c86c5c8a91b6662b5"
+        }
+      ]
+    },
+    {
+      "claim_id": "CLM-6BE408081F",
+      "canonical_claim": "Category-level VNS evidence becomes Neuvago product evidence.",
+      "policy": "NOT_ALLOWED",
+      "claim_class": "PRODUCT",
+      "risk_class": "HIGH",
+      "locale_scope": [
+        "en"
+      ],
+      "owner_route": "/learn/vagus-nerve-reset",
+      "applies_to_routes": [
+        "/learn/vagus-nerve-reset"
+      ],
+      "allowed_wording": null,
+      "disallowed_wording": [
+        "Category-level VNS evidence becomes Neuvago product evidence."
+      ],
+      "evidence_ids": [],
+      "evidence_directness": "PENDING_1E4C",
+      "regulatory_gate": "PRODUCT_FACT_CONTROL",
+      "safety_boundary": null,
+      "last_reviewed": "2026-09-12",
+      "status": "POLICY_LOCKED_EVIDENCE_LINK_PENDING",
+      "normalization_notes": [],
+      "provenance": [
+        {
+          "file": "docs/seo/search-dominance-1e2d-reset-massage-owner-lift-source-claims-lock.md",
+          "line": 44,
+          "heading": "Reset claim boundaries",
+          "source_control": "NOT_ALLOWED",
+          "file_sha256": "7ed19918048703fd6afc359da8c00f62e52d49bd7c40e4fcf662f28520faab33"
+        }
+      ]
+    },
+    {
+      "claim_id": "CLM-6EF605C4A5",
+      "canonical_claim": "Slow-paced breathing can change heart rate and vagally mediated HRV measures under studied conditions.",
+      "policy": "ALLOWED_WITH_QUALIFIERS",
+      "claim_class": "MEASUREMENT",
+      "risk_class": "HIGH",
+      "locale_scope": [
+        "en"
+      ],
+      "owner_route": "/learn/vagus-nerve-evidence-vs-internet-claims",
+      "applies_to_routes": [
+        "/learn/vagus-nerve-evidence-vs-internet-claims"
+      ],
+      "allowed_wording": "Slow-paced breathing can change heart rate and vagally mediated HRV measures under studied conditions.",
+      "disallowed_wording": [],
+      "evidence_ids": [],
+      "evidence_directness": "PENDING_1E4C",
+      "regulatory_gate": "NONE",
+      "safety_boundary": null,
+      "last_reviewed": "2026-09-12",
+      "status": "POLICY_LOCKED_EVIDENCE_LINK_PENDING",
+      "normalization_notes": [],
+      "provenance": [
+        {
+          "file": "docs/seo/search-dominance-1e3c-evidence-internet-claims-source-claims-lock.md",
+          "line": 60,
+          "heading": "Slow breathing",
+          "source_control": "ALLOWED",
+          "file_sha256": "55d06456f3fae4cdf9800309384b81baaed80ca8dae64d1df32692e7b92dee42"
+        }
+      ]
+    },
+    {
+      "claim_id": "CLM-6F589F90BF",
+      "canonical_claim": "Consumer palpation targets for the cervical vagus.",
+      "policy": "NOT_ALLOWED",
+      "claim_class": "METHOD_BOUNDARY",
+      "risk_class": "MEDIUM",
+      "locale_scope": [
+        "nb"
+      ],
+      "owner_route": "/no/kunnskap/vagusnerven-og-massasje",
+      "applies_to_routes": [
+        "/no/kunnskap/vagusnerven-og-massasje"
+      ],
+      "allowed_wording": null,
+      "disallowed_wording": [
+        "Consumer palpation targets for the cervical vagus."
+      ],
+      "evidence_ids": [],
+      "evidence_directness": "PENDING_1E4C",
+      "regulatory_gate": "NONE",
+      "safety_boundary": null,
+      "last_reviewed": "2026-09-12",
+      "status": "POLICY_LOCKED_EVIDENCE_LINK_PENDING",
+      "normalization_notes": [],
+      "provenance": [
+        {
+          "file": "docs/seo/search-dominance-1e2g-no-protected-win-buyer-guide-source-claims-lock.md",
+          "line": 43,
+          "heading": "Massage claim and safety boundaries",
+          "source_control": "NOT_ALLOWED",
+          "file_sha256": "fb08c83d351b3af9dc61dc18a1e0d93b81a26fa624de71cb51d01f20cb3292b4"
+        }
+      ]
+    },
+    {
+      "claim_id": "CLM-6FC94A2BB4",
+      "canonical_claim": "adjustable intensity and gradual adjustment;",
+      "policy": "ALLOWED_WITH_QUALIFIERS",
+      "claim_class": "PRODUCT",
+      "risk_class": "MEDIUM",
+      "locale_scope": [
+        "en"
+      ],
+      "owner_route": "/learn/what-does-vagus-nerve-stimulation-feel-like",
+      "applies_to_routes": [
+        "/learn/what-does-vagus-nerve-stimulation-feel-like"
+      ],
+      "allowed_wording": "adjustable intensity and gradual adjustment;",
+      "disallowed_wording": [],
+      "evidence_ids": [],
+      "evidence_directness": "PENDING_1E4C",
+      "regulatory_gate": "NONE",
+      "safety_boundary": null,
+      "last_reviewed": "2026-09-12",
+      "status": "POLICY_LOCKED_EVIDENCE_LINK_PENDING",
+      "normalization_notes": [],
+      "provenance": [
+        {
+          "file": "docs/seo/wave2c1a-vns-sensation-source-and-claims-lock.md",
+          "line": 18,
+          "heading": "Binding claim boundary",
+          "source_control": "ALLOWED",
+          "file_sha256": "5379d1d9ee9322c8e803d433ee0373bfad7354cb8a0f14e6562535f8b4c615ad"
+        }
+      ]
+    },
+    {
+      "claim_id": "CLM-70D00E4A46",
+      "canonical_claim": "Treat manual massage or acupressure evidence as Neuvago product evidence.",
+      "policy": "NOT_ALLOWED",
+      "claim_class": "PRODUCT",
+      "risk_class": "HIGH",
+      "locale_scope": [
+        "en"
+      ],
+      "owner_route": "/learn/vagus-nerve-massage",
+      "applies_to_routes": [
+        "/learn/vagus-nerve-massage"
+      ],
+      "allowed_wording": null,
+      "disallowed_wording": [
+        "Treat manual massage or acupressure evidence as Neuvago product evidence."
+      ],
+      "evidence_ids": [],
+      "evidence_directness": "PENDING_1E4C",
+      "regulatory_gate": "PRODUCT_FACT_CONTROL",
+      "safety_boundary": null,
+      "last_reviewed": "2026-09-12",
+      "status": "POLICY_LOCKED_EVIDENCE_LINK_PENDING",
+      "normalization_notes": [],
+      "provenance": [
+        {
+          "file": "docs/seo/search-dominance-1e2d-reset-massage-owner-lift-source-claims-lock.md",
+          "line": 61,
+          "heading": "Massage claim and safety boundaries",
+          "source_control": "NOT_ALLOWED",
+          "file_sha256": "7ed19918048703fd6afc359da8c00f62e52d49bd7c40e4fcf662f28520faab33"
+        }
+      ]
+    },
+    {
+      "claim_id": "CLM-70EA1171F0",
+      "canonical_claim": "`113` for possible life-threatening emergencies;",
+      "policy": "SAFETY_BOUNDARY",
+      "claim_class": "SAFETY",
+      "risk_class": "CRITICAL",
+      "locale_scope": [
+        "nb"
+      ],
+      "owner_route": "/no/kunnskap/restitusjon-og-regulering",
+      "applies_to_routes": [
+        "/no/kunnskap/restitusjon-og-regulering"
+      ],
+      "allowed_wording": null,
+      "disallowed_wording": [],
+      "evidence_ids": [],
+      "evidence_directness": "PENDING_1E4C",
+      "regulatory_gate": "NONE",
+      "safety_boundary": "`113` for possible life-threatening emergencies;",
+      "last_reviewed": "2026-09-12",
+      "status": "POLICY_LOCKED_EVIDENCE_LINK_PENDING",
+      "normalization_notes": [],
+      "provenance": [
+        {
+          "file": "docs/seo/wave2c1f-recovery-regulation-source-and-claims-lock.md",
+          "line": 80,
+          "heading": "Medical and safety boundary",
+          "source_control": "SAFETY_BOUNDARY",
+          "file_sha256": "0e04dcb97ab585dbaac7a94b868c59930627a3f5fb6ce69c86c5c8a91b6662b5"
+        }
+      ]
+    },
+    {
+      "claim_id": "CLM-7142FD284D",
+      "canonical_claim": "Present dizziness, pulse change, pain or neurological symptoms as desirable evidence of “vagus activation.”",
+      "policy": "NOT_ALLOWED",
+      "claim_class": "MEASUREMENT",
+      "risk_class": "CRITICAL",
+      "locale_scope": [
+        "en"
+      ],
+      "owner_route": "/learn/vagus-nerve-massage",
+      "applies_to_routes": [
+        "/learn/vagus-nerve-massage"
+      ],
+      "allowed_wording": null,
+      "disallowed_wording": [
+        "Present dizziness, pulse change, pain or neurological symptoms as desirable evidence of “vagus activation.”"
+      ],
+      "evidence_ids": [],
+      "evidence_directness": "PENDING_1E4C",
+      "regulatory_gate": "NONE",
+      "safety_boundary": null,
+      "last_reviewed": "2026-09-12",
+      "status": "POLICY_LOCKED_EVIDENCE_LINK_PENDING",
+      "normalization_notes": [],
+      "provenance": [
+        {
+          "file": "docs/seo/search-dominance-1e2d-reset-massage-owner-lift-source-claims-lock.md",
+          "line": 60,
+          "heading": "Massage claim and safety boundaries",
+          "source_control": "NOT_ALLOWED",
+          "file_sha256": "7ed19918048703fd6afc359da8c00f62e52d49bd7c40e4fcf662f28520faab33"
+        }
+      ]
+    },
+    {
+      "claim_id": "CLM-73373784A5",
+      "canonical_claim": "presenting `overstimulert nervesystem` as a medical diagnosis;",
+      "policy": "NOT_ALLOWED",
+      "claim_class": "CONDITION",
+      "risk_class": "HIGH",
+      "locale_scope": [
+        "nb"
+      ],
+      "owner_route": "/no/kunnskap/overstimulert",
+      "applies_to_routes": [
+        "/no/kunnskap/overstimulert"
+      ],
+      "allowed_wording": null,
+      "disallowed_wording": [
+        "presenting `overstimulert nervesystem` as a medical diagnosis;"
+      ],
+      "evidence_ids": [],
+      "evidence_directness": "PENDING_1E4C",
+      "regulatory_gate": "NONE",
+      "safety_boundary": null,
+      "last_reviewed": "2026-09-12",
+      "status": "POLICY_LOCKED_EVIDENCE_LINK_PENDING",
+      "normalization_notes": [],
+      "provenance": [
+        {
+          "file": "docs/seo/wave2c1d-overstimulation-source-and-claims-lock.md",
+          "line": 34,
+          "heading": "Claims boundary",
+          "source_control": "NOT_ALLOWED",
+          "file_sha256": "6f5f5408df1d9aafc98c91528b7583d5459e580bb936573a59da00b6d8bafae9"
+        }
+      ]
+    },
+    {
+      "claim_id": "CLM-73E277F48C",
+      "canonical_claim": "avoid improvised electrical stimulation",
+      "policy": "SAFETY_BOUNDARY",
+      "claim_class": "MECHANISM",
+      "risk_class": "CRITICAL",
+      "locale_scope": [
+        "en"
+      ],
+      "owner_route": "/learn/vagus-nerve-evidence-vs-internet-claims",
+      "applies_to_routes": [
+        "/learn/vagus-nerve-evidence-vs-internet-claims"
+      ],
+      "allowed_wording": null,
+      "disallowed_wording": [],
+      "evidence_ids": [],
+      "evidence_directness": "PENDING_1E4C",
+      "regulatory_gate": "NONE",
+      "safety_boundary": "avoid improvised electrical stimulation",
+      "last_reviewed": "2026-09-12",
+      "status": "POLICY_LOCKED_EVIDENCE_LINK_PENDING",
+      "normalization_notes": [],
+      "provenance": [
+        {
+          "file": "docs/seo/search-dominance-1e3c-evidence-internet-claims-source-claims-lock.md",
+          "line": 135,
+          "heading": "Safety boundary",
+          "source_control": "SAFETY_BOUNDARY",
+          "file_sha256": "55d06456f3fae4cdf9800309384b81baaed80ca8dae64d1df32692e7b92dee42"
+        }
+      ]
+    },
+    {
+      "claim_id": "CLM-7593F77462",
+      "canonical_claim": "stop when the feeling becomes unpleasant or the user feels unwell;",
+      "policy": "ALLOWED_WITH_QUALIFIERS",
+      "claim_class": "SAFETY",
+      "risk_class": "MEDIUM",
+      "locale_scope": [
+        "en"
+      ],
+      "owner_route": "/learn/what-does-vagus-nerve-stimulation-feel-like",
+      "applies_to_routes": [
+        "/learn/what-does-vagus-nerve-stimulation-feel-like"
+      ],
+      "allowed_wording": "stop when the feeling becomes unpleasant or the user feels unwell;",
+      "disallowed_wording": [],
+      "evidence_ids": [],
+      "evidence_directness": "PENDING_1E4C",
+      "regulatory_gate": "NONE",
+      "safety_boundary": "stop when the feeling becomes unpleasant or the user feels unwell;",
+      "last_reviewed": "2026-09-12",
+      "status": "POLICY_LOCKED_EVIDENCE_LINK_PENDING",
+      "normalization_notes": [],
+      "provenance": [
+        {
+          "file": "docs/seo/wave2c1a-vns-sensation-source-and-claims-lock.md",
+          "line": 49,
+          "heading": "Product-specific source lock",
+          "source_control": "ALLOWED",
+          "file_sha256": "5379d1d9ee9322c8e803d433ee0373bfad7354cb8a0f14e6562535f8b4c615ad"
+        }
+      ]
+    },
+    {
+      "claim_id": "CLM-79122F15F8",
+      "canonical_claim": "Transfer electrical taVNS findings directly to manual ear massage.",
+      "policy": "NOT_ALLOWED",
+      "claim_class": "EVIDENCE_TRANSFER",
+      "risk_class": "MEDIUM",
+      "locale_scope": [
+        "en"
+      ],
+      "owner_route": "/learn/vagus-nerve-massage",
+      "applies_to_routes": [
+        "/learn/vagus-nerve-massage"
+      ],
+      "allowed_wording": null,
+      "disallowed_wording": [
+        "Transfer electrical taVNS findings directly to manual ear massage."
+      ],
+      "evidence_ids": [],
+      "evidence_directness": "PENDING_1E4C",
+      "regulatory_gate": "NONE",
+      "safety_boundary": null,
+      "last_reviewed": "2026-09-12",
+      "status": "POLICY_LOCKED_EVIDENCE_LINK_PENDING",
+      "normalization_notes": [],
+      "provenance": [
+        {
+          "file": "docs/seo/search-dominance-1e2d-reset-massage-owner-lift-source-claims-lock.md",
+          "line": 62,
+          "heading": "Massage claim and safety boundaries",
+          "source_control": "NOT_ALLOWED",
+          "file_sha256": "7ed19918048703fd6afc359da8c00f62e52d49bd7c40e4fcf662f28520faab33"
+        }
+      ]
+    },
+    {
+      "claim_id": "CLM-7A94C006AE",
+      "canonical_claim": "comfort and stop-use guidance grounded in the current NVG-001 working manual;",
+      "policy": "ALLOWED_WITH_QUALIFIERS",
+      "claim_class": "GENERAL",
+      "risk_class": "MEDIUM",
+      "locale_scope": [
+        "en"
+      ],
+      "owner_route": "/learn/what-does-vagus-nerve-stimulation-feel-like",
+      "applies_to_routes": [
+        "/learn/what-does-vagus-nerve-stimulation-feel-like"
+      ],
+      "allowed_wording": "comfort and stop-use guidance grounded in the current NVG-001 working manual;",
+      "disallowed_wording": [],
+      "evidence_ids": [],
+      "evidence_directness": "PENDING_1E4C",
+      "regulatory_gate": "NONE",
+      "safety_boundary": null,
+      "last_reviewed": "2026-09-12",
+      "status": "POLICY_LOCKED_EVIDENCE_LINK_PENDING",
+      "normalization_notes": [],
+      "provenance": [
+        {
+          "file": "docs/seo/wave2c1a-vns-sensation-source-and-claims-lock.md",
+          "line": 20,
+          "heading": "Binding claim boundary",
+          "source_control": "ALLOWED",
+          "file_sha256": "5379d1d9ee9322c8e803d433ee0373bfad7354cb8a0f14e6562535f8b4c615ad"
+        }
+      ]
+    },
+    {
+      "claim_id": "CLM-7AAB59200B",
+      "canonical_claim": "Relaxation, meditation and gentle yoga can be described as broader behavioural regulation practices with heterogeneous evidence.",
+      "policy": "ALLOWED_WITH_QUALIFIERS",
+      "claim_class": "EVIDENCE_TRANSFER",
+      "risk_class": "MEDIUM",
+      "locale_scope": [
+        "en"
+      ],
+      "owner_route": "/learn/vagus-nerve-exercises",
+      "applies_to_routes": [
+        "/learn/vagus-nerve-exercises"
+      ],
+      "allowed_wording": "Relaxation, meditation and gentle yoga can be described as broader behavioural regulation practices with heterogeneous evidence.",
+      "disallowed_wording": [],
+      "evidence_ids": [],
+      "evidence_directness": "PENDING_1E4C",
+      "regulatory_gate": "NONE",
+      "safety_boundary": null,
+      "last_reviewed": "2026-09-12",
+      "status": "POLICY_LOCKED_EVIDENCE_LINK_PENDING",
+      "normalization_notes": [],
+      "provenance": [
+        {
+          "file": "docs/seo/search-dominance-1e3b-vagus-nerve-exercises-source-claims-lock.md",
+          "line": 41,
+          "heading": "Locked claims",
+          "source_control": "ALLOWED",
+          "file_sha256": "7f7adebba42bc8230e3ad404fb1013532c561b8baa2c9a09e98e36a691ca5c70"
+        }
+      ]
+    },
+    {
+      "claim_id": "CLM-7B1858783E",
+      "canonical_claim": "Strong/deep front- or side-neck pressure, carotid-sinus self-massage and device-assisted percussion/vibration there are outside this general-wellness guide.",
+      "policy": "ALLOWED_WITH_QUALIFIERS",
+      "claim_class": "SAFETY",
+      "risk_class": "CRITICAL",
+      "locale_scope": [
+        "en"
+      ],
+      "owner_route": "/learn/vagus-nerve-massage",
+      "applies_to_routes": [
+        "/learn/vagus-nerve-massage"
+      ],
+      "allowed_wording": "Strong/deep front- or side-neck pressure, carotid-sinus self-massage and device-assisted percussion/vibration there are outside this general-wellness guide.",
+      "disallowed_wording": [],
+      "evidence_ids": [],
+      "evidence_directness": "PENDING_1E4C",
+      "regulatory_gate": "NONE",
+      "safety_boundary": "Strong/deep front- or side-neck pressure, carotid-sinus self-massage and device-assisted percussion/vibration there are outside this general-wellness guide.",
+      "last_reviewed": "2026-09-12",
+      "status": "POLICY_LOCKED_EVIDENCE_LINK_PENDING",
+      "normalization_notes": [],
+      "provenance": [
+        {
+          "file": "docs/seo/search-dominance-1e2d-reset-massage-owner-lift-source-claims-lock.md",
+          "line": 54,
+          "heading": "Massage claim and safety boundaries",
+          "source_control": "ALLOWED",
+          "file_sha256": "7ed19918048703fd6afc359da8c00f62e52d49bd7c40e4fcf662f28520faab33"
+        }
+      ]
+    },
+    {
+      "claim_id": "CLM-7C1110519C",
+      "canonical_claim": "Any claim that a specific HRV change proves target engagement, vagus strength, vagus damage, or treatment response.",
+      "policy": "NOT_ALLOWED",
+      "claim_class": "CONDITION",
+      "risk_class": "HIGH",
+      "locale_scope": [
+        "en"
+      ],
+      "owner_route": "/learn/vagus-nerve-exercises",
+      "applies_to_routes": [
+        "/learn/vagus-nerve-exercises"
+      ],
+      "allowed_wording": null,
+      "disallowed_wording": [
+        "Any claim that a specific HRV change proves target engagement, vagus strength, vagus damage, or treatment response."
+      ],
+      "evidence_ids": [],
+      "evidence_directness": "PENDING_1E4C",
+      "regulatory_gate": "NONE",
+      "safety_boundary": null,
+      "last_reviewed": "2026-09-12",
+      "status": "POLICY_LOCKED_EVIDENCE_LINK_PENDING",
+      "normalization_notes": [],
+      "provenance": [
+        {
+          "file": "docs/seo/search-dominance-1e3b-vagus-nerve-exercises-source-claims-lock.md",
+          "line": 48,
+          "heading": "Locked claims",
+          "source_control": "NOT_ALLOWED",
+          "file_sha256": "7f7adebba42bc8230e3ad404fb1013532c561b8baa2c9a09e98e36a691ca5c70"
+        }
+      ]
+    },
+    {
+      "claim_id": "CLM-7CA249DD07",
+      "canonical_claim": "Gentle touch or muscle massage may be discussed as touch/massage, not as proven selective vagus activation.",
+      "policy": "ALLOWED_WITH_QUALIFIERS",
+      "claim_class": "METHOD_BOUNDARY",
+      "risk_class": "HIGH",
+      "locale_scope": [
+        "nb"
+      ],
+      "owner_route": "/no/kunnskap/vagusnerven-og-massasje",
+      "applies_to_routes": [
+        "/no/kunnskap/vagusnerven-og-massasje"
+      ],
+      "allowed_wording": "Gentle touch or muscle massage may be discussed as touch/massage, not as proven selective vagus activation.",
+      "disallowed_wording": [],
+      "evidence_ids": [],
+      "evidence_directness": "PENDING_1E4C",
+      "regulatory_gate": "NONE",
+      "safety_boundary": null,
+      "last_reviewed": "2026-09-12",
+      "status": "POLICY_LOCKED_EVIDENCE_LINK_PENDING",
+      "normalization_notes": [],
+      "provenance": [
+        {
+          "file": "docs/seo/search-dominance-1e2g-no-protected-win-buyer-guide-source-claims-lock.md",
+          "line": 37,
+          "heading": "Massage claim and safety boundaries",
+          "source_control": "ALLOWED",
+          "file_sha256": "fb08c83d351b3af9dc61dc18a1e0d93b81a26fa624de71cb51d01f20cb3292b4"
+        }
+      ]
+    },
+    {
+      "claim_id": "CLM-8283B50084",
+      "canonical_claim": "stronger intensity is not necessarily better;",
+      "policy": "ALLOWED_WITH_QUALIFIERS",
+      "claim_class": "PRODUCT",
+      "risk_class": "MEDIUM",
+      "locale_scope": [
+        "en"
+      ],
+      "owner_route": "/learn/what-does-vagus-nerve-stimulation-feel-like",
+      "applies_to_routes": [
+        "/learn/what-does-vagus-nerve-stimulation-feel-like"
+      ],
+      "allowed_wording": "stronger intensity is not necessarily better;",
+      "disallowed_wording": [],
+      "evidence_ids": [],
+      "evidence_directness": "PENDING_1E4C",
+      "regulatory_gate": "NONE",
+      "safety_boundary": null,
+      "last_reviewed": "2026-09-12",
+      "status": "POLICY_LOCKED_EVIDENCE_LINK_PENDING",
+      "normalization_notes": [],
+      "provenance": [
+        {
+          "file": "docs/seo/wave2c1a-vns-sensation-source-and-claims-lock.md",
+          "line": 48,
+          "heading": "Product-specific source lock",
+          "source_control": "ALLOWED",
+          "file_sha256": "5379d1d9ee9322c8e803d433ee0373bfad7354cb8a0f14e6562535f8b4c615ad"
+        }
+      ]
+    },
+    {
+      "claim_id": "CLM-848E66ABE4",
+      "canonical_claim": "delaying urgent or appropriate healthcare.",
+      "policy": "NOT_ALLOWED",
+      "claim_class": "SAFETY",
+      "risk_class": "CRITICAL",
+      "locale_scope": [
+        "nb"
+      ],
+      "owner_route": "/no/kunnskap/overstimulert",
+      "applies_to_routes": [
+        "/no/kunnskap/overstimulert",
+        "/no/kunnskap/fastlast-i-stress"
+      ],
+      "allowed_wording": null,
+      "disallowed_wording": [
+        "delaying urgent or appropriate healthcare."
+      ],
+      "evidence_ids": [],
+      "evidence_directness": "PENDING_1E4C",
+      "regulatory_gate": "NONE",
+      "safety_boundary": "delaying urgent or appropriate healthcare.",
+      "last_reviewed": "2026-09-12",
+      "status": "POLICY_LOCKED_EVIDENCE_LINK_PENDING",
+      "normalization_notes": [],
+      "provenance": [
+        {
+          "file": "docs/seo/wave2c1d-overstimulation-source-and-claims-lock.md",
+          "line": 39,
+          "heading": "Claims boundary",
+          "source_control": "NOT_ALLOWED",
+          "file_sha256": "6f5f5408df1d9aafc98c91528b7583d5459e580bb936573a59da00b6d8bafae9"
+        },
+        {
+          "file": "docs/seo/wave2c1e-stuck-in-stress-source-and-claims-lock.md",
+          "line": 42,
+          "heading": "Claims boundary",
+          "source_control": "NOT_ALLOWED",
+          "file_sha256": "f29ddb9f7a8ea6d8f7203b9acc688d210806c335a06b2af898d687c5c5a9b72d"
+        }
+      ]
+    },
+    {
+      "claim_id": "CLM-86F9DCCB26",
+      "canonical_claim": "Manual massage/acupressure evidence as Neuvago product evidence.",
+      "policy": "NOT_ALLOWED",
+      "claim_class": "PRODUCT",
+      "risk_class": "HIGH",
+      "locale_scope": [
+        "nb"
+      ],
+      "owner_route": "/no/kunnskap/vagusnerven-og-massasje",
+      "applies_to_routes": [
+        "/no/kunnskap/vagusnerven-og-massasje"
+      ],
+      "allowed_wording": null,
+      "disallowed_wording": [
+        "Manual massage/acupressure evidence as Neuvago product evidence."
+      ],
+      "evidence_ids": [],
+      "evidence_directness": "PENDING_1E4C",
+      "regulatory_gate": "PRODUCT_FACT_CONTROL",
+      "safety_boundary": null,
+      "last_reviewed": "2026-09-12",
+      "status": "POLICY_LOCKED_EVIDENCE_LINK_PENDING",
+      "normalization_notes": [],
+      "provenance": [
+        {
+          "file": "docs/seo/search-dominance-1e2g-no-protected-win-buyer-guide-source-claims-lock.md",
+          "line": 45,
+          "heading": "Massage claim and safety boundaries",
+          "source_control": "NOT_ALLOWED",
+          "file_sha256": "fb08c83d351b3af9dc61dc18a1e0d93b81a26fa624de71cb51d01f20cb3292b4"
+        }
+      ]
+    },
+    {
+      "claim_id": "CLM-8B06692C73",
+      "canonical_claim": "a specific sensation predicts sleep, stress, recovery or clinical benefit;",
+      "policy": "NOT_ALLOWED",
+      "claim_class": "GENERAL",
+      "risk_class": "MEDIUM",
+      "locale_scope": [
+        "en"
+      ],
+      "owner_route": "/learn/what-does-vagus-nerve-stimulation-feel-like",
+      "applies_to_routes": [
+        "/learn/what-does-vagus-nerve-stimulation-feel-like"
+      ],
+      "allowed_wording": null,
+      "disallowed_wording": [
+        "a specific sensation predicts sleep, stress, recovery or clinical benefit;"
+      ],
+      "evidence_ids": [],
+      "evidence_directness": "PENDING_1E4C",
+      "regulatory_gate": "NONE",
+      "safety_boundary": null,
+      "last_reviewed": "2026-09-12",
+      "status": "POLICY_LOCKED_EVIDENCE_LINK_PENDING",
+      "normalization_notes": [
+        "1E.4B corrects the 1E.4A parser polarity for this must-not block; the locked source file is not changed."
+      ],
+      "provenance": [
+        {
+          "file": "docs/seo/wave2c1a-vns-sensation-source-and-claims-lock.md",
+          "line": 28,
+          "heading": "Binding claim boundary",
+          "source_control": "ALLOWED",
+          "file_sha256": "5379d1d9ee9322c8e803d433ee0373bfad7354cb8a0f14e6562535f8b4c615ad"
+        }
+      ]
+    },
+    {
+      "claim_id": "CLM-8B16FE3B8D",
+      "canonical_claim": "One HR/HRV value does not diagnose vagus function or prove a reset.",
+      "policy": "ALLOWED_WITH_QUALIFIERS",
+      "claim_class": "CONDITION",
+      "risk_class": "HIGH",
+      "locale_scope": [
+        "en"
+      ],
+      "owner_route": "/learn/vagus-nerve-reset",
+      "applies_to_routes": [
+        "/learn/vagus-nerve-reset"
+      ],
+      "allowed_wording": "One HR/HRV value does not diagnose vagus function or prove a reset.",
+      "disallowed_wording": [],
+      "evidence_ids": [],
+      "evidence_directness": "PENDING_1E4C",
+      "regulatory_gate": "NONE",
+      "safety_boundary": null,
+      "last_reviewed": "2026-09-12",
+      "status": "POLICY_LOCKED_EVIDENCE_LINK_PENDING",
+      "normalization_notes": [],
+      "provenance": [
+        {
+          "file": "docs/seo/search-dominance-1e2d-reset-massage-owner-lift-source-claims-lock.md",
+          "line": 35,
+          "heading": "Reset claim boundaries",
+          "source_control": "ALLOWED",
+          "file_sha256": "7ed19918048703fd6afc359da8c00f62e52d49bd7c40e4fcf662f28520faab33"
+        }
+      ]
+    },
+    {
+      "claim_id": "CLM-8E3366FD95",
+      "canonical_claim": "Outcome evidence can be described at the level of the intervention actually studied.",
+      "policy": "ALLOWED_WITH_QUALIFIERS",
+      "claim_class": "EVIDENCE_TRANSFER",
+      "risk_class": "MEDIUM",
+      "locale_scope": [
+        "en"
+      ],
+      "owner_route": "/learn/vagus-nerve-evidence-vs-internet-claims",
+      "applies_to_routes": [
+        "/learn/vagus-nerve-evidence-vs-internet-claims"
+      ],
+      "allowed_wording": "Outcome evidence can be described at the level of the intervention actually studied.",
+      "disallowed_wording": [],
+      "evidence_ids": [],
+      "evidence_directness": "PENDING_1E4C",
+      "regulatory_gate": "NONE",
+      "safety_boundary": null,
+      "last_reviewed": "2026-09-12",
+      "status": "POLICY_LOCKED_EVIDENCE_LINK_PENDING",
+      "normalization_notes": [],
+      "provenance": [
+        {
+          "file": "docs/seo/search-dominance-1e3c-evidence-internet-claims-source-claims-lock.md",
+          "line": 101,
+          "heading": "Tapping / EFT",
+          "source_control": "ALLOWED",
+          "file_sha256": "55d06456f3fae4cdf9800309384b81baaed80ca8dae64d1df32692e7b92dee42"
+        }
+      ]
+    },
+    {
+      "claim_id": "CLM-8EB71935B1",
+      "canonical_claim": "the statement that sensation depends on device, protocol, contact and individual sensitivity;",
+      "policy": "ALLOWED_WITH_QUALIFIERS",
+      "claim_class": "PRODUCT",
+      "risk_class": "MEDIUM",
+      "locale_scope": [
+        "en"
+      ],
+      "owner_route": "/learn/what-does-vagus-nerve-stimulation-feel-like",
+      "applies_to_routes": [
+        "/learn/what-does-vagus-nerve-stimulation-feel-like"
+      ],
+      "allowed_wording": "the statement that sensation depends on device, protocol, contact and individual sensitivity;",
+      "disallowed_wording": [],
+      "evidence_ids": [],
+      "evidence_directness": "PENDING_1E4C",
+      "regulatory_gate": "NONE",
+      "safety_boundary": null,
+      "last_reviewed": "2026-09-12",
+      "status": "POLICY_LOCKED_EVIDENCE_LINK_PENDING",
+      "normalization_notes": [],
+      "provenance": [
+        {
+          "file": "docs/seo/wave2c1a-vns-sensation-source-and-claims-lock.md",
+          "line": 21,
+          "heading": "Binding claim boundary",
+          "source_control": "ALLOWED",
+          "file_sha256": "5379d1d9ee9322c8e803d433ee0373bfad7354cb8a0f14e6562535f8b4c615ad"
+        }
+      ]
+    },
+    {
+      "claim_id": "CLM-8F321521EC",
+      "canonical_claim": "claiming that Neuvago treats chronic stress, anxiety, PTSD, burnout, insomnia or another medical condition;",
+      "policy": "NOT_ALLOWED",
+      "claim_class": "PRODUCT",
+      "risk_class": "HIGH",
+      "locale_scope": [
+        "nb"
+      ],
+      "owner_route": "/no/kunnskap/fastlast-i-stress",
+      "applies_to_routes": [
+        "/no/kunnskap/fastlast-i-stress"
+      ],
+      "allowed_wording": null,
+      "disallowed_wording": [
+        "claiming that Neuvago treats chronic stress, anxiety, PTSD, burnout, insomnia or another medical condition;"
+      ],
+      "evidence_ids": [],
+      "evidence_directness": "PENDING_1E4C",
+      "regulatory_gate": "PRODUCT_FACT_CONTROL",
+      "safety_boundary": null,
+      "last_reviewed": "2026-09-12",
+      "status": "POLICY_LOCKED_EVIDENCE_LINK_PENDING",
+      "normalization_notes": [],
+      "provenance": [
+        {
+          "file": "docs/seo/wave2c1e-stuck-in-stress-source-and-claims-lock.md",
+          "line": 40,
+          "heading": "Claims boundary",
+          "source_control": "NOT_ALLOWED",
+          "file_sha256": "f29ddb9f7a8ea6d8f7203b9acc688d210806c335a06b2af898d687c5c5a9b72d"
+        }
+      ]
+    },
+    {
+      "claim_id": "CLM-92CD776833",
+      "canonical_claim": "Dizziness, pain, pulse change or neurological symptoms as desirable proof of “vagus activation”.",
+      "policy": "NOT_ALLOWED",
+      "claim_class": "MEASUREMENT",
+      "risk_class": "CRITICAL",
+      "locale_scope": [
+        "nb"
+      ],
+      "owner_route": "/no/kunnskap/vagusnerven-og-massasje",
+      "applies_to_routes": [
+        "/no/kunnskap/vagusnerven-og-massasje"
+      ],
+      "allowed_wording": null,
+      "disallowed_wording": [
+        "Dizziness, pain, pulse change or neurological symptoms as desirable proof of “vagus activation”."
+      ],
+      "evidence_ids": [],
+      "evidence_directness": "PENDING_1E4C",
+      "regulatory_gate": "NONE",
+      "safety_boundary": null,
+      "last_reviewed": "2026-09-12",
+      "status": "POLICY_LOCKED_EVIDENCE_LINK_PENDING",
+      "normalization_notes": [],
+      "provenance": [
+        {
+          "file": "docs/seo/search-dominance-1e2g-no-protected-win-buyer-guide-source-claims-lock.md",
+          "line": 44,
+          "heading": "Massage claim and safety boundaries",
+          "source_control": "NOT_ALLOWED",
+          "file_sha256": "fb08c83d351b3af9dc61dc18a1e0d93b81a26fa624de71cb51d01f20cb3292b4"
+        }
+      ]
+    },
+    {
+      "claim_id": "CLM-9466EF2B65",
+      "canonical_claim": "A claim that symptom change proves vagus target engagement.",
+      "policy": "NOT_ALLOWED",
+      "claim_class": "METHOD_BOUNDARY",
+      "risk_class": "HIGH",
+      "locale_scope": [
+        "en"
+      ],
+      "owner_route": "/learn/vagus-nerve-evidence-vs-internet-claims",
+      "applies_to_routes": [
+        "/learn/vagus-nerve-evidence-vs-internet-claims"
+      ],
+      "allowed_wording": null,
+      "disallowed_wording": [
+        "A claim that symptom change proves vagus target engagement."
+      ],
+      "evidence_ids": [],
+      "evidence_directness": "PENDING_1E4C",
+      "regulatory_gate": "NONE",
+      "safety_boundary": null,
+      "last_reviewed": "2026-09-12",
+      "status": "POLICY_LOCKED_EVIDENCE_LINK_PENDING",
+      "normalization_notes": [],
+      "provenance": [
+        {
+          "file": "docs/seo/search-dominance-1e3c-evidence-internet-claims-source-claims-lock.md",
+          "line": 105,
+          "heading": "Tapping / EFT",
+          "source_control": "NOT_ALLOWED",
+          "file_sha256": "55d06456f3fae4cdf9800309384b81baaed80ca8dae64d1df32692e7b92dee42"
+        }
+      ]
+    },
+    {
+      "claim_id": "CLM-94915B3FF8",
+      "canonical_claim": "direct serious or worrying medical symptoms to appropriate professional/urgent care",
+      "policy": "SAFETY_BOUNDARY",
+      "claim_class": "SAFETY",
+      "risk_class": "CRITICAL",
+      "locale_scope": [
+        "en"
+      ],
+      "owner_route": "/learn/vagus-nerve-evidence-vs-internet-claims",
+      "applies_to_routes": [
+        "/learn/vagus-nerve-evidence-vs-internet-claims"
+      ],
+      "allowed_wording": null,
+      "disallowed_wording": [],
+      "evidence_ids": [],
+      "evidence_directness": "PENDING_1E4C",
+      "regulatory_gate": "NONE",
+      "safety_boundary": "direct serious or worrying medical symptoms to appropriate professional/urgent care",
+      "last_reviewed": "2026-09-12",
+      "status": "POLICY_LOCKED_EVIDENCE_LINK_PENDING",
+      "normalization_notes": [],
+      "provenance": [
+        {
+          "file": "docs/seo/search-dominance-1e3c-evidence-internet-claims-source-claims-lock.md",
+          "line": 136,
+          "heading": "Safety boundary",
+          "source_control": "SAFETY_BOUNDARY",
+          "file_sha256": "55d06456f3fae4cdf9800309384b81baaed80ca8dae64d1df32692e7b92dee42"
+        }
+      ]
+    },
+    {
+      "claim_id": "CLM-94C5307450",
+      "canonical_claim": "product efficacy, disease treatment, prevention, cure, diagnosis or personalised suitability",
+      "policy": "PROHIBITED",
+      "claim_class": "PRODUCT",
+      "risk_class": "CRITICAL",
+      "locale_scope": [
+        "en"
+      ],
+      "owner_route": "/learn/vagus-nerve-evidence-vs-internet-claims",
+      "applies_to_routes": [
+        "/learn/vagus-nerve-evidence-vs-internet-claims"
+      ],
+      "allowed_wording": null,
+      "disallowed_wording": [
+        "product efficacy, disease treatment, prevention, cure, diagnosis or personalised suitability"
+      ],
+      "evidence_ids": [],
+      "evidence_directness": "PENDING_1E4C",
+      "regulatory_gate": "PRODUCT_FACT_CONTROL",
+      "safety_boundary": null,
+      "last_reviewed": "2026-09-12",
+      "status": "POLICY_LOCKED_EVIDENCE_LINK_PENDING",
+      "normalization_notes": [],
+      "provenance": [
+        {
+          "file": "docs/seo/search-dominance-1e3c-evidence-internet-claims-source-claims-lock.md",
+          "line": 124,
+          "heading": "Cross-cutting prohibited claims",
+          "source_control": "PROHIBITED",
+          "file_sha256": "55d06456f3fae4cdf9800309384b81baaed80ca8dae64d1df32692e7b92dee42"
+        }
+      ]
+    },
+    {
+      "claim_id": "CLM-957756A8CA",
+      "canonical_claim": "claiming that the experience proves high cortisol, low vagal tone, abnormal HRV, autonomic dysfunction or a damaged vagus nerve;",
+      "policy": "NOT_ALLOWED",
+      "claim_class": "MEASUREMENT",
+      "risk_class": "HIGH",
+      "locale_scope": [
+        "nb"
+      ],
+      "owner_route": "/no/kunnskap/overstimulert",
+      "applies_to_routes": [
+        "/no/kunnskap/overstimulert"
+      ],
+      "allowed_wording": null,
+      "disallowed_wording": [
+        "claiming that the experience proves high cortisol, low vagal tone, abnormal HRV, autonomic dysfunction or a damaged vagus nerve;"
+      ],
+      "evidence_ids": [],
+      "evidence_directness": "PENDING_1E4C",
+      "regulatory_gate": "NONE",
+      "safety_boundary": null,
+      "last_reviewed": "2026-09-12",
+      "status": "POLICY_LOCKED_EVIDENCE_LINK_PENDING",
+      "normalization_notes": [],
+      "provenance": [
+        {
+          "file": "docs/seo/wave2c1d-overstimulation-source-and-claims-lock.md",
+          "line": 35,
+          "heading": "Claims boundary",
+          "source_control": "NOT_ALLOWED",
+          "file_sha256": "6f5f5408df1d9aafc98c91528b7583d5459e580bb936573a59da00b6d8bafae9"
+        }
+      ]
+    },
+    {
+      "claim_id": "CLM-96530D609D",
+      "canonical_claim": "The pharynx participates in cranial-nerve and airway-protective reflexes involving multiple pathways.",
+      "policy": "ALLOWED_WITH_QUALIFIERS",
+      "claim_class": "METHOD_BOUNDARY",
+      "risk_class": "MEDIUM",
+      "locale_scope": [
+        "en"
+      ],
+      "owner_route": "/learn/vagus-nerve-evidence-vs-internet-claims",
+      "applies_to_routes": [
+        "/learn/vagus-nerve-evidence-vs-internet-claims"
+      ],
+      "allowed_wording": "The pharynx participates in cranial-nerve and airway-protective reflexes involving multiple pathways.",
+      "disallowed_wording": [],
+      "evidence_ids": [],
+      "evidence_directness": "PENDING_1E4C",
+      "regulatory_gate": "NONE",
+      "safety_boundary": null,
+      "last_reviewed": "2026-09-12",
+      "status": "POLICY_LOCKED_EVIDENCE_LINK_PENDING",
+      "normalization_notes": [],
+      "provenance": [
+        {
+          "file": "docs/seo/search-dominance-1e3c-evidence-internet-claims-source-claims-lock.md",
+          "line": 79,
+          "heading": "Gargling",
+          "source_control": "ALLOWED",
+          "file_sha256": "55d06456f3fae4cdf9800309384b81baaed80ca8dae64d1df32692e7b92dee42"
+        }
+      ]
+    },
+    {
+      "claim_id": "CLM-98C5DD356B",
+      "canonical_claim": "Live price, shipping, subscription, return or warranty claims that are not taken from current official commerce facts.",
+      "policy": "NOT_ALLOWED",
+      "claim_class": "COMMERCIAL",
+      "risk_class": "MEDIUM",
+      "locale_scope": [
+        "nb"
+      ],
+      "owner_route": "/no/kunnskap/hvordan-velge-vagusnervestimulator",
+      "applies_to_routes": [
+        "/no/kunnskap/hvordan-velge-vagusnervestimulator"
+      ],
+      "allowed_wording": null,
+      "disallowed_wording": [
+        "Live price, shipping, subscription, return or warranty claims that are not taken from current official commerce facts."
+      ],
+      "evidence_ids": [],
+      "evidence_directness": "PENDING_1E4C",
+      "regulatory_gate": "NONE",
+      "safety_boundary": null,
+      "last_reviewed": "2026-09-12",
+      "status": "POLICY_LOCKED_EVIDENCE_LINK_PENDING",
+      "normalization_notes": [],
+      "provenance": [
+        {
+          "file": "docs/seo/search-dominance-1e2g-no-protected-win-buyer-guide-source-claims-lock.md",
+          "line": 57,
+          "heading": "Buyer-guide claim / commercial boundaries",
+          "source_control": "NOT_ALLOWED",
+          "file_sha256": "fb08c83d351b3af9dc61dc18a1e0d93b81a26fa624de71cb51d01f20cb3292b4"
+        }
+      ]
+    },
+    {
+      "claim_id": "CLM-9A095BE0F5",
+      "canonical_claim": "A claim that HRV proves direct, selective stimulation of the whole vagus nerve.",
+      "policy": "NOT_ALLOWED",
+      "claim_class": "MEASUREMENT",
+      "risk_class": "HIGH",
+      "locale_scope": [
+        "en"
+      ],
+      "owner_route": "/learn/vagus-nerve-evidence-vs-internet-claims",
+      "applies_to_routes": [
+        "/learn/vagus-nerve-evidence-vs-internet-claims"
+      ],
+      "allowed_wording": null,
+      "disallowed_wording": [
+        "A claim that HRV proves direct, selective stimulation of the whole vagus nerve."
+      ],
+      "evidence_ids": [],
+      "evidence_directness": "PENDING_1E4C",
+      "regulatory_gate": "NONE",
+      "safety_boundary": null,
+      "last_reviewed": "2026-09-12",
+      "status": "POLICY_LOCKED_EVIDENCE_LINK_PENDING",
+      "normalization_notes": [],
+      "provenance": [
+        {
+          "file": "docs/seo/search-dominance-1e3c-evidence-internet-claims-source-claims-lock.md",
+          "line": 64,
+          "heading": "Slow breathing",
+          "source_control": "NOT_ALLOWED",
+          "file_sha256": "55d06456f3fae4cdf9800309384b81baaed80ca8dae64d1df32692e7b92dee42"
+        }
+      ]
+    },
+    {
+      "claim_id": "CLM-9A56C84D86",
+      "canonical_claim": "Electrical VNS and behavioural exercises are different method categories.",
+      "policy": "ALLOWED_WITH_QUALIFIERS",
+      "claim_class": "METHOD_BOUNDARY",
+      "risk_class": "MEDIUM",
+      "locale_scope": [
+        "en"
+      ],
+      "owner_route": "/learn/vagus-nerve-exercises",
+      "applies_to_routes": [
+        "/learn/vagus-nerve-exercises"
+      ],
+      "allowed_wording": "Electrical VNS and behavioural exercises are different method categories.",
+      "disallowed_wording": [],
+      "evidence_ids": [],
+      "evidence_directness": "PENDING_1E4C",
+      "regulatory_gate": "NONE",
+      "safety_boundary": null,
+      "last_reviewed": "2026-09-12",
+      "status": "POLICY_LOCKED_EVIDENCE_LINK_PENDING",
+      "normalization_notes": [],
+      "provenance": [
+        {
+          "file": "docs/seo/search-dominance-1e3b-vagus-nerve-exercises-source-claims-lock.md",
+          "line": 43,
+          "heading": "Locked claims",
+          "source_control": "ALLOWED",
+          "file_sha256": "7f7adebba42bc8230e3ad404fb1013532c561b8baa2c9a09e98e36a691ca5c70"
+        }
+      ]
+    },
+    {
+      "claim_id": "CLM-A3A385C1F5",
+      "canonical_claim": "A claim that EFT/tapping works by proven vagus-nerve stimulation.",
+      "policy": "NOT_ALLOWED",
+      "claim_class": "METHOD_BOUNDARY",
+      "risk_class": "MEDIUM",
+      "locale_scope": [
+        "en"
+      ],
+      "owner_route": "/learn/vagus-nerve-evidence-vs-internet-claims",
+      "applies_to_routes": [
+        "/learn/vagus-nerve-evidence-vs-internet-claims"
+      ],
+      "allowed_wording": null,
+      "disallowed_wording": [
+        "A claim that EFT/tapping works by proven vagus-nerve stimulation."
+      ],
+      "evidence_ids": [],
+      "evidence_directness": "PENDING_1E4C",
+      "regulatory_gate": "NONE",
+      "safety_boundary": null,
+      "last_reviewed": "2026-09-12",
+      "status": "POLICY_LOCKED_EVIDENCE_LINK_PENDING",
+      "normalization_notes": [],
+      "provenance": [
+        {
+          "file": "docs/seo/search-dominance-1e3c-evidence-internet-claims-source-claims-lock.md",
+          "line": 104,
+          "heading": "Tapping / EFT",
+          "source_control": "NOT_ALLOWED",
+          "file_sha256": "55d06456f3fae4cdf9800309384b81baaed80ca8dae64d1df32692e7b92dee42"
+        }
+      ]
+    },
+    {
+      "claim_id": "CLM-A597AB4F5D",
+      "canonical_claim": "Controlled oropharyngeal stimulation can change cardiovascular and sympathetic responses.",
+      "policy": "ALLOWED_WITH_QUALIFIERS",
+      "claim_class": "METHOD_BOUNDARY",
+      "risk_class": "MEDIUM",
+      "locale_scope": [
+        "en"
+      ],
+      "owner_route": "/learn/vagus-nerve-evidence-vs-internet-claims",
+      "applies_to_routes": [
+        "/learn/vagus-nerve-evidence-vs-internet-claims"
+      ],
+      "allowed_wording": "Controlled oropharyngeal stimulation can change cardiovascular and sympathetic responses.",
+      "disallowed_wording": [],
+      "evidence_ids": [],
+      "evidence_directness": "PENDING_1E4C",
+      "regulatory_gate": "NONE",
+      "safety_boundary": null,
+      "last_reviewed": "2026-09-12",
+      "status": "POLICY_LOCKED_EVIDENCE_LINK_PENDING",
+      "normalization_notes": [],
+      "provenance": [
+        {
+          "file": "docs/seo/search-dominance-1e3c-evidence-internet-claims-source-claims-lock.md",
+          "line": 80,
+          "heading": "Gargling",
+          "source_control": "ALLOWED",
+          "file_sha256": "55d06456f3fae4cdf9800309384b81baaed80ca8dae64d1df32692e7b92dee42"
+        }
+      ]
+    },
+    {
+      "claim_id": "CLM-AB5E5606AA",
+      "canonical_claim": "A neutral selection framework based on device category, intended use, documentation, safety information, protocol transparency, practical ownership, support, privacy and total cost.",
+      "policy": "ALLOWED_WITH_QUALIFIERS",
+      "claim_class": "COMMERCIAL",
+      "risk_class": "MEDIUM",
+      "locale_scope": [
+        "nb"
+      ],
+      "owner_route": "/no/kunnskap/hvordan-velge-vagusnervestimulator",
+      "applies_to_routes": [
+        "/no/kunnskap/hvordan-velge-vagusnervestimulator"
+      ],
+      "allowed_wording": "A neutral selection framework based on device category, intended use, documentation, safety information, protocol transparency, practical ownership, support, privacy and total cost.",
+      "disallowed_wording": [],
+      "evidence_ids": [],
+      "evidence_directness": "PENDING_1E4C",
+      "regulatory_gate": "NONE",
+      "safety_boundary": null,
+      "last_reviewed": "2026-09-12",
+      "status": "POLICY_LOCKED_EVIDENCE_LINK_PENDING",
+      "normalization_notes": [],
+      "provenance": [
+        {
+          "file": "docs/seo/search-dominance-1e2g-no-protected-win-buyer-guide-source-claims-lock.md",
+          "line": 50,
+          "heading": "Buyer-guide claim / commercial boundaries",
+          "source_control": "ALLOWED",
+          "file_sha256": "fb08c83d351b3af9dc61dc18a1e0d93b81a26fa624de71cb51d01f20cb3292b4"
+        }
+      ]
+    },
+    {
+      "claim_id": "CLM-AFBD0DA4C6",
+      "canonical_claim": "improvised electrical placement/settings, carotid/neck manoeuvres or cold-exposure dosing",
+      "policy": "PROHIBITED",
+      "claim_class": "SAFETY",
+      "risk_class": "CRITICAL",
+      "locale_scope": [
+        "en"
+      ],
+      "owner_route": "/learn/vagus-nerve-evidence-vs-internet-claims",
+      "applies_to_routes": [
+        "/learn/vagus-nerve-evidence-vs-internet-claims"
+      ],
+      "allowed_wording": null,
+      "disallowed_wording": [
+        "improvised electrical placement/settings, carotid/neck manoeuvres or cold-exposure dosing"
+      ],
+      "evidence_ids": [],
+      "evidence_directness": "PENDING_1E4C",
+      "regulatory_gate": "NONE",
+      "safety_boundary": "improvised electrical placement/settings, carotid/neck manoeuvres or cold-exposure dosing",
+      "last_reviewed": "2026-09-12",
+      "status": "POLICY_LOCKED_EVIDENCE_LINK_PENDING",
+      "normalization_notes": [],
+      "provenance": [
+        {
+          "file": "docs/seo/search-dominance-1e3c-evidence-internet-claims-source-claims-lock.md",
+          "line": 125,
+          "heading": "Cross-cutting prohibited claims",
+          "source_control": "PROHIBITED",
+          "file_sha256": "55d06456f3fae4cdf9800309384b81baaed80ca8dae64d1df32692e7b92dee42"
+        }
+      ]
+    },
+    {
+      "claim_id": "CLM-B123609E1D",
+      "canonical_claim": "claiming that a stress response must be “completed” or that the nervous system is literally stuck;",
+      "policy": "NOT_ALLOWED",
+      "claim_class": "GENERAL",
+      "risk_class": "MEDIUM",
+      "locale_scope": [
+        "nb"
+      ],
+      "owner_route": "/no/kunnskap/fastlast-i-stress",
+      "applies_to_routes": [
+        "/no/kunnskap/fastlast-i-stress"
+      ],
+      "allowed_wording": null,
+      "disallowed_wording": [
+        "claiming that a stress response must be “completed” or that the nervous system is literally stuck;"
+      ],
+      "evidence_ids": [],
+      "evidence_directness": "PENDING_1E4C",
+      "regulatory_gate": "NONE",
+      "safety_boundary": null,
+      "last_reviewed": "2026-09-12",
+      "status": "POLICY_LOCKED_EVIDENCE_LINK_PENDING",
+      "normalization_notes": [],
+      "provenance": [
+        {
+          "file": "docs/seo/wave2c1e-stuck-in-stress-source-and-claims-lock.md",
+          "line": 37,
+          "heading": "Claims boundary",
+          "source_control": "NOT_ALLOWED",
+          "file_sha256": "f29ddb9f7a8ea6d8f7203b9acc688d210806c335a06b2af898d687c5c5a9b72d"
+        }
+      ]
+    },
+    {
+      "claim_id": "CLM-B3CC102249",
+      "canonical_claim": "A claim that humming is a validated vagus reset, treatment or universal protocol.",
+      "policy": "NOT_ALLOWED",
+      "claim_class": "CONDITION",
+      "risk_class": "HIGH",
+      "locale_scope": [
+        "en"
+      ],
+      "owner_route": "/learn/vagus-nerve-evidence-vs-internet-claims",
+      "applies_to_routes": [
+        "/learn/vagus-nerve-evidence-vs-internet-claims"
+      ],
+      "allowed_wording": null,
+      "disallowed_wording": [
+        "A claim that humming is a validated vagus reset, treatment or universal protocol."
+      ],
+      "evidence_ids": [],
+      "evidence_directness": "PENDING_1E4C",
+      "regulatory_gate": "NONE",
+      "safety_boundary": null,
+      "last_reviewed": "2026-09-12",
+      "status": "POLICY_LOCKED_EVIDENCE_LINK_PENDING",
+      "normalization_notes": [],
+      "provenance": [
+        {
+          "file": "docs/seo/search-dominance-1e3c-evidence-internet-claims-source-claims-lock.md",
+          "line": 75,
+          "heading": "Humming / singing",
+          "source_control": "NOT_ALLOWED",
+          "file_sha256": "55d06456f3fae4cdf9800309384b81baaed80ca8dae64d1df32692e7b92dee42"
+        }
+      ]
+    },
+    {
+      "claim_id": "CLM-B3F6B7DC0C",
+      "canonical_claim": "Massage studies may report subjective or cardiac/autonomic measures without proving selective vagus engagement.",
+      "policy": "ALLOWED_WITH_QUALIFIERS",
+      "claim_class": "MEASUREMENT",
+      "risk_class": "MEDIUM",
+      "locale_scope": [
+        "nb"
+      ],
+      "owner_route": "/no/kunnskap/vagusnerven-og-massasje",
+      "applies_to_routes": [
+        "/no/kunnskap/vagusnerven-og-massasje"
+      ],
+      "allowed_wording": "Massage studies may report subjective or cardiac/autonomic measures without proving selective vagus engagement.",
+      "disallowed_wording": [],
+      "evidence_ids": [],
+      "evidence_directness": "PENDING_1E4C",
+      "regulatory_gate": "NONE",
+      "safety_boundary": null,
+      "last_reviewed": "2026-09-12",
+      "status": "POLICY_LOCKED_EVIDENCE_LINK_PENDING",
+      "normalization_notes": [],
+      "provenance": [
+        {
+          "file": "docs/seo/search-dominance-1e2g-no-protected-win-buyer-guide-source-claims-lock.md",
+          "line": 39,
+          "heading": "Massage claim and safety boundaries",
+          "source_control": "ALLOWED",
+          "file_sha256": "fb08c83d351b3af9dc61dc18a1e0d93b81a26fa624de71cb51d01f20cb3292b4"
+        }
+      ]
+    },
+    {
+      "claim_id": "CLM-B4F8FCCEA4",
+      "canonical_claim": "A claim that a breathing count diagnoses vagus strength or guarantees a health outcome.",
+      "policy": "NOT_ALLOWED",
+      "claim_class": "CONDITION",
+      "risk_class": "HIGH",
+      "locale_scope": [
+        "en"
+      ],
+      "owner_route": "/learn/vagus-nerve-evidence-vs-internet-claims",
+      "applies_to_routes": [
+        "/learn/vagus-nerve-evidence-vs-internet-claims"
+      ],
+      "allowed_wording": null,
+      "disallowed_wording": [
+        "A claim that a breathing count diagnoses vagus strength or guarantees a health outcome."
+      ],
+      "evidence_ids": [],
+      "evidence_directness": "PENDING_1E4C",
+      "regulatory_gate": "NONE",
+      "safety_boundary": null,
+      "last_reviewed": "2026-09-12",
+      "status": "POLICY_LOCKED_EVIDENCE_LINK_PENDING",
+      "normalization_notes": [],
+      "provenance": [
+        {
+          "file": "docs/seo/search-dominance-1e3c-evidence-internet-claims-source-claims-lock.md",
+          "line": 65,
+          "heading": "Slow breathing",
+          "source_control": "NOT_ALLOWED",
+          "file_sha256": "55d06456f3fae4cdf9800309384b81baaed80ca8dae64d1df32692e7b92dee42"
+        }
+      ]
+    },
+    {
+      "claim_id": "CLM-B51A54CFD8",
+      "canonical_claim": "A claim that ordinary gargling is established as a direct vagus-stimulation or parasympathetic-reset protocol.",
+      "policy": "NOT_ALLOWED",
+      "claim_class": "METHOD_BOUNDARY",
+      "risk_class": "MEDIUM",
+      "locale_scope": [
+        "en"
+      ],
+      "owner_route": "/learn/vagus-nerve-evidence-vs-internet-claims",
+      "applies_to_routes": [
+        "/learn/vagus-nerve-evidence-vs-internet-claims"
+      ],
+      "allowed_wording": null,
+      "disallowed_wording": [
+        "A claim that ordinary gargling is established as a direct vagus-stimulation or parasympathetic-reset protocol."
+      ],
+      "evidence_ids": [],
+      "evidence_directness": "PENDING_1E4C",
+      "regulatory_gate": "NONE",
+      "safety_boundary": null,
+      "last_reviewed": "2026-09-12",
+      "status": "POLICY_LOCKED_EVIDENCE_LINK_PENDING",
+      "normalization_notes": [],
+      "provenance": [
+        {
+          "file": "docs/seo/search-dominance-1e3c-evidence-internet-claims-source-claims-lock.md",
+          "line": 83,
+          "heading": "Gargling",
+          "source_control": "NOT_ALLOWED",
+          "file_sha256": "55d06456f3fae4cdf9800309384b81baaed80ca8dae64d1df32692e7b92dee42"
+        }
+      ]
+    },
+    {
+      "claim_id": "CLM-B5E5922A06",
+      "canonical_claim": "Respiratory pacing and vocalisation are plausible contributors to observed autonomic changes.",
+      "policy": "ALLOWED_WITH_QUALIFIERS",
+      "claim_class": "METHOD_BOUNDARY",
+      "risk_class": "MEDIUM",
+      "locale_scope": [
+        "en"
+      ],
+      "owner_route": "/learn/vagus-nerve-evidence-vs-internet-claims",
+      "applies_to_routes": [
+        "/learn/vagus-nerve-evidence-vs-internet-claims"
+      ],
+      "allowed_wording": "Respiratory pacing and vocalisation are plausible contributors to observed autonomic changes.",
+      "disallowed_wording": [],
+      "evidence_ids": [],
+      "evidence_directness": "PENDING_1E4C",
+      "regulatory_gate": "NONE",
+      "safety_boundary": null,
+      "last_reviewed": "2026-09-12",
+      "status": "POLICY_LOCKED_EVIDENCE_LINK_PENDING",
+      "normalization_notes": [],
+      "provenance": [
+        {
+          "file": "docs/seo/search-dominance-1e3c-evidence-internet-claims-source-claims-lock.md",
+          "line": 71,
+          "heading": "Humming / singing",
+          "source_control": "ALLOWED",
+          "file_sha256": "55d06456f3fae4cdf9800309384b81baaed80ca8dae64d1df32692e7b92dee42"
+        }
+      ]
+    },
+    {
+      "claim_id": "CLM-BD7369D8D9",
+      "canonical_claim": "EFT has been studied as a psychological intervention and systematic reviews report promising symptom outcomes with methodological limitations.",
+      "policy": "ALLOWED_WITH_QUALIFIERS",
+      "claim_class": "EVIDENCE_TRANSFER",
+      "risk_class": "MEDIUM",
+      "locale_scope": [
+        "en"
+      ],
+      "owner_route": "/learn/vagus-nerve-evidence-vs-internet-claims",
+      "applies_to_routes": [
+        "/learn/vagus-nerve-evidence-vs-internet-claims"
+      ],
+      "allowed_wording": "EFT has been studied as a psychological intervention and systematic reviews report promising symptom outcomes with methodological limitations.",
+      "disallowed_wording": [],
+      "evidence_ids": [],
+      "evidence_directness": "PENDING_1E4C",
+      "regulatory_gate": "NONE",
+      "safety_boundary": null,
+      "last_reviewed": "2026-09-12",
+      "status": "POLICY_LOCKED_EVIDENCE_LINK_PENDING",
+      "normalization_notes": [],
+      "provenance": [
+        {
+          "file": "docs/seo/search-dominance-1e3c-evidence-internet-claims-source-claims-lock.md",
+          "line": 100,
+          "heading": "Tapping / EFT",
+          "source_control": "ALLOWED",
+          "file_sha256": "55d06456f3fae4cdf9800309384b81baaed80ca8dae64d1df32692e7b92dee42"
+        }
+      ]
+    },
+    {
+      "claim_id": "CLM-BDA61AC5AC",
+      "canonical_claim": "HRV is an indirect, context-sensitive cardiac measure and is not a direct whole-vagus test.",
+      "policy": "ALLOWED_WITH_QUALIFIERS",
+      "claim_class": "MEASUREMENT",
+      "risk_class": "HIGH",
+      "locale_scope": [
+        "en"
+      ],
+      "owner_route": "/learn/vagus-nerve-exercises",
+      "applies_to_routes": [
+        "/learn/vagus-nerve-exercises"
+      ],
+      "allowed_wording": "HRV is an indirect, context-sensitive cardiac measure and is not a direct whole-vagus test.",
+      "disallowed_wording": [],
+      "evidence_ids": [],
+      "evidence_directness": "PENDING_1E4C",
+      "regulatory_gate": "NONE",
+      "safety_boundary": null,
+      "last_reviewed": "2026-09-12",
+      "status": "POLICY_LOCKED_EVIDENCE_LINK_PENDING",
+      "normalization_notes": [],
+      "provenance": [
+        {
+          "file": "docs/seo/search-dominance-1e3b-vagus-nerve-exercises-source-claims-lock.md",
+          "line": 42,
+          "heading": "Locked claims",
+          "source_control": "ALLOWED",
+          "file_sha256": "7f7adebba42bc8230e3ad404fb1013532c561b8baa2c9a09e98e36a691ca5c70"
+        }
+      ]
+    },
+    {
+      "claim_id": "CLM-BDE1ECC98D",
+      "canonical_claim": "A claim that humming vibration is proven to selectively stimulate the vagus nerve.",
+      "policy": "NOT_ALLOWED",
+      "claim_class": "METHOD_BOUNDARY",
+      "risk_class": "MEDIUM",
+      "locale_scope": [
+        "en"
+      ],
+      "owner_route": "/learn/vagus-nerve-evidence-vs-internet-claims",
+      "applies_to_routes": [
+        "/learn/vagus-nerve-evidence-vs-internet-claims"
+      ],
+      "allowed_wording": null,
+      "disallowed_wording": [
+        "A claim that humming vibration is proven to selectively stimulate the vagus nerve."
+      ],
+      "evidence_ids": [],
+      "evidence_directness": "PENDING_1E4C",
+      "regulatory_gate": "NONE",
+      "safety_boundary": null,
+      "last_reviewed": "2026-09-12",
+      "status": "POLICY_LOCKED_EVIDENCE_LINK_PENDING",
+      "normalization_notes": [],
+      "provenance": [
+        {
+          "file": "docs/seo/search-dominance-1e3c-evidence-internet-claims-source-claims-lock.md",
+          "line": 74,
+          "heading": "Humming / singing",
+          "source_control": "NOT_ALLOWED",
+          "file_sha256": "55d06456f3fae4cdf9800309384b81baaed80ca8dae64d1df32692e7b92dee42"
+        }
+      ]
+    },
+    {
+      "claim_id": "CLM-BF9E54154D",
+      "canonical_claim": "Some controlled paradigms show increased cardiac vagal/parasympathetic indices during exposure.",
+      "policy": "ALLOWED_WITH_QUALIFIERS",
+      "claim_class": "MEASUREMENT",
+      "risk_class": "MEDIUM",
+      "locale_scope": [
+        "en"
+      ],
+      "owner_route": "/learn/vagus-nerve-evidence-vs-internet-claims",
+      "applies_to_routes": [
+        "/learn/vagus-nerve-evidence-vs-internet-claims"
+      ],
+      "allowed_wording": "Some controlled paradigms show increased cardiac vagal/parasympathetic indices during exposure.",
+      "disallowed_wording": [],
+      "evidence_ids": [],
+      "evidence_directness": "PENDING_1E4C",
+      "regulatory_gate": "NONE",
+      "safety_boundary": null,
+      "last_reviewed": "2026-09-12",
+      "status": "POLICY_LOCKED_EVIDENCE_LINK_PENDING",
+      "normalization_notes": [],
+      "provenance": [
+        {
+          "file": "docs/seo/search-dominance-1e3c-evidence-internet-claims-source-claims-lock.md",
+          "line": 89,
+          "heading": "Cold exposure / face cooling",
+          "source_control": "ALLOWED",
+          "file_sha256": "55d06456f3fae4cdf9800309384b81baaed80ca8dae64d1df32692e7b92dee42"
+        }
+      ]
+    },
+    {
+      "claim_id": "CLM-C073162252",
+      "canonical_claim": "The vagus nerve can literally be reset on command.",
+      "policy": "NOT_ALLOWED",
+      "claim_class": "METHOD_BOUNDARY",
+      "risk_class": "MEDIUM",
+      "locale_scope": [
+        "en"
+      ],
+      "owner_route": "/learn/vagus-nerve-reset",
+      "applies_to_routes": [
+        "/learn/vagus-nerve-reset"
+      ],
+      "allowed_wording": null,
+      "disallowed_wording": [
+        "The vagus nerve can literally be reset on command."
+      ],
+      "evidence_ids": [],
+      "evidence_directness": "PENDING_1E4C",
+      "regulatory_gate": "NONE",
+      "safety_boundary": null,
+      "last_reviewed": "2026-09-12",
+      "status": "POLICY_LOCKED_EVIDENCE_LINK_PENDING",
+      "normalization_notes": [],
+      "provenance": [
+        {
+          "file": "docs/seo/search-dominance-1e2d-reset-massage-owner-lift-source-claims-lock.md",
+          "line": 40,
+          "heading": "Reset claim boundaries",
+          "source_control": "NOT_ALLOWED",
+          "file_sha256": "7ed19918048703fd6afc359da8c00f62e52d49bd7c40e4fcf662f28520faab33"
+        }
+      ]
+    },
+    {
+      "claim_id": "CLM-C236D84B2C",
+      "canonical_claim": "Pressure-point traditions and acupressure outcomes do not anatomically validate one universal “vagus point.”",
+      "policy": "ALLOWED_WITH_QUALIFIERS",
+      "claim_class": "METHOD_BOUNDARY",
+      "risk_class": "MEDIUM",
+      "locale_scope": [
+        "en"
+      ],
+      "owner_route": "/learn/vagus-nerve-massage",
+      "applies_to_routes": [
+        "/learn/vagus-nerve-massage"
+      ],
+      "allowed_wording": "Pressure-point traditions and acupressure outcomes do not anatomically validate one universal “vagus point.”",
+      "disallowed_wording": [],
+      "evidence_ids": [],
+      "evidence_directness": "PENDING_1E4C",
+      "regulatory_gate": "NONE",
+      "safety_boundary": null,
+      "last_reviewed": "2026-09-12",
+      "status": "POLICY_LOCKED_EVIDENCE_LINK_PENDING",
+      "normalization_notes": [],
+      "provenance": [
+        {
+          "file": "docs/seo/search-dominance-1e2d-reset-massage-owner-lift-source-claims-lock.md",
+          "line": 53,
+          "heading": "Massage claim and safety boundaries",
+          "source_control": "ALLOWED",
+          "file_sha256": "7ed19918048703fd6afc359da8c00f62e52d49bd7c40e4fcf662f28520faab33"
+        }
+      ]
+    },
+    {
+      "claim_id": "CLM-C71E4EA67D",
+      "canonical_claim": "A universal vagus pressure point.",
+      "policy": "NOT_ALLOWED",
+      "claim_class": "SAFETY",
+      "risk_class": "MEDIUM",
+      "locale_scope": [
+        "en"
+      ],
+      "owner_route": "/learn/vagus-nerve-evidence-vs-internet-claims",
+      "applies_to_routes": [
+        "/learn/vagus-nerve-evidence-vs-internet-claims"
+      ],
+      "allowed_wording": null,
+      "disallowed_wording": [
+        "A universal vagus pressure point."
+      ],
+      "evidence_ids": [],
+      "evidence_directness": "PENDING_1E4C",
+      "regulatory_gate": "NONE",
+      "safety_boundary": "A universal vagus pressure point.",
+      "last_reviewed": "2026-09-12",
+      "status": "POLICY_LOCKED_EVIDENCE_LINK_PENDING",
+      "normalization_notes": [],
+      "provenance": [
+        {
+          "file": "docs/seo/search-dominance-1e3c-evidence-internet-claims-source-claims-lock.md",
+          "line": 113,
+          "heading": "Neck pressure / carotid sinus",
+          "source_control": "NOT_ALLOWED",
+          "file_sha256": "55d06456f3fae4cdf9800309384b81baaed80ca8dae64d1df32692e7b92dee42"
+        }
+      ]
+    },
+    {
+      "claim_id": "CLM-C7E8CB01CD",
+      "canonical_claim": "Any “reset,” “heal,” “activate on command,” “tone the vagus,” or guaranteed parasympathetic-switch claim.",
+      "policy": "NOT_ALLOWED",
+      "claim_class": "METHOD_BOUNDARY",
+      "risk_class": "MEDIUM",
+      "locale_scope": [
+        "en"
+      ],
+      "owner_route": "/learn/vagus-nerve-exercises",
+      "applies_to_routes": [
+        "/learn/vagus-nerve-exercises"
+      ],
+      "allowed_wording": null,
+      "disallowed_wording": [
+        "Any “reset,” “heal,” “activate on command,” “tone the vagus,” or guaranteed parasympathetic-switch claim."
+      ],
+      "evidence_ids": [],
+      "evidence_directness": "PENDING_1E4C",
+      "regulatory_gate": "NONE",
+      "safety_boundary": null,
+      "last_reviewed": "2026-09-12",
+      "status": "POLICY_LOCKED_EVIDENCE_LINK_PENDING",
+      "normalization_notes": [],
+      "provenance": [
+        {
+          "file": "docs/seo/search-dominance-1e3b-vagus-nerve-exercises-source-claims-lock.md",
+          "line": 47,
+          "heading": "Locked claims",
+          "source_control": "NOT_ALLOWED",
+          "file_sha256": "7f7adebba42bc8230e3ad404fb1013532c561b8baa2c9a09e98e36a691ca5c70"
+        }
+      ]
+    },
+    {
+      "claim_id": "CLM-CE016905E4",
+      "canonical_claim": "implying that stronger stimulation is better;",
+      "policy": "NOT_ALLOWED",
+      "claim_class": "MECHANISM",
+      "risk_class": "HIGH",
+      "locale_scope": [
+        "nb"
+      ],
+      "owner_route": "/no/kunnskap/overstimulert",
+      "applies_to_routes": [
+        "/no/kunnskap/overstimulert"
+      ],
+      "allowed_wording": null,
+      "disallowed_wording": [
+        "implying that stronger stimulation is better;"
+      ],
+      "evidence_ids": [],
+      "evidence_directness": "PENDING_1E4C",
+      "regulatory_gate": "NONE",
+      "safety_boundary": null,
+      "last_reviewed": "2026-09-12",
+      "status": "POLICY_LOCKED_EVIDENCE_LINK_PENDING",
+      "normalization_notes": [],
+      "provenance": [
+        {
+          "file": "docs/seo/wave2c1d-overstimulation-source-and-claims-lock.md",
+          "line": 37,
+          "heading": "Claims boundary",
+          "source_control": "NOT_ALLOWED",
+          "file_sha256": "6f5f5408df1d9aafc98c91528b7583d5459e580bb936573a59da00b6d8bafae9"
+        }
+      ]
+    },
+    {
+      "claim_id": "CLM-CFB678ED5E",
+      "canonical_claim": "People can massage skin and muscle, but that is not the same as directly massaging the cervical vagus nerve.",
+      "policy": "ALLOWED_WITH_QUALIFIERS",
+      "claim_class": "METHOD_BOUNDARY",
+      "risk_class": "MEDIUM",
+      "locale_scope": [
+        "en",
+        "nb"
+      ],
+      "owner_route": "/learn/vagus-nerve-massage",
+      "applies_to_routes": [
+        "/learn/vagus-nerve-massage",
+        "/no/kunnskap/vagusnerven-og-massasje"
+      ],
+      "allowed_wording": "People can massage skin and muscle, but that is not the same as directly massaging the cervical vagus nerve.",
+      "disallowed_wording": [],
+      "evidence_ids": [],
+      "evidence_directness": "PENDING_1E4C",
+      "regulatory_gate": "NONE",
+      "safety_boundary": null,
+      "last_reviewed": "2026-09-12",
+      "status": "POLICY_LOCKED_EVIDENCE_LINK_PENDING",
+      "normalization_notes": [],
+      "provenance": [
+        {
+          "file": "docs/seo/search-dominance-1e2d-reset-massage-owner-lift-source-claims-lock.md",
+          "line": 50,
+          "heading": "Massage claim and safety boundaries",
+          "source_control": "ALLOWED",
+          "file_sha256": "7ed19918048703fd6afc359da8c00f62e52d49bd7c40e4fcf662f28520faab33"
+        },
+        {
+          "file": "docs/seo/search-dominance-1e2g-no-protected-win-buyer-guide-source-claims-lock.md",
+          "line": 36,
+          "heading": "Massage claim and safety boundaries",
+          "source_control": "ALLOWED",
+          "file_sha256": "fb08c83d351b3af9dc61dc18a1e0d93b81a26fa624de71cb51d01f20cb3292b4"
+        }
+      ]
+    },
+    {
+      "claim_id": "CLM-D3FE29A3E7",
+      "canonical_claim": "presenting `fastlåst i stress` as a medical diagnosis;",
+      "policy": "NOT_ALLOWED",
+      "claim_class": "CONDITION",
+      "risk_class": "HIGH",
+      "locale_scope": [
+        "nb"
+      ],
+      "owner_route": "/no/kunnskap/fastlast-i-stress",
+      "applies_to_routes": [
+        "/no/kunnskap/fastlast-i-stress"
+      ],
+      "allowed_wording": null,
+      "disallowed_wording": [
+        "presenting `fastlåst i stress` as a medical diagnosis;"
+      ],
+      "evidence_ids": [],
+      "evidence_directness": "PENDING_1E4C",
+      "regulatory_gate": "NONE",
+      "safety_boundary": null,
+      "last_reviewed": "2026-09-12",
+      "status": "POLICY_LOCKED_EVIDENCE_LINK_PENDING",
+      "normalization_notes": [],
+      "provenance": [
+        {
+          "file": "docs/seo/wave2c1e-stuck-in-stress-source-and-claims-lock.md",
+          "line": 36,
+          "heading": "Claims boundary",
+          "source_control": "NOT_ALLOWED",
+          "file_sha256": "f29ddb9f7a8ea6d8f7203b9acc688d210806c335a06b2af898d687c5c5a9b72d"
+        }
+      ]
+    },
+    {
+      "claim_id": "CLM-D45BE1FCB6",
+      "canonical_claim": "the statement that sensation alone does not prove selective target engagement or benefit.",
+      "policy": "ALLOWED_WITH_QUALIFIERS",
+      "claim_class": "MECHANISM",
+      "risk_class": "HIGH",
+      "locale_scope": [
+        "en"
+      ],
+      "owner_route": "/learn/what-does-vagus-nerve-stimulation-feel-like",
+      "applies_to_routes": [
+        "/learn/what-does-vagus-nerve-stimulation-feel-like"
+      ],
+      "allowed_wording": "the statement that sensation alone does not prove selective target engagement or benefit.",
+      "disallowed_wording": [],
+      "evidence_ids": [],
+      "evidence_directness": "PENDING_1E4C",
+      "regulatory_gate": "NONE",
+      "safety_boundary": null,
+      "last_reviewed": "2026-09-12",
+      "status": "POLICY_LOCKED_EVIDENCE_LINK_PENDING",
+      "normalization_notes": [],
+      "provenance": [
+        {
+          "file": "docs/seo/wave2c1a-vns-sensation-source-and-claims-lock.md",
+          "line": 22,
+          "heading": "Binding claim boundary",
+          "source_control": "ALLOWED",
+          "file_sha256": "5379d1d9ee9322c8e803d433ee0373bfad7354cb8a0f14e6562535f8b4c615ad"
+        }
+      ]
+    },
+    {
+      "claim_id": "CLM-DB81755B97",
+      "canonical_claim": "Exercise and movement can influence stress-reactivity and cardiac-autonomic outcomes, with results varying by intervention, population and outcome.",
+      "policy": "ALLOWED_WITH_QUALIFIERS",
+      "claim_class": "MEASUREMENT",
+      "risk_class": "MEDIUM",
+      "locale_scope": [
+        "en"
+      ],
+      "owner_route": "/learn/vagus-nerve-exercises",
+      "applies_to_routes": [
+        "/learn/vagus-nerve-exercises"
+      ],
+      "allowed_wording": "Exercise and movement can influence stress-reactivity and cardiac-autonomic outcomes, with results varying by intervention, population and outcome.",
+      "disallowed_wording": [],
+      "evidence_ids": [],
+      "evidence_directness": "PENDING_1E4C",
+      "regulatory_gate": "NONE",
+      "safety_boundary": null,
+      "last_reviewed": "2026-09-12",
+      "status": "POLICY_LOCKED_EVIDENCE_LINK_PENDING",
+      "normalization_notes": [],
+      "provenance": [
+        {
+          "file": "docs/seo/search-dominance-1e3b-vagus-nerve-exercises-source-claims-lock.md",
+          "line": 40,
+          "heading": "Locked claims",
+          "source_control": "ALLOWED",
+          "file_sha256": "7f7adebba42bc8230e3ad404fb1013532c561b8baa2c9a09e98e36a691ca5c70"
+        }
+      ]
+    },
+    {
+      "claim_id": "CLM-DC7321968D",
+      "canonical_claim": "“Reset” is popular shorthand / metaphor rather than a literal anatomical reset.",
+      "policy": "ALLOWED_WITH_QUALIFIERS",
+      "claim_class": "METHOD_BOUNDARY",
+      "risk_class": "MEDIUM",
+      "locale_scope": [
+        "en"
+      ],
+      "owner_route": "/learn/vagus-nerve-reset",
+      "applies_to_routes": [
+        "/learn/vagus-nerve-reset"
+      ],
+      "allowed_wording": "“Reset” is popular shorthand / metaphor rather than a literal anatomical reset.",
+      "disallowed_wording": [],
+      "evidence_ids": [],
+      "evidence_directness": "PENDING_1E4C",
+      "regulatory_gate": "NONE",
+      "safety_boundary": null,
+      "last_reviewed": "2026-09-12",
+      "status": "POLICY_LOCKED_EVIDENCE_LINK_PENDING",
+      "normalization_notes": [],
+      "provenance": [
+        {
+          "file": "docs/seo/search-dominance-1e2d-reset-massage-owner-lift-source-claims-lock.md",
+          "line": 32,
+          "heading": "Reset claim boundaries",
+          "source_control": "ALLOWED",
+          "file_sha256": "7ed19918048703fd6afc359da8c00f62e52d49bd7c40e4fcf662f28520faab33"
+        }
+      ]
+    },
+    {
+      "claim_id": "CLM-DF914B9514",
+      "canonical_claim": "One universal seven-minute routine is validated or guaranteed.",
+      "policy": "NOT_ALLOWED",
+      "claim_class": "METHOD_BOUNDARY",
+      "risk_class": "MEDIUM",
+      "locale_scope": [
+        "en"
+      ],
+      "owner_route": "/learn/vagus-nerve-reset",
+      "applies_to_routes": [
+        "/learn/vagus-nerve-reset"
+      ],
+      "allowed_wording": null,
+      "disallowed_wording": [
+        "One universal seven-minute routine is validated or guaranteed."
+      ],
+      "evidence_ids": [],
+      "evidence_directness": "PENDING_1E4C",
+      "regulatory_gate": "NONE",
+      "safety_boundary": null,
+      "last_reviewed": "2026-09-12",
+      "status": "POLICY_LOCKED_EVIDENCE_LINK_PENDING",
+      "normalization_notes": [],
+      "provenance": [
+        {
+          "file": "docs/seo/search-dominance-1e2d-reset-massage-owner-lift-source-claims-lock.md",
+          "line": 41,
+          "heading": "Reset claim boundaries",
+          "source_control": "NOT_ALLOWED",
+          "file_sha256": "7ed19918048703fd6afc359da8c00f62e52d49bd7c40e4fcf662f28520faab33"
+        }
+      ]
+    },
+    {
+      "claim_id": "CLM-E0497DC1E7",
+      "canonical_claim": "local outer-ear sensations such as light tingling, prickling, tapping or pulsing;",
+      "policy": "ALLOWED_WITH_QUALIFIERS",
+      "claim_class": "METHOD_BOUNDARY",
+      "risk_class": "MEDIUM",
+      "locale_scope": [
+        "en"
+      ],
+      "owner_route": "/learn/what-does-vagus-nerve-stimulation-feel-like",
+      "applies_to_routes": [
+        "/learn/what-does-vagus-nerve-stimulation-feel-like"
+      ],
+      "allowed_wording": "local outer-ear sensations such as light tingling, prickling, tapping or pulsing;",
+      "disallowed_wording": [],
+      "evidence_ids": [],
+      "evidence_directness": "PENDING_1E4C",
+      "regulatory_gate": "NONE",
+      "safety_boundary": null,
+      "last_reviewed": "2026-09-12",
+      "status": "POLICY_LOCKED_EVIDENCE_LINK_PENDING",
+      "normalization_notes": [],
+      "provenance": [
+        {
+          "file": "docs/seo/wave2c1a-vns-sensation-source-and-claims-lock.md",
+          "line": 17,
+          "heading": "Binding claim boundary",
+          "source_control": "ALLOWED",
+          "file_sha256": "5379d1d9ee9322c8e803d433ee0373bfad7354cb8a0f14e6562535f8b4c615ad"
+        }
+      ]
+    },
+    {
+      "claim_id": "CLM-E3760ED200",
+      "canonical_claim": "treatment, diagnosis, cure or prevention language;",
+      "policy": "NOT_ALLOWED",
+      "claim_class": "CONDITION",
+      "risk_class": "HIGH",
+      "locale_scope": [
+        "en"
+      ],
+      "owner_route": "/learn/what-does-vagus-nerve-stimulation-feel-like",
+      "applies_to_routes": [
+        "/learn/what-does-vagus-nerve-stimulation-feel-like"
+      ],
+      "allowed_wording": null,
+      "disallowed_wording": [
+        "treatment, diagnosis, cure or prevention language;"
+      ],
+      "evidence_ids": [],
+      "evidence_directness": "PENDING_1E4C",
+      "regulatory_gate": "NONE",
+      "safety_boundary": null,
+      "last_reviewed": "2026-09-12",
+      "status": "POLICY_LOCKED_EVIDENCE_LINK_PENDING",
+      "normalization_notes": [
+        "1E.4B corrects the 1E.4A parser polarity for this must-not block; the locked source file is not changed."
+      ],
+      "provenance": [
+        {
+          "file": "docs/seo/wave2c1a-vns-sensation-source-and-claims-lock.md",
+          "line": 30,
+          "heading": "Binding claim boundary",
+          "source_control": "ALLOWED",
+          "file_sha256": "5379d1d9ee9322c8e803d433ee0373bfad7354cb8a0f14e6562535f8b4c615ad"
+        }
+      ]
+    },
+    {
+      "claim_id": "CLM-E9084BDB34",
+      "canonical_claim": "Telling readers to verify current official product and legal information before purchase.",
+      "policy": "ALLOWED_WITH_QUALIFIERS",
+      "claim_class": "COMMERCIAL",
+      "risk_class": "MEDIUM",
+      "locale_scope": [
+        "nb"
+      ],
+      "owner_route": "/no/kunnskap/hvordan-velge-vagusnervestimulator",
+      "applies_to_routes": [
+        "/no/kunnskap/hvordan-velge-vagusnervestimulator"
+      ],
+      "allowed_wording": "Telling readers to verify current official product and legal information before purchase.",
+      "disallowed_wording": [],
+      "evidence_ids": [],
+      "evidence_directness": "PENDING_1E4C",
+      "regulatory_gate": "PRODUCT_FACT_CONTROL",
+      "safety_boundary": null,
+      "last_reviewed": "2026-09-12",
+      "status": "POLICY_LOCKED_EVIDENCE_LINK_PENDING",
+      "normalization_notes": [],
+      "provenance": [
+        {
+          "file": "docs/seo/search-dominance-1e2g-no-protected-win-buyer-guide-source-claims-lock.md",
+          "line": 52,
+          "heading": "Buyer-guide claim / commercial boundaries",
+          "source_control": "ALLOWED",
+          "file_sha256": "fb08c83d351b3af9dc61dc18a1e0d93b81a26fa624de71cb51d01f20cb3292b4"
+        }
+      ]
+    },
+    {
+      "claim_id": "CLM-EB8FF0D66D",
+      "canonical_claim": "Breathing-related HRV changes are compatible with altered cardiac parasympathetic modulation.",
+      "policy": "ALLOWED_WITH_QUALIFIERS",
+      "claim_class": "MEASUREMENT",
+      "risk_class": "HIGH",
+      "locale_scope": [
+        "en"
+      ],
+      "owner_route": "/learn/vagus-nerve-evidence-vs-internet-claims",
+      "applies_to_routes": [
+        "/learn/vagus-nerve-evidence-vs-internet-claims"
+      ],
+      "allowed_wording": "Breathing-related HRV changes are compatible with altered cardiac parasympathetic modulation.",
+      "disallowed_wording": [],
+      "evidence_ids": [],
+      "evidence_directness": "PENDING_1E4C",
+      "regulatory_gate": "NONE",
+      "safety_boundary": null,
+      "last_reviewed": "2026-09-12",
+      "status": "POLICY_LOCKED_EVIDENCE_LINK_PENDING",
+      "normalization_notes": [],
+      "provenance": [
+        {
+          "file": "docs/seo/search-dominance-1e3c-evidence-internet-claims-source-claims-lock.md",
+          "line": 61,
+          "heading": "Slow breathing",
+          "source_control": "ALLOWED",
+          "file_sha256": "55d06456f3fae4cdf9800309384b81baaed80ca8dae64d1df32692e7b92dee42"
+        }
+      ]
+    },
+    {
+      "claim_id": "CLM-ECB315330A",
+      "canonical_claim": "Give a consumer palpation target for the cervical vagus.",
+      "policy": "NOT_ALLOWED",
+      "claim_class": "METHOD_BOUNDARY",
+      "risk_class": "MEDIUM",
+      "locale_scope": [
+        "en"
+      ],
+      "owner_route": "/learn/vagus-nerve-massage",
+      "applies_to_routes": [
+        "/learn/vagus-nerve-massage"
+      ],
+      "allowed_wording": null,
+      "disallowed_wording": [
+        "Give a consumer palpation target for the cervical vagus."
+      ],
+      "evidence_ids": [],
+      "evidence_directness": "PENDING_1E4C",
+      "regulatory_gate": "NONE",
+      "safety_boundary": null,
+      "last_reviewed": "2026-09-12",
+      "status": "POLICY_LOCKED_EVIDENCE_LINK_PENDING",
+      "normalization_notes": [],
+      "provenance": [
+        {
+          "file": "docs/seo/search-dominance-1e2d-reset-massage-owner-lift-source-claims-lock.md",
+          "line": 59,
+          "heading": "Massage claim and safety boundaries",
+          "source_control": "NOT_ALLOWED",
+          "file_sha256": "7ed19918048703fd6afc359da8c00f62e52d49bd7c40e4fcf662f28520faab33"
+        }
+      ]
+    },
+    {
+      "claim_id": "CLM-EE7A0C6F96",
+      "canonical_claim": "persistent discomfort requires stopping and following support guidance.",
+      "policy": "ALLOWED_WITH_QUALIFIERS",
+      "claim_class": "SAFETY",
+      "risk_class": "MEDIUM",
+      "locale_scope": [
+        "en"
+      ],
+      "owner_route": "/learn/what-does-vagus-nerve-stimulation-feel-like",
+      "applies_to_routes": [
+        "/learn/what-does-vagus-nerve-stimulation-feel-like"
+      ],
+      "allowed_wording": "persistent discomfort requires stopping and following support guidance.",
+      "disallowed_wording": [],
+      "evidence_ids": [],
+      "evidence_directness": "PENDING_1E4C",
+      "regulatory_gate": "NONE",
+      "safety_boundary": "persistent discomfort requires stopping and following support guidance.",
+      "last_reviewed": "2026-09-12",
+      "status": "POLICY_LOCKED_EVIDENCE_LINK_PENDING",
+      "normalization_notes": [],
+      "provenance": [
+        {
+          "file": "docs/seo/wave2c1a-vns-sensation-source-and-claims-lock.md",
+          "line": 50,
+          "heading": "Product-specific source lock",
+          "source_control": "ALLOWED",
+          "file_sha256": "5379d1d9ee9322c8e803d433ee0373bfad7354cb8a0f14e6562535f8b4c615ad"
+        }
+      ]
+    },
+    {
+      "claim_id": "CLM-F43B7937A5",
+      "canonical_claim": "Neck coordinates, pressure grades, timing sequences or DIY carotid-sinus instructions.",
+      "policy": "NOT_ALLOWED",
+      "claim_class": "SAFETY",
+      "risk_class": "CRITICAL",
+      "locale_scope": [
+        "en"
+      ],
+      "owner_route": "/learn/vagus-nerve-evidence-vs-internet-claims",
+      "applies_to_routes": [
+        "/learn/vagus-nerve-evidence-vs-internet-claims"
+      ],
+      "allowed_wording": null,
+      "disallowed_wording": [
+        "Neck coordinates, pressure grades, timing sequences or DIY carotid-sinus instructions."
+      ],
+      "evidence_ids": [],
+      "evidence_directness": "PENDING_1E4C",
+      "regulatory_gate": "NONE",
+      "safety_boundary": "Neck coordinates, pressure grades, timing sequences or DIY carotid-sinus instructions.",
+      "last_reviewed": "2026-09-12",
+      "status": "POLICY_LOCKED_EVIDENCE_LINK_PENDING",
+      "normalization_notes": [],
+      "provenance": [
+        {
+          "file": "docs/seo/search-dominance-1e3c-evidence-internet-claims-source-claims-lock.md",
+          "line": 114,
+          "heading": "Neck pressure / carotid sinus",
+          "source_control": "NOT_ALLOWED",
+          "file_sha256": "55d06456f3fae4cdf9800309384b81baaed80ca8dae64d1df32692e7b92dee42"
+        }
+      ]
+    },
+    {
+      "claim_id": "CLM-F7F27673AF",
+      "canonical_claim": "`116 117` when help cannot wait for the regular GP;",
+      "policy": "SAFETY_BOUNDARY",
+      "claim_class": "GENERAL",
+      "risk_class": "CRITICAL",
+      "locale_scope": [
+        "nb"
+      ],
+      "owner_route": "/no/kunnskap/restitusjon-og-regulering",
+      "applies_to_routes": [
+        "/no/kunnskap/restitusjon-og-regulering"
+      ],
+      "allowed_wording": null,
+      "disallowed_wording": [],
+      "evidence_ids": [],
+      "evidence_directness": "PENDING_1E4C",
+      "regulatory_gate": "NONE",
+      "safety_boundary": "`116 117` when help cannot wait for the regular GP;",
+      "last_reviewed": "2026-09-12",
+      "status": "POLICY_LOCKED_EVIDENCE_LINK_PENDING",
+      "normalization_notes": [],
+      "provenance": [
+        {
+          "file": "docs/seo/wave2c1f-recovery-regulation-source-and-claims-lock.md",
+          "line": 81,
+          "heading": "Medical and safety boundary",
+          "source_control": "SAFETY_BOUNDARY",
+          "file_sha256": "0e04dcb97ab585dbaac7a94b868c59930627a3f5fb6ce69c86c5c8a91b6662b5"
+        }
+      ]
+    },
+    {
+      "claim_id": "CLM-F8C2DCB354",
+      "canonical_claim": "The outer ear has mixed innervation; manual ear touch is not electrical taVNS.",
+      "policy": "ALLOWED_WITH_QUALIFIERS",
+      "claim_class": "METHOD_BOUNDARY",
+      "risk_class": "MEDIUM",
+      "locale_scope": [
+        "nb"
+      ],
+      "owner_route": "/no/kunnskap/vagusnerven-og-massasje",
+      "applies_to_routes": [
+        "/no/kunnskap/vagusnerven-og-massasje"
+      ],
+      "allowed_wording": "The outer ear has mixed innervation; manual ear touch is not electrical taVNS.",
+      "disallowed_wording": [],
+      "evidence_ids": [],
+      "evidence_directness": "PENDING_1E4C",
+      "regulatory_gate": "NONE",
+      "safety_boundary": null,
+      "last_reviewed": "2026-09-12",
+      "status": "POLICY_LOCKED_EVIDENCE_LINK_PENDING",
+      "normalization_notes": [],
+      "provenance": [
+        {
+          "file": "docs/seo/search-dominance-1e2g-no-protected-win-buyer-guide-source-claims-lock.md",
+          "line": 38,
+          "heading": "Massage claim and safety boundaries",
+          "source_control": "ALLOWED",
+          "file_sha256": "fb08c83d351b3af9dc61dc18a1e0d93b81a26fa624de71cb51d01f20cb3292b4"
+        }
+      ]
+    },
+    {
+      "claim_id": "CLM-FD7F77516A",
+      "canonical_claim": "Any improvised electrical electrode placement, electrical settings, carotid/neck pressure manoeuvre, medical protocol or personalised suitability recommendation.",
+      "policy": "NOT_ALLOWED",
+      "claim_class": "SAFETY",
+      "risk_class": "CRITICAL",
+      "locale_scope": [
+        "en"
+      ],
+      "owner_route": "/learn/vagus-nerve-exercises",
+      "applies_to_routes": [
+        "/learn/vagus-nerve-exercises"
+      ],
+      "allowed_wording": null,
+      "disallowed_wording": [
+        "Any improvised electrical electrode placement, electrical settings, carotid/neck pressure manoeuvre, medical protocol or personalised suitability recommendation."
+      ],
+      "evidence_ids": [],
+      "evidence_directness": "PENDING_1E4C",
+      "regulatory_gate": "NONE",
+      "safety_boundary": "Any improvised electrical electrode placement, electrical settings, carotid/neck pressure manoeuvre, medical protocol or personalised suitability recommendation.",
+      "last_reviewed": "2026-09-12",
+      "status": "POLICY_LOCKED_EVIDENCE_LINK_PENDING",
+      "normalization_notes": [],
+      "provenance": [
+        {
+          "file": "docs/seo/search-dominance-1e3b-vagus-nerve-exercises-source-claims-lock.md",
+          "line": 50,
+          "heading": "Locked claims",
+          "source_control": "NOT_ALLOWED",
+          "file_sha256": "7f7adebba42bc8230e3ad404fb1013532c561b8baa2c9a09e98e36a691ca5c70"
+        }
+      ]
+    },
+    {
+      "claim_id": "CLM-FECA430A48",
+      "canonical_claim": "Clinical use includes monitoring, technique standards and exclusion criteria.",
+      "policy": "ALLOWED_WITH_QUALIFIERS",
+      "claim_class": "SAFETY",
+      "risk_class": "MEDIUM",
+      "locale_scope": [
+        "en"
+      ],
+      "owner_route": "/learn/vagus-nerve-evidence-vs-internet-claims",
+      "applies_to_routes": [
+        "/learn/vagus-nerve-evidence-vs-internet-claims"
+      ],
+      "allowed_wording": "Clinical use includes monitoring, technique standards and exclusion criteria.",
+      "disallowed_wording": [],
+      "evidence_ids": [],
+      "evidence_directness": "PENDING_1E4C",
+      "regulatory_gate": "NONE",
+      "safety_boundary": "Clinical use includes monitoring, technique standards and exclusion criteria.",
+      "last_reviewed": "2026-09-12",
+      "status": "POLICY_LOCKED_EVIDENCE_LINK_PENDING",
+      "normalization_notes": [],
+      "provenance": [
+        {
+          "file": "docs/seo/search-dominance-1e3c-evidence-internet-claims-source-claims-lock.md",
+          "line": 110,
+          "heading": "Neck pressure / carotid sinus",
+          "source_control": "ALLOWED",
+          "file_sha256": "55d06456f3fae4cdf9800309384b81baaed80ca8dae64d1df32692e7b92dee42"
+        }
+      ]
+    },
+    {
+      "claim_id": "CLM-FF9FAACC09",
+      "canonical_claim": "sensation proves that the vagus nerve is selectively engaged;",
+      "policy": "NOT_ALLOWED",
+      "claim_class": "MECHANISM",
+      "risk_class": "MEDIUM",
+      "locale_scope": [
+        "en"
+      ],
+      "owner_route": "/learn/what-does-vagus-nerve-stimulation-feel-like",
+      "applies_to_routes": [
+        "/learn/what-does-vagus-nerve-stimulation-feel-like"
+      ],
+      "allowed_wording": null,
+      "disallowed_wording": [
+        "sensation proves that the vagus nerve is selectively engaged;"
+      ],
+      "evidence_ids": [],
+      "evidence_directness": "PENDING_1E4C",
+      "regulatory_gate": "NONE",
+      "safety_boundary": null,
+      "last_reviewed": "2026-09-12",
+      "status": "POLICY_LOCKED_EVIDENCE_LINK_PENDING",
+      "normalization_notes": [
+        "1E.4B corrects the 1E.4A parser polarity for this must-not block; the locked source file is not changed."
+      ],
+      "provenance": [
+        {
+          "file": "docs/seo/wave2c1a-vns-sensation-source-and-claims-lock.md",
+          "line": 26,
+          "heading": "Binding claim boundary",
+          "source_control": "ALLOWED",
+          "file_sha256": "5379d1d9ee9322c8e803d433ee0373bfad7354cb8a0f14e6562535f8b4c615ad"
+        }
+      ]
+    }
+  ]
+}

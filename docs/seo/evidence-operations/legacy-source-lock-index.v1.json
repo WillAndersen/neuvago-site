@@ -1,0 +1,144 @@
+{
+  "schema": "neuvago-evidence-operations-legacy-source-lock-index-v1",
+  "baseline_commit": "a049fda29ec2af4a453eb10305d47104fa3d79a7",
+  "status": "LOCKED_PROVENANCE_INDEX",
+  "promotion_policy": "NO_AUTO_PROMOTION_TO_CANONICAL_CLAIM_OR_EVIDENCE",
+  "locks_total": 27,
+  "locks": [
+    {
+      "file": "docs/seo/search-dominance-1e1a-anatomy-ear-source-claims-lock.md",
+      "bytes": 5303,
+      "sha256": "851259a66f684dbaec1bbc2d8e7142ab6c5087ef9a88200803ff1bf16f75405a"
+    },
+    {
+      "file": "docs/seo/search-dominance-1e1b-ans-cluster-source-claims-lock.md",
+      "bytes": 7947,
+      "sha256": "e08bbb42bde01fa098477b26f259b713810bbf776766f23c9a1344aac2034543"
+    },
+    {
+      "file": "docs/seo/search-dominance-1e1c-no-hrv-owner-split-source-claims-lock.md",
+      "bytes": 4685,
+      "sha256": "1752a3b2c1ad1f57ac4f77a0701694e3793e7b42756cc7df795052e7732066fe"
+    },
+    {
+      "file": "docs/seo/search-dominance-1e2b-en-regulation-calm-owner-lift-source-claims-lock.md",
+      "bytes": 6205,
+      "sha256": "037862c19dae837a5df24347a9ddf5f35883107771a4369a795cb7ddc90ead74"
+    },
+    {
+      "file": "docs/seo/search-dominance-1e2c-en-vns-method-authority-source-claims-lock.md",
+      "bytes": 3305,
+      "sha256": "3255e8a7dd8563e76a360ea28e104dd34e8494202993357e6ec9078767f65aee"
+    },
+    {
+      "file": "docs/seo/search-dominance-1e2d-reset-massage-owner-lift-source-claims-lock.md",
+      "bytes": 5650,
+      "sha256": "7ed19918048703fd6afc359da8c00f62e52d49bd7c40e4fcf662f28520faab33"
+    },
+    {
+      "file": "docs/seo/search-dominance-1e2e-no-foundation-regulation-owner-lift-source-claims-lock.md",
+      "bytes": 4352,
+      "sha256": "43b2e0b3da4e644ac48bddf29d966029779f418329506511dca4caffaf66075d"
+    },
+    {
+      "file": "docs/seo/search-dominance-1e2f-no-vns-stimulation-owner-lift-source-claims-lock.md",
+      "bytes": 2940,
+      "sha256": "3c897fb042461c7701bee90f3541ba67f9db48bd8f193e96437083be25b82ab0"
+    },
+    {
+      "file": "docs/seo/search-dominance-1e2g-no-protected-win-buyer-guide-source-claims-lock.md",
+      "bytes": 5293,
+      "sha256": "fb08c83d351b3af9dc61dc18a1e0d93b81a26fa624de71cb51d01f20cb3292b4"
+    },
+    {
+      "file": "docs/seo/search-dominance-1e3b-vagus-nerve-exercises-source-claims-lock.md",
+      "bytes": 6274,
+      "sha256": "7f7adebba42bc8230e3ad404fb1013532c561b8baa2c9a09e98e36a691ca5c70"
+    },
+    {
+      "file": "docs/seo/search-dominance-1e3c-evidence-internet-claims-source-claims-lock.md",
+      "bytes": 8768,
+      "sha256": "55d06456f3fae4cdf9800309384b81baaed80ca8dae64d1df32692e7b92dee42"
+    },
+    {
+      "file": "docs/seo/wave2c1a-vns-sensation-source-and-claims-lock.md",
+      "bytes": 5291,
+      "sha256": "5379d1d9ee9322c8e803d433ee0373bfad7354cb8a0f14e6562535f8b4c615ad"
+    },
+    {
+      "file": "docs/seo/wave2c1b-tired-but-wired-source-and-claims-lock.md",
+      "bytes": 6479,
+      "sha256": "da205d107e560f99ce433f8deb84113cba32a56c2bfff2216aed799b541a998d"
+    },
+    {
+      "file": "docs/seo/wave2c1c-evening-routine-source-and-claims-lock.md",
+      "bytes": 4586,
+      "sha256": "696196ec8412d7454a074469324670041146da8508b89d4640d47b1000e98b30"
+    },
+    {
+      "file": "docs/seo/wave2c1d-overstimulation-source-and-claims-lock.md",
+      "bytes": 4484,
+      "sha256": "6f5f5408df1d9aafc98c91528b7583d5459e580bb936573a59da00b6d8bafae9"
+    },
+    {
+      "file": "docs/seo/wave2c1e-stuck-in-stress-source-and-claims-lock.md",
+      "bytes": 5731,
+      "sha256": "f29ddb9f7a8ea6d8f7203b9acc688d210806c335a06b2af898d687c5c5a9b72d"
+    },
+    {
+      "file": "docs/seo/wave2c1f-recovery-regulation-source-and-claims-lock.md",
+      "bytes": 6791,
+      "sha256": "0e04dcb97ab585dbaac7a94b868c59930627a3f5fb6ce69c86c5c8a91b6662b5"
+    },
+    {
+      "file": "docs/seo/wave2c2a-implanted-vs-non-invasive-source-and-claims-lock.md",
+      "bytes": 8000,
+      "sha256": "76867f913015d94c6b6ce4d6fd573ba548c40aabf72b11b18b4560282882f398"
+    },
+    {
+      "file": "docs/seo/wave2c2b-workday-pause-source-and-claims-lock.md",
+      "bytes": 9020,
+      "sha256": "b32dc84b70c803d54bdd6c9ea8bf7abdc667cdb34e18a7a0d238ebfc8485218f"
+    },
+    {
+      "file": "docs/seo/wave2c2c-signs-dysregulation-source-and-claims-lock.md",
+      "bytes": 3724,
+      "sha256": "804a78d6886ccbd4d52f71d7a9553b654fc9391a3bfa9b2f7387974f433a551a"
+    },
+    {
+      "file": "docs/seo/wave2c2d-hverdagsuro-source-and-claims-lock.md",
+      "bytes": 9250,
+      "sha256": "1b2f77d5562870ae740d74bc3531364214f723629cd78c771392ff35020dc9dc"
+    },
+    {
+      "file": "docs/seo/wave2d2a-stimulation-pillars-source-and-claims-lock.md",
+      "bytes": 9449,
+      "sha256": "c53d59d5e24809f6db00bf234a831ac1ec82be3ad51f87447b27e8c9786d6c69"
+    },
+    {
+      "file": "docs/seo/wave2d2b-reset-pages-source-and-claims-lock.md",
+      "bytes": 5838,
+      "sha256": "675a2186d0ba963d03ee0355e1a030a327537d93be754e6d5189d0488ed75431"
+    },
+    {
+      "file": "docs/seo/wave2d2c-breathing-pages-source-and-claims-lock.md",
+      "bytes": 3266,
+      "sha256": "ef65f53e6d6b7fcc5883dcb554bf068c41dae527159ffabb1b0b5daa51ab3ef0"
+    },
+    {
+      "file": "docs/seo/wave2d2d-massage-pages-source-and-claims-lock.md",
+      "bytes": 2396,
+      "sha256": "399b99510adce372e2e4aaad2819c24cc058ef8e4f452313cd82cbb78e4ca321"
+    },
+    {
+      "file": "docs/seo/wave2d2e-foundation-pages-source-and-claims-lock.md",
+      "bytes": 4661,
+      "sha256": "75e888732de4c238bbc35be256c5bac7f2aabe90dddb3ea117e39115789c3dda"
+    },
+    {
+      "file": "docs/seo/wave2d3-second-batch-source-and-claims-lock.md",
+      "bytes": 7707,
+      "sha256": "5edbf055d7eef188dc6986f17c830ff96e7f17ca9f4555b79f51300670e75ea7"
+    }
+  ]
+}

@@ -66,6 +66,7 @@ const routes: Array<{
   { path: "/learn/how-to-stimulate-the-vagus-nerve", changeFrequency: "weekly", priority: 0.92, lastModified: "2026-09-02" },
   { path: "/learn/vagus-nerve-reset", changeFrequency: "weekly", priority: 0.82, lastModified: "2026-09-04" },
   { path: "/learn/breathing-exercises-and-the-vagus-nerve", changeFrequency: "weekly", priority: 0.81, lastModified: "2026-09-05" },
+  { path: "/learn/vagus-nerve-exercises", changeFrequency: "weekly", priority: 0.8, lastModified: "2026-09-12" },
   { path: "/learn/vagus-nerve-massage", changeFrequency: "weekly", priority: 0.8, lastModified: "2026-09-05" },
   { path: "/learn/vagus-nerve-stimulation", changeFrequency: "weekly", priority: 0.86, lastModified: SEO_LAUNCH_REVIEW_DATE },
   { path: "/learn/non-invasive-vagus-nerve-stimulation", changeFrequency: "weekly", priority: 0.86, lastModified: SEO_LAUNCH_REVIEW_DATE },

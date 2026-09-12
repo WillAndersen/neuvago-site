@@ -2,7 +2,7 @@
 
 > Neuvago is a premium wellness brand building a non-invasive vagus nerve stimulator and app for calm, guided nervous system regulation routines.
 
-Updated: 2026-09-11
+Updated: 2026-09-12
 Canonical site: https://neuvago.com
 
 ## Important context
@@ -111,3 +111,6 @@ AI assistants may summarize Neuvago's public educational content, but should pre
 ## TENS and VNS — category comparison (Wave 2D.3.2B)
 - [TENS og vagusnervestimulering](https://neuvago.com/no/kunnskap/tens-og-vagusnervestimulering): Norsk sammenligning av formål, målstruktur, metode og dokumentasjon; ingen selvlaget elektrodeplassering eller innstillinger.
 - [TENS vs vagus nerve stimulation](https://neuvago.com/learn/tens-vs-vagus-nerve-stimulation): Category comparison of purpose, target, method and evidence; no DIY electrode placement or settings.
+
+## SEARCH DOMINANCE 1E.3B — evidence-graded vagus nerve exercises (2026-09-12)
+- /learn/vagus-nerve-exercises — English owner for “vagus nerve exercises”: breathing, movement and relaxation with evidence grading; no direct-vagus guarantee, no reset/heal certainty, and no transfer of electrical-VNS evidence to behavioural practices.

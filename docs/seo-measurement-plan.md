@@ -549,3 +549,12 @@ Six direct answers per language are editorial callouts, not FAQPage schema. No d
 Retain newer Semrush schema and buyer-guide wording. Historical A artifacts and their parser-correction decision remain unchanged.
 The local pilot does not authorize staging, commit, push, deployment or database activity.
 
+## SEARCH DOMINANCE 1E.3B — VAGUS NERVE EXERCISES MEASUREMENT AND PRIVACY LOCK
+
+Route: `/learn/vagus-nerve-exercises`.
+
+The practical exercise owner adds no new analytics event, event parameter, form, quiz, symptom score, method recommender, health input or personalised conclusion. Do not record which exercise category, evidence row, safety link or source card a reader selects. Do not infer symptoms, diagnoses, vagus-nerve status, HRV response, exercise tolerance or treatment response from ordinary editorial navigation.
+
+Measurement watchlist after publication: indexation, impressions, query families, click-through rate, landing-page engagement and cannibalisation between the exercise owner, methods centre, breathing guide, reset page, massage page, calming guide and electrical-VNS owners. Use aggregate search-performance data only.
+
+Interpretation boundary: ranking for “vagus nerve exercises” is a search-ownership outcome, not evidence that the exercises directly stimulate the vagus nerve or that Neuvago produces the outcomes described in external behavioural research.

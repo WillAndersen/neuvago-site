@@ -115,7 +115,7 @@ Watch these pairs in Search Console.
 | Route | Primary owner job | PAA families | Must not absorb |
 |---|---|---|---|
 | `/no/kunnskap/hvordan-stimulere-vagusnerven` | Broad Norwegian methods overview | stimulere, aktivere, øvelser, selv, tid | full VNS definition, reset detail, breathing detail, massage detail |
-| `/learn/how-to-stimulate-the-vagus-nerve` | Broad English methods overview | stimulate, activate, exercises, self, time | full VNS definition, reset detail, breathing detail, massage detail |
+| `/learn/how-to-stimulate-the-vagus-nerve` | Broad English methods overview | stimulate, activate, methods, self, time | full VNS definition, dedicated exercise detail, reset detail, breathing detail, massage detail |
 | `/no/kunnskap/vagusnervestimulering` | Electrical VNS definition and device category | hva er VNS, hva er en stimulator, medical vs non-invasive | all behavioural methods |
 | `/learn/vagus-nerve-stimulation` | Electrical VNS definition and device category | what is VNS, what is a stimulator, implanted vs external | all behavioural methods |
 
@@ -247,3 +247,13 @@ Locked cannibalization rule:
 `/no/kunnskap/hrv-og-vagusnerven` must not reclaim generic “what is HRV”, normal-value, wearable, or measurement-workflow ownership.
 
 No EN `/learn/heart-rate-variability` page is created in 1E.1C; that remains P1 later.
+
+## SEARCH DOMINANCE 1E.3B — VAGUS NERVE EXERCISES SERP OWNER LOCK
+
+| Route | Primary owner job | Query / PAA families | Must not absorb |
+|---|---|---|---|
+| `/learn/vagus-nerve-exercises` | Evidence-graded English owner for practical “vagus nerve exercises” intent | vagus nerve exercises, vagal exercises, exercises for vagus nerve, breathing/movement/relaxation examples | broad methods navigation, dedicated breathing depth, reset claims, massage/pressure points, electrical VNS protocols, product efficacy |
+| `/learn/how-to-stimulate-the-vagus-nerve` | Parent methods centre | stimulate, activate, methods, self, time | dedicated exercise detail |
+| `/learn/breathing-exercises-and-the-vagus-nerve` | Breathing-specific evidence owner | slow breathing, longer exhale, 4-7-8, HRV/RSA/RespHRV | generic exercise list |
+
+Ownership rule: the new exercise page owns the narrow practical search job and grades breathing, movement and relaxation without claiming a universal direct-vagus mechanism. The methods centre remains the parent overview. Breathing, reset, massage, electrical-VNS, safety and research owners retain their specialist jobs. Viral single-mechanism claims such as humming, gargling, tapping and cold exposure are acknowledged only as claims requiring separate evidence review; they are not promoted as proven exercises here.

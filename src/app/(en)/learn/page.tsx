@@ -151,6 +151,12 @@ const everydayQuestionGroups = [
         href: "/learn/breathing-exercises-and-the-vagus-nerve",
       },
       {
+        title: "Vagus nerve exercises",
+        description:
+          "Compare breathing, movement and relaxation with evidence grading and clear limits around direct vagus-nerve stimulation, reset claims and electrical VNS.",
+        href: "/learn/vagus-nerve-exercises",
+      },
+      {
         title: "Vagus nerve massage",
         description:
           "Understand what people mean by vagus nerve massage, what is actually touched, the evidence limits, and why strong carotid or neck pressure is not a home technique.",

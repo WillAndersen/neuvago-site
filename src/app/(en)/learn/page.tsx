@@ -157,6 +157,12 @@ const everydayQuestionGroups = [
         href: "/learn/vagus-nerve-exercises",
       },
       {
+        title: "Vagus nerve claims online",
+        description:
+          "Check humming, gargling, cold exposure, tapping and pressure-point claims against the evidence, mechanism limits and safety boundaries.",
+        href: "/learn/vagus-nerve-evidence-vs-internet-claims",
+      },
+      {
         title: "Vagus nerve massage",
         description:
           "Understand what people mean by vagus nerve massage, what is actually touched, the evidence limits, and why strong carotid or neck pressure is not a home technique.",

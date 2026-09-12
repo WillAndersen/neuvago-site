@@ -257,3 +257,14 @@ No EN `/learn/heart-rate-variability` page is created in 1E.1C; that remains P1 
 | `/learn/breathing-exercises-and-the-vagus-nerve` | Breathing-specific evidence owner | slow breathing, longer exhale, 4-7-8, HRV/RSA/RespHRV | generic exercise list |
 
 Ownership rule: the new exercise page owns the narrow practical search job and grades breathing, movement and relaxation without claiming a universal direct-vagus mechanism. The methods centre remains the parent overview. Breathing, reset, massage, electrical-VNS, safety and research owners retain their specialist jobs. Viral single-mechanism claims such as humming, gargling, tapping and cold exposure are acknowledged only as claims requiring separate evidence review; they are not promoted as proven exercises here.
+
+## SEARCH DOMINANCE 1E.3C — EVIDENCE VS INTERNET CLAIMS OWNER LOCK
+
+| Route | Primary owner job | Query / PAA families | Must not absorb |
+|---|---|---|---|
+| `/learn/vagus-nerve-evidence-vs-internet-claims` | Claim-by-claim evidence hub for viral or mechanism-heavy vagus advice | humming vagus nerve, singing vagus nerve, gargling vagus nerve, cold exposure vagus nerve, tapping vagus nerve, vagus pressure point, vagus hacks | broad method navigation, structured vagus exercises, dedicated breathing depth, massage anatomy/safety, electrical VNS protocols, condition efficacy |
+| `/learn/vagus-nerve-exercises` | Practical behavioural owner | vagus nerve exercises, vagal exercises, breathing/movement/relaxation examples | systematic internet-claim review |
+| `/learn/how-to-stimulate-the-vagus-nerve` | Parent methods centre | stimulate, activate, methods, self, time | detailed claim matrix |
+| `/learn/vagus-nerve-massage` | Touch/pressure-point anatomy and safety owner | massage, ear/neck massage, vagus pressure point, carotid-sinus safety | broad viral claim matrix |
+
+Ownership rule: the 1E.3C hub evaluates the exact claim, the measured outcome, the directness of the mechanism evidence and the safety context. It may acknowledge that a practice changes breathing, HRV, sensation, arousal or symptoms without converting that observation into proof of selective vagus-nerve stimulation. Humming/singing, gargling, cold exposure and tapping remain claim checks, not prescriptions. Carotid-sinus and strong neck-pressure manoeuvres remain clinical/safety-sensitive and are not taught as DIY techniques. Electrical VNS evidence stays with the electrical method owners and cannot be transferred to behavioural claims.

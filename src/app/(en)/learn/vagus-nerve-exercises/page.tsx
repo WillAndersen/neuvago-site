@@ -334,7 +334,10 @@ export default function VagusNerveExercisesPage() {
                 <p className="mt-8"><Link href="/learn/breathing-exercises-and-the-vagus-nerve" className="font-medium underline underline-offset-4">Read the dedicated breathing evidence guide</Link></p>
               ) : null}
               {section.id === "viral-claims" ? (
-                <p className="mt-8"><Link href="/learn/vagus-nerve-massage" className="font-medium underline underline-offset-4">Read the massage and pressure-point safety guide</Link></p>
+                <div className="mt-8 flex flex-wrap gap-5">
+                  <Link href="/learn/vagus-nerve-evidence-vs-internet-claims" className="font-medium underline underline-offset-4">Open the claim-by-claim evidence matrix</Link>
+                  <Link href="/learn/vagus-nerve-massage" className="font-medium underline underline-offset-4">Read the massage and pressure-point safety guide</Link>
+                </div>
               ) : null}
               {section.id === "electrical-vns-boundary" ? (
                 <div className="mt-8 flex flex-wrap gap-5"><Link href="/learn/how-to-stimulate-the-vagus-nerve" className="font-medium underline underline-offset-4">Compare all method categories</Link><Link href="/learn/vagus-nerve-stimulation" className="font-medium underline underline-offset-4">Understand electrical VNS</Link></div>

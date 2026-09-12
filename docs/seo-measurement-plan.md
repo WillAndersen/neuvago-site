@@ -558,3 +558,13 @@ The practical exercise owner adds no new analytics event, event parameter, form,
 Measurement watchlist after publication: indexation, impressions, query families, click-through rate, landing-page engagement and cannibalisation between the exercise owner, methods centre, breathing guide, reset page, massage page, calming guide and electrical-VNS owners. Use aggregate search-performance data only.
 
 Interpretation boundary: ranking for “vagus nerve exercises” is a search-ownership outcome, not evidence that the exercises directly stimulate the vagus nerve or that Neuvago produces the outcomes described in external behavioural research.
+
+## SEARCH DOMINANCE 1E.3C — EVIDENCE VS INTERNET CLAIMS MEASUREMENT AND PRIVACY LOCK
+
+Route: `/learn/vagus-nerve-evidence-vs-internet-claims`.
+
+The claim-check hub adds no analytics event, event parameter, quiz, symptom score, health input, claim-voting control, self-test, personalised recommendation or tracked method preference. Do not record which claim row, evidence level, source card, safety warning or related-method link a reader selects. Do not infer vagus-nerve status, anxiety, cardiovascular status, treatment response, HRV response, cold tolerance or clinical suitability from ordinary editorial navigation.
+
+Measurement watchlist after publication: indexation, impressions, long-tail query families, click-through rate, landing-page engagement and cannibalisation between the claim-check hub, vagus-nerve exercises, methods centre, breathing, reset, massage, vagus-foundation and electrical-VNS owners. Use aggregate search-performance data only.
+
+Interpretation boundary: ranking for humming, gargling, cold-exposure, tapping or pressure-point queries is a search-ownership outcome. It is not evidence that the underlying mechanism claim is true, that a method selectively stimulates the vagus nerve, or that Neuvago produces the external outcomes discussed on the page.

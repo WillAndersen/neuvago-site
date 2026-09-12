@@ -114,3 +114,6 @@ AI assistants may summarize Neuvago's public educational content, but should pre
 
 ## SEARCH DOMINANCE 1E.3B — evidence-graded vagus nerve exercises (2026-09-12)
 - /learn/vagus-nerve-exercises — English owner for “vagus nerve exercises”: breathing, movement and relaxation with evidence grading; no direct-vagus guarantee, no reset/heal certainty, and no transfer of electrical-VNS evidence to behavioural practices.
+
+## SEARCH DOMINANCE 1E.3C — evidence vs internet vagus claims (2026-09-12)
+- /learn/vagus-nerve-evidence-vs-internet-claims — English claim-check hub for humming, singing, gargling, cold exposure, tapping/EFT and pressure-point claims. It separates measured outcomes from direct vagus target engagement, keeps electrical VNS in its own evidence category, and treats carotid/neck manoeuvres as safety-sensitive clinical territory rather than DIY guidance.

@@ -27,19 +27,19 @@ export const metadata = {
 
 const keyPoints = [
   {
-    title: "Emotional regulation is about carrying emotion, not suppressing it",
+    title: "Regulation is not the same as suppression",
     description:
-      "The topic is usually most useful when it helps explain how the body and mind carry, process, and move through emotion with enough steadiness rather than trying to feel less.",
+      "Changing how a situation is interpreted and holding back an outward expression are different strategies with different possible outcomes.",
   },
   {
-    title: "It is closely tied to nervous system capacity",
+    title: "Feeling, expression and physiology are distinct",
     description:
-      "When the system is overloaded, under-recovered, or hard to settle, emotions often feel heavier, sharper, more overwhelming, or harder to come back from.",
+      "A person can look composed without feeling calm. A subjective account is important but does not directly measure nervous-system capacity.",
   },
   {
-    title: "It becomes practical when it explains real life",
+    title: "Group findings are not an individual diagnosis",
     description:
-      "The strongest value often comes from helping people understand reactivity, overwhelm, shutdown, and emotional recovery in ordinary life rather than treating the topic as abstract psychology.",
+      "Studies linking regulation strategies and symptoms do not establish one cause for every experience of overwhelm, reactivity or flatness.",
   },
 ]
 
@@ -47,45 +47,45 @@ const howItOftenShowsUp = [
   {
     title: "Overwhelm",
     description:
-      "One common sign is feeling emotionally flooded more quickly, as if the system has less room than it used to for stress, input, disappointment, or emotional intensity.",
+      "Someone may describe feelings as too intense or difficult to manage. This is an experience, not a measurement of how much a nervous system can carry.",
   },
   {
     title: "Reactivity",
     description:
-      "Emotional dysregulation may show up as sharper reactions, faster irritation, stronger defensiveness, or the sense of being thrown off more easily than expected.",
+      "Irritation or a stronger response than expected may prompt reflection. A reaction on its own does not identify a disorder or a specific biological cause.",
   },
   {
-    title: "Shutdown",
+    title: "Emotional flatness",
     description:
-      "For some people, the pattern is less about intensity and more about going blank, numb, disconnected, withdrawn, emotionally flat, or hard to reach from the inside.",
+      "Feeling numb, blank or withdrawn is different from choosing not to show an emotion. Neither can be diagnosed as a particular defensive state from this page.",
   },
   {
-    title: "Slow emotional recovery",
+    title: "Feelings that linger",
     description:
-      "Emotions may linger longer than they used to, making it harder to return after conflict, disappointment, overstimulation, pressure, or a demanding day.",
+      "Emotion may still feel present after a difficult event. That does not establish that a response is trapped or must be completed by a particular technique.",
   },
 ]
 
 const whatTheTopicExplains = [
   {
-    title: "Why emotion can feel too big for the system",
+    title: "Experience and expression can differ",
     description:
-      "The topic often helps explain why some emotions feel hard to metabolize when the body already has too little space, too much load, or too little recovery.",
+      "Feeling an emotion and showing it outwardly are related but distinct. The research does not treat a composed appearance as proof of internal calm.",
   },
   {
-    title: "Why shutdown is not the same as calm",
+    title: "Strategies are not interchangeable",
     description:
-      "One of the most useful insights is that going numb, blank, or flat does not always mean regulation. Sometimes it reflects a system that has lost flexibility under emotional strain.",
+      "Reappraisal and suppression act differently in the research reviewed here. The page does not prescribe one strategy for every person and context.",
   },
   {
-    title: "Why emotional capacity changes across time",
+    title: "Associations need careful interpretation",
     description:
-      "Many people notice that emotions feel more workable on some days and much harder on others. This page helps explain why stress, sleep, and recovery shape that difference.",
+      "Links between strategies and symptoms are group-level findings. They do not prove that one strategy caused a particular person’s symptoms.",
   },
   {
-    title: "Why return matters as much as reaction",
+    title: "Daily functioning deserves attention",
     description:
-      "The most useful question is often not only how strongly someone feels, but how well the system can come back after emotion has moved through it.",
+      "What a feeling means in daily life can guide a conversation about support without turning it into a score for autonomic balance.",
   },
 ]
 
@@ -131,21 +131,21 @@ const connectedTopics = [
   {
     title: "Fight, flight, freeze",
     description:
-      "A useful next step for understanding how emotional overwhelm, defensiveness, avoidance, or shutdown can reflect broader protective states in the system.",
+      "A related guide distinguishing defensive responses studied in research from everyday descriptions of overwhelm or emotional flatness.",
     href: "/learn/fight-flight-freeze",
     linkLabel: "Explore fight, flight, freeze",
   },
   {
     title: "Recovery and regulation",
     description:
-      "A broader restoration page for understanding why emotional capacity is often shaped by stress load, sleep, and how restored the body feels over time.",
+      "A related guide to recovery, daily experience and the limits of inferring a particular physiological state.",
     href: "/learn/recovery-and-regulation",
     linkLabel: "Explore recovery",
   },
   {
     title: "How to calm your nervous system",
     description:
-      "A practical support page for understanding what may help when the system feels too overloaded to carry emotion with flexibility.",
+      "A guide to general approaches and their limits, not a personalised treatment recommendation for emotional difficulties.",
     href: "/learn/how-to-calm-your-nervous-system",
     linkLabel: "Explore calming",
   },
@@ -179,12 +179,11 @@ export default function EmotionalRegulationAndTheNervousSystemPage() {
             </h1>
 
             <p className="mt-6 max-w-2xl text-base leading-8 text-[#5f5a52] md:text-lg">
-              Emotional regulation is often discussed like a psychological skill,
-              but in everyday life it is also deeply connected to nervous system
-              capacity. When the system is overloaded, under-recovered, or hard
-              to settle, emotions may feel heavier, faster, more overwhelming,
-              or harder to recover from than expected.
+              Emotion regulation concerns how people influence their emotions, including how they interpret a situation and how they express a response. Thoughts, behaviour and bodily responses can all be relevant. That does not mean there is one measurable “nervous system capacity” that explains every difficult feeling.
             </p>
+
+            <p data-neuvago-interpretation-note="1e4d5" className="mt-5 max-w-2xl rounded-2xl border border-black/10 bg-white/60 p-4 text-sm leading-7 text-[#5f5a52]">The cited research distinguishes emotion-regulation strategies and their outcomes. It does not measure a single emotional carrying capacity, establish that feelings are stored in the body or diagnose a reader from overwhelm, reactivity or flatness.</p>
+            <p className="mt-4 text-sm leading-7 text-[#5f5a52]">Research background: <a href="#source-12212647" className="underline decoration-black/25 underline-offset-4">Gross JJ (2002)</a> · <a href="#source-20015584" className="underline decoration-black/25 underline-offset-4">Aldao A (2010)</a>.</p>
 
             <div className="mt-10 flex flex-wrap gap-4">
               <Link
@@ -212,40 +211,39 @@ export default function EmotionalRegulationAndTheNervousSystemPage() {
                   <div className="flex h-full flex-col justify-between rounded-[1.25rem] border border-white/60 bg-white/40 p-6">
                     <div>
                       <p className="text-xs uppercase tracking-[0.16em] text-[#8a847b]">
-                        Emotional capacity page
+                        Emotion and response
                       </p>
                       <h2 className="mt-3 text-2xl font-medium text-[#1f1f1c]">
-                        A clearer way to understand how the body carries,
-                        processes, and returns from emotional load
+                        Distinguish what is felt, what is expressed and what a study actually measures
                       </h2>
                     </div>
 
                     <div className="space-y-4">
                       <div className="rounded-2xl bg-white/70 p-4">
                         <p className="text-sm font-medium text-[#1f1f1c]">
-                          Emotion
+                          Experience
                         </p>
                         <p className="mt-1 text-sm leading-6 text-[#5f5a52]">
-                          What moves through the system
+                          What a person reports feeling
                         </p>
                       </div>
 
                       <div className="grid grid-cols-2 gap-4">
                         <div className="rounded-2xl bg-white/70 p-4">
                           <p className="text-sm font-medium text-[#1f1f1c]">
-                            Capacity
+                            Expression
                           </p>
                           <p className="mt-1 text-sm leading-6 text-[#5f5a52]">
-                            How much the system can carry
+                            What is shown outwardly
                           </p>
                         </div>
 
                         <div className="rounded-2xl bg-white/70 p-4">
                           <p className="text-sm font-medium text-[#1f1f1c]">
-                            Return
+                            Context
                           </p>
                           <p className="mt-1 text-sm leading-6 text-[#5f5a52]">
-                            Coming back after emotional load
+                            What is happening around the response
                           </p>
                         </div>
                       </div>
@@ -262,33 +260,23 @@ export default function EmotionalRegulationAndTheNervousSystemPage() {
         <div className="mx-auto grid max-w-7xl gap-14 px-6 py-24 md:px-10 md:py-28 lg:grid-cols-[1fr_0.95fr] lg:items-start">
           <div>
             <p className="text-sm uppercase tracking-[0.18em] text-[#7a756c]">
-              What this often means
+              Different strategies and outcomes
             </p>
 
             <h2 className="mt-4 max-w-3xl text-3xl font-medium leading-tight tracking-[-0.03em] md:text-5xl">
-              Emotional regulation often means having enough nervous system space
-              to feel emotion without getting overwhelmed, shut down, or stuck in it
+              Emotion regulation is not simply suppressing feelings or forcing the body to look calm
             </h2>
 
             <p className="mt-6 max-w-2xl text-base leading-8 text-[#5f5a52] md:text-lg">
-              In everyday life, emotional regulation is often less about having
-              fewer emotions and more about what happens when emotion arrives.
-              It is about whether the body and mind have enough steadiness to
-              stay connected to what is being felt without getting flooded,
-              flattened, or pushed too far out of balance.
+              One research distinction is between reappraisal, which changes how a situation is interpreted, and suppression, which limits outward expression. A strategy can affect what a person shows differently from what they feel or what is recorded physiologically.
             </p>
 
             <p className="mt-6 max-w-2xl text-base leading-8 text-[#5f5a52]">
-              That is why the topic is so closely tied to nervous system state.
-              When the system is already carrying too much stress, too little
-              recovery, or too much activation, emotions often feel sharper,
-              stickier, heavier, faster, or harder to metabolize cleanly.
+              Research also examines associations between regulation strategies and mental-health symptoms. These findings describe patterns across groups; they do not establish why one person feels overwhelmed, identify a diagnosis or show that emotions are stored in the body.
             </p>
 
             <p className="mt-6 max-w-2xl text-base leading-8 text-[#5f5a52]">
-              A useful way to think about emotional regulation is not as perfect
-              control, but as the body’s growing ability to carry emotional load
-              with more flexibility and better return.
+              This page uses everyday examples to make those distinctions easier to discuss. It is not a personalised treatment plan or a way to measure how much emotional load a nervous system can carry.
             </p>
 
             <div className="mt-10 flex flex-wrap gap-4">
@@ -331,11 +319,10 @@ export default function EmotionalRegulationAndTheNervousSystemPage() {
 
             <div className="mt-8 rounded-2xl bg-[#e9e1d6] p-5">
               <p className="text-sm font-medium text-[#1f1f1c]">
-                Emotional capacity changes with load and recovery
+                Context and outcomes are different questions
               </p>
               <p className="mt-2 text-sm leading-7 text-[#5f5a52]">
-                A useful way to understand emotional regulation is to look at how much
-                emotion the system can carry and how well it returns afterward.
+                Ask what someone is experiencing, how they respond and what matters in that situation, rather than inferring a hidden capacity from a reaction.
               </p>
             </div>
           </div>
@@ -350,15 +337,11 @@ export default function EmotionalRegulationAndTheNervousSystemPage() {
             </p>
 
             <h2 className="mt-4 text-3xl font-medium leading-tight tracking-[-0.03em] md:text-5xl">
-              Emotional dysregulation often becomes most visible in the ways
-              emotion feels harder to carry, process, or recover from
+              Overwhelm, reactivity and emotional flatness describe experiences, not one shared diagnosis
             </h2>
 
             <p className="mt-6 max-w-2xl text-base leading-8 text-[#5f5a52] md:text-lg">
-              People do not always describe the issue as emotional dysregulation.
-              More often, they describe the lived experience around it: emotional
-              flooding, sharper reactivity, numbness, shutdown, or the feeling
-              that emotions linger in the system much longer than they used to.
+              A person might describe feelings as intense, quick to arise, hard to express or slow to pass. The examples below are not diagnostic criteria, and emotional flatness does not by itself establish a particular defensive or autonomic state.
             </p>
           </div>
 
@@ -384,19 +367,15 @@ export default function EmotionalRegulationAndTheNervousSystemPage() {
         <div className="mx-auto max-w-7xl px-6 py-24 md:px-10 md:py-28">
           <div className="max-w-3xl">
             <p className="text-sm uppercase tracking-[0.18em] text-[#7a756c]">
-              What this topic often explains
+              Distinctions that help
             </p>
 
             <h2 className="mt-4 text-3xl font-medium leading-tight tracking-[-0.03em] md:text-5xl">
-              The real value often comes from understanding why emotions feel
-              too big, too sticky, or too hard to return from
+              The value is in separating the experience, the response and the possible explanations
             </h2>
 
             <p className="mt-6 max-w-2xl text-base leading-8 text-[#5f5a52] md:text-lg">
-              Emotional regulation becomes much more useful when it explains why
-              some emotions feel metabolizable and others feel overwhelming. The
-              answer is often not just the emotion itself, but the condition of
-              the system that is trying to hold it.
+              The same outward response can leave important questions unanswered. Looking composed does not prove that someone feels calm; an intense reaction does not on its own identify a cause. Research findings need to be interpreted at the level of the strategy and outcome actually studied.
             </p>
           </div>
 
@@ -427,13 +406,11 @@ export default function EmotionalRegulationAndTheNervousSystemPage() {
               </p>
 
               <h2 className="mt-4 text-3xl font-medium leading-tight tracking-[-0.03em] md:text-5xl">
-                Emotional regulation is often less about control and more about
-                understanding why feelings become intense, fast, sticky, or hard to recover from.
+                Difficult feelings deserve context, not a single explanation about nervous-system capacity.
               </h2>
 
               <p className="mt-6 max-w-2xl text-base leading-8 text-[#5f5a52] md:text-lg">
-                The practical questions are often why emotions feel too intense, too fast,
-                too sticky, too overwhelming, or too hard to recover from in everyday life.
+                The practical questions may be what happens around a difficult feeling, how it affects daily life and when additional support is needed. The research below does not turn those questions into a self-diagnosis.
               </p>
             </div>
 
@@ -502,11 +479,10 @@ export default function EmotionalRegulationAndTheNervousSystemPage() {
 
             <div className="mt-8 rounded-2xl bg-[#e9e1d6] p-5">
               <p className="text-sm font-medium text-[#1f1f1c]">
-                Emotional load is easier to understand in context
+                Keep the experience and its explanation separate
               </p>
               <p className="mt-2 text-sm leading-7 text-[#5f5a52]">
-                A useful next step is to connect emotional carrying capacity with broader
-                regulation, support, and recovery topics.
+                Related topics can offer language and context while leaving individual causes and treatment needs open to assessment.
               </p>
             </div>
           </div>
@@ -517,22 +493,15 @@ export default function EmotionalRegulationAndTheNervousSystemPage() {
             </p>
 
             <h2 className="mt-4 max-w-3xl text-3xl font-medium leading-tight tracking-[-0.03em] md:text-5xl">
-              Emotional regulation support is usually not about feeling less. It
-              is about helping the system carry emotion with more steadiness and better return.
+              Support should not require suppressing every emotion or assuming a single bodily cause
             </h2>
 
             <p className="mt-6 max-w-2xl text-base leading-8 text-[#5f5a52] md:text-lg">
-              A more useful understanding of support is not that emotion should
-              disappear or become perfectly smooth. It is more often about
-              making the system more able to move through emotion without
-              becoming overwhelmed, shut down, or stuck for as long.
+              Emotions do not have to disappear for a conversation about support to be useful. Research on strategies can inform that conversation, but the summaries here do not select a treatment for an individual reader.
             </p>
 
             <p className="mt-6 max-w-2xl text-base leading-8 text-[#5f5a52]">
-              That is why emotional regulation support often overlaps with
-              nervous system calming, better recovery, lower stress load, safer
-              rhythm, stronger emotional capacity, and enough restoration that
-              the body can process feeling more steadily.
+              Neither general emotion-regulation research nor an association with symptoms establishes that Neuvago treats emotional dysregulation, anxiety or another condition. Persistent distress or difficulty coping may need individual professional support.
             </p>
 
             <div className="mt-10 flex flex-wrap gap-4">
@@ -551,6 +520,45 @@ export default function EmotionalRegulationAndTheNervousSystemPage() {
               </Link>
             </div>
           </div>
+        </div>
+      </section>
+
+      <section id="sources-and-limits" data-neuvago-source-pilot="1e4d5" aria-labelledby="sources-and-limits-title" className="border-y border-black/5 bg-[#eee7dd]">
+        <div className="mx-auto max-w-7xl px-6 py-16 md:px-10 md:py-20">
+          <div className="max-w-3xl">
+            <p className="text-sm uppercase tracking-[0.18em] text-[#7a756c]">Sources and interpretation limits</p>
+            <h2 id="sources-and-limits-title" className="mt-4 text-3xl font-medium leading-tight tracking-[-0.03em] md:text-4xl">What these references explain — and what they do not</h2>
+            <p className="mt-5 text-base leading-8 text-[#5f5a52]">These references support the distinctions described above. They are not studies of Neuvago and do not establish a product benefit, a diagnosis or evidence for every existing statement on this page.</p>
+          </div>
+          <div className="mt-10 grid gap-6 md:grid-cols-2">
+            <article id="source-12212647" data-source-pmid="12212647" className="min-w-0 scroll-mt-24 rounded-[1.5rem] border border-black/10 bg-white/70 p-6 md:p-8">
+              <p className="text-xs font-medium uppercase tracking-[0.14em] text-[#756e65]">1. Emotion regulation review · 2002</p>
+              <h3 className="mt-3 break-words text-xl font-medium leading-snug text-[#1f1f1c]">Emotion regulation: affective, cognitive, and social consequences</h3>
+              <p className="mt-3 text-sm leading-7 text-[#5f5a52]">Gross JJ. Psychophysiology.</p>
+              <p className="mt-4 text-sm leading-7 text-[#5f5a52]">Reviews reappraisal and suppression, with different consequences for emotional experience, expression and physiology. It is not a universal prescription to suppress feelings, a diagnostic tool or a study of Neuvago.</p>
+              <div className="mt-4 flex flex-wrap gap-x-5 gap-y-2 text-sm text-[#5f5a52]">
+                <span className="break-all">PMID: 12212647</span>
+                <span className="break-all">DOI: 10.1017/s0048577201393198</span>
+              </div>
+              <a href="https://pubmed.ncbi.nlm.nih.gov/12212647/" target="_blank" rel="noreferrer" className="mt-5 inline-flex text-sm font-medium underline decoration-black/25 underline-offset-4">Read Gross JJ on PubMed</a>
+            </article>
+            <article id="source-20015584" data-source-pmid="20015584" className="min-w-0 scroll-mt-24 rounded-[1.5rem] border border-black/10 bg-white/70 p-6 md:p-8">
+              <p className="text-xs font-medium uppercase tracking-[0.14em] text-[#756e65]">2. Meta-analytic review · 2010</p>
+              <h3 className="mt-3 break-words text-xl font-medium leading-snug text-[#1f1f1c]">Emotion-regulation strategies across psychopathology: A meta-analytic review</h3>
+              <p className="mt-3 text-sm leading-7 text-[#5f5a52]">Aldao A, Nolen-Hoeksema S, Schweizer S. Clinical Psychology Review.</p>
+              <p className="mt-4 text-sm leading-7 text-[#5f5a52]">Synthesises associations between emotion-regulation strategies and mental-health symptoms. Associations vary across samples and do not establish an individual diagnosis, a single cause or a product treatment effect.</p>
+              <div className="mt-4 flex flex-wrap gap-x-5 gap-y-2 text-sm text-[#5f5a52]">
+                <span className="break-all">PMID: 20015584</span>
+                <span className="break-all">DOI: 10.1016/j.cpr.2009.11.004</span>
+              </div>
+              <a href="https://pubmed.ncbi.nlm.nih.gov/20015584/" target="_blank" rel="noreferrer" className="mt-5 inline-flex text-sm font-medium underline decoration-black/25 underline-offset-4">Read Aldao A on PubMed</a>
+            </article>
+          </div>
+          <aside data-neuvago-care-note="1e4d5" aria-labelledby="individual-advice-title" className="mt-8 rounded-2xl border border-black/10 bg-white/60 p-6">
+            <h3 id="individual-advice-title" className="text-lg font-medium">When to seek individual advice</h3>
+            <p className="mt-3 max-w-3xl text-sm leading-7 text-[#5f5a52]">If you are struggling to cope with stress or the things you are trying are not helping, seek advice from a healthcare professional. Use local urgent services if you need immediate help; this page is not an assessment or a substitute for care.</p>
+            <a href="https://www.nhs.uk/mental-health/feelings-symptoms-behaviours/feelings-and-symptoms/stress/" target="_blank" rel="noreferrer" className="mt-4 inline-flex text-sm font-medium underline decoration-black/25 underline-offset-4">NHS guidance: getting help with stress</a>
+          </aside>
         </div>
       </section>
 

@@ -31,62 +31,62 @@ export const metadata = {
 
 const keyPoints = [
   {
-    title: "Dysregulation is often recognized through patterns",
+    title: "Experiences are not diagnostic criteria",
     description:
-      "Most people do not begin with the term itself. They begin by noticing repeated signs such as tension, overstimulation, poor sleep, shutdown, or low resilience.",
+      "Tension, poor sleep, overwhelm and emotional flatness describe experiences. Recognising one or several does not establish a particular condition.",
   },
   {
-    title: "The signs can look different from person to person",
+    title: "Different descriptions may have different explanations",
     description:
-      "For some people the pattern feels more urgent and activated. For others it feels flatter, heavier, more shut down, or harder to recover from.",
+      "Feeling on edge and feeling withdrawn are not interchangeable. This page cannot determine their cause or reduce them to one nervous-system state.",
   },
   {
-    title: "The signs make more sense when viewed together",
+    title: "Context is more useful than a checklist score",
     description:
-      "One isolated symptom does not always say much. The broader picture often becomes clearer when multiple signs start showing up at the same time.",
+      "Timing, changes from your usual experience and effects on daily life can help frame a discussion with a healthcare professional.",
   },
 ]
 
 const commonSigns = [
   {
-    title: "Stress that stays high",
+    title: "Feeling persistently tense",
     description:
-      "The body continues to feel tense, alert, braced, or hard to settle even after the obvious pressure should have passed.",
+      "You might describe feeling on edge or finding it hard to settle after a demanding situation.",
   },
   {
     title: "Trouble winding down",
     description:
-      "Evenings may feel restless, mentally busy, physically activated, or strangely unable to soften into real rest.",
+      "An evening may feel restless, mentally busy or less restful than you expected.",
   },
   {
-    title: "Poor or thin recovery",
+    title: "Rest does not feel refreshing",
     description:
-      "Rest may happen, but not feel fully restorative. The next day can begin with the same strain already present in the system.",
+      "You might still feel tired after resting. Persistent tiredness should not automatically be attributed to a regulation problem.",
   },
   {
-    title: "Overstimulation",
+    title: "Feeling overwhelmed by input",
     description:
-      "Noise, screens, demands, social input, or ordinary daily friction may start to feel like too much more quickly than before.",
+      "Noise, screens or everyday demands may feel harder to manage than they used to.",
   },
   {
     title: "Anxiety or unease",
     description:
-      "The system may feel watchful, restless, urgent, uneasy, or difficult to calm even when there is no obvious immediate threat.",
+      "You might describe worry, restlessness or watchfulness, with or without an obvious trigger.",
   },
   {
-    title: "Shutdown or emotional flatness",
+    title: "Emotional flatness or withdrawal",
     description:
-      "For some people, dysregulation does not look fast. It looks blank, low, disconnected, numb, withdrawn, or strangely absent.",
+      "Feeling numb, blank or withdrawn deserves its own context. It should not automatically be labelled a freeze response or a low-vagal state.",
   },
   {
-    title: "Low resilience",
+    title: "Ordinary demands feel harder",
     description:
-      "Ordinary demands begin to feel heavier, and the amount the system can comfortably carry seems lower than it used to.",
+      "Tasks that used to feel manageable may seem more difficult, or require more effort than you expect.",
   },
   {
-    title: "Feeling wired but tired",
+    title: "Feeling tired but alert",
     description:
-      "A person can feel depleted and exhausted while still feeling too alert, too mentally active, or too activated to fully relax.",
+      "You might feel worn out while thoughts remain busy or settling into rest still feels difficult.",
   },
 ]
 
@@ -108,7 +108,7 @@ const whyPeopleSearch = [
   {
     title: "They want to understand symptoms in context",
     description:
-      "The search is often really about whether scattered experiences might belong to one broader nervous system picture rather than several unrelated problems.",
+      "The question may be whether several changes are connected. This page cannot determine whether they share one cause or need different explanations.",
     href: "/conditions/anxiety",
     linkLabel: "Explore anxiety",
   },
@@ -132,14 +132,14 @@ const connectedTopics = [
   {
     title: "How to calm your nervous system",
     description:
-      "The practical support page for understanding what actually helps once these signs start feeling familiar.",
+      "A related guide to general approaches and their limits, without choosing an intervention for the reader.",
     href: "/learn/how-to-calm-your-nervous-system",
     linkLabel: "Explore calming",
   },
   {
     title: "Why your body feels stuck in stress",
     description:
-      "A deeper explanation of why activation can linger in the body long after the obvious stressor has passed.",
+      "A related guide to persistent stress experiences and the limits of explanations about unfinished activation.",
     href: "/learn/why-your-body-feels-stuck-in-stress",
     linkLabel: "Explore stuck stress",
   },
@@ -180,12 +180,11 @@ export default function SignsOfADysregulatedNervousSystemPage() {
             </h1>
 
             <p className="mt-6 max-w-2xl text-base leading-8 text-[#5f5a52] md:text-lg">
-              A dysregulated nervous system can show up in many ways: stress
-              that stays high, trouble winding down, poor sleep, overstimulation,
-              low resilience, anxiety, shutdown, or a body that does not easily
-              return to steadier ground. These signs can be easier to recognize in
-              everyday life when they are considered together.
+              People use “dysregulated nervous system” to describe experiences such as feeling tense, overwhelmed, tired, restless or emotionally flat. These experiences can be worth discussing, but this page is not a diagnostic checklist. Several experiences occurring together do not establish one nervous-system cause.
             </p>
+
+            <p data-neuvago-interpretation-note="1e4d5" className="mt-5 max-w-2xl rounded-2xl border border-black/10 bg-white/60 p-4 text-sm leading-7 text-[#5f5a52]">On this page, “dysregulated nervous system” is an everyday description, not a diagnosis. The examples do not measure vagal tone or establish autonomic dysfunction. The references explain stress physiology and the limits of treating experience, behaviour and physiology as the same thing.</p>
+            <p className="mt-4 text-sm leading-7 text-[#5f5a52]">Research background: <a href="#source-17615391" className="underline decoration-black/25 underline-offset-4">McEwen BS (2007)</a> · <a href="#source-19809584" className="underline decoration-black/25 underline-offset-4">Mauss IB (2009)</a>.</p>
 
             <div className="mt-10 flex flex-wrap gap-4">
               <Link
@@ -213,40 +212,39 @@ export default function SignsOfADysregulatedNervousSystemPage() {
                   <div className="flex h-full flex-col justify-between rounded-[1.25rem] border border-white/60 bg-white/40 p-6">
                     <div>
                       <p className="text-xs uppercase tracking-[0.16em] text-[#8a847b]">
-                        Pattern recognition
+                        Describing experiences
                       </p>
                       <h2 className="mt-3 text-2xl font-medium text-[#1f1f1c]">
-                        A clearer way to recognize when the system is struggling
-                        to settle, restore, and return
+                        Notice what has changed without assuming one explanation for it
                       </h2>
                     </div>
 
                     <div className="space-y-4">
                       <div className="rounded-2xl bg-white/70 p-4">
                         <p className="text-sm font-medium text-[#1f1f1c]">
-                          Activation
+                          Tension
                         </p>
                         <p className="mt-1 text-sm leading-6 text-[#5f5a52]">
-                          Stress that stays high
+                          Feeling on edge
                         </p>
                       </div>
 
                       <div className="grid grid-cols-2 gap-4">
                         <div className="rounded-2xl bg-white/70 p-4">
                           <p className="text-sm font-medium text-[#1f1f1c]">
-                            Shutdown
+                            Flatness
                           </p>
                           <p className="mt-1 text-sm leading-6 text-[#5f5a52]">
-                            Flatness or collapse
+                            Feeling numb or withdrawn
                           </p>
                         </div>
 
                         <div className="rounded-2xl bg-white/70 p-4">
                           <p className="text-sm font-medium text-[#1f1f1c]">
-                            Recovery
+                            Daily life
                           </p>
                           <p className="mt-1 text-sm leading-6 text-[#5f5a52]">
-                            Harder return to balance
+                            Rest may not feel refreshing
                           </p>
                         </div>
                       </div>
@@ -263,33 +261,23 @@ export default function SignsOfADysregulatedNervousSystemPage() {
         <div className="mx-auto grid max-w-7xl gap-14 px-6 py-24 md:px-10 md:py-28 lg:grid-cols-[1fr_0.95fr] lg:items-start">
           <div>
             <p className="text-sm uppercase tracking-[0.18em] text-[#7a756c]">
-              What this often means
+              Description and diagnosis
             </p>
 
             <h2 className="mt-4 max-w-3xl text-3xl font-medium leading-tight tracking-[-0.03em] md:text-5xl">
-              A dysregulated nervous system often means the body is having a
-              harder time settling, adapting, recovering, and shifting states flexibly
+              A description of how you feel is not the same as a diagnosis of autonomic dysfunction
             </h2>
 
             <p className="mt-6 max-w-2xl text-base leading-8 text-[#5f5a52] md:text-lg">
-              In practical terms, dysregulation often means the system does not
-              move as easily between activation and settling as it needs to.
-              Stress may stay high for longer, recovery may feel thinner, and
-              the body may feel more easily pushed into urgency, overstimulation,
-              shutdown, or exhaustion.
+              Stress physiology involves communication between the brain and several body systems. That research provides context for stress responses; it does not make tension, fatigue or emotional flatness a specific test of nervous-system function.
             </p>
 
             <p className="mt-6 max-w-2xl text-base leading-8 text-[#5f5a52]">
-              That is why people often recognize the pattern through signs rather
-              than theory. They may say they feel wired, anxious, exhausted,
-              overstimulated, numb, unable to sleep, or unable to properly come
-              down after pressure.
+              There is also a measurement distinction. What someone reports feeling, how they behave and what a physiological recording shows are related questions, not interchangeable answers. Feeling unsettled does not by itself tell us which biological process is responsible.
             </p>
 
             <p className="mt-6 max-w-2xl text-base leading-8 text-[#5f5a52]">
-              The term becomes useful when it helps connect those experiences
-              into one clearer picture instead of treating them as completely
-              separate problems.
+              The useful starting point is to describe what is happening, when it began and how it affects daily life, while leaving room for different explanations and individual assessment.
             </p>
 
             <div className="mt-10 flex flex-wrap gap-4">
@@ -332,11 +320,10 @@ export default function SignsOfADysregulatedNervousSystemPage() {
 
             <div className="mt-8 rounded-2xl bg-[#e9e1d6] p-5">
               <p className="text-sm font-medium text-[#1f1f1c]">
-                Recognition usually comes before explanation
+                Description can come before explanation
               </p>
               <p className="mt-2 text-sm leading-7 text-[#5f5a52]">
-                Most people recognize the pattern first, then look for the
-                language that explains it.
+                Noticing a change is useful. Naming a cause requires more than recognising a phrase on a webpage.
               </p>
             </div>
           </div>
@@ -347,19 +334,15 @@ export default function SignsOfADysregulatedNervousSystemPage() {
         <div className="mx-auto max-w-7xl px-6 py-24 md:px-10 md:py-28">
           <div className="max-w-3xl">
             <p className="text-sm uppercase tracking-[0.18em] text-[#7a756c]">
-              Common everyday signs
+              Examples, not a diagnostic score
             </p>
 
             <h2 className="mt-4 text-3xl font-medium leading-tight tracking-[-0.03em] md:text-5xl">
-              The signs usually become most visible in the ordinary patterns
-              people live with every day
+              Everyday experiences can be described without treating them as a checklist for one condition
             </h2>
 
             <p className="mt-6 max-w-2xl text-base leading-8 text-[#5f5a52] md:text-lg">
-              People do not always describe the issue as “dysregulation.” More
-              often, they describe what keeps happening: stress that stays high,
-              poor sleep, trouble winding down, overstimulation, shutdown, or a
-              system that seems slower to recover than before.
+              The examples below describe possible experiences, not criteria for diagnosing dysregulation. There is no score, threshold or number of matching cards that confirms a disorder, and the list is not exhaustive.
             </p>
           </div>
 
@@ -390,14 +373,11 @@ export default function SignsOfADysregulatedNervousSystemPage() {
               </p>
 
               <h2 className="mt-4 text-3xl font-medium leading-tight tracking-[-0.03em] md:text-5xl">
-                Several changes can feel confusing when stress, sleep, anxiety, shutdown,
-                overstimulation, and low resilience begin to overlap.
+                When several experiences overlap, context matters more than counting how many apply.
               </h2>
 
               <p className="mt-6 max-w-2xl text-base leading-8 text-[#5f5a52] md:text-lg">
-                The useful question is often whether there is a pattern linking stress,
-                sleep, anxiety, shutdown, overstimulation, and low resilience
-                when several of them show up together.
+                Consider the timing, what else was happening and whether the changes interfere with daily life. A cluster of experiences can help guide a conversation, but it does not prove they share one cause.
               </p>
             </div>
 
@@ -469,8 +449,7 @@ export default function SignsOfADysregulatedNervousSystemPage() {
                 Recognition is only the first step
               </p>
               <p className="mt-2 text-sm leading-7 text-[#5f5a52]">
-                The next step after recognition is usually explanation, practical
-                support, or a clearer contrast with what steadier regulation feels like.
+                Related reading can explain terms and research limits. It cannot determine why a particular person is having symptoms.
               </p>
             </div>
           </div>
@@ -481,21 +460,15 @@ export default function SignsOfADysregulatedNervousSystemPage() {
             </p>
 
             <h2 className="mt-4 max-w-3xl text-3xl font-medium leading-tight tracking-[-0.03em] md:text-5xl">
-              These signs often point to a struggling system, but they do not
-              always mean one single cause or one fixed explanation
+              These experiences do not establish a damaged vagus nerve, low vagal tone or a single underlying disorder
             </h2>
 
             <p className="mt-6 max-w-2xl text-base leading-8 text-[#5f5a52] md:text-lg">
-              A more useful way to understand these signs is not as proof that
-              something is permanently wrong, but as signals that the body may be
-              under more strain, more overload, less recovery, or more prolonged
-              activation than it can comfortably manage right now.
+              A description such as feeling wired, numb or overwhelmed is not itself a physiological measurement. The sources below are background on stress and emotion measurement, not evidence that this set of experiences identifies autonomic disease.
             </p>
 
             <p className="mt-6 max-w-2xl text-base leading-8 text-[#5f5a52]">
-              That is why it is usually more helpful to notice patterns over time
-              than to over-interpret one single symptom. The broader picture often
-              matters more than one isolated moment.
+              Persistent or worrying changes deserve individual attention rather than an assumed explanation based on nervous-system language. You do not need to match a set number of examples before asking for help.
             </p>
 
             <div className="mt-10 flex flex-wrap gap-4">
@@ -514,6 +487,45 @@ export default function SignsOfADysregulatedNervousSystemPage() {
               </Link>
             </div>
           </div>
+        </div>
+      </section>
+
+      <section id="sources-and-limits" data-neuvago-source-pilot="1e4d5" aria-labelledby="sources-and-limits-title" className="border-y border-black/5 bg-[#eee7dd]">
+        <div className="mx-auto max-w-7xl px-6 py-16 md:px-10 md:py-20">
+          <div className="max-w-3xl">
+            <p className="text-sm uppercase tracking-[0.18em] text-[#7a756c]">Sources and interpretation limits</p>
+            <h2 id="sources-and-limits-title" className="mt-4 text-3xl font-medium leading-tight tracking-[-0.03em] md:text-4xl">What these references explain — and what they do not</h2>
+            <p className="mt-5 text-base leading-8 text-[#5f5a52]">These references support the distinctions described above. They are not studies of Neuvago and do not establish a product benefit, a diagnosis or evidence for every existing statement on this page.</p>
+          </div>
+          <div className="mt-10 grid gap-6 md:grid-cols-2">
+            <article id="source-17615391" data-source-pmid="17615391" className="min-w-0 scroll-mt-24 rounded-[1.5rem] border border-black/10 bg-white/70 p-6 md:p-8">
+              <p className="text-xs font-medium uppercase tracking-[0.14em] text-[#756e65]">1. Stress physiology review · 2007</p>
+              <h3 className="mt-3 break-words text-xl font-medium leading-snug text-[#1f1f1c]">Physiology and neurobiology of stress and adaptation: central role of the brain</h3>
+              <p className="mt-3 text-sm leading-7 text-[#5f5a52]">McEwen BS. Physiological Reviews.</p>
+              <p className="mt-4 text-sm leading-7 text-[#5f5a52]">Describes stress and adaptation across neural, endocrine and other body systems. It does not validate this page as a symptom checklist or diagnose autonomic dysfunction from everyday experiences.</p>
+              <div className="mt-4 flex flex-wrap gap-x-5 gap-y-2 text-sm text-[#5f5a52]">
+                <span className="break-all">PMID: 17615391</span>
+                <span className="break-all">DOI: 10.1152/physrev.00041.2006</span>
+              </div>
+              <a href="https://pubmed.ncbi.nlm.nih.gov/17615391/" target="_blank" rel="noreferrer" className="mt-5 inline-flex text-sm font-medium underline decoration-black/25 underline-offset-4">Read McEwen BS on PubMed</a>
+            </article>
+            <article id="source-19809584" data-source-pmid="19809584" className="min-w-0 scroll-mt-24 rounded-[1.5rem] border border-black/10 bg-white/70 p-6 md:p-8">
+              <p className="text-xs font-medium uppercase tracking-[0.14em] text-[#756e65]">2. Emotion measurement review · 2009</p>
+              <h3 className="mt-3 break-words text-xl font-medium leading-snug text-[#1f1f1c]">Measures of emotion: A review</h3>
+              <p className="mt-3 text-sm leading-7 text-[#5f5a52]">Mauss IB, Robinson MD. Cognition and Emotion.</p>
+              <p className="mt-4 text-sm leading-7 text-[#5f5a52]">Examines subjective, physiological and behavioural measures of emotion and why they are not interchangeable. It does not establish that feeling calm measures vagal tone or nervous-system health.</p>
+              <div className="mt-4 flex flex-wrap gap-x-5 gap-y-2 text-sm text-[#5f5a52]">
+                <span className="break-all">PMID: 19809584</span>
+                <span className="break-all">DOI: 10.1080/02699930802204677</span>
+              </div>
+              <a href="https://pubmed.ncbi.nlm.nih.gov/19809584/" target="_blank" rel="noreferrer" className="mt-5 inline-flex text-sm font-medium underline decoration-black/25 underline-offset-4">Read Mauss IB on PubMed</a>
+            </article>
+          </div>
+          <aside data-neuvago-care-note="1e4d5" aria-labelledby="individual-advice-title" className="mt-8 rounded-2xl border border-black/10 bg-white/60 p-6">
+            <h3 id="individual-advice-title" className="text-lg font-medium">When to seek individual advice</h3>
+            <p className="mt-3 max-w-3xl text-sm leading-7 text-[#5f5a52]">If you are struggling to cope with stress or the things you are trying are not helping, seek advice from a healthcare professional. Use local urgent services if you need immediate help; this page is not an assessment or a substitute for care.</p>
+            <a href="https://www.nhs.uk/mental-health/feelings-symptoms-behaviours/feelings-and-symptoms/stress/" target="_blank" rel="noreferrer" className="mt-4 inline-flex text-sm font-medium underline decoration-black/25 underline-offset-4">NHS guidance: getting help with stress</a>
+          </aside>
         </div>
       </section>
 

@@ -27,19 +27,19 @@ export const metadata = {
 
 const keyPoints = [
   {
-    title: "Regulation is often felt before it is explained",
+    title: "Experience and measurement are different",
     description:
-      "Many people recognize regulation not through theory first, but through subtle changes in how the body, mind, and day begin to feel more workable.",
+      "Feeling less rushed or more able to manage a task is a subjective observation. It is not a direct reading of autonomic balance.",
   },
   {
-    title: "It usually feels like more flexibility, not perfect calm",
+    title: "There is no required state of perfect calm",
     description:
-      "The system may still feel stress, emotion, and challenge, but often with more room, more steadiness, and a better ability to return afterward.",
+      "The examples here are ways to describe daily life, not a target everyone must reach or a promise that difficult feelings will disappear.",
   },
   {
-    title: "The feeling is often quieter than people expect",
+    title: "Looking calm is not the same as feeling calm",
     description:
-      "Progress does not always feel dramatic. Often it feels like less urgency, less inner friction, more ease in transitions, and more capacity for ordinary life.",
+      "Research distinguishes emotional experience, outward expression and physiology. A change in one does not establish the same change in the others.",
   },
 ]
 
@@ -47,32 +47,32 @@ const feltSigns = [
   {
     title: "Less urgency",
     description:
-      "One common sign is that the body no longer feels quite so rushed, braced, or under quiet internal pressure for no obvious reason.",
+      "You might notice feeling less rushed during a familiar activity or less pressure to finish everything immediately.",
   },
   {
-    title: "More room inside the day",
+    title: "More room in the day",
     description:
-      "Tasks, emotions, decisions, and ordinary life may begin to feel more carryable, as if the system has a little more space than before.",
+      "A task or decision may feel more manageable, with a little more room to choose how you respond.",
   },
   {
-    title: "Better return after stress",
+    title: "An easier return after a difficult moment",
     description:
-      "The body may still react, but it often comes back more easily after disappointment, conflict, overstimulation, or a demanding period.",
+      "After conflict or disappointment, you might find it easier to resume an activity that matters to you.",
   },
   {
-    title: "A quieter body",
+    title: "Less felt tension",
     description:
-      "Many people notice less inner chaos, less background tension, and a gentler sense that the system is no longer working quite so hard just to stay upright.",
+      "You may describe a quieter or less tense moment, without needing to be completely still or free of emotion.",
   },
   {
-    title: "More ease in transitions",
+    title: "Easier transitions",
     description:
-      "Shifting into evening, settling after work, moving out of pressure, or recovering after social or emotional load may begin to feel smoother.",
+      "Moving from work into an evening routine, or taking a pause after a demanding activity, may feel smoother on some days.",
   },
   {
-    title: "Sleep and recovery feel more supportive",
+    title: "Rest feels more refreshing",
     description:
-      "Sleep may feel deeper, evenings may feel softer, and recovery may begin to feel more real rather than thin or incomplete.",
+      "You might report a more refreshing rest or an evening that feels less effortful.",
   },
 ]
 
@@ -125,14 +125,14 @@ const connectedTopics = [
   {
     title: "Recovery and regulation",
     description:
-      "A useful next step for understanding why stronger restoration often changes what regulation feels like in daily life.",
+      "A related guide to everyday rest, recovery research and the limits of inferring physiology from a feeling.",
     href: "/learn/recovery-and-regulation",
     linkLabel: "Explore recovery",
   },
   {
     title: "Signs of a dysregulated nervous system",
     description:
-      "A strong contrast page for understanding what less supported states may look like when the body is having a harder time settling and returning.",
+      "A related guide to experiences people describe as dysregulation, without treating them as a diagnostic checklist.",
     href: "/learn/signs-of-a-dysregulated-nervous-system",
     linkLabel: "Explore signs of dysregulation",
   },
@@ -166,13 +166,11 @@ export default function WhatNervousSystemRegulationFeelsLikePage() {
             </h1>
 
             <p className="mt-6 max-w-2xl text-base leading-8 text-[#5f5a52] md:text-lg">
-              Nervous system regulation is often explained as a concept, but
-              many people are really trying to understand what it feels like in
-              the body and in daily life. Often, it feels less like “perfect
-              calm” and more like less urgency, better return after stress, more
-              room inside the day, and a quieter sense that the system is not
-              working quite so hard all the time.
+              When people describe feeling more “regulated,” they may mean that everyday life feels easier to manage: less urgency, a little more room for emotion or an easier transition into rest. These are descriptions of experience, not proof that the nervous system has reached a particular measured state.
             </p>
+
+            <p data-neuvago-interpretation-note="1e4d5" className="mt-5 max-w-2xl rounded-2xl border border-black/10 bg-white/60 p-4 text-sm leading-7 text-[#5f5a52]">The examples below describe subjective experience, not a validated test of regulation. Feeling calmer, looking calmer and a physiological measurement are not interchangeable. No particular feeling establishes that a routine or device has changed vagal tone.</p>
+            <p className="mt-4 text-sm leading-7 text-[#5f5a52]">Research background: <a href="#source-19809584" className="underline decoration-black/25 underline-offset-4">Mauss IB (2009)</a> · <a href="#source-12212647" className="underline decoration-black/25 underline-offset-4">Gross JJ (2002)</a>.</p>
 
             <div className="mt-10 flex flex-wrap gap-4">
               <Link
@@ -203,8 +201,7 @@ export default function WhatNervousSystemRegulationFeelsLikePage() {
                         Felt experience
                       </p>
                       <h2 className="mt-3 text-2xl font-medium text-[#1f1f1c]">
-                        A practical way to recognize more steadiness, more room,
-                        and better return in daily life
+                        A way to describe steadier moments without turning them into a physiological test
                       </h2>
                     </div>
 
@@ -233,7 +230,7 @@ export default function WhatNervousSystemRegulationFeelsLikePage() {
                             More room
                           </p>
                           <p className="mt-1 text-sm leading-6 text-[#5f5a52]">
-                            Greater daily capacity
+                            Daily life feels more workable
                           </p>
                         </div>
                       </div>
@@ -250,32 +247,23 @@ export default function WhatNervousSystemRegulationFeelsLikePage() {
         <div className="mx-auto grid max-w-7xl gap-14 px-6 py-24 md:px-10 md:py-28 lg:grid-cols-[1fr_0.95fr] lg:items-start">
           <div>
             <p className="text-sm uppercase tracking-[0.18em] text-[#7a756c]">
-              What it often feels like
+              Describing a change
             </p>
 
             <h2 className="mt-4 max-w-3xl text-3xl font-medium leading-tight tracking-[-0.03em] md:text-5xl">
-              Regulation often feels less like “being calm” and more like having
-              enough steadiness to stay with life without getting thrown off as easily
+              Feeling more settled can matter even when it does not tell you what has changed physiologically
             </h2>
 
             <p className="mt-6 max-w-2xl text-base leading-8 text-[#5f5a52] md:text-lg">
-              In everyday life, regulation often feels like a greater ability to
-              recover, adapt, and return after stress rather than a state of
-              constant stillness. A person may notice that they do not get as
-              overwhelmed as quickly, that they settle more easily after
-              pressure, or that daily life feels a little more carryable.
+              You might describe a difficult conversation as easier to return from, or an evening as less rushed. Such observations can be meaningful descriptions of daily life without becoming a score for vagal tone, resilience or autonomic balance.
             </p>
 
             <p className="mt-6 max-w-2xl text-base leading-8 text-[#5f5a52]">
-              That is why regulation is often felt through contrast. There may
-              be less urgency, less inner chaos, better recovery after hard
-              moments, more room for emotion, and a quieter sense that the
-              system is no longer pushing so hard all the time.
+              Research measures emotion through experience, behaviour and physiology. These measures do not necessarily change together, so outward calm, a calmer feeling and a physiological reading should not be treated as equivalent.
             </p>
 
             <p className="mt-6 max-w-2xl text-base leading-8 text-[#5f5a52]">
-              A useful way to understand regulation is not as perfection, but as
-              a growing sense of flexibility, steadiness, and easier return.
+              Research on emotion regulation also distinguishes strategies and outcomes. Changing how a situation is interpreted is different from simply hiding an expression; looking composed does not establish how a person feels inside.
             </p>
 
             <div className="mt-10 flex flex-wrap gap-4">
@@ -318,11 +306,10 @@ export default function WhatNervousSystemRegulationFeelsLikePage() {
 
             <div className="mt-8 rounded-2xl bg-[#e9e1d6] p-5">
               <p className="text-sm font-medium text-[#1f1f1c]">
-                Often recognized through subtle shifts
+                Notice what a change means to you
               </p>
               <p className="mt-2 text-sm leading-7 text-[#5f5a52]">
-                The feeling is often not dramatic. It is more like more room,
-                more return, and less friction through the day.
+                A useful observation can be specific, such as finding one task more manageable, without proving a particular biological mechanism.
               </p>
             </div>
           </div>
@@ -333,19 +320,15 @@ export default function WhatNervousSystemRegulationFeelsLikePage() {
         <div className="mx-auto max-w-7xl px-6 py-24 md:px-10 md:py-28">
           <div className="max-w-3xl">
             <p className="text-sm uppercase tracking-[0.18em] text-[#7a756c]">
-              Common felt signs
+              Examples of felt changes
             </p>
 
             <h2 className="mt-4 text-3xl font-medium leading-tight tracking-[-0.03em] md:text-5xl">
-              The feeling of regulation often becomes most visible in the
-              ordinary ways daily life starts to feel more manageable
+              The examples below describe experiences, not a test of successful nervous-system regulation
             </h2>
 
             <p className="mt-6 max-w-2xl text-base leading-8 text-[#5f5a52] md:text-lg">
-              Most people do not describe regulation in technical language. They
-              describe it in lived experience: less rushing, better return,
-              easier evenings, more steadiness, and the feeling that there is
-              simply more room inside the day.
+              There is no required feeling that everyone should achieve. The following examples are prompts for describing your experience, not measured outcomes promised by a routine, device or treatment.
             </p>
           </div>
 
@@ -380,9 +363,7 @@ export default function WhatNervousSystemRegulationFeelsLikePage() {
               </h2>
 
               <p className="mt-6 max-w-2xl text-base leading-8 text-[#5f5a52] md:text-lg">
-                Useful signs include how to notice progress, how to distinguish regulation
-                from shutdown, and whether more steadiness, ease, and return are
-                beginning to show up in everyday life.
+                You can notice whether daily life feels more manageable without labelling every quiet moment as recovery. Emotional numbness, exhaustion and a chosen pause are not interchangeable experiences, and this page cannot diagnose the difference for you.
               </p>
             </div>
 
@@ -451,12 +432,10 @@ export default function WhatNervousSystemRegulationFeelsLikePage() {
 
             <div className="mt-8 rounded-2xl bg-[#e9e1d6] p-5">
               <p className="text-sm font-medium text-[#1f1f1c]">
-                Progress is often easier to notice through patterns
+                Keep context alongside the observation
               </p>
               <p className="mt-2 text-sm leading-7 text-[#5f5a52]">
-                The next step after recognition is often understanding the larger
-                framework, supporting recovery more deeply, or learning what
-                helps regulation become more possible.
+                Related reading can explain concepts and possible supports, but it cannot verify a physiological change from how one moment feels.
               </p>
             </div>
           </div>
@@ -467,21 +446,15 @@ export default function WhatNervousSystemRegulationFeelsLikePage() {
             </p>
 
             <h2 className="mt-4 max-w-3xl text-3xl font-medium leading-tight tracking-[-0.03em] md:text-5xl">
-              This feeling usually does not mean constant calm or zero stress. It
-              often means the system is becoming more able to return, adapt, and recover.
+              Feeling better does not require constant calm, and feeling calm does not prove a specific nervous-system change
             </h2>
 
             <p className="mt-6 max-w-2xl text-base leading-8 text-[#5f5a52] md:text-lg">
-              A more useful way to understand the feeling of regulation is not
-              as a perfect state, but as a steadier one. The body may still feel
-              stress, emotion, pressure, and challenge, but those experiences may
-              become less consuming and more workable over time.
+              The goal of this guide is to give everyday observations clearer language. It does not define a normal state that you must reach, or a timeline by which stress and difficult emotions should disappear.
             </p>
 
             <p className="mt-6 max-w-2xl text-base leading-8 text-[#5f5a52]">
-              That is why regulation often feels more like flexibility than
-              stillness: more return after difficulty, more room for life, and
-              less tendency to get stuck in urgency, shutdown, or overwhelm.
+              A subjective improvement is not automatically evidence of higher vagal tone, selective vagus stimulation or benefit from Neuvago. Those are separate questions requiring appropriate measurements and evidence.
             </p>
 
             <div className="mt-10 flex flex-wrap gap-4">
@@ -500,6 +473,45 @@ export default function WhatNervousSystemRegulationFeelsLikePage() {
               </Link>
             </div>
           </div>
+        </div>
+      </section>
+
+      <section id="sources-and-limits" data-neuvago-source-pilot="1e4d5" aria-labelledby="sources-and-limits-title" className="border-y border-black/5 bg-[#eee7dd]">
+        <div className="mx-auto max-w-7xl px-6 py-16 md:px-10 md:py-20">
+          <div className="max-w-3xl">
+            <p className="text-sm uppercase tracking-[0.18em] text-[#7a756c]">Sources and interpretation limits</p>
+            <h2 id="sources-and-limits-title" className="mt-4 text-3xl font-medium leading-tight tracking-[-0.03em] md:text-4xl">What these references explain — and what they do not</h2>
+            <p className="mt-5 text-base leading-8 text-[#5f5a52]">These references support the distinctions described above. They are not studies of Neuvago and do not establish a product benefit, a diagnosis or evidence for every existing statement on this page.</p>
+          </div>
+          <div className="mt-10 grid gap-6 md:grid-cols-2">
+            <article id="source-19809584" data-source-pmid="19809584" className="min-w-0 scroll-mt-24 rounded-[1.5rem] border border-black/10 bg-white/70 p-6 md:p-8">
+              <p className="text-xs font-medium uppercase tracking-[0.14em] text-[#756e65]">1. Emotion measurement review · 2009</p>
+              <h3 className="mt-3 break-words text-xl font-medium leading-snug text-[#1f1f1c]">Measures of emotion: A review</h3>
+              <p className="mt-3 text-sm leading-7 text-[#5f5a52]">Mauss IB, Robinson MD. Cognition and Emotion.</p>
+              <p className="mt-4 text-sm leading-7 text-[#5f5a52]">Examines subjective, physiological and behavioural measures of emotion and why they are not interchangeable. It does not establish that feeling calm measures vagal tone or nervous-system health.</p>
+              <div className="mt-4 flex flex-wrap gap-x-5 gap-y-2 text-sm text-[#5f5a52]">
+                <span className="break-all">PMID: 19809584</span>
+                <span className="break-all">DOI: 10.1080/02699930802204677</span>
+              </div>
+              <a href="https://pubmed.ncbi.nlm.nih.gov/19809584/" target="_blank" rel="noreferrer" className="mt-5 inline-flex text-sm font-medium underline decoration-black/25 underline-offset-4">Read Mauss IB on PubMed</a>
+            </article>
+            <article id="source-12212647" data-source-pmid="12212647" className="min-w-0 scroll-mt-24 rounded-[1.5rem] border border-black/10 bg-white/70 p-6 md:p-8">
+              <p className="text-xs font-medium uppercase tracking-[0.14em] text-[#756e65]">2. Emotion regulation review · 2002</p>
+              <h3 className="mt-3 break-words text-xl font-medium leading-snug text-[#1f1f1c]">Emotion regulation: affective, cognitive, and social consequences</h3>
+              <p className="mt-3 text-sm leading-7 text-[#5f5a52]">Gross JJ. Psychophysiology.</p>
+              <p className="mt-4 text-sm leading-7 text-[#5f5a52]">Reviews reappraisal and suppression, with different consequences for emotional experience, expression and physiology. It is not a universal prescription to suppress feelings, a diagnostic tool or a study of Neuvago.</p>
+              <div className="mt-4 flex flex-wrap gap-x-5 gap-y-2 text-sm text-[#5f5a52]">
+                <span className="break-all">PMID: 12212647</span>
+                <span className="break-all">DOI: 10.1017/s0048577201393198</span>
+              </div>
+              <a href="https://pubmed.ncbi.nlm.nih.gov/12212647/" target="_blank" rel="noreferrer" className="mt-5 inline-flex text-sm font-medium underline decoration-black/25 underline-offset-4">Read Gross JJ on PubMed</a>
+            </article>
+          </div>
+          <aside data-neuvago-care-note="1e4d5" aria-labelledby="individual-advice-title" className="mt-8 rounded-2xl border border-black/10 bg-white/60 p-6">
+            <h3 id="individual-advice-title" className="text-lg font-medium">When to seek individual advice</h3>
+            <p className="mt-3 max-w-3xl text-sm leading-7 text-[#5f5a52]">If you are struggling to cope with stress or the things you are trying are not helping, seek advice from a healthcare professional. Use local urgent services if you need immediate help; this page is not an assessment or a substitute for care.</p>
+            <a href="https://www.nhs.uk/mental-health/feelings-symptoms-behaviours/feelings-and-symptoms/stress/" target="_blank" rel="noreferrer" className="mt-4 inline-flex text-sm font-medium underline decoration-black/25 underline-offset-4">NHS guidance: getting help with stress</a>
+          </aside>
         </div>
       </section>
 

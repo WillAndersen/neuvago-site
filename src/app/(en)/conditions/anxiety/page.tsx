@@ -27,42 +27,42 @@ export const metadata = {
 
 const anxietyPillars = [
   {
-    title: "Anxiety is often felt in the body",
+    title: "Anxiety can have physical features",
     description:
-      "Anxiety is not only a mental experience. It often shows up through alertness, tension, unease, urgency, and a system that feels difficult to bring back down.",
+      "Tension, restlessness or sleep difficulties may accompany anxiety. No single sensation tells you which condition, if any, is present.",
   },
   {
-    title: "Anxiety often overlaps with activation",
+    title: "Distress and daily impact matter",
     description:
-      "Many people experience anxiety as a nervous system state where the body stays watchful, braced, or expectant even when there is no immediate danger.",
+      "An assessment considers what you are experiencing and how it affects your life, alongside other possible physical and mental health concerns.",
   },
   {
-    title: "Sleep and recovery often shape the pattern",
+    title: "Support can include established care",
     description:
-      "Anxiety usually becomes easier to understand when it is viewed together with stress load, sleep quality, recovery, and how supported the body feels over time.",
+      "Generalised anxiety disorder and panic disorder have evidence-based care options. A qualified professional can discuss assessment and appropriate treatment.",
   },
 ]
 
 const commonAnxietyPatterns = [
   {
-    title: "Watchfulness",
+    title: "Worry that is hard to manage",
     description:
-      "The body may feel like it is scanning, anticipating, or quietly preparing for something even during otherwise ordinary moments.",
+      "You may notice repeated worry or anticipation that takes up attention and is difficult to set aside.",
   },
   {
-    title: "Inner urgency",
+    title: "Tension or restlessness",
     description:
-      "Many people notice a subtle internal pressure, rush, or feeling that something needs attention even when they cannot fully explain why.",
+      "Feeling tense, irritable or on edge can be part of anxiety, but does not identify its cause on its own.",
   },
   {
-    title: "Difficulty settling",
+    title: "Sleep or concentration difficulties",
     description:
-      "Anxiety often shows up through evenings that do not soften easily, a body that feels hard to calm, or a mind that keeps moving after the day is over.",
+      "Some people find it harder to fall asleep, concentrate or make decisions while feeling anxious.",
   },
   {
-    title: "Overwhelm and fragility",
+    title: "Avoidance or disruption",
     description:
-      "When anxiety is high, smaller demands, social input, decisions, or disruptions may begin to feel like too much more quickly than before.",
+      "Fear or worry may affect activities, relationships or work. The impact on your life is worth discussing rather than measuring against this list.",
   },
 ]
 
@@ -70,32 +70,63 @@ const connectedTopics = [
   {
     title: "Emotional regulation and the nervous system",
     description:
-      "A deeper page for understanding overwhelm, reactivity, emotional load, and why feelings may be harder to carry or recover from.",
+      "Background on emotional experiences and strategies, with distinctions between research findings and individual assessment.",
     href: "/learn/emotional-regulation-and-the-nervous-system",
     linkLabel: "Explore emotional regulation",
   },
   {
     title: "Fight, flight, freeze",
     description:
-      "A useful next step for understanding anxiety through protective states such as urgency, avoidance, defensiveness, and shutdown.",
+      "Background on defensive responses. This is not a way to diagnose an anxiety disorder from a protective-state label.",
     href: "/learn/fight-flight-freeze",
     linkLabel: "Explore fight, flight, freeze",
   },
   {
     title: "How to calm your nervous system",
     description:
-      "A practical support page for understanding what may help when the body feels too watchful, activated, or difficult to settle.",
+      "General reading about calming practices. It does not replace assessment or treatment when anxiety is persistent or disabling.",
     href: "/learn/how-to-calm-your-nervous-system",
     linkLabel: "Explore calming",
   },
   {
     title: "What nervous system regulation feels like",
     description:
-      "A contrast page for understanding what more steadiness, less urgency, and better return may feel like over time.",
+      "A discussion of subjective experience, with limits on inferring physiology from a feeling of calm.",
     href: "/learn/what-nervous-system-regulation-feels-like",
     linkLabel: "Explore felt regulation",
   },
 ]
+
+const sourceReferences = [
+  {
+    "key": "who-anxiety",
+    "kind": "official-guidance",
+    "design": "Public health guidance",
+    "dateLabel": "8 September 2025",
+    "title": "Anxiety disorders",
+    "authors": "World Health Organization",
+    "publication": "WHO fact sheet",
+    "scope": "Overview of anxiety disorders, their impact and available care. This is general information, not a diagnostic test or evidence for a Neuvago treatment effect.",
+    "pmid": null,
+    "doi": null,
+    "href": "https://www.who.int/news-room/fact-sheets/detail/anxiety-disorders",
+    "linkLabel": "World Health Organization"
+  },
+  {
+    "key": "nice-cg113",
+    "kind": "official-guidance",
+    "design": "Clinical guideline",
+    "dateLabel": "2011; updated 15 June 2020",
+    "title": "Generalised anxiety disorder and panic disorder in adults: management",
+    "authors": "National Institute for Health and Care Excellence",
+    "publication": "NICE clinical guideline CG113",
+    "scope": "Assessment and care options for adults with generalised anxiety disorder or panic disorder. It does not cover every anxiety presentation and is not a self-treatment protocol.",
+    "pmid": null,
+    "doi": null,
+    "href": "https://www.nice.org.uk/guidance/cg113/chapter/Recommendations",
+    "linkLabel": "National Institute for Health and Care Excellence"
+  }
+] as const
 
 export default function AnxietyPage() {
   const structuredData = buildAuthorityPageStructuredData({
@@ -125,11 +156,20 @@ export default function AnxietyPage() {
             </h1>
 
             <p className="mt-6 max-w-2xl text-base leading-8 text-[#5f5a52] md:text-lg">
-              Anxiety is often described as worry or unease, but in everyday life
-              it is also deeply physical. It can show up as alertness, tension,
-              urgency, poor sleep, overwhelm, and a body that does not easily
-              feel safe enough to settle.
+              Feeling anxious sometimes is part of life. Anxiety disorders involve
+              fear or worry that is difficult to manage and interferes with
+              everyday life. Physical tension, restlessness and sleep difficulties
+              can accompany anxiety, but these experiences alone do not identify a
+              disorder or a particular nervous system problem.
             </p>
+
+            <p className="mt-4 text-sm leading-7 text-[#5f5a52]">Sources: <a className="underline underline-offset-4" href="#source-who-anxiety">[1] WHO fact sheet</a> · <a className="underline underline-offset-4" href="#source-nice-cg113">[2] NICE clinical guideline CG113</a></p>
+            <p data-neuvago-interpretation-note="1e4d6" className="mt-5 text-sm leading-7 text-[#625b53]">Anxiety is not a diagnosis of vagus-nerve dysfunction. The nervous-system framing in this page is limited background: it cannot establish a cause, diagnosis or treatment choice for an individual.</p>
+            <aside data-neuvago-care-note="1e4d6" className="mt-6 rounded-2xl border border-black/10 bg-white/65 p-5">
+              <h2 className="text-base font-medium">When to seek individual advice</h2>
+              <p className="mt-2 text-sm leading-7 text-[#5f5a52]">If anxiety is affecting daily life or is difficult to cope with, seek advice from a healthcare professional. Do not wait for a wellness routine or device to solve it. If you or someone else is in immediate danger or cannot stay safe, contact local emergency services now.</p>
+              <a href="https://www.nhs.uk/mental-health/feelings-symptoms-behaviours/feelings-and-symptoms/anxiety-fear-panic/" target="_blank" rel="noreferrer" className="mt-3 inline-flex text-sm underline underline-offset-4">NHS guidance: anxiety, fear and panic</a>
+            </aside>
 
             <div className="mt-10 flex flex-wrap gap-4">
               <Link
@@ -159,7 +199,8 @@ export default function AnxietyPage() {
                         Condition pathway
                       </p>
                       <h2 className="mt-3 text-2xl font-medium text-[#1f1f1c]">
-                        A clearer way to understand watchfulness, unease, and why the body feels hard to settle
+                        Understanding anxiety without reducing it to a single body
+                        state
                       </h2>
                     </div>
 
@@ -169,7 +210,7 @@ export default function AnxietyPage() {
                           Alertness
                         </p>
                         <p className="mt-1 text-sm leading-6 text-[#5f5a52]">
-                          A body that stays on edge
+                          Feeling tense or on edge
                         </p>
                       </div>
 
@@ -179,7 +220,7 @@ export default function AnxietyPage() {
                             Overwhelm
                           </p>
                           <p className="mt-1 text-sm leading-6 text-[#5f5a52]">
-                            Less room in the system
+                            Everyday demands may feel harder
                           </p>
                         </div>
 
@@ -188,7 +229,7 @@ export default function AnxietyPage() {
                             Sleep
                           </p>
                           <p className="mt-1 text-sm leading-6 text-[#5f5a52]">
-                            Harder downshifting at night
+                            Difficulty getting to sleep
                           </p>
                         </div>
                       </div>
@@ -205,30 +246,32 @@ export default function AnxietyPage() {
         <div className="mx-auto grid max-w-7xl gap-14 px-6 py-24 md:px-10 md:py-28 lg:grid-cols-[1fr_0.95fr] lg:items-start">
           <div>
             <p className="text-sm uppercase tracking-[0.18em] text-[#7a756c]">
-              What anxiety often means here
+              Anxiety and anxiety disorders
             </p>
 
             <h2 className="mt-4 max-w-3xl text-3xl font-medium leading-tight tracking-[-0.03em] md:text-5xl">
-              Anxiety often makes the most sense when it is understood as both an internal experience and a nervous system state
+              The nervous system is part of anxiety, not the whole explanation
             </h2>
 
             <p className="mt-6 max-w-2xl text-base leading-8 text-[#5f5a52] md:text-lg">
-              In everyday life, anxiety often feels like more than worry. It may
-              feel like a body that stays alert, a mind that keeps scanning, a
-              nervous system that stays too ready, or an internal sense that the
-              system does not easily return to ease.
+              Anxiety can involve thoughts, feelings, behaviour and bodily
+              sensations. Its causes and course are shaped by social,
+              psychological and biological factors rather than one measure of
+              activation.
             </p>
 
             <p className="mt-6 max-w-2xl text-base leading-8 text-[#5f5a52]">
-              That is why anxiety becomes much easier to understand when viewed
-              together with activation, stress load, emotional carrying capacity,
-              poor sleep, and how supported the body feels over time.
+              Generalised anxiety disorder, panic disorder and other anxiety
+              disorders are not interchangeable labels. A clinical assessment
+              considers distress, effects on daily life and relevant physical or
+              mental health conditions, not only a list of sensations.
             </p>
 
             <p className="mt-6 max-w-2xl text-base leading-8 text-[#5f5a52]">
-              A useful way to think about anxiety is not only as worry itself,
-              but as the relationship between unease, body state, and whether
-              the system can actually come back down afterward.
+              This page offers orientation, not a diagnostic checklist.
+              Recognising an example below is a reason to consider your situation
+              and support needs, not proof of low vagal tone, a damaged vagus
+              nerve or a need for a stimulation device.
             </p>
 
             <div className="mt-10 flex flex-wrap gap-4">
@@ -269,10 +312,12 @@ export default function AnxietyPage() {
 
             <div className="mt-8 rounded-2xl bg-[#e9e1d6] p-5">
               <p className="text-sm font-medium text-[#1f1f1c]">
-                Anxiety often becomes clearest when the whole pattern is visible
+                Your difficulties deserve attention, not a score from this page
               </p>
               <p className="mt-2 text-sm leading-7 text-[#5f5a52]">
-                Alertness, unease, sleep disruption, overwhelm, and reduced recovery often belong to the same broader picture.
+                Discuss how anxiety affects sleep, relationships, work or daily
+                activities with a qualified professional when it is persistent or
+                difficult to cope with.
               </p>
             </div>
           </div>
@@ -283,18 +328,18 @@ export default function AnxietyPage() {
         <div className="mx-auto max-w-7xl px-6 py-24 md:px-10 md:py-28">
           <div className="max-w-3xl">
             <p className="text-sm uppercase tracking-[0.18em] text-[#7a756c]">
-              Common anxiety patterns
+              Experiences people may notice
             </p>
 
             <h2 className="mt-4 text-3xl font-medium leading-tight tracking-[-0.03em] md:text-5xl">
-              Anxiety often becomes most visible in the repeated ways the body feels too watchful, too activated, or too easy to overwhelm
+              Thoughts, sensations and behaviour can all be part of the picture
             </h2>
 
             <p className="mt-6 max-w-2xl text-base leading-8 text-[#5f5a52] md:text-lg">
-              People do not always describe anxiety in clinical language. More
-              often, they describe the lived patterns around it: staying on edge,
-              carrying quiet urgency, struggling to settle, or feeling like the
-              system has less room than it used to.
+              The examples below describe possible experiences, not a complete set
+              of diagnostic criteria. Similar difficulties can occur for other
+              reasons. Do not assume a new or concerning physical symptom is
+              simply anxiety.
             </p>
           </div>
 
@@ -345,33 +390,36 @@ export default function AnxietyPage() {
 
             <div className="mt-8 rounded-2xl bg-[#e9e1d6] p-5">
               <p className="text-sm font-medium text-[#1f1f1c]">
-                Anxiety often connects to a broader nervous system picture
+                Further reading is not the same as clinical care
               </p>
               <p className="mt-2 text-sm leading-7 text-[#5f5a52]">
-                The next step is often calming, emotional regulation, recovery, or a better explanation of how the body carries unease.
+                The linked Learn pages explain related concepts. They do not
+                assess your symptoms or replace care for an anxiety disorder.
               </p>
             </div>
           </div>
 
           <div>
             <p className="text-sm uppercase tracking-[0.18em] text-[#7a756c]">
-              When unease is hard to explain
+              Assessment and support
             </p>
 
             <h2 className="mt-4 max-w-3xl text-3xl font-medium leading-tight tracking-[-0.03em] md:text-5xl">
-              Anxiety can feel more confusing when the body stays watchful, uneasy, or hard to settle.
+              Effective treatments exist; calming is not the only option
             </h2>
 
             <p className="mt-6 max-w-2xl text-base leading-8 text-[#5f5a52] md:text-lg">
-              The practical questions are often body-based: why you feel on edge, why
-              evenings do not soften, why emotions feel harder to carry, and why
-              ordinary life can feel easier to overwhelm than before.
+              NICE describes a stepped approach to generalised anxiety disorder in
+              adults. Depending on individual needs, options include supported
+              self-help, psychological therapies such as cognitive behavioural
+              therapy, and medication considered with a clinician.
             </p>
 
             <p className="mt-6 max-w-2xl text-base leading-8 text-[#5f5a52]">
-              Understanding anxiety becomes more useful when it is connected to the
-              broader body-based logic of activation, emotional load, sleep, and
-              return after stress.
+              The choice depends on an assessment, preferences and prior
+              treatment. Everyday routines may support well-being, but Neuvago is
+              not presented here as a treatment for anxiety disorders or a
+              substitute for recommended care.
             </p>
 
             <div className="mt-10 flex flex-wrap gap-4">
@@ -393,23 +441,47 @@ export default function AnxietyPage() {
         </div>
       </section>
 
+      <section id="sources-and-limits" data-neuvago-source-pilot="1e4d6" className="border-y border-black/6 bg-[#eee7dd]">
+        <div className="mx-auto max-w-7xl px-6 py-16 md:px-10 md:py-20">
+          <div className="max-w-3xl">
+            <p className="text-xs font-medium uppercase tracking-[0.16em] text-[#84796e]">Sources and interpretation limits</p>
+            <h2 className="mt-4 text-3xl font-medium tracking-[-0.03em] md:text-4xl">Where this explanation comes from</h2>
+            <p className="mt-5 text-base leading-8 text-[#5f5a52]">These references provide definitions, clinical guidance and research context. They are not studies of Neuvago and do not establish a Neuvago treatment effect.</p>
+          </div>
+          <div className="mt-10 grid gap-5 md:grid-cols-2">
+            {sourceReferences.map((source, index) => (
+              <article key={source.key} id={`source-${source.key}`} data-source-key={source.key} data-source-kind={source.kind} className="min-w-0 scroll-mt-24 rounded-[1.5rem] border border-black/6 bg-white/70 p-6">
+                <p className="text-xs uppercase tracking-[0.12em] text-[#7b7167]">{index + 1}. {source.design} · {source.dateLabel}</p>
+                <h3 className="mt-3 break-words text-xl font-medium leading-tight">{source.title}</h3>
+                <p className="mt-3 text-sm leading-7 text-[#5f5a52]">{source.authors}. {source.publication}.</p>
+                <p className="mt-3 text-sm leading-7 text-[#625b53]">{source.scope}</p>
+                <div className="mt-4 flex min-w-0 flex-wrap gap-x-5 gap-y-2 text-sm text-[#514c45]">
+                  {source.pmid ? <span>PMID: {source.pmid}</span> : null}
+                  {source.doi ? <span className="break-all">DOI: {source.doi}</span> : null}
+                </div>
+                <a href={source.href} target="_blank" rel="noreferrer" className="mt-5 inline-flex text-sm font-medium underline decoration-black/25 underline-offset-4 transition hover:decoration-black">Read {source.linkLabel}</a>
+              </article>
+            ))}
+          </div>
+        </div>
+      </section>
+
       <section className="bg-[#f7f4ef]">
         <div className="mx-auto max-w-7xl px-6 py-24 md:px-10 md:py-32">
           <div className="rounded-[2.5rem] border border-black/5 bg-gradient-to-br from-[#efe7dc] to-[#e5dbcf] px-8 py-14 shadow-[0_20px_80px_rgba(31,31,28,0.06)] md:px-12 md:py-16">
             <div className="max-w-3xl">
               <p className="text-sm uppercase tracking-[0.18em] text-[#7a756c]">
-                Explore anxiety, then go deeper
+                Continue learning, without replacing care
               </p>
 
               <h2 className="mt-4 text-3xl font-medium leading-tight tracking-[-0.03em] md:text-5xl">
-                Use anxiety as the entry point into alertness, emotional load, calming, and nervous system understanding
+                Explore related concepts at your own pace
               </h2>
 
               <p className="mt-6 max-w-2xl text-base leading-8 text-[#5b564e] md:text-lg">
-                Anxiety is one of the most important entry conditions in the
-                Neuvago universe because it connects directly to unease,
-                activation, sleep disruption, overwhelm, and the larger question
-                of how the body comes back after carrying too much for too long.
+                These links offer general educational reading. They are not a
+                personalised treatment plan, a test of your vagus nerve or
+                evidence that Neuvago treats an anxiety disorder.
               </p>
 
               <div className="mt-10 flex flex-wrap gap-4">

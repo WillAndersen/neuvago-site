@@ -27,42 +27,42 @@ export const metadata = {
 
 const burnoutPillars = [
   {
-    title: "Burnout is often a capacity problem as much as an exhaustion problem",
+    title: "An occupational definition",
     description:
-      "Many people describe burnout as tiredness, but it often also involves reduced room for work, stress, emotion, sleep disruption, and everyday demands.",
+      "Here, burnout refers to the work-related concept described by WHO, not every experience of depleted energy or emotional strain.",
   },
   {
-    title: "Recovery often becomes thinner over time",
+    title: "Exhaustion is not the whole construct",
     description:
-      "Burnout frequently becomes visible when rest no longer restores the system in the way it used to, and recovery begins to feel slow, fragile, or incomplete.",
+      "Research distinguishes burnout from exhaustion alone and examines its relationship with mental health without making the terms interchangeable.",
   },
   {
-    title: "The nervous system often stays involved",
+    title: "The context needs attention",
     description:
-      "Burnout often makes more sense when viewed together with prolonged activation, lower resilience, emotional overload, poor sleep, and difficulty returning after stress.",
+      "Working conditions, support and appropriate healthcare belong in the discussion. The answer is not simply to regulate your nervous system better.",
   },
 ]
 
 const commonBurnoutPatterns = [
   {
-    title: "Persistent exhaustion",
+    title: "Exhaustion in relation to work",
     description:
-      "A common pattern is tiredness that does not fully lift, even after rest, weekends, or periods that should have helped more than they did.",
+      "Energy may feel depleted in connection with sustained demands at work.",
   },
   {
-    title: "Lower daily capacity",
+    title: "Distance or cynicism about work",
     description:
-      "Things that once felt manageable may start to feel heavier, more effortful, or harder to hold together than before.",
+      "A person may feel increasingly detached from their job or negative about it.",
   },
   {
-    title: "Slower recovery",
+    title: "Reduced effectiveness at work",
     description:
-      "The body may need longer to come back after stress, emotional load, work intensity, social demands, or poor sleep.",
+      "A person may feel less effective or able to accomplish what their work requires.",
   },
   {
-    title: "Emotional thinning or flatness",
+    title: "Other symptoms need their own assessment",
     description:
-      "Some people notice not only tiredness, but also numbness, reduced emotional range, irritability, or the sense that they have less available from the inside.",
+      "Persistent fatigue, sleep difficulties or low mood should not automatically be attributed to burnout. Similar problems can have other causes.",
   },
 ]
 
@@ -70,32 +70,77 @@ const connectedTopics = [
   {
     title: "Recovery and regulation",
     description:
-      "A core page for understanding why burnout often involves weakened restoration, lower resilience, and a body that does not rebuild as easily as before.",
+      "Background on everyday rest and job-stress recovery, not a measure of your capacity or a promised recovery schedule.",
     href: "/learn/recovery-and-regulation",
     linkLabel: "Explore recovery",
   },
   {
     title: "Signs of a dysregulated nervous system",
     description:
-      "A useful page for recognizing the broader patterns that often overlap with burnout, including poor sleep, shutdown, overload, and low resilience.",
+      "Everyday descriptions with limits: the examples are not diagnostic criteria for burnout or autonomic disease.",
     href: "/learn/signs-of-a-dysregulated-nervous-system",
     linkLabel: "Explore signs of dysregulation",
   },
   {
     title: "Emotional regulation and the nervous system",
     description:
-      "A closely related page for understanding why emotional capacity often feels lower, thinner, or harder to recover in burnout states.",
+      "Background on emotions and regulation strategies, not evidence that burnout is caused by insufficient emotional capacity.",
     href: "/learn/emotional-regulation-and-the-nervous-system",
     linkLabel: "Explore emotional regulation",
   },
   {
     title: "Sleep",
     description:
-      "One of the most important related pathways, because poor or fragile sleep often shapes how depleted and under-restored the system feels over time.",
+      "General reading about sleep. Persistent sleep difficulties warrant attention rather than being assumed to be only burnout.",
     href: "/conditions/sleep",
     linkLabel: "Explore sleep",
   },
 ]
+
+const sourceReferences = [
+  {
+    "key": "who-burnout",
+    "kind": "official-guidance",
+    "design": "Classification clarification",
+    "dateLabel": "28 May 2019",
+    "title": "Burn-out an occupational phenomenon: International Classification of Diseases",
+    "authors": "World Health Organization",
+    "publication": "WHO ICD-11 clarification",
+    "scope": "Defines burnout in an occupational context and distinguishes its ICD-11 classification from a medical condition. This does not make exhaustion outside work unimportant or remove the need for care.",
+    "pmid": null,
+    "doi": null,
+    "href": "https://www.who.int/news/item/28-05-2019-burn-out-an-occupational-phenomenon-international-classification-of-diseases",
+    "linkLabel": "World Health Organization"
+  },
+  {
+    "key": "maslach-2016",
+    "kind": "scholarly-review",
+    "design": "Research review",
+    "dateLabel": "2016",
+    "title": "Understanding the burnout experience: recent research and its implications for psychiatry",
+    "authors": "Maslach C, Leiter MP",
+    "publication": "World Psychiatry",
+    "scope": "Reviews occupational burnout, measurement and its relationship with mental health. It is not a trial of Neuvago and does not establish a single biological test or universal recovery plan.",
+    "pmid": "27265691",
+    "doi": "10.1002/wps.20311",
+    "href": "https://pubmed.ncbi.nlm.nih.gov/27265691/",
+    "linkLabel": "the PubMed record"
+  },
+  {
+    "key": "who-work",
+    "kind": "official-guidance",
+    "design": "Workplace mental-health guidance",
+    "dateLabel": "2 September 2024",
+    "title": "Mental health at work",
+    "authors": "World Health Organization",
+    "publication": "WHO fact sheet",
+    "scope": "Describes workplace risks and organisational responses alongside individual support. These recommendations concern mental health at work broadly, not proof that a particular routine treats burnout.",
+    "pmid": null,
+    "doi": null,
+    "href": "https://www.who.int/news-room/fact-sheets/detail/mental-health-at-work",
+    "linkLabel": "World Health Organization"
+  }
+] as const
 
 export default function BurnoutPage() {
   const structuredData = buildAuthorityPageStructuredData({
@@ -125,12 +170,20 @@ export default function BurnoutPage() {
             </h1>
 
             <p className="mt-6 max-w-2xl text-base leading-8 text-[#5f5a52] md:text-lg">
-              Burnout is often described as exhaustion, but in everyday life it
-              is usually more than that. It may also involve lower capacity,
-              thinner recovery, emotional depletion, fragile sleep, and a body
-              that no longer seems able to rebuild itself from stress as easily
-              as before.
+              Burnout has a specific meaning in WHO’s ICD-11: an occupational
+              phenomenon associated with sustained workplace stress that has not
+              been adequately addressed. It involves exhaustion, detachment or
+              cynicism about work, and reduced effectiveness at work. It is not a
+              catch-all label for tiredness or distress in every area of life.
             </p>
+
+            <p className="mt-4 text-sm leading-7 text-[#5f5a52]">Sources: <a className="underline underline-offset-4" href="#source-who-burnout">[1] WHO ICD-11 clarification</a> · <a className="underline underline-offset-4" href="#source-maslach-2016">[2] Research review</a> · <a className="underline underline-offset-4" href="#source-who-work">[3] WHO fact sheet</a></p>
+            <p data-neuvago-interpretation-note="1e4d6" className="mt-5 text-sm leading-7 text-[#625b53]">The WHO definition used here is work-related. Tiredness, emotional numbness or poor sleep alone cannot confirm burnout, autonomic dysfunction or a need for vagus-nerve stimulation.</p>
+            <aside data-neuvago-care-note="1e4d6" className="mt-6 rounded-2xl border border-black/10 bg-white/65 p-5">
+              <h2 className="text-base font-medium">When to seek individual advice</h2>
+              <p className="mt-2 text-sm leading-7 text-[#5f5a52]">If you have felt tired for weeks without a clear explanation, or tiredness affects daily life, seek medical advice rather than assuming it is only burnout. Workplace support may be relevant alongside healthcare. If you or someone else is in immediate danger or cannot stay safe, contact local emergency services now.</p>
+              <a href="https://www.nhs.uk/symptoms/tiredness-and-fatigue/" target="_blank" rel="noreferrer" className="mt-3 inline-flex text-sm underline underline-offset-4">NHS guidance: tiredness and fatigue</a>
+            </aside>
 
             <div className="mt-10 flex flex-wrap gap-4">
               <Link
@@ -160,7 +213,7 @@ export default function BurnoutPage() {
                         Condition pathway
                       </p>
                       <h2 className="mt-3 text-2xl font-medium text-[#1f1f1c]">
-                        A clearer way to understand depletion, lower capacity, and why recovery no longer feels strong enough
+                        Understanding exhaustion in its work and health context
                       </h2>
                     </div>
 
@@ -170,26 +223,26 @@ export default function BurnoutPage() {
                           Exhaustion
                         </p>
                         <p className="mt-1 text-sm leading-6 text-[#5f5a52]">
-                          Persistent tiredness
+                          Energy depleted in relation to work
                         </p>
                       </div>
 
                       <div className="grid grid-cols-2 gap-4">
                         <div className="rounded-2xl bg-white/70 p-4">
                           <p className="text-sm font-medium text-[#1f1f1c]">
-                            Capacity
+                            Distance from work
                           </p>
                           <p className="mt-1 text-sm leading-6 text-[#5f5a52]">
-                            Less room for daily life
+                            Detachment or cynicism
                           </p>
                         </div>
 
                         <div className="rounded-2xl bg-white/70 p-4">
                           <p className="text-sm font-medium text-[#1f1f1c]">
-                            Recovery
+                            Efficacy
                           </p>
                           <p className="mt-1 text-sm leading-6 text-[#5f5a52]">
-                            Slower restoration
+                            Feeling less effective at work
                           </p>
                         </div>
                       </div>
@@ -206,30 +259,33 @@ export default function BurnoutPage() {
         <div className="mx-auto grid max-w-7xl gap-14 px-6 py-24 md:px-10 md:py-28 lg:grid-cols-[1fr_0.95fr] lg:items-start">
           <div>
             <p className="text-sm uppercase tracking-[0.18em] text-[#7a756c]">
-              What burnout often means here
+              What burnout means here
             </p>
 
             <h2 className="mt-4 max-w-3xl text-3xl font-medium leading-tight tracking-[-0.03em] md:text-5xl">
-              Burnout often makes the most sense when it is understood as a longer-term stress, recovery, and capacity pattern
+              Keep the workplace context visible
             </h2>
 
             <p className="mt-6 max-w-2xl text-base leading-8 text-[#5f5a52] md:text-lg">
-              In everyday life, burnout often means more than being tired. It may
-              show up as a system that feels worn down, thinner, slower to come
-              back, and less able to rebuild after ordinary demands than it once was.
+              WHO places burnout among factors that can influence health or
+              contact with health services, rather than classifying it as a
+              medical condition in ICD-11. This is a classification distinction,
+              not a reason to dismiss distress or delay seeking help.
             </p>
 
             <p className="mt-6 max-w-2xl text-base leading-8 text-[#5f5a52]">
-              That is why burnout becomes much easier to understand when viewed
-              together with stress load, recovery quality, nervous system state,
-              sleep, and how much room remains for work, emotion, decisions, and
-              daily life.
+              Research reviews examine burnout in relation to work, measurement
+              and mental health. Burnout should not be equated with exhaustion
+              alone, nor used to decide from symptoms whether someone has
+              depression, an anxiety disorder or another health condition.
             </p>
 
             <p className="mt-6 max-w-2xl text-base leading-8 text-[#5f5a52]">
-              A useful way to think about burnout is not only as exhaustion
-              itself, but as the point where the system can no longer restore
-              strongly enough to keep carrying what it has been carrying.
+              Sleep problems, low mood and persistent fatigue need attention in
+              their own right. Exhaustion from other areas of life can be serious
+              even when it does not fit this occupational definition. The
+              appropriate response is support and assessment, not stretching one
+              label to explain everything.
             </p>
 
             <div className="mt-10 flex flex-wrap gap-4">
@@ -270,10 +326,12 @@ export default function BurnoutPage() {
 
             <div className="mt-8 rounded-2xl bg-[#e9e1d6] p-5">
               <p className="text-sm font-medium text-[#1f1f1c]">
-                Burnout often becomes clearest when the whole pattern is visible
+                A workplace problem is not simply a personal failure to relax
               </p>
               <p className="mt-2 text-sm leading-7 text-[#5f5a52]">
-                Exhaustion, lower capacity, sleep problems, emotional thinning, and weak recovery often belong to the same broader picture.
+                Working conditions and available support matter. An individual
+                routine does not remove excessive demands, bullying or other risks
+                at work.
               </p>
             </div>
           </div>
@@ -284,18 +342,18 @@ export default function BurnoutPage() {
         <div className="mx-auto max-w-7xl px-6 py-24 md:px-10 md:py-28">
           <div className="max-w-3xl">
             <p className="text-sm uppercase tracking-[0.18em] text-[#7a756c]">
-              Common burnout patterns
+              Three dimensions, with an important boundary
             </p>
 
             <h2 className="mt-4 text-3xl font-medium leading-tight tracking-[-0.03em] md:text-5xl">
-              Burnout often becomes most visible in the repeated ways the system feels depleted, thinner, and slower to recover
+              Burnout is more than an exhaustion checklist
             </h2>
 
             <p className="mt-6 max-w-2xl text-base leading-8 text-[#5f5a52] md:text-lg">
-              People do not always describe burnout in formal language. More
-              often, they describe the lived patterns around it: persistent
-              exhaustion, lower room for life, slower recovery, and a sense that
-              the system no longer rebuilds the way it used to.
+              The first three cards summarise the dimensions in the WHO
+              definition. They are not a scoring tool. The fourth explains why
+              other symptoms still deserve individual assessment rather than an
+              automatic burnout label.
             </p>
           </div>
 
@@ -346,32 +404,38 @@ export default function BurnoutPage() {
 
             <div className="mt-8 rounded-2xl bg-[#e9e1d6] p-5">
               <p className="text-sm font-medium text-[#1f1f1c]">
-                Burnout makes more sense alongside recovery, sleep, and capacity
+                Reading about recovery does not address every workplace risk
               </p>
               <p className="mt-2 text-sm leading-7 text-[#5f5a52]">
-                The next step is often recovery, emotional capacity, sleep, or a clearer explanation of what the system has been carrying for too long.
+                The linked pages offer background on rest, emotions and sleep.
+                They are not an occupational assessment or evidence of a treatment
+                effect.
               </p>
             </div>
           </div>
 
           <div>
             <p className="text-sm uppercase tracking-[0.18em] text-[#7a756c]">
-              When depletion keeps building
+              Support at work and beyond
             </p>
 
             <h2 className="mt-4 max-w-3xl text-3xl font-medium leading-tight tracking-[-0.03em] md:text-5xl">
-              Burnout can feel like more than tiredness: the system may feel depleted, thin, or hard to rebuild.
+              Support should include working conditions, not only self-care
             </h2>
 
             <p className="mt-6 max-w-2xl text-base leading-8 text-[#5f5a52] md:text-lg">
-              The practical questions often center on why rest no longer restores
-              properly, why capacity feels lower, why emotions feel thinner, and
-              why the body seems slower to recover from ordinary life than before.
+              WHO recommends organisational action on workplace mental-health
+              risks, including attention to workload, control, working hours and
+              support. Where relevant, a discussion with a manager, occupational
+              health service or worker representative can help identify practical
+              changes.
             </p>
 
             <p className="mt-6 max-w-2xl text-base leading-8 text-[#5f5a52]">
-              Burnout becomes easier to understand when exhaustion is considered
-              alongside recovery, nervous system load, sleep, and restoration quality.
+              Individual clinical care may also be needed. A rest routine cannot
+              resolve every work-related problem, and this page does not recommend
+              Neuvago as a treatment for burnout or set a universal timetable for
+              recovery.
             </p>
 
             <div className="mt-10 flex flex-wrap gap-4">
@@ -393,24 +457,47 @@ export default function BurnoutPage() {
         </div>
       </section>
 
+      <section id="sources-and-limits" data-neuvago-source-pilot="1e4d6" className="border-y border-black/6 bg-[#eee7dd]">
+        <div className="mx-auto max-w-7xl px-6 py-16 md:px-10 md:py-20">
+          <div className="max-w-3xl">
+            <p className="text-xs font-medium uppercase tracking-[0.16em] text-[#84796e]">Sources and interpretation limits</p>
+            <h2 className="mt-4 text-3xl font-medium tracking-[-0.03em] md:text-4xl">Where this explanation comes from</h2>
+            <p className="mt-5 text-base leading-8 text-[#5f5a52]">These references provide definitions, clinical guidance and research context. They are not studies of Neuvago and do not establish a Neuvago treatment effect.</p>
+          </div>
+          <div className="mt-10 grid gap-5 md:grid-cols-2">
+            {sourceReferences.map((source, index) => (
+              <article key={source.key} id={`source-${source.key}`} data-source-key={source.key} data-source-kind={source.kind} className="min-w-0 scroll-mt-24 rounded-[1.5rem] border border-black/6 bg-white/70 p-6">
+                <p className="text-xs uppercase tracking-[0.12em] text-[#7b7167]">{index + 1}. {source.design} · {source.dateLabel}</p>
+                <h3 className="mt-3 break-words text-xl font-medium leading-tight">{source.title}</h3>
+                <p className="mt-3 text-sm leading-7 text-[#5f5a52]">{source.authors}. {source.publication}.</p>
+                <p className="mt-3 text-sm leading-7 text-[#625b53]">{source.scope}</p>
+                <div className="mt-4 flex min-w-0 flex-wrap gap-x-5 gap-y-2 text-sm text-[#514c45]">
+                  {source.pmid ? <span>PMID: {source.pmid}</span> : null}
+                  {source.doi ? <span className="break-all">DOI: {source.doi}</span> : null}
+                </div>
+                <a href={source.href} target="_blank" rel="noreferrer" className="mt-5 inline-flex text-sm font-medium underline decoration-black/25 underline-offset-4 transition hover:decoration-black">Read {source.linkLabel}</a>
+              </article>
+            ))}
+          </div>
+        </div>
+      </section>
+
       <section className="bg-[#f7f4ef]">
         <div className="mx-auto max-w-7xl px-6 py-24 md:px-10 md:py-32">
           <div className="rounded-[2.5rem] border border-black/5 bg-gradient-to-br from-[#efe7dc] to-[#e5dbcf] px-8 py-14 shadow-[0_20px_80px_rgba(31,31,28,0.06)] md:px-12 md:py-16">
             <div className="max-w-3xl">
               <p className="text-sm uppercase tracking-[0.18em] text-[#7a756c]">
-                Explore burnout, then go deeper
+                Continue learning, without replacing support
               </p>
 
               <h2 className="mt-4 text-3xl font-medium leading-tight tracking-[-0.03em] md:text-5xl">
-                Use burnout as the entry point into exhaustion, recovery, sleep, and the larger question of restoration
+                Explore rest, emotions and sleep as background topics
               </h2>
 
               <p className="mt-6 max-w-2xl text-base leading-8 text-[#5b564e] md:text-lg">
-                Burnout is one of the most important entry conditions in the
-                Neuvago universe because it connects directly to depletion,
-                reduced resilience, poor sleep, emotional thinning, and the
-                larger question of whether the body can still restore what daily
-                life keeps taking from it.
+                These links are general educational resources, not a diagnosis or
+                a plan for returning to work. They do not show that Neuvago treats
+                burnout or replace workplace support and appropriate healthcare.
               </p>
 
               <div className="mt-10 flex flex-wrap gap-4">

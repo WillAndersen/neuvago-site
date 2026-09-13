@@ -34,7 +34,7 @@ const keyPoints = [
   {
     title: "The calmer side of the system",
     description:
-      "The parasympathetic nervous system is often described as the part of the broader nervous system most closely associated with settling, restoration, digestion, and unwinding.",
+      "The parasympathetic nervous system regulates organ functions alongside other autonomic pathways. Calm and stress are not a single scale with one branch at each end.",
   },
   {
     title: "Relevant because activation is not the whole story",
@@ -198,11 +198,12 @@ export default function ParasympatheticNervousSystemPage() {
             </h1>
 
             <p className="mt-6 max-w-2xl text-base leading-8 text-[#5f5a52] md:text-lg">
-              The parasympathetic nervous system is often described as the
-              calmer side of the broader nervous system — the side most closely
-              associated with unwinding, restoration, digestion, and the body’s
-              ability to move away from prolonged activation and back toward
-              steadier states.
+              The parasympathetic nervous system is a division of the autonomic nervous system involved in regulating organ functions such as heart rate and digestion. “Rest and digest” is useful shorthand, but sympathetic and parasympathetic activity are not opposite ends of a single calm–stress scale.{" "}
+              <a href="#source-17786266" className="underline underline-offset-4" aria-label="Read background source 1">[1]</a> <a href="#source-1660159" className="underline underline-offset-4" aria-label="Read background source 2">[2]</a>
+            </p>
+            <p className="mt-4 max-w-2xl text-sm leading-7 text-[#5f5a52]" data-neuvago-interpretation-note="1e4d3">
+              The everyday examples below describe experiences, not measurements of parasympathetic activity. Feeling settled does not, by itself, identify which autonomic pathways are active.{" "}
+              <a href="#sources-and-limits" className="font-medium underline underline-offset-4">Read the sources and their limits.</a>
             </p>
 
             <div className="mt-10 flex flex-wrap gap-4">
@@ -577,6 +578,42 @@ export default function ParasympatheticNervousSystemPage() {
               </Link>
             </div>
           </div>
+        </div>
+      </section>
+
+      <section id="sources-and-limits" aria-labelledby="sources-and-limits-heading" data-neuvago-source-pilot="1e4d3" className="border-y border-black/10 bg-[#eee7dd]">
+        <div className="mx-auto max-w-7xl px-6 py-16 md:px-10 md:py-20">
+          <div className="max-w-3xl">
+            <p className="text-sm uppercase tracking-[0.16em] text-[#625b53]">Sources and interpretation</p>
+            <h2 id="sources-and-limits-heading" className="mt-4 text-3xl font-medium leading-tight tracking-[-0.03em] md:text-4xl">Background sources and what they do not establish</h2>
+            <p className="mt-5 text-base leading-8 text-[#5f5a52]">These references provide background on autonomic physiology and the limits of the calm-versus-stress shorthand. They do not establish that every everyday experience described on this page is caused by a particular parasympathetic state.</p>
+            <p className="mt-4 text-sm leading-7 text-[#5f5a52]">These references are not studies of Neuvago and do not establish a product benefit, a diagnosis or personal suitability for stimulation.</p>
+          </div>
+          <div className="mt-8 grid gap-6 md:grid-cols-2">
+            <article id="source-17786266" data-source-pmid="17786266" className="min-w-0 rounded-[1.5rem] border border-black/10 bg-white/70 p-6 md:p-8">
+              <p className="text-xs font-medium uppercase tracking-[0.12em] text-[#625b53]">1. Physiology review · 2007</p>
+              <h3 className="mt-3 break-words text-xl font-medium leading-7 text-[#1f1f1c]">Physiology of the autonomic nervous system</h3>
+              <p className="mt-3 text-sm leading-7 text-[#5f5a52]">McCorry LK. American Journal of Pharmaceutical Education.</p>
+              <p className="mt-4 text-sm leading-7 text-[#5f5a52]">Background on autonomic pathways and organ functions, including parasympathetic control. This is not a trial of a relaxation technique or of Neuvago.</p>
+              <div className="mt-4 flex min-w-0 flex-col gap-2 text-sm text-[#5f5a52]">
+                <span>PMID: 17786266</span>
+                <span className="break-all">DOI: 10.5688/aj710478</span>
+              </div>
+              <a href="https://pubmed.ncbi.nlm.nih.gov/17786266/" target="_blank" rel="noopener noreferrer" className="mt-5 inline-flex font-medium underline decoration-black/30 underline-offset-4 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4">Read McCorry LK on PubMed</a>
+            </article>
+            <article id="source-1660159" data-source-pmid="1660159" className="min-w-0 rounded-[1.5rem] border border-black/10 bg-white/70 p-6 md:p-8">
+              <p className="text-xs font-medium uppercase tracking-[0.12em] text-[#625b53]">2. Conceptual review · 1991</p>
+              <h3 className="mt-3 break-words text-xl font-medium leading-7 text-[#1f1f1c]">Autonomic determinism: the modes of autonomic control, the doctrine of autonomic space, and the laws of autonomic constraint</h3>
+              <p className="mt-3 text-sm leading-7 text-[#5f5a52]">Berntson GG, Cacioppo JT, Quigley KS. Psychological Review.</p>
+              <p className="mt-4 text-sm leading-7 text-[#5f5a52]">Explains why sympathetic and parasympathetic control cannot be reduced to opposite ends of a single scale. It is not a way to diagnose an individual from how calm they feel.</p>
+              <div className="mt-4 flex min-w-0 flex-col gap-2 text-sm text-[#5f5a52]">
+                <span>PMID: 1660159</span>
+                <span className="break-all">DOI: 10.1037/0033-295x.98.4.459</span>
+              </div>
+              <a href="https://pubmed.ncbi.nlm.nih.gov/1660159/" target="_blank" rel="noopener noreferrer" className="mt-5 inline-flex font-medium underline decoration-black/30 underline-offset-4 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4">Read Berntson GG on PubMed</a>
+            </article>
+          </div>
+          <Link href="/research/how-to-read-a-vns-study" className="mt-8 inline-flex text-sm font-medium underline decoration-black/30 underline-offset-4">How to read a VNS study without transferring its conclusions to a different method or product</Link>
         </div>
       </section>
 

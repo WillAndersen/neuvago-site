@@ -34,7 +34,7 @@ const keyPoints = [
   {
     title: "A more specific resilience lens",
     description:
-      "Vagal tone is often used as a more specific way to talk about how steady, flexible, and recoverable the body feels over time.",
+      "Cardiac vagal tone concerns vagal influence on the heart; feeling steady, flexible or recovered is not itself a measurement of it.",
   },
   {
     title: "Often connected to recovery and return",
@@ -184,11 +184,12 @@ export default function VagalTonePage() {
             </h1>
 
             <p className="mt-6 max-w-2xl text-base leading-8 text-[#5f5a52] md:text-lg">
-              Vagal tone is often used as a more specific way to talk about how
-              well the body seems able to settle, adapt, recover, and return
-              after stress. In practical terms, the topic matters because it
-              gives people a sharper lens for understanding flexibility,
-              steadiness, and supported recovery capacity over time.
+              In heart-rate research, cardiac vagal tone concerns the influence of parasympathetic vagal pathways on the heart. Heart rate variability can provide information about that influence, but breathing, activity and measurement conditions affect its interpretation. It is not a direct measure of the entire vagus nerve.{" "}
+              <a href="#source-17081672" className="underline underline-offset-4" aria-label="Read background source 1">[1]</a> <a href="#source-25696224" className="underline underline-offset-4" aria-label="Read background source 2">[2]</a>
+            </p>
+            <p className="mt-4 max-w-2xl text-sm leading-7 text-[#5f5a52]" data-neuvago-interpretation-note="1e4d3">
+              Descriptions of resilience, calm or recovery below are everyday experiences, not a test of vagal tone. Neither how you feel nor one wearable reading establishes a diagnosis of a weak or damaged vagus nerve.{" "}
+              <a href="#sources-and-limits" className="font-medium underline underline-offset-4">Read the sources and their limits.</a>
             </p>
 
             <div className="mt-10 flex flex-wrap gap-4">
@@ -558,6 +559,41 @@ export default function VagalTonePage() {
               </Link>
             </div>
           </div>
+        </div>
+      </section>
+
+      <section id="sources-and-limits" aria-labelledby="sources-and-limits-heading" data-neuvago-source-pilot="1e4d3" className="border-y border-black/10 bg-[#eee7dd]">
+        <div className="mx-auto max-w-7xl px-6 py-16 md:px-10 md:py-20">
+          <div className="max-w-3xl">
+            <p className="text-sm uppercase tracking-[0.16em] text-[#625b53]">Sources and interpretation</p>
+            <h2 id="sources-and-limits-heading" className="mt-4 text-3xl font-medium leading-tight tracking-[-0.03em] md:text-4xl">Background sources and what they do not establish</h2>
+            <p className="mt-5 text-base leading-8 text-[#5f5a52]">These sources address cardiac autonomic measurement and its limitations. They do not turn a feeling of resilience, a recovery score or one HRV reading into a measurement of the whole vagus nerve.</p>
+            <p className="mt-4 text-sm leading-7 text-[#5f5a52]">These references are not studies of Neuvago and do not establish a product benefit, a diagnosis or personal suitability for stimulation.</p>
+          </div>
+          <div className="mt-8 grid gap-6 md:grid-cols-2">
+            <article id="source-17081672" data-source-pmid="17081672" className="min-w-0 rounded-[1.5rem] border border-black/10 bg-white/70 p-6 md:p-8">
+              <p className="text-xs font-medium uppercase tracking-[0.12em] text-[#625b53]">1. Physiology review · 2007</p>
+              <h3 className="mt-3 break-words text-xl font-medium leading-7 text-[#1f1f1c]">Toward understanding respiratory sinus arrhythmia: relations to cardiac vagal tone, evolution and biobehavioral functions</h3>
+              <p className="mt-3 text-sm leading-7 text-[#5f5a52]">Grossman P, Taylor EW. Biological Psychology.</p>
+              <p className="mt-4 text-sm leading-7 text-[#5f5a52]">Discusses how breathing, physical activity and other factors affect the interpretation of respiratory sinus arrhythmia as an index of cardiac vagal tone. It is not a whole-vagus health test.</p>
+              <div className="mt-4 flex min-w-0 flex-col gap-2 text-sm text-[#5f5a52]">
+                <span>PMID: 17081672</span>
+                <span className="break-all">DOI: 10.1016/j.biopsycho.2005.11.014</span>
+              </div>
+              <a href="https://pubmed.ncbi.nlm.nih.gov/17081672/" target="_blank" rel="noopener noreferrer" className="mt-5 inline-flex font-medium underline decoration-black/30 underline-offset-4 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4">Read Grossman P on PubMed</a>
+            </article>
+            <article id="source-25696224" data-source-pmid="25696224" className="min-w-0 rounded-[1.5rem] border border-black/10 bg-white/70 p-6 md:p-8">
+              <p className="text-xs font-medium uppercase tracking-[0.12em] text-[#625b53]">2. Pharmacological validation study · 2003</p>
+              <h3 className="mt-3 break-words text-xl font-medium leading-7 text-[#1f1f1c]">Heart rate variability and sympathovagal balance: pharmacological validation</h3>
+              <p className="mt-3 text-sm leading-7 text-[#5f5a52]">Bootsma et al.. Netherlands Heart Journal.</p>
+              <p className="mt-4 text-sm leading-7 text-[#5f5a52]">Examines HRV measures against pharmacological autonomic blockade. This laboratory study does not validate a consumer score for resilience, recovery or general vagus-nerve health.</p>
+              <div className="mt-4 flex min-w-0 flex-col gap-2 text-sm text-[#5f5a52]">
+                <span>PMID: 25696224</span>
+              </div>
+              <a href="https://pubmed.ncbi.nlm.nih.gov/25696224/" target="_blank" rel="noopener noreferrer" className="mt-5 inline-flex font-medium underline decoration-black/30 underline-offset-4 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4">Read Bootsma et al. on PubMed</a>
+            </article>
+          </div>
+          <Link href="/research/how-to-read-a-vns-study" className="mt-8 inline-flex text-sm font-medium underline decoration-black/30 underline-offset-4">How to read a VNS study without transferring its conclusions to a different method or product</Link>
         </div>
       </section>
 

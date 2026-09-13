@@ -57,7 +57,7 @@ const statePatterns = [
   {
     title: "Freeze",
     description:
-      "Freeze can feel like shutdown, numbness, blankness, disconnection, low motivation, stillness, or the sense that the system has gone offline rather than calm.",
+      "In defensive-response research, freezing describes inhibited movement that can prepare the body for action. It should not be used as a blanket explanation for numbness, low motivation or feeling disconnected.",
   },
   {
     title: "Mixed states",
@@ -78,9 +78,9 @@ const whyItMatters = [
       "It also helps explain why overload can show up as avoidance, rushing, busyness, mental escape, or difficulty staying present with what feels too much.",
   },
   {
-    title: "The body may shut down instead of calm down",
+    title: "Stillness does not identify one state",
     description:
-      "For many people, the most important insight is that stillness is not always regulation. Sometimes the system has gone into freeze rather than true settling.",
+      "Stillness alone does not distinguish defensive freezing from rest, fatigue or another experience. The source reviews below distinguish freezing from tonic and collapsed immobility.",
   },
   {
     title: "The pattern may linger after the moment",
@@ -179,11 +179,12 @@ export default function FightFlightFreezePage() {
             </h1>
 
             <p className="mt-6 max-w-2xl text-base leading-8 text-[#5f5a52] md:text-lg">
-              Fight, flight, and freeze are often used to describe protective
-              patterns in the body when stress, pressure, overload, or lack of
-              safety feels too high. Those states can be easier to recognize in ordinary
-              life, where they often show up as
-              urgency, irritability, avoidance, shutdown, or difficulty settling.
+              Fight, flight and freezing are terms used in research on defensive responses to threat. Freezing involves inhibited movement and can include preparation for action; it is not simply another word for every experience of shutdown, numbness or low motivation.{" "}
+              <a href="#source-28242739" className="underline underline-offset-4" aria-label="Read background source 1">[1]</a> <a href="#source-26062169" className="underline underline-offset-4" aria-label="Read background source 2">[2]</a>
+            </p>
+            <p className="mt-4 max-w-2xl text-sm leading-7 text-[#5f5a52]" data-neuvago-interpretation-note="1e4d3">
+              The everyday examples below are descriptive, not a diagnostic checklist. They cannot establish trauma, a specific autonomic state or a need for vagus nerve stimulation.{" "}
+              <a href="#sources-and-limits" className="font-medium underline underline-offset-4">Read the sources and their limits.</a>
             </p>
 
             <div className="mt-10 flex flex-wrap gap-4">
@@ -245,7 +246,7 @@ export default function FightFlightFreezePage() {
                             Freeze
                           </p>
                           <p className="mt-1 text-sm leading-6 text-[#5f5a52]">
-                            Shutdown and stillness
+                            Stillness and action preparation
                           </p>
                         </div>
                       </div>
@@ -551,6 +552,42 @@ export default function FightFlightFreezePage() {
               </Link>
             </div>
           </div>
+        </div>
+      </section>
+
+      <section id="sources-and-limits" aria-labelledby="sources-and-limits-heading" data-neuvago-source-pilot="1e4d3" className="border-y border-black/10 bg-[#eee7dd]">
+        <div className="mx-auto max-w-7xl px-6 py-16 md:px-10 md:py-20">
+          <div className="max-w-3xl">
+            <p className="text-sm uppercase tracking-[0.16em] text-[#625b53]">Sources and interpretation</p>
+            <h2 id="sources-and-limits-heading" className="mt-4 text-3xl font-medium leading-tight tracking-[-0.03em] md:text-4xl">Background sources and what they do not establish</h2>
+            <p className="mt-5 text-base leading-8 text-[#5f5a52]">These reviews concern defensive responses studied in animal, human and clinical contexts. They distinguish freezing from other immobility responses and do not establish that every everyday example on this page has the same mechanism.</p>
+            <p className="mt-4 text-sm leading-7 text-[#5f5a52]">These references are not studies of Neuvago and do not establish a product benefit, a diagnosis or personal suitability for stimulation.</p>
+          </div>
+          <div className="mt-8 grid gap-6 md:grid-cols-2">
+            <article id="source-28242739" data-source-pmid="28242739" className="min-w-0 rounded-[1.5rem] border border-black/10 bg-white/70 p-6 md:p-8">
+              <p className="text-xs font-medium uppercase tracking-[0.12em] text-[#625b53]">1. Translational review · 2017</p>
+              <h3 className="mt-3 break-words text-xl font-medium leading-7 text-[#1f1f1c]">Freeze for action: neurobiological mechanisms in animal and human freezing</h3>
+              <p className="mt-3 text-sm leading-7 text-[#5f5a52]">Roelofs K. Philosophical Transactions of the Royal Society B.</p>
+              <p className="mt-4 text-sm leading-7 text-[#5f5a52]">Reviews animal and human research on defensive freezing and preparation for action. Freezing in this literature is not simply another word for tiredness, low motivation or emotional numbness.</p>
+              <div className="mt-4 flex min-w-0 flex-col gap-2 text-sm text-[#5f5a52]">
+                <span>PMID: 28242739</span>
+                <span className="break-all">DOI: 10.1098/rstb.2016.0206</span>
+              </div>
+              <a href="https://pubmed.ncbi.nlm.nih.gov/28242739/" target="_blank" rel="noopener noreferrer" className="mt-5 inline-flex font-medium underline decoration-black/30 underline-offset-4 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4">Read Roelofs K on PubMed</a>
+            </article>
+            <article id="source-26062169" data-source-pmid="26062169" className="min-w-0 rounded-[1.5rem] border border-black/10 bg-white/70 p-6 md:p-8">
+              <p className="text-xs font-medium uppercase tracking-[0.12em] text-[#625b53]">2. Clinical review · 2015</p>
+              <h3 className="mt-3 break-words text-xl font-medium leading-7 text-[#1f1f1c]">Fear and the Defense Cascade: Clinical Implications and Management</h3>
+              <p className="mt-3 text-sm leading-7 text-[#5f5a52]">Kozlowska K, Walker P, McLean L, Carrive P. Harvard Review of Psychiatry.</p>
+              <p className="mt-4 text-sm leading-7 text-[#5f5a52]">Distinguishes defensive responses including freezing and tonic or collapsed immobility. Its clinical framework is not a self-diagnosis checklist or evidence for a Neuvago treatment effect.</p>
+              <div className="mt-4 flex min-w-0 flex-col gap-2 text-sm text-[#5f5a52]">
+                <span>PMID: 26062169</span>
+                <span className="break-all">DOI: 10.1097/HRP.0000000000000065</span>
+              </div>
+              <a href="https://pubmed.ncbi.nlm.nih.gov/26062169/" target="_blank" rel="noopener noreferrer" className="mt-5 inline-flex font-medium underline decoration-black/30 underline-offset-4 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4">Read Kozlowska K on PubMed</a>
+            </article>
+          </div>
+          <Link href="/research/how-to-read-a-vns-study" className="mt-8 inline-flex text-sm font-medium underline decoration-black/30 underline-offset-4">How to read a VNS study without transferring its conclusions to a different method or product</Link>
         </div>
       </section>
 

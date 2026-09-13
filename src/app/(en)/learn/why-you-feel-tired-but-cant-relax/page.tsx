@@ -41,17 +41,17 @@ const whatItOftenMeans = [
   {
     title: "Tiredness and relaxation are not the same thing",
     description:
-      "The body can be physically depleted while still carrying stress, alertness, unfinished activation, or a nervous system state that has not yet softened.",
+      "Feeling exhausted while mentally alert is a real experience. It does not tell us, on its own, which biological process is involved or why rest is difficult.",
   },
   {
-    title: "The system may still be organized around effort",
+    title: "Stress and sleep can interact",
     description:
-      "Even when energy is low, the body may still feel subtly mobilized, watchful, tense, or mentally active rather than ready for full rest.",
+      "Insomnia research examines how stress and arousal can affect sleep. People differ in their sensitivity, and the findings do not explain every episode of tiredness.",
   },
   {
-    title: "The body may not yet feel safe enough to fully let go",
+    title: "There may be more than one explanation",
     description:
-      "For many people, the issue is not a lack of tiredness. It is difficulty accessing softness, exhale, or a more complete sense of settling.",
+      "Sleep, health, mood, medicines and daily circumstances can matter. Difficulty relaxing is not proof that the body feels unsafe or that the vagus nerve is malfunctioning.",
   },
 ]
 
@@ -142,19 +142,19 @@ const connectedTopics = [
 
 const clarifications = [
   {
-    title: "It does not automatically mean something is seriously wrong",
+    title: "The feeling alone does not identify the cause",
     description:
-      "For many people, this experience makes sense as a stress-and-recovery pattern rather than as proof that the body is failing in some dramatic way.",
+      "A stress-related explanation is one possibility, not a conclusion from this page. Persistent, unexplained or disruptive tiredness is a reason to seek individual advice.",
   },
   {
     title: "It does not mean the tiredness is fake",
     description:
-      "The exhaustion can be completely real. The issue is that tiredness does not always arrive together with nervous system settling.",
+      "The exhaustion can be completely real even when you still feel alert. Describing both parts of the experience is more useful than assuming a single nervous-system cause.",
   },
   {
-    title: "It often makes most sense as a mixed state",
+    title: "Research models are not personal test results",
     description:
-      "The body may be low on energy while still carrying activation, urgency, mental momentum, or unfinished load at the same time.",
+      "Arousal and worry are studied as possible contributors to sleep problems. Recognizing the description does not diagnose insomnia or establish a specific treatment need.",
   },
 ]
 
@@ -186,11 +186,23 @@ export default function WhyYouFeelTiredButCantRelaxPage() {
             </h1>
 
             <p className="mt-6 max-w-2xl text-lg leading-8 text-[#5f5a52] md:text-xl">
-              Sometimes the body feels exhausted, but still unable to soften.
-              You may want sleep, relief, or rest, yet still feel internally
-              alert, mentally busy, or subtly “on.” That contradiction can happen
-              because fatigue and settling do not always arrive together.
+              You may feel exhausted and want rest, yet remain mentally busy or
+              physically tense. Research on insomnia and worry offers possible
+              explanations for difficulty settling, but this combination of feelings
+              does not identify a single cause. It is not proof of a nervous-system
+              disorder.
             </p>
+
+            <div className="mt-6 rounded-2xl border border-black/10 bg-white/70 p-5">
+              <p data-neuvago-interpretation-note="1e4d4" className="text-sm leading-7 text-[#5f5a52]">
+                Feeling tired but unable to relax is an experience, not a diagnosis. Research on insomnia and worry offers possible explanations, but it cannot identify the cause of your symptoms or show that your vagus nerve needs a reset.
+              </p>
+              <p className="mt-3 text-sm leading-7 text-[#514c45]">
+                Research context and limits:{" "}
+                <a href="#source-30046255" className="underline underline-offset-4">Kalmbach DA et al. (2018) [1]</a>{"; "}
+                <a href="#source-16439263" className="underline underline-offset-4">Brosschot JF (2006) [2]</a>.
+              </p>
+            </div>
 
             <div className="mt-10 flex flex-wrap gap-4">
               <Link
@@ -257,7 +269,7 @@ export default function WhyYouFeelTiredButCantRelaxPage() {
               What this often means
             </p>
             <h2 className="mt-4 max-w-2xl text-3xl font-semibold tracking-[-0.03em] md:text-4xl">
-              Exhaustion and relaxation often belong to two different layers of the same system
+              Feeling tired does not always mean feeling ready for sleep
             </h2>
           </div>
 
@@ -403,6 +415,45 @@ export default function WhyYouFeelTiredButCantRelaxPage() {
               </div>
             ))}
           </div>
+        </div>
+      </section>
+
+      <section id="sources-and-limits" data-neuvago-source-pilot="1e4d4" className="border-y border-black/6 bg-[#eee7dd]">
+        <div className="mx-auto max-w-7xl px-5 py-16 sm:px-8 lg:px-12 lg:py-20">
+          <div className="max-w-3xl">
+            <p className="text-xs font-medium uppercase tracking-[0.2em] text-[#7b7167]">Sources and interpretation limits</p>
+            <h2 className="mt-4 text-3xl font-medium tracking-[-0.04em] md:text-5xl">What this research can and cannot explain</h2>
+            <p className="mt-5 text-base leading-8 text-[#5f5a52]">These references provide context for the explanations discussed here. They are not studies of Neuvago and do not establish a product benefit. They do not make every everyday description on this page a measured biological finding.</p>
+          </div>
+          <div className="mt-10 grid gap-5 md:grid-cols-2">
+            <article id="source-30046255" data-source-pmid="30046255" className="min-w-0 scroll-mt-24 rounded-3xl border border-black/6 bg-white/70 p-6">
+              <p className="text-xs font-medium uppercase tracking-wide text-[#84796e]">1. Insomnia review · 2018</p>
+              <h3 className="mt-3 break-words text-xl font-medium leading-tight tracking-[-0.025em]">Hyperarousal and sleep reactivity in insomnia: current insights</h3>
+              <p className="mt-3 text-sm leading-7 text-[#5f5a52]">Kalmbach DA et al. Nature and Science of Sleep.</p>
+              <p className="mt-3 text-sm leading-7 text-[#625b53]">Discusses arousal and sensitivity of sleep to stress in insomnia research, with uncertainty about specific mechanisms. This does not diagnose insomnia or a nervous-system problem from the feeling of being tired but alert.</p>
+              <div className="mt-5 flex min-w-0 flex-wrap gap-x-4 gap-y-2 text-sm text-[#514c45]">
+                <span className="break-all">PMID: 30046255</span>
+                <span className="break-all">DOI: 10.2147/NSS.S138823</span>
+              </div>
+              <a href="https://pubmed.ncbi.nlm.nih.gov/30046255/" target="_blank" rel="noreferrer" className="mt-5 inline-flex break-all text-sm font-medium underline underline-offset-4">Read Kalmbach DA et al. on PubMed</a>
+            </article>
+            <article id="source-16439263" data-source-pmid="16439263" className="min-w-0 scroll-mt-24 rounded-3xl border border-black/6 bg-white/70 p-6">
+              <p className="text-xs font-medium uppercase tracking-wide text-[#84796e]">2. Hypothesis and evidence review · 2006</p>
+              <h3 className="mt-3 break-words text-xl font-medium leading-tight tracking-[-0.025em]">The perseverative cognition hypothesis: a review of worry, prolonged stress-related physiological activation, and health</h3>
+              <p className="mt-3 text-sm leading-7 text-[#5f5a52]">Brosschot JF, Gerin W, Thayer JF. Journal of Psychosomatic Research.</p>
+              <p className="mt-3 text-sm leading-7 text-[#625b53]">Reviews preliminary support for worry and rumination prolonging stress-related activation. It is a proposed explanation, not a universal cause of symptoms or evidence that stress is trapped in the body.</p>
+              <div className="mt-5 flex min-w-0 flex-wrap gap-x-4 gap-y-2 text-sm text-[#514c45]">
+                <span className="break-all">PMID: 16439263</span>
+                <span className="break-all">DOI: 10.1016/j.jpsychores.2005.06.074</span>
+              </div>
+              <a href="https://pubmed.ncbi.nlm.nih.gov/16439263/" target="_blank" rel="noreferrer" className="mt-5 inline-flex break-all text-sm font-medium underline underline-offset-4">Read Brosschot JF on PubMed</a>
+            </article>
+          </div>
+          <aside data-neuvago-care-note="1e4d4" className="mt-8 rounded-3xl border border-black/10 bg-white/70 p-6">
+            <h3 className="text-lg font-medium">When to seek individual advice</h3>
+            <p className="mt-3 text-sm leading-7 text-[#5f5a52]">If tiredness lasts for weeks without a clear explanation or affects daily life, seek advice from a healthcare professional rather than assuming it is only stress or a regulation problem.</p>
+            <a href="https://www.nhs.uk/symptoms/tiredness-and-fatigue/" target="_blank" rel="noreferrer" className="mt-4 inline-flex text-sm underline underline-offset-4">NHS guidance: tiredness and fatigue</a>
+          </aside>
         </div>
       </section>
 

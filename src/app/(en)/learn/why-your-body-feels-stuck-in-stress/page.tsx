@@ -34,40 +34,40 @@ const keyPoints = [
   {
     title: "The body does not always switch off immediately",
     description:
-      "Stress responses often linger when the system has carried too much pressure for too long or has not yet had enough support to fully come down.",
+      "Feeling tense after a difficult event is possible. The feeling alone does not show that a stress response is trapped, unfinished or permanently switched on.",
   },
   {
     title: "What feels confusing often makes sense in context",
     description:
-      "The body may stay tense, wired, watchful, or hard to settle because stress load, poor sleep, overstimulation, and thin recovery are still shaping its state.",
+      "Ongoing demands, worry, sleep and health are possible parts of the picture. They should be explored rather than assumed to be the explanation for every symptom.",
   },
   {
     title: "The explanation often helps by removing blame",
     description:
-      "This pattern usually makes more sense as a system still carrying too much rather than a body that is simply refusing to relax.",
+      "Difficulty relaxing is not a failure of willpower. Being kind to yourself can coexist with seeking assessment when symptoms persist or cause concern.",
   },
 ]
 
 const whyItHappens = [
   {
-    title: "Stress load stays in the system",
+    title: "Worry may outlast the event",
     description:
-      "Even when the obvious event is over, the body may still be carrying accumulated pressure, uncertainty, emotional load, or prolonged activation from what came before.",
+      "One research hypothesis is that worry and rumination can prolong stress-related activation before or after an event. This is a possible mechanism, not proof of trapped stress.",
   },
   {
-    title: "Recovery has not fully happened yet",
+    title: "Present-day demands may continue",
     description:
-      "The body often needs more than the stressor ending. It may still need sleep, restoration, softer transitions, and enough time to register that the pressure is actually over.",
+      "One event can end while other demands remain. It can help to distinguish what has actually changed from what still needs practical support.",
   },
   {
-    title: "The system has learned to stay ready",
+    title: "Sleep and health also matter",
     description:
-      "After too much urgency, overload, or vigilance, the body may remain organized around alertness, scanning, and preparation rather than settling.",
+      "Sleep difficulties and physical or mental health concerns may overlap with feeling tense. Symptoms should not automatically be assigned to a learned nervous-system state.",
   },
   {
-    title: "Daily life keeps reactivating the pattern",
+    title: "Stress involves more than one pathway",
     description:
-      "Even when one major stressor has passed, ongoing demands, overstimulation, unfinished tasks, and too little pause can keep feeding the same state.",
+      "Stress physiology concerns interactions across several body systems. It is not a single switch, and this page cannot measure those processes in an individual.",
   },
 ]
 
@@ -184,13 +184,23 @@ export default function WhyYourBodyFeelsStuckInStressPage() {
             </h1>
 
             <p className="mt-6 max-w-2xl text-base leading-8 text-[#5f5a52] md:text-lg">
-              Many people feel confused when the body stays tense, alert, wired,
-              or hard to settle even after the obvious pressure has passed. In
-              practice, this often happens because the stress response has not
-              fully completed yet. The system may still be carrying load, thin
-              recovery, overstimulation, or the aftereffects of staying “on” for
-              too long.
+              Feeling tense, restless or watchful after a difficult event can be
+              confusing. Describing that experience as feeling stuck does not mean
+              stress is literally trapped in the body. Worry, ongoing demands, sleep and
+              health may be relevant, but the cause cannot be established from the
+              feeling alone.
             </p>
+
+            <div className="mt-6 rounded-2xl border border-black/10 bg-white/70 p-5">
+              <p data-neuvago-interpretation-note="1e4d4" className="text-sm leading-7 text-[#5f5a52]">
+                Feeling stuck is a description, not evidence of a trapped or unfinished stress response. Stress physiology and worry-related models offer possible explanations, not a diagnosis from symptoms or proof that the body must complete a particular cycle.
+              </p>
+              <p className="mt-3 text-sm leading-7 text-[#514c45]">
+                Research context and limits:{" "}
+                <a href="#source-17615391" className="underline underline-offset-4">McEwen BS (2007) [1]</a>{"; "}
+                <a href="#source-16439263" className="underline underline-offset-4">Brosschot JF (2006) [2]</a>.
+              </p>
+            </div>
 
             <div className="mt-10 flex flex-wrap gap-4">
               <Link
@@ -278,29 +288,28 @@ export default function WhyYourBodyFeelsStuckInStressPage() {
             </p>
 
             <h2 className="mt-4 max-w-3xl text-3xl font-medium leading-tight tracking-[-0.03em] md:text-5xl">
-              The body often feels stuck in stress not because it is failing, but because the system has not yet fully returned from what it has been carrying
+              Feeling stuck is a description of an experience, not a diagnosis of an
+              unfinished stress response
             </h2>
 
             <p className="mt-6 max-w-2xl text-base leading-8 text-[#5f5a52] md:text-lg">
-              In everyday life, the stressful event itself is not always the only
-              thing the body is responding to. The system may still be carrying
-              accumulated pressure, poor sleep, emotional load, overstimulation,
-              thin recovery, or a longer period of being “on” than it has truly
-              had time to restore from.
+              It helps to separate what you notice from the explanation you give it.
+              Tension, racing thoughts and difficulty unwinding describe your
+              experience; they do not by themselves measure autonomic activity, hormone
+              levels or stress load.
             </p>
 
             <p className="mt-6 max-w-2xl text-base leading-8 text-[#5f5a52]">
-              That is why the body can remain tense, watchful, wired, restless,
-              or hard to settle even when the obvious pressure has passed. The
-              issue is often not that the body does not want calm. The issue is
-              that it has not yet registered enough return, recovery, or safety
-              for the stress response to fully complete.
+              Stress physiology involves multiple interacting systems. Research on worry
+              and rumination proposes one reason responses may continue around a
+              stressful event, but it does not establish that everyone needs to complete
+              or release a stored stress cycle.
             </p>
 
             <p className="mt-6 max-w-2xl text-base leading-8 text-[#5f5a52]">
-              A useful way to understand this pattern is not as a personal
-              failure, but as a sign that the system may still be carrying more
-              than it has comfortably processed.
+              You do not need to blame yourself for finding it hard to relax. Nor do you
+              need to accept a single physiological explanation before asking for
+              support or appropriate assessment.
             </p>
 
             <div className="mt-10 flex flex-wrap gap-4">
@@ -346,8 +355,8 @@ export default function WhyYourBodyFeelsStuckInStressPage() {
                 This explanation works best when it removes blame
               </p>
               <p className="mt-2 text-sm leading-7 text-[#5f5a52]">
-                Often, the most relieving part is understanding that the body may
-                still be carrying load rather than simply “refusing to calm down.”
+                The experience can be taken seriously without treating it as a failure
+                of willpower or assuming that one mechanism explains it.
               </p>
             </div>
           </div>
@@ -358,18 +367,17 @@ export default function WhyYourBodyFeelsStuckInStressPage() {
         <div className="mx-auto max-w-7xl px-6 py-24 md:px-10 md:py-28">
           <div className="max-w-3xl">
             <p className="text-sm uppercase tracking-[0.18em] text-[#7a756c]">
-              Why this often happens
+              Possible contributors, not a personal diagnosis
             </p>
 
             <h2 className="mt-4 text-3xl font-medium leading-tight tracking-[-0.03em] md:text-5xl">
-              The system often stays “on” because too much is still unresolved in
-              the body, even when the outside situation has changed
+              A changed situation does not tell us everything about ongoing symptoms
             </h2>
 
             <p className="mt-6 max-w-2xl text-base leading-8 text-[#5f5a52] md:text-lg">
-              Before asking how to calm the system, it often helps to understand
-              why it is still active. In many cases, the body is not stuck for no
-              reason. It is still organizing around what it has been carrying.
+              The possibilities below are prompts for understanding the context, not
+              tests for stored stress, nervous-system damage or a required reset.
+              Several factors may need attention, and individual advice may be helpful.
             </p>
           </div>
 
@@ -527,21 +535,20 @@ export default function WhyYourBodyFeelsStuckInStressPage() {
             </p>
 
             <h2 className="mt-4 max-w-3xl text-3xl font-medium leading-tight tracking-[-0.03em] md:text-5xl">
-              Feeling stuck in stress usually does not mean the body is broken.
-              It often means the system has not yet had enough support to fully return.
+              Feeling stuck does not establish either permanent damage or one harmless
+              explanation
             </h2>
 
             <p className="mt-6 max-w-2xl text-base leading-8 text-[#5f5a52] md:text-lg">
-              A more useful way to understand this feeling is not as proof that
-              something is permanently wrong, but as a sign that the body may
-              still be carrying more load, activation, under-recovery, or
-              unfinished stress than it has fully worked through yet.
+              This page cannot tell whether ongoing symptoms come from stress, sleep, a
+              health condition or several influences. It should not be used to rule out
+              other causes or delay appropriate care.
             </p>
 
             <p className="mt-6 max-w-2xl text-base leading-8 text-[#5f5a52]">
-              That is why the experience often makes more sense when viewed
-              through recovery, sleep, nervous system settling, and overall
-              stress load rather than through blame or self-criticism.
+              The references explain the models being discussed and their limits. They
+              do not show that a particular technique completes a stress response or
+              that Neuvago treats anxiety or another condition.
             </p>
 
             <div className="mt-10 flex flex-wrap gap-4">
@@ -560,6 +567,45 @@ export default function WhyYourBodyFeelsStuckInStressPage() {
               </Link>
             </div>
           </div>
+        </div>
+      </section>
+
+      <section id="sources-and-limits" data-neuvago-source-pilot="1e4d4" className="border-y border-black/6 bg-[#eee7dd]">
+        <div className="mx-auto max-w-7xl px-5 py-16 sm:px-8 lg:px-12 lg:py-20">
+          <div className="max-w-3xl">
+            <p className="text-xs font-medium uppercase tracking-[0.2em] text-[#7b7167]">Sources and interpretation limits</p>
+            <h2 className="mt-4 text-3xl font-medium tracking-[-0.04em] md:text-5xl">What this research can and cannot explain</h2>
+            <p className="mt-5 text-base leading-8 text-[#5f5a52]">These references provide context for the explanations discussed here. They are not studies of Neuvago and do not establish a product benefit. They do not make every everyday description on this page a measured biological finding.</p>
+          </div>
+          <div className="mt-10 grid gap-5 md:grid-cols-2">
+            <article id="source-17615391" data-source-pmid="17615391" className="min-w-0 scroll-mt-24 rounded-3xl border border-black/6 bg-white/70 p-6">
+              <p className="text-xs font-medium uppercase tracking-wide text-[#84796e]">1. Stress physiology review · 2007</p>
+              <h3 className="mt-3 break-words text-xl font-medium leading-tight tracking-[-0.025em]">Physiology and neurobiology of stress and adaptation: central role of the brain</h3>
+              <p className="mt-3 text-sm leading-7 text-[#5f5a52]">McEwen BS. Physiological Reviews.</p>
+              <p className="mt-3 text-sm leading-7 text-[#625b53]">Describes adaptive and maladaptive stress responses involving multiple body systems. It does not measure an individual’s stress load from symptoms or establish that a stress response must be completed by a particular technique.</p>
+              <div className="mt-5 flex min-w-0 flex-wrap gap-x-4 gap-y-2 text-sm text-[#514c45]">
+                <span className="break-all">PMID: 17615391</span>
+                <span className="break-all">DOI: 10.1152/physrev.00041.2006</span>
+              </div>
+              <a href="https://pubmed.ncbi.nlm.nih.gov/17615391/" target="_blank" rel="noreferrer" className="mt-5 inline-flex break-all text-sm font-medium underline underline-offset-4">Read McEwen BS on PubMed</a>
+            </article>
+            <article id="source-16439263" data-source-pmid="16439263" className="min-w-0 scroll-mt-24 rounded-3xl border border-black/6 bg-white/70 p-6">
+              <p className="text-xs font-medium uppercase tracking-wide text-[#84796e]">2. Hypothesis and evidence review · 2006</p>
+              <h3 className="mt-3 break-words text-xl font-medium leading-tight tracking-[-0.025em]">The perseverative cognition hypothesis: a review of worry, prolonged stress-related physiological activation, and health</h3>
+              <p className="mt-3 text-sm leading-7 text-[#5f5a52]">Brosschot JF, Gerin W, Thayer JF. Journal of Psychosomatic Research.</p>
+              <p className="mt-3 text-sm leading-7 text-[#625b53]">Reviews preliminary support for worry and rumination prolonging stress-related activation. It is a proposed explanation, not a universal cause of symptoms or evidence that stress is trapped in the body.</p>
+              <div className="mt-5 flex min-w-0 flex-wrap gap-x-4 gap-y-2 text-sm text-[#514c45]">
+                <span className="break-all">PMID: 16439263</span>
+                <span className="break-all">DOI: 10.1016/j.jpsychores.2005.06.074</span>
+              </div>
+              <a href="https://pubmed.ncbi.nlm.nih.gov/16439263/" target="_blank" rel="noreferrer" className="mt-5 inline-flex break-all text-sm font-medium underline underline-offset-4">Read Brosschot JF on PubMed</a>
+            </article>
+          </div>
+          <aside data-neuvago-care-note="1e4d4" className="mt-8 rounded-3xl border border-black/10 bg-white/70 p-6">
+            <h3 className="text-lg font-medium">When to seek individual advice</h3>
+            <p className="mt-3 text-sm leading-7 text-[#5f5a52]">Seek professional support if stress is difficult to cope with or self-help is not helping. New or concerning physical symptoms should not be assumed to be caused by stress.</p>
+            <a href="https://www.nhs.uk/mental-health/feelings-symptoms-behaviours/feelings-and-symptoms/stress/" target="_blank" rel="noreferrer" className="mt-4 inline-flex text-sm underline underline-offset-4">NHS guidance: stress</a>
+          </aside>
         </div>
       </section>
 

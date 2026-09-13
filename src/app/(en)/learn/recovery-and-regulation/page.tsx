@@ -34,17 +34,17 @@ const keyPoints = [
   {
     title: "Recovery is more than stopping",
     description:
-      "In everyday life, recovery is not only about taking a break. It is about whether the body and mind actually restore after stress, effort, poor sleep, or prolonged load.",
+      "Here, recovery describes rest and the experience of feeling ready for ordinary activities again. It is not a clinical measurement of nervous-system function.",
   },
   {
     title: "Recovery shapes capacity",
     description:
-      "When recovery becomes stronger, ordinary life often feels more carryable. When it stays thin, everything can begin to feel heavier, slower, or harder to recover from.",
+      "Energy and ability to manage daily demands are useful experiences to notice. They do not, by themselves, show why someone is tired or how well their autonomic nervous system is working.",
   },
   {
     title: "Regulation and recovery belong together",
     description:
-      "The body often restores more fully when it can shift out of prolonged activation and back toward steadier, more supported states over time.",
+      "Recovery and stress are studied in different settings. Findings about time away from work should not be treated as a universal explanation for fatigue or as proof of a product effect.",
   },
 ]
 
@@ -75,17 +75,17 @@ const everydayPatterns = [
   {
     title: "Lingering tiredness",
     description:
-      "A common sign of thin recovery is that rest happened, but the tiredness still feels like it stayed behind in the system.",
+      "You may still feel tired after resting. That experience deserves attention, but it does not identify its cause or prove that stress remains stored in the body.",
   },
   {
     title: "Harder mornings",
     description:
-      "Recovery issues often become visible in the way the day begins, when energy, steadiness, or motivation feel slow to return.",
+      "Low energy or motivation in the morning can be useful to describe when seeking advice. They are not specific signs of a regulation problem.",
   },
   {
     title: "Lower resilience",
     description:
-      "Even smaller pressures may begin to feel harder to carry when the system is not restoring as fully as it needs to.",
+      "You may find ordinary pressures harder to manage than before. This is a description of day-to-day functioning, not a measurement of resilience or vagal tone.",
   },
   {
     title: "Less room for ordinary life",
@@ -184,12 +184,23 @@ export default function RecoveryAndRegulationPage() {
             </h1>
 
             <p className="mt-6 max-w-2xl text-base leading-8 text-[#5f5a52] md:text-lg">
-              Recovery is often treated as simple rest, but in real life it is
-              more than stopping. It is about whether the body actually restores
-              after stress, poor sleep, effort, overload, or prolonged strain —
-              and whether that restoration changes how much capacity, steadiness,
-              and resilience you have the next day.
+              Rest is an activity; feeling restored is an experience. This page explores
+              that distinction without treating lingering tiredness as proof of a
+              nervous-system problem. Research on recovery from job stress and on stress
+              physiology provides useful context, but not one explanation for every
+              person.
             </p>
+
+            <div className="mt-6 rounded-2xl border border-black/10 bg-white/70 p-5">
+              <p data-neuvago-interpretation-note="1e4d4" className="text-sm leading-7 text-[#5f5a52]">
+                Recovery in this article refers to everyday rest and feeling able to resume activities. The cited research concerns job-stress recovery and broader stress physiology; it does not turn fatigue, mood or a wearable value into a measure of nervous-system recovery.
+              </p>
+              <p className="mt-3 text-sm leading-7 text-[#514c45]">
+                Research context and limits:{" "}
+                <a href="#source-28358572" className="underline underline-offset-4">Sonnentag S (2017) [1]</a>{"; "}
+                <a href="#source-17615391" className="underline underline-offset-4">McEwen BS (2007) [2]</a>.
+              </p>
+            </div>
 
             <div className="mt-10 flex flex-wrap gap-4">
               <Link
@@ -290,16 +301,16 @@ export default function RecoveryAndRegulationPage() {
             </p>
 
             <p className="mt-6 max-w-2xl text-base leading-8 text-[#5f5a52]">
-              That is why recovery often becomes connected to stress, sleep,
-              regulation, and capacity. If the system remains strained, even
-              rest may feel incomplete, and energy may not return in the way
-              someone expects.
+              Research on recovery from work distinguishes what people do during time
+              away from work from how recovered they feel. Those findings help frame
+              everyday recovery, but they do not explain every case of tiredness or poor
+              sleep.
             </p>
 
             <p className="mt-6 max-w-2xl text-base leading-8 text-[#5f5a52]">
-              A useful way to think about recovery is not only as time off, but
-              as the broader process through which the body gets back energy,
-              steadiness, flexibility, and room for life again.
+              Use the language of recovery to describe your experience and needs, not to
+              score or diagnose your nervous system. The source notes below explain the
+              settings and limits of the research used here.
             </p>
 
             <div className="mt-10 flex flex-wrap gap-4">
@@ -395,19 +406,18 @@ export default function RecoveryAndRegulationPage() {
         <div className="mx-auto max-w-7xl px-6 py-24 md:px-10 md:py-28">
           <div className="max-w-3xl">
             <p className="text-sm uppercase tracking-[0.18em] text-[#7a756c]">
-              Common signs of thin recovery
+              Experiences worth paying attention to
             </p>
 
             <h2 className="mt-4 text-3xl font-medium leading-tight tracking-[-0.03em] md:text-5xl">
-              Incomplete recovery often becomes visible in the ordinary patterns
-              people live with every day
+              Everyday changes can be worth discussing without being specific signs of
+              one condition
             </h2>
 
             <p className="mt-6 max-w-2xl text-base leading-8 text-[#5f5a52] md:text-lg">
-              People do not always notice recovery as a separate concept first.
-              More often, they notice the consequences around it: lingering
-              tiredness, lower resilience, slower return, and a day-to-day
-              capacity that no longer feels like it used to.
+              Lingering tiredness, difficult mornings and less room for ordinary demands
+              are experiences people may notice. The list below is not a diagnostic
+              checklist and does not establish that incomplete recovery is the cause.
             </p>
           </div>
 
@@ -530,21 +540,20 @@ export default function RecoveryAndRegulationPage() {
             </p>
 
             <h2 className="mt-4 max-w-3xl text-3xl font-medium leading-tight tracking-[-0.03em] md:text-5xl">
-              Recovery support is usually not only about resting more. It is
-              about helping the system restore more fully over time.
+              Recovery support is not a substitute for understanding persistent or
+              unexplained tiredness
             </h2>
 
             <p className="mt-6 max-w-2xl text-base leading-8 text-[#5f5a52] md:text-lg">
-              A more useful understanding of recovery support is not that one
-              pause solves everything, but that the system may need better
-              support for sleep, nervous system settling, daily rhythm, and
-              restoration over time.
+              Rest and daily routines can be part of looking after yourself. Persistent
+              symptoms may need individual assessment rather than a stronger effort to
+              relax or a new explanation based only on nervous-system language.
             </p>
 
             <p className="mt-6 max-w-2xl text-base leading-8 text-[#5f5a52]">
-              That is why recovery usually makes most sense when understood
-              across sleep, stress, regulation, capacity, and how much the body
-              is still carrying rather than as one isolated self-care idea.
+              The references below distinguish occupational recovery research from
+              stress physiology. Neither kind of source establishes that Neuvago treats
+              fatigue, burnout or a medical condition.
             </p>
 
             <div className="mt-10 flex flex-wrap gap-4">
@@ -563,6 +572,45 @@ export default function RecoveryAndRegulationPage() {
               </Link>
             </div>
           </div>
+        </div>
+      </section>
+
+      <section id="sources-and-limits" data-neuvago-source-pilot="1e4d4" className="border-y border-black/6 bg-[#eee7dd]">
+        <div className="mx-auto max-w-7xl px-5 py-16 sm:px-8 lg:px-12 lg:py-20">
+          <div className="max-w-3xl">
+            <p className="text-xs font-medium uppercase tracking-[0.2em] text-[#7b7167]">Sources and interpretation limits</p>
+            <h2 className="mt-4 text-3xl font-medium tracking-[-0.04em] md:text-5xl">What this research can and cannot explain</h2>
+            <p className="mt-5 text-base leading-8 text-[#5f5a52]">These references provide context for the explanations discussed here. They are not studies of Neuvago and do not establish a product benefit. They do not make every everyday description on this page a measured biological finding.</p>
+          </div>
+          <div className="mt-10 grid gap-5 md:grid-cols-2">
+            <article id="source-28358572" data-source-pmid="28358572" className="min-w-0 scroll-mt-24 rounded-3xl border border-black/6 bg-white/70 p-6">
+              <p className="text-xs font-medium uppercase tracking-wide text-[#84796e]">1. Occupational recovery review · 2017</p>
+              <h3 className="mt-3 break-words text-xl font-medium leading-tight tracking-[-0.025em]">Advances in recovery research: What have we learned? What should be done next?</h3>
+              <p className="mt-3 text-sm leading-7 text-[#5f5a52]">Sonnentag S, Venz L, Casper A. Journal of Occupational Health Psychology.</p>
+              <p className="mt-3 text-sm leading-7 text-[#625b53]">Reviews recovery from job stress during nonwork time. This is background on employee well-being, not a clinical test for persistent fatigue or proof that one routine restores the nervous system.</p>
+              <div className="mt-5 flex min-w-0 flex-wrap gap-x-4 gap-y-2 text-sm text-[#514c45]">
+                <span className="break-all">PMID: 28358572</span>
+                <span className="break-all">DOI: 10.1037/ocp0000079</span>
+              </div>
+              <a href="https://pubmed.ncbi.nlm.nih.gov/28358572/" target="_blank" rel="noreferrer" className="mt-5 inline-flex break-all text-sm font-medium underline underline-offset-4">Read Sonnentag S on PubMed</a>
+            </article>
+            <article id="source-17615391" data-source-pmid="17615391" className="min-w-0 scroll-mt-24 rounded-3xl border border-black/6 bg-white/70 p-6">
+              <p className="text-xs font-medium uppercase tracking-wide text-[#84796e]">2. Stress physiology review · 2007</p>
+              <h3 className="mt-3 break-words text-xl font-medium leading-tight tracking-[-0.025em]">Physiology and neurobiology of stress and adaptation: central role of the brain</h3>
+              <p className="mt-3 text-sm leading-7 text-[#5f5a52]">McEwen BS. Physiological Reviews.</p>
+              <p className="mt-3 text-sm leading-7 text-[#625b53]">Describes adaptive and maladaptive stress responses involving multiple body systems. It does not measure an individual’s stress load from symptoms or establish that a stress response must be completed by a particular technique.</p>
+              <div className="mt-5 flex min-w-0 flex-wrap gap-x-4 gap-y-2 text-sm text-[#514c45]">
+                <span className="break-all">PMID: 17615391</span>
+                <span className="break-all">DOI: 10.1152/physrev.00041.2006</span>
+              </div>
+              <a href="https://pubmed.ncbi.nlm.nih.gov/17615391/" target="_blank" rel="noreferrer" className="mt-5 inline-flex break-all text-sm font-medium underline underline-offset-4">Read McEwen BS on PubMed</a>
+            </article>
+          </div>
+          <aside data-neuvago-care-note="1e4d4" className="mt-8 rounded-3xl border border-black/10 bg-white/70 p-6">
+            <h3 className="text-lg font-medium">When to seek individual advice</h3>
+            <p className="mt-3 text-sm leading-7 text-[#5f5a52]">If tiredness lasts for weeks without a clear explanation or affects daily life, seek advice from a healthcare professional rather than assuming it is only stress or a regulation problem.</p>
+            <a href="https://www.nhs.uk/symptoms/tiredness-and-fatigue/" target="_blank" rel="noreferrer" className="mt-4 inline-flex text-sm underline underline-offset-4">NHS guidance: tiredness and fatigue</a>
+          </aside>
         </div>
       </section>
 

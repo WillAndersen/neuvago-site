@@ -1,0 +1,76 @@
+{
+  "type": "object",
+  "properties": {
+    "schema": {
+      "const": "neuvago-typed-source-usage-v1"
+    },
+    "version": {
+      "const": "1.0.0"
+    },
+    "status": {
+      "const": "RECORDED_SOURCE_USE_NOT_CLAIM_SUPPORT"
+    },
+    "input_usage_ledger_sha256": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{64}$"
+    },
+    "usages": {
+      "type": "array",
+      "minItems": 16,
+      "maxItems": 16,
+      "items": {
+        "type": "object",
+        "properties": {
+          "usage_id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "source_id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "usage_scope": {
+            "const": "CITED_SOURCE_IDENTITY_NOT_SCIENTIFIC_SUPPORT"
+          },
+          "original_usage": {
+            "type": "object"
+          },
+          "claim_ids": {
+            "type": "array",
+            "maxItems": 0
+          },
+          "claim_support_approved": {
+            "const": false
+          }
+        },
+        "required": [
+          "usage_id",
+          "source_id",
+          "usage_scope",
+          "original_usage",
+          "claim_ids",
+          "claim_support_approved"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "approved_links": {
+      "const": 0
+    },
+    "current_rendering_verified": {
+      "const": false
+    }
+  },
+  "required": [
+    "schema",
+    "version",
+    "status",
+    "input_usage_ledger_sha256",
+    "usages",
+    "approved_links",
+    "current_rendering_verified"
+  ],
+  "additionalProperties": false,
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Neuvago version-bound source usage v1"
+}

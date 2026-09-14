@@ -1,0 +1,272 @@
+{
+  "type": "object",
+  "properties": {
+    "schema": {
+      "const": "neuvago-typed-source-admissions-v1"
+    },
+    "registry_version": {
+      "const": "1.0.0"
+    },
+    "status": {
+      "const": "LOCAL_METADATA_ADMISSION_PENDING_FINAL_REVIEW"
+    },
+    "legacy_registry": {
+      "type": "object",
+      "properties": {
+        "path": {
+          "const": "docs/seo/evidence-operations/evidence-registry.v1.json"
+        },
+        "sha256": {
+          "const": "6a4286e67507173ed5e97462f5759a924119ab09a53f314d18372007006a7dba"
+        },
+        "active_records": {
+          "const": 172
+        },
+        "quarantined_records": {
+          "const": 2
+        }
+      },
+      "required": [
+        "path",
+        "sha256",
+        "active_records",
+        "quarantined_records"
+      ],
+      "additionalProperties": false
+    },
+    "input_identity_review_sha256": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{64}$"
+    },
+    "sources": {
+      "type": "array",
+      "minItems": 12,
+      "maxItems": 12,
+      "items": {
+        "type": "object",
+        "properties": {
+          "source_id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "intake_id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "reference_key": {
+            "type": "string",
+            "minLength": 1
+          },
+          "source_kind": {
+            "enum": [
+              "SCHOLARLY_PUBLICATION",
+              "PUBLIC_HEALTH_GUIDANCE",
+              "CLINICAL_GUIDELINE",
+              "CLASSIFICATION_CLARIFICATION"
+            ]
+          },
+          "identity": {
+            "type": "object",
+            "properties": {
+              "pmid": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "doi_display": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "doi_normalized": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "source_url": {
+                "type": "string",
+                "minLength": 1
+              },
+              "source_record_kind": {
+                "enum": [
+                  "SCHOLARLY_PUBLICATION",
+                  "PUBLIC_HEALTH_GUIDANCE",
+                  "CLINICAL_GUIDELINE",
+                  "CLASSIFICATION_CLARIFICATION"
+                ]
+              }
+            },
+            "required": [
+              "pmid",
+              "doi_display",
+              "doi_normalized",
+              "source_url",
+              "source_record_kind"
+            ],
+            "additionalProperties": false
+          },
+          "observed_primary_metadata": {
+            "type": "object"
+          },
+          "identity_review": {
+            "type": "object",
+            "properties": {
+              "disposition": {
+                "type": "string",
+                "minLength": 1
+              },
+              "comparison_note": {
+                "type": "string",
+                "minLength": 1
+              },
+              "source_observation": {
+                "type": "object"
+              }
+            },
+            "required": [
+              "disposition",
+              "comparison_note",
+              "source_observation"
+            ],
+            "additionalProperties": false
+          },
+          "input_record_sha256": {
+            "type": "string",
+            "pattern": "^[0-9a-f]{64}$"
+          },
+          "usage_ids": {
+            "type": "array",
+            "minItems": 1,
+            "uniqueItems": true,
+            "items": {
+              "type": "string",
+              "minLength": 1
+            }
+          },
+          "admission_scope": {
+            "const": "METADATA_IDENTITY_ONLY_LOCAL_REVIEW_PENDING"
+          },
+          "claim_ids": {
+            "type": "array",
+            "maxItems": 0
+          },
+          "scientific_claim_support_approved": {
+            "const": false
+          },
+          "claim_support_review_complete": {
+            "const": false
+          },
+          "directness": {
+            "const": "PENDING_CLAIM_REVIEW"
+          },
+          "method_quality": {
+            "type": "null"
+          },
+          "evidence_certainty": {
+            "type": "null"
+          },
+          "human_signoff": {
+            "type": "null"
+          }
+        },
+        "required": [
+          "source_id",
+          "intake_id",
+          "reference_key",
+          "source_kind",
+          "identity",
+          "observed_primary_metadata",
+          "identity_review",
+          "input_record_sha256",
+          "usage_ids",
+          "admission_scope",
+          "claim_ids",
+          "scientific_claim_support_approved",
+          "claim_support_review_complete",
+          "directness",
+          "method_quality",
+          "evidence_certainty",
+          "human_signoff"
+        ],
+        "additionalProperties": false,
+        "oneOf": [
+          {
+            "properties": {
+              "source_kind": {
+                "const": "SCHOLARLY_PUBLICATION"
+              },
+              "identity": {
+                "properties": {
+                  "source_record_kind": {
+                    "const": "SCHOLARLY_PUBLICATION"
+                  },
+                  "pmid": {
+                    "type": "string",
+                    "pattern": "^[1-9][0-9]{0,8}$"
+                  },
+                  "doi_normalized": {
+                    "type": "string",
+                    "pattern": "^10\\.[0-9]{4,9}/[^\\s]+$"
+                  }
+                }
+              }
+            }
+          },
+          {
+            "properties": {
+              "source_kind": {
+                "enum": [
+                  "PUBLIC_HEALTH_GUIDANCE",
+                  "CLINICAL_GUIDELINE",
+                  "CLASSIFICATION_CLARIFICATION"
+                ]
+              },
+              "identity": {
+                "properties": {
+                  "source_record_kind": {
+                    "enum": [
+                      "PUBLIC_HEALTH_GUIDANCE",
+                      "CLINICAL_GUIDELINE",
+                      "CLASSIFICATION_CLARIFICATION"
+                    ]
+                  },
+                  "pmid": {
+                    "type": "null"
+                  },
+                  "doi_display": {
+                    "type": "null"
+                  },
+                  "doi_normalized": {
+                    "type": "null"
+                  }
+                }
+              }
+            }
+          }
+        ]
+      }
+    },
+    "approved_links": {
+      "const": 0
+    },
+    "release_ready": {
+      "const": false
+    }
+  },
+  "required": [
+    "schema",
+    "registry_version",
+    "status",
+    "legacy_registry",
+    "input_identity_review_sha256",
+    "sources",
+    "approved_links",
+    "release_ready"
+  ],
+  "additionalProperties": false,
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Neuvago typed metadata admissions v1 — not claim approvals"
+}

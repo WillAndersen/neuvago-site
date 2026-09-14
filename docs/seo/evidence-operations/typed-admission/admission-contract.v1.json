@@ -1,0 +1,1311 @@
+{
+  "schema": "neuvago-r-intake2-admission-contract-v1",
+  "version": "1.0.1",
+  "mode": "LOCAL_REVIEW_ONLY",
+  "accepted_repo_head": "a392d3cad094e0308f7ea0d7f761ac6cf8a1d4ef",
+  "accepted_source_baseline": "4c4e65a87163000ee493f264849824f17fdcf8ca",
+  "accepted_e3_tooling_fingerprint": "e6349755379a7df232dae4e69f19e73f5bacc94a6a28b98badbda43e72f10f72",
+  "accepted_e2_rules_sha256": "29403f0f09e7728e32d0213b6998414842ae6ede02090cfe7cdadbb36f031b48",
+  "origin_urls": [
+    "https://github.com/WillAndersen/neuvago-site.git",
+    "git@github.com:WillAndersen/neuvago-site.git"
+  ],
+  "roots": [
+    "docs/seo/evidence-operations/typed-admission",
+    "scripts/evidence-intake"
+  ],
+  "legacy_registry": {
+    "path": "docs/seo/evidence-operations/evidence-registry.v1.json",
+    "sha256": "6a4286e67507173ed5e97462f5759a924119ab09a53f314d18372007006a7dba",
+    "active_records": 172,
+    "quarantined_records": 2
+  },
+  "input_review_archive_sha256": "7dfd0e4273607e0b6eac163df53a4dc65d908da7c9eb7af391febef6520609f4",
+  "input_documents": {
+    "docs/seo/evidence-operations/typed-admission/inputs/identity-review.v1.json": "25a89d5141031220442a55b04cc679c61e378f5b4cff1c02531c1f931ed971f5",
+    "docs/seo/evidence-operations/typed-admission/inputs/source-usage-ledger.v1.json": "f606633703942e1ed981fece84fd7ae0c182f770e70da49f2c72548619e96ea1",
+    "docs/seo/evidence-operations/typed-admission/inputs/primary-source-observations.v1.json": "e1d31f25690378f91b745a8ac1cf5322eb7e4c62a201baf8a23e2c4bf9400637",
+    "docs/seo/evidence-operations/typed-admission/inputs/integration-constraints.json": "fc75b2b0fba8b2839b7983efed7e52d20006743a8aaeb7d7d46e30fc990693f1",
+    "docs/seo/evidence-operations/typed-admission/inputs/REVIEW.md": "04c8d4a2f8e84f4ab0a33bf7ef89587f71437453f79fd50a3ffa46daf856f25d",
+    "docs/seo/evidence-operations/typed-admission/inputs/PRIMARY-SOURCES.md": "53e2a459d379244a7380882ef38298c77cc692a86ba15c3edbb2d0a540e0cc44",
+    "docs/seo/evidence-operations/typed-admission/inputs/original-d7-reference-intake-candidates.json": "36d83550f92b04fa301a7150e03d6df0ee8f8585dd2854625d5484be72732187"
+  },
+  "protected_files": {
+    "docs/seo/evidence-operations/README.md": {
+      "sha256": "8159a5f36f9a5e56fca5654ba5714e1d92f58fe031d6c7f79e4596419e31a632",
+      "mode": "100644"
+    },
+    "docs/seo/evidence-operations/claim-evidence-link-candidates.v1.json": {
+      "sha256": "e263451b63fe9a0f051a6b09c88e83e3728b912161d7264e46988321ac01a348",
+      "mode": "100644"
+    },
+    "docs/seo/evidence-operations/claim-registry.schema.v1.json": {
+      "sha256": "11c44446af8f5baad0aa14e0069ca36ce333b8e3298aa537035dcd937c9e0522",
+      "mode": "100644"
+    },
+    "docs/seo/evidence-operations/claim-registry.v1.json": {
+      "sha256": "d389f9e9a320d05a27392575471875f306bccedf8ec6668ac7a1080ece084078",
+      "mode": "100644"
+    },
+    "docs/seo/evidence-operations/evidence-registry.schema.v1.json": {
+      "sha256": "0f526b2885f2f1ce4aea74119f64784eccde4369ad1eb958d514994256ef81fa",
+      "mode": "100644"
+    },
+    "docs/seo/evidence-operations/evidence-registry.v1.json": {
+      "sha256": "6a4286e67507173ed5e97462f5759a924119ab09a53f314d18372007006a7dba",
+      "mode": "100644"
+    },
+    "docs/seo/evidence-operations/legacy-source-lock-index.v1.json": {
+      "sha256": "688ee93d63d81ecbab7065b71b9f8a5fac7b293961b8dbea91e6139b7b1e3994",
+      "mode": "100644"
+    },
+    "docs/seo/evidence-operations/search-dominance-1e4b-canonical-claim-registry-v1.md": {
+      "sha256": "8e007e3271011f53fc706d54085e003a1046cbb20f21b6516cb49133b01ee540",
+      "mode": "100644"
+    },
+    "docs/seo/evidence-operations/search-dominance-1e4c-evidence-registry-linkage-v1.md": {
+      "sha256": "d2ec94514fe17200c0266f29f9ed188bb9b2f8696bd3ba261ff2180a7bfd308d",
+      "mode": "100644"
+    },
+    "docs/seo/evidence-operations/source-identity-review.v1.json": {
+      "sha256": "d054c44b26a52d65e20e571bb3121e884ad5822e53d0871ac479bb4c699ec323",
+      "mode": "100644"
+    },
+    "docs/seo/search-dominance-1e1a-anatomy-ear-source-claims-lock.md": {
+      "sha256": "851259a66f684dbaec1bbc2d8e7142ab6c5087ef9a88200803ff1bf16f75405a",
+      "mode": "100644"
+    },
+    "docs/seo/search-dominance-1e1b-ans-cluster-source-claims-lock.md": {
+      "sha256": "e08bbb42bde01fa098477b26f259b713810bbf776766f23c9a1344aac2034543",
+      "mode": "100644"
+    },
+    "docs/seo/search-dominance-1e1c-no-hrv-owner-split-source-claims-lock.md": {
+      "sha256": "1752a3b2c1ad1f57ac4f77a0701694e3793e7b42756cc7df795052e7732066fe",
+      "mode": "100644"
+    },
+    "docs/seo/search-dominance-1e2b-en-regulation-calm-owner-lift-source-claims-lock.md": {
+      "sha256": "037862c19dae837a5df24347a9ddf5f35883107771a4369a795cb7ddc90ead74",
+      "mode": "100644"
+    },
+    "docs/seo/search-dominance-1e2c-en-vns-method-authority-source-claims-lock.md": {
+      "sha256": "3255e8a7dd8563e76a360ea28e104dd34e8494202993357e6ec9078767f65aee",
+      "mode": "100644"
+    },
+    "docs/seo/search-dominance-1e2d-reset-massage-owner-lift-source-claims-lock.md": {
+      "sha256": "7ed19918048703fd6afc359da8c00f62e52d49bd7c40e4fcf662f28520faab33",
+      "mode": "100644"
+    },
+    "docs/seo/search-dominance-1e2e-no-foundation-regulation-owner-lift-source-claims-lock.md": {
+      "sha256": "43b2e0b3da4e644ac48bddf29d966029779f418329506511dca4caffaf66075d",
+      "mode": "100644"
+    },
+    "docs/seo/search-dominance-1e2f-no-vns-stimulation-owner-lift-source-claims-lock.md": {
+      "sha256": "3c897fb042461c7701bee90f3541ba67f9db48bd8f193e96437083be25b82ab0",
+      "mode": "100644"
+    },
+    "docs/seo/search-dominance-1e2g-no-protected-win-buyer-guide-source-claims-lock.md": {
+      "sha256": "fb08c83d351b3af9dc61dc18a1e0d93b81a26fa624de71cb51d01f20cb3292b4",
+      "mode": "100644"
+    },
+    "docs/seo/search-dominance-1e3b-vagus-nerve-exercises-source-claims-lock.md": {
+      "sha256": "7f7adebba42bc8230e3ad404fb1013532c561b8baa2c9a09e98e36a691ca5c70",
+      "mode": "100644"
+    },
+    "docs/seo/search-dominance-1e3c-evidence-internet-claims-source-claims-lock.md": {
+      "sha256": "55d06456f3fae4cdf9800309384b81baaed80ca8dae64d1df32692e7b92dee42",
+      "mode": "100644"
+    },
+    "docs/seo/wave2c1a-vns-sensation-source-and-claims-lock.md": {
+      "sha256": "5379d1d9ee9322c8e803d433ee0373bfad7354cb8a0f14e6562535f8b4c615ad",
+      "mode": "100644"
+    },
+    "docs/seo/wave2c1b-tired-but-wired-source-and-claims-lock.md": {
+      "sha256": "da205d107e560f99ce433f8deb84113cba32a56c2bfff2216aed799b541a998d",
+      "mode": "100644"
+    },
+    "docs/seo/wave2c1c-evening-routine-source-and-claims-lock.md": {
+      "sha256": "696196ec8412d7454a074469324670041146da8508b89d4640d47b1000e98b30",
+      "mode": "100644"
+    },
+    "docs/seo/wave2c1d-overstimulation-source-and-claims-lock.md": {
+      "sha256": "6f5f5408df1d9aafc98c91528b7583d5459e580bb936573a59da00b6d8bafae9",
+      "mode": "100644"
+    },
+    "docs/seo/wave2c1e-stuck-in-stress-source-and-claims-lock.md": {
+      "sha256": "f29ddb9f7a8ea6d8f7203b9acc688d210806c335a06b2af898d687c5c5a9b72d",
+      "mode": "100644"
+    },
+    "docs/seo/wave2c1f-recovery-regulation-source-and-claims-lock.md": {
+      "sha256": "0e04dcb97ab585dbaac7a94b868c59930627a3f5fb6ce69c86c5c8a91b6662b5",
+      "mode": "100644"
+    },
+    "docs/seo/wave2c2a-implanted-vs-non-invasive-source-and-claims-lock.md": {
+      "sha256": "76867f913015d94c6b6ce4d6fd573ba548c40aabf72b11b18b4560282882f398",
+      "mode": "100644"
+    },
+    "docs/seo/wave2c2b-workday-pause-source-and-claims-lock.md": {
+      "sha256": "b32dc84b70c803d54bdd6c9ea8bf7abdc667cdb34e18a7a0d238ebfc8485218f",
+      "mode": "100644"
+    },
+    "docs/seo/wave2c2c-signs-dysregulation-source-and-claims-lock.md": {
+      "sha256": "804a78d6886ccbd4d52f71d7a9553b654fc9391a3bfa9b2f7387974f433a551a",
+      "mode": "100644"
+    },
+    "docs/seo/wave2c2d-hverdagsuro-source-and-claims-lock.md": {
+      "sha256": "1b2f77d5562870ae740d74bc3531364214f723629cd78c771392ff35020dc9dc",
+      "mode": "100644"
+    },
+    "docs/seo/wave2d2a-stimulation-pillars-source-and-claims-lock.md": {
+      "sha256": "c53d59d5e24809f6db00bf234a831ac1ec82be3ad51f87447b27e8c9786d6c69",
+      "mode": "100644"
+    },
+    "docs/seo/wave2d2b-reset-pages-source-and-claims-lock.md": {
+      "sha256": "675a2186d0ba963d03ee0355e1a030a327537d93be754e6d5189d0488ed75431",
+      "mode": "100644"
+    },
+    "docs/seo/wave2d2c-breathing-pages-source-and-claims-lock.md": {
+      "sha256": "ef65f53e6d6b7fcc5883dcb554bf068c41dae527159ffabb1b0b5daa51ab3ef0",
+      "mode": "100644"
+    },
+    "docs/seo/wave2d2d-massage-pages-source-and-claims-lock.md": {
+      "sha256": "399b99510adce372e2e4aaad2819c24cc058ef8e4f452313cd82cbb78e4ca321",
+      "mode": "100644"
+    },
+    "docs/seo/wave2d2e-foundation-pages-source-and-claims-lock.md": {
+      "sha256": "75e888732de4c238bbc35be256c5bac7f2aabe90dddb3ea117e39115789c3dda",
+      "mode": "100644"
+    },
+    "docs/seo/wave2d3-second-batch-source-and-claims-lock.md": {
+      "sha256": "5edbf055d7eef188dc6986f17c830ff96e7f17ca9f4555b79f51300670e75ea7",
+      "mode": "100644"
+    },
+    "scripts/search-dominance-1e4b-claim-registry-audit.py": {
+      "sha256": "de45f994fe5256d555a0881dece6ad0b9ee48c5da0e709a1e368385131695adf",
+      "mode": "100755"
+    },
+    "scripts/search-dominance-1e4c-evidence-registry-audit.py": {
+      "sha256": "7843f4de20d8f0396f7c71fae8c8991cf1182d652f7f458855b420f54d5d0aca",
+      "mode": "100755"
+    },
+    "scripts/search-dominance-1e4c-evidence-registry-build.py": {
+      "sha256": "56bb7ce4c1e17bdf066c6fa040e6ce08496272a15a6147d065085ab777aa841a",
+      "mode": "100755"
+    },
+    "src/app/(de)/de/page.tsx": {
+      "sha256": "ad6b16506accf70f1e26a08f649d7c43d7295b0e9474cb65372759b21cefcbce",
+      "mode": "100644"
+    },
+    "src/app/(en)/about/page.tsx": {
+      "sha256": "9de809df5929525ad4d88ff3ef6e7bbf95b829a2a57a30d14d5bbf167e5f82a9",
+      "mode": "100644"
+    },
+    "src/app/(en)/app/page.tsx": {
+      "sha256": "c95ae07d8f4bb43c83404625b267884b4e2023bcda173fd3ca92e186deba230b",
+      "mode": "100644"
+    },
+    "src/app/(en)/conditions/anxiety/page.tsx": {
+      "sha256": "336f8df6c7e18295295304b535a3d3a989100027db67d1bc5b132fd0cbed0b6c",
+      "mode": "100644"
+    },
+    "src/app/(en)/conditions/burnout/page.tsx": {
+      "sha256": "f7cff6e52881a63ce3c6d2d604506eb8fd5f5781262deff0d72a650d0008af05",
+      "mode": "100644"
+    },
+    "src/app/(en)/conditions/chronic-pain/page.tsx": {
+      "sha256": "6c5969dd1d43a027085322b9c44fc114c8cfbf5ab010e81250bac0e3211e4511",
+      "mode": "100644"
+    },
+    "src/app/(en)/conditions/depression-and-mood/page.tsx": {
+      "sha256": "a0e442ac0de4c6ec51cb59b73d2ba05d26ef38d1e842afad6b736f8a5f329efa",
+      "mode": "100644"
+    },
+    "src/app/(en)/conditions/gut-brain-and-digestion/page.tsx": {
+      "sha256": "fe5832fa3ec26b67ba108e88f4c70d6cd791943d2be5ae9e094c6b88eddd56de",
+      "mode": "100644"
+    },
+    "src/app/(en)/conditions/migraine-and-headache/page.tsx": {
+      "sha256": "6ba1b01f9f6e851908376fe747c46f42dee06ec71dadc0e79a4a35208822db8a",
+      "mode": "100644"
+    },
+    "src/app/(en)/conditions/page.tsx": {
+      "sha256": "d2ea08a8550c013f37aaff3158f64f6963c101d229b024d171bfc63dc43170af",
+      "mode": "100644"
+    },
+    "src/app/(en)/conditions/sleep/page.tsx": {
+      "sha256": "672a6da4b5581105ae47f99f765e0907a1c2bf31a9828bc0063ad58c023b609e",
+      "mode": "100644"
+    },
+    "src/app/(en)/conditions/stress/page.tsx": {
+      "sha256": "5eb56fbdf82baf66b7cd50b26885f2000f94c0d2aa69652bb30ee1825345e878",
+      "mode": "100644"
+    },
+    "src/app/(en)/get-started/page.tsx": {
+      "sha256": "b41f661d9ce1300488d4cb196ff6e41d8a077a3c7e7b74fc23237f1aeeeab775",
+      "mode": "100644"
+    },
+    "src/app/(en)/glossary/[slug]/page.tsx": {
+      "sha256": "b2396184a19115a8771d159b3186e783ad713b077115f09a8df6c644abed35cd",
+      "mode": "100644"
+    },
+    "src/app/(en)/glossary/page.tsx": {
+      "sha256": "46c8d491d6147db3f8e7a08d52f971eefc90f95c291fdc390684fa761c67cd97",
+      "mode": "100644"
+    },
+    "src/app/(en)/how-it-works/page.tsx": {
+      "sha256": "79af9ece5a8b7a8687a5241662e7d66c853b7269571ea64ea58eb8f4c264269c",
+      "mode": "100644"
+    },
+    "src/app/(en)/how-to-use/page.tsx": {
+      "sha256": "b45c3e607a111f659884bf657ce5a10c09f361412a9b97585dda07c1d1cb0d69",
+      "mode": "100644"
+    },
+    "src/app/(en)/layout.tsx": {
+      "sha256": "21705299b0120feb64b97987d4418c293dd64917d9d22123a91e17cad0779f7b",
+      "mode": "100644"
+    },
+    "src/app/(en)/learn/auricular-vagus-nerve-stimulation/page.tsx": {
+      "sha256": "cc9517aa4ba20fe94af5173b8bb095a1e5e8dcd9d7e23c3384174a22917786fe",
+      "mode": "100644"
+    },
+    "src/app/(en)/learn/autonomic-nervous-system/page.tsx": {
+      "sha256": "f6d42e22f84a21bdc6bb12ddb3b7ba897640d4fe754cd2f22765414d7084374d",
+      "mode": "100644"
+    },
+    "src/app/(en)/learn/breathing-exercises-and-the-vagus-nerve/page.tsx": {
+      "sha256": "4af7567a5b06702da016d9d373335cbe9a98689b24f39c1e00c9857ff7e15dd7",
+      "mode": "100644"
+    },
+    "src/app/(en)/learn/ear-vs-neck-vagus-nerve-stimulation/page.tsx": {
+      "sha256": "772b06baa5d11ca7aa0f6df450976929aa25fffef6ce112d7162e832d604c6ac",
+      "mode": "100644"
+    },
+    "src/app/(en)/learn/emotional-regulation-and-the-nervous-system/page.tsx": {
+      "sha256": "e8515f09f2e606d39270cd5e8aed33ee9bdfe4924a619a050efa7a42db034dc3",
+      "mode": "100644"
+    },
+    "src/app/(en)/learn/fight-flight-freeze/page.tsx": {
+      "sha256": "d8459d9dc6b95aaffe7adfa1b8dc0f8b8eb67f06590f8f6f4a398a3929f0fc2f",
+      "mode": "100644"
+    },
+    "src/app/(en)/learn/how-to-calm-your-nervous-system/page.tsx": {
+      "sha256": "33b835a57519a643d0de822a62342b918b3fc159cc6cf81eb452fe8a188075c3",
+      "mode": "100644"
+    },
+    "src/app/(en)/learn/how-to-choose-a-vagus-nerve-stimulation-device/page.tsx": {
+      "sha256": "9b089b984a869cc43124f9d2b40ea241bcc6de0368f9b0320fb2b04eaac06c4e",
+      "mode": "100644"
+    },
+    "src/app/(en)/learn/how-to-stimulate-the-vagus-nerve/page.tsx": {
+      "sha256": "334b75bc85cdfdcf6adb0ddeb3387b15735e72eea028537e96fc07fbd821a27b",
+      "mode": "100644"
+    },
+    "src/app/(en)/learn/implanted-vs-non-invasive-vagus-nerve-stimulation/page.tsx": {
+      "sha256": "df514a7fec0e8f7148258bb48f0a2851d3b05b7cc15c7a72eb0b90d6a05def0f",
+      "mode": "100644"
+    },
+    "src/app/(en)/learn/nervous-system-regulation/page.tsx": {
+      "sha256": "ad80ca46c3628972d18a164aaad3e250a8e51b6615a87c87768b2fe61b863c3f",
+      "mode": "100644"
+    },
+    "src/app/(en)/learn/non-invasive-vagus-nerve-stimulation/page.tsx": {
+      "sha256": "0ab54235dab8041f3935728a0879a92b6a6d82514e95ec7aecccf7266bd32158",
+      "mode": "100644"
+    },
+    "src/app/(en)/learn/page.tsx": {
+      "sha256": "cd67a8e38bcee2e6d457328d93438f271561b2a21406c86c6ba22edc7ae4ee88",
+      "mode": "100644"
+    },
+    "src/app/(en)/learn/parasympathetic-nervous-system/page.tsx": {
+      "sha256": "95f6de0ad0cd50c7d3038be6d33d599152fb2823e4615e5c96f5a9150324154f",
+      "mode": "100644"
+    },
+    "src/app/(en)/learn/recovery-and-regulation/page.tsx": {
+      "sha256": "dc6ccfb7926e29e3016486c970b6cd96333c40555d3a591618a69f2807fc80bf",
+      "mode": "100644"
+    },
+    "src/app/(en)/learn/signs-of-a-dysregulated-nervous-system/page.tsx": {
+      "sha256": "6b50b90907936c94571ce6555c846d6355bd4a64cbee0b51ff1eba75e971a5af",
+      "mode": "100644"
+    },
+    "src/app/(en)/learn/sympathetic-vs-parasympathetic-nervous-system/page.tsx": {
+      "sha256": "65177e74f7caf80cadef853f9427f3a551cf570cfd81028eaaaf950e60a09fc4",
+      "mode": "100644"
+    },
+    "src/app/(en)/learn/tens-vs-vagus-nerve-stimulation/page.tsx": {
+      "sha256": "ebf9b9b8106bbb7e43b01a237496a41b7ee3382a0f7c04efabebdfe23a387c57",
+      "mode": "100644"
+    },
+    "src/app/(en)/learn/transcutaneous-vagus-nerve-stimulation/page.tsx": {
+      "sha256": "3e22e113b6006af4b65202c4b15c6631ff96666f13e86214631f5799de65ee27",
+      "mode": "100644"
+    },
+    "src/app/(en)/learn/vagal-tone/page.tsx": {
+      "sha256": "d345beb81cded374ebf6db0fa9503b00eb57c7ec236ff43a23a7e86348d03319",
+      "mode": "100644"
+    },
+    "src/app/(en)/learn/vagus-nerve/page.tsx": {
+      "sha256": "eb3722c345febdac9e5cef91bf5cd30f04ca6f14f6046c7691f23135273a4715",
+      "mode": "100644"
+    },
+    "src/app/(en)/learn/vagus-nerve-anatomy/page.tsx": {
+      "sha256": "95c0ef5d140de571d34745c9145ec1323b397edeb51873fcb5e82f2df9aee9a6",
+      "mode": "100644"
+    },
+    "src/app/(en)/learn/vagus-nerve-evidence-vs-internet-claims/page.tsx": {
+      "sha256": "0b3cfff6ce71f978a3361fcc65a42f28868cedd6310d71d7290c7568df45e94b",
+      "mode": "100644"
+    },
+    "src/app/(en)/learn/vagus-nerve-exercises/page.tsx": {
+      "sha256": "ce1703388f652c115b7ea98695e438df233bdc8c384d477ae9b914dfc2145d16",
+      "mode": "100644"
+    },
+    "src/app/(en)/learn/vagus-nerve-in-the-ear/page.tsx": {
+      "sha256": "17275142cdc17ab4deb14fd80906f5529d82e5b9065abbcda863964133666195",
+      "mode": "100644"
+    },
+    "src/app/(en)/learn/vagus-nerve-massage/page.tsx": {
+      "sha256": "a7fb748fb50cd6b41adec7b09b7dd065bec0b5250e1a766532541fe00dab4efd",
+      "mode": "100644"
+    },
+    "src/app/(en)/learn/vagus-nerve-reset/page.tsx": {
+      "sha256": "4806b7a10c8917a5c62b2334db56282dc57f392ba862e0cfd7c7c74c697d490e",
+      "mode": "100644"
+    },
+    "src/app/(en)/learn/vagus-nerve-stimulation/page.tsx": {
+      "sha256": "e1e7f0558a11bdf3bd1128d3d842d744a3ea34a7449c02fb4879ff7c1a159748",
+      "mode": "100644"
+    },
+    "src/app/(en)/learn/what-does-vagus-nerve-stimulation-feel-like/page.tsx": {
+      "sha256": "207ef166b54a14ab9daa25913b4b704f517c2b2e9b956c91445fc25c4545b80b",
+      "mode": "100644"
+    },
+    "src/app/(en)/learn/what-nervous-system-regulation-feels-like/page.tsx": {
+      "sha256": "018388ac853e377bf8dce4219b0d4c430e9e817df5fb8a63eac21957589b61e3",
+      "mode": "100644"
+    },
+    "src/app/(en)/learn/why-you-feel-tired-but-cant-relax/page.tsx": {
+      "sha256": "3b32601b542f78b854b5d964910b2c4f8a2f25b1df0b4b7ffa3b139721e3f218",
+      "mode": "100644"
+    },
+    "src/app/(en)/learn/why-your-body-feels-stuck-in-stress/page.tsx": {
+      "sha256": "9c476ab30f04e6c92a4753a2cabb601998eabb5e43d306d3e30ceb7f7ea5e48c",
+      "mode": "100644"
+    },
+    "src/app/(en)/legal/ce-compliance/page.tsx": {
+      "sha256": "d295e2faeccfd8546c2c262d8cdbc128a21eacc7a6f0f8d20a90f2a01406e6f7",
+      "mode": "100644"
+    },
+    "src/app/(en)/legal/editorial-policy/page.tsx": {
+      "sha256": "a364f37a042558d26ac696e97e28b0cbbb6cf2afc4a0e9d582c80c1784e9bdb3",
+      "mode": "100644"
+    },
+    "src/app/(en)/legal/fda-status/page.tsx": {
+      "sha256": "f7e08b005175be2d8da09c9f0ab61a587ce24084c6921dd2dc548217410e85d1",
+      "mode": "100644"
+    },
+    "src/app/(en)/legal/intended-use/page.tsx": {
+      "sha256": "6ab113eebe095fd9053686426e84926d20187482c54dde6cf29f8970f9613edd",
+      "mode": "100644"
+    },
+    "src/app/(en)/legal/medical-disclaimer/page.tsx": {
+      "sha256": "5e532338cac9fe6e13e3b75ba6bb0fd0b21e72b94e1c81f68333c6376355768e",
+      "mode": "100644"
+    },
+    "src/app/(en)/legal/page.tsx": {
+      "sha256": "748bd205cc447073bb1da8d95fb579c86ebc1307bf290b7a4559f42fa190317c",
+      "mode": "100644"
+    },
+    "src/app/(en)/legal/privacy-policy/page.tsx": {
+      "sha256": "559eebd9736d87dd4f81c0e77626c13fed2ca86bd6ff1a93f07d1b2573e9729a",
+      "mode": "100644"
+    },
+    "src/app/(en)/legal/regulatory/page.tsx": {
+      "sha256": "7c4166b909b725f53f6a95258b517508a69dcf54a4e661c36d786b11c36259da",
+      "mode": "100644"
+    },
+    "src/app/(en)/legal/terms-of-service/page.tsx": {
+      "sha256": "6f356f917246d8f0014cd775773b1d442ef0d1fd1d4a583b2f20f9f472631eeb",
+      "mode": "100644"
+    },
+    "src/app/(en)/legal/trust-safety/page.tsx": {
+      "sha256": "899054b1cf9a5f339d81cc8d254f26bd938b6a149ec709457e598846d5eace35",
+      "mode": "100644"
+    },
+    "src/app/(en)/page.tsx": {
+      "sha256": "4f026376bfdea03d74c79b3abffe219bae529a2e58332d5919b35aaeda2e8901",
+      "mode": "100644"
+    },
+    "src/app/(en)/product/page.tsx": {
+      "sha256": "42ba9609f8d5eafdcdb26fdbfa9b0b677fbc4595d89497656201bfa24f784bde",
+      "mode": "100644"
+    },
+    "src/app/(en)/research/how-to-read-a-vns-study/page.tsx": {
+      "sha256": "a684604d538aa472fe5b2883468fc7de26aa84a10e003437d7e6a70f8c893dee",
+      "mode": "100644"
+    },
+    "src/app/(en)/research/page.tsx": {
+      "sha256": "fa74f5f5b37d050dd6b451f4016215d0769fb5b1dd8e588eb19eefbbf41c5c94",
+      "mode": "100644"
+    },
+    "src/app/(en)/research/studies/borovikova-2000-vagus-nerve-inflammation/page.tsx": {
+      "sha256": "1349fad2cca331b6b7a7aab8b787ff8e0a14a6249accc3576082cdcdbc7d6312",
+      "mode": "100644"
+    },
+    "src/app/(en)/research/studies/de-oliveira-2025-tavns-insomnia-systematic-review-meta-analysis/page.tsx": {
+      "sha256": "c2074c04814e5de35e7930375cdb0709332c82c2d2fedd457509d6167825b037",
+      "mode": "100644"
+    },
+    "src/app/(en)/research/studies/frangos-2015-auricular-vagus-nerve-stimulation-fmri/page.tsx": {
+      "sha256": "6d488d402f43fc785cfe3d5b0ede85dd8f54918ad174cadeef32ad5bfc6c5c84",
+      "mode": "100644"
+    },
+    "src/app/(en)/research/studies/inflammatory-reflex-tracey-2002/page.tsx": {
+      "sha256": "b2a6ce7058f5b4d5ad4d3912914405bd70b287f47bd8c7d5084482bf986a1018",
+      "mode": "100644"
+    },
+    "src/app/(en)/research/studies/kim-2022-tavns-safety-systematic-review-meta-analysis/page.tsx": {
+      "sha256": "d7a8b2a31e8f0e9ec64d2c17a7a60c96cc5f4e62371595c96938de561b607251",
+      "mode": "100644"
+    },
+    "src/app/(en)/research/studies/mayer-2011-gut-brain-axis/page.tsx": {
+      "sha256": "08046b087ebca7c6d47cc2c07d03be18ab66f11d754aac0ac23491d5553c7f06",
+      "mode": "100644"
+    },
+    "src/app/(en)/research/studies/page.tsx": {
+      "sha256": "8ad1ac385fd5b0994c38bd2a94db879365782bc250d53e5d31421273a1287d06",
+      "mode": "100644"
+    },
+    "src/app/(en)/research/studies/pavlov-tracey-2005-cholinergic-anti-inflammatory-pathway/page.tsx": {
+      "sha256": "feb041b17989fd6fea62b45a7a1f60ecd3559ac2103af4e9f3ef18f3149a9119",
+      "mode": "100644"
+    },
+    "src/app/(en)/research/studies/porges-1995-polyvagal-theory/page.tsx": {
+      "sha256": "8d7ac9b7240b18e9f20501be7898ba0a34485d7d44fd31de99ed4c8fc12dfb6d",
+      "mode": "100644"
+    },
+    "src/app/(en)/research/studies/rush-2005-vagus-nerve-stimulation-depression/page.tsx": {
+      "sha256": "50e87c23be06c2d0eca44465e6101dc0d9acf9122a1fbd78baa2733c081f9f1e",
+      "mode": "100644"
+    },
+    "src/app/(en)/research/studies/soltani-2023-tavns-heart-rate-variability-systematic-review/page.tsx": {
+      "sha256": "e5358bc597f26b8c1afe45c99ff5b9fded2cf2a4b343c352161e7611d4a9b2da",
+      "mode": "100644"
+    },
+    "src/app/(en)/research/studies/task-force-1996-heart-rate-variability-standards/page.tsx": {
+      "sha256": "b4de051cc32e0eec5e167b5c46863aeb7a395e9be156603cacf2bff9c5139e4a",
+      "mode": "100644"
+    },
+    "src/app/(en)/research/studies/thayer-lane-2000-neurovisceral-integration/page.tsx": {
+      "sha256": "c7a123b27f108464f07c958a587de60cbb3e17932fea8f98c2ed35e5ee89cd33",
+      "mode": "100644"
+    },
+    "src/app/(en)/research/topics/auricular-vagus-nerve-stimulation/page.tsx": {
+      "sha256": "666ee5087e5cc976abde1d12cbc5206938600b789a2bd67a16fdde0b1e24969a",
+      "mode": "100644"
+    },
+    "src/app/(en)/research/topics/autonomic-regulation/page.tsx": {
+      "sha256": "66cb47e7a7efe5218a3c5d72ccc3c50762c584cc5fb7aaa2e6c2c1bee6c2b4e4",
+      "mode": "100644"
+    },
+    "src/app/(en)/research/topics/gut-brain-axis/page.tsx": {
+      "sha256": "c159df3499a0003fcf630f9a8bf579918938e3cd7761c7aca265f35f94aa8b38",
+      "mode": "100644"
+    },
+    "src/app/(en)/research/topics/heart-rate-variability/page.tsx": {
+      "sha256": "379566b69430869e240f8f751646f1359a286923258ffce0064ff54b634790bf",
+      "mode": "100644"
+    },
+    "src/app/(en)/research/topics/inflammation/page.tsx": {
+      "sha256": "a5a95929f4e83881cbd93821210ceb2e12db83c64e4c4d7477baeef33fc1bae2",
+      "mode": "100644"
+    },
+    "src/app/(en)/research/topics/page.tsx": {
+      "sha256": "b1a9d68979a83829c050c5de188aa9a7d7707cea96a7f71e47a095dccaab0f4a",
+      "mode": "100644"
+    },
+    "src/app/(en)/research/topics/safety-and-tolerability/page.tsx": {
+      "sha256": "c2d278d4a9fc4e23e45cb72ca90129ea11eabd47c83925f1e5932a53dbb0d1f5",
+      "mode": "100644"
+    },
+    "src/app/(en)/research/topics/transcutaneous-vagus-nerve-stimulation/page.tsx": {
+      "sha256": "269b2aeef13bcb3573d93e257a6be979a16cb146f588a6f1346bf2d02017f69a",
+      "mode": "100644"
+    },
+    "src/app/(en)/research/topics/vagus-nerve-stimulation/page.tsx": {
+      "sha256": "11dd01abb53861b53fd2bed4a415f130e3eac38f08ced1cdc83f78e17506dd9c",
+      "mode": "100644"
+    },
+    "src/app/(en)/shop/page.tsx": {
+      "sha256": "31642a836dd132aec8d2b5700d11436c5f3eaf4440ff193e559dd391caaaebf8",
+      "mode": "100644"
+    },
+    "src/app/(en)/support/page.tsx": {
+      "sha256": "27b95dc8ed7cd2988c2f9d51790f9e0adfadaddaa6fd7edfef7e6a860ed877de",
+      "mode": "100644"
+    },
+    "src/app/(no)/layout.tsx": {
+      "sha256": "82c3b11159c6ec89250da299cad3d2cf3ebd7a5b1f0d8b648a0e4ec614bfd896",
+      "mode": "100644"
+    },
+    "src/app/(no)/no/app/page.tsx": {
+      "sha256": "ca85f56065c53cde1678984af6d4491352be08965439c9e90e6990353104a52c",
+      "mode": "100644"
+    },
+    "src/app/(no)/no/forskning/[slug]/page.tsx": {
+      "sha256": "1a3cbb13a7f5eaa28e18f9dc5941d8ebb7a2297a17434f5f75b962f52db120f2",
+      "mode": "100644"
+    },
+    "src/app/(no)/no/forskning/page.tsx": {
+      "sha256": "379f8937a9c69cd63bdebb2aea7a971bd67486842b2d1d9bad72685676accef2",
+      "mode": "100644"
+    },
+    "src/app/(no)/no/forskning/slik-leser-du-en-vns-studie/page.tsx": {
+      "sha256": "34985889591eeefc17d22820a258ae311c3d76eaf6624def4096811eed4543c0",
+      "mode": "100644"
+    },
+    "src/app/(no)/no/juridisk/ce-samsvar/page.tsx": {
+      "sha256": "d88c130ba05b89aa65e05e9f0f79002d539d86d87e8916ad3a88b5269c882aab",
+      "mode": "100644"
+    },
+    "src/app/(no)/no/juridisk/fda-status/page.tsx": {
+      "sha256": "2dec8ebf5a36547b51caaa20b8a5264fa82f91ae004b2672622d70afc341bef2",
+      "mode": "100644"
+    },
+    "src/app/(no)/no/juridisk/medisinsk-ansvarsfraskrivelse/page.tsx": {
+      "sha256": "d696ad4ad600a0f8e4384b79cf580ef54a41fbcb80243c78c04fa3f21abda074",
+      "mode": "100644"
+    },
+    "src/app/(no)/no/juridisk/page.tsx": {
+      "sha256": "8143cf3169b2cdbed2cacda87fc9e3935131499a3009db4f73ee281f5b1151bc",
+      "mode": "100644"
+    },
+    "src/app/(no)/no/juridisk/personvern/page.tsx": {
+      "sha256": "4891e199e2d16e577cd68587e60a34a1f4d42c64d7983c4eb56f3c45b359b15a",
+      "mode": "100644"
+    },
+    "src/app/(no)/no/juridisk/regulatorisk/page.tsx": {
+      "sha256": "239a8b1fb5bbcec419a5792c7efc18fc833779db3224136ee12ce242ce73901f",
+      "mode": "100644"
+    },
+    "src/app/(no)/no/juridisk/tillit-og-sikkerhet/page.tsx": {
+      "sha256": "8df01abf7f3f3214c84b76cc1827dd02a95816cf6fd0e4cef6cba57fba0ce26d",
+      "mode": "100644"
+    },
+    "src/app/(no)/no/juridisk/tiltenkt-bruk/page.tsx": {
+      "sha256": "02a78c0f690e7e63c05a578fee5a1e865956ab2ac1b5274a91dc01e1528b971b",
+      "mode": "100644"
+    },
+    "src/app/(no)/no/juridisk/vilkar/page.tsx": {
+      "sha256": "b8a6135804437df6325e38a93d4cfd1c03c81c99fc7825662969269c4d31b000",
+      "mode": "100644"
+    },
+    "src/app/(no)/no/kunnskap/[slug]/page.tsx": {
+      "sha256": "ac5e091b3e2286c81e45e33552027986dda9bf663a3d9d63569f1e2575b95978",
+      "mode": "100644"
+    },
+    "src/app/(no)/no/kunnskap/hvordan-velge-vagusnervestimulator/page.tsx": {
+      "sha256": "a32a6d7c6ed156aad9b47c015a7c16748ea3212694398a7c048c93027892889f",
+      "mode": "100644"
+    },
+    "src/app/(no)/no/kunnskap/orebasert-vs-halsbasert-vns/page.tsx": {
+      "sha256": "9bb6cce2c84613a1589455f2e2485a60c3593618c0e3c94a27b01c14134c8923",
+      "mode": "100644"
+    },
+    "src/app/(no)/no/kunnskap/page.tsx": {
+      "sha256": "9abecb7fe889eb98a7371602452dc1b9ad3aebd00dbf1b69e3b20b48fac3b009",
+      "mode": "100644"
+    },
+    "src/app/(no)/no/om-oss/page.tsx": {
+      "sha256": "33fbea74a37aab2e5d2d341b56d24a3b1c141a28aa8aa05c9a867913a47646a8",
+      "mode": "100644"
+    },
+    "src/app/(no)/no/ordliste/[slug]/page.tsx": {
+      "sha256": "85b47a34e1f5b7238903905c701255240df4fff84c5c43fc0b8fc3771efb7f3d",
+      "mode": "100644"
+    },
+    "src/app/(no)/no/ordliste/page.tsx": {
+      "sha256": "f611b0cd9ca59b58280385f33b064449831ba55727e12f8c2a8a113b17d58a66",
+      "mode": "100644"
+    },
+    "src/app/(no)/no/page.tsx": {
+      "sha256": "b5e06fd8697bf50f28ddbf2e2fb4c4a7e212d5b7c5bab6184aae9f1fdc7d1116",
+      "mode": "100644"
+    },
+    "src/app/(no)/no/product/page.tsx": {
+      "sha256": "968c1580c3828faff2962e76f743503e4ef1765329b45f378bb25a65ff07a7d4",
+      "mode": "100644"
+    },
+    "src/app/(no)/no/produkt/page.tsx": {
+      "sha256": "758cce94dfdba02567673eef35ea2be18e35b383006cef728b80e61aa9f6cb72",
+      "mode": "100644"
+    },
+    "src/app/(no)/no/redaksjonell-policy/page.tsx": {
+      "sha256": "9b9512ec5f788cadc290c1d5ac749278cabf80ed06348463a36898925370582a",
+      "mode": "100644"
+    },
+    "src/app/(no)/no/slik-fungerer-det/page.tsx": {
+      "sha256": "f5bed208ce445f8391032b1ba01ece54670ab30de41265a3dddb92f99fa2b07e",
+      "mode": "100644"
+    },
+    "src/app/(no)/no/support/page.tsx": {
+      "sha256": "6c20b2fd480b8815f58a7c76a58e636bb0faaaa2f0de69f850294a534f6a5f7e",
+      "mode": "100644"
+    },
+    "src/app/(no)/no/tilstander/[slug]/page.tsx": {
+      "sha256": "f82f30062313423c5e2547dccaeb545cb10430cb1e208a9dfdd8155d16cb8e41",
+      "mode": "100644"
+    },
+    "src/app/(no)/no/tilstander/page.tsx": {
+      "sha256": "b9238d483438d71a09ab667daa95d848672c14caf566ed8355e4f728ba7bc378",
+      "mode": "100644"
+    },
+    "src/app/sitemap.ts": {
+      "sha256": "478d045dabc923925b9f55bbd7b399f26743390bf5c6af689f1a6dfe32d12dee",
+      "mode": "100644"
+    },
+    "src/components/conditions/NorwegianConditionPage.tsx": {
+      "sha256": "98b5ea0860982eb548f5bc2da33fd68d798be192a5edfa6cb08483d17bd72523",
+      "mode": "100644"
+    },
+    "src/components/glossary/GlossaryHubPage.tsx": {
+      "sha256": "98b043a1ab474519df6fa4dd84a96fff19ec9a56eba1d63e117665d6d4eb2efb",
+      "mode": "100644"
+    },
+    "src/components/glossary/GlossaryTermPage.tsx": {
+      "sha256": "699f760534b0751df509123082b9b42b59d6ad737d1b801b0f6be5e23a6425e0",
+      "mode": "100644"
+    },
+    "src/components/knowledge/NorwegianKnowledgeArticlePage.tsx": {
+      "sha256": "a7b8a7cfc6a105302741c36c6ba8b4ae21109acd5b47c4fca38317a7a71f3ca0",
+      "mode": "100644"
+    },
+    "src/components/legal/LocalizedLegalPage.tsx": {
+      "sha256": "c5f29681bc00ef8db99b717c1c414f52200ca7c59c61a3cc2b81f1f8359573ef",
+      "mode": "100644"
+    },
+    "src/components/research/NorwegianResearchTopicPage.tsx": {
+      "sha256": "e0163943add0d5f5db54eeb7f9d4f3c76446b1da2de028fe187d7b9564b4b0dc",
+      "mode": "100644"
+    },
+    "src/content/about-v2.ts": {
+      "sha256": "d5657675deda929e49d33554b4e8bfe1bfb3541a151a33440461ef93ce3b858b",
+      "mode": "100644"
+    },
+    "src/content/about.ts": {
+      "sha256": "160de4d9d1135c516f89e3d0ab4b48f37c073aeff15e0a09020e2dae7a58da7e",
+      "mode": "100644"
+    },
+    "src/content/app-v2.ts": {
+      "sha256": "33c1697134266b73c3d822a8c96ac16ed1c890d8a65fc319abad32bc6f9ba24a",
+      "mode": "100644"
+    },
+    "src/content/app.ts": {
+      "sha256": "7d4408d091a2fed7d3947c08756d3cfa2f0cbf3736957bde933dab8db1cdaa5b",
+      "mode": "100644"
+    },
+    "src/content/assets.ts": {
+      "sha256": "761e87ec73db7bba6ea03903a550f8bd8ad209fd9f9ef3f693f7bf9b787660bb",
+      "mode": "100644"
+    },
+    "src/content/commerce.ts": {
+      "sha256": "1d6536685f5124e6dde33b29cc2f24ed80c2e1342bdc793d053ca72cb7981870",
+      "mode": "100644"
+    },
+    "src/content/conditions/en/chronic-pain.ts": {
+      "sha256": "b5f5df182b1d92e8e10522c1e31b9823307d3a28be06c2bf795766eb49315865",
+      "mode": "100644"
+    },
+    "src/content/conditions/en/depression-and-mood.ts": {
+      "sha256": "6d4ca4f28d2441ff6333144fb1eb76a88564f9f4463bda4d3f641657a23da1e5",
+      "mode": "100644"
+    },
+    "src/content/conditions/en/gut-brain-and-digestion.ts": {
+      "sha256": "1a2d58d98a5b18e8a52ae13de802b09a0d1b325cdb7d98ad1bf27eda3ab5693c",
+      "mode": "100644"
+    },
+    "src/content/conditions/en/migraine-and-headache.ts": {
+      "sha256": "3211fc59ece72188256be3e7be34883180b8827e7c2ee9dc121c88412cc62b89",
+      "mode": "100644"
+    },
+    "src/content/conditions/no/pages/hverdagsuro.ts": {
+      "sha256": "36f63dfb2d5aa456b680c78ec2d0e04ce2ecdd2ec2cfd76617fd931969b7da61",
+      "mode": "100644"
+    },
+    "src/content/conditions/no/pages/sovn.ts": {
+      "sha256": "03902d68a597a5dae3661dc3694520632194234409d902334a12e3a1bd2716b5",
+      "mode": "100644"
+    },
+    "src/content/conditions/no/pages/stress.ts": {
+      "sha256": "2d20cd5548d1019d0ffa82a9280d6d7fe33e9ed84a21218620a79b7389521deb",
+      "mode": "100644"
+    },
+    "src/content/conditions/no/registry.ts": {
+      "sha256": "91e32d4316d391818f4781a62905d97270a633f4267fe1e504421eea940b1b80",
+      "mode": "100644"
+    },
+    "src/content/conditions/no/types.ts": {
+      "sha256": "3f4c3a031ebc68f626d489614dcf59d24fd6d2f552c6fbc507f01e9e1df710b8",
+      "mode": "100644"
+    },
+    "src/content/conditions-v2.ts": {
+      "sha256": "2b2c85bcf527ed0f23f244d15d8ccdc5c83fc97ac2b37ec391d80c6eb2aad41a",
+      "mode": "100644"
+    },
+    "src/content/decision-guides/ear-vs-neck-vns.ts": {
+      "sha256": "6970394aad46606ce44f97827b63f18aef43fcd3190a6190041b8af1b546d3a9",
+      "mode": "100644"
+    },
+    "src/content/decision-guides/how-to-choose-vns-device.ts": {
+      "sha256": "8cdc0af689f056125b32d07705d9d2c1a074a8176daeb2e4885ec13e74d5b983",
+      "mode": "100644"
+    },
+    "src/content/decision-guides/registry.ts": {
+      "sha256": "ea9d283c3a4174187e817d3f06e237fa9e17517cd6bf797ed056b0d15f081f32",
+      "mode": "100644"
+    },
+    "src/content/decision-guides/types.ts": {
+      "sha256": "809fb92fb8619f625bd183bcf9a9b525dd2024f3eeeecd866777256dfa4c23fe",
+      "mode": "100644"
+    },
+    "src/content/editorial/people.ts": {
+      "sha256": "8b9c8f9d3c96c3a4c6f9dad80abfdcb774ada0414f9aa54ced935a525e16e8f2",
+      "mode": "100644"
+    },
+    "src/content/glossary/en/terms.ts": {
+      "sha256": "6fd1882d1764bdf9343f08c9bcb10ddbb115c9e8928589f3825e8b5d8db899ec",
+      "mode": "100644"
+    },
+    "src/content/glossary/no/terms.ts": {
+      "sha256": "918bccfdf4d0ae1d8da3c0cfb9ac35dff75a7aa3741cf4a2fb4b64c57290b0d8",
+      "mode": "100644"
+    },
+    "src/content/glossary/registry.ts": {
+      "sha256": "a1034f419579e46238fc4ce65b838e55f5c0383015c0753c9cc778a2d3e68d1d",
+      "mode": "100644"
+    },
+    "src/content/glossary/types.ts": {
+      "sha256": "4304a1b2e2d844847e2a06cb6bea42200e0e88c2cab8a24b1f3bdbac5b8d7ca3",
+      "mode": "100644"
+    },
+    "src/content/homepage-v3.ts": {
+      "sha256": "c935475849a8862a9d80b8f58c2bb6142639c8e99a899775bcd9f1f7a98d39e5",
+      "mode": "100644"
+    },
+    "src/content/homepage.ts": {
+      "sha256": "9b0d2a9d363c79967c9d4b8ad12fa6c7c44d7b20e14dd8113c9c3e1b3516aaed",
+      "mode": "100644"
+    },
+    "src/content/how-it-works-v2.ts": {
+      "sha256": "e3cb708e50f30e82927d07f1db77724eb16a3fd09402f043f93efd612901f007",
+      "mode": "100644"
+    },
+    "src/content/how-it-works.ts": {
+      "sha256": "d138550dc20c736137e1365b8a8dbc0faf6b3cf06e97ded75c6f9fa64f5c28fc",
+      "mode": "100644"
+    },
+    "src/content/knowledge/no/articles/aurikulaer-vagusnervestimulering.ts": {
+      "sha256": "03eaf083f59141b95954ffff1cf77e6bb1c35b9bc7de1f154236263644c5be67",
+      "mode": "100644"
+    },
+    "src/content/knowledge/no/articles/bivirkninger-ved-ikke-invasiv-vagusnervestimulering.ts": {
+      "sha256": "f775ca4ab59fbbea0bce5f7ad2a40a865d9c1410232a320ea7c7f88845995325",
+      "mode": "100644"
+    },
+    "src/content/knowledge/no/articles/det-autonome-nervesystemet.ts": {
+      "sha256": "c12f41fabff6f0eb349c11ae22ae8ca51e00f206dd7f83c3fe7eaeb7dd3ded72",
+      "mode": "100644"
+    },
+    "src/content/knowledge/no/articles/det-parasympatiske-nervesystemet.ts": {
+      "sha256": "31d08bedcb6e274f67a8e6ae798c9d96d1889751bc6f02a726bf373878fb5896",
+      "mode": "100644"
+    },
+    "src/content/knowledge/no/articles/det-sympatiske-nervesystemet.ts": {
+      "sha256": "4dd820b41c8238332acec453182e80c9a019a051662ebe8e3b09c298557d2326",
+      "mode": "100644"
+    },
+    "src/content/knowledge/no/articles/er-vagusnervestimulering-trygt.ts": {
+      "sha256": "2dd3e05224fafbc0b23dca3518487dd53ef85f93b42c2b88c2fe0773a8779899",
+      "mode": "100644"
+    },
+    "src/content/knowledge/no/articles/fastlast-i-stress.ts": {
+      "sha256": "1ecb93525f481bb810393dcfd21efbb1929f30a613c5168b77fe1ec36fff12e8",
+      "mode": "100644"
+    },
+    "src/content/knowledge/no/articles/hrv-og-vagusnerven.ts": {
+      "sha256": "8d16be175acfc282bb9a5b16611828d46bc4e8d7ccc5d0697c719c308fe86bfd",
+      "mode": "100644"
+    },
+    "src/content/knowledge/no/articles/hrv.ts": {
+      "sha256": "e2ae55510577b12e436a862db7cb77ada7c4ca76671dc4322103b11e496e2829",
+      "mode": "100644"
+    },
+    "src/content/knowledge/no/articles/hvem-bor-vaere-forsiktig-med-vagusnervestimulering.ts": {
+      "sha256": "f9a6851ace1e6d0e5c6a7100d1735cc9906e20d3da971ddfdf64f0fa7e7fb259",
+      "mode": "100644"
+    },
+    "src/content/knowledge/no/articles/hvordan-roe-ned-nervesystemet.ts": {
+      "sha256": "8985bb93031ffdfa55b3cfae1561162cac5fc749406f8ab1c3ee18f34048a8ee",
+      "mode": "100644"
+    },
+    "src/content/knowledge/no/articles/hvordan-stimulere-vagusnerven.ts": {
+      "sha256": "5e13f17b47240105d62896f5867bf740c2b2e9b71bc93fca9720837753a113df",
+      "mode": "100644"
+    },
+    "src/content/knowledge/no/articles/ikke-invasiv-vagusnervestimulering.ts": {
+      "sha256": "1a5fdf359ff4a579efd16ed2464f41bf39a901e4e915c88766d67913b9442284",
+      "mode": "100644"
+    },
+    "src/content/knowledge/no/articles/implantert-og-ikke-invasiv-vns.ts": {
+      "sha256": "808a9e760dd25431b24026ef073f6701ec53b464cc154ef54c30803a6baa601c",
+      "mode": "100644"
+    },
+    "src/content/knowledge/no/articles/kveldsrutine-for-nedtrapping.ts": {
+      "sha256": "2c28631105d8b20316fcda23bb6f1c0ac1883f887dd65bcb4f746fcdb21c6fd6",
+      "mode": "100644"
+    },
+    "src/content/knowledge/no/articles/orets-anatomi-og-vagusnerven.ts": {
+      "sha256": "460150dfeb492461dd4df6430e7dcf8b7a26b06569862f4a01af3a8e6f2bca68",
+      "mode": "100644"
+    },
+    "src/content/knowledge/no/articles/overstimulert.ts": {
+      "sha256": "20e7a70555bc531c7cbd8130906efc9228b4c5b85699158e486e0e3702297b75",
+      "mode": "100644"
+    },
+    "src/content/knowledge/no/articles/pause-i-arbeidsdagen.ts": {
+      "sha256": "b63f9dcd268cf9803810f5aa8a554787a1332079daa8f841479361f9f5c0e488",
+      "mode": "100644"
+    },
+    "src/content/knowledge/no/articles/pusteovelser-og-vagusnerven.ts": {
+      "sha256": "59bb3524bfd42408a57516707cd65e9ca0ebfc0af50188e7057b8f84c12fa2c2",
+      "mode": "100644"
+    },
+    "src/content/knowledge/no/articles/regulering-av-nervesystemet.ts": {
+      "sha256": "b65b5299b5f8863c5aa44c4b68124122b9c1f61bf7804030c778421da59eeaea",
+      "mode": "100644"
+    },
+    "src/content/knowledge/no/articles/resette-vagusnerven.ts": {
+      "sha256": "7c9a702f13859837424e1da4e10d0ea095a1a590c34a0ff3de79415ccafea70a",
+      "mode": "100644"
+    },
+    "src/content/knowledge/no/articles/restitusjon-og-regulering.ts": {
+      "sha256": "592a2d7682d89ff37ce771aeca6e8854ba53723bf6071a26e19ac06e9326bef5",
+      "mode": "100644"
+    },
+    "src/content/knowledge/no/articles/tegn-pa-dysregulert-nervesystem.ts": {
+      "sha256": "ef2e6653861f9530ef9cf85614abc7fbeb1a09aba84a92414102e80bd1bdd94b",
+      "mode": "100644"
+    },
+    "src/content/knowledge/no/articles/tens-og-vagusnervestimulering.ts": {
+      "sha256": "4e1277bcb180526fa185d13f513905c415640fb01ba8564eb90e11ac4c824d47",
+      "mode": "100644"
+    },
+    "src/content/knowledge/no/articles/transkutan-vagusnervestimulering.ts": {
+      "sha256": "c4b253bc2b65545c75dafb94d35c9772ec5ca778d14ddb4c0a8b002afd1bb8c3",
+      "mode": "100644"
+    },
+    "src/content/knowledge/no/articles/trott-men-far-ikke-slappet-av.ts": {
+      "sha256": "e433f89023f3598dc5d723e4c5bfb2cccb04986509cc63cff1e26e99e3a4bf96",
+      "mode": "100644"
+    },
+    "src/content/knowledge/no/articles/vagal-tone.ts": {
+      "sha256": "24b75fb45fa2504661b1590d6713e5dbad6d28e0291ab59ece3482416c606c86",
+      "mode": "100644"
+    },
+    "src/content/knowledge/no/articles/vagusnerven-og-massasje.ts": {
+      "sha256": "fe1023f4c5e573a5b395a733b60a7d54199c024a079e7124f77084e581500947",
+      "mode": "100644"
+    },
+    "src/content/knowledge/no/articles/vagusnerven.ts": {
+      "sha256": "05c7124531383afd64685df571a02c8d5a15b23904c10bda36b4d6b1b4984c0d",
+      "mode": "100644"
+    },
+    "src/content/knowledge/no/articles/vagusnervestimulering.ts": {
+      "sha256": "eb9735ad285878eb7555c72f07b7f74f7f789cb3c9f8897f78b7f9517f22f4dc",
+      "mode": "100644"
+    },
+    "src/content/knowledge/no/registry.ts": {
+      "sha256": "660ae78b102f767290e4f3d2561cc126c64e080a04ca16514879198d80b404fd",
+      "mode": "100644"
+    },
+    "src/content/knowledge/no/types.ts": {
+      "sha256": "9c7ab6b00d397f4eb0507ea56f2122c5db6797f0b6883249dd1ece4141b938d9",
+      "mode": "100644"
+    },
+    "src/content/no/about.ts": {
+      "sha256": "99466a86d1225b1423f8a7d6f632ebcc806c602862de0e96bb0b420ab8f0d752",
+      "mode": "100644"
+    },
+    "src/content/no/app.ts": {
+      "sha256": "4ed731943244734172d90004ae7ed8ebf4a28a33e06170a8071bc41b65979bde",
+      "mode": "100644"
+    },
+    "src/content/no/homepage-v3.ts": {
+      "sha256": "85750d9ee56c7cd48d7ae8f1e61bc94b099c0c32d05af902a50da06baa470b04",
+      "mode": "100644"
+    },
+    "src/content/no/homepage.ts": {
+      "sha256": "b0b3c564e55be6666b2016c5e7e52283476d147dbcd10848b0c6b611e69ca5ef",
+      "mode": "100644"
+    },
+    "src/content/no/how-it-works-v2.ts": {
+      "sha256": "b02e98a53664e2cb2d4d37a4d5dff592f41efac9a407b4e24ee07ddd98b51cd8",
+      "mode": "100644"
+    },
+    "src/content/no/how-it-works.ts": {
+      "sha256": "713fb72058eac73d60026c45baf715b10991d895bddf7d8fee42a8e8403baf11",
+      "mode": "100644"
+    },
+    "src/content/no/legal.ts": {
+      "sha256": "e2a632aa72ffc6a5b65baf5d08af4367c728dec7eaefb5783fc048bbc68e69de",
+      "mode": "100644"
+    },
+    "src/content/no/product-buy-box.ts": {
+      "sha256": "47c2fb1e1c30b07376c964f56fc264028e748b00e09223c65582a2bc20fcd1ac",
+      "mode": "100644"
+    },
+    "src/content/no/product-v2.ts": {
+      "sha256": "271bed21ba61161e1b12d494463cd192cdf2aa54efeadbca321c0d5f4fe2a467",
+      "mode": "100644"
+    },
+    "src/content/no/product.ts": {
+      "sha256": "53b5cead10aaa539bbd64b09729baf818841d17420efea3924eab7018296e959",
+      "mode": "100644"
+    },
+    "src/content/no/support.ts": {
+      "sha256": "4f44b16eaa8026aa0b672fb2e9e05ae8a883c78c6d00f441bcb1844181af9151",
+      "mode": "100644"
+    },
+    "src/content/product-v2.ts": {
+      "sha256": "fb3135aec87e99737360abd2d19aa3354e834bc12ebc68607cd84117dbf3f0f3",
+      "mode": "100644"
+    },
+    "src/content/product.ts": {
+      "sha256": "a1b012999fb06799f4ad63324ce988af91268101b319a7ca06f20774dc647459",
+      "mode": "100644"
+    },
+    "src/content/research/no/registry.ts": {
+      "sha256": "9c5f4918bdceee31f849d5f645de2e067492863ae31fabc2efbb7c810e17b28f",
+      "mode": "100644"
+    },
+    "src/content/research/no/topics/aurikulaer-vagusnervestimulering.ts": {
+      "sha256": "32f7fa8bb4e62bcce3934a5f14d0b3e4b4f55b0bbf7452cd2cfe3d125c6c2ddd",
+      "mode": "100644"
+    },
+    "src/content/research/no/topics/sikkerhet-og-tolerabilitet.ts": {
+      "sha256": "b53e83cc2e1827cb246e4bcdc25e4f93f12c7db65cf43101a5dcc5378ae46c58",
+      "mode": "100644"
+    },
+    "src/content/research/no/topics/transkutan-vagusnervestimulering.ts": {
+      "sha256": "b26f98274c2199718f3a3964d9fad3333889c7856703cc4470fd417c212313b1",
+      "mode": "100644"
+    },
+    "src/content/research/no/topics/vagusnervestimulering.ts": {
+      "sha256": "be1c244ec551667a11515dae7bc3a33d3fc369820aa58e84ede33832ed7879bd",
+      "mode": "100644"
+    },
+    "src/content/research/no/types.ts": {
+      "sha256": "eb8759efde449dc470e785a238918412a2ee35be84786fe9fc9cafe9b8ece641",
+      "mode": "100644"
+    },
+    "src/content/research-guides/how-to-read-vns-study.ts": {
+      "sha256": "a6d1d2f12b1b4026551a4b396440b98e8f1f95c32919d8bf9e759df7426a1297",
+      "mode": "100644"
+    },
+    "src/content/research-guides/registry.ts": {
+      "sha256": "4d2ac16c4a2f32311084c2abfde156780deae4eba124c4004b62c15f4596faf1",
+      "mode": "100644"
+    },
+    "src/content/research-guides/types.ts": {
+      "sha256": "72ca93a7083f2b8afbd73e3ed6fcd6914e7a6caf98f0df8734b6d1ea88246cf2",
+      "mode": "100644"
+    },
+    "src/content/research-study-catalog.ts": {
+      "sha256": "8a91a4f6c149421e4a643965d8ac5dd566e2a9f4cd15e515780fed6aabb3dc4a",
+      "mode": "100644"
+    },
+    "src/content/research-v2.ts": {
+      "sha256": "b96184ccd8a8aebc94b94d3cf28775d4a861c61829113273c9f4ef33f2a60cfc",
+      "mode": "100644"
+    },
+    "src/content/support-v2.ts": {
+      "sha256": "daba3a5b15569b408a02bcb8fbb95902d5e5b5f88eff2004fc7c3cd892537937",
+      "mode": "100644"
+    },
+    "src/content/support.ts": {
+      "sha256": "9d216d8f76e31513606a98d79402654a3cc97095a071470be4215440f2fa192b",
+      "mode": "100644"
+    },
+    "src/content/trust/editorial-policy.ts": {
+      "sha256": "495c9b6685988b395fdbbb26ee34f7f5e3f35b6899fc8e89ce2b2ba2188268f6",
+      "mode": "100644"
+    },
+    "docs/seo/editorial-enforcement/E2-ACCEPTANCE.md": {
+      "sha256": "4724b855ccf1a76766e2c03972e7f0c97ff85e6e69343fd964d6959ee8be4d16",
+      "mode": "100644"
+    },
+    "docs/seo/editorial-enforcement/E3-ACCEPTED-PROPOSAL.md": {
+      "sha256": "bf3558d5d88f8aedb3c7743c6fa8de636ea058b82d01fc031b5d71c8aca1a39a",
+      "mode": "100644"
+    },
+    "docs/seo/editorial-enforcement/E3-SCOPE.md": {
+      "sha256": "e071c63c74310b10fb79ace519a6dd189222b54c2d48a3f18c9118303bfa3894",
+      "mode": "100644"
+    },
+    "docs/seo/editorial-enforcement/INSTALLATION-MANIFEST.json": {
+      "sha256": "898c0809a9ca9c811f263c0c62617e85494c7709ea5a6d4ae34fb95abc1b4a9f",
+      "mode": "100644"
+    },
+    "docs/seo/editorial-enforcement/README.md": {
+      "sha256": "aac86411d4538839f3e65c6483522ce2fe2b2ef56719bcce5715020669385d8f",
+      "mode": "100644"
+    },
+    "docs/seo/editorial-enforcement/installation-contract.v1.json": {
+      "sha256": "678e5c7de309e965fb95aed051259961c3152c0f7e0f24ab5afa4f3c15201fe0",
+      "mode": "100644"
+    },
+    "scripts/editorial-enforcement/.gitignore": {
+      "sha256": "e197b56aa35bba0d580818a3156f574acd3f098ebb0e609be1d1b71a4452dbf8",
+      "mode": "100644"
+    },
+    "scripts/editorial-enforcement/installer_core.py": {
+      "sha256": "eaadafa2b0d323f4d58b5def062126a5c9e9c5d7dd9d56c594039f4b1e160dfe",
+      "mode": "100644"
+    },
+    "scripts/editorial-enforcement/run-shadow.sh": {
+      "sha256": "43bb7411c0cc35c06e1cbf10a962791f8198bc97f4a866f66fac65faccfe43ab",
+      "mode": "100755"
+    },
+    "scripts/editorial-enforcement/runtime.py": {
+      "sha256": "75db5de7d434d1c623fd6779268e2539b21608178391a3ec5218d2b8b6a6e1e9",
+      "mode": "100644"
+    },
+    "scripts/editorial-enforcement/shadow_cli.py": {
+      "sha256": "5c37dc433d2f0ec98af6c47e044d8a68cd59786995ddd361be5f09be8af1d370",
+      "mode": "100644"
+    },
+    "scripts/editorial-enforcement/tests/test_installation.py": {
+      "sha256": "d2e5b90d8f32d62003181ae8495dad54b9167871847860137a40b04a26701105",
+      "mode": "100644"
+    },
+    "scripts/editorial-enforcement/vendor/e2/PACKAGE-MANIFEST.sha256": {
+      "sha256": "a8fd89f8e94388660755bc9dd45249f67d6605201ff1f75f24bfd041bf4e9a3d",
+      "mode": "100644"
+    },
+    "scripts/editorial-enforcement/vendor/e2/README.md": {
+      "sha256": "ddd68abc718ae83e5d982f33003021302397c7aca6bbe6635b2d30402264b2f6",
+      "mode": "100644"
+    },
+    "scripts/editorial-enforcement/vendor/e2/fixtures/accepted-source.zip": {
+      "sha256": "8268cf14d9f2e9c50bbdee482820224cac09d7eb8e8ccbfd264cca9965d2885a",
+      "mode": "100644"
+    },
+    "scripts/editorial-enforcement/vendor/e2/fixtures/historical-html.zip": {
+      "sha256": "6f65dd13979593b89666c092bf5256a2ea8c3871921ef23b728f052032b84e8a",
+      "mode": "100644"
+    },
+    "scripts/editorial-enforcement/vendor/e2/fixtures/pre-delivery-pages.zip": {
+      "sha256": "53883d25a5e937168a4fcc37b09325d38e33b0a088f4667460aa96ed9e359229",
+      "mode": "100644"
+    },
+    "scripts/editorial-enforcement/vendor/e2/reference/d7/editorial-enforcement-handoff.json": {
+      "sha256": "72e012546d1bf9b549d77eaf54972a22554b65c38ca07b610627a5f798763dc4",
+      "mode": "100644"
+    },
+    "scripts/editorial-enforcement/vendor/e2/reference/d7/policy-route-handoff.json": {
+      "sha256": "b8f4a1a30e49a04f1bf160ec6bb2d6bc53095841e55bbf2a1b1bd1d0e93af56c",
+      "mode": "100644"
+    },
+    "scripts/editorial-enforcement/vendor/e2/reference/d7/reference-intake-candidates.json": {
+      "sha256": "36d83550f92b04fa301a7150e03d6df0ee8f8585dd2854625d5484be72732187",
+      "mode": "100644"
+    },
+    "scripts/editorial-enforcement/vendor/e2/reference/d7/review-queue-reconciliation.json": {
+      "sha256": "e9c5a2a8b12bf9f3a0da5df41d47a7bc11958d3db5cd8ba937857c27dcbf4976",
+      "mode": "100644"
+    },
+    "scripts/editorial-enforcement/vendor/e2/reference/d7/summary.json": {
+      "sha256": "bfdadd665ca0f4f5fb9708013344400751a8157971d451ec9286e1ff53ca2bd6",
+      "mode": "100644"
+    },
+    "scripts/editorial-enforcement/vendor/e2/reference/d7/text-reuse-and-provenance-drift.json": {
+      "sha256": "bebb787b45fc54ac8372a657c6ced6b33764ac178c2bba65966e40c6ce54f218",
+      "mode": "100644"
+    },
+    "scripts/editorial-enforcement/vendor/e2/reference/delivery-ledger.json": {
+      "sha256": "0d22616ddfd21125450b64e177f035a4e5c0be9221272850b7f7c116b47f587f",
+      "mode": "100644"
+    },
+    "scripts/editorial-enforcement/vendor/e2/reference/design-v1.json": {
+      "sha256": "d3846b8534544e3a3a5a25c41b2bf155c16d5f73dab7f417c272094096f5e5f5",
+      "mode": "100644"
+    },
+    "scripts/editorial-enforcement/vendor/e2/reference/design-v1.md": {
+      "sha256": "fe308448a6d9f322908f91e6437de13b33c3c9f27f2f3cd31d8d6b6370dc747d",
+      "mode": "100644"
+    },
+    "scripts/editorial-enforcement/vendor/e2/reference/display-fields-v1.json": {
+      "sha256": "0518e22fa49280ef7fec7f478b71830ddf3297f40056a8076f38899f0866a879",
+      "mode": "100644"
+    },
+    "scripts/editorial-enforcement/vendor/e2/reference/e1-original-package.zip": {
+      "sha256": "0ca09c4a9ac5768b7d073251a2fc1ae281e63f1a9a3563d82f6f7d021ecc666b",
+      "mode": "100644"
+    },
+    "scripts/editorial-enforcement/vendor/e2/reference/html-fixture-origins.json": {
+      "sha256": "57c191d97f2e594b7b78b6463a331fec31fcde0143a680112cf61bc9845b18ce",
+      "mode": "100644"
+    },
+    "scripts/editorial-enforcement/vendor/e2/reference/neuvago-1e4e1-calibration-reproductions-20260913.json": {
+      "sha256": "dec38cf0b58c2e34db30557b43bd6e208a053032eb4ceea194f9646f4854d411",
+      "mode": "100644"
+    },
+    "scripts/editorial-enforcement/vendor/e2/reference/neuvago-1e4e1-calibration-reproductions.py": {
+      "sha256": "44673a9c3d6fe50071c1f98a08ec2b8fcca7e53de598c2e94222b6f38e492cb5",
+      "mode": "100644"
+    },
+    "scripts/editorial-enforcement/vendor/e2/reference/neuvago-1e4e2-pilot-review-gate-calibration-v1.json": {
+      "sha256": "abc6d24cd026b59d803ff1b5181543951e938f81d0a9e30dbda6146847871d30",
+      "mode": "100644"
+    },
+    "scripts/editorial-enforcement/vendor/e2/reference/neuvago-1e4e2-pilot-review-gate-calibration-v1.md": {
+      "sha256": "732499789a8dd582af64020ed2cb6b5aaf91549aa205d1def0e43404fc6f9ba3",
+      "mode": "100644"
+    },
+    "scripts/editorial-enforcement/vendor/e2/reference/original-route-map.json": {
+      "sha256": "2cfb2a28b060d200eabef6abf153edfb6b36469d6dd6623fb4e4380bf194da69",
+      "mode": "100644"
+    },
+    "scripts/editorial-enforcement/vendor/e2/reference/original-triage.json": {
+      "sha256": "5716b7c2679a56ee2bd6e7a6791de32d4bd2f119dda86e7e6389da23ebfe7d66",
+      "mode": "100644"
+    },
+    "scripts/editorial-enforcement/vendor/e2/review/CALIBRATION.md": {
+      "sha256": "6aebd2ba94c69af38970bdcc5da69d6e600f15db2822d7b416a40f012d3ad714",
+      "mode": "100644"
+    },
+    "scripts/editorial-enforcement/vendor/e2/review/E1-ORIGINAL-IMPLEMENTATION-SCOPE.md": {
+      "sha256": "7e420157a9233c12a1559dd8908a5ef82395e6c605760b32195e65ea28cf847b",
+      "mode": "100644"
+    },
+    "scripts/editorial-enforcement/vendor/e2/review/QA-before-archive.txt": {
+      "sha256": "7e1d4a78ccd5349992e26b6085ea888d6931db0def6ed3c8749732a3e86a9240",
+      "mode": "100644"
+    },
+    "scripts/editorial-enforcement/vendor/e2/review/TEST-EXPECTATIONS.json": {
+      "sha256": "c51fdfaeff4f042f8779c5b450f4913241ccbcea47a935060da2aca3df302f4f",
+      "mode": "100644"
+    },
+    "scripts/editorial-enforcement/vendor/e2/run-1e4e2.sh": {
+      "sha256": "904081f8840d9cd571cf6e8606e3bd8fa4aa0af8ed6a09527cac64ecd0eca5d6",
+      "mode": "100644"
+    },
+    "scripts/editorial-enforcement/vendor/e2/support/calibration.py": {
+      "sha256": "9361e4bad711064e84d523a6a32b92a890c7e0da097db0a9e53ee6d022aa48ca",
+      "mode": "100644"
+    },
+    "scripts/editorial-enforcement/vendor/e2/support/card_fields.py": {
+      "sha256": "6ede195822414e379bffa3bf34904061a378096493c37abf1026cc4d42faa499",
+      "mode": "100644"
+    },
+    "scripts/editorial-enforcement/vendor/e2/support/expected-state.json": {
+      "sha256": "e82ac02115e09985c308aff4c2a2c55a6a0c29ecbc9de6c62002d5d8aae3cb26",
+      "mode": "100644"
+    },
+    "scripts/editorial-enforcement/vendor/e2/support/extract.cjs": {
+      "sha256": "35b5f0bf71f31704c4d2ab47ee7a6874c8536e04c21a9f7fe880a3fee7268e7a",
+      "mode": "100644"
+    },
+    "scripts/editorial-enforcement/vendor/e2/support/historical_html.py": {
+      "sha256": "452e6dc3d46fccb2953a4656e4fc8fccb41f93df7a9e37c6210696543189e5e0",
+      "mode": "100644"
+    },
+    "scripts/editorial-enforcement/vendor/e2/support/legacy_compare.py": {
+      "sha256": "8e0a8db0be81f3017d807e1aba351a59e9d9ed29507188b19a519721f616ebdf",
+      "mode": "100644"
+    },
+    "scripts/editorial-enforcement/vendor/e2/support/mutations.py": {
+      "sha256": "525a069cccaaf3c95de5d74f697ef67d249b3ab8c35d7a888fe61a713ca521c3",
+      "mode": "100644"
+    },
+    "scripts/editorial-enforcement/vendor/e2/support/readonly_guard.py": {
+      "sha256": "a3ed81eddae4af15e7ea0a59620861cded36b6e7ef68d5f4ef02901574f9cc06",
+      "mode": "100644"
+    },
+    "scripts/editorial-enforcement/vendor/e2/support/registry_checks.py": {
+      "sha256": "38ab94c0c6bc2679cdfaeebba377bc0619a20d0b4425f1e9d966c50d980ce381",
+      "mode": "100644"
+    },
+    "scripts/editorial-enforcement/vendor/e2/support/run.py": {
+      "sha256": "abd96a859b301c86d970962fd761678ca9d12586910a963252a0c0b9c3447269",
+      "mode": "100644"
+    },
+    "scripts/editorial-enforcement/vendor/e2/support/shadow.py": {
+      "sha256": "6b9a7a369b2663ef18397415be2974683e7f511c437b468e0e5ca05e4b13f914",
+      "mode": "100644"
+    },
+    "scripts/editorial-enforcement/vendor/e2/support/snapshot.py": {
+      "sha256": "935bb0790d420b3a637ae9f02aaa43dbfe4ac235908e13eab7bb28d82aa3c3f6",
+      "mode": "100644"
+    },
+    "scripts/editorial-enforcement/vendor/e2/tests/test_calibration.py": {
+      "sha256": "d37989247dcfd8ff201fea448b8df80fcde39237422cc7a6d8c8f125c931e5d5",
+      "mode": "100644"
+    },
+    "scripts/editorial-enforcement/vendor/e2/tests/test_shadow.py": {
+      "sha256": "4cf76600612dad919a8bc80548076ae798f7b15c251ca08b7f222ae8c83ee191",
+      "mode": "100644"
+    }
+  },
+  "admission_semantics": "Versioned additive metadata catalogue; legacy registry and E3 remain unchanged. No write-back or automatic canonical-registry switch.",
+  "legacy_active_evidence_records": 172,
+  "typed_admission_records": 12,
+  "typed_scholarly_records": 8,
+  "typed_official_records": 4,
+  "composite_metadata_identities": 184,
+  "version_bound_usages": 16,
+  "canonical_claim_registry_rel": "docs/seo/evidence-operations/claim-registry.v1.json",
+  "candidate_registry_rel": "docs/seo/evidence-operations/claim-evidence-link-candidates.v1.json",
+  "historical_lock_index_rel": "docs/seo/evidence-operations/legacy-source-lock-index.v1.json",
+  "approved_links": 0,
+  "claim_support_review_complete": false,
+  "scientific_claim_support_approved": false,
+  "enforcement_gates_installed": false,
+  "ci_installed": false,
+  "release_ready": false,
+  "e3_scope_unchanged": true,
+  "legacy_review_backlog_not_rewritten": true,
+  "admission_to_old_registry_performed": false,
+  "nice_live_access_attested": false,
+  "protected_mode_contract_review": {
+    "correction_id": "R-INTAKE2-MODE-01",
+    "accepted_git_state_sha256": "6f6281e27d3656dd9170fe70157810182caf31652becc202304b4bdc9b9db914",
+    "source_return_archive": "neuvago-1e4e3-final-20260914T075005Z-ag584_f5-share.zip",
+    "source_return_archive_sha256": "c0a39b726fa478df67c6352815252072a160f21126867330818cbb7061f5d91b",
+    "changes": [
+      {
+        "path": "scripts/search-dominance-1e4b-claim-registry-audit.py",
+        "v1_expected_mode": "100644",
+        "accepted_git_mode": "100755",
+        "sha256_preserved": "de45f994fe5256d555a0881dece6ad0b9ee48c5da0e709a1e368385131695adf",
+        "blob_oid": "2cb1e4e07d43ab2b4879878a15eb16c2101c4d8d"
+      },
+      {
+        "path": "scripts/search-dominance-1e4c-evidence-registry-audit.py",
+        "v1_expected_mode": "100644",
+        "accepted_git_mode": "100755",
+        "sha256_preserved": "7843f4de20d8f0396f7c71fae8c8991cf1182d652f7f458855b420f54d5d0aca",
+        "blob_oid": "3e11d1710288ec42852409a230b59d4adf690cea"
+      },
+      {
+        "path": "scripts/search-dominance-1e4c-evidence-registry-build.py",
+        "v1_expected_mode": "100644",
+        "accepted_git_mode": "100755",
+        "sha256_preserved": "56bb7ce4c1e17bdf066c6fa040e6ce08496272a15a6147d065085ab777aa841a",
+        "blob_oid": "bbd31582fef8b6a4e1a7da38c751fbe6bec31ea5"
+      }
+    ],
+    "protected_content_hashes_changed": false,
+    "protected_project_files_to_chmod": [],
+    "mode_check_remains_enforced": true
+  }
+}

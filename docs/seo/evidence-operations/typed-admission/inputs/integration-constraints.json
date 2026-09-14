@@ -1,0 +1,69 @@
+{
+  "schema": "neuvago-r-intake1-typed-admission-constraints-v1",
+  "status": "PROPOSED_NEXT_IMPLEMENTATION_NOT_RUN",
+  "current_evidence_source_type_enum": [
+    "PUBMED_ARTICLE",
+    "PUBMED_BOOK_ARTICLE",
+    "CROSSREF_DOI_WORK",
+    "PMID_UNRESOLVED",
+    "DOI_ONLY"
+  ],
+  "current_registry_count": 172,
+  "proposed_pending_scholarly_additions": 8,
+  "proposed_official_sources": 4,
+  "new_source_types_require_explicit_schema_review": true,
+  "source_kind_names_in_this_review_are_not_installed_schema_values": [
+    "PUBLIC_HEALTH_GUIDANCE",
+    "CLINICAL_GUIDELINE",
+    "CLASSIFICATION_CLARIFICATION"
+  ],
+  "do_not_run_old_registry_builder": true,
+  "do_not_rewrite_old_baseline_or_fixture_silently": true,
+  "do_not_change_all_verification_dates": true,
+  "preserve_existing_active_records": 172,
+  "preserve_quarantine_records": 2,
+  "preserve_canonical_claims": 117,
+  "preserve_historical_locks": 27,
+  "preserve_intake_usage_scopes": 16,
+  "care_guidance_urls_outside_this_intake": [
+    {
+      "url": "https://www.nhs.uk/symptoms/tiredness-and-fatigue/",
+      "kind": "CARE_GUIDANCE_SEPARATE_FROM_SCHOLARLY_CARD_COUNT",
+      "routes": [
+        "/learn/recovery-and-regulation",
+        "/learn/why-you-feel-tired-but-cant-relax",
+        "/conditions/burnout"
+      ],
+      "external_validity_rechecked_this_run": false,
+      "intake_status": "SEPARATE_GUIDANCE_REGISTER_POLICY_DESIGN_REQUIRED"
+    },
+    {
+      "url": "https://www.nhs.uk/mental-health/feelings-symptoms-behaviours/feelings-and-symptoms/stress/",
+      "kind": "CARE_GUIDANCE_SEPARATE_FROM_SCHOLARLY_CARD_COUNT",
+      "routes": [
+        "/learn/why-your-body-feels-stuck-in-stress",
+        "/learn/signs-of-a-dysregulated-nervous-system",
+        "/learn/what-nervous-system-regulation-feels-like",
+        "/learn/emotional-regulation-and-the-nervous-system"
+      ],
+      "external_validity_rechecked_this_run": false,
+      "intake_status": "SEPARATE_GUIDANCE_REGISTER_POLICY_DESIGN_REQUIRED"
+    },
+    {
+      "url": "https://www.nhs.uk/mental-health/feelings-symptoms-behaviours/feelings-and-symptoms/anxiety-fear-panic/",
+      "kind": "CARE_GUIDANCE_SEPARATE_FROM_SCHOLARLY_CARD_COUNT",
+      "routes": [
+        "/conditions/anxiety"
+      ],
+      "external_validity_rechecked_this_run": false,
+      "intake_status": "SEPARATE_GUIDANCE_REGISTER_POLICY_DESIGN_REQUIRED"
+    }
+  ],
+  "review_required_before_git_mutation": true,
+  "gate_activation_authorized": false,
+  "source_policy_owner_mapping_approved": false,
+  "claim_support_approved": false,
+  "nice_endpoint_availability_followup_required": true,
+  "full_article_methodological_review_complete": false,
+  "version_control_plan": "Define exact typed record/schema diff and explicitly version any source baseline/engine fixture update. Run the existing manual tool as an observer. Review before commit/push; no auto-rebase of accepted baseline to current HEAD."
+}

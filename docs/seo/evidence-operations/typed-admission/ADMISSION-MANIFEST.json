@@ -1,0 +1,69 @@
+{
+  "schema": "neuvago-r-intake2-file-manifest-v1",
+  "files": {
+    "docs/seo/evidence-operations/typed-admission/README.md": {
+      "sha256": "99fc35ee18ea0ec436a45c4a2cda26ec6248f377ef60f91ce2b4c864f1460cc5",
+      "mode": "100644"
+    },
+    "docs/seo/evidence-operations/typed-admission/admission-contract.v1.json": {
+      "sha256": "28240bcd9c3f44b6c7a73c3c0849d160828324088458fee989144ceb71d1bfd5",
+      "mode": "100644"
+    },
+    "docs/seo/evidence-operations/typed-admission/inputs/PRIMARY-SOURCES.md": {
+      "sha256": "53e2a459d379244a7380882ef38298c77cc692a86ba15c3edbb2d0a540e0cc44",
+      "mode": "100644"
+    },
+    "docs/seo/evidence-operations/typed-admission/inputs/REVIEW.md": {
+      "sha256": "04c8d4a2f8e84f4ab0a33bf7ef89587f71437453f79fd50a3ffa46daf856f25d",
+      "mode": "100644"
+    },
+    "docs/seo/evidence-operations/typed-admission/inputs/identity-review.v1.json": {
+      "sha256": "25a89d5141031220442a55b04cc679c61e378f5b4cff1c02531c1f931ed971f5",
+      "mode": "100644"
+    },
+    "docs/seo/evidence-operations/typed-admission/inputs/integration-constraints.json": {
+      "sha256": "fc75b2b0fba8b2839b7983efed7e52d20006743a8aaeb7d7d46e30fc990693f1",
+      "mode": "100644"
+    },
+    "docs/seo/evidence-operations/typed-admission/inputs/original-d7-reference-intake-candidates.json": {
+      "sha256": "36d83550f92b04fa301a7150e03d6df0ee8f8585dd2854625d5484be72732187",
+      "mode": "100644"
+    },
+    "docs/seo/evidence-operations/typed-admission/inputs/primary-source-observations.v1.json": {
+      "sha256": "e1d31f25690378f91b745a8ac1cf5322eb7e4c62a201baf8a23e2c4bf9400637",
+      "mode": "100644"
+    },
+    "docs/seo/evidence-operations/typed-admission/inputs/source-usage-ledger.v1.json": {
+      "sha256": "f606633703942e1ed981fece84fd7ae0c182f770e70da49f2c72548619e96ea1",
+      "mode": "100644"
+    },
+    "docs/seo/evidence-operations/typed-admission/source-admissions.schema.v1.json": {
+      "sha256": "43821661d27514a5513871d33645f4c83e4c49bfba0035a985b932216ca7df56",
+      "mode": "100644"
+    },
+    "docs/seo/evidence-operations/typed-admission/source-admissions.v1.json": {
+      "sha256": "1d935c2bb50d04dfad9592c2ce4282af86d58608cb874d721c8eaacf5cb8fe08",
+      "mode": "100644"
+    },
+    "docs/seo/evidence-operations/typed-admission/source-usage.schema.v1.json": {
+      "sha256": "cbc63f64b5c5f2849ee8ecf06e4f0244bb75656e4000f4657916f5f6f36dc34f",
+      "mode": "100644"
+    },
+    "docs/seo/evidence-operations/typed-admission/source-usage.v1.json": {
+      "sha256": "98795841adddbbf613d7185528f26d5341dbfee430be43dddcdfa8d1f8dca25f",
+      "mode": "100644"
+    },
+    "scripts/evidence-intake/admission.py": {
+      "sha256": "b9ec8683a1a351db09792f0b21992a23857a01ca05a36b27319b6fbe49b6999e",
+      "mode": "100755"
+    },
+    "scripts/evidence-intake/run-admission.sh": {
+      "sha256": "ab7c4cd594f30bd005c937529116e73cb38aa6e101b2a507e1018dd021ca441c",
+      "mode": "100755"
+    },
+    "scripts/evidence-intake/schema_subset.py": {
+      "sha256": "3fd937ad79ac0bf9a41924df31514538c254d48a3b066626f76ac15bbd08f0b4",
+      "mode": "100644"
+    }
+  }
+}

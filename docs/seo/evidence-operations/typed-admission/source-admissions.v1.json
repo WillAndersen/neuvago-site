@@ -1,0 +1,708 @@
+{
+  "schema": "neuvago-typed-source-admissions-v1",
+  "registry_version": "1.0.0",
+  "status": "LOCAL_METADATA_ADMISSION_PENDING_FINAL_REVIEW",
+  "legacy_registry": {
+    "path": "docs/seo/evidence-operations/evidence-registry.v1.json",
+    "sha256": "6a4286e67507173ed5e97462f5759a924119ab09a53f314d18372007006a7dba",
+    "active_records": 172,
+    "quarantined_records": 2
+  },
+  "input_identity_review_sha256": "25a89d5141031220442a55b04cc679c61e378f5b4cff1c02531c1f931ed971f5",
+  "sources": [
+    {
+      "source_id": "EVD-PMID-28242739",
+      "intake_id": "INTAKE-PMID-28242739",
+      "reference_key": "PMID:28242739",
+      "source_kind": "SCHOLARLY_PUBLICATION",
+      "identity": {
+        "pmid": "28242739",
+        "doi_display": "10.1098/rstb.2016.0206",
+        "doi_normalized": "10.1098/rstb.2016.0206",
+        "source_url": "https://pubmed.ncbi.nlm.nih.gov/28242739/",
+        "source_record_kind": "SCHOLARLY_PUBLICATION"
+      },
+      "observed_primary_metadata": {
+        "title": "Freeze for action: neurobiological mechanisms in animal and human freezing",
+        "authors": [
+          "Karin Roelofs"
+        ],
+        "authors_short": [
+          "Roelofs K"
+        ],
+        "publication_year": 2017,
+        "publication_date_display": "2017 Apr 19",
+        "journal": "Philosophical Transactions of the Royal Society of London. Series B, Biological Sciences",
+        "doi": "10.1098/rstb.2016.0206",
+        "pmcid": "PMC5332864"
+      },
+      "identity_review": {
+        "disposition": "IDENTITY_MATCH_IN_AVAILABLE_PRIMARY_METADATA",
+        "comparison_note": "Tidsskriftets lange PubMed-navn og kortets kortnavn er dokumentert som ulike visningsformer, ikke ulike artikler.",
+        "source_observation": {
+          "observation_id": "OBS-068472E73EF86F",
+          "observed_on": "2026-09-14",
+          "primary_url": "https://pubmed.ncbi.nlm.nih.gov/28242739/",
+          "observation_channel": "PRIMARY_INDEXED_RECORD",
+          "web_evidence_refs": [
+            "turn279273search0"
+          ],
+          "observation_scope": "BIBLIOGRAPHIC_IDENTITY_AND_SOURCE_KIND_NOT_SCIENTIFIC_SUPPORT",
+          "direct_http_status_attested": false,
+          "publisher_or_pubmed_metadata_match": true,
+          "full_text_appraisal_performed": false,
+          "systematic_retraction_or_update_screen_complete": false
+        }
+      },
+      "input_record_sha256": "091cb537d362488ff045d6b7aa57b57243e7a251411252d267bf88aac03627db",
+      "usage_ids": [
+        "USE-D927F5603713B4F8"
+      ],
+      "admission_scope": "METADATA_IDENTITY_ONLY_LOCAL_REVIEW_PENDING",
+      "claim_ids": [],
+      "scientific_claim_support_approved": false,
+      "claim_support_review_complete": false,
+      "directness": "PENDING_CLAIM_REVIEW",
+      "method_quality": null,
+      "evidence_certainty": null,
+      "human_signoff": null
+    },
+    {
+      "source_id": "EVD-PMID-26062169",
+      "intake_id": "INTAKE-PMID-26062169",
+      "reference_key": "PMID:26062169",
+      "source_kind": "SCHOLARLY_PUBLICATION",
+      "identity": {
+        "pmid": "26062169",
+        "doi_display": "10.1097/HRP.0000000000000065",
+        "doi_normalized": "10.1097/hrp.0000000000000065",
+        "source_url": "https://pubmed.ncbi.nlm.nih.gov/26062169/",
+        "source_record_kind": "SCHOLARLY_PUBLICATION"
+      },
+      "observed_primary_metadata": {
+        "title": "Fear and the Defense Cascade: Clinical Implications and Management",
+        "authors": [
+          "Kasia Kozlowska",
+          "Peter Walker",
+          "Loyola McLean",
+          "Pascal Carrive"
+        ],
+        "authors_short": [
+          "Kozlowska K",
+          "Walker P",
+          "McLean L",
+          "Carrive P"
+        ],
+        "publication_year": 2015,
+        "publication_date_display": "2015 Jul-Aug",
+        "journal": "Harvard Review of Psychiatry",
+        "doi": "10.1097/HRP.0000000000000065",
+        "pmcid": "PMC4495877"
+      },
+      "identity_review": {
+        "disposition": "IDENTITY_MATCH_IN_AVAILABLE_PRIMARY_METADATA",
+        "comparison_note": "Bibliografisk identitet kontrollert; hele den kliniske forklaringsmodellen er ikke faglig godkjent her.",
+        "source_observation": {
+          "observation_id": "OBS-49B7E34C5A40B8",
+          "observed_on": "2026-09-14",
+          "primary_url": "https://pubmed.ncbi.nlm.nih.gov/26062169/",
+          "observation_channel": "PRIMARY_INDEXED_RECORD",
+          "web_evidence_refs": [
+            "turn279273search3"
+          ],
+          "observation_scope": "BIBLIOGRAPHIC_IDENTITY_AND_SOURCE_KIND_NOT_SCIENTIFIC_SUPPORT",
+          "direct_http_status_attested": false,
+          "publisher_or_pubmed_metadata_match": true,
+          "full_text_appraisal_performed": false,
+          "systematic_retraction_or_update_screen_complete": false
+        }
+      },
+      "input_record_sha256": "7f82b4020881a28a30c00a596804bdf753f12e65a302a3b527ab053d3cbc2519",
+      "usage_ids": [
+        "USE-B04E362BAECA694D"
+      ],
+      "admission_scope": "METADATA_IDENTITY_ONLY_LOCAL_REVIEW_PENDING",
+      "claim_ids": [],
+      "scientific_claim_support_approved": false,
+      "claim_support_review_complete": false,
+      "directness": "PENDING_CLAIM_REVIEW",
+      "method_quality": null,
+      "evidence_certainty": null,
+      "human_signoff": null
+    },
+    {
+      "source_id": "EVD-PMID-17615391",
+      "intake_id": "INTAKE-PMID-17615391",
+      "reference_key": "PMID:17615391",
+      "source_kind": "SCHOLARLY_PUBLICATION",
+      "identity": {
+        "pmid": "17615391",
+        "doi_display": "10.1152/physrev.00041.2006",
+        "doi_normalized": "10.1152/physrev.00041.2006",
+        "source_url": "https://pubmed.ncbi.nlm.nih.gov/17615391/",
+        "source_record_kind": "SCHOLARLY_PUBLICATION"
+      },
+      "observed_primary_metadata": {
+        "title": "Physiology and neurobiology of stress and adaptation: central role of the brain",
+        "authors": [
+          "Bruce S McEwen"
+        ],
+        "authors_short": [
+          "McEwen BS"
+        ],
+        "publication_year": 2007,
+        "publication_date_display": "2007 Jul",
+        "journal": "Physiological Reviews",
+        "doi": "10.1152/physrev.00041.2006",
+        "pmcid": null
+      },
+      "identity_review": {
+        "disposition": "IDENTITY_MATCH_IN_AVAILABLE_PRIMARY_METADATA",
+        "comparison_note": "Tre brukssteder beholdes separat; D4 og D5 har ikke identisk scope-tekst.",
+        "source_observation": {
+          "observation_id": "OBS-DB8B033DD0D08E",
+          "observed_on": "2026-09-14",
+          "primary_url": "https://pubmed.ncbi.nlm.nih.gov/17615391/",
+          "observation_channel": "READABLE_PRIMARY_PAGE",
+          "web_evidence_refs": [
+            "turn751902view2"
+          ],
+          "observation_scope": "BIBLIOGRAPHIC_IDENTITY_AND_SOURCE_KIND_NOT_SCIENTIFIC_SUPPORT",
+          "direct_http_status_attested": false,
+          "publisher_or_pubmed_metadata_match": true,
+          "full_text_appraisal_performed": false,
+          "systematic_retraction_or_update_screen_complete": false
+        }
+      },
+      "input_record_sha256": "3b5060c0d5e37cb17d53afab76fee8819e15a8dcfe2c9a5bb2001289078e5751",
+      "usage_ids": [
+        "USE-4A16D9C21F824CBA",
+        "USE-BA29F8021BC32144",
+        "USE-147DC723E5AF771E"
+      ],
+      "admission_scope": "METADATA_IDENTITY_ONLY_LOCAL_REVIEW_PENDING",
+      "claim_ids": [],
+      "scientific_claim_support_approved": false,
+      "claim_support_review_complete": false,
+      "directness": "PENDING_CLAIM_REVIEW",
+      "method_quality": null,
+      "evidence_certainty": null,
+      "human_signoff": null
+    },
+    {
+      "source_id": "EVD-PMID-30046255",
+      "intake_id": "INTAKE-PMID-30046255",
+      "reference_key": "PMID:30046255",
+      "source_kind": "SCHOLARLY_PUBLICATION",
+      "identity": {
+        "pmid": "30046255",
+        "doi_display": "10.2147/NSS.S138823",
+        "doi_normalized": "10.2147/nss.s138823",
+        "source_url": "https://pubmed.ncbi.nlm.nih.gov/30046255/",
+        "source_record_kind": "SCHOLARLY_PUBLICATION"
+      },
+      "observed_primary_metadata": {
+        "title": "Hyperarousal and sleep reactivity in insomnia: current insights",
+        "authors": [
+          "David A Kalmbach",
+          "Andrea S Cuamatzi-Castelan",
+          "Christine V Tonnu",
+          "Kieulinh Michelle Tran",
+          "Jason R Anderson",
+          "Thomas Roth",
+          "Christopher L Drake"
+        ],
+        "authors_short": [
+          "Kalmbach DA",
+          "Cuamatzi-Castelan AS",
+          "Tonnu CV",
+          "Tran KM",
+          "Anderson JR",
+          "Roth T",
+          "Drake CL"
+        ],
+        "publication_year": 2018,
+        "publication_date_display": "2018 Jul 17",
+        "journal": "Nature and Science of Sleep",
+        "doi": "10.2147/NSS.S138823",
+        "pmcid": "PMC6054324"
+      },
+      "identity_review": {
+        "disposition": "IDENTITY_MATCH_IN_AVAILABLE_PRIMARY_METADATA",
+        "comparison_note": "Kortets «Kalmbach DA et al.» beholdes som avtalt forkortet visning; den er ikke en komplett forfatterliste.",
+        "source_observation": {
+          "observation_id": "OBS-B22EAE48430B82",
+          "observed_on": "2026-09-14",
+          "primary_url": "https://pubmed.ncbi.nlm.nih.gov/30046255/",
+          "observation_channel": "READABLE_PRIMARY_PAGE",
+          "web_evidence_refs": [
+            "turn751902view3"
+          ],
+          "observation_scope": "BIBLIOGRAPHIC_IDENTITY_AND_SOURCE_KIND_NOT_SCIENTIFIC_SUPPORT",
+          "direct_http_status_attested": false,
+          "publisher_or_pubmed_metadata_match": true,
+          "full_text_appraisal_performed": false,
+          "systematic_retraction_or_update_screen_complete": false
+        }
+      },
+      "input_record_sha256": "b03e9a586ceccf67cadb0bb322401838a78e07b175a817ac7a6bbaac08c7cb8a",
+      "usage_ids": [
+        "USE-99B765416FA67C57"
+      ],
+      "admission_scope": "METADATA_IDENTITY_ONLY_LOCAL_REVIEW_PENDING",
+      "claim_ids": [],
+      "scientific_claim_support_approved": false,
+      "claim_support_review_complete": false,
+      "directness": "PENDING_CLAIM_REVIEW",
+      "method_quality": null,
+      "evidence_certainty": null,
+      "human_signoff": null
+    },
+    {
+      "source_id": "EVD-PMID-19809584",
+      "intake_id": "INTAKE-PMID-19809584",
+      "reference_key": "PMID:19809584",
+      "source_kind": "SCHOLARLY_PUBLICATION",
+      "identity": {
+        "pmid": "19809584",
+        "doi_display": "10.1080/02699930802204677",
+        "doi_normalized": "10.1080/02699930802204677",
+        "source_url": "https://pubmed.ncbi.nlm.nih.gov/19809584/",
+        "source_record_kind": "SCHOLARLY_PUBLICATION"
+      },
+      "observed_primary_metadata": {
+        "title": "Measures of emotion: A review",
+        "authors": [
+          "Iris B Mauss",
+          "Michael D Robinson"
+        ],
+        "authors_short": [
+          "Mauss IB",
+          "Robinson MD"
+        ],
+        "publication_year": 2009,
+        "publication_date_display": "2009 Feb 1",
+        "journal": "Cognition & Emotion",
+        "doi": "10.1080/02699930802204677",
+        "pmcid": "PMC2756702"
+      },
+      "identity_review": {
+        "disposition": "IDENTITY_MATCH_IN_AVAILABLE_PRIMARY_METADATA",
+        "comparison_note": "Kortets «Cognition and Emotion» og kildens tidsskriftnavn er visningsvarianter. Tittelens «review» blir ikke automatisk et PubMed publication-type-felt.",
+        "source_observation": {
+          "observation_id": "OBS-91A7C301745140",
+          "observed_on": "2026-09-14",
+          "primary_url": "https://pubmed.ncbi.nlm.nih.gov/19809584/",
+          "observation_channel": "READABLE_PRIMARY_PAGE",
+          "web_evidence_refs": [
+            "turn258345view0"
+          ],
+          "observation_scope": "BIBLIOGRAPHIC_IDENTITY_AND_SOURCE_KIND_NOT_SCIENTIFIC_SUPPORT",
+          "direct_http_status_attested": false,
+          "publisher_or_pubmed_metadata_match": true,
+          "full_text_appraisal_performed": false,
+          "systematic_retraction_or_update_screen_complete": false
+        }
+      },
+      "input_record_sha256": "8dd1517f863a59a3e14ddb77fe42f49adebadbe5906acd85cdd4705fa03e7840",
+      "usage_ids": [
+        "USE-282768A505CABDDC",
+        "USE-06F44F6BC643F4E9"
+      ],
+      "admission_scope": "METADATA_IDENTITY_ONLY_LOCAL_REVIEW_PENDING",
+      "claim_ids": [],
+      "scientific_claim_support_approved": false,
+      "claim_support_review_complete": false,
+      "directness": "PENDING_CLAIM_REVIEW",
+      "method_quality": null,
+      "evidence_certainty": null,
+      "human_signoff": null
+    },
+    {
+      "source_id": "EVD-PMID-12212647",
+      "intake_id": "INTAKE-PMID-12212647",
+      "reference_key": "PMID:12212647",
+      "source_kind": "SCHOLARLY_PUBLICATION",
+      "identity": {
+        "pmid": "12212647",
+        "doi_display": "10.1017/s0048577201393198",
+        "doi_normalized": "10.1017/s0048577201393198",
+        "source_url": "https://pubmed.ncbi.nlm.nih.gov/12212647/",
+        "source_record_kind": "SCHOLARLY_PUBLICATION"
+      },
+      "observed_primary_metadata": {
+        "title": "Emotion regulation: affective, cognitive, and social consequences",
+        "authors": [
+          "James J Gross"
+        ],
+        "authors_short": [
+          "Gross JJ"
+        ],
+        "publication_year": 2002,
+        "publication_date_display": "2002 May",
+        "journal": "Psychophysiology",
+        "doi": "10.1017/s0048577201393198",
+        "pmcid": null
+      },
+      "identity_review": {
+        "disposition": "IDENTITY_MATCH_IN_AVAILABLE_PRIMARY_METADATA",
+        "comparison_note": "Det bevares skille mellom oversiktens beskrivelse av seg selv og bibliografiske indekseringstyper. Ingen evidenssikkerhet utledes.",
+        "source_observation": {
+          "observation_id": "OBS-DFFAFFCDDDEDBB",
+          "observed_on": "2026-09-14",
+          "primary_url": "https://pubmed.ncbi.nlm.nih.gov/12212647/",
+          "observation_channel": "PRIMARY_INDEXED_RECORD",
+          "web_evidence_refs": [
+            "turn279273search2"
+          ],
+          "observation_scope": "BIBLIOGRAPHIC_IDENTITY_AND_SOURCE_KIND_NOT_SCIENTIFIC_SUPPORT",
+          "direct_http_status_attested": false,
+          "publisher_or_pubmed_metadata_match": true,
+          "full_text_appraisal_performed": false,
+          "systematic_retraction_or_update_screen_complete": false
+        }
+      },
+      "input_record_sha256": "2362f00deb2caa26b9dbfe13145b67bf40150e64f26c5d67ffcce132d31de13a",
+      "usage_ids": [
+        "USE-D27E233F6E306A02",
+        "USE-681EEC2306C6E9A7"
+      ],
+      "admission_scope": "METADATA_IDENTITY_ONLY_LOCAL_REVIEW_PENDING",
+      "claim_ids": [],
+      "scientific_claim_support_approved": false,
+      "claim_support_review_complete": false,
+      "directness": "PENDING_CLAIM_REVIEW",
+      "method_quality": null,
+      "evidence_certainty": null,
+      "human_signoff": null
+    },
+    {
+      "source_id": "EVD-PMID-20015584",
+      "intake_id": "INTAKE-PMID-20015584",
+      "reference_key": "PMID:20015584",
+      "source_kind": "SCHOLARLY_PUBLICATION",
+      "identity": {
+        "pmid": "20015584",
+        "doi_display": "10.1016/j.cpr.2009.11.004",
+        "doi_normalized": "10.1016/j.cpr.2009.11.004",
+        "source_url": "https://pubmed.ncbi.nlm.nih.gov/20015584/",
+        "source_record_kind": "SCHOLARLY_PUBLICATION"
+      },
+      "observed_primary_metadata": {
+        "title": "Emotion-regulation strategies across psychopathology: A meta-analytic review",
+        "authors": [
+          "Amelia Aldao",
+          "Susan Nolen-Hoeksema",
+          "Susanne Schweizer"
+        ],
+        "authors_short": [
+          "Aldao A",
+          "Nolen-Hoeksema S",
+          "Schweizer S"
+        ],
+        "publication_year": 2010,
+        "publication_date_display": "2010 Mar",
+        "electronic_publication_date": "2009-11-20",
+        "journal": "Clinical Psychology Review",
+        "doi": "10.1016/j.cpr.2009.11.004",
+        "pmcid": null
+      },
+      "identity_review": {
+        "disposition": "IDENTITY_MATCH_IN_AVAILABLE_PRIMARY_METADATA",
+        "comparison_note": "Epub 2009 og tidsskriftutgave 2010 er forskjellige datofelt. Kortets 2010 er ikke feil på grunn av Epub-datoen.",
+        "source_observation": {
+          "observation_id": "OBS-3DE747C0939230",
+          "observed_on": "2026-09-14",
+          "primary_url": "https://pubmed.ncbi.nlm.nih.gov/20015584/",
+          "observation_channel": "READABLE_PRIMARY_PAGE",
+          "web_evidence_refs": [
+            "turn258345view2"
+          ],
+          "observation_scope": "BIBLIOGRAPHIC_IDENTITY_AND_SOURCE_KIND_NOT_SCIENTIFIC_SUPPORT",
+          "direct_http_status_attested": false,
+          "publisher_or_pubmed_metadata_match": true,
+          "full_text_appraisal_performed": false,
+          "systematic_retraction_or_update_screen_complete": false
+        }
+      },
+      "input_record_sha256": "b5abe860a87d1a4465944c2d5be6a80058f041dd572fcfb32f96f3f2d0b85ee5",
+      "usage_ids": [
+        "USE-7C87F8542CC9853E"
+      ],
+      "admission_scope": "METADATA_IDENTITY_ONLY_LOCAL_REVIEW_PENDING",
+      "claim_ids": [],
+      "scientific_claim_support_approved": false,
+      "claim_support_review_complete": false,
+      "directness": "PENDING_CLAIM_REVIEW",
+      "method_quality": null,
+      "evidence_certainty": null,
+      "human_signoff": null
+    },
+    {
+      "source_id": "SRC-URL-F023607A6D8A",
+      "intake_id": "INTAKE-URL-F023607A6D8A",
+      "reference_key": "URL:https://www.who.int/news-room/fact-sheets/detail/anxiety-disorders",
+      "source_kind": "PUBLIC_HEALTH_GUIDANCE",
+      "identity": {
+        "pmid": null,
+        "doi_display": null,
+        "doi_normalized": null,
+        "source_url": "https://www.who.int/news-room/fact-sheets/detail/anxiety-disorders",
+        "source_record_kind": "PUBLIC_HEALTH_GUIDANCE"
+      },
+      "observed_primary_metadata": {
+        "title": "Anxiety disorders",
+        "issuing_body": "World Health Organization",
+        "source_record_kind": "PUBLIC_HEALTH_GUIDANCE",
+        "displayed_date": "2025-09-08",
+        "publication_year": 2025
+      },
+      "identity_review": {
+        "disposition": "IDENTITY_MATCH_IN_AVAILABLE_PRIMARY_METADATA",
+        "comparison_note": "Dato og tittel samsvarer med WHO-siden som ble lest. Generell veiledning, ikke et forsøk på Neuvago.",
+        "source_observation": {
+          "observation_id": "OBS-D1D971885490DD",
+          "observed_on": "2026-09-14",
+          "primary_url": "https://www.who.int/news-room/fact-sheets/detail/anxiety-disorders",
+          "observation_channel": "READABLE_PRIMARY_PAGE",
+          "web_evidence_refs": [
+            "turn415198view0"
+          ],
+          "observation_scope": "BIBLIOGRAPHIC_IDENTITY_AND_SOURCE_KIND_NOT_SCIENTIFIC_SUPPORT",
+          "direct_http_status_attested": false,
+          "publisher_or_pubmed_metadata_match": true,
+          "full_text_appraisal_performed": false,
+          "systematic_retraction_or_update_screen_complete": false
+        }
+      },
+      "input_record_sha256": "30ebc98b0a0bf5565c470d215952dae4a5f46d1cec74ef3d33a0fe9b0b57ef05",
+      "usage_ids": [
+        "USE-33B03555F0D2B60B"
+      ],
+      "admission_scope": "METADATA_IDENTITY_ONLY_LOCAL_REVIEW_PENDING",
+      "claim_ids": [],
+      "scientific_claim_support_approved": false,
+      "claim_support_review_complete": false,
+      "directness": "PENDING_CLAIM_REVIEW",
+      "method_quality": null,
+      "evidence_certainty": null,
+      "human_signoff": null
+    },
+    {
+      "source_id": "SRC-URL-B6B3CD525BDC",
+      "intake_id": "INTAKE-URL-B6B3CD525BDC",
+      "reference_key": "URL:https://www.nice.org.uk/guidance/cg113/chapter/Recommendations",
+      "source_kind": "CLINICAL_GUIDELINE",
+      "identity": {
+        "pmid": null,
+        "doi_display": null,
+        "doi_normalized": null,
+        "source_url": "https://www.nice.org.uk/guidance/cg113/chapter/Recommendations",
+        "source_record_kind": "CLINICAL_GUIDELINE"
+      },
+      "observed_primary_metadata": {
+        "title": "Generalised anxiety disorder and panic disorder in adults: management",
+        "issuing_body": "National Institute for Health and Care Excellence",
+        "source_record_kind": "CLINICAL_GUIDELINE",
+        "guideline_id": "CG113",
+        "published_date": "2011-01-26",
+        "header_last_updated_date": "2020-06-15",
+        "publication_year": 2011
+      },
+      "identity_review": {
+        "disposition": "IDENTITY_MATCH_PRIMARY_INDEXED_SOURCE_LIVE_ACCESS_UNATTESTED",
+        "comparison_note": "Identitet, datoer og anbefalingskapittel er dokumentert fra indeksert NICE-innhold. Direkte open-kall var blokkert/utilgjengelig; ny live HTTP-tilgjengelighet er ikke attestert. Headerens oppdateringsdato er ikke bevis for at alle anbefalingstekster er uendret etter 2020.",
+        "source_observation": {
+          "observation_id": "OBS-C0D18EF70A288F",
+          "observed_on": "2026-09-14",
+          "primary_url": "https://www.nice.org.uk/guidance/cg113/chapter/Recommendations",
+          "observation_channel": "PRIMARY_INDEXED_RECORD",
+          "web_evidence_refs": [
+            "turn365333search0",
+            "turn151256search0"
+          ],
+          "observation_scope": "BIBLIOGRAPHIC_IDENTITY_AND_SOURCE_KIND_NOT_SCIENTIFIC_SUPPORT",
+          "direct_http_status_attested": false,
+          "publisher_or_pubmed_metadata_match": true,
+          "full_text_appraisal_performed": false,
+          "systematic_retraction_or_update_screen_complete": false,
+          "direct_fetch_issue": "Initial direct retrieval returned 403; subsequent direct open calls also did not yield readable content. Indexed primary NICE material was available.",
+          "direct_endpoint_content_reverified": false
+        }
+      },
+      "input_record_sha256": "8b677bd6292f2d17e4e6b859dd637eecda1cc48f1d972c6eb2c31629fab3fd4e",
+      "usage_ids": [
+        "USE-BBFBEE1DFDA577DF"
+      ],
+      "admission_scope": "METADATA_IDENTITY_ONLY_LOCAL_REVIEW_PENDING",
+      "claim_ids": [],
+      "scientific_claim_support_approved": false,
+      "claim_support_review_complete": false,
+      "directness": "PENDING_CLAIM_REVIEW",
+      "method_quality": null,
+      "evidence_certainty": null,
+      "human_signoff": null
+    },
+    {
+      "source_id": "SRC-URL-F20448797ABC",
+      "intake_id": "INTAKE-URL-F20448797ABC",
+      "reference_key": "URL:https://www.who.int/news/item/28-05-2019-burn-out-an-occupational-phenomenon-international-classification-of-diseases",
+      "source_kind": "CLASSIFICATION_CLARIFICATION",
+      "identity": {
+        "pmid": null,
+        "doi_display": null,
+        "doi_normalized": null,
+        "source_url": "https://www.who.int/news/item/28-05-2019-burn-out-an-occupational-phenomenon-international-classification-of-diseases",
+        "source_record_kind": "CLASSIFICATION_CLARIFICATION"
+      },
+      "observed_primary_metadata": {
+        "title": "Burn-out an \"occupational phenomenon\": International Classification of Diseases",
+        "issuing_body": "World Health Organization",
+        "source_record_kind": "CLASSIFICATION_CLARIFICATION",
+        "displayed_date": "2019-05-28",
+        "publication_year": 2019
+      },
+      "identity_review": {
+        "disposition": "IDENTITY_MATCH_IN_AVAILABLE_PRIMARY_METADATA",
+        "comparison_note": "Det offentlige kortet utelater anførselstegn i tittelen. WHO-kilden er en klassifikasjonsavklaring; selve komplette ICD-11-oppføringen er ikke inspisert.",
+        "source_observation": {
+          "observation_id": "OBS-D821D5A07E992A",
+          "observed_on": "2026-09-14",
+          "primary_url": "https://www.who.int/news/item/28-05-2019-burn-out-an-occupational-phenomenon-international-classification-of-diseases",
+          "observation_channel": "READABLE_PRIMARY_PAGE",
+          "web_evidence_refs": [
+            "turn415198view2"
+          ],
+          "observation_scope": "BIBLIOGRAPHIC_IDENTITY_AND_SOURCE_KIND_NOT_SCIENTIFIC_SUPPORT",
+          "direct_http_status_attested": false,
+          "publisher_or_pubmed_metadata_match": true,
+          "full_text_appraisal_performed": false,
+          "systematic_retraction_or_update_screen_complete": false
+        }
+      },
+      "input_record_sha256": "f3bf58b537c8c804e260f0895a2272b808dcc086e5c602e17d2f20f5cfc11ca4",
+      "usage_ids": [
+        "USE-029A00177E1F486B"
+      ],
+      "admission_scope": "METADATA_IDENTITY_ONLY_LOCAL_REVIEW_PENDING",
+      "claim_ids": [],
+      "scientific_claim_support_approved": false,
+      "claim_support_review_complete": false,
+      "directness": "PENDING_CLAIM_REVIEW",
+      "method_quality": null,
+      "evidence_certainty": null,
+      "human_signoff": null
+    },
+    {
+      "source_id": "EVD-PMID-27265691",
+      "intake_id": "INTAKE-PMID-27265691",
+      "reference_key": "PMID:27265691",
+      "source_kind": "SCHOLARLY_PUBLICATION",
+      "identity": {
+        "pmid": "27265691",
+        "doi_display": "10.1002/wps.20311",
+        "doi_normalized": "10.1002/wps.20311",
+        "source_url": "https://pubmed.ncbi.nlm.nih.gov/27265691/",
+        "source_record_kind": "SCHOLARLY_PUBLICATION"
+      },
+      "observed_primary_metadata": {
+        "title": "Understanding the burnout experience: recent research and its implications for psychiatry",
+        "authors": [
+          "Christina Maslach",
+          "Michael P Leiter"
+        ],
+        "authors_short": [
+          "Maslach C",
+          "Leiter MP"
+        ],
+        "publication_year": 2016,
+        "publication_date_display": "2016 Jun",
+        "journal": "World Psychiatry",
+        "doi": "10.1002/wps.20311",
+        "pmcid": "PMC4911781"
+      },
+      "identity_review": {
+        "disposition": "IDENTITY_MATCH_IN_AVAILABLE_PRIMARY_METADATA",
+        "comparison_note": "2016-oversikten identifiseres med PMID/DOI, ikke bare en lignende burnout-tittel.",
+        "source_observation": {
+          "observation_id": "OBS-780F3DBD98A385",
+          "observed_on": "2026-09-14",
+          "primary_url": "https://pubmed.ncbi.nlm.nih.gov/27265691/",
+          "observation_channel": "PRIMARY_INDEXED_RECORD",
+          "web_evidence_refs": [
+            "turn279273search1"
+          ],
+          "observation_scope": "BIBLIOGRAPHIC_IDENTITY_AND_SOURCE_KIND_NOT_SCIENTIFIC_SUPPORT",
+          "direct_http_status_attested": false,
+          "publisher_or_pubmed_metadata_match": true,
+          "full_text_appraisal_performed": false,
+          "systematic_retraction_or_update_screen_complete": false
+        }
+      },
+      "input_record_sha256": "1832800b1bb3997201ad2b2295ae71223dff48e2209d76dc163b15220cbbcfb1",
+      "usage_ids": [
+        "USE-EA648160B5EB40C4"
+      ],
+      "admission_scope": "METADATA_IDENTITY_ONLY_LOCAL_REVIEW_PENDING",
+      "claim_ids": [],
+      "scientific_claim_support_approved": false,
+      "claim_support_review_complete": false,
+      "directness": "PENDING_CLAIM_REVIEW",
+      "method_quality": null,
+      "evidence_certainty": null,
+      "human_signoff": null
+    },
+    {
+      "source_id": "SRC-URL-47987E7C9F7B",
+      "intake_id": "INTAKE-URL-47987E7C9F7B",
+      "reference_key": "URL:https://www.who.int/news-room/fact-sheets/detail/mental-health-at-work",
+      "source_kind": "PUBLIC_HEALTH_GUIDANCE",
+      "identity": {
+        "pmid": null,
+        "doi_display": null,
+        "doi_normalized": null,
+        "source_url": "https://www.who.int/news-room/fact-sheets/detail/mental-health-at-work",
+        "source_record_kind": "PUBLIC_HEALTH_GUIDANCE"
+      },
+      "observed_primary_metadata": {
+        "title": "Mental health at work",
+        "issuing_body": "World Health Organization",
+        "source_record_kind": "PUBLIC_HEALTH_GUIDANCE",
+        "displayed_date": "2024-09-02",
+        "publication_year": 2024
+      },
+      "identity_review": {
+        "disposition": "IDENTITY_MATCH_IN_AVAILABLE_PRIMARY_METADATA",
+        "comparison_note": "Kilden gjelder psykisk helse i arbeidslivet bredt. Den er ikke en burnout-spesifikk produkttest eller en kontroll av alle lenkede WHO-retningslinjer.",
+        "source_observation": {
+          "observation_id": "OBS-752E24AD7BDFF0",
+          "observed_on": "2026-09-14",
+          "primary_url": "https://www.who.int/news-room/fact-sheets/detail/mental-health-at-work",
+          "observation_channel": "READABLE_PRIMARY_PAGE",
+          "web_evidence_refs": [
+            "turn415198view3"
+          ],
+          "observation_scope": "BIBLIOGRAPHIC_IDENTITY_AND_SOURCE_KIND_NOT_SCIENTIFIC_SUPPORT",
+          "direct_http_status_attested": false,
+          "publisher_or_pubmed_metadata_match": true,
+          "full_text_appraisal_performed": false,
+          "systematic_retraction_or_update_screen_complete": false
+        }
+      },
+      "input_record_sha256": "0195a79e6569c107487534a7a8c0875f4ade9c65ad4f64fbb6dd2401c1087590",
+      "usage_ids": [
+        "USE-727D73DD47C4D951"
+      ],
+      "admission_scope": "METADATA_IDENTITY_ONLY_LOCAL_REVIEW_PENDING",
+      "claim_ids": [],
+      "scientific_claim_support_approved": false,
+      "claim_support_review_complete": false,
+      "directness": "PENDING_CLAIM_REVIEW",
+      "method_quality": null,
+      "evidence_certainty": null,
+      "human_signoff": null
+    }
+  ],
+  "approved_links": 0,
+  "release_ready": false
+}

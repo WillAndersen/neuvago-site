@@ -1,0 +1,1021 @@
+{
+  "schema": "neuvago-r-intake1-source-usage-ledger-v1",
+  "source_file_snapshot_scope": "NINE_ARCHIVED_ACCEPTED_SOURCE_FILES",
+  "current_rendering_verified": false,
+  "usages": [
+    {
+      "usage_id": "USE-D927F5603713B4F8",
+      "intake_id": "INTAKE-PMID-28242739",
+      "reference_key": "PMID:28242739",
+      "route": "/learn/fight-flight-freeze",
+      "path": "src/app/(en)/learn/fight-flight-freeze/page.tsx",
+      "card_id": "source-28242739",
+      "source_file_sha256": "d8459d9dc6b95aaffe7adfa1b8dc0f8b8eb67f06590f8f6f4a398a3929f0fc2f",
+      "source_card_locator": {
+        "start_line": 567,
+        "end_line": 577,
+        "representation": "STATIC_TSX_ARTICLE",
+        "excerpt_sha256": "573d901f2d282e6bb6dd4a846bbb73583bc8695503594fee8a980d44cf75b16c"
+      },
+      "source_excerpt": "<article id=\"source-28242739\" data-source-pmid=\"28242739\" className=\"min-w-0 rounded-[1.5rem] border border-black/10 bg-white/70 p-6 md:p-8\">\n              <p className=\"text-xs font-medium uppercase tracking-[0.12em] text-[#625b53]\">1. Translational review · 2017</p>\n              <h3 className=\"mt-3 break-words text-xl font-medium leading-7 text-[#1f1f1c]\">Freeze for action: neurobiological mechanisms in animal and human freezing</h3>\n              <p className=\"mt-3 text-sm leading-7 text-[#5f5a52]\">Roelofs K. Philosophical Transactions of the Royal Society B.</p>\n              <p className=\"mt-4 text-sm leading-7 text-[#5f5a52]\">Reviews animal and human research on defensive freezing and preparation for action. Freezing in this literature is not simply another word for tiredness, low motivation or emotional numbness.</p>\n              <div className=\"mt-4 flex min-w-0 flex-col gap-2 text-sm text-[#5f5a52]\">\n                <span>PMID: 28242739</span>\n                <span className=\"break-all\">DOI: 10.1098/rstb.2016.0206</span>\n              </div>\n              <a href=\"https://pubmed.ncbi.nlm.nih.gov/28242739/\" target=\"_blank\" rel=\"noopener noreferrer\" className=\"mt-5 inline-flex font-medium underline decoration-black/30 underline-offset-4 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4\">Read Roelofs K on PubMed</a>\n            </article>",
+      "scope_preserved_verbatim": "Reviews animal and human research on defensive freezing and preparation for action. Freezing in this literature is not simply another word for tiredness, low motivation or emotional numbness.",
+      "prior_accepted_display_metadata": {
+        "authors": "Roelofs K",
+        "year": 2017,
+        "title": "Freeze for action: neurobiological mechanisms in animal and human freezing",
+        "journal": "Philosophical Transactions of the Royal Society B",
+        "doi": "10.1098/rstb.2016.0206",
+        "kind": "Translational review",
+        "scope": "Reviews animal and human research on defensive freezing and preparation for action. Freezing in this literature is not simply another word for tiredness, low motivation or emotional numbness.",
+        "link": "https://pubmed.ncbi.nlm.nih.gov/28242739/",
+        "existing": false
+      },
+      "original_usage_object": {
+        "route": "/learn/fight-flight-freeze",
+        "path": "src/app/(en)/learn/fight-flight-freeze/page.tsx",
+        "batch": "1E.4D.3",
+        "definition_marker_lines": [
+          183,
+          567,
+          573,
+          576
+        ],
+        "card_scope_from_accepted_contract": "Reviews animal and human research on defensive freezing and preparation for action. Freezing in this literature is not simply another word for tiredness, low motivation or emotional numbness.",
+        "metadata_from_accepted_contract": {
+          "authors": "Roelofs K",
+          "year": 2017,
+          "title": "Freeze for action: neurobiological mechanisms in animal and human freezing",
+          "journal": "Philosophical Transactions of the Royal Society B",
+          "doi": "10.1098/rstb.2016.0206",
+          "kind": "Translational review",
+          "scope": "Reviews animal and human research on defensive freezing and preparation for action. Freezing in this literature is not simply another word for tiredness, low motivation or emotional numbness.",
+          "link": "https://pubmed.ncbi.nlm.nih.gov/28242739/",
+          "existing": false
+        },
+        "source_file_sha256": "d8459d9dc6b95aaffe7adfa1b8dc0f8b8eb67f06590f8f6f4a398a3929f0fc2f"
+      },
+      "scope_text_preserved": true,
+      "current_rendering_verified": false,
+      "claim_support_approved": false
+    },
+    {
+      "usage_id": "USE-B04E362BAECA694D",
+      "intake_id": "INTAKE-PMID-26062169",
+      "reference_key": "PMID:26062169",
+      "route": "/learn/fight-flight-freeze",
+      "path": "src/app/(en)/learn/fight-flight-freeze/page.tsx",
+      "card_id": "source-26062169",
+      "source_file_sha256": "d8459d9dc6b95aaffe7adfa1b8dc0f8b8eb67f06590f8f6f4a398a3929f0fc2f",
+      "source_card_locator": {
+        "start_line": 578,
+        "end_line": 588,
+        "representation": "STATIC_TSX_ARTICLE",
+        "excerpt_sha256": "5a9d48e0727f49658266459564090497954f288a98bad3e2b07d817a37fe3e63"
+      },
+      "source_excerpt": "<article id=\"source-26062169\" data-source-pmid=\"26062169\" className=\"min-w-0 rounded-[1.5rem] border border-black/10 bg-white/70 p-6 md:p-8\">\n              <p className=\"text-xs font-medium uppercase tracking-[0.12em] text-[#625b53]\">2. Clinical review · 2015</p>\n              <h3 className=\"mt-3 break-words text-xl font-medium leading-7 text-[#1f1f1c]\">Fear and the Defense Cascade: Clinical Implications and Management</h3>\n              <p className=\"mt-3 text-sm leading-7 text-[#5f5a52]\">Kozlowska K, Walker P, McLean L, Carrive P. Harvard Review of Psychiatry.</p>\n              <p className=\"mt-4 text-sm leading-7 text-[#5f5a52]\">Distinguishes defensive responses including freezing and tonic or collapsed immobility. Its clinical framework is not a self-diagnosis checklist or evidence for a Neuvago treatment effect.</p>\n              <div className=\"mt-4 flex min-w-0 flex-col gap-2 text-sm text-[#5f5a52]\">\n                <span>PMID: 26062169</span>\n                <span className=\"break-all\">DOI: 10.1097/HRP.0000000000000065</span>\n              </div>\n              <a href=\"https://pubmed.ncbi.nlm.nih.gov/26062169/\" target=\"_blank\" rel=\"noopener noreferrer\" className=\"mt-5 inline-flex font-medium underline decoration-black/30 underline-offset-4 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4\">Read Kozlowska K on PubMed</a>\n            </article>",
+      "scope_preserved_verbatim": "Distinguishes defensive responses including freezing and tonic or collapsed immobility. Its clinical framework is not a self-diagnosis checklist or evidence for a Neuvago treatment effect.",
+      "prior_accepted_display_metadata": {
+        "authors": "Kozlowska K, Walker P, McLean L, Carrive P",
+        "year": 2015,
+        "title": "Fear and the Defense Cascade: Clinical Implications and Management",
+        "journal": "Harvard Review of Psychiatry",
+        "doi": "10.1097/HRP.0000000000000065",
+        "kind": "Clinical review",
+        "scope": "Distinguishes defensive responses including freezing and tonic or collapsed immobility. Its clinical framework is not a self-diagnosis checklist or evidence for a Neuvago treatment effect.",
+        "link": "https://pubmed.ncbi.nlm.nih.gov/26062169/",
+        "existing": false
+      },
+      "original_usage_object": {
+        "route": "/learn/fight-flight-freeze",
+        "path": "src/app/(en)/learn/fight-flight-freeze/page.tsx",
+        "batch": "1E.4D.3",
+        "definition_marker_lines": [
+          183,
+          578,
+          584,
+          587
+        ],
+        "card_scope_from_accepted_contract": "Distinguishes defensive responses including freezing and tonic or collapsed immobility. Its clinical framework is not a self-diagnosis checklist or evidence for a Neuvago treatment effect.",
+        "metadata_from_accepted_contract": {
+          "authors": "Kozlowska K, Walker P, McLean L, Carrive P",
+          "year": 2015,
+          "title": "Fear and the Defense Cascade: Clinical Implications and Management",
+          "journal": "Harvard Review of Psychiatry",
+          "doi": "10.1097/HRP.0000000000000065",
+          "kind": "Clinical review",
+          "scope": "Distinguishes defensive responses including freezing and tonic or collapsed immobility. Its clinical framework is not a self-diagnosis checklist or evidence for a Neuvago treatment effect.",
+          "link": "https://pubmed.ncbi.nlm.nih.gov/26062169/",
+          "existing": false
+        },
+        "source_file_sha256": "d8459d9dc6b95aaffe7adfa1b8dc0f8b8eb67f06590f8f6f4a398a3929f0fc2f"
+      },
+      "scope_text_preserved": true,
+      "current_rendering_verified": false,
+      "claim_support_approved": false
+    },
+    {
+      "usage_id": "USE-4A16D9C21F824CBA",
+      "intake_id": "INTAKE-PMID-17615391",
+      "reference_key": "PMID:17615391",
+      "route": "/learn/recovery-and-regulation",
+      "path": "src/app/(en)/learn/recovery-and-regulation/page.tsx",
+      "card_id": "source-17615391",
+      "source_file_sha256": "dc6ccfb7926e29e3016486c970b6cd96333c40555d3a591618a69f2807fc80bf",
+      "source_card_locator": {
+        "start_line": 597,
+        "end_line": 607,
+        "representation": "STATIC_TSX_ARTICLE",
+        "excerpt_sha256": "398c057c44d73fd0ca77f2a718e93b61fac9252d10134b4e8a17420ca059db51"
+      },
+      "source_excerpt": "<article id=\"source-17615391\" data-source-pmid=\"17615391\" className=\"min-w-0 scroll-mt-24 rounded-3xl border border-black/6 bg-white/70 p-6\">\n              <p className=\"text-xs font-medium uppercase tracking-wide text-[#84796e]\">2. Stress physiology review · 2007</p>\n              <h3 className=\"mt-3 break-words text-xl font-medium leading-tight tracking-[-0.025em]\">Physiology and neurobiology of stress and adaptation: central role of the brain</h3>\n              <p className=\"mt-3 text-sm leading-7 text-[#5f5a52]\">McEwen BS. Physiological Reviews.</p>\n              <p className=\"mt-3 text-sm leading-7 text-[#625b53]\">Describes adaptive and maladaptive stress responses involving multiple body systems. It does not measure an individual’s stress load from symptoms or establish that a stress response must be completed by a particular technique.</p>\n              <div className=\"mt-5 flex min-w-0 flex-wrap gap-x-4 gap-y-2 text-sm text-[#514c45]\">\n                <span className=\"break-all\">PMID: 17615391</span>\n                <span className=\"break-all\">DOI: 10.1152/physrev.00041.2006</span>\n              </div>\n              <a href=\"https://pubmed.ncbi.nlm.nih.gov/17615391/\" target=\"_blank\" rel=\"noreferrer\" className=\"mt-5 inline-flex break-all text-sm font-medium underline underline-offset-4\">Read McEwen BS on PubMed</a>\n            </article>",
+      "scope_preserved_verbatim": "Describes adaptive and maladaptive stress responses involving multiple body systems. It does not measure an individual’s stress load from symptoms or establish that a stress response must be completed by a particular technique.",
+      "prior_accepted_display_metadata": {
+        "title": "Physiology and neurobiology of stress and adaptation: central role of the brain",
+        "authors": "McEwen BS",
+        "year": 2007,
+        "journal": "Physiological Reviews",
+        "doi": "10.1152/physrev.00041.2006",
+        "design": "Stress physiology review",
+        "scope": "Describes adaptive and maladaptive stress responses involving multiple body systems. It does not measure an individual’s stress load from symptoms or establish that a stress response must be completed by a particular technique.",
+        "existing": false,
+        "link": "https://pubmed.ncbi.nlm.nih.gov/17615391/",
+        "verification_scope": "PUBLIC_BIBLIOGRAPHIC_RECORD_AND_ABSTRACT_REVIEW_NOT_FULL_TEXT_SYSTEMATIC_APPRAISAL",
+        "checked_on": "2026-09-13"
+      },
+      "original_usage_object": {
+        "route": "/learn/recovery-and-regulation",
+        "path": "src/app/(en)/learn/recovery-and-regulation/page.tsx",
+        "batch": "1E.4D.4",
+        "definition_marker_lines": [
+          201,
+          597,
+          603,
+          606
+        ],
+        "card_scope_from_accepted_contract": "Describes adaptive and maladaptive stress responses involving multiple body systems. It does not measure an individual’s stress load from symptoms or establish that a stress response must be completed by a particular technique.",
+        "metadata_from_accepted_contract": {
+          "title": "Physiology and neurobiology of stress and adaptation: central role of the brain",
+          "authors": "McEwen BS",
+          "year": 2007,
+          "journal": "Physiological Reviews",
+          "doi": "10.1152/physrev.00041.2006",
+          "design": "Stress physiology review",
+          "scope": "Describes adaptive and maladaptive stress responses involving multiple body systems. It does not measure an individual’s stress load from symptoms or establish that a stress response must be completed by a particular technique.",
+          "existing": false,
+          "link": "https://pubmed.ncbi.nlm.nih.gov/17615391/",
+          "verification_scope": "PUBLIC_BIBLIOGRAPHIC_RECORD_AND_ABSTRACT_REVIEW_NOT_FULL_TEXT_SYSTEMATIC_APPRAISAL",
+          "checked_on": "2026-09-13"
+        },
+        "source_file_sha256": "dc6ccfb7926e29e3016486c970b6cd96333c40555d3a591618a69f2807fc80bf"
+      },
+      "scope_text_preserved": true,
+      "current_rendering_verified": false,
+      "claim_support_approved": false
+    },
+    {
+      "usage_id": "USE-BA29F8021BC32144",
+      "intake_id": "INTAKE-PMID-17615391",
+      "reference_key": "PMID:17615391",
+      "route": "/learn/why-your-body-feels-stuck-in-stress",
+      "path": "src/app/(en)/learn/why-your-body-feels-stuck-in-stress/page.tsx",
+      "card_id": "source-17615391",
+      "source_file_sha256": "9c476ab30f04e6c92a4753a2cabb601998eabb5e43d306d3e30ceb7f7ea5e48c",
+      "source_card_locator": {
+        "start_line": 581,
+        "end_line": 591,
+        "representation": "STATIC_TSX_ARTICLE",
+        "excerpt_sha256": "47feedada8b054cd2be65833ed1a76c3dc73e21c336f25302b7fa159584e442f"
+      },
+      "source_excerpt": "<article id=\"source-17615391\" data-source-pmid=\"17615391\" className=\"min-w-0 scroll-mt-24 rounded-3xl border border-black/6 bg-white/70 p-6\">\n              <p className=\"text-xs font-medium uppercase tracking-wide text-[#84796e]\">1. Stress physiology review · 2007</p>\n              <h3 className=\"mt-3 break-words text-xl font-medium leading-tight tracking-[-0.025em]\">Physiology and neurobiology of stress and adaptation: central role of the brain</h3>\n              <p className=\"mt-3 text-sm leading-7 text-[#5f5a52]\">McEwen BS. Physiological Reviews.</p>\n              <p className=\"mt-3 text-sm leading-7 text-[#625b53]\">Describes adaptive and maladaptive stress responses involving multiple body systems. It does not measure an individual’s stress load from symptoms or establish that a stress response must be completed by a particular technique.</p>\n              <div className=\"mt-5 flex min-w-0 flex-wrap gap-x-4 gap-y-2 text-sm text-[#514c45]\">\n                <span className=\"break-all\">PMID: 17615391</span>\n                <span className=\"break-all\">DOI: 10.1152/physrev.00041.2006</span>\n              </div>\n              <a href=\"https://pubmed.ncbi.nlm.nih.gov/17615391/\" target=\"_blank\" rel=\"noreferrer\" className=\"mt-5 inline-flex break-all text-sm font-medium underline underline-offset-4\">Read McEwen BS on PubMed</a>\n            </article>",
+      "scope_preserved_verbatim": "Describes adaptive and maladaptive stress responses involving multiple body systems. It does not measure an individual’s stress load from symptoms or establish that a stress response must be completed by a particular technique.",
+      "prior_accepted_display_metadata": {
+        "title": "Physiology and neurobiology of stress and adaptation: central role of the brain",
+        "authors": "McEwen BS",
+        "year": 2007,
+        "journal": "Physiological Reviews",
+        "doi": "10.1152/physrev.00041.2006",
+        "design": "Stress physiology review",
+        "scope": "Describes adaptive and maladaptive stress responses involving multiple body systems. It does not measure an individual’s stress load from symptoms or establish that a stress response must be completed by a particular technique.",
+        "existing": false,
+        "link": "https://pubmed.ncbi.nlm.nih.gov/17615391/",
+        "verification_scope": "PUBLIC_BIBLIOGRAPHIC_RECORD_AND_ABSTRACT_REVIEW_NOT_FULL_TEXT_SYSTEMATIC_APPRAISAL",
+        "checked_on": "2026-09-13"
+      },
+      "original_usage_object": {
+        "route": "/learn/why-your-body-feels-stuck-in-stress",
+        "path": "src/app/(en)/learn/why-your-body-feels-stuck-in-stress/page.tsx",
+        "batch": "1E.4D.4",
+        "definition_marker_lines": [
+          200,
+          581,
+          587,
+          590
+        ],
+        "card_scope_from_accepted_contract": "Describes adaptive and maladaptive stress responses involving multiple body systems. It does not measure an individual’s stress load from symptoms or establish that a stress response must be completed by a particular technique.",
+        "metadata_from_accepted_contract": {
+          "title": "Physiology and neurobiology of stress and adaptation: central role of the brain",
+          "authors": "McEwen BS",
+          "year": 2007,
+          "journal": "Physiological Reviews",
+          "doi": "10.1152/physrev.00041.2006",
+          "design": "Stress physiology review",
+          "scope": "Describes adaptive and maladaptive stress responses involving multiple body systems. It does not measure an individual’s stress load from symptoms or establish that a stress response must be completed by a particular technique.",
+          "existing": false,
+          "link": "https://pubmed.ncbi.nlm.nih.gov/17615391/",
+          "verification_scope": "PUBLIC_BIBLIOGRAPHIC_RECORD_AND_ABSTRACT_REVIEW_NOT_FULL_TEXT_SYSTEMATIC_APPRAISAL",
+          "checked_on": "2026-09-13"
+        },
+        "source_file_sha256": "9c476ab30f04e6c92a4753a2cabb601998eabb5e43d306d3e30ceb7f7ea5e48c"
+      },
+      "scope_text_preserved": true,
+      "current_rendering_verified": false,
+      "claim_support_approved": false
+    },
+    {
+      "usage_id": "USE-147DC723E5AF771E",
+      "intake_id": "INTAKE-PMID-17615391",
+      "reference_key": "PMID:17615391",
+      "route": "/learn/signs-of-a-dysregulated-nervous-system",
+      "path": "src/app/(en)/learn/signs-of-a-dysregulated-nervous-system/page.tsx",
+      "card_id": "source-17615391",
+      "source_file_sha256": "6b50b90907936c94571ce6555c846d6355bd4a64cbee0b51ff1eba75e971a5af",
+      "source_card_locator": {
+        "start_line": 501,
+        "end_line": 511,
+        "representation": "STATIC_TSX_ARTICLE",
+        "excerpt_sha256": "8a685a13cb7d4207852b4631f600120b9019abd915bba383a4bd1949d3d85587"
+      },
+      "source_excerpt": "<article id=\"source-17615391\" data-source-pmid=\"17615391\" className=\"min-w-0 scroll-mt-24 rounded-[1.5rem] border border-black/10 bg-white/70 p-6 md:p-8\">\n              <p className=\"text-xs font-medium uppercase tracking-[0.14em] text-[#756e65]\">1. Stress physiology review · 2007</p>\n              <h3 className=\"mt-3 break-words text-xl font-medium leading-snug text-[#1f1f1c]\">Physiology and neurobiology of stress and adaptation: central role of the brain</h3>\n              <p className=\"mt-3 text-sm leading-7 text-[#5f5a52]\">McEwen BS. Physiological Reviews.</p>\n              <p className=\"mt-4 text-sm leading-7 text-[#5f5a52]\">Describes stress and adaptation across neural, endocrine and other body systems. It does not validate this page as a symptom checklist or diagnose autonomic dysfunction from everyday experiences.</p>\n              <div className=\"mt-4 flex flex-wrap gap-x-5 gap-y-2 text-sm text-[#5f5a52]\">\n                <span className=\"break-all\">PMID: 17615391</span>\n                <span className=\"break-all\">DOI: 10.1152/physrev.00041.2006</span>\n              </div>\n              <a href=\"https://pubmed.ncbi.nlm.nih.gov/17615391/\" target=\"_blank\" rel=\"noreferrer\" className=\"mt-5 inline-flex text-sm font-medium underline decoration-black/25 underline-offset-4\">Read McEwen BS on PubMed</a>\n            </article>",
+      "scope_preserved_verbatim": "Describes stress and adaptation across neural, endocrine and other body systems. It does not validate this page as a symptom checklist or diagnose autonomic dysfunction from everyday experiences.",
+      "prior_accepted_display_metadata": {
+        "title": "Physiology and neurobiology of stress and adaptation: central role of the brain",
+        "authors": "McEwen BS",
+        "year": 2007,
+        "journal": "Physiological Reviews",
+        "doi": "10.1152/physrev.00041.2006",
+        "design": "Stress physiology review",
+        "scope": "Describes stress and adaptation across neural, endocrine and other body systems. It does not validate this page as a symptom checklist or diagnose autonomic dysfunction from everyday experiences.",
+        "existing": false,
+        "link": "https://pubmed.ncbi.nlm.nih.gov/17615391/",
+        "verification_scope": "OFFICIAL_PUBMED_METADATA_AND_ABSTRACT_SCOPE_NOT_FULL_TEXT_APPRAISAL",
+        "checked_on": "2026-09-13"
+      },
+      "original_usage_object": {
+        "route": "/learn/signs-of-a-dysregulated-nervous-system",
+        "path": "src/app/(en)/learn/signs-of-a-dysregulated-nervous-system/page.tsx",
+        "batch": "1E.4D.5",
+        "definition_marker_lines": [
+          187,
+          501,
+          507,
+          510
+        ],
+        "card_scope_from_accepted_contract": "Describes stress and adaptation across neural, endocrine and other body systems. It does not validate this page as a symptom checklist or diagnose autonomic dysfunction from everyday experiences.",
+        "metadata_from_accepted_contract": {
+          "title": "Physiology and neurobiology of stress and adaptation: central role of the brain",
+          "authors": "McEwen BS",
+          "year": 2007,
+          "journal": "Physiological Reviews",
+          "doi": "10.1152/physrev.00041.2006",
+          "design": "Stress physiology review",
+          "scope": "Describes stress and adaptation across neural, endocrine and other body systems. It does not validate this page as a symptom checklist or diagnose autonomic dysfunction from everyday experiences.",
+          "existing": false,
+          "link": "https://pubmed.ncbi.nlm.nih.gov/17615391/",
+          "verification_scope": "OFFICIAL_PUBMED_METADATA_AND_ABSTRACT_SCOPE_NOT_FULL_TEXT_APPRAISAL",
+          "checked_on": "2026-09-13"
+        },
+        "source_file_sha256": "6b50b90907936c94571ce6555c846d6355bd4a64cbee0b51ff1eba75e971a5af"
+      },
+      "scope_text_preserved": true,
+      "current_rendering_verified": false,
+      "claim_support_approved": false
+    },
+    {
+      "usage_id": "USE-99B765416FA67C57",
+      "intake_id": "INTAKE-PMID-30046255",
+      "reference_key": "PMID:30046255",
+      "route": "/learn/why-you-feel-tired-but-cant-relax",
+      "path": "src/app/(en)/learn/why-you-feel-tired-but-cant-relax/page.tsx",
+      "card_id": "source-30046255",
+      "source_file_sha256": "3b32601b542f78b854b5d964910b2c4f8a2f25b1df0b4b7ffa3b139721e3f218",
+      "source_card_locator": {
+        "start_line": 429,
+        "end_line": 439,
+        "representation": "STATIC_TSX_ARTICLE",
+        "excerpt_sha256": "d5289a320994b10800a598b8cc894ad593dc06ae41db9eafcb35bc8061834d46"
+      },
+      "source_excerpt": "<article id=\"source-30046255\" data-source-pmid=\"30046255\" className=\"min-w-0 scroll-mt-24 rounded-3xl border border-black/6 bg-white/70 p-6\">\n              <p className=\"text-xs font-medium uppercase tracking-wide text-[#84796e]\">1. Insomnia review · 2018</p>\n              <h3 className=\"mt-3 break-words text-xl font-medium leading-tight tracking-[-0.025em]\">Hyperarousal and sleep reactivity in insomnia: current insights</h3>\n              <p className=\"mt-3 text-sm leading-7 text-[#5f5a52]\">Kalmbach DA et al. Nature and Science of Sleep.</p>\n              <p className=\"mt-3 text-sm leading-7 text-[#625b53]\">Discusses arousal and sensitivity of sleep to stress in insomnia research, with uncertainty about specific mechanisms. This does not diagnose insomnia or a nervous-system problem from the feeling of being tired but alert.</p>\n              <div className=\"mt-5 flex min-w-0 flex-wrap gap-x-4 gap-y-2 text-sm text-[#514c45]\">\n                <span className=\"break-all\">PMID: 30046255</span>\n                <span className=\"break-all\">DOI: 10.2147/NSS.S138823</span>\n              </div>\n              <a href=\"https://pubmed.ncbi.nlm.nih.gov/30046255/\" target=\"_blank\" rel=\"noreferrer\" className=\"mt-5 inline-flex break-all text-sm font-medium underline underline-offset-4\">Read Kalmbach DA et al. on PubMed</a>\n            </article>",
+      "scope_preserved_verbatim": "Discusses arousal and sensitivity of sleep to stress in insomnia research, with uncertainty about specific mechanisms. This does not diagnose insomnia or a nervous-system problem from the feeling of being tired but alert.",
+      "prior_accepted_display_metadata": {
+        "title": "Hyperarousal and sleep reactivity in insomnia: current insights",
+        "authors": "Kalmbach DA et al.",
+        "year": 2018,
+        "journal": "Nature and Science of Sleep",
+        "doi": "10.2147/NSS.S138823",
+        "design": "Insomnia review",
+        "scope": "Discusses arousal and sensitivity of sleep to stress in insomnia research, with uncertainty about specific mechanisms. This does not diagnose insomnia or a nervous-system problem from the feeling of being tired but alert.",
+        "existing": false,
+        "link": "https://pubmed.ncbi.nlm.nih.gov/30046255/",
+        "verification_scope": "PUBLIC_BIBLIOGRAPHIC_RECORD_AND_ABSTRACT_REVIEW_NOT_FULL_TEXT_SYSTEMATIC_APPRAISAL",
+        "checked_on": "2026-09-13"
+      },
+      "original_usage_object": {
+        "route": "/learn/why-you-feel-tired-but-cant-relax",
+        "path": "src/app/(en)/learn/why-you-feel-tired-but-cant-relax/page.tsx",
+        "batch": "1E.4D.4",
+        "definition_marker_lines": [
+          202,
+          429,
+          435,
+          438
+        ],
+        "card_scope_from_accepted_contract": "Discusses arousal and sensitivity of sleep to stress in insomnia research, with uncertainty about specific mechanisms. This does not diagnose insomnia or a nervous-system problem from the feeling of being tired but alert.",
+        "metadata_from_accepted_contract": {
+          "title": "Hyperarousal and sleep reactivity in insomnia: current insights",
+          "authors": "Kalmbach DA et al.",
+          "year": 2018,
+          "journal": "Nature and Science of Sleep",
+          "doi": "10.2147/NSS.S138823",
+          "design": "Insomnia review",
+          "scope": "Discusses arousal and sensitivity of sleep to stress in insomnia research, with uncertainty about specific mechanisms. This does not diagnose insomnia or a nervous-system problem from the feeling of being tired but alert.",
+          "existing": false,
+          "link": "https://pubmed.ncbi.nlm.nih.gov/30046255/",
+          "verification_scope": "PUBLIC_BIBLIOGRAPHIC_RECORD_AND_ABSTRACT_REVIEW_NOT_FULL_TEXT_SYSTEMATIC_APPRAISAL",
+          "checked_on": "2026-09-13"
+        },
+        "source_file_sha256": "3b32601b542f78b854b5d964910b2c4f8a2f25b1df0b4b7ffa3b139721e3f218"
+      },
+      "scope_text_preserved": true,
+      "current_rendering_verified": false,
+      "claim_support_approved": false
+    },
+    {
+      "usage_id": "USE-282768A505CABDDC",
+      "intake_id": "INTAKE-PMID-19809584",
+      "reference_key": "PMID:19809584",
+      "route": "/learn/signs-of-a-dysregulated-nervous-system",
+      "path": "src/app/(en)/learn/signs-of-a-dysregulated-nervous-system/page.tsx",
+      "card_id": "source-19809584",
+      "source_file_sha256": "6b50b90907936c94571ce6555c846d6355bd4a64cbee0b51ff1eba75e971a5af",
+      "source_card_locator": {
+        "start_line": 512,
+        "end_line": 522,
+        "representation": "STATIC_TSX_ARTICLE",
+        "excerpt_sha256": "d6dfa0d3470aca7732db2e74ba012a962e402bc8d087776d15464eb4f574189c"
+      },
+      "source_excerpt": "<article id=\"source-19809584\" data-source-pmid=\"19809584\" className=\"min-w-0 scroll-mt-24 rounded-[1.5rem] border border-black/10 bg-white/70 p-6 md:p-8\">\n              <p className=\"text-xs font-medium uppercase tracking-[0.14em] text-[#756e65]\">2. Emotion measurement review · 2009</p>\n              <h3 className=\"mt-3 break-words text-xl font-medium leading-snug text-[#1f1f1c]\">Measures of emotion: A review</h3>\n              <p className=\"mt-3 text-sm leading-7 text-[#5f5a52]\">Mauss IB, Robinson MD. Cognition and Emotion.</p>\n              <p className=\"mt-4 text-sm leading-7 text-[#5f5a52]\">Examines subjective, physiological and behavioural measures of emotion and why they are not interchangeable. It does not establish that feeling calm measures vagal tone or nervous-system health.</p>\n              <div className=\"mt-4 flex flex-wrap gap-x-5 gap-y-2 text-sm text-[#5f5a52]\">\n                <span className=\"break-all\">PMID: 19809584</span>\n                <span className=\"break-all\">DOI: 10.1080/02699930802204677</span>\n              </div>\n              <a href=\"https://pubmed.ncbi.nlm.nih.gov/19809584/\" target=\"_blank\" rel=\"noreferrer\" className=\"mt-5 inline-flex text-sm font-medium underline decoration-black/25 underline-offset-4\">Read Mauss IB on PubMed</a>\n            </article>",
+      "scope_preserved_verbatim": "Examines subjective, physiological and behavioural measures of emotion and why they are not interchangeable. It does not establish that feeling calm measures vagal tone or nervous-system health.",
+      "prior_accepted_display_metadata": {
+        "title": "Measures of emotion: A review",
+        "authors": "Mauss IB, Robinson MD",
+        "year": 2009,
+        "journal": "Cognition and Emotion",
+        "doi": "10.1080/02699930802204677",
+        "design": "Emotion measurement review",
+        "scope": "Examines subjective, physiological and behavioural measures of emotion and why they are not interchangeable. It does not establish that feeling calm measures vagal tone or nervous-system health.",
+        "existing": false,
+        "link": "https://pubmed.ncbi.nlm.nih.gov/19809584/",
+        "verification_scope": "OFFICIAL_PUBMED_METADATA_AND_ABSTRACT_SCOPE_NOT_FULL_TEXT_APPRAISAL",
+        "checked_on": "2026-09-13"
+      },
+      "original_usage_object": {
+        "route": "/learn/signs-of-a-dysregulated-nervous-system",
+        "path": "src/app/(en)/learn/signs-of-a-dysregulated-nervous-system/page.tsx",
+        "batch": "1E.4D.5",
+        "definition_marker_lines": [
+          187,
+          512,
+          518,
+          521
+        ],
+        "card_scope_from_accepted_contract": "Examines subjective, physiological and behavioural measures of emotion and why they are not interchangeable. It does not establish that feeling calm measures vagal tone or nervous-system health.",
+        "metadata_from_accepted_contract": {
+          "title": "Measures of emotion: A review",
+          "authors": "Mauss IB, Robinson MD",
+          "year": 2009,
+          "journal": "Cognition and Emotion",
+          "doi": "10.1080/02699930802204677",
+          "design": "Emotion measurement review",
+          "scope": "Examines subjective, physiological and behavioural measures of emotion and why they are not interchangeable. It does not establish that feeling calm measures vagal tone or nervous-system health.",
+          "existing": false,
+          "link": "https://pubmed.ncbi.nlm.nih.gov/19809584/",
+          "verification_scope": "OFFICIAL_PUBMED_METADATA_AND_ABSTRACT_SCOPE_NOT_FULL_TEXT_APPRAISAL",
+          "checked_on": "2026-09-13"
+        },
+        "source_file_sha256": "6b50b90907936c94571ce6555c846d6355bd4a64cbee0b51ff1eba75e971a5af"
+      },
+      "scope_text_preserved": true,
+      "current_rendering_verified": false,
+      "claim_support_approved": false
+    },
+    {
+      "usage_id": "USE-06F44F6BC643F4E9",
+      "intake_id": "INTAKE-PMID-19809584",
+      "reference_key": "PMID:19809584",
+      "route": "/learn/what-nervous-system-regulation-feels-like",
+      "path": "src/app/(en)/learn/what-nervous-system-regulation-feels-like/page.tsx",
+      "card_id": "source-19809584",
+      "source_file_sha256": "018388ac853e377bf8dce4219b0d4c430e9e817df5fb8a63eac21957589b61e3",
+      "source_card_locator": {
+        "start_line": 487,
+        "end_line": 497,
+        "representation": "STATIC_TSX_ARTICLE",
+        "excerpt_sha256": "86606d0b5382d674407f28798d1c6954d4aba96cab508334460d01705538c609"
+      },
+      "source_excerpt": "<article id=\"source-19809584\" data-source-pmid=\"19809584\" className=\"min-w-0 scroll-mt-24 rounded-[1.5rem] border border-black/10 bg-white/70 p-6 md:p-8\">\n              <p className=\"text-xs font-medium uppercase tracking-[0.14em] text-[#756e65]\">1. Emotion measurement review · 2009</p>\n              <h3 className=\"mt-3 break-words text-xl font-medium leading-snug text-[#1f1f1c]\">Measures of emotion: A review</h3>\n              <p className=\"mt-3 text-sm leading-7 text-[#5f5a52]\">Mauss IB, Robinson MD. Cognition and Emotion.</p>\n              <p className=\"mt-4 text-sm leading-7 text-[#5f5a52]\">Examines subjective, physiological and behavioural measures of emotion and why they are not interchangeable. It does not establish that feeling calm measures vagal tone or nervous-system health.</p>\n              <div className=\"mt-4 flex flex-wrap gap-x-5 gap-y-2 text-sm text-[#5f5a52]\">\n                <span className=\"break-all\">PMID: 19809584</span>\n                <span className=\"break-all\">DOI: 10.1080/02699930802204677</span>\n              </div>\n              <a href=\"https://pubmed.ncbi.nlm.nih.gov/19809584/\" target=\"_blank\" rel=\"noreferrer\" className=\"mt-5 inline-flex text-sm font-medium underline decoration-black/25 underline-offset-4\">Read Mauss IB on PubMed</a>\n            </article>",
+      "scope_preserved_verbatim": "Examines subjective, physiological and behavioural measures of emotion and why they are not interchangeable. It does not establish that feeling calm measures vagal tone or nervous-system health.",
+      "prior_accepted_display_metadata": {
+        "title": "Measures of emotion: A review",
+        "authors": "Mauss IB, Robinson MD",
+        "year": 2009,
+        "journal": "Cognition and Emotion",
+        "doi": "10.1080/02699930802204677",
+        "design": "Emotion measurement review",
+        "scope": "Examines subjective, physiological and behavioural measures of emotion and why they are not interchangeable. It does not establish that feeling calm measures vagal tone or nervous-system health.",
+        "existing": false,
+        "link": "https://pubmed.ncbi.nlm.nih.gov/19809584/",
+        "verification_scope": "OFFICIAL_PUBMED_METADATA_AND_ABSTRACT_SCOPE_NOT_FULL_TEXT_APPRAISAL",
+        "checked_on": "2026-09-13"
+      },
+      "original_usage_object": {
+        "route": "/learn/what-nervous-system-regulation-feels-like",
+        "path": "src/app/(en)/learn/what-nervous-system-regulation-feels-like/page.tsx",
+        "batch": "1E.4D.5",
+        "definition_marker_lines": [
+          173,
+          487,
+          493,
+          496
+        ],
+        "card_scope_from_accepted_contract": "Examines subjective, physiological and behavioural measures of emotion and why they are not interchangeable. It does not establish that feeling calm measures vagal tone or nervous-system health.",
+        "metadata_from_accepted_contract": {
+          "title": "Measures of emotion: A review",
+          "authors": "Mauss IB, Robinson MD",
+          "year": 2009,
+          "journal": "Cognition and Emotion",
+          "doi": "10.1080/02699930802204677",
+          "design": "Emotion measurement review",
+          "scope": "Examines subjective, physiological and behavioural measures of emotion and why they are not interchangeable. It does not establish that feeling calm measures vagal tone or nervous-system health.",
+          "existing": false,
+          "link": "https://pubmed.ncbi.nlm.nih.gov/19809584/",
+          "verification_scope": "OFFICIAL_PUBMED_METADATA_AND_ABSTRACT_SCOPE_NOT_FULL_TEXT_APPRAISAL",
+          "checked_on": "2026-09-13"
+        },
+        "source_file_sha256": "018388ac853e377bf8dce4219b0d4c430e9e817df5fb8a63eac21957589b61e3"
+      },
+      "scope_text_preserved": true,
+      "current_rendering_verified": false,
+      "claim_support_approved": false
+    },
+    {
+      "usage_id": "USE-D27E233F6E306A02",
+      "intake_id": "INTAKE-PMID-12212647",
+      "reference_key": "PMID:12212647",
+      "route": "/learn/what-nervous-system-regulation-feels-like",
+      "path": "src/app/(en)/learn/what-nervous-system-regulation-feels-like/page.tsx",
+      "card_id": "source-12212647",
+      "source_file_sha256": "018388ac853e377bf8dce4219b0d4c430e9e817df5fb8a63eac21957589b61e3",
+      "source_card_locator": {
+        "start_line": 498,
+        "end_line": 508,
+        "representation": "STATIC_TSX_ARTICLE",
+        "excerpt_sha256": "75ab7e8186c6c58712024383257fa1aeb96c54672ade39f1ab94f2366358fc08"
+      },
+      "source_excerpt": "<article id=\"source-12212647\" data-source-pmid=\"12212647\" className=\"min-w-0 scroll-mt-24 rounded-[1.5rem] border border-black/10 bg-white/70 p-6 md:p-8\">\n              <p className=\"text-xs font-medium uppercase tracking-[0.14em] text-[#756e65]\">2. Emotion regulation review · 2002</p>\n              <h3 className=\"mt-3 break-words text-xl font-medium leading-snug text-[#1f1f1c]\">Emotion regulation: affective, cognitive, and social consequences</h3>\n              <p className=\"mt-3 text-sm leading-7 text-[#5f5a52]\">Gross JJ. Psychophysiology.</p>\n              <p className=\"mt-4 text-sm leading-7 text-[#5f5a52]\">Reviews reappraisal and suppression, with different consequences for emotional experience, expression and physiology. It is not a universal prescription to suppress feelings, a diagnostic tool or a study of Neuvago.</p>\n              <div className=\"mt-4 flex flex-wrap gap-x-5 gap-y-2 text-sm text-[#5f5a52]\">\n                <span className=\"break-all\">PMID: 12212647</span>\n                <span className=\"break-all\">DOI: 10.1017/s0048577201393198</span>\n              </div>\n              <a href=\"https://pubmed.ncbi.nlm.nih.gov/12212647/\" target=\"_blank\" rel=\"noreferrer\" className=\"mt-5 inline-flex text-sm font-medium underline decoration-black/25 underline-offset-4\">Read Gross JJ on PubMed</a>\n            </article>",
+      "scope_preserved_verbatim": "Reviews reappraisal and suppression, with different consequences for emotional experience, expression and physiology. It is not a universal prescription to suppress feelings, a diagnostic tool or a study of Neuvago.",
+      "prior_accepted_display_metadata": {
+        "title": "Emotion regulation: affective, cognitive, and social consequences",
+        "authors": "Gross JJ",
+        "year": 2002,
+        "journal": "Psychophysiology",
+        "doi": "10.1017/s0048577201393198",
+        "design": "Emotion regulation review",
+        "scope": "Reviews reappraisal and suppression, with different consequences for emotional experience, expression and physiology. It is not a universal prescription to suppress feelings, a diagnostic tool or a study of Neuvago.",
+        "existing": false,
+        "link": "https://pubmed.ncbi.nlm.nih.gov/12212647/",
+        "verification_scope": "OFFICIAL_PUBMED_METADATA_AND_ABSTRACT_SCOPE_NOT_FULL_TEXT_APPRAISAL",
+        "checked_on": "2026-09-13"
+      },
+      "original_usage_object": {
+        "route": "/learn/what-nervous-system-regulation-feels-like",
+        "path": "src/app/(en)/learn/what-nervous-system-regulation-feels-like/page.tsx",
+        "batch": "1E.4D.5",
+        "definition_marker_lines": [
+          173,
+          498,
+          504,
+          507
+        ],
+        "card_scope_from_accepted_contract": "Reviews reappraisal and suppression, with different consequences for emotional experience, expression and physiology. It is not a universal prescription to suppress feelings, a diagnostic tool or a study of Neuvago.",
+        "metadata_from_accepted_contract": {
+          "title": "Emotion regulation: affective, cognitive, and social consequences",
+          "authors": "Gross JJ",
+          "year": 2002,
+          "journal": "Psychophysiology",
+          "doi": "10.1017/s0048577201393198",
+          "design": "Emotion regulation review",
+          "scope": "Reviews reappraisal and suppression, with different consequences for emotional experience, expression and physiology. It is not a universal prescription to suppress feelings, a diagnostic tool or a study of Neuvago.",
+          "existing": false,
+          "link": "https://pubmed.ncbi.nlm.nih.gov/12212647/",
+          "verification_scope": "OFFICIAL_PUBMED_METADATA_AND_ABSTRACT_SCOPE_NOT_FULL_TEXT_APPRAISAL",
+          "checked_on": "2026-09-13"
+        },
+        "source_file_sha256": "018388ac853e377bf8dce4219b0d4c430e9e817df5fb8a63eac21957589b61e3"
+      },
+      "scope_text_preserved": true,
+      "current_rendering_verified": false,
+      "claim_support_approved": false
+    },
+    {
+      "usage_id": "USE-681EEC2306C6E9A7",
+      "intake_id": "INTAKE-PMID-12212647",
+      "reference_key": "PMID:12212647",
+      "route": "/learn/emotional-regulation-and-the-nervous-system",
+      "path": "src/app/(en)/learn/emotional-regulation-and-the-nervous-system/page.tsx",
+      "card_id": "source-12212647",
+      "source_file_sha256": "e8515f09f2e606d39270cd5e8aed33ee9bdfe4924a619a050efa7a42db034dc3",
+      "source_card_locator": {
+        "start_line": 534,
+        "end_line": 544,
+        "representation": "STATIC_TSX_ARTICLE",
+        "excerpt_sha256": "37a2421b071059e2db76717f33fa103bf493de0c3a28b2841cc13b0ed74f03c5"
+      },
+      "source_excerpt": "<article id=\"source-12212647\" data-source-pmid=\"12212647\" className=\"min-w-0 scroll-mt-24 rounded-[1.5rem] border border-black/10 bg-white/70 p-6 md:p-8\">\n              <p className=\"text-xs font-medium uppercase tracking-[0.14em] text-[#756e65]\">1. Emotion regulation review · 2002</p>\n              <h3 className=\"mt-3 break-words text-xl font-medium leading-snug text-[#1f1f1c]\">Emotion regulation: affective, cognitive, and social consequences</h3>\n              <p className=\"mt-3 text-sm leading-7 text-[#5f5a52]\">Gross JJ. Psychophysiology.</p>\n              <p className=\"mt-4 text-sm leading-7 text-[#5f5a52]\">Reviews reappraisal and suppression, with different consequences for emotional experience, expression and physiology. It is not a universal prescription to suppress feelings, a diagnostic tool or a study of Neuvago.</p>\n              <div className=\"mt-4 flex flex-wrap gap-x-5 gap-y-2 text-sm text-[#5f5a52]\">\n                <span className=\"break-all\">PMID: 12212647</span>\n                <span className=\"break-all\">DOI: 10.1017/s0048577201393198</span>\n              </div>\n              <a href=\"https://pubmed.ncbi.nlm.nih.gov/12212647/\" target=\"_blank\" rel=\"noreferrer\" className=\"mt-5 inline-flex text-sm font-medium underline decoration-black/25 underline-offset-4\">Read Gross JJ on PubMed</a>\n            </article>",
+      "scope_preserved_verbatim": "Reviews reappraisal and suppression, with different consequences for emotional experience, expression and physiology. It is not a universal prescription to suppress feelings, a diagnostic tool or a study of Neuvago.",
+      "prior_accepted_display_metadata": {
+        "title": "Emotion regulation: affective, cognitive, and social consequences",
+        "authors": "Gross JJ",
+        "year": 2002,
+        "journal": "Psychophysiology",
+        "doi": "10.1017/s0048577201393198",
+        "design": "Emotion regulation review",
+        "scope": "Reviews reappraisal and suppression, with different consequences for emotional experience, expression and physiology. It is not a universal prescription to suppress feelings, a diagnostic tool or a study of Neuvago.",
+        "existing": false,
+        "link": "https://pubmed.ncbi.nlm.nih.gov/12212647/",
+        "verification_scope": "OFFICIAL_PUBMED_METADATA_AND_ABSTRACT_SCOPE_NOT_FULL_TEXT_APPRAISAL",
+        "checked_on": "2026-09-13"
+      },
+      "original_usage_object": {
+        "route": "/learn/emotional-regulation-and-the-nervous-system",
+        "path": "src/app/(en)/learn/emotional-regulation-and-the-nervous-system/page.tsx",
+        "batch": "1E.4D.5",
+        "definition_marker_lines": [
+          186,
+          534,
+          540,
+          543
+        ],
+        "card_scope_from_accepted_contract": "Reviews reappraisal and suppression, with different consequences for emotional experience, expression and physiology. It is not a universal prescription to suppress feelings, a diagnostic tool or a study of Neuvago.",
+        "metadata_from_accepted_contract": {
+          "title": "Emotion regulation: affective, cognitive, and social consequences",
+          "authors": "Gross JJ",
+          "year": 2002,
+          "journal": "Psychophysiology",
+          "doi": "10.1017/s0048577201393198",
+          "design": "Emotion regulation review",
+          "scope": "Reviews reappraisal and suppression, with different consequences for emotional experience, expression and physiology. It is not a universal prescription to suppress feelings, a diagnostic tool or a study of Neuvago.",
+          "existing": false,
+          "link": "https://pubmed.ncbi.nlm.nih.gov/12212647/",
+          "verification_scope": "OFFICIAL_PUBMED_METADATA_AND_ABSTRACT_SCOPE_NOT_FULL_TEXT_APPRAISAL",
+          "checked_on": "2026-09-13"
+        },
+        "source_file_sha256": "e8515f09f2e606d39270cd5e8aed33ee9bdfe4924a619a050efa7a42db034dc3"
+      },
+      "scope_text_preserved": true,
+      "current_rendering_verified": false,
+      "claim_support_approved": false
+    },
+    {
+      "usage_id": "USE-7C87F8542CC9853E",
+      "intake_id": "INTAKE-PMID-20015584",
+      "reference_key": "PMID:20015584",
+      "route": "/learn/emotional-regulation-and-the-nervous-system",
+      "path": "src/app/(en)/learn/emotional-regulation-and-the-nervous-system/page.tsx",
+      "card_id": "source-20015584",
+      "source_file_sha256": "e8515f09f2e606d39270cd5e8aed33ee9bdfe4924a619a050efa7a42db034dc3",
+      "source_card_locator": {
+        "start_line": 545,
+        "end_line": 555,
+        "representation": "STATIC_TSX_ARTICLE",
+        "excerpt_sha256": "b4ef9128473dad90d12b9e54e69ead2eae387ddf463198c8e83385651b491113"
+      },
+      "source_excerpt": "<article id=\"source-20015584\" data-source-pmid=\"20015584\" className=\"min-w-0 scroll-mt-24 rounded-[1.5rem] border border-black/10 bg-white/70 p-6 md:p-8\">\n              <p className=\"text-xs font-medium uppercase tracking-[0.14em] text-[#756e65]\">2. Meta-analytic review · 2010</p>\n              <h3 className=\"mt-3 break-words text-xl font-medium leading-snug text-[#1f1f1c]\">Emotion-regulation strategies across psychopathology: A meta-analytic review</h3>\n              <p className=\"mt-3 text-sm leading-7 text-[#5f5a52]\">Aldao A, Nolen-Hoeksema S, Schweizer S. Clinical Psychology Review.</p>\n              <p className=\"mt-4 text-sm leading-7 text-[#5f5a52]\">Synthesises associations between emotion-regulation strategies and mental-health symptoms. Associations vary across samples and do not establish an individual diagnosis, a single cause or a product treatment effect.</p>\n              <div className=\"mt-4 flex flex-wrap gap-x-5 gap-y-2 text-sm text-[#5f5a52]\">\n                <span className=\"break-all\">PMID: 20015584</span>\n                <span className=\"break-all\">DOI: 10.1016/j.cpr.2009.11.004</span>\n              </div>\n              <a href=\"https://pubmed.ncbi.nlm.nih.gov/20015584/\" target=\"_blank\" rel=\"noreferrer\" className=\"mt-5 inline-flex text-sm font-medium underline decoration-black/25 underline-offset-4\">Read Aldao A on PubMed</a>\n            </article>",
+      "scope_preserved_verbatim": "Synthesises associations between emotion-regulation strategies and mental-health symptoms. Associations vary across samples and do not establish an individual diagnosis, a single cause or a product treatment effect.",
+      "prior_accepted_display_metadata": {
+        "title": "Emotion-regulation strategies across psychopathology: A meta-analytic review",
+        "authors": "Aldao A, Nolen-Hoeksema S, Schweizer S",
+        "year": 2010,
+        "journal": "Clinical Psychology Review",
+        "doi": "10.1016/j.cpr.2009.11.004",
+        "design": "Meta-analytic review",
+        "scope": "Synthesises associations between emotion-regulation strategies and mental-health symptoms. Associations vary across samples and do not establish an individual diagnosis, a single cause or a product treatment effect.",
+        "existing": false,
+        "link": "https://pubmed.ncbi.nlm.nih.gov/20015584/",
+        "verification_scope": "OFFICIAL_PUBMED_METADATA_AND_ABSTRACT_SCOPE_NOT_FULL_TEXT_APPRAISAL",
+        "checked_on": "2026-09-13"
+      },
+      "original_usage_object": {
+        "route": "/learn/emotional-regulation-and-the-nervous-system",
+        "path": "src/app/(en)/learn/emotional-regulation-and-the-nervous-system/page.tsx",
+        "batch": "1E.4D.5",
+        "definition_marker_lines": [
+          186,
+          545,
+          551,
+          554
+        ],
+        "card_scope_from_accepted_contract": "Synthesises associations between emotion-regulation strategies and mental-health symptoms. Associations vary across samples and do not establish an individual diagnosis, a single cause or a product treatment effect.",
+        "metadata_from_accepted_contract": {
+          "title": "Emotion-regulation strategies across psychopathology: A meta-analytic review",
+          "authors": "Aldao A, Nolen-Hoeksema S, Schweizer S",
+          "year": 2010,
+          "journal": "Clinical Psychology Review",
+          "doi": "10.1016/j.cpr.2009.11.004",
+          "design": "Meta-analytic review",
+          "scope": "Synthesises associations between emotion-regulation strategies and mental-health symptoms. Associations vary across samples and do not establish an individual diagnosis, a single cause or a product treatment effect.",
+          "existing": false,
+          "link": "https://pubmed.ncbi.nlm.nih.gov/20015584/",
+          "verification_scope": "OFFICIAL_PUBMED_METADATA_AND_ABSTRACT_SCOPE_NOT_FULL_TEXT_APPRAISAL",
+          "checked_on": "2026-09-13"
+        },
+        "source_file_sha256": "e8515f09f2e606d39270cd5e8aed33ee9bdfe4924a619a050efa7a42db034dc3"
+      },
+      "scope_text_preserved": true,
+      "current_rendering_verified": false,
+      "claim_support_approved": false
+    },
+    {
+      "usage_id": "USE-33B03555F0D2B60B",
+      "intake_id": "INTAKE-URL-F023607A6D8A",
+      "reference_key": "URL:https://www.who.int/news-room/fact-sheets/detail/anxiety-disorders",
+      "route": "/conditions/anxiety",
+      "path": "src/app/(en)/conditions/anxiety/page.tsx",
+      "card_id": "source-who-anxiety",
+      "source_file_sha256": "336f8df6c7e18295295304b535a3d3a989100027db67d1bc5b132fd0cbed0b6c",
+      "source_card_locator": {
+        "start_line": 101,
+        "end_line": 114,
+        "representation": "SOURCE_DATA_OBJECT",
+        "excerpt_sha256": "e3109a045fb4c1eeefa3341549e03306e5f34ecec2d82dcdde81e4ec917af256"
+      },
+      "source_excerpt": "{\n    \"key\": \"who-anxiety\",\n    \"kind\": \"official-guidance\",\n    \"design\": \"Public health guidance\",\n    \"dateLabel\": \"8 September 2025\",\n    \"title\": \"Anxiety disorders\",\n    \"authors\": \"World Health Organization\",\n    \"publication\": \"WHO fact sheet\",\n    \"scope\": \"Overview of anxiety disorders, their impact and available care. This is general information, not a diagnostic test or evidence for a Neuvago treatment effect.\",\n    \"pmid\": null,\n    \"doi\": null,\n    \"href\": \"https://www.who.int/news-room/fact-sheets/detail/anxiety-disorders\",\n    \"linkLabel\": \"World Health Organization\"\n  }",
+      "scope_preserved_verbatim": "Overview of anxiety disorders, their impact and available care. This is general information, not a diagnostic test or evidence for a Neuvago treatment effect.",
+      "prior_accepted_display_metadata": {
+        "title": "Anxiety disorders",
+        "authors": "World Health Organization",
+        "year": 2025,
+        "date_label": "8 September 2025",
+        "journal": "WHO fact sheet",
+        "kind": "official-guidance",
+        "design": "Public health guidance",
+        "pmid": null,
+        "doi": null,
+        "link": "https://www.who.int/news-room/fact-sheets/detail/anxiety-disorders",
+        "scope": "Overview of anxiety disorders, their impact and available care. This is general information, not a diagnostic test or evidence for a Neuvago treatment effect.",
+        "supported_sections": [
+          "Overview",
+          "Symptoms and patterns",
+          "Contributing factors and prevention",
+          "Diagnosis and treatment"
+        ],
+        "existing": false,
+        "active_registry_matches": [],
+        "checked_on": "2026-09-13",
+        "verification_scope": "OFFICIAL_OR_PUBLISHER_METADATA_AND_TARGETED_CONTENT_REVIEW_NOT_FULL_CLAIM_APPROVAL"
+      },
+      "original_usage_object": {
+        "route": "/conditions/anxiety",
+        "path": "src/app/(en)/conditions/anxiety/page.tsx",
+        "batch": "1E.4D.6",
+        "definition_marker_lines": [
+          112
+        ],
+        "card_scope_from_accepted_contract": "Overview of anxiety disorders, their impact and available care. This is general information, not a diagnostic test or evidence for a Neuvago treatment effect.",
+        "metadata_from_accepted_contract": {
+          "title": "Anxiety disorders",
+          "authors": "World Health Organization",
+          "year": 2025,
+          "date_label": "8 September 2025",
+          "journal": "WHO fact sheet",
+          "kind": "official-guidance",
+          "design": "Public health guidance",
+          "pmid": null,
+          "doi": null,
+          "link": "https://www.who.int/news-room/fact-sheets/detail/anxiety-disorders",
+          "scope": "Overview of anxiety disorders, their impact and available care. This is general information, not a diagnostic test or evidence for a Neuvago treatment effect.",
+          "supported_sections": [
+            "Overview",
+            "Symptoms and patterns",
+            "Contributing factors and prevention",
+            "Diagnosis and treatment"
+          ],
+          "existing": false,
+          "active_registry_matches": [],
+          "checked_on": "2026-09-13",
+          "verification_scope": "OFFICIAL_OR_PUBLISHER_METADATA_AND_TARGETED_CONTENT_REVIEW_NOT_FULL_CLAIM_APPROVAL"
+        },
+        "source_file_sha256": "336f8df6c7e18295295304b535a3d3a989100027db67d1bc5b132fd0cbed0b6c"
+      },
+      "scope_text_preserved": true,
+      "current_rendering_verified": false,
+      "claim_support_approved": false
+    },
+    {
+      "usage_id": "USE-BBFBEE1DFDA577DF",
+      "intake_id": "INTAKE-URL-B6B3CD525BDC",
+      "reference_key": "URL:https://www.nice.org.uk/guidance/cg113/chapter/Recommendations",
+      "route": "/conditions/anxiety",
+      "path": "src/app/(en)/conditions/anxiety/page.tsx",
+      "card_id": "source-nice-cg113",
+      "source_file_sha256": "336f8df6c7e18295295304b535a3d3a989100027db67d1bc5b132fd0cbed0b6c",
+      "source_card_locator": {
+        "start_line": 115,
+        "end_line": 128,
+        "representation": "SOURCE_DATA_OBJECT",
+        "excerpt_sha256": "caefce3f0008310173393eac043af5a803c7e9730f5a988ca46b6841e3021521"
+      },
+      "source_excerpt": "{\n    \"key\": \"nice-cg113\",\n    \"kind\": \"official-guidance\",\n    \"design\": \"Clinical guideline\",\n    \"dateLabel\": \"2011; updated 15 June 2020\",\n    \"title\": \"Generalised anxiety disorder and panic disorder in adults: management\",\n    \"authors\": \"National Institute for Health and Care Excellence\",\n    \"publication\": \"NICE clinical guideline CG113\",\n    \"scope\": \"Assessment and care options for adults with generalised anxiety disorder or panic disorder. It does not cover every anxiety presentation and is not a self-treatment protocol.\",\n    \"pmid\": null,\n    \"doi\": null,\n    \"href\": \"https://www.nice.org.uk/guidance/cg113/chapter/Recommendations\",\n    \"linkLabel\": \"National Institute for Health and Care Excellence\"\n  }",
+      "scope_preserved_verbatim": "Assessment and care options for adults with generalised anxiety disorder or panic disorder. It does not cover every anxiety presentation and is not a self-treatment protocol.",
+      "prior_accepted_display_metadata": {
+        "title": "Generalised anxiety disorder and panic disorder in adults: management",
+        "authors": "National Institute for Health and Care Excellence",
+        "year": 2011,
+        "date_label": "2011; updated 15 June 2020",
+        "journal": "NICE clinical guideline CG113",
+        "kind": "official-guidance",
+        "design": "Clinical guideline",
+        "pmid": null,
+        "doi": null,
+        "link": "https://www.nice.org.uk/guidance/cg113/chapter/Recommendations",
+        "scope": "Assessment and care options for adults with generalised anxiety disorder or panic disorder. It does not cover every anxiety presentation and is not a self-treatment protocol.",
+        "supported_sections": [
+          "1.2.6–1.2.7 Assessment and education",
+          "Stepped-care model",
+          "1.2.12 Supported self-help options",
+          "1.2.17–1.2.18 Treatment choice and psychological interventions"
+        ],
+        "existing": false,
+        "active_registry_matches": [],
+        "checked_on": "2026-09-13",
+        "verification_scope": "OFFICIAL_OR_PUBLISHER_METADATA_AND_TARGETED_CONTENT_REVIEW_NOT_FULL_CLAIM_APPROVAL"
+      },
+      "original_usage_object": {
+        "route": "/conditions/anxiety",
+        "path": "src/app/(en)/conditions/anxiety/page.tsx",
+        "batch": "1E.4D.6",
+        "definition_marker_lines": [
+          126
+        ],
+        "card_scope_from_accepted_contract": "Assessment and care options for adults with generalised anxiety disorder or panic disorder. It does not cover every anxiety presentation and is not a self-treatment protocol.",
+        "metadata_from_accepted_contract": {
+          "title": "Generalised anxiety disorder and panic disorder in adults: management",
+          "authors": "National Institute for Health and Care Excellence",
+          "year": 2011,
+          "date_label": "2011; updated 15 June 2020",
+          "journal": "NICE clinical guideline CG113",
+          "kind": "official-guidance",
+          "design": "Clinical guideline",
+          "pmid": null,
+          "doi": null,
+          "link": "https://www.nice.org.uk/guidance/cg113/chapter/Recommendations",
+          "scope": "Assessment and care options for adults with generalised anxiety disorder or panic disorder. It does not cover every anxiety presentation and is not a self-treatment protocol.",
+          "supported_sections": [
+            "1.2.6–1.2.7 Assessment and education",
+            "Stepped-care model",
+            "1.2.12 Supported self-help options",
+            "1.2.17–1.2.18 Treatment choice and psychological interventions"
+          ],
+          "existing": false,
+          "active_registry_matches": [],
+          "checked_on": "2026-09-13",
+          "verification_scope": "OFFICIAL_OR_PUBLISHER_METADATA_AND_TARGETED_CONTENT_REVIEW_NOT_FULL_CLAIM_APPROVAL"
+        },
+        "source_file_sha256": "336f8df6c7e18295295304b535a3d3a989100027db67d1bc5b132fd0cbed0b6c"
+      },
+      "scope_text_preserved": true,
+      "current_rendering_verified": false,
+      "claim_support_approved": false
+    },
+    {
+      "usage_id": "USE-029A00177E1F486B",
+      "intake_id": "INTAKE-URL-F20448797ABC",
+      "reference_key": "URL:https://www.who.int/news/item/28-05-2019-burn-out-an-occupational-phenomenon-international-classification-of-diseases",
+      "route": "/conditions/burnout",
+      "path": "src/app/(en)/conditions/burnout/page.tsx",
+      "card_id": "source-who-burnout",
+      "source_file_sha256": "f7cff6e52881a63ce3c6d2d604506eb8fd5f5781262deff0d72a650d0008af05",
+      "source_card_locator": {
+        "start_line": 101,
+        "end_line": 114,
+        "representation": "SOURCE_DATA_OBJECT",
+        "excerpt_sha256": "74b50dfae777b0288328c1049a5aa8bb9313452c551c4642b96c1f7210293936"
+      },
+      "source_excerpt": "{\n    \"key\": \"who-burnout\",\n    \"kind\": \"official-guidance\",\n    \"design\": \"Classification clarification\",\n    \"dateLabel\": \"28 May 2019\",\n    \"title\": \"Burn-out an occupational phenomenon: International Classification of Diseases\",\n    \"authors\": \"World Health Organization\",\n    \"publication\": \"WHO ICD-11 clarification\",\n    \"scope\": \"Defines burnout in an occupational context and distinguishes its ICD-11 classification from a medical condition. This does not make exhaustion outside work unimportant or remove the need for care.\",\n    \"pmid\": null,\n    \"doi\": null,\n    \"href\": \"https://www.who.int/news/item/28-05-2019-burn-out-an-occupational-phenomenon-international-classification-of-diseases\",\n    \"linkLabel\": \"World Health Organization\"\n  }",
+      "scope_preserved_verbatim": "Defines burnout in an occupational context and distinguishes its ICD-11 classification from a medical condition. This does not make exhaustion outside work unimportant or remove the need for care.",
+      "prior_accepted_display_metadata": {
+        "title": "Burn-out an occupational phenomenon: International Classification of Diseases",
+        "authors": "World Health Organization",
+        "year": 2019,
+        "date_label": "28 May 2019",
+        "journal": "WHO ICD-11 clarification",
+        "kind": "official-guidance",
+        "design": "Classification clarification",
+        "pmid": null,
+        "doi": null,
+        "link": "https://www.who.int/news/item/28-05-2019-burn-out-an-occupational-phenomenon-international-classification-of-diseases",
+        "scope": "Defines burnout in an occupational context and distinguishes its ICD-11 classification from a medical condition. This does not make exhaustion outside work unimportant or remove the need for care.",
+        "supported_sections": [
+          "ICD-11 definition and three dimensions",
+          "Occupational context and classification"
+        ],
+        "existing": false,
+        "active_registry_matches": [],
+        "checked_on": "2026-09-13",
+        "verification_scope": "OFFICIAL_OR_PUBLISHER_METADATA_AND_TARGETED_CONTENT_REVIEW_NOT_FULL_CLAIM_APPROVAL"
+      },
+      "original_usage_object": {
+        "route": "/conditions/burnout",
+        "path": "src/app/(en)/conditions/burnout/page.tsx",
+        "batch": "1E.4D.6",
+        "definition_marker_lines": [
+          112
+        ],
+        "card_scope_from_accepted_contract": "Defines burnout in an occupational context and distinguishes its ICD-11 classification from a medical condition. This does not make exhaustion outside work unimportant or remove the need for care.",
+        "metadata_from_accepted_contract": {
+          "title": "Burn-out an occupational phenomenon: International Classification of Diseases",
+          "authors": "World Health Organization",
+          "year": 2019,
+          "date_label": "28 May 2019",
+          "journal": "WHO ICD-11 clarification",
+          "kind": "official-guidance",
+          "design": "Classification clarification",
+          "pmid": null,
+          "doi": null,
+          "link": "https://www.who.int/news/item/28-05-2019-burn-out-an-occupational-phenomenon-international-classification-of-diseases",
+          "scope": "Defines burnout in an occupational context and distinguishes its ICD-11 classification from a medical condition. This does not make exhaustion outside work unimportant or remove the need for care.",
+          "supported_sections": [
+            "ICD-11 definition and three dimensions",
+            "Occupational context and classification"
+          ],
+          "existing": false,
+          "active_registry_matches": [],
+          "checked_on": "2026-09-13",
+          "verification_scope": "OFFICIAL_OR_PUBLISHER_METADATA_AND_TARGETED_CONTENT_REVIEW_NOT_FULL_CLAIM_APPROVAL"
+        },
+        "source_file_sha256": "f7cff6e52881a63ce3c6d2d604506eb8fd5f5781262deff0d72a650d0008af05"
+      },
+      "scope_text_preserved": true,
+      "current_rendering_verified": false,
+      "claim_support_approved": false
+    },
+    {
+      "usage_id": "USE-EA648160B5EB40C4",
+      "intake_id": "INTAKE-PMID-27265691",
+      "reference_key": "PMID:27265691",
+      "route": "/conditions/burnout",
+      "path": "src/app/(en)/conditions/burnout/page.tsx",
+      "card_id": "source-maslach-2016",
+      "source_file_sha256": "f7cff6e52881a63ce3c6d2d604506eb8fd5f5781262deff0d72a650d0008af05",
+      "source_card_locator": {
+        "start_line": 115,
+        "end_line": 128,
+        "representation": "SOURCE_DATA_OBJECT",
+        "excerpt_sha256": "e28c6a39de7ac1dabe6d10b259bbdb962ad700dc51b85797bbf06ca55effbed8"
+      },
+      "source_excerpt": "{\n    \"key\": \"maslach-2016\",\n    \"kind\": \"scholarly-review\",\n    \"design\": \"Research review\",\n    \"dateLabel\": \"2016\",\n    \"title\": \"Understanding the burnout experience: recent research and its implications for psychiatry\",\n    \"authors\": \"Maslach C, Leiter MP\",\n    \"publication\": \"World Psychiatry\",\n    \"scope\": \"Reviews occupational burnout, measurement and its relationship with mental health. It is not a trial of Neuvago and does not establish a single biological test or universal recovery plan.\",\n    \"pmid\": \"27265691\",\n    \"doi\": \"10.1002/wps.20311\",\n    \"href\": \"https://pubmed.ncbi.nlm.nih.gov/27265691/\",\n    \"linkLabel\": \"the PubMed record\"\n  }",
+      "scope_preserved_verbatim": "Reviews occupational burnout, measurement and its relationship with mental health. It is not a trial of Neuvago and does not establish a single biological test or universal recovery plan.",
+      "prior_accepted_display_metadata": {
+        "title": "Understanding the burnout experience: recent research and its implications for psychiatry",
+        "authors": "Maslach C, Leiter MP",
+        "year": 2016,
+        "date_label": "2016",
+        "journal": "World Psychiatry",
+        "kind": "scholarly-review",
+        "design": "Research review",
+        "pmid": "27265691",
+        "doi": "10.1002/wps.20311",
+        "link": "https://pubmed.ncbi.nlm.nih.gov/27265691/",
+        "scope": "Reviews occupational burnout, measurement and its relationship with mental health. It is not a trial of Neuvago and does not establish a single biological test or universal recovery plan.",
+        "supported_sections": [
+          "Abstract",
+          "Burnout and its workplace context",
+          "Burnout and mental illness"
+        ],
+        "existing": false,
+        "active_registry_matches": [],
+        "checked_on": "2026-09-13",
+        "verification_scope": "OFFICIAL_OR_PUBLISHER_METADATA_AND_TARGETED_CONTENT_REVIEW_NOT_FULL_CLAIM_APPROVAL"
+      },
+      "original_usage_object": {
+        "route": "/conditions/burnout",
+        "path": "src/app/(en)/conditions/burnout/page.tsx",
+        "batch": "1E.4D.6",
+        "definition_marker_lines": [
+          124,
+          126
+        ],
+        "card_scope_from_accepted_contract": "Reviews occupational burnout, measurement and its relationship with mental health. It is not a trial of Neuvago and does not establish a single biological test or universal recovery plan.",
+        "metadata_from_accepted_contract": {
+          "title": "Understanding the burnout experience: recent research and its implications for psychiatry",
+          "authors": "Maslach C, Leiter MP",
+          "year": 2016,
+          "date_label": "2016",
+          "journal": "World Psychiatry",
+          "kind": "scholarly-review",
+          "design": "Research review",
+          "pmid": "27265691",
+          "doi": "10.1002/wps.20311",
+          "link": "https://pubmed.ncbi.nlm.nih.gov/27265691/",
+          "scope": "Reviews occupational burnout, measurement and its relationship with mental health. It is not a trial of Neuvago and does not establish a single biological test or universal recovery plan.",
+          "supported_sections": [
+            "Abstract",
+            "Burnout and its workplace context",
+            "Burnout and mental illness"
+          ],
+          "existing": false,
+          "active_registry_matches": [],
+          "checked_on": "2026-09-13",
+          "verification_scope": "OFFICIAL_OR_PUBLISHER_METADATA_AND_TARGETED_CONTENT_REVIEW_NOT_FULL_CLAIM_APPROVAL"
+        },
+        "source_file_sha256": "f7cff6e52881a63ce3c6d2d604506eb8fd5f5781262deff0d72a650d0008af05"
+      },
+      "scope_text_preserved": true,
+      "current_rendering_verified": false,
+      "claim_support_approved": false
+    },
+    {
+      "usage_id": "USE-727D73DD47C4D951",
+      "intake_id": "INTAKE-URL-47987E7C9F7B",
+      "reference_key": "URL:https://www.who.int/news-room/fact-sheets/detail/mental-health-at-work",
+      "route": "/conditions/burnout",
+      "path": "src/app/(en)/conditions/burnout/page.tsx",
+      "card_id": "source-who-work",
+      "source_file_sha256": "f7cff6e52881a63ce3c6d2d604506eb8fd5f5781262deff0d72a650d0008af05",
+      "source_card_locator": {
+        "start_line": 129,
+        "end_line": 142,
+        "representation": "SOURCE_DATA_OBJECT",
+        "excerpt_sha256": "2f12cf750d193432a93f6f90f9234695b0f61c4567b863d6de3208e85b1f4192"
+      },
+      "source_excerpt": "{\n    \"key\": \"who-work\",\n    \"kind\": \"official-guidance\",\n    \"design\": \"Workplace mental-health guidance\",\n    \"dateLabel\": \"2 September 2024\",\n    \"title\": \"Mental health at work\",\n    \"authors\": \"World Health Organization\",\n    \"publication\": \"WHO fact sheet\",\n    \"scope\": \"Describes workplace risks and organisational responses alongside individual support. These recommendations concern mental health at work broadly, not proof that a particular routine treats burnout.\",\n    \"pmid\": null,\n    \"doi\": null,\n    \"href\": \"https://www.who.int/news-room/fact-sheets/detail/mental-health-at-work\",\n    \"linkLabel\": \"World Health Organization\"\n  }",
+      "scope_preserved_verbatim": "Describes workplace risks and organisational responses alongside individual support. These recommendations concern mental health at work broadly, not proof that a particular routine treats burnout.",
+      "prior_accepted_display_metadata": {
+        "title": "Mental health at work",
+        "authors": "World Health Organization",
+        "year": 2024,
+        "date_label": "2 September 2024",
+        "journal": "WHO fact sheet",
+        "kind": "official-guidance",
+        "design": "Workplace mental-health guidance",
+        "pmid": null,
+        "doi": null,
+        "link": "https://www.who.int/news-room/fact-sheets/detail/mental-health-at-work",
+        "scope": "Describes workplace risks and organisational responses alongside individual support. These recommendations concern mental health at work broadly, not proof that a particular routine treats burnout.",
+        "supported_sections": [
+          "Risks to mental health at work",
+          "Prevent work-related mental health conditions",
+          "Support people with mental health conditions to participate in and thrive at work"
+        ],
+        "existing": false,
+        "active_registry_matches": [],
+        "checked_on": "2026-09-13",
+        "verification_scope": "OFFICIAL_OR_PUBLISHER_METADATA_AND_TARGETED_CONTENT_REVIEW_NOT_FULL_CLAIM_APPROVAL"
+      },
+      "original_usage_object": {
+        "route": "/conditions/burnout",
+        "path": "src/app/(en)/conditions/burnout/page.tsx",
+        "batch": "1E.4D.6",
+        "definition_marker_lines": [
+          140
+        ],
+        "card_scope_from_accepted_contract": "Describes workplace risks and organisational responses alongside individual support. These recommendations concern mental health at work broadly, not proof that a particular routine treats burnout.",
+        "metadata_from_accepted_contract": {
+          "title": "Mental health at work",
+          "authors": "World Health Organization",
+          "year": 2024,
+          "date_label": "2 September 2024",
+          "journal": "WHO fact sheet",
+          "kind": "official-guidance",
+          "design": "Workplace mental-health guidance",
+          "pmid": null,
+          "doi": null,
+          "link": "https://www.who.int/news-room/fact-sheets/detail/mental-health-at-work",
+          "scope": "Describes workplace risks and organisational responses alongside individual support. These recommendations concern mental health at work broadly, not proof that a particular routine treats burnout.",
+          "supported_sections": [
+            "Risks to mental health at work",
+            "Prevent work-related mental health conditions",
+            "Support people with mental health conditions to participate in and thrive at work"
+          ],
+          "existing": false,
+          "active_registry_matches": [],
+          "checked_on": "2026-09-13",
+          "verification_scope": "OFFICIAL_OR_PUBLISHER_METADATA_AND_TARGETED_CONTENT_REVIEW_NOT_FULL_CLAIM_APPROVAL"
+        },
+        "source_file_sha256": "f7cff6e52881a63ce3c6d2d604506eb8fd5f5781262deff0d72a650d0008af05"
+      },
+      "scope_text_preserved": true,
+      "current_rendering_verified": false,
+      "claim_support_approved": false
+    }
+  ]
+}

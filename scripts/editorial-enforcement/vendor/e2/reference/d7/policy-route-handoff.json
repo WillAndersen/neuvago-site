@@ -1,0 +1,3998 @@
+{
+  "policy_rows": [
+    {
+      "claim_id": "CLM-0101E46E99",
+      "canonical_claim": "Carotid-sinus massage is a defined clinical diagnostic manoeuvre for selected syncope evaluation.",
+      "policy": "ALLOWED_WITH_QUALIFIERS",
+      "risk_class": "CRITICAL",
+      "owner_route": "/learn/vagus-nerve-evidence-vs-internet-claims",
+      "applies_to_routes": [
+        "/learn/vagus-nerve-evidence-vs-internet-claims"
+      ],
+      "locale_scope": [
+        "en"
+      ],
+      "owner_source_mapping_found": true,
+      "mapped_owner_files": [
+        "src/app/(en)/learn/vagus-nerve-evidence-vs-internet-claims/page.tsx"
+      ],
+      "missing_declared_route_mappings": [],
+      "lexical_candidates": 0,
+      "inherited_source_pool_count": 11,
+      "inherited_structural_candidate_ids": [],
+      "approved_evidence_ids": [],
+      "coverage_conclusion": "MAPPING_ONLY_NOT_SCIENTIFIC_SUPPORT",
+      "translation_performed": false,
+      "mapping_basis": "EXISTING_DECLARED_OWNER_AND_D1_SOURCE_MAPPING_NO_SEMANTIC_INFERENCE",
+      "current_mapped_files": [
+        {
+          "path": "src/app/(en)/learn/vagus-nerve-evidence-vs-internet-claims/page.tsx",
+          "sha256": "0b3cfff6ce71f978a3361fcc65a42f28868cedd6310d71d7290c7568df45e94b",
+          "bytes_match_d1": true
+        }
+      ],
+      "claim_support_review_complete": false
+    },
+    {
+      "claim_id": "CLM-05A1EF5EDA",
+      "canonical_claim": "Instructions that deliberately provoke gagging as a wellness technique.",
+      "policy": "NOT_ALLOWED",
+      "risk_class": "CRITICAL",
+      "owner_route": "/learn/vagus-nerve-evidence-vs-internet-claims",
+      "applies_to_routes": [
+        "/learn/vagus-nerve-evidence-vs-internet-claims"
+      ],
+      "locale_scope": [
+        "en"
+      ],
+      "owner_source_mapping_found": true,
+      "mapped_owner_files": [
+        "src/app/(en)/learn/vagus-nerve-evidence-vs-internet-claims/page.tsx"
+      ],
+      "missing_declared_route_mappings": [],
+      "lexical_candidates": 0,
+      "inherited_source_pool_count": 11,
+      "inherited_structural_candidate_ids": [],
+      "approved_evidence_ids": [],
+      "coverage_conclusion": "MAPPING_ONLY_NOT_SCIENTIFIC_SUPPORT",
+      "translation_performed": false,
+      "mapping_basis": "EXISTING_DECLARED_OWNER_AND_D1_SOURCE_MAPPING_NO_SEMANTIC_INFERENCE",
+      "current_mapped_files": [
+        {
+          "path": "src/app/(en)/learn/vagus-nerve-evidence-vs-internet-claims/page.tsx",
+          "sha256": "0b3cfff6ce71f978a3361fcc65a42f28868cedd6310d71d7290c7568df45e94b",
+          "bytes_match_d1": true
+        }
+      ],
+      "claim_support_review_complete": false
+    },
+    {
+      "claim_id": "CLM-0720173E7F",
+      "canonical_claim": "Treating CE marking, FDA status, tingling/intensity or category-level research as proof of efficacy for every product or purpose.",
+      "policy": "NOT_ALLOWED",
+      "risk_class": "HIGH",
+      "owner_route": "/no/kunnskap/hvordan-velge-vagusnervestimulator",
+      "applies_to_routes": [
+        "/no/kunnskap/hvordan-velge-vagusnervestimulator"
+      ],
+      "locale_scope": [
+        "nb"
+      ],
+      "owner_source_mapping_found": true,
+      "mapped_owner_files": [
+        "src/app/(no)/no/kunnskap/hvordan-velge-vagusnervestimulator/page.tsx",
+        "src/content/decision-guides/how-to-choose-vns-device.ts"
+      ],
+      "missing_declared_route_mappings": [],
+      "lexical_candidates": 0,
+      "inherited_source_pool_count": 0,
+      "inherited_structural_candidate_ids": [],
+      "approved_evidence_ids": [],
+      "coverage_conclusion": "MAPPING_ONLY_NOT_SCIENTIFIC_SUPPORT",
+      "translation_performed": false,
+      "mapping_basis": "EXISTING_DECLARED_OWNER_AND_D1_SOURCE_MAPPING_NO_SEMANTIC_INFERENCE",
+      "current_mapped_files": [
+        {
+          "path": "src/app/(no)/no/kunnskap/hvordan-velge-vagusnervestimulator/page.tsx",
+          "sha256": "a32a6d7c6ed156aad9b47c015a7c16748ea3212694398a7c048c93027892889f",
+          "bytes_match_d1": true
+        },
+        {
+          "path": "src/content/decision-guides/how-to-choose-vns-device.ts",
+          "sha256": "8cdc0af689f056125b32d07705d9d2c1a074a8176daeb2e4885ec13e74d5b983",
+          "bytes_match_d1": true
+        }
+      ],
+      "claim_support_review_complete": false
+    },
+    {
+      "claim_id": "CLM-08BEB5C1CB",
+      "canonical_claim": "A claim that stronger or colder exposure produces more useful vagus stimulation.",
+      "policy": "NOT_ALLOWED",
+      "risk_class": "MEDIUM",
+      "owner_route": "/learn/vagus-nerve-evidence-vs-internet-claims",
+      "applies_to_routes": [
+        "/learn/vagus-nerve-evidence-vs-internet-claims"
+      ],
+      "locale_scope": [
+        "en"
+      ],
+      "owner_source_mapping_found": true,
+      "mapped_owner_files": [
+        "src/app/(en)/learn/vagus-nerve-evidence-vs-internet-claims/page.tsx"
+      ],
+      "missing_declared_route_mappings": [],
+      "lexical_candidates": 0,
+      "inherited_source_pool_count": 11,
+      "inherited_structural_candidate_ids": [],
+      "approved_evidence_ids": [],
+      "coverage_conclusion": "MAPPING_ONLY_NOT_SCIENTIFIC_SUPPORT",
+      "translation_performed": false,
+      "mapping_basis": "EXISTING_DECLARED_OWNER_AND_D1_SOURCE_MAPPING_NO_SEMANTIC_INFERENCE",
+      "current_mapped_files": [
+        {
+          "path": "src/app/(en)/learn/vagus-nerve-evidence-vs-internet-claims/page.tsx",
+          "sha256": "0b3cfff6ce71f978a3361fcc65a42f28868cedd6310d71d7290c7568df45e94b",
+          "bytes_match_d1": true
+        }
+      ],
+      "claim_support_review_complete": false
+    },
+    {
+      "claim_id": "CLM-08BF12021B",
+      "canonical_claim": "claiming that Neuvago treats sensory overload, anxiety, insomnia, ADHD, autism or another medical condition;",
+      "policy": "NOT_ALLOWED",
+      "risk_class": "HIGH",
+      "owner_route": "/no/kunnskap/overstimulert",
+      "applies_to_routes": [
+        "/no/kunnskap/overstimulert"
+      ],
+      "locale_scope": [
+        "nb"
+      ],
+      "owner_source_mapping_found": true,
+      "mapped_owner_files": [
+        "src/content/knowledge/no/articles/overstimulert.ts"
+      ],
+      "missing_declared_route_mappings": [],
+      "lexical_candidates": 0,
+      "inherited_source_pool_count": 0,
+      "inherited_structural_candidate_ids": [],
+      "approved_evidence_ids": [],
+      "coverage_conclusion": "MAPPING_ONLY_NOT_SCIENTIFIC_SUPPORT",
+      "translation_performed": false,
+      "mapping_basis": "EXISTING_DECLARED_OWNER_AND_D1_SOURCE_MAPPING_NO_SEMANTIC_INFERENCE",
+      "current_mapped_files": [
+        {
+          "path": "src/content/knowledge/no/articles/overstimulert.ts",
+          "sha256": "20e7a70555bc531c7cbd8130906efc9228b4c5b85699158e486e0e3702297b75",
+          "bytes_match_d1": true
+        }
+      ],
+      "claim_support_review_complete": false
+    },
+    {
+      "claim_id": "CLM-08E0606427",
+      "canonical_claim": "Behavioural practices such as slow breathing, movement and relaxation can influence subjective experience and selected physiological/autonomic outcomes under studied conditions.",
+      "policy": "ALLOWED_WITH_QUALIFIERS",
+      "risk_class": "MEDIUM",
+      "owner_route": "/learn/vagus-nerve-exercises",
+      "applies_to_routes": [
+        "/learn/vagus-nerve-exercises"
+      ],
+      "locale_scope": [
+        "en"
+      ],
+      "owner_source_mapping_found": true,
+      "mapped_owner_files": [
+        "src/app/(en)/learn/vagus-nerve-exercises/page.tsx"
+      ],
+      "missing_declared_route_mappings": [],
+      "lexical_candidates": 0,
+      "inherited_source_pool_count": 6,
+      "inherited_structural_candidate_ids": [],
+      "approved_evidence_ids": [],
+      "coverage_conclusion": "MAPPING_ONLY_NOT_SCIENTIFIC_SUPPORT",
+      "translation_performed": false,
+      "mapping_basis": "EXISTING_DECLARED_OWNER_AND_D1_SOURCE_MAPPING_NO_SEMANTIC_INFERENCE",
+      "current_mapped_files": [
+        {
+          "path": "src/app/(en)/learn/vagus-nerve-exercises/page.tsx",
+          "sha256": "ce1703388f652c115b7ea98695e438df233bdc8c384d477ae9b914dfc2145d16",
+          "bytes_match_d1": true
+        }
+      ],
+      "claim_support_review_complete": false
+    },
+    {
+      "claim_id": "CLM-0B91600FED",
+      "canonical_claim": "claiming that the page can identify high cortisol, low vagal tone, abnormal HRV, autonomic dysfunction or brain changes in an individual;",
+      "policy": "NOT_ALLOWED",
+      "risk_class": "HIGH",
+      "owner_route": "/no/kunnskap/fastlast-i-stress",
+      "applies_to_routes": [
+        "/no/kunnskap/fastlast-i-stress"
+      ],
+      "locale_scope": [
+        "nb"
+      ],
+      "owner_source_mapping_found": true,
+      "mapped_owner_files": [
+        "src/content/knowledge/no/articles/fastlast-i-stress.ts"
+      ],
+      "missing_declared_route_mappings": [],
+      "lexical_candidates": 0,
+      "inherited_source_pool_count": 0,
+      "inherited_structural_candidate_ids": [],
+      "approved_evidence_ids": [],
+      "coverage_conclusion": "MAPPING_ONLY_NOT_SCIENTIFIC_SUPPORT",
+      "translation_performed": false,
+      "mapping_basis": "EXISTING_DECLARED_OWNER_AND_D1_SOURCE_MAPPING_NO_SEMANTIC_INFERENCE",
+      "current_mapped_files": [
+        {
+          "path": "src/content/knowledge/no/articles/fastlast-i-stress.ts",
+          "sha256": "1ecb93525f481bb810393dcfd21efbb1929f30a613c5168b77fe1ec36fff12e8",
+          "bytes_match_d1": true
+        }
+      ],
+      "claim_support_review_complete": false
+    },
+    {
+      "claim_id": "CLM-12420425B0",
+      "canonical_claim": "Humming has measurable respiratory/nasal effects, including altered sinus ventilation and nasal nitric oxide.",
+      "policy": "ALLOWED_WITH_QUALIFIERS",
+      "risk_class": "MEDIUM",
+      "owner_route": "/learn/vagus-nerve-evidence-vs-internet-claims",
+      "applies_to_routes": [
+        "/learn/vagus-nerve-evidence-vs-internet-claims"
+      ],
+      "locale_scope": [
+        "en"
+      ],
+      "owner_source_mapping_found": true,
+      "mapped_owner_files": [
+        "src/app/(en)/learn/vagus-nerve-evidence-vs-internet-claims/page.tsx"
+      ],
+      "missing_declared_route_mappings": [],
+      "lexical_candidates": 0,
+      "inherited_source_pool_count": 11,
+      "inherited_structural_candidate_ids": [
+        "EVD-PMID-12119224",
+        "EVD-PMID-40482984",
+        "EVD-PMID-41686399"
+      ],
+      "approved_evidence_ids": [],
+      "coverage_conclusion": "MAPPING_ONLY_NOT_SCIENTIFIC_SUPPORT",
+      "translation_performed": false,
+      "mapping_basis": "EXISTING_DECLARED_OWNER_AND_D1_SOURCE_MAPPING_NO_SEMANTIC_INFERENCE",
+      "current_mapped_files": [
+        {
+          "path": "src/app/(en)/learn/vagus-nerve-evidence-vs-internet-claims/page.tsx",
+          "sha256": "0b3cfff6ce71f978a3361fcc65a42f28868cedd6310d71d7290c7568df45e94b",
+          "bytes_match_d1": true
+        }
+      ],
+      "claim_support_review_complete": false
+    },
+    {
+      "claim_id": "CLM-143FE2FE9B",
+      "canonical_claim": "general taVNS research proves a Neuvago-specific outcome;",
+      "policy": "NOT_ALLOWED",
+      "risk_class": "HIGH",
+      "owner_route": "/learn/what-does-vagus-nerve-stimulation-feel-like",
+      "applies_to_routes": [
+        "/learn/what-does-vagus-nerve-stimulation-feel-like"
+      ],
+      "locale_scope": [
+        "en"
+      ],
+      "owner_source_mapping_found": true,
+      "mapped_owner_files": [
+        "src/app/(en)/learn/what-does-vagus-nerve-stimulation-feel-like/page.tsx"
+      ],
+      "missing_declared_route_mappings": [],
+      "lexical_candidates": 0,
+      "inherited_source_pool_count": 4,
+      "inherited_structural_candidate_ids": [],
+      "approved_evidence_ids": [],
+      "coverage_conclusion": "MAPPING_ONLY_NOT_SCIENTIFIC_SUPPORT",
+      "translation_performed": false,
+      "mapping_basis": "EXISTING_DECLARED_OWNER_AND_D1_SOURCE_MAPPING_NO_SEMANTIC_INFERENCE",
+      "current_mapped_files": [
+        {
+          "path": "src/app/(en)/learn/what-does-vagus-nerve-stimulation-feel-like/page.tsx",
+          "sha256": "207ef166b54a14ab9daa25913b4b704f517c2b2e9b956c91445fc25c4545b80b",
+          "bytes_match_d1": true
+        }
+      ],
+      "claim_support_review_complete": false
+    },
+    {
+      "claim_id": "CLM-17F0EB5068",
+      "canonical_claim": "A prescriptive cold-plunge temperature, duration or face-immersion protocol.",
+      "policy": "NOT_ALLOWED",
+      "risk_class": "CRITICAL",
+      "owner_route": "/learn/vagus-nerve-evidence-vs-internet-claims",
+      "applies_to_routes": [
+        "/learn/vagus-nerve-evidence-vs-internet-claims"
+      ],
+      "locale_scope": [
+        "en"
+      ],
+      "owner_source_mapping_found": true,
+      "mapped_owner_files": [
+        "src/app/(en)/learn/vagus-nerve-evidence-vs-internet-claims/page.tsx"
+      ],
+      "missing_declared_route_mappings": [],
+      "lexical_candidates": 0,
+      "inherited_source_pool_count": 11,
+      "inherited_structural_candidate_ids": [],
+      "approved_evidence_ids": [],
+      "coverage_conclusion": "MAPPING_ONLY_NOT_SCIENTIFIC_SUPPORT",
+      "translation_performed": false,
+      "mapping_basis": "EXISTING_DECLARED_OWNER_AND_D1_SOURCE_MAPPING_NO_SEMANTIC_INFERENCE",
+      "current_mapped_files": [
+        {
+          "path": "src/app/(en)/learn/vagus-nerve-evidence-vs-internet-claims/page.tsx",
+          "sha256": "0b3cfff6ce71f978a3361fcc65a42f28868cedd6310d71d7290c7568df45e94b",
+          "bytes_match_d1": true
+        }
+      ],
+      "claim_support_review_complete": false
+    },
+    {
+      "claim_id": "CLM-19A9FFC693",
+      "canonical_claim": "Small studies report changes in breathing pattern, HRV or autonomic measures during humming.",
+      "policy": "ALLOWED_WITH_QUALIFIERS",
+      "risk_class": "HIGH",
+      "owner_route": "/learn/vagus-nerve-evidence-vs-internet-claims",
+      "applies_to_routes": [
+        "/learn/vagus-nerve-evidence-vs-internet-claims"
+      ],
+      "locale_scope": [
+        "en"
+      ],
+      "owner_source_mapping_found": true,
+      "mapped_owner_files": [
+        "src/app/(en)/learn/vagus-nerve-evidence-vs-internet-claims/page.tsx"
+      ],
+      "missing_declared_route_mappings": [],
+      "lexical_candidates": 1,
+      "inherited_source_pool_count": 11,
+      "inherited_structural_candidate_ids": [
+        "EVD-PMID-12119224",
+        "EVD-PMID-40482984",
+        "EVD-PMID-41686399"
+      ],
+      "approved_evidence_ids": [],
+      "coverage_conclusion": "MAPPING_ONLY_NOT_SCIENTIFIC_SUPPORT",
+      "translation_performed": false,
+      "mapping_basis": "EXISTING_DECLARED_OWNER_AND_D1_SOURCE_MAPPING_NO_SEMANTIC_INFERENCE",
+      "current_mapped_files": [
+        {
+          "path": "src/app/(en)/learn/vagus-nerve-evidence-vs-internet-claims/page.tsx",
+          "sha256": "0b3cfff6ce71f978a3361fcc65a42f28868cedd6310d71d7290c7568df45e94b",
+          "bytes_match_d1": true
+        }
+      ],
+      "claim_support_review_complete": false
+    },
+    {
+      "claim_id": "CLM-1A82B7FA24",
+      "canonical_claim": "Any product efficacy claim, condition-treatment claim, diagnosis, symptom score, health-input workflow or personalised exercise prescription.",
+      "policy": "NOT_ALLOWED",
+      "risk_class": "HIGH",
+      "owner_route": "/learn/vagus-nerve-exercises",
+      "applies_to_routes": [
+        "/learn/vagus-nerve-exercises"
+      ],
+      "locale_scope": [
+        "en"
+      ],
+      "owner_source_mapping_found": true,
+      "mapped_owner_files": [
+        "src/app/(en)/learn/vagus-nerve-exercises/page.tsx"
+      ],
+      "missing_declared_route_mappings": [],
+      "lexical_candidates": 0,
+      "inherited_source_pool_count": 6,
+      "inherited_structural_candidate_ids": [],
+      "approved_evidence_ids": [],
+      "coverage_conclusion": "MAPPING_ONLY_NOT_SCIENTIFIC_SUPPORT",
+      "translation_performed": false,
+      "mapping_basis": "EXISTING_DECLARED_OWNER_AND_D1_SOURCE_MAPPING_NO_SEMANTIC_INFERENCE",
+      "current_mapped_files": [
+        {
+          "path": "src/app/(en)/learn/vagus-nerve-exercises/page.tsx",
+          "sha256": "ce1703388f652c115b7ea98695e438df233bdc8c384d477ae9b914dfc2145d16",
+          "bytes_match_d1": true
+        }
+      ],
+      "claim_support_review_complete": false
+    },
+    {
+      "claim_id": "CLM-1AC3EF54DB",
+      "canonical_claim": "Transfer of athletic recovery or diving-response findings into a general therapeutic claim.",
+      "policy": "NOT_ALLOWED",
+      "risk_class": "MEDIUM",
+      "owner_route": "/learn/vagus-nerve-evidence-vs-internet-claims",
+      "applies_to_routes": [
+        "/learn/vagus-nerve-evidence-vs-internet-claims"
+      ],
+      "locale_scope": [
+        "en"
+      ],
+      "owner_source_mapping_found": true,
+      "mapped_owner_files": [
+        "src/app/(en)/learn/vagus-nerve-evidence-vs-internet-claims/page.tsx"
+      ],
+      "missing_declared_route_mappings": [],
+      "lexical_candidates": 0,
+      "inherited_source_pool_count": 11,
+      "inherited_structural_candidate_ids": [],
+      "approved_evidence_ids": [],
+      "coverage_conclusion": "MAPPING_ONLY_NOT_SCIENTIFIC_SUPPORT",
+      "translation_performed": false,
+      "mapping_basis": "EXISTING_DECLARED_OWNER_AND_D1_SOURCE_MAPPING_NO_SEMANTIC_INFERENCE",
+      "current_mapped_files": [
+        {
+          "path": "src/app/(en)/learn/vagus-nerve-evidence-vs-internet-claims/page.tsx",
+          "sha256": "0b3cfff6ce71f978a3361fcc65a42f28868cedd6310d71d7290c7568df45e94b",
+          "bytes_match_d1": true
+        }
+      ],
+      "claim_support_review_complete": false
+    },
+    {
+      "claim_id": "CLM-1E48802338",
+      "canonical_claim": "Electrical VNS is a distinct device/protocol category.",
+      "policy": "ALLOWED_WITH_QUALIFIERS",
+      "risk_class": "MEDIUM",
+      "owner_route": "/learn/vagus-nerve-reset",
+      "applies_to_routes": [
+        "/learn/vagus-nerve-reset"
+      ],
+      "locale_scope": [
+        "en"
+      ],
+      "owner_source_mapping_found": true,
+      "mapped_owner_files": [
+        "src/app/(en)/learn/vagus-nerve-reset/page.tsx"
+      ],
+      "missing_declared_route_mappings": [],
+      "lexical_candidates": 0,
+      "inherited_source_pool_count": 0,
+      "inherited_structural_candidate_ids": [],
+      "approved_evidence_ids": [],
+      "coverage_conclusion": "MAPPING_ONLY_NOT_SCIENTIFIC_SUPPORT",
+      "translation_performed": false,
+      "mapping_basis": "EXISTING_DECLARED_OWNER_AND_D1_SOURCE_MAPPING_NO_SEMANTIC_INFERENCE",
+      "current_mapped_files": [
+        {
+          "path": "src/app/(en)/learn/vagus-nerve-reset/page.tsx",
+          "sha256": "4806b7a10c8917a5c62b2334db56282dc57f392ba862e0cfd7c7c74c697d490e",
+          "bytes_match_d1": true
+        }
+      ],
+      "claim_support_review_complete": false
+    },
+    {
+      "claim_id": "CLM-1EA77BC4E3",
+      "canonical_claim": "use the lowest comfortable level;",
+      "policy": "ALLOWED_WITH_QUALIFIERS",
+      "risk_class": "MEDIUM",
+      "owner_route": "/learn/what-does-vagus-nerve-stimulation-feel-like",
+      "applies_to_routes": [
+        "/learn/what-does-vagus-nerve-stimulation-feel-like"
+      ],
+      "locale_scope": [
+        "en"
+      ],
+      "owner_source_mapping_found": true,
+      "mapped_owner_files": [
+        "src/app/(en)/learn/what-does-vagus-nerve-stimulation-feel-like/page.tsx"
+      ],
+      "missing_declared_route_mappings": [],
+      "lexical_candidates": 0,
+      "inherited_source_pool_count": 4,
+      "inherited_structural_candidate_ids": [],
+      "approved_evidence_ids": [],
+      "coverage_conclusion": "MAPPING_ONLY_NOT_SCIENTIFIC_SUPPORT",
+      "translation_performed": false,
+      "mapping_basis": "EXISTING_DECLARED_OWNER_AND_D1_SOURCE_MAPPING_NO_SEMANTIC_INFERENCE",
+      "current_mapped_files": [
+        {
+          "path": "src/app/(en)/learn/what-does-vagus-nerve-stimulation-feel-like/page.tsx",
+          "sha256": "207ef166b54a14ab9daa25913b4b704f517c2b2e9b956c91445fc25c4545b80b",
+          "bytes_match_d1": true
+        }
+      ],
+      "claim_support_review_complete": false
+    },
+    {
+      "claim_id": "CLM-1EBD72C17B",
+      "canonical_claim": "Distinguishing implanted, cervical, auricular and other electrical stimulation products.",
+      "policy": "ALLOWED_WITH_QUALIFIERS",
+      "risk_class": "MEDIUM",
+      "owner_route": "/no/kunnskap/hvordan-velge-vagusnervestimulator",
+      "applies_to_routes": [
+        "/no/kunnskap/hvordan-velge-vagusnervestimulator"
+      ],
+      "locale_scope": [
+        "nb"
+      ],
+      "owner_source_mapping_found": true,
+      "mapped_owner_files": [
+        "src/app/(no)/no/kunnskap/hvordan-velge-vagusnervestimulator/page.tsx",
+        "src/content/decision-guides/how-to-choose-vns-device.ts"
+      ],
+      "missing_declared_route_mappings": [],
+      "lexical_candidates": 0,
+      "inherited_source_pool_count": 0,
+      "inherited_structural_candidate_ids": [],
+      "approved_evidence_ids": [],
+      "coverage_conclusion": "MAPPING_ONLY_NOT_SCIENTIFIC_SUPPORT",
+      "translation_performed": false,
+      "mapping_basis": "EXISTING_DECLARED_OWNER_AND_D1_SOURCE_MAPPING_NO_SEMANTIC_INFERENCE",
+      "current_mapped_files": [
+        {
+          "path": "src/app/(no)/no/kunnskap/hvordan-velge-vagusnervestimulator/page.tsx",
+          "sha256": "a32a6d7c6ed156aad9b47c015a7c16748ea3212694398a7c048c93027892889f",
+          "bytes_match_d1": true
+        },
+        {
+          "path": "src/content/decision-guides/how-to-choose-vns-device.ts",
+          "sha256": "8cdc0af689f056125b32d07705d9d2c1a074a8176daeb2e4885ec13e74d5b983",
+          "bytes_match_d1": true
+        }
+      ],
+      "claim_support_review_complete": false
+    },
+    {
+      "claim_id": "CLM-27B460CBB0",
+      "canonical_claim": "avoid deliberate gagging instructions",
+      "policy": "SAFETY_BOUNDARY",
+      "risk_class": "CRITICAL",
+      "owner_route": "/learn/vagus-nerve-evidence-vs-internet-claims",
+      "applies_to_routes": [
+        "/learn/vagus-nerve-evidence-vs-internet-claims"
+      ],
+      "locale_scope": [
+        "en"
+      ],
+      "owner_source_mapping_found": true,
+      "mapped_owner_files": [
+        "src/app/(en)/learn/vagus-nerve-evidence-vs-internet-claims/page.tsx"
+      ],
+      "missing_declared_route_mappings": [],
+      "lexical_candidates": 0,
+      "inherited_source_pool_count": 11,
+      "inherited_structural_candidate_ids": [],
+      "approved_evidence_ids": [],
+      "coverage_conclusion": "MAPPING_ONLY_NOT_SCIENTIFIC_SUPPORT",
+      "translation_performed": false,
+      "mapping_basis": "EXISTING_DECLARED_OWNER_AND_D1_SOURCE_MAPPING_NO_SEMANTIC_INFERENCE",
+      "current_mapped_files": [
+        {
+          "path": "src/app/(en)/learn/vagus-nerve-evidence-vs-internet-claims/page.tsx",
+          "sha256": "0b3cfff6ce71f978a3361fcc65a42f28868cedd6310d71d7290c7568df45e94b",
+          "bytes_match_d1": true
+        }
+      ],
+      "claim_support_review_complete": false
+    },
+    {
+      "claim_id": "CLM-2B9A2F2C51",
+      "canonical_claim": "Slow breathing can affect heart rate, HRV-related measures and experience under studied conditions.",
+      "policy": "ALLOWED_WITH_QUALIFIERS",
+      "risk_class": "HIGH",
+      "owner_route": "/learn/vagus-nerve-reset",
+      "applies_to_routes": [
+        "/learn/vagus-nerve-reset"
+      ],
+      "locale_scope": [
+        "en"
+      ],
+      "owner_source_mapping_found": true,
+      "mapped_owner_files": [
+        "src/app/(en)/learn/vagus-nerve-reset/page.tsx"
+      ],
+      "missing_declared_route_mappings": [],
+      "lexical_candidates": 1,
+      "inherited_source_pool_count": 0,
+      "inherited_structural_candidate_ids": [],
+      "approved_evidence_ids": [],
+      "coverage_conclusion": "MAPPING_ONLY_NOT_SCIENTIFIC_SUPPORT",
+      "translation_performed": false,
+      "mapping_basis": "EXISTING_DECLARED_OWNER_AND_D1_SOURCE_MAPPING_NO_SEMANTIC_INFERENCE",
+      "current_mapped_files": [
+        {
+          "path": "src/app/(en)/learn/vagus-nerve-reset/page.tsx",
+          "sha256": "4806b7a10c8917a5c62b2334db56282dc57f392ba862e0cfd7c7c74c697d490e",
+          "bytes_match_d1": true
+        }
+      ],
+      "claim_support_review_complete": false
+    },
+    {
+      "claim_id": "CLM-2CFD01DC0C",
+      "canonical_claim": "Slow-paced breathing has a clearer direct literature for heart rate and HRV-related measures than many viral “vagus hack” claims.",
+      "policy": "ALLOWED_WITH_QUALIFIERS",
+      "risk_class": "HIGH",
+      "owner_route": "/learn/vagus-nerve-exercises",
+      "applies_to_routes": [
+        "/learn/vagus-nerve-exercises"
+      ],
+      "locale_scope": [
+        "en"
+      ],
+      "owner_source_mapping_found": true,
+      "mapped_owner_files": [
+        "src/app/(en)/learn/vagus-nerve-exercises/page.tsx"
+      ],
+      "missing_declared_route_mappings": [],
+      "lexical_candidates": 0,
+      "inherited_source_pool_count": 6,
+      "inherited_structural_candidate_ids": [],
+      "approved_evidence_ids": [],
+      "coverage_conclusion": "MAPPING_ONLY_NOT_SCIENTIFIC_SUPPORT",
+      "translation_performed": false,
+      "mapping_basis": "EXISTING_DECLARED_OWNER_AND_D1_SOURCE_MAPPING_NO_SEMANTIC_INFERENCE",
+      "current_mapped_files": [
+        {
+          "path": "src/app/(en)/learn/vagus-nerve-exercises/page.tsx",
+          "sha256": "ce1703388f652c115b7ea98695e438df233bdc8c384d477ae9b914dfc2145d16",
+          "bytes_match_d1": true
+        }
+      ],
+      "claim_support_review_complete": false
+    },
+    {
+      "claim_id": "CLM-2D9E4F88BC",
+      "canonical_claim": "“Cold resets the vagus nerve.”",
+      "policy": "NOT_ALLOWED",
+      "risk_class": "MEDIUM",
+      "owner_route": "/learn/vagus-nerve-evidence-vs-internet-claims",
+      "applies_to_routes": [
+        "/learn/vagus-nerve-evidence-vs-internet-claims"
+      ],
+      "locale_scope": [
+        "en"
+      ],
+      "owner_source_mapping_found": true,
+      "mapped_owner_files": [
+        "src/app/(en)/learn/vagus-nerve-evidence-vs-internet-claims/page.tsx"
+      ],
+      "missing_declared_route_mappings": [],
+      "lexical_candidates": 0,
+      "inherited_source_pool_count": 11,
+      "inherited_structural_candidate_ids": [],
+      "approved_evidence_ids": [],
+      "coverage_conclusion": "MAPPING_ONLY_NOT_SCIENTIFIC_SUPPORT",
+      "translation_performed": false,
+      "mapping_basis": "EXISTING_DECLARED_OWNER_AND_D1_SOURCE_MAPPING_NO_SEMANTIC_INFERENCE",
+      "current_mapped_files": [
+        {
+          "path": "src/app/(en)/learn/vagus-nerve-evidence-vs-internet-claims/page.tsx",
+          "sha256": "0b3cfff6ce71f978a3361fcc65a42f28868cedd6310d71d7290c7568df45e94b",
+          "bytes_match_d1": true
+        }
+      ],
+      "claim_support_review_complete": false
+    },
+    {
+      "claim_id": "CLM-2E6602452A",
+      "canonical_claim": "using general VNS research as direct proof of a Neuvago outcome;",
+      "policy": "NOT_ALLOWED",
+      "risk_class": "HIGH",
+      "owner_route": "/no/kunnskap/overstimulert",
+      "applies_to_routes": [
+        "/no/kunnskap/overstimulert"
+      ],
+      "locale_scope": [
+        "nb"
+      ],
+      "owner_source_mapping_found": true,
+      "mapped_owner_files": [
+        "src/content/knowledge/no/articles/overstimulert.ts"
+      ],
+      "missing_declared_route_mappings": [],
+      "lexical_candidates": 0,
+      "inherited_source_pool_count": 0,
+      "inherited_structural_candidate_ids": [],
+      "approved_evidence_ids": [],
+      "coverage_conclusion": "MAPPING_ONLY_NOT_SCIENTIFIC_SUPPORT",
+      "translation_performed": false,
+      "mapping_basis": "EXISTING_DECLARED_OWNER_AND_D1_SOURCE_MAPPING_NO_SEMANTIC_INFERENCE",
+      "current_mapped_files": [
+        {
+          "path": "src/content/knowledge/no/articles/overstimulert.ts",
+          "sha256": "20e7a70555bc531c7cbd8130906efc9228b4c5b85699158e486e0e3702297b75",
+          "bytes_match_d1": true
+        }
+      ],
+      "claim_support_review_complete": false
+    },
+    {
+      "claim_id": "CLM-30C3F01FD2",
+      "canonical_claim": "Converting a monitored clinical manoeuvre into a consumer wellness exercise.",
+      "policy": "NOT_ALLOWED",
+      "risk_class": "MEDIUM",
+      "owner_route": "/learn/vagus-nerve-evidence-vs-internet-claims",
+      "applies_to_routes": [
+        "/learn/vagus-nerve-evidence-vs-internet-claims"
+      ],
+      "locale_scope": [
+        "en"
+      ],
+      "owner_source_mapping_found": true,
+      "mapped_owner_files": [
+        "src/app/(en)/learn/vagus-nerve-evidence-vs-internet-claims/page.tsx"
+      ],
+      "missing_declared_route_mappings": [],
+      "lexical_candidates": 0,
+      "inherited_source_pool_count": 11,
+      "inherited_structural_candidate_ids": [],
+      "approved_evidence_ids": [],
+      "coverage_conclusion": "MAPPING_ONLY_NOT_SCIENTIFIC_SUPPORT",
+      "translation_performed": false,
+      "mapping_basis": "EXISTING_DECLARED_OWNER_AND_D1_SOURCE_MAPPING_NO_SEMANTIC_INFERENCE",
+      "current_mapped_files": [
+        {
+          "path": "src/app/(en)/learn/vagus-nerve-evidence-vs-internet-claims/page.tsx",
+          "sha256": "0b3cfff6ce71f978a3361fcc65a42f28868cedd6310d71d7290c7568df45e94b",
+          "bytes_match_d1": true
+        }
+      ],
+      "claim_support_review_complete": false
+    },
+    {
+      "claim_id": "CLM-3201E08FC5",
+      "canonical_claim": "Any transfer of implanted VNS, tVNS, taVNS or other electrical-device evidence to breathing, movement, yoga, humming, gargling, tapping, cold exposure or Neuvago.",
+      "policy": "NOT_ALLOWED",
+      "risk_class": "HIGH",
+      "owner_route": "/learn/vagus-nerve-exercises",
+      "applies_to_routes": [
+        "/learn/vagus-nerve-exercises"
+      ],
+      "locale_scope": [
+        "en"
+      ],
+      "owner_source_mapping_found": true,
+      "mapped_owner_files": [
+        "src/app/(en)/learn/vagus-nerve-exercises/page.tsx"
+      ],
+      "missing_declared_route_mappings": [],
+      "lexical_candidates": 0,
+      "inherited_source_pool_count": 6,
+      "inherited_structural_candidate_ids": [],
+      "approved_evidence_ids": [],
+      "coverage_conclusion": "MAPPING_ONLY_NOT_SCIENTIFIC_SUPPORT",
+      "translation_performed": false,
+      "mapping_basis": "EXISTING_DECLARED_OWNER_AND_D1_SOURCE_MAPPING_NO_SEMANTIC_INFERENCE",
+      "current_mapped_files": [
+        {
+          "path": "src/app/(en)/learn/vagus-nerve-exercises/page.tsx",
+          "sha256": "ce1703388f652c115b7ea98695e438df233bdc8c384d477ae9b914dfc2145d16",
+          "bytes_match_d1": true
+        }
+      ],
+      "claim_support_review_complete": false
+    },
+    {
+      "claim_id": "CLM-33DDD7F533",
+      "canonical_claim": "A short routine may help a person feel calmer without proving a vagus-specific mechanism.",
+      "policy": "ALLOWED_WITH_QUALIFIERS",
+      "risk_class": "MEDIUM",
+      "owner_route": "/learn/vagus-nerve-reset",
+      "applies_to_routes": [
+        "/learn/vagus-nerve-reset"
+      ],
+      "locale_scope": [
+        "en"
+      ],
+      "owner_source_mapping_found": true,
+      "mapped_owner_files": [
+        "src/app/(en)/learn/vagus-nerve-reset/page.tsx"
+      ],
+      "missing_declared_route_mappings": [],
+      "lexical_candidates": 0,
+      "inherited_source_pool_count": 0,
+      "inherited_structural_candidate_ids": [],
+      "approved_evidence_ids": [],
+      "coverage_conclusion": "MAPPING_ONLY_NOT_SCIENTIFIC_SUPPORT",
+      "translation_performed": false,
+      "mapping_basis": "EXISTING_DECLARED_OWNER_AND_D1_SOURCE_MAPPING_NO_SEMANTIC_INFERENCE",
+      "current_mapped_files": [
+        {
+          "path": "src/app/(en)/learn/vagus-nerve-reset/page.tsx",
+          "sha256": "4806b7a10c8917a5c62b2334db56282dc57f392ba862e0cfd7c7c74c697d490e",
+          "bytes_match_d1": true
+        }
+      ],
+      "claim_support_review_complete": false
+    },
+    {
+      "claim_id": "CLM-371DCDA754",
+      "canonical_claim": "Carotid-sinus self-massage instructions, coordinates, force, duration or side choice.",
+      "policy": "NOT_ALLOWED",
+      "risk_class": "CRITICAL",
+      "owner_route": "/no/kunnskap/vagusnerven-og-massasje",
+      "applies_to_routes": [
+        "/no/kunnskap/vagusnerven-og-massasje"
+      ],
+      "locale_scope": [
+        "nb"
+      ],
+      "owner_source_mapping_found": true,
+      "mapped_owner_files": [
+        "src/content/knowledge/no/articles/vagusnerven-og-massasje.ts"
+      ],
+      "missing_declared_route_mappings": [],
+      "lexical_candidates": 0,
+      "inherited_source_pool_count": 0,
+      "inherited_structural_candidate_ids": [],
+      "approved_evidence_ids": [],
+      "coverage_conclusion": "MAPPING_ONLY_NOT_SCIENTIFIC_SUPPORT",
+      "translation_performed": false,
+      "mapping_basis": "EXISTING_DECLARED_OWNER_AND_D1_SOURCE_MAPPING_NO_SEMANTIC_INFERENCE",
+      "current_mapped_files": [
+        {
+          "path": "src/content/knowledge/no/articles/vagusnerven-og-massasje.ts",
+          "sha256": "fe1023f4c5e573a5b395a733b60a7d54199c024a079e7124f77084e581500947",
+          "bytes_match_d1": true
+        }
+      ],
+      "claim_support_review_complete": false
+    },
+    {
+      "claim_id": "CLM-3824165942",
+      "canonical_claim": "keep carotid-sinus and strong neck-pressure manoeuvres in clinical/safety-sensitive territory",
+      "policy": "SAFETY_BOUNDARY",
+      "risk_class": "CRITICAL",
+      "owner_route": "/learn/vagus-nerve-evidence-vs-internet-claims",
+      "applies_to_routes": [
+        "/learn/vagus-nerve-evidence-vs-internet-claims"
+      ],
+      "locale_scope": [
+        "en"
+      ],
+      "owner_source_mapping_found": true,
+      "mapped_owner_files": [
+        "src/app/(en)/learn/vagus-nerve-evidence-vs-internet-claims/page.tsx"
+      ],
+      "missing_declared_route_mappings": [],
+      "lexical_candidates": 0,
+      "inherited_source_pool_count": 11,
+      "inherited_structural_candidate_ids": [],
+      "approved_evidence_ids": [],
+      "coverage_conclusion": "MAPPING_ONLY_NOT_SCIENTIFIC_SUPPORT",
+      "translation_performed": false,
+      "mapping_basis": "EXISTING_DECLARED_OWNER_AND_D1_SOURCE_MAPPING_NO_SEMANTIC_INFERENCE",
+      "current_mapped_files": [
+        {
+          "path": "src/app/(en)/learn/vagus-nerve-evidence-vs-internet-claims/page.tsx",
+          "sha256": "0b3cfff6ce71f978a3361fcc65a42f28868cedd6310d71d7290c7568df45e94b",
+          "bytes_match_d1": true
+        }
+      ],
+      "claim_support_review_complete": false
+    },
+    {
+      "claim_id": "CLM-38CCB4347C",
+      "canonical_claim": "Cold-water, face-cooling and cryostimulation paradigms can change heart rate, blood pressure and cardiac autonomic measures.",
+      "policy": "ALLOWED_WITH_QUALIFIERS",
+      "risk_class": "MEDIUM",
+      "owner_route": "/learn/vagus-nerve-evidence-vs-internet-claims",
+      "applies_to_routes": [
+        "/learn/vagus-nerve-evidence-vs-internet-claims"
+      ],
+      "locale_scope": [
+        "en"
+      ],
+      "owner_source_mapping_found": true,
+      "mapped_owner_files": [
+        "src/app/(en)/learn/vagus-nerve-evidence-vs-internet-claims/page.tsx"
+      ],
+      "missing_declared_route_mappings": [],
+      "lexical_candidates": 1,
+      "inherited_source_pool_count": 11,
+      "inherited_structural_candidate_ids": [],
+      "approved_evidence_ids": [],
+      "coverage_conclusion": "MAPPING_ONLY_NOT_SCIENTIFIC_SUPPORT",
+      "translation_performed": false,
+      "mapping_basis": "EXISTING_DECLARED_OWNER_AND_D1_SOURCE_MAPPING_NO_SEMANTIC_INFERENCE",
+      "current_mapped_files": [
+        {
+          "path": "src/app/(en)/learn/vagus-nerve-evidence-vs-internet-claims/page.tsx",
+          "sha256": "0b3cfff6ce71f978a3361fcc65a42f28868cedd6310d71d7290c7568df45e94b",
+          "bytes_match_d1": true
+        }
+      ],
+      "claim_support_review_complete": false
+    },
+    {
+      "claim_id": "CLM-3A910CFF37",
+      "canonical_claim": "using general VNS or stress research as direct proof of a Neuvago outcome;",
+      "policy": "NOT_ALLOWED",
+      "risk_class": "HIGH",
+      "owner_route": "/no/kunnskap/fastlast-i-stress",
+      "applies_to_routes": [
+        "/no/kunnskap/fastlast-i-stress"
+      ],
+      "locale_scope": [
+        "nb"
+      ],
+      "owner_source_mapping_found": true,
+      "mapped_owner_files": [
+        "src/content/knowledge/no/articles/fastlast-i-stress.ts"
+      ],
+      "missing_declared_route_mappings": [],
+      "lexical_candidates": 0,
+      "inherited_source_pool_count": 0,
+      "inherited_structural_candidate_ids": [],
+      "approved_evidence_ids": [],
+      "coverage_conclusion": "MAPPING_ONLY_NOT_SCIENTIFIC_SUPPORT",
+      "translation_performed": false,
+      "mapping_basis": "EXISTING_DECLARED_OWNER_AND_D1_SOURCE_MAPPING_NO_SEMANTIC_INFERENCE",
+      "current_mapped_files": [
+        {
+          "path": "src/content/knowledge/no/articles/fastlast-i-stress.ts",
+          "sha256": "1ecb93525f481bb810393dcfd21efbb1929f30a613c5168b77fe1ec36fff12e8",
+          "bytes_match_d1": true
+        }
+      ],
+      "claim_support_review_complete": false
+    },
+    {
+      "claim_id": "CLM-411854975C",
+      "canonical_claim": "set intensity slowly;",
+      "policy": "ALLOWED_WITH_QUALIFIERS",
+      "risk_class": "MEDIUM",
+      "owner_route": "/learn/what-does-vagus-nerve-stimulation-feel-like",
+      "applies_to_routes": [
+        "/learn/what-does-vagus-nerve-stimulation-feel-like"
+      ],
+      "locale_scope": [
+        "en"
+      ],
+      "owner_source_mapping_found": true,
+      "mapped_owner_files": [
+        "src/app/(en)/learn/what-does-vagus-nerve-stimulation-feel-like/page.tsx"
+      ],
+      "missing_declared_route_mappings": [],
+      "lexical_candidates": 0,
+      "inherited_source_pool_count": 4,
+      "inherited_structural_candidate_ids": [],
+      "approved_evidence_ids": [],
+      "coverage_conclusion": "MAPPING_ONLY_NOT_SCIENTIFIC_SUPPORT",
+      "translation_performed": false,
+      "mapping_basis": "EXISTING_DECLARED_OWNER_AND_D1_SOURCE_MAPPING_NO_SEMANTIC_INFERENCE",
+      "current_mapped_files": [
+        {
+          "path": "src/app/(en)/learn/what-does-vagus-nerve-stimulation-feel-like/page.tsx",
+          "sha256": "207ef166b54a14ab9daa25913b4b704f517c2b2e9b956c91445fc25c4545b80b",
+          "bytes_match_d1": true
+        }
+      ],
+      "claim_support_review_complete": false
+    },
+    {
+      "claim_id": "CLM-41DF51F987",
+      "canonical_claim": "Give carotid-sinus self-massage instructions, coordinates, force, duration or side choice.",
+      "policy": "NOT_ALLOWED",
+      "risk_class": "CRITICAL",
+      "owner_route": "/learn/vagus-nerve-massage",
+      "applies_to_routes": [
+        "/learn/vagus-nerve-massage"
+      ],
+      "locale_scope": [
+        "en"
+      ],
+      "owner_source_mapping_found": true,
+      "mapped_owner_files": [
+        "src/app/(en)/learn/vagus-nerve-massage/page.tsx"
+      ],
+      "missing_declared_route_mappings": [],
+      "lexical_candidates": 0,
+      "inherited_source_pool_count": 0,
+      "inherited_structural_candidate_ids": [],
+      "approved_evidence_ids": [],
+      "coverage_conclusion": "MAPPING_ONLY_NOT_SCIENTIFIC_SUPPORT",
+      "translation_performed": false,
+      "mapping_basis": "EXISTING_DECLARED_OWNER_AND_D1_SOURCE_MAPPING_NO_SEMANTIC_INFERENCE",
+      "current_mapped_files": [
+        {
+          "path": "src/app/(en)/learn/vagus-nerve-massage/page.tsx",
+          "sha256": "a7fb748fb50cd6b41adec7b09b7dd065bec0b5250e1a766532541fe00dab4efd",
+          "bytes_match_d1": true
+        }
+      ],
+      "claim_support_review_complete": false
+    },
+    {
+      "claim_id": "CLM-4383F7D266",
+      "canonical_claim": "Any statement that a behavioural exercise has been proven to directly and selectively stimulate the whole vagus nerve.",
+      "policy": "NOT_ALLOWED",
+      "risk_class": "MEDIUM",
+      "owner_route": "/learn/vagus-nerve-exercises",
+      "applies_to_routes": [
+        "/learn/vagus-nerve-exercises"
+      ],
+      "locale_scope": [
+        "en"
+      ],
+      "owner_source_mapping_found": true,
+      "mapped_owner_files": [
+        "src/app/(en)/learn/vagus-nerve-exercises/page.tsx"
+      ],
+      "missing_declared_route_mappings": [],
+      "lexical_candidates": 0,
+      "inherited_source_pool_count": 6,
+      "inherited_structural_candidate_ids": [],
+      "approved_evidence_ids": [],
+      "coverage_conclusion": "MAPPING_ONLY_NOT_SCIENTIFIC_SUPPORT",
+      "translation_performed": false,
+      "mapping_basis": "EXISTING_DECLARED_OWNER_AND_D1_SOURCE_MAPPING_NO_SEMANTIC_INFERENCE",
+      "current_mapped_files": [
+        {
+          "path": "src/app/(en)/learn/vagus-nerve-exercises/page.tsx",
+          "sha256": "ce1703388f652c115b7ea98695e438df233bdc8c384d477ae9b914dfc2145d16",
+          "bytes_match_d1": true
+        }
+      ],
+      "claim_support_review_complete": false
+    },
+    {
+      "claim_id": "CLM-439EF0D688",
+      "canonical_claim": "A wearable value proves a weak, damaged, inflamed or “unbalanced” vagus nerve.",
+      "policy": "NOT_ALLOWED",
+      "risk_class": "MEDIUM",
+      "owner_route": "/learn/vagus-nerve-reset",
+      "applies_to_routes": [
+        "/learn/vagus-nerve-reset"
+      ],
+      "locale_scope": [
+        "en"
+      ],
+      "owner_source_mapping_found": true,
+      "mapped_owner_files": [
+        "src/app/(en)/learn/vagus-nerve-reset/page.tsx"
+      ],
+      "missing_declared_route_mappings": [],
+      "lexical_candidates": 0,
+      "inherited_source_pool_count": 0,
+      "inherited_structural_candidate_ids": [],
+      "approved_evidence_ids": [],
+      "coverage_conclusion": "MAPPING_ONLY_NOT_SCIENTIFIC_SUPPORT",
+      "translation_performed": false,
+      "mapping_basis": "EXISTING_DECLARED_OWNER_AND_D1_SOURCE_MAPPING_NO_SEMANTIC_INFERENCE",
+      "current_mapped_files": [
+        {
+          "path": "src/app/(en)/learn/vagus-nerve-reset/page.tsx",
+          "sha256": "4806b7a10c8917a5c62b2334db56282dc57f392ba862e0cfd7c7c74c697d490e",
+          "bytes_match_d1": true
+        }
+      ],
+      "claim_support_review_complete": false
+    },
+    {
+      "claim_id": "CLM-4713550E4B",
+      "canonical_claim": "transfer of implanted VNS, tVNS, taVNS or Neuvago evidence to behavioural practices",
+      "policy": "PROHIBITED",
+      "risk_class": "CRITICAL",
+      "owner_route": "/learn/vagus-nerve-evidence-vs-internet-claims",
+      "applies_to_routes": [
+        "/learn/vagus-nerve-evidence-vs-internet-claims"
+      ],
+      "locale_scope": [
+        "en"
+      ],
+      "owner_source_mapping_found": true,
+      "mapped_owner_files": [
+        "src/app/(en)/learn/vagus-nerve-evidence-vs-internet-claims/page.tsx"
+      ],
+      "missing_declared_route_mappings": [],
+      "lexical_candidates": 0,
+      "inherited_source_pool_count": 11,
+      "inherited_structural_candidate_ids": [],
+      "approved_evidence_ids": [],
+      "coverage_conclusion": "MAPPING_ONLY_NOT_SCIENTIFIC_SUPPORT",
+      "translation_performed": false,
+      "mapping_basis": "EXISTING_DECLARED_OWNER_AND_D1_SOURCE_MAPPING_NO_SEMANTIC_INFERENCE",
+      "current_mapped_files": [
+        {
+          "path": "src/app/(en)/learn/vagus-nerve-evidence-vs-internet-claims/page.tsx",
+          "sha256": "0b3cfff6ce71f978a3361fcc65a42f28868cedd6310d71d7290c7568df45e94b",
+          "bytes_match_d1": true
+        }
+      ],
+      "claim_support_review_complete": false
+    },
+    {
+      "claim_id": "CLM-4BF1EF37D5",
+      "canonical_claim": "diagnosis of a weak, damaged, overactive or underactive vagus nerve from self-observation",
+      "policy": "PROHIBITED",
+      "risk_class": "CRITICAL",
+      "owner_route": "/learn/vagus-nerve-evidence-vs-internet-claims",
+      "applies_to_routes": [
+        "/learn/vagus-nerve-evidence-vs-internet-claims"
+      ],
+      "locale_scope": [
+        "en"
+      ],
+      "owner_source_mapping_found": true,
+      "mapped_owner_files": [
+        "src/app/(en)/learn/vagus-nerve-evidence-vs-internet-claims/page.tsx"
+      ],
+      "missing_declared_route_mappings": [],
+      "lexical_candidates": 0,
+      "inherited_source_pool_count": 11,
+      "inherited_structural_candidate_ids": [],
+      "approved_evidence_ids": [],
+      "coverage_conclusion": "MAPPING_ONLY_NOT_SCIENTIFIC_SUPPORT",
+      "translation_performed": false,
+      "mapping_basis": "EXISTING_DECLARED_OWNER_AND_D1_SOURCE_MAPPING_NO_SEMANTIC_INFERENCE",
+      "current_mapped_files": [
+        {
+          "path": "src/app/(en)/learn/vagus-nerve-evidence-vs-internet-claims/page.tsx",
+          "sha256": "0b3cfff6ce71f978a3361fcc65a42f28868cedd6310d71d7290c7568df45e94b",
+          "bytes_match_d1": true
+        }
+      ],
+      "claim_support_review_complete": false
+    },
+    {
+      "claim_id": "CLM-4DB60F3096",
+      "canonical_claim": "General breathing, grounding, movement or relaxation is automatically electrical VNS.",
+      "policy": "NOT_ALLOWED",
+      "risk_class": "MEDIUM",
+      "owner_route": "/learn/vagus-nerve-reset",
+      "applies_to_routes": [
+        "/learn/vagus-nerve-reset"
+      ],
+      "locale_scope": [
+        "en"
+      ],
+      "owner_source_mapping_found": true,
+      "mapped_owner_files": [
+        "src/app/(en)/learn/vagus-nerve-reset/page.tsx"
+      ],
+      "missing_declared_route_mappings": [],
+      "lexical_candidates": 0,
+      "inherited_source_pool_count": 0,
+      "inherited_structural_candidate_ids": [],
+      "approved_evidence_ids": [],
+      "coverage_conclusion": "MAPPING_ONLY_NOT_SCIENTIFIC_SUPPORT",
+      "translation_performed": false,
+      "mapping_basis": "EXISTING_DECLARED_OWNER_AND_D1_SOURCE_MAPPING_NO_SEMANTIC_INFERENCE",
+      "current_mapped_files": [
+        {
+          "path": "src/app/(en)/learn/vagus-nerve-reset/page.tsx",
+          "sha256": "4806b7a10c8917a5c62b2334db56282dc57f392ba862e0cfd7c7c74c697d490e",
+          "bytes_match_d1": true
+        }
+      ],
+      "claim_support_review_complete": false
+    },
+    {
+      "claim_id": "CLM-4EF31024A2",
+      "canonical_claim": "stronger stimulation is better or more effective;",
+      "policy": "NOT_ALLOWED",
+      "risk_class": "HIGH",
+      "owner_route": "/learn/what-does-vagus-nerve-stimulation-feel-like",
+      "applies_to_routes": [
+        "/learn/what-does-vagus-nerve-stimulation-feel-like"
+      ],
+      "locale_scope": [
+        "en"
+      ],
+      "owner_source_mapping_found": true,
+      "mapped_owner_files": [
+        "src/app/(en)/learn/what-does-vagus-nerve-stimulation-feel-like/page.tsx"
+      ],
+      "missing_declared_route_mappings": [],
+      "lexical_candidates": 0,
+      "inherited_source_pool_count": 4,
+      "inherited_structural_candidate_ids": [],
+      "approved_evidence_ids": [],
+      "coverage_conclusion": "MAPPING_ONLY_NOT_SCIENTIFIC_SUPPORT",
+      "translation_performed": false,
+      "mapping_basis": "EXISTING_DECLARED_OWNER_AND_D1_SOURCE_MAPPING_NO_SEMANTIC_INFERENCE",
+      "current_mapped_files": [
+        {
+          "path": "src/app/(en)/learn/what-does-vagus-nerve-stimulation-feel-like/page.tsx",
+          "sha256": "207ef166b54a14ab9daa25913b4b704f517c2b2e9b956c91445fc25c4545b80b",
+          "bytes_match_d1": true
+        }
+      ],
+      "claim_support_review_complete": false
+    },
+    {
+      "claim_id": "CLM-555A0B2626",
+      "canonical_claim": "secure, balanced and comfortable earpiece contact;",
+      "policy": "ALLOWED_WITH_QUALIFIERS",
+      "risk_class": "HIGH",
+      "owner_route": "/learn/what-does-vagus-nerve-stimulation-feel-like",
+      "applies_to_routes": [
+        "/learn/what-does-vagus-nerve-stimulation-feel-like"
+      ],
+      "locale_scope": [
+        "en"
+      ],
+      "owner_source_mapping_found": true,
+      "mapped_owner_files": [
+        "src/app/(en)/learn/what-does-vagus-nerve-stimulation-feel-like/page.tsx"
+      ],
+      "missing_declared_route_mappings": [],
+      "lexical_candidates": 0,
+      "inherited_source_pool_count": 4,
+      "inherited_structural_candidate_ids": [],
+      "approved_evidence_ids": [],
+      "coverage_conclusion": "MAPPING_ONLY_NOT_SCIENTIFIC_SUPPORT",
+      "translation_performed": false,
+      "mapping_basis": "EXISTING_DECLARED_OWNER_AND_D1_SOURCE_MAPPING_NO_SEMANTIC_INFERENCE",
+      "current_mapped_files": [
+        {
+          "path": "src/app/(en)/learn/what-does-vagus-nerve-stimulation-feel-like/page.tsx",
+          "sha256": "207ef166b54a14ab9daa25913b4b704f517c2b2e9b956c91445fc25c4545b80b",
+          "bytes_match_d1": true
+        }
+      ],
+      "claim_support_review_complete": false
+    },
+    {
+      "claim_id": "CLM-55AEC4252F",
+      "canonical_claim": "promising a nervous-system reset, trauma release, cortisol reduction or guaranteed recovery;",
+      "policy": "NOT_ALLOWED",
+      "risk_class": "MEDIUM",
+      "owner_route": "/no/kunnskap/fastlast-i-stress",
+      "applies_to_routes": [
+        "/no/kunnskap/fastlast-i-stress"
+      ],
+      "locale_scope": [
+        "nb"
+      ],
+      "owner_source_mapping_found": true,
+      "mapped_owner_files": [
+        "src/content/knowledge/no/articles/fastlast-i-stress.ts"
+      ],
+      "missing_declared_route_mappings": [],
+      "lexical_candidates": 0,
+      "inherited_source_pool_count": 0,
+      "inherited_structural_candidate_ids": [],
+      "approved_evidence_ids": [],
+      "coverage_conclusion": "MAPPING_ONLY_NOT_SCIENTIFIC_SUPPORT",
+      "translation_performed": false,
+      "mapping_basis": "EXISTING_DECLARED_OWNER_AND_D1_SOURCE_MAPPING_NO_SEMANTIC_INFERENCE",
+      "current_mapped_files": [
+        {
+          "path": "src/content/knowledge/no/articles/fastlast-i-stress.ts",
+          "sha256": "1ecb93525f481bb810393dcfd21efbb1929f30a613c5168b77fe1ec36fff12e8",
+          "bytes_match_d1": true
+        }
+      ],
+      "claim_support_review_complete": false
+    },
+    {
+      "claim_id": "CLM-55F74D6B7F",
+      "canonical_claim": "Massage studies can report subjective and cardiac/autonomic measures without proving selective vagus engagement.",
+      "policy": "ALLOWED_WITH_QUALIFIERS",
+      "risk_class": "MEDIUM",
+      "owner_route": "/learn/vagus-nerve-massage",
+      "applies_to_routes": [
+        "/learn/vagus-nerve-massage"
+      ],
+      "locale_scope": [
+        "en"
+      ],
+      "owner_source_mapping_found": true,
+      "mapped_owner_files": [
+        "src/app/(en)/learn/vagus-nerve-massage/page.tsx"
+      ],
+      "missing_declared_route_mappings": [],
+      "lexical_candidates": 0,
+      "inherited_source_pool_count": 0,
+      "inherited_structural_candidate_ids": [],
+      "approved_evidence_ids": [],
+      "coverage_conclusion": "MAPPING_ONLY_NOT_SCIENTIFIC_SUPPORT",
+      "translation_performed": false,
+      "mapping_basis": "EXISTING_DECLARED_OWNER_AND_D1_SOURCE_MAPPING_NO_SEMANTIC_INFERENCE",
+      "current_mapped_files": [
+        {
+          "path": "src/app/(en)/learn/vagus-nerve-massage/page.tsx",
+          "sha256": "a7fb748fb50cd6b41adec7b09b7dd065bec0b5250e1a766532541fe00dab4efd",
+          "bytes_match_d1": true
+        }
+      ],
+      "claim_support_review_complete": false
+    },
+    {
+      "claim_id": "CLM-5A7D1C1D8B",
+      "canonical_claim": "guaranteed vagus activation, reset, healing or “toning”",
+      "policy": "PROHIBITED",
+      "risk_class": "CRITICAL",
+      "owner_route": "/learn/vagus-nerve-evidence-vs-internet-claims",
+      "applies_to_routes": [
+        "/learn/vagus-nerve-evidence-vs-internet-claims"
+      ],
+      "locale_scope": [
+        "en"
+      ],
+      "owner_source_mapping_found": true,
+      "mapped_owner_files": [
+        "src/app/(en)/learn/vagus-nerve-evidence-vs-internet-claims/page.tsx"
+      ],
+      "missing_declared_route_mappings": [],
+      "lexical_candidates": 0,
+      "inherited_source_pool_count": 11,
+      "inherited_structural_candidate_ids": [],
+      "approved_evidence_ids": [],
+      "coverage_conclusion": "MAPPING_ONLY_NOT_SCIENTIFIC_SUPPORT",
+      "translation_performed": false,
+      "mapping_basis": "EXISTING_DECLARED_OWNER_AND_D1_SOURCE_MAPPING_NO_SEMANTIC_INFERENCE",
+      "current_mapped_files": [
+        {
+          "path": "src/app/(en)/learn/vagus-nerve-evidence-vs-internet-claims/page.tsx",
+          "sha256": "0b3cfff6ce71f978a3361fcc65a42f28868cedd6310d71d7290c7568df45e94b",
+          "bytes_match_d1": true
+        }
+      ],
+      "claim_support_review_complete": false
+    },
+    {
+      "claim_id": "CLM-5C8DA3AA27",
+      "canonical_claim": "The outer ear has mixed innervation; manual ear touch is not equivalent to electrical taVNS.",
+      "policy": "ALLOWED_WITH_QUALIFIERS",
+      "risk_class": "MEDIUM",
+      "owner_route": "/learn/vagus-nerve-massage",
+      "applies_to_routes": [
+        "/learn/vagus-nerve-massage"
+      ],
+      "locale_scope": [
+        "en"
+      ],
+      "owner_source_mapping_found": true,
+      "mapped_owner_files": [
+        "src/app/(en)/learn/vagus-nerve-massage/page.tsx"
+      ],
+      "missing_declared_route_mappings": [],
+      "lexical_candidates": 0,
+      "inherited_source_pool_count": 0,
+      "inherited_structural_candidate_ids": [],
+      "approved_evidence_ids": [],
+      "coverage_conclusion": "MAPPING_ONLY_NOT_SCIENTIFIC_SUPPORT",
+      "translation_performed": false,
+      "mapping_basis": "EXISTING_DECLARED_OWNER_AND_D1_SOURCE_MAPPING_NO_SEMANTIC_INFERENCE",
+      "current_mapped_files": [
+        {
+          "path": "src/app/(en)/learn/vagus-nerve-massage/page.tsx",
+          "sha256": "a7fb748fb50cd6b41adec7b09b7dd065bec0b5250e1a766532541fe00dab4efd",
+          "bytes_match_d1": true
+        }
+      ],
+      "claim_support_review_complete": false
+    },
+    {
+      "claim_id": "CLM-60596631A5",
+      "canonical_claim": "avoid cold-plunge or face-immersion dosing",
+      "policy": "SAFETY_BOUNDARY",
+      "risk_class": "CRITICAL",
+      "owner_route": "/learn/vagus-nerve-evidence-vs-internet-claims",
+      "applies_to_routes": [
+        "/learn/vagus-nerve-evidence-vs-internet-claims"
+      ],
+      "locale_scope": [
+        "en"
+      ],
+      "owner_source_mapping_found": true,
+      "mapped_owner_files": [
+        "src/app/(en)/learn/vagus-nerve-evidence-vs-internet-claims/page.tsx"
+      ],
+      "missing_declared_route_mappings": [],
+      "lexical_candidates": 0,
+      "inherited_source_pool_count": 11,
+      "inherited_structural_candidate_ids": [],
+      "approved_evidence_ids": [],
+      "coverage_conclusion": "MAPPING_ONLY_NOT_SCIENTIFIC_SUPPORT",
+      "translation_performed": false,
+      "mapping_basis": "EXISTING_DECLARED_OWNER_AND_D1_SOURCE_MAPPING_NO_SEMANTIC_INFERENCE",
+      "current_mapped_files": [
+        {
+          "path": "src/app/(en)/learn/vagus-nerve-evidence-vs-internet-claims/page.tsx",
+          "sha256": "0b3cfff6ce71f978a3361fcc65a42f28868cedd6310d71d7290c7568df45e94b",
+          "bytes_match_d1": true
+        }
+      ],
+      "claim_support_review_complete": false
+    },
+    {
+      "claim_id": "CLM-620E014D76",
+      "canonical_claim": "“Best” rankings, fabricated reviews/tests or comparative superiority claims.",
+      "policy": "NOT_ALLOWED",
+      "risk_class": "MEDIUM",
+      "owner_route": "/no/kunnskap/hvordan-velge-vagusnervestimulator",
+      "applies_to_routes": [
+        "/no/kunnskap/hvordan-velge-vagusnervestimulator"
+      ],
+      "locale_scope": [
+        "nb"
+      ],
+      "owner_source_mapping_found": true,
+      "mapped_owner_files": [
+        "src/app/(no)/no/kunnskap/hvordan-velge-vagusnervestimulator/page.tsx",
+        "src/content/decision-guides/how-to-choose-vns-device.ts"
+      ],
+      "missing_declared_route_mappings": [],
+      "lexical_candidates": 0,
+      "inherited_source_pool_count": 0,
+      "inherited_structural_candidate_ids": [],
+      "approved_evidence_ids": [],
+      "coverage_conclusion": "MAPPING_ONLY_NOT_SCIENTIFIC_SUPPORT",
+      "translation_performed": false,
+      "mapping_basis": "EXISTING_DECLARED_OWNER_AND_D1_SOURCE_MAPPING_NO_SEMANTIC_INFERENCE",
+      "current_mapped_files": [
+        {
+          "path": "src/app/(no)/no/kunnskap/hvordan-velge-vagusnervestimulator/page.tsx",
+          "sha256": "a32a6d7c6ed156aad9b47c015a7c16748ea3212694398a7c048c93027892889f",
+          "bytes_match_d1": true
+        },
+        {
+          "path": "src/content/decision-guides/how-to-choose-vns-device.ts",
+          "sha256": "8cdc0af689f056125b32d07705d9d2c1a074a8176daeb2e4885ec13e74d5b983",
+          "bytes_match_d1": true
+        }
+      ],
+      "claim_support_review_complete": false
+    },
+    {
+      "claim_id": "CLM-6545931318",
+      "canonical_claim": "direct target engagement inferred from warmth, tingling, yawning, sighing, calm, pulse change or one HRV reading",
+      "policy": "PROHIBITED",
+      "risk_class": "CRITICAL",
+      "owner_route": "/learn/vagus-nerve-evidence-vs-internet-claims",
+      "applies_to_routes": [
+        "/learn/vagus-nerve-evidence-vs-internet-claims"
+      ],
+      "locale_scope": [
+        "en"
+      ],
+      "owner_source_mapping_found": true,
+      "mapped_owner_files": [
+        "src/app/(en)/learn/vagus-nerve-evidence-vs-internet-claims/page.tsx"
+      ],
+      "missing_declared_route_mappings": [],
+      "lexical_candidates": 0,
+      "inherited_source_pool_count": 11,
+      "inherited_structural_candidate_ids": [],
+      "approved_evidence_ids": [],
+      "coverage_conclusion": "MAPPING_ONLY_NOT_SCIENTIFIC_SUPPORT",
+      "translation_performed": false,
+      "mapping_basis": "EXISTING_DECLARED_OWNER_AND_D1_SOURCE_MAPPING_NO_SEMANTIC_INFERENCE",
+      "current_mapped_files": [
+        {
+          "path": "src/app/(en)/learn/vagus-nerve-evidence-vs-internet-claims/page.tsx",
+          "sha256": "0b3cfff6ce71f978a3361fcc65a42f28868cedd6310d71d7290c7568df45e94b",
+          "bytes_match_d1": true
+        }
+      ],
+      "claim_support_review_complete": false
+    },
+    {
+      "claim_id": "CLM-661FAD9613",
+      "canonical_claim": "Effects vary by exposure type, temperature, immersion, timing and individual context.",
+      "policy": "ALLOWED_WITH_QUALIFIERS",
+      "risk_class": "MEDIUM",
+      "owner_route": "/learn/vagus-nerve-evidence-vs-internet-claims",
+      "applies_to_routes": [
+        "/learn/vagus-nerve-evidence-vs-internet-claims"
+      ],
+      "locale_scope": [
+        "en"
+      ],
+      "owner_source_mapping_found": true,
+      "mapped_owner_files": [
+        "src/app/(en)/learn/vagus-nerve-evidence-vs-internet-claims/page.tsx"
+      ],
+      "missing_declared_route_mappings": [],
+      "lexical_candidates": 0,
+      "inherited_source_pool_count": 11,
+      "inherited_structural_candidate_ids": [],
+      "approved_evidence_ids": [],
+      "coverage_conclusion": "MAPPING_ONLY_NOT_SCIENTIFIC_SUPPORT",
+      "translation_performed": false,
+      "mapping_basis": "EXISTING_DECLARED_OWNER_AND_D1_SOURCE_MAPPING_NO_SEMANTIC_INFERENCE",
+      "current_mapped_files": [
+        {
+          "path": "src/app/(en)/learn/vagus-nerve-evidence-vs-internet-claims/page.tsx",
+          "sha256": "0b3cfff6ce71f978a3361fcc65a42f28868cedd6310d71d7290c7568df45e94b",
+          "bytes_match_d1": true
+        }
+      ],
+      "claim_support_review_complete": false
+    },
+    {
+      "claim_id": "CLM-66D82B628C",
+      "canonical_claim": "Transferring implanted-VNS indications or research automatically to non-invasive devices or Neuvago.",
+      "policy": "NOT_ALLOWED",
+      "risk_class": "HIGH",
+      "owner_route": "/no/kunnskap/hvordan-velge-vagusnervestimulator",
+      "applies_to_routes": [
+        "/no/kunnskap/hvordan-velge-vagusnervestimulator"
+      ],
+      "locale_scope": [
+        "nb"
+      ],
+      "owner_source_mapping_found": true,
+      "mapped_owner_files": [
+        "src/app/(no)/no/kunnskap/hvordan-velge-vagusnervestimulator/page.tsx",
+        "src/content/decision-guides/how-to-choose-vns-device.ts"
+      ],
+      "missing_declared_route_mappings": [],
+      "lexical_candidates": 0,
+      "inherited_source_pool_count": 0,
+      "inherited_structural_candidate_ids": [],
+      "approved_evidence_ids": [],
+      "coverage_conclusion": "MAPPING_ONLY_NOT_SCIENTIFIC_SUPPORT",
+      "translation_performed": false,
+      "mapping_basis": "EXISTING_DECLARED_OWNER_AND_D1_SOURCE_MAPPING_NO_SEMANTIC_INFERENCE",
+      "current_mapped_files": [
+        {
+          "path": "src/app/(no)/no/kunnskap/hvordan-velge-vagusnervestimulator/page.tsx",
+          "sha256": "a32a6d7c6ed156aad9b47c015a7c16748ea3212694398a7c048c93027892889f",
+          "bytes_match_d1": true
+        },
+        {
+          "path": "src/content/decision-guides/how-to-choose-vns-device.ts",
+          "sha256": "8cdc0af689f056125b32d07705d9d2c1a074a8176daeb2e4885ec13e74d5b983",
+          "bytes_match_d1": true
+        }
+      ],
+      "claim_support_review_complete": false
+    },
+    {
+      "claim_id": "CLM-69302C1A6B",
+      "canonical_claim": "urgent help and not being alone when there is risk of self-harm or harm to others.",
+      "policy": "SAFETY_BOUNDARY",
+      "risk_class": "CRITICAL",
+      "owner_route": "/no/kunnskap/restitusjon-og-regulering",
+      "applies_to_routes": [
+        "/no/kunnskap/restitusjon-og-regulering"
+      ],
+      "locale_scope": [
+        "nb"
+      ],
+      "owner_source_mapping_found": true,
+      "mapped_owner_files": [
+        "src/content/knowledge/no/articles/restitusjon-og-regulering.ts"
+      ],
+      "missing_declared_route_mappings": [],
+      "lexical_candidates": 0,
+      "inherited_source_pool_count": 0,
+      "inherited_structural_candidate_ids": [],
+      "approved_evidence_ids": [],
+      "coverage_conclusion": "MAPPING_ONLY_NOT_SCIENTIFIC_SUPPORT",
+      "translation_performed": false,
+      "mapping_basis": "EXISTING_DECLARED_OWNER_AND_D1_SOURCE_MAPPING_NO_SEMANTIC_INFERENCE",
+      "current_mapped_files": [
+        {
+          "path": "src/content/knowledge/no/articles/restitusjon-og-regulering.ts",
+          "sha256": "592a2d7682d89ff37ce771aeca6e8854ba53723bf6071a26e19ac06e9326bef5",
+          "bytes_match_d1": true
+        }
+      ],
+      "claim_support_review_complete": false
+    },
+    {
+      "claim_id": "CLM-6BE408081F",
+      "canonical_claim": "Category-level VNS evidence becomes Neuvago product evidence.",
+      "policy": "NOT_ALLOWED",
+      "risk_class": "HIGH",
+      "owner_route": "/learn/vagus-nerve-reset",
+      "applies_to_routes": [
+        "/learn/vagus-nerve-reset"
+      ],
+      "locale_scope": [
+        "en"
+      ],
+      "owner_source_mapping_found": true,
+      "mapped_owner_files": [
+        "src/app/(en)/learn/vagus-nerve-reset/page.tsx"
+      ],
+      "missing_declared_route_mappings": [],
+      "lexical_candidates": 0,
+      "inherited_source_pool_count": 0,
+      "inherited_structural_candidate_ids": [],
+      "approved_evidence_ids": [],
+      "coverage_conclusion": "MAPPING_ONLY_NOT_SCIENTIFIC_SUPPORT",
+      "translation_performed": false,
+      "mapping_basis": "EXISTING_DECLARED_OWNER_AND_D1_SOURCE_MAPPING_NO_SEMANTIC_INFERENCE",
+      "current_mapped_files": [
+        {
+          "path": "src/app/(en)/learn/vagus-nerve-reset/page.tsx",
+          "sha256": "4806b7a10c8917a5c62b2334db56282dc57f392ba862e0cfd7c7c74c697d490e",
+          "bytes_match_d1": true
+        }
+      ],
+      "claim_support_review_complete": false
+    },
+    {
+      "claim_id": "CLM-6EF605C4A5",
+      "canonical_claim": "Slow-paced breathing can change heart rate and vagally mediated HRV measures under studied conditions.",
+      "policy": "ALLOWED_WITH_QUALIFIERS",
+      "risk_class": "HIGH",
+      "owner_route": "/learn/vagus-nerve-evidence-vs-internet-claims",
+      "applies_to_routes": [
+        "/learn/vagus-nerve-evidence-vs-internet-claims"
+      ],
+      "locale_scope": [
+        "en"
+      ],
+      "owner_source_mapping_found": true,
+      "mapped_owner_files": [
+        "src/app/(en)/learn/vagus-nerve-evidence-vs-internet-claims/page.tsx"
+      ],
+      "missing_declared_route_mappings": [],
+      "lexical_candidates": 1,
+      "inherited_source_pool_count": 11,
+      "inherited_structural_candidate_ids": [],
+      "approved_evidence_ids": [],
+      "coverage_conclusion": "MAPPING_ONLY_NOT_SCIENTIFIC_SUPPORT",
+      "translation_performed": false,
+      "mapping_basis": "EXISTING_DECLARED_OWNER_AND_D1_SOURCE_MAPPING_NO_SEMANTIC_INFERENCE",
+      "current_mapped_files": [
+        {
+          "path": "src/app/(en)/learn/vagus-nerve-evidence-vs-internet-claims/page.tsx",
+          "sha256": "0b3cfff6ce71f978a3361fcc65a42f28868cedd6310d71d7290c7568df45e94b",
+          "bytes_match_d1": true
+        }
+      ],
+      "claim_support_review_complete": false
+    },
+    {
+      "claim_id": "CLM-6F589F90BF",
+      "canonical_claim": "Consumer palpation targets for the cervical vagus.",
+      "policy": "NOT_ALLOWED",
+      "risk_class": "MEDIUM",
+      "owner_route": "/no/kunnskap/vagusnerven-og-massasje",
+      "applies_to_routes": [
+        "/no/kunnskap/vagusnerven-og-massasje"
+      ],
+      "locale_scope": [
+        "nb"
+      ],
+      "owner_source_mapping_found": true,
+      "mapped_owner_files": [
+        "src/content/knowledge/no/articles/vagusnerven-og-massasje.ts"
+      ],
+      "missing_declared_route_mappings": [],
+      "lexical_candidates": 0,
+      "inherited_source_pool_count": 0,
+      "inherited_structural_candidate_ids": [],
+      "approved_evidence_ids": [],
+      "coverage_conclusion": "MAPPING_ONLY_NOT_SCIENTIFIC_SUPPORT",
+      "translation_performed": false,
+      "mapping_basis": "EXISTING_DECLARED_OWNER_AND_D1_SOURCE_MAPPING_NO_SEMANTIC_INFERENCE",
+      "current_mapped_files": [
+        {
+          "path": "src/content/knowledge/no/articles/vagusnerven-og-massasje.ts",
+          "sha256": "fe1023f4c5e573a5b395a733b60a7d54199c024a079e7124f77084e581500947",
+          "bytes_match_d1": true
+        }
+      ],
+      "claim_support_review_complete": false
+    },
+    {
+      "claim_id": "CLM-6FC94A2BB4",
+      "canonical_claim": "adjustable intensity and gradual adjustment;",
+      "policy": "ALLOWED_WITH_QUALIFIERS",
+      "risk_class": "MEDIUM",
+      "owner_route": "/learn/what-does-vagus-nerve-stimulation-feel-like",
+      "applies_to_routes": [
+        "/learn/what-does-vagus-nerve-stimulation-feel-like"
+      ],
+      "locale_scope": [
+        "en"
+      ],
+      "owner_source_mapping_found": true,
+      "mapped_owner_files": [
+        "src/app/(en)/learn/what-does-vagus-nerve-stimulation-feel-like/page.tsx"
+      ],
+      "missing_declared_route_mappings": [],
+      "lexical_candidates": 0,
+      "inherited_source_pool_count": 4,
+      "inherited_structural_candidate_ids": [],
+      "approved_evidence_ids": [],
+      "coverage_conclusion": "MAPPING_ONLY_NOT_SCIENTIFIC_SUPPORT",
+      "translation_performed": false,
+      "mapping_basis": "EXISTING_DECLARED_OWNER_AND_D1_SOURCE_MAPPING_NO_SEMANTIC_INFERENCE",
+      "current_mapped_files": [
+        {
+          "path": "src/app/(en)/learn/what-does-vagus-nerve-stimulation-feel-like/page.tsx",
+          "sha256": "207ef166b54a14ab9daa25913b4b704f517c2b2e9b956c91445fc25c4545b80b",
+          "bytes_match_d1": true
+        }
+      ],
+      "claim_support_review_complete": false
+    },
+    {
+      "claim_id": "CLM-70D00E4A46",
+      "canonical_claim": "Treat manual massage or acupressure evidence as Neuvago product evidence.",
+      "policy": "NOT_ALLOWED",
+      "risk_class": "HIGH",
+      "owner_route": "/learn/vagus-nerve-massage",
+      "applies_to_routes": [
+        "/learn/vagus-nerve-massage"
+      ],
+      "locale_scope": [
+        "en"
+      ],
+      "owner_source_mapping_found": true,
+      "mapped_owner_files": [
+        "src/app/(en)/learn/vagus-nerve-massage/page.tsx"
+      ],
+      "missing_declared_route_mappings": [],
+      "lexical_candidates": 0,
+      "inherited_source_pool_count": 0,
+      "inherited_structural_candidate_ids": [],
+      "approved_evidence_ids": [],
+      "coverage_conclusion": "MAPPING_ONLY_NOT_SCIENTIFIC_SUPPORT",
+      "translation_performed": false,
+      "mapping_basis": "EXISTING_DECLARED_OWNER_AND_D1_SOURCE_MAPPING_NO_SEMANTIC_INFERENCE",
+      "current_mapped_files": [
+        {
+          "path": "src/app/(en)/learn/vagus-nerve-massage/page.tsx",
+          "sha256": "a7fb748fb50cd6b41adec7b09b7dd065bec0b5250e1a766532541fe00dab4efd",
+          "bytes_match_d1": true
+        }
+      ],
+      "claim_support_review_complete": false
+    },
+    {
+      "claim_id": "CLM-70EA1171F0",
+      "canonical_claim": "`113` for possible life-threatening emergencies;",
+      "policy": "SAFETY_BOUNDARY",
+      "risk_class": "CRITICAL",
+      "owner_route": "/no/kunnskap/restitusjon-og-regulering",
+      "applies_to_routes": [
+        "/no/kunnskap/restitusjon-og-regulering"
+      ],
+      "locale_scope": [
+        "nb"
+      ],
+      "owner_source_mapping_found": true,
+      "mapped_owner_files": [
+        "src/content/knowledge/no/articles/restitusjon-og-regulering.ts"
+      ],
+      "missing_declared_route_mappings": [],
+      "lexical_candidates": 0,
+      "inherited_source_pool_count": 0,
+      "inherited_structural_candidate_ids": [],
+      "approved_evidence_ids": [],
+      "coverage_conclusion": "MAPPING_ONLY_NOT_SCIENTIFIC_SUPPORT",
+      "translation_performed": false,
+      "mapping_basis": "EXISTING_DECLARED_OWNER_AND_D1_SOURCE_MAPPING_NO_SEMANTIC_INFERENCE",
+      "current_mapped_files": [
+        {
+          "path": "src/content/knowledge/no/articles/restitusjon-og-regulering.ts",
+          "sha256": "592a2d7682d89ff37ce771aeca6e8854ba53723bf6071a26e19ac06e9326bef5",
+          "bytes_match_d1": true
+        }
+      ],
+      "claim_support_review_complete": false
+    },
+    {
+      "claim_id": "CLM-7142FD284D",
+      "canonical_claim": "Present dizziness, pulse change, pain or neurological symptoms as desirable evidence of “vagus activation.”",
+      "policy": "NOT_ALLOWED",
+      "risk_class": "CRITICAL",
+      "owner_route": "/learn/vagus-nerve-massage",
+      "applies_to_routes": [
+        "/learn/vagus-nerve-massage"
+      ],
+      "locale_scope": [
+        "en"
+      ],
+      "owner_source_mapping_found": true,
+      "mapped_owner_files": [
+        "src/app/(en)/learn/vagus-nerve-massage/page.tsx"
+      ],
+      "missing_declared_route_mappings": [],
+      "lexical_candidates": 0,
+      "inherited_source_pool_count": 0,
+      "inherited_structural_candidate_ids": [],
+      "approved_evidence_ids": [],
+      "coverage_conclusion": "MAPPING_ONLY_NOT_SCIENTIFIC_SUPPORT",
+      "translation_performed": false,
+      "mapping_basis": "EXISTING_DECLARED_OWNER_AND_D1_SOURCE_MAPPING_NO_SEMANTIC_INFERENCE",
+      "current_mapped_files": [
+        {
+          "path": "src/app/(en)/learn/vagus-nerve-massage/page.tsx",
+          "sha256": "a7fb748fb50cd6b41adec7b09b7dd065bec0b5250e1a766532541fe00dab4efd",
+          "bytes_match_d1": true
+        }
+      ],
+      "claim_support_review_complete": false
+    },
+    {
+      "claim_id": "CLM-73373784A5",
+      "canonical_claim": "presenting `overstimulert nervesystem` as a medical diagnosis;",
+      "policy": "NOT_ALLOWED",
+      "risk_class": "HIGH",
+      "owner_route": "/no/kunnskap/overstimulert",
+      "applies_to_routes": [
+        "/no/kunnskap/overstimulert"
+      ],
+      "locale_scope": [
+        "nb"
+      ],
+      "owner_source_mapping_found": true,
+      "mapped_owner_files": [
+        "src/content/knowledge/no/articles/overstimulert.ts"
+      ],
+      "missing_declared_route_mappings": [],
+      "lexical_candidates": 0,
+      "inherited_source_pool_count": 0,
+      "inherited_structural_candidate_ids": [],
+      "approved_evidence_ids": [],
+      "coverage_conclusion": "MAPPING_ONLY_NOT_SCIENTIFIC_SUPPORT",
+      "translation_performed": false,
+      "mapping_basis": "EXISTING_DECLARED_OWNER_AND_D1_SOURCE_MAPPING_NO_SEMANTIC_INFERENCE",
+      "current_mapped_files": [
+        {
+          "path": "src/content/knowledge/no/articles/overstimulert.ts",
+          "sha256": "20e7a70555bc531c7cbd8130906efc9228b4c5b85699158e486e0e3702297b75",
+          "bytes_match_d1": true
+        }
+      ],
+      "claim_support_review_complete": false
+    },
+    {
+      "claim_id": "CLM-73E277F48C",
+      "canonical_claim": "avoid improvised electrical stimulation",
+      "policy": "SAFETY_BOUNDARY",
+      "risk_class": "CRITICAL",
+      "owner_route": "/learn/vagus-nerve-evidence-vs-internet-claims",
+      "applies_to_routes": [
+        "/learn/vagus-nerve-evidence-vs-internet-claims"
+      ],
+      "locale_scope": [
+        "en"
+      ],
+      "owner_source_mapping_found": true,
+      "mapped_owner_files": [
+        "src/app/(en)/learn/vagus-nerve-evidence-vs-internet-claims/page.tsx"
+      ],
+      "missing_declared_route_mappings": [],
+      "lexical_candidates": 0,
+      "inherited_source_pool_count": 11,
+      "inherited_structural_candidate_ids": [],
+      "approved_evidence_ids": [],
+      "coverage_conclusion": "MAPPING_ONLY_NOT_SCIENTIFIC_SUPPORT",
+      "translation_performed": false,
+      "mapping_basis": "EXISTING_DECLARED_OWNER_AND_D1_SOURCE_MAPPING_NO_SEMANTIC_INFERENCE",
+      "current_mapped_files": [
+        {
+          "path": "src/app/(en)/learn/vagus-nerve-evidence-vs-internet-claims/page.tsx",
+          "sha256": "0b3cfff6ce71f978a3361fcc65a42f28868cedd6310d71d7290c7568df45e94b",
+          "bytes_match_d1": true
+        }
+      ],
+      "claim_support_review_complete": false
+    },
+    {
+      "claim_id": "CLM-7593F77462",
+      "canonical_claim": "stop when the feeling becomes unpleasant or the user feels unwell;",
+      "policy": "ALLOWED_WITH_QUALIFIERS",
+      "risk_class": "MEDIUM",
+      "owner_route": "/learn/what-does-vagus-nerve-stimulation-feel-like",
+      "applies_to_routes": [
+        "/learn/what-does-vagus-nerve-stimulation-feel-like"
+      ],
+      "locale_scope": [
+        "en"
+      ],
+      "owner_source_mapping_found": true,
+      "mapped_owner_files": [
+        "src/app/(en)/learn/what-does-vagus-nerve-stimulation-feel-like/page.tsx"
+      ],
+      "missing_declared_route_mappings": [],
+      "lexical_candidates": 0,
+      "inherited_source_pool_count": 4,
+      "inherited_structural_candidate_ids": [],
+      "approved_evidence_ids": [],
+      "coverage_conclusion": "MAPPING_ONLY_NOT_SCIENTIFIC_SUPPORT",
+      "translation_performed": false,
+      "mapping_basis": "EXISTING_DECLARED_OWNER_AND_D1_SOURCE_MAPPING_NO_SEMANTIC_INFERENCE",
+      "current_mapped_files": [
+        {
+          "path": "src/app/(en)/learn/what-does-vagus-nerve-stimulation-feel-like/page.tsx",
+          "sha256": "207ef166b54a14ab9daa25913b4b704f517c2b2e9b956c91445fc25c4545b80b",
+          "bytes_match_d1": true
+        }
+      ],
+      "claim_support_review_complete": false
+    },
+    {
+      "claim_id": "CLM-79122F15F8",
+      "canonical_claim": "Transfer electrical taVNS findings directly to manual ear massage.",
+      "policy": "NOT_ALLOWED",
+      "risk_class": "MEDIUM",
+      "owner_route": "/learn/vagus-nerve-massage",
+      "applies_to_routes": [
+        "/learn/vagus-nerve-massage"
+      ],
+      "locale_scope": [
+        "en"
+      ],
+      "owner_source_mapping_found": true,
+      "mapped_owner_files": [
+        "src/app/(en)/learn/vagus-nerve-massage/page.tsx"
+      ],
+      "missing_declared_route_mappings": [],
+      "lexical_candidates": 0,
+      "inherited_source_pool_count": 0,
+      "inherited_structural_candidate_ids": [],
+      "approved_evidence_ids": [],
+      "coverage_conclusion": "MAPPING_ONLY_NOT_SCIENTIFIC_SUPPORT",
+      "translation_performed": false,
+      "mapping_basis": "EXISTING_DECLARED_OWNER_AND_D1_SOURCE_MAPPING_NO_SEMANTIC_INFERENCE",
+      "current_mapped_files": [
+        {
+          "path": "src/app/(en)/learn/vagus-nerve-massage/page.tsx",
+          "sha256": "a7fb748fb50cd6b41adec7b09b7dd065bec0b5250e1a766532541fe00dab4efd",
+          "bytes_match_d1": true
+        }
+      ],
+      "claim_support_review_complete": false
+    },
+    {
+      "claim_id": "CLM-7A94C006AE",
+      "canonical_claim": "comfort and stop-use guidance grounded in the current NVG-001 working manual;",
+      "policy": "ALLOWED_WITH_QUALIFIERS",
+      "risk_class": "MEDIUM",
+      "owner_route": "/learn/what-does-vagus-nerve-stimulation-feel-like",
+      "applies_to_routes": [
+        "/learn/what-does-vagus-nerve-stimulation-feel-like"
+      ],
+      "locale_scope": [
+        "en"
+      ],
+      "owner_source_mapping_found": true,
+      "mapped_owner_files": [
+        "src/app/(en)/learn/what-does-vagus-nerve-stimulation-feel-like/page.tsx"
+      ],
+      "missing_declared_route_mappings": [],
+      "lexical_candidates": 0,
+      "inherited_source_pool_count": 4,
+      "inherited_structural_candidate_ids": [],
+      "approved_evidence_ids": [],
+      "coverage_conclusion": "MAPPING_ONLY_NOT_SCIENTIFIC_SUPPORT",
+      "translation_performed": false,
+      "mapping_basis": "EXISTING_DECLARED_OWNER_AND_D1_SOURCE_MAPPING_NO_SEMANTIC_INFERENCE",
+      "current_mapped_files": [
+        {
+          "path": "src/app/(en)/learn/what-does-vagus-nerve-stimulation-feel-like/page.tsx",
+          "sha256": "207ef166b54a14ab9daa25913b4b704f517c2b2e9b956c91445fc25c4545b80b",
+          "bytes_match_d1": true
+        }
+      ],
+      "claim_support_review_complete": false
+    },
+    {
+      "claim_id": "CLM-7AAB59200B",
+      "canonical_claim": "Relaxation, meditation and gentle yoga can be described as broader behavioural regulation practices with heterogeneous evidence.",
+      "policy": "ALLOWED_WITH_QUALIFIERS",
+      "risk_class": "MEDIUM",
+      "owner_route": "/learn/vagus-nerve-exercises",
+      "applies_to_routes": [
+        "/learn/vagus-nerve-exercises"
+      ],
+      "locale_scope": [
+        "en"
+      ],
+      "owner_source_mapping_found": true,
+      "mapped_owner_files": [
+        "src/app/(en)/learn/vagus-nerve-exercises/page.tsx"
+      ],
+      "missing_declared_route_mappings": [],
+      "lexical_candidates": 0,
+      "inherited_source_pool_count": 6,
+      "inherited_structural_candidate_ids": [],
+      "approved_evidence_ids": [],
+      "coverage_conclusion": "MAPPING_ONLY_NOT_SCIENTIFIC_SUPPORT",
+      "translation_performed": false,
+      "mapping_basis": "EXISTING_DECLARED_OWNER_AND_D1_SOURCE_MAPPING_NO_SEMANTIC_INFERENCE",
+      "current_mapped_files": [
+        {
+          "path": "src/app/(en)/learn/vagus-nerve-exercises/page.tsx",
+          "sha256": "ce1703388f652c115b7ea98695e438df233bdc8c384d477ae9b914dfc2145d16",
+          "bytes_match_d1": true
+        }
+      ],
+      "claim_support_review_complete": false
+    },
+    {
+      "claim_id": "CLM-7B1858783E",
+      "canonical_claim": "Strong/deep front- or side-neck pressure, carotid-sinus self-massage and device-assisted percussion/vibration there are outside this general-wellness guide.",
+      "policy": "ALLOWED_WITH_QUALIFIERS",
+      "risk_class": "CRITICAL",
+      "owner_route": "/learn/vagus-nerve-massage",
+      "applies_to_routes": [
+        "/learn/vagus-nerve-massage"
+      ],
+      "locale_scope": [
+        "en"
+      ],
+      "owner_source_mapping_found": true,
+      "mapped_owner_files": [
+        "src/app/(en)/learn/vagus-nerve-massage/page.tsx"
+      ],
+      "missing_declared_route_mappings": [],
+      "lexical_candidates": 0,
+      "inherited_source_pool_count": 0,
+      "inherited_structural_candidate_ids": [],
+      "approved_evidence_ids": [],
+      "coverage_conclusion": "MAPPING_ONLY_NOT_SCIENTIFIC_SUPPORT",
+      "translation_performed": false,
+      "mapping_basis": "EXISTING_DECLARED_OWNER_AND_D1_SOURCE_MAPPING_NO_SEMANTIC_INFERENCE",
+      "current_mapped_files": [
+        {
+          "path": "src/app/(en)/learn/vagus-nerve-massage/page.tsx",
+          "sha256": "a7fb748fb50cd6b41adec7b09b7dd065bec0b5250e1a766532541fe00dab4efd",
+          "bytes_match_d1": true
+        }
+      ],
+      "claim_support_review_complete": false
+    },
+    {
+      "claim_id": "CLM-7C1110519C",
+      "canonical_claim": "Any claim that a specific HRV change proves target engagement, vagus strength, vagus damage, or treatment response.",
+      "policy": "NOT_ALLOWED",
+      "risk_class": "HIGH",
+      "owner_route": "/learn/vagus-nerve-exercises",
+      "applies_to_routes": [
+        "/learn/vagus-nerve-exercises"
+      ],
+      "locale_scope": [
+        "en"
+      ],
+      "owner_source_mapping_found": true,
+      "mapped_owner_files": [
+        "src/app/(en)/learn/vagus-nerve-exercises/page.tsx"
+      ],
+      "missing_declared_route_mappings": [],
+      "lexical_candidates": 0,
+      "inherited_source_pool_count": 6,
+      "inherited_structural_candidate_ids": [],
+      "approved_evidence_ids": [],
+      "coverage_conclusion": "MAPPING_ONLY_NOT_SCIENTIFIC_SUPPORT",
+      "translation_performed": false,
+      "mapping_basis": "EXISTING_DECLARED_OWNER_AND_D1_SOURCE_MAPPING_NO_SEMANTIC_INFERENCE",
+      "current_mapped_files": [
+        {
+          "path": "src/app/(en)/learn/vagus-nerve-exercises/page.tsx",
+          "sha256": "ce1703388f652c115b7ea98695e438df233bdc8c384d477ae9b914dfc2145d16",
+          "bytes_match_d1": true
+        }
+      ],
+      "claim_support_review_complete": false
+    },
+    {
+      "claim_id": "CLM-7CA249DD07",
+      "canonical_claim": "Gentle touch or muscle massage may be discussed as touch/massage, not as proven selective vagus activation.",
+      "policy": "ALLOWED_WITH_QUALIFIERS",
+      "risk_class": "HIGH",
+      "owner_route": "/no/kunnskap/vagusnerven-og-massasje",
+      "applies_to_routes": [
+        "/no/kunnskap/vagusnerven-og-massasje"
+      ],
+      "locale_scope": [
+        "nb"
+      ],
+      "owner_source_mapping_found": true,
+      "mapped_owner_files": [
+        "src/content/knowledge/no/articles/vagusnerven-og-massasje.ts"
+      ],
+      "missing_declared_route_mappings": [],
+      "lexical_candidates": 0,
+      "inherited_source_pool_count": 0,
+      "inherited_structural_candidate_ids": [],
+      "approved_evidence_ids": [],
+      "coverage_conclusion": "MAPPING_ONLY_NOT_SCIENTIFIC_SUPPORT",
+      "translation_performed": false,
+      "mapping_basis": "EXISTING_DECLARED_OWNER_AND_D1_SOURCE_MAPPING_NO_SEMANTIC_INFERENCE",
+      "current_mapped_files": [
+        {
+          "path": "src/content/knowledge/no/articles/vagusnerven-og-massasje.ts",
+          "sha256": "fe1023f4c5e573a5b395a733b60a7d54199c024a079e7124f77084e581500947",
+          "bytes_match_d1": true
+        }
+      ],
+      "claim_support_review_complete": false
+    },
+    {
+      "claim_id": "CLM-8283B50084",
+      "canonical_claim": "stronger intensity is not necessarily better;",
+      "policy": "ALLOWED_WITH_QUALIFIERS",
+      "risk_class": "MEDIUM",
+      "owner_route": "/learn/what-does-vagus-nerve-stimulation-feel-like",
+      "applies_to_routes": [
+        "/learn/what-does-vagus-nerve-stimulation-feel-like"
+      ],
+      "locale_scope": [
+        "en"
+      ],
+      "owner_source_mapping_found": true,
+      "mapped_owner_files": [
+        "src/app/(en)/learn/what-does-vagus-nerve-stimulation-feel-like/page.tsx"
+      ],
+      "missing_declared_route_mappings": [],
+      "lexical_candidates": 2,
+      "inherited_source_pool_count": 4,
+      "inherited_structural_candidate_ids": [],
+      "approved_evidence_ids": [],
+      "coverage_conclusion": "MAPPING_ONLY_NOT_SCIENTIFIC_SUPPORT",
+      "translation_performed": false,
+      "mapping_basis": "EXISTING_DECLARED_OWNER_AND_D1_SOURCE_MAPPING_NO_SEMANTIC_INFERENCE",
+      "current_mapped_files": [
+        {
+          "path": "src/app/(en)/learn/what-does-vagus-nerve-stimulation-feel-like/page.tsx",
+          "sha256": "207ef166b54a14ab9daa25913b4b704f517c2b2e9b956c91445fc25c4545b80b",
+          "bytes_match_d1": true
+        }
+      ],
+      "claim_support_review_complete": false
+    },
+    {
+      "claim_id": "CLM-848E66ABE4",
+      "canonical_claim": "delaying urgent or appropriate healthcare.",
+      "policy": "NOT_ALLOWED",
+      "risk_class": "CRITICAL",
+      "owner_route": "/no/kunnskap/overstimulert",
+      "applies_to_routes": [
+        "/no/kunnskap/overstimulert",
+        "/no/kunnskap/fastlast-i-stress"
+      ],
+      "locale_scope": [
+        "nb"
+      ],
+      "owner_source_mapping_found": true,
+      "mapped_owner_files": [
+        "src/content/knowledge/no/articles/overstimulert.ts"
+      ],
+      "missing_declared_route_mappings": [],
+      "lexical_candidates": 0,
+      "inherited_source_pool_count": 0,
+      "inherited_structural_candidate_ids": [],
+      "approved_evidence_ids": [],
+      "coverage_conclusion": "MAPPING_ONLY_NOT_SCIENTIFIC_SUPPORT",
+      "translation_performed": false,
+      "mapping_basis": "EXISTING_DECLARED_OWNER_AND_D1_SOURCE_MAPPING_NO_SEMANTIC_INFERENCE",
+      "current_mapped_files": [
+        {
+          "path": "src/content/knowledge/no/articles/overstimulert.ts",
+          "sha256": "20e7a70555bc531c7cbd8130906efc9228b4c5b85699158e486e0e3702297b75",
+          "bytes_match_d1": true
+        }
+      ],
+      "claim_support_review_complete": false
+    },
+    {
+      "claim_id": "CLM-86F9DCCB26",
+      "canonical_claim": "Manual massage/acupressure evidence as Neuvago product evidence.",
+      "policy": "NOT_ALLOWED",
+      "risk_class": "HIGH",
+      "owner_route": "/no/kunnskap/vagusnerven-og-massasje",
+      "applies_to_routes": [
+        "/no/kunnskap/vagusnerven-og-massasje"
+      ],
+      "locale_scope": [
+        "nb"
+      ],
+      "owner_source_mapping_found": true,
+      "mapped_owner_files": [
+        "src/content/knowledge/no/articles/vagusnerven-og-massasje.ts"
+      ],
+      "missing_declared_route_mappings": [],
+      "lexical_candidates": 0,
+      "inherited_source_pool_count": 0,
+      "inherited_structural_candidate_ids": [],
+      "approved_evidence_ids": [],
+      "coverage_conclusion": "MAPPING_ONLY_NOT_SCIENTIFIC_SUPPORT",
+      "translation_performed": false,
+      "mapping_basis": "EXISTING_DECLARED_OWNER_AND_D1_SOURCE_MAPPING_NO_SEMANTIC_INFERENCE",
+      "current_mapped_files": [
+        {
+          "path": "src/content/knowledge/no/articles/vagusnerven-og-massasje.ts",
+          "sha256": "fe1023f4c5e573a5b395a733b60a7d54199c024a079e7124f77084e581500947",
+          "bytes_match_d1": true
+        }
+      ],
+      "claim_support_review_complete": false
+    },
+    {
+      "claim_id": "CLM-8B06692C73",
+      "canonical_claim": "a specific sensation predicts sleep, stress, recovery or clinical benefit;",
+      "policy": "NOT_ALLOWED",
+      "risk_class": "MEDIUM",
+      "owner_route": "/learn/what-does-vagus-nerve-stimulation-feel-like",
+      "applies_to_routes": [
+        "/learn/what-does-vagus-nerve-stimulation-feel-like"
+      ],
+      "locale_scope": [
+        "en"
+      ],
+      "owner_source_mapping_found": true,
+      "mapped_owner_files": [
+        "src/app/(en)/learn/what-does-vagus-nerve-stimulation-feel-like/page.tsx"
+      ],
+      "missing_declared_route_mappings": [],
+      "lexical_candidates": 0,
+      "inherited_source_pool_count": 4,
+      "inherited_structural_candidate_ids": [],
+      "approved_evidence_ids": [],
+      "coverage_conclusion": "MAPPING_ONLY_NOT_SCIENTIFIC_SUPPORT",
+      "translation_performed": false,
+      "mapping_basis": "EXISTING_DECLARED_OWNER_AND_D1_SOURCE_MAPPING_NO_SEMANTIC_INFERENCE",
+      "current_mapped_files": [
+        {
+          "path": "src/app/(en)/learn/what-does-vagus-nerve-stimulation-feel-like/page.tsx",
+          "sha256": "207ef166b54a14ab9daa25913b4b704f517c2b2e9b956c91445fc25c4545b80b",
+          "bytes_match_d1": true
+        }
+      ],
+      "claim_support_review_complete": false
+    },
+    {
+      "claim_id": "CLM-8B16FE3B8D",
+      "canonical_claim": "One HR/HRV value does not diagnose vagus function or prove a reset.",
+      "policy": "ALLOWED_WITH_QUALIFIERS",
+      "risk_class": "HIGH",
+      "owner_route": "/learn/vagus-nerve-reset",
+      "applies_to_routes": [
+        "/learn/vagus-nerve-reset"
+      ],
+      "locale_scope": [
+        "en"
+      ],
+      "owner_source_mapping_found": true,
+      "mapped_owner_files": [
+        "src/app/(en)/learn/vagus-nerve-reset/page.tsx"
+      ],
+      "missing_declared_route_mappings": [],
+      "lexical_candidates": 0,
+      "inherited_source_pool_count": 0,
+      "inherited_structural_candidate_ids": [],
+      "approved_evidence_ids": [],
+      "coverage_conclusion": "MAPPING_ONLY_NOT_SCIENTIFIC_SUPPORT",
+      "translation_performed": false,
+      "mapping_basis": "EXISTING_DECLARED_OWNER_AND_D1_SOURCE_MAPPING_NO_SEMANTIC_INFERENCE",
+      "current_mapped_files": [
+        {
+          "path": "src/app/(en)/learn/vagus-nerve-reset/page.tsx",
+          "sha256": "4806b7a10c8917a5c62b2334db56282dc57f392ba862e0cfd7c7c74c697d490e",
+          "bytes_match_d1": true
+        }
+      ],
+      "claim_support_review_complete": false
+    },
+    {
+      "claim_id": "CLM-8E3366FD95",
+      "canonical_claim": "Outcome evidence can be described at the level of the intervention actually studied.",
+      "policy": "ALLOWED_WITH_QUALIFIERS",
+      "risk_class": "MEDIUM",
+      "owner_route": "/learn/vagus-nerve-evidence-vs-internet-claims",
+      "applies_to_routes": [
+        "/learn/vagus-nerve-evidence-vs-internet-claims"
+      ],
+      "locale_scope": [
+        "en"
+      ],
+      "owner_source_mapping_found": true,
+      "mapped_owner_files": [
+        "src/app/(en)/learn/vagus-nerve-evidence-vs-internet-claims/page.tsx"
+      ],
+      "missing_declared_route_mappings": [],
+      "lexical_candidates": 0,
+      "inherited_source_pool_count": 11,
+      "inherited_structural_candidate_ids": [
+        "EVD-PMID-40941532"
+      ],
+      "approved_evidence_ids": [],
+      "coverage_conclusion": "MAPPING_ONLY_NOT_SCIENTIFIC_SUPPORT",
+      "translation_performed": false,
+      "mapping_basis": "EXISTING_DECLARED_OWNER_AND_D1_SOURCE_MAPPING_NO_SEMANTIC_INFERENCE",
+      "current_mapped_files": [
+        {
+          "path": "src/app/(en)/learn/vagus-nerve-evidence-vs-internet-claims/page.tsx",
+          "sha256": "0b3cfff6ce71f978a3361fcc65a42f28868cedd6310d71d7290c7568df45e94b",
+          "bytes_match_d1": true
+        }
+      ],
+      "claim_support_review_complete": false
+    },
+    {
+      "claim_id": "CLM-8EB71935B1",
+      "canonical_claim": "the statement that sensation depends on device, protocol, contact and individual sensitivity;",
+      "policy": "ALLOWED_WITH_QUALIFIERS",
+      "risk_class": "MEDIUM",
+      "owner_route": "/learn/what-does-vagus-nerve-stimulation-feel-like",
+      "applies_to_routes": [
+        "/learn/what-does-vagus-nerve-stimulation-feel-like"
+      ],
+      "locale_scope": [
+        "en"
+      ],
+      "owner_source_mapping_found": true,
+      "mapped_owner_files": [
+        "src/app/(en)/learn/what-does-vagus-nerve-stimulation-feel-like/page.tsx"
+      ],
+      "missing_declared_route_mappings": [],
+      "lexical_candidates": 0,
+      "inherited_source_pool_count": 4,
+      "inherited_structural_candidate_ids": [],
+      "approved_evidence_ids": [],
+      "coverage_conclusion": "MAPPING_ONLY_NOT_SCIENTIFIC_SUPPORT",
+      "translation_performed": false,
+      "mapping_basis": "EXISTING_DECLARED_OWNER_AND_D1_SOURCE_MAPPING_NO_SEMANTIC_INFERENCE",
+      "current_mapped_files": [
+        {
+          "path": "src/app/(en)/learn/what-does-vagus-nerve-stimulation-feel-like/page.tsx",
+          "sha256": "207ef166b54a14ab9daa25913b4b704f517c2b2e9b956c91445fc25c4545b80b",
+          "bytes_match_d1": true
+        }
+      ],
+      "claim_support_review_complete": false
+    },
+    {
+      "claim_id": "CLM-8F321521EC",
+      "canonical_claim": "claiming that Neuvago treats chronic stress, anxiety, PTSD, burnout, insomnia or another medical condition;",
+      "policy": "NOT_ALLOWED",
+      "risk_class": "HIGH",
+      "owner_route": "/no/kunnskap/fastlast-i-stress",
+      "applies_to_routes": [
+        "/no/kunnskap/fastlast-i-stress"
+      ],
+      "locale_scope": [
+        "nb"
+      ],
+      "owner_source_mapping_found": true,
+      "mapped_owner_files": [
+        "src/content/knowledge/no/articles/fastlast-i-stress.ts"
+      ],
+      "missing_declared_route_mappings": [],
+      "lexical_candidates": 0,
+      "inherited_source_pool_count": 0,
+      "inherited_structural_candidate_ids": [],
+      "approved_evidence_ids": [],
+      "coverage_conclusion": "MAPPING_ONLY_NOT_SCIENTIFIC_SUPPORT",
+      "translation_performed": false,
+      "mapping_basis": "EXISTING_DECLARED_OWNER_AND_D1_SOURCE_MAPPING_NO_SEMANTIC_INFERENCE",
+      "current_mapped_files": [
+        {
+          "path": "src/content/knowledge/no/articles/fastlast-i-stress.ts",
+          "sha256": "1ecb93525f481bb810393dcfd21efbb1929f30a613c5168b77fe1ec36fff12e8",
+          "bytes_match_d1": true
+        }
+      ],
+      "claim_support_review_complete": false
+    },
+    {
+      "claim_id": "CLM-92CD776833",
+      "canonical_claim": "Dizziness, pain, pulse change or neurological symptoms as desirable proof of “vagus activation”.",
+      "policy": "NOT_ALLOWED",
+      "risk_class": "CRITICAL",
+      "owner_route": "/no/kunnskap/vagusnerven-og-massasje",
+      "applies_to_routes": [
+        "/no/kunnskap/vagusnerven-og-massasje"
+      ],
+      "locale_scope": [
+        "nb"
+      ],
+      "owner_source_mapping_found": true,
+      "mapped_owner_files": [
+        "src/content/knowledge/no/articles/vagusnerven-og-massasje.ts"
+      ],
+      "missing_declared_route_mappings": [],
+      "lexical_candidates": 0,
+      "inherited_source_pool_count": 0,
+      "inherited_structural_candidate_ids": [],
+      "approved_evidence_ids": [],
+      "coverage_conclusion": "MAPPING_ONLY_NOT_SCIENTIFIC_SUPPORT",
+      "translation_performed": false,
+      "mapping_basis": "EXISTING_DECLARED_OWNER_AND_D1_SOURCE_MAPPING_NO_SEMANTIC_INFERENCE",
+      "current_mapped_files": [
+        {
+          "path": "src/content/knowledge/no/articles/vagusnerven-og-massasje.ts",
+          "sha256": "fe1023f4c5e573a5b395a733b60a7d54199c024a079e7124f77084e581500947",
+          "bytes_match_d1": true
+        }
+      ],
+      "claim_support_review_complete": false
+    },
+    {
+      "claim_id": "CLM-9466EF2B65",
+      "canonical_claim": "A claim that symptom change proves vagus target engagement.",
+      "policy": "NOT_ALLOWED",
+      "risk_class": "HIGH",
+      "owner_route": "/learn/vagus-nerve-evidence-vs-internet-claims",
+      "applies_to_routes": [
+        "/learn/vagus-nerve-evidence-vs-internet-claims"
+      ],
+      "locale_scope": [
+        "en"
+      ],
+      "owner_source_mapping_found": true,
+      "mapped_owner_files": [
+        "src/app/(en)/learn/vagus-nerve-evidence-vs-internet-claims/page.tsx"
+      ],
+      "missing_declared_route_mappings": [],
+      "lexical_candidates": 0,
+      "inherited_source_pool_count": 11,
+      "inherited_structural_candidate_ids": [
+        "EVD-PMID-40941532"
+      ],
+      "approved_evidence_ids": [],
+      "coverage_conclusion": "MAPPING_ONLY_NOT_SCIENTIFIC_SUPPORT",
+      "translation_performed": false,
+      "mapping_basis": "EXISTING_DECLARED_OWNER_AND_D1_SOURCE_MAPPING_NO_SEMANTIC_INFERENCE",
+      "current_mapped_files": [
+        {
+          "path": "src/app/(en)/learn/vagus-nerve-evidence-vs-internet-claims/page.tsx",
+          "sha256": "0b3cfff6ce71f978a3361fcc65a42f28868cedd6310d71d7290c7568df45e94b",
+          "bytes_match_d1": true
+        }
+      ],
+      "claim_support_review_complete": false
+    },
+    {
+      "claim_id": "CLM-94915B3FF8",
+      "canonical_claim": "direct serious or worrying medical symptoms to appropriate professional/urgent care",
+      "policy": "SAFETY_BOUNDARY",
+      "risk_class": "CRITICAL",
+      "owner_route": "/learn/vagus-nerve-evidence-vs-internet-claims",
+      "applies_to_routes": [
+        "/learn/vagus-nerve-evidence-vs-internet-claims"
+      ],
+      "locale_scope": [
+        "en"
+      ],
+      "owner_source_mapping_found": true,
+      "mapped_owner_files": [
+        "src/app/(en)/learn/vagus-nerve-evidence-vs-internet-claims/page.tsx"
+      ],
+      "missing_declared_route_mappings": [],
+      "lexical_candidates": 0,
+      "inherited_source_pool_count": 11,
+      "inherited_structural_candidate_ids": [],
+      "approved_evidence_ids": [],
+      "coverage_conclusion": "MAPPING_ONLY_NOT_SCIENTIFIC_SUPPORT",
+      "translation_performed": false,
+      "mapping_basis": "EXISTING_DECLARED_OWNER_AND_D1_SOURCE_MAPPING_NO_SEMANTIC_INFERENCE",
+      "current_mapped_files": [
+        {
+          "path": "src/app/(en)/learn/vagus-nerve-evidence-vs-internet-claims/page.tsx",
+          "sha256": "0b3cfff6ce71f978a3361fcc65a42f28868cedd6310d71d7290c7568df45e94b",
+          "bytes_match_d1": true
+        }
+      ],
+      "claim_support_review_complete": false
+    },
+    {
+      "claim_id": "CLM-94C5307450",
+      "canonical_claim": "product efficacy, disease treatment, prevention, cure, diagnosis or personalised suitability",
+      "policy": "PROHIBITED",
+      "risk_class": "CRITICAL",
+      "owner_route": "/learn/vagus-nerve-evidence-vs-internet-claims",
+      "applies_to_routes": [
+        "/learn/vagus-nerve-evidence-vs-internet-claims"
+      ],
+      "locale_scope": [
+        "en"
+      ],
+      "owner_source_mapping_found": true,
+      "mapped_owner_files": [
+        "src/app/(en)/learn/vagus-nerve-evidence-vs-internet-claims/page.tsx"
+      ],
+      "missing_declared_route_mappings": [],
+      "lexical_candidates": 0,
+      "inherited_source_pool_count": 11,
+      "inherited_structural_candidate_ids": [],
+      "approved_evidence_ids": [],
+      "coverage_conclusion": "MAPPING_ONLY_NOT_SCIENTIFIC_SUPPORT",
+      "translation_performed": false,
+      "mapping_basis": "EXISTING_DECLARED_OWNER_AND_D1_SOURCE_MAPPING_NO_SEMANTIC_INFERENCE",
+      "current_mapped_files": [
+        {
+          "path": "src/app/(en)/learn/vagus-nerve-evidence-vs-internet-claims/page.tsx",
+          "sha256": "0b3cfff6ce71f978a3361fcc65a42f28868cedd6310d71d7290c7568df45e94b",
+          "bytes_match_d1": true
+        }
+      ],
+      "claim_support_review_complete": false
+    },
+    {
+      "claim_id": "CLM-957756A8CA",
+      "canonical_claim": "claiming that the experience proves high cortisol, low vagal tone, abnormal HRV, autonomic dysfunction or a damaged vagus nerve;",
+      "policy": "NOT_ALLOWED",
+      "risk_class": "HIGH",
+      "owner_route": "/no/kunnskap/overstimulert",
+      "applies_to_routes": [
+        "/no/kunnskap/overstimulert"
+      ],
+      "locale_scope": [
+        "nb"
+      ],
+      "owner_source_mapping_found": true,
+      "mapped_owner_files": [
+        "src/content/knowledge/no/articles/overstimulert.ts"
+      ],
+      "missing_declared_route_mappings": [],
+      "lexical_candidates": 0,
+      "inherited_source_pool_count": 0,
+      "inherited_structural_candidate_ids": [],
+      "approved_evidence_ids": [],
+      "coverage_conclusion": "MAPPING_ONLY_NOT_SCIENTIFIC_SUPPORT",
+      "translation_performed": false,
+      "mapping_basis": "EXISTING_DECLARED_OWNER_AND_D1_SOURCE_MAPPING_NO_SEMANTIC_INFERENCE",
+      "current_mapped_files": [
+        {
+          "path": "src/content/knowledge/no/articles/overstimulert.ts",
+          "sha256": "20e7a70555bc531c7cbd8130906efc9228b4c5b85699158e486e0e3702297b75",
+          "bytes_match_d1": true
+        }
+      ],
+      "claim_support_review_complete": false
+    },
+    {
+      "claim_id": "CLM-96530D609D",
+      "canonical_claim": "The pharynx participates in cranial-nerve and airway-protective reflexes involving multiple pathways.",
+      "policy": "ALLOWED_WITH_QUALIFIERS",
+      "risk_class": "MEDIUM",
+      "owner_route": "/learn/vagus-nerve-evidence-vs-internet-claims",
+      "applies_to_routes": [
+        "/learn/vagus-nerve-evidence-vs-internet-claims"
+      ],
+      "locale_scope": [
+        "en"
+      ],
+      "owner_source_mapping_found": true,
+      "mapped_owner_files": [
+        "src/app/(en)/learn/vagus-nerve-evidence-vs-internet-claims/page.tsx"
+      ],
+      "missing_declared_route_mappings": [],
+      "lexical_candidates": 0,
+      "inherited_source_pool_count": 11,
+      "inherited_structural_candidate_ids": [],
+      "approved_evidence_ids": [],
+      "coverage_conclusion": "MAPPING_ONLY_NOT_SCIENTIFIC_SUPPORT",
+      "translation_performed": false,
+      "mapping_basis": "EXISTING_DECLARED_OWNER_AND_D1_SOURCE_MAPPING_NO_SEMANTIC_INFERENCE",
+      "current_mapped_files": [
+        {
+          "path": "src/app/(en)/learn/vagus-nerve-evidence-vs-internet-claims/page.tsx",
+          "sha256": "0b3cfff6ce71f978a3361fcc65a42f28868cedd6310d71d7290c7568df45e94b",
+          "bytes_match_d1": true
+        }
+      ],
+      "claim_support_review_complete": false
+    },
+    {
+      "claim_id": "CLM-98C5DD356B",
+      "canonical_claim": "Live price, shipping, subscription, return or warranty claims that are not taken from current official commerce facts.",
+      "policy": "NOT_ALLOWED",
+      "risk_class": "MEDIUM",
+      "owner_route": "/no/kunnskap/hvordan-velge-vagusnervestimulator",
+      "applies_to_routes": [
+        "/no/kunnskap/hvordan-velge-vagusnervestimulator"
+      ],
+      "locale_scope": [
+        "nb"
+      ],
+      "owner_source_mapping_found": true,
+      "mapped_owner_files": [
+        "src/app/(no)/no/kunnskap/hvordan-velge-vagusnervestimulator/page.tsx",
+        "src/content/decision-guides/how-to-choose-vns-device.ts"
+      ],
+      "missing_declared_route_mappings": [],
+      "lexical_candidates": 0,
+      "inherited_source_pool_count": 0,
+      "inherited_structural_candidate_ids": [],
+      "approved_evidence_ids": [],
+      "coverage_conclusion": "MAPPING_ONLY_NOT_SCIENTIFIC_SUPPORT",
+      "translation_performed": false,
+      "mapping_basis": "EXISTING_DECLARED_OWNER_AND_D1_SOURCE_MAPPING_NO_SEMANTIC_INFERENCE",
+      "current_mapped_files": [
+        {
+          "path": "src/app/(no)/no/kunnskap/hvordan-velge-vagusnervestimulator/page.tsx",
+          "sha256": "a32a6d7c6ed156aad9b47c015a7c16748ea3212694398a7c048c93027892889f",
+          "bytes_match_d1": true
+        },
+        {
+          "path": "src/content/decision-guides/how-to-choose-vns-device.ts",
+          "sha256": "8cdc0af689f056125b32d07705d9d2c1a074a8176daeb2e4885ec13e74d5b983",
+          "bytes_match_d1": true
+        }
+      ],
+      "claim_support_review_complete": false
+    },
+    {
+      "claim_id": "CLM-9A095BE0F5",
+      "canonical_claim": "A claim that HRV proves direct, selective stimulation of the whole vagus nerve.",
+      "policy": "NOT_ALLOWED",
+      "risk_class": "HIGH",
+      "owner_route": "/learn/vagus-nerve-evidence-vs-internet-claims",
+      "applies_to_routes": [
+        "/learn/vagus-nerve-evidence-vs-internet-claims"
+      ],
+      "locale_scope": [
+        "en"
+      ],
+      "owner_source_mapping_found": true,
+      "mapped_owner_files": [
+        "src/app/(en)/learn/vagus-nerve-evidence-vs-internet-claims/page.tsx"
+      ],
+      "missing_declared_route_mappings": [],
+      "lexical_candidates": 0,
+      "inherited_source_pool_count": 11,
+      "inherited_structural_candidate_ids": [],
+      "approved_evidence_ids": [],
+      "coverage_conclusion": "MAPPING_ONLY_NOT_SCIENTIFIC_SUPPORT",
+      "translation_performed": false,
+      "mapping_basis": "EXISTING_DECLARED_OWNER_AND_D1_SOURCE_MAPPING_NO_SEMANTIC_INFERENCE",
+      "current_mapped_files": [
+        {
+          "path": "src/app/(en)/learn/vagus-nerve-evidence-vs-internet-claims/page.tsx",
+          "sha256": "0b3cfff6ce71f978a3361fcc65a42f28868cedd6310d71d7290c7568df45e94b",
+          "bytes_match_d1": true
+        }
+      ],
+      "claim_support_review_complete": false
+    },
+    {
+      "claim_id": "CLM-9A56C84D86",
+      "canonical_claim": "Electrical VNS and behavioural exercises are different method categories.",
+      "policy": "ALLOWED_WITH_QUALIFIERS",
+      "risk_class": "MEDIUM",
+      "owner_route": "/learn/vagus-nerve-exercises",
+      "applies_to_routes": [
+        "/learn/vagus-nerve-exercises"
+      ],
+      "locale_scope": [
+        "en"
+      ],
+      "owner_source_mapping_found": true,
+      "mapped_owner_files": [
+        "src/app/(en)/learn/vagus-nerve-exercises/page.tsx"
+      ],
+      "missing_declared_route_mappings": [],
+      "lexical_candidates": 0,
+      "inherited_source_pool_count": 6,
+      "inherited_structural_candidate_ids": [],
+      "approved_evidence_ids": [],
+      "coverage_conclusion": "MAPPING_ONLY_NOT_SCIENTIFIC_SUPPORT",
+      "translation_performed": false,
+      "mapping_basis": "EXISTING_DECLARED_OWNER_AND_D1_SOURCE_MAPPING_NO_SEMANTIC_INFERENCE",
+      "current_mapped_files": [
+        {
+          "path": "src/app/(en)/learn/vagus-nerve-exercises/page.tsx",
+          "sha256": "ce1703388f652c115b7ea98695e438df233bdc8c384d477ae9b914dfc2145d16",
+          "bytes_match_d1": true
+        }
+      ],
+      "claim_support_review_complete": false
+    },
+    {
+      "claim_id": "CLM-A3A385C1F5",
+      "canonical_claim": "A claim that EFT/tapping works by proven vagus-nerve stimulation.",
+      "policy": "NOT_ALLOWED",
+      "risk_class": "MEDIUM",
+      "owner_route": "/learn/vagus-nerve-evidence-vs-internet-claims",
+      "applies_to_routes": [
+        "/learn/vagus-nerve-evidence-vs-internet-claims"
+      ],
+      "locale_scope": [
+        "en"
+      ],
+      "owner_source_mapping_found": true,
+      "mapped_owner_files": [
+        "src/app/(en)/learn/vagus-nerve-evidence-vs-internet-claims/page.tsx"
+      ],
+      "missing_declared_route_mappings": [],
+      "lexical_candidates": 0,
+      "inherited_source_pool_count": 11,
+      "inherited_structural_candidate_ids": [
+        "EVD-PMID-40941532"
+      ],
+      "approved_evidence_ids": [],
+      "coverage_conclusion": "MAPPING_ONLY_NOT_SCIENTIFIC_SUPPORT",
+      "translation_performed": false,
+      "mapping_basis": "EXISTING_DECLARED_OWNER_AND_D1_SOURCE_MAPPING_NO_SEMANTIC_INFERENCE",
+      "current_mapped_files": [
+        {
+          "path": "src/app/(en)/learn/vagus-nerve-evidence-vs-internet-claims/page.tsx",
+          "sha256": "0b3cfff6ce71f978a3361fcc65a42f28868cedd6310d71d7290c7568df45e94b",
+          "bytes_match_d1": true
+        }
+      ],
+      "claim_support_review_complete": false
+    },
+    {
+      "claim_id": "CLM-A597AB4F5D",
+      "canonical_claim": "Controlled oropharyngeal stimulation can change cardiovascular and sympathetic responses.",
+      "policy": "ALLOWED_WITH_QUALIFIERS",
+      "risk_class": "MEDIUM",
+      "owner_route": "/learn/vagus-nerve-evidence-vs-internet-claims",
+      "applies_to_routes": [
+        "/learn/vagus-nerve-evidence-vs-internet-claims"
+      ],
+      "locale_scope": [
+        "en"
+      ],
+      "owner_source_mapping_found": true,
+      "mapped_owner_files": [
+        "src/app/(en)/learn/vagus-nerve-evidence-vs-internet-claims/page.tsx"
+      ],
+      "missing_declared_route_mappings": [],
+      "lexical_candidates": 0,
+      "inherited_source_pool_count": 11,
+      "inherited_structural_candidate_ids": [],
+      "approved_evidence_ids": [],
+      "coverage_conclusion": "MAPPING_ONLY_NOT_SCIENTIFIC_SUPPORT",
+      "translation_performed": false,
+      "mapping_basis": "EXISTING_DECLARED_OWNER_AND_D1_SOURCE_MAPPING_NO_SEMANTIC_INFERENCE",
+      "current_mapped_files": [
+        {
+          "path": "src/app/(en)/learn/vagus-nerve-evidence-vs-internet-claims/page.tsx",
+          "sha256": "0b3cfff6ce71f978a3361fcc65a42f28868cedd6310d71d7290c7568df45e94b",
+          "bytes_match_d1": true
+        }
+      ],
+      "claim_support_review_complete": false
+    },
+    {
+      "claim_id": "CLM-AB5E5606AA",
+      "canonical_claim": "A neutral selection framework based on device category, intended use, documentation, safety information, protocol transparency, practical ownership, support, privacy and total cost.",
+      "policy": "ALLOWED_WITH_QUALIFIERS",
+      "risk_class": "MEDIUM",
+      "owner_route": "/no/kunnskap/hvordan-velge-vagusnervestimulator",
+      "applies_to_routes": [
+        "/no/kunnskap/hvordan-velge-vagusnervestimulator"
+      ],
+      "locale_scope": [
+        "nb"
+      ],
+      "owner_source_mapping_found": true,
+      "mapped_owner_files": [
+        "src/app/(no)/no/kunnskap/hvordan-velge-vagusnervestimulator/page.tsx",
+        "src/content/decision-guides/how-to-choose-vns-device.ts"
+      ],
+      "missing_declared_route_mappings": [],
+      "lexical_candidates": 0,
+      "inherited_source_pool_count": 0,
+      "inherited_structural_candidate_ids": [],
+      "approved_evidence_ids": [],
+      "coverage_conclusion": "MAPPING_ONLY_NOT_SCIENTIFIC_SUPPORT",
+      "translation_performed": false,
+      "mapping_basis": "EXISTING_DECLARED_OWNER_AND_D1_SOURCE_MAPPING_NO_SEMANTIC_INFERENCE",
+      "current_mapped_files": [
+        {
+          "path": "src/app/(no)/no/kunnskap/hvordan-velge-vagusnervestimulator/page.tsx",
+          "sha256": "a32a6d7c6ed156aad9b47c015a7c16748ea3212694398a7c048c93027892889f",
+          "bytes_match_d1": true
+        },
+        {
+          "path": "src/content/decision-guides/how-to-choose-vns-device.ts",
+          "sha256": "8cdc0af689f056125b32d07705d9d2c1a074a8176daeb2e4885ec13e74d5b983",
+          "bytes_match_d1": true
+        }
+      ],
+      "claim_support_review_complete": false
+    },
+    {
+      "claim_id": "CLM-AFBD0DA4C6",
+      "canonical_claim": "improvised electrical placement/settings, carotid/neck manoeuvres or cold-exposure dosing",
+      "policy": "PROHIBITED",
+      "risk_class": "CRITICAL",
+      "owner_route": "/learn/vagus-nerve-evidence-vs-internet-claims",
+      "applies_to_routes": [
+        "/learn/vagus-nerve-evidence-vs-internet-claims"
+      ],
+      "locale_scope": [
+        "en"
+      ],
+      "owner_source_mapping_found": true,
+      "mapped_owner_files": [
+        "src/app/(en)/learn/vagus-nerve-evidence-vs-internet-claims/page.tsx"
+      ],
+      "missing_declared_route_mappings": [],
+      "lexical_candidates": 0,
+      "inherited_source_pool_count": 11,
+      "inherited_structural_candidate_ids": [],
+      "approved_evidence_ids": [],
+      "coverage_conclusion": "MAPPING_ONLY_NOT_SCIENTIFIC_SUPPORT",
+      "translation_performed": false,
+      "mapping_basis": "EXISTING_DECLARED_OWNER_AND_D1_SOURCE_MAPPING_NO_SEMANTIC_INFERENCE",
+      "current_mapped_files": [
+        {
+          "path": "src/app/(en)/learn/vagus-nerve-evidence-vs-internet-claims/page.tsx",
+          "sha256": "0b3cfff6ce71f978a3361fcc65a42f28868cedd6310d71d7290c7568df45e94b",
+          "bytes_match_d1": true
+        }
+      ],
+      "claim_support_review_complete": false
+    },
+    {
+      "claim_id": "CLM-B123609E1D",
+      "canonical_claim": "claiming that a stress response must be “completed” or that the nervous system is literally stuck;",
+      "policy": "NOT_ALLOWED",
+      "risk_class": "MEDIUM",
+      "owner_route": "/no/kunnskap/fastlast-i-stress",
+      "applies_to_routes": [
+        "/no/kunnskap/fastlast-i-stress"
+      ],
+      "locale_scope": [
+        "nb"
+      ],
+      "owner_source_mapping_found": true,
+      "mapped_owner_files": [
+        "src/content/knowledge/no/articles/fastlast-i-stress.ts"
+      ],
+      "missing_declared_route_mappings": [],
+      "lexical_candidates": 0,
+      "inherited_source_pool_count": 0,
+      "inherited_structural_candidate_ids": [],
+      "approved_evidence_ids": [],
+      "coverage_conclusion": "MAPPING_ONLY_NOT_SCIENTIFIC_SUPPORT",
+      "translation_performed": false,
+      "mapping_basis": "EXISTING_DECLARED_OWNER_AND_D1_SOURCE_MAPPING_NO_SEMANTIC_INFERENCE",
+      "current_mapped_files": [
+        {
+          "path": "src/content/knowledge/no/articles/fastlast-i-stress.ts",
+          "sha256": "1ecb93525f481bb810393dcfd21efbb1929f30a613c5168b77fe1ec36fff12e8",
+          "bytes_match_d1": true
+        }
+      ],
+      "claim_support_review_complete": false
+    },
+    {
+      "claim_id": "CLM-B3CC102249",
+      "canonical_claim": "A claim that humming is a validated vagus reset, treatment or universal protocol.",
+      "policy": "NOT_ALLOWED",
+      "risk_class": "HIGH",
+      "owner_route": "/learn/vagus-nerve-evidence-vs-internet-claims",
+      "applies_to_routes": [
+        "/learn/vagus-nerve-evidence-vs-internet-claims"
+      ],
+      "locale_scope": [
+        "en"
+      ],
+      "owner_source_mapping_found": true,
+      "mapped_owner_files": [
+        "src/app/(en)/learn/vagus-nerve-evidence-vs-internet-claims/page.tsx"
+      ],
+      "missing_declared_route_mappings": [],
+      "lexical_candidates": 0,
+      "inherited_source_pool_count": 11,
+      "inherited_structural_candidate_ids": [
+        "EVD-PMID-12119224",
+        "EVD-PMID-40482984",
+        "EVD-PMID-41686399"
+      ],
+      "approved_evidence_ids": [],
+      "coverage_conclusion": "MAPPING_ONLY_NOT_SCIENTIFIC_SUPPORT",
+      "translation_performed": false,
+      "mapping_basis": "EXISTING_DECLARED_OWNER_AND_D1_SOURCE_MAPPING_NO_SEMANTIC_INFERENCE",
+      "current_mapped_files": [
+        {
+          "path": "src/app/(en)/learn/vagus-nerve-evidence-vs-internet-claims/page.tsx",
+          "sha256": "0b3cfff6ce71f978a3361fcc65a42f28868cedd6310d71d7290c7568df45e94b",
+          "bytes_match_d1": true
+        }
+      ],
+      "claim_support_review_complete": false
+    },
+    {
+      "claim_id": "CLM-B3F6B7DC0C",
+      "canonical_claim": "Massage studies may report subjective or cardiac/autonomic measures without proving selective vagus engagement.",
+      "policy": "ALLOWED_WITH_QUALIFIERS",
+      "risk_class": "MEDIUM",
+      "owner_route": "/no/kunnskap/vagusnerven-og-massasje",
+      "applies_to_routes": [
+        "/no/kunnskap/vagusnerven-og-massasje"
+      ],
+      "locale_scope": [
+        "nb"
+      ],
+      "owner_source_mapping_found": true,
+      "mapped_owner_files": [
+        "src/content/knowledge/no/articles/vagusnerven-og-massasje.ts"
+      ],
+      "missing_declared_route_mappings": [],
+      "lexical_candidates": 0,
+      "inherited_source_pool_count": 0,
+      "inherited_structural_candidate_ids": [],
+      "approved_evidence_ids": [],
+      "coverage_conclusion": "MAPPING_ONLY_NOT_SCIENTIFIC_SUPPORT",
+      "translation_performed": false,
+      "mapping_basis": "EXISTING_DECLARED_OWNER_AND_D1_SOURCE_MAPPING_NO_SEMANTIC_INFERENCE",
+      "current_mapped_files": [
+        {
+          "path": "src/content/knowledge/no/articles/vagusnerven-og-massasje.ts",
+          "sha256": "fe1023f4c5e573a5b395a733b60a7d54199c024a079e7124f77084e581500947",
+          "bytes_match_d1": true
+        }
+      ],
+      "claim_support_review_complete": false
+    },
+    {
+      "claim_id": "CLM-B4F8FCCEA4",
+      "canonical_claim": "A claim that a breathing count diagnoses vagus strength or guarantees a health outcome.",
+      "policy": "NOT_ALLOWED",
+      "risk_class": "HIGH",
+      "owner_route": "/learn/vagus-nerve-evidence-vs-internet-claims",
+      "applies_to_routes": [
+        "/learn/vagus-nerve-evidence-vs-internet-claims"
+      ],
+      "locale_scope": [
+        "en"
+      ],
+      "owner_source_mapping_found": true,
+      "mapped_owner_files": [
+        "src/app/(en)/learn/vagus-nerve-evidence-vs-internet-claims/page.tsx"
+      ],
+      "missing_declared_route_mappings": [],
+      "lexical_candidates": 0,
+      "inherited_source_pool_count": 11,
+      "inherited_structural_candidate_ids": [],
+      "approved_evidence_ids": [],
+      "coverage_conclusion": "MAPPING_ONLY_NOT_SCIENTIFIC_SUPPORT",
+      "translation_performed": false,
+      "mapping_basis": "EXISTING_DECLARED_OWNER_AND_D1_SOURCE_MAPPING_NO_SEMANTIC_INFERENCE",
+      "current_mapped_files": [
+        {
+          "path": "src/app/(en)/learn/vagus-nerve-evidence-vs-internet-claims/page.tsx",
+          "sha256": "0b3cfff6ce71f978a3361fcc65a42f28868cedd6310d71d7290c7568df45e94b",
+          "bytes_match_d1": true
+        }
+      ],
+      "claim_support_review_complete": false
+    },
+    {
+      "claim_id": "CLM-B51A54CFD8",
+      "canonical_claim": "A claim that ordinary gargling is established as a direct vagus-stimulation or parasympathetic-reset protocol.",
+      "policy": "NOT_ALLOWED",
+      "risk_class": "MEDIUM",
+      "owner_route": "/learn/vagus-nerve-evidence-vs-internet-claims",
+      "applies_to_routes": [
+        "/learn/vagus-nerve-evidence-vs-internet-claims"
+      ],
+      "locale_scope": [
+        "en"
+      ],
+      "owner_source_mapping_found": true,
+      "mapped_owner_files": [
+        "src/app/(en)/learn/vagus-nerve-evidence-vs-internet-claims/page.tsx"
+      ],
+      "missing_declared_route_mappings": [],
+      "lexical_candidates": 0,
+      "inherited_source_pool_count": 11,
+      "inherited_structural_candidate_ids": [],
+      "approved_evidence_ids": [],
+      "coverage_conclusion": "MAPPING_ONLY_NOT_SCIENTIFIC_SUPPORT",
+      "translation_performed": false,
+      "mapping_basis": "EXISTING_DECLARED_OWNER_AND_D1_SOURCE_MAPPING_NO_SEMANTIC_INFERENCE",
+      "current_mapped_files": [
+        {
+          "path": "src/app/(en)/learn/vagus-nerve-evidence-vs-internet-claims/page.tsx",
+          "sha256": "0b3cfff6ce71f978a3361fcc65a42f28868cedd6310d71d7290c7568df45e94b",
+          "bytes_match_d1": true
+        }
+      ],
+      "claim_support_review_complete": false
+    },
+    {
+      "claim_id": "CLM-B5E5922A06",
+      "canonical_claim": "Respiratory pacing and vocalisation are plausible contributors to observed autonomic changes.",
+      "policy": "ALLOWED_WITH_QUALIFIERS",
+      "risk_class": "MEDIUM",
+      "owner_route": "/learn/vagus-nerve-evidence-vs-internet-claims",
+      "applies_to_routes": [
+        "/learn/vagus-nerve-evidence-vs-internet-claims"
+      ],
+      "locale_scope": [
+        "en"
+      ],
+      "owner_source_mapping_found": true,
+      "mapped_owner_files": [
+        "src/app/(en)/learn/vagus-nerve-evidence-vs-internet-claims/page.tsx"
+      ],
+      "missing_declared_route_mappings": [],
+      "lexical_candidates": 0,
+      "inherited_source_pool_count": 11,
+      "inherited_structural_candidate_ids": [
+        "EVD-PMID-12119224",
+        "EVD-PMID-40482984",
+        "EVD-PMID-41686399"
+      ],
+      "approved_evidence_ids": [],
+      "coverage_conclusion": "MAPPING_ONLY_NOT_SCIENTIFIC_SUPPORT",
+      "translation_performed": false,
+      "mapping_basis": "EXISTING_DECLARED_OWNER_AND_D1_SOURCE_MAPPING_NO_SEMANTIC_INFERENCE",
+      "current_mapped_files": [
+        {
+          "path": "src/app/(en)/learn/vagus-nerve-evidence-vs-internet-claims/page.tsx",
+          "sha256": "0b3cfff6ce71f978a3361fcc65a42f28868cedd6310d71d7290c7568df45e94b",
+          "bytes_match_d1": true
+        }
+      ],
+      "claim_support_review_complete": false
+    },
+    {
+      "claim_id": "CLM-BD7369D8D9",
+      "canonical_claim": "EFT has been studied as a psychological intervention and systematic reviews report promising symptom outcomes with methodological limitations.",
+      "policy": "ALLOWED_WITH_QUALIFIERS",
+      "risk_class": "MEDIUM",
+      "owner_route": "/learn/vagus-nerve-evidence-vs-internet-claims",
+      "applies_to_routes": [
+        "/learn/vagus-nerve-evidence-vs-internet-claims"
+      ],
+      "locale_scope": [
+        "en"
+      ],
+      "owner_source_mapping_found": true,
+      "mapped_owner_files": [
+        "src/app/(en)/learn/vagus-nerve-evidence-vs-internet-claims/page.tsx"
+      ],
+      "missing_declared_route_mappings": [],
+      "lexical_candidates": 0,
+      "inherited_source_pool_count": 11,
+      "inherited_structural_candidate_ids": [
+        "EVD-PMID-40941532"
+      ],
+      "approved_evidence_ids": [],
+      "coverage_conclusion": "MAPPING_ONLY_NOT_SCIENTIFIC_SUPPORT",
+      "translation_performed": false,
+      "mapping_basis": "EXISTING_DECLARED_OWNER_AND_D1_SOURCE_MAPPING_NO_SEMANTIC_INFERENCE",
+      "current_mapped_files": [
+        {
+          "path": "src/app/(en)/learn/vagus-nerve-evidence-vs-internet-claims/page.tsx",
+          "sha256": "0b3cfff6ce71f978a3361fcc65a42f28868cedd6310d71d7290c7568df45e94b",
+          "bytes_match_d1": true
+        }
+      ],
+      "claim_support_review_complete": false
+    },
+    {
+      "claim_id": "CLM-BDA61AC5AC",
+      "canonical_claim": "HRV is an indirect, context-sensitive cardiac measure and is not a direct whole-vagus test.",
+      "policy": "ALLOWED_WITH_QUALIFIERS",
+      "risk_class": "HIGH",
+      "owner_route": "/learn/vagus-nerve-exercises",
+      "applies_to_routes": [
+        "/learn/vagus-nerve-exercises"
+      ],
+      "locale_scope": [
+        "en"
+      ],
+      "owner_source_mapping_found": true,
+      "mapped_owner_files": [
+        "src/app/(en)/learn/vagus-nerve-exercises/page.tsx"
+      ],
+      "missing_declared_route_mappings": [],
+      "lexical_candidates": 0,
+      "inherited_source_pool_count": 6,
+      "inherited_structural_candidate_ids": [],
+      "approved_evidence_ids": [],
+      "coverage_conclusion": "MAPPING_ONLY_NOT_SCIENTIFIC_SUPPORT",
+      "translation_performed": false,
+      "mapping_basis": "EXISTING_DECLARED_OWNER_AND_D1_SOURCE_MAPPING_NO_SEMANTIC_INFERENCE",
+      "current_mapped_files": [
+        {
+          "path": "src/app/(en)/learn/vagus-nerve-exercises/page.tsx",
+          "sha256": "ce1703388f652c115b7ea98695e438df233bdc8c384d477ae9b914dfc2145d16",
+          "bytes_match_d1": true
+        }
+      ],
+      "claim_support_review_complete": false
+    },
+    {
+      "claim_id": "CLM-BDE1ECC98D",
+      "canonical_claim": "A claim that humming vibration is proven to selectively stimulate the vagus nerve.",
+      "policy": "NOT_ALLOWED",
+      "risk_class": "MEDIUM",
+      "owner_route": "/learn/vagus-nerve-evidence-vs-internet-claims",
+      "applies_to_routes": [
+        "/learn/vagus-nerve-evidence-vs-internet-claims"
+      ],
+      "locale_scope": [
+        "en"
+      ],
+      "owner_source_mapping_found": true,
+      "mapped_owner_files": [
+        "src/app/(en)/learn/vagus-nerve-evidence-vs-internet-claims/page.tsx"
+      ],
+      "missing_declared_route_mappings": [],
+      "lexical_candidates": 0,
+      "inherited_source_pool_count": 11,
+      "inherited_structural_candidate_ids": [
+        "EVD-PMID-12119224",
+        "EVD-PMID-40482984",
+        "EVD-PMID-41686399"
+      ],
+      "approved_evidence_ids": [],
+      "coverage_conclusion": "MAPPING_ONLY_NOT_SCIENTIFIC_SUPPORT",
+      "translation_performed": false,
+      "mapping_basis": "EXISTING_DECLARED_OWNER_AND_D1_SOURCE_MAPPING_NO_SEMANTIC_INFERENCE",
+      "current_mapped_files": [
+        {
+          "path": "src/app/(en)/learn/vagus-nerve-evidence-vs-internet-claims/page.tsx",
+          "sha256": "0b3cfff6ce71f978a3361fcc65a42f28868cedd6310d71d7290c7568df45e94b",
+          "bytes_match_d1": true
+        }
+      ],
+      "claim_support_review_complete": false
+    },
+    {
+      "claim_id": "CLM-BF9E54154D",
+      "canonical_claim": "Some controlled paradigms show increased cardiac vagal/parasympathetic indices during exposure.",
+      "policy": "ALLOWED_WITH_QUALIFIERS",
+      "risk_class": "MEDIUM",
+      "owner_route": "/learn/vagus-nerve-evidence-vs-internet-claims",
+      "applies_to_routes": [
+        "/learn/vagus-nerve-evidence-vs-internet-claims"
+      ],
+      "locale_scope": [
+        "en"
+      ],
+      "owner_source_mapping_found": true,
+      "mapped_owner_files": [
+        "src/app/(en)/learn/vagus-nerve-evidence-vs-internet-claims/page.tsx"
+      ],
+      "missing_declared_route_mappings": [],
+      "lexical_candidates": 0,
+      "inherited_source_pool_count": 11,
+      "inherited_structural_candidate_ids": [],
+      "approved_evidence_ids": [],
+      "coverage_conclusion": "MAPPING_ONLY_NOT_SCIENTIFIC_SUPPORT",
+      "translation_performed": false,
+      "mapping_basis": "EXISTING_DECLARED_OWNER_AND_D1_SOURCE_MAPPING_NO_SEMANTIC_INFERENCE",
+      "current_mapped_files": [
+        {
+          "path": "src/app/(en)/learn/vagus-nerve-evidence-vs-internet-claims/page.tsx",
+          "sha256": "0b3cfff6ce71f978a3361fcc65a42f28868cedd6310d71d7290c7568df45e94b",
+          "bytes_match_d1": true
+        }
+      ],
+      "claim_support_review_complete": false
+    },
+    {
+      "claim_id": "CLM-C073162252",
+      "canonical_claim": "The vagus nerve can literally be reset on command.",
+      "policy": "NOT_ALLOWED",
+      "risk_class": "MEDIUM",
+      "owner_route": "/learn/vagus-nerve-reset",
+      "applies_to_routes": [
+        "/learn/vagus-nerve-reset"
+      ],
+      "locale_scope": [
+        "en"
+      ],
+      "owner_source_mapping_found": true,
+      "mapped_owner_files": [
+        "src/app/(en)/learn/vagus-nerve-reset/page.tsx"
+      ],
+      "missing_declared_route_mappings": [],
+      "lexical_candidates": 0,
+      "inherited_source_pool_count": 0,
+      "inherited_structural_candidate_ids": [],
+      "approved_evidence_ids": [],
+      "coverage_conclusion": "MAPPING_ONLY_NOT_SCIENTIFIC_SUPPORT",
+      "translation_performed": false,
+      "mapping_basis": "EXISTING_DECLARED_OWNER_AND_D1_SOURCE_MAPPING_NO_SEMANTIC_INFERENCE",
+      "current_mapped_files": [
+        {
+          "path": "src/app/(en)/learn/vagus-nerve-reset/page.tsx",
+          "sha256": "4806b7a10c8917a5c62b2334db56282dc57f392ba862e0cfd7c7c74c697d490e",
+          "bytes_match_d1": true
+        }
+      ],
+      "claim_support_review_complete": false
+    },
+    {
+      "claim_id": "CLM-C236D84B2C",
+      "canonical_claim": "Pressure-point traditions and acupressure outcomes do not anatomically validate one universal “vagus point.”",
+      "policy": "ALLOWED_WITH_QUALIFIERS",
+      "risk_class": "MEDIUM",
+      "owner_route": "/learn/vagus-nerve-massage",
+      "applies_to_routes": [
+        "/learn/vagus-nerve-massage"
+      ],
+      "locale_scope": [
+        "en"
+      ],
+      "owner_source_mapping_found": true,
+      "mapped_owner_files": [
+        "src/app/(en)/learn/vagus-nerve-massage/page.tsx"
+      ],
+      "missing_declared_route_mappings": [],
+      "lexical_candidates": 0,
+      "inherited_source_pool_count": 0,
+      "inherited_structural_candidate_ids": [],
+      "approved_evidence_ids": [],
+      "coverage_conclusion": "MAPPING_ONLY_NOT_SCIENTIFIC_SUPPORT",
+      "translation_performed": false,
+      "mapping_basis": "EXISTING_DECLARED_OWNER_AND_D1_SOURCE_MAPPING_NO_SEMANTIC_INFERENCE",
+      "current_mapped_files": [
+        {
+          "path": "src/app/(en)/learn/vagus-nerve-massage/page.tsx",
+          "sha256": "a7fb748fb50cd6b41adec7b09b7dd065bec0b5250e1a766532541fe00dab4efd",
+          "bytes_match_d1": true
+        }
+      ],
+      "claim_support_review_complete": false
+    },
+    {
+      "claim_id": "CLM-C71E4EA67D",
+      "canonical_claim": "A universal vagus pressure point.",
+      "policy": "NOT_ALLOWED",
+      "risk_class": "MEDIUM",
+      "owner_route": "/learn/vagus-nerve-evidence-vs-internet-claims",
+      "applies_to_routes": [
+        "/learn/vagus-nerve-evidence-vs-internet-claims"
+      ],
+      "locale_scope": [
+        "en"
+      ],
+      "owner_source_mapping_found": true,
+      "mapped_owner_files": [
+        "src/app/(en)/learn/vagus-nerve-evidence-vs-internet-claims/page.tsx"
+      ],
+      "missing_declared_route_mappings": [],
+      "lexical_candidates": 0,
+      "inherited_source_pool_count": 11,
+      "inherited_structural_candidate_ids": [],
+      "approved_evidence_ids": [],
+      "coverage_conclusion": "MAPPING_ONLY_NOT_SCIENTIFIC_SUPPORT",
+      "translation_performed": false,
+      "mapping_basis": "EXISTING_DECLARED_OWNER_AND_D1_SOURCE_MAPPING_NO_SEMANTIC_INFERENCE",
+      "current_mapped_files": [
+        {
+          "path": "src/app/(en)/learn/vagus-nerve-evidence-vs-internet-claims/page.tsx",
+          "sha256": "0b3cfff6ce71f978a3361fcc65a42f28868cedd6310d71d7290c7568df45e94b",
+          "bytes_match_d1": true
+        }
+      ],
+      "claim_support_review_complete": false
+    },
+    {
+      "claim_id": "CLM-C7E8CB01CD",
+      "canonical_claim": "Any “reset,” “heal,” “activate on command,” “tone the vagus,” or guaranteed parasympathetic-switch claim.",
+      "policy": "NOT_ALLOWED",
+      "risk_class": "MEDIUM",
+      "owner_route": "/learn/vagus-nerve-exercises",
+      "applies_to_routes": [
+        "/learn/vagus-nerve-exercises"
+      ],
+      "locale_scope": [
+        "en"
+      ],
+      "owner_source_mapping_found": true,
+      "mapped_owner_files": [
+        "src/app/(en)/learn/vagus-nerve-exercises/page.tsx"
+      ],
+      "missing_declared_route_mappings": [],
+      "lexical_candidates": 0,
+      "inherited_source_pool_count": 6,
+      "inherited_structural_candidate_ids": [],
+      "approved_evidence_ids": [],
+      "coverage_conclusion": "MAPPING_ONLY_NOT_SCIENTIFIC_SUPPORT",
+      "translation_performed": false,
+      "mapping_basis": "EXISTING_DECLARED_OWNER_AND_D1_SOURCE_MAPPING_NO_SEMANTIC_INFERENCE",
+      "current_mapped_files": [
+        {
+          "path": "src/app/(en)/learn/vagus-nerve-exercises/page.tsx",
+          "sha256": "ce1703388f652c115b7ea98695e438df233bdc8c384d477ae9b914dfc2145d16",
+          "bytes_match_d1": true
+        }
+      ],
+      "claim_support_review_complete": false
+    },
+    {
+      "claim_id": "CLM-CE016905E4",
+      "canonical_claim": "implying that stronger stimulation is better;",
+      "policy": "NOT_ALLOWED",
+      "risk_class": "HIGH",
+      "owner_route": "/no/kunnskap/overstimulert",
+      "applies_to_routes": [
+        "/no/kunnskap/overstimulert"
+      ],
+      "locale_scope": [
+        "nb"
+      ],
+      "owner_source_mapping_found": true,
+      "mapped_owner_files": [
+        "src/content/knowledge/no/articles/overstimulert.ts"
+      ],
+      "missing_declared_route_mappings": [],
+      "lexical_candidates": 0,
+      "inherited_source_pool_count": 0,
+      "inherited_structural_candidate_ids": [],
+      "approved_evidence_ids": [],
+      "coverage_conclusion": "MAPPING_ONLY_NOT_SCIENTIFIC_SUPPORT",
+      "translation_performed": false,
+      "mapping_basis": "EXISTING_DECLARED_OWNER_AND_D1_SOURCE_MAPPING_NO_SEMANTIC_INFERENCE",
+      "current_mapped_files": [
+        {
+          "path": "src/content/knowledge/no/articles/overstimulert.ts",
+          "sha256": "20e7a70555bc531c7cbd8130906efc9228b4c5b85699158e486e0e3702297b75",
+          "bytes_match_d1": true
+        }
+      ],
+      "claim_support_review_complete": false
+    },
+    {
+      "claim_id": "CLM-CFB678ED5E",
+      "canonical_claim": "People can massage skin and muscle, but that is not the same as directly massaging the cervical vagus nerve.",
+      "policy": "ALLOWED_WITH_QUALIFIERS",
+      "risk_class": "MEDIUM",
+      "owner_route": "/learn/vagus-nerve-massage",
+      "applies_to_routes": [
+        "/learn/vagus-nerve-massage",
+        "/no/kunnskap/vagusnerven-og-massasje"
+      ],
+      "locale_scope": [
+        "en",
+        "nb"
+      ],
+      "owner_source_mapping_found": true,
+      "mapped_owner_files": [
+        "src/app/(en)/learn/vagus-nerve-massage/page.tsx"
+      ],
+      "missing_declared_route_mappings": [],
+      "lexical_candidates": 0,
+      "inherited_source_pool_count": 0,
+      "inherited_structural_candidate_ids": [],
+      "approved_evidence_ids": [],
+      "coverage_conclusion": "MAPPING_ONLY_NOT_SCIENTIFIC_SUPPORT",
+      "translation_performed": false,
+      "mapping_basis": "EXISTING_DECLARED_OWNER_AND_D1_SOURCE_MAPPING_NO_SEMANTIC_INFERENCE",
+      "current_mapped_files": [
+        {
+          "path": "src/app/(en)/learn/vagus-nerve-massage/page.tsx",
+          "sha256": "a7fb748fb50cd6b41adec7b09b7dd065bec0b5250e1a766532541fe00dab4efd",
+          "bytes_match_d1": true
+        }
+      ],
+      "claim_support_review_complete": false
+    },
+    {
+      "claim_id": "CLM-D3FE29A3E7",
+      "canonical_claim": "presenting `fastlåst i stress` as a medical diagnosis;",
+      "policy": "NOT_ALLOWED",
+      "risk_class": "HIGH",
+      "owner_route": "/no/kunnskap/fastlast-i-stress",
+      "applies_to_routes": [
+        "/no/kunnskap/fastlast-i-stress"
+      ],
+      "locale_scope": [
+        "nb"
+      ],
+      "owner_source_mapping_found": true,
+      "mapped_owner_files": [
+        "src/content/knowledge/no/articles/fastlast-i-stress.ts"
+      ],
+      "missing_declared_route_mappings": [],
+      "lexical_candidates": 0,
+      "inherited_source_pool_count": 0,
+      "inherited_structural_candidate_ids": [],
+      "approved_evidence_ids": [],
+      "coverage_conclusion": "MAPPING_ONLY_NOT_SCIENTIFIC_SUPPORT",
+      "translation_performed": false,
+      "mapping_basis": "EXISTING_DECLARED_OWNER_AND_D1_SOURCE_MAPPING_NO_SEMANTIC_INFERENCE",
+      "current_mapped_files": [
+        {
+          "path": "src/content/knowledge/no/articles/fastlast-i-stress.ts",
+          "sha256": "1ecb93525f481bb810393dcfd21efbb1929f30a613c5168b77fe1ec36fff12e8",
+          "bytes_match_d1": true
+        }
+      ],
+      "claim_support_review_complete": false
+    },
+    {
+      "claim_id": "CLM-D45BE1FCB6",
+      "canonical_claim": "the statement that sensation alone does not prove selective target engagement or benefit.",
+      "policy": "ALLOWED_WITH_QUALIFIERS",
+      "risk_class": "HIGH",
+      "owner_route": "/learn/what-does-vagus-nerve-stimulation-feel-like",
+      "applies_to_routes": [
+        "/learn/what-does-vagus-nerve-stimulation-feel-like"
+      ],
+      "locale_scope": [
+        "en"
+      ],
+      "owner_source_mapping_found": true,
+      "mapped_owner_files": [
+        "src/app/(en)/learn/what-does-vagus-nerve-stimulation-feel-like/page.tsx"
+      ],
+      "missing_declared_route_mappings": [],
+      "lexical_candidates": 1,
+      "inherited_source_pool_count": 4,
+      "inherited_structural_candidate_ids": [],
+      "approved_evidence_ids": [],
+      "coverage_conclusion": "MAPPING_ONLY_NOT_SCIENTIFIC_SUPPORT",
+      "translation_performed": false,
+      "mapping_basis": "EXISTING_DECLARED_OWNER_AND_D1_SOURCE_MAPPING_NO_SEMANTIC_INFERENCE",
+      "current_mapped_files": [
+        {
+          "path": "src/app/(en)/learn/what-does-vagus-nerve-stimulation-feel-like/page.tsx",
+          "sha256": "207ef166b54a14ab9daa25913b4b704f517c2b2e9b956c91445fc25c4545b80b",
+          "bytes_match_d1": true
+        }
+      ],
+      "claim_support_review_complete": false
+    },
+    {
+      "claim_id": "CLM-DB81755B97",
+      "canonical_claim": "Exercise and movement can influence stress-reactivity and cardiac-autonomic outcomes, with results varying by intervention, population and outcome.",
+      "policy": "ALLOWED_WITH_QUALIFIERS",
+      "risk_class": "MEDIUM",
+      "owner_route": "/learn/vagus-nerve-exercises",
+      "applies_to_routes": [
+        "/learn/vagus-nerve-exercises"
+      ],
+      "locale_scope": [
+        "en"
+      ],
+      "owner_source_mapping_found": true,
+      "mapped_owner_files": [
+        "src/app/(en)/learn/vagus-nerve-exercises/page.tsx"
+      ],
+      "missing_declared_route_mappings": [],
+      "lexical_candidates": 0,
+      "inherited_source_pool_count": 6,
+      "inherited_structural_candidate_ids": [],
+      "approved_evidence_ids": [],
+      "coverage_conclusion": "MAPPING_ONLY_NOT_SCIENTIFIC_SUPPORT",
+      "translation_performed": false,
+      "mapping_basis": "EXISTING_DECLARED_OWNER_AND_D1_SOURCE_MAPPING_NO_SEMANTIC_INFERENCE",
+      "current_mapped_files": [
+        {
+          "path": "src/app/(en)/learn/vagus-nerve-exercises/page.tsx",
+          "sha256": "ce1703388f652c115b7ea98695e438df233bdc8c384d477ae9b914dfc2145d16",
+          "bytes_match_d1": true
+        }
+      ],
+      "claim_support_review_complete": false
+    },
+    {
+      "claim_id": "CLM-DC7321968D",
+      "canonical_claim": "“Reset” is popular shorthand / metaphor rather than a literal anatomical reset.",
+      "policy": "ALLOWED_WITH_QUALIFIERS",
+      "risk_class": "MEDIUM",
+      "owner_route": "/learn/vagus-nerve-reset",
+      "applies_to_routes": [
+        "/learn/vagus-nerve-reset"
+      ],
+      "locale_scope": [
+        "en"
+      ],
+      "owner_source_mapping_found": true,
+      "mapped_owner_files": [
+        "src/app/(en)/learn/vagus-nerve-reset/page.tsx"
+      ],
+      "missing_declared_route_mappings": [],
+      "lexical_candidates": 0,
+      "inherited_source_pool_count": 0,
+      "inherited_structural_candidate_ids": [],
+      "approved_evidence_ids": [],
+      "coverage_conclusion": "MAPPING_ONLY_NOT_SCIENTIFIC_SUPPORT",
+      "translation_performed": false,
+      "mapping_basis": "EXISTING_DECLARED_OWNER_AND_D1_SOURCE_MAPPING_NO_SEMANTIC_INFERENCE",
+      "current_mapped_files": [
+        {
+          "path": "src/app/(en)/learn/vagus-nerve-reset/page.tsx",
+          "sha256": "4806b7a10c8917a5c62b2334db56282dc57f392ba862e0cfd7c7c74c697d490e",
+          "bytes_match_d1": true
+        }
+      ],
+      "claim_support_review_complete": false
+    },
+    {
+      "claim_id": "CLM-DF914B9514",
+      "canonical_claim": "One universal seven-minute routine is validated or guaranteed.",
+      "policy": "NOT_ALLOWED",
+      "risk_class": "MEDIUM",
+      "owner_route": "/learn/vagus-nerve-reset",
+      "applies_to_routes": [
+        "/learn/vagus-nerve-reset"
+      ],
+      "locale_scope": [
+        "en"
+      ],
+      "owner_source_mapping_found": true,
+      "mapped_owner_files": [
+        "src/app/(en)/learn/vagus-nerve-reset/page.tsx"
+      ],
+      "missing_declared_route_mappings": [],
+      "lexical_candidates": 0,
+      "inherited_source_pool_count": 0,
+      "inherited_structural_candidate_ids": [],
+      "approved_evidence_ids": [],
+      "coverage_conclusion": "MAPPING_ONLY_NOT_SCIENTIFIC_SUPPORT",
+      "translation_performed": false,
+      "mapping_basis": "EXISTING_DECLARED_OWNER_AND_D1_SOURCE_MAPPING_NO_SEMANTIC_INFERENCE",
+      "current_mapped_files": [
+        {
+          "path": "src/app/(en)/learn/vagus-nerve-reset/page.tsx",
+          "sha256": "4806b7a10c8917a5c62b2334db56282dc57f392ba862e0cfd7c7c74c697d490e",
+          "bytes_match_d1": true
+        }
+      ],
+      "claim_support_review_complete": false
+    },
+    {
+      "claim_id": "CLM-E0497DC1E7",
+      "canonical_claim": "local outer-ear sensations such as light tingling, prickling, tapping or pulsing;",
+      "policy": "ALLOWED_WITH_QUALIFIERS",
+      "risk_class": "MEDIUM",
+      "owner_route": "/learn/what-does-vagus-nerve-stimulation-feel-like",
+      "applies_to_routes": [
+        "/learn/what-does-vagus-nerve-stimulation-feel-like"
+      ],
+      "locale_scope": [
+        "en"
+      ],
+      "owner_source_mapping_found": true,
+      "mapped_owner_files": [
+        "src/app/(en)/learn/what-does-vagus-nerve-stimulation-feel-like/page.tsx"
+      ],
+      "missing_declared_route_mappings": [],
+      "lexical_candidates": 0,
+      "inherited_source_pool_count": 4,
+      "inherited_structural_candidate_ids": [],
+      "approved_evidence_ids": [],
+      "coverage_conclusion": "MAPPING_ONLY_NOT_SCIENTIFIC_SUPPORT",
+      "translation_performed": false,
+      "mapping_basis": "EXISTING_DECLARED_OWNER_AND_D1_SOURCE_MAPPING_NO_SEMANTIC_INFERENCE",
+      "current_mapped_files": [
+        {
+          "path": "src/app/(en)/learn/what-does-vagus-nerve-stimulation-feel-like/page.tsx",
+          "sha256": "207ef166b54a14ab9daa25913b4b704f517c2b2e9b956c91445fc25c4545b80b",
+          "bytes_match_d1": true
+        }
+      ],
+      "claim_support_review_complete": false
+    },
+    {
+      "claim_id": "CLM-E3760ED200",
+      "canonical_claim": "treatment, diagnosis, cure or prevention language;",
+      "policy": "NOT_ALLOWED",
+      "risk_class": "HIGH",
+      "owner_route": "/learn/what-does-vagus-nerve-stimulation-feel-like",
+      "applies_to_routes": [
+        "/learn/what-does-vagus-nerve-stimulation-feel-like"
+      ],
+      "locale_scope": [
+        "en"
+      ],
+      "owner_source_mapping_found": true,
+      "mapped_owner_files": [
+        "src/app/(en)/learn/what-does-vagus-nerve-stimulation-feel-like/page.tsx"
+      ],
+      "missing_declared_route_mappings": [],
+      "lexical_candidates": 0,
+      "inherited_source_pool_count": 4,
+      "inherited_structural_candidate_ids": [],
+      "approved_evidence_ids": [],
+      "coverage_conclusion": "MAPPING_ONLY_NOT_SCIENTIFIC_SUPPORT",
+      "translation_performed": false,
+      "mapping_basis": "EXISTING_DECLARED_OWNER_AND_D1_SOURCE_MAPPING_NO_SEMANTIC_INFERENCE",
+      "current_mapped_files": [
+        {
+          "path": "src/app/(en)/learn/what-does-vagus-nerve-stimulation-feel-like/page.tsx",
+          "sha256": "207ef166b54a14ab9daa25913b4b704f517c2b2e9b956c91445fc25c4545b80b",
+          "bytes_match_d1": true
+        }
+      ],
+      "claim_support_review_complete": false
+    },
+    {
+      "claim_id": "CLM-E9084BDB34",
+      "canonical_claim": "Telling readers to verify current official product and legal information before purchase.",
+      "policy": "ALLOWED_WITH_QUALIFIERS",
+      "risk_class": "MEDIUM",
+      "owner_route": "/no/kunnskap/hvordan-velge-vagusnervestimulator",
+      "applies_to_routes": [
+        "/no/kunnskap/hvordan-velge-vagusnervestimulator"
+      ],
+      "locale_scope": [
+        "nb"
+      ],
+      "owner_source_mapping_found": true,
+      "mapped_owner_files": [
+        "src/app/(no)/no/kunnskap/hvordan-velge-vagusnervestimulator/page.tsx",
+        "src/content/decision-guides/how-to-choose-vns-device.ts"
+      ],
+      "missing_declared_route_mappings": [],
+      "lexical_candidates": 0,
+      "inherited_source_pool_count": 0,
+      "inherited_structural_candidate_ids": [],
+      "approved_evidence_ids": [],
+      "coverage_conclusion": "MAPPING_ONLY_NOT_SCIENTIFIC_SUPPORT",
+      "translation_performed": false,
+      "mapping_basis": "EXISTING_DECLARED_OWNER_AND_D1_SOURCE_MAPPING_NO_SEMANTIC_INFERENCE",
+      "current_mapped_files": [
+        {
+          "path": "src/app/(no)/no/kunnskap/hvordan-velge-vagusnervestimulator/page.tsx",
+          "sha256": "a32a6d7c6ed156aad9b47c015a7c16748ea3212694398a7c048c93027892889f",
+          "bytes_match_d1": true
+        },
+        {
+          "path": "src/content/decision-guides/how-to-choose-vns-device.ts",
+          "sha256": "8cdc0af689f056125b32d07705d9d2c1a074a8176daeb2e4885ec13e74d5b983",
+          "bytes_match_d1": true
+        }
+      ],
+      "claim_support_review_complete": false
+    },
+    {
+      "claim_id": "CLM-EB8FF0D66D",
+      "canonical_claim": "Breathing-related HRV changes are compatible with altered cardiac parasympathetic modulation.",
+      "policy": "ALLOWED_WITH_QUALIFIERS",
+      "risk_class": "HIGH",
+      "owner_route": "/learn/vagus-nerve-evidence-vs-internet-claims",
+      "applies_to_routes": [
+        "/learn/vagus-nerve-evidence-vs-internet-claims"
+      ],
+      "locale_scope": [
+        "en"
+      ],
+      "owner_source_mapping_found": true,
+      "mapped_owner_files": [
+        "src/app/(en)/learn/vagus-nerve-evidence-vs-internet-claims/page.tsx"
+      ],
+      "missing_declared_route_mappings": [],
+      "lexical_candidates": 0,
+      "inherited_source_pool_count": 11,
+      "inherited_structural_candidate_ids": [],
+      "approved_evidence_ids": [],
+      "coverage_conclusion": "MAPPING_ONLY_NOT_SCIENTIFIC_SUPPORT",
+      "translation_performed": false,
+      "mapping_basis": "EXISTING_DECLARED_OWNER_AND_D1_SOURCE_MAPPING_NO_SEMANTIC_INFERENCE",
+      "current_mapped_files": [
+        {
+          "path": "src/app/(en)/learn/vagus-nerve-evidence-vs-internet-claims/page.tsx",
+          "sha256": "0b3cfff6ce71f978a3361fcc65a42f28868cedd6310d71d7290c7568df45e94b",
+          "bytes_match_d1": true
+        }
+      ],
+      "claim_support_review_complete": false
+    },
+    {
+      "claim_id": "CLM-ECB315330A",
+      "canonical_claim": "Give a consumer palpation target for the cervical vagus.",
+      "policy": "NOT_ALLOWED",
+      "risk_class": "MEDIUM",
+      "owner_route": "/learn/vagus-nerve-massage",
+      "applies_to_routes": [
+        "/learn/vagus-nerve-massage"
+      ],
+      "locale_scope": [
+        "en"
+      ],
+      "owner_source_mapping_found": true,
+      "mapped_owner_files": [
+        "src/app/(en)/learn/vagus-nerve-massage/page.tsx"
+      ],
+      "missing_declared_route_mappings": [],
+      "lexical_candidates": 0,
+      "inherited_source_pool_count": 0,
+      "inherited_structural_candidate_ids": [],
+      "approved_evidence_ids": [],
+      "coverage_conclusion": "MAPPING_ONLY_NOT_SCIENTIFIC_SUPPORT",
+      "translation_performed": false,
+      "mapping_basis": "EXISTING_DECLARED_OWNER_AND_D1_SOURCE_MAPPING_NO_SEMANTIC_INFERENCE",
+      "current_mapped_files": [
+        {
+          "path": "src/app/(en)/learn/vagus-nerve-massage/page.tsx",
+          "sha256": "a7fb748fb50cd6b41adec7b09b7dd065bec0b5250e1a766532541fe00dab4efd",
+          "bytes_match_d1": true
+        }
+      ],
+      "claim_support_review_complete": false
+    },
+    {
+      "claim_id": "CLM-EE7A0C6F96",
+      "canonical_claim": "persistent discomfort requires stopping and following support guidance.",
+      "policy": "ALLOWED_WITH_QUALIFIERS",
+      "risk_class": "MEDIUM",
+      "owner_route": "/learn/what-does-vagus-nerve-stimulation-feel-like",
+      "applies_to_routes": [
+        "/learn/what-does-vagus-nerve-stimulation-feel-like"
+      ],
+      "locale_scope": [
+        "en"
+      ],
+      "owner_source_mapping_found": true,
+      "mapped_owner_files": [
+        "src/app/(en)/learn/what-does-vagus-nerve-stimulation-feel-like/page.tsx"
+      ],
+      "missing_declared_route_mappings": [],
+      "lexical_candidates": 0,
+      "inherited_source_pool_count": 4,
+      "inherited_structural_candidate_ids": [],
+      "approved_evidence_ids": [],
+      "coverage_conclusion": "MAPPING_ONLY_NOT_SCIENTIFIC_SUPPORT",
+      "translation_performed": false,
+      "mapping_basis": "EXISTING_DECLARED_OWNER_AND_D1_SOURCE_MAPPING_NO_SEMANTIC_INFERENCE",
+      "current_mapped_files": [
+        {
+          "path": "src/app/(en)/learn/what-does-vagus-nerve-stimulation-feel-like/page.tsx",
+          "sha256": "207ef166b54a14ab9daa25913b4b704f517c2b2e9b956c91445fc25c4545b80b",
+          "bytes_match_d1": true
+        }
+      ],
+      "claim_support_review_complete": false
+    },
+    {
+      "claim_id": "CLM-F43B7937A5",
+      "canonical_claim": "Neck coordinates, pressure grades, timing sequences or DIY carotid-sinus instructions.",
+      "policy": "NOT_ALLOWED",
+      "risk_class": "CRITICAL",
+      "owner_route": "/learn/vagus-nerve-evidence-vs-internet-claims",
+      "applies_to_routes": [
+        "/learn/vagus-nerve-evidence-vs-internet-claims"
+      ],
+      "locale_scope": [
+        "en"
+      ],
+      "owner_source_mapping_found": true,
+      "mapped_owner_files": [
+        "src/app/(en)/learn/vagus-nerve-evidence-vs-internet-claims/page.tsx"
+      ],
+      "missing_declared_route_mappings": [],
+      "lexical_candidates": 0,
+      "inherited_source_pool_count": 11,
+      "inherited_structural_candidate_ids": [],
+      "approved_evidence_ids": [],
+      "coverage_conclusion": "MAPPING_ONLY_NOT_SCIENTIFIC_SUPPORT",
+      "translation_performed": false,
+      "mapping_basis": "EXISTING_DECLARED_OWNER_AND_D1_SOURCE_MAPPING_NO_SEMANTIC_INFERENCE",
+      "current_mapped_files": [
+        {
+          "path": "src/app/(en)/learn/vagus-nerve-evidence-vs-internet-claims/page.tsx",
+          "sha256": "0b3cfff6ce71f978a3361fcc65a42f28868cedd6310d71d7290c7568df45e94b",
+          "bytes_match_d1": true
+        }
+      ],
+      "claim_support_review_complete": false
+    },
+    {
+      "claim_id": "CLM-F7F27673AF",
+      "canonical_claim": "`116 117` when help cannot wait for the regular GP;",
+      "policy": "SAFETY_BOUNDARY",
+      "risk_class": "CRITICAL",
+      "owner_route": "/no/kunnskap/restitusjon-og-regulering",
+      "applies_to_routes": [
+        "/no/kunnskap/restitusjon-og-regulering"
+      ],
+      "locale_scope": [
+        "nb"
+      ],
+      "owner_source_mapping_found": true,
+      "mapped_owner_files": [
+        "src/content/knowledge/no/articles/restitusjon-og-regulering.ts"
+      ],
+      "missing_declared_route_mappings": [],
+      "lexical_candidates": 0,
+      "inherited_source_pool_count": 0,
+      "inherited_structural_candidate_ids": [],
+      "approved_evidence_ids": [],
+      "coverage_conclusion": "MAPPING_ONLY_NOT_SCIENTIFIC_SUPPORT",
+      "translation_performed": false,
+      "mapping_basis": "EXISTING_DECLARED_OWNER_AND_D1_SOURCE_MAPPING_NO_SEMANTIC_INFERENCE",
+      "current_mapped_files": [
+        {
+          "path": "src/content/knowledge/no/articles/restitusjon-og-regulering.ts",
+          "sha256": "592a2d7682d89ff37ce771aeca6e8854ba53723bf6071a26e19ac06e9326bef5",
+          "bytes_match_d1": true
+        }
+      ],
+      "claim_support_review_complete": false
+    },
+    {
+      "claim_id": "CLM-F8C2DCB354",
+      "canonical_claim": "The outer ear has mixed innervation; manual ear touch is not electrical taVNS.",
+      "policy": "ALLOWED_WITH_QUALIFIERS",
+      "risk_class": "MEDIUM",
+      "owner_route": "/no/kunnskap/vagusnerven-og-massasje",
+      "applies_to_routes": [
+        "/no/kunnskap/vagusnerven-og-massasje"
+      ],
+      "locale_scope": [
+        "nb"
+      ],
+      "owner_source_mapping_found": true,
+      "mapped_owner_files": [
+        "src/content/knowledge/no/articles/vagusnerven-og-massasje.ts"
+      ],
+      "missing_declared_route_mappings": [],
+      "lexical_candidates": 0,
+      "inherited_source_pool_count": 0,
+      "inherited_structural_candidate_ids": [],
+      "approved_evidence_ids": [],
+      "coverage_conclusion": "MAPPING_ONLY_NOT_SCIENTIFIC_SUPPORT",
+      "translation_performed": false,
+      "mapping_basis": "EXISTING_DECLARED_OWNER_AND_D1_SOURCE_MAPPING_NO_SEMANTIC_INFERENCE",
+      "current_mapped_files": [
+        {
+          "path": "src/content/knowledge/no/articles/vagusnerven-og-massasje.ts",
+          "sha256": "fe1023f4c5e573a5b395a733b60a7d54199c024a079e7124f77084e581500947",
+          "bytes_match_d1": true
+        }
+      ],
+      "claim_support_review_complete": false
+    },
+    {
+      "claim_id": "CLM-FD7F77516A",
+      "canonical_claim": "Any improvised electrical electrode placement, electrical settings, carotid/neck pressure manoeuvre, medical protocol or personalised suitability recommendation.",
+      "policy": "NOT_ALLOWED",
+      "risk_class": "CRITICAL",
+      "owner_route": "/learn/vagus-nerve-exercises",
+      "applies_to_routes": [
+        "/learn/vagus-nerve-exercises"
+      ],
+      "locale_scope": [
+        "en"
+      ],
+      "owner_source_mapping_found": true,
+      "mapped_owner_files": [
+        "src/app/(en)/learn/vagus-nerve-exercises/page.tsx"
+      ],
+      "missing_declared_route_mappings": [],
+      "lexical_candidates": 0,
+      "inherited_source_pool_count": 6,
+      "inherited_structural_candidate_ids": [],
+      "approved_evidence_ids": [],
+      "coverage_conclusion": "MAPPING_ONLY_NOT_SCIENTIFIC_SUPPORT",
+      "translation_performed": false,
+      "mapping_basis": "EXISTING_DECLARED_OWNER_AND_D1_SOURCE_MAPPING_NO_SEMANTIC_INFERENCE",
+      "current_mapped_files": [
+        {
+          "path": "src/app/(en)/learn/vagus-nerve-exercises/page.tsx",
+          "sha256": "ce1703388f652c115b7ea98695e438df233bdc8c384d477ae9b914dfc2145d16",
+          "bytes_match_d1": true
+        }
+      ],
+      "claim_support_review_complete": false
+    },
+    {
+      "claim_id": "CLM-FECA430A48",
+      "canonical_claim": "Clinical use includes monitoring, technique standards and exclusion criteria.",
+      "policy": "ALLOWED_WITH_QUALIFIERS",
+      "risk_class": "MEDIUM",
+      "owner_route": "/learn/vagus-nerve-evidence-vs-internet-claims",
+      "applies_to_routes": [
+        "/learn/vagus-nerve-evidence-vs-internet-claims"
+      ],
+      "locale_scope": [
+        "en"
+      ],
+      "owner_source_mapping_found": true,
+      "mapped_owner_files": [
+        "src/app/(en)/learn/vagus-nerve-evidence-vs-internet-claims/page.tsx"
+      ],
+      "missing_declared_route_mappings": [],
+      "lexical_candidates": 0,
+      "inherited_source_pool_count": 11,
+      "inherited_structural_candidate_ids": [],
+      "approved_evidence_ids": [],
+      "coverage_conclusion": "MAPPING_ONLY_NOT_SCIENTIFIC_SUPPORT",
+      "translation_performed": false,
+      "mapping_basis": "EXISTING_DECLARED_OWNER_AND_D1_SOURCE_MAPPING_NO_SEMANTIC_INFERENCE",
+      "current_mapped_files": [
+        {
+          "path": "src/app/(en)/learn/vagus-nerve-evidence-vs-internet-claims/page.tsx",
+          "sha256": "0b3cfff6ce71f978a3361fcc65a42f28868cedd6310d71d7290c7568df45e94b",
+          "bytes_match_d1": true
+        }
+      ],
+      "claim_support_review_complete": false
+    },
+    {
+      "claim_id": "CLM-FF9FAACC09",
+      "canonical_claim": "sensation proves that the vagus nerve is selectively engaged;",
+      "policy": "NOT_ALLOWED",
+      "risk_class": "MEDIUM",
+      "owner_route": "/learn/what-does-vagus-nerve-stimulation-feel-like",
+      "applies_to_routes": [
+        "/learn/what-does-vagus-nerve-stimulation-feel-like"
+      ],
+      "locale_scope": [
+        "en"
+      ],
+      "owner_source_mapping_found": true,
+      "mapped_owner_files": [
+        "src/app/(en)/learn/what-does-vagus-nerve-stimulation-feel-like/page.tsx"
+      ],
+      "missing_declared_route_mappings": [],
+      "lexical_candidates": 0,
+      "inherited_source_pool_count": 4,
+      "inherited_structural_candidate_ids": [],
+      "approved_evidence_ids": [],
+      "coverage_conclusion": "MAPPING_ONLY_NOT_SCIENTIFIC_SUPPORT",
+      "translation_performed": false,
+      "mapping_basis": "EXISTING_DECLARED_OWNER_AND_D1_SOURCE_MAPPING_NO_SEMANTIC_INFERENCE",
+      "current_mapped_files": [
+        {
+          "path": "src/app/(en)/learn/what-does-vagus-nerve-stimulation-feel-like/page.tsx",
+          "sha256": "207ef166b54a14ab9daa25913b4b704f517c2b2e9b956c91445fc25c4545b80b",
+          "bytes_match_d1": true
+        }
+      ],
+      "claim_support_review_complete": false
+    }
+  ],
+  "delivered_route_mapping": [
+    {
+      "route": "/learn/parasympathetic-nervous-system",
+      "declared_registry_policy_ids": [],
+      "requires_explicit_claim_mapping_review": true
+    },
+    {
+      "route": "/learn/vagal-tone",
+      "declared_registry_policy_ids": [],
+      "requires_explicit_claim_mapping_review": true
+    },
+    {
+      "route": "/learn/fight-flight-freeze",
+      "declared_registry_policy_ids": [],
+      "requires_explicit_claim_mapping_review": true
+    },
+    {
+      "route": "/learn/recovery-and-regulation",
+      "declared_registry_policy_ids": [],
+      "requires_explicit_claim_mapping_review": true
+    },
+    {
+      "route": "/learn/why-you-feel-tired-but-cant-relax",
+      "declared_registry_policy_ids": [],
+      "requires_explicit_claim_mapping_review": true
+    },
+    {
+      "route": "/learn/why-your-body-feels-stuck-in-stress",
+      "declared_registry_policy_ids": [],
+      "requires_explicit_claim_mapping_review": true
+    },
+    {
+      "route": "/learn/signs-of-a-dysregulated-nervous-system",
+      "declared_registry_policy_ids": [],
+      "requires_explicit_claim_mapping_review": true
+    },
+    {
+      "route": "/learn/what-nervous-system-regulation-feels-like",
+      "declared_registry_policy_ids": [],
+      "requires_explicit_claim_mapping_review": true
+    },
+    {
+      "route": "/learn/emotional-regulation-and-the-nervous-system",
+      "declared_registry_policy_ids": [],
+      "requires_explicit_claim_mapping_review": true
+    },
+    {
+      "route": "/conditions/anxiety",
+      "declared_registry_policy_ids": [],
+      "requires_explicit_claim_mapping_review": true
+    },
+    {
+      "route": "/conditions/burnout",
+      "declared_registry_policy_ids": [],
+      "requires_explicit_claim_mapping_review": true
+    }
+  ],
+  "approval_links_added": 0,
+  "translated_or_inferred_policy_mappings_added": 0,
+  "scope_note": "A page lacking an explicit owner/applicability link is not thereby ungoverned or scientifically unsupported."
+}

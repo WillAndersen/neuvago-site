@@ -1,0 +1,305 @@
+{
+  "schema": "neuvago-1e4e1-proposed-design-contract-v1",
+  "title": "1E.4E.1 – Editorial Enforcement Contract & Shadow Pilot",
+  "date": "2026-09-13",
+  "status": "PROPOSED_DESIGN_NOT_IMPLEMENTED",
+  "proposal_origin": "NEW_DESIGN_RECOMMENDATION_BASED_ON_ACCEPTED_1E4D7_HANDOFF",
+  "baseline_commit": "4c4e65a87163000ee493f264849824f17fdcf8ca",
+  "accepted_input": {
+    "file": "neuvago-1e4d7-consolidated-20260913T165443Z-19mlbi7y-share.zip",
+    "sha256": "1f2b8291daa7004cdf8f180967421bc5f85eeabe488ae06b40339832cec0bcc4"
+  },
+  "rule_family_ids_preserved_from_handoff": [
+    "G-ID",
+    "G-REVIEW",
+    "G-SCOPE",
+    "G-ROUTES",
+    "G-LIFECYCLE"
+  ],
+  "initial_execution_mode": "SHADOW_REPORT_ONLY",
+  "initial_repo_mutations_allowed": false,
+  "ci_installed": false,
+  "deployment_blocking_enabled": false,
+  "implementation_delivered": false,
+  "tests_executed_for_this_design": false,
+  "protected_start_state": {
+    "locked_file_hash_source": "neuvago-1e4d7-scoped-acceptance-20260913.json / locked_file_sha256",
+    "files": 252,
+    "source_path_deliveries": 11,
+    "source_cards": 23,
+    "claim_policies": 117,
+    "active_evidence_records": 172,
+    "quarantined_records": 2,
+    "historical_locks": 27,
+    "approved_links": 0
+  },
+  "model_layers": [
+    "source_identity",
+    "per_card_route_usage_and_scope",
+    "canonical_claim_policy",
+    "explicit_route_applicability",
+    "version_bound_review_decision",
+    "phase_bound_gate_observation"
+  ],
+  "rule_families": [
+    {
+      "id": "G-ID",
+      "origin": "editorial-enforcement-handoff.json / hard_gate_design_candidates / G-ID",
+      "name": "Kildeidentitet i riktig kort",
+      "scope": "DECLARED_SOURCE_CARDS_ONLY",
+      "technical_checks": [
+        "Unik kort-ID og eksplisitt kildekortavgrensning.",
+        "Tittel, kildelenke og oppgitte identifikatorer sammenholdes innenfor samme kort, ikke innenfor et vilkårlig linjevindu.",
+        "Merket DOI-tekst og DOI-lenke behandles som to gyldige presentasjoner.",
+        "Offentlig veiledning eller klassifikasjon krever ikke PMID/DOI.",
+        "Viste kilder utenfor aktivt register holdes som dokumenterte intake-kandidater."
+      ],
+      "would_block": [
+        "Bytte av PMID/DOI mellom to kort med ulike identiteter.",
+        "Manglende kortmål for en avtalt innledende henvisning.",
+        "Bruk av karanteneidentitet som aktiv kilde uten kontrollert rettingsvedtak.",
+        "Konstruerte forskningsidentifikatorer på et offentlig kildekort."
+      ],
+      "needs_review": [
+        "Ny kilde uten identitetsreview.",
+        "Identitetsfelt som ikke kan bestemmes fra den valgte inputrepresentasjonen."
+      ],
+      "not_claimed": [
+        "En gyldig DOI eller PMID beviser ikke at kilden støtter en påstand.",
+        "En kildelenke alene beviser ikke full bibliografisk riktighet."
+      ]
+    },
+    {
+      "id": "G-REVIEW",
+      "origin": "editorial-enforcement-handoff.json / hard_gate_design_candidates / G-REVIEW",
+      "name": "Skill identitet, bruk og faglig godkjenning",
+      "scope": "REGISTRY_AND_APPROVAL_TRANSITIONS",
+      "technical_checks": [
+        "Registermedlemskap, kildebruk på side, metodeklasse, direkthet og claim-støtte har separate felter.",
+        "Eksisterende review-ID-er og uavklarte statuser beholdes.",
+        "Det er ingen automatisk overgang fra kandidat til godkjent støtte."
+      ],
+      "would_block": [
+        "Nye evidence_ids/claim_ids/approved_evidence_ids uten konkret review-beslutning knyttet til eksakt claim-, kilde- og tekstversjon.",
+        "Metodeklasse brukes som evidenssikkerhet eller produktsupport.",
+        "Bredere scope-flagg settes sant på grunnlag av teknisk PASS alene."
+      ],
+      "needs_review": [
+        "De tolv intake-kandidatene.",
+        "De seks eksisterende registeridentitetenes nye bruk på sider.",
+        "De 19 kandidatreferansenes konkrete faglige relevans."
+      ],
+      "not_claimed": [
+        "Alle 117 policyer er ikke nødvendigvis effektpåstander som trenger samme bevisformat.",
+        "Tom kildepool er ikke bevis for fravær av evidens."
+      ]
+    },
+    {
+      "id": "G-SCOPE",
+      "origin": "editorial-enforcement-handoff.json / hard_gate_design_candidates / G-SCOPE",
+      "name": "Bevar gjennomgåtte grenser og historikk",
+      "scope": "DECLARED_ACCEPTED_BOUNDARIES_AND_HISTORY",
+      "technical_checks": [
+        "For hver avtalt note beholdes identitet, tekstreferanse og kilde-/rutekontekst.",
+        "Historiske locks, karanteneposter og korreksjonsbeslutninger endres ikke i stillhet.",
+        "Tekstendringer utenfor kildekort må også fremgå av endringsinventaret."
+      ],
+      "would_block": [
+        "Fjerning eller skjuling av avtalt tolkningsgrense eller veiledningsnote uten ny versjonsbundet review.",
+        "Omskriving av historisk kilde-lock eller sletting av karantenehistorikk som om feil aldri eksisterte."
+      ],
+      "needs_review": [
+        "Legitime omformuleringer av grenser: ny tekst kan godkjennes, men ikke usynlig arve gammel tekstgodkjenning.",
+        "Endringer i nye forklaringsavsnitt med uklar policytilknytning."
+      ],
+      "not_claimed": [
+        "Hele sidens uendrede hash er en innledende baselinekontroll, ikke en permanent regel som forbyr all redigering."
+      ]
+    },
+    {
+      "id": "G-ROUTES",
+      "origin": "editorial-enforcement-handoff.json / hard_gate_design_candidates / G-ROUTES",
+      "name": "Regler etter eksplisitt sidetype og kartlagt scope",
+      "scope": "DECLARED_ROUTES_AND_EXPLICIT_CONTROL_FIXTURES",
+      "technical_checks": [
+        "Ordlistens sourceLinks skilles fra research-navigasjon og fra direkte bibliografiske kildekort.",
+        "Learn, Conditions, offentlige veiledninger og andre sidetyper har eksplisitte forskjellige profiler.",
+        "Importert kilde identifisert i kode er ikke automatisk knyttet til rendret rute.",
+        "Alle endrede filer og berørte ruter oppgis, også utenfor pilotens supported set."
+      ],
+      "would_block": [
+        "En kontroll gir overordnet grønt lys ved å utelate en avtalt målfil eller rute.",
+        "En kjent kildehenvisning brytes i deklarert pilot-scope."
+      ],
+      "needs_review": [
+        "Ingen eksplisitte policykoblinger for de elleve leverte sidene.",
+        "Uklar sidetype, dynamisk rendering eller delt import med uavklart rutetilknytning.",
+        "De 110 videreførte review-postene vurderes etter gruppe og formål, ikke som universelle releaseblokkere."
+      ],
+      "not_claimed": [
+        "223 rutekandidater er ikke attestert antall publiserte sider.",
+        "To ordlisteeksempler godkjenner ikke alle 74 ordlisteposter."
+      ]
+    },
+    {
+      "id": "G-LIFECYCLE",
+      "origin": "editorial-enforcement-handoff.json / hard_gate_design_candidates / G-LIFECYCLE",
+      "name": "Fasekorrekt kontroll og låsing av kontrollresultatet",
+      "scope": "WORKTREE_INDEX_COMMIT_REPRESENTATIONS",
+      "technical_checks": [
+        "Arbeidstreet, staged/index og navngitt commit valideres som forskjellige tilstander.",
+        "Staged-kontrollen leser staged blobs, ikke potensielt annerledes arbeidstre.",
+        "Resultatet knyttes til eksakt kontrollert tree/blob, kontraktversjon, regler og fase.",
+        "Repo-rotaliaser og statusbaner håndteres uten tap av whitespace.",
+        "Innsamling og rapportering endrer ikke brukerens repo eller Git-refs."
+      ],
+      "would_block": [
+        "Feil baseline, delvis/ukjent staging eller endringer etter validert snapshot ved en fremtidig aktiveringsgate.",
+        "Precommit-forventet HEAD brukes ukritisk etter commit.",
+        "Ugyldig input, parserfeil eller fil som ikke kan leses presenteres som PASS."
+      ],
+      "needs_review": [
+        "Uventet ny commit: ny kontroll fra riktig snapshot, ingen reset.",
+        "Målet er utenfor valgt fase eller delt renderer uten tilstrekkelig datagrunnlag."
+      ],
+      "not_claimed": [
+        "Publisert HTML er ikke i seg selv deploy-ID/commit-attestasjon.",
+        "Bestått baselinekjøring dokumenterer ikke at negative tester ville oppdage feil."
+      ]
+    }
+  ],
+  "report_contract": {
+    "execution_status_values": [
+      "COMPLETE",
+      "ERROR"
+    ],
+    "item_status_values": [
+      "PASS_TECHNICAL_SCOPE",
+      "WOULD_BLOCK",
+      "REVIEW_REQUIRED",
+      "NOT_EVALUATED",
+      "OPERATIONAL_ERROR"
+    ],
+    "must_report_fields": [
+      "rule_id",
+      "input_phase",
+      "source_locator",
+      "route_or_unresolved_route",
+      "input_fingerprint",
+      "rule_contract_version",
+      "source_type",
+      "technical_result",
+      "reason",
+      "review_basis",
+      "would_block_if_enforced",
+      "scientific_claim_support_approved"
+    ],
+    "coverage_report_required": true,
+    "unassessed_changes_cannot_be_silently_passed": true,
+    "review_required_is_not_scientific_approval": true,
+    "capture_success_does_not_imply_release_ready": true,
+    "initial_default_flags": {
+      "approved_links": 0,
+      "release_ready": false,
+      "claim_support_review_complete": false,
+      "full_corpus_source_integrity_verified": false,
+      "enforcement_gates_installed": false
+    }
+  },
+  "baseline_handling": {
+    "accepted_source_path_contract_not_registry_approval": true,
+    "12_unregistered_sources_are_explicit_candidates_not_errors_to_auto_fix": true,
+    "known_review_backlog_must_not_be_hidden": true,
+    "existing_backlog_not_automatically_a_universal_publication_block": true,
+    "new_or_changed_out_of_scope_claims_require_review_not_automatic_pass": true,
+    "baseline_hashes_not_permanent_global_edit_ban": true
+  },
+  "human_review_lanes_from_return": [
+    {
+      "id": "R-INTAKE",
+      "pending": 12,
+      "task": "Review bibliographic intake for eight scholarly and four official sources; preserve all per-card scopes; no automatic insertion."
+    },
+    {
+      "id": "R-PROVENANCE",
+      "task": "Six already registered identities are newly cited on delivered routes. Review route/provenance linkage separately from identity membership."
+    },
+    {
+      "id": "R-CLAIMS",
+      "pending_policy_rows": 117,
+      "structural_candidate_references": 19,
+      "task": "Review study applicability, directness and exact wording. Candidate pools and owner mappings are not claim approval."
+    },
+    {
+      "id": "R-WORDING",
+      "pending_original_findings": 4,
+      "task": "Carry contextual decisions forward, including slow-or-paced breathing and humming-or-vocal-tasks scope questions."
+    },
+    {
+      "id": "R-OUTSIDE",
+      "task": "Carry 74 glossary, 1 other-source, 3 import and 28 route-purpose records forward. Historical pilot subsets are not full-group acceptance."
+    },
+    {
+      "id": "R-DUPLICATION",
+      "pending_original_groups": 38,
+      "task": "Retain classified reuse; semantic drift and search-intent ownership require separate review, not automatic deduplication."
+    },
+    {
+      "id": "R-OPS",
+      "task": "Define handling of the known /research/studies reading-guidance warning, visual QA and deployment attestation separately."
+    }
+  ],
+  "validation_plan_not_executed": [
+    "Positive control: exact eleven delivered page files and all 23 accepted source-card occurrences.",
+    "Positive control: official source without DOI/PMID; DOI as labelled text; valid internal glossary links.",
+    "Negative control: swap identifiers across two cards, remove one linked card, mutate URL or title identity.",
+    "Negative control: remove scope/care note, hide it, or replace it by text in script/comment/template.",
+    "Negative control: propose unsupported approval promotion in any of the three canonical approval arrays.",
+    "Negative control: mutate immutable history or reuse a quarantined identity as active support.",
+    "Positive/negative phase tests: local, fully staged, partially staged, committed; index/worktree disagreement.",
+    "Lifecycle: root symlink aliases, unicode/whitespace filenames, unknown file edits, failed parsing, report outside repo.",
+    "Scope: unknown changed route produces NOT_EVALUATED/REVIEW_REQUIRED; cannot disappear from result.",
+    "Per-rule mutation results must be checked against independent expected outcomes; a green baseline alone is insufficient."
+  ],
+  "proposed_work_sequence": [
+    {
+      "step": "1E.4E.1",
+      "name": "Contract & Shadow Pilot",
+      "deliverable": "Read-only prototype and explicit per-rule tests outside repository; no CI or enforcement writes."
+    },
+    {
+      "step": "1E.4E.2",
+      "name": "Pilot Review & Gate Calibration",
+      "deliverable": "Review real output; distinguish demonstrated invariant violations from review-only questions and unsupported scopes."
+    },
+    {
+      "step": "1E.4E.3",
+      "name": "Controlled Installation & Lifecycle Acceptance",
+      "deliverable": "Only after scoped review: explicit infrastructure diff, tests, separate commit and optional CI integration with safe resumption; activation is a separate decision."
+    }
+  ],
+  "step_names_are_new_proposals_not_previous_locked_plan": true,
+  "exit_criteria_for_future_shadow_pilot": [
+    "Exact starting baseline and preservation checks pass; originals and history remain unchanged.",
+    "All five rule families show declared technical coverage and independently tested positive/negative examples.",
+    "Expected violations and operational errors are detected without treating unresolved inputs as success.",
+    "No intake source or claim link is silently approved or written to the registry.",
+    "All 110 carried findings and semantic/scientific review limits remain visible."
+  ],
+  "next_proposed_gate": "RETURN_1E4E1_SHADOW_RESULTS_FOR_RULE_REVIEW",
+  "scope": {
+    "consolidated_coverage_and_handoff_accepted": true,
+    "prior_eleven_source_path_deliveries_carried_forward": true,
+    "current_local_source_agreement_as_reported": true,
+    "approved_links": 0,
+    "scientific_claim_support_approved": false,
+    "claim_support_review_complete": false,
+    "full_corpus_source_integrity_verified": false,
+    "current_production_verified": false,
+    "visual_layout_verified": false,
+    "deployment_commit_attested": false,
+    "enforcement_gates_installed": false,
+    "whole_1e4d_closed": false,
+    "release_ready": false
+  }
+}

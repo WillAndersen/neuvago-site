@@ -1,0 +1,1235 @@
+{
+  "schema": "neuvago-1e4e1-independent-calibration-reproductions-v1",
+  "origin": "NEW_ANALYST_CHECKS_NOT_PART_OF_RETURNED_90_TESTS_OR_45_CASES",
+  "package_rule_bytes_unchanged": true,
+  "rules_sha256": "a8a13281af8e6a44521c86f5afea1ea9bd5ab14b53437e0025d165a05937299f",
+  "typescript_version": "5.8.3",
+  "typescript_module_sha256": "dd17428736a07e1db1a138d8a14295ddb2699ba780ee15038acdd2c6da5373a0",
+  "returned_user_typescript_version": "5.9.3",
+  "execution_platform": "Linux",
+  "same_user_compiler_used": false,
+  "scope": "READ_ONLY_ORIGINAL_PACKAGE; IN_MEMORY_MODIFICATIONS_OF_EMBEDDED_ACCEPTED_FIXTURES; NO_USER_REPO; NO_INSTALL",
+  "cases": [
+    {
+      "case_id": "CONTROL_BASELINE",
+      "description": "Exact accepted source fixtures",
+      "analyst_expected_policy": "PASS within declared technical scope",
+      "target_rule": "G-ROUTES-TARGET",
+      "target_path": "src/app/(en)/learn/parasympathetic-nervous-system/page.tsx",
+      "mutation_excerpt": null,
+      "observed_counts": {
+        "PASS_TECHNICAL_SCOPE": 364,
+        "REVIEW_REQUIRED": 34
+      },
+      "target_observations": [
+        {
+          "rule_id": "G-ROUTES-TARGET",
+          "input_phase": "analyst_calibration_fixture",
+          "source_locator": {
+            "file": "src/app/(en)/learn/parasympathetic-nervous-system/page.tsx",
+            "line": null,
+            "card_id": null
+          },
+          "route_or_unresolved_route": "/learn/parasympathetic-nervous-system",
+          "input_fingerprint": "95f6de0ad0cd50c7d3038be6d33d599152fb2823e4615e5c96f5a9150324154f",
+          "snapshot_fingerprint": "39dcbb8e9061f04d75fa330a796f80fc54fdb635d5835ade1131aa1a07798c9f",
+          "selected_blob_oid": "29808175526a880840360fd05a529000471c2718",
+          "rule_contract_version": "neuvago-1e4e1-shadow-rules-v1",
+          "rules_sha256": "a8a13281af8e6a44521c86f5afea1ea9bd5ab14b53437e0025d165a05937299f",
+          "typescript_module_sha256": "dd17428736a07e1db1a138d8a14295ddb2699ba780ee15038acdd2c6da5373a0",
+          "source_type": "NOT_APPLICABLE",
+          "technical_result": "PASS_TECHNICAL_SCOPE",
+          "reason": "Declared input included; static projection only",
+          "review_basis": null,
+          "would_block_if_enforced": false,
+          "scientific_claim_support_approved": false,
+          "detail": null
+        }
+      ],
+      "not_evaluated_or_blocking_observations": [],
+      "target_review_observations": [
+        {
+          "rule_id": "G-REVIEW-USE",
+          "input_phase": "analyst_calibration_fixture",
+          "source_locator": {
+            "file": "src/app/(en)/learn/parasympathetic-nervous-system/page.tsx",
+            "line": 593,
+            "card_id": "source-17786266"
+          },
+          "route_or_unresolved_route": "/learn/parasympathetic-nervous-system",
+          "input_fingerprint": "95f6de0ad0cd50c7d3038be6d33d599152fb2823e4615e5c96f5a9150324154f",
+          "snapshot_fingerprint": "39dcbb8e9061f04d75fa330a796f80fc54fdb635d5835ade1131aa1a07798c9f",
+          "selected_blob_oid": "29808175526a880840360fd05a529000471c2718",
+          "rule_contract_version": "neuvago-1e4e1-shadow-rules-v1",
+          "rules_sha256": "a8a13281af8e6a44521c86f5afea1ea9bd5ab14b53437e0025d165a05937299f",
+          "typescript_module_sha256": "dd17428736a07e1db1a138d8a14295ddb2699ba780ee15038acdd2c6da5373a0",
+          "source_type": "SCHOLARLY_PUBLICATION",
+          "technical_result": "REVIEW_REQUIRED",
+          "reason": "Registered identity with new use",
+          "review_basis": "PMID:17786266",
+          "would_block_if_enforced": false,
+          "scientific_claim_support_approved": false,
+          "detail": {
+            "registry_member": true,
+            "claim_support_approved": false
+          }
+        },
+        {
+          "rule_id": "G-REVIEW-USE",
+          "input_phase": "analyst_calibration_fixture",
+          "source_locator": {
+            "file": "src/app/(en)/learn/parasympathetic-nervous-system/page.tsx",
+            "line": 604,
+            "card_id": "source-1660159"
+          },
+          "route_or_unresolved_route": "/learn/parasympathetic-nervous-system",
+          "input_fingerprint": "95f6de0ad0cd50c7d3038be6d33d599152fb2823e4615e5c96f5a9150324154f",
+          "snapshot_fingerprint": "39dcbb8e9061f04d75fa330a796f80fc54fdb635d5835ade1131aa1a07798c9f",
+          "selected_blob_oid": "29808175526a880840360fd05a529000471c2718",
+          "rule_contract_version": "neuvago-1e4e1-shadow-rules-v1",
+          "rules_sha256": "a8a13281af8e6a44521c86f5afea1ea9bd5ab14b53437e0025d165a05937299f",
+          "typescript_module_sha256": "dd17428736a07e1db1a138d8a14295ddb2699ba780ee15038acdd2c6da5373a0",
+          "source_type": "SCHOLARLY_PUBLICATION",
+          "technical_result": "REVIEW_REQUIRED",
+          "reason": "Registered identity with new use",
+          "review_basis": "PMID:1660159",
+          "would_block_if_enforced": false,
+          "scientific_claim_support_approved": false,
+          "detail": {
+            "registry_member": true,
+            "claim_support_approved": false
+          }
+        },
+        {
+          "rule_id": "G-ROUTES-APPLICABILITY",
+          "input_phase": "analyst_calibration_fixture",
+          "source_locator": {
+            "file": "src/app/(en)/learn/parasympathetic-nervous-system/page.tsx",
+            "line": null,
+            "card_id": null
+          },
+          "route_or_unresolved_route": "/learn/parasympathetic-nervous-system",
+          "input_fingerprint": "95f6de0ad0cd50c7d3038be6d33d599152fb2823e4615e5c96f5a9150324154f",
+          "snapshot_fingerprint": "39dcbb8e9061f04d75fa330a796f80fc54fdb635d5835ade1131aa1a07798c9f",
+          "selected_blob_oid": "29808175526a880840360fd05a529000471c2718",
+          "rule_contract_version": "neuvago-1e4e1-shadow-rules-v1",
+          "rules_sha256": "a8a13281af8e6a44521c86f5afea1ea9bd5ab14b53437e0025d165a05937299f",
+          "typescript_module_sha256": "dd17428736a07e1db1a138d8a14295ddb2699ba780ee15038acdd2c6da5373a0",
+          "source_type": "NOT_APPLICABLE",
+          "technical_result": "REVIEW_REQUIRED",
+          "reason": "No automatic policy-to-route inference; explicit applicability remains open",
+          "review_basis": "D7 policy-route-handoff.json",
+          "would_block_if_enforced": false,
+          "scientific_claim_support_approved": false,
+          "detail": null
+        }
+      ],
+      "changed_file_hashes": {},
+      "user_repository_touched": false
+    },
+    {
+      "case_id": "CONTROL_WRONG_PMID",
+      "description": "Swap one PubMed URL as in original negative test",
+      "analyst_expected_policy": "WOULD_BLOCK wrong source identity",
+      "target_rule": "G-ID-PMID",
+      "target_path": "src/app/(en)/learn/parasympathetic-nervous-system/page.tsx",
+      "mutation_excerpt": null,
+      "observed_counts": {
+        "PASS_TECHNICAL_SCOPE": 362,
+        "WOULD_BLOCK": 2,
+        "REVIEW_REQUIRED": 35
+      },
+      "target_observations": [
+        {
+          "rule_id": "G-ID-PMID",
+          "input_phase": "analyst_calibration_fixture",
+          "source_locator": {
+            "file": "src/app/(en)/learn/parasympathetic-nervous-system/page.tsx",
+            "line": 593,
+            "card_id": "source-17786266"
+          },
+          "route_or_unresolved_route": "/learn/parasympathetic-nervous-system",
+          "input_fingerprint": "eae31521a98443f083477359d8377a405b89df4adc6b074d6ccee2633ba9fce6",
+          "snapshot_fingerprint": "53639425a440accad606d3461774116de8a34c747ec2ef866b2eb46d9fca4b9c",
+          "selected_blob_oid": "9c02d9844239c5b021f2626a7381012dbfb3d2ae",
+          "rule_contract_version": "neuvago-1e4e1-shadow-rules-v1",
+          "rules_sha256": "a8a13281af8e6a44521c86f5afea1ea9bd5ab14b53437e0025d165a05937299f",
+          "typescript_module_sha256": "dd17428736a07e1db1a138d8a14295ddb2699ba780ee15038acdd2c6da5373a0",
+          "source_type": "SCHOLARLY_PUBLICATION",
+          "technical_result": "WOULD_BLOCK",
+          "reason": "PMID attributes, labels and links agree within the card",
+          "review_basis": null,
+          "would_block_if_enforced": true,
+          "scientific_claim_support_approved": false,
+          "detail": null
+        },
+        {
+          "rule_id": "G-ID-PMID",
+          "input_phase": "analyst_calibration_fixture",
+          "source_locator": {
+            "file": "src/app/(en)/learn/parasympathetic-nervous-system/page.tsx",
+            "line": 604,
+            "card_id": "source-1660159"
+          },
+          "route_or_unresolved_route": "/learn/parasympathetic-nervous-system",
+          "input_fingerprint": "eae31521a98443f083477359d8377a405b89df4adc6b074d6ccee2633ba9fce6",
+          "snapshot_fingerprint": "53639425a440accad606d3461774116de8a34c747ec2ef866b2eb46d9fca4b9c",
+          "selected_blob_oid": "9c02d9844239c5b021f2626a7381012dbfb3d2ae",
+          "rule_contract_version": "neuvago-1e4e1-shadow-rules-v1",
+          "rules_sha256": "a8a13281af8e6a44521c86f5afea1ea9bd5ab14b53437e0025d165a05937299f",
+          "typescript_module_sha256": "dd17428736a07e1db1a138d8a14295ddb2699ba780ee15038acdd2c6da5373a0",
+          "source_type": "SCHOLARLY_PUBLICATION",
+          "technical_result": "PASS_TECHNICAL_SCOPE",
+          "reason": "PMID attributes, labels and links agree within the card",
+          "review_basis": null,
+          "would_block_if_enforced": false,
+          "scientific_claim_support_approved": false,
+          "detail": null
+        }
+      ],
+      "not_evaluated_or_blocking_observations": [
+        {
+          "rule_id": "G-ID-PMID",
+          "input_phase": "analyst_calibration_fixture",
+          "source_locator": {
+            "file": "src/app/(en)/learn/parasympathetic-nervous-system/page.tsx",
+            "line": 593,
+            "card_id": "source-17786266"
+          },
+          "route_or_unresolved_route": "/learn/parasympathetic-nervous-system",
+          "input_fingerprint": "eae31521a98443f083477359d8377a405b89df4adc6b074d6ccee2633ba9fce6",
+          "snapshot_fingerprint": "53639425a440accad606d3461774116de8a34c747ec2ef866b2eb46d9fca4b9c",
+          "selected_blob_oid": "9c02d9844239c5b021f2626a7381012dbfb3d2ae",
+          "rule_contract_version": "neuvago-1e4e1-shadow-rules-v1",
+          "rules_sha256": "a8a13281af8e6a44521c86f5afea1ea9bd5ab14b53437e0025d165a05937299f",
+          "typescript_module_sha256": "dd17428736a07e1db1a138d8a14295ddb2699ba780ee15038acdd2c6da5373a0",
+          "source_type": "SCHOLARLY_PUBLICATION",
+          "technical_result": "WOULD_BLOCK",
+          "reason": "PMID attributes, labels and links agree within the card",
+          "review_basis": null,
+          "would_block_if_enforced": true,
+          "scientific_claim_support_approved": false,
+          "detail": null
+        },
+        {
+          "rule_id": "G-ID-URL",
+          "input_phase": "analyst_calibration_fixture",
+          "source_locator": {
+            "file": "src/app/(en)/learn/parasympathetic-nervous-system/page.tsx",
+            "line": 593,
+            "card_id": "source-17786266"
+          },
+          "route_or_unresolved_route": "/learn/parasympathetic-nervous-system",
+          "input_fingerprint": "eae31521a98443f083477359d8377a405b89df4adc6b074d6ccee2633ba9fce6",
+          "snapshot_fingerprint": "53639425a440accad606d3461774116de8a34c747ec2ef866b2eb46d9fca4b9c",
+          "selected_blob_oid": "9c02d9844239c5b021f2626a7381012dbfb3d2ae",
+          "rule_contract_version": "neuvago-1e4e1-shadow-rules-v1",
+          "rules_sha256": "a8a13281af8e6a44521c86f5afea1ea9bd5ab14b53437e0025d165a05937299f",
+          "typescript_module_sha256": "dd17428736a07e1db1a138d8a14295ddb2699ba780ee15038acdd2c6da5373a0",
+          "source_type": "SCHOLARLY_PUBLICATION",
+          "technical_result": "WOULD_BLOCK",
+          "reason": "Correct source link and no unrelated source link in this card",
+          "review_basis": null,
+          "would_block_if_enforced": true,
+          "scientific_claim_support_approved": false,
+          "detail": null
+        }
+      ],
+      "target_review_observations": [
+        {
+          "rule_id": "G-REVIEW-USE",
+          "input_phase": "analyst_calibration_fixture",
+          "source_locator": {
+            "file": "src/app/(en)/learn/parasympathetic-nervous-system/page.tsx",
+            "line": 593,
+            "card_id": "source-17786266"
+          },
+          "route_or_unresolved_route": "/learn/parasympathetic-nervous-system",
+          "input_fingerprint": "eae31521a98443f083477359d8377a405b89df4adc6b074d6ccee2633ba9fce6",
+          "snapshot_fingerprint": "53639425a440accad606d3461774116de8a34c747ec2ef866b2eb46d9fca4b9c",
+          "selected_blob_oid": "9c02d9844239c5b021f2626a7381012dbfb3d2ae",
+          "rule_contract_version": "neuvago-1e4e1-shadow-rules-v1",
+          "rules_sha256": "a8a13281af8e6a44521c86f5afea1ea9bd5ab14b53437e0025d165a05937299f",
+          "typescript_module_sha256": "dd17428736a07e1db1a138d8a14295ddb2699ba780ee15038acdd2c6da5373a0",
+          "source_type": "SCHOLARLY_PUBLICATION",
+          "technical_result": "REVIEW_REQUIRED",
+          "reason": "Registered identity with new use",
+          "review_basis": "PMID:17786266",
+          "would_block_if_enforced": false,
+          "scientific_claim_support_approved": false,
+          "detail": {
+            "registry_member": true,
+            "claim_support_approved": false
+          }
+        },
+        {
+          "rule_id": "G-REVIEW-USE",
+          "input_phase": "analyst_calibration_fixture",
+          "source_locator": {
+            "file": "src/app/(en)/learn/parasympathetic-nervous-system/page.tsx",
+            "line": 604,
+            "card_id": "source-1660159"
+          },
+          "route_or_unresolved_route": "/learn/parasympathetic-nervous-system",
+          "input_fingerprint": "eae31521a98443f083477359d8377a405b89df4adc6b074d6ccee2633ba9fce6",
+          "snapshot_fingerprint": "53639425a440accad606d3461774116de8a34c747ec2ef866b2eb46d9fca4b9c",
+          "selected_blob_oid": "9c02d9844239c5b021f2626a7381012dbfb3d2ae",
+          "rule_contract_version": "neuvago-1e4e1-shadow-rules-v1",
+          "rules_sha256": "a8a13281af8e6a44521c86f5afea1ea9bd5ab14b53437e0025d165a05937299f",
+          "typescript_module_sha256": "dd17428736a07e1db1a138d8a14295ddb2699ba780ee15038acdd2c6da5373a0",
+          "source_type": "SCHOLARLY_PUBLICATION",
+          "technical_result": "REVIEW_REQUIRED",
+          "reason": "Registered identity with new use",
+          "review_basis": "PMID:1660159",
+          "would_block_if_enforced": false,
+          "scientific_claim_support_approved": false,
+          "detail": {
+            "registry_member": true,
+            "claim_support_approved": false
+          }
+        },
+        {
+          "rule_id": "G-ROUTES-APPLICABILITY",
+          "input_phase": "analyst_calibration_fixture",
+          "source_locator": {
+            "file": "src/app/(en)/learn/parasympathetic-nervous-system/page.tsx",
+            "line": null,
+            "card_id": null
+          },
+          "route_or_unresolved_route": "/learn/parasympathetic-nervous-system",
+          "input_fingerprint": "eae31521a98443f083477359d8377a405b89df4adc6b074d6ccee2633ba9fce6",
+          "snapshot_fingerprint": "53639425a440accad606d3461774116de8a34c747ec2ef866b2eb46d9fca4b9c",
+          "selected_blob_oid": "9c02d9844239c5b021f2626a7381012dbfb3d2ae",
+          "rule_contract_version": "neuvago-1e4e1-shadow-rules-v1",
+          "rules_sha256": "a8a13281af8e6a44521c86f5afea1ea9bd5ab14b53437e0025d165a05937299f",
+          "typescript_module_sha256": "dd17428736a07e1db1a138d8a14295ddb2699ba780ee15038acdd2c6da5373a0",
+          "source_type": "NOT_APPLICABLE",
+          "technical_result": "REVIEW_REQUIRED",
+          "reason": "No automatic policy-to-route inference; explicit applicability remains open",
+          "review_basis": "D7 policy-route-handoff.json",
+          "would_block_if_enforced": false,
+          "scientific_claim_support_approved": false,
+          "detail": null
+        },
+        {
+          "rule_id": "G-SCOPE-TEXT-CHANGE",
+          "input_phase": "analyst_calibration_fixture",
+          "source_locator": {
+            "file": "src/app/(en)/learn/parasympathetic-nervous-system/page.tsx",
+            "line": null,
+            "card_id": null
+          },
+          "route_or_unresolved_route": "/learn/parasympathetic-nervous-system",
+          "input_fingerprint": "eae31521a98443f083477359d8377a405b89df4adc6b074d6ccee2633ba9fce6",
+          "snapshot_fingerprint": "53639425a440accad606d3461774116de8a34c747ec2ef866b2eb46d9fca4b9c",
+          "selected_blob_oid": "9c02d9844239c5b021f2626a7381012dbfb3d2ae",
+          "rule_contract_version": "neuvago-1e4e1-shadow-rules-v1",
+          "rules_sha256": "a8a13281af8e6a44521c86f5afea1ea9bd5ab14b53437e0025d165a05937299f",
+          "typescript_module_sha256": "dd17428736a07e1db1a138d8a14295ddb2699ba780ee15038acdd2c6da5373a0",
+          "source_type": "NOT_APPLICABLE",
+          "technical_result": "REVIEW_REQUIRED",
+          "reason": "Changed public source: no match to a policy is not automatic permission",
+          "review_basis": null,
+          "would_block_if_enforced": false,
+          "scientific_claim_support_approved": false,
+          "detail": null
+        }
+      ],
+      "changed_file_hashes": {
+        "src/app/(en)/learn/parasympathetic-nervous-system/page.tsx": "eae31521a98443f083477359d8377a405b89df4adc6b074d6ccee2633ba9fce6"
+      },
+      "user_repository_touched": false
+    },
+    {
+      "case_id": "CAL_PARSE_EARLY_RETURN",
+      "description": "Insert an unconditional early return wrapped in an if before the direct JSX return",
+      "analyst_expected_policy": "NOT_EVALUATED for unsupported control flow, or detected missing reachable main; not technical approval of unreachable cards",
+      "target_rule": "G-ROUTES-TARGET",
+      "target_path": "src/app/(en)/learn/parasympathetic-nervous-system/page.tsx",
+      "mutation_excerpt": "export default function ParasympatheticNervousSystemPage() {\n  if (true) return null;",
+      "observed_counts": {
+        "PASS_TECHNICAL_SCOPE": 364,
+        "REVIEW_REQUIRED": 35
+      },
+      "target_observations": [
+        {
+          "rule_id": "G-ROUTES-TARGET",
+          "input_phase": "analyst_calibration_fixture",
+          "source_locator": {
+            "file": "src/app/(en)/learn/parasympathetic-nervous-system/page.tsx",
+            "line": null,
+            "card_id": null
+          },
+          "route_or_unresolved_route": "/learn/parasympathetic-nervous-system",
+          "input_fingerprint": "cdab6cf21a5e66a1d242a5996b7dd44739fbb4788b16c6ac6991154adbf9bae4",
+          "snapshot_fingerprint": "d24930bff05ffc6684554d09b2a7b4a335cbe9d4523ac2bfc4742590fce72599",
+          "selected_blob_oid": "704b5526f32e3707679f5f4bfdd795968840e01b",
+          "rule_contract_version": "neuvago-1e4e1-shadow-rules-v1",
+          "rules_sha256": "a8a13281af8e6a44521c86f5afea1ea9bd5ab14b53437e0025d165a05937299f",
+          "typescript_module_sha256": "dd17428736a07e1db1a138d8a14295ddb2699ba780ee15038acdd2c6da5373a0",
+          "source_type": "NOT_APPLICABLE",
+          "technical_result": "PASS_TECHNICAL_SCOPE",
+          "reason": "Declared input included; static projection only",
+          "review_basis": null,
+          "would_block_if_enforced": false,
+          "scientific_claim_support_approved": false,
+          "detail": null
+        }
+      ],
+      "not_evaluated_or_blocking_observations": [],
+      "target_review_observations": [
+        {
+          "rule_id": "G-REVIEW-USE",
+          "input_phase": "analyst_calibration_fixture",
+          "source_locator": {
+            "file": "src/app/(en)/learn/parasympathetic-nervous-system/page.tsx",
+            "line": 594,
+            "card_id": "source-17786266"
+          },
+          "route_or_unresolved_route": "/learn/parasympathetic-nervous-system",
+          "input_fingerprint": "cdab6cf21a5e66a1d242a5996b7dd44739fbb4788b16c6ac6991154adbf9bae4",
+          "snapshot_fingerprint": "d24930bff05ffc6684554d09b2a7b4a335cbe9d4523ac2bfc4742590fce72599",
+          "selected_blob_oid": "704b5526f32e3707679f5f4bfdd795968840e01b",
+          "rule_contract_version": "neuvago-1e4e1-shadow-rules-v1",
+          "rules_sha256": "a8a13281af8e6a44521c86f5afea1ea9bd5ab14b53437e0025d165a05937299f",
+          "typescript_module_sha256": "dd17428736a07e1db1a138d8a14295ddb2699ba780ee15038acdd2c6da5373a0",
+          "source_type": "SCHOLARLY_PUBLICATION",
+          "technical_result": "REVIEW_REQUIRED",
+          "reason": "Registered identity with new use",
+          "review_basis": "PMID:17786266",
+          "would_block_if_enforced": false,
+          "scientific_claim_support_approved": false,
+          "detail": {
+            "registry_member": true,
+            "claim_support_approved": false
+          }
+        },
+        {
+          "rule_id": "G-REVIEW-USE",
+          "input_phase": "analyst_calibration_fixture",
+          "source_locator": {
+            "file": "src/app/(en)/learn/parasympathetic-nervous-system/page.tsx",
+            "line": 605,
+            "card_id": "source-1660159"
+          },
+          "route_or_unresolved_route": "/learn/parasympathetic-nervous-system",
+          "input_fingerprint": "cdab6cf21a5e66a1d242a5996b7dd44739fbb4788b16c6ac6991154adbf9bae4",
+          "snapshot_fingerprint": "d24930bff05ffc6684554d09b2a7b4a335cbe9d4523ac2bfc4742590fce72599",
+          "selected_blob_oid": "704b5526f32e3707679f5f4bfdd795968840e01b",
+          "rule_contract_version": "neuvago-1e4e1-shadow-rules-v1",
+          "rules_sha256": "a8a13281af8e6a44521c86f5afea1ea9bd5ab14b53437e0025d165a05937299f",
+          "typescript_module_sha256": "dd17428736a07e1db1a138d8a14295ddb2699ba780ee15038acdd2c6da5373a0",
+          "source_type": "SCHOLARLY_PUBLICATION",
+          "technical_result": "REVIEW_REQUIRED",
+          "reason": "Registered identity with new use",
+          "review_basis": "PMID:1660159",
+          "would_block_if_enforced": false,
+          "scientific_claim_support_approved": false,
+          "detail": {
+            "registry_member": true,
+            "claim_support_approved": false
+          }
+        },
+        {
+          "rule_id": "G-ROUTES-APPLICABILITY",
+          "input_phase": "analyst_calibration_fixture",
+          "source_locator": {
+            "file": "src/app/(en)/learn/parasympathetic-nervous-system/page.tsx",
+            "line": null,
+            "card_id": null
+          },
+          "route_or_unresolved_route": "/learn/parasympathetic-nervous-system",
+          "input_fingerprint": "cdab6cf21a5e66a1d242a5996b7dd44739fbb4788b16c6ac6991154adbf9bae4",
+          "snapshot_fingerprint": "d24930bff05ffc6684554d09b2a7b4a335cbe9d4523ac2bfc4742590fce72599",
+          "selected_blob_oid": "704b5526f32e3707679f5f4bfdd795968840e01b",
+          "rule_contract_version": "neuvago-1e4e1-shadow-rules-v1",
+          "rules_sha256": "a8a13281af8e6a44521c86f5afea1ea9bd5ab14b53437e0025d165a05937299f",
+          "typescript_module_sha256": "dd17428736a07e1db1a138d8a14295ddb2699ba780ee15038acdd2c6da5373a0",
+          "source_type": "NOT_APPLICABLE",
+          "technical_result": "REVIEW_REQUIRED",
+          "reason": "No automatic policy-to-route inference; explicit applicability remains open",
+          "review_basis": "D7 policy-route-handoff.json",
+          "would_block_if_enforced": false,
+          "scientific_claim_support_approved": false,
+          "detail": null
+        },
+        {
+          "rule_id": "G-SCOPE-TEXT-CHANGE",
+          "input_phase": "analyst_calibration_fixture",
+          "source_locator": {
+            "file": "src/app/(en)/learn/parasympathetic-nervous-system/page.tsx",
+            "line": null,
+            "card_id": null
+          },
+          "route_or_unresolved_route": "/learn/parasympathetic-nervous-system",
+          "input_fingerprint": "cdab6cf21a5e66a1d242a5996b7dd44739fbb4788b16c6ac6991154adbf9bae4",
+          "snapshot_fingerprint": "d24930bff05ffc6684554d09b2a7b4a335cbe9d4523ac2bfc4742590fce72599",
+          "selected_blob_oid": "704b5526f32e3707679f5f4bfdd795968840e01b",
+          "rule_contract_version": "neuvago-1e4e1-shadow-rules-v1",
+          "rules_sha256": "a8a13281af8e6a44521c86f5afea1ea9bd5ab14b53437e0025d165a05937299f",
+          "typescript_module_sha256": "dd17428736a07e1db1a138d8a14295ddb2699ba780ee15038acdd2c6da5373a0",
+          "source_type": "NOT_APPLICABLE",
+          "technical_result": "REVIEW_REQUIRED",
+          "reason": "Changed public source: no match to a policy is not automatic permission",
+          "review_basis": null,
+          "would_block_if_enforced": false,
+          "scientific_claim_support_approved": false,
+          "detail": null
+        }
+      ],
+      "changed_file_hashes": {
+        "src/app/(en)/learn/parasympathetic-nervous-system/page.tsx": "cdab6cf21a5e66a1d242a5996b7dd44739fbb4788b16c6ac6991154adbf9bae4"
+      },
+      "user_repository_touched": false
+    },
+    {
+      "case_id": "CAL_METADATA_CONTRADICTORY_AUTHOR",
+      "description": "Replace bibliographic author while retaining accepted author elsewhere in the same bibliographic paragraph",
+      "analyst_expected_policy": "Do not report author field matches from substring presence alone; require determinate field match or review-bound identity status",
+      "target_rule": "G-ID-METADATA",
+      "target_path": "src/app/(en)/learn/parasympathetic-nervous-system/page.tsx",
+      "mutation_excerpt": "Wrong Author. American Journal of Pharmaceutical Education. Previous attribution: McCorry LK.",
+      "observed_counts": {
+        "PASS_TECHNICAL_SCOPE": 364,
+        "REVIEW_REQUIRED": 35
+      },
+      "target_observations": [
+        {
+          "rule_id": "G-ID-METADATA",
+          "input_phase": "analyst_calibration_fixture",
+          "source_locator": {
+            "file": "src/app/(en)/learn/parasympathetic-nervous-system/page.tsx",
+            "line": 593,
+            "card_id": "source-17786266"
+          },
+          "route_or_unresolved_route": "/learn/parasympathetic-nervous-system",
+          "input_fingerprint": "fa1369fb0ca36c45fd4dcddb65eb44a55db753c7d84d7707e331fe6b9c1853d7",
+          "snapshot_fingerprint": "9c659df99ad0375199ccaadccfa23ba4841b59b8b59e0230753f5227d9c1bee1",
+          "selected_blob_oid": "145f1468d54e6041e728ea7a940f752ab91f0cc9",
+          "rule_contract_version": "neuvago-1e4e1-shadow-rules-v1",
+          "rules_sha256": "a8a13281af8e6a44521c86f5afea1ea9bd5ab14b53437e0025d165a05937299f",
+          "typescript_module_sha256": "dd17428736a07e1db1a138d8a14295ddb2699ba780ee15038acdd2c6da5373a0",
+          "source_type": "SCHOLARLY_PUBLICATION",
+          "technical_result": "PASS_TECHNICAL_SCOPE",
+          "reason": "Per-card title matches accepted identity",
+          "review_basis": null,
+          "would_block_if_enforced": false,
+          "scientific_claim_support_approved": false,
+          "detail": null
+        },
+        {
+          "rule_id": "G-ID-METADATA",
+          "input_phase": "analyst_calibration_fixture",
+          "source_locator": {
+            "file": "src/app/(en)/learn/parasympathetic-nervous-system/page.tsx",
+            "line": 593,
+            "card_id": "source-17786266"
+          },
+          "route_or_unresolved_route": "/learn/parasympathetic-nervous-system",
+          "input_fingerprint": "fa1369fb0ca36c45fd4dcddb65eb44a55db753c7d84d7707e331fe6b9c1853d7",
+          "snapshot_fingerprint": "9c659df99ad0375199ccaadccfa23ba4841b59b8b59e0230753f5227d9c1bee1",
+          "selected_blob_oid": "145f1468d54e6041e728ea7a940f752ab91f0cc9",
+          "rule_contract_version": "neuvago-1e4e1-shadow-rules-v1",
+          "rules_sha256": "a8a13281af8e6a44521c86f5afea1ea9bd5ab14b53437e0025d165a05937299f",
+          "typescript_module_sha256": "dd17428736a07e1db1a138d8a14295ddb2699ba780ee15038acdd2c6da5373a0",
+          "source_type": "SCHOLARLY_PUBLICATION",
+          "technical_result": "PASS_TECHNICAL_SCOPE",
+          "reason": "Per-card authors matches accepted identity",
+          "review_basis": null,
+          "would_block_if_enforced": false,
+          "scientific_claim_support_approved": false,
+          "detail": null
+        },
+        {
+          "rule_id": "G-ID-METADATA",
+          "input_phase": "analyst_calibration_fixture",
+          "source_locator": {
+            "file": "src/app/(en)/learn/parasympathetic-nervous-system/page.tsx",
+            "line": 593,
+            "card_id": "source-17786266"
+          },
+          "route_or_unresolved_route": "/learn/parasympathetic-nervous-system",
+          "input_fingerprint": "fa1369fb0ca36c45fd4dcddb65eb44a55db753c7d84d7707e331fe6b9c1853d7",
+          "snapshot_fingerprint": "9c659df99ad0375199ccaadccfa23ba4841b59b8b59e0230753f5227d9c1bee1",
+          "selected_blob_oid": "145f1468d54e6041e728ea7a940f752ab91f0cc9",
+          "rule_contract_version": "neuvago-1e4e1-shadow-rules-v1",
+          "rules_sha256": "a8a13281af8e6a44521c86f5afea1ea9bd5ab14b53437e0025d165a05937299f",
+          "typescript_module_sha256": "dd17428736a07e1db1a138d8a14295ddb2699ba780ee15038acdd2c6da5373a0",
+          "source_type": "SCHOLARLY_PUBLICATION",
+          "technical_result": "PASS_TECHNICAL_SCOPE",
+          "reason": "Per-card publication matches accepted identity",
+          "review_basis": null,
+          "would_block_if_enforced": false,
+          "scientific_claim_support_approved": false,
+          "detail": null
+        },
+        {
+          "rule_id": "G-ID-METADATA",
+          "input_phase": "analyst_calibration_fixture",
+          "source_locator": {
+            "file": "src/app/(en)/learn/parasympathetic-nervous-system/page.tsx",
+            "line": 593,
+            "card_id": "source-17786266"
+          },
+          "route_or_unresolved_route": "/learn/parasympathetic-nervous-system",
+          "input_fingerprint": "fa1369fb0ca36c45fd4dcddb65eb44a55db753c7d84d7707e331fe6b9c1853d7",
+          "snapshot_fingerprint": "9c659df99ad0375199ccaadccfa23ba4841b59b8b59e0230753f5227d9c1bee1",
+          "selected_blob_oid": "145f1468d54e6041e728ea7a940f752ab91f0cc9",
+          "rule_contract_version": "neuvago-1e4e1-shadow-rules-v1",
+          "rules_sha256": "a8a13281af8e6a44521c86f5afea1ea9bd5ab14b53437e0025d165a05937299f",
+          "typescript_module_sha256": "dd17428736a07e1db1a138d8a14295ddb2699ba780ee15038acdd2c6da5373a0",
+          "source_type": "SCHOLARLY_PUBLICATION",
+          "technical_result": "PASS_TECHNICAL_SCOPE",
+          "reason": "Per-card date matches accepted identity",
+          "review_basis": null,
+          "would_block_if_enforced": false,
+          "scientific_claim_support_approved": false,
+          "detail": null
+        },
+        {
+          "rule_id": "G-ID-METADATA",
+          "input_phase": "analyst_calibration_fixture",
+          "source_locator": {
+            "file": "src/app/(en)/learn/parasympathetic-nervous-system/page.tsx",
+            "line": 593,
+            "card_id": "source-17786266"
+          },
+          "route_or_unresolved_route": "/learn/parasympathetic-nervous-system",
+          "input_fingerprint": "fa1369fb0ca36c45fd4dcddb65eb44a55db753c7d84d7707e331fe6b9c1853d7",
+          "snapshot_fingerprint": "9c659df99ad0375199ccaadccfa23ba4841b59b8b59e0230753f5227d9c1bee1",
+          "selected_blob_oid": "145f1468d54e6041e728ea7a940f752ab91f0cc9",
+          "rule_contract_version": "neuvago-1e4e1-shadow-rules-v1",
+          "rules_sha256": "a8a13281af8e6a44521c86f5afea1ea9bd5ab14b53437e0025d165a05937299f",
+          "typescript_module_sha256": "dd17428736a07e1db1a138d8a14295ddb2699ba780ee15038acdd2c6da5373a0",
+          "source_type": "SCHOLARLY_PUBLICATION",
+          "technical_result": "PASS_TECHNICAL_SCOPE",
+          "reason": "Per-card source_type matches accepted identity",
+          "review_basis": null,
+          "would_block_if_enforced": false,
+          "scientific_claim_support_approved": false,
+          "detail": null
+        },
+        {
+          "rule_id": "G-ID-METADATA",
+          "input_phase": "analyst_calibration_fixture",
+          "source_locator": {
+            "file": "src/app/(en)/learn/parasympathetic-nervous-system/page.tsx",
+            "line": 604,
+            "card_id": "source-1660159"
+          },
+          "route_or_unresolved_route": "/learn/parasympathetic-nervous-system",
+          "input_fingerprint": "fa1369fb0ca36c45fd4dcddb65eb44a55db753c7d84d7707e331fe6b9c1853d7",
+          "snapshot_fingerprint": "9c659df99ad0375199ccaadccfa23ba4841b59b8b59e0230753f5227d9c1bee1",
+          "selected_blob_oid": "145f1468d54e6041e728ea7a940f752ab91f0cc9",
+          "rule_contract_version": "neuvago-1e4e1-shadow-rules-v1",
+          "rules_sha256": "a8a13281af8e6a44521c86f5afea1ea9bd5ab14b53437e0025d165a05937299f",
+          "typescript_module_sha256": "dd17428736a07e1db1a138d8a14295ddb2699ba780ee15038acdd2c6da5373a0",
+          "source_type": "SCHOLARLY_PUBLICATION",
+          "technical_result": "PASS_TECHNICAL_SCOPE",
+          "reason": "Per-card title matches accepted identity",
+          "review_basis": null,
+          "would_block_if_enforced": false,
+          "scientific_claim_support_approved": false,
+          "detail": null
+        },
+        {
+          "rule_id": "G-ID-METADATA",
+          "input_phase": "analyst_calibration_fixture",
+          "source_locator": {
+            "file": "src/app/(en)/learn/parasympathetic-nervous-system/page.tsx",
+            "line": 604,
+            "card_id": "source-1660159"
+          },
+          "route_or_unresolved_route": "/learn/parasympathetic-nervous-system",
+          "input_fingerprint": "fa1369fb0ca36c45fd4dcddb65eb44a55db753c7d84d7707e331fe6b9c1853d7",
+          "snapshot_fingerprint": "9c659df99ad0375199ccaadccfa23ba4841b59b8b59e0230753f5227d9c1bee1",
+          "selected_blob_oid": "145f1468d54e6041e728ea7a940f752ab91f0cc9",
+          "rule_contract_version": "neuvago-1e4e1-shadow-rules-v1",
+          "rules_sha256": "a8a13281af8e6a44521c86f5afea1ea9bd5ab14b53437e0025d165a05937299f",
+          "typescript_module_sha256": "dd17428736a07e1db1a138d8a14295ddb2699ba780ee15038acdd2c6da5373a0",
+          "source_type": "SCHOLARLY_PUBLICATION",
+          "technical_result": "PASS_TECHNICAL_SCOPE",
+          "reason": "Per-card authors matches accepted identity",
+          "review_basis": null,
+          "would_block_if_enforced": false,
+          "scientific_claim_support_approved": false,
+          "detail": null
+        },
+        {
+          "rule_id": "G-ID-METADATA",
+          "input_phase": "analyst_calibration_fixture",
+          "source_locator": {
+            "file": "src/app/(en)/learn/parasympathetic-nervous-system/page.tsx",
+            "line": 604,
+            "card_id": "source-1660159"
+          },
+          "route_or_unresolved_route": "/learn/parasympathetic-nervous-system",
+          "input_fingerprint": "fa1369fb0ca36c45fd4dcddb65eb44a55db753c7d84d7707e331fe6b9c1853d7",
+          "snapshot_fingerprint": "9c659df99ad0375199ccaadccfa23ba4841b59b8b59e0230753f5227d9c1bee1",
+          "selected_blob_oid": "145f1468d54e6041e728ea7a940f752ab91f0cc9",
+          "rule_contract_version": "neuvago-1e4e1-shadow-rules-v1",
+          "rules_sha256": "a8a13281af8e6a44521c86f5afea1ea9bd5ab14b53437e0025d165a05937299f",
+          "typescript_module_sha256": "dd17428736a07e1db1a138d8a14295ddb2699ba780ee15038acdd2c6da5373a0",
+          "source_type": "SCHOLARLY_PUBLICATION",
+          "technical_result": "PASS_TECHNICAL_SCOPE",
+          "reason": "Per-card publication matches accepted identity",
+          "review_basis": null,
+          "would_block_if_enforced": false,
+          "scientific_claim_support_approved": false,
+          "detail": null
+        },
+        {
+          "rule_id": "G-ID-METADATA",
+          "input_phase": "analyst_calibration_fixture",
+          "source_locator": {
+            "file": "src/app/(en)/learn/parasympathetic-nervous-system/page.tsx",
+            "line": 604,
+            "card_id": "source-1660159"
+          },
+          "route_or_unresolved_route": "/learn/parasympathetic-nervous-system",
+          "input_fingerprint": "fa1369fb0ca36c45fd4dcddb65eb44a55db753c7d84d7707e331fe6b9c1853d7",
+          "snapshot_fingerprint": "9c659df99ad0375199ccaadccfa23ba4841b59b8b59e0230753f5227d9c1bee1",
+          "selected_blob_oid": "145f1468d54e6041e728ea7a940f752ab91f0cc9",
+          "rule_contract_version": "neuvago-1e4e1-shadow-rules-v1",
+          "rules_sha256": "a8a13281af8e6a44521c86f5afea1ea9bd5ab14b53437e0025d165a05937299f",
+          "typescript_module_sha256": "dd17428736a07e1db1a138d8a14295ddb2699ba780ee15038acdd2c6da5373a0",
+          "source_type": "SCHOLARLY_PUBLICATION",
+          "technical_result": "PASS_TECHNICAL_SCOPE",
+          "reason": "Per-card date matches accepted identity",
+          "review_basis": null,
+          "would_block_if_enforced": false,
+          "scientific_claim_support_approved": false,
+          "detail": null
+        },
+        {
+          "rule_id": "G-ID-METADATA",
+          "input_phase": "analyst_calibration_fixture",
+          "source_locator": {
+            "file": "src/app/(en)/learn/parasympathetic-nervous-system/page.tsx",
+            "line": 604,
+            "card_id": "source-1660159"
+          },
+          "route_or_unresolved_route": "/learn/parasympathetic-nervous-system",
+          "input_fingerprint": "fa1369fb0ca36c45fd4dcddb65eb44a55db753c7d84d7707e331fe6b9c1853d7",
+          "snapshot_fingerprint": "9c659df99ad0375199ccaadccfa23ba4841b59b8b59e0230753f5227d9c1bee1",
+          "selected_blob_oid": "145f1468d54e6041e728ea7a940f752ab91f0cc9",
+          "rule_contract_version": "neuvago-1e4e1-shadow-rules-v1",
+          "rules_sha256": "a8a13281af8e6a44521c86f5afea1ea9bd5ab14b53437e0025d165a05937299f",
+          "typescript_module_sha256": "dd17428736a07e1db1a138d8a14295ddb2699ba780ee15038acdd2c6da5373a0",
+          "source_type": "SCHOLARLY_PUBLICATION",
+          "technical_result": "PASS_TECHNICAL_SCOPE",
+          "reason": "Per-card source_type matches accepted identity",
+          "review_basis": null,
+          "would_block_if_enforced": false,
+          "scientific_claim_support_approved": false,
+          "detail": null
+        }
+      ],
+      "not_evaluated_or_blocking_observations": [],
+      "target_review_observations": [
+        {
+          "rule_id": "G-REVIEW-USE",
+          "input_phase": "analyst_calibration_fixture",
+          "source_locator": {
+            "file": "src/app/(en)/learn/parasympathetic-nervous-system/page.tsx",
+            "line": 593,
+            "card_id": "source-17786266"
+          },
+          "route_or_unresolved_route": "/learn/parasympathetic-nervous-system",
+          "input_fingerprint": "fa1369fb0ca36c45fd4dcddb65eb44a55db753c7d84d7707e331fe6b9c1853d7",
+          "snapshot_fingerprint": "9c659df99ad0375199ccaadccfa23ba4841b59b8b59e0230753f5227d9c1bee1",
+          "selected_blob_oid": "145f1468d54e6041e728ea7a940f752ab91f0cc9",
+          "rule_contract_version": "neuvago-1e4e1-shadow-rules-v1",
+          "rules_sha256": "a8a13281af8e6a44521c86f5afea1ea9bd5ab14b53437e0025d165a05937299f",
+          "typescript_module_sha256": "dd17428736a07e1db1a138d8a14295ddb2699ba780ee15038acdd2c6da5373a0",
+          "source_type": "SCHOLARLY_PUBLICATION",
+          "technical_result": "REVIEW_REQUIRED",
+          "reason": "Registered identity with new use",
+          "review_basis": "PMID:17786266",
+          "would_block_if_enforced": false,
+          "scientific_claim_support_approved": false,
+          "detail": {
+            "registry_member": true,
+            "claim_support_approved": false
+          }
+        },
+        {
+          "rule_id": "G-REVIEW-USE",
+          "input_phase": "analyst_calibration_fixture",
+          "source_locator": {
+            "file": "src/app/(en)/learn/parasympathetic-nervous-system/page.tsx",
+            "line": 604,
+            "card_id": "source-1660159"
+          },
+          "route_or_unresolved_route": "/learn/parasympathetic-nervous-system",
+          "input_fingerprint": "fa1369fb0ca36c45fd4dcddb65eb44a55db753c7d84d7707e331fe6b9c1853d7",
+          "snapshot_fingerprint": "9c659df99ad0375199ccaadccfa23ba4841b59b8b59e0230753f5227d9c1bee1",
+          "selected_blob_oid": "145f1468d54e6041e728ea7a940f752ab91f0cc9",
+          "rule_contract_version": "neuvago-1e4e1-shadow-rules-v1",
+          "rules_sha256": "a8a13281af8e6a44521c86f5afea1ea9bd5ab14b53437e0025d165a05937299f",
+          "typescript_module_sha256": "dd17428736a07e1db1a138d8a14295ddb2699ba780ee15038acdd2c6da5373a0",
+          "source_type": "SCHOLARLY_PUBLICATION",
+          "technical_result": "REVIEW_REQUIRED",
+          "reason": "Registered identity with new use",
+          "review_basis": "PMID:1660159",
+          "would_block_if_enforced": false,
+          "scientific_claim_support_approved": false,
+          "detail": {
+            "registry_member": true,
+            "claim_support_approved": false
+          }
+        },
+        {
+          "rule_id": "G-ROUTES-APPLICABILITY",
+          "input_phase": "analyst_calibration_fixture",
+          "source_locator": {
+            "file": "src/app/(en)/learn/parasympathetic-nervous-system/page.tsx",
+            "line": null,
+            "card_id": null
+          },
+          "route_or_unresolved_route": "/learn/parasympathetic-nervous-system",
+          "input_fingerprint": "fa1369fb0ca36c45fd4dcddb65eb44a55db753c7d84d7707e331fe6b9c1853d7",
+          "snapshot_fingerprint": "9c659df99ad0375199ccaadccfa23ba4841b59b8b59e0230753f5227d9c1bee1",
+          "selected_blob_oid": "145f1468d54e6041e728ea7a940f752ab91f0cc9",
+          "rule_contract_version": "neuvago-1e4e1-shadow-rules-v1",
+          "rules_sha256": "a8a13281af8e6a44521c86f5afea1ea9bd5ab14b53437e0025d165a05937299f",
+          "typescript_module_sha256": "dd17428736a07e1db1a138d8a14295ddb2699ba780ee15038acdd2c6da5373a0",
+          "source_type": "NOT_APPLICABLE",
+          "technical_result": "REVIEW_REQUIRED",
+          "reason": "No automatic policy-to-route inference; explicit applicability remains open",
+          "review_basis": "D7 policy-route-handoff.json",
+          "would_block_if_enforced": false,
+          "scientific_claim_support_approved": false,
+          "detail": null
+        },
+        {
+          "rule_id": "G-SCOPE-TEXT-CHANGE",
+          "input_phase": "analyst_calibration_fixture",
+          "source_locator": {
+            "file": "src/app/(en)/learn/parasympathetic-nervous-system/page.tsx",
+            "line": null,
+            "card_id": null
+          },
+          "route_or_unresolved_route": "/learn/parasympathetic-nervous-system",
+          "input_fingerprint": "fa1369fb0ca36c45fd4dcddb65eb44a55db753c7d84d7707e331fe6b9c1853d7",
+          "snapshot_fingerprint": "9c659df99ad0375199ccaadccfa23ba4841b59b8b59e0230753f5227d9c1bee1",
+          "selected_blob_oid": "145f1468d54e6041e728ea7a940f752ab91f0cc9",
+          "rule_contract_version": "neuvago-1e4e1-shadow-rules-v1",
+          "rules_sha256": "a8a13281af8e6a44521c86f5afea1ea9bd5ab14b53437e0025d165a05937299f",
+          "typescript_module_sha256": "dd17428736a07e1db1a138d8a14295ddb2699ba780ee15038acdd2c6da5373a0",
+          "source_type": "NOT_APPLICABLE",
+          "technical_result": "REVIEW_REQUIRED",
+          "reason": "Changed public source: no match to a policy is not automatic permission",
+          "review_basis": null,
+          "would_block_if_enforced": false,
+          "scientific_claim_support_approved": false,
+          "detail": null
+        }
+      ],
+      "changed_file_hashes": {
+        "src/app/(en)/learn/parasympathetic-nervous-system/page.tsx": "fa1369fb0ca36c45fd4dcddb65eb44a55db753c7d84d7707e331fe6b9c1853d7"
+      },
+      "user_repository_touched": false
+    },
+    {
+      "case_id": "CAL_NEW_DIRECTNESS_PROMOTION",
+      "description": "Append synthetic uniquely keyed evidence with pre-promoted directness and no review decision",
+      "analyst_expected_policy": "WOULD_BLOCK unsupported promotion whether record already existed or is new",
+      "target_rule": "G-REVIEW-PROMOTION",
+      "target_path": "docs/seo/evidence-operations/evidence-registry.v1.json",
+      "mutation_excerpt": "new record directness=PROVEN_PRODUCT_EFFECT; claim_ids=[]",
+      "observed_counts": {
+        "PASS_TECHNICAL_SCOPE": 364,
+        "REVIEW_REQUIRED": 35
+      },
+      "target_observations": [
+        {
+          "rule_id": "G-REVIEW-PROMOTION",
+          "input_phase": "analyst_calibration_fixture",
+          "source_locator": {
+            "file": "docs/seo/evidence-operations/evidence-registry.v1.json",
+            "line": null,
+            "card_id": null
+          },
+          "route_or_unresolved_route": null,
+          "input_fingerprint": "f934be24d6611bd10ad83472e0738604c7f5b98ecba62ddcb4fee002ebb0a73b",
+          "snapshot_fingerprint": "e3cf5fa0c59c6511217a73be63b90fc8498ed4e16142e34ecb73107cc3f678eb",
+          "selected_blob_oid": "381fdbc7cba8e25184405f6531bec855b406aaf1",
+          "rule_contract_version": "neuvago-1e4e1-shadow-rules-v1",
+          "rules_sha256": "a8a13281af8e6a44521c86f5afea1ea9bd5ab14b53437e0025d165a05937299f",
+          "typescript_module_sha256": "dd17428736a07e1db1a138d8a14295ddb2699ba780ee15038acdd2c6da5373a0",
+          "source_type": "REGISTRY",
+          "technical_result": "PASS_TECHNICAL_SCOPE",
+          "reason": "No unreviewed approval/directness/certainty promotion",
+          "review_basis": null,
+          "would_block_if_enforced": false,
+          "scientific_claim_support_approved": false,
+          "detail": []
+        }
+      ],
+      "not_evaluated_or_blocking_observations": [],
+      "target_review_observations": [
+        {
+          "rule_id": "G-REVIEW-REGISTRY-CHANGE",
+          "input_phase": "analyst_calibration_fixture",
+          "source_locator": {
+            "file": "docs/seo/evidence-operations/evidence-registry.v1.json",
+            "line": null,
+            "card_id": null
+          },
+          "route_or_unresolved_route": null,
+          "input_fingerprint": "f934be24d6611bd10ad83472e0738604c7f5b98ecba62ddcb4fee002ebb0a73b",
+          "snapshot_fingerprint": "e3cf5fa0c59c6511217a73be63b90fc8498ed4e16142e34ecb73107cc3f678eb",
+          "selected_blob_oid": "381fdbc7cba8e25184405f6531bec855b406aaf1",
+          "rule_contract_version": "neuvago-1e4e1-shadow-rules-v1",
+          "rules_sha256": "a8a13281af8e6a44521c86f5afea1ea9bd5ab14b53437e0025d165a05937299f",
+          "typescript_module_sha256": "dd17428736a07e1db1a138d8a14295ddb2699ba780ee15038acdd2c6da5373a0",
+          "source_type": "REGISTRY",
+          "technical_result": "REVIEW_REQUIRED",
+          "reason": "Registry content changed; no intake or link approval inferred",
+          "review_basis": null,
+          "would_block_if_enforced": false,
+          "scientific_claim_support_approved": false,
+          "detail": null
+        }
+      ],
+      "changed_file_hashes": {
+        "docs/seo/evidence-operations/evidence-registry.v1.json": "f934be24d6611bd10ad83472e0738604c7f5b98ecba62ddcb4fee002ebb0a73b"
+      },
+      "user_repository_touched": false
+    },
+    {
+      "case_id": "CAL_RENAMED_QUARANTINED_ID",
+      "description": "Append quarantined source with different internal evidence_id but identical original PMID and DOI",
+      "analyst_expected_policy": "WOULD_BLOCK based on canonical source identifiers; alternate local ID must not reactivate quarantine",
+      "target_rule": "G-ID-QUARANTINE",
+      "target_path": "docs/seo/evidence-operations/evidence-registry.v1.json",
+      "mutation_excerpt": "Changed evidence_id only; original PMID/DOI retained",
+      "observed_counts": {
+        "PASS_TECHNICAL_SCOPE": 364,
+        "REVIEW_REQUIRED": 35
+      },
+      "target_observations": [
+        {
+          "rule_id": "G-ID-QUARANTINE",
+          "input_phase": "analyst_calibration_fixture",
+          "source_locator": {
+            "file": "docs/seo/evidence-operations/evidence-registry.v1.json",
+            "line": null,
+            "card_id": null
+          },
+          "route_or_unresolved_route": null,
+          "input_fingerprint": "62b9aba54622c61cedbe42707c8077246f0faff3bfbf78a460c7c2ae019785a0",
+          "snapshot_fingerprint": "4ca45ad2b796d176846069bd9b799b74b6d93ecd5cf4b275e39f3bd06989c5c6",
+          "selected_blob_oid": "9faab483038b5057b5632f90f38891ff788c6c9a",
+          "rule_contract_version": "neuvago-1e4e1-shadow-rules-v1",
+          "rules_sha256": "a8a13281af8e6a44521c86f5afea1ea9bd5ab14b53437e0025d165a05937299f",
+          "typescript_module_sha256": "dd17428736a07e1db1a138d8a14295ddb2699ba780ee15038acdd2c6da5373a0",
+          "source_type": "REGISTRY",
+          "technical_result": "PASS_TECHNICAL_SCOPE",
+          "reason": "No duplicate or quarantined active identity",
+          "review_basis": null,
+          "would_block_if_enforced": false,
+          "scientific_claim_support_approved": false,
+          "detail": null
+        }
+      ],
+      "not_evaluated_or_blocking_observations": [],
+      "target_review_observations": [
+        {
+          "rule_id": "G-REVIEW-REGISTRY-CHANGE",
+          "input_phase": "analyst_calibration_fixture",
+          "source_locator": {
+            "file": "docs/seo/evidence-operations/evidence-registry.v1.json",
+            "line": null,
+            "card_id": null
+          },
+          "route_or_unresolved_route": null,
+          "input_fingerprint": "62b9aba54622c61cedbe42707c8077246f0faff3bfbf78a460c7c2ae019785a0",
+          "snapshot_fingerprint": "4ca45ad2b796d176846069bd9b799b74b6d93ecd5cf4b275e39f3bd06989c5c6",
+          "selected_blob_oid": "9faab483038b5057b5632f90f38891ff788c6c9a",
+          "rule_contract_version": "neuvago-1e4e1-shadow-rules-v1",
+          "rules_sha256": "a8a13281af8e6a44521c86f5afea1ea9bd5ab14b53437e0025d165a05937299f",
+          "typescript_module_sha256": "dd17428736a07e1db1a138d8a14295ddb2699ba780ee15038acdd2c6da5373a0",
+          "source_type": "REGISTRY",
+          "technical_result": "REVIEW_REQUIRED",
+          "reason": "Registry content changed; no intake or link approval inferred",
+          "review_basis": null,
+          "would_block_if_enforced": false,
+          "scientific_claim_support_approved": false,
+          "detail": null
+        }
+      ],
+      "changed_file_hashes": {
+        "docs/seo/evidence-operations/evidence-registry.v1.json": "62b9aba54622c61cedbe42707c8077246f0faff3bfbf78a460c7c2ae019785a0"
+      },
+      "user_repository_touched": false
+    },
+    {
+      "case_id": "CAL_DUPLICATE_PMID_NEW_LOCAL_ID",
+      "description": "Append active identity using a new evidence_id but an already active PMID",
+      "analyst_expected_policy": "Detect duplicate canonical source identity; local ID uniqueness alone is insufficient",
+      "target_rule": "G-ID-QUARANTINE",
+      "target_path": "docs/seo/evidence-operations/evidence-registry.v1.json",
+      "mutation_excerpt": "new evidence_id; duplicate pmid=10698726",
+      "observed_counts": {
+        "PASS_TECHNICAL_SCOPE": 364,
+        "REVIEW_REQUIRED": 35
+      },
+      "target_observations": [
+        {
+          "rule_id": "G-ID-QUARANTINE",
+          "input_phase": "analyst_calibration_fixture",
+          "source_locator": {
+            "file": "docs/seo/evidence-operations/evidence-registry.v1.json",
+            "line": null,
+            "card_id": null
+          },
+          "route_or_unresolved_route": null,
+          "input_fingerprint": "8753b0d3ac82c3e831a35c6b385d3ce8e294eb3b564c0dba1030ebcd26049983",
+          "snapshot_fingerprint": "a464806dab5e0d2ddcc79a34da7163d3a095b326708d9cbd3d0c6927f5f4899c",
+          "selected_blob_oid": "8f252fabe798099772a925e5e14ad053913ec9a7",
+          "rule_contract_version": "neuvago-1e4e1-shadow-rules-v1",
+          "rules_sha256": "a8a13281af8e6a44521c86f5afea1ea9bd5ab14b53437e0025d165a05937299f",
+          "typescript_module_sha256": "dd17428736a07e1db1a138d8a14295ddb2699ba780ee15038acdd2c6da5373a0",
+          "source_type": "REGISTRY",
+          "technical_result": "PASS_TECHNICAL_SCOPE",
+          "reason": "No duplicate or quarantined active identity",
+          "review_basis": null,
+          "would_block_if_enforced": false,
+          "scientific_claim_support_approved": false,
+          "detail": null
+        }
+      ],
+      "not_evaluated_or_blocking_observations": [],
+      "target_review_observations": [
+        {
+          "rule_id": "G-REVIEW-REGISTRY-CHANGE",
+          "input_phase": "analyst_calibration_fixture",
+          "source_locator": {
+            "file": "docs/seo/evidence-operations/evidence-registry.v1.json",
+            "line": null,
+            "card_id": null
+          },
+          "route_or_unresolved_route": null,
+          "input_fingerprint": "8753b0d3ac82c3e831a35c6b385d3ce8e294eb3b564c0dba1030ebcd26049983",
+          "snapshot_fingerprint": "a464806dab5e0d2ddcc79a34da7163d3a095b326708d9cbd3d0c6927f5f4899c",
+          "selected_blob_oid": "8f252fabe798099772a925e5e14ad053913ec9a7",
+          "rule_contract_version": "neuvago-1e4e1-shadow-rules-v1",
+          "rules_sha256": "a8a13281af8e6a44521c86f5afea1ea9bd5ab14b53437e0025d165a05937299f",
+          "typescript_module_sha256": "dd17428736a07e1db1a138d8a14295ddb2699ba780ee15038acdd2c6da5373a0",
+          "source_type": "REGISTRY",
+          "technical_result": "REVIEW_REQUIRED",
+          "reason": "Registry content changed; no intake or link approval inferred",
+          "review_basis": null,
+          "would_block_if_enforced": false,
+          "scientific_claim_support_approved": false,
+          "detail": null
+        }
+      ],
+      "changed_file_hashes": {
+        "docs/seo/evidence-operations/evidence-registry.v1.json": "8753b0d3ac82c3e831a35c6b385d3ce8e294eb3b564c0dba1030ebcd26049983"
+      },
+      "user_repository_touched": false
+    },
+    {
+      "case_id": "CAL_SCOPE_PARAGRAPH_REFACTOR",
+      "description": "Split same accepted scope text across two adjacent paragraphs without deleting any words",
+      "analyst_expected_policy": "REVIEW_REQUIRED is conservative but clarify format-driven alert; future semantic note locator should preserve scope association",
+      "target_rule": "G-SCOPE-CARD",
+      "target_path": "src/app/(en)/learn/parasympathetic-nervous-system/page.tsx",
+      "mutation_excerpt": "Background on autonomic pathways and organ functions, including parasympathetic control.</p><p className=\"mt-3 text-sm leading-7\">This is not a trial of a relaxation technique or of Neuvago.",
+      "observed_counts": {
+        "PASS_TECHNICAL_SCOPE": 363,
+        "REVIEW_REQUIRED": 36
+      },
+      "target_observations": [
+        {
+          "rule_id": "G-SCOPE-CARD",
+          "input_phase": "analyst_calibration_fixture",
+          "source_locator": {
+            "file": "src/app/(en)/learn/parasympathetic-nervous-system/page.tsx",
+            "line": 597,
+            "card_id": null
+          },
+          "route_or_unresolved_route": "/learn/parasympathetic-nervous-system",
+          "input_fingerprint": "617d9452e153d84284eaec40dc312f9a87a4932d46e27a8854ab7856068fdea8",
+          "snapshot_fingerprint": "aebaddcb0c9900126d98f5eec519619ac0d05b0fd9d241d7b9c09a780f51fc92",
+          "selected_blob_oid": "63a1ebb26f6ef8a92d97e8a26021039b5f6dee97",
+          "rule_contract_version": "neuvago-1e4e1-shadow-rules-v1",
+          "rules_sha256": "a8a13281af8e6a44521c86f5afea1ea9bd5ab14b53437e0025d165a05937299f",
+          "typescript_module_sha256": "dd17428736a07e1db1a138d8a14295ddb2699ba780ee15038acdd2c6da5373a0",
+          "source_type": "NOT_APPLICABLE",
+          "technical_result": "REVIEW_REQUIRED",
+          "reason": "Boundary wording changed; old review is not inherited",
+          "review_basis": "Per-use scope from accepted delivery, not scientific approval",
+          "would_block_if_enforced": false,
+          "scientific_claim_support_approved": false,
+          "detail": {
+            "expected": "Background on autonomic pathways and organ functions, including parasympathetic control. This is not a trial of a relaxation technique or of Neuvago.",
+            "observed": "Background on autonomic pathways and organ functions, including parasympathetic control."
+          }
+        },
+        {
+          "rule_id": "G-SCOPE-CARD",
+          "input_phase": "analyst_calibration_fixture",
+          "source_locator": {
+            "file": "src/app/(en)/learn/parasympathetic-nervous-system/page.tsx",
+            "line": 608,
+            "card_id": null
+          },
+          "route_or_unresolved_route": "/learn/parasympathetic-nervous-system",
+          "input_fingerprint": "617d9452e153d84284eaec40dc312f9a87a4932d46e27a8854ab7856068fdea8",
+          "snapshot_fingerprint": "aebaddcb0c9900126d98f5eec519619ac0d05b0fd9d241d7b9c09a780f51fc92",
+          "selected_blob_oid": "63a1ebb26f6ef8a92d97e8a26021039b5f6dee97",
+          "rule_contract_version": "neuvago-1e4e1-shadow-rules-v1",
+          "rules_sha256": "a8a13281af8e6a44521c86f5afea1ea9bd5ab14b53437e0025d165a05937299f",
+          "typescript_module_sha256": "dd17428736a07e1db1a138d8a14295ddb2699ba780ee15038acdd2c6da5373a0",
+          "source_type": "NOT_APPLICABLE",
+          "technical_result": "PASS_TECHNICAL_SCOPE",
+          "reason": "Boundary retained",
+          "review_basis": "Per-use scope from accepted delivery, not scientific approval",
+          "would_block_if_enforced": false,
+          "scientific_claim_support_approved": false,
+          "detail": {
+            "expected": "Explains why sympathetic and parasympathetic control cannot be reduced to opposite ends of a single scale. It is not a way to diagnose an individual from how calm they feel.",
+            "observed": "Explains why sympathetic and parasympathetic control cannot be reduced to opposite ends of a single scale. It is not a way to diagnose an individual from how calm they feel."
+          }
+        }
+      ],
+      "not_evaluated_or_blocking_observations": [],
+      "target_review_observations": [
+        {
+          "rule_id": "G-SCOPE-CARD",
+          "input_phase": "analyst_calibration_fixture",
+          "source_locator": {
+            "file": "src/app/(en)/learn/parasympathetic-nervous-system/page.tsx",
+            "line": 597,
+            "card_id": null
+          },
+          "route_or_unresolved_route": "/learn/parasympathetic-nervous-system",
+          "input_fingerprint": "617d9452e153d84284eaec40dc312f9a87a4932d46e27a8854ab7856068fdea8",
+          "snapshot_fingerprint": "aebaddcb0c9900126d98f5eec519619ac0d05b0fd9d241d7b9c09a780f51fc92",
+          "selected_blob_oid": "63a1ebb26f6ef8a92d97e8a26021039b5f6dee97",
+          "rule_contract_version": "neuvago-1e4e1-shadow-rules-v1",
+          "rules_sha256": "a8a13281af8e6a44521c86f5afea1ea9bd5ab14b53437e0025d165a05937299f",
+          "typescript_module_sha256": "dd17428736a07e1db1a138d8a14295ddb2699ba780ee15038acdd2c6da5373a0",
+          "source_type": "NOT_APPLICABLE",
+          "technical_result": "REVIEW_REQUIRED",
+          "reason": "Boundary wording changed; old review is not inherited",
+          "review_basis": "Per-use scope from accepted delivery, not scientific approval",
+          "would_block_if_enforced": false,
+          "scientific_claim_support_approved": false,
+          "detail": {
+            "expected": "Background on autonomic pathways and organ functions, including parasympathetic control. This is not a trial of a relaxation technique or of Neuvago.",
+            "observed": "Background on autonomic pathways and organ functions, including parasympathetic control."
+          }
+        },
+        {
+          "rule_id": "G-REVIEW-USE",
+          "input_phase": "analyst_calibration_fixture",
+          "source_locator": {
+            "file": "src/app/(en)/learn/parasympathetic-nervous-system/page.tsx",
+            "line": 593,
+            "card_id": "source-17786266"
+          },
+          "route_or_unresolved_route": "/learn/parasympathetic-nervous-system",
+          "input_fingerprint": "617d9452e153d84284eaec40dc312f9a87a4932d46e27a8854ab7856068fdea8",
+          "snapshot_fingerprint": "aebaddcb0c9900126d98f5eec519619ac0d05b0fd9d241d7b9c09a780f51fc92",
+          "selected_blob_oid": "63a1ebb26f6ef8a92d97e8a26021039b5f6dee97",
+          "rule_contract_version": "neuvago-1e4e1-shadow-rules-v1",
+          "rules_sha256": "a8a13281af8e6a44521c86f5afea1ea9bd5ab14b53437e0025d165a05937299f",
+          "typescript_module_sha256": "dd17428736a07e1db1a138d8a14295ddb2699ba780ee15038acdd2c6da5373a0",
+          "source_type": "SCHOLARLY_PUBLICATION",
+          "technical_result": "REVIEW_REQUIRED",
+          "reason": "Registered identity with new use",
+          "review_basis": "PMID:17786266",
+          "would_block_if_enforced": false,
+          "scientific_claim_support_approved": false,
+          "detail": {
+            "registry_member": true,
+            "claim_support_approved": false
+          }
+        },
+        {
+          "rule_id": "G-REVIEW-USE",
+          "input_phase": "analyst_calibration_fixture",
+          "source_locator": {
+            "file": "src/app/(en)/learn/parasympathetic-nervous-system/page.tsx",
+            "line": 604,
+            "card_id": "source-1660159"
+          },
+          "route_or_unresolved_route": "/learn/parasympathetic-nervous-system",
+          "input_fingerprint": "617d9452e153d84284eaec40dc312f9a87a4932d46e27a8854ab7856068fdea8",
+          "snapshot_fingerprint": "aebaddcb0c9900126d98f5eec519619ac0d05b0fd9d241d7b9c09a780f51fc92",
+          "selected_blob_oid": "63a1ebb26f6ef8a92d97e8a26021039b5f6dee97",
+          "rule_contract_version": "neuvago-1e4e1-shadow-rules-v1",
+          "rules_sha256": "a8a13281af8e6a44521c86f5afea1ea9bd5ab14b53437e0025d165a05937299f",
+          "typescript_module_sha256": "dd17428736a07e1db1a138d8a14295ddb2699ba780ee15038acdd2c6da5373a0",
+          "source_type": "SCHOLARLY_PUBLICATION",
+          "technical_result": "REVIEW_REQUIRED",
+          "reason": "Registered identity with new use",
+          "review_basis": "PMID:1660159",
+          "would_block_if_enforced": false,
+          "scientific_claim_support_approved": false,
+          "detail": {
+            "registry_member": true,
+            "claim_support_approved": false
+          }
+        },
+        {
+          "rule_id": "G-ROUTES-APPLICABILITY",
+          "input_phase": "analyst_calibration_fixture",
+          "source_locator": {
+            "file": "src/app/(en)/learn/parasympathetic-nervous-system/page.tsx",
+            "line": null,
+            "card_id": null
+          },
+          "route_or_unresolved_route": "/learn/parasympathetic-nervous-system",
+          "input_fingerprint": "617d9452e153d84284eaec40dc312f9a87a4932d46e27a8854ab7856068fdea8",
+          "snapshot_fingerprint": "aebaddcb0c9900126d98f5eec519619ac0d05b0fd9d241d7b9c09a780f51fc92",
+          "selected_blob_oid": "63a1ebb26f6ef8a92d97e8a26021039b5f6dee97",
+          "rule_contract_version": "neuvago-1e4e1-shadow-rules-v1",
+          "rules_sha256": "a8a13281af8e6a44521c86f5afea1ea9bd5ab14b53437e0025d165a05937299f",
+          "typescript_module_sha256": "dd17428736a07e1db1a138d8a14295ddb2699ba780ee15038acdd2c6da5373a0",
+          "source_type": "NOT_APPLICABLE",
+          "technical_result": "REVIEW_REQUIRED",
+          "reason": "No automatic policy-to-route inference; explicit applicability remains open",
+          "review_basis": "D7 policy-route-handoff.json",
+          "would_block_if_enforced": false,
+          "scientific_claim_support_approved": false,
+          "detail": null
+        },
+        {
+          "rule_id": "G-SCOPE-TEXT-CHANGE",
+          "input_phase": "analyst_calibration_fixture",
+          "source_locator": {
+            "file": "src/app/(en)/learn/parasympathetic-nervous-system/page.tsx",
+            "line": null,
+            "card_id": null
+          },
+          "route_or_unresolved_route": "/learn/parasympathetic-nervous-system",
+          "input_fingerprint": "617d9452e153d84284eaec40dc312f9a87a4932d46e27a8854ab7856068fdea8",
+          "snapshot_fingerprint": "aebaddcb0c9900126d98f5eec519619ac0d05b0fd9d241d7b9c09a780f51fc92",
+          "selected_blob_oid": "63a1ebb26f6ef8a92d97e8a26021039b5f6dee97",
+          "rule_contract_version": "neuvago-1e4e1-shadow-rules-v1",
+          "rules_sha256": "a8a13281af8e6a44521c86f5afea1ea9bd5ab14b53437e0025d165a05937299f",
+          "typescript_module_sha256": "dd17428736a07e1db1a138d8a14295ddb2699ba780ee15038acdd2c6da5373a0",
+          "source_type": "NOT_APPLICABLE",
+          "technical_result": "REVIEW_REQUIRED",
+          "reason": "Changed public source: no match to a policy is not automatic permission",
+          "review_basis": null,
+          "would_block_if_enforced": false,
+          "scientific_claim_support_approved": false,
+          "detail": null
+        }
+      ],
+      "changed_file_hashes": {
+        "src/app/(en)/learn/parasympathetic-nervous-system/page.tsx": "617d9452e153d84284eaec40dc312f9a87a4932d46e27a8854ab7856068fdea8"
+      },
+      "user_repository_touched": false
+    }
+  ],
+  "case_count": 8,
+  "all_wider_review_flags_remain_false": true
+}

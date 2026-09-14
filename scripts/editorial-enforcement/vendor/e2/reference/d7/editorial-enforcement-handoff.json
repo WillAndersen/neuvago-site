@@ -1,0 +1,78 @@
+{
+  "schema": "neuvago-1e4d7-editorial-enforcement-handoff-v1",
+  "next_stage": "1E.4E – Editorial Enforcement Gates",
+  "status": "PROPOSED_DESIGN_INPUT_FOR_REVIEW_NOT_INSTALLED_GATES",
+  "technical_reconciliation_prepared": true,
+  "hard_gate_design_candidates": [
+    {
+      "id": "G-ID",
+      "rule": "Validate source-card identifiers inside the same object/card; allow labelled DOI text and official sources without DOI/PMID.",
+      "validation": "Accept existing approved cards; negative tests swap identifiers between distinct cards."
+    },
+    {
+      "id": "G-REVIEW",
+      "rule": "Keep source identity, publication type, directness, and claim support approval separate. A citation never auto-approves a claim.",
+      "validation": "Reject approval promotion without an explicit reviewed claim/source linkage record."
+    },
+    {
+      "id": "G-SCOPE",
+      "rule": "Preserve reviewed limits, care notes, immutable history and quarantine; use explicit correction records.",
+      "validation": "Detect removal or mutation of agreed boundaries, not arbitrary word overlap."
+    },
+    {
+      "id": "G-ROUTES",
+      "rule": "Tie rules to declared route types; internal glossary sourceLinks and official guidance are not missing bibliography errors.",
+      "validation": "Use glossary, official-card and shared-source fixtures as positive controls."
+    },
+    {
+      "id": "G-LIFECYCLE",
+      "rule": "Separate worktree, staged and committed checks; preserve NUL-delimited Git status and root aliases.",
+      "validation": "Phase tests must pass after commit, not rely on the parent HEAD or an untracked file state."
+    }
+  ],
+  "human_review_lanes": [
+    {
+      "id": "R-INTAKE",
+      "pending": 12,
+      "task": "Review bibliographic intake for eight scholarly and four official sources; preserve all per-card scopes; no automatic insertion."
+    },
+    {
+      "id": "R-PROVENANCE",
+      "task": "Six already registered identities are newly cited on delivered routes. Review route/provenance linkage separately from identity membership."
+    },
+    {
+      "id": "R-CLAIMS",
+      "pending_policy_rows": 117,
+      "structural_candidate_references": 19,
+      "task": "Review study applicability, directness and exact wording. Candidate pools and owner mappings are not claim approval."
+    },
+    {
+      "id": "R-WORDING",
+      "pending_original_findings": 4,
+      "task": "Carry contextual decisions forward, including slow-or-paced breathing and humming-or-vocal-tasks scope questions."
+    },
+    {
+      "id": "R-OUTSIDE",
+      "task": "Carry 74 glossary, 1 other-source, 3 import and 28 route-purpose records forward. Historical pilot subsets are not full-group acceptance."
+    },
+    {
+      "id": "R-DUPLICATION",
+      "pending_original_groups": 38,
+      "task": "Retain classified reuse; semantic drift and search-intent ownership require separate review, not automatic deduplication."
+    },
+    {
+      "id": "R-OPS",
+      "task": "Define handling of the known /research/studies reading-guidance warning, visual QA and deployment attestation separately."
+    }
+  ],
+  "closed_scope": "Eleven priority source-path deliveries; historical production acceptance plus current source-byte reconciliation only.",
+  "source_path_resolutions": 11,
+  "original_findings_carried_forward": 110,
+  "approved_links": 0,
+  "claim_support_review_complete": false,
+  "full_corpus_source_integrity_verified": false,
+  "live_production_verified_this_run": false,
+  "enforcement_gates_installed": false,
+  "whole_1e4d_closed": false,
+  "release_ready": false
+}

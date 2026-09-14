@@ -1,0 +1,231 @@
+{
+  "schema": "neuvago-1e4e2-calibration-contract-proposal-v1",
+  "date": "2026-09-13",
+  "status": "PROPOSED_NOT_IMPLEMENTED",
+  "title": "1E.4E.2 – Pilot Review & Gate Calibration",
+  "baseline_commit": "4c4e65a87163000ee493f264849824f17fdcf8ca",
+  "accepted_e1_capture": {
+    "file": "neuvago-1e4e1-shadow-20260913T191453Z-r7js5t2p-share.zip",
+    "sha256": "3e49e9a732b9341d3b0a5831d65a802e724fcf29fda3f8840fb8e4623c1be0a0",
+    "scope": "CAPTURE_ACCEPTED_NOT_BLOCKING_ACTIVATION"
+  },
+  "mode": "SHADOW_REPORT_ONLY",
+  "source_mutations_allowed": false,
+  "registry_regeneration_allowed": false,
+  "ci_installation_allowed": false,
+  "blocking_activation_allowed": false,
+  "calibration_items": [
+    {
+      "id": "CAL-01",
+      "family": [
+        "G-ID"
+      ],
+      "title": "Kanonisk kildeidentitet må kontrolleres uavhengig av lokal evidence_id",
+      "case_ids": [
+        "CAL_RENAMED_QUARANTINED_ID",
+        "CAL_DUPLICATE_PMID_NEW_LOCAL_ID"
+      ],
+      "source_locator": {
+        "file": "support/shadow.py",
+        "lines": [
+          205,
+          208
+        ]
+      },
+      "observed": "Begge prøveendringene gir PASS for G-ID-QUARANTINE og REVIEW_REQUIRED for den generelle registerendringen. Ingen WOULD_BLOCK.",
+      "expected_e2": "Karantene og duplisering vurderes på normalisert PMID/DOI og dokumentert identitetsrelasjon, i tillegg til unik evidence_id. Ved uklar relasjon må den være synlig, ikke auto-aliassert.",
+      "activation_priority": "REQUIRED_BEFORE_BLOCKING_ACTIVATION"
+    },
+    {
+      "id": "CAL-02",
+      "family": [
+        "G-REVIEW"
+      ],
+      "title": "Promoteringskontrollen må gjelde nye poster også",
+      "case_ids": [
+        "CAL_NEW_DIRECTNESS_PROMOTION"
+      ],
+      "source_locator": {
+        "file": "support/shadow.py",
+        "lines": [
+          192,
+          204
+        ]
+      },
+      "observed": "En ny testpost med directness=PROVEN_PRODUCT_EFFECT gir PASS for G-REVIEW-PROMOTION fordi tidligere verdi er None; den generelle registerendringen blir REVIEW_REQUIRED.",
+      "expected_e2": "Valider tillatte statusverdier for både nye og eksisterende poster. Sammenlign registrene på stabile post-ID-er, ikke listeposisjon; ingen ny post kan starte med ikke-autorisert støtte-/direkthetsgodkjenning. Pending-kandidater kan fortsatt gi review uten autoavvisning.",
+      "activation_priority": "REQUIRED_BEFORE_BLOCKING_ACTIVATION"
+    },
+    {
+      "id": "CAL-03",
+      "family": [
+        "G-ROUTES",
+        "G-LIFECYCLE"
+      ],
+      "title": "Ikke-støttet kontrollflyt må være synlig i kildetolkningen",
+      "case_ids": [
+        "CAL_PARSE_EARLY_RETURN"
+      ],
+      "source_locator": {
+        "file": "support/extract.cjs",
+        "lines": [
+          94,
+          100
+        ]
+      },
+      "observed": "if (true) return null; før den direkte JSX-returnen ignoreres ved utvalg av direkte return-setning. G-ROUTES-TARGET og kildekortkontrollene gir fortsatt teknisk PASS, mens hele filendringen blir REVIEW_REQUIRED.",
+      "expected_e2": "Gjenkjenn at funksjonskroppen inneholder kontrollflyt utenfor støttet subset, og rapporter NOT_EVALUATED med kodelokator. Ingen krav om full JavaScript-tolk eller utførelse av prosjektkode. Eventuell utvidet statisk støtte må testes eksplisitt.",
+      "activation_priority": "REQUIRED_BEFORE_BLOCKING_ACTIVATION"
+    },
+    {
+      "id": "CAL-04",
+      "family": [
+        "G-ID"
+      ],
+      "title": "Bibliografiske felt må ikke godkjennes bare ved delstrengtreff",
+      "case_ids": [
+        "CAL_METADATA_CONTRADICTORY_AUTHOR"
+      ],
+      "source_locator": {
+        "file": "support/shadow.py",
+        "lines": [
+          132,
+          136
+        ]
+      },
+      "observed": "En endret forfatterlinje som fortsatt nevner det gamle navnet som tidligere attribusjon gir PASS for forfatterfeltet, fordi forventet navn finnes et sted i kortteksten. Filendringen blir REVIEW_REQUIRED.",
+      "expected_e2": "Sammenhold eksplisitte bibliografiske felt med den avtalte visningskontrakten. Uklar feltavgrensning gir review eller NOT_EVALUATED; en kjent motstrid skal ikke beskrives som match. Støtt tidligere godkjent forkortet forfattervisning og offentlige kildetyper.",
+      "activation_priority": "REQUIRED_BEFORE_BLOCKING_ACTIVATION"
+    },
+    {
+      "id": "CAL-05",
+      "family": [
+        "G-SCOPE"
+      ],
+      "title": "Skille endret formulering fra kun avsnittsdeling",
+      "case_ids": [
+        "CAL_SCOPE_PARAGRAPH_REFACTOR"
+      ],
+      "source_locator": {
+        "file": "support/shadow.py",
+        "lines": [
+          152,
+          154
+        ]
+      },
+      "observed": "Samme scope-ordlyd fordelt på to tilstøtende p-elementer gir REVIEW_REQUIRED for endret wording, fordi kun tredje avsnitt brukes. Dette er konservativt, ikke en mistet sperre.",
+      "expected_e2": "Bevar review ved faktisk menings-/ordlydsendring, men gjør noteavgrensningen uavhengig av et fast avsnittsnummer. Ikke utvid matching til hele siden eller lån avgrensninger fra andre kort.",
+      "activation_priority": "CALIBRATION_NO_FALSE_TECHNICAL_ERROR"
+    }
+  ],
+  "required_preserved_behavior": [
+    "23 accepted source cards and eleven delivered pages",
+    "Official sources without PMID/DOI",
+    "Labelled DOI text and valid DOI links",
+    "Same-card identity and source-fragment linkage",
+    "Twelve intake identities are review-only, not automatic wrong-source errors",
+    "Per-use scope and care notes retained",
+    "Explicit glossary data scope and out-of-scope changes",
+    "Worktree/index/commit distinct byte snapshots",
+    "Immutable historical locks and quarantined records",
+    "No automatic scientific claim support"
+  ],
+  "required_acceptance_tests": [
+    {
+      "id": "E2-ID-1",
+      "input": "Quarantined original PMID/DOI reintroduced with a new local evidence_id",
+      "expected": "WOULD_BLOCK against canonical identity or OPERATIONAL_ERROR for malformed identity; never positive G-ID approval"
+    },
+    {
+      "id": "E2-ID-2",
+      "input": "Two active records with identical PMID but different internal IDs",
+      "expected": "WOULD_BLOCK uniqueness invariant"
+    },
+    {
+      "id": "E2-ID-3",
+      "input": "Known reviewed PMID+DOI on same single record",
+      "expected": "PASS_TECHNICAL_SCOPE; no invented alias merging"
+    },
+    {
+      "id": "E2-REVIEW-1",
+      "input": "New record with promoted directness or certainty class and empty approval arrays",
+      "expected": "WOULD_BLOCK review-bound status violation"
+    },
+    {
+      "id": "E2-REVIEW-2",
+      "input": "New record in pending state, no claim support, ordinary bibliographic candidate",
+      "expected": "REVIEW_REQUIRED not automatic scientific approval"
+    },
+    {
+      "id": "E2-REVIEW-3",
+      "input": "Same existing records reordered; approved status fields unchanged",
+      "expected": "No false approval transition caused by array position; content review status can remain"
+    },
+    {
+      "id": "E2-PARSE-1",
+      "input": "Early conditional return, nested returns or unsupported control flow in selected component",
+      "expected": "NOT_EVALUATED with code locator unless explicitly supported and tested; no unreachable card approval"
+    },
+    {
+      "id": "E2-PARSE-2",
+      "input": "Literal supported accepted component",
+      "expected": "Preserved scoped positive checks; no project code execution"
+    },
+    {
+      "id": "E2-META-1",
+      "input": "Wrong author field, accepted author mentioned elsewhere in same card",
+      "expected": "No positive author-field equality; WOULD_BLOCK if contradiction determined, otherwise explicit unresolved identity review"
+    },
+    {
+      "id": "E2-META-2",
+      "input": "Previously accepted author display with et al. or official institution",
+      "expected": "No false bibliographic error"
+    },
+    {
+      "id": "E2-SCOPE-1",
+      "input": "Exact scope text split into two adjacent paragraphs in same scope container",
+      "expected": "Correct format-only classification; broad change inventory remains visible"
+    },
+    {
+      "id": "E2-SCOPE-2",
+      "input": "Missing, hidden or semantically broadened scope; same words on different card",
+      "expected": "Appropriate blocking/review result; no borrowing another card boundary"
+    },
+    {
+      "id": "E2-LIFE-1",
+      "input": "Worktree good, index bad; then named commit distinct from both",
+      "expected": "Results bound to inspected snapshot and affected finding locator; no writes"
+    }
+  ],
+  "result_requirements": {
+    "execution_success_separate_from_rule_success": true,
+    "expected_outcomes_must_be_bound_to_affected_rule_object_and_phase": true,
+    "all_not_evaluated_coverage_visible": true,
+    "scientific_claim_support_approved": false,
+    "approved_links": 0,
+    "release_ready": false
+  },
+  "verification_plan": {
+    "preserve_original_90_and_45_named_controls": true,
+    "separate_original_test_counts_from_added_cases": true,
+    "rerun_on_project_typescript_5_9_3_or_explicitly_record_changed_version": true,
+    "own_challenge_version_5_8_3_not_same_as_user": true,
+    "include_normal_and_symlinked_temp_repo_roots": true,
+    "no_actual_user_repo_mutations_for_fault_tests": true,
+    "compare_original_and_calibrated_outcomes": true,
+    "false_positive_review_separate_from_false_negative_review": true
+  },
+  "carried_open_work": {
+    "source_identities_pending_intake": 12,
+    "prior_findings_carried_forward": 110,
+    "claim_policies": 117,
+    "active_evidence_records": 172,
+    "structural_candidate_references": 19,
+    "explicit_applicability_for_delivered_pages_open": 11,
+    "semantic_reuse_groups": 38,
+    "old_locator_outside_scope": 1
+  },
+  "next_gate": "RETURN_1E4E2_SHADOW_CALIBRATION_FOR_RULE_REVIEW",
+  "implementation_delivered": false,
+  "new_user_run_instructions_provided": false
+}

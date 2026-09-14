@@ -1,0 +1,616 @@
+{
+  "schema": "neuvago-e2-predeclared-test-contract-v1",
+  "mode": "SHADOW_REPORT_ONLY",
+  "new_case_expectations": [
+    {
+      "name": "E2_ID_RENAMED_QUARANTINE",
+      "acceptance": "E2-ID-1",
+      "rule": "G-ID-CANONICAL-IDENTITY",
+      "expected": "WOULD_BLOCK",
+      "path": "docs/seo/evidence-operations/evidence-registry.v1.json",
+      "card": null,
+      "record": "EVD-CAL-RENAMED-QUARANTINE",
+      "field": null,
+      "description": "",
+      "forbid": []
+    },
+    {
+      "name": "E2_ID_DUPLICATE_PMID",
+      "acceptance": "E2-ID-2",
+      "rule": "G-ID-CANONICAL-IDENTITY",
+      "expected": "WOULD_BLOCK",
+      "path": "docs/seo/evidence-operations/evidence-registry.v1.json",
+      "card": null,
+      "record": "EVD-CAL-DUPLICATE-PMID",
+      "field": null,
+      "description": "",
+      "forbid": []
+    },
+    {
+      "name": "E2_ID_QUARANTINE_DOI_ALIAS",
+      "acceptance": "E2-ID-1",
+      "rule": "G-ID-CANONICAL-IDENTITY",
+      "expected": "WOULD_BLOCK",
+      "path": "docs/seo/evidence-operations/evidence-registry.v1.json",
+      "card": null,
+      "record": "EVD-CAL-QUARANTINE-DOI-ONLY",
+      "field": null,
+      "description": "",
+      "forbid": []
+    },
+    {
+      "name": "E2_ID_DUPLICATE_DOI",
+      "acceptance": "E2-ID-2",
+      "rule": "G-ID-CANONICAL-IDENTITY",
+      "expected": "WOULD_BLOCK",
+      "path": "docs/seo/evidence-operations/evidence-registry.v1.json",
+      "card": null,
+      "record": "EVD-CAL-DUPLICATE-DOI",
+      "field": null,
+      "description": "",
+      "forbid": []
+    },
+    {
+      "name": "E2_ID_VALID_PAIR",
+      "acceptance": "E2-ID-3",
+      "rule": "G-ID-CANONICAL-IDENTITY",
+      "expected": "PASS_TECHNICAL_SCOPE",
+      "path": "docs/seo/evidence-operations/evidence-registry.v1.json",
+      "card": null,
+      "record": "EVD-PMID-17786266",
+      "field": null,
+      "description": "",
+      "forbid": []
+    },
+    {
+      "name": "E2_ID_VALID_DOI_NORMALIZATION",
+      "acceptance": "E2-ID-3",
+      "rule": "G-ID-CANONICAL-IDENTITY",
+      "expected": "PASS_TECHNICAL_SCOPE",
+      "path": "docs/seo/evidence-operations/evidence-registry.v1.json",
+      "card": null,
+      "record": "EVD-PMID-17786266",
+      "field": null,
+      "description": "",
+      "forbid": []
+    },
+    {
+      "name": "E2_ID_CONFLICTING_SOURCE_URL",
+      "acceptance": "E2-ID-2",
+      "rule": "G-ID-CANONICAL-IDENTITY",
+      "expected": "WOULD_BLOCK",
+      "path": "docs/seo/evidence-operations/evidence-registry.v1.json",
+      "card": null,
+      "record": "EVD-PMID-17786266",
+      "field": null,
+      "description": "",
+      "forbid": []
+    },
+    {
+      "name": "E2_NEW_DIRECTNESS",
+      "acceptance": "E2-REVIEW-1",
+      "rule": "G-REVIEW-PROMOTION",
+      "expected": "WOULD_BLOCK",
+      "path": "docs/seo/evidence-operations/evidence-registry.v1.json",
+      "card": null,
+      "record": "EVD-CAL-NEW-PENDING",
+      "field": "evidence[EVD-CAL-NEW-PENDING].directness",
+      "description": "",
+      "forbid": []
+    },
+    {
+      "name": "E2_NEW_EVIDENCE_TIER_BASIS",
+      "acceptance": "E2-REVIEW-1",
+      "rule": "G-REVIEW-PROMOTION",
+      "expected": "WOULD_BLOCK",
+      "path": "docs/seo/evidence-operations/evidence-registry.v1.json",
+      "card": null,
+      "record": "EVD-CAL-NEW-PENDING",
+      "field": "evidence[EVD-CAL-NEW-PENDING].evidence_tier_basis",
+      "description": "",
+      "forbid": []
+    },
+    {
+      "name": "E2_NEW_STATUS",
+      "acceptance": "E2-REVIEW-1",
+      "rule": "G-REVIEW-PROMOTION",
+      "expected": "WOULD_BLOCK",
+      "path": "docs/seo/evidence-operations/evidence-registry.v1.json",
+      "card": null,
+      "record": "EVD-CAL-NEW-PENDING",
+      "field": "evidence[EVD-CAL-NEW-PENDING].status",
+      "description": "",
+      "forbid": []
+    },
+    {
+      "name": "E2_NEW_EVIDENCE_TIER",
+      "acceptance": "E2-REVIEW-1",
+      "rule": "G-REVIEW-PROMOTION",
+      "expected": "WOULD_BLOCK",
+      "path": "docs/seo/evidence-operations/evidence-registry.v1.json",
+      "card": null,
+      "record": "EVD-CAL-NEW-PENDING",
+      "field": "evidence[EVD-CAL-NEW-PENDING].evidence_tier",
+      "description": "",
+      "forbid": []
+    },
+    {
+      "name": "E2_NEW_CERTAINTY",
+      "acceptance": "E2-REVIEW-1",
+      "rule": "G-REVIEW-PROMOTION",
+      "expected": "WOULD_BLOCK",
+      "path": "docs/seo/evidence-operations/evidence-registry.v1.json",
+      "card": null,
+      "record": "EVD-CAL-NEW-PENDING",
+      "field": "evidence[EVD-CAL-NEW-PENDING].certainty",
+      "description": "",
+      "forbid": []
+    },
+    {
+      "name": "E2_NEW_PENDING",
+      "acceptance": "E2-REVIEW-2",
+      "rule": "G-REVIEW-NEW-ROW",
+      "expected": "REVIEW_REQUIRED",
+      "path": "docs/seo/evidence-operations/evidence-registry.v1.json",
+      "card": null,
+      "record": "EVD-CAL-NEW-PENDING",
+      "field": null,
+      "description": "",
+      "forbid": [
+        "WOULD_BLOCK",
+        "OPERATIONAL_ERROR"
+      ]
+    },
+    {
+      "name": "E2_REORDER_EVIDENCE",
+      "acceptance": "E2-REVIEW-3",
+      "rule": "G-REVIEW-PROMOTION",
+      "expected": "PASS_TECHNICAL_SCOPE",
+      "path": "docs/seo/evidence-operations/evidence-registry.v1.json",
+      "card": null,
+      "record": null,
+      "field": null,
+      "description": "",
+      "forbid": [
+        "WOULD_BLOCK",
+        "OPERATIONAL_ERROR"
+      ]
+    },
+    {
+      "name": "E2_REORDER_CANONICAL",
+      "acceptance": "E2-REVIEW-3",
+      "rule": "G-REVIEW-PROMOTION",
+      "expected": "PASS_TECHNICAL_SCOPE",
+      "path": "docs/seo/evidence-operations/claim-registry.v1.json",
+      "card": null,
+      "record": null,
+      "field": null,
+      "description": "",
+      "forbid": [
+        "WOULD_BLOCK",
+        "OPERATIONAL_ERROR"
+      ]
+    },
+    {
+      "name": "E2_REORDER_CANDIDATES",
+      "acceptance": "E2-REVIEW-3",
+      "rule": "G-REVIEW-PROMOTION",
+      "expected": "PASS_TECHNICAL_SCOPE",
+      "path": "docs/seo/evidence-operations/claim-evidence-link-candidates.v1.json",
+      "card": null,
+      "record": null,
+      "field": null,
+      "description": "",
+      "forbid": [
+        "WOULD_BLOCK",
+        "OPERATIONAL_ERROR"
+      ]
+    },
+    {
+      "name": "E2_OLD_DIRECTNESS",
+      "acceptance": "E2-REVIEW-1",
+      "rule": "G-REVIEW-PROMOTION",
+      "expected": "WOULD_BLOCK",
+      "path": "docs/seo/evidence-operations/evidence-registry.v1.json",
+      "card": null,
+      "record": "EVD-DOI-05B5A6F08632",
+      "field": "evidence[EVD-DOI-05B5A6F08632].directness",
+      "description": "",
+      "forbid": []
+    },
+    {
+      "name": "E2_NEW_CANONICAL_APPROVAL",
+      "acceptance": "E2-REVIEW-1",
+      "rule": "G-REVIEW-PROMOTION",
+      "expected": "WOULD_BLOCK",
+      "path": "docs/seo/evidence-operations/claim-registry.v1.json",
+      "card": null,
+      "record": "CLM-CAL-NEW",
+      "field": "claims[CLM-CAL-NEW].evidence_ids",
+      "description": "",
+      "forbid": []
+    },
+    {
+      "name": "E2_NEW_CANDIDATE_APPROVAL",
+      "acceptance": "E2-REVIEW-1",
+      "rule": "G-REVIEW-PROMOTION",
+      "expected": "WOULD_BLOCK",
+      "path": "docs/seo/evidence-operations/claim-evidence-link-candidates.v1.json",
+      "card": null,
+      "record": "CLM-CAL-NEW-CANDIDATE",
+      "field": "claims[CLM-CAL-NEW-CANDIDATE].approved_evidence_ids",
+      "description": "",
+      "forbid": []
+    },
+    {
+      "name": "E2_CONTROLFLOW_EARLY_RETURN",
+      "acceptance": "E2-PARSE-1",
+      "rule": "G-ROUTES-TARGET",
+      "expected": "NOT_EVALUATED",
+      "path": "src/app/(en)/learn/parasympathetic-nervous-system/page.tsx",
+      "card": null,
+      "record": null,
+      "field": null,
+      "description": "Unsupported control flow must not yield card PASS",
+      "forbid": []
+    },
+    {
+      "name": "E2_CONTROLFLOW_NESTED_RETURN",
+      "acceptance": "E2-PARSE-1",
+      "rule": "G-ROUTES-TARGET",
+      "expected": "NOT_EVALUATED",
+      "path": "src/app/(en)/learn/parasympathetic-nervous-system/page.tsx",
+      "card": null,
+      "record": null,
+      "field": null,
+      "description": "Unsupported control flow must not yield card PASS",
+      "forbid": []
+    },
+    {
+      "name": "E2_CONTROLFLOW_TRY_FINALLY",
+      "acceptance": "E2-PARSE-1",
+      "rule": "G-ROUTES-TARGET",
+      "expected": "NOT_EVALUATED",
+      "path": "src/app/(en)/learn/parasympathetic-nervous-system/page.tsx",
+      "card": null,
+      "record": null,
+      "field": null,
+      "description": "Unsupported control flow must not yield card PASS",
+      "forbid": []
+    },
+    {
+      "name": "E2_CONTROLFLOW_LOOP",
+      "acceptance": "E2-PARSE-1",
+      "rule": "G-ROUTES-TARGET",
+      "expected": "NOT_EVALUATED",
+      "path": "src/app/(en)/learn/parasympathetic-nervous-system/page.tsx",
+      "card": null,
+      "record": null,
+      "field": null,
+      "description": "Unsupported control flow must not yield card PASS",
+      "forbid": []
+    },
+    {
+      "name": "E2_CONTROLFLOW_THROW",
+      "acceptance": "E2-PARSE-1",
+      "rule": "G-ROUTES-TARGET",
+      "expected": "NOT_EVALUATED",
+      "path": "src/app/(en)/learn/parasympathetic-nervous-system/page.tsx",
+      "card": null,
+      "record": null,
+      "field": null,
+      "description": "Unsupported control flow must not yield card PASS",
+      "forbid": []
+    },
+    {
+      "name": "E2_CONTROLFLOW_MUTABLE",
+      "acceptance": "E2-PARSE-1",
+      "rule": "G-ROUTES-TARGET",
+      "expected": "NOT_EVALUATED",
+      "path": "src/app/(en)/learn/parasympathetic-nervous-system/page.tsx",
+      "card": null,
+      "record": null,
+      "field": null,
+      "description": "Unsupported control flow must not yield card PASS",
+      "forbid": []
+    },
+    {
+      "name": "E2_CONTROLFLOW_EXPRESSION",
+      "acceptance": "E2-PARSE-1",
+      "rule": "G-ROUTES-TARGET",
+      "expected": "NOT_EVALUATED",
+      "path": "src/app/(en)/learn/parasympathetic-nervous-system/page.tsx",
+      "card": null,
+      "record": null,
+      "field": null,
+      "description": "Unsupported control flow must not yield card PASS",
+      "forbid": []
+    },
+    {
+      "name": "E2_CONTROLFLOW_CONST_CALL",
+      "acceptance": "E2-PARSE-1",
+      "rule": "G-ROUTES-TARGET",
+      "expected": "NOT_EVALUATED",
+      "path": "src/app/(en)/learn/parasympathetic-nervous-system/page.tsx",
+      "card": null,
+      "record": null,
+      "field": null,
+      "description": "Unsupported control flow must not yield card PASS",
+      "forbid": []
+    },
+    {
+      "name": "E2_SUPPORTED_BASELINE",
+      "acceptance": "E2-PARSE-2",
+      "rule": "G-ROUTES-TARGET",
+      "expected": "PASS_TECHNICAL_SCOPE",
+      "path": "src/app/(en)/learn/parasympathetic-nervous-system/page.tsx",
+      "card": null,
+      "record": null,
+      "field": null,
+      "description": "",
+      "forbid": []
+    },
+    {
+      "name": "E2_CONTRADICTORY_AUTHOR",
+      "acceptance": "E2-META-1",
+      "rule": "G-ID-METADATA",
+      "expected": "WOULD_BLOCK",
+      "path": "src/app/(en)/learn/parasympathetic-nervous-system/page.tsx",
+      "card": "source-17786266",
+      "record": null,
+      "field": "authors",
+      "description": "",
+      "forbid": []
+    },
+    {
+      "name": "E2_CONTRADICTORY_JOURNAL",
+      "acceptance": "E2-META-1",
+      "rule": "G-ID-METADATA",
+      "expected": "WOULD_BLOCK",
+      "path": "src/app/(en)/learn/parasympathetic-nervous-system/page.tsx",
+      "card": "source-17786266",
+      "record": null,
+      "field": "publication",
+      "description": "",
+      "forbid": []
+    },
+    {
+      "name": "E2_METADATA_IN_SCOPE_NOT_BYLINE",
+      "acceptance": "E2-META-1",
+      "rule": "G-ID-METADATA",
+      "expected": "WOULD_BLOCK",
+      "path": "src/app/(en)/learn/parasympathetic-nervous-system/page.tsx",
+      "card": "source-17786266",
+      "record": null,
+      "field": "authors",
+      "description": "",
+      "forbid": []
+    },
+    {
+      "name": "E2_SHORT_AUTHOR_DISPLAY",
+      "acceptance": "E2-META-2",
+      "rule": "G-ID-METADATA",
+      "expected": "PASS_TECHNICAL_SCOPE",
+      "path": "src/app/(en)/learn/vagal-tone/page.tsx",
+      "card": "source-25696224",
+      "record": null,
+      "field": "authors",
+      "description": "",
+      "forbid": []
+    },
+    {
+      "name": "E2_INSTITUTION_DISPLAY",
+      "acceptance": "E2-META-2",
+      "rule": "G-ID-METADATA",
+      "expected": "PASS_TECHNICAL_SCOPE",
+      "path": "src/app/(en)/conditions/anxiety/page.tsx",
+      "card": "source-who-anxiety",
+      "record": null,
+      "field": "authors",
+      "description": "",
+      "forbid": []
+    },
+    {
+      "name": "E2_UNKNOWN_BYLINE_STRUCTURE",
+      "acceptance": "E2-META-1",
+      "rule": "G-ID-METADATA",
+      "expected": "NOT_EVALUATED",
+      "path": "src/app/(en)/learn/parasympathetic-nervous-system/page.tsx",
+      "card": "source-17786266",
+      "record": null,
+      "field": "bibliographic_blocks",
+      "description": "",
+      "forbid": []
+    },
+    {
+      "name": "E2_SCOPE_SPLIT",
+      "acceptance": "E2-SCOPE-1",
+      "rule": "G-SCOPE-CARD",
+      "expected": "PASS_TECHNICAL_SCOPE",
+      "path": "src/app/(en)/learn/parasympathetic-nervous-system/page.tsx",
+      "card": "source-17786266",
+      "record": null,
+      "field": null,
+      "description": "",
+      "forbid": [
+        "WOULD_BLOCK",
+        "OPERATIONAL_ERROR"
+      ]
+    },
+    {
+      "name": "E2_SCOPE_REMOVED",
+      "acceptance": "E2-SCOPE-2",
+      "rule": "G-SCOPE-CARD",
+      "expected": "WOULD_BLOCK",
+      "path": "src/app/(en)/learn/parasympathetic-nervous-system/page.tsx",
+      "card": "source-17786266",
+      "record": null,
+      "field": null,
+      "description": "",
+      "forbid": []
+    },
+    {
+      "name": "E2_SCOPE_BROADENED",
+      "acceptance": "E2-SCOPE-2",
+      "rule": "G-SCOPE-CARD",
+      "expected": "REVIEW_REQUIRED",
+      "path": "src/app/(en)/learn/parasympathetic-nervous-system/page.tsx",
+      "card": "source-17786266",
+      "record": null,
+      "field": null,
+      "description": "",
+      "forbid": []
+    },
+    {
+      "name": "E2_SCOPE_SPLIT_HIDDEN",
+      "acceptance": "E2-SCOPE-2",
+      "rule": "G-SCOPE-CARD",
+      "expected": "WOULD_BLOCK",
+      "path": "src/app/(en)/learn/parasympathetic-nervous-system/page.tsx",
+      "card": "source-17786266",
+      "record": null,
+      "field": null,
+      "description": "",
+      "forbid": []
+    },
+    {
+      "name": "E2_SCOPE_COMMENTED",
+      "acceptance": "E2-SCOPE-2",
+      "rule": "G-SCOPE-CARD",
+      "expected": "WOULD_BLOCK",
+      "path": "src/app/(en)/learn/parasympathetic-nervous-system/page.tsx",
+      "card": "source-17786266",
+      "record": null,
+      "field": null,
+      "description": "",
+      "forbid": []
+    },
+    {
+      "name": "E2_SCOPE_OTHER_CARD",
+      "acceptance": "E2-SCOPE-2",
+      "rule": "G-SCOPE-CARD",
+      "expected": "REVIEW_REQUIRED",
+      "path": "src/app/(en)/learn/parasympathetic-nervous-system/page.tsx",
+      "card": "source-17786266",
+      "record": null,
+      "field": null,
+      "description": "",
+      "forbid": []
+    },
+    {
+      "name": "E2_DOI_LABEL",
+      "acceptance": "E2-ID-3",
+      "rule": "G-ID-DOI",
+      "expected": "PASS_TECHNICAL_SCOPE",
+      "path": "src/app/(en)/learn/parasympathetic-nervous-system/page.tsx",
+      "card": "source-17786266",
+      "record": null,
+      "field": null,
+      "description": "",
+      "forbid": []
+    },
+    {
+      "name": "E2_DOI_LINK",
+      "acceptance": "E2-ID-3",
+      "rule": "G-ID-DOI",
+      "expected": "PASS_TECHNICAL_SCOPE",
+      "path": "src/app/(en)/learn/parasympathetic-nervous-system/page.tsx",
+      "card": "source-17786266",
+      "record": null,
+      "field": null,
+      "description": "",
+      "forbid": []
+    },
+    {
+      "name": "E2_WRONG_PMID_CARD",
+      "acceptance": "E2-ID-2",
+      "rule": "G-ID-PMID",
+      "expected": "WOULD_BLOCK",
+      "path": "src/app/(en)/learn/parasympathetic-nervous-system/page.tsx",
+      "card": "source-17786266",
+      "record": null,
+      "field": null,
+      "description": "",
+      "forbid": []
+    }
+  ],
+  "acceptance_requirements": [
+    {
+      "id": "E2-ID-1",
+      "input": "Quarantined original PMID/DOI reintroduced with a new local evidence_id",
+      "expected": "WOULD_BLOCK against canonical identity or OPERATIONAL_ERROR for malformed identity; never positive G-ID approval"
+    },
+    {
+      "id": "E2-ID-2",
+      "input": "Two active records with identical PMID but different internal IDs",
+      "expected": "WOULD_BLOCK uniqueness invariant"
+    },
+    {
+      "id": "E2-ID-3",
+      "input": "Known reviewed PMID+DOI on same single record",
+      "expected": "PASS_TECHNICAL_SCOPE; no invented alias merging"
+    },
+    {
+      "id": "E2-REVIEW-1",
+      "input": "New record with promoted directness or certainty class and empty approval arrays",
+      "expected": "WOULD_BLOCK review-bound status violation"
+    },
+    {
+      "id": "E2-REVIEW-2",
+      "input": "New record in pending state, no claim support, ordinary bibliographic candidate",
+      "expected": "REVIEW_REQUIRED not automatic scientific approval"
+    },
+    {
+      "id": "E2-REVIEW-3",
+      "input": "Same existing records reordered; approved status fields unchanged",
+      "expected": "No false approval transition caused by array position; content review status can remain"
+    },
+    {
+      "id": "E2-PARSE-1",
+      "input": "Early conditional return, nested returns or unsupported control flow in selected component",
+      "expected": "NOT_EVALUATED with code locator unless explicitly supported and tested; no unreachable card approval"
+    },
+    {
+      "id": "E2-PARSE-2",
+      "input": "Literal supported accepted component",
+      "expected": "Preserved scoped positive checks; no project code execution"
+    },
+    {
+      "id": "E2-META-1",
+      "input": "Wrong author field, accepted author mentioned elsewhere in same card",
+      "expected": "No positive author-field equality; WOULD_BLOCK if contradiction determined, otherwise explicit unresolved identity review"
+    },
+    {
+      "id": "E2-META-2",
+      "input": "Previously accepted author display with et al. or official institution",
+      "expected": "No false bibliographic error"
+    },
+    {
+      "id": "E2-SCOPE-1",
+      "input": "Exact scope text split into two adjacent paragraphs in same scope container",
+      "expected": "Correct format-only classification; broad change inventory remains visible"
+    },
+    {
+      "id": "E2-SCOPE-2",
+      "input": "Missing, hidden or semantically broadened scope; same words on different card",
+      "expected": "Appropriate blocking/review result; no borrowing another card boundary"
+    },
+    {
+      "id": "E2-LIFE-1",
+      "input": "Worktree good, index bad; then named commit distinct from both",
+      "expected": "Results bound to inspected snapshot and affected finding locator; no writes"
+    }
+  ],
+  "baseline_expected_per_phase": {
+    "PASS_TECHNICAL_SCOPE": 536,
+    "REVIEW_REQUIRED": 34
+  },
+  "original_e1_expected_per_phase": {
+    "PASS_TECHNICAL_SCOPE": 364,
+    "REVIEW_REQUIRED": 34
+  },
+  "original_e1_tests": "Reference ZIP unchanged; run separately",
+  "e2_lifecycle_requirement": "E2-LIFE-1 covered by RealPhaseCalibrationTests; index bad, worktree and named commit correct",
+  "ci_installed": false,
+  "blocking_activation_approved": false
+}

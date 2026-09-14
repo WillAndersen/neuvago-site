@@ -1,0 +1,112 @@
+[
+  {
+    "fixture": "01.html",
+    "route": "/learn/parasympathetic-nervous-system",
+    "path": "src/app/(en)/learn/parasympathetic-nervous-system/page.tsx",
+    "sha256": "a7eca336b16a3856d106dc2baf9365fc0c7910af03732f65020dd5bde0af328c",
+    "origin_zip": "neuvago-1e4d3-final-20260913T080500Z-nd76l0mh-share.zip",
+    "origin_member": "neuvago-1e4d3-final-20260913T080500Z-nd76l0mh/production/attempt-07/01/response.html",
+    "observed_at_utc": "2026-09-13T08:08:48.558097+00:00",
+    "is_current_production": false
+  },
+  {
+    "fixture": "02.html",
+    "route": "/learn/vagal-tone",
+    "path": "src/app/(en)/learn/vagal-tone/page.tsx",
+    "sha256": "647b2d44bc410d32cab8f2507dfa1f9c7da576e840b98c0850ce050d1c15b320",
+    "origin_zip": "neuvago-1e4d3-final-20260913T080500Z-nd76l0mh-share.zip",
+    "origin_member": "neuvago-1e4d3-final-20260913T080500Z-nd76l0mh/production/attempt-07/02/response.html",
+    "observed_at_utc": "2026-09-13T08:08:49.571187+00:00",
+    "is_current_production": false
+  },
+  {
+    "fixture": "03.html",
+    "route": "/learn/fight-flight-freeze",
+    "path": "src/app/(en)/learn/fight-flight-freeze/page.tsx",
+    "sha256": "dcb909c5377eefe2d51c6ef0b43791a8327012e21d150fe6bd2b4ce2c824c088",
+    "origin_zip": "neuvago-1e4d3-final-20260913T080500Z-nd76l0mh-share.zip",
+    "origin_member": "neuvago-1e4d3-final-20260913T080500Z-nd76l0mh/production/attempt-07/03/response.html",
+    "observed_at_utc": "2026-09-13T08:08:50.704994+00:00",
+    "is_current_production": false
+  },
+  {
+    "fixture": "04.html",
+    "route": "/learn/recovery-and-regulation",
+    "path": "src/app/(en)/learn/recovery-and-regulation/page.tsx",
+    "sha256": "5097ccddabf18d78bb4c1c2230d9ca3ace5254212bf91e2a4d0d5bffe8b652da",
+    "origin_zip": "neuvago-1e4d4-final-20260913T103055Z-le7jqk6v-share.zip",
+    "origin_member": "neuvago-1e4d4-final-20260913T103055Z-le7jqk6v/production/attempt-06/01/response.html",
+    "observed_at_utc": "2026-09-13T10:35:08.671780+00:00",
+    "is_current_production": false
+  },
+  {
+    "fixture": "05.html",
+    "route": "/learn/why-you-feel-tired-but-cant-relax",
+    "path": "src/app/(en)/learn/why-you-feel-tired-but-cant-relax/page.tsx",
+    "sha256": "1a60b3525b5b47b463c6e7edfd26da2963d6e9e793c100d94c54a12f833c04a3",
+    "origin_zip": "neuvago-1e4d4-final-20260913T103055Z-le7jqk6v-share.zip",
+    "origin_member": "neuvago-1e4d4-final-20260913T103055Z-le7jqk6v/production/attempt-06/02/response.html",
+    "observed_at_utc": "2026-09-13T10:35:09.119582+00:00",
+    "is_current_production": false
+  },
+  {
+    "fixture": "06.html",
+    "route": "/learn/why-your-body-feels-stuck-in-stress",
+    "path": "src/app/(en)/learn/why-your-body-feels-stuck-in-stress/page.tsx",
+    "sha256": "524b61eb23d14065ae6ae9cc55a7b8712bf06df6732ed856dff14c03479f45a5",
+    "origin_zip": "neuvago-1e4d4-final-20260913T103055Z-le7jqk6v-share.zip",
+    "origin_member": "neuvago-1e4d4-final-20260913T103055Z-le7jqk6v/production/attempt-06/03/response.html",
+    "observed_at_utc": "2026-09-13T10:35:10.044797+00:00",
+    "is_current_production": false
+  },
+  {
+    "fixture": "07.html",
+    "route": "/learn/signs-of-a-dysregulated-nervous-system",
+    "path": "src/app/(en)/learn/signs-of-a-dysregulated-nervous-system/page.tsx",
+    "sha256": "1a44aec2ce1439962b4b404c8d87535735824b0b546727613c2fdd49c9996229",
+    "origin_zip": "neuvago-1e4d5-final-20260913T135628Z-5_jetp13-share.zip",
+    "origin_member": "neuvago-1e4d5-final-20260913T135628Z-5_jetp13/production/attempt-07/01/response.html",
+    "observed_at_utc": "2026-09-13T14:01:20.970247+00:00",
+    "is_current_production": false
+  },
+  {
+    "fixture": "08.html",
+    "route": "/learn/what-nervous-system-regulation-feels-like",
+    "path": "src/app/(en)/learn/what-nervous-system-regulation-feels-like/page.tsx",
+    "sha256": "3a19c1f3d25773284563c8d35c24457d9e741b1acf0828f793a7dc5af544c8b3",
+    "origin_zip": "neuvago-1e4d5-final-20260913T135628Z-5_jetp13-share.zip",
+    "origin_member": "neuvago-1e4d5-final-20260913T135628Z-5_jetp13/production/attempt-07/02/response.html",
+    "observed_at_utc": "2026-09-13T14:01:22.085156+00:00",
+    "is_current_production": false
+  },
+  {
+    "fixture": "09.html",
+    "route": "/learn/emotional-regulation-and-the-nervous-system",
+    "path": "src/app/(en)/learn/emotional-regulation-and-the-nervous-system/page.tsx",
+    "sha256": "e3e3948152bb5a019933fa8178ff3d37288109b5f61e715e0543b286ab864dcd",
+    "origin_zip": "neuvago-1e4d5-final-20260913T135628Z-5_jetp13-share.zip",
+    "origin_member": "neuvago-1e4d5-final-20260913T135628Z-5_jetp13/production/attempt-07/03/response.html",
+    "observed_at_utc": "2026-09-13T14:01:23.125267+00:00",
+    "is_current_production": false
+  },
+  {
+    "fixture": "10.html",
+    "route": "/conditions/anxiety",
+    "path": "src/app/(en)/conditions/anxiety/page.tsx",
+    "sha256": "37ba8f27fa357bf9c308597df0a0fd5109679af7f6b3493be6006925020510c3",
+    "origin_zip": "neuvago-1e4d6-final-20260913T151917Z-tur5tfpe-share.zip",
+    "origin_member": "neuvago-1e4d6-final-20260913T151917Z-tur5tfpe/production/attempt-07/01/response.html",
+    "observed_at_utc": "2026-09-13T15:24:07.028381+00:00",
+    "is_current_production": false
+  },
+  {
+    "fixture": "11.html",
+    "route": "/conditions/burnout",
+    "path": "src/app/(en)/conditions/burnout/page.tsx",
+    "sha256": "271da7d051389350aaf499213bbbb56205c72db173343fc1e1fe02cf0832e006",
+    "origin_zip": "neuvago-1e4d6-final-20260913T151917Z-tur5tfpe-share.zip",
+    "origin_member": "neuvago-1e4d6-final-20260913T151917Z-tur5tfpe/production/attempt-07/02/response.html",
+    "observed_at_utc": "2026-09-13T15:24:07.516174+00:00",
+    "is_current_production": false
+  }
+]

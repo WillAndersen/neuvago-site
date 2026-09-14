@@ -1,0 +1,45 @@
+{
+  "schema": "neuvago-1e4e3-installed-shadow-contract-v1",
+  "tooling_version": "1.0.1",
+  "adapter_version": "neuvago-1e4e3-phase-adapter-v1",
+  "mode": "SHADOW_REPORT_ONLY",
+  "accepted_source_baseline": "4c4e65a87163000ee493f264849824f17fdcf8ca",
+  "accepted_e2_rules_sha256": "29403f0f09e7728e32d0213b6998414842ae6ede02090cfe7cdadbb36f031b48",
+  "accepted_e2_package_sha256": "e86d1ae7672f5891314dc646ca47b7dc05ed3c2a608d273de61863ef9ecb601a",
+  "accepted_e2_return_sha256": "229f953cbb8d2609b6e52e8435dc2b8144b94e9a8e7fd6640916544d486c82ba",
+  "tooling_roots": [
+    "scripts/editorial-enforcement",
+    "docs/seo/editorial-enforcement"
+  ],
+  "baseline_reference": "scripts/editorial-enforcement/vendor/e2/support/expected-state.json",
+  "selected_source_scope_files": 252,
+  "declared_routes": 11,
+  "source_cards": 23,
+  "expected_initial_engine_counts": {
+    "PASS_TECHNICAL_SCOPE": 536,
+    "REVIEW_REQUIRED": 34
+  },
+  "report_location": "outside repository; default ~/Downloads",
+  "approved_links": 0,
+  "claim_support_review_complete": false,
+  "scientific_claim_support_approved": false,
+  "enforcement_gates_installed": false,
+  "ci_installed": false,
+  "deployment_blocking_enabled": false,
+  "release_ready": false,
+  "rule_engine_ready_for_blocking_activation": false,
+  "dependency_policy": "Use existing project TypeScript; no compiler installation or project script execution.",
+  "named_commit_policy": "Full object ID descended from accepted source baseline; baseline is never advanced implicitly.",
+  "self_test_policy": "Synthetic repositories only; never mutate the inspected project.",
+  "integrity_not_authentication": "Manifests detect accidental drift, not an independently authenticated approval signature.",
+  "synthetic_history_for_tests": false,
+  "visibility_recovery": {
+    "scope": "ONE_REQUIRED_VENDOR_MANIFEST_ONLY",
+    "new_file": "scripts/editorial-enforcement/.gitignore",
+    "included_path": "scripts/editorial-enforcement/vendor/e2/PACKAGE-MANIFEST.sha256",
+    "parent_tooling_version": "1.0.0",
+    "root_ignore_rules_modified": false,
+    "original_e2_bytes_preserved": true,
+    "new_rule_or_claim_approval": false
+  }
+}

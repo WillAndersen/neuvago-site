@@ -1,0 +1,1773 @@
+{
+  "schema": "neuvago-1e4d7-frozen-delivery-ledger-v1",
+  "batches": [
+    {
+      "stage": "1E.4D.3",
+      "commit": "f5ff713fa5d83d76db963f0792ad0984368ddcb5",
+      "parent": "8457121b309d06fbe30a904d83a8cd578b093821",
+      "commit_message": "feat(seo): add foundation source paths and interpretation limits",
+      "paths": [
+        "src/app/(en)/learn/parasympathetic-nervous-system/page.tsx",
+        "src/app/(en)/learn/vagal-tone/page.tsx",
+        "src/app/(en)/learn/fight-flight-freeze/page.tsx"
+      ],
+      "acceptance_file": "reference/1e4d3-acceptance.json",
+      "input_share": "neuvago-1e4d3-final-20260913T080500Z-nd76l0mh-share.zip",
+      "input_share_sha256": "8cbc307c8ea855162f755cc0f66f5115e4963fb3a3c4f859f72587d55d4d3b65"
+    },
+    {
+      "stage": "1E.4D.4",
+      "commit": "432a1d9d3aeeb192ff9753d0ac8c608274ee401b",
+      "parent": "f5ff713fa5d83d76db963f0792ad0984368ddcb5",
+      "commit_message": "feat(seo): add recovery and stress source paths and interpretation limits",
+      "paths": [
+        "src/app/(en)/learn/recovery-and-regulation/page.tsx",
+        "src/app/(en)/learn/why-you-feel-tired-but-cant-relax/page.tsx",
+        "src/app/(en)/learn/why-your-body-feels-stuck-in-stress/page.tsx"
+      ],
+      "acceptance_file": "reference/1e4d4-acceptance.json",
+      "input_share": "neuvago-1e4d4-final-20260913T103055Z-le7jqk6v-share.zip",
+      "input_share_sha256": "ee9ea1724653b46c6149a8ade55196c707e2d5320061e221cfbe9894889c28fc"
+    },
+    {
+      "stage": "1E.4D.5",
+      "commit": "3d00247f2c2f1d6d925ab7170fbbda362e9bed7c",
+      "parent": "432a1d9d3aeeb192ff9753d0ac8c608274ee401b",
+      "commit_message": "feat(seo): add regulation and emotion source paths and interpretation limits",
+      "paths": [
+        "src/app/(en)/learn/signs-of-a-dysregulated-nervous-system/page.tsx",
+        "src/app/(en)/learn/what-nervous-system-regulation-feels-like/page.tsx",
+        "src/app/(en)/learn/emotional-regulation-and-the-nervous-system/page.tsx"
+      ],
+      "acceptance_file": "reference/1e4d5-acceptance.json",
+      "input_share": "neuvago-1e4d5-final-20260913T135628Z-5_jetp13-share.zip",
+      "input_share_sha256": "f1b7295cbc5b11a94294e1e335ed46b44c4428d477fbd7410eb317e627fb0ba8"
+    },
+    {
+      "stage": "1E.4D.6",
+      "commit": "4c4e65a87163000ee493f264849824f17fdcf8ca",
+      "parent": "3d00247f2c2f1d6d925ab7170fbbda362e9bed7c",
+      "commit_message": "feat(seo): add anxiety and burnout source paths and care boundaries",
+      "paths": [
+        "src/app/(en)/conditions/anxiety/page.tsx",
+        "src/app/(en)/conditions/burnout/page.tsx"
+      ],
+      "acceptance_file": "reference/1e4d6-acceptance.json",
+      "input_share": "neuvago-1e4d6-final-20260913T151917Z-tur5tfpe-share.zip",
+      "input_share_sha256": "d79543ca81895b0c1de254ce73d23e386742e224e1db6307137f7722e23e4b01"
+    }
+  ],
+  "routes": [
+    {
+      "route": "/learn/parasympathetic-nervous-system",
+      "path": "src/app/(en)/learn/parasympathetic-nervous-system/page.tsx",
+      "accepted_sha256": "95f6de0ad0cd50c7d3038be6d33d599152fb2823e4615e5c96f5a9150324154f",
+      "pre_delivery_sha256": "b83a471a326358315b83fd8652e678a1f24e72b42629111807dc378fff3ea471",
+      "batch": "1E.4D.3",
+      "commit": "f5ff713fa5d83d76db963f0792ad0984368ddcb5",
+      "h1": "What is the parasympathetic nervous system, and why is it so often linked to calm, rest, and recovery?",
+      "references": [
+        {
+          "reference_key": "PMID:17786266",
+          "local_key": "17786266",
+          "pmid": "17786266",
+          "doi": "10.5688/aj710478",
+          "source_kind": "SCHOLARLY_PUBLICATION",
+          "source_url": "https://pubmed.ncbi.nlm.nih.gov/17786266/",
+          "inherited_metadata": {
+            "authors": "McCorry LK",
+            "year": 2007,
+            "title": "Physiology of the autonomic nervous system",
+            "journal": "American Journal of Pharmaceutical Education",
+            "doi": "10.5688/aj710478",
+            "kind": "Physiology review",
+            "scope": "Background on autonomic pathways and organ functions, including parasympathetic control. This is not a trial of a relaxation technique or of Neuvago.",
+            "link": "https://pubmed.ncbi.nlm.nih.gov/17786266/",
+            "existing": true
+          },
+          "approval_status": "NOT_CLAIM_APPROVED",
+          "evidence_registry_modified": false
+        },
+        {
+          "reference_key": "PMID:1660159",
+          "local_key": "1660159",
+          "pmid": "1660159",
+          "doi": "10.1037/0033-295x.98.4.459",
+          "source_kind": "SCHOLARLY_PUBLICATION",
+          "source_url": "https://pubmed.ncbi.nlm.nih.gov/1660159/",
+          "inherited_metadata": {
+            "authors": "Berntson GG, Cacioppo JT, Quigley KS",
+            "year": 1991,
+            "title": "Autonomic determinism: the modes of autonomic control, the doctrine of autonomic space, and the laws of autonomic constraint",
+            "journal": "Psychological Review",
+            "doi": "10.1037/0033-295x.98.4.459",
+            "kind": "Conceptual review",
+            "scope": "Explains why sympathetic and parasympathetic control cannot be reduced to opposite ends of a single scale. It is not a way to diagnose an individual from how calm they feel.",
+            "link": "https://pubmed.ncbi.nlm.nih.gov/1660159/",
+            "existing": true
+          },
+          "approval_status": "NOT_CLAIM_APPROVED",
+          "evidence_registry_modified": false
+        }
+      ],
+      "expected_cards": 2,
+      "care_guidance": null,
+      "interpretation_note": null,
+      "historical_production_observation": {
+        "route": "/learn/parasympathetic-nervous-system",
+        "snapshot_member": "neuvago-1e4d3-final-20260913T080500Z-nd76l0mh/production/attempt-07/01/response.html",
+        "http_status_reported": 200,
+        "observed_at_utc": "2026-09-13T08:08:48.558097+00:00",
+        "body_sha256": "a7eca336b16a3856d106dc2baf9365fc0c7910af03732f65020dd5bde0af328c",
+        "matched_local_sha256": "be030cf05e6e5050af75173cfc1ed4d4d529b64c68fb9cf0dd18046284fc53d7",
+        "final_local_sha256": "2d3e9d910c6624179fbafdff6d460bf62dca9e5298d266e76d249ab91dbc8477",
+        "independent_reparse": "PASS",
+        "main_count": 1,
+        "h1_count": 1,
+        "canonical": "https://neuvago.com/learn/parasympathetic-nervous-system",
+        "source_cards": [
+          {
+            "pmid": "17786266",
+            "doi": "10.5688/aj710478",
+            "source_card_id": "source-17786266",
+            "title": "Physiology of the autonomic nervous system",
+            "card_text": "1. Physiology review · 2007 Physiology of the autonomic nervous system McCorry LK. American Journal of Pharmaceutical Education. Background on autonomic pathways and organ functions, including parasympathetic control. This is not a trial of a relaxation technique or of Neuvago. PMID: 17786266 DOI: 10.5688/aj710478 Read McCorry LK on PubMed",
+            "source_link": "https://pubmed.ncbi.nlm.nih.gov/17786266/",
+            "in_text_citation_resolves_to_card": true,
+            "matches_approved_reference_fields": true,
+            "active_registry_membership_as_declared_in_approved_package": true
+          },
+          {
+            "pmid": "1660159",
+            "doi": "10.1037/0033-295x.98.4.459",
+            "source_card_id": "source-1660159",
+            "title": "Autonomic determinism: the modes of autonomic control, the doctrine of autonomic space, and the laws of autonomic constraint",
+            "card_text": "2. Conceptual review · 1991 Autonomic determinism: the modes of autonomic control, the doctrine of autonomic space, and the laws of autonomic constraint Berntson GG, Cacioppo JT, Quigley KS. Psychological Review. Explains why sympathetic and parasympathetic control cannot be reduced to opposite ends of a single scale. It is not a way to diagnose an individual from how calm they feel. PMID: 1660159 DOI: 10.1037/0033-295x.98.4.459 Read Berntson GG on PubMed",
+            "source_link": "https://pubmed.ncbi.nlm.nih.gov/1660159/",
+            "in_text_citation_resolves_to_card": true,
+            "matches_approved_reference_fields": true,
+            "active_registry_membership_as_declared_in_approved_package": true
+          }
+        ],
+        "normalized_main_text_matches_approved_local": true,
+        "main_links_match_approved_local": true,
+        "jsonld_matches_approved_local": true,
+        "title_description_alternates_match_approved_local": true,
+        "previous_attempts_same_old_html_with_zero_new_source_cards": 6,
+        "visual_layout_verified": false,
+        "deployment_commit_attested": false
+      },
+      "current_production_verified": false,
+      "scientific_claim_support_approved": false
+    },
+    {
+      "route": "/learn/vagal-tone",
+      "path": "src/app/(en)/learn/vagal-tone/page.tsx",
+      "accepted_sha256": "d345beb81cded374ebf6db0fa9503b00eb57c7ec236ff43a23a7e86348d03319",
+      "pre_delivery_sha256": "df4b4a35f42c5c1d8f7c88b9f1cae1eddbeed692efae024fe6475c16951e36d4",
+      "batch": "1E.4D.3",
+      "commit": "f5ff713fa5d83d76db963f0792ad0984368ddcb5",
+      "h1": "What is vagal tone, and why is it often linked to resilience, recovery, and steadier response to stress?",
+      "references": [
+        {
+          "reference_key": "PMID:17081672",
+          "local_key": "17081672",
+          "pmid": "17081672",
+          "doi": "10.1016/j.biopsycho.2005.11.014",
+          "source_kind": "SCHOLARLY_PUBLICATION",
+          "source_url": "https://pubmed.ncbi.nlm.nih.gov/17081672/",
+          "inherited_metadata": {
+            "authors": "Grossman P, Taylor EW",
+            "year": 2007,
+            "title": "Toward understanding respiratory sinus arrhythmia: relations to cardiac vagal tone, evolution and biobehavioral functions",
+            "journal": "Biological Psychology",
+            "doi": "10.1016/j.biopsycho.2005.11.014",
+            "kind": "Physiology review",
+            "scope": "Discusses how breathing, physical activity and other factors affect the interpretation of respiratory sinus arrhythmia as an index of cardiac vagal tone. It is not a whole-vagus health test.",
+            "link": "https://pubmed.ncbi.nlm.nih.gov/17081672/",
+            "existing": true
+          },
+          "approval_status": "NOT_CLAIM_APPROVED",
+          "evidence_registry_modified": false
+        },
+        {
+          "reference_key": "PMID:25696224",
+          "local_key": "25696224",
+          "pmid": "25696224",
+          "doi": null,
+          "source_kind": "SCHOLARLY_PUBLICATION",
+          "source_url": "https://pubmed.ncbi.nlm.nih.gov/25696224/",
+          "inherited_metadata": {
+            "authors": "Bootsma et al.",
+            "year": 2003,
+            "title": "Heart rate variability and sympathovagal balance: pharmacological validation",
+            "journal": "Netherlands Heart Journal",
+            "doi": null,
+            "kind": "Pharmacological validation study",
+            "scope": "Examines HRV measures against pharmacological autonomic blockade. This laboratory study does not validate a consumer score for resilience, recovery or general vagus-nerve health.",
+            "link": "https://pubmed.ncbi.nlm.nih.gov/25696224/",
+            "existing": true
+          },
+          "approval_status": "NOT_CLAIM_APPROVED",
+          "evidence_registry_modified": false
+        }
+      ],
+      "expected_cards": 2,
+      "care_guidance": null,
+      "interpretation_note": null,
+      "historical_production_observation": {
+        "route": "/learn/vagal-tone",
+        "snapshot_member": "neuvago-1e4d3-final-20260913T080500Z-nd76l0mh/production/attempt-07/02/response.html",
+        "http_status_reported": 200,
+        "observed_at_utc": "2026-09-13T08:08:49.571187+00:00",
+        "body_sha256": "647b2d44bc410d32cab8f2507dfa1f9c7da576e840b98c0850ce050d1c15b320",
+        "matched_local_sha256": "dd2ddbdd13a65339f69b8c73284d52b7aa1ee46868adf8c36743f81f18238aaf",
+        "final_local_sha256": "2bac0cf9213dae40c626f19fca341ff5a6fc6d98d8b880d3618629deae1d7d48",
+        "independent_reparse": "PASS",
+        "main_count": 1,
+        "h1_count": 1,
+        "canonical": "https://neuvago.com/learn/vagal-tone",
+        "source_cards": [
+          {
+            "pmid": "17081672",
+            "doi": "10.1016/j.biopsycho.2005.11.014",
+            "source_card_id": "source-17081672",
+            "title": "Toward understanding respiratory sinus arrhythmia: relations to cardiac vagal tone, evolution and biobehavioral functions",
+            "card_text": "1. Physiology review · 2007 Toward understanding respiratory sinus arrhythmia: relations to cardiac vagal tone, evolution and biobehavioral functions Grossman P, Taylor EW. Biological Psychology. Discusses how breathing, physical activity and other factors affect the interpretation of respiratory sinus arrhythmia as an index of cardiac vagal tone. It is not a whole-vagus health test. PMID: 17081672 DOI: 10.1016/j.biopsycho.2005.11.014 Read Grossman P on PubMed",
+            "source_link": "https://pubmed.ncbi.nlm.nih.gov/17081672/",
+            "in_text_citation_resolves_to_card": true,
+            "matches_approved_reference_fields": true,
+            "active_registry_membership_as_declared_in_approved_package": true
+          },
+          {
+            "pmid": "25696224",
+            "doi": null,
+            "source_card_id": "source-25696224",
+            "title": "Heart rate variability and sympathovagal balance: pharmacological validation",
+            "card_text": "2. Pharmacological validation study · 2003 Heart rate variability and sympathovagal balance: pharmacological validation Bootsma et al.. Netherlands Heart Journal. Examines HRV measures against pharmacological autonomic blockade. This laboratory study does not validate a consumer score for resilience, recovery or general vagus-nerve health. PMID: 25696224 Read Bootsma et al. on PubMed",
+            "source_link": "https://pubmed.ncbi.nlm.nih.gov/25696224/",
+            "in_text_citation_resolves_to_card": true,
+            "matches_approved_reference_fields": true,
+            "active_registry_membership_as_declared_in_approved_package": true
+          }
+        ],
+        "normalized_main_text_matches_approved_local": true,
+        "main_links_match_approved_local": true,
+        "jsonld_matches_approved_local": true,
+        "title_description_alternates_match_approved_local": true,
+        "previous_attempts_same_old_html_with_zero_new_source_cards": 6,
+        "visual_layout_verified": false,
+        "deployment_commit_attested": false
+      },
+      "current_production_verified": false,
+      "scientific_claim_support_approved": false
+    },
+    {
+      "route": "/learn/fight-flight-freeze",
+      "path": "src/app/(en)/learn/fight-flight-freeze/page.tsx",
+      "accepted_sha256": "d8459d9dc6b95aaffe7adfa1b8dc0f8b8eb67f06590f8f6f4a398a3929f0fc2f",
+      "pre_delivery_sha256": "156588012b502c082a65617f0d8426cbf60dd92e1c15b6d4cd38947f90904d2e",
+      "batch": "1E.4D.3",
+      "commit": "f5ff713fa5d83d76db963f0792ad0984368ddcb5",
+      "h1": "What do fight, flight, and freeze actually mean in everyday life?",
+      "references": [
+        {
+          "reference_key": "PMID:28242739",
+          "local_key": "28242739",
+          "pmid": "28242739",
+          "doi": "10.1098/rstb.2016.0206",
+          "source_kind": "SCHOLARLY_PUBLICATION",
+          "source_url": "https://pubmed.ncbi.nlm.nih.gov/28242739/",
+          "inherited_metadata": {
+            "authors": "Roelofs K",
+            "year": 2017,
+            "title": "Freeze for action: neurobiological mechanisms in animal and human freezing",
+            "journal": "Philosophical Transactions of the Royal Society B",
+            "doi": "10.1098/rstb.2016.0206",
+            "kind": "Translational review",
+            "scope": "Reviews animal and human research on defensive freezing and preparation for action. Freezing in this literature is not simply another word for tiredness, low motivation or emotional numbness.",
+            "link": "https://pubmed.ncbi.nlm.nih.gov/28242739/",
+            "existing": false
+          },
+          "approval_status": "NOT_CLAIM_APPROVED",
+          "evidence_registry_modified": false
+        },
+        {
+          "reference_key": "PMID:26062169",
+          "local_key": "26062169",
+          "pmid": "26062169",
+          "doi": "10.1097/HRP.0000000000000065",
+          "source_kind": "SCHOLARLY_PUBLICATION",
+          "source_url": "https://pubmed.ncbi.nlm.nih.gov/26062169/",
+          "inherited_metadata": {
+            "authors": "Kozlowska K, Walker P, McLean L, Carrive P",
+            "year": 2015,
+            "title": "Fear and the Defense Cascade: Clinical Implications and Management",
+            "journal": "Harvard Review of Psychiatry",
+            "doi": "10.1097/HRP.0000000000000065",
+            "kind": "Clinical review",
+            "scope": "Distinguishes defensive responses including freezing and tonic or collapsed immobility. Its clinical framework is not a self-diagnosis checklist or evidence for a Neuvago treatment effect.",
+            "link": "https://pubmed.ncbi.nlm.nih.gov/26062169/",
+            "existing": false
+          },
+          "approval_status": "NOT_CLAIM_APPROVED",
+          "evidence_registry_modified": false
+        }
+      ],
+      "expected_cards": 2,
+      "care_guidance": null,
+      "interpretation_note": null,
+      "historical_production_observation": {
+        "route": "/learn/fight-flight-freeze",
+        "snapshot_member": "neuvago-1e4d3-final-20260913T080500Z-nd76l0mh/production/attempt-07/03/response.html",
+        "http_status_reported": 200,
+        "observed_at_utc": "2026-09-13T08:08:50.704994+00:00",
+        "body_sha256": "dcb909c5377eefe2d51c6ef0b43791a8327012e21d150fe6bd2b4ce2c824c088",
+        "matched_local_sha256": "098d834c1ceb3f8ffec8ab06d1cb8a28d4a777bc104da7544ea07da84040ef48",
+        "final_local_sha256": "5a74f1ff5e9a4d782513751604ab28a153c1d8fa59700666b6471b700e668bf2",
+        "independent_reparse": "PASS",
+        "main_count": 1,
+        "h1_count": 1,
+        "canonical": "https://neuvago.com/learn/fight-flight-freeze",
+        "source_cards": [
+          {
+            "pmid": "28242739",
+            "doi": "10.1098/rstb.2016.0206",
+            "source_card_id": "source-28242739",
+            "title": "Freeze for action: neurobiological mechanisms in animal and human freezing",
+            "card_text": "1. Translational review · 2017 Freeze for action: neurobiological mechanisms in animal and human freezing Roelofs K. Philosophical Transactions of the Royal Society B. Reviews animal and human research on defensive freezing and preparation for action. Freezing in this literature is not simply another word for tiredness, low motivation or emotional numbness. PMID: 28242739 DOI: 10.1098/rstb.2016.0206 Read Roelofs K on PubMed",
+            "source_link": "https://pubmed.ncbi.nlm.nih.gov/28242739/",
+            "in_text_citation_resolves_to_card": true,
+            "matches_approved_reference_fields": true,
+            "active_registry_membership_as_declared_in_approved_package": false
+          },
+          {
+            "pmid": "26062169",
+            "doi": "10.1097/HRP.0000000000000065",
+            "source_card_id": "source-26062169",
+            "title": "Fear and the Defense Cascade: Clinical Implications and Management",
+            "card_text": "2. Clinical review · 2015 Fear and the Defense Cascade: Clinical Implications and Management Kozlowska K, Walker P, McLean L, Carrive P. Harvard Review of Psychiatry. Distinguishes defensive responses including freezing and tonic or collapsed immobility. Its clinical framework is not a self-diagnosis checklist or evidence for a Neuvago treatment effect. PMID: 26062169 DOI: 10.1097/HRP.0000000000000065 Read Kozlowska K on PubMed",
+            "source_link": "https://pubmed.ncbi.nlm.nih.gov/26062169/",
+            "in_text_citation_resolves_to_card": true,
+            "matches_approved_reference_fields": true,
+            "active_registry_membership_as_declared_in_approved_package": false
+          }
+        ],
+        "normalized_main_text_matches_approved_local": true,
+        "main_links_match_approved_local": true,
+        "jsonld_matches_approved_local": true,
+        "title_description_alternates_match_approved_local": true,
+        "previous_attempts_same_old_html_with_zero_new_source_cards": 6,
+        "visual_layout_verified": false,
+        "deployment_commit_attested": false
+      },
+      "current_production_verified": false,
+      "scientific_claim_support_approved": false
+    },
+    {
+      "route": "/learn/recovery-and-regulation",
+      "path": "src/app/(en)/learn/recovery-and-regulation/page.tsx",
+      "accepted_sha256": "dc6ccfb7926e29e3016486c970b6cd96333c40555d3a591618a69f2807fc80bf",
+      "pre_delivery_sha256": "eb19b9f3005e5365912902b15c8f21493f2dafaebfe18ed80b122817a2153e17",
+      "batch": "1E.4D.4",
+      "commit": "432a1d9d3aeeb192ff9753d0ac8c608274ee401b",
+      "h1": "Why recovery and regulation matter so much in everyday life",
+      "references": [
+        {
+          "reference_key": "PMID:28358572",
+          "local_key": "28358572",
+          "pmid": "28358572",
+          "doi": "10.1037/ocp0000079",
+          "source_kind": "SCHOLARLY_PUBLICATION",
+          "source_url": "https://pubmed.ncbi.nlm.nih.gov/28358572/",
+          "inherited_metadata": {
+            "title": "Advances in recovery research: What have we learned? What should be done next?",
+            "authors": "Sonnentag S, Venz L, Casper A",
+            "year": 2017,
+            "journal": "Journal of Occupational Health Psychology",
+            "doi": "10.1037/ocp0000079",
+            "design": "Occupational recovery review",
+            "scope": "Reviews recovery from job stress during nonwork time. This is background on employee well-being, not a clinical test for persistent fatigue or proof that one routine restores the nervous system.",
+            "existing": true,
+            "link": "https://pubmed.ncbi.nlm.nih.gov/28358572/",
+            "verification_scope": "PUBLIC_BIBLIOGRAPHIC_RECORD_AND_ABSTRACT_REVIEW_NOT_FULL_TEXT_SYSTEMATIC_APPRAISAL",
+            "checked_on": "2026-09-13"
+          },
+          "approval_status": "NOT_CLAIM_APPROVED",
+          "evidence_registry_modified": false
+        },
+        {
+          "reference_key": "PMID:17615391",
+          "local_key": "17615391",
+          "pmid": "17615391",
+          "doi": "10.1152/physrev.00041.2006",
+          "source_kind": "SCHOLARLY_PUBLICATION",
+          "source_url": "https://pubmed.ncbi.nlm.nih.gov/17615391/",
+          "inherited_metadata": {
+            "title": "Physiology and neurobiology of stress and adaptation: central role of the brain",
+            "authors": "McEwen BS",
+            "year": 2007,
+            "journal": "Physiological Reviews",
+            "doi": "10.1152/physrev.00041.2006",
+            "design": "Stress physiology review",
+            "scope": "Describes adaptive and maladaptive stress responses involving multiple body systems. It does not measure an individual’s stress load from symptoms or establish that a stress response must be completed by a particular technique.",
+            "existing": false,
+            "link": "https://pubmed.ncbi.nlm.nih.gov/17615391/",
+            "verification_scope": "PUBLIC_BIBLIOGRAPHIC_RECORD_AND_ABSTRACT_REVIEW_NOT_FULL_TEXT_SYSTEMATIC_APPRAISAL",
+            "checked_on": "2026-09-13"
+          },
+          "approval_status": "NOT_CLAIM_APPROVED",
+          "evidence_registry_modified": false
+        }
+      ],
+      "expected_cards": 2,
+      "care_guidance": {
+        "text": "If tiredness lasts for weeks without a clear explanation or affects daily life, seek advice from a healthcare professional rather than assuming it is only stress or a regulation problem.",
+        "url": "https://www.nhs.uk/symptoms/tiredness-and-fatigue/"
+      },
+      "interpretation_note": "Recovery in this article refers to everyday rest and feeling able to resume activities. The cited research concerns job-stress recovery and broader stress physiology; it does not turn fatigue, mood or a wearable value into a measure of nervous-system recovery.",
+      "historical_production_observation": {
+        "route": "/learn/recovery-and-regulation",
+        "snapshot_member": "neuvago-1e4d4-final-20260913T103055Z-le7jqk6v/production/attempt-06/01/response.html",
+        "body_sha256": "5097ccddabf18d78bb4c1c2230d9ca3ace5254212bf91e2a4d0d5bffe8b652da",
+        "approved_local_html_sha256": "d9ec169c0b4aba072f8ad6b8a7f7f2a57c22573aa412c4b54a15b3aabee76c49",
+        "final_local_html_sha256": "bfa3e2227f0c4be7fcca37d185ff4017cf206eb838b5c814c98524894010d233",
+        "observed_at_utc": "2026-09-13T10:35:08.671780+00:00",
+        "observed_at_oslo": "2026-09-13T12:35:08.671780+02:00",
+        "http_reported": 200,
+        "canonical": "https://neuvago.com/learn/recovery-and-regulation",
+        "independent_reparse": "PASS",
+        "main_count": 1,
+        "h1_count": 1,
+        "source_cards": [
+          {
+            "pmid": "28358572",
+            "doi": "10.1037/ocp0000079",
+            "title": "Advances in recovery research: What have we learned? What should be done next?",
+            "card_id": "source-28358572",
+            "card_text": "1. Occupational recovery review · 2017 Advances in recovery research: What have we learned? What should be done next? Sonnentag S, Venz L, Casper A. Journal of Occupational Health Psychology. Reviews recovery from job stress during nonwork time. This is background on employee well-being, not a clinical test for persistent fatigue or proof that one routine restores the nervous system. PMID: 28358572 DOI: 10.1037/ocp0000079 Read Sonnentag S on PubMed",
+            "source_href": "https://pubmed.ncbi.nlm.nih.gov/28358572/",
+            "intro_citation_resolves": true,
+            "metadata_matches_approved_selection": true,
+            "active_registry_membership_as_declared": true
+          },
+          {
+            "pmid": "17615391",
+            "doi": "10.1152/physrev.00041.2006",
+            "title": "Physiology and neurobiology of stress and adaptation: central role of the brain",
+            "card_id": "source-17615391",
+            "card_text": "2. Stress physiology review · 2007 Physiology and neurobiology of stress and adaptation: central role of the brain McEwen BS. Physiological Reviews. Describes adaptive and maladaptive stress responses involving multiple body systems. It does not measure an individual’s stress load from symptoms or establish that a stress response must be completed by a particular technique. PMID: 17615391 DOI: 10.1152/physrev.00041.2006 Read McEwen BS on PubMed",
+            "source_href": "https://pubmed.ncbi.nlm.nih.gov/17615391/",
+            "intro_citation_resolves": true,
+            "metadata_matches_approved_selection": true,
+            "active_registry_membership_as_declared": false
+          }
+        ],
+        "interpretation_note": "Recovery in this article refers to everyday rest and feeling able to resume activities. The cited research concerns job-stress recovery and broader stress physiology; it does not turn fatigue, mood or a wearable value into a measure of nervous-system recovery.",
+        "care_guidance_note": "When to seek individual advice If tiredness lasts for weeks without a clear explanation or affects daily life, seek advice from a healthcare professional rather than assuming it is only stress or a regulation problem. NHS guidance: tiredness and fatigue",
+        "care_guidance_href": "https://www.nhs.uk/symptoms/tiredness-and-fatigue/",
+        "normalized_main_text_matches_approved_local": true,
+        "main_links_match_approved_local": true,
+        "title_metadata_alternates_match_approved_local": true,
+        "jsonld_matches_approved_local": true,
+        "first_successful_attempt": 6,
+        "attempts": [
+          {
+            "attempt": 1,
+            "status": "PENDING_DEPLOYMENT",
+            "http": 200,
+            "body_sha256": "a6e3d97e9a6151bfe65cf0bfe540dd8d99229c888928f0ab803191e9dd21cb7b",
+            "source_cards_reparsed": 0,
+            "observed_at_utc": "2026-09-13T10:34:10.335092+00:00"
+          },
+          {
+            "attempt": 2,
+            "status": "PENDING_DEPLOYMENT",
+            "http": 200,
+            "body_sha256": "a6e3d97e9a6151bfe65cf0bfe540dd8d99229c888928f0ab803191e9dd21cb7b",
+            "source_cards_reparsed": 0,
+            "observed_at_utc": "2026-09-13T10:34:22.674099+00:00"
+          },
+          {
+            "attempt": 3,
+            "status": "PENDING_DEPLOYMENT",
+            "http": 200,
+            "body_sha256": "a6e3d97e9a6151bfe65cf0bfe540dd8d99229c888928f0ab803191e9dd21cb7b",
+            "source_cards_reparsed": 0,
+            "observed_at_utc": "2026-09-13T10:34:33.866093+00:00"
+          },
+          {
+            "attempt": 4,
+            "status": "PENDING_DEPLOYMENT",
+            "http": 200,
+            "body_sha256": "a6e3d97e9a6151bfe65cf0bfe540dd8d99229c888928f0ab803191e9dd21cb7b",
+            "source_cards_reparsed": 0,
+            "observed_at_utc": "2026-09-13T10:34:44.881489+00:00"
+          },
+          {
+            "attempt": 5,
+            "status": "PENDING_DEPLOYMENT",
+            "http": 200,
+            "body_sha256": "a6e3d97e9a6151bfe65cf0bfe540dd8d99229c888928f0ab803191e9dd21cb7b",
+            "source_cards_reparsed": 0,
+            "observed_at_utc": "2026-09-13T10:34:56.316139+00:00"
+          },
+          {
+            "attempt": 6,
+            "status": "PASS",
+            "http": 200,
+            "body_sha256": "5097ccddabf18d78bb4c1c2230d9ca3ace5254212bf91e2a4d0d5bffe8b652da",
+            "source_cards_reparsed": 2,
+            "observed_at_utc": "2026-09-13T10:35:08.671780+00:00"
+          }
+        ],
+        "visual_layout_verified": false,
+        "deployment_commit_attested": false
+      },
+      "current_production_verified": false,
+      "scientific_claim_support_approved": false
+    },
+    {
+      "route": "/learn/why-you-feel-tired-but-cant-relax",
+      "path": "src/app/(en)/learn/why-you-feel-tired-but-cant-relax/page.tsx",
+      "accepted_sha256": "3b32601b542f78b854b5d964910b2c4f8a2f25b1df0b4b7ffa3b139721e3f218",
+      "pre_delivery_sha256": "4f15a5b92149c50969046e886e44528b6453b36bb0ad2c8535bbdd3ab11a7211",
+      "batch": "1E.4D.4",
+      "commit": "432a1d9d3aeeb192ff9753d0ac8c608274ee401b",
+      "h1": "Why you feel tired but can’t relax",
+      "references": [
+        {
+          "reference_key": "PMID:30046255",
+          "local_key": "30046255",
+          "pmid": "30046255",
+          "doi": "10.2147/NSS.S138823",
+          "source_kind": "SCHOLARLY_PUBLICATION",
+          "source_url": "https://pubmed.ncbi.nlm.nih.gov/30046255/",
+          "inherited_metadata": {
+            "title": "Hyperarousal and sleep reactivity in insomnia: current insights",
+            "authors": "Kalmbach DA et al.",
+            "year": 2018,
+            "journal": "Nature and Science of Sleep",
+            "doi": "10.2147/NSS.S138823",
+            "design": "Insomnia review",
+            "scope": "Discusses arousal and sensitivity of sleep to stress in insomnia research, with uncertainty about specific mechanisms. This does not diagnose insomnia or a nervous-system problem from the feeling of being tired but alert.",
+            "existing": false,
+            "link": "https://pubmed.ncbi.nlm.nih.gov/30046255/",
+            "verification_scope": "PUBLIC_BIBLIOGRAPHIC_RECORD_AND_ABSTRACT_REVIEW_NOT_FULL_TEXT_SYSTEMATIC_APPRAISAL",
+            "checked_on": "2026-09-13"
+          },
+          "approval_status": "NOT_CLAIM_APPROVED",
+          "evidence_registry_modified": false
+        },
+        {
+          "reference_key": "PMID:16439263",
+          "local_key": "16439263",
+          "pmid": "16439263",
+          "doi": "10.1016/j.jpsychores.2005.06.074",
+          "source_kind": "SCHOLARLY_PUBLICATION",
+          "source_url": "https://pubmed.ncbi.nlm.nih.gov/16439263/",
+          "inherited_metadata": {
+            "title": "The perseverative cognition hypothesis: a review of worry, prolonged stress-related physiological activation, and health",
+            "authors": "Brosschot JF, Gerin W, Thayer JF",
+            "year": 2006,
+            "journal": "Journal of Psychosomatic Research",
+            "doi": "10.1016/j.jpsychores.2005.06.074",
+            "design": "Hypothesis and evidence review",
+            "scope": "Reviews preliminary support for worry and rumination prolonging stress-related activation. It is a proposed explanation, not a universal cause of symptoms or evidence that stress is trapped in the body.",
+            "existing": true,
+            "link": "https://pubmed.ncbi.nlm.nih.gov/16439263/",
+            "verification_scope": "PUBLIC_BIBLIOGRAPHIC_RECORD_AND_ABSTRACT_REVIEW_NOT_FULL_TEXT_SYSTEMATIC_APPRAISAL",
+            "checked_on": "2026-09-13"
+          },
+          "approval_status": "NOT_CLAIM_APPROVED",
+          "evidence_registry_modified": false
+        }
+      ],
+      "expected_cards": 2,
+      "care_guidance": {
+        "text": "If tiredness lasts for weeks without a clear explanation or affects daily life, seek advice from a healthcare professional rather than assuming it is only stress or a regulation problem.",
+        "url": "https://www.nhs.uk/symptoms/tiredness-and-fatigue/"
+      },
+      "interpretation_note": "Feeling tired but unable to relax is an experience, not a diagnosis. Research on insomnia and worry offers possible explanations, but it cannot identify the cause of your symptoms or show that your vagus nerve needs a reset.",
+      "historical_production_observation": {
+        "route": "/learn/why-you-feel-tired-but-cant-relax",
+        "snapshot_member": "neuvago-1e4d4-final-20260913T103055Z-le7jqk6v/production/attempt-06/02/response.html",
+        "body_sha256": "1a60b3525b5b47b463c6e7edfd26da2963d6e9e793c100d94c54a12f833c04a3",
+        "approved_local_html_sha256": "edd640ff94bbcf28962d5b98e1dab5b724e16eb9e6ea9b09553cfbbd289e1206",
+        "final_local_html_sha256": "9dab93d0b8039cca9e3397cc9a5ddd73380f1827bbe6b902a959824bc64a9b11",
+        "observed_at_utc": "2026-09-13T10:35:09.119582+00:00",
+        "observed_at_oslo": "2026-09-13T12:35:09.119582+02:00",
+        "http_reported": 200,
+        "canonical": "https://neuvago.com/learn/why-you-feel-tired-but-cant-relax",
+        "independent_reparse": "PASS",
+        "main_count": 1,
+        "h1_count": 1,
+        "source_cards": [
+          {
+            "pmid": "30046255",
+            "doi": "10.2147/NSS.S138823",
+            "title": "Hyperarousal and sleep reactivity in insomnia: current insights",
+            "card_id": "source-30046255",
+            "card_text": "1. Insomnia review · 2018 Hyperarousal and sleep reactivity in insomnia: current insights Kalmbach DA et al. Nature and Science of Sleep. Discusses arousal and sensitivity of sleep to stress in insomnia research, with uncertainty about specific mechanisms. This does not diagnose insomnia or a nervous-system problem from the feeling of being tired but alert. PMID: 30046255 DOI: 10.2147/NSS.S138823 Read Kalmbach DA et al. on PubMed",
+            "source_href": "https://pubmed.ncbi.nlm.nih.gov/30046255/",
+            "intro_citation_resolves": true,
+            "metadata_matches_approved_selection": true,
+            "active_registry_membership_as_declared": false
+          },
+          {
+            "pmid": "16439263",
+            "doi": "10.1016/j.jpsychores.2005.06.074",
+            "title": "The perseverative cognition hypothesis: a review of worry, prolonged stress-related physiological activation, and health",
+            "card_id": "source-16439263",
+            "card_text": "2. Hypothesis and evidence review · 2006 The perseverative cognition hypothesis: a review of worry, prolonged stress-related physiological activation, and health Brosschot JF, Gerin W, Thayer JF. Journal of Psychosomatic Research. Reviews preliminary support for worry and rumination prolonging stress-related activation. It is a proposed explanation, not a universal cause of symptoms or evidence that stress is trapped in the body. PMID: 16439263 DOI: 10.1016/j.jpsychores.2005.06.074 Read Brosschot JF on PubMed",
+            "source_href": "https://pubmed.ncbi.nlm.nih.gov/16439263/",
+            "intro_citation_resolves": true,
+            "metadata_matches_approved_selection": true,
+            "active_registry_membership_as_declared": true
+          }
+        ],
+        "interpretation_note": "Feeling tired but unable to relax is an experience, not a diagnosis. Research on insomnia and worry offers possible explanations, but it cannot identify the cause of your symptoms or show that your vagus nerve needs a reset.",
+        "care_guidance_note": "When to seek individual advice If tiredness lasts for weeks without a clear explanation or affects daily life, seek advice from a healthcare professional rather than assuming it is only stress or a regulation problem. NHS guidance: tiredness and fatigue",
+        "care_guidance_href": "https://www.nhs.uk/symptoms/tiredness-and-fatigue/",
+        "normalized_main_text_matches_approved_local": true,
+        "main_links_match_approved_local": true,
+        "title_metadata_alternates_match_approved_local": true,
+        "jsonld_matches_approved_local": true,
+        "first_successful_attempt": 5,
+        "attempts": [
+          {
+            "attempt": 1,
+            "status": "PENDING_DEPLOYMENT",
+            "http": 200,
+            "body_sha256": "563181d5112fe77030adcf16753debb85bf7f4196e5f3e788c56efff83b7592c",
+            "source_cards_reparsed": 0,
+            "observed_at_utc": "2026-09-13T10:34:11.339452+00:00"
+          },
+          {
+            "attempt": 2,
+            "status": "PENDING_DEPLOYMENT",
+            "http": 200,
+            "body_sha256": "563181d5112fe77030adcf16753debb85bf7f4196e5f3e788c56efff83b7592c",
+            "source_cards_reparsed": 0,
+            "observed_at_utc": "2026-09-13T10:34:23.175020+00:00"
+          },
+          {
+            "attempt": 3,
+            "status": "PENDING_DEPLOYMENT",
+            "http": 200,
+            "body_sha256": "563181d5112fe77030adcf16753debb85bf7f4196e5f3e788c56efff83b7592c",
+            "source_cards_reparsed": 0,
+            "observed_at_utc": "2026-09-13T10:34:34.184325+00:00"
+          },
+          {
+            "attempt": 4,
+            "status": "PENDING_DEPLOYMENT",
+            "http": 200,
+            "body_sha256": "563181d5112fe77030adcf16753debb85bf7f4196e5f3e788c56efff83b7592c",
+            "source_cards_reparsed": 0,
+            "observed_at_utc": "2026-09-13T10:34:45.197181+00:00"
+          },
+          {
+            "attempt": 5,
+            "status": "PASS",
+            "http": 200,
+            "body_sha256": "1a60b3525b5b47b463c6e7edfd26da2963d6e9e793c100d94c54a12f833c04a3",
+            "source_cards_reparsed": 2,
+            "observed_at_utc": "2026-09-13T10:34:57.345343+00:00"
+          },
+          {
+            "attempt": 6,
+            "status": "PASS",
+            "http": 200,
+            "body_sha256": "1a60b3525b5b47b463c6e7edfd26da2963d6e9e793c100d94c54a12f833c04a3",
+            "source_cards_reparsed": 2,
+            "observed_at_utc": "2026-09-13T10:35:09.119582+00:00"
+          }
+        ],
+        "visual_layout_verified": false,
+        "deployment_commit_attested": false
+      },
+      "current_production_verified": false,
+      "scientific_claim_support_approved": false
+    },
+    {
+      "route": "/learn/why-your-body-feels-stuck-in-stress",
+      "path": "src/app/(en)/learn/why-your-body-feels-stuck-in-stress/page.tsx",
+      "accepted_sha256": "9c476ab30f04e6c92a4753a2cabb601998eabb5e43d306d3e30ceb7f7ea5e48c",
+      "pre_delivery_sha256": "9ef6354e3811d92f776fc777a30abbc36ebe60b91ba5b283715ef778379f68d1",
+      "batch": "1E.4D.4",
+      "commit": "432a1d9d3aeeb192ff9753d0ac8c608274ee401b",
+      "h1": "Why does the body sometimes feel stuck in stress even when the stressful thing is over?",
+      "references": [
+        {
+          "reference_key": "PMID:17615391",
+          "local_key": "17615391",
+          "pmid": "17615391",
+          "doi": "10.1152/physrev.00041.2006",
+          "source_kind": "SCHOLARLY_PUBLICATION",
+          "source_url": "https://pubmed.ncbi.nlm.nih.gov/17615391/",
+          "inherited_metadata": {
+            "title": "Physiology and neurobiology of stress and adaptation: central role of the brain",
+            "authors": "McEwen BS",
+            "year": 2007,
+            "journal": "Physiological Reviews",
+            "doi": "10.1152/physrev.00041.2006",
+            "design": "Stress physiology review",
+            "scope": "Describes adaptive and maladaptive stress responses involving multiple body systems. It does not measure an individual’s stress load from symptoms or establish that a stress response must be completed by a particular technique.",
+            "existing": false,
+            "link": "https://pubmed.ncbi.nlm.nih.gov/17615391/",
+            "verification_scope": "PUBLIC_BIBLIOGRAPHIC_RECORD_AND_ABSTRACT_REVIEW_NOT_FULL_TEXT_SYSTEMATIC_APPRAISAL",
+            "checked_on": "2026-09-13"
+          },
+          "approval_status": "NOT_CLAIM_APPROVED",
+          "evidence_registry_modified": false
+        },
+        {
+          "reference_key": "PMID:16439263",
+          "local_key": "16439263",
+          "pmid": "16439263",
+          "doi": "10.1016/j.jpsychores.2005.06.074",
+          "source_kind": "SCHOLARLY_PUBLICATION",
+          "source_url": "https://pubmed.ncbi.nlm.nih.gov/16439263/",
+          "inherited_metadata": {
+            "title": "The perseverative cognition hypothesis: a review of worry, prolonged stress-related physiological activation, and health",
+            "authors": "Brosschot JF, Gerin W, Thayer JF",
+            "year": 2006,
+            "journal": "Journal of Psychosomatic Research",
+            "doi": "10.1016/j.jpsychores.2005.06.074",
+            "design": "Hypothesis and evidence review",
+            "scope": "Reviews preliminary support for worry and rumination prolonging stress-related activation. It is a proposed explanation, not a universal cause of symptoms or evidence that stress is trapped in the body.",
+            "existing": true,
+            "link": "https://pubmed.ncbi.nlm.nih.gov/16439263/",
+            "verification_scope": "PUBLIC_BIBLIOGRAPHIC_RECORD_AND_ABSTRACT_REVIEW_NOT_FULL_TEXT_SYSTEMATIC_APPRAISAL",
+            "checked_on": "2026-09-13"
+          },
+          "approval_status": "NOT_CLAIM_APPROVED",
+          "evidence_registry_modified": false
+        }
+      ],
+      "expected_cards": 2,
+      "care_guidance": {
+        "text": "Seek professional support if stress is difficult to cope with or self-help is not helping. New or concerning physical symptoms should not be assumed to be caused by stress.",
+        "url": "https://www.nhs.uk/mental-health/feelings-symptoms-behaviours/feelings-and-symptoms/stress/"
+      },
+      "interpretation_note": "Feeling stuck is a description, not evidence of a trapped or unfinished stress response. Stress physiology and worry-related models offer possible explanations, not a diagnosis from symptoms or proof that the body must complete a particular cycle.",
+      "historical_production_observation": {
+        "route": "/learn/why-your-body-feels-stuck-in-stress",
+        "snapshot_member": "neuvago-1e4d4-final-20260913T103055Z-le7jqk6v/production/attempt-06/03/response.html",
+        "body_sha256": "524b61eb23d14065ae6ae9cc55a7b8712bf06df6732ed856dff14c03479f45a5",
+        "approved_local_html_sha256": "6b1315490e458b11ab52e08a88d326875eaa95857ff4d6ba01ff738536e0dcc3",
+        "final_local_html_sha256": "0172db4fca6533d91a976c98917501c8e0a3dd22fb5a78ccb07fa7e5699e9aa4",
+        "observed_at_utc": "2026-09-13T10:35:10.044797+00:00",
+        "observed_at_oslo": "2026-09-13T12:35:10.044797+02:00",
+        "http_reported": 200,
+        "canonical": "https://neuvago.com/learn/why-your-body-feels-stuck-in-stress",
+        "independent_reparse": "PASS",
+        "main_count": 1,
+        "h1_count": 1,
+        "source_cards": [
+          {
+            "pmid": "17615391",
+            "doi": "10.1152/physrev.00041.2006",
+            "title": "Physiology and neurobiology of stress and adaptation: central role of the brain",
+            "card_id": "source-17615391",
+            "card_text": "1. Stress physiology review · 2007 Physiology and neurobiology of stress and adaptation: central role of the brain McEwen BS. Physiological Reviews. Describes adaptive and maladaptive stress responses involving multiple body systems. It does not measure an individual’s stress load from symptoms or establish that a stress response must be completed by a particular technique. PMID: 17615391 DOI: 10.1152/physrev.00041.2006 Read McEwen BS on PubMed",
+            "source_href": "https://pubmed.ncbi.nlm.nih.gov/17615391/",
+            "intro_citation_resolves": true,
+            "metadata_matches_approved_selection": true,
+            "active_registry_membership_as_declared": false
+          },
+          {
+            "pmid": "16439263",
+            "doi": "10.1016/j.jpsychores.2005.06.074",
+            "title": "The perseverative cognition hypothesis: a review of worry, prolonged stress-related physiological activation, and health",
+            "card_id": "source-16439263",
+            "card_text": "2. Hypothesis and evidence review · 2006 The perseverative cognition hypothesis: a review of worry, prolonged stress-related physiological activation, and health Brosschot JF, Gerin W, Thayer JF. Journal of Psychosomatic Research. Reviews preliminary support for worry and rumination prolonging stress-related activation. It is a proposed explanation, not a universal cause of symptoms or evidence that stress is trapped in the body. PMID: 16439263 DOI: 10.1016/j.jpsychores.2005.06.074 Read Brosschot JF on PubMed",
+            "source_href": "https://pubmed.ncbi.nlm.nih.gov/16439263/",
+            "intro_citation_resolves": true,
+            "metadata_matches_approved_selection": true,
+            "active_registry_membership_as_declared": true
+          }
+        ],
+        "interpretation_note": "Feeling stuck is a description, not evidence of a trapped or unfinished stress response. Stress physiology and worry-related models offer possible explanations, not a diagnosis from symptoms or proof that the body must complete a particular cycle.",
+        "care_guidance_note": "When to seek individual advice Seek professional support if stress is difficult to cope with or self-help is not helping. New or concerning physical symptoms should not be assumed to be caused by stress. NHS guidance: stress",
+        "care_guidance_href": "https://www.nhs.uk/mental-health/feelings-symptoms-behaviours/feelings-and-symptoms/stress/",
+        "normalized_main_text_matches_approved_local": true,
+        "main_links_match_approved_local": true,
+        "title_metadata_alternates_match_approved_local": true,
+        "jsonld_matches_approved_local": true,
+        "first_successful_attempt": 6,
+        "attempts": [
+          {
+            "attempt": 1,
+            "status": "PENDING_DEPLOYMENT",
+            "http": 200,
+            "body_sha256": "4065823f8733c310f6aa3de290466e555557ddaaa7d09bf7244b00952a13916c",
+            "source_cards_reparsed": 0,
+            "observed_at_utc": "2026-09-13T10:34:12.282880+00:00"
+          },
+          {
+            "attempt": 2,
+            "status": "PENDING_DEPLOYMENT",
+            "http": 200,
+            "body_sha256": "4065823f8733c310f6aa3de290466e555557ddaaa7d09bf7244b00952a13916c",
+            "source_cards_reparsed": 0,
+            "observed_at_utc": "2026-09-13T10:34:23.488620+00:00"
+          },
+          {
+            "attempt": 3,
+            "status": "PENDING_DEPLOYMENT",
+            "http": 200,
+            "body_sha256": "4065823f8733c310f6aa3de290466e555557ddaaa7d09bf7244b00952a13916c",
+            "source_cards_reparsed": 0,
+            "observed_at_utc": "2026-09-13T10:34:34.511886+00:00"
+          },
+          {
+            "attempt": 4,
+            "status": "PENDING_DEPLOYMENT",
+            "http": 200,
+            "body_sha256": "4065823f8733c310f6aa3de290466e555557ddaaa7d09bf7244b00952a13916c",
+            "source_cards_reparsed": 0,
+            "observed_at_utc": "2026-09-13T10:34:45.516131+00:00"
+          },
+          {
+            "attempt": 5,
+            "status": "PENDING_DEPLOYMENT",
+            "http": 200,
+            "body_sha256": "4065823f8733c310f6aa3de290466e555557ddaaa7d09bf7244b00952a13916c",
+            "source_cards_reparsed": 0,
+            "observed_at_utc": "2026-09-13T10:34:57.672670+00:00"
+          },
+          {
+            "attempt": 6,
+            "status": "PASS",
+            "http": 200,
+            "body_sha256": "524b61eb23d14065ae6ae9cc55a7b8712bf06df6732ed856dff14c03479f45a5",
+            "source_cards_reparsed": 2,
+            "observed_at_utc": "2026-09-13T10:35:10.044797+00:00"
+          }
+        ],
+        "visual_layout_verified": false,
+        "deployment_commit_attested": false
+      },
+      "current_production_verified": false,
+      "scientific_claim_support_approved": false
+    },
+    {
+      "route": "/learn/signs-of-a-dysregulated-nervous-system",
+      "path": "src/app/(en)/learn/signs-of-a-dysregulated-nervous-system/page.tsx",
+      "accepted_sha256": "6b50b90907936c94571ce6555c846d6355bd4a64cbee0b51ff1eba75e971a5af",
+      "pre_delivery_sha256": "bae53e75d2e0c8bfda863adf0aed2257c6d4615a027de3fc352ef6ac7a923460",
+      "batch": "1E.4D.5",
+      "commit": "3d00247f2c2f1d6d925ab7170fbbda362e9bed7c",
+      "h1": "What are the common signs of a dysregulated nervous system?",
+      "references": [
+        {
+          "reference_key": "PMID:17615391",
+          "local_key": "17615391",
+          "pmid": "17615391",
+          "doi": "10.1152/physrev.00041.2006",
+          "source_kind": "SCHOLARLY_PUBLICATION",
+          "source_url": "https://pubmed.ncbi.nlm.nih.gov/17615391/",
+          "inherited_metadata": {
+            "title": "Physiology and neurobiology of stress and adaptation: central role of the brain",
+            "authors": "McEwen BS",
+            "year": 2007,
+            "journal": "Physiological Reviews",
+            "doi": "10.1152/physrev.00041.2006",
+            "design": "Stress physiology review",
+            "scope": "Describes stress and adaptation across neural, endocrine and other body systems. It does not validate this page as a symptom checklist or diagnose autonomic dysfunction from everyday experiences.",
+            "existing": false,
+            "link": "https://pubmed.ncbi.nlm.nih.gov/17615391/",
+            "verification_scope": "OFFICIAL_PUBMED_METADATA_AND_ABSTRACT_SCOPE_NOT_FULL_TEXT_APPRAISAL",
+            "checked_on": "2026-09-13"
+          },
+          "approval_status": "NOT_CLAIM_APPROVED",
+          "evidence_registry_modified": false
+        },
+        {
+          "reference_key": "PMID:19809584",
+          "local_key": "19809584",
+          "pmid": "19809584",
+          "doi": "10.1080/02699930802204677",
+          "source_kind": "SCHOLARLY_PUBLICATION",
+          "source_url": "https://pubmed.ncbi.nlm.nih.gov/19809584/",
+          "inherited_metadata": {
+            "title": "Measures of emotion: A review",
+            "authors": "Mauss IB, Robinson MD",
+            "year": 2009,
+            "journal": "Cognition and Emotion",
+            "doi": "10.1080/02699930802204677",
+            "design": "Emotion measurement review",
+            "scope": "Examines subjective, physiological and behavioural measures of emotion and why they are not interchangeable. It does not establish that feeling calm measures vagal tone or nervous-system health.",
+            "existing": false,
+            "link": "https://pubmed.ncbi.nlm.nih.gov/19809584/",
+            "verification_scope": "OFFICIAL_PUBMED_METADATA_AND_ABSTRACT_SCOPE_NOT_FULL_TEXT_APPRAISAL",
+            "checked_on": "2026-09-13"
+          },
+          "approval_status": "NOT_CLAIM_APPROVED",
+          "evidence_registry_modified": false
+        }
+      ],
+      "expected_cards": 2,
+      "care_guidance": {
+        "text": "If you are struggling to cope with stress or the things you are trying are not helping, seek advice from a healthcare professional. Use local urgent services if you need immediate help; this page is not an assessment or a substitute for care.",
+        "url": "https://www.nhs.uk/mental-health/feelings-symptoms-behaviours/feelings-and-symptoms/stress/"
+      },
+      "interpretation_note": "On this page, “dysregulated nervous system” is an everyday description, not a diagnosis. The examples do not measure vagal tone or establish autonomic dysfunction. The references explain stress physiology and the limits of treating experience, behaviour and physiology as the same thing.",
+      "historical_production_observation": {
+        "route": "/learn/signs-of-a-dysregulated-nervous-system",
+        "snapshot_member": "neuvago-1e4d5-final-20260913T135628Z-5_jetp13/production/attempt-07/01/response.html",
+        "body_sha256": "1a44aec2ce1439962b4b404c8d87535735824b0b546727613c2fdd49c9996229",
+        "approved_local_html_sha256": "be2ec1db7e3050e60dbba900b10c2069f83b3af8743370c92b86215887ae48c0",
+        "final_local_html_sha256": "37a04a933c63f653cb639b6aba7d87c37f6881dd15d4401c20c2dc038ab2b13b",
+        "observed_at_utc": "2026-09-13T14:01:20.970247+00:00",
+        "observed_at_oslo": "2026-09-13T16:01:20.970247+02:00",
+        "http_reported": 200,
+        "canonical": "https://neuvago.com/learn/signs-of-a-dysregulated-nervous-system",
+        "h1": "What are the common signs of a dysregulated nervous system?",
+        "main_count": 1,
+        "h1_count": 1,
+        "independent_reparse": "PASS",
+        "source_cards": [
+          {
+            "pmid": "17615391",
+            "doi": "10.1152/physrev.00041.2006",
+            "title": "Physiology and neurobiology of stress and adaptation: central role of the brain",
+            "card_id": "source-17615391",
+            "card_text": "1. Stress physiology review · 2007 Physiology and neurobiology of stress and adaptation: central role of the brain McEwen BS. Physiological Reviews. Describes stress and adaptation across neural, endocrine and other body systems. It does not validate this page as a symptom checklist or diagnose autonomic dysfunction from everyday experiences. PMID: 17615391 DOI: 10.1152/physrev.00041.2006 Read McEwen BS on PubMed",
+            "source_href": "https://pubmed.ncbi.nlm.nih.gov/17615391/",
+            "intro_citation_resolves": true,
+            "metadata_matches_approved_selection": true,
+            "active_registry_membership_as_declared": false
+          },
+          {
+            "pmid": "19809584",
+            "doi": "10.1080/02699930802204677",
+            "title": "Measures of emotion: A review",
+            "card_id": "source-19809584",
+            "card_text": "2. Emotion measurement review · 2009 Measures of emotion: A review Mauss IB, Robinson MD. Cognition and Emotion. Examines subjective, physiological and behavioural measures of emotion and why they are not interchangeable. It does not establish that feeling calm measures vagal tone or nervous-system health. PMID: 19809584 DOI: 10.1080/02699930802204677 Read Mauss IB on PubMed",
+            "source_href": "https://pubmed.ncbi.nlm.nih.gov/19809584/",
+            "intro_citation_resolves": true,
+            "metadata_matches_approved_selection": true,
+            "active_registry_membership_as_declared": false
+          }
+        ],
+        "interpretation_note": "On this page, “dysregulated nervous system” is an everyday description, not a diagnosis. The examples do not measure vagal tone or establish autonomic dysfunction. The references explain stress physiology and the limits of treating experience, behaviour and physiology as the same thing.",
+        "care_guidance_note": "When to seek individual advice If you are struggling to cope with stress or the things you are trying are not helping, seek advice from a healthcare professional. Use local urgent services if you need immediate help; this page is not an assessment or a substitute for care. NHS guidance: getting help with stress",
+        "care_guidance_href": "https://www.nhs.uk/mental-health/feelings-symptoms-behaviours/feelings-and-symptoms/stress/",
+        "normalized_main_text_matches_approved_local": true,
+        "main_links_match_approved_local": true,
+        "metadata_matches_approved_local": true,
+        "jsonld_matches_approved_local": true,
+        "matched_final_local_too": true,
+        "first_successful_attempt": 7,
+        "attempts": [
+          {
+            "status": "PENDING_DEPLOYMENT",
+            "body_sha256": "eb4694fc549ee444343c41b3daf9356e42b103433ccb1a6b63c3c3bebfac622a",
+            "observed_at_utc": "2026-09-13T14:00:11.722584+00:00",
+            "attempt": 1,
+            "source_cards_reparsed": 0
+          },
+          {
+            "status": "PENDING_DEPLOYMENT",
+            "body_sha256": "eb4694fc549ee444343c41b3daf9356e42b103433ccb1a6b63c3c3bebfac622a",
+            "observed_at_utc": "2026-09-13T14:00:24.507553+00:00",
+            "attempt": 2,
+            "source_cards_reparsed": 0
+          },
+          {
+            "status": "PENDING_DEPLOYMENT",
+            "body_sha256": "eb4694fc549ee444343c41b3daf9356e42b103433ccb1a6b63c3c3bebfac622a",
+            "observed_at_utc": "2026-09-13T14:00:35.549980+00:00",
+            "attempt": 3,
+            "source_cards_reparsed": 0
+          },
+          {
+            "status": "PENDING_DEPLOYMENT",
+            "body_sha256": "eb4694fc549ee444343c41b3daf9356e42b103433ccb1a6b63c3c3bebfac622a",
+            "observed_at_utc": "2026-09-13T14:00:46.609542+00:00",
+            "attempt": 4,
+            "source_cards_reparsed": 0
+          },
+          {
+            "status": "PENDING_DEPLOYMENT",
+            "body_sha256": "eb4694fc549ee444343c41b3daf9356e42b103433ccb1a6b63c3c3bebfac622a",
+            "observed_at_utc": "2026-09-13T14:00:57.840235+00:00",
+            "attempt": 5,
+            "source_cards_reparsed": 0
+          },
+          {
+            "status": "PENDING_DEPLOYMENT",
+            "body_sha256": "eb4694fc549ee444343c41b3daf9356e42b103433ccb1a6b63c3c3bebfac622a",
+            "observed_at_utc": "2026-09-13T14:01:08.900107+00:00",
+            "attempt": 6,
+            "source_cards_reparsed": 0
+          },
+          {
+            "status": "PASS",
+            "body_sha256": "1a44aec2ce1439962b4b404c8d87535735824b0b546727613c2fdd49c9996229",
+            "observed_at_utc": "2026-09-13T14:01:20.970247+00:00",
+            "attempt": 7,
+            "source_cards_reparsed": 2
+          }
+        ]
+      },
+      "current_production_verified": false,
+      "scientific_claim_support_approved": false
+    },
+    {
+      "route": "/learn/what-nervous-system-regulation-feels-like",
+      "path": "src/app/(en)/learn/what-nervous-system-regulation-feels-like/page.tsx",
+      "accepted_sha256": "018388ac853e377bf8dce4219b0d4c430e9e817df5fb8a63eac21957589b61e3",
+      "pre_delivery_sha256": "4d1e30c3645db4af4c53ab801787445640eae186d2c659930b2aa02ec4594c9b",
+      "batch": "1E.4D.5",
+      "commit": "3d00247f2c2f1d6d925ab7170fbbda362e9bed7c",
+      "h1": "What does nervous system regulation actually feel like in everyday life?",
+      "references": [
+        {
+          "reference_key": "PMID:19809584",
+          "local_key": "19809584",
+          "pmid": "19809584",
+          "doi": "10.1080/02699930802204677",
+          "source_kind": "SCHOLARLY_PUBLICATION",
+          "source_url": "https://pubmed.ncbi.nlm.nih.gov/19809584/",
+          "inherited_metadata": {
+            "title": "Measures of emotion: A review",
+            "authors": "Mauss IB, Robinson MD",
+            "year": 2009,
+            "journal": "Cognition and Emotion",
+            "doi": "10.1080/02699930802204677",
+            "design": "Emotion measurement review",
+            "scope": "Examines subjective, physiological and behavioural measures of emotion and why they are not interchangeable. It does not establish that feeling calm measures vagal tone or nervous-system health.",
+            "existing": false,
+            "link": "https://pubmed.ncbi.nlm.nih.gov/19809584/",
+            "verification_scope": "OFFICIAL_PUBMED_METADATA_AND_ABSTRACT_SCOPE_NOT_FULL_TEXT_APPRAISAL",
+            "checked_on": "2026-09-13"
+          },
+          "approval_status": "NOT_CLAIM_APPROVED",
+          "evidence_registry_modified": false
+        },
+        {
+          "reference_key": "PMID:12212647",
+          "local_key": "12212647",
+          "pmid": "12212647",
+          "doi": "10.1017/s0048577201393198",
+          "source_kind": "SCHOLARLY_PUBLICATION",
+          "source_url": "https://pubmed.ncbi.nlm.nih.gov/12212647/",
+          "inherited_metadata": {
+            "title": "Emotion regulation: affective, cognitive, and social consequences",
+            "authors": "Gross JJ",
+            "year": 2002,
+            "journal": "Psychophysiology",
+            "doi": "10.1017/s0048577201393198",
+            "design": "Emotion regulation review",
+            "scope": "Reviews reappraisal and suppression, with different consequences for emotional experience, expression and physiology. It is not a universal prescription to suppress feelings, a diagnostic tool or a study of Neuvago.",
+            "existing": false,
+            "link": "https://pubmed.ncbi.nlm.nih.gov/12212647/",
+            "verification_scope": "OFFICIAL_PUBMED_METADATA_AND_ABSTRACT_SCOPE_NOT_FULL_TEXT_APPRAISAL",
+            "checked_on": "2026-09-13"
+          },
+          "approval_status": "NOT_CLAIM_APPROVED",
+          "evidence_registry_modified": false
+        }
+      ],
+      "expected_cards": 2,
+      "care_guidance": {
+        "text": "If you are struggling to cope with stress or the things you are trying are not helping, seek advice from a healthcare professional. Use local urgent services if you need immediate help; this page is not an assessment or a substitute for care.",
+        "url": "https://www.nhs.uk/mental-health/feelings-symptoms-behaviours/feelings-and-symptoms/stress/"
+      },
+      "interpretation_note": "The examples below describe subjective experience, not a validated test of regulation. Feeling calmer, looking calmer and a physiological measurement are not interchangeable. No particular feeling establishes that a routine or device has changed vagal tone.",
+      "historical_production_observation": {
+        "route": "/learn/what-nervous-system-regulation-feels-like",
+        "snapshot_member": "neuvago-1e4d5-final-20260913T135628Z-5_jetp13/production/attempt-07/02/response.html",
+        "body_sha256": "3a19c1f3d25773284563c8d35c24457d9e741b1acf0828f793a7dc5af544c8b3",
+        "approved_local_html_sha256": "332f2ebba5eb9f15249cce405c8594c9c4d0d1d0e80f72ac47c86ddb9a965dd0",
+        "final_local_html_sha256": "60430b4d2adfaa5d1e7a23cef6beffc2b48af4a8f32674562eb8c5a2775966fd",
+        "observed_at_utc": "2026-09-13T14:01:22.085156+00:00",
+        "observed_at_oslo": "2026-09-13T16:01:22.085156+02:00",
+        "http_reported": 200,
+        "canonical": "https://neuvago.com/learn/what-nervous-system-regulation-feels-like",
+        "h1": "What does nervous system regulation actually feel like in everyday life?",
+        "main_count": 1,
+        "h1_count": 1,
+        "independent_reparse": "PASS",
+        "source_cards": [
+          {
+            "pmid": "19809584",
+            "doi": "10.1080/02699930802204677",
+            "title": "Measures of emotion: A review",
+            "card_id": "source-19809584",
+            "card_text": "1. Emotion measurement review · 2009 Measures of emotion: A review Mauss IB, Robinson MD. Cognition and Emotion. Examines subjective, physiological and behavioural measures of emotion and why they are not interchangeable. It does not establish that feeling calm measures vagal tone or nervous-system health. PMID: 19809584 DOI: 10.1080/02699930802204677 Read Mauss IB on PubMed",
+            "source_href": "https://pubmed.ncbi.nlm.nih.gov/19809584/",
+            "intro_citation_resolves": true,
+            "metadata_matches_approved_selection": true,
+            "active_registry_membership_as_declared": false
+          },
+          {
+            "pmid": "12212647",
+            "doi": "10.1017/s0048577201393198",
+            "title": "Emotion regulation: affective, cognitive, and social consequences",
+            "card_id": "source-12212647",
+            "card_text": "2. Emotion regulation review · 2002 Emotion regulation: affective, cognitive, and social consequences Gross JJ. Psychophysiology. Reviews reappraisal and suppression, with different consequences for emotional experience, expression and physiology. It is not a universal prescription to suppress feelings, a diagnostic tool or a study of Neuvago. PMID: 12212647 DOI: 10.1017/s0048577201393198 Read Gross JJ on PubMed",
+            "source_href": "https://pubmed.ncbi.nlm.nih.gov/12212647/",
+            "intro_citation_resolves": true,
+            "metadata_matches_approved_selection": true,
+            "active_registry_membership_as_declared": false
+          }
+        ],
+        "interpretation_note": "The examples below describe subjective experience, not a validated test of regulation. Feeling calmer, looking calmer and a physiological measurement are not interchangeable. No particular feeling establishes that a routine or device has changed vagal tone.",
+        "care_guidance_note": "When to seek individual advice If you are struggling to cope with stress or the things you are trying are not helping, seek advice from a healthcare professional. Use local urgent services if you need immediate help; this page is not an assessment or a substitute for care. NHS guidance: getting help with stress",
+        "care_guidance_href": "https://www.nhs.uk/mental-health/feelings-symptoms-behaviours/feelings-and-symptoms/stress/",
+        "normalized_main_text_matches_approved_local": true,
+        "main_links_match_approved_local": true,
+        "metadata_matches_approved_local": true,
+        "jsonld_matches_approved_local": true,
+        "matched_final_local_too": true,
+        "first_successful_attempt": 7,
+        "attempts": [
+          {
+            "status": "PENDING_DEPLOYMENT",
+            "body_sha256": "6f9929e8ca5ac64915abcbb71447ba1d3d93421089828fe0cc274456d9110450",
+            "observed_at_utc": "2026-09-13T14:00:13.048011+00:00",
+            "attempt": 1,
+            "source_cards_reparsed": 0
+          },
+          {
+            "status": "PENDING_DEPLOYMENT",
+            "body_sha256": "6f9929e8ca5ac64915abcbb71447ba1d3d93421089828fe0cc274456d9110450",
+            "observed_at_utc": "2026-09-13T14:00:24.856140+00:00",
+            "attempt": 2,
+            "source_cards_reparsed": 0
+          },
+          {
+            "status": "PENDING_DEPLOYMENT",
+            "body_sha256": "6f9929e8ca5ac64915abcbb71447ba1d3d93421089828fe0cc274456d9110450",
+            "observed_at_utc": "2026-09-13T14:00:35.912007+00:00",
+            "attempt": 3,
+            "source_cards_reparsed": 0
+          },
+          {
+            "status": "PENDING_DEPLOYMENT",
+            "body_sha256": "6f9929e8ca5ac64915abcbb71447ba1d3d93421089828fe0cc274456d9110450",
+            "observed_at_utc": "2026-09-13T14:00:46.934289+00:00",
+            "attempt": 4,
+            "source_cards_reparsed": 0
+          },
+          {
+            "status": "PENDING_DEPLOYMENT",
+            "body_sha256": "6f9929e8ca5ac64915abcbb71447ba1d3d93421089828fe0cc274456d9110450",
+            "observed_at_utc": "2026-09-13T14:00:58.181005+00:00",
+            "attempt": 5,
+            "source_cards_reparsed": 0
+          },
+          {
+            "status": "PENDING_DEPLOYMENT",
+            "body_sha256": "6f9929e8ca5ac64915abcbb71447ba1d3d93421089828fe0cc274456d9110450",
+            "observed_at_utc": "2026-09-13T14:01:09.213535+00:00",
+            "attempt": 6,
+            "source_cards_reparsed": 0
+          },
+          {
+            "status": "PASS",
+            "body_sha256": "3a19c1f3d25773284563c8d35c24457d9e741b1acf0828f793a7dc5af544c8b3",
+            "observed_at_utc": "2026-09-13T14:01:22.085156+00:00",
+            "attempt": 7,
+            "source_cards_reparsed": 2
+          }
+        ]
+      },
+      "current_production_verified": false,
+      "scientific_claim_support_approved": false
+    },
+    {
+      "route": "/learn/emotional-regulation-and-the-nervous-system",
+      "path": "src/app/(en)/learn/emotional-regulation-and-the-nervous-system/page.tsx",
+      "accepted_sha256": "e8515f09f2e606d39270cd5e8aed33ee9bdfe4924a619a050efa7a42db034dc3",
+      "pre_delivery_sha256": "252c3d2c7d7557e7f3eaf1b0b94aedc801ceecb9fb78429185420a4828edd9bb",
+      "batch": "1E.4D.5",
+      "commit": "3d00247f2c2f1d6d925ab7170fbbda362e9bed7c",
+      "h1": "How does emotional regulation connect to the nervous system in everyday life?",
+      "references": [
+        {
+          "reference_key": "PMID:12212647",
+          "local_key": "12212647",
+          "pmid": "12212647",
+          "doi": "10.1017/s0048577201393198",
+          "source_kind": "SCHOLARLY_PUBLICATION",
+          "source_url": "https://pubmed.ncbi.nlm.nih.gov/12212647/",
+          "inherited_metadata": {
+            "title": "Emotion regulation: affective, cognitive, and social consequences",
+            "authors": "Gross JJ",
+            "year": 2002,
+            "journal": "Psychophysiology",
+            "doi": "10.1017/s0048577201393198",
+            "design": "Emotion regulation review",
+            "scope": "Reviews reappraisal and suppression, with different consequences for emotional experience, expression and physiology. It is not a universal prescription to suppress feelings, a diagnostic tool or a study of Neuvago.",
+            "existing": false,
+            "link": "https://pubmed.ncbi.nlm.nih.gov/12212647/",
+            "verification_scope": "OFFICIAL_PUBMED_METADATA_AND_ABSTRACT_SCOPE_NOT_FULL_TEXT_APPRAISAL",
+            "checked_on": "2026-09-13"
+          },
+          "approval_status": "NOT_CLAIM_APPROVED",
+          "evidence_registry_modified": false
+        },
+        {
+          "reference_key": "PMID:20015584",
+          "local_key": "20015584",
+          "pmid": "20015584",
+          "doi": "10.1016/j.cpr.2009.11.004",
+          "source_kind": "SCHOLARLY_PUBLICATION",
+          "source_url": "https://pubmed.ncbi.nlm.nih.gov/20015584/",
+          "inherited_metadata": {
+            "title": "Emotion-regulation strategies across psychopathology: A meta-analytic review",
+            "authors": "Aldao A, Nolen-Hoeksema S, Schweizer S",
+            "year": 2010,
+            "journal": "Clinical Psychology Review",
+            "doi": "10.1016/j.cpr.2009.11.004",
+            "design": "Meta-analytic review",
+            "scope": "Synthesises associations between emotion-regulation strategies and mental-health symptoms. Associations vary across samples and do not establish an individual diagnosis, a single cause or a product treatment effect.",
+            "existing": false,
+            "link": "https://pubmed.ncbi.nlm.nih.gov/20015584/",
+            "verification_scope": "OFFICIAL_PUBMED_METADATA_AND_ABSTRACT_SCOPE_NOT_FULL_TEXT_APPRAISAL",
+            "checked_on": "2026-09-13"
+          },
+          "approval_status": "NOT_CLAIM_APPROVED",
+          "evidence_registry_modified": false
+        }
+      ],
+      "expected_cards": 2,
+      "care_guidance": {
+        "text": "If you are struggling to cope with stress or the things you are trying are not helping, seek advice from a healthcare professional. Use local urgent services if you need immediate help; this page is not an assessment or a substitute for care.",
+        "url": "https://www.nhs.uk/mental-health/feelings-symptoms-behaviours/feelings-and-symptoms/stress/"
+      },
+      "interpretation_note": "The cited research distinguishes emotion-regulation strategies and their outcomes. It does not measure a single emotional carrying capacity, establish that feelings are stored in the body or diagnose a reader from overwhelm, reactivity or flatness.",
+      "historical_production_observation": {
+        "route": "/learn/emotional-regulation-and-the-nervous-system",
+        "snapshot_member": "neuvago-1e4d5-final-20260913T135628Z-5_jetp13/production/attempt-07/03/response.html",
+        "body_sha256": "e3e3948152bb5a019933fa8178ff3d37288109b5f61e715e0543b286ab864dcd",
+        "approved_local_html_sha256": "e62f9cd7dbb5613dacbc72971e5631ff005c75469e251a9b442a3b4f34369625",
+        "final_local_html_sha256": "12e7441e7cbc40fc8eb9699201680afe48150015fe4e02fa806122a624847549",
+        "observed_at_utc": "2026-09-13T14:01:23.125267+00:00",
+        "observed_at_oslo": "2026-09-13T16:01:23.125267+02:00",
+        "http_reported": 200,
+        "canonical": "https://neuvago.com/learn/emotional-regulation-and-the-nervous-system",
+        "h1": "How does emotional regulation connect to the nervous system in everyday life?",
+        "main_count": 1,
+        "h1_count": 1,
+        "independent_reparse": "PASS",
+        "source_cards": [
+          {
+            "pmid": "12212647",
+            "doi": "10.1017/s0048577201393198",
+            "title": "Emotion regulation: affective, cognitive, and social consequences",
+            "card_id": "source-12212647",
+            "card_text": "1. Emotion regulation review · 2002 Emotion regulation: affective, cognitive, and social consequences Gross JJ. Psychophysiology. Reviews reappraisal and suppression, with different consequences for emotional experience, expression and physiology. It is not a universal prescription to suppress feelings, a diagnostic tool or a study of Neuvago. PMID: 12212647 DOI: 10.1017/s0048577201393198 Read Gross JJ on PubMed",
+            "source_href": "https://pubmed.ncbi.nlm.nih.gov/12212647/",
+            "intro_citation_resolves": true,
+            "metadata_matches_approved_selection": true,
+            "active_registry_membership_as_declared": false
+          },
+          {
+            "pmid": "20015584",
+            "doi": "10.1016/j.cpr.2009.11.004",
+            "title": "Emotion-regulation strategies across psychopathology: A meta-analytic review",
+            "card_id": "source-20015584",
+            "card_text": "2. Meta-analytic review · 2010 Emotion-regulation strategies across psychopathology: A meta-analytic review Aldao A, Nolen-Hoeksema S, Schweizer S. Clinical Psychology Review. Synthesises associations between emotion-regulation strategies and mental-health symptoms. Associations vary across samples and do not establish an individual diagnosis, a single cause or a product treatment effect. PMID: 20015584 DOI: 10.1016/j.cpr.2009.11.004 Read Aldao A on PubMed",
+            "source_href": "https://pubmed.ncbi.nlm.nih.gov/20015584/",
+            "intro_citation_resolves": true,
+            "metadata_matches_approved_selection": true,
+            "active_registry_membership_as_declared": false
+          }
+        ],
+        "interpretation_note": "The cited research distinguishes emotion-regulation strategies and their outcomes. It does not measure a single emotional carrying capacity, establish that feelings are stored in the body or diagnose a reader from overwhelm, reactivity or flatness.",
+        "care_guidance_note": "When to seek individual advice If you are struggling to cope with stress or the things you are trying are not helping, seek advice from a healthcare professional. Use local urgent services if you need immediate help; this page is not an assessment or a substitute for care. NHS guidance: getting help with stress",
+        "care_guidance_href": "https://www.nhs.uk/mental-health/feelings-symptoms-behaviours/feelings-and-symptoms/stress/",
+        "normalized_main_text_matches_approved_local": true,
+        "main_links_match_approved_local": true,
+        "metadata_matches_approved_local": true,
+        "jsonld_matches_approved_local": true,
+        "matched_final_local_too": true,
+        "first_successful_attempt": 7,
+        "attempts": [
+          {
+            "status": "PENDING_DEPLOYMENT",
+            "body_sha256": "6504783e36b0188b64df5abfb83fd547fe60c85fcb01ebd61fc0ed1b30d45a33",
+            "observed_at_utc": "2026-09-13T14:00:14.091884+00:00",
+            "attempt": 1,
+            "source_cards_reparsed": 0
+          },
+          {
+            "status": "PENDING_DEPLOYMENT",
+            "body_sha256": "6504783e36b0188b64df5abfb83fd547fe60c85fcb01ebd61fc0ed1b30d45a33",
+            "observed_at_utc": "2026-09-13T14:00:25.191047+00:00",
+            "attempt": 2,
+            "source_cards_reparsed": 0
+          },
+          {
+            "status": "PENDING_DEPLOYMENT",
+            "body_sha256": "6504783e36b0188b64df5abfb83fd547fe60c85fcb01ebd61fc0ed1b30d45a33",
+            "observed_at_utc": "2026-09-13T14:00:36.241134+00:00",
+            "attempt": 3,
+            "source_cards_reparsed": 0
+          },
+          {
+            "status": "PENDING_DEPLOYMENT",
+            "body_sha256": "6504783e36b0188b64df5abfb83fd547fe60c85fcb01ebd61fc0ed1b30d45a33",
+            "observed_at_utc": "2026-09-13T14:00:47.266638+00:00",
+            "attempt": 4,
+            "source_cards_reparsed": 0
+          },
+          {
+            "status": "PENDING_DEPLOYMENT",
+            "body_sha256": "6504783e36b0188b64df5abfb83fd547fe60c85fcb01ebd61fc0ed1b30d45a33",
+            "observed_at_utc": "2026-09-13T14:00:58.509990+00:00",
+            "attempt": 5,
+            "source_cards_reparsed": 0
+          },
+          {
+            "status": "PENDING_DEPLOYMENT",
+            "body_sha256": "6504783e36b0188b64df5abfb83fd547fe60c85fcb01ebd61fc0ed1b30d45a33",
+            "observed_at_utc": "2026-09-13T14:01:09.631910+00:00",
+            "attempt": 6,
+            "source_cards_reparsed": 0
+          },
+          {
+            "status": "PASS",
+            "body_sha256": "e3e3948152bb5a019933fa8178ff3d37288109b5f61e715e0543b286ab864dcd",
+            "observed_at_utc": "2026-09-13T14:01:23.125267+00:00",
+            "attempt": 7,
+            "source_cards_reparsed": 2
+          }
+        ]
+      },
+      "current_production_verified": false,
+      "scientific_claim_support_approved": false
+    },
+    {
+      "route": "/conditions/anxiety",
+      "path": "src/app/(en)/conditions/anxiety/page.tsx",
+      "accepted_sha256": "336f8df6c7e18295295304b535a3d3a989100027db67d1bc5b132fd0cbed0b6c",
+      "pre_delivery_sha256": "ef8407ffbde2753067bc27a7557825e74ddb47701e70bc38f1da5ed4c9b7824a",
+      "batch": "1E.4D.6",
+      "commit": "4c4e65a87163000ee493f264849824f17fdcf8ca",
+      "h1": "Understanding anxiety through the nervous system",
+      "references": [
+        {
+          "reference_key": "URL:https://www.who.int/news-room/fact-sheets/detail/anxiety-disorders",
+          "local_key": "who-anxiety",
+          "pmid": null,
+          "doi": null,
+          "source_kind": "OFFICIAL_GUIDANCE_OR_CLASSIFICATION",
+          "source_url": "https://www.who.int/news-room/fact-sheets/detail/anxiety-disorders",
+          "inherited_metadata": {
+            "title": "Anxiety disorders",
+            "authors": "World Health Organization",
+            "year": 2025,
+            "date_label": "8 September 2025",
+            "journal": "WHO fact sheet",
+            "kind": "official-guidance",
+            "design": "Public health guidance",
+            "pmid": null,
+            "doi": null,
+            "link": "https://www.who.int/news-room/fact-sheets/detail/anxiety-disorders",
+            "scope": "Overview of anxiety disorders, their impact and available care. This is general information, not a diagnostic test or evidence for a Neuvago treatment effect.",
+            "supported_sections": [
+              "Overview",
+              "Symptoms and patterns",
+              "Contributing factors and prevention",
+              "Diagnosis and treatment"
+            ],
+            "existing": false,
+            "active_registry_matches": [],
+            "checked_on": "2026-09-13",
+            "verification_scope": "OFFICIAL_OR_PUBLISHER_METADATA_AND_TARGETED_CONTENT_REVIEW_NOT_FULL_CLAIM_APPROVAL"
+          },
+          "approval_status": "NOT_CLAIM_APPROVED",
+          "evidence_registry_modified": false
+        },
+        {
+          "reference_key": "URL:https://www.nice.org.uk/guidance/cg113/chapter/Recommendations",
+          "local_key": "nice-cg113",
+          "pmid": null,
+          "doi": null,
+          "source_kind": "OFFICIAL_GUIDANCE_OR_CLASSIFICATION",
+          "source_url": "https://www.nice.org.uk/guidance/cg113/chapter/Recommendations",
+          "inherited_metadata": {
+            "title": "Generalised anxiety disorder and panic disorder in adults: management",
+            "authors": "National Institute for Health and Care Excellence",
+            "year": 2011,
+            "date_label": "2011; updated 15 June 2020",
+            "journal": "NICE clinical guideline CG113",
+            "kind": "official-guidance",
+            "design": "Clinical guideline",
+            "pmid": null,
+            "doi": null,
+            "link": "https://www.nice.org.uk/guidance/cg113/chapter/Recommendations",
+            "scope": "Assessment and care options for adults with generalised anxiety disorder or panic disorder. It does not cover every anxiety presentation and is not a self-treatment protocol.",
+            "supported_sections": [
+              "1.2.6–1.2.7 Assessment and education",
+              "Stepped-care model",
+              "1.2.12 Supported self-help options",
+              "1.2.17–1.2.18 Treatment choice and psychological interventions"
+            ],
+            "existing": false,
+            "active_registry_matches": [],
+            "checked_on": "2026-09-13",
+            "verification_scope": "OFFICIAL_OR_PUBLISHER_METADATA_AND_TARGETED_CONTENT_REVIEW_NOT_FULL_CLAIM_APPROVAL"
+          },
+          "approval_status": "NOT_CLAIM_APPROVED",
+          "evidence_registry_modified": false
+        }
+      ],
+      "expected_cards": 2,
+      "care_guidance": {
+        "text": "If anxiety is affecting daily life or is difficult to cope with, seek advice from a healthcare professional. Do not wait for a wellness routine or device to solve it. If you or someone else is in immediate danger or cannot stay safe, contact local emergency services now.",
+        "url": "https://www.nhs.uk/mental-health/feelings-symptoms-behaviours/feelings-and-symptoms/anxiety-fear-panic/"
+      },
+      "interpretation_note": "Anxiety is not a diagnosis of vagus-nerve dysfunction. The nervous-system framing in this page is limited background: it cannot establish a cause, diagnosis or treatment choice for an individual.",
+      "historical_production_observation": {
+        "route": "/conditions/anxiety",
+        "snapshot_member": "neuvago-1e4d6-final-20260913T151917Z-tur5tfpe/production/attempt-07/01/response.html",
+        "body_sha256": "37ba8f27fa357bf9c308597df0a0fd5109679af7f6b3493be6006925020510c3",
+        "approved_local_html_sha256": "ab783783202294780a1539f575a75df07ae5b45e39e6f46c0a085c8d8af8abf7",
+        "final_local_html_sha256": "5eea6f928c59f3cad1a06a9b3f8c2ac453e8d340ffa2bbaec5c42e4eb3e33c97",
+        "observed_at_utc": "2026-09-13T15:24:07.028381+00:00",
+        "observed_at_oslo": "2026-09-13T17:24:07.028381+02:00",
+        "http_reported": 200,
+        "canonical": "https://neuvago.com/conditions/anxiety",
+        "h1": "Understanding anxiety through the nervous system",
+        "independent_reparse": "PASS",
+        "main_count": 1,
+        "h1_count": 1,
+        "source_cards": [
+          {
+            "key": "who-anxiety",
+            "kind": "official-guidance",
+            "pmid": null,
+            "doi": null,
+            "title": "Anxiety disorders",
+            "card_text": "1 . Public health guidance · 8 September 2025 Anxiety disorders World Health Organization . WHO fact sheet . Overview of anxiety disorders, their impact and available care. This is general information, not a diagnostic test or evidence for a Neuvago treatment effect. Read World Health Organization",
+            "hrefs": [
+              "https://www.who.int/news-room/fact-sheets/detail/anxiety-disorders"
+            ],
+            "in_text_citation_resolves": true
+          },
+          {
+            "key": "nice-cg113",
+            "kind": "official-guidance",
+            "pmid": null,
+            "doi": null,
+            "title": "Generalised anxiety disorder and panic disorder in adults: management",
+            "card_text": "2 . Clinical guideline · 2011; updated 15 June 2020 Generalised anxiety disorder and panic disorder in adults: management National Institute for Health and Care Excellence . NICE clinical guideline CG113 . Assessment and care options for adults with generalised anxiety disorder or panic disorder. It does not cover every anxiety presentation and is not a self-treatment protocol. Read National Institute for Health and Care Excellence",
+            "hrefs": [
+              "https://www.nice.org.uk/guidance/cg113/chapter/Recommendations"
+            ],
+            "in_text_citation_resolves": true
+          }
+        ],
+        "interpretation_note": "Anxiety is not a diagnosis of vagus-nerve dysfunction. The nervous-system framing in this page is limited background: it cannot establish a cause, diagnosis or treatment choice for an individual.",
+        "care_guidance_note": "When to seek individual advice If anxiety is affecting daily life or is difficult to cope with, seek advice from a healthcare professional. Do not wait for a wellness routine or device to solve it. If you or someone else is in immediate danger or cannot stay safe, contact local emergency services now. NHS guidance: anxiety, fear and panic",
+        "care_guidance_href": "https://www.nhs.uk/mental-health/feelings-symptoms-behaviours/feelings-and-symptoms/anxiety-fear-panic/",
+        "first_successful_attempt": 7,
+        "attempts": [
+          {
+            "attempt": 1,
+            "status": "PENDING_DEPLOYMENT",
+            "observed_at_utc": "2026-09-13T15:23:00.739956+00:00",
+            "body_sha256": "587718e9f9223a8159562d808a73e6c1e370406d059348fe1dd573dfb93abae8",
+            "source_cards_independently_counted": 0,
+            "matches_reviewed_local": false
+          },
+          {
+            "attempt": 2,
+            "status": "PENDING_DEPLOYMENT",
+            "observed_at_utc": "2026-09-13T15:23:11.957934+00:00",
+            "body_sha256": "587718e9f9223a8159562d808a73e6c1e370406d059348fe1dd573dfb93abae8",
+            "source_cards_independently_counted": 0,
+            "matches_reviewed_local": false
+          },
+          {
+            "attempt": 3,
+            "status": "PENDING_DEPLOYMENT",
+            "observed_at_utc": "2026-09-13T15:23:22.753386+00:00",
+            "body_sha256": "587718e9f9223a8159562d808a73e6c1e370406d059348fe1dd573dfb93abae8",
+            "source_cards_independently_counted": 0,
+            "matches_reviewed_local": false
+          },
+          {
+            "attempt": 4,
+            "status": "PENDING_DEPLOYMENT",
+            "observed_at_utc": "2026-09-13T15:23:33.482759+00:00",
+            "body_sha256": "587718e9f9223a8159562d808a73e6c1e370406d059348fe1dd573dfb93abae8",
+            "source_cards_independently_counted": 0,
+            "matches_reviewed_local": false
+          },
+          {
+            "attempt": 5,
+            "status": "PENDING_DEPLOYMENT",
+            "observed_at_utc": "2026-09-13T15:23:44.185154+00:00",
+            "body_sha256": "587718e9f9223a8159562d808a73e6c1e370406d059348fe1dd573dfb93abae8",
+            "source_cards_independently_counted": 0,
+            "matches_reviewed_local": false
+          },
+          {
+            "attempt": 6,
+            "status": "PENDING_DEPLOYMENT",
+            "observed_at_utc": "2026-09-13T15:23:55.008315+00:00",
+            "body_sha256": "587718e9f9223a8159562d808a73e6c1e370406d059348fe1dd573dfb93abae8",
+            "source_cards_independently_counted": 0,
+            "matches_reviewed_local": false
+          },
+          {
+            "attempt": 7,
+            "status": "PASS",
+            "observed_at_utc": "2026-09-13T15:24:07.028381+00:00",
+            "body_sha256": "37ba8f27fa357bf9c308597df0a0fd5109679af7f6b3493be6006925020510c3",
+            "source_cards_independently_counted": 2,
+            "matches_reviewed_local": true
+          }
+        ],
+        "normalized_main_text_matches_approved_local": true,
+        "main_links_match_approved_local": true,
+        "metadata_and_jsonld_match_two_local_sets": true
+      },
+      "current_production_verified": false,
+      "scientific_claim_support_approved": false
+    },
+    {
+      "route": "/conditions/burnout",
+      "path": "src/app/(en)/conditions/burnout/page.tsx",
+      "accepted_sha256": "f7cff6e52881a63ce3c6d2d604506eb8fd5f5781262deff0d72a650d0008af05",
+      "pre_delivery_sha256": "bd41335f4a1e76912e6c5131ef34e34e10183e0ca6159d694a22116a00f08153",
+      "batch": "1E.4D.6",
+      "commit": "4c4e65a87163000ee493f264849824f17fdcf8ca",
+      "h1": "Understanding burnout through recovery, capacity, and the nervous system",
+      "references": [
+        {
+          "reference_key": "URL:https://www.who.int/news/item/28-05-2019-burn-out-an-occupational-phenomenon-international-classification-of-diseases",
+          "local_key": "who-burnout",
+          "pmid": null,
+          "doi": null,
+          "source_kind": "OFFICIAL_GUIDANCE_OR_CLASSIFICATION",
+          "source_url": "https://www.who.int/news/item/28-05-2019-burn-out-an-occupational-phenomenon-international-classification-of-diseases",
+          "inherited_metadata": {
+            "title": "Burn-out an occupational phenomenon: International Classification of Diseases",
+            "authors": "World Health Organization",
+            "year": 2019,
+            "date_label": "28 May 2019",
+            "journal": "WHO ICD-11 clarification",
+            "kind": "official-guidance",
+            "design": "Classification clarification",
+            "pmid": null,
+            "doi": null,
+            "link": "https://www.who.int/news/item/28-05-2019-burn-out-an-occupational-phenomenon-international-classification-of-diseases",
+            "scope": "Defines burnout in an occupational context and distinguishes its ICD-11 classification from a medical condition. This does not make exhaustion outside work unimportant or remove the need for care.",
+            "supported_sections": [
+              "ICD-11 definition and three dimensions",
+              "Occupational context and classification"
+            ],
+            "existing": false,
+            "active_registry_matches": [],
+            "checked_on": "2026-09-13",
+            "verification_scope": "OFFICIAL_OR_PUBLISHER_METADATA_AND_TARGETED_CONTENT_REVIEW_NOT_FULL_CLAIM_APPROVAL"
+          },
+          "approval_status": "NOT_CLAIM_APPROVED",
+          "evidence_registry_modified": false
+        },
+        {
+          "reference_key": "PMID:27265691",
+          "local_key": "maslach-2016",
+          "pmid": "27265691",
+          "doi": "10.1002/wps.20311",
+          "source_kind": "SCHOLARLY_PUBLICATION",
+          "source_url": "https://pubmed.ncbi.nlm.nih.gov/27265691/",
+          "inherited_metadata": {
+            "title": "Understanding the burnout experience: recent research and its implications for psychiatry",
+            "authors": "Maslach C, Leiter MP",
+            "year": 2016,
+            "date_label": "2016",
+            "journal": "World Psychiatry",
+            "kind": "scholarly-review",
+            "design": "Research review",
+            "pmid": "27265691",
+            "doi": "10.1002/wps.20311",
+            "link": "https://pubmed.ncbi.nlm.nih.gov/27265691/",
+            "scope": "Reviews occupational burnout, measurement and its relationship with mental health. It is not a trial of Neuvago and does not establish a single biological test or universal recovery plan.",
+            "supported_sections": [
+              "Abstract",
+              "Burnout and its workplace context",
+              "Burnout and mental illness"
+            ],
+            "existing": false,
+            "active_registry_matches": [],
+            "checked_on": "2026-09-13",
+            "verification_scope": "OFFICIAL_OR_PUBLISHER_METADATA_AND_TARGETED_CONTENT_REVIEW_NOT_FULL_CLAIM_APPROVAL"
+          },
+          "approval_status": "NOT_CLAIM_APPROVED",
+          "evidence_registry_modified": false
+        },
+        {
+          "reference_key": "URL:https://www.who.int/news-room/fact-sheets/detail/mental-health-at-work",
+          "local_key": "who-work",
+          "pmid": null,
+          "doi": null,
+          "source_kind": "OFFICIAL_GUIDANCE_OR_CLASSIFICATION",
+          "source_url": "https://www.who.int/news-room/fact-sheets/detail/mental-health-at-work",
+          "inherited_metadata": {
+            "title": "Mental health at work",
+            "authors": "World Health Organization",
+            "year": 2024,
+            "date_label": "2 September 2024",
+            "journal": "WHO fact sheet",
+            "kind": "official-guidance",
+            "design": "Workplace mental-health guidance",
+            "pmid": null,
+            "doi": null,
+            "link": "https://www.who.int/news-room/fact-sheets/detail/mental-health-at-work",
+            "scope": "Describes workplace risks and organisational responses alongside individual support. These recommendations concern mental health at work broadly, not proof that a particular routine treats burnout.",
+            "supported_sections": [
+              "Risks to mental health at work",
+              "Prevent work-related mental health conditions",
+              "Support people with mental health conditions to participate in and thrive at work"
+            ],
+            "existing": false,
+            "active_registry_matches": [],
+            "checked_on": "2026-09-13",
+            "verification_scope": "OFFICIAL_OR_PUBLISHER_METADATA_AND_TARGETED_CONTENT_REVIEW_NOT_FULL_CLAIM_APPROVAL"
+          },
+          "approval_status": "NOT_CLAIM_APPROVED",
+          "evidence_registry_modified": false
+        }
+      ],
+      "expected_cards": 3,
+      "care_guidance": {
+        "text": "If you have felt tired for weeks without a clear explanation, or tiredness affects daily life, seek medical advice rather than assuming it is only burnout. Workplace support may be relevant alongside healthcare. If you or someone else is in immediate danger or cannot stay safe, contact local emergency services now.",
+        "url": "https://www.nhs.uk/symptoms/tiredness-and-fatigue/"
+      },
+      "interpretation_note": "The WHO definition used here is work-related. Tiredness, emotional numbness or poor sleep alone cannot confirm burnout, autonomic dysfunction or a need for vagus-nerve stimulation.",
+      "historical_production_observation": {
+        "route": "/conditions/burnout",
+        "snapshot_member": "neuvago-1e4d6-final-20260913T151917Z-tur5tfpe/production/attempt-07/02/response.html",
+        "body_sha256": "271da7d051389350aaf499213bbbb56205c72db173343fc1e1fe02cf0832e006",
+        "approved_local_html_sha256": "8812dffc6527c0b309c293500c2877f2b7b8af9b89f775088852e3dacc32471b",
+        "final_local_html_sha256": "6891b8a93651e28ce762eefcf4e28e1953dcab995a9f146c27733e5815b1c662",
+        "observed_at_utc": "2026-09-13T15:24:07.516174+00:00",
+        "observed_at_oslo": "2026-09-13T17:24:07.516174+02:00",
+        "http_reported": 200,
+        "canonical": "https://neuvago.com/conditions/burnout",
+        "h1": "Understanding burnout through recovery, capacity, and the nervous system",
+        "independent_reparse": "PASS",
+        "main_count": 1,
+        "h1_count": 1,
+        "source_cards": [
+          {
+            "key": "who-burnout",
+            "kind": "official-guidance",
+            "pmid": null,
+            "doi": null,
+            "title": "Burn-out an occupational phenomenon: International Classification of Diseases",
+            "card_text": "1 . Classification clarification · 28 May 2019 Burn-out an occupational phenomenon: International Classification of Diseases World Health Organization . WHO ICD-11 clarification . Defines burnout in an occupational context and distinguishes its ICD-11 classification from a medical condition. This does not make exhaustion outside work unimportant or remove the need for care. Read World Health Organization",
+            "hrefs": [
+              "https://www.who.int/news/item/28-05-2019-burn-out-an-occupational-phenomenon-international-classification-of-diseases"
+            ],
+            "in_text_citation_resolves": true
+          },
+          {
+            "key": "maslach-2016",
+            "kind": "scholarly-review",
+            "pmid": "27265691",
+            "doi": "10.1002/wps.20311",
+            "title": "Understanding the burnout experience: recent research and its implications for psychiatry",
+            "card_text": "2 . Research review · 2016 Understanding the burnout experience: recent research and its implications for psychiatry Maslach C, Leiter MP . World Psychiatry . Reviews occupational burnout, measurement and its relationship with mental health. It is not a trial of Neuvago and does not establish a single biological test or universal recovery plan. PMID: 27265691 DOI: 10.1002/wps.20311 Read the PubMed record",
+            "hrefs": [
+              "https://pubmed.ncbi.nlm.nih.gov/27265691/"
+            ],
+            "in_text_citation_resolves": true
+          },
+          {
+            "key": "who-work",
+            "kind": "official-guidance",
+            "pmid": null,
+            "doi": null,
+            "title": "Mental health at work",
+            "card_text": "3 . Workplace mental-health guidance · 2 September 2024 Mental health at work World Health Organization . WHO fact sheet . Describes workplace risks and organisational responses alongside individual support. These recommendations concern mental health at work broadly, not proof that a particular routine treats burnout. Read World Health Organization",
+            "hrefs": [
+              "https://www.who.int/news-room/fact-sheets/detail/mental-health-at-work"
+            ],
+            "in_text_citation_resolves": true
+          }
+        ],
+        "interpretation_note": "The WHO definition used here is work-related. Tiredness, emotional numbness or poor sleep alone cannot confirm burnout, autonomic dysfunction or a need for vagus-nerve stimulation.",
+        "care_guidance_note": "When to seek individual advice If you have felt tired for weeks without a clear explanation, or tiredness affects daily life, seek medical advice rather than assuming it is only burnout. Workplace support may be relevant alongside healthcare. If you or someone else is in immediate danger or cannot stay safe, contact local emergency services now. NHS guidance: tiredness and fatigue",
+        "care_guidance_href": "https://www.nhs.uk/symptoms/tiredness-and-fatigue/",
+        "first_successful_attempt": 6,
+        "attempts": [
+          {
+            "attempt": 1,
+            "status": "PENDING_DEPLOYMENT",
+            "observed_at_utc": "2026-09-13T15:23:01.607704+00:00",
+            "body_sha256": "5c5e473d88f1aaa978fed282ed34dc1e7a36c457ab80cbd37972c673f91e8f9e",
+            "source_cards_independently_counted": 0,
+            "matches_reviewed_local": false
+          },
+          {
+            "attempt": 2,
+            "status": "PENDING_DEPLOYMENT",
+            "observed_at_utc": "2026-09-13T15:23:12.270929+00:00",
+            "body_sha256": "5c5e473d88f1aaa978fed282ed34dc1e7a36c457ab80cbd37972c673f91e8f9e",
+            "source_cards_independently_counted": 0,
+            "matches_reviewed_local": false
+          },
+          {
+            "attempt": 3,
+            "status": "PENDING_DEPLOYMENT",
+            "observed_at_utc": "2026-09-13T15:23:23.121858+00:00",
+            "body_sha256": "5c5e473d88f1aaa978fed282ed34dc1e7a36c457ab80cbd37972c673f91e8f9e",
+            "source_cards_independently_counted": 0,
+            "matches_reviewed_local": false
+          },
+          {
+            "attempt": 4,
+            "status": "PENDING_DEPLOYMENT",
+            "observed_at_utc": "2026-09-13T15:23:33.801651+00:00",
+            "body_sha256": "5c5e473d88f1aaa978fed282ed34dc1e7a36c457ab80cbd37972c673f91e8f9e",
+            "source_cards_independently_counted": 0,
+            "matches_reviewed_local": false
+          },
+          {
+            "attempt": 5,
+            "status": "PENDING_DEPLOYMENT",
+            "observed_at_utc": "2026-09-13T15:23:44.656619+00:00",
+            "body_sha256": "5c5e473d88f1aaa978fed282ed34dc1e7a36c457ab80cbd37972c673f91e8f9e",
+            "source_cards_independently_counted": 0,
+            "matches_reviewed_local": false
+          },
+          {
+            "attempt": 6,
+            "status": "PASS",
+            "observed_at_utc": "2026-09-13T15:23:56.058218+00:00",
+            "body_sha256": "271da7d051389350aaf499213bbbb56205c72db173343fc1e1fe02cf0832e006",
+            "source_cards_independently_counted": 3,
+            "matches_reviewed_local": true
+          },
+          {
+            "attempt": 7,
+            "status": "PASS",
+            "observed_at_utc": "2026-09-13T15:24:07.516174+00:00",
+            "body_sha256": "271da7d051389350aaf499213bbbb56205c72db173343fc1e1fe02cf0832e006",
+            "source_cards_independently_counted": 3,
+            "matches_reviewed_local": true
+          }
+        ],
+        "normalized_main_text_matches_approved_local": true,
+        "main_links_match_approved_local": true,
+        "metadata_and_jsonld_match_two_local_sets": true
+      },
+      "current_production_verified": false,
+      "scientific_claim_support_approved": false
+    }
+  ],
+  "scope": "SOURCE_DELIVERY_AND_PRIOR_ACCEPTANCE_NOT_NEW_LIVE_OR_CLAIM_APPROVAL"
+}

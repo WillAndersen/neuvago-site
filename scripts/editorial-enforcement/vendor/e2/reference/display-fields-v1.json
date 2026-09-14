@@ -1,0 +1,259 @@
+{
+  "schema": "neuvago-1e4e2-per-card-display-contract-v1",
+  "cards": [
+    {
+      "path": "src/app/(en)/learn/parasympathetic-nervous-system/page.tsx",
+      "card_id": "source-17786266",
+      "source_sha256": "95f6de0ad0cd50c7d3038be6d33d599152fb2823e4615e5c96f5a9150324154f",
+      "reference_key": "PMID:17786266",
+      "title": "Physiology of the autonomic nervous system",
+      "header": "1. Physiology review · 2007",
+      "byline": "McCorry LK. American Journal of Pharmaceutical Education.",
+      "scope": "Background on autonomic pathways and organ functions, including parasympathetic control. This is not a trial of a relaxation technique or of Neuvago.",
+      "source": "ACCEPTED_SOURCE_BYTES_NOT_NEW_BIBLIOGRAPHIC_REVIEW"
+    },
+    {
+      "path": "src/app/(en)/learn/parasympathetic-nervous-system/page.tsx",
+      "card_id": "source-1660159",
+      "source_sha256": "95f6de0ad0cd50c7d3038be6d33d599152fb2823e4615e5c96f5a9150324154f",
+      "reference_key": "PMID:1660159",
+      "title": "Autonomic determinism: the modes of autonomic control, the doctrine of autonomic space, and the laws of autonomic constraint",
+      "header": "2. Conceptual review · 1991",
+      "byline": "Berntson GG, Cacioppo JT, Quigley KS. Psychological Review.",
+      "scope": "Explains why sympathetic and parasympathetic control cannot be reduced to opposite ends of a single scale. It is not a way to diagnose an individual from how calm they feel.",
+      "source": "ACCEPTED_SOURCE_BYTES_NOT_NEW_BIBLIOGRAPHIC_REVIEW"
+    },
+    {
+      "path": "src/app/(en)/learn/vagal-tone/page.tsx",
+      "card_id": "source-17081672",
+      "source_sha256": "d345beb81cded374ebf6db0fa9503b00eb57c7ec236ff43a23a7e86348d03319",
+      "reference_key": "PMID:17081672",
+      "title": "Toward understanding respiratory sinus arrhythmia: relations to cardiac vagal tone, evolution and biobehavioral functions",
+      "header": "1. Physiology review · 2007",
+      "byline": "Grossman P, Taylor EW. Biological Psychology.",
+      "scope": "Discusses how breathing, physical activity and other factors affect the interpretation of respiratory sinus arrhythmia as an index of cardiac vagal tone. It is not a whole-vagus health test.",
+      "source": "ACCEPTED_SOURCE_BYTES_NOT_NEW_BIBLIOGRAPHIC_REVIEW"
+    },
+    {
+      "path": "src/app/(en)/learn/vagal-tone/page.tsx",
+      "card_id": "source-25696224",
+      "source_sha256": "d345beb81cded374ebf6db0fa9503b00eb57c7ec236ff43a23a7e86348d03319",
+      "reference_key": "PMID:25696224",
+      "title": "Heart rate variability and sympathovagal balance: pharmacological validation",
+      "header": "2. Pharmacological validation study · 2003",
+      "byline": "Bootsma et al.. Netherlands Heart Journal.",
+      "scope": "Examines HRV measures against pharmacological autonomic blockade. This laboratory study does not validate a consumer score for resilience, recovery or general vagus-nerve health.",
+      "source": "ACCEPTED_SOURCE_BYTES_NOT_NEW_BIBLIOGRAPHIC_REVIEW"
+    },
+    {
+      "path": "src/app/(en)/learn/fight-flight-freeze/page.tsx",
+      "card_id": "source-28242739",
+      "source_sha256": "d8459d9dc6b95aaffe7adfa1b8dc0f8b8eb67f06590f8f6f4a398a3929f0fc2f",
+      "reference_key": "PMID:28242739",
+      "title": "Freeze for action: neurobiological mechanisms in animal and human freezing",
+      "header": "1. Translational review · 2017",
+      "byline": "Roelofs K. Philosophical Transactions of the Royal Society B.",
+      "scope": "Reviews animal and human research on defensive freezing and preparation for action. Freezing in this literature is not simply another word for tiredness, low motivation or emotional numbness.",
+      "source": "ACCEPTED_SOURCE_BYTES_NOT_NEW_BIBLIOGRAPHIC_REVIEW"
+    },
+    {
+      "path": "src/app/(en)/learn/fight-flight-freeze/page.tsx",
+      "card_id": "source-26062169",
+      "source_sha256": "d8459d9dc6b95aaffe7adfa1b8dc0f8b8eb67f06590f8f6f4a398a3929f0fc2f",
+      "reference_key": "PMID:26062169",
+      "title": "Fear and the Defense Cascade: Clinical Implications and Management",
+      "header": "2. Clinical review · 2015",
+      "byline": "Kozlowska K, Walker P, McLean L, Carrive P. Harvard Review of Psychiatry.",
+      "scope": "Distinguishes defensive responses including freezing and tonic or collapsed immobility. Its clinical framework is not a self-diagnosis checklist or evidence for a Neuvago treatment effect.",
+      "source": "ACCEPTED_SOURCE_BYTES_NOT_NEW_BIBLIOGRAPHIC_REVIEW"
+    },
+    {
+      "path": "src/app/(en)/learn/recovery-and-regulation/page.tsx",
+      "card_id": "source-28358572",
+      "source_sha256": "dc6ccfb7926e29e3016486c970b6cd96333c40555d3a591618a69f2807fc80bf",
+      "reference_key": "PMID:28358572",
+      "title": "Advances in recovery research: What have we learned? What should be done next?",
+      "header": "1. Occupational recovery review · 2017",
+      "byline": "Sonnentag S, Venz L, Casper A. Journal of Occupational Health Psychology.",
+      "scope": "Reviews recovery from job stress during nonwork time. This is background on employee well-being, not a clinical test for persistent fatigue or proof that one routine restores the nervous system.",
+      "source": "ACCEPTED_SOURCE_BYTES_NOT_NEW_BIBLIOGRAPHIC_REVIEW"
+    },
+    {
+      "path": "src/app/(en)/learn/recovery-and-regulation/page.tsx",
+      "card_id": "source-17615391",
+      "source_sha256": "dc6ccfb7926e29e3016486c970b6cd96333c40555d3a591618a69f2807fc80bf",
+      "reference_key": "PMID:17615391",
+      "title": "Physiology and neurobiology of stress and adaptation: central role of the brain",
+      "header": "2. Stress physiology review · 2007",
+      "byline": "McEwen BS. Physiological Reviews.",
+      "scope": "Describes adaptive and maladaptive stress responses involving multiple body systems. It does not measure an individual’s stress load from symptoms or establish that a stress response must be completed by a particular technique.",
+      "source": "ACCEPTED_SOURCE_BYTES_NOT_NEW_BIBLIOGRAPHIC_REVIEW"
+    },
+    {
+      "path": "src/app/(en)/learn/why-you-feel-tired-but-cant-relax/page.tsx",
+      "card_id": "source-30046255",
+      "source_sha256": "3b32601b542f78b854b5d964910b2c4f8a2f25b1df0b4b7ffa3b139721e3f218",
+      "reference_key": "PMID:30046255",
+      "title": "Hyperarousal and sleep reactivity in insomnia: current insights",
+      "header": "1. Insomnia review · 2018",
+      "byline": "Kalmbach DA et al. Nature and Science of Sleep.",
+      "scope": "Discusses arousal and sensitivity of sleep to stress in insomnia research, with uncertainty about specific mechanisms. This does not diagnose insomnia or a nervous-system problem from the feeling of being tired but alert.",
+      "source": "ACCEPTED_SOURCE_BYTES_NOT_NEW_BIBLIOGRAPHIC_REVIEW"
+    },
+    {
+      "path": "src/app/(en)/learn/why-you-feel-tired-but-cant-relax/page.tsx",
+      "card_id": "source-16439263",
+      "source_sha256": "3b32601b542f78b854b5d964910b2c4f8a2f25b1df0b4b7ffa3b139721e3f218",
+      "reference_key": "PMID:16439263",
+      "title": "The perseverative cognition hypothesis: a review of worry, prolonged stress-related physiological activation, and health",
+      "header": "2. Hypothesis and evidence review · 2006",
+      "byline": "Brosschot JF, Gerin W, Thayer JF. Journal of Psychosomatic Research.",
+      "scope": "Reviews preliminary support for worry and rumination prolonging stress-related activation. It is a proposed explanation, not a universal cause of symptoms or evidence that stress is trapped in the body.",
+      "source": "ACCEPTED_SOURCE_BYTES_NOT_NEW_BIBLIOGRAPHIC_REVIEW"
+    },
+    {
+      "path": "src/app/(en)/learn/why-your-body-feels-stuck-in-stress/page.tsx",
+      "card_id": "source-17615391",
+      "source_sha256": "9c476ab30f04e6c92a4753a2cabb601998eabb5e43d306d3e30ceb7f7ea5e48c",
+      "reference_key": "PMID:17615391",
+      "title": "Physiology and neurobiology of stress and adaptation: central role of the brain",
+      "header": "1. Stress physiology review · 2007",
+      "byline": "McEwen BS. Physiological Reviews.",
+      "scope": "Describes adaptive and maladaptive stress responses involving multiple body systems. It does not measure an individual’s stress load from symptoms or establish that a stress response must be completed by a particular technique.",
+      "source": "ACCEPTED_SOURCE_BYTES_NOT_NEW_BIBLIOGRAPHIC_REVIEW"
+    },
+    {
+      "path": "src/app/(en)/learn/why-your-body-feels-stuck-in-stress/page.tsx",
+      "card_id": "source-16439263",
+      "source_sha256": "9c476ab30f04e6c92a4753a2cabb601998eabb5e43d306d3e30ceb7f7ea5e48c",
+      "reference_key": "PMID:16439263",
+      "title": "The perseverative cognition hypothesis: a review of worry, prolonged stress-related physiological activation, and health",
+      "header": "2. Hypothesis and evidence review · 2006",
+      "byline": "Brosschot JF, Gerin W, Thayer JF. Journal of Psychosomatic Research.",
+      "scope": "Reviews preliminary support for worry and rumination prolonging stress-related activation. It is a proposed explanation, not a universal cause of symptoms or evidence that stress is trapped in the body.",
+      "source": "ACCEPTED_SOURCE_BYTES_NOT_NEW_BIBLIOGRAPHIC_REVIEW"
+    },
+    {
+      "path": "src/app/(en)/learn/signs-of-a-dysregulated-nervous-system/page.tsx",
+      "card_id": "source-17615391",
+      "source_sha256": "6b50b90907936c94571ce6555c846d6355bd4a64cbee0b51ff1eba75e971a5af",
+      "reference_key": "PMID:17615391",
+      "title": "Physiology and neurobiology of stress and adaptation: central role of the brain",
+      "header": "1. Stress physiology review · 2007",
+      "byline": "McEwen BS. Physiological Reviews.",
+      "scope": "Describes stress and adaptation across neural, endocrine and other body systems. It does not validate this page as a symptom checklist or diagnose autonomic dysfunction from everyday experiences.",
+      "source": "ACCEPTED_SOURCE_BYTES_NOT_NEW_BIBLIOGRAPHIC_REVIEW"
+    },
+    {
+      "path": "src/app/(en)/learn/signs-of-a-dysregulated-nervous-system/page.tsx",
+      "card_id": "source-19809584",
+      "source_sha256": "6b50b90907936c94571ce6555c846d6355bd4a64cbee0b51ff1eba75e971a5af",
+      "reference_key": "PMID:19809584",
+      "title": "Measures of emotion: A review",
+      "header": "2. Emotion measurement review · 2009",
+      "byline": "Mauss IB, Robinson MD. Cognition and Emotion.",
+      "scope": "Examines subjective, physiological and behavioural measures of emotion and why they are not interchangeable. It does not establish that feeling calm measures vagal tone or nervous-system health.",
+      "source": "ACCEPTED_SOURCE_BYTES_NOT_NEW_BIBLIOGRAPHIC_REVIEW"
+    },
+    {
+      "path": "src/app/(en)/learn/what-nervous-system-regulation-feels-like/page.tsx",
+      "card_id": "source-19809584",
+      "source_sha256": "018388ac853e377bf8dce4219b0d4c430e9e817df5fb8a63eac21957589b61e3",
+      "reference_key": "PMID:19809584",
+      "title": "Measures of emotion: A review",
+      "header": "1. Emotion measurement review · 2009",
+      "byline": "Mauss IB, Robinson MD. Cognition and Emotion.",
+      "scope": "Examines subjective, physiological and behavioural measures of emotion and why they are not interchangeable. It does not establish that feeling calm measures vagal tone or nervous-system health.",
+      "source": "ACCEPTED_SOURCE_BYTES_NOT_NEW_BIBLIOGRAPHIC_REVIEW"
+    },
+    {
+      "path": "src/app/(en)/learn/what-nervous-system-regulation-feels-like/page.tsx",
+      "card_id": "source-12212647",
+      "source_sha256": "018388ac853e377bf8dce4219b0d4c430e9e817df5fb8a63eac21957589b61e3",
+      "reference_key": "PMID:12212647",
+      "title": "Emotion regulation: affective, cognitive, and social consequences",
+      "header": "2. Emotion regulation review · 2002",
+      "byline": "Gross JJ. Psychophysiology.",
+      "scope": "Reviews reappraisal and suppression, with different consequences for emotional experience, expression and physiology. It is not a universal prescription to suppress feelings, a diagnostic tool or a study of Neuvago.",
+      "source": "ACCEPTED_SOURCE_BYTES_NOT_NEW_BIBLIOGRAPHIC_REVIEW"
+    },
+    {
+      "path": "src/app/(en)/learn/emotional-regulation-and-the-nervous-system/page.tsx",
+      "card_id": "source-12212647",
+      "source_sha256": "e8515f09f2e606d39270cd5e8aed33ee9bdfe4924a619a050efa7a42db034dc3",
+      "reference_key": "PMID:12212647",
+      "title": "Emotion regulation: affective, cognitive, and social consequences",
+      "header": "1. Emotion regulation review · 2002",
+      "byline": "Gross JJ. Psychophysiology.",
+      "scope": "Reviews reappraisal and suppression, with different consequences for emotional experience, expression and physiology. It is not a universal prescription to suppress feelings, a diagnostic tool or a study of Neuvago.",
+      "source": "ACCEPTED_SOURCE_BYTES_NOT_NEW_BIBLIOGRAPHIC_REVIEW"
+    },
+    {
+      "path": "src/app/(en)/learn/emotional-regulation-and-the-nervous-system/page.tsx",
+      "card_id": "source-20015584",
+      "source_sha256": "e8515f09f2e606d39270cd5e8aed33ee9bdfe4924a619a050efa7a42db034dc3",
+      "reference_key": "PMID:20015584",
+      "title": "Emotion-regulation strategies across psychopathology: A meta-analytic review",
+      "header": "2. Meta-analytic review · 2010",
+      "byline": "Aldao A, Nolen-Hoeksema S, Schweizer S. Clinical Psychology Review.",
+      "scope": "Synthesises associations between emotion-regulation strategies and mental-health symptoms. Associations vary across samples and do not establish an individual diagnosis, a single cause or a product treatment effect.",
+      "source": "ACCEPTED_SOURCE_BYTES_NOT_NEW_BIBLIOGRAPHIC_REVIEW"
+    },
+    {
+      "path": "src/app/(en)/conditions/anxiety/page.tsx",
+      "card_id": "source-who-anxiety",
+      "source_sha256": "336f8df6c7e18295295304b535a3d3a989100027db67d1bc5b132fd0cbed0b6c",
+      "reference_key": "URL:https://www.who.int/news-room/fact-sheets/detail/anxiety-disorders",
+      "title": "Anxiety disorders",
+      "header": "1. Public health guidance · 8 September 2025",
+      "byline": "World Health Organization. WHO fact sheet.",
+      "scope": "Overview of anxiety disorders, their impact and available care. This is general information, not a diagnostic test or evidence for a Neuvago treatment effect.",
+      "source": "ACCEPTED_SOURCE_BYTES_NOT_NEW_BIBLIOGRAPHIC_REVIEW"
+    },
+    {
+      "path": "src/app/(en)/conditions/anxiety/page.tsx",
+      "card_id": "source-nice-cg113",
+      "source_sha256": "336f8df6c7e18295295304b535a3d3a989100027db67d1bc5b132fd0cbed0b6c",
+      "reference_key": "URL:https://www.nice.org.uk/guidance/cg113/chapter/Recommendations",
+      "title": "Generalised anxiety disorder and panic disorder in adults: management",
+      "header": "2. Clinical guideline · 2011; updated 15 June 2020",
+      "byline": "National Institute for Health and Care Excellence. NICE clinical guideline CG113.",
+      "scope": "Assessment and care options for adults with generalised anxiety disorder or panic disorder. It does not cover every anxiety presentation and is not a self-treatment protocol.",
+      "source": "ACCEPTED_SOURCE_BYTES_NOT_NEW_BIBLIOGRAPHIC_REVIEW"
+    },
+    {
+      "path": "src/app/(en)/conditions/burnout/page.tsx",
+      "card_id": "source-who-burnout",
+      "source_sha256": "f7cff6e52881a63ce3c6d2d604506eb8fd5f5781262deff0d72a650d0008af05",
+      "reference_key": "URL:https://www.who.int/news/item/28-05-2019-burn-out-an-occupational-phenomenon-international-classification-of-diseases",
+      "title": "Burn-out an occupational phenomenon: International Classification of Diseases",
+      "header": "1. Classification clarification · 28 May 2019",
+      "byline": "World Health Organization. WHO ICD-11 clarification.",
+      "scope": "Defines burnout in an occupational context and distinguishes its ICD-11 classification from a medical condition. This does not make exhaustion outside work unimportant or remove the need for care.",
+      "source": "ACCEPTED_SOURCE_BYTES_NOT_NEW_BIBLIOGRAPHIC_REVIEW"
+    },
+    {
+      "path": "src/app/(en)/conditions/burnout/page.tsx",
+      "card_id": "source-maslach-2016",
+      "source_sha256": "f7cff6e52881a63ce3c6d2d604506eb8fd5f5781262deff0d72a650d0008af05",
+      "reference_key": "PMID:27265691",
+      "title": "Understanding the burnout experience: recent research and its implications for psychiatry",
+      "header": "2. Research review · 2016",
+      "byline": "Maslach C, Leiter MP. World Psychiatry.",
+      "scope": "Reviews occupational burnout, measurement and its relationship with mental health. It is not a trial of Neuvago and does not establish a single biological test or universal recovery plan.",
+      "source": "ACCEPTED_SOURCE_BYTES_NOT_NEW_BIBLIOGRAPHIC_REVIEW"
+    },
+    {
+      "path": "src/app/(en)/conditions/burnout/page.tsx",
+      "card_id": "source-who-work",
+      "source_sha256": "f7cff6e52881a63ce3c6d2d604506eb8fd5f5781262deff0d72a650d0008af05",
+      "reference_key": "URL:https://www.who.int/news-room/fact-sheets/detail/mental-health-at-work",
+      "title": "Mental health at work",
+      "header": "3. Workplace mental-health guidance · 2 September 2024",
+      "byline": "World Health Organization. WHO fact sheet.",
+      "scope": "Describes workplace risks and organisational responses alongside individual support. These recommendations concern mental health at work broadly, not proof that a particular routine treats burnout.",
+      "source": "ACCEPTED_SOURCE_BYTES_NOT_NEW_BIBLIOGRAPHIC_REVIEW"
+    }
+  ],
+  "scientific_claim_support_approved": false
+}

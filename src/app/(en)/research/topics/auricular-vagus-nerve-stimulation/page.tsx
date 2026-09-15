@@ -528,6 +528,22 @@ const relatedPathways = [
 
 const externalReferences = [
   {
+    title:
+      "Transcutaneous Auricular Vagus Nerve Stimulation for Chronic Insomnia Disorder: A Randomized Clinical Trial",
+    source: "Zhang et al., JAMA Network Open, 2024",
+    href: "https://jamanetwork.com/journals/jamanetworkopen/fullarticle/2828072",
+    accessibleExternalLabel:
+      "Open Zhang et al. 2024 source in a new browser tab",
+  },
+  {
+    title:
+      "Transcutaneous Auricular Vagus Nerve Stimulation (taVNS) Improves Sleep Quality in Chronic Insomnia Disorder: A Double-Blind, Randomized, Sham-Controlled Trial",
+    source: "Yeom et al., Sleep Medicine, 2025",
+    href: "https://pubmed.ncbi.nlm.nih.gov/40398066/",
+    accessibleExternalLabel:
+      "Open Yeom et al. 2025 source in a new browser tab",
+  },
+  {
     title: "The nerve supply of the human auricle",
     source: "Peuker & Filler, Clinical Anatomy, 2002",
     href: "https://pubmed.ncbi.nlm.nih.gov/11835542/",
@@ -670,10 +686,12 @@ function ExternalReferenceCard({
   title,
   source,
   href,
+  accessibleExternalLabel,
 }: {
   title: string;
   source: string;
   href: string;
+  accessibleExternalLabel?: string;
 }) {
   return (
     <article className="rounded-[1.5rem] border border-black/5 bg-white/60 p-6 shadow-[0_12px_40px_rgba(31,31,28,0.04)]">
@@ -686,8 +704,13 @@ function ExternalReferenceCard({
       <a
         href={href}
         target="_blank"
-        rel="noreferrer"
-        className="mt-6 inline-flex text-sm font-medium text-[#1f1f1c] underline-offset-4 transition hover:underline"
+        rel={accessibleExternalLabel ? "noopener noreferrer" : "noreferrer"}
+        aria-label={accessibleExternalLabel}
+        className={`mt-6 inline-flex text-sm font-medium text-[#1f1f1c] underline-offset-4 transition hover:underline ${
+          accessibleExternalLabel
+            ? "focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#b98c50] focus-visible:ring-offset-4 focus-visible:ring-offset-[#f2eee8]"
+            : ""
+        }`}
       >
         Open source
       </a>
@@ -817,10 +840,10 @@ export default function AuricularVagusNerveStimulationResearchPage() {
 
             <div className="mt-10 flex flex-wrap gap-4">
               <Link
-                href="/research/studies/frangos-2015-auricular-vagus-nerve-stimulation-fmri"
-                className="rounded-full bg-[#1f1f1c] px-6 py-3 text-sm font-medium text-white transition hover:opacity-90"
+                href="#clinical-sleep-research"
+                className="rounded-full bg-[#1f1f1c] px-6 py-3 text-sm font-medium text-white transition hover:opacity-90 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#b98c50] focus-visible:ring-offset-4 focus-visible:ring-offset-[#f7f4ef]"
               >
-                Read Frangos 2015
+                View clinical sleep research
               </Link>
               <Link
                 href="/research/topics/transcutaneous-vagus-nerve-stimulation"
@@ -890,6 +913,90 @@ export default function AuricularVagusNerveStimulationResearchPage() {
               <TextCard key={item.title} {...item} />
             ))}
           </div>
+        </div>
+      </section>
+      <section
+        id="clinical-sleep-research"
+        className="scroll-mt-24 border-b border-black/5 bg-[#f7f4ef]"
+      >
+        <div className="mx-auto max-w-7xl px-6 py-24 md:px-10 md:py-28">
+          <div className="max-w-4xl">
+            <p className="text-sm uppercase tracking-[0.18em] text-[#7a756c]">
+              CLINICAL SLEEP RESEARCH
+            </p>
+            <h2 className="mt-4 text-3xl font-medium leading-tight tracking-[-0.03em] md:text-5xl">
+              Randomized trials have reported positive sleep outcomes.
+            </h2>
+            <p className="mt-6 max-w-3xl text-base leading-8 text-[#5f5a52] md:text-lg">
+              Two randomized sham-controlled trials in people with chronic
+              insomnia reported greater improvements in sleep outcomes with
+              active taVNS than with sham under the specific protocols studied.
+            </p>
+          </div>
+          <div className="mt-14 grid gap-6 lg:grid-cols-[1.06fr_0.94fr]">
+            <article className="rounded-[2rem] border border-black/8 bg-white/75 p-7 shadow-[0_16px_54px_rgba(31,31,28,0.055)] md:p-9">
+              <div className="flex flex-wrap items-center gap-x-4 gap-y-2">
+                <span className="text-[0.68rem] font-medium uppercase tracking-[0.16em] text-[#70685f]">
+                  RANDOMIZED SHAM-CONTROLLED CLINICAL TRIAL
+                </span>
+                <span className="text-[0.68rem] font-medium uppercase tracking-[0.16em] text-[#8a847b]">
+                  2024
+                </span>
+              </div>
+              <h3 className="mt-5 text-2xl font-medium leading-tight tracking-[-0.03em] md:text-3xl">
+                taVNS and chronic insomnia
+              </h3>
+              <p className="mt-5 text-base leading-8 text-[#5f5a52]">
+                In 72 adults with chronic insomnia, active taVNS produced a
+                4.2-point greater improvement in PSQI sleep-quality scores than
+                sham at week 8. Responder rates were 69.4% with active taVNS
+                and 27.8% with sham.
+              </p>
+              <p className="mt-5 border-t border-black/8 pt-5 text-sm leading-7 text-[#70685f]">
+                Studied protocol: 30 minutes twice daily, five consecutive days
+                per week, for eight weeks.
+              </p>
+              <Link
+                href="/research/studies/zhang-2024-tavns-chronic-insomnia-randomized-clinical-trial"
+                className="mt-7 inline-flex text-sm font-medium text-[#1f1f1c] underline underline-offset-4 transition hover:opacity-70 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#b98c50] focus-visible:ring-offset-4 focus-visible:ring-offset-[#f7f4ef]"
+              >
+                Read Zhang 2024 study summary
+              </Link>
+            </article>
+            <article className="rounded-[2rem] border border-black/5 bg-white/55 p-7 shadow-[0_12px_42px_rgba(31,31,28,0.04)] md:p-9">
+              <div className="flex flex-wrap items-center gap-x-4 gap-y-2">
+                <span className="text-[0.68rem] font-medium uppercase tracking-[0.16em] text-[#70685f]">
+                  DOUBLE-BLIND RANDOMIZED SHAM-CONTROLLED TRIAL
+                </span>
+                <span className="text-[0.68rem] font-medium uppercase tracking-[0.16em] text-[#8a847b]">
+                  2025
+                </span>
+              </div>
+              <h3 className="mt-5 text-2xl font-medium leading-tight tracking-[-0.03em] md:text-3xl">
+                taVNS and sleep quality
+              </h3>
+              <p className="mt-5 text-base leading-8 text-[#5f5a52]">
+                In 40 participants with chronic insomnia, active taVNS produced
+                significantly greater improvements in sleep quality and
+                insomnia severity than sham after six weeks. The study also
+                reported positive findings for total sleep time and quality of
+                life.
+              </p>
+              <p className="mt-5 border-t border-black/8 pt-5 text-sm leading-7 text-[#70685f]">
+                Studied protocol: 30 minutes daily for six weeks.
+              </p>
+              <Link
+                href="/research/studies/yeom-2025-tavns-chronic-insomnia-randomized-sham-controlled-trial"
+                className="mt-7 inline-flex text-sm font-medium text-[#1f1f1c] underline underline-offset-4 transition hover:opacity-70 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#b98c50] focus-visible:ring-offset-4 focus-visible:ring-offset-[#f7f4ef]"
+              >
+                Read Yeom 2025 study summary
+              </Link>
+            </article>
+          </div>
+          <p className="mt-7 max-w-4xl text-sm leading-7 text-[#70685f] md:text-base">
+            These trials examined specific external taVNS protocols and did not
+            evaluate the Neuvago device.
+          </p>
         </div>
       </section>
 
@@ -1445,9 +1552,9 @@ export default function AuricularVagusNerveStimulationResearchPage() {
             Auricular VNS is scientifically important precisely because the method details matter
           </h2>
           <p className="mx-auto mt-6 max-w-3xl text-base leading-8 text-white/70 md:text-lg">
-            The evidence includes genuine mechanistic signals, mixed
-            biomarker results, useful safety syntheses, and clear knowledge
-            gaps. The strongest interpretation keeps every conclusion tied to
+            The evidence includes positive controlled sleep outcomes, genuine
+            mechanistic signals, mixed biomarker results, useful safety
+            syntheses, and clear knowledge gaps. The strongest interpretation keeps every conclusion tied to
             the studied ear site, electrode, dose, control, population, and
             outcome.
           </p>

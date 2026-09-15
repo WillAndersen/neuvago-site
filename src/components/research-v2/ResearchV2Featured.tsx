@@ -56,6 +56,9 @@ export function ResearchV2Featured({
             </Link>
           ))}
         </div>
+        <p className="mt-7 max-w-4xl text-sm leading-7 text-white/58 sm:text-base">
+          {content.contextNote}
+        </p>
       </div>
     </section>
   );

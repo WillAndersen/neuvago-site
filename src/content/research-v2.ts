@@ -1,5 +1,3 @@
-import { featuredTavnsStudies } from "@/content/research-study-catalog";
-
 export type ResearchV2Cta = {
   label: string;
   href: string;
@@ -246,41 +244,52 @@ export const researchV2Content = {
     eyebrow: "FEATURED taVNS RESEARCH",
     title: "Selected research across the taVNS field.",
     description:
-      "These studies span systematic reviews, meta-analyses and human neuroimaging across sleep, safety and tolerability, central vagal pathways and autonomic function.",
-    studies: featuredTavnsStudies.map((study) => {
-      let heading = study.cardHeading;
-      let summary = study.cardSummary;
-
-      if (
-        study.slug ===
-        "de-oliveira-2025-tavns-insomnia-systematic-review-meta-analysis"
-      ) {
-        summary =
-          "A 2025 systematic review and meta-analysis of six studies involving 336 participants reported improvements in sleep quality and insomnia severity, while rating the certainty of evidence as low to very low.";
-      } else if (
-        study.slug === "kim-2022-tavns-safety-systematic-review-meta-analysis"
-      ) {
-        summary =
-          "A systematic review and meta-analysis of 177 studies involving 6,322 participants found no difference in overall adverse-event risk between active taVNS and control conditions, while noting incomplete adverse-event reporting across much of the literature.";
-      } else if (
-        study.slug === "frangos-2015-auricular-vagus-nerve-stimulation-fmri"
-      ) {
-        heading = "How auricular stimulation engages vagal pathways";
-        summary =
-          "A human fMRI study in 12 healthy adults found that electrical stimulation at the left cymba conchae engaged central pathways associated with the vagus nerve.";
-      }
-
-      return {
-        researchArea: study.researchArea,
-        evidenceType: study.evidenceType,
-        heading,
-        summary,
-        year: study.year,
-        href: study.href,
-      };
-    }) satisfies ResearchV2FeaturedStudyCard[],
+      "Selected human research across sleep, safety and brain pathways, including randomized sham-controlled trials, systematic reviews, meta-analyses and human neuroimaging.",
+    studies: [
+      {
+        researchArea: "SLEEP",
+        evidenceType: "RANDOMIZED SHAM-CONTROLLED CLINICAL TRIAL",
+        heading: "taVNS and chronic insomnia",
+        summary:
+          "A randomized sham-controlled clinical trial of 72 adults reported a 4.2-point greater improvement in PSQI sleep-quality scores with active taVNS than with sham at week 8. Responder rates were 69.4% with active taVNS and 27.8% with sham.",
+        year: "2024",
+        href:
+          "/research/studies/zhang-2024-tavns-chronic-insomnia-randomized-clinical-trial",
+      },
+      {
+        researchArea: "SLEEP",
+        evidenceType: "DOUBLE-BLIND RANDOMIZED SHAM-CONTROLLED TRIAL",
+        heading: "taVNS and sleep quality",
+        summary:
+          "A double-blind randomized sham-controlled trial of 40 participants reported significantly greater improvements in sleep quality and insomnia severity with active taVNS than with sham after six weeks.",
+        year: "2025",
+        href:
+          "/research/studies/yeom-2025-tavns-chronic-insomnia-randomized-sham-controlled-trial",
+      },
+      {
+        researchArea: "SAFETY & TOLERABILITY",
+        evidenceType: "SYSTEMATIC REVIEW & META-ANALYSIS",
+        heading: "Safety and tolerability of taVNS",
+        summary:
+          "A systematic review and meta-analysis of 177 studies involving 6,322 participants found no difference in overall adverse-event risk between active taVNS and control conditions, while noting incomplete adverse-event reporting across much of the literature.",
+        year: "2022",
+        href:
+          "/research/studies/kim-2022-tavns-safety-systematic-review-meta-analysis",
+      },
+      {
+        researchArea: "BRAIN PATHWAYS",
+        evidenceType: "HUMAN NEUROIMAGING / fMRI",
+        heading: "How auricular stimulation engages vagal pathways",
+        summary:
+          "A human fMRI study in 12 healthy adults found that electrical stimulation at the left cymba conchae engaged central pathways associated with the vagus nerve.",
+        year: "2015",
+        href:
+          "/research/studies/frangos-2015-auricular-vagus-nerve-stimulation-fmri",
+      },
+    ] satisfies ResearchV2FeaturedStudyCard[],
+    contextNote:
+      "These studies examine the wider taVNS research field and did not evaluate the Neuvago device.",
   },
-
   foundations: {
     eyebrow: "FOUNDATIONAL SCIENCE",
     title:

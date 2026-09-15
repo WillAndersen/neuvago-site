@@ -11,6 +11,7 @@ const pageDescription =
 const pagePath = "/research/studies";
 
 type StudyEntry = {
+  readonly researchArea?: string;
   readonly evidenceType: string;
   readonly year: string;
   readonly title: string;
@@ -31,6 +32,30 @@ const studyGroups = [
     id: "tavns-research",
     title: "taVNS research",
     studies: [
+      {
+        researchArea: "SLEEP",
+        evidenceType: "RANDOMIZED SHAM-CONTROLLED CLINICAL TRIAL",
+        year: "2024",
+        title: "taVNS and chronic insomnia",
+        authors: "Zhang S, Zhao Y, Qin Z, et al.",
+        journal: "JAMA Network Open",
+        summary:
+          "A randomized sham-controlled clinical trial of 72 adults reported a 4.2-point greater improvement in PSQI sleep-quality scores with active taVNS than with sham at week 8. Responder rates were 69.4% with active taVNS and 27.8% with sham.",
+        href:
+          "/research/studies/zhang-2024-tavns-chronic-insomnia-randomized-clinical-trial",
+      },
+      {
+        researchArea: "SLEEP",
+        evidenceType: "DOUBLE-BLIND RANDOMIZED SHAM-CONTROLLED TRIAL",
+        year: "2025",
+        title: "taVNS and sleep quality",
+        authors: "Yeom JW, Kim H, Park S, Yoon Y, Seo JY, Cho CH, Lee HJ",
+        journal: "Sleep Medicine",
+        summary:
+          "A double-blind randomized sham-controlled trial of 40 participants reported significantly greater improvements in sleep quality and insomnia severity with active taVNS than with sham after six weeks.",
+        href:
+          "/research/studies/yeom-2025-tavns-chronic-insomnia-randomized-sham-controlled-trial",
+      },
       {
         evidenceType: "SYSTEMATIC REVIEW & META-ANALYSIS",
         year: "2025",
@@ -232,6 +257,11 @@ function StudyRow({ study }: { study: StudyEntry }) {
       >
         <div className="min-w-0">
           <div className="flex min-w-0 flex-wrap items-center gap-x-4 gap-y-2">
+            {study.researchArea ? (
+              <span className="text-[0.68rem] font-medium uppercase tracking-[0.18em] text-[#70685f]">
+                {study.researchArea}
+              </span>
+            ) : null}
             <span className="text-[0.68rem] font-medium uppercase tracking-[0.18em] text-[#70685f]">
               {study.evidenceType}
             </span>

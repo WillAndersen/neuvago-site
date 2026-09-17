@@ -48,9 +48,9 @@ const page = {
     },
     {
       "title": "Søvn og nervesystemet",
-      "description": "Utforsk hvordan kveld, nedtrapping og regulering kan forstås som del av en bredere velværerutine.",
+      "description": "Utforsk søvnstøtte, Neuvagos søvnmodus, en enkel 20-minutters kveldsrutine, randomisert taVNS-forskning og når søvnproblemer bør vurderes av helsepersonell.",
       "href": "/no/tilstander/sovn",
-      "note": "Norsk hovedside"
+      "note": "Søvn og Neuvago"
     },
     {
       "title": "Produktet",

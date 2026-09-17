@@ -3,6 +3,10 @@ import { notFound } from "next/navigation";
 
 import { NorwegianConditionPageView } from "@/components/conditions/NorwegianConditionPage";
 import {
+  NorwegianSleepConditionPage,
+  norwegianSleepConditionMetadata,
+} from "@/components/conditions/NorwegianSleepConditionPage";
+import {
   getNorwegianConditionPage,
   getPublishedNorwegianConditionPages,
 } from "@/content/conditions/no/registry";
@@ -26,6 +30,11 @@ export async function generateMetadata({
   params,
 }: NorwegianConditionRouteProps): Promise<Metadata> {
   const { slug } = await params;
+
+  if (slug === "sovn") {
+    return norwegianSleepConditionMetadata;
+  }
+
   const page = getNorwegianConditionPage(slug);
 
   if (!page) {
@@ -39,6 +48,11 @@ export default async function NorwegianConditionRoute({
   params,
 }: NorwegianConditionRouteProps) {
   const { slug } = await params;
+
+  if (slug === "sovn") {
+    return <NorwegianSleepConditionPage />;
+  }
+
   const page = getNorwegianConditionPage(slug);
 
   if (!page) {

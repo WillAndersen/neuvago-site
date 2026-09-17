@@ -8,14 +8,14 @@ export const sovnConditionPage = {
   order: 20,
 
   title:
-    "Søvn og nervesystemet – nedtrapping, døgnrytme og restitusjon",
+    "Vagusnervestimulering utviklet for å støtte bedre søvn.",
   seoTitle:
-    "Søvn og nervesystemet | Nedtrapping og døgnrytme | Neuvago",
+    "Søvnstøtte og vagusnervestimulering | Neuvago",
   description:
-    "Forstå søvntrykk, døgnrytme, kveldens aktivering og vanlige søvnmønstre – med trygge råd, behandlingsgrenser og en rolig velværepathway.",
-  eyebrow: "Søvn, nedtrapping og restitusjon",
+    "Les hvordan nervesystemets aktivering kan påvirke søvn, hvordan Neuvago kan inngå i en 20-minutters kveldsrutine, og hva randomiserte taVNS-studier har rapportert.",
+  eyebrow: "Søvn og vagusnervestimulering",
   lead:
-    "Søvn er ikke bare et spørsmål om å være sliten nok. Den formes av samspillet mellom søvntrykk, døgnrytme, lys, aktivitet, kroppslig tilstand, forventning og hvor lett hjernen og kroppen skifter ut av dagens krav. En rolig kveldsrutine kan støtte overgangen, men vedvarende søvnvansker, søvnapné og andre søvnsykdommer trenger en mer spesifikk vurdering. Denne siden skiller derfor mellom hverdagslig søvnstøtte, klinisk insomni, andre søvnforstyrrelser og hva Neuvago kan og ikke kan påstå.",
+    "Neuvago er en ikke-invasiv vagusnervestimulator med en egen søvnmodus og justerbar intensitet. Den norske siden kombinerer den oppdaterte produkt- og forskningspresentasjonen med lokal helsekontekst om vedvarende søvnvansker, insomni, CBT-I og mulig søvnapné.",
   shortAnswer: [
     "Søvn styres blant annet av et søvntrykk som bygger seg opp mens du er våken, og en døgnrytme som påvirker når kroppen er mest klar for søvn og våkenhet.",
     "En dårlig natt eller en kort periode med søvnvansker er vanlig og betyr ikke automatisk at nervesystemet er skadet.",
@@ -24,8 +24,8 @@ export const sovnConditionPage = {
     "Neuvago kan inngå i en rolig kveldsrutine, men er ikke en insomnibehandling, søvndiagnose, søvntracker eller erstatning for klinisk søvnhjelp.",
   ],
   hubSummary:
-    "En norsk søvn-pathway fra søvntrykk og døgnrytme til kveldens aktivering, vanlige søvnmønstre, CBT-I, søvnapné, wearables, taVNS-forskning og tydelige velværegrenser.",
-  hubLabel: "Norsk hovedside",
+    "Utforsk søvnstøtte, Neuvagos søvnmodus, en enkel 20-minutters kveldsrutine, randomisert taVNS-forskning og når søvnproblemer bør vurderes av helsepersonell.",
+  hubLabel: "Søvn og Neuvago",
 
   primaryKeyword: "søvn nervesystemet",
   secondaryKeywords: [
@@ -52,8 +52,8 @@ export const sovnConditionPage = {
   ],
 
   publishedAt: "2026-08-22",
-  modifiedAt: "2026-08-22",
-  readingTimeMinutes: 24,
+  modifiedAt: "2026-09-16",
+  readingTimeMinutes: 10,
 
   authorId: "john-willander",
   sourceReviewerId: "neuvago-redaksjonen",

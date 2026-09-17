@@ -521,11 +521,11 @@ export default function SleepPage() {
 
           <div className="relative min-h-[24rem] overflow-hidden rounded-[2.2rem] border border-white/10 bg-[#302d29] sm:min-h-[34rem]">
             <Image
-              src="/images/neuvago/launch/final-cta-desktop.webp"
-              alt="Neuvago device presented as the focus of the evening routine."
+              src="/images/neuvago/launch/sleep-final-cta-device-only.webp"
+              alt="Neuvago device resting naturally in a warm evening setting with no phone or app shown."
               fill
               sizes="(min-width: 1024px) 48vw, 100vw"
-              className="object-cover"
+              className="object-cover object-right"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-black/20 via-transparent to-white/5" />
           </div>

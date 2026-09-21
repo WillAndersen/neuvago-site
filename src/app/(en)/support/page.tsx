@@ -1,3 +1,4 @@
+import SupportManuals from "@/components/support/SupportManuals";
 import type { Metadata } from "next";
 
 import {
@@ -58,6 +59,8 @@ export default function SupportPage() {
       {content.resources.visible ? (
         <SupportV2Resources content={content.resources} />
       ) : null}
+      <SupportManuals locale="en" />
+
       {content.faq.visible ? <SupportV2Faq content={content.faq} /> : null}
       {content.contact.visible ? (
         <SupportV2Contact content={content.contact} />

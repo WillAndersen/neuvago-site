@@ -1,3 +1,4 @@
+import SupportManuals from "@/components/support/SupportManuals";
 import type { Metadata } from "next";
 import { supportPageContentNo } from "@/content/no/support";
 import {
@@ -91,6 +92,8 @@ export default function NorwaySupportPage() {
       {content.philosophy.visible ? (
         <SupportPhilosophy content={content.philosophy} />
       ) : null}
+
+      <SupportManuals locale="no" />
 
       {content.faq.visible ? <SupportFaq content={content.faq} /> : null}
 

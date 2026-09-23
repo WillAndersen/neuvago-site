@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import { openAnalyticsPreferences } from "@/lib/analytics/consent-runtime";
 import { usePathname } from "next/navigation";
 
 import { getLocaleFromPathname } from "@/i18n/locale-registry";
@@ -88,6 +89,11 @@ export function SiteFooter() {
               <p>
                 © {new Date().getFullYear()} Neuvago. {footer.rights}
               </p>
+
+              <button type="button" onClick={openAnalyticsPreferences} data-analytics-settings
+                className="text-left underline underline-offset-4 hover:text-[#1f1f1c] focus-visible:outline-2 focus-visible:outline-offset-4">
+                {locale === "no" ? "Personvernvalg" : "Privacy choices"}
+              </button>
 
               {footer.utilityLinks.length > 0 ? (
                 <div className="flex flex-wrap gap-4">

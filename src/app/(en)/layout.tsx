@@ -1,5 +1,6 @@
 import type { ReactNode } from "react";
 
+import { AnalyticsConsent } from "@/components/analytics/AnalyticsConsent";
 import { OrganicConversionTracker } from "@/components/analytics/OrganicConversionTracker";
 import { AppChrome } from "@/components/layout/app-chrome";
 import { getLocaleDefinition } from "@/i18n/locale-registry";
@@ -17,6 +18,7 @@ export default function EnglishRootLayout({
   return (
     <html lang={getLocaleDefinition("en").htmlLang}>
       <body className="bg-[#f7f4ef] text-[#1f1f1c] antialiased">
+        <AnalyticsConsent />
         <OrganicConversionTracker />
         <AppChrome>{children}</AppChrome>
       </body>

@@ -1,4 +1,4 @@
-import { commerceContent } from "@/content/commerce";
+import { commerceContent, getCommerceHref } from "@/content/commerce";
 import {
   productV2Content,
   type ProductV2Cta,
@@ -18,7 +18,7 @@ const heroPurchaseCtaNo: ProductV2Cta = {
   label: commerceContent.isLive
     ? "Kjøp Neuvago"
     : "Få lanseringstilgang",
-  href: commerceContent.shopHref,
+  href: getCommerceHref("no"),
 };
 
 export const productV2ContentNo = {

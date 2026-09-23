@@ -5,6 +5,7 @@ import { usePathname } from "next/navigation";
 
 import { getLocaleFromPathname } from "@/i18n/locale-registry";
 import { getSiteChromeConfig } from "@/i18n/site-chrome";
+import { commerceContent, getCommerceHref } from "@/content/commerce";
 
 function stripHashAndQuery(href: string) {
   return href.split(/[?#]/, 1)[0] || "/";
@@ -89,7 +90,9 @@ export function SiteHeader() {
 
           {header.cta ? (
             <Link
-              href={header.cta.href}
+              href={header.cta.href === commerceContent.shopHref
+                ? getCommerceHref(locale)
+                : header.cta.href}
               className="inline-flex items-center justify-center rounded-full bg-[#1f1f1c] px-5 py-3 text-sm font-medium text-white transition hover:bg-[#2b2b28]"
             >
               {header.cta.label}
@@ -109,7 +112,9 @@ export function SiteHeader() {
 
           {header.cta ? (
             <Link
-              href={header.cta.href}
+              href={header.cta.href === commerceContent.shopHref
+                ? getCommerceHref(locale)
+                : header.cta.href}
               className="inline-flex items-center justify-center rounded-full bg-[#1f1f1c] px-4 py-2.5 text-sm font-medium text-white transition hover:bg-[#2b2b28]"
             >
               {header.cta.mobileLabel ?? header.cta.label}

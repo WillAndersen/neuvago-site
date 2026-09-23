@@ -1,4 +1,5 @@
 import Link from "next/link"
+import { AnalyticsPrivacyNotice } from "@/components/analytics/AnalyticsPrivacyNotice"
 import { JsonLd } from "@/components/seo/json-ld"
 import { buildPageWithBreadcrumbStructuredData } from "@/lib/seo/structured-data"
 
@@ -221,6 +222,7 @@ export default function PrivacyPolicyPage() {
   return (
     <main className="bg-[#f7f4ef] text-[#1f1f1c]">
       <JsonLd data={structuredData} idPrefix="legal-privacy-policy" />
+      <AnalyticsPrivacyNotice locale="en" />
       <section className="border-b border-black/5">
         <div className="mx-auto grid min-h-[70vh] max-w-7xl items-center gap-16 px-6 py-20 md:px-10 lg:grid-cols-[1.05fr_0.95fr] lg:py-24">
           <div className="max-w-3xl">

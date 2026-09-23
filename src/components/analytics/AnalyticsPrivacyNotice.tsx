@@ -1,0 +1,20 @@
+"use client";
+import { openAnalyticsPreferences } from "@/lib/analytics/consent-runtime";
+export function AnalyticsPrivacyNotice({ locale }: { locale: "no" | "en" }) {
+ const no = locale === "no";
+ const paragraphs = no ? [
+  "Google Analytics lastes bare når du tillater nettstedsanalyse. Du kan avslå eller trekke samtykket tilbake under Personvernvalg. Lanseringslisten bruker et separat samtykke, og påmelding fungerer uten analysesamtykke.",
+  "Med samtykke måles besøk på utvalgte offentlige sider og enkelte klikk og skjemahendelser. Google kan behandle nettleser- og enhetsopplysninger, informasjonskapsel-ID-er og nettverksopplysninger. Vi sender ikke e-postadresse, innhold i skjemafelter eller fritekst som analyseparametere. Spørringsstrenger og URL-fragmenter utelates fra sidereferansene vi sender. Konto-, admin- og tilstandssider er ikke med i denne målingen.",
+  "Valget lagres lokalt i nettleseren under neuvago:analytics-consent:v1 i opptil 180 dager. Ved ja bruker denne integrasjonen analyseinformasjonskapsler med prefikset nvga_ga, konfigurert til opptil 180 dager. Ved tilbaketrekking stoppes nye målehendelser, disse informasjonskapslene forsøkes slettet, og siden lastes på nytt. Allerede overførte opplysninger slettes ikke automatisk hos Google av at du endrer valget.",
+  "Opplysningene brukes til å forbedre nettstedet og forstå påmeldingsreisen. Google-signaler og annonsepersonalisering er slått av i denne integrasjonen. Google er leverandør av analysetjenesten; behandlingen kan innebære overføringer utenfor EØS. Se de øvrige delene av personvernerklæringen for virksomhet, kontakt, rettigheter og overføringsgrunnlag, og Googles informasjon om hvordan tjenesten behandler data.",
+ ] : [
+  "Google Analytics loads only when you allow website analytics. You can reject or withdraw consent under Privacy choices. The launch list uses separate consent, and signup works without analytics consent.",
+  "With consent, selected public page visits and a limited set of clicks and form events are measured. Google may process browser and device details, cookie identifiers and network information. We do not send email addresses, form-field contents or free text as analytics parameters. The page references we send omit query strings and URL fragments. Account, admin and condition pages are excluded from this measurement.",
+  "Your choice is stored locally in your browser under neuvago:analytics-consent:v1 for up to 180 days. When allowed, this integration uses analytics cookies with the nvga_ga prefix, configured for up to 180 days. Withdrawing consent stops new measurement events, attempts to clear those cookies and reloads the page. Changing your choice does not automatically erase data already transferred to Google.",
+  "We use this information to improve the website and understand the signup journey. Google signals and advertising personalization are disabled in this integration. Google provides the analytics service; processing may involve transfers outside the EEA. Refer to the other sections of this policy for the business, contact, rights and transfer arrangements, and to Google's information about its data processing.",
+ ];
+ return <section id="website-analytics" className="border-y border-black/10 bg-[#f2eee8] px-6 py-12 text-[#1f1f1c]"><div className="mx-auto max-w-5xl"><h2 className="text-3xl font-medium">{no ? "Valgfri nettstedsanalyse" : "Optional website analytics"}</h2>
+  {paragraphs.map(p => <p key={p} className="mt-4 max-w-3xl text-base leading-8 text-[#5f5a52]">{p}</p>)}
+  <div className="mt-6 flex flex-wrap gap-6"><button type="button" onClick={openAnalyticsPreferences} data-analytics-settings className="min-h-11 rounded-full border border-black/30 px-5 py-3 underline underline-offset-4">{no ? "Endre personvernvalg" : "Change privacy choices"}</button><a href="https://policies.google.com/technologies/partner-sites" rel="noreferrer" className="self-center underline underline-offset-4">{no ? "Googles informasjon om data" : "Google's information about data"}</a></div>
+ </div></section>;
+}

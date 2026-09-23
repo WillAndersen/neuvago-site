@@ -26,3 +26,10 @@ export const commerceContent = {
       "I agree to receive Neuvago launch and availability updates by email. I can unsubscribe at any time.",
   },
 } as const;
+
+/** Preserve the live shop; only the Norwegian prelaunch destination changes. */
+export function getCommerceHref(locale: "en" | "no" | "de" = "en"): string {
+  return locale === "no" && !commerceContent.isLive
+    ? "/no/lansering"
+    : commerceContent.shopHref;
+}

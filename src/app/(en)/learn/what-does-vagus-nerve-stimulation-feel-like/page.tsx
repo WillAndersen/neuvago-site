@@ -20,6 +20,11 @@ export const metadata: Metadata = {
   description,
   alternates: {
     canonical: path,
+    languages: {
+      "en-US": path,
+      "nb-NO": "/no/kunnskap/hvordan-foles-vagusnervestimulering",
+      "x-default": path,
+    },
   },
   openGraph: {
     title,

@@ -954,6 +954,27 @@ export default function SafetyAndTolerabilityResearchPage() {
           </div>
         </div>
       </section>
-    </main>
+
+      {/* 0.3C.2 bounded owner backlink */}
+      <section className="border-t border-black/8 px-6 py-14 md:px-10">
+        <div className="mx-auto max-w-4xl">
+          <p className="text-sm uppercase tracking-[0.18em] text-[#7a756c]">
+            Learn guide
+          </p>
+          <h2 className="mt-4 text-3xl font-medium leading-tight tracking-[-0.03em]">
+            Need a plain-language overview of VNS side effects?
+          </h2>
+          <p className="mt-5 max-w-3xl text-base leading-8 text-[#5f5a52]">
+            Use the Learn guide for a practical overview of side effects and tolerability across non-invasive VNS methods. This Research topic remains the evidence layer for study design, adverse-event reporting and interpretation.
+          </p>
+          <Link
+            href="/learn/vagus-nerve-stimulation-side-effects"
+            className="mt-6 inline-flex text-sm font-medium underline underline-offset-4"
+          >
+            Read the side-effects guide
+          </Link>
+        </div>
+      </section>
+</main>
   );
 }

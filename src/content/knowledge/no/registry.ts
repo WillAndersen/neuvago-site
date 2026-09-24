@@ -28,6 +28,7 @@ import { erVagusnervestimuleringTrygtArticle } from "@/content/knowledge/no/arti
 import { bivirkningerVedIkkeInvasivVagusnervestimuleringArticle } from "@/content/knowledge/no/articles/bivirkninger-ved-ikke-invasiv-vagusnervestimulering";
 import { hvemBorVaereForsiktigMedVagusnervestimuleringArticle } from "@/content/knowledge/no/articles/hvem-bor-vaere-forsiktig-med-vagusnervestimulering";
 import { tensOgVagusnervestimuleringArticle } from "@/content/knowledge/no/articles/tens-og-vagusnervestimulering";
+import { hvordanFolesVagusnervestimuleringArticle } from "@/content/knowledge/no/articles/hvordan-foles-vagusnervestimulering";
 import type { NorwegianKnowledgeArticle } from "@/content/knowledge/no/types";
 
 const articleRegistry = [
@@ -61,6 +62,7 @@ const articleRegistry = [
   erVagusnervestimuleringTrygtArticle,
   bivirkningerVedIkkeInvasivVagusnervestimuleringArticle,
   hvemBorVaereForsiktigMedVagusnervestimuleringArticle,
+  hvordanFolesVagusnervestimuleringArticle,
 ] as const satisfies readonly NorwegianKnowledgeArticle[];
 
 function isIsoDate(value: string): boolean {

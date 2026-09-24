@@ -90,6 +90,9 @@ const routes: Array<{
   { path: "/learn/what-nervous-system-regulation-feels-like", changeFrequency: "weekly", priority: 0.74 },
   { path: "/learn/emotional-regulation-and-the-nervous-system", changeFrequency: "weekly", priority: 0.74 },
 
+  { path: "/learn/heart-rate-variability", changeFrequency: "weekly", priority: 0.8, lastModified: "2026-09-24" },
+  { path: "/learn/vagus-nerve-stimulation-side-effects", changeFrequency: "weekly", priority: 0.82, lastModified: "2026-09-24" },
+
   { path: "/research", changeFrequency: "weekly", priority: 0.84, lastModified: SEO_LAUNCH_REVIEW_DATE },
   { path: "/research/topics", changeFrequency: "weekly", priority: 0.8, lastModified: SEO_LAUNCH_REVIEW_DATE },
   { path: "/research/topics/vagus-nerve-stimulation", changeFrequency: "weekly", priority: 0.82, lastModified: SEO_LAUNCH_REVIEW_DATE },

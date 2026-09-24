@@ -469,6 +469,27 @@ export default function HeartRateVariabilityResearchPage() {
           </div>
         </div>
       </section>
-    </main>
+
+      {/* 0.3C.2 bounded owner backlink */}
+      <section className="border-t border-black/8 px-6 py-14 md:px-10">
+        <div className="mx-auto max-w-4xl">
+          <p className="text-sm uppercase tracking-[0.18em] text-[#7a756c]">
+            Learn guide
+          </p>
+          <h2 className="mt-4 text-3xl font-medium leading-tight tracking-[-0.03em]">
+            Need the HRV basics before the research?
+          </h2>
+          <p className="mt-5 max-w-3xl text-base leading-8 text-[#5f5a52]">
+            Use the Learn guide for definitions, measurement context and interpretation limits. This Research topic remains the evidence layer for HRV in autonomic regulation and VNS-related studies.
+          </p>
+          <Link
+            href="/learn/heart-rate-variability"
+            className="mt-6 inline-flex text-sm font-medium underline underline-offset-4"
+          >
+            Read the HRV guide
+          </Link>
+        </div>
+      </section>
+</main>
   )
 }

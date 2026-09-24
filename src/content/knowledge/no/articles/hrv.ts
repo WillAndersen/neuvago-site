@@ -56,6 +56,7 @@ export const hrvArticle = {
   authorId: "john-willander",
   sourceReviewerId: "neuvago-redaksjonen",
 
+  englishEquivalent: "/learn/heart-rate-variability",
   sitemapPriority: 0.88,
   changeFrequency: "monthly",
 

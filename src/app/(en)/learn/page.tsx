@@ -129,6 +129,14 @@ const moreFoundationGuides = [
     title: "Recovery and regulation",
     href: "/learn/recovery-and-regulation",
   },
+  {
+    title: "Heart rate variability (HRV)",
+    href: "/learn/heart-rate-variability",
+  },
+  {
+    title: "VNS side effects and tolerability",
+    href: "/learn/vagus-nerve-stimulation-side-effects",
+  },
 ] as const;
 
 const everydayQuestionGroups = [

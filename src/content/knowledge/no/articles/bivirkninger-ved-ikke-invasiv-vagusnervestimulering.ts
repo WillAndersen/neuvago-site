@@ -59,6 +59,7 @@ export const bivirkningerVedIkkeInvasivVagusnervestimuleringArticle = {
   authorId: "john-willander",
   sourceReviewerId: "neuvago-redaksjonen",
 
+  englishEquivalent: "/learn/vagus-nerve-stimulation-side-effects",
   sitemapPriority: 0.88,
   changeFrequency: "weekly",
 

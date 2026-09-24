@@ -17,9 +17,9 @@ import {
 } from "@/lib/seo/structured-data";
 
 export const metadata: Metadata = {
-  title: "Neuvago | Non-Invasive Vagus Nerve Stimulator",
+  title: "Neuvago | Ear-Based Vagus Nerve Stimulation Device",
   description:
-    "Explore Neuvago, a non-invasive vagus nerve stimulation device with adjustable intensity, four stimulation modes, simple controls and an ear-based approach designed for everyday wellness routines.",
+    "Meet Neuvago, an ear-based VNS device with four 20-minute modes, 30 intensity levels, a left earpiece and one year of app access. See how it works and get launch access.",
   alternates: {
     canonical: "/product",
     languages: {
@@ -29,9 +29,9 @@ export const metadata: Metadata = {
     },
   },
   openGraph: {
-    title: "Neuvago | Non-Invasive Vagus Nerve Stimulator",
+    title: "Neuvago | Ear-Based Vagus Nerve Stimulation Device",
     description:
-      "Discover the Neuvago device, its four stimulation modes, high-level vagus nerve stimulation approach, research context, package contents and current purchase information.",
+      "Discover Neuvago’s ear-based stimulation approach, four 20-minute modes, 30 intensity levels, app access, package contents, safety information and launch access.",
     url: "/product",
     siteName: "Neuvago",
     locale: "en_US",
@@ -39,9 +39,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Neuvago | Non-Invasive Vagus Nerve Stimulator",
+    title: "Neuvago | Ear-Based Vagus Nerve Stimulation Device",
     description:
-      "A non-invasive vagus nerve stimulation device with adjustable intensity, four named modes and simple physical controls.",
+      "Neuvago is an ear-based VNS device with adjustable intensity, four 20-minute modes, physical controls and app access.",
   },
 };
 
@@ -58,6 +58,21 @@ export default function ProductPage() {
         { name: "Product", path: "/product" },
       ],
     });
+
+  structuredData.push({
+    "@context": "https://schema.org",
+    "@type": "Product",
+    name: "Neuvago",
+    model: "NVG-001",
+    brand: {
+      "@type": "Brand",
+      name: "Neuvago",
+    },
+    category: "Ear-based non-invasive vagus nerve stimulation device",
+    description:
+      "Ear-based non-invasive VNS device with four 20-minute modes, 30 adjustable intensity levels and a supplied left earpiece.",
+    url: "https://neuvago.com/product",
+  });
 
   const faqStructuredData = buildFAQStructuredData(content.faq.items);
 

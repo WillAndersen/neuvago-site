@@ -6,7 +6,7 @@ import { buildAuthorityPageStructuredData } from "@/lib/seo/structured-data";
 import { authorityEditorialDates } from "@/lib/seo/editorial-dates";
 
 const title =
-  "Vagus Nerve Stimulation (VNS) | How It Works and Types | Neuvago";
+  "Vagus Nerve Stimulation (VNS): Types, Methods & Evidence | Neuvago";
 const description =
   "Learn what VNS is, how implanted, transcutaneous, and auricular approaches differ, how to read evidence, and why device, protocol, safety, and intended use matter.";
 const path = "/learn/vagus-nerve-stimulation";

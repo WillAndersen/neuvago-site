@@ -20,7 +20,7 @@ export const metadata: Metadata = {
   title:
     "Neuvago produkt | Ikke-invasiv vagusnervestimulator",
   description:
-    "Utforsk Neuvago, en ikke-invasiv vagusnervestimulator med justerbar intensitet, fire stimuleringsmoduser, enkle kontroller og en ørebasert tilnærming utviklet for daglige velværerutiner.",
+    "Se Neuvago: en ørebasert VNS-enhet med fire 20-minutters moduser, 30 intensitetsnivåer, venstre øreelektrode og ett års tilgang til Neuvago App.",
   alternates: {
     canonical: "/no/produkt",
     languages: {
@@ -33,7 +33,7 @@ export const metadata: Metadata = {
     title:
       "Neuvago produkt | Ikke-invasiv vagusnervestimulator",
     description:
-      "Se Neuvago-enheten, de fire stimuleringsmodusene, forskningskonteksten, pakkeinnholdet og den aktuelle kjøpsinformasjonen.",
+      "Se Neuvagos ørebaserte tilnærming, fire 20-minutters moduser, 30 intensitetsnivåer, app-tilgang, pakkeinnhold, sikkerhetsinformasjon og lanseringstilgang.",
     url: "/no/produkt",
     siteName: "Neuvago",
     locale: "nb_NO",
@@ -44,7 +44,7 @@ export const metadata: Metadata = {
     title:
       "Neuvago produkt | Ikke-invasiv vagusnervestimulator",
     description:
-      "En ikke-invasiv vagusnervestimulator med justerbar intensitet, fire navngitte moduser og enkle fysiske kontroller.",
+      "Neuvago er en ørebasert VNS-enhet med justerbar intensitet, fire 20-minutters moduser, fysiske kontroller og app-tilgang.",
   },
 };
 
@@ -62,6 +62,21 @@ export default function NorwayProductPage() {
         { name: "Produkt", path: "/no/produkt" },
       ],
     });
+
+  structuredData.push({
+    "@context": "https://schema.org",
+    "@type": "Product",
+    name: "Neuvago",
+    model: "NVG-001",
+    brand: {
+      "@type": "Brand",
+      name: "Neuvago",
+    },
+    category: "Ørebasert ikke-invasiv vagusnervestimuleringsenhet",
+    description:
+      "Ørebasert ikke-invasiv VNS-enhet med fire 20-minutters moduser, 30 justerbare intensitetsnivåer og medfølgende venstre øreelektrode.",
+    url: "https://neuvago.com/no/produkt",
+  });
 
   const faqStructuredData =
     buildFAQStructuredData(content.faq.items);

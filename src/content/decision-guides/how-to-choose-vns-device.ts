@@ -16,8 +16,8 @@ export const howToChooseVnsDeviceGuidePair = {
     "kind": "buyer-guide",
     "order": 2,
     "title": "How to choose a vagus nerve stimulation device",
-    "seoTitle": "How to Choose a Vagus Nerve Stimulator | Neuvago",
-    "description": "A neutral checklist for evaluating device type, intended use, evidence, safety, controls, costs, support and privacy.",
+    "seoTitle": "How to Choose a Vagus Nerve Stimulator: 12-Point Guide | Neuvago",
+    "description": "Compare VNS devices with a 12-point framework covering method, intended use, product evidence, protocol, safety, app, privacy, cost, returns and warranty.",
     "eyebrow": "BUYER GUIDE / VNS DEVICES",
     "lead": "Choose by verifiable criteria rather than by the boldest promise, strongest sensation or highest marketing score. Start with the device category, current intended use, exact product evidence, safety instructions, protocol transparency, practical ownership, support, privacy and the commercial terms that apply on the date you compare.",
     "shortAnswer": [
@@ -38,7 +38,7 @@ export const howToChooseVnsDeviceGuidePair = {
       "taVNS device comparison"
     ],
     "publishedAt": "2026-08-26",
-    "modifiedAt": "2026-09-06",
+    "modifiedAt": "2026-09-24",
     "readingTimeMinutes": 21,
     "authorName": "Neuvago Editorial Team",
     "reviewerName": "Neuvago Source Review",
@@ -740,7 +740,7 @@ export const howToChooseVnsDeviceGuidePair = {
     "order": 2,
     "title": "Hvordan velge en vagusnervestimulator",
     "seoTitle": "Hvordan velge vagusnervestimulator | Neuvago",
-    "description": "En nøytral sjekkliste for å vurdere type stimulator, tiltenkt bruk, evidens, sikkerhet, kontroller, kostnader og personvern.",
+    "description": "Sammenlign vagusnervestimulatorer med 12 kriterier: metode, tiltenkt bruk, produktbevis, protokoll, sikkerhet, app, personvern, pris, retur og garanti.",
     "eyebrow": "KJØPSGUIDE / VNS-ENHETER",
     "lead": "Når du vurderer en vagusnervestimulator, start med hva slags VNS-enhet det faktisk er og hvilke opplysninger som kan kontrolleres. Skill implantert VNS fra cervikale og aurikulære ikke-invasive enheter, les gjeldende tiltenkt bruk og produktspesifikk dokumentasjon, og sammenlign sikkerhet, protokoll, app, personvern, support og totalkostnad før markedsføringspåstander får styre valget.",
     "shortAnswer": [
@@ -761,7 +761,7 @@ export const howToChooseVnsDeviceGuidePair = {
       "ikke-invasiv VNS-enhet"
     ],
     "publishedAt": "2026-08-26",
-    "modifiedAt": "2026-09-12",
+    "modifiedAt": "2026-09-24",
     "readingTimeMinutes": 21,
     "authorName": "Neuvago-redaksjonen",
     "reviewerName": "Neuvago kildekontroll",

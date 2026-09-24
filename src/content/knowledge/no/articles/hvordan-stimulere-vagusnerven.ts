@@ -36,7 +36,7 @@ export const hvordanStimulereVagusnervenArticle = {
   searchIntent: "informational",
 
   publishedAt: "2026-09-02",
-  modifiedAt: "2026-09-12",
+  modifiedAt: "2026-09-24",
   readingTimeMinutes: 18,
 
   authorId: "john-willander",
@@ -506,6 +506,13 @@ export const hvordanStimulereVagusnervenArticle = {
     "er-vagusnervestimulering-trygt",
   ],
   relatedLinks: [
+    {
+      title: "Vagusnervestimulering – oversikt",
+      description:
+        "Gå til den brede VNS-oversikten for forskjellen mellom implantert og ikke-invasiv stimulering, metodefamilier og dokumentasjonsgrenser.",
+      href: "/no/kunnskap/vagusnervestimulering",
+      label: "Les VNS-oversikten",
+    },
     {
       title: "How to stimulate the vagus nerve",
       description:

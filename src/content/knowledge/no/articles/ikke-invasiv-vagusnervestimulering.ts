@@ -11,7 +11,7 @@ export const ikkeInvasivVagusnervestimuleringArticle = {
     "Ikke-invasiv vagusnervestimulering – metode, typer og viktige forskjeller",
   seoTitle: "Ikke-invasiv vagusnervestimulering (nVNS) | Neuvago",
   description:
-    "Lær hva ikke-invasiv vagusnervestimulering er, hvordan nVNS, tVNS og taVNS henger sammen, og hvorfor plassering, protokoll, sikkerhet og tiltenkt bruk må vurderes separat.",
+    "Hva betyr ikke-invasiv vagusnervestimulering (nVNS)? Se forskjellen mellom hals- og ørebaserte metoder, tVNS/taVNS, protokoller, forskning, sikkerhet og viktige grenser.",
   eyebrow: "Kunnskap om ikke-invasiv VNS",
   lead:
     "Ikke-invasiv vagusnervestimulering er en samlebetegnelse for eksterne stimuleringsmetoder som ikke krever kirurgisk implantert utstyr. Kategorien omfatter blant annet halsbaserte og ørebaserte tilnærminger, men enhetene, protokollene, forskningsgrunnlaget og den regulatoriske statusen kan være svært forskjellige. Derfor er «ikke-invasiv» et utgangspunkt for forståelse – ikke en garanti for at alle metoder er like.",
@@ -30,7 +30,7 @@ export const ikkeInvasivVagusnervestimuleringArticle = {
     "ikke invasiv vagusnervestimulering",
     "nVNS",
     "non-invasive vagus nerve stimulation",
-    "ikke-invasiv vagusnervestimulator",
+    "ikke-invasiv VNS",
     "ekstern vagusnervestimulering",
     "transkutan vagusnervestimulering",
     "tVNS",
@@ -41,7 +41,7 @@ export const ikkeInvasivVagusnervestimuleringArticle = {
   searchIntent: "informational",
 
   publishedAt: "2026-08-17",
-  modifiedAt: "2026-08-17",
+  modifiedAt: "2026-09-24",
   readingTimeMinutes: 14,
 
   authorId: "john-willander",
@@ -496,7 +496,7 @@ export const ikkeInvasivVagusnervestimuleringArticle = {
       description:
         "Gå fra metodekategorien til en produktsjekk som dekker tiltenkt bruk, dokumentasjon, sikkerhet, innstillinger, app, support og gjeldende vilkår.",
       href: "/no/kunnskap/hvordan-velge-vagusnervestimulator",
-      label: "Bruk kjøpssjekklisten",
+      label: "Slik velger du vagusnervestimulator",
     },
     {
       title: "Ørebasert vs. hals-/nakkebasert VNS",

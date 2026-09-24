@@ -6,9 +6,9 @@ import { buildAuthorityPageStructuredData } from "@/lib/seo/structured-data";
 import { authorityEditorialDates } from "@/lib/seo/editorial-dates";
 
 const title =
-  "Non-Invasive Vagus Nerve Stimulator Guide | nVNS | Neuvago";
+  "Non-Invasive Vagus Nerve Stimulation (nVNS): Types & Methods | Neuvago";
 const description =
-  "Understand non-invasive VNS, including nVNS, tVNS, taVNS, device differences, safety boundaries, and how guided wellness use fits in.";
+  "Learn what non-invasive vagus nerve stimulation (nVNS) means, how ear- and neck-based methods differ, where tVNS and taVNS fit, and why evidence is device- and protocol-specific.";
 const path = "/learn/non-invasive-vagus-nerve-stimulation";
 
 export const metadata: Metadata = {
@@ -374,14 +374,14 @@ export default function NonInvasiveVagusNerveStimulationPage() {
     keywords: [
       "non-invasive vagus nerve stimulation",
       "non invasive vagus nerve stimulation",
-      "non-invasive vagus nerve stimulator",
-      "vagus nerve stimulation device",
+      "external vagus nerve stimulation",
+      "non-invasive VNS",
       "nVNS",
       "tVNS",
       "taVNS",
       "auricular vagus nerve stimulation",
       "transcutaneous vagus nerve stimulation",
-      "wellness device",
+      "cervical vagus nerve stimulation",
     ],
     breadcrumbs: [
       { name: "Home", path: "/" },
@@ -405,16 +405,15 @@ export default function NonInvasiveVagusNerveStimulationPage() {
             </p>
 
             <h1 className="text-4xl font-medium leading-[1.05] tracking-[-0.03em] md:text-6xl lg:text-7xl">
-              Non-invasive vagus nerve stimulation (nVNS), explained clearly
+              Non-invasive vagus nerve stimulation (nVNS): what it is and how methods differ
             </h1>
 
             <p className="mt-6 max-w-2xl text-base leading-8 text-[#5f5a52] md:text-lg">
-              Non-invasive vagus nerve stimulation means using an external
-              device to deliver stimulation without implanted hardware. It is
-              one of the most important category terms for understanding modern
-              VNS, because it sits between research, device design, and the
-              practical question of how a vagus nerve stimulator might fit into
-              everyday life.
+              Non-invasive vagus nerve stimulation (nVNS) means using an
+              external device to deliver stimulation without implanted
+              hardware. It is a broad category: ear-based and neck-based
+              methods, tVNS and taVNS, devices, parameters, and protocols can
+              differ in ways that matter for evidence, safety, and intended use.
             </p>
 
             <p className="mt-5 max-w-2xl text-base leading-8 text-[#5f5a52]">
